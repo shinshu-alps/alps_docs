@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Roblab: roblab_common_lib/include/trapezoid_control.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Roblab
+   </div>
+   <div id="projectbrief">roboken shinshu library</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('trapezoid__control_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">trapezoid_control.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="trapezoid__control_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">/**********************************************************************</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">Include guard</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">**********************************************************************/</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#ifndef ROBLAB_COMMON_TRAPEZOID_CONTROL_H_</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#define ROBLAB_COMMON_TRAPEZOID_CONTROL_H_</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">/**********************************************************************</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">Includes</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">**********************************************************************/</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;<a class="code" href="dob_8hpp.html">dob.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/**********************************************************************</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">class</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">**********************************************************************/</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceroblab.html">roblab</a></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">namespace </span>common_lib</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_trapezoid_control.html">   41</a></span>        <span class="keyword">class </span><a class="code hl_class" href="classroblab_1_1common__lib_1_1_trapezoid_control.html">TrapezoidControl</a> : <span class="keyword">public</span> <a class="code hl_class" href="classroblab_1_1common__lib_1_1_dob.html">Dob</a></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ac2c1d616ba056d4a65fd999d4c7830a9">   48</a></span>            <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ac2c1d616ba056d4a65fd999d4c7830a9">TrapezoidControl</a>() {}</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ac2c1d616ba056d4a65fd999d4c7830a9">TrapezoidControl</a>(<span class="keywordtype">float</span> target, <span class="keywordtype">float</span> v_max, <span class="keywordtype">float</span> acceleration_time, <span class="keywordtype">float</span> deceleration_time);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ad4297699f1badd6046ab16d3aad54eef">StartTimer</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="comment">// 各変数を設定，変更する関数</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a9dca8cc5e69c065c667c6240aa7a64cf">set</a>(<span class="keywordtype">float</span> target, <span class="keywordtype">float</span> v_max, <span class="keywordtype">float</span> acceleration_time, <span class="keywordtype">float</span> deceleration_time);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#abee771698e0ded8fc87e24dd10c1637d">setCtrlPeriodSec</a>(<span class="keywordtype">float</span> ctrl_period_sec);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a292ce49ff13a48d6af1259b649cd7239">setTarget</a>(<span class="keywordtype">float</span> target);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a124832d6fb5e3070acf80b1c42532e36">setV_max</a>(<span class="keywordtype">float</span> v_max);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="comment">// 時間を取得する関数</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="keywordtype">float</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#aac4b31fdaa0aa85c83f0daa2119d5234">getFinishTime</a>();</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            <span class="keywordtype">float</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#af02eb905fde30b35d056497e3978d0e9">getTimer</a>();</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <span class="keywordtype">float</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#acae0b9508ad89e13075c16d25e4acfff">getFilterValue</a>();</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#afe6d494275292566743c1cc39c561577">CheckEnd</a>();</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#aaaa4e26419b9a2ae5b9cdfcad1e74ec8">Reset</a>();</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#aa26a5f15de31d19cb3b2bcfacfc8551f">  135</a></span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#aa26a5f15de31d19cb3b2bcfacfc8551f">ResetForVelocity</a>();</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            <span class="keywordtype">float</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a944b20a2517a529bc4156412074233a2">Filter</a>();</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            <span class="keywordtype">float</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#aa29513e31ae44fe41036289dc801c805">FilterAcc2</a>(<span class="keywordtype">float</span> acceleration_time_2, <span class="keywordtype">float</span> acceleration_time, <span class="keywordtype">float</span> v_max_2);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            <span class="keywordtype">float</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a6ad7e6e53ee593e59f93ee4773393b45">FilterS</a>();</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            <span class="keywordtype">float</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a46c61fcb037803921db0e27c221b9c41">Control</a>(<span class="keywordtype">float</span> input);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            <span class="keywordtype">float</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a139941d5a9dc37c88b90d4097b98a0f9">ControlDob</a>(<span class="keywordtype">float</span> input);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>            <span class="keywordtype">float</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a3421def10f33c524126702c0b25d3d7b">ControlCorrect</a>(<span class="keywordtype">float</span> input, <span class="keywordtype">float</span> correction_value);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            <span class="keywordtype">float</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#aaf6ca6263489f8342f19a5262761c651">ControlDobCorrect</a>(<span class="keywordtype">float</span> input, <span class="keywordtype">float</span> correction_value);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            <span class="keywordtype">float</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#acee3c21eba762bb0de805ee1e6e5fa60">ControlAcc2</a>(<span class="keywordtype">float</span> input, <span class="keywordtype">float</span> acceleration_time_2, <span class="keywordtype">float</span> acceleration_time, <span class="keywordtype">float</span> v_max_2);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>            <span class="keywordtype">float</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a83c65dd147adae12ab6236a4083c210f">ControlDobAcc2</a>(<span class="keywordtype">float</span> input, <span class="keywordtype">float</span> acceleration_time_2, <span class="keywordtype">float</span> acceleration_time, <span class="keywordtype">float</span> v_max_2);</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>            <span class="keywordtype">float</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a710197dcaafbde0e28ced7c41858841f">ControlS</a>(<span class="keywordtype">float</span> input);</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>            <span class="keywordtype">float</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ad08a7a043bd3701c6df7edea8d481658">ControlDobS</a>(<span class="keywordtype">float</span> input);</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            <span class="keywordtype">float</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a775644f5190702902461be1eba439aa5">ControlSCorrect</a>(<span class="keywordtype">float</span> input, <span class="keywordtype">float</span> correction_value);</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>            <span class="keywordtype">float</span> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#aec1142cc482a66a0dc622fe4e20c15ef">ControlDobSCorrect</a>(<span class="keywordtype">float</span> input, <span class="keywordtype">float</span> correction_value);</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a25cf1c998cc25ca0f58c22cea8059326">  253</a></span>            <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a25cf1c998cc25ca0f58c22cea8059326">kCTRL_PERIOD_SEC_</a> = 0.005f;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a5437a0025b8accba0a1ae5920709ec10">  256</a></span>            <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a5437a0025b8accba0a1ae5920709ec10">kEND_CONTROL_</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ab74243fbb9edf0ac35fbbcfbd0858779">  259</a></span>            <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ab74243fbb9edf0ac35fbbcfbd0858779">kCONTINUE_CONTROL_</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a88c525a9b63ee321b5af900f15c878b1">  262</a></span>            <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a88c525a9b63ee321b5af900f15c878b1">M_PI</a> = 3.14159265358979323846;</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a11524a5db8c964e644d884a03f7d041f">  265</a></span>            <span class="keywordtype">float</span> <a class="code hl_variable" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a11524a5db8c964e644d884a03f7d041f">ctrl_period_sec_</a>;</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ac3b19e72a1a3afe881503371b4d406e6">  268</a></span>            <span class="keywordtype">float</span> <a class="code hl_variable" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ac3b19e72a1a3afe881503371b4d406e6">timer_</a>;</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a9955eb88398648b1e3ad21ab9cbcf95d">  271</a></span>            <span class="keywordtype">float</span> <a class="code hl_variable" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a9955eb88398648b1e3ad21ab9cbcf95d">target_</a>;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a0eb27ff0ec53dec48cccffa770771339">  274</a></span>            <span class="keywordtype">float</span> <a class="code hl_variable" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a0eb27ff0ec53dec48cccffa770771339">targetpid_</a>;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a12f9e6525f8c1734ea6963bfbf8d89d3">  277</a></span>            <span class="keywordtype">float</span> <a class="code hl_variable" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a12f9e6525f8c1734ea6963bfbf8d89d3">acceleration_time_2_</a>;</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a02124c05497cdf4e459bd9c2ae5f3cad">  280</a></span>            <span class="keywordtype">float</span> <a class="code hl_variable" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a02124c05497cdf4e459bd9c2ae5f3cad">v_max_2_</a>;</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ab120d1c40c3bdeb7a9eaef78a7674bca">  283</a></span>            <span class="keywordtype">float</span> <a class="code hl_variable" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ab120d1c40c3bdeb7a9eaef78a7674bca">v_max_</a>;</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a6e4f238052ae6ba6d4b8f02d4bc1caf4">  286</a></span>            <span class="keywordtype">float</span> <a class="code hl_variable" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a6e4f238052ae6ba6d4b8f02d4bc1caf4">acceleration_time_</a>;</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#af40677a812406bb76485ee9de4e77a93">  289</a></span>            <span class="keywordtype">float</span> <a class="code hl_variable" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#af40677a812406bb76485ee9de4e77a93">stationary_time_</a>;</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ab01c49f17aae18b8e4e95fbdb8f934ce">  292</a></span>            <span class="keywordtype">float</span> <a class="code hl_variable" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ab01c49f17aae18b8e4e95fbdb8f934ce">deceleration_time_</a>;</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a33c1b6011a1886b762b259a15b588e19">  295</a></span>            <span class="keywordtype">float</span> <a class="code hl_variable" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a33c1b6011a1886b762b259a15b588e19">tarapizoid_output_</a>;</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a5f790d6bba9f0d7add2bca933bc640de">  298</a></span>            <span class="keywordtype">float</span> <a class="code hl_variable" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a5f790d6bba9f0d7add2bca933bc640de">motor_output_</a>;</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        };</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    }</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>}</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_dob_html"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_dob.html">roblab::common_lib::Dob</a></div><div class="ttdoc">外乱オブザーバー</div><div class="ttdef"><b>Definition:</b> dob.hpp:41</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html">roblab::common_lib::TrapezoidControl</a></div><div class="ttdoc">台形制御クラス</div><div class="ttdef"><b>Definition:</b> trapezoid_control.hpp:42</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_a02124c05497cdf4e459bd9c2ae5f3cad"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a02124c05497cdf4e459bd9c2ae5f3cad">roblab::common_lib::TrapezoidControl::v_max_2_</a></div><div class="ttdeci">float v_max_2_</div><div class="ttdoc">おそらく2段階加速？用</div><div class="ttdef"><b>Definition:</b> trapezoid_control.hpp:280</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_a0eb27ff0ec53dec48cccffa770771339"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a0eb27ff0ec53dec48cccffa770771339">roblab::common_lib::TrapezoidControl::targetpid_</a></div><div class="ttdeci">float targetpid_</div><div class="ttdoc">pidの.controlに入れるための目標値</div><div class="ttdef"><b>Definition:</b> trapezoid_control.hpp:274</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_a11524a5db8c964e644d884a03f7d041f"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a11524a5db8c964e644d884a03f7d041f">roblab::common_lib::TrapezoidControl::ctrl_period_sec_</a></div><div class="ttdeci">float ctrl_period_sec_</div><div class="ttdoc">制御周期[s]</div><div class="ttdef"><b>Definition:</b> trapezoid_control.hpp:265</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_a124832d6fb5e3070acf80b1c42532e36"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a124832d6fb5e3070acf80b1c42532e36">roblab::common_lib::TrapezoidControl::setV_max</a></div><div class="ttdeci">void setV_max(float v_max)</div><div class="ttdoc">速さの最大値を設定し，速さが安定している時間を求めるメンバ変数を初期化する関数．</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:85</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_a12f9e6525f8c1734ea6963bfbf8d89d3"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a12f9e6525f8c1734ea6963bfbf8d89d3">roblab::common_lib::TrapezoidControl::acceleration_time_2_</a></div><div class="ttdeci">float acceleration_time_2_</div><div class="ttdoc">おそらく2段階加速？用</div><div class="ttdef"><b>Definition:</b> trapezoid_control.hpp:277</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_a139941d5a9dc37c88b90d4097b98a0f9"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a139941d5a9dc37c88b90d4097b98a0f9">roblab::common_lib::TrapezoidControl::ControlDob</a></div><div class="ttdeci">float ControlDob(float input)</div><div class="ttdoc">設定した目標値に対してPID制御+外乱オブザーバーを行う関数．</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:226</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_a25cf1c998cc25ca0f58c22cea8059326"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a25cf1c998cc25ca0f58c22cea8059326">roblab::common_lib::TrapezoidControl::kCTRL_PERIOD_SEC_</a></div><div class="ttdeci">static constexpr float kCTRL_PERIOD_SEC_</div><div class="ttdoc">制御周期[s]の初期値</div><div class="ttdef"><b>Definition:</b> trapezoid_control.hpp:253</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_a292ce49ff13a48d6af1259b649cd7239"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a292ce49ff13a48d6af1259b649cd7239">roblab::common_lib::TrapezoidControl::setTarget</a></div><div class="ttdeci">void setTarget(float target)</div><div class="ttdoc">目標値を設定し，速さが安定している時間を求めるメンバ変数を初期化する関数．</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:75</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_a33c1b6011a1886b762b259a15b588e19"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a33c1b6011a1886b762b259a15b588e19">roblab::common_lib::TrapezoidControl::tarapizoid_output_</a></div><div class="ttdeci">float tarapizoid_output_</div><div class="ttdoc">台形な速度の目標値</div><div class="ttdef"><b>Definition:</b> trapezoid_control.hpp:295</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_a3421def10f33c524126702c0b25d3d7b"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a3421def10f33c524126702c0b25d3d7b">roblab::common_lib::TrapezoidControl::ControlCorrect</a></div><div class="ttdeci">float ControlCorrect(float input, float correction_value)</div><div class="ttdoc">設定した目標値に対してPID制御+補正を行う関数．</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:235</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_a46c61fcb037803921db0e27c221b9c41"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a46c61fcb037803921db0e27c221b9c41">roblab::common_lib::TrapezoidControl::Control</a></div><div class="ttdeci">float Control(float input)</div><div class="ttdoc">設定した目標値に対してPID制御を行う関数．</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:217</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_a5437a0025b8accba0a1ae5920709ec10"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a5437a0025b8accba0a1ae5920709ec10">roblab::common_lib::TrapezoidControl::kEND_CONTROL_</a></div><div class="ttdeci">static constexpr bool kEND_CONTROL_</div><div class="ttdoc">checkEnd関数で返す値: 終了</div><div class="ttdef"><b>Definition:</b> trapezoid_control.hpp:256</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_a5f790d6bba9f0d7add2bca933bc640de"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a5f790d6bba9f0d7add2bca933bc640de">roblab::common_lib::TrapezoidControl::motor_output_</a></div><div class="ttdeci">float motor_output_</div><div class="ttdoc">モータの出力値</div><div class="ttdef"><b>Definition:</b> trapezoid_control.hpp:298</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_a6ad7e6e53ee593e59f93ee4773393b45"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a6ad7e6e53ee593e59f93ee4773393b45">roblab::common_lib::TrapezoidControl::FilterS</a></div><div class="ttdeci">float FilterS()</div><div class="ttdoc">S字制御をする関数．</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:189</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_a6e4f238052ae6ba6d4b8f02d4bc1caf4"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a6e4f238052ae6ba6d4b8f02d4bc1caf4">roblab::common_lib::TrapezoidControl::acceleration_time_</a></div><div class="ttdeci">float acceleration_time_</div><div class="ttdoc">加速時間[s]</div><div class="ttdef"><b>Definition:</b> trapezoid_control.hpp:286</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_a710197dcaafbde0e28ced7c41858841f"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a710197dcaafbde0e28ced7c41858841f">roblab::common_lib::TrapezoidControl::ControlS</a></div><div class="ttdeci">float ControlS(float input)</div><div class="ttdoc">設定した目標値に対してPID制御を行う関数．ただし目標値は台形ではなく，s字を描いている</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:271</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_a775644f5190702902461be1eba439aa5"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a775644f5190702902461be1eba439aa5">roblab::common_lib::TrapezoidControl::ControlSCorrect</a></div><div class="ttdeci">float ControlSCorrect(float input, float correction_value)</div><div class="ttdoc">設定した目標値に対してPID制御+補正を行う関数．ただし目標値は台形ではなく，s字を描いている</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:289</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_a83c65dd147adae12ab6236a4083c210f"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a83c65dd147adae12ab6236a4083c210f">roblab::common_lib::TrapezoidControl::ControlDobAcc2</a></div><div class="ttdeci">float ControlDobAcc2(float input, float acceleration_time_2, float acceleration_time, float v_max_2)</div><div class="ttdoc">設定した目標値に対してPID制御+外乱オブザーバーを行う関数．2段階加速型の台形制御</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:262</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_a88c525a9b63ee321b5af900f15c878b1"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a88c525a9b63ee321b5af900f15c878b1">roblab::common_lib::TrapezoidControl::M_PI</a></div><div class="ttdeci">static constexpr float M_PI</div><div class="ttdoc">π</div><div class="ttdef"><b>Definition:</b> trapezoid_control.hpp:262</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_a944b20a2517a529bc4156412074233a2"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a944b20a2517a529bc4156412074233a2">roblab::common_lib::TrapezoidControl::Filter</a></div><div class="ttdeci">float Filter()</div><div class="ttdoc">台形制御をする関数．</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:124</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_a9955eb88398648b1e3ad21ab9cbcf95d"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a9955eb88398648b1e3ad21ab9cbcf95d">roblab::common_lib::TrapezoidControl::target_</a></div><div class="ttdeci">float target_</div><div class="ttdoc">台形制御の目標値</div><div class="ttdef"><b>Definition:</b> trapezoid_control.hpp:271</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_a9dca8cc5e69c065c667c6240aa7a64cf"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a9dca8cc5e69c065c667c6240aa7a64cf">roblab::common_lib::TrapezoidControl::set</a></div><div class="ttdeci">void set(float target, float v_max, float acceleration_time, float deceleration_time)</div><div class="ttdoc">目標値、速さの最大値、加速時間、減速時間を設定し，速さが安定している時間を求める メンバ変数を初期化，関数．</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:32</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_aa26a5f15de31d19cb3b2bcfacfc8551f"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#aa26a5f15de31d19cb3b2bcfacfc8551f">roblab::common_lib::TrapezoidControl::ResetForVelocity</a></div><div class="ttdeci">void ResetForVelocity()</div><div class="ttdoc">積分器のリセット</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_aa29513e31ae44fe41036289dc801c805"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#aa29513e31ae44fe41036289dc801c805">roblab::common_lib::TrapezoidControl::FilterAcc2</a></div><div class="ttdeci">float FilterAcc2(float acceleration_time_2, float acceleration_time, float v_max_2)</div><div class="ttdoc">台形制御をする関数．</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:152</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_aaaa4e26419b9a2ae5b9cdfcad1e74ec8"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#aaaa4e26419b9a2ae5b9cdfcad1e74ec8">roblab::common_lib::TrapezoidControl::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">メンバ変数を初期化する関数．</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:307</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_aac4b31fdaa0aa85c83f0daa2119d5234"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#aac4b31fdaa0aa85c83f0daa2119d5234">roblab::common_lib::TrapezoidControl::getFinishTime</a></div><div class="ttdeci">float getFinishTime()</div><div class="ttdoc">終了時間を返す関数．</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:100</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_aaf6ca6263489f8342f19a5262761c651"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#aaf6ca6263489f8342f19a5262761c651">roblab::common_lib::TrapezoidControl::ControlDobCorrect</a></div><div class="ttdeci">float ControlDobCorrect(float input, float correction_value)</div><div class="ttdoc">設定した目標値に対してPID制御+外乱オブザーバー+補正を行う関数．</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:244</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_ab01c49f17aae18b8e4e95fbdb8f934ce"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ab01c49f17aae18b8e4e95fbdb8f934ce">roblab::common_lib::TrapezoidControl::deceleration_time_</a></div><div class="ttdeci">float deceleration_time_</div><div class="ttdoc">減速時間[s]</div><div class="ttdef"><b>Definition:</b> trapezoid_control.hpp:292</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_ab120d1c40c3bdeb7a9eaef78a7674bca"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ab120d1c40c3bdeb7a9eaef78a7674bca">roblab::common_lib::TrapezoidControl::v_max_</a></div><div class="ttdeci">float v_max_</div><div class="ttdoc">台形の上辺になる速さの最大値</div><div class="ttdef"><b>Definition:</b> trapezoid_control.hpp:283</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_ab74243fbb9edf0ac35fbbcfbd0858779"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ab74243fbb9edf0ac35fbbcfbd0858779">roblab::common_lib::TrapezoidControl::kCONTINUE_CONTROL_</a></div><div class="ttdeci">static constexpr bool kCONTINUE_CONTROL_</div><div class="ttdoc">checkEnd関数で返す値: 継続</div><div class="ttdef"><b>Definition:</b> trapezoid_control.hpp:259</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_abee771698e0ded8fc87e24dd10c1637d"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#abee771698e0ded8fc87e24dd10c1637d">roblab::common_lib::TrapezoidControl::setCtrlPeriodSec</a></div><div class="ttdeci">void setCtrlPeriodSec(float ctrl_period_sec)</div><div class="ttdoc">制御周期を設定．未設定なら0.05[s]</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:70</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_ac2c1d616ba056d4a65fd999d4c7830a9"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ac2c1d616ba056d4a65fd999d4c7830a9">roblab::common_lib::TrapezoidControl::TrapezoidControl</a></div><div class="ttdeci">TrapezoidControl()</div><div class="ttdoc">デフォルトコンストラクタ.各変数の初期化は行わない</div><div class="ttdef"><b>Definition:</b> trapezoid_control.hpp:48</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_ac3b19e72a1a3afe881503371b4d406e6"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ac3b19e72a1a3afe881503371b4d406e6">roblab::common_lib::TrapezoidControl::timer_</a></div><div class="ttdeci">float timer_</div><div class="ttdoc">タイマーとして扱う変数</div><div class="ttdef"><b>Definition:</b> trapezoid_control.hpp:268</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_acae0b9508ad89e13075c16d25e4acfff"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#acae0b9508ad89e13075c16d25e4acfff">roblab::common_lib::TrapezoidControl::getFilterValue</a></div><div class="ttdeci">float getFilterValue()</div><div class="ttdoc">台形制御のフィルタを返す関数．注意：control関数を起動させないと使えない</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:107</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_acee3c21eba762bb0de805ee1e6e5fa60"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#acee3c21eba762bb0de805ee1e6e5fa60">roblab::common_lib::TrapezoidControl::ControlAcc2</a></div><div class="ttdeci">float ControlAcc2(float input, float acceleration_time_2, float acceleration_time, float v_max_2)</div><div class="ttdoc">設定した目標値に対してPID制御を行う関数．2段階加速型の台形制御</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:253</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_ad08a7a043bd3701c6df7edea8d481658"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ad08a7a043bd3701c6df7edea8d481658">roblab::common_lib::TrapezoidControl::ControlDobS</a></div><div class="ttdeci">float ControlDobS(float input)</div><div class="ttdoc">設定した目標値に対してPID制御+外乱オブザーバーを行う関数．ただし目標値は台形ではなく，s字を描いている</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:280</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_ad4297699f1badd6046ab16d3aad54eef"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ad4297699f1badd6046ab16d3aad54eef">roblab::common_lib::TrapezoidControl::StartTimer</a></div><div class="ttdeci">void StartTimer()</div><div class="ttdoc">タイマーを始める関数</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:27</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_aec1142cc482a66a0dc622fe4e20c15ef"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#aec1142cc482a66a0dc622fe4e20c15ef">roblab::common_lib::TrapezoidControl::ControlDobSCorrect</a></div><div class="ttdeci">float ControlDobSCorrect(float input, float correction_value)</div><div class="ttdoc">設定した目標値に対してPID制御+外乱オブザーバー+補正を行う関数．ただし目標値は台形ではなく，s字を描いている</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:298</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_af02eb905fde30b35d056497e3978d0e9"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#af02eb905fde30b35d056497e3978d0e9">roblab::common_lib::TrapezoidControl::getTimer</a></div><div class="ttdeci">float getTimer()</div><div class="ttdoc">タイマーの値を返す関数．</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:95</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_af40677a812406bb76485ee9de4e77a93"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#af40677a812406bb76485ee9de4e77a93">roblab::common_lib::TrapezoidControl::stationary_time_</a></div><div class="ttdeci">float stationary_time_</div><div class="ttdoc">速度が一定な時間[s]</div><div class="ttdef"><b>Definition:</b> trapezoid_control.hpp:289</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_trapezoid_control_html_afe6d494275292566743c1cc39c561577"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_trapezoid_control.html#afe6d494275292566743c1cc39c561577">roblab::common_lib::TrapezoidControl::CheckEnd</a></div><div class="ttdeci">unsigned char CheckEnd()</div><div class="ttdoc">台形制御完了判定を確認する関数．</div><div class="ttdef"><b>Definition:</b> trapezoid_control.cpp:112</div></div>
+<div class="ttc" id="adob_8hpp_html"><div class="ttname"><a href="dob_8hpp.html">dob.hpp</a></div></div>
+<div class="ttc" id="anamespaceroblab_html"><div class="ttname"><a href="namespaceroblab.html">roblab</a></div><div class="ttdef"><b>Definition:</b> differential.hpp:30</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_efc7c08bb78c728619d6f844434d9ba6.html">roblab_common_lib</a></li><li class="navelem"><a class="el" href="dir_5fc43148380559492dfddd8ae81e32dd.html">include</a></li><li class="navelem"><a class="el" href="trapezoid__control_8hpp.html">trapezoid_control.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

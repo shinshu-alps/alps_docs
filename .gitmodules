@@ -7,3 +7,6 @@
 [submodule "roblab_common_lib"]
 	path = roblab_common_lib
 	url = git@github.com:shinshu-alps/roblab_common_lib.git
+[submodule "doxygen-awesome-css"]
+	path = doxygen-awesome-css
+	url = https://github.com/jothepro/doxygen-awesome-css.git
