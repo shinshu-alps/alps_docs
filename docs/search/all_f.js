@@ -1,6 +1,25 @@
 var searchData=
 [
-  ['v_5fmax_5f_0',['v_max_',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#ab120d1c40c3bdeb7a9eaef78a7674bca',1,'roblab::common_lib::TrapezoidControl']]],
-  ['v_5fmax_5f2_5f_1',['v_max_2_',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#a02124c05497cdf4e459bd9c2ae5f3cad',1,'roblab::common_lib::TrapezoidControl']]],
-  ['velocity_5fprev_5f_2',['velocity_prev_',['../classroblab_1_1common__lib_1_1_dob.html#a85ff8d5ccaae8dd1ecb3b3b5b9fa51e1',1,'roblab::common_lib::Dob']]]
+  ['p_5foutput_5f_0',['p_output_',['../classroblab_1_1common__lib_1_1_pid.html#a89793011e41da7c2881fe84968d04222',1,'roblab::common_lib::Pid']]],
+  ['pastval_5fnum_1',['pastval_num',['../classroblab_1_1common__lib_1_1_moving_ave.html#a7f91a17b76ed28f3482c057221a5f42b',1,'roblab::common_lib::MovingAve']]],
+  ['period_2',['period',['../class_fast_p_w_m.html#a2804546ff59901eddc5438934caea57e',1,'FastPWM']]],
+  ['period_5fms_3',['period_ms',['../class_fast_p_w_m.html#ad56bb7a50f49033be4a4820b008fdce6',1,'FastPWM']]],
+  ['period_5fsecond_5f_4',['period_second_',['../classroblab_1_1mbed__lib_1_1_dc_motor.html#a40d14fd461698dcea3560ad1f327494e',1,'roblab::mbed_lib::DcMotor']]],
+  ['period_5fticks_5',['period_ticks',['../class_fast_p_w_m.html#a3585a8c67fec4533b469753bdf7818c2',1,'FastPWM']]],
+  ['period_5fus_6',['period_us',['../class_fast_p_w_m.html#a18087a37eef2f41f800915e6057ee5f5',1,'FastPWM::period_us(int us)'],['../class_fast_p_w_m.html#ab8d39bebd1993e639dd447df29c29b05',1,'FastPWM::period_us(double us)']]],
+  ['pid_7',['Pid',['../classroblab_1_1common__lib_1_1_pid.html#a45889457621d6ede4f07dfb3ff2fc14c',1,'roblab::common_lib::Pid::Pid()'],['../classroblab_1_1common__lib_1_1_pid.html#afd508d225280137412c957a86726e236',1,'roblab::common_lib::Pid::Pid(float ctrl_period_sec)'],['../classroblab_1_1common__lib_1_1_pid.html',1,'roblab::common_lib::Pid']]],
+  ['pid_2ehpp_8',['pid.hpp',['../pid_8hpp.html',1,'']]],
+  ['pid_5foutput_5f_9',['pid_output_',['../classroblab_1_1common__lib_1_1_dob.html#a07765b275953d83d5c70f48be172cd45',1,'roblab::common_lib::Dob']]],
+  ['prescaler_10',['prescaler',['../class_fast_p_w_m.html#a99543f7def9f04b7c39753cef94d5b8c',1,'FastPWM']]],
+  ['prev_5fmask_11',['PREV_MASK',['../rotary__encoder_8hpp.html#aaeaf27d6e72d4cd547d4345c832244cd',1,'rotary_encoder.hpp']]],
+  ['prev_5fstate_5f_12',['prev_state_',['../classroblab_1_1mbed__lib_1_1_rotary_encoder.html#a0145a1bb24a7b1deb74a9211ed01ba33',1,'roblab::mbed_lib::RotaryEncoder']]],
+  ['pulse_5f_13',['pulse_',['../classroblab_1_1mbed__lib_1_1_stepping_motor.html#a84abb2cbde2a620a3a8eda55f22da859',1,'roblab::mbed_lib::SteppingMotor']]],
+  ['pulse_5fper_5fnum_5f_14',['pulse_per_num_',['../classroblab_1_1mbed__lib_1_1_stepping_motor.html#ae93af7cba0f555762e2a7e6dd1a20a4d',1,'roblab::mbed_lib::SteppingMotor']]],
+  ['pulses_5f_15',['pulses_',['../classroblab_1_1mbed__lib_1_1_rotary_encoder.html#a73db0f12815d548e6bb2d318965f9174',1,'roblab::mbed_lib::RotaryEncoder']]],
+  ['pulses_5fper_5frev_5f_16',['pulses_per_rev_',['../classroblab_1_1mbed__lib_1_1_rotary_encoder.html#a77b279a25601590f61a761586923da89',1,'roblab::mbed_lib::RotaryEncoder']]],
+  ['pulsewidth_17',['pulsewidth',['../class_fast_p_w_m.html#a614d51fec06d218b64b7d09d19748c79',1,'FastPWM']]],
+  ['pulsewidth_5fms_18',['pulsewidth_ms',['../class_fast_p_w_m.html#a41c0b5cd951102438d87e129bc988f92',1,'FastPWM']]],
+  ['pulsewidth_5fticks_19',['pulsewidth_ticks',['../class_fast_p_w_m.html#ac753aaa8fb932397572ac7e456405668',1,'FastPWM']]],
+  ['pulsewidth_5fus_20',['pulsewidth_us',['../class_fast_p_w_m.html#a5c85590a9059b372000e41916552cc42',1,'FastPWM::pulsewidth_us(int us)'],['../class_fast_p_w_m.html#afaa593e9a9cf4889562c98d0b82fb6fa',1,'FastPWM::pulsewidth_us(double us)']]],
+  ['pwm_5f_21',['pwm_',['../classroblab_1_1mbed__lib_1_1_dc_motor.html#a47e3b025ec8aa876dc96d3c3c84a8598',1,'roblab::mbed_lib::DcMotor']]]
 ];

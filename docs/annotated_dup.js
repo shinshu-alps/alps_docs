@@ -9,6 +9,14 @@ var annotated_dup =
         [ "MovingAve", "classroblab_1_1common__lib_1_1_moving_ave.html", "classroblab_1_1common__lib_1_1_moving_ave" ],
         [ "Pid", "classroblab_1_1common__lib_1_1_pid.html", "classroblab_1_1common__lib_1_1_pid" ],
         [ "TrapezoidControl", "classroblab_1_1common__lib_1_1_trapezoid_control.html", "classroblab_1_1common__lib_1_1_trapezoid_control" ]
+      ] ],
+      [ "mbed_lib", "namespaceroblab_1_1mbed__lib.html", [
+        [ "DcMotor", "classroblab_1_1mbed__lib_1_1_dc_motor.html", "classroblab_1_1mbed__lib_1_1_dc_motor" ],
+        [ "RotaryEncoder", "classroblab_1_1mbed__lib_1_1_rotary_encoder.html", "classroblab_1_1mbed__lib_1_1_rotary_encoder" ],
+        [ "ServoMotor180", "classroblab_1_1mbed__lib_1_1_servo_motor180.html", "classroblab_1_1mbed__lib_1_1_servo_motor180" ],
+        [ "ServoMotor270", "classroblab_1_1mbed__lib_1_1_servo_motor270.html", "classroblab_1_1mbed__lib_1_1_servo_motor270" ],
+        [ "SteppingMotor", "classroblab_1_1mbed__lib_1_1_stepping_motor.html", "classroblab_1_1mbed__lib_1_1_stepping_motor" ]
       ] ]
-    ] ]
+    ] ],
+    [ "FastPWM", "class_fast_p_w_m.html", "class_fast_p_w_m" ]
 ];

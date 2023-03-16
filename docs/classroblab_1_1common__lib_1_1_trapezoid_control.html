@@ -148,228 +148,228 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 <tr class="memitem:ac2c1d616ba056d4a65fd999d4c7830a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ac2c1d616ba056d4a65fd999d4c7830a9">TrapezoidControl</a> ()</td></tr>
 <tr class="memdesc:ac2c1d616ba056d4a65fd999d4c7830a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトコンストラクタ.各変数の初期化は行わない  <br /></td></tr>
 <tr class="separator:ac2c1d616ba056d4a65fd999d4c7830a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8514fa89e084bae2a3ea44723fc91534"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a8514fa89e084bae2a3ea44723fc91534">TrapezoidControl</a> (float target, float v_max, float acceleration_time, float deceleration_time)</td></tr>
-<tr class="memdesc:a8514fa89e084bae2a3ea44723fc91534"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標値、速さの最大値、加速時間、減速時間を設定し，速さが安定している時間を求める メンバ変数を初期化，PIDの制御周期のセットをする関数．  <br /></td></tr>
-<tr class="separator:a8514fa89e084bae2a3ea44723fc91534"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4297699f1badd6046ab16d3aad54eef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ad4297699f1badd6046ab16d3aad54eef">StartTimer</a> ()</td></tr>
-<tr class="memdesc:ad4297699f1badd6046ab16d3aad54eef"><td class="mdescLeft">&#160;</td><td class="mdescRight">タイマーを始める関数  <br /></td></tr>
-<tr class="separator:ad4297699f1badd6046ab16d3aad54eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dca8cc5e69c065c667c6240aa7a64cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a9dca8cc5e69c065c667c6240aa7a64cf">set</a> (float target, float v_max, float acceleration_time, float deceleration_time)</td></tr>
-<tr class="memdesc:a9dca8cc5e69c065c667c6240aa7a64cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標値、速さの最大値、加速時間、減速時間を設定し，速さが安定している時間を求める メンバ変数を初期化，関数．  <br /></td></tr>
-<tr class="separator:a9dca8cc5e69c065c667c6240aa7a64cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abee771698e0ded8fc87e24dd10c1637d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#abee771698e0ded8fc87e24dd10c1637d">setCtrlPeriodSec</a> (float ctrl_period_sec)</td></tr>
-<tr class="memdesc:abee771698e0ded8fc87e24dd10c1637d"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御周期を設定．未設定なら0.05[s]  <br /></td></tr>
-<tr class="separator:abee771698e0ded8fc87e24dd10c1637d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a292ce49ff13a48d6af1259b649cd7239"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a292ce49ff13a48d6af1259b649cd7239">setTarget</a> (float target)</td></tr>
-<tr class="memdesc:a292ce49ff13a48d6af1259b649cd7239"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標値を設定し，速さが安定している時間を求めるメンバ変数を初期化する関数．  <br /></td></tr>
-<tr class="separator:a292ce49ff13a48d6af1259b649cd7239"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a124832d6fb5e3070acf80b1c42532e36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a124832d6fb5e3070acf80b1c42532e36">setV_max</a> (float v_max)</td></tr>
-<tr class="memdesc:a124832d6fb5e3070acf80b1c42532e36"><td class="mdescLeft">&#160;</td><td class="mdescRight">速さの最大値を設定し，速さが安定している時間を求めるメンバ変数を初期化する関数．  <br /></td></tr>
-<tr class="separator:a124832d6fb5e3070acf80b1c42532e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac4b31fdaa0aa85c83f0daa2119d5234"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#aac4b31fdaa0aa85c83f0daa2119d5234">getFinishTime</a> ()</td></tr>
-<tr class="memdesc:aac4b31fdaa0aa85c83f0daa2119d5234"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了時間を返す関数．  <br /></td></tr>
-<tr class="separator:aac4b31fdaa0aa85c83f0daa2119d5234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af02eb905fde30b35d056497e3978d0e9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#af02eb905fde30b35d056497e3978d0e9">getTimer</a> ()</td></tr>
-<tr class="memdesc:af02eb905fde30b35d056497e3978d0e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">タイマーの値を返す関数．  <br /></td></tr>
-<tr class="separator:af02eb905fde30b35d056497e3978d0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acae0b9508ad89e13075c16d25e4acfff"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#acae0b9508ad89e13075c16d25e4acfff">getFilterValue</a> ()</td></tr>
-<tr class="memdesc:acae0b9508ad89e13075c16d25e4acfff"><td class="mdescLeft">&#160;</td><td class="mdescRight">台形制御のフィルタを返す関数．注意：control関数を起動させないと使えない  <br /></td></tr>
-<tr class="separator:acae0b9508ad89e13075c16d25e4acfff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe6d494275292566743c1cc39c561577"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#afe6d494275292566743c1cc39c561577">CheckEnd</a> ()</td></tr>
-<tr class="memdesc:afe6d494275292566743c1cc39c561577"><td class="mdescLeft">&#160;</td><td class="mdescRight">台形制御完了判定を確認する関数．  <br /></td></tr>
-<tr class="separator:afe6d494275292566743c1cc39c561577"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaa4e26419b9a2ae5b9cdfcad1e74ec8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#aaaa4e26419b9a2ae5b9cdfcad1e74ec8">Reset</a> ()</td></tr>
-<tr class="memdesc:aaaa4e26419b9a2ae5b9cdfcad1e74ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">メンバ変数を初期化する関数．  <br /></td></tr>
-<tr class="separator:aaaa4e26419b9a2ae5b9cdfcad1e74ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbe65f2e9c0a52e5f03b972d41ab37e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#afbe65f2e9c0a52e5f03b972d41ab37e6">TrapezoidControl</a> (float target, float v_max, float acceleration_time, float deceleration_time)</td></tr>
+<tr class="memdesc:afbe65f2e9c0a52e5f03b972d41ab37e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標値、速さの最大値、加速時間、減速時間を設定し，速さが安定している時間を求める メンバ変数を初期化，PIDの制御周期のセットをする関数．  <br /></td></tr>
+<tr class="separator:afbe65f2e9c0a52e5f03b972d41ab37e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a610e0edfdbf5643f0937d9e5b75ce11f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a610e0edfdbf5643f0937d9e5b75ce11f">StartTimer</a> ()</td></tr>
+<tr class="memdesc:a610e0edfdbf5643f0937d9e5b75ce11f"><td class="mdescLeft">&#160;</td><td class="mdescRight">タイマーを始める関数  <br /></td></tr>
+<tr class="separator:a610e0edfdbf5643f0937d9e5b75ce11f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae23200948beb590172f350410929b710"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ae23200948beb590172f350410929b710">set</a> (float target, float v_max, float acceleration_time, float deceleration_time)</td></tr>
+<tr class="memdesc:ae23200948beb590172f350410929b710"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標値、速さの最大値、加速時間、減速時間を設定し，速さが安定している時間を求める メンバ変数を初期化，関数．  <br /></td></tr>
+<tr class="separator:ae23200948beb590172f350410929b710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a791edbc482011b0b5b193ff084719592"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a791edbc482011b0b5b193ff084719592">setCtrlPeriodSec</a> (float ctrl_period_sec)</td></tr>
+<tr class="memdesc:a791edbc482011b0b5b193ff084719592"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御周期を設定．未設定なら0.05[s]  <br /></td></tr>
+<tr class="separator:a791edbc482011b0b5b193ff084719592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab71b70b79e66b211563fd596b608b4e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ab71b70b79e66b211563fd596b608b4e4">setTarget</a> (float target)</td></tr>
+<tr class="memdesc:ab71b70b79e66b211563fd596b608b4e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標値を設定し，速さが安定している時間を求めるメンバ変数を初期化する関数．  <br /></td></tr>
+<tr class="separator:ab71b70b79e66b211563fd596b608b4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c48280a68ffb7a472a5fdda9b9802c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a6c48280a68ffb7a472a5fdda9b9802c6">setV_max</a> (float v_max)</td></tr>
+<tr class="memdesc:a6c48280a68ffb7a472a5fdda9b9802c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">速さの最大値を設定し，速さが安定している時間を求めるメンバ変数を初期化する関数．  <br /></td></tr>
+<tr class="separator:a6c48280a68ffb7a472a5fdda9b9802c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add58d3fa11045cd2d72d139abb0a7a95"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#add58d3fa11045cd2d72d139abb0a7a95">getFinishTime</a> ()</td></tr>
+<tr class="memdesc:add58d3fa11045cd2d72d139abb0a7a95"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了時間を返す関数．  <br /></td></tr>
+<tr class="separator:add58d3fa11045cd2d72d139abb0a7a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa126ee403037ed870a37f1467487f1a2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#aa126ee403037ed870a37f1467487f1a2">getTimer</a> ()</td></tr>
+<tr class="memdesc:aa126ee403037ed870a37f1467487f1a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">タイマーの値を返す関数．  <br /></td></tr>
+<tr class="separator:aa126ee403037ed870a37f1467487f1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79eef391a84ae6d7ed16a0827ec7500a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a79eef391a84ae6d7ed16a0827ec7500a">getFilterValue</a> ()</td></tr>
+<tr class="memdesc:a79eef391a84ae6d7ed16a0827ec7500a"><td class="mdescLeft">&#160;</td><td class="mdescRight">台形制御のフィルタを返す関数．注意：control関数を起動させないと使えない  <br /></td></tr>
+<tr class="separator:a79eef391a84ae6d7ed16a0827ec7500a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab747daf797d9254839b17b82cf7468bb"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ab747daf797d9254839b17b82cf7468bb">CheckEnd</a> ()</td></tr>
+<tr class="memdesc:ab747daf797d9254839b17b82cf7468bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">台形制御完了判定を確認する関数．  <br /></td></tr>
+<tr class="separator:ab747daf797d9254839b17b82cf7468bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4248cbbd60d33f04694770bac7f1b94b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a4248cbbd60d33f04694770bac7f1b94b">Reset</a> ()</td></tr>
+<tr class="memdesc:a4248cbbd60d33f04694770bac7f1b94b"><td class="mdescLeft">&#160;</td><td class="mdescRight">メンバ変数を初期化する関数．  <br /></td></tr>
+<tr class="separator:a4248cbbd60d33f04694770bac7f1b94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa26a5f15de31d19cb3b2bcfacfc8551f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#aa26a5f15de31d19cb3b2bcfacfc8551f">ResetForVelocity</a> ()</td></tr>
 <tr class="memdesc:aa26a5f15de31d19cb3b2bcfacfc8551f"><td class="mdescLeft">&#160;</td><td class="mdescRight">積分器のリセット  <br /></td></tr>
 <tr class="separator:aa26a5f15de31d19cb3b2bcfacfc8551f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a944b20a2517a529bc4156412074233a2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a944b20a2517a529bc4156412074233a2">Filter</a> ()</td></tr>
-<tr class="memdesc:a944b20a2517a529bc4156412074233a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">台形制御をする関数．  <br /></td></tr>
-<tr class="separator:a944b20a2517a529bc4156412074233a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa29513e31ae44fe41036289dc801c805"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#aa29513e31ae44fe41036289dc801c805">FilterAcc2</a> (float acceleration_time_2, float acceleration_time, float v_max_2)</td></tr>
-<tr class="memdesc:aa29513e31ae44fe41036289dc801c805"><td class="mdescLeft">&#160;</td><td class="mdescRight">台形制御をする関数．  <br /></td></tr>
-<tr class="separator:aa29513e31ae44fe41036289dc801c805"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ad7e6e53ee593e59f93ee4773393b45"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a6ad7e6e53ee593e59f93ee4773393b45">FilterS</a> ()</td></tr>
-<tr class="memdesc:a6ad7e6e53ee593e59f93ee4773393b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">S字制御をする関数．  <br /></td></tr>
-<tr class="separator:a6ad7e6e53ee593e59f93ee4773393b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46c61fcb037803921db0e27c221b9c41"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a46c61fcb037803921db0e27c221b9c41">Control</a> (float input)</td></tr>
-<tr class="memdesc:a46c61fcb037803921db0e27c221b9c41"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御を行う関数．  <br /></td></tr>
-<tr class="separator:a46c61fcb037803921db0e27c221b9c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a139941d5a9dc37c88b90d4097b98a0f9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a139941d5a9dc37c88b90d4097b98a0f9">ControlDob</a> (float input)</td></tr>
-<tr class="memdesc:a139941d5a9dc37c88b90d4097b98a0f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御+外乱オブザーバーを行う関数．  <br /></td></tr>
-<tr class="separator:a139941d5a9dc37c88b90d4097b98a0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3421def10f33c524126702c0b25d3d7b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a3421def10f33c524126702c0b25d3d7b">ControlCorrect</a> (float input, float correction_value)</td></tr>
-<tr class="memdesc:a3421def10f33c524126702c0b25d3d7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御+補正を行う関数．  <br /></td></tr>
-<tr class="separator:a3421def10f33c524126702c0b25d3d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf6ca6263489f8342f19a5262761c651"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#aaf6ca6263489f8342f19a5262761c651">ControlDobCorrect</a> (float input, float correction_value)</td></tr>
-<tr class="memdesc:aaf6ca6263489f8342f19a5262761c651"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御+外乱オブザーバー+補正を行う関数．  <br /></td></tr>
-<tr class="separator:aaf6ca6263489f8342f19a5262761c651"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acee3c21eba762bb0de805ee1e6e5fa60"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#acee3c21eba762bb0de805ee1e6e5fa60">ControlAcc2</a> (float input, float acceleration_time_2, float acceleration_time, float v_max_2)</td></tr>
-<tr class="memdesc:acee3c21eba762bb0de805ee1e6e5fa60"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御を行う関数．2段階加速型の台形制御  <br /></td></tr>
-<tr class="separator:acee3c21eba762bb0de805ee1e6e5fa60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83c65dd147adae12ab6236a4083c210f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a83c65dd147adae12ab6236a4083c210f">ControlDobAcc2</a> (float input, float acceleration_time_2, float acceleration_time, float v_max_2)</td></tr>
-<tr class="memdesc:a83c65dd147adae12ab6236a4083c210f"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御+外乱オブザーバーを行う関数．2段階加速型の台形制御  <br /></td></tr>
-<tr class="separator:a83c65dd147adae12ab6236a4083c210f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a710197dcaafbde0e28ced7c41858841f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a710197dcaafbde0e28ced7c41858841f">ControlS</a> (float input)</td></tr>
-<tr class="memdesc:a710197dcaafbde0e28ced7c41858841f"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御を行う関数．ただし目標値は台形ではなく，s字を描いている  <br /></td></tr>
-<tr class="separator:a710197dcaafbde0e28ced7c41858841f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad08a7a043bd3701c6df7edea8d481658"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ad08a7a043bd3701c6df7edea8d481658">ControlDobS</a> (float input)</td></tr>
-<tr class="memdesc:ad08a7a043bd3701c6df7edea8d481658"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御+外乱オブザーバーを行う関数．ただし目標値は台形ではなく，s字を描いている  <br /></td></tr>
-<tr class="separator:ad08a7a043bd3701c6df7edea8d481658"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a775644f5190702902461be1eba439aa5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a775644f5190702902461be1eba439aa5">ControlSCorrect</a> (float input, float correction_value)</td></tr>
-<tr class="memdesc:a775644f5190702902461be1eba439aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御+補正を行う関数．ただし目標値は台形ではなく，s字を描いている  <br /></td></tr>
-<tr class="separator:a775644f5190702902461be1eba439aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec1142cc482a66a0dc622fe4e20c15ef"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#aec1142cc482a66a0dc622fe4e20c15ef">ControlDobSCorrect</a> (float input, float correction_value)</td></tr>
-<tr class="memdesc:aec1142cc482a66a0dc622fe4e20c15ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御+外乱オブザーバー+補正を行う関数．ただし目標値は台形ではなく，s字を描いている  <br /></td></tr>
-<tr class="separator:aec1142cc482a66a0dc622fe4e20c15ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fca4f4d0bcd0d2220bb6f76eeea6640"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a6fca4f4d0bcd0d2220bb6f76eeea6640">Filter</a> ()</td></tr>
+<tr class="memdesc:a6fca4f4d0bcd0d2220bb6f76eeea6640"><td class="mdescLeft">&#160;</td><td class="mdescRight">台形制御をする関数．  <br /></td></tr>
+<tr class="separator:a6fca4f4d0bcd0d2220bb6f76eeea6640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad66e36adfffc66f8d24a4b051fafb720"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ad66e36adfffc66f8d24a4b051fafb720">FilterAcc2</a> (float acceleration_time_2, float acceleration_time, float v_max_2)</td></tr>
+<tr class="memdesc:ad66e36adfffc66f8d24a4b051fafb720"><td class="mdescLeft">&#160;</td><td class="mdescRight">台形制御をする関数．  <br /></td></tr>
+<tr class="separator:ad66e36adfffc66f8d24a4b051fafb720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a1666177e898e60356b9727fe83dfe9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a8a1666177e898e60356b9727fe83dfe9">FilterS</a> ()</td></tr>
+<tr class="memdesc:a8a1666177e898e60356b9727fe83dfe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">S字制御をする関数．  <br /></td></tr>
+<tr class="separator:a8a1666177e898e60356b9727fe83dfe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a19a4611e99238f575a701b196985eb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a2a19a4611e99238f575a701b196985eb">Control</a> (float input)</td></tr>
+<tr class="memdesc:a2a19a4611e99238f575a701b196985eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御を行う関数．  <br /></td></tr>
+<tr class="separator:a2a19a4611e99238f575a701b196985eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfc6044032b2e2e251bc0b1fb6f36fec"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#acfc6044032b2e2e251bc0b1fb6f36fec">ControlDob</a> (float input)</td></tr>
+<tr class="memdesc:acfc6044032b2e2e251bc0b1fb6f36fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御+外乱オブザーバーを行う関数．  <br /></td></tr>
+<tr class="separator:acfc6044032b2e2e251bc0b1fb6f36fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2df1a575116e5ef1d65e1f60fa4ce2a4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a2df1a575116e5ef1d65e1f60fa4ce2a4">ControlCorrect</a> (float input, float correction_value)</td></tr>
+<tr class="memdesc:a2df1a575116e5ef1d65e1f60fa4ce2a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御+補正を行う関数．  <br /></td></tr>
+<tr class="separator:a2df1a575116e5ef1d65e1f60fa4ce2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1caf1293244319d2ed7fdf78939e120"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#ae1caf1293244319d2ed7fdf78939e120">ControlDobCorrect</a> (float input, float correction_value)</td></tr>
+<tr class="memdesc:ae1caf1293244319d2ed7fdf78939e120"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御+外乱オブザーバー+補正を行う関数．  <br /></td></tr>
+<tr class="separator:ae1caf1293244319d2ed7fdf78939e120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a151a440e71de7fa83ac3f14a0b48b702"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a151a440e71de7fa83ac3f14a0b48b702">ControlAcc2</a> (float input, float acceleration_time_2, float acceleration_time, float v_max_2)</td></tr>
+<tr class="memdesc:a151a440e71de7fa83ac3f14a0b48b702"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御を行う関数．2段階加速型の台形制御  <br /></td></tr>
+<tr class="separator:a151a440e71de7fa83ac3f14a0b48b702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a603ddfbbeac8110594c9b75bc734d02d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a603ddfbbeac8110594c9b75bc734d02d">ControlDobAcc2</a> (float input, float acceleration_time_2, float acceleration_time, float v_max_2)</td></tr>
+<tr class="memdesc:a603ddfbbeac8110594c9b75bc734d02d"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御+外乱オブザーバーを行う関数．2段階加速型の台形制御  <br /></td></tr>
+<tr class="separator:a603ddfbbeac8110594c9b75bc734d02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c5e01e41d8ef033925012db2dcf3bc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a68c5e01e41d8ef033925012db2dcf3bc">ControlS</a> (float input)</td></tr>
+<tr class="memdesc:a68c5e01e41d8ef033925012db2dcf3bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御を行う関数．ただし目標値は台形ではなく，s字を描いている  <br /></td></tr>
+<tr class="separator:a68c5e01e41d8ef033925012db2dcf3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74094d064dc85d24b3f4499889542124"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a74094d064dc85d24b3f4499889542124">ControlDobS</a> (float input)</td></tr>
+<tr class="memdesc:a74094d064dc85d24b3f4499889542124"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御+外乱オブザーバーを行う関数．ただし目標値は台形ではなく，s字を描いている  <br /></td></tr>
+<tr class="separator:a74094d064dc85d24b3f4499889542124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38b0f64800540466caa8a41febc35792"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a38b0f64800540466caa8a41febc35792">ControlSCorrect</a> (float input, float correction_value)</td></tr>
+<tr class="memdesc:a38b0f64800540466caa8a41febc35792"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御+補正を行う関数．ただし目標値は台形ではなく，s字を描いている  <br /></td></tr>
+<tr class="separator:a38b0f64800540466caa8a41febc35792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a037230f9b158a0e53a1ba50473065bc5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_trapezoid_control.html#a037230f9b158a0e53a1ba50473065bc5">ControlDobSCorrect</a> (float input, float correction_value)</td></tr>
+<tr class="memdesc:a037230f9b158a0e53a1ba50473065bc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御+外乱オブザーバー+補正を行う関数．ただし目標値は台形ではなく，s字を描いている  <br /></td></tr>
+<tr class="separator:a037230f9b158a0e53a1ba50473065bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classroblab_1_1common__lib_1_1_dob"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classroblab_1_1common__lib_1_1_dob')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classroblab_1_1common__lib_1_1_dob.html">roblab::common_lib::Dob</a> に属する継承公開メンバ関数</td></tr>
 <tr class="memitem:a40349d319873d09f020cf764e0f47ed0 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#a40349d319873d09f020cf764e0f47ed0">Dob</a> ()</td></tr>
 <tr class="memdesc:a40349d319873d09f020cf764e0f47ed0 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトコンストラクタ.各変数の初期化は行わない  <br /></td></tr>
 <tr class="separator:a40349d319873d09f020cf764e0f47ed0 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22dc56224cfcdf0d719d752066110bc3 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#a22dc56224cfcdf0d719d752066110bc3">Dob</a> (float sys_gain, float sys_t_const_sec, float ctrl_period_sec, float lpf_t_const_sec)</td></tr>
-<tr class="memdesc:a22dc56224cfcdf0d719d752066110bc3 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">システムのゲインと時定数、制御周期、ローパスフィルターの時定数を設定し、 係数を求めるメンバ変数を初期化するコンストラクタ．  <br /></td></tr>
-<tr class="separator:a22dc56224cfcdf0d719d752066110bc3 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a51f1e48b14a2a1cb1702eb9d81588d inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#a6a51f1e48b14a2a1cb1702eb9d81588d">set</a> (float sys_gain, float sys_t_const_sec, float ctrl_period_sec, float lpf_t_const_sec)</td></tr>
-<tr class="memdesc:a6a51f1e48b14a2a1cb1702eb9d81588d inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">システムのゲインと時定数、制御周期、ローパスフィルターの時定数を設定し、 係数を求めるメンバ変数を初期化する関数．  <br /></td></tr>
-<tr class="separator:a6a51f1e48b14a2a1cb1702eb9d81588d inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0812623faffb3fbbce1eac4763ef9e6e inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#a0812623faffb3fbbce1eac4763ef9e6e">getCoeff_a_</a> ()</td></tr>
-<tr class="memdesc:a0812623faffb3fbbce1eac4763ef9e6e inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">係数aを返す関数．  <br /></td></tr>
-<tr class="separator:a0812623faffb3fbbce1eac4763ef9e6e inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34ff79a738231e0cd69935a49a2e10d8 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#a34ff79a738231e0cd69935a49a2e10d8">getCoeff_b_</a> ()</td></tr>
-<tr class="memdesc:a34ff79a738231e0cd69935a49a2e10d8 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">係数bを返す関数．  <br /></td></tr>
-<tr class="separator:a34ff79a738231e0cd69935a49a2e10d8 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e8aec2db45f5b5b5e35265c7a4c489a inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#a2e8aec2db45f5b5b5e35265c7a4c489a">getCoeff_c_</a> ()</td></tr>
-<tr class="memdesc:a2e8aec2db45f5b5b5e35265c7a4c489a inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">係数cを返す関数．  <br /></td></tr>
-<tr class="separator:a2e8aec2db45f5b5b5e35265c7a4c489a inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b48c834de4e79960492cad7b5b26608 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#a2b48c834de4e79960492cad7b5b26608">getPidOutput_</a> ()</td></tr>
-<tr class="memdesc:a2b48c834de4e79960492cad7b5b26608 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID制御の出力値を返す関数．  <br /></td></tr>
-<tr class="separator:a2b48c834de4e79960492cad7b5b26608 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a328db37b700da2c01c668772667f6a32 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#a328db37b700da2c01c668772667f6a32">getLpfOutput_</a> ()</td></tr>
-<tr class="memdesc:a328db37b700da2c01c668772667f6a32 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">lpfの出力値を返す関数．  <br /></td></tr>
-<tr class="separator:a328db37b700da2c01c668772667f6a32 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7eb590fcf9b6a59a25e4daa4c16393ca inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#a7eb590fcf9b6a59a25e4daa4c16393ca">getDobOutput_</a> ()</td></tr>
-<tr class="memdesc:a7eb590fcf9b6a59a25e4daa4c16393ca inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">外乱オブザーバーの出力値を返す関数．  <br /></td></tr>
-<tr class="separator:a7eb590fcf9b6a59a25e4daa4c16393ca inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaed3db699197ed18d709abd7eec0ead inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#aeaed3db699197ed18d709abd7eec0ead">getEstimatedDisturbance_</a> ()</td></tr>
-<tr class="memdesc:aeaed3db699197ed18d709abd7eec0ead inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">推定外乱に対して働くdutty比を返す関数．  <br /></td></tr>
-<tr class="separator:aeaed3db699197ed18d709abd7eec0ead inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a200377d7c2a05cce40cacd37d556d928 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#a200377d7c2a05cce40cacd37d556d928">setLimitOutput</a> (float limit_output)</td></tr>
-<tr class="memdesc:a200377d7c2a05cce40cacd37d556d928 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">外乱オブザーバーの出力値の上限を変更する関数．  <br /></td></tr>
-<tr class="separator:a200377d7c2a05cce40cacd37d556d928 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1e64b2f53214ba2d8a6fad6fc78c39d inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#ab1e64b2f53214ba2d8a6fad6fc78c39d">Reset</a> ()</td></tr>
-<tr class="memdesc:ab1e64b2f53214ba2d8a6fad6fc78c39d inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">メンバ変数を初期化する関数．  <br /></td></tr>
-<tr class="separator:ab1e64b2f53214ba2d8a6fad6fc78c39d inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a116f4286c835e821608015c31dce0fe4 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#a116f4286c835e821608015c31dce0fe4">Filter</a> (float velocity)</td></tr>
-<tr class="memdesc:a116f4286c835e821608015c31dce0fe4 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">逆モデルの入力を返す関数．  <br /></td></tr>
-<tr class="separator:a116f4286c835e821608015c31dce0fe4 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d854963052e147af0362543cc0bb6ab inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#a6d854963052e147af0362543cc0bb6ab">Control</a> (float velocity)</td></tr>
-<tr class="memdesc:a6d854963052e147af0362543cc0bb6ab inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">モーターのdutty比を返してくれる関数  <br /></td></tr>
-<tr class="separator:a6d854963052e147af0362543cc0bb6ab inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae26a394f67adabbe523cdb225d0e5bfd inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#ae26a394f67adabbe523cdb225d0e5bfd">Dob</a> (float sys_gain, float sys_t_const_sec, float ctrl_period_sec, float lpf_t_const_sec)</td></tr>
+<tr class="memdesc:ae26a394f67adabbe523cdb225d0e5bfd inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">システムのゲインと時定数、制御周期、ローパスフィルターの時定数を設定し、 係数を求めるメンバ変数を初期化するコンストラクタ．  <br /></td></tr>
+<tr class="separator:ae26a394f67adabbe523cdb225d0e5bfd inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c6ab4ecf61c60498542d8021f99e649 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#a4c6ab4ecf61c60498542d8021f99e649">set</a> (float sys_gain, float sys_t_const_sec, float ctrl_period_sec, float lpf_t_const_sec)</td></tr>
+<tr class="memdesc:a4c6ab4ecf61c60498542d8021f99e649 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">システムのゲインと時定数、制御周期、ローパスフィルターの時定数を設定し、 係数を求めるメンバ変数を初期化する関数．  <br /></td></tr>
+<tr class="separator:a4c6ab4ecf61c60498542d8021f99e649 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8054ba40540057fbf2f58829c5238d0 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#ac8054ba40540057fbf2f58829c5238d0">getCoeff_a_</a> ()</td></tr>
+<tr class="memdesc:ac8054ba40540057fbf2f58829c5238d0 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">係数aを返す関数．  <br /></td></tr>
+<tr class="separator:ac8054ba40540057fbf2f58829c5238d0 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c74f02f6877994966b732a904054867 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#a6c74f02f6877994966b732a904054867">getCoeff_b_</a> ()</td></tr>
+<tr class="memdesc:a6c74f02f6877994966b732a904054867 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">係数bを返す関数．  <br /></td></tr>
+<tr class="separator:a6c74f02f6877994966b732a904054867 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8020b0e7b15ba9016ddeb3a8db9cea61 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#a8020b0e7b15ba9016ddeb3a8db9cea61">getCoeff_c_</a> ()</td></tr>
+<tr class="memdesc:a8020b0e7b15ba9016ddeb3a8db9cea61 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">係数cを返す関数．  <br /></td></tr>
+<tr class="separator:a8020b0e7b15ba9016ddeb3a8db9cea61 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1cb502b8dc784218c544c73b3dbf285 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#ac1cb502b8dc784218c544c73b3dbf285">getPidOutput_</a> ()</td></tr>
+<tr class="memdesc:ac1cb502b8dc784218c544c73b3dbf285 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID制御の出力値を返す関数．  <br /></td></tr>
+<tr class="separator:ac1cb502b8dc784218c544c73b3dbf285 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f50e1944afb7364d85f4bac0291e48 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#ab0f50e1944afb7364d85f4bac0291e48">getLpfOutput_</a> ()</td></tr>
+<tr class="memdesc:ab0f50e1944afb7364d85f4bac0291e48 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">lpfの出力値を返す関数．  <br /></td></tr>
+<tr class="separator:ab0f50e1944afb7364d85f4bac0291e48 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4635729a745a74e0d6bf5019f78adb5 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#ae4635729a745a74e0d6bf5019f78adb5">getDobOutput_</a> ()</td></tr>
+<tr class="memdesc:ae4635729a745a74e0d6bf5019f78adb5 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">外乱オブザーバーの出力値を返す関数．  <br /></td></tr>
+<tr class="separator:ae4635729a745a74e0d6bf5019f78adb5 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5329682ca8697760eb77442c3260744 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#ab5329682ca8697760eb77442c3260744">getEstimatedDisturbance_</a> ()</td></tr>
+<tr class="memdesc:ab5329682ca8697760eb77442c3260744 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">推定外乱に対して働くdutty比を返す関数．  <br /></td></tr>
+<tr class="separator:ab5329682ca8697760eb77442c3260744 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae8366d690e7a95f9c563953c31ad5cf inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#aae8366d690e7a95f9c563953c31ad5cf">setLimitOutput</a> (float limit_output)</td></tr>
+<tr class="memdesc:aae8366d690e7a95f9c563953c31ad5cf inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">外乱オブザーバーの出力値の上限を変更する関数．  <br /></td></tr>
+<tr class="separator:aae8366d690e7a95f9c563953c31ad5cf inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646999c662ffb1e038f359e4dc809f04 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#a646999c662ffb1e038f359e4dc809f04">Reset</a> ()</td></tr>
+<tr class="memdesc:a646999c662ffb1e038f359e4dc809f04 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">メンバ変数を初期化する関数．  <br /></td></tr>
+<tr class="separator:a646999c662ffb1e038f359e4dc809f04 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90efe23e2f63363a5ddfb6f2266d3e55 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#a90efe23e2f63363a5ddfb6f2266d3e55">Filter</a> (float velocity)</td></tr>
+<tr class="memdesc:a90efe23e2f63363a5ddfb6f2266d3e55 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">逆モデルの入力を返す関数．  <br /></td></tr>
+<tr class="separator:a90efe23e2f63363a5ddfb6f2266d3e55 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a418fe552b71659f1aedbfe586f54abf5 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_dob.html#a418fe552b71659f1aedbfe586f54abf5">Control</a> (float velocity)</td></tr>
+<tr class="memdesc:a418fe552b71659f1aedbfe586f54abf5 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="mdescLeft">&#160;</td><td class="mdescRight">モーターのdutty比を返してくれる関数  <br /></td></tr>
+<tr class="separator:a418fe552b71659f1aedbfe586f54abf5 inherit pub_methods_classroblab_1_1common__lib_1_1_dob"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classroblab_1_1common__lib_1_1_pid"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classroblab_1_1common__lib_1_1_pid')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classroblab_1_1common__lib_1_1_pid.html">roblab::common_lib::Pid</a> に属する継承公開メンバ関数</td></tr>
 <tr class="memitem:a45889457621d6ede4f07dfb3ff2fc14c inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a45889457621d6ede4f07dfb3ff2fc14c">Pid</a> ()</td></tr>
 <tr class="memdesc:a45889457621d6ede4f07dfb3ff2fc14c inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトコンストラクタ.各変数の初期化は行わない  <br /></td></tr>
 <tr class="separator:a45889457621d6ede4f07dfb3ff2fc14c inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4623ed998615e020bea7e999904855fa inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a4623ed998615e020bea7e999904855fa">Pid</a> (float ctrl_period_sec)</td></tr>
-<tr class="memdesc:a4623ed998615e020bea7e999904855fa inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">各変数を初期化するコンストラクタ  <br /></td></tr>
-<tr class="separator:a4623ed998615e020bea7e999904855fa inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af988080102c8d0c5d598442f6c943951 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#af988080102c8d0c5d598442f6c943951">set</a> (float ctrl_period_sec)</td></tr>
-<tr class="memdesc:af988080102c8d0c5d598442f6c943951 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御周期をセットし,メンバ変数を初期化する関数．  <br /></td></tr>
-<tr class="separator:af988080102c8d0c5d598442f6c943951 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53c0404017194809d20d12cb3642f9ed inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a53c0404017194809d20d12cb3642f9ed">setTarget</a> (float <a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a6d9e34de20e6352d31b0992e9f529f8e">target_</a>)</td></tr>
-<tr class="memdesc:a53c0404017194809d20d12cb3642f9ed inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標値を設定する関数  <br /></td></tr>
-<tr class="separator:a53c0404017194809d20d12cb3642f9ed inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd5ce76951c659d2e1cf1e4ea32e3558 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#afd5ce76951c659d2e1cf1e4ea32e3558">setGain</a> (float kp, float ki, float kd)</td></tr>
-<tr class="memdesc:afd5ce76951c659d2e1cf1e4ea32e3558 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIDのゲインをセットする関数  <br /></td></tr>
-<tr class="separator:afd5ce76951c659d2e1cf1e4ea32e3558 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e3830b96b6f10a549095d99a53e1b13 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a8e3830b96b6f10a549095d99a53e1b13">setEndStatus</a> (float end_err, float end_diff)</td></tr>
-<tr class="memdesc:a8e3830b96b6f10a549095d99a53e1b13 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御完了判定を変更する（変更前はコンストラクタで初期化されている）  <br /></td></tr>
-<tr class="separator:a8e3830b96b6f10a549095d99a53e1b13 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad93676e3fd7914f93c6a6f39086986c4 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#ad93676e3fd7914f93c6a6f39086986c4">setFirstPosition</a> (float first_pos)</td></tr>
-<tr class="memdesc:ad93676e3fd7914f93c6a6f39086986c4 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期の状態をみて1つ前の偏差をつくる(一番最初の微分値の対策)  <br /></td></tr>
-<tr class="separator:ad93676e3fd7914f93c6a6f39086986c4 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accc8f87da2f3d06e779c3b1263783ac8 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#accc8f87da2f3d06e779c3b1263783ac8">setDiffTimeConst</a> (float time_const)</td></tr>
-<tr class="memdesc:accc8f87da2f3d06e779c3b1263783ac8 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">近似微分器の時定数を設定．初期値は0.05[s]  <br /></td></tr>
-<tr class="separator:accc8f87da2f3d06e779c3b1263783ac8 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37353e3cc88d6984d4d95310dd092387 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a37353e3cc88d6984d4d95310dd092387">setLimitOutput</a> (float limit_output)</td></tr>
-<tr class="memdesc:a37353e3cc88d6984d4d95310dd092387 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID出力値の上限を変更する関数．  <br /></td></tr>
-<tr class="separator:a37353e3cc88d6984d4d95310dd092387 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0e90b764dcd0a984d9cf0b67c9b7656 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#ae0e90b764dcd0a984d9cf0b67c9b7656">setLimitIOutput</a> (float limit_i_output)</td></tr>
-<tr class="memdesc:ae0e90b764dcd0a984d9cf0b67c9b7656 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">積分項の上限を変更する関数．  <br /></td></tr>
-<tr class="separator:ae0e90b764dcd0a984d9cf0b67c9b7656 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99cde3b3b8c1a6942fc99775d5acfe2d inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a99cde3b3b8c1a6942fc99775d5acfe2d">getOutputP</a> ()</td></tr>
-<tr class="memdesc:a99cde3b3b8c1a6942fc99775d5acfe2d inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">P制御の出力のみを返す  <br /></td></tr>
-<tr class="separator:a99cde3b3b8c1a6942fc99775d5acfe2d inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbb88d9ef9de3106ab840fe18fddf795 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#acbb88d9ef9de3106ab840fe18fddf795">getOutputI</a> ()</td></tr>
-<tr class="memdesc:acbb88d9ef9de3106ab840fe18fddf795 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">I制御の出力のみを返す  <br /></td></tr>
-<tr class="separator:acbb88d9ef9de3106ab840fe18fddf795 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a6640a52827c744799d4504f8156dc3 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a4a6640a52827c744799d4504f8156dc3">getOutputD</a> ()</td></tr>
-<tr class="memdesc:a4a6640a52827c744799d4504f8156dc3 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">D制御の出力のみを返す  <br /></td></tr>
-<tr class="separator:a4a6640a52827c744799d4504f8156dc3 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67f11d17e3580ccfa9ad40adc66f6c06 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a67f11d17e3580ccfa9ad40adc66f6c06">getGainP</a> ()</td></tr>
-<tr class="memdesc:a67f11d17e3580ccfa9ad40adc66f6c06 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pゲインを返す  <br /></td></tr>
-<tr class="separator:a67f11d17e3580ccfa9ad40adc66f6c06 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad257b45070cbfe0124a3634961d674e8 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#ad257b45070cbfe0124a3634961d674e8">getGainI</a> ()</td></tr>
-<tr class="memdesc:ad257b45070cbfe0124a3634961d674e8 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iゲインを返す  <br /></td></tr>
-<tr class="separator:ad257b45070cbfe0124a3634961d674e8 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37b1900b69894ddb41e637fee3c6fc7c inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a37b1900b69894ddb41e637fee3c6fc7c">getGainD</a> ()</td></tr>
-<tr class="memdesc:a37b1900b69894ddb41e637fee3c6fc7c inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dゲインを返す  <br /></td></tr>
-<tr class="separator:a37b1900b69894ddb41e637fee3c6fc7c inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2100189e46c98d85c0e900d6de0eea4a inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a2100189e46c98d85c0e900d6de0eea4a">getTarget</a> ()</td></tr>
-<tr class="memdesc:a2100189e46c98d85c0e900d6de0eea4a inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標値を返す  <br /></td></tr>
-<tr class="separator:a2100189e46c98d85c0e900d6de0eea4a inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32e459d7eb1b7f0c3464f52d14ab1e71 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a32e459d7eb1b7f0c3464f52d14ab1e71">getErr</a> ()</td></tr>
-<tr class="memdesc:a32e459d7eb1b7f0c3464f52d14ab1e71 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">偏差を返す  <br /></td></tr>
-<tr class="separator:a32e459d7eb1b7f0c3464f52d14ab1e71 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d491511e6e9643082a01b00fc45435a inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a7d491511e6e9643082a01b00fc45435a">getInput</a> ()</td></tr>
-<tr class="memdesc:a7d491511e6e9643082a01b00fc45435a inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">入力を返す  <br /></td></tr>
-<tr class="separator:a7d491511e6e9643082a01b00fc45435a inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3314aa299674cef64d909dada892356f inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a3314aa299674cef64d909dada892356f">getCtrlPeriodSec</a> ()</td></tr>
-<tr class="memdesc:a3314aa299674cef64d909dada892356f inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御周期を返す  <br /></td></tr>
-<tr class="separator:a3314aa299674cef64d909dada892356f inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affb7d46dfaab06febd2bc62fc8ac4bb4 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#affb7d46dfaab06febd2bc62fc8ac4bb4">CheckEnd</a> ()</td></tr>
-<tr class="memdesc:affb7d46dfaab06febd2bc62fc8ac4bb4 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID制御終了判定を確認する関数．  <br /></td></tr>
-<tr class="separator:affb7d46dfaab06febd2bc62fc8ac4bb4 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6680881901b358a1789784ab32c5ee2 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#ac6680881901b358a1789784ab32c5ee2">ResetEndCnt</a> ()</td></tr>
-<tr class="memdesc:ac6680881901b358a1789784ab32c5ee2 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了判定をリセット  <br /></td></tr>
-<tr class="separator:ac6680881901b358a1789784ab32c5ee2 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73b00d391896b32502ff0ac53c78488d inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a73b00d391896b32502ff0ac53c78488d">Reset</a> ()</td></tr>
-<tr class="memdesc:a73b00d391896b32502ff0ac53c78488d inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">各変数を初期化する関数．ゲインはそのまま．  <br /></td></tr>
-<tr class="separator:a73b00d391896b32502ff0ac53c78488d inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af091a989a8231c37dc9b182db384318d inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#af091a989a8231c37dc9b182db384318d">ResetForVelocity</a> ()</td></tr>
-<tr class="memdesc:af091a989a8231c37dc9b182db384318d inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">速度制御用リセット．積分Iをリセットする  <br /></td></tr>
-<tr class="separator:af091a989a8231c37dc9b182db384318d inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69c17269ed873efb22d128c8519b5269 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a69c17269ed873efb22d128c8519b5269">Control</a> (float input)</td></tr>
-<tr class="memdesc:a69c17269ed873efb22d128c8519b5269 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御を行う関数．  <br /></td></tr>
-<tr class="separator:a69c17269ed873efb22d128c8519b5269 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58ad1361123c82f1f078773f2e7cb03a inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a58ad1361123c82f1f078773f2e7cb03a">ControlPi</a> (float input)</td></tr>
-<tr class="memdesc:a58ad1361123c82f1f078773f2e7cb03a inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPI制御を行う関数  <br /></td></tr>
-<tr class="separator:a58ad1361123c82f1f078773f2e7cb03a inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48ac8e72e9e7fe151ddeb5de72f8f591 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a48ac8e72e9e7fe151ddeb5de72f8f591">ControlErr</a> (float err)</td></tr>
-<tr class="memdesc:a48ac8e72e9e7fe151ddeb5de72f8f591 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">偏差からPID制御を行う関数．  <br /></td></tr>
-<tr class="separator:a48ac8e72e9e7fe151ddeb5de72f8f591 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd508d225280137412c957a86726e236 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#afd508d225280137412c957a86726e236">Pid</a> (float ctrl_period_sec)</td></tr>
+<tr class="memdesc:afd508d225280137412c957a86726e236 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">各変数を初期化するコンストラクタ  <br /></td></tr>
+<tr class="separator:afd508d225280137412c957a86726e236 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f4d1efcd045612126809ce7a7262a01 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a5f4d1efcd045612126809ce7a7262a01">set</a> (float ctrl_period_sec)</td></tr>
+<tr class="memdesc:a5f4d1efcd045612126809ce7a7262a01 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御周期をセットし,メンバ変数を初期化する関数．  <br /></td></tr>
+<tr class="separator:a5f4d1efcd045612126809ce7a7262a01 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6164ee218a2dd81a1b2b06aa9f75ee2 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#af6164ee218a2dd81a1b2b06aa9f75ee2">setTarget</a> (float <a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a6d9e34de20e6352d31b0992e9f529f8e">target_</a>)</td></tr>
+<tr class="memdesc:af6164ee218a2dd81a1b2b06aa9f75ee2 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標値を設定する関数  <br /></td></tr>
+<tr class="separator:af6164ee218a2dd81a1b2b06aa9f75ee2 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da12ba7e1ddc747a8bb57429d91f0e3 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a8da12ba7e1ddc747a8bb57429d91f0e3">setGain</a> (float kp, float ki, float kd)</td></tr>
+<tr class="memdesc:a8da12ba7e1ddc747a8bb57429d91f0e3 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIDのゲインをセットする関数  <br /></td></tr>
+<tr class="separator:a8da12ba7e1ddc747a8bb57429d91f0e3 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1930636877d4ac34d3e183435055a26 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#af1930636877d4ac34d3e183435055a26">setEndStatus</a> (float end_err, float end_diff)</td></tr>
+<tr class="memdesc:af1930636877d4ac34d3e183435055a26 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御完了判定を変更する（変更前はコンストラクタで初期化されている）  <br /></td></tr>
+<tr class="separator:af1930636877d4ac34d3e183435055a26 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae804406e66dbd1669d7df4f3ba79f40c inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#ae804406e66dbd1669d7df4f3ba79f40c">setFirstPosition</a> (float first_pos)</td></tr>
+<tr class="memdesc:ae804406e66dbd1669d7df4f3ba79f40c inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期の状態をみて1つ前の偏差をつくる(一番最初の微分値の対策)  <br /></td></tr>
+<tr class="separator:ae804406e66dbd1669d7df4f3ba79f40c inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d030c62a50c8d55ce374417681a620 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a92d030c62a50c8d55ce374417681a620">setDiffTimeConst</a> (float time_const)</td></tr>
+<tr class="memdesc:a92d030c62a50c8d55ce374417681a620 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">近似微分器の時定数を設定．初期値は0.05[s]  <br /></td></tr>
+<tr class="separator:a92d030c62a50c8d55ce374417681a620 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff4eb8a825c4c8c12f256f09f76ffee6 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#aff4eb8a825c4c8c12f256f09f76ffee6">setLimitOutput</a> (float limit_output)</td></tr>
+<tr class="memdesc:aff4eb8a825c4c8c12f256f09f76ffee6 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID出力値の上限を変更する関数．  <br /></td></tr>
+<tr class="separator:aff4eb8a825c4c8c12f256f09f76ffee6 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f0a4fe9c9496fde873285bdc2e9c401 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a3f0a4fe9c9496fde873285bdc2e9c401">setLimitIOutput</a> (float limit_i_output)</td></tr>
+<tr class="memdesc:a3f0a4fe9c9496fde873285bdc2e9c401 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">積分項の上限を変更する関数．  <br /></td></tr>
+<tr class="separator:a3f0a4fe9c9496fde873285bdc2e9c401 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50cd0f6ad4d6131ab4a3a4bafe84c120 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a50cd0f6ad4d6131ab4a3a4bafe84c120">getOutputP</a> ()</td></tr>
+<tr class="memdesc:a50cd0f6ad4d6131ab4a3a4bafe84c120 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">P制御の出力のみを返す  <br /></td></tr>
+<tr class="separator:a50cd0f6ad4d6131ab4a3a4bafe84c120 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97d0ac30c89b3c9476d8f283873d56ff inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a97d0ac30c89b3c9476d8f283873d56ff">getOutputI</a> ()</td></tr>
+<tr class="memdesc:a97d0ac30c89b3c9476d8f283873d56ff inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">I制御の出力のみを返す  <br /></td></tr>
+<tr class="separator:a97d0ac30c89b3c9476d8f283873d56ff inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3106a3d3d8f9875fc50a3c34ddd99474 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a3106a3d3d8f9875fc50a3c34ddd99474">getOutputD</a> ()</td></tr>
+<tr class="memdesc:a3106a3d3d8f9875fc50a3c34ddd99474 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">D制御の出力のみを返す  <br /></td></tr>
+<tr class="separator:a3106a3d3d8f9875fc50a3c34ddd99474 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1fad645840f2abd048cc3283c2ae4a8 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#af1fad645840f2abd048cc3283c2ae4a8">getGainP</a> ()</td></tr>
+<tr class="memdesc:af1fad645840f2abd048cc3283c2ae4a8 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pゲインを返す  <br /></td></tr>
+<tr class="separator:af1fad645840f2abd048cc3283c2ae4a8 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328a288709d2822bb522302638940a13 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a328a288709d2822bb522302638940a13">getGainI</a> ()</td></tr>
+<tr class="memdesc:a328a288709d2822bb522302638940a13 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iゲインを返す  <br /></td></tr>
+<tr class="separator:a328a288709d2822bb522302638940a13 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a987b7a112ea3454dc03744b5725cf031 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a987b7a112ea3454dc03744b5725cf031">getGainD</a> ()</td></tr>
+<tr class="memdesc:a987b7a112ea3454dc03744b5725cf031 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dゲインを返す  <br /></td></tr>
+<tr class="separator:a987b7a112ea3454dc03744b5725cf031 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea2537a658f454187541d6648098b2f8 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#aea2537a658f454187541d6648098b2f8">getTarget</a> ()</td></tr>
+<tr class="memdesc:aea2537a658f454187541d6648098b2f8 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標値を返す  <br /></td></tr>
+<tr class="separator:aea2537a658f454187541d6648098b2f8 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc67983685e1ca061355d5acf8a66075 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#adc67983685e1ca061355d5acf8a66075">getErr</a> ()</td></tr>
+<tr class="memdesc:adc67983685e1ca061355d5acf8a66075 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">偏差を返す  <br /></td></tr>
+<tr class="separator:adc67983685e1ca061355d5acf8a66075 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91563d7af44104136d6a1b2b91fdf3f3 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a91563d7af44104136d6a1b2b91fdf3f3">getInput</a> ()</td></tr>
+<tr class="memdesc:a91563d7af44104136d6a1b2b91fdf3f3 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">入力を返す  <br /></td></tr>
+<tr class="separator:a91563d7af44104136d6a1b2b91fdf3f3 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68275aadc80ab62f18ede6d20f422746 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a68275aadc80ab62f18ede6d20f422746">getCtrlPeriodSec</a> ()</td></tr>
+<tr class="memdesc:a68275aadc80ab62f18ede6d20f422746 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御周期を返す  <br /></td></tr>
+<tr class="separator:a68275aadc80ab62f18ede6d20f422746 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5292b4e20e5e76848a4ddb45646349d4 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a5292b4e20e5e76848a4ddb45646349d4">CheckEnd</a> ()</td></tr>
+<tr class="memdesc:a5292b4e20e5e76848a4ddb45646349d4 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID制御終了判定を確認する関数．  <br /></td></tr>
+<tr class="separator:a5292b4e20e5e76848a4ddb45646349d4 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3ae54855e54c72b0f77bc73d9d95c1a inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#aa3ae54855e54c72b0f77bc73d9d95c1a">ResetEndCnt</a> ()</td></tr>
+<tr class="memdesc:aa3ae54855e54c72b0f77bc73d9d95c1a inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了判定をリセット  <br /></td></tr>
+<tr class="separator:aa3ae54855e54c72b0f77bc73d9d95c1a inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f8c117c52956ff97feb442171e99b1 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a32f8c117c52956ff97feb442171e99b1">Reset</a> ()</td></tr>
+<tr class="memdesc:a32f8c117c52956ff97feb442171e99b1 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">各変数を初期化する関数．ゲインはそのまま．  <br /></td></tr>
+<tr class="separator:a32f8c117c52956ff97feb442171e99b1 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b533b9cd5fb89fad629806cc84f36d inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a67b533b9cd5fb89fad629806cc84f36d">ResetForVelocity</a> ()</td></tr>
+<tr class="memdesc:a67b533b9cd5fb89fad629806cc84f36d inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">速度制御用リセット．積分Iをリセットする  <br /></td></tr>
+<tr class="separator:a67b533b9cd5fb89fad629806cc84f36d inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87ef98b89ef8e729870004075ba5c1e0 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a87ef98b89ef8e729870004075ba5c1e0">Control</a> (float input)</td></tr>
+<tr class="memdesc:a87ef98b89ef8e729870004075ba5c1e0 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御を行う関数．  <br /></td></tr>
+<tr class="separator:a87ef98b89ef8e729870004075ba5c1e0 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0dcbabf5fa04cb13473dce4318d4531 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#ab0dcbabf5fa04cb13473dce4318d4531">ControlPi</a> (float input)</td></tr>
+<tr class="memdesc:ab0dcbabf5fa04cb13473dce4318d4531 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPI制御を行う関数  <br /></td></tr>
+<tr class="separator:ab0dcbabf5fa04cb13473dce4318d4531 inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f75afee6ffe5378143d2c08244f10dd inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a8f75afee6ffe5378143d2c08244f10dd">ControlErr</a> (float err)</td></tr>
+<tr class="memdesc:a8f75afee6ffe5378143d2c08244f10dd inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="mdescLeft">&#160;</td><td class="mdescRight">偏差からPID制御を行う関数．  <br /></td></tr>
+<tr class="separator:a8f75afee6ffe5378143d2c08244f10dd inherit pub_methods_classroblab_1_1common__lib_1_1_pid"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classroblab_1_1common__lib_1_1_lpf"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classroblab_1_1common__lib_1_1_lpf')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classroblab_1_1common__lib_1_1_lpf.html">roblab::common_lib::Lpf</a> に属する継承公開メンバ関数</td></tr>
 <tr class="memitem:a5f94d031a4d11f1ce79fef9dcd4c96fe inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_lpf.html#a5f94d031a4d11f1ce79fef9dcd4c96fe">Lpf</a> ()</td></tr>
 <tr class="memdesc:a5f94d031a4d11f1ce79fef9dcd4c96fe inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトコンストラクタ.各変数の初期化は行わない  <br /></td></tr>
 <tr class="separator:a5f94d031a4d11f1ce79fef9dcd4c96fe inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45fab840b9ab4770f003f717287098d6 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_lpf.html#a45fab840b9ab4770f003f717287098d6">Lpf</a> (float t_const_sec, float ctrl_period_sec)</td></tr>
-<tr class="memdesc:a45fab840b9ab4770f003f717287098d6 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="mdescLeft">&#160;</td><td class="mdescRight">LPF型の変数を定義．時定数とサンプル周期(制御周期)を設定し， メンバ変数を初期化，時定数とサンプル周期から求まる係数を計算するコンストラクタ．  <br /></td></tr>
-<tr class="separator:a45fab840b9ab4770f003f717287098d6 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9148a47b3e3fe6a248c5830081d1bf43 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_lpf.html#a9148a47b3e3fe6a248c5830081d1bf43">set</a> (float t_const_sec, float ctrl_period_sec)</td></tr>
-<tr class="memdesc:a9148a47b3e3fe6a248c5830081d1bf43 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="mdescLeft">&#160;</td><td class="mdescRight">時定数とサンプル周期(制御周期)を設定し， メンバ変数を初期化，時定数とサンプル周期から求まる係数を計算する関数．  <br /></td></tr>
-<tr class="separator:a9148a47b3e3fe6a248c5830081d1bf43 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1bd6550d06769e064653af02ec1bb4b inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_lpf.html#ae1bd6550d06769e064653af02ec1bb4b">setTimeConst</a> (float t_const_sec)</td></tr>
-<tr class="memdesc:ae1bd6550d06769e064653af02ec1bb4b inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="mdescLeft">&#160;</td><td class="mdescRight">時定数を設定し，時定数とサンプル周期から求まる係数を計算する関数．変数の初期化はしない.  <br /></td></tr>
-<tr class="separator:ae1bd6550d06769e064653af02ec1bb4b inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30be49fce0528339cd42c09746cbf19f inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_lpf.html#a30be49fce0528339cd42c09746cbf19f">setInputPrev</a> (float input_prev)</td></tr>
-<tr class="memdesc:a30be49fce0528339cd42c09746cbf19f inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="mdescLeft">&#160;</td><td class="mdescRight">ローパスフィルタの初期値と前回の出力値を（0以外にするの場合）設定する関数．  <br /></td></tr>
-<tr class="separator:a30be49fce0528339cd42c09746cbf19f inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cf438473cee23b48b0889fa017e2069 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_lpf.html#a9cf438473cee23b48b0889fa017e2069">Reset</a> ()</td></tr>
-<tr class="memdesc:a9cf438473cee23b48b0889fa017e2069 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="mdescLeft">&#160;</td><td class="mdescRight">メンバ変数を初期化する関数．  <br /></td></tr>
-<tr class="separator:a9cf438473cee23b48b0889fa017e2069 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d19e6f01ba89f2c1590177b7f581483 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_lpf.html#a6d19e6f01ba89f2c1590177b7f581483">Filter</a> (float input)</td></tr>
-<tr class="memdesc:a6d19e6f01ba89f2c1590177b7f581483 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="mdescLeft">&#160;</td><td class="mdescRight">入力値に対してローパスフィルタをかける関数．  <br /></td></tr>
-<tr class="separator:a6d19e6f01ba89f2c1590177b7f581483 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4547863b0fb0efc3b8427edd789540a6 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_lpf.html#a4547863b0fb0efc3b8427edd789540a6">Lpf</a> (float t_const_sec, float ctrl_period_sec)</td></tr>
+<tr class="memdesc:a4547863b0fb0efc3b8427edd789540a6 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="mdescLeft">&#160;</td><td class="mdescRight">LPF型の変数を定義．時定数とサンプル周期(制御周期)を設定し， メンバ変数を初期化，時定数とサンプル周期から求まる係数を計算するコンストラクタ．  <br /></td></tr>
+<tr class="separator:a4547863b0fb0efc3b8427edd789540a6 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac603d0e2ef8bd9d00f3ddc0e2e187dd3 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_lpf.html#ac603d0e2ef8bd9d00f3ddc0e2e187dd3">set</a> (float t_const_sec, float ctrl_period_sec)</td></tr>
+<tr class="memdesc:ac603d0e2ef8bd9d00f3ddc0e2e187dd3 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="mdescLeft">&#160;</td><td class="mdescRight">時定数とサンプル周期(制御周期)を設定し， メンバ変数を初期化，時定数とサンプル周期から求まる係数を計算する関数．  <br /></td></tr>
+<tr class="separator:ac603d0e2ef8bd9d00f3ddc0e2e187dd3 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79597662c2df811f48b5e91449822930 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_lpf.html#a79597662c2df811f48b5e91449822930">setTimeConst</a> (float t_const_sec)</td></tr>
+<tr class="memdesc:a79597662c2df811f48b5e91449822930 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="mdescLeft">&#160;</td><td class="mdescRight">時定数を設定し，時定数とサンプル周期から求まる係数を計算する関数．変数の初期化はしない.  <br /></td></tr>
+<tr class="separator:a79597662c2df811f48b5e91449822930 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80c5aff2ca517f1a48a0db44b2f487d0 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_lpf.html#a80c5aff2ca517f1a48a0db44b2f487d0">setInputPrev</a> (float input_prev)</td></tr>
+<tr class="memdesc:a80c5aff2ca517f1a48a0db44b2f487d0 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="mdescLeft">&#160;</td><td class="mdescRight">ローパスフィルタの初期値と前回の出力値を（0以外にするの場合）設定する関数．  <br /></td></tr>
+<tr class="separator:a80c5aff2ca517f1a48a0db44b2f487d0 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a257f3c5556058a63bb399db452f4865e inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_lpf.html#a257f3c5556058a63bb399db452f4865e">Reset</a> ()</td></tr>
+<tr class="memdesc:a257f3c5556058a63bb399db452f4865e inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="mdescLeft">&#160;</td><td class="mdescRight">メンバ変数を初期化する関数．  <br /></td></tr>
+<tr class="separator:a257f3c5556058a63bb399db452f4865e inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac33645614d3213e5dd4865fabbedbe31 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_lpf.html#ac33645614d3213e5dd4865fabbedbe31">Filter</a> (float input)</td></tr>
+<tr class="memdesc:ac33645614d3213e5dd4865fabbedbe31 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="mdescLeft">&#160;</td><td class="mdescRight">入力値に対してローパスフィルタをかける関数．  <br /></td></tr>
+<tr class="separator:ac33645614d3213e5dd4865fabbedbe31 inherit pub_methods_classroblab_1_1common__lib_1_1_lpf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 非公開変数類</h2></td></tr>
@@ -455,14 +455,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="a8514fa89e084bae2a3ea44723fc91534" name="a8514fa89e084bae2a3ea44723fc91534"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8514fa89e084bae2a3ea44723fc91534">&#9670;&#160;</a></span>TrapezoidControl() <span class="overload">[2/2]</span></h2>
+<a id="afbe65f2e9c0a52e5f03b972d41ab37e6" name="afbe65f2e9c0a52e5f03b972d41ab37e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbe65f2e9c0a52e5f03b972d41ab37e6">&#9670;&#160;</a></span>TrapezoidControl() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">TrapezoidControl::TrapezoidControl </td>
+          <td class="memname">roblab::common_lib::TrapezoidControl::TrapezoidControl </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>target</em>, </td>
@@ -507,14 +507,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="afe6d494275292566743c1cc39c561577" name="afe6d494275292566743c1cc39c561577"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe6d494275292566743c1cc39c561577">&#9670;&#160;</a></span>CheckEnd()</h2>
+<a id="ab747daf797d9254839b17b82cf7468bb" name="ab747daf797d9254839b17b82cf7468bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab747daf797d9254839b17b82cf7468bb">&#9670;&#160;</a></span>CheckEnd()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned char TrapezoidControl::CheckEnd </td>
+          <td class="memname">unsigned char roblab::common_lib::TrapezoidControl::CheckEnd </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -527,14 +527,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="a46c61fcb037803921db0e27c221b9c41" name="a46c61fcb037803921db0e27c221b9c41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46c61fcb037803921db0e27c221b9c41">&#9670;&#160;</a></span>Control()</h2>
+<a id="a2a19a4611e99238f575a701b196985eb" name="a2a19a4611e99238f575a701b196985eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a19a4611e99238f575a701b196985eb">&#9670;&#160;</a></span>Control()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float TrapezoidControl::Control </td>
+          <td class="memname">float roblab::common_lib::TrapezoidControl::Control </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>input</em></td><td>)</td>
@@ -554,14 +554,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="acee3c21eba762bb0de805ee1e6e5fa60" name="acee3c21eba762bb0de805ee1e6e5fa60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acee3c21eba762bb0de805ee1e6e5fa60">&#9670;&#160;</a></span>ControlAcc2()</h2>
+<a id="a151a440e71de7fa83ac3f14a0b48b702" name="a151a440e71de7fa83ac3f14a0b48b702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a151a440e71de7fa83ac3f14a0b48b702">&#9670;&#160;</a></span>ControlAcc2()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float TrapezoidControl::ControlAcc2 </td>
+          <td class="memname">float roblab::common_lib::TrapezoidControl::ControlAcc2 </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>input</em>, </td>
@@ -606,14 +606,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="a3421def10f33c524126702c0b25d3d7b" name="a3421def10f33c524126702c0b25d3d7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3421def10f33c524126702c0b25d3d7b">&#9670;&#160;</a></span>ControlCorrect()</h2>
+<a id="a2df1a575116e5ef1d65e1f60fa4ce2a4" name="a2df1a575116e5ef1d65e1f60fa4ce2a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2df1a575116e5ef1d65e1f60fa4ce2a4">&#9670;&#160;</a></span>ControlCorrect()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float TrapezoidControl::ControlCorrect </td>
+          <td class="memname">float roblab::common_lib::TrapezoidControl::ControlCorrect </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>input</em>, </td>
@@ -644,14 +644,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="a139941d5a9dc37c88b90d4097b98a0f9" name="a139941d5a9dc37c88b90d4097b98a0f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a139941d5a9dc37c88b90d4097b98a0f9">&#9670;&#160;</a></span>ControlDob()</h2>
+<a id="acfc6044032b2e2e251bc0b1fb6f36fec" name="acfc6044032b2e2e251bc0b1fb6f36fec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfc6044032b2e2e251bc0b1fb6f36fec">&#9670;&#160;</a></span>ControlDob()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float TrapezoidControl::ControlDob </td>
+          <td class="memname">float roblab::common_lib::TrapezoidControl::ControlDob </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>input</em></td><td>)</td>
@@ -671,14 +671,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="a83c65dd147adae12ab6236a4083c210f" name="a83c65dd147adae12ab6236a4083c210f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83c65dd147adae12ab6236a4083c210f">&#9670;&#160;</a></span>ControlDobAcc2()</h2>
+<a id="a603ddfbbeac8110594c9b75bc734d02d" name="a603ddfbbeac8110594c9b75bc734d02d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a603ddfbbeac8110594c9b75bc734d02d">&#9670;&#160;</a></span>ControlDobAcc2()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float TrapezoidControl::ControlDobAcc2 </td>
+          <td class="memname">float roblab::common_lib::TrapezoidControl::ControlDobAcc2 </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>input</em>, </td>
@@ -723,14 +723,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="aaf6ca6263489f8342f19a5262761c651" name="aaf6ca6263489f8342f19a5262761c651"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf6ca6263489f8342f19a5262761c651">&#9670;&#160;</a></span>ControlDobCorrect()</h2>
+<a id="ae1caf1293244319d2ed7fdf78939e120" name="ae1caf1293244319d2ed7fdf78939e120"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1caf1293244319d2ed7fdf78939e120">&#9670;&#160;</a></span>ControlDobCorrect()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float TrapezoidControl::ControlDobCorrect </td>
+          <td class="memname">float roblab::common_lib::TrapezoidControl::ControlDobCorrect </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>input</em>, </td>
@@ -761,14 +761,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="ad08a7a043bd3701c6df7edea8d481658" name="ad08a7a043bd3701c6df7edea8d481658"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad08a7a043bd3701c6df7edea8d481658">&#9670;&#160;</a></span>ControlDobS()</h2>
+<a id="a74094d064dc85d24b3f4499889542124" name="a74094d064dc85d24b3f4499889542124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74094d064dc85d24b3f4499889542124">&#9670;&#160;</a></span>ControlDobS()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float TrapezoidControl::ControlDobS </td>
+          <td class="memname">float roblab::common_lib::TrapezoidControl::ControlDobS </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>input</em></td><td>)</td>
@@ -788,14 +788,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="aec1142cc482a66a0dc622fe4e20c15ef" name="aec1142cc482a66a0dc622fe4e20c15ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec1142cc482a66a0dc622fe4e20c15ef">&#9670;&#160;</a></span>ControlDobSCorrect()</h2>
+<a id="a037230f9b158a0e53a1ba50473065bc5" name="a037230f9b158a0e53a1ba50473065bc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a037230f9b158a0e53a1ba50473065bc5">&#9670;&#160;</a></span>ControlDobSCorrect()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float TrapezoidControl::ControlDobSCorrect </td>
+          <td class="memname">float roblab::common_lib::TrapezoidControl::ControlDobSCorrect </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>input</em>, </td>
@@ -826,14 +826,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="a710197dcaafbde0e28ced7c41858841f" name="a710197dcaafbde0e28ced7c41858841f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a710197dcaafbde0e28ced7c41858841f">&#9670;&#160;</a></span>ControlS()</h2>
+<a id="a68c5e01e41d8ef033925012db2dcf3bc" name="a68c5e01e41d8ef033925012db2dcf3bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68c5e01e41d8ef033925012db2dcf3bc">&#9670;&#160;</a></span>ControlS()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float TrapezoidControl::ControlS </td>
+          <td class="memname">float roblab::common_lib::TrapezoidControl::ControlS </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>input</em></td><td>)</td>
@@ -853,14 +853,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="a775644f5190702902461be1eba439aa5" name="a775644f5190702902461be1eba439aa5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a775644f5190702902461be1eba439aa5">&#9670;&#160;</a></span>ControlSCorrect()</h2>
+<a id="a38b0f64800540466caa8a41febc35792" name="a38b0f64800540466caa8a41febc35792"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38b0f64800540466caa8a41febc35792">&#9670;&#160;</a></span>ControlSCorrect()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float TrapezoidControl::ControlSCorrect </td>
+          <td class="memname">float roblab::common_lib::TrapezoidControl::ControlSCorrect </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>input</em>, </td>
@@ -891,14 +891,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="a944b20a2517a529bc4156412074233a2" name="a944b20a2517a529bc4156412074233a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a944b20a2517a529bc4156412074233a2">&#9670;&#160;</a></span>Filter()</h2>
+<a id="a6fca4f4d0bcd0d2220bb6f76eeea6640" name="a6fca4f4d0bcd0d2220bb6f76eeea6640"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fca4f4d0bcd0d2220bb6f76eeea6640">&#9670;&#160;</a></span>Filter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float TrapezoidControl::Filter </td>
+          <td class="memname">float roblab::common_lib::TrapezoidControl::Filter </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -911,14 +911,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="aa29513e31ae44fe41036289dc801c805" name="aa29513e31ae44fe41036289dc801c805"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa29513e31ae44fe41036289dc801c805">&#9670;&#160;</a></span>FilterAcc2()</h2>
+<a id="ad66e36adfffc66f8d24a4b051fafb720" name="ad66e36adfffc66f8d24a4b051fafb720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad66e36adfffc66f8d24a4b051fafb720">&#9670;&#160;</a></span>FilterAcc2()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float TrapezoidControl::FilterAcc2 </td>
+          <td class="memname">float roblab::common_lib::TrapezoidControl::FilterAcc2 </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>acceleration_time_2</em>, </td>
@@ -956,14 +956,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="a6ad7e6e53ee593e59f93ee4773393b45" name="a6ad7e6e53ee593e59f93ee4773393b45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ad7e6e53ee593e59f93ee4773393b45">&#9670;&#160;</a></span>FilterS()</h2>
+<a id="a8a1666177e898e60356b9727fe83dfe9" name="a8a1666177e898e60356b9727fe83dfe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a1666177e898e60356b9727fe83dfe9">&#9670;&#160;</a></span>FilterS()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float TrapezoidControl::FilterS </td>
+          <td class="memname">float roblab::common_lib::TrapezoidControl::FilterS </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -976,14 +976,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="acae0b9508ad89e13075c16d25e4acfff" name="acae0b9508ad89e13075c16d25e4acfff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acae0b9508ad89e13075c16d25e4acfff">&#9670;&#160;</a></span>getFilterValue()</h2>
+<a id="a79eef391a84ae6d7ed16a0827ec7500a" name="a79eef391a84ae6d7ed16a0827ec7500a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79eef391a84ae6d7ed16a0827ec7500a">&#9670;&#160;</a></span>getFilterValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float TrapezoidControl::getFilterValue </td>
+          <td class="memname">float roblab::common_lib::TrapezoidControl::getFilterValue </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -996,14 +996,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="aac4b31fdaa0aa85c83f0daa2119d5234" name="aac4b31fdaa0aa85c83f0daa2119d5234"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac4b31fdaa0aa85c83f0daa2119d5234">&#9670;&#160;</a></span>getFinishTime()</h2>
+<a id="add58d3fa11045cd2d72d139abb0a7a95" name="add58d3fa11045cd2d72d139abb0a7a95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add58d3fa11045cd2d72d139abb0a7a95">&#9670;&#160;</a></span>getFinishTime()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float TrapezoidControl::getFinishTime </td>
+          <td class="memname">float roblab::common_lib::TrapezoidControl::getFinishTime </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1016,14 +1016,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="af02eb905fde30b35d056497e3978d0e9" name="af02eb905fde30b35d056497e3978d0e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af02eb905fde30b35d056497e3978d0e9">&#9670;&#160;</a></span>getTimer()</h2>
+<a id="aa126ee403037ed870a37f1467487f1a2" name="aa126ee403037ed870a37f1467487f1a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa126ee403037ed870a37f1467487f1a2">&#9670;&#160;</a></span>getTimer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float TrapezoidControl::getTimer </td>
+          <td class="memname">float roblab::common_lib::TrapezoidControl::getTimer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1036,14 +1036,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="aaaa4e26419b9a2ae5b9cdfcad1e74ec8" name="aaaa4e26419b9a2ae5b9cdfcad1e74ec8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaaa4e26419b9a2ae5b9cdfcad1e74ec8">&#9670;&#160;</a></span>Reset()</h2>
+<a id="a4248cbbd60d33f04694770bac7f1b94b" name="a4248cbbd60d33f04694770bac7f1b94b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4248cbbd60d33f04694770bac7f1b94b">&#9670;&#160;</a></span>Reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TrapezoidControl::Reset </td>
+          <td class="memname">void roblab::common_lib::TrapezoidControl::Reset </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1074,14 +1074,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="a9dca8cc5e69c065c667c6240aa7a64cf" name="a9dca8cc5e69c065c667c6240aa7a64cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dca8cc5e69c065c667c6240aa7a64cf">&#9670;&#160;</a></span>set()</h2>
+<a id="ae23200948beb590172f350410929b710" name="ae23200948beb590172f350410929b710"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae23200948beb590172f350410929b710">&#9670;&#160;</a></span>set()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TrapezoidControl::set </td>
+          <td class="memname">void roblab::common_lib::TrapezoidControl::set </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>target</em>, </td>
@@ -1125,14 +1125,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="abee771698e0ded8fc87e24dd10c1637d" name="abee771698e0ded8fc87e24dd10c1637d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abee771698e0ded8fc87e24dd10c1637d">&#9670;&#160;</a></span>setCtrlPeriodSec()</h2>
+<a id="a791edbc482011b0b5b193ff084719592" name="a791edbc482011b0b5b193ff084719592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a791edbc482011b0b5b193ff084719592">&#9670;&#160;</a></span>setCtrlPeriodSec()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TrapezoidControl::setCtrlPeriodSec </td>
+          <td class="memname">void roblab::common_lib::TrapezoidControl::setCtrlPeriodSec </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>ctrl_period_sec</em></td><td>)</td>
@@ -1151,14 +1151,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="a292ce49ff13a48d6af1259b649cd7239" name="a292ce49ff13a48d6af1259b649cd7239"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a292ce49ff13a48d6af1259b649cd7239">&#9670;&#160;</a></span>setTarget()</h2>
+<a id="ab71b70b79e66b211563fd596b608b4e4" name="ab71b70b79e66b211563fd596b608b4e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab71b70b79e66b211563fd596b608b4e4">&#9670;&#160;</a></span>setTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TrapezoidControl::setTarget </td>
+          <td class="memname">void roblab::common_lib::TrapezoidControl::setTarget </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>target</em></td><td>)</td>
@@ -1177,14 +1177,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="a124832d6fb5e3070acf80b1c42532e36" name="a124832d6fb5e3070acf80b1c42532e36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a124832d6fb5e3070acf80b1c42532e36">&#9670;&#160;</a></span>setV_max()</h2>
+<a id="a6c48280a68ffb7a472a5fdda9b9802c6" name="a6c48280a68ffb7a472a5fdda9b9802c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c48280a68ffb7a472a5fdda9b9802c6">&#9670;&#160;</a></span>setV_max()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TrapezoidControl::setV_max </td>
+          <td class="memname">void roblab::common_lib::TrapezoidControl::setV_max </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>v_max</em></td><td>)</td>
@@ -1203,14 +1203,14 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 
 </div>
 </div>
-<a id="ad4297699f1badd6046ab16d3aad54eef" name="ad4297699f1badd6046ab16d3aad54eef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4297699f1badd6046ab16d3aad54eef">&#9670;&#160;</a></span>StartTimer()</h2>
+<a id="a610e0edfdbf5643f0937d9e5b75ce11f" name="a610e0edfdbf5643f0937d9e5b75ce11f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a610e0edfdbf5643f0937d9e5b75ce11f">&#9670;&#160;</a></span>StartTimer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TrapezoidControl::StartTimer </td>
+          <td class="memname">void roblab::common_lib::TrapezoidControl::StartTimer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1609,7 +1609,6 @@ roblab::common_lib::TrapezoidControl の継承関係図</div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
 <li>roblab_common_lib/include/<a class="el" href="trapezoid__control_8hpp_source.html">trapezoid_control.hpp</a></li>
-<li>roblab_common_lib/src/<a class="el" href="trapezoid__control_8cpp.html">trapezoid_control.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['trapezoid_5fcontrol_2ecpp_0',['trapezoid_control.cpp',['../trapezoid__control_8cpp.html',1,'']]],
-  ['trapezoid_5fcontrol_2ehpp_1',['trapezoid_control.hpp',['../trapezoid__control_8hpp.html',1,'']]]
+  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['rotary_5fencoder_2ehpp_1',['rotary_encoder.hpp',['../rotary__encoder_8hpp.html',1,'']]]
 ];

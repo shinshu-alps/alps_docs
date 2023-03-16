@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['t_5fconst_5fsec_5f_0',['t_const_sec_',['../classroblab_1_1common__lib_1_1_differential.html#a193a6a0069da67d3b760f6439fb0021c',1,'roblab::common_lib::Differential::t_const_sec_'],['../classroblab_1_1common__lib_1_1_lpf.html#a772617a9298d7abcae0cdcf1536b32d9',1,'roblab::common_lib::Lpf::t_const_sec_']]],
-  ['tarapizoid_5foutput_5f_1',['tarapizoid_output_',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#a33c1b6011a1886b762b259a15b588e19',1,'roblab::common_lib::TrapezoidControl']]],
-  ['target_5f_2',['target_',['../classroblab_1_1common__lib_1_1_pid.html#a6d9e34de20e6352d31b0992e9f529f8e',1,'roblab::common_lib::Pid::target_'],['../classroblab_1_1common__lib_1_1_trapezoid_control.html#a9955eb88398648b1e3ad21ab9cbcf95d',1,'roblab::common_lib::TrapezoidControl::target_']]],
-  ['targetpid_5f_3',['targetpid_',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#a0eb27ff0ec53dec48cccffa770771339',1,'roblab::common_lib::TrapezoidControl']]],
-  ['timer_5f_4',['timer_',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#ac3b19e72a1a3afe881503371b4d406e6',1,'roblab::common_lib::TrapezoidControl']]],
-  ['trapezoid_5fcontrol_2ecpp_5',['trapezoid_control.cpp',['../trapezoid__control_8cpp.html',1,'']]],
-  ['trapezoid_5fcontrol_2ehpp_6',['trapezoid_control.hpp',['../trapezoid__control_8hpp.html',1,'']]],
-  ['trapezoidcontrol_7',['TrapezoidControl',['../classroblab_1_1common__lib_1_1_trapezoid_control.html',1,'roblab::common_lib::TrapezoidControl'],['../classroblab_1_1common__lib_1_1_trapezoid_control.html#ac2c1d616ba056d4a65fd999d4c7830a9',1,'roblab::common_lib::TrapezoidControl::TrapezoidControl()'],['../classroblab_1_1common__lib_1_1_trapezoid_control.html#a8514fa89e084bae2a3ea44723fc91534',1,'roblab::common_lib::TrapezoidControl::TrapezoidControl(float target, float v_max, float acceleration_time, float deceleration_time)']]]
+  ['operator_20double_0',['operator double',['../class_fast_p_w_m.html#ac613f44d04db56c8640efd00b5a9df55',1,'FastPWM']]],
+  ['operator_3d_1',['operator=',['../class_fast_p_w_m.html#a3c818de90b6f2477aeaf82cb11d7275a',1,'FastPWM']]],
+  ['output_5f_2',['output_',['../classroblab_1_1common__lib_1_1_differential.html#a43725d8eff4175734f623773c938002c',1,'roblab::common_lib::Differential::output_'],['../classroblab_1_1common__lib_1_1_integral.html#a55ce76f76b2d54e3223ff7c077bbff80',1,'roblab::common_lib::Integral::output_'],['../classroblab_1_1common__lib_1_1_lpf.html#ab80d4246eb97d5963dae481ddb82b66a',1,'roblab::common_lib::Lpf::output_'],['../classroblab_1_1common__lib_1_1_pid.html#aeb7ed3f9e352ffb55f23067cdec78961',1,'roblab::common_lib::Pid::output_']]],
+  ['output_5fdeg_5f_3',['output_deg_',['../classroblab_1_1mbed__lib_1_1_servo_motor270.html#a036e4a7c103ba86a558840488dbdab0a',1,'roblab::mbed_lib::ServoMotor270']]]
 ];

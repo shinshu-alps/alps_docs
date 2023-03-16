@@ -148,84 +148,84 @@ roblab::common_lib::Pid の継承関係図</div>
 <tr class="memitem:a45889457621d6ede4f07dfb3ff2fc14c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a45889457621d6ede4f07dfb3ff2fc14c">Pid</a> ()</td></tr>
 <tr class="memdesc:a45889457621d6ede4f07dfb3ff2fc14c"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトコンストラクタ.各変数の初期化は行わない  <br /></td></tr>
 <tr class="separator:a45889457621d6ede4f07dfb3ff2fc14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4623ed998615e020bea7e999904855fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a4623ed998615e020bea7e999904855fa">Pid</a> (float ctrl_period_sec)</td></tr>
-<tr class="memdesc:a4623ed998615e020bea7e999904855fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">各変数を初期化するコンストラクタ  <br /></td></tr>
-<tr class="separator:a4623ed998615e020bea7e999904855fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af988080102c8d0c5d598442f6c943951"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#af988080102c8d0c5d598442f6c943951">set</a> (float ctrl_period_sec)</td></tr>
-<tr class="memdesc:af988080102c8d0c5d598442f6c943951"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御周期をセットし,メンバ変数を初期化する関数．  <br /></td></tr>
-<tr class="separator:af988080102c8d0c5d598442f6c943951"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53c0404017194809d20d12cb3642f9ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a53c0404017194809d20d12cb3642f9ed">setTarget</a> (float <a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a6d9e34de20e6352d31b0992e9f529f8e">target_</a>)</td></tr>
-<tr class="memdesc:a53c0404017194809d20d12cb3642f9ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標値を設定する関数  <br /></td></tr>
-<tr class="separator:a53c0404017194809d20d12cb3642f9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd5ce76951c659d2e1cf1e4ea32e3558"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#afd5ce76951c659d2e1cf1e4ea32e3558">setGain</a> (float kp, float ki, float kd)</td></tr>
-<tr class="memdesc:afd5ce76951c659d2e1cf1e4ea32e3558"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIDのゲインをセットする関数  <br /></td></tr>
-<tr class="separator:afd5ce76951c659d2e1cf1e4ea32e3558"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e3830b96b6f10a549095d99a53e1b13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a8e3830b96b6f10a549095d99a53e1b13">setEndStatus</a> (float end_err, float end_diff)</td></tr>
-<tr class="memdesc:a8e3830b96b6f10a549095d99a53e1b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御完了判定を変更する（変更前はコンストラクタで初期化されている）  <br /></td></tr>
-<tr class="separator:a8e3830b96b6f10a549095d99a53e1b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad93676e3fd7914f93c6a6f39086986c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#ad93676e3fd7914f93c6a6f39086986c4">setFirstPosition</a> (float first_pos)</td></tr>
-<tr class="memdesc:ad93676e3fd7914f93c6a6f39086986c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期の状態をみて1つ前の偏差をつくる(一番最初の微分値の対策)  <br /></td></tr>
-<tr class="separator:ad93676e3fd7914f93c6a6f39086986c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accc8f87da2f3d06e779c3b1263783ac8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#accc8f87da2f3d06e779c3b1263783ac8">setDiffTimeConst</a> (float time_const)</td></tr>
-<tr class="memdesc:accc8f87da2f3d06e779c3b1263783ac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">近似微分器の時定数を設定．初期値は0.05[s]  <br /></td></tr>
-<tr class="separator:accc8f87da2f3d06e779c3b1263783ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37353e3cc88d6984d4d95310dd092387"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a37353e3cc88d6984d4d95310dd092387">setLimitOutput</a> (float limit_output)</td></tr>
-<tr class="memdesc:a37353e3cc88d6984d4d95310dd092387"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID出力値の上限を変更する関数．  <br /></td></tr>
-<tr class="separator:a37353e3cc88d6984d4d95310dd092387"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0e90b764dcd0a984d9cf0b67c9b7656"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#ae0e90b764dcd0a984d9cf0b67c9b7656">setLimitIOutput</a> (float limit_i_output)</td></tr>
-<tr class="memdesc:ae0e90b764dcd0a984d9cf0b67c9b7656"><td class="mdescLeft">&#160;</td><td class="mdescRight">積分項の上限を変更する関数．  <br /></td></tr>
-<tr class="separator:ae0e90b764dcd0a984d9cf0b67c9b7656"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99cde3b3b8c1a6942fc99775d5acfe2d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a99cde3b3b8c1a6942fc99775d5acfe2d">getOutputP</a> ()</td></tr>
-<tr class="memdesc:a99cde3b3b8c1a6942fc99775d5acfe2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">P制御の出力のみを返す  <br /></td></tr>
-<tr class="separator:a99cde3b3b8c1a6942fc99775d5acfe2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbb88d9ef9de3106ab840fe18fddf795"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#acbb88d9ef9de3106ab840fe18fddf795">getOutputI</a> ()</td></tr>
-<tr class="memdesc:acbb88d9ef9de3106ab840fe18fddf795"><td class="mdescLeft">&#160;</td><td class="mdescRight">I制御の出力のみを返す  <br /></td></tr>
-<tr class="separator:acbb88d9ef9de3106ab840fe18fddf795"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a6640a52827c744799d4504f8156dc3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a4a6640a52827c744799d4504f8156dc3">getOutputD</a> ()</td></tr>
-<tr class="memdesc:a4a6640a52827c744799d4504f8156dc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">D制御の出力のみを返す  <br /></td></tr>
-<tr class="separator:a4a6640a52827c744799d4504f8156dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67f11d17e3580ccfa9ad40adc66f6c06"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a67f11d17e3580ccfa9ad40adc66f6c06">getGainP</a> ()</td></tr>
-<tr class="memdesc:a67f11d17e3580ccfa9ad40adc66f6c06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pゲインを返す  <br /></td></tr>
-<tr class="separator:a67f11d17e3580ccfa9ad40adc66f6c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad257b45070cbfe0124a3634961d674e8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#ad257b45070cbfe0124a3634961d674e8">getGainI</a> ()</td></tr>
-<tr class="memdesc:ad257b45070cbfe0124a3634961d674e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iゲインを返す  <br /></td></tr>
-<tr class="separator:ad257b45070cbfe0124a3634961d674e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37b1900b69894ddb41e637fee3c6fc7c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a37b1900b69894ddb41e637fee3c6fc7c">getGainD</a> ()</td></tr>
-<tr class="memdesc:a37b1900b69894ddb41e637fee3c6fc7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dゲインを返す  <br /></td></tr>
-<tr class="separator:a37b1900b69894ddb41e637fee3c6fc7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2100189e46c98d85c0e900d6de0eea4a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a2100189e46c98d85c0e900d6de0eea4a">getTarget</a> ()</td></tr>
-<tr class="memdesc:a2100189e46c98d85c0e900d6de0eea4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標値を返す  <br /></td></tr>
-<tr class="separator:a2100189e46c98d85c0e900d6de0eea4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32e459d7eb1b7f0c3464f52d14ab1e71"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a32e459d7eb1b7f0c3464f52d14ab1e71">getErr</a> ()</td></tr>
-<tr class="memdesc:a32e459d7eb1b7f0c3464f52d14ab1e71"><td class="mdescLeft">&#160;</td><td class="mdescRight">偏差を返す  <br /></td></tr>
-<tr class="separator:a32e459d7eb1b7f0c3464f52d14ab1e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d491511e6e9643082a01b00fc45435a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a7d491511e6e9643082a01b00fc45435a">getInput</a> ()</td></tr>
-<tr class="memdesc:a7d491511e6e9643082a01b00fc45435a"><td class="mdescLeft">&#160;</td><td class="mdescRight">入力を返す  <br /></td></tr>
-<tr class="separator:a7d491511e6e9643082a01b00fc45435a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3314aa299674cef64d909dada892356f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a3314aa299674cef64d909dada892356f">getCtrlPeriodSec</a> ()</td></tr>
-<tr class="memdesc:a3314aa299674cef64d909dada892356f"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御周期を返す  <br /></td></tr>
-<tr class="separator:a3314aa299674cef64d909dada892356f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affb7d46dfaab06febd2bc62fc8ac4bb4"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#affb7d46dfaab06febd2bc62fc8ac4bb4">CheckEnd</a> ()</td></tr>
-<tr class="memdesc:affb7d46dfaab06febd2bc62fc8ac4bb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID制御終了判定を確認する関数．  <br /></td></tr>
-<tr class="separator:affb7d46dfaab06febd2bc62fc8ac4bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6680881901b358a1789784ab32c5ee2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#ac6680881901b358a1789784ab32c5ee2">ResetEndCnt</a> ()</td></tr>
-<tr class="memdesc:ac6680881901b358a1789784ab32c5ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了判定をリセット  <br /></td></tr>
-<tr class="separator:ac6680881901b358a1789784ab32c5ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73b00d391896b32502ff0ac53c78488d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a73b00d391896b32502ff0ac53c78488d">Reset</a> ()</td></tr>
-<tr class="memdesc:a73b00d391896b32502ff0ac53c78488d"><td class="mdescLeft">&#160;</td><td class="mdescRight">各変数を初期化する関数．ゲインはそのまま．  <br /></td></tr>
-<tr class="separator:a73b00d391896b32502ff0ac53c78488d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af091a989a8231c37dc9b182db384318d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#af091a989a8231c37dc9b182db384318d">ResetForVelocity</a> ()</td></tr>
-<tr class="memdesc:af091a989a8231c37dc9b182db384318d"><td class="mdescLeft">&#160;</td><td class="mdescRight">速度制御用リセット．積分Iをリセットする  <br /></td></tr>
-<tr class="separator:af091a989a8231c37dc9b182db384318d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69c17269ed873efb22d128c8519b5269"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a69c17269ed873efb22d128c8519b5269">Control</a> (float input)</td></tr>
-<tr class="memdesc:a69c17269ed873efb22d128c8519b5269"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御を行う関数．  <br /></td></tr>
-<tr class="separator:a69c17269ed873efb22d128c8519b5269"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58ad1361123c82f1f078773f2e7cb03a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a58ad1361123c82f1f078773f2e7cb03a">ControlPi</a> (float input)</td></tr>
-<tr class="memdesc:a58ad1361123c82f1f078773f2e7cb03a"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPI制御を行う関数  <br /></td></tr>
-<tr class="separator:a58ad1361123c82f1f078773f2e7cb03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48ac8e72e9e7fe151ddeb5de72f8f591"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a48ac8e72e9e7fe151ddeb5de72f8f591">ControlErr</a> (float err)</td></tr>
-<tr class="memdesc:a48ac8e72e9e7fe151ddeb5de72f8f591"><td class="mdescLeft">&#160;</td><td class="mdescRight">偏差からPID制御を行う関数．  <br /></td></tr>
-<tr class="separator:a48ac8e72e9e7fe151ddeb5de72f8f591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd508d225280137412c957a86726e236"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#afd508d225280137412c957a86726e236">Pid</a> (float ctrl_period_sec)</td></tr>
+<tr class="memdesc:afd508d225280137412c957a86726e236"><td class="mdescLeft">&#160;</td><td class="mdescRight">各変数を初期化するコンストラクタ  <br /></td></tr>
+<tr class="separator:afd508d225280137412c957a86726e236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f4d1efcd045612126809ce7a7262a01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a5f4d1efcd045612126809ce7a7262a01">set</a> (float ctrl_period_sec)</td></tr>
+<tr class="memdesc:a5f4d1efcd045612126809ce7a7262a01"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御周期をセットし,メンバ変数を初期化する関数．  <br /></td></tr>
+<tr class="separator:a5f4d1efcd045612126809ce7a7262a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6164ee218a2dd81a1b2b06aa9f75ee2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#af6164ee218a2dd81a1b2b06aa9f75ee2">setTarget</a> (float <a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a6d9e34de20e6352d31b0992e9f529f8e">target_</a>)</td></tr>
+<tr class="memdesc:af6164ee218a2dd81a1b2b06aa9f75ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標値を設定する関数  <br /></td></tr>
+<tr class="separator:af6164ee218a2dd81a1b2b06aa9f75ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da12ba7e1ddc747a8bb57429d91f0e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a8da12ba7e1ddc747a8bb57429d91f0e3">setGain</a> (float kp, float ki, float kd)</td></tr>
+<tr class="memdesc:a8da12ba7e1ddc747a8bb57429d91f0e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIDのゲインをセットする関数  <br /></td></tr>
+<tr class="separator:a8da12ba7e1ddc747a8bb57429d91f0e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1930636877d4ac34d3e183435055a26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#af1930636877d4ac34d3e183435055a26">setEndStatus</a> (float end_err, float end_diff)</td></tr>
+<tr class="memdesc:af1930636877d4ac34d3e183435055a26"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御完了判定を変更する（変更前はコンストラクタで初期化されている）  <br /></td></tr>
+<tr class="separator:af1930636877d4ac34d3e183435055a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae804406e66dbd1669d7df4f3ba79f40c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#ae804406e66dbd1669d7df4f3ba79f40c">setFirstPosition</a> (float first_pos)</td></tr>
+<tr class="memdesc:ae804406e66dbd1669d7df4f3ba79f40c"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期の状態をみて1つ前の偏差をつくる(一番最初の微分値の対策)  <br /></td></tr>
+<tr class="separator:ae804406e66dbd1669d7df4f3ba79f40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d030c62a50c8d55ce374417681a620"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a92d030c62a50c8d55ce374417681a620">setDiffTimeConst</a> (float time_const)</td></tr>
+<tr class="memdesc:a92d030c62a50c8d55ce374417681a620"><td class="mdescLeft">&#160;</td><td class="mdescRight">近似微分器の時定数を設定．初期値は0.05[s]  <br /></td></tr>
+<tr class="separator:a92d030c62a50c8d55ce374417681a620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff4eb8a825c4c8c12f256f09f76ffee6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#aff4eb8a825c4c8c12f256f09f76ffee6">setLimitOutput</a> (float limit_output)</td></tr>
+<tr class="memdesc:aff4eb8a825c4c8c12f256f09f76ffee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID出力値の上限を変更する関数．  <br /></td></tr>
+<tr class="separator:aff4eb8a825c4c8c12f256f09f76ffee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f0a4fe9c9496fde873285bdc2e9c401"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a3f0a4fe9c9496fde873285bdc2e9c401">setLimitIOutput</a> (float limit_i_output)</td></tr>
+<tr class="memdesc:a3f0a4fe9c9496fde873285bdc2e9c401"><td class="mdescLeft">&#160;</td><td class="mdescRight">積分項の上限を変更する関数．  <br /></td></tr>
+<tr class="separator:a3f0a4fe9c9496fde873285bdc2e9c401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50cd0f6ad4d6131ab4a3a4bafe84c120"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a50cd0f6ad4d6131ab4a3a4bafe84c120">getOutputP</a> ()</td></tr>
+<tr class="memdesc:a50cd0f6ad4d6131ab4a3a4bafe84c120"><td class="mdescLeft">&#160;</td><td class="mdescRight">P制御の出力のみを返す  <br /></td></tr>
+<tr class="separator:a50cd0f6ad4d6131ab4a3a4bafe84c120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97d0ac30c89b3c9476d8f283873d56ff"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a97d0ac30c89b3c9476d8f283873d56ff">getOutputI</a> ()</td></tr>
+<tr class="memdesc:a97d0ac30c89b3c9476d8f283873d56ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">I制御の出力のみを返す  <br /></td></tr>
+<tr class="separator:a97d0ac30c89b3c9476d8f283873d56ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3106a3d3d8f9875fc50a3c34ddd99474"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a3106a3d3d8f9875fc50a3c34ddd99474">getOutputD</a> ()</td></tr>
+<tr class="memdesc:a3106a3d3d8f9875fc50a3c34ddd99474"><td class="mdescLeft">&#160;</td><td class="mdescRight">D制御の出力のみを返す  <br /></td></tr>
+<tr class="separator:a3106a3d3d8f9875fc50a3c34ddd99474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1fad645840f2abd048cc3283c2ae4a8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#af1fad645840f2abd048cc3283c2ae4a8">getGainP</a> ()</td></tr>
+<tr class="memdesc:af1fad645840f2abd048cc3283c2ae4a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pゲインを返す  <br /></td></tr>
+<tr class="separator:af1fad645840f2abd048cc3283c2ae4a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328a288709d2822bb522302638940a13"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a328a288709d2822bb522302638940a13">getGainI</a> ()</td></tr>
+<tr class="memdesc:a328a288709d2822bb522302638940a13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iゲインを返す  <br /></td></tr>
+<tr class="separator:a328a288709d2822bb522302638940a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a987b7a112ea3454dc03744b5725cf031"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a987b7a112ea3454dc03744b5725cf031">getGainD</a> ()</td></tr>
+<tr class="memdesc:a987b7a112ea3454dc03744b5725cf031"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dゲインを返す  <br /></td></tr>
+<tr class="separator:a987b7a112ea3454dc03744b5725cf031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea2537a658f454187541d6648098b2f8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#aea2537a658f454187541d6648098b2f8">getTarget</a> ()</td></tr>
+<tr class="memdesc:aea2537a658f454187541d6648098b2f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標値を返す  <br /></td></tr>
+<tr class="separator:aea2537a658f454187541d6648098b2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc67983685e1ca061355d5acf8a66075"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#adc67983685e1ca061355d5acf8a66075">getErr</a> ()</td></tr>
+<tr class="memdesc:adc67983685e1ca061355d5acf8a66075"><td class="mdescLeft">&#160;</td><td class="mdescRight">偏差を返す  <br /></td></tr>
+<tr class="separator:adc67983685e1ca061355d5acf8a66075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91563d7af44104136d6a1b2b91fdf3f3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a91563d7af44104136d6a1b2b91fdf3f3">getInput</a> ()</td></tr>
+<tr class="memdesc:a91563d7af44104136d6a1b2b91fdf3f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">入力を返す  <br /></td></tr>
+<tr class="separator:a91563d7af44104136d6a1b2b91fdf3f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68275aadc80ab62f18ede6d20f422746"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a68275aadc80ab62f18ede6d20f422746">getCtrlPeriodSec</a> ()</td></tr>
+<tr class="memdesc:a68275aadc80ab62f18ede6d20f422746"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御周期を返す  <br /></td></tr>
+<tr class="separator:a68275aadc80ab62f18ede6d20f422746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5292b4e20e5e76848a4ddb45646349d4"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a5292b4e20e5e76848a4ddb45646349d4">CheckEnd</a> ()</td></tr>
+<tr class="memdesc:a5292b4e20e5e76848a4ddb45646349d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID制御終了判定を確認する関数．  <br /></td></tr>
+<tr class="separator:a5292b4e20e5e76848a4ddb45646349d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3ae54855e54c72b0f77bc73d9d95c1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#aa3ae54855e54c72b0f77bc73d9d95c1a">ResetEndCnt</a> ()</td></tr>
+<tr class="memdesc:aa3ae54855e54c72b0f77bc73d9d95c1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了判定をリセット  <br /></td></tr>
+<tr class="separator:aa3ae54855e54c72b0f77bc73d9d95c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f8c117c52956ff97feb442171e99b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a32f8c117c52956ff97feb442171e99b1">Reset</a> ()</td></tr>
+<tr class="memdesc:a32f8c117c52956ff97feb442171e99b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">各変数を初期化する関数．ゲインはそのまま．  <br /></td></tr>
+<tr class="separator:a32f8c117c52956ff97feb442171e99b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b533b9cd5fb89fad629806cc84f36d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a67b533b9cd5fb89fad629806cc84f36d">ResetForVelocity</a> ()</td></tr>
+<tr class="memdesc:a67b533b9cd5fb89fad629806cc84f36d"><td class="mdescLeft">&#160;</td><td class="mdescRight">速度制御用リセット．積分Iをリセットする  <br /></td></tr>
+<tr class="separator:a67b533b9cd5fb89fad629806cc84f36d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87ef98b89ef8e729870004075ba5c1e0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a87ef98b89ef8e729870004075ba5c1e0">Control</a> (float input)</td></tr>
+<tr class="memdesc:a87ef98b89ef8e729870004075ba5c1e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御を行う関数．  <br /></td></tr>
+<tr class="separator:a87ef98b89ef8e729870004075ba5c1e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0dcbabf5fa04cb13473dce4318d4531"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#ab0dcbabf5fa04cb13473dce4318d4531">ControlPi</a> (float input)</td></tr>
+<tr class="memdesc:ab0dcbabf5fa04cb13473dce4318d4531"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPI制御を行う関数  <br /></td></tr>
+<tr class="separator:ab0dcbabf5fa04cb13473dce4318d4531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f75afee6ffe5378143d2c08244f10dd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_pid.html#a8f75afee6ffe5378143d2c08244f10dd">ControlErr</a> (float err)</td></tr>
+<tr class="memdesc:a8f75afee6ffe5378143d2c08244f10dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">偏差からPID制御を行う関数．  <br /></td></tr>
+<tr class="separator:a8f75afee6ffe5378143d2c08244f10dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 非公開変数類</h2></td></tr>
@@ -344,14 +344,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="a4623ed998615e020bea7e999904855fa" name="a4623ed998615e020bea7e999904855fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4623ed998615e020bea7e999904855fa">&#9670;&#160;</a></span>Pid() <span class="overload">[2/2]</span></h2>
+<a id="afd508d225280137412c957a86726e236" name="afd508d225280137412c957a86726e236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd508d225280137412c957a86726e236">&#9670;&#160;</a></span>Pid() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Pid::Pid </td>
+          <td class="memname">roblab::common_lib::Pid::Pid </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>ctrl_period_sec</em></td><td>)</td>
@@ -371,14 +371,14 @@ roblab::common_lib::Pid の継承関係図</div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="affb7d46dfaab06febd2bc62fc8ac4bb4" name="affb7d46dfaab06febd2bc62fc8ac4bb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affb7d46dfaab06febd2bc62fc8ac4bb4">&#9670;&#160;</a></span>CheckEnd()</h2>
+<a id="a5292b4e20e5e76848a4ddb45646349d4" name="a5292b4e20e5e76848a4ddb45646349d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5292b4e20e5e76848a4ddb45646349d4">&#9670;&#160;</a></span>CheckEnd()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned char Pid::CheckEnd </td>
+          <td class="memname">unsigned char roblab::common_lib::Pid::CheckEnd </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -391,14 +391,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="a69c17269ed873efb22d128c8519b5269" name="a69c17269ed873efb22d128c8519b5269"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69c17269ed873efb22d128c8519b5269">&#9670;&#160;</a></span>Control()</h2>
+<a id="a87ef98b89ef8e729870004075ba5c1e0" name="a87ef98b89ef8e729870004075ba5c1e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87ef98b89ef8e729870004075ba5c1e0">&#9670;&#160;</a></span>Control()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float Pid::Control </td>
+          <td class="memname">float roblab::common_lib::Pid::Control </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>input</em></td><td>)</td>
@@ -418,14 +418,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="a48ac8e72e9e7fe151ddeb5de72f8f591" name="a48ac8e72e9e7fe151ddeb5de72f8f591"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48ac8e72e9e7fe151ddeb5de72f8f591">&#9670;&#160;</a></span>ControlErr()</h2>
+<a id="a8f75afee6ffe5378143d2c08244f10dd" name="a8f75afee6ffe5378143d2c08244f10dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f75afee6ffe5378143d2c08244f10dd">&#9670;&#160;</a></span>ControlErr()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float Pid::ControlErr </td>
+          <td class="memname">float roblab::common_lib::Pid::ControlErr </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>err</em></td><td>)</td>
@@ -445,14 +445,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="a58ad1361123c82f1f078773f2e7cb03a" name="a58ad1361123c82f1f078773f2e7cb03a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58ad1361123c82f1f078773f2e7cb03a">&#9670;&#160;</a></span>ControlPi()</h2>
+<a id="ab0dcbabf5fa04cb13473dce4318d4531" name="ab0dcbabf5fa04cb13473dce4318d4531"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0dcbabf5fa04cb13473dce4318d4531">&#9670;&#160;</a></span>ControlPi()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float Pid::ControlPi </td>
+          <td class="memname">float roblab::common_lib::Pid::ControlPi </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>input</em></td><td>)</td>
@@ -472,14 +472,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="a3314aa299674cef64d909dada892356f" name="a3314aa299674cef64d909dada892356f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3314aa299674cef64d909dada892356f">&#9670;&#160;</a></span>getCtrlPeriodSec()</h2>
+<a id="a68275aadc80ab62f18ede6d20f422746" name="a68275aadc80ab62f18ede6d20f422746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68275aadc80ab62f18ede6d20f422746">&#9670;&#160;</a></span>getCtrlPeriodSec()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float Pid::getCtrlPeriodSec </td>
+          <td class="memname">float roblab::common_lib::Pid::getCtrlPeriodSec </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -492,14 +492,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="a32e459d7eb1b7f0c3464f52d14ab1e71" name="a32e459d7eb1b7f0c3464f52d14ab1e71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32e459d7eb1b7f0c3464f52d14ab1e71">&#9670;&#160;</a></span>getErr()</h2>
+<a id="adc67983685e1ca061355d5acf8a66075" name="adc67983685e1ca061355d5acf8a66075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc67983685e1ca061355d5acf8a66075">&#9670;&#160;</a></span>getErr()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float Pid::getErr </td>
+          <td class="memname">float roblab::common_lib::Pid::getErr </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -512,14 +512,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="a37b1900b69894ddb41e637fee3c6fc7c" name="a37b1900b69894ddb41e637fee3c6fc7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37b1900b69894ddb41e637fee3c6fc7c">&#9670;&#160;</a></span>getGainD()</h2>
+<a id="a987b7a112ea3454dc03744b5725cf031" name="a987b7a112ea3454dc03744b5725cf031"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a987b7a112ea3454dc03744b5725cf031">&#9670;&#160;</a></span>getGainD()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float Pid::getGainD </td>
+          <td class="memname">float roblab::common_lib::Pid::getGainD </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -532,14 +532,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="ad257b45070cbfe0124a3634961d674e8" name="ad257b45070cbfe0124a3634961d674e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad257b45070cbfe0124a3634961d674e8">&#9670;&#160;</a></span>getGainI()</h2>
+<a id="a328a288709d2822bb522302638940a13" name="a328a288709d2822bb522302638940a13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a328a288709d2822bb522302638940a13">&#9670;&#160;</a></span>getGainI()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float Pid::getGainI </td>
+          <td class="memname">float roblab::common_lib::Pid::getGainI </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -552,14 +552,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="a67f11d17e3580ccfa9ad40adc66f6c06" name="a67f11d17e3580ccfa9ad40adc66f6c06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67f11d17e3580ccfa9ad40adc66f6c06">&#9670;&#160;</a></span>getGainP()</h2>
+<a id="af1fad645840f2abd048cc3283c2ae4a8" name="af1fad645840f2abd048cc3283c2ae4a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1fad645840f2abd048cc3283c2ae4a8">&#9670;&#160;</a></span>getGainP()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float Pid::getGainP </td>
+          <td class="memname">float roblab::common_lib::Pid::getGainP </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -572,14 +572,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="a7d491511e6e9643082a01b00fc45435a" name="a7d491511e6e9643082a01b00fc45435a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d491511e6e9643082a01b00fc45435a">&#9670;&#160;</a></span>getInput()</h2>
+<a id="a91563d7af44104136d6a1b2b91fdf3f3" name="a91563d7af44104136d6a1b2b91fdf3f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91563d7af44104136d6a1b2b91fdf3f3">&#9670;&#160;</a></span>getInput()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float Pid::getInput </td>
+          <td class="memname">float roblab::common_lib::Pid::getInput </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -592,14 +592,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="a4a6640a52827c744799d4504f8156dc3" name="a4a6640a52827c744799d4504f8156dc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a6640a52827c744799d4504f8156dc3">&#9670;&#160;</a></span>getOutputD()</h2>
+<a id="a3106a3d3d8f9875fc50a3c34ddd99474" name="a3106a3d3d8f9875fc50a3c34ddd99474"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3106a3d3d8f9875fc50a3c34ddd99474">&#9670;&#160;</a></span>getOutputD()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float Pid::getOutputD </td>
+          <td class="memname">float roblab::common_lib::Pid::getOutputD </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -612,14 +612,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="acbb88d9ef9de3106ab840fe18fddf795" name="acbb88d9ef9de3106ab840fe18fddf795"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbb88d9ef9de3106ab840fe18fddf795">&#9670;&#160;</a></span>getOutputI()</h2>
+<a id="a97d0ac30c89b3c9476d8f283873d56ff" name="a97d0ac30c89b3c9476d8f283873d56ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97d0ac30c89b3c9476d8f283873d56ff">&#9670;&#160;</a></span>getOutputI()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float Pid::getOutputI </td>
+          <td class="memname">float roblab::common_lib::Pid::getOutputI </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -632,14 +632,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="a99cde3b3b8c1a6942fc99775d5acfe2d" name="a99cde3b3b8c1a6942fc99775d5acfe2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99cde3b3b8c1a6942fc99775d5acfe2d">&#9670;&#160;</a></span>getOutputP()</h2>
+<a id="a50cd0f6ad4d6131ab4a3a4bafe84c120" name="a50cd0f6ad4d6131ab4a3a4bafe84c120"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50cd0f6ad4d6131ab4a3a4bafe84c120">&#9670;&#160;</a></span>getOutputP()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float Pid::getOutputP </td>
+          <td class="memname">float roblab::common_lib::Pid::getOutputP </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -652,14 +652,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="a2100189e46c98d85c0e900d6de0eea4a" name="a2100189e46c98d85c0e900d6de0eea4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2100189e46c98d85c0e900d6de0eea4a">&#9670;&#160;</a></span>getTarget()</h2>
+<a id="aea2537a658f454187541d6648098b2f8" name="aea2537a658f454187541d6648098b2f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea2537a658f454187541d6648098b2f8">&#9670;&#160;</a></span>getTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float Pid::getTarget </td>
+          <td class="memname">float roblab::common_lib::Pid::getTarget </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -672,14 +672,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="a73b00d391896b32502ff0ac53c78488d" name="a73b00d391896b32502ff0ac53c78488d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73b00d391896b32502ff0ac53c78488d">&#9670;&#160;</a></span>Reset()</h2>
+<a id="a32f8c117c52956ff97feb442171e99b1" name="a32f8c117c52956ff97feb442171e99b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32f8c117c52956ff97feb442171e99b1">&#9670;&#160;</a></span>Reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Pid::Reset </td>
+          <td class="memname">void roblab::common_lib::Pid::Reset </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -691,14 +691,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="ac6680881901b358a1789784ab32c5ee2" name="ac6680881901b358a1789784ab32c5ee2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6680881901b358a1789784ab32c5ee2">&#9670;&#160;</a></span>ResetEndCnt()</h2>
+<a id="aa3ae54855e54c72b0f77bc73d9d95c1a" name="aa3ae54855e54c72b0f77bc73d9d95c1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3ae54855e54c72b0f77bc73d9d95c1a">&#9670;&#160;</a></span>ResetEndCnt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Pid::ResetEndCnt </td>
+          <td class="memname">void roblab::common_lib::Pid::ResetEndCnt </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -711,14 +711,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="af091a989a8231c37dc9b182db384318d" name="af091a989a8231c37dc9b182db384318d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af091a989a8231c37dc9b182db384318d">&#9670;&#160;</a></span>ResetForVelocity()</h2>
+<a id="a67b533b9cd5fb89fad629806cc84f36d" name="a67b533b9cd5fb89fad629806cc84f36d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67b533b9cd5fb89fad629806cc84f36d">&#9670;&#160;</a></span>ResetForVelocity()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Pid::ResetForVelocity </td>
+          <td class="memname">void roblab::common_lib::Pid::ResetForVelocity </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -730,14 +730,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="af988080102c8d0c5d598442f6c943951" name="af988080102c8d0c5d598442f6c943951"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af988080102c8d0c5d598442f6c943951">&#9670;&#160;</a></span>set()</h2>
+<a id="a5f4d1efcd045612126809ce7a7262a01" name="a5f4d1efcd045612126809ce7a7262a01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f4d1efcd045612126809ce7a7262a01">&#9670;&#160;</a></span>set()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Pid::set </td>
+          <td class="memname">void roblab::common_lib::Pid::set </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>ctrl_period_sec</em></td><td>)</td>
@@ -756,14 +756,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="accc8f87da2f3d06e779c3b1263783ac8" name="accc8f87da2f3d06e779c3b1263783ac8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accc8f87da2f3d06e779c3b1263783ac8">&#9670;&#160;</a></span>setDiffTimeConst()</h2>
+<a id="a92d030c62a50c8d55ce374417681a620" name="a92d030c62a50c8d55ce374417681a620"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92d030c62a50c8d55ce374417681a620">&#9670;&#160;</a></span>setDiffTimeConst()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Pid::setDiffTimeConst </td>
+          <td class="memname">void roblab::common_lib::Pid::setDiffTimeConst </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>time_const</em></td><td>)</td>
@@ -782,14 +782,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="a8e3830b96b6f10a549095d99a53e1b13" name="a8e3830b96b6f10a549095d99a53e1b13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e3830b96b6f10a549095d99a53e1b13">&#9670;&#160;</a></span>setEndStatus()</h2>
+<a id="af1930636877d4ac34d3e183435055a26" name="af1930636877d4ac34d3e183435055a26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1930636877d4ac34d3e183435055a26">&#9670;&#160;</a></span>setEndStatus()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Pid::setEndStatus </td>
+          <td class="memname">void roblab::common_lib::Pid::setEndStatus </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>end_err</em>, </td>
@@ -819,14 +819,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="ad93676e3fd7914f93c6a6f39086986c4" name="ad93676e3fd7914f93c6a6f39086986c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad93676e3fd7914f93c6a6f39086986c4">&#9670;&#160;</a></span>setFirstPosition()</h2>
+<a id="ae804406e66dbd1669d7df4f3ba79f40c" name="ae804406e66dbd1669d7df4f3ba79f40c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae804406e66dbd1669d7df4f3ba79f40c">&#9670;&#160;</a></span>setFirstPosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Pid::setFirstPosition </td>
+          <td class="memname">void roblab::common_lib::Pid::setFirstPosition </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>first_pos</em></td><td>)</td>
@@ -845,14 +845,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="afd5ce76951c659d2e1cf1e4ea32e3558" name="afd5ce76951c659d2e1cf1e4ea32e3558"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd5ce76951c659d2e1cf1e4ea32e3558">&#9670;&#160;</a></span>setGain()</h2>
+<a id="a8da12ba7e1ddc747a8bb57429d91f0e3" name="a8da12ba7e1ddc747a8bb57429d91f0e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8da12ba7e1ddc747a8bb57429d91f0e3">&#9670;&#160;</a></span>setGain()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Pid::setGain </td>
+          <td class="memname">void roblab::common_lib::Pid::setGain </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>kp</em>, </td>
@@ -889,14 +889,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="ae0e90b764dcd0a984d9cf0b67c9b7656" name="ae0e90b764dcd0a984d9cf0b67c9b7656"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0e90b764dcd0a984d9cf0b67c9b7656">&#9670;&#160;</a></span>setLimitIOutput()</h2>
+<a id="a3f0a4fe9c9496fde873285bdc2e9c401" name="a3f0a4fe9c9496fde873285bdc2e9c401"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f0a4fe9c9496fde873285bdc2e9c401">&#9670;&#160;</a></span>setLimitIOutput()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Pid::setLimitIOutput </td>
+          <td class="memname">void roblab::common_lib::Pid::setLimitIOutput </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>limit_i_output</em></td><td>)</td>
@@ -915,14 +915,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="a37353e3cc88d6984d4d95310dd092387" name="a37353e3cc88d6984d4d95310dd092387"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37353e3cc88d6984d4d95310dd092387">&#9670;&#160;</a></span>setLimitOutput()</h2>
+<a id="aff4eb8a825c4c8c12f256f09f76ffee6" name="aff4eb8a825c4c8c12f256f09f76ffee6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff4eb8a825c4c8c12f256f09f76ffee6">&#9670;&#160;</a></span>setLimitOutput()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Pid::setLimitOutput </td>
+          <td class="memname">void roblab::common_lib::Pid::setLimitOutput </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>limit_output</em></td><td>)</td>
@@ -941,14 +941,14 @@ roblab::common_lib::Pid の継承関係図</div>
 
 </div>
 </div>
-<a id="a53c0404017194809d20d12cb3642f9ed" name="a53c0404017194809d20d12cb3642f9ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53c0404017194809d20d12cb3642f9ed">&#9670;&#160;</a></span>setTarget()</h2>
+<a id="af6164ee218a2dd81a1b2b06aa9f75ee2" name="af6164ee218a2dd81a1b2b06aa9f75ee2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6164ee218a2dd81a1b2b06aa9f75ee2">&#9670;&#160;</a></span>setTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Pid::setTarget </td>
+          <td class="memname">void roblab::common_lib::Pid::setTarget </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>target_</em></td><td>)</td>
@@ -1618,7 +1618,6 @@ roblab::common_lib::Pid の継承関係図</div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
 <li>roblab_common_lib/include/<a class="el" href="pid_8hpp_source.html">pid.hpp</a></li>
-<li>roblab_common_lib/src/<a class="el" href="pid_8cpp.html">pid.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

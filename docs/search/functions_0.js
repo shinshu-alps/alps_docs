@@ -1,17 +1,18 @@
 var searchData=
 [
-  ['calcmoveaverage_0',['CalcMoveAverage',['../classroblab_1_1common__lib_1_1_moving_ave.html#a77852bbac6ec909b9ecd4f76e412ef1f',1,'roblab::common_lib::MovingAve']]],
-  ['checkend_1',['CheckEnd',['../classroblab_1_1common__lib_1_1_pid.html#affb7d46dfaab06febd2bc62fc8ac4bb4',1,'roblab::common_lib::Pid::CheckEnd()'],['../classroblab_1_1common__lib_1_1_trapezoid_control.html#afe6d494275292566743c1cc39c561577',1,'roblab::common_lib::TrapezoidControl::CheckEnd()']]],
-  ['control_2',['Control',['../classroblab_1_1common__lib_1_1_dob.html#a6d854963052e147af0362543cc0bb6ab',1,'roblab::common_lib::Dob::Control()'],['../classroblab_1_1common__lib_1_1_pid.html#a69c17269ed873efb22d128c8519b5269',1,'roblab::common_lib::Pid::Control()'],['../classroblab_1_1common__lib_1_1_trapezoid_control.html#a46c61fcb037803921db0e27c221b9c41',1,'roblab::common_lib::TrapezoidControl::Control(float input)']]],
-  ['controlacc2_3',['ControlAcc2',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#acee3c21eba762bb0de805ee1e6e5fa60',1,'roblab::common_lib::TrapezoidControl']]],
-  ['controlcorrect_4',['ControlCorrect',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#a3421def10f33c524126702c0b25d3d7b',1,'roblab::common_lib::TrapezoidControl']]],
-  ['controldob_5',['ControlDob',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#a139941d5a9dc37c88b90d4097b98a0f9',1,'roblab::common_lib::TrapezoidControl']]],
-  ['controldobacc2_6',['ControlDobAcc2',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#a83c65dd147adae12ab6236a4083c210f',1,'roblab::common_lib::TrapezoidControl']]],
-  ['controldobcorrect_7',['ControlDobCorrect',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#aaf6ca6263489f8342f19a5262761c651',1,'roblab::common_lib::TrapezoidControl']]],
-  ['controldobs_8',['ControlDobS',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#ad08a7a043bd3701c6df7edea8d481658',1,'roblab::common_lib::TrapezoidControl']]],
-  ['controldobscorrect_9',['ControlDobSCorrect',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#aec1142cc482a66a0dc622fe4e20c15ef',1,'roblab::common_lib::TrapezoidControl']]],
-  ['controlerr_10',['ControlErr',['../classroblab_1_1common__lib_1_1_pid.html#a48ac8e72e9e7fe151ddeb5de72f8f591',1,'roblab::common_lib::Pid']]],
-  ['controlpi_11',['ControlPi',['../classroblab_1_1common__lib_1_1_pid.html#a58ad1361123c82f1f078773f2e7cb03a',1,'roblab::common_lib::Pid']]],
-  ['controls_12',['ControlS',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#a710197dcaafbde0e28ced7c41858841f',1,'roblab::common_lib::TrapezoidControl']]],
-  ['controlscorrect_13',['ControlSCorrect',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#a775644f5190702902461be1eba439aa5',1,'roblab::common_lib::TrapezoidControl']]]
+  ['calcmoveaverage_0',['CalcMoveAverage',['../classroblab_1_1common__lib_1_1_moving_ave.html#af7a23db136847c7d6fefd1176119e694',1,'roblab::common_lib::MovingAve']]],
+  ['calcprescaler_1',['calcPrescaler',['../class_fast_p_w_m.html#a7beee0977e6ef8682741d0e288f982fb',1,'FastPWM']]],
+  ['checkend_2',['CheckEnd',['../classroblab_1_1common__lib_1_1_pid.html#a5292b4e20e5e76848a4ddb45646349d4',1,'roblab::common_lib::Pid::CheckEnd()'],['../classroblab_1_1common__lib_1_1_trapezoid_control.html#ab747daf797d9254839b17b82cf7468bb',1,'roblab::common_lib::TrapezoidControl::CheckEnd()']]],
+  ['control_3',['Control',['../classroblab_1_1common__lib_1_1_dob.html#a418fe552b71659f1aedbfe586f54abf5',1,'roblab::common_lib::Dob::Control()'],['../classroblab_1_1common__lib_1_1_pid.html#a87ef98b89ef8e729870004075ba5c1e0',1,'roblab::common_lib::Pid::Control()'],['../classroblab_1_1common__lib_1_1_trapezoid_control.html#a2a19a4611e99238f575a701b196985eb',1,'roblab::common_lib::TrapezoidControl::Control(float input)']]],
+  ['controlacc2_4',['ControlAcc2',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#a151a440e71de7fa83ac3f14a0b48b702',1,'roblab::common_lib::TrapezoidControl']]],
+  ['controlcorrect_5',['ControlCorrect',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#a2df1a575116e5ef1d65e1f60fa4ce2a4',1,'roblab::common_lib::TrapezoidControl']]],
+  ['controldob_6',['ControlDob',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#acfc6044032b2e2e251bc0b1fb6f36fec',1,'roblab::common_lib::TrapezoidControl']]],
+  ['controldobacc2_7',['ControlDobAcc2',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#a603ddfbbeac8110594c9b75bc734d02d',1,'roblab::common_lib::TrapezoidControl']]],
+  ['controldobcorrect_8',['ControlDobCorrect',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#ae1caf1293244319d2ed7fdf78939e120',1,'roblab::common_lib::TrapezoidControl']]],
+  ['controldobs_9',['ControlDobS',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#a74094d064dc85d24b3f4499889542124',1,'roblab::common_lib::TrapezoidControl']]],
+  ['controldobscorrect_10',['ControlDobSCorrect',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#a037230f9b158a0e53a1ba50473065bc5',1,'roblab::common_lib::TrapezoidControl']]],
+  ['controlerr_11',['ControlErr',['../classroblab_1_1common__lib_1_1_pid.html#a8f75afee6ffe5378143d2c08244f10dd',1,'roblab::common_lib::Pid']]],
+  ['controlpi_12',['ControlPi',['../classroblab_1_1common__lib_1_1_pid.html#ab0dcbabf5fa04cb13473dce4318d4531',1,'roblab::common_lib::Pid']]],
+  ['controls_13',['ControlS',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#a68c5e01e41d8ef033925012db2dcf3bc',1,'roblab::common_lib::TrapezoidControl']]],
+  ['controlscorrect_14',['ControlSCorrect',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#a38b0f64800540466caa8a41febc35792',1,'roblab::common_lib::TrapezoidControl']]]
 ];

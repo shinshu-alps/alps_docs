@@ -1,4 +1,5 @@
 var namespaceroblab =
 [
-    [ "common_lib", "namespaceroblab_1_1common__lib.html", "namespaceroblab_1_1common__lib" ]
+    [ "common_lib", "namespaceroblab_1_1common__lib.html", "namespaceroblab_1_1common__lib" ],
+    [ "mbed_lib", "namespaceroblab_1_1mbed__lib.html", "namespaceroblab_1_1mbed__lib" ]
 ];

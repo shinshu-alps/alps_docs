@@ -1,6 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classroblab_1_1common__lib_1_1_lpf.html" title="ローパスフィルタのクラス" alt="" coords="5,5,184,31"/>
-<area shape="rect" id="node2" href="$classroblab_1_1common__lib_1_1_dob.html" title="外乱オブザーバー" alt="" coords="232,31,417,56"/>
-<area shape="rect" id="node3" href="$classroblab_1_1common__lib_1_1_trapezoid_control.html" title="台形制御クラス" alt="" coords="465,23,616,63"/>
-<area shape="rect" id="node4" href="$classroblab_1_1common__lib_1_1_pid.html" title="PID制御を行うクラス" alt="" coords="5,55,184,80"/>
+<area shape="rect" id="node1" href="$classroblab_1_1common__lib_1_1_integral.html" title="積分器" alt="" coords="5,5,156,45"/>
 </map>

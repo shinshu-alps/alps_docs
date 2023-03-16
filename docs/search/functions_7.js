@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['reset_0',['Reset',['../classroblab_1_1common__lib_1_1_differential.html#a337ff2ee8f69b6f67e295b5508d5fd7c',1,'roblab::common_lib::Differential::Reset()'],['../classroblab_1_1common__lib_1_1_dob.html#ab1e64b2f53214ba2d8a6fad6fc78c39d',1,'roblab::common_lib::Dob::Reset()'],['../classroblab_1_1common__lib_1_1_integral.html#a0dce118337cc7967523b58c113fb9c01',1,'roblab::common_lib::Integral::Reset()'],['../classroblab_1_1common__lib_1_1_lpf.html#a9cf438473cee23b48b0889fa017e2069',1,'roblab::common_lib::Lpf::Reset()'],['../classroblab_1_1common__lib_1_1_pid.html#a73b00d391896b32502ff0ac53c78488d',1,'roblab::common_lib::Pid::Reset()'],['../classroblab_1_1common__lib_1_1_trapezoid_control.html#aaaa4e26419b9a2ae5b9cdfcad1e74ec8',1,'roblab::common_lib::TrapezoidControl::Reset()']]],
-  ['resetendcnt_1',['ResetEndCnt',['../classroblab_1_1common__lib_1_1_pid.html#ac6680881901b358a1789784ab32c5ee2',1,'roblab::common_lib::Pid']]],
-  ['resetforvelocity_2',['ResetForVelocity',['../classroblab_1_1common__lib_1_1_pid.html#af091a989a8231c37dc9b182db384318d',1,'roblab::common_lib::Pid::ResetForVelocity()'],['../classroblab_1_1common__lib_1_1_trapezoid_control.html#aa26a5f15de31d19cb3b2bcfacfc8551f',1,'roblab::common_lib::TrapezoidControl::ResetForVelocity()']]]
+  ['operator_20double_0',['operator double',['../class_fast_p_w_m.html#ac613f44d04db56c8640efd00b5a9df55',1,'FastPWM']]],
+  ['operator_3d_1',['operator=',['../class_fast_p_w_m.html#a3c818de90b6f2477aeaf82cb11d7275a',1,'FastPWM']]]
 ];

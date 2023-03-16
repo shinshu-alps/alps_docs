@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['lpf_2ecpp_0',['lpf.cpp',['../lpf_8cpp.html',1,'']]],
-  ['lpf_2ehpp_1',['lpf.hpp',['../lpf_8hpp.html',1,'']]]
+  ['integral_2ehpp_0',['integral.hpp',['../integral_8hpp.html',1,'']]]
 ];
