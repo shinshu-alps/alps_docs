@@ -832,7 +832,8 @@ WARN_LOGFILE           =
 INPUT                  = roblab_common_lib/include \
                          roblab_mbed_lib/include \
                          roblab_ros_lib/include \
-                         README.md \
+                         MainPage.md \
+                         ドキュメント更新手順.md \
                          docs/extensions.md \
                          docs/customization.md \
                          docs/tricks.md
@@ -1032,7 +1033,7 @@ FILTER_SOURCE_PATTERNS =
 # (index.html). This can be useful if you have a project on for instance GitHub
 # and want to reuse the introduction page also for the doxygen output.
 
-USE_MDFILE_AS_MAINPAGE = README.md
+USE_MDFILE_AS_MAINPAGE = MainPage.md
 
 #---------------------------------------------------------------------------
 # Configuration options related to source browsing
