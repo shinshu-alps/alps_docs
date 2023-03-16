@@ -1,0 +1,9 @@
+[submodule "roblab_mbed_lib"]
+	path = roblab_mbed_lib
+	url = git@github.com:shinshu-alps/roblab_mbed_lib.git
+[submodule "roblab_ros_lib"]
+	path = roblab_ros_lib
+	url = git@github.com:shinshu-alps/roblab_ros_lib.git
+[submodule "roblab_common_lib"]
+	path = roblab_common_lib
+	url = git@github.com:shinshu-alps/roblab_common_lib.git
