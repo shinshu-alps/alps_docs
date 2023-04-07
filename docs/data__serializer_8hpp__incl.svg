@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="データとバイト列の変換ライブラリ">
 <polygon fill="#999999" stroke="#666666" points="365.5,-140 214.5,-140 214.5,-110 365.5,-110 365.5,-140"/>
 <text text-anchor="start" x="222.5" y="-128" font-family="Helvetica,sans-Serif" font-size="10.00">roblab_common_lib/include</text>
 <text text-anchor="middle" x="290" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00">/serial/data_serializer.hpp</text>
@@ -126,7 +126,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="byte__ring__buffer_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node9"><a xlink:href="byte__ring__buffer_8hpp.html" target="_top" xlink:title="シリアル通信用リングバッファー">
 <polygon fill="white" stroke="#666666" points="171,-74 53,-74 53,-55 171,-55 171,-74"/>
 <text text-anchor="middle" x="112" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">byte_ring_buffer.hpp</text>
 </a>
@@ -141,7 +141,7 @@
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<g id="a_node12"><a xlink:href="serialize__type__info_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node12"><a xlink:href="serialize__type__info_8hpp.html" target="_top" xlink:title="DataSeializerで変換する型に関する情報">
 <polygon fill="white" stroke="#666666" points="611,-74 481,-74 481,-55 611,-55 611,-74"/>
 <text text-anchor="middle" x="546" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">serialize_type_info.hpp</text>
 </a>

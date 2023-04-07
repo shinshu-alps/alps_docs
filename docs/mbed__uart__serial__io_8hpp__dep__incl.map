@@ -1,4 +1,4 @@
 <map id="roblab_mbed_lib/include/serial/mbed_uart_serial_io.hpp" name="roblab_mbed_lib/include/serial/mbed_uart_serial_io.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="30,5,211,60"/>
-<area shape="rect" id="node2" href="$pc__serial__connection_8hpp.html" title=" " alt="" coords="5,108,236,148"/>
+<area shape="rect" id="node1" title="mbedのUart通信IOライブラリ" alt="" coords="30,5,211,60"/>
+<area shape="rect" id="node2" href="$pc__serial__connection_8hpp.html" title="パソコンと接続してパケット通信を行うライブラリ" alt="" coords="5,108,236,148"/>
 </map>

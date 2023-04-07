@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="1個のmbedとシリアル通信">
 <polygon fill="#999999" stroke="#666666" points="778.5,-250 584.5,-250 584.5,-220 778.5,-220 778.5,-250"/>
 <text text-anchor="start" x="592.5" y="-238" font-family="Helvetica,sans-Serif" font-size="10.00">roblab_ros_lib/include</text>
 <text text-anchor="middle" x="681.5" y="-227" font-family="Helvetica,sans-Serif" font-size="10.00">/mbed_single_serial_connection.hpp</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="posix__serial__io_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="posix__serial__io_8hpp.html" target="_top" xlink:title="Ubuntuシリアル通信IOライブラリ">
 <polygon fill="white" stroke="#666666" points="354.5,-184 244.5,-184 244.5,-165 354.5,-165 354.5,-184"/>
 <text text-anchor="middle" x="299.5" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">posix_serial_io.hpp</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node15 -->
 <g id="node15" class="node">
 <title>Node15</title>
-<g id="a_node15"><a xlink:href="id__packet__manager_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node15"><a xlink:href="id__packet__manager_8hpp.html" target="_top" xlink:title="ID付きパケットデータを管理">
 <polygon fill="white" stroke="#666666" points="1131,-184 998,-184 998,-165 1131,-165 1131,-184"/>
 <text text-anchor="middle" x="1064.5" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">id_packet_manager.hpp</text>
 </a>
@@ -141,7 +141,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="byte__ring__buffer_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node9"><a xlink:href="byte__ring__buffer_8hpp.html" target="_top" xlink:title="シリアル通信用リングバッファー">
 <polygon fill="white" stroke="#666666" points="999.5,-74 881.5,-74 881.5,-55 999.5,-55 999.5,-74"/>
 <text text-anchor="middle" x="940.5" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">byte_ring_buffer.hpp</text>
 </a>
@@ -156,7 +156,7 @@
 <!-- Node14 -->
 <g id="node14" class="node">
 <title>Node14</title>
-<g id="a_node14"><a xlink:href="i__serial__io_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node14"><a xlink:href="i__serial__io_8hpp.html" target="_top" xlink:title="シリアル通信IO抽象クラス">
 <polygon fill="white" stroke="#666666" points="798,-129 711,-129 711,-110 798,-110 798,-129"/>
 <text text-anchor="middle" x="754.5" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00">i_serial_io.hpp</text>
 </a>
@@ -318,7 +318,7 @@
 <!-- Node21 -->
 <g id="node21" class="node">
 <title>Node21</title>
-<g id="a_node21"><a xlink:href="cobs_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node21"><a xlink:href="cobs_8hpp.html" target="_top" xlink:title="COBS変換ライブラリ">
 <polygon fill="white" stroke="#666666" points="1094.5,-129 1034.5,-129 1034.5,-110 1094.5,-110 1094.5,-129"/>
 <text text-anchor="middle" x="1064.5" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00">cobs.hpp</text>
 </a>
@@ -333,7 +333,7 @@
 <!-- Node22 -->
 <g id="node22" class="node">
 <title>Node22</title>
-<g id="a_node22"><a xlink:href="data__serializer_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node22"><a xlink:href="data__serializer_8hpp.html" target="_top" xlink:title="データとバイト列の変換ライブラリ">
 <polygon fill="white" stroke="#666666" points="654.5,-129 544.5,-129 544.5,-110 654.5,-110 654.5,-129"/>
 <text text-anchor="middle" x="599.5" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00">data_serializer.hpp</text>
 </a>
@@ -348,7 +348,7 @@
 <!-- Node30 -->
 <g id="node30" class="node">
 <title>Node30</title>
-<g id="a_node30"><a xlink:href="sender_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node30"><a xlink:href="sender_8hpp.html" target="_top" xlink:title="シリアル通信で送るデータを登録">
 <polygon fill="white" stroke="#666666" points="1393,-129 1322,-129 1322,-110 1393,-110 1393,-129"/>
 <text text-anchor="middle" x="1357.5" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00">sender.hpp</text>
 </a>
@@ -471,7 +471,7 @@
 <!-- Node27 -->
 <g id="node27" class="node">
 <title>Node27</title>
-<g id="a_node27"><a xlink:href="serialize__type__info_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node27"><a xlink:href="serialize__type__info_8hpp.html" target="_top" xlink:title="DataSeializerで変換する型に関する情報">
 <polygon fill="white" stroke="#666666" points="533.5,-74 403.5,-74 403.5,-55 533.5,-55 533.5,-74"/>
 <text text-anchor="middle" x="468.5" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">serialize_type_info.hpp</text>
 </a>
