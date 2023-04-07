@@ -1,5 +1,5 @@
 <map id="roblab_ros_lib/include/posix_serial_io.hpp" name="roblab_ros_lib/include/posix_serial_io.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="53,5,217,45"/>
-<area shape="rect" id="node2" href="$mbed__single__serial__connection_8hpp.html" title=" " alt="" coords="5,93,264,133"/>
-<area shape="rect" id="node3" href="$mbed__multi__serial__connection_8hpp.html" title=" " alt="" coords="8,181,261,221"/>
+<area shape="rect" id="node1" title="Ubuntuシリアル通信IOライブラリ" alt="" coords="53,5,217,45"/>
+<area shape="rect" id="node2" href="$mbed__single__serial__connection_8hpp.html" title="1個のmbedとシリアル通信" alt="" coords="5,93,264,133"/>
+<area shape="rect" id="node3" href="$mbed__multi__serial__connection_8hpp.html" title="複数のMbedとシリアル通信を行うライブラリ" alt="" coords="8,181,261,221"/>
 </map>

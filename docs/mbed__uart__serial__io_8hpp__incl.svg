@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="mbedのUart通信IOライブラリ">
 <polygon fill="#999999" stroke="#666666" points="182.5,-206 46.5,-206 46.5,-165 182.5,-165 182.5,-206"/>
 <text text-anchor="start" x="54.5" y="-194" font-family="Helvetica,sans-Serif" font-size="10.00">roblab_mbed_lib/include</text>
 <text text-anchor="start" x="54.5" y="-183" font-family="Helvetica,sans-Serif" font-size="10.00">/serial/mbed_uart_serial</text>
@@ -37,7 +37,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="i__serial__io_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="i__serial__io_8hpp.html" target="_top" xlink:title="シリアル通信IO抽象クラス">
 <polygon fill="white" stroke="#666666" points="158,-129 71,-129 71,-110 158,-110 158,-129"/>
 <text text-anchor="middle" x="114.5" y="-117" font-family="Helvetica,sans-Serif" font-size="10.00">i_serial_io.hpp</text>
 </a>
@@ -52,7 +52,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="byte__ring__buffer_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="byte__ring__buffer_8hpp.html" target="_top" xlink:title="シリアル通信用リングバッファー">
 <polygon fill="white" stroke="#666666" points="209.5,-74 91.5,-74 91.5,-55 209.5,-55 209.5,-74"/>
 <text text-anchor="middle" x="150.5" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">byte_ring_buffer.hpp</text>
 </a>

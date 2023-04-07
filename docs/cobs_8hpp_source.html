@@ -112,34 +112,35 @@ $(document).ready(function(){initNavTree('cobs_8hpp_source.html',''); initResiza
   <div class="headertitle"><div class="title">cobs.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="cobs_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ROBLAB_COMMON_COBS_HPP_</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ROBLAB_COMMON_COBS_HPP_</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="byte__ring__buffer_8hpp.html">byte_ring_buffer.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;cstdio&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;cassert&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceroblab.html">roblab</a></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">namespace </span>common_lib</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_cobs.html">   16</a></span>        <span class="keyword">class </span><a class="code hl_class" href="classroblab_1_1common__lib_1_1_cobs.html">Cobs</a></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_cobs.html#a80c5a83f859ae52e94882a6862990d87">   25</a></span>            <span class="keyword">static</span> <a class="code hl_class" href="classroblab_1_1common__lib_1_1_byte_ring_buffer.html">ByteRingBuffer</a> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_cobs.html#a80c5a83f859ae52e94882a6862990d87">Encode</a>(<span class="keyword">const</span> <a class="code hl_class" href="classroblab_1_1common__lib_1_1_byte_ring_buffer.html">ByteRingBuffer</a> &amp;input);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_cobs.html#a428bea2a99d15af20850680a97b4fc3e">   33</a></span>            <span class="keyword">static</span> <a class="code hl_class" href="classroblab_1_1common__lib_1_1_byte_ring_buffer.html">ByteRingBuffer</a> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_cobs.html#a428bea2a99d15af20850680a97b4fc3e">Decode</a>(<span class="keyword">const</span> <a class="code hl_class" href="classroblab_1_1common__lib_1_1_byte_ring_buffer.html">ByteRingBuffer</a> &amp;input);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_cobs.html#aed0b490f0359a0b1cd680d76ab21a81e">   41</a></span>            <span class="keyword">static</span> std::vector&lt;ByteRingBuffer&gt; <a class="code hl_function" href="classroblab_1_1common__lib_1_1_cobs.html#aed0b490f0359a0b1cd680d76ab21a81e">ExtractCobsPackets</a>(<a class="code hl_class" href="classroblab_1_1common__lib_1_1_byte_ring_buffer.html">ByteRingBuffer</a> &amp;input_bytes);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        };</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
+<a href="cobs_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ROBLAB_COMMON_COBS_HPP_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ROBLAB_COMMON_COBS_HPP_</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="byte__ring__buffer_8hpp.html">byte_ring_buffer.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;cstdio&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceroblab.html">roblab</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">namespace </span>common_lib</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_cobs.html">   27</a></span>        <span class="keyword">class </span><a class="code hl_class" href="classroblab_1_1common__lib_1_1_cobs.html">Cobs</a></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_cobs.html#a80c5a83f859ae52e94882a6862990d87">   36</a></span>            <span class="keyword">static</span> <a class="code hl_class" href="classroblab_1_1common__lib_1_1_byte_ring_buffer.html">ByteRingBuffer</a> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_cobs.html#a80c5a83f859ae52e94882a6862990d87">Encode</a>(<span class="keyword">const</span> <a class="code hl_class" href="classroblab_1_1common__lib_1_1_byte_ring_buffer.html">ByteRingBuffer</a> &amp;input);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_cobs.html#a428bea2a99d15af20850680a97b4fc3e">   44</a></span>            <span class="keyword">static</span> <a class="code hl_class" href="classroblab_1_1common__lib_1_1_byte_ring_buffer.html">ByteRingBuffer</a> <a class="code hl_function" href="classroblab_1_1common__lib_1_1_cobs.html#a428bea2a99d15af20850680a97b4fc3e">Decode</a>(<span class="keyword">const</span> <a class="code hl_class" href="classroblab_1_1common__lib_1_1_byte_ring_buffer.html">ByteRingBuffer</a> &amp;input);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="abyte__ring__buffer_8hpp_html"><div class="ttname"><a href="byte__ring__buffer_8hpp.html">byte_ring_buffer.hpp</a></div></div>
-<div class="ttc" id="aclassroblab_1_1common__lib_1_1_byte_ring_buffer_html"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_byte_ring_buffer.html">roblab::common_lib::ByteRingBuffer</a></div><div class="ttdoc">uint8_tバイト列のLIFOリングバッファー シリアル通信専用</div><div class="ttdef"><b>Definition:</b> byte_ring_buffer.hpp:18</div></div>
-<div class="ttc" id="aclassroblab_1_1common__lib_1_1_cobs_html"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_cobs.html">roblab::common_lib::Cobs</a></div><div class="ttdoc">COBSの変換関数群</div><div class="ttdef"><b>Definition:</b> cobs.hpp:17</div></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classroblab_1_1common__lib_1_1_cobs.html#aed0b490f0359a0b1cd680d76ab21a81e">   52</a></span>            <span class="keyword">static</span> std::vector&lt;ByteRingBuffer&gt; <a class="code hl_function" href="classroblab_1_1common__lib_1_1_cobs.html#aed0b490f0359a0b1cd680d76ab21a81e">ExtractCobsPackets</a>(<a class="code hl_class" href="classroblab_1_1common__lib_1_1_byte_ring_buffer.html">ByteRingBuffer</a> &amp;input_bytes);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        };</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="abyte__ring__buffer_8hpp_html"><div class="ttname"><a href="byte__ring__buffer_8hpp.html">byte_ring_buffer.hpp</a></div><div class="ttdoc">シリアル通信用リングバッファー</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_byte_ring_buffer_html"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_byte_ring_buffer.html">roblab::common_lib::ByteRingBuffer</a></div><div class="ttdoc">uint8_tバイト列のLIFOリングバッファー シリアル通信専用</div><div class="ttdef"><b>Definition:</b> byte_ring_buffer.hpp:29</div></div>
+<div class="ttc" id="aclassroblab_1_1common__lib_1_1_cobs_html"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_cobs.html">roblab::common_lib::Cobs</a></div><div class="ttdoc">COBSの変換関数群</div><div class="ttdef"><b>Definition:</b> cobs.hpp:28</div></div>
 <div class="ttc" id="aclassroblab_1_1common__lib_1_1_cobs_html_a428bea2a99d15af20850680a97b4fc3e"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_cobs.html#a428bea2a99d15af20850680a97b4fc3e">roblab::common_lib::Cobs::Decode</a></div><div class="ttdeci">static ByteRingBuffer Decode(const ByteRingBuffer &amp;input)</div><div class="ttdoc">COBSバイト列をデコードする</div></div>
 <div class="ttc" id="aclassroblab_1_1common__lib_1_1_cobs_html_a80c5a83f859ae52e94882a6862990d87"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_cobs.html#a80c5a83f859ae52e94882a6862990d87">roblab::common_lib::Cobs::Encode</a></div><div class="ttdeci">static ByteRingBuffer Encode(const ByteRingBuffer &amp;input)</div><div class="ttdoc">バイト列をCOBSでエンコードする</div></div>
 <div class="ttc" id="aclassroblab_1_1common__lib_1_1_cobs_html_aed0b490f0359a0b1cd680d76ab21a81e"><div class="ttname"><a href="classroblab_1_1common__lib_1_1_cobs.html#aed0b490f0359a0b1cd680d76ab21a81e">roblab::common_lib::Cobs::ExtractCobsPackets</a></div><div class="ttdeci">static std::vector&lt; ByteRingBuffer &gt; ExtractCobsPackets(ByteRingBuffer &amp;input_bytes)</div><div class="ttdoc">バイト列からCOBSのパケットを抽出する</div></div>

@@ -1,10 +1,10 @@
 <map id="roblab_mbed_lib/include/serial/pc_serial_connection.hpp" name="roblab_mbed_lib/include/serial/pc_serial_connection.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="377,5,608,45"/>
-<area shape="rect" id="node2" href="$mbed__uart__serial__io_8hpp.html" title=" " alt="" coords="225,93,408,119"/>
-<area shape="rect" id="node10" href="$id__packet__manager_8hpp.html" title=" " alt="" coords="629,93,807,119"/>
+<area shape="rect" id="node1" title="パソコンと接続してパケット通信を行うライブラリ" alt="" coords="377,5,608,45"/>
+<area shape="rect" id="node2" href="$mbed__uart__serial__io_8hpp.html" title="mbedのUart通信IOライブラリ" alt="" coords="225,93,408,119"/>
+<area shape="rect" id="node10" href="$id__packet__manager_8hpp.html" title="ID付きパケットデータを管理" alt="" coords="629,93,807,119"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,167,76,192"/>
-<area shape="rect" id="node4" href="$i__serial__io_8hpp.html" title=" " alt="" coords="307,167,423,192"/>
-<area shape="rect" id="node5" href="$byte__ring__buffer_8hpp.html" title=" " alt="" coords="283,240,441,265"/>
+<area shape="rect" id="node4" href="$i__serial__io_8hpp.html" title="シリアル通信IO抽象クラス" alt="" coords="307,167,423,192"/>
+<area shape="rect" id="node5" href="$byte__ring__buffer_8hpp.html" title="シリアル通信用リングバッファー" alt="" coords="283,240,441,265"/>
 <area shape="rect" id="node6" title=" " alt="" coords="442,313,509,339"/>
 <area shape="rect" id="node7" title=" " alt="" coords="872,313,935,339"/>
 <area shape="rect" id="node8" title=" " alt="" coords="289,313,350,339"/>
@@ -15,14 +15,14 @@
 <area shape="rect" id="node14" title=" " alt="" coords="595,167,673,192"/>
 <area shape="rect" id="node15" title=" " alt="" coords="697,167,739,192"/>
 <area shape="rect" id="node16" title=" " alt="" coords="764,167,851,192"/>
-<area shape="rect" id="node17" href="$cobs_8hpp.html" title=" " alt="" coords="151,167,231,192"/>
-<area shape="rect" id="node18" href="$data__serializer_8hpp.html" title=" " alt="" coords="994,167,1141,192"/>
-<area shape="rect" id="node26" href="$sender_8hpp.html" title=" " alt="" coords="875,167,969,192"/>
+<area shape="rect" id="node17" href="$cobs_8hpp.html" title="COBS変換ライブラリ" alt="" coords="151,167,231,192"/>
+<area shape="rect" id="node18" href="$data__serializer_8hpp.html" title="データとバイト列の変換ライブラリ" alt="" coords="994,167,1141,192"/>
+<area shape="rect" id="node26" href="$sender_8hpp.html" title="シリアル通信で送るデータを登録" alt="" coords="875,167,969,192"/>
 <area shape="rect" id="node19" title=" " alt="" coords="1132,313,1224,339"/>
 <area shape="rect" id="node20" title=" " alt="" coords="642,240,709,265"/>
 <area shape="rect" id="node21" title=" " alt="" coords="733,240,818,265"/>
 <area shape="rect" id="node22" title=" " alt="" coords="842,240,906,265"/>
-<area shape="rect" id="node23" href="$serialize__type__info_8hpp.html" title=" " alt="" coords="981,240,1154,265"/>
+<area shape="rect" id="node23" href="$serialize__type__info_8hpp.html" title="DataSeializerで変換する型に関する情報" alt="" coords="981,240,1154,265"/>
 <area shape="rect" id="node24" title=" " alt="" coords="959,313,1029,339"/>
 <area shape="rect" id="node25" title=" " alt="" coords="1053,313,1108,339"/>
 </map>

@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="シリアル通信用リングバッファー">
 <polygon fill="#999999" stroke="#666666" points="199.5,-85 48.5,-85 48.5,-55 199.5,-55 199.5,-85"/>
 <text text-anchor="start" x="56.5" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">roblab_common_lib/include</text>
 <text text-anchor="middle" x="124" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">/serial/byte_ring_buffer.hpp</text>
