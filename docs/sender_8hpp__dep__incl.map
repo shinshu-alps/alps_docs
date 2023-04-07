@@ -1,0 +1,7 @@
+<map id="roblab_common_lib/include/serial/sender.hpp" name="roblab_common_lib/include/serial/sender.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="155,5,356,45"/>
+<area shape="rect" id="node2" href="$id__packet__manager_8hpp.html" title=" " alt="" coords="145,93,366,133"/>
+<area shape="rect" id="node3" href="$pc__serial__connection_8hpp.html" title=" " alt="" coords="5,181,236,221"/>
+<area shape="rect" id="node4" href="$mbed__single__serial__connection_8hpp.html" title=" " alt="" coords="261,181,519,221"/>
+<area shape="rect" id="node5" href="$mbed__multi__serial__connection_8hpp.html" title=" " alt="" coords="263,269,517,309"/>
+</map>

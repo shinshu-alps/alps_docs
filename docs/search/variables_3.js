@@ -1,11 +1,13 @@
 var searchData=
 [
-  ['channela_5f_0',['channelA_',['../classroblab_1_1mbed__lib_1_1_rotary_encoder.html#ac58798df0a869420d3bc2f4fd0b13169',1,'roblab::mbed_lib::RotaryEncoder']]],
-  ['channelb_5f_1',['channelB_',['../classroblab_1_1mbed__lib_1_1_rotary_encoder.html#abd4bdbd856f4feaf89640d2629a042b3',1,'roblab::mbed_lib::RotaryEncoder']]],
-  ['coeff_5f_2',['coeff_',['../classroblab_1_1common__lib_1_1_integral.html#a3b627b85b1b6b22d1cf7584e0c1ab34c',1,'roblab::common_lib::Integral']]],
-  ['coeff_5fa_5f_3',['coeff_a_',['../classroblab_1_1common__lib_1_1_differential.html#a119bcbeb21620e1e44db16ce30e016a2',1,'roblab::common_lib::Differential::coeff_a_'],['../classroblab_1_1common__lib_1_1_dob.html#ae35e767470c3e6af62e02359561697bd',1,'roblab::common_lib::Dob::coeff_a_'],['../classroblab_1_1common__lib_1_1_lpf.html#a61a3d65275a327009a027347f72ba104',1,'roblab::common_lib::Lpf::coeff_a_']]],
-  ['coeff_5fb_5f_4',['coeff_b_',['../classroblab_1_1common__lib_1_1_lpf.html#a209b912f648577d47ed758ef18c4eee2',1,'roblab::common_lib::Lpf::coeff_b_'],['../classroblab_1_1common__lib_1_1_dob.html#aecbffe83eed0ad0d6d13bbd501c15024',1,'roblab::common_lib::Dob::coeff_b_'],['../classroblab_1_1common__lib_1_1_differential.html#a3b417af26a26236338078cdd5d7bb3fd',1,'roblab::common_lib::Differential::coeff_b_']]],
-  ['coeff_5fc_5f_5',['coeff_c_',['../classroblab_1_1common__lib_1_1_dob.html#a873ef52aef50fb59249b2ba558a5ffdb',1,'roblab::common_lib::Dob']]],
-  ['ctrl_5fperiod_5fsec_5f_6',['ctrl_period_sec_',['../classroblab_1_1common__lib_1_1_differential.html#a5dac9186a151ccf47063b61f10eec26d',1,'roblab::common_lib::Differential::ctrl_period_sec_'],['../classroblab_1_1common__lib_1_1_dob.html#a7508d57027989ae3101f39c6b0b3daac',1,'roblab::common_lib::Dob::ctrl_period_sec_'],['../classroblab_1_1common__lib_1_1_integral.html#a3424dc80349183e4d960fc53ea238017',1,'roblab::common_lib::Integral::ctrl_period_sec_'],['../classroblab_1_1common__lib_1_1_lpf.html#ae15e4d7a53437b57cb59265283390e70',1,'roblab::common_lib::Lpf::ctrl_period_sec_'],['../classroblab_1_1common__lib_1_1_pid.html#a1720f71bab33807070fabac6e232566a',1,'roblab::common_lib::Pid::ctrl_period_sec_'],['../classroblab_1_1common__lib_1_1_trapezoid_control.html#a11524a5db8c964e644d884a03f7d041f',1,'roblab::common_lib::TrapezoidControl::ctrl_period_sec_']]],
-  ['curr_5fstate_5f_7',['curr_state_',['../classroblab_1_1mbed__lib_1_1_rotary_encoder.html#ad981711d491ddc13927ae4fb5a33d641',1,'roblab::mbed_lib::RotaryEncoder']]]
+  ['elapsed_5f_0',['elapsed_',['../classroblab_1_1common__lib_1_1_timer.html#a5e3831396a1351ca36e234f8ac6c0183',1,'roblab::common_lib::Timer']]],
+  ['encoding_5f_1',['encoding_',['../classroblab_1_1mbed__lib_1_1_rotary_encoder.html#a6440c37a7de8e83ae548d73eb61d7ae1',1,'roblab::mbed_lib::RotaryEncoder']]],
+  ['end_5f_2',['end_',['../classroblab_1_1common__lib_1_1_timer.html#aa0e132fc1945cd28653dee3cbc35dbe0',1,'roblab::common_lib::Timer']]],
+  ['end_5fcount_5f_3',['end_count_',['../classroblab_1_1common__lib_1_1_pid.html#a79b7d941e0079ea5a71749c535a551f3',1,'roblab::common_lib::Pid']]],
+  ['end_5fdiff_5f_4',['end_diff_',['../classroblab_1_1common__lib_1_1_pid.html#abbf64e7cc9df37c6f6a6699f6cacfefe',1,'roblab::common_lib::Pid']]],
+  ['end_5ferr_5f_5',['end_err_',['../classroblab_1_1common__lib_1_1_pid.html#aa3abc963783e8a80eb2206e4b9f58cac',1,'roblab::common_lib::Pid']]],
+  ['err_5f_6',['err_',['../classroblab_1_1common__lib_1_1_pid.html#a8cd05af9878f5c48bbf56de9a100fba1',1,'roblab::common_lib::Pid']]],
+  ['err_5fdiff_5f_7',['err_diff_',['../classroblab_1_1common__lib_1_1_pid.html#a126a14f6cdc40ffc1a98ea31dbce869b',1,'roblab::common_lib::Pid']]],
+  ['err_5fintg_5f_8',['err_intg_',['../classroblab_1_1common__lib_1_1_pid.html#a9a090b58e7e84aa6c4356484ca2adbbd',1,'roblab::common_lib::Pid']]],
+  ['estimated_5fdisturbance_5f_9',['estimated_disturbance_',['../classroblab_1_1common__lib_1_1_dob.html#a8716ad714f7cf872756dc4105388b668',1,'roblab::common_lib::Dob']]]
 ];

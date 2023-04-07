@@ -1,0 +1,198 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roblab: roblab::common_lib::SerializeTypeInfo&lt; T &gt; 構造体テンプレート</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Roblab
+                            </div>
+                            <div id="projectbrief">roboken shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structroblab_1_1common__lib_1_1_serialize_type_info.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="structroblab_1_1common__lib_1_1_serialize_type_info-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">roblab::common_lib::SerializeTypeInfo&lt; T &gt; 構造体テンプレート</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>バイト列変換に関する型情報  
+ <a href="structroblab_1_1common__lib_1_1_serialize_type_info.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="serialize__type__info_8hpp_source.html">serialize_type_info.hpp</a>&gt;</code></p>
+<div class="dynheader">
+roblab::common_lib::SerializeTypeInfo&lt; T &gt; の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structroblab_1_1common__lib_1_1_serialize_type_info__inherit__graph.svg" width="190" height="154"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a08824f5333375709a30090bc20ca7d7d"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structroblab_1_1common__lib_1_1_serialize_type_info.html#a08824f5333375709a30090bc20ca7d7d">GetName</a> ()</td></tr>
+<tr class="memdesc:a08824f5333375709a30090bc20ca7d7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">プラットフォーム環境の影響を受けずに比較できる型名を得る  <br /></td></tr>
+<tr class="separator:a08824f5333375709a30090bc20ca7d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_structroblab_1_1common__lib_1_1_serialize_type_info_base"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_structroblab_1_1common__lib_1_1_serialize_type_info_base')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="structroblab_1_1common__lib_1_1_serialize_type_info_base.html">roblab::common_lib::SerializeTypeInfoBase&lt; false, false &gt;</a> に属する継承静的公開メンバ関数</td></tr>
+<tr class="memitem:a18003cf3815ec81bd8bac95f7516c022 inherit pub_static_methods_structroblab_1_1common__lib_1_1_serialize_type_info_base"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structroblab_1_1common__lib_1_1_serialize_type_info_base.html#a18003cf3815ec81bd8bac95f7516c022">IsSerializable</a> ()</td></tr>
+<tr class="memdesc:a18003cf3815ec81bd8bac95f7516c022 inherit pub_static_methods_structroblab_1_1common__lib_1_1_serialize_type_info_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tがバイト列変換に対応しているか  <br /></td></tr>
+<tr class="separator:a18003cf3815ec81bd8bac95f7516c022 inherit pub_static_methods_structroblab_1_1common__lib_1_1_serialize_type_info_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a956ebcfa44133c118ab09575426fda3f inherit pub_static_methods_structroblab_1_1common__lib_1_1_serialize_type_info_base"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structroblab_1_1common__lib_1_1_serialize_type_info_base.html#a956ebcfa44133c118ab09575426fda3f">IsSingle</a> ()</td></tr>
+<tr class="memdesc:a956ebcfa44133c118ab09575426fda3f inherit pub_static_methods_structroblab_1_1common__lib_1_1_serialize_type_info_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tが単一型(int,boolなど)かどうか  <br /></td></tr>
+<tr class="separator:a956ebcfa44133c118ab09575426fda3f inherit pub_static_methods_structroblab_1_1common__lib_1_1_serialize_type_info_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66d2fafb6f1420201a0f82526201ff0d inherit pub_static_methods_structroblab_1_1common__lib_1_1_serialize_type_info_base"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structroblab_1_1common__lib_1_1_serialize_type_info_base.html#a66d2fafb6f1420201a0f82526201ff0d">IsMultiple</a> ()</td></tr>
+<tr class="memdesc:a66d2fafb6f1420201a0f82526201ff0d inherit pub_static_methods_structroblab_1_1common__lib_1_1_serialize_type_info_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tが複合型(vector, string, tupleなど)かどうか  <br /></td></tr>
+<tr class="separator:a66d2fafb6f1420201a0f82526201ff0d inherit pub_static_methods_structroblab_1_1common__lib_1_1_serialize_type_info_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
+struct roblab::common_lib::SerializeTypeInfo&lt; T &gt;</div><p>バイト列変換に関する型情報 </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>情報を知りたい型 </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">関数詳解</h2>
+<a id="a08824f5333375709a30090bc20ca7d7d" name="a08824f5333375709a30090bc20ca7d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08824f5333375709a30090bc20ca7d7d">&#9670;&#160;</a></span>GetName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const std::string <a class="el" href="structroblab_1_1common__lib_1_1_serialize_type_info.html">roblab::common_lib::SerializeTypeInfo</a>&lt; T &gt;::GetName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>プラットフォーム環境の影響を受けずに比較できる型名を得る </p>
+<dl class="section return"><dt>戻り値</dt><dd>const std::string 型名 </dd></dl>
+
+</div>
+</div>
+<hr/>この構造体詳解は次のファイルから抽出されました:<ul>
+<li>roblab_common_lib/include/serial/<a class="el" href="serialize__type__info_8hpp_source.html">serialize_type_info.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceroblab.html">roblab</a></li><li class="navelem"><a class="el" href="namespaceroblab_1_1common__lib.html">common_lib</a></li><li class="navelem"><a class="el" href="structroblab_1_1common__lib_1_1_serialize_type_info.html">SerializeTypeInfo</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

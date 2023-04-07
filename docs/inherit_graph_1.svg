@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classroblab_1_1common__lib_1_1_differential.html" target="_top" xlink:title="近似微分器">
+<g id="a_node1"><a xlink:href="classroblab_1_1common__lib_1_1_cobs.html" target="_top" xlink:title="COBSの変換関数群">
 <polygon fill="white" stroke="#666666" points="113,-30 0,-30 0,0 113,0 113,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">roblab::common_lib</text>
-<text text-anchor="middle" x="56.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::Differential</text>
+<text text-anchor="middle" x="56.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::Cobs</text>
 </a>
 </g>
 </g>

@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['m_5fpi_0',['M_PI',['../classroblab_1_1common__lib_1_1_trapezoid_control.html#a88c525a9b63ee321b5af900f15c878b1',1,'roblab::common_lib::TrapezoidControl']]],
-  ['magnification_5f_1',['magnification_',['../classroblab_1_1mbed__lib_1_1_dc_motor.html#a0710091d988182ee40f4bdac7b7715a3',1,'roblab::mbed_lib::DcMotor::magnification_'],['../classroblab_1_1mbed__lib_1_1_rotary_encoder.html#a7429b200c934d0a9740775a09b892ac8',1,'roblab::mbed_lib::RotaryEncoder::magnification_']]],
-  ['mainpage_2emd_2',['MainPage.md',['../_main_page_8md.html',1,'']]],
-  ['motor_5foutput_5f_3',['motor_output_',['../classroblab_1_1common__lib_1_1_dob.html#afc9447e5eb960bec55d461c756bd1e99',1,'roblab::common_lib::Dob::motor_output_'],['../classroblab_1_1common__lib_1_1_trapezoid_control.html#a5f790d6bba9f0d7add2bca933bc640de',1,'roblab::common_lib::TrapezoidControl::motor_output_']]],
-  ['moving_5fave_2ehpp_4',['moving_ave.hpp',['../moving__ave_8hpp.html',1,'']]],
-  ['moving_5fave_5fresult_5f_5',['moving_ave_result_',['../classroblab_1_1common__lib_1_1_moving_ave.html#a31c0ddceee648a04212a5b2e42d05784',1,'roblab::common_lib::MovingAve']]],
-  ['movingave_6',['MovingAve',['../classroblab_1_1common__lib_1_1_moving_ave.html',1,'roblab::common_lib']]]
+  ['name_5fto_5fpacket_5fmanager_5f_0',['name_to_packet_manager_',['../classroblab_1_1ros__lib_1_1_mbed_multi_serial_connection.html#ad6a399c5ce7f3708af20619848e46701',1,'roblab::ros_lib::MbedMultiSerialConnection']]],
+  ['npos_1',['npos',['../classroblab_1_1common__lib_1_1_byte_ring_buffer.html#a78737d00e1a7d29a7d10996bbbe04ff4',1,'roblab::common_lib::ByteRingBuffer']]],
+  ['number_5fof_5fpulse_5f_2',['number_of_pulse_',['../classroblab_1_1mbed__lib_1_1_stepping_motor.html#a19e0c09ac129a278799267fddd13dc2d',1,'roblab::mbed_lib::SteppingMotor']]]
 ];
