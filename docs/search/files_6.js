@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['pc_5fserial_5fconnection_2ehpp_0',['pc_serial_connection.hpp',['../pc__serial__connection_8hpp.html',1,'']]],
-  ['pid_2ehpp_1',['pid.hpp',['../pid_8hpp.html',1,'']]],
-  ['posix_5fserial_5fio_2ehpp_2',['posix_serial_io.hpp',['../posix__serial__io_8hpp.html',1,'']]]
+  ['namespace_5fexplanation_2ehpp_0',['namespace_explanation.hpp',['../namespace__explanation_8hpp.html',1,'']]]
 ];
