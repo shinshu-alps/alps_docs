@@ -1,0 +1,789 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Roblab: roblab::ros_lib::PosixSerialIO クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Roblab
+   </div>
+   <div id="projectbrief">roboken shinshu library</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classroblab_1_1ros__lib_1_1_posix_serial_i_o.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
+<a href="classroblab_1_1ros__lib_1_1_posix_serial_i_o-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">roblab::ros_lib::PosixSerialIO クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>POSIX APIを提供する環境でのUartシリアル通信IOクラス  
+ <a href="classroblab_1_1ros__lib_1_1_posix_serial_i_o.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="posix__serial__io_8hpp_source.html">posix_serial_io.hpp</a>&gt;</code></p>
+<div class="dynheader">
+roblab::ros_lib::PosixSerialIO の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classroblab_1_1ros__lib_1_1_posix_serial_i_o__inherit__graph.svg" width="219" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a88d957a1920e43ab405833f0df7f539b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1ros__lib_1_1_posix_serial_i_o.html#a88d957a1920e43ab405833f0df7f539b">PosixSerialIO</a> (std::string device_path, speed_t baud_rate)</td></tr>
+<tr class="memdesc:a88d957a1920e43ab405833f0df7f539b"><td class="mdescLeft">&#160;</td><td class="mdescRight">シリアル通信する対象との送受信経路を確立する  <br /></td></tr>
+<tr class="separator:a88d957a1920e43ab405833f0df7f539b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d7ad524e655f83354a74afec2830bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1ros__lib_1_1_posix_serial_i_o.html#a85d7ad524e655f83354a74afec2830bf">~PosixSerialIO</a> ()</td></tr>
+<tr class="memdesc:a85d7ad524e655f83354a74afec2830bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ．送受信経路を閉じる  <br /></td></tr>
+<tr class="separator:a85d7ad524e655f83354a74afec2830bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9138dddbf2cb02a4da4ff56fa58436a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1ros__lib_1_1_posix_serial_i_o.html#ab9138dddbf2cb02a4da4ff56fa58436a">Update</a> () override</td></tr>
+<tr class="memdesc:ab9138dddbf2cb02a4da4ff56fa58436a"><td class="mdescLeft">&#160;</td><td class="mdescRight">書き込み待ちバッファ内容を送信し 読み込み待ちバッファ内容を読み込む 周期的に実行させること．  <br /></td></tr>
+<tr class="separator:ab9138dddbf2cb02a4da4ff56fa58436a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af13d02757f1865735522ad705422257c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1ros__lib_1_1_posix_serial_i_o.html#af13d02757f1865735522ad705422257c">AddDataToWriteBuffer</a> (<a class="el" href="classroblab_1_1common__lib_1_1_byte_ring_buffer.html">common_lib::ByteRingBuffer</a> &amp;&amp;write_buffer) override</td></tr>
+<tr class="memdesc:af13d02757f1865735522ad705422257c"><td class="mdescLeft">&#160;</td><td class="mdescRight">書き込み待ちバッファにデータを追加する  <br /></td></tr>
+<tr class="separator:af13d02757f1865735522ad705422257c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4208252610330cad90614a61461af743"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classroblab_1_1common__lib_1_1_byte_ring_buffer.html">common_lib::ByteRingBuffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1ros__lib_1_1_posix_serial_i_o.html#a4208252610330cad90614a61461af743">GetAccessToReadBuffer</a> () override</td></tr>
+<tr class="memdesc:a4208252610330cad90614a61461af743"><td class="mdescLeft">&#160;</td><td class="mdescRight">読み込みバッファへの参照を得る  <br /></td></tr>
+<tr class="separator:a4208252610330cad90614a61461af743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92bf44fc06738e2fe156528f42cd23f2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1ros__lib_1_1_posix_serial_i_o.html#a92bf44fc06738e2fe156528f42cd23f2">GetWriteBufferSize</a> ()</td></tr>
+<tr class="memdesc:a92bf44fc06738e2fe156528f42cd23f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在保持している書き込みバッファのサイズを得る  <br /></td></tr>
+<tr class="separator:a92bf44fc06738e2fe156528f42cd23f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classroblab_1_1common__lib_1_1_i_serial_i_o"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classroblab_1_1common__lib_1_1_i_serial_i_o')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classroblab_1_1common__lib_1_1_i_serial_i_o.html">roblab::common_lib::ISerialIO</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a4e56410a5807a08fde0df086c5ec8441 inherit pub_methods_classroblab_1_1common__lib_1_1_i_serial_i_o"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_i_serial_i_o.html#a4e56410a5807a08fde0df086c5ec8441">~ISerialIO</a> ()</td></tr>
+<tr class="memdesc:a4e56410a5807a08fde0df086c5ec8441 inherit pub_methods_classroblab_1_1common__lib_1_1_i_serial_i_o"><td class="mdescLeft">&#160;</td><td class="mdescRight">仮想デストラクタ  <br /></td></tr>
+<tr class="separator:a4e56410a5807a08fde0df086c5ec8441 inherit pub_methods_classroblab_1_1common__lib_1_1_i_serial_i_o"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4312aaefd3c60e535af6786f758ff77 inherit pub_methods_classroblab_1_1common__lib_1_1_i_serial_i_o"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_i_serial_i_o.html#ae4312aaefd3c60e535af6786f758ff77">Update</a> ()=0</td></tr>
+<tr class="memdesc:ae4312aaefd3c60e535af6786f758ff77 inherit pub_methods_classroblab_1_1common__lib_1_1_i_serial_i_o"><td class="mdescLeft">&#160;</td><td class="mdescRight">書き込み待ちバッファ内容を送信し 読み込み待ちバッファ内容を読み込む 周期的に実行させること．  <br /></td></tr>
+<tr class="separator:ae4312aaefd3c60e535af6786f758ff77 inherit pub_methods_classroblab_1_1common__lib_1_1_i_serial_i_o"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca1b2ee3257e7ea8c3fdc2b1d755b4e inherit pub_methods_classroblab_1_1common__lib_1_1_i_serial_i_o"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_i_serial_i_o.html#abca1b2ee3257e7ea8c3fdc2b1d755b4e">AddDataToWriteBuffer</a> (<a class="el" href="classroblab_1_1common__lib_1_1_byte_ring_buffer.html">ByteRingBuffer</a> &amp;&amp;write_buffer)=0</td></tr>
+<tr class="memdesc:abca1b2ee3257e7ea8c3fdc2b1d755b4e inherit pub_methods_classroblab_1_1common__lib_1_1_i_serial_i_o"><td class="mdescLeft">&#160;</td><td class="mdescRight">書き込み待ちバッファにデータを追加する  <br /></td></tr>
+<tr class="separator:abca1b2ee3257e7ea8c3fdc2b1d755b4e inherit pub_methods_classroblab_1_1common__lib_1_1_i_serial_i_o"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf647966001139c3197e45c4df114de7 inherit pub_methods_classroblab_1_1common__lib_1_1_i_serial_i_o"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classroblab_1_1common__lib_1_1_byte_ring_buffer.html">ByteRingBuffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_i_serial_i_o.html#abf647966001139c3197e45c4df114de7">GetAccessToReadBuffer</a> ()=0</td></tr>
+<tr class="memdesc:abf647966001139c3197e45c4df114de7 inherit pub_methods_classroblab_1_1common__lib_1_1_i_serial_i_o"><td class="mdescLeft">&#160;</td><td class="mdescRight">読み込み待ちバッファへの参照を得る  <br /></td></tr>
+<tr class="separator:abf647966001139c3197e45c4df114de7 inherit pub_methods_classroblab_1_1common__lib_1_1_i_serial_i_o"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81c79d95a606b3fd03bb196ffe33ff1b inherit pub_methods_classroblab_1_1common__lib_1_1_i_serial_i_o"><td class="memItemLeft" align="right" valign="top">virtual ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_i_serial_i_o.html#a81c79d95a606b3fd03bb196ffe33ff1b">Write</a> ()=0</td></tr>
+<tr class="memdesc:a81c79d95a606b3fd03bb196ffe33ff1b inherit pub_methods_classroblab_1_1common__lib_1_1_i_serial_i_o"><td class="mdescLeft">&#160;</td><td class="mdescRight">書き込み待ちバッファ内容を送信する  <br /></td></tr>
+<tr class="separator:a81c79d95a606b3fd03bb196ffe33ff1b inherit pub_methods_classroblab_1_1common__lib_1_1_i_serial_i_o"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56e4890c6d0cd7a42feb7a6833f3a104 inherit pub_methods_classroblab_1_1common__lib_1_1_i_serial_i_o"><td class="memItemLeft" align="right" valign="top">virtual ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common__lib_1_1_i_serial_i_o.html#a56e4890c6d0cd7a42feb7a6833f3a104">Read</a> ()=0</td></tr>
+<tr class="memdesc:a56e4890c6d0cd7a42feb7a6833f3a104 inherit pub_methods_classroblab_1_1common__lib_1_1_i_serial_i_o"><td class="mdescLeft">&#160;</td><td class="mdescRight">受信バッファからこのクラスの読み込み待ちバッファへ読み込む  <br /></td></tr>
+<tr class="separator:a56e4890c6d0cd7a42feb7a6833f3a104 inherit pub_methods_classroblab_1_1common__lib_1_1_i_serial_i_o"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a7309f83bcf787fa8cf2d20b3175ef837"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1ros__lib_1_1_posix_serial_i_o.html#a7309f83bcf787fa8cf2d20b3175ef837">Write</a> () override</td></tr>
+<tr class="memdesc:a7309f83bcf787fa8cf2d20b3175ef837"><td class="mdescLeft">&#160;</td><td class="mdescRight">書き込み待ちバッファ内容を送信する  <br /></td></tr>
+<tr class="separator:a7309f83bcf787fa8cf2d20b3175ef837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac202ce8822d9ead71a4a32687e6d2451"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1ros__lib_1_1_posix_serial_i_o.html#ac202ce8822d9ead71a4a32687e6d2451">Read</a> () override</td></tr>
+<tr class="memdesc:ac202ce8822d9ead71a4a32687e6d2451"><td class="mdescLeft">&#160;</td><td class="mdescRight">書き込み待ちバッファ内容を送信する  <br /></td></tr>
+<tr class="separator:ac202ce8822d9ead71a4a32687e6d2451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae134cf0d03140e5ab3db24306e2285b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1ros__lib_1_1_posix_serial_i_o.html#ae134cf0d03140e5ab3db24306e2285b4">Open</a> () noexcept</td></tr>
+<tr class="memdesc:ae134cf0d03140e5ab3db24306e2285b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">シリアルポートを開く  <br /></td></tr>
+<tr class="separator:ae134cf0d03140e5ab3db24306e2285b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20e285afb49d6425c40152264399895e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1ros__lib_1_1_posix_serial_i_o.html#a20e285afb49d6425c40152264399895e">Close</a> ()</td></tr>
+<tr class="memdesc:a20e285afb49d6425c40152264399895e"><td class="mdescLeft">&#160;</td><td class="mdescRight">シリアルポートを閉じる  <br /></td></tr>
+<tr class="separator:a20e285afb49d6425c40152264399895e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dddf143a34b6378905e16433de40ff0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1ros__lib_1_1_posix_serial_i_o.html#a3dddf143a34b6378905e16433de40ff0">TryToOpen</a> ()</td></tr>
+<tr class="memdesc:a3dddf143a34b6378905e16433de40ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">周期的にシリアルポートを開こうとする  <br /></td></tr>
+<tr class="separator:a3dddf143a34b6378905e16433de40ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:ac23e77d4820a1e8a1345a55703493b93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1ros__lib_1_1_posix_serial_i_o.html#ac23e77d4820a1e8a1345a55703493b93">file_descriptor_</a></td></tr>
+<tr class="memdesc:ac23e77d4820a1e8a1345a55703493b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイル識別子  <br /></td></tr>
+<tr class="separator:ac23e77d4820a1e8a1345a55703493b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c98f12a19792b1a8b00024f3560cd0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classroblab_1_1common__lib_1_1_byte_ring_buffer.html">common_lib::ByteRingBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1ros__lib_1_1_posix_serial_i_o.html#a0c98f12a19792b1a8b00024f3560cd0d">read_buffer_</a></td></tr>
+<tr class="memdesc:a0c98f12a19792b1a8b00024f3560cd0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">読み込み待ちバッファ  <br /></td></tr>
+<tr class="separator:a0c98f12a19792b1a8b00024f3560cd0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8554e5243a891436e7b2c99fa2b3962e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classroblab_1_1common__lib_1_1_byte_ring_buffer.html">common_lib::ByteRingBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1ros__lib_1_1_posix_serial_i_o.html#a8554e5243a891436e7b2c99fa2b3962e">write_buffer_</a></td></tr>
+<tr class="memdesc:a8554e5243a891436e7b2c99fa2b3962e"><td class="mdescLeft">&#160;</td><td class="mdescRight">書き込み待ちバッファ  <br /></td></tr>
+<tr class="separator:a8554e5243a891436e7b2c99fa2b3962e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc3d552b1efc0213e11ada6e35bfc07d"><td class="memItemLeft" align="right" valign="top">termios&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1ros__lib_1_1_posix_serial_i_o.html#adc3d552b1efc0213e11ada6e35bfc07d">initial_settings_</a></td></tr>
+<tr class="memdesc:adc3d552b1efc0213e11ada6e35bfc07d"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期設定 戻すために保存しておく  <br /></td></tr>
+<tr class="separator:adc3d552b1efc0213e11ada6e35bfc07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacae33401d33e700c5962750e19bec4a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1ros__lib_1_1_posix_serial_i_o.html#aacae33401d33e700c5962750e19bec4a">device_path_</a></td></tr>
+<tr class="memdesc:aacae33401d33e700c5962750e19bec4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">シリアルデバイスへのパス  <br /></td></tr>
+<tr class="separator:aacae33401d33e700c5962750e19bec4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f949e2c14d838604a076b11b8bcee9"><td class="memItemLeft" align="right" valign="top">speed_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1ros__lib_1_1_posix_serial_i_o.html#aa8f949e2c14d838604a076b11b8bcee9">baud_rate_</a></td></tr>
+<tr class="memdesc:aa8f949e2c14d838604a076b11b8bcee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ボーレート  <br /></td></tr>
+<tr class="separator:aa8f949e2c14d838604a076b11b8bcee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe4855845c3092dff9d8ce93fcac43b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1ros__lib_1_1_posix_serial_i_o.html#abe4855845c3092dff9d8ce93fcac43b8">is_opened_</a> = false</td></tr>
+<tr class="memdesc:abe4855845c3092dff9d8ce93fcac43b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在シリアルデバイスが開けているか  <br /></td></tr>
+<tr class="separator:abe4855845c3092dff9d8ce93fcac43b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a4e92020fad0b391a007e1dc761c3d"><td class="memItemLeft" align="right" valign="top">std::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1ros__lib_1_1_posix_serial_i_o.html#ab5a4e92020fad0b391a007e1dc761c3d">last_try_open_time_</a></td></tr>
+<tr class="memdesc:ab5a4e92020fad0b391a007e1dc761c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">前回開こうとした時刻  <br /></td></tr>
+<tr class="separator:ab5a4e92020fad0b391a007e1dc761c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:a36b944191dd2eaf89ee3c6b6fd5a2193"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1ros__lib_1_1_posix_serial_i_o.html#a36b944191dd2eaf89ee3c6b6fd5a2193">kTryOpenInterval_ms_</a> = 1000</td></tr>
+<tr class="memdesc:a36b944191dd2eaf89ee3c6b6fd5a2193"><td class="mdescLeft">&#160;</td><td class="mdescRight">シリアルデバイスを開けるか確認する間隔  <br /></td></tr>
+<tr class="separator:a36b944191dd2eaf89ee3c6b6fd5a2193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>POSIX APIを提供する環境でのUartシリアル通信IOクラス </p>
+<dl class="section note"><dt>覚え書き</dt><dd>Ubuntuでの動作は確認 </dd></dl>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a88d957a1920e43ab405833f0df7f539b" name="a88d957a1920e43ab405833f0df7f539b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88d957a1920e43ab405833f0df7f539b">&#9670;&#160;</a></span>PosixSerialIO()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">roblab::ros_lib::PosixSerialIO::PosixSerialIO </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>device_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">speed_t&#160;</td>
+          <td class="paramname"><em>baud_rate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>シリアル通信する対象との送受信経路を確立する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device_path</td><td>開くデバイスのパス </td></tr>
+    <tr><td class="paramname">baud_rate</td><td>ボーレート </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a85d7ad524e655f83354a74afec2830bf" name="a85d7ad524e655f83354a74afec2830bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85d7ad524e655f83354a74afec2830bf">&#9670;&#160;</a></span>~PosixSerialIO()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">roblab::ros_lib::PosixSerialIO::~PosixSerialIO </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デストラクタ．送受信経路を閉じる </p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="af13d02757f1865735522ad705422257c" name="af13d02757f1865735522ad705422257c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af13d02757f1865735522ad705422257c">&#9670;&#160;</a></span>AddDataToWriteBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roblab::ros_lib::PosixSerialIO::AddDataToWriteBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classroblab_1_1common__lib_1_1_byte_ring_buffer.html">common_lib::ByteRingBuffer</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>write_buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>書き込み待ちバッファにデータを追加する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">write_buffer</td><td>送りたいデータ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="classroblab_1_1common__lib_1_1_i_serial_i_o.html#abca1b2ee3257e7ea8c3fdc2b1d755b4e">roblab::common_lib::ISerialIO</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="a20e285afb49d6425c40152264399895e" name="a20e285afb49d6425c40152264399895e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20e285afb49d6425c40152264399895e">&#9670;&#160;</a></span>Close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roblab::ros_lib::PosixSerialIO::Close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>シリアルポートを閉じる </p>
+
+</div>
+</div>
+<a id="a4208252610330cad90614a61461af743" name="a4208252610330cad90614a61461af743"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4208252610330cad90614a61461af743">&#9670;&#160;</a></span>GetAccessToReadBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classroblab_1_1common__lib_1_1_byte_ring_buffer.html">common_lib::ByteRingBuffer</a> &amp; roblab::ros_lib::PosixSerialIO::GetAccessToReadBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>読み込みバッファへの参照を得る </p>
+<dl class="section return"><dt>戻り値</dt><dd>ByteRingBuffer&amp; 読み込み待ちバッファの参照 </dd></dl>
+
+<p><a class="el" href="classroblab_1_1common__lib_1_1_i_serial_i_o.html#abf647966001139c3197e45c4df114de7">roblab::common_lib::ISerialIO</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="a92bf44fc06738e2fe156528f42cd23f2" name="a92bf44fc06738e2fe156528f42cd23f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92bf44fc06738e2fe156528f42cd23f2">&#9670;&#160;</a></span>GetWriteBufferSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t roblab::ros_lib::PosixSerialIO::GetWriteBufferSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>現在保持している書き込みバッファのサイズを得る </p>
+<dl class="section return"><dt>戻り値</dt><dd>size_t 書き込みバッファのサイズ </dd></dl>
+
+</div>
+</div>
+<a id="ae134cf0d03140e5ab3db24306e2285b4" name="ae134cf0d03140e5ab3db24306e2285b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae134cf0d03140e5ab3db24306e2285b4">&#9670;&#160;</a></span>Open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool roblab::ros_lib::PosixSerialIO::Open </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>シリアルポートを開く </p>
+<dl class="section return"><dt>戻り値</dt><dd>true 開けた </dd>
+<dd>
+false 開けなかった </dd></dl>
+<dl class="section see"><dt>参照</dt><dd><a href="https://blog.mbedded.ninja/programming/operating-systems/linux/linux-serial-ports-using-c-cpp/">https://blog.mbedded.ninja/programming/operating-systems/linux/linux-serial-ports-using-c-cpp/</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac202ce8822d9ead71a4a32687e6d2451" name="ac202ce8822d9ead71a4a32687e6d2451"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac202ce8822d9ead71a4a32687e6d2451">&#9670;&#160;</a></span>Read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t roblab::ros_lib::PosixSerialIO::Read </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>書き込み待ちバッファ内容を送信する </p>
+<dl class="section return"><dt>戻り値</dt><dd>ssize_t 送ったバイト数 失敗したときは負の値 </dd></dl>
+
+<p><a class="el" href="classroblab_1_1common__lib_1_1_i_serial_i_o.html#a56e4890c6d0cd7a42feb7a6833f3a104">roblab::common_lib::ISerialIO</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="a3dddf143a34b6378905e16433de40ff0" name="a3dddf143a34b6378905e16433de40ff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dddf143a34b6378905e16433de40ff0">&#9670;&#160;</a></span>TryToOpen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roblab::ros_lib::PosixSerialIO::TryToOpen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>周期的にシリアルポートを開こうとする </p>
+
+</div>
+</div>
+<a id="ab9138dddbf2cb02a4da4ff56fa58436a" name="ab9138dddbf2cb02a4da4ff56fa58436a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9138dddbf2cb02a4da4ff56fa58436a">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roblab::ros_lib::PosixSerialIO::Update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>書き込み待ちバッファ内容を送信し 読み込み待ちバッファ内容を読み込む 周期的に実行させること． </p>
+
+<p><a class="el" href="classroblab_1_1common__lib_1_1_i_serial_i_o.html#ae4312aaefd3c60e535af6786f758ff77">roblab::common_lib::ISerialIO</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="a7309f83bcf787fa8cf2d20b3175ef837" name="a7309f83bcf787fa8cf2d20b3175ef837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7309f83bcf787fa8cf2d20b3175ef837">&#9670;&#160;</a></span>Write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t roblab::ros_lib::PosixSerialIO::Write </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>書き込み待ちバッファ内容を送信する </p>
+<dl class="section return"><dt>戻り値</dt><dd>ssize_t 送ったバイト数 失敗したときは負の値 </dd></dl>
+
+<p><a class="el" href="classroblab_1_1common__lib_1_1_i_serial_i_o.html#a81c79d95a606b3fd03bb196ffe33ff1b">roblab::common_lib::ISerialIO</a>を実装しています。</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="aa8f949e2c14d838604a076b11b8bcee9" name="aa8f949e2c14d838604a076b11b8bcee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8f949e2c14d838604a076b11b8bcee9">&#9670;&#160;</a></span>baud_rate_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">speed_t roblab::ros_lib::PosixSerialIO::baud_rate_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ボーレート </p>
+
+</div>
+</div>
+<a id="aacae33401d33e700c5962750e19bec4a" name="aacae33401d33e700c5962750e19bec4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacae33401d33e700c5962750e19bec4a">&#9670;&#160;</a></span>device_path_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string roblab::ros_lib::PosixSerialIO::device_path_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>シリアルデバイスへのパス </p>
+
+</div>
+</div>
+<a id="ac23e77d4820a1e8a1345a55703493b93" name="ac23e77d4820a1e8a1345a55703493b93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac23e77d4820a1e8a1345a55703493b93">&#9670;&#160;</a></span>file_descriptor_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int roblab::ros_lib::PosixSerialIO::file_descriptor_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ファイル識別子 </p>
+
+</div>
+</div>
+<a id="adc3d552b1efc0213e11ada6e35bfc07d" name="adc3d552b1efc0213e11ada6e35bfc07d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc3d552b1efc0213e11ada6e35bfc07d">&#9670;&#160;</a></span>initial_settings_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">termios roblab::ros_lib::PosixSerialIO::initial_settings_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初期設定 戻すために保存しておく </p>
+
+</div>
+</div>
+<a id="abe4855845c3092dff9d8ce93fcac43b8" name="abe4855845c3092dff9d8ce93fcac43b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe4855845c3092dff9d8ce93fcac43b8">&#9670;&#160;</a></span>is_opened_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool roblab::ros_lib::PosixSerialIO::is_opened_ = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在シリアルデバイスが開けているか </p>
+
+</div>
+</div>
+<a id="a36b944191dd2eaf89ee3c6b6fd5a2193" name="a36b944191dd2eaf89ee3c6b6fd5a2193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36b944191dd2eaf89ee3c6b6fd5a2193">&#9670;&#160;</a></span>kTryOpenInterval_ms_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int roblab::ros_lib::PosixSerialIO::kTryOpenInterval_ms_ = 1000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>シリアルデバイスを開けるか確認する間隔 </p>
+
+</div>
+</div>
+<a id="ab5a4e92020fad0b391a007e1dc761c3d" name="ab5a4e92020fad0b391a007e1dc761c3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a4e92020fad0b391a007e1dc761c3d">&#9670;&#160;</a></span>last_try_open_time_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::chrono::steady_clock::time_point roblab::ros_lib::PosixSerialIO::last_try_open_time_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>前回開こうとした時刻 </p>
+
+</div>
+</div>
+<a id="a0c98f12a19792b1a8b00024f3560cd0d" name="a0c98f12a19792b1a8b00024f3560cd0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c98f12a19792b1a8b00024f3560cd0d">&#9670;&#160;</a></span>read_buffer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classroblab_1_1common__lib_1_1_byte_ring_buffer.html">common_lib::ByteRingBuffer</a> roblab::ros_lib::PosixSerialIO::read_buffer_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>読み込み待ちバッファ </p>
+
+</div>
+</div>
+<a id="a8554e5243a891436e7b2c99fa2b3962e" name="a8554e5243a891436e7b2c99fa2b3962e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8554e5243a891436e7b2c99fa2b3962e">&#9670;&#160;</a></span>write_buffer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classroblab_1_1common__lib_1_1_byte_ring_buffer.html">common_lib::ByteRingBuffer</a> roblab::ros_lib::PosixSerialIO::write_buffer_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>書き込み待ちバッファ </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>roblab_ros_lib/include/<a class="el" href="posix__serial__io_8hpp_source.html">posix_serial_io.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceroblab.html">roblab</a></li><li class="navelem"><a class="el" href="namespaceroblab_1_1ros__lib.html">ros_lib</a></li><li class="navelem"><a class="el" href="classroblab_1_1ros__lib_1_1_posix_serial_i_o.html">PosixSerialIO</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

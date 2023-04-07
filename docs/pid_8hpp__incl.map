@@ -1,4 +1,4 @@
-<map id="roblab_common_lib/include/pid.hpp" name="roblab_common_lib/include/pid.hpp">
+<map id="roblab_common_lib/include/control_algorithm/pid.hpp" name="roblab_common_lib/include/control_algorithm/pid.hpp">
 <area shape="rect" id="node1" title=" " alt="" coords="34,5,235,45"/>
 <area shape="rect" id="node2" href="$differential_8hpp.html" title=" " alt="" coords="5,93,128,119"/>
 <area shape="rect" id="node3" href="$integral_8hpp.html" title=" " alt="" coords="153,93,253,119"/>

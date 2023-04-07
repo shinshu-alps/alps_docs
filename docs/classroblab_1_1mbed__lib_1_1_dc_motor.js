@@ -7,5 +7,5 @@ var classroblab_1_1mbed__lib_1_1_dc_motor =
     [ "hertz_", "classroblab_1_1mbed__lib_1_1_dc_motor.html#af5de81f4a6b5fdaf046180d31cc108ca", null ],
     [ "magnification_", "classroblab_1_1mbed__lib_1_1_dc_motor.html#a0710091d988182ee40f4bdac7b7715a3", null ],
     [ "period_second_", "classroblab_1_1mbed__lib_1_1_dc_motor.html#a40d14fd461698dcea3560ad1f327494e", null ],
-    [ "pwm_", "classroblab_1_1mbed__lib_1_1_dc_motor.html#a47e3b025ec8aa876dc96d3c3c84a8598", null ]
+    [ "pwm_", "classroblab_1_1mbed__lib_1_1_dc_motor.html#a919773d2b6c7e6a9c91223874068c73c", null ]
 ];

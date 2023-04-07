@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['i_5foutput_5f_0',['i_output_',['../classroblab_1_1common__lib_1_1_pid.html#a66df911774da056f4c0a1e4f18f761af',1,'roblab::common_lib::Pid']]],
-  ['index_5f_1',['index_',['../classroblab_1_1mbed__lib_1_1_rotary_encoder.html#a82207be8be9aeedd15073379a7cb338c',1,'roblab::mbed_lib::RotaryEncoder']]],
-  ['input_5f_2',['input_',['../classroblab_1_1common__lib_1_1_pid.html#ac5230aaaae83e81c219c6adb1462f03d',1,'roblab::common_lib::Pid']]],
-  ['input_5fprev_5f_3',['input_prev_',['../classroblab_1_1common__lib_1_1_differential.html#a554fda8704106147c31b0f55747d6342',1,'roblab::common_lib::Differential::input_prev_'],['../classroblab_1_1common__lib_1_1_integral.html#aec7118dcb22368ee4b25f1ade12de9f6',1,'roblab::common_lib::Integral::input_prev_'],['../classroblab_1_1common__lib_1_1_lpf.html#afea046e931e9de791cd5abcea8734c15',1,'roblab::common_lib::Lpf::input_prev_']]],
-  ['intg_4',['intg',['../classroblab_1_1common__lib_1_1_pid.html#a7bf8f1f4a9c4151936c91e8d2702c108',1,'roblab::common_lib::Pid']]],
-  ['iticks_5fms_5',['iticks_ms',['../class_fast_p_w_m.html#a69762f7141e2a67d1944c0ae7cc37c53',1,'FastPWM']]],
-  ['iticks_5fus_6',['iticks_us',['../class_fast_p_w_m.html#a0e63eabf84aff1f56f494a6d4cd1b4a5',1,'FastPWM']]]
+  ['last_5ftry_5fopen_5ftime_5f_0',['last_try_open_time_',['../classroblab_1_1ros__lib_1_1_posix_serial_i_o.html#ab5a4e92020fad0b391a007e1dc761c3d',1,'roblab::ros_lib::PosixSerialIO']]],
+  ['limit_5fi_5foutput_5f_1',['limit_i_output_',['../classroblab_1_1common__lib_1_1_pid.html#a99e63653f5d679a204e35ebe3010018f',1,'roblab::common_lib::Pid']]],
+  ['limit_5foutput_5f_2',['limit_output_',['../classroblab_1_1common__lib_1_1_dob.html#aad42b4bcdf514e12c0fbef89031851d9',1,'roblab::common_lib::Dob::limit_output_'],['../classroblab_1_1common__lib_1_1_pid.html#a9e7a7d6cfb64d607fb7b81c2334726e1',1,'roblab::common_lib::Pid::limit_output_']]],
+  ['log_5fid_5f_3',['log_id_',['../classroblab_1_1mbed__lib_1_1_pc_serial_connection.html#aa25823818215d4d5ed294872acb5aacb',1,'roblab::mbed_lib::PcSerialConnection::log_id_'],['../classroblab_1_1ros__lib_1_1_mbed_single_serial_connection.html#a482c11cc7e64280b01827c12276a478e',1,'roblab::ros_lib::MbedSingleSerialConnection::log_id_']]],
+  ['log_5fmessages_5f_4',['log_messages_',['../classroblab_1_1mbed__lib_1_1_pc_serial_connection.html#a1824af07034c45211a5df2b30bf8d5a7',1,'roblab::mbed_lib::PcSerialConnection']]],
+  ['log_5fsender_5f_5',['log_sender_',['../classroblab_1_1mbed__lib_1_1_pc_serial_connection.html#a2a1330910b06c87c194fcab4ac04dc5b',1,'roblab::mbed_lib::PcSerialConnection']]],
+  ['lpf_5foutput_5f_6',['lpf_output_',['../classroblab_1_1common__lib_1_1_dob.html#a1f017e2150175cc849bf8e22a52d5e3b',1,'roblab::common_lib::Dob']]],
+  ['lpf_5ft_5fconst_5fsec_5f_7',['lpf_t_const_sec_',['../classroblab_1_1common__lib_1_1_dob.html#aeb50ed68c9f9ea3f8308f877b262114a',1,'roblab::common_lib::Dob']]]
 ];

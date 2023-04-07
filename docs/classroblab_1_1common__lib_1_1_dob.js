@@ -1,6 +1,5 @@
 var classroblab_1_1common__lib_1_1_dob =
 [
-    [ "Dob", "classroblab_1_1common__lib_1_1_dob.html#a40349d319873d09f020cf764e0f47ed0", null ],
     [ "Dob", "classroblab_1_1common__lib_1_1_dob.html#ae26a394f67adabbe523cdb225d0e5bfd", null ],
     [ "Control", "classroblab_1_1common__lib_1_1_dob.html#a418fe552b71659f1aedbfe586f54abf5", null ],
     [ "Filter", "classroblab_1_1common__lib_1_1_dob.html#a90efe23e2f63363a5ddfb6f2266d3e55", null ],
@@ -12,7 +11,6 @@ var classroblab_1_1common__lib_1_1_dob =
     [ "getLpfOutput_", "classroblab_1_1common__lib_1_1_dob.html#ab0f50e1944afb7364d85f4bac0291e48", null ],
     [ "getPidOutput_", "classroblab_1_1common__lib_1_1_dob.html#ac1cb502b8dc784218c544c73b3dbf285", null ],
     [ "Reset", "classroblab_1_1common__lib_1_1_dob.html#a646999c662ffb1e038f359e4dc809f04", null ],
-    [ "set", "classroblab_1_1common__lib_1_1_dob.html#a4c6ab4ecf61c60498542d8021f99e649", null ],
     [ "setLimitOutput", "classroblab_1_1common__lib_1_1_dob.html#aae8366d690e7a95f9c563953c31ad5cf", null ],
     [ "coeff_a_", "classroblab_1_1common__lib_1_1_dob.html#ae35e767470c3e6af62e02359561697bd", null ],
     [ "coeff_b_", "classroblab_1_1common__lib_1_1_dob.html#aecbffe83eed0ad0d6d13bbd501c15024", null ],

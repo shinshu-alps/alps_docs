@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fastpwm_2eh_0',['FastPWM.h',['../_fast_p_w_m_8h.html',1,'']]]
+  ['cobs_2ehpp_0',['cobs.hpp',['../cobs_8hpp.html',1,'']]]
 ];
