@@ -1,0 +1,634 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roblab: roblab::common::Pid クラス</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Roblab
+                            </div>
+                            <div id="projectbrief">roboken shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classroblab_1_1common_1_1_pid.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="classroblab_1_1common_1_1_pid-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">roblab::common::Pid クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>PID制御を行うクラス  
+ <a href="classroblab_1_1common_1_1_pid.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="pid_8hpp_source.html">pid.hpp</a>&gt;</code></p>
+<div class="dynheader">
+roblab::common::Pid の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classroblab_1_1common_1_1_pid__inherit__graph.svg" width="174" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a9a81e3180aae929e86ad6c2a78fbdddb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1_pid.html#a9a81e3180aae929e86ad6c2a78fbdddb">Pid</a> (float ctrl_period_sec)</td></tr>
+<tr class="memdesc:a9a81e3180aae929e86ad6c2a78fbdddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">各変数を初期化するコンストラクタ  <br /></td></tr>
+<tr class="separator:a9a81e3180aae929e86ad6c2a78fbdddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1638d1e0e9902344d25169d289fe4501"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1_pid.html#a1638d1e0e9902344d25169d289fe4501">Init</a> (float ctrl_period_sec)</td></tr>
+<tr class="memdesc:a1638d1e0e9902344d25169d289fe4501"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御周期をセットし,メンバ変数を初期化する関数．  <br /></td></tr>
+<tr class="separator:a1638d1e0e9902344d25169d289fe4501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b96b5d18b4335ac67707cd10dc36aa5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1_pid.html#a2b96b5d18b4335ac67707cd10dc36aa5">SetTarget</a> (float target_)</td></tr>
+<tr class="memdesc:a2b96b5d18b4335ac67707cd10dc36aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標値を設定する関数  <br /></td></tr>
+<tr class="separator:a2b96b5d18b4335ac67707cd10dc36aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90cf310d97a8c09b392b2b90896a0c07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1_pid.html#a90cf310d97a8c09b392b2b90896a0c07">SetGain</a> (float kp, float ki, float kd)</td></tr>
+<tr class="memdesc:a90cf310d97a8c09b392b2b90896a0c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIDのゲインをセットする関数  <br /></td></tr>
+<tr class="separator:a90cf310d97a8c09b392b2b90896a0c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c81465d2126792c051250fd2ec44f70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1_pid.html#a4c81465d2126792c051250fd2ec44f70">SetEndStatus</a> (float end_err, float end_diff)</td></tr>
+<tr class="memdesc:a4c81465d2126792c051250fd2ec44f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了条件値を変更する  <br /></td></tr>
+<tr class="separator:a4c81465d2126792c051250fd2ec44f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35c014c23e05738f45e31e79704472ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1_pid.html#a35c014c23e05738f45e31e79704472ec">SetPreviousValue</a> (float first_pos)</td></tr>
+<tr class="memdesc:a35c014c23e05738f45e31e79704472ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期の値から1つ前の偏差をつくる(一番最初の微分値の対策)  <br /></td></tr>
+<tr class="separator:a35c014c23e05738f45e31e79704472ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae73327d7d2df66783af2e9c03e9966aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1_pid.html#ae73327d7d2df66783af2e9c03e9966aa">SetDiffTimeConst</a> (float time_const)</td></tr>
+<tr class="memdesc:ae73327d7d2df66783af2e9c03e9966aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">近似微分器の時定数を設定．初期値は0.05[s]  <br /></td></tr>
+<tr class="separator:ae73327d7d2df66783af2e9c03e9966aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab72ccebd6da2df4e6dab198505af4446"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1_pid.html#ab72ccebd6da2df4e6dab198505af4446">SetMaxOutput</a> (float max_output)</td></tr>
+<tr class="memdesc:ab72ccebd6da2df4e6dab198505af4446"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID出力値の上限を変更する関数．  <br /></td></tr>
+<tr class="separator:ab72ccebd6da2df4e6dab198505af4446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23536a571f83b13e033ab43d4c4abf12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1_pid.html#a23536a571f83b13e033ab43d4c4abf12">SetIntegralMax</a> (float limit_i_output)</td></tr>
+<tr class="memdesc:a23536a571f83b13e033ab43d4c4abf12"><td class="mdescLeft">&#160;</td><td class="mdescRight">積分項の上限を変更する関数．  <br /></td></tr>
+<tr class="separator:a23536a571f83b13e033ab43d4c4abf12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad90ea38ad783f580bbea3deeab36c9f3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1_pid.html#ad90ea38ad783f580bbea3deeab36c9f3">GetOutputP</a> ()</td></tr>
+<tr class="memdesc:ad90ea38ad783f580bbea3deeab36c9f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">P制御の出力のみを返す  <br /></td></tr>
+<tr class="separator:ad90ea38ad783f580bbea3deeab36c9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44872493c47daf3aa566b18000d344db"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1_pid.html#a44872493c47daf3aa566b18000d344db">GetOutputI</a> ()</td></tr>
+<tr class="memdesc:a44872493c47daf3aa566b18000d344db"><td class="mdescLeft">&#160;</td><td class="mdescRight">I制御の出力のみを返す  <br /></td></tr>
+<tr class="separator:a44872493c47daf3aa566b18000d344db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a241a5525217745e05fa80033c3347ad9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1_pid.html#a241a5525217745e05fa80033c3347ad9">GetOutputD</a> ()</td></tr>
+<tr class="memdesc:a241a5525217745e05fa80033c3347ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">D制御の出力のみを返す  <br /></td></tr>
+<tr class="separator:a241a5525217745e05fa80033c3347ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5afc7db3de7790be6aed9d6cf90c7294"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1_pid.html#a5afc7db3de7790be6aed9d6cf90c7294">IsEnd</a> ()</td></tr>
+<tr class="memdesc:a5afc7db3de7790be6aed9d6cf90c7294"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID制御終了判定を確認する関数．  <br /></td></tr>
+<tr class="separator:a5afc7db3de7790be6aed9d6cf90c7294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eb8bb5bf55bd5eddc41f0db0a212812"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1_pid.html#a3eb8bb5bf55bd5eddc41f0db0a212812">ResetEndCount</a> ()</td></tr>
+<tr class="memdesc:a3eb8bb5bf55bd5eddc41f0db0a212812"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了判定をリセット  <br /></td></tr>
+<tr class="separator:a3eb8bb5bf55bd5eddc41f0db0a212812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91f968954fd2ad6c1ad2dee45b81cddb"><td class="memItemLeft" align="right" valign="top"><a id="a91f968954fd2ad6c1ad2dee45b81cddb" name="a91f968954fd2ad6c1ad2dee45b81cddb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr>
+<tr class="memdesc:a91f968954fd2ad6c1ad2dee45b81cddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">各変数を初期化する関数．ゲインはそのまま． <br /></td></tr>
+<tr class="separator:a91f968954fd2ad6c1ad2dee45b81cddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c6fdb41b975b6d4ec55a5f0798314c4"><td class="memItemLeft" align="right" valign="top"><a id="a3c6fdb41b975b6d4ec55a5f0798314c4" name="a3c6fdb41b975b6d4ec55a5f0798314c4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetForVelocity</b> ()</td></tr>
+<tr class="memdesc:a3c6fdb41b975b6d4ec55a5f0798314c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">速度制御用リセット．積分Iをリセットする <br /></td></tr>
+<tr class="separator:a3c6fdb41b975b6d4ec55a5f0798314c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac018dd380f7fb346c2369c15f87dd92"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1_pid.html#aac018dd380f7fb346c2369c15f87dd92">Control</a> (float input)</td></tr>
+<tr class="memdesc:aac018dd380f7fb346c2369c15f87dd92"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御を行う関数．  <br /></td></tr>
+<tr class="separator:aac018dd380f7fb346c2369c15f87dd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c8632f931442c927750aa5ba0d1c29f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1_pid.html#a1c8632f931442c927750aa5ba0d1c29f">ControlErr</a> (float err)</td></tr>
+<tr class="memdesc:a1c8632f931442c927750aa5ba0d1c29f"><td class="mdescLeft">&#160;</td><td class="mdescRight">偏差からPID制御を行う関数．  <br /></td></tr>
+<tr class="separator:a1c8632f931442c927750aa5ba0d1c29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>PID制御を行うクラス </p>
+<p><b>例(mbed)</b> </p><div class="fragment"><div class="line"><span class="comment">// 使用例</span></div>
+<div class="line"><a class="code hl_class" href="classroblab_1_1common_1_1_pid.html">roblab::common::Pid</a> pid{0.02f}; <span class="comment">// 制御周期0.02s</span></div>
+<div class="line">pid.<a class="code hl_function" href="classroblab_1_1common_1_1_pid.html#a90cf310d97a8c09b392b2b90896a0c07">SetGain</a>(0.1, 0.01, 0.01);</div>
+<div class="line">pid.SetMaxOutput(10);</div>
+<div class="line">pid.SetTarget(360); <span class="comment">// 目標値360°</span></div>
+<div class="line"><span class="keywordflow">while</span> (<span class="keyword">true</span>)</div>
+<div class="line">{</div>
+<div class="line">    motor.Drive(pid.Control(encoder.GetDeg()));</div>
+<div class="line">    ThisThread::sleep_for(20ms);</div>
+<div class="line">}</div>
+<div class="ttc" id="aclassroblab_1_1common_1_1_pid_html"><div class="ttname"><a href="classroblab_1_1common_1_1_pid.html">roblab::common::Pid</a></div><div class="ttdoc">PID制御を行うクラス</div><div class="ttdef"><b>Definition:</b> pid.hpp:53</div></div>
+<div class="ttc" id="aclassroblab_1_1common_1_1_pid_html_a90cf310d97a8c09b392b2b90896a0c07"><div class="ttname"><a href="classroblab_1_1common_1_1_pid.html#a90cf310d97a8c09b392b2b90896a0c07">roblab::common::Pid::SetGain</a></div><div class="ttdeci">void SetGain(float kp, float ki, float kd)</div><div class="ttdoc">PIDのゲインをセットする関数</div></div>
+</div><!-- fragment --> </div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a9a81e3180aae929e86ad6c2a78fbdddb" name="a9a81e3180aae929e86ad6c2a78fbdddb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a81e3180aae929e86ad6c2a78fbdddb">&#9670;&#160;</a></span>Pid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">roblab::common::Pid::Pid </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ctrl_period_sec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>各変数を初期化するコンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrl_period_sec</td><td>制御周期(秒) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="aac018dd380f7fb346c2369c15f87dd92" name="aac018dd380f7fb346c2369c15f87dd92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac018dd380f7fb346c2369c15f87dd92">&#9670;&#160;</a></span>Control()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float roblab::common::Pid::Control </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>設定した目標値に対してPID制御を行う関数． </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>フィードバック値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>float PID制御器の出力 </dd></dl>
+
+</div>
+</div>
+<a id="a1c8632f931442c927750aa5ba0d1c29f" name="a1c8632f931442c927750aa5ba0d1c29f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c8632f931442c927750aa5ba0d1c29f">&#9670;&#160;</a></span>ControlErr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float roblab::common::Pid::ControlErr </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>err</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>偏差からPID制御を行う関数． </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">err</td><td>フィードバック値から求めた偏差 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>float PID制御器の出力 </dd></dl>
+
+</div>
+</div>
+<a id="a241a5525217745e05fa80033c3347ad9" name="a241a5525217745e05fa80033c3347ad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a241a5525217745e05fa80033c3347ad9">&#9670;&#160;</a></span>GetOutputD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float roblab::common::Pid::GetOutputD </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D制御の出力のみを返す </p>
+<dl class="section return"><dt>戻り値</dt><dd>float D制御の出力 </dd></dl>
+
+</div>
+</div>
+<a id="a44872493c47daf3aa566b18000d344db" name="a44872493c47daf3aa566b18000d344db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44872493c47daf3aa566b18000d344db">&#9670;&#160;</a></span>GetOutputI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float roblab::common::Pid::GetOutputI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I制御の出力のみを返す </p>
+<dl class="section return"><dt>戻り値</dt><dd>float I制御の出力 </dd></dl>
+
+</div>
+</div>
+<a id="ad90ea38ad783f580bbea3deeab36c9f3" name="ad90ea38ad783f580bbea3deeab36c9f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad90ea38ad783f580bbea3deeab36c9f3">&#9670;&#160;</a></span>GetOutputP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float roblab::common::Pid::GetOutputP </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>P制御の出力のみを返す </p>
+<dl class="section return"><dt>戻り値</dt><dd>float P制御の出力 </dd></dl>
+
+</div>
+</div>
+<a id="a1638d1e0e9902344d25169d289fe4501" name="a1638d1e0e9902344d25169d289fe4501"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1638d1e0e9902344d25169d289fe4501">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roblab::common::Pid::Init </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ctrl_period_sec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>制御周期をセットし,メンバ変数を初期化する関数． </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctrl_period_sec</td><td>制御周期(秒) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5afc7db3de7790be6aed9d6cf90c7294" name="a5afc7db3de7790be6aed9d6cf90c7294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5afc7db3de7790be6aed9d6cf90c7294">&#9670;&#160;</a></span>IsEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool roblab::common::Pid::IsEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PID制御終了判定を確認する関数． </p>
+<dl class="section return"><dt>戻り値</dt><dd>bool 終了時:true, 未終了時:false </dd></dl>
+
+</div>
+</div>
+<a id="a3eb8bb5bf55bd5eddc41f0db0a212812" name="a3eb8bb5bf55bd5eddc41f0db0a212812"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eb8bb5bf55bd5eddc41f0db0a212812">&#9670;&#160;</a></span>ResetEndCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roblab::common::Pid::ResetEndCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>終了判定をリセット </p>
+<p>出力をリセットせずに次の目標値に収束させるため．目標値が随時更新されていくような場合に使う？ </p>
+
+</div>
+</div>
+<a id="ae73327d7d2df66783af2e9c03e9966aa" name="ae73327d7d2df66783af2e9c03e9966aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae73327d7d2df66783af2e9c03e9966aa">&#9670;&#160;</a></span>SetDiffTimeConst()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roblab::common::Pid::SetDiffTimeConst </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time_const</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>近似微分器の時定数を設定．初期値は0.05[s] </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time_const</td><td>近似微分器の時定数[s] </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4c81465d2126792c051250fd2ec44f70" name="a4c81465d2126792c051250fd2ec44f70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c81465d2126792c051250fd2ec44f70">&#9670;&#160;</a></span>SetEndStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roblab::common::Pid::SetEndStatus </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>end_err</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>end_diff</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>終了条件値を変更する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">end_err</td><td>偏差の終了判定 </td></tr>
+    <tr><td class="paramname">end_diff</td><td>偏差微分の終了判定 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a90cf310d97a8c09b392b2b90896a0c07" name="a90cf310d97a8c09b392b2b90896a0c07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90cf310d97a8c09b392b2b90896a0c07">&#9670;&#160;</a></span>SetGain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roblab::common::Pid::SetGain </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>kp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ki</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>kd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PIDのゲインをセットする関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kp</td><td>Pゲイン </td></tr>
+    <tr><td class="paramname">ki</td><td>Iゲイン </td></tr>
+    <tr><td class="paramname">kd</td><td>Dゲイン </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a23536a571f83b13e033ab43d4c4abf12" name="a23536a571f83b13e033ab43d4c4abf12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23536a571f83b13e033ab43d4c4abf12">&#9670;&#160;</a></span>SetIntegralMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roblab::common::Pid::SetIntegralMax </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>limit_i_output</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>積分項の上限を変更する関数． </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">limit_i_output</td><td>上限値 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab72ccebd6da2df4e6dab198505af4446" name="ab72ccebd6da2df4e6dab198505af4446"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab72ccebd6da2df4e6dab198505af4446">&#9670;&#160;</a></span>SetMaxOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roblab::common::Pid::SetMaxOutput </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>max_output</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PID出力値の上限を変更する関数． </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">max_output</td><td>上限値 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a35c014c23e05738f45e31e79704472ec" name="a35c014c23e05738f45e31e79704472ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35c014c23e05738f45e31e79704472ec">&#9670;&#160;</a></span>SetPreviousValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roblab::common::Pid::SetPreviousValue </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>first_pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初期の値から1つ前の偏差をつくる(一番最初の微分値の対策) </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">first_pos</td><td>初期値 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2b96b5d18b4335ac67707cd10dc36aa5" name="a2b96b5d18b4335ac67707cd10dc36aa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b96b5d18b4335ac67707cd10dc36aa5">&#9670;&#160;</a></span>SetTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roblab::common::Pid::SetTarget </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>target_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>目標値を設定する関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target_</td><td>目標値 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>roblab_common_lib/include/control/<a class="el" href="pid_8hpp_source.html">pid.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceroblab.html">roblab</a></li><li class="navelem"><a class="el" href="namespaceroblab_1_1common.html">common</a></li><li class="navelem"><a class="el" href="classroblab_1_1common_1_1_pid.html">Pid</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

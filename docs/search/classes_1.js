@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['cobs_0',['Cobs',['../classroblab_1_1common__lib_1_1_cobs.html',1,'roblab::common_lib']]]
+  ['cobs_0',['Cobs',['../classroblab_1_1common_1_1serial_1_1_cobs.html',1,'roblab::common::serial']]]
 ];

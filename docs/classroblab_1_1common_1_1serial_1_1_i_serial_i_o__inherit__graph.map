@@ -1,0 +1,5 @@
+<map id="roblab::common::serial::ISerialIO" name="roblab::common::serial::ISerialIO">
+<area shape="rect" id="node1" title="シリアル通信を行うIO抽象インターフェース" alt="" coords="137,5,309,45"/>
+<area shape="rect" id="node2" href="$classroblab_1_1mbed_1_1_mbed_uart_serial_io.html" title="mbedのUartシリアル通信IOクラス" alt="" coords="5,101,235,126"/>
+<area shape="rect" id="node3" href="$classroblab_1_1ros_1_1serial_1_1_posix_serial_i_o.html" title="POSIX APIを提供する環境でのUartシリアル通信IOクラス" alt="" coords="259,93,394,133"/>
+</map>

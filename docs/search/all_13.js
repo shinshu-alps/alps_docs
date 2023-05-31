@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['vector_5fsize_5ft_0',['vector_size_t',['../classroblab_1_1common__lib_1_1_data_serializer_3_01std_1_1vector_3_01_u_01_4_01_4.html#a9f0609eea0b5668a2fe797297d276c1f',1,'roblab::common_lib::DataSerializer&lt; std::vector&lt; U &gt; &gt;']]],
-  ['velocity_5f_1',['velocity_',['../classroblab_1_1mbed__lib_1_1_rotary_encoder.html#af0ae156ec26d649789e06928ead42b76',1,'roblab::mbed_lib::RotaryEncoder']]],
-  ['velocity_5fprev_5f_2',['velocity_prev_',['../classroblab_1_1common__lib_1_1_dob.html#a85ff8d5ccaae8dd1ecb3b3b5b9fa51e1',1,'roblab::common_lib::Dob']]]
+  ['_7eiserialio_0',['~ISerialIO',['../classroblab_1_1common_1_1serial_1_1_i_serial_i_o.html#a5da715038aa3ee80ba472fe8d45e2c33',1,'roblab::common::serial::ISerialIO']]],
+  ['_7embeduartserialio_1',['~MbedUartSerialIo',['../classroblab_1_1mbed_1_1_mbed_uart_serial_io.html#af41c3b8c5b03b43dbd48ce4e8e0d45f6',1,'roblab::mbed::MbedUartSerialIo']]],
+  ['_7eposixserialio_2',['~PosixSerialIO',['../classroblab_1_1ros_1_1serial_1_1_posix_serial_i_o.html#ac44bf99dd11ecf48f7fce9b3c46535d6',1,'roblab::ros::serial::PosixSerialIO']]]
 ];

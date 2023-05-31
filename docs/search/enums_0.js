@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['encoding_0',['Encoding',['../classroblab_1_1mbed__lib_1_1_rotary_encoder.html#ad21e52f96b57c442e3f86861006c3aa3',1,'roblab::mbed_lib::RotaryEncoder']]]
+  ['encoding_0',['Encoding',['../classroblab_1_1mbed_1_1_rotary_encoder.html#ab2d77b4811eed06a6ea72fe31be8b842',1,'roblab::mbed::RotaryEncoder']]]
 ];

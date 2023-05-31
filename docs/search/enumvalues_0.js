@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['x2_5fencoding_0',['X2_ENCODING',['../classroblab_1_1mbed__lib_1_1_rotary_encoder.html#ad21e52f96b57c442e3f86861006c3aa3a0d4846ecf638291e12a86e469aef9ea2',1,'roblab::mbed_lib::RotaryEncoder']]],
-  ['x4_5fencoding_1',['X4_ENCODING',['../classroblab_1_1mbed__lib_1_1_rotary_encoder.html#ad21e52f96b57c442e3f86861006c3aa3a811eabaf60c89dc4992c79c3b8dab14a',1,'roblab::mbed_lib::RotaryEncoder']]]
+  ['x2_5fencoding_0',['X2_ENCODING',['../classroblab_1_1mbed_1_1_rotary_encoder.html#ab2d77b4811eed06a6ea72fe31be8b842ad308b53c21b93f74a0a29da149360f9c',1,'roblab::mbed::RotaryEncoder']]],
+  ['x4_5fencoding_1',['X4_ENCODING',['../classroblab_1_1mbed_1_1_rotary_encoder.html#ab2d77b4811eed06a6ea72fe31be8b842a1f675f711aa6c89e8c5a6073506f34f5',1,'roblab::mbed::RotaryEncoder']]]
 ];

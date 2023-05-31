@@ -1,19 +1,9 @@
 var searchData=
 [
-  ['elapsed_5f_0',['elapsed_',['../classroblab_1_1common__lib_1_1_timer.html#a5e3831396a1351ca36e234f8ac6c0183',1,'roblab::common_lib::Timer']]],
-  ['empty_1',['Empty',['../classroblab_1_1common__lib_1_1_byte_ring_buffer.html#ac6da6f478ec58b5a3d26f5108a521652',1,'roblab::common_lib::ByteRingBuffer']]],
-  ['encode_2',['Encode',['../classroblab_1_1common__lib_1_1_cobs.html#a80c5a83f859ae52e94882a6862990d87',1,'roblab::common_lib::Cobs::Encode()'],['../classroblab_1_1mbed__lib_1_1_rotary_encoder.html#a1ac24471f92cadc52b54d2d6e0084590',1,'roblab::mbed_lib::RotaryEncoder::Encode()']]],
-  ['encoding_3',['Encoding',['../classroblab_1_1mbed__lib_1_1_rotary_encoder.html#ad21e52f96b57c442e3f86861006c3aa3',1,'roblab::mbed_lib::RotaryEncoder']]],
-  ['encoding_5f_4',['encoding_',['../classroblab_1_1mbed__lib_1_1_rotary_encoder.html#a6440c37a7de8e83ae548d73eb61d7ae1',1,'roblab::mbed_lib::RotaryEncoder']]],
-  ['end_5f_5',['end_',['../classroblab_1_1common__lib_1_1_timer.html#aa0e132fc1945cd28653dee3cbc35dbe0',1,'roblab::common_lib::Timer']]],
-  ['end_5fcount_5f_6',['end_count_',['../classroblab_1_1common__lib_1_1_pid.html#a79b7d941e0079ea5a71749c535a551f3',1,'roblab::common_lib::Pid']]],
-  ['end_5fdiff_5f_7',['end_diff_',['../classroblab_1_1common__lib_1_1_pid.html#abbf64e7cc9df37c6f6a6699f6cacfefe',1,'roblab::common_lib::Pid']]],
-  ['end_5ferr_5f_8',['end_err_',['../classroblab_1_1common__lib_1_1_pid.html#aa3abc963783e8a80eb2206e4b9f58cac',1,'roblab::common_lib::Pid']]],
-  ['enqueuesenddata_9',['EnqueueSendData',['../classroblab_1_1common__lib_1_1_sender.html#af26741f3a31c8c5f366a9b813b23a2ec',1,'roblab::common_lib::Sender']]],
-  ['err_5f_10',['err_',['../classroblab_1_1common__lib_1_1_pid.html#a8cd05af9878f5c48bbf56de9a100fba1',1,'roblab::common_lib::Pid']]],
-  ['err_5fdiff_5f_11',['err_diff_',['../classroblab_1_1common__lib_1_1_pid.html#a126a14f6cdc40ffc1a98ea31dbce869b',1,'roblab::common_lib::Pid']]],
-  ['err_5fintg_5f_12',['err_intg_',['../classroblab_1_1common__lib_1_1_pid.html#a9a090b58e7e84aa6c4356484ca2adbbd',1,'roblab::common_lib::Pid']]],
-  ['estimated_5fdisturbance_5f_13',['estimated_disturbance_',['../classroblab_1_1common__lib_1_1_dob.html#a8716ad714f7cf872756dc4105388b668',1,'roblab::common_lib::Dob']]],
-  ['expandcapacity_14',['ExpandCapacity',['../classroblab_1_1common__lib_1_1_byte_ring_buffer.html#aa889e8a087a5bed4f3c543336df2c72a',1,'roblab::common_lib::ByteRingBuffer']]],
-  ['extractcobspackets_15',['ExtractCobsPackets',['../classroblab_1_1common__lib_1_1_cobs.html#aed0b490f0359a0b1cd680d76ab21a81e',1,'roblab::common_lib::Cobs']]]
+  ['empty_0',['Empty',['../classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html#a8201b4886c5d8636c0cc8daa4a801d01',1,'roblab::common::serial::ByteRingBuffer']]],
+  ['encode_1',['Encode',['../classroblab_1_1common_1_1serial_1_1_cobs.html#a938255062dd0bea20238a2d65d2c29b8',1,'roblab::common::serial::Cobs']]],
+  ['encoding_2',['Encoding',['../classroblab_1_1mbed_1_1_rotary_encoder.html#ab2d77b4811eed06a6ea72fe31be8b842',1,'roblab::mbed::RotaryEncoder']]],
+  ['enqueuesenddata_3',['EnqueueSendData',['../classroblab_1_1common_1_1serial_1_1_sender.html#acb77af30214faf93815ad1dfdd1687c7',1,'roblab::common::serial::Sender']]],
+  ['expandcapacity_4',['ExpandCapacity',['../classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html#a10aaa95dff602a8cb3ee4da47209bc6f',1,'roblab::common::serial::ByteRingBuffer']]],
+  ['extractcobspackets_5',['ExtractCobsPackets',['../classroblab_1_1common_1_1serial_1_1_cobs.html#af76bf760651c631e8f101a2d3480c9c9',1,'roblab::common::serial::Cobs']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['packetid_0',['PacketId',['../namespaceroblab_1_1common__lib.html#aa468bf8cc0340d4928c309ea1103a33f',1,'roblab::common_lib']]]
+  ['packetid_0',['PacketId',['../namespaceroblab_1_1common_1_1serial.html#aab66473ea2aa9d9114abbb0b5f5ff207',1,'roblab::common::serial']]]
 ];
