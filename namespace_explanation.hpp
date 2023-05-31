@@ -1,28 +1,28 @@
 /**
- * @brief ロボ研で開発したライブラリという意の名前空間
+ * @brief ロボ研で開発したライブラリ
  *
  */
 namespace roblab
 {
     /**
-     * @brief mbedとrosで共用という意の名前空間
+     * @brief mbedとrosで共用のライブラリ
      *
      */
-    namespace common_lib
+    namespace common
     {
     }
     /**
-     * @brief mbed専用という意の名前空間
+     * @brief mbed用ライブラリ
      *
      */
-    namespace mbed_lib
+    namespace mbed
     {
     }
     /**
-     * @brief ros専用という意の名前空間
+     * @brief ros用ライブラリ
      *
      */
-    namespace ros_lib
+    namespace ros
     {
     }
 }

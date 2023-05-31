@@ -6,11 +6,11 @@
 
 ## ライブラリリスト
 
-| ライブラリ名      | 名前空間           | 用途             | ソース                                                      |
-| :---------------- | :----------------- | :--------------- | :---------------------------------------------------------- |
-| roblab_common_lib | roblab::common_lib | 汎用ライブラリ   | [GitHub](https://github.com/shinshu-alps/roblab_common_lib) |
-| roblab_mbed_lib   | roblab::mbed_lib   | mbed用ライブラリ | [GitHub](https://github.com/shinshu-alps/roblab_mbed_lib)   |
-| roblab_ros_lib    | roblab::ros_lib    | ros用ライブラリ  | [GitHub](https://github.com/shinshu-alps/roblab_ros_lib)    |
+| ライブラリ名  | 名前空間       | 用途             | ソース                                                      |
+| :------------ | :------------- | :--------------- | :---------------------------------------------------------- |
+| roblab_common | roblab::common | 汎用ライブラリ   | [GitHub](https://github.com/shinshu-alps/roblab_common_lib) |
+| roblab_mbed   | roblab::mbed   | mbed用ライブラリ | [GitHub](https://github.com/shinshu-alps/roblab_mbed_lib)   |
+| roblab_ros    | roblab::ros    | ros用ライブラリ  | [GitHub](https://github.com/shinshu-alps/roblab_ros_lib)    |
 
 ## バージョン
 
