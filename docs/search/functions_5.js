@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['filter_0',['Filter',['../classroblab_1_1common__lib_1_1_dob.html#a90efe23e2f63363a5ddfb6f2266d3e55',1,'roblab::common_lib::Dob::Filter()'],['../classroblab_1_1common__lib_1_1_differential.html#aa239a9f1cc266ad0b70d7f498703d80a',1,'roblab::common_lib::Differential::Filter()'],['../classroblab_1_1common__lib_1_1_integral.html#ab457672dd9a314f764c1a85ba515acc3',1,'roblab::common_lib::Integral::Filter()'],['../classroblab_1_1common__lib_1_1_lpf.html#ac33645614d3213e5dd4865fabbedbe31',1,'roblab::common_lib::Lpf::Filter()']]],
-  ['find_1',['Find',['../classroblab_1_1common__lib_1_1_byte_ring_buffer.html#a3fab0ffcb80d9409cd65248bd3b02066',1,'roblab::common_lib::ByteRingBuffer']]]
+  ['filter_0',['Filter',['../classroblab_1_1common_1_1_dob.html#ad6792faa84a0facd873a8051149193d1',1,'roblab::common::Dob::Filter()'],['../classroblab_1_1common_1_1_differential.html#a6975abcdd816371776c633840248a27b',1,'roblab::common::Differential::Filter()'],['../classroblab_1_1common_1_1_integral.html#a08e8e2104c4de91e635bd6bd026dfc7e',1,'roblab::common::Integral::Filter()'],['../classroblab_1_1common_1_1_lpf.html#aeb0800dd81e4e0e0f13d175ff9418811',1,'roblab::common::Lpf::Filter()']]],
+  ['find_1',['Find',['../classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html#a367057a6135ecb1519d6e2f4f7e71083',1,'roblab::common::serial::ByteRingBuffer']]]
 ];

@@ -1,0 +1,403 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roblab: roblab::mbed::RotaryEncoder クラス</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Roblab
+                            </div>
+                            <div id="projectbrief">roboken shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classroblab_1_1mbed_1_1_rotary_encoder.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="classroblab_1_1mbed_1_1_rotary_encoder-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">roblab::mbed::RotaryEncoder クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ロータリーエンコーダーを扱うクラス  
+ <a href="classroblab_1_1mbed_1_1_rotary_encoder.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="rotary__encoder_8hpp_source.html">rotary_encoder.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:ab2d77b4811eed06a6ea72fe31be8b842"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1mbed_1_1_rotary_encoder.html#ab2d77b4811eed06a6ea72fe31be8b842">Encoding</a> { <a class="el" href="classroblab_1_1mbed_1_1_rotary_encoder.html#ab2d77b4811eed06a6ea72fe31be8b842ad308b53c21b93f74a0a29da149360f9c">X2_ENCODING</a>
+, <a class="el" href="classroblab_1_1mbed_1_1_rotary_encoder.html#ab2d77b4811eed06a6ea72fe31be8b842a1f675f711aa6c89e8c5a6073506f34f5">X4_ENCODING</a>
+ }</td></tr>
+<tr class="memdesc:ab2d77b4811eed06a6ea72fe31be8b842"><td class="mdescLeft">&#160;</td><td class="mdescRight">エンコードタイプ  <a href="classroblab_1_1mbed_1_1_rotary_encoder.html#ab2d77b4811eed06a6ea72fe31be8b842">[詳解]</a><br /></td></tr>
+<tr class="separator:ab2d77b4811eed06a6ea72fe31be8b842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ae1c2a051c606705281efffa91faaa76a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1mbed_1_1_rotary_encoder.html#ae1c2a051c606705281efffa91faaa76a">RotaryEncoder</a> (PinName channelA, PinName channelB, int pulses_per_rev, <a class="el" href="classroblab_1_1mbed_1_1_rotary_encoder.html#ab2d77b4811eed06a6ea72fe31be8b842">Encoding</a> encoding=<a class="el" href="classroblab_1_1mbed_1_1_rotary_encoder.html#ab2d77b4811eed06a6ea72fe31be8b842ad308b53c21b93f74a0a29da149360f9c">Encoding::X2_ENCODING</a>)</td></tr>
+<tr class="memdesc:ae1c2a051c606705281efffa91faaa76a"><td class="mdescLeft">&#160;</td><td class="mdescRight">各変数を設定するコンストラクタ  <br /></td></tr>
+<tr class="separator:ae1c2a051c606705281efffa91faaa76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3447f4ec15ea0771107f7efcd1de930"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1mbed_1_1_rotary_encoder.html#ab3447f4ec15ea0771107f7efcd1de930">Reset</a> ()</td></tr>
+<tr class="memdesc:ab3447f4ec15ea0771107f7efcd1de930"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の回転角度をリセット  <br /></td></tr>
+<tr class="separator:ab3447f4ec15ea0771107f7efcd1de930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cd4ff1307c0563ce15c5e08ebcbe8fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1mbed_1_1_rotary_encoder.html#a2cd4ff1307c0563ce15c5e08ebcbe8fe">SetCurrentRad</a> (float current_rad)</td></tr>
+<tr class="memdesc:a2cd4ff1307c0563ce15c5e08ebcbe8fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">今の値がcurrent_radになるようにpulses_を変更  <br /></td></tr>
+<tr class="separator:a2cd4ff1307c0563ce15c5e08ebcbe8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6baf8396ea1bd2bd95bd9bf69a8ff78c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1mbed_1_1_rotary_encoder.html#a6baf8396ea1bd2bd95bd9bf69a8ff78c">GetCurrentState</a> ()</td></tr>
+<tr class="memdesc:a6baf8396ea1bd2bd95bd9bf69a8ff78c"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のchannelA,Bの状態を得る  <br /></td></tr>
+<tr class="separator:a6baf8396ea1bd2bd95bd9bf69a8ff78c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a531828d70723b4fbf9a4dc45b89e6291"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1mbed_1_1_rotary_encoder.html#a531828d70723b4fbf9a4dc45b89e6291">GetPulses</a> ()</td></tr>
+<tr class="memdesc:a531828d70723b4fbf9a4dc45b89e6291"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の回転角度（パルス数）を得る  <br /></td></tr>
+<tr class="separator:a531828d70723b4fbf9a4dc45b89e6291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c1eec16a39e69d9bf3399619f0eec34"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1mbed_1_1_rotary_encoder.html#a2c1eec16a39e69d9bf3399619f0eec34">GetDeg</a> ()</td></tr>
+<tr class="memdesc:a2c1eec16a39e69d9bf3399619f0eec34"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の回転角度(deg)を得る  <br /></td></tr>
+<tr class="separator:a2c1eec16a39e69d9bf3399619f0eec34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42d4a34c09858920da9c761405729ff7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1mbed_1_1_rotary_encoder.html#a42d4a34c09858920da9c761405729ff7">GetRad</a> ()</td></tr>
+<tr class="memdesc:a42d4a34c09858920da9c761405729ff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の回転角度(rad)を得る  <br /></td></tr>
+<tr class="separator:a42d4a34c09858920da9c761405729ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1bb6d59537214e0ce87a383db673945"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1mbed_1_1_rotary_encoder.html#ac1bb6d59537214e0ce87a383db673945">GetVel</a> (float CTRL_PERIOD)</td></tr>
+<tr class="memdesc:ac1bb6d59537214e0ce87a383db673945"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の回転速度(rad/s)を得る  <br /></td></tr>
+<tr class="separator:ac1bb6d59537214e0ce87a383db673945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>ロータリーエンコーダーを扱うクラス </p>
+</div><h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="ab2d77b4811eed06a6ea72fe31be8b842" name="ab2d77b4811eed06a6ea72fe31be8b842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2d77b4811eed06a6ea72fe31be8b842">&#9670;&#160;</a></span>Encoding</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classroblab_1_1mbed_1_1_rotary_encoder.html#ab2d77b4811eed06a6ea72fe31be8b842">roblab::mbed::RotaryEncoder::Encoding</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>エンコードタイプ </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="ab2d77b4811eed06a6ea72fe31be8b842ad308b53c21b93f74a0a29da149360f9c" name="ab2d77b4811eed06a6ea72fe31be8b842ad308b53c21b93f74a0a29da149360f9c"></a>X2_ENCODING&#160;</td><td class="fielddoc"><p>? </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab2d77b4811eed06a6ea72fe31be8b842a1f675f711aa6c89e8c5a6073506f34f5" name="ab2d77b4811eed06a6ea72fe31be8b842a1f675f711aa6c89e8c5a6073506f34f5"></a>X4_ENCODING&#160;</td><td class="fielddoc"><p>? </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="ae1c2a051c606705281efffa91faaa76a" name="ae1c2a051c606705281efffa91faaa76a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1c2a051c606705281efffa91faaa76a">&#9670;&#160;</a></span>RotaryEncoder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">roblab::mbed::RotaryEncoder::RotaryEncoder </td>
+          <td>(</td>
+          <td class="paramtype">PinName&#160;</td>
+          <td class="paramname"><em>channelA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PinName&#160;</td>
+          <td class="paramname"><em>channelB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pulses_per_rev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classroblab_1_1mbed_1_1_rotary_encoder.html#ab2d77b4811eed06a6ea72fe31be8b842">Encoding</a>&#160;</td>
+          <td class="paramname"><em>encoding</em> = <code><a class="el" href="classroblab_1_1mbed_1_1_rotary_encoder.html#ab2d77b4811eed06a6ea72fe31be8b842ad308b53c21b93f74a0a29da149360f9c">Encoding::X2_ENCODING</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>各変数を設定するコンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channelA</td><td>パルス出力ピン1 割り込み対応している必要がある </td></tr>
+    <tr><td class="paramname">channelB</td><td>パルス出力ピン2 割り込み対応している必要がある </td></tr>
+    <tr><td class="paramname">pulses_per_rev</td><td>1周分のパルス数 </td></tr>
+    <tr><td class="paramname">encoding</td><td>?? </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a6baf8396ea1bd2bd95bd9bf69a8ff78c" name="a6baf8396ea1bd2bd95bd9bf69a8ff78c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6baf8396ea1bd2bd95bd9bf69a8ff78c">&#9670;&#160;</a></span>GetCurrentState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int roblab::mbed::RotaryEncoder::GetCurrentState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>現在のchannelA,Bの状態を得る </p>
+<dl class="section return"><dt>戻り値</dt><dd>int channelA,Bの状態 </dd></dl>
+
+</div>
+</div>
+<a id="a2c1eec16a39e69d9bf3399619f0eec34" name="a2c1eec16a39e69d9bf3399619f0eec34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c1eec16a39e69d9bf3399619f0eec34">&#9670;&#160;</a></span>GetDeg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float roblab::mbed::RotaryEncoder::GetDeg </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>現在の回転角度(deg)を得る </p>
+<dl class="section return"><dt>戻り値</dt><dd>float 回転角度(deg) </dd></dl>
+
+</div>
+</div>
+<a id="a531828d70723b4fbf9a4dc45b89e6291" name="a531828d70723b4fbf9a4dc45b89e6291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a531828d70723b4fbf9a4dc45b89e6291">&#9670;&#160;</a></span>GetPulses()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int roblab::mbed::RotaryEncoder::GetPulses </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>現在の回転角度（パルス数）を得る </p>
+<dl class="section return"><dt>戻り値</dt><dd>int 回転角度（パルス数） </dd></dl>
+
+</div>
+</div>
+<a id="a42d4a34c09858920da9c761405729ff7" name="a42d4a34c09858920da9c761405729ff7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42d4a34c09858920da9c761405729ff7">&#9670;&#160;</a></span>GetRad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float roblab::mbed::RotaryEncoder::GetRad </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>現在の回転角度(rad)を得る </p>
+<dl class="section return"><dt>戻り値</dt><dd>float 回転角度(rad) </dd></dl>
+
+</div>
+</div>
+<a id="ac1bb6d59537214e0ce87a383db673945" name="ac1bb6d59537214e0ce87a383db673945"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1bb6d59537214e0ce87a383db673945">&#9670;&#160;</a></span>GetVel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float roblab::mbed::RotaryEncoder::GetVel </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>CTRL_PERIOD</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>現在の回転速度(rad/s)を得る </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CTRL_PERIOD</td><td>制御周期(rad/s) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>float 回転速度(rad/s) </dd></dl>
+
+</div>
+</div>
+<a id="ab3447f4ec15ea0771107f7efcd1de930" name="ab3447f4ec15ea0771107f7efcd1de930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3447f4ec15ea0771107f7efcd1de930">&#9670;&#160;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roblab::mbed::RotaryEncoder::Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>現在の回転角度をリセット </p>
+
+</div>
+</div>
+<a id="a2cd4ff1307c0563ce15c5e08ebcbe8fe" name="a2cd4ff1307c0563ce15c5e08ebcbe8fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cd4ff1307c0563ce15c5e08ebcbe8fe">&#9670;&#160;</a></span>SetCurrentRad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roblab::mbed::RotaryEncoder::SetCurrentRad </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>current_rad</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>今の値がcurrent_radになるようにpulses_を変更 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">current_rad</td><td>セットしたい現在の角度（rad) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>roblab_mbed_lib/include/sensor/<a class="el" href="rotary__encoder_8hpp_source.html">rotary_encoder.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceroblab.html">roblab</a></li><li class="navelem"><a class="el" href="namespaceroblab_1_1mbed.html">mbed</a></li><li class="navelem"><a class="el" href="classroblab_1_1mbed_1_1_rotary_encoder.html">RotaryEncoder</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

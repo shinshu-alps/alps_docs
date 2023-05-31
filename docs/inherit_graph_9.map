@@ -1,5 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classroblab_1_1common__lib_1_1_i_serial_i_o.html" title="シリアル通信を行うIO抽象インターフェース" alt="" coords="5,35,156,75"/>
-<area shape="rect" id="node2" href="$classroblab_1_1mbed__lib_1_1_mbed_uart_serial_io.html" title="mbedのUartシリアル通信IOクラス" alt="" coords="207,5,409,45"/>
-<area shape="rect" id="node3" href="$classroblab_1_1ros__lib_1_1_posix_serial_i_o.html" title="POSIX APIを提供する環境でのUartシリアル通信IOクラス" alt="" coords="204,70,412,95"/>
+<area shape="rect" id="node1" href="$classroblab_1_1common_1_1serial_1_1_data_serializer.html" title="データとバイト列の変換器" alt="" coords="5,5,177,45"/>
 </map>

@@ -10,6 +10,13 @@ namespace roblab
      */
     namespace common
     {
+        /**
+         * @brief シリアル通信関係
+         *
+         */
+        namespace serial
+        {
+        }
     }
     /**
      * @brief mbed用ライブラリ
@@ -17,6 +24,13 @@ namespace roblab
      */
     namespace mbed
     {
+        /**
+         * @brief シリアル通信関係
+         *
+         */
+        namespace serial
+        {
+        }
     }
     /**
      * @brief ros用ライブラリ
@@ -24,5 +38,12 @@ namespace roblab
      */
     namespace ros
     {
+        /**
+         * @brief シリアル通信関係
+         *
+         */
+        namespace serial
+        {
+        }
     }
 }

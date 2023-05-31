@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['common_5flib_0',['common_lib',['../namespaceroblab_1_1common__lib.html',1,'roblab']]],
-  ['mbed_5flib_1',['mbed_lib',['../namespaceroblab_1_1mbed__lib.html',1,'roblab']]],
+  ['common_0',['common',['../namespaceroblab_1_1common.html',1,'roblab']]],
+  ['mbed_1',['mbed',['../namespaceroblab_1_1mbed.html',1,'roblab']]],
   ['roblab_2',['roblab',['../namespaceroblab.html',1,'']]],
-  ['ros_5flib_3',['ros_lib',['../namespaceroblab_1_1ros__lib.html',1,'roblab']]]
+  ['ros_3',['ros',['../namespaceroblab_1_1ros.html',1,'roblab']]],
+  ['serial_4',['serial',['../namespaceroblab_1_1common_1_1serial.html',1,'roblab::common::serial'],['../namespaceroblab_1_1mbed_1_1serial.html',1,'roblab::mbed::serial'],['../namespaceroblab_1_1ros_1_1serial.html',1,'roblab::ros::serial']]]
 ];

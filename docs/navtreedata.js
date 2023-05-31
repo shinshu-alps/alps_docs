@@ -31,7 +31,6 @@ var NAVTREE =
       [ "名前空間一覧", "namespaces.html", "namespaces_dup" ],
       [ "名前空間メンバ", "namespacemembers.html", [
         [ "全て", "namespacemembers.html", null ],
-        [ "関数", "namespacemembers_func.html", null ],
         [ "型定義", "namespacemembers_type.html", null ]
       ] ]
     ] ],
@@ -40,20 +39,15 @@ var NAVTREE =
       [ "クラス索引", "classes.html", null ],
       [ "クラス階層", "hierarchy.html", "hierarchy" ],
       [ "クラスメンバ", "functions.html", [
-        [ "全て", "functions.html", "functions_dup" ],
+        [ "全て", "functions.html", null ],
         [ "関数", "functions_func.html", null ],
         [ "変数", "functions_vars.html", null ],
-        [ "型定義", "functions_type.html", null ],
         [ "列挙型", "functions_enum.html", null ],
         [ "列挙値", "functions_eval.html", null ]
       ] ]
     ] ],
     [ "ファイル", "files.html", [
-      [ "ファイル一覧", "files.html", "files_dup" ],
-      [ "ファイルメンバ", "globals.html", [
-        [ "全て", "globals.html", null ],
-        [ "マクロ定義", "globals_defs.html", null ]
-      ] ]
+      [ "ファイル一覧", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
@@ -61,9 +55,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classroblab_1_1common__lib_1_1_lpf.html#a0d846859b126e954cd553df3e32aa7bc",
-"classroblab_1_1mbed__lib_1_1_rotary_encoder.html#a1ac24471f92cadc52b54d2d6e0084590",
-"id__packet__manager_8hpp.html#aa468bf8cc0340d4928c309ea1103a33f"
+"classroblab_1_1mbed_1_1_pc_serial_connection.html#ae90024cef1e283c41477858ddb12edf9"
 ];
 
 var SYNCONMSG = 'クリックで同期表示が無効になります';

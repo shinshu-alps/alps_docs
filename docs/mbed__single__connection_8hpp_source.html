@@ -1,0 +1,207 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roblab: roblab_ros_lib/include/serial/mbed_single_connection.hpp ソースファイル</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Roblab
+                            </div>
+                            <div id="projectbrief">roboken shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('mbed__single__connection_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">mbed_single_connection.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="mbed__single__connection_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ROBLAB_ROS_MBED_SINGLE_SERIAL_CONNECTION_HPP_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ROBLAB_ROS_MBED_SINGLE_SERIAL_CONNECTION_HPP_</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="posix__serial__io_8hpp.html">posix_serial_io.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="id__packet__manager_8hpp.html">serial/id_packet_manager.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceroblab.html">roblab</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">namespace </span>ros</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keyword">namespace </span>serial</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html">   28</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html">MbedSingleConnection</a></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#a9ef284143865be386c221e6584946988">   34</a></span>                <span class="keyword">explicit</span> <a class="code hl_function" href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#a9ef284143865be386c221e6584946988">MbedSingleConnection</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#af00ea471a262833ad3ce939fc6082e5f">   41</a></span>                <span class="keyword">explicit</span> <a class="code hl_function" href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#af00ea471a262833ad3ce939fc6082e5f">MbedSingleConnection</a>(std::shared_ptr&lt;PosixSerialIO&gt; mbed);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#acd628d872297f4a59844d075bff0f010">   44</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#acd628d872297f4a59844d075bff0f010">Update</a>();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#aec96d263e6e4b22adeae007d6c695bed">   54</a></span>                <a class="code hl_class" href="classroblab_1_1common_1_1serial_1_1_sender.html">common::serial::Sender&lt;T&gt;</a> <a class="code hl_function" href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#aec96d263e6e4b22adeae007d6c695bed">CreateSender</a>(<a class="code hl_typedef" href="namespaceroblab_1_1common_1_1serial.html#aab66473ea2aa9d9114abbb0b5f5ff207">common::serial::PacketId</a> <span class="keywordtype">id</span>)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                    <span class="keywordflow">return</span> packet_maneger_.<a class="code hl_function" href="classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#aee7ccb81e18604c582af26e6d93ef9c7">CreateSender</a>&lt;T&gt;(id);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#ae62d80fa5714db6725665db8c628249b">   67</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#ae62d80fa5714db6725665db8c628249b">RegisterReceiveCallback</a>(<a class="code hl_typedef" href="namespaceroblab_1_1common_1_1serial.html#aab66473ea2aa9d9114abbb0b5f5ff207">common::serial::PacketId</a> <span class="keywordtype">id</span>, std::function&lt;<span class="keywordtype">void</span>(T &amp;&amp;)&gt; callback_func)</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                    packet_maneger_.<a class="code hl_function" href="classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#a6a2dbdd32def12b9d8ec96f0f6d46a32">RegisterReceiveCallback</a>(<span class="keywordtype">id</span>, std::forward&lt;std::function&lt;<span class="keywordtype">void</span>(T &amp;&amp;)&gt;&gt;(callback_func));</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#a5678ff1cb68bab3d80feba7ba7a853f0">   74</a></span>                <span class="keywordtype">bool</span> <a class="code hl_function" href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#a5678ff1cb68bab3d80feba7ba7a853f0">IsNameKnown</a>();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#a69497cf778f96d9844bb89f28f538eea">   78</a></span>                <span class="keyword">const</span> std::string &amp;<a class="code hl_function" href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#a69497cf778f96d9844bb89f28f538eea">GetName</a>();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#aa81c4160c4aaa0aafdb4b5e0ca323e6b">   82</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#aa81c4160c4aaa0aafdb4b5e0ca323e6b">SetMbedSerialIO</a>(std::shared_ptr&lt;PosixSerialIO&gt;mbed);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                <span class="keywordtype">void</span> RegisterReservedIdCallbacks();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                <span class="keywordtype">void</span> OnReceiveMbedName(std::string &amp;&amp;mbed_name);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                <span class="keywordtype">void</span> OnReceiveLog(std::vector&lt;std::string&gt; &amp;&amp;log);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                std::shared_ptr&lt;PosixSerialIO&gt; mbed_;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                <a class="code hl_class" href="classroblab_1_1common_1_1serial_1_1_id_packet_manager.html">common::serial::IdPacketManager</a> packet_maneger_;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                <span class="keyword">constexpr</span> <span class="keyword">static</span> <a class="code hl_typedef" href="namespaceroblab_1_1common_1_1serial.html#aab66473ea2aa9d9114abbb0b5f5ff207">common::serial::PacketId</a> mbed_name_id_ = 255;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *kInitialName = <span class="stringliteral">&quot;__unknown_mbed&quot;</span>;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                std::string mbed_name_{kInitialName};</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                <span class="keyword">constexpr</span> <span class="keyword">static</span> <a class="code hl_typedef" href="namespaceroblab_1_1common_1_1serial.html#aab66473ea2aa9d9114abbb0b5f5ff207">common::serial::PacketId</a> log_id_ = 254;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> kMaxBufferSize{512};</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            };</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassroblab_1_1common_1_1serial_1_1_id_packet_manager_html"><div class="ttname"><a href="classroblab_1_1common_1_1serial_1_1_id_packet_manager.html">roblab::common::serial::IdPacketManager</a></div><div class="ttdoc">ID付きパケットデータを管理するクラス</div><div class="ttdef"><b>Definition:</b> id_packet_manager.hpp:54</div></div>
+<div class="ttc" id="aclassroblab_1_1common_1_1serial_1_1_id_packet_manager_html_a6a2dbdd32def12b9d8ec96f0f6d46a32"><div class="ttname"><a href="classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#a6a2dbdd32def12b9d8ec96f0f6d46a32">roblab::common::serial::IdPacketManager::RegisterReceiveCallback</a></div><div class="ttdeci">void RegisterReceiveCallback(PacketId id, std::function&lt; void(T &amp;&amp;)&gt; callback_func)</div><div class="ttdoc">指定したIDのデータを受け取ったときに呼び出すコールバック関数を登録する</div><div class="ttdef"><b>Definition:</b> id_packet_manager.hpp:103</div></div>
+<div class="ttc" id="aclassroblab_1_1common_1_1serial_1_1_id_packet_manager_html_aee7ccb81e18604c582af26e6d93ef9c7"><div class="ttname"><a href="classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#aee7ccb81e18604c582af26e6d93ef9c7">roblab::common::serial::IdPacketManager::CreateSender</a></div><div class="ttdeci">Sender&lt; T &gt; CreateSender(PacketId id)</div><div class="ttdoc">指定したIDのデータを送るSenderを作る</div><div class="ttdef"><b>Definition:</b> id_packet_manager.hpp:83</div></div>
+<div class="ttc" id="aclassroblab_1_1common_1_1serial_1_1_sender_html"><div class="ttname"><a href="classroblab_1_1common_1_1serial_1_1_sender.html">roblab::common::serial::Sender</a></div><div class="ttdoc">シリアル通信でデータを送信する</div><div class="ttdef"><b>Definition:</b> sender.hpp:31</div></div>
+<div class="ttc" id="aclassroblab_1_1ros_1_1serial_1_1_mbed_single_connection_html"><div class="ttname"><a href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html">roblab::ros::serial::MbedSingleConnection</a></div><div class="ttdoc">1個のmbedとシリアル通信を行う</div><div class="ttdef"><b>Definition:</b> mbed_single_connection.hpp:29</div></div>
+<div class="ttc" id="aclassroblab_1_1ros_1_1serial_1_1_mbed_single_connection_html_a5678ff1cb68bab3d80feba7ba7a853f0"><div class="ttname"><a href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#a5678ff1cb68bab3d80feba7ba7a853f0">roblab::ros::serial::MbedSingleConnection::IsNameKnown</a></div><div class="ttdeci">bool IsNameKnown()</div><div class="ttdoc">接続先のmbedの名前が分かっているかどうか</div></div>
+<div class="ttc" id="aclassroblab_1_1ros_1_1serial_1_1_mbed_single_connection_html_a69497cf778f96d9844bb89f28f538eea"><div class="ttname"><a href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#a69497cf778f96d9844bb89f28f538eea">roblab::ros::serial::MbedSingleConnection::GetName</a></div><div class="ttdeci">const std::string &amp; GetName()</div><div class="ttdoc">名前を得る</div></div>
+<div class="ttc" id="aclassroblab_1_1ros_1_1serial_1_1_mbed_single_connection_html_a9ef284143865be386c221e6584946988"><div class="ttname"><a href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#a9ef284143865be386c221e6584946988">roblab::ros::serial::MbedSingleConnection::MbedSingleConnection</a></div><div class="ttdeci">MbedSingleConnection()</div><div class="ttdoc">コンストラクタ 接続が確定していないものとして扱う</div></div>
+<div class="ttc" id="aclassroblab_1_1ros_1_1serial_1_1_mbed_single_connection_html_aa81c4160c4aaa0aafdb4b5e0ca323e6b"><div class="ttname"><a href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#aa81c4160c4aaa0aafdb4b5e0ca323e6b">roblab::ros::serial::MbedSingleConnection::SetMbedSerialIO</a></div><div class="ttdeci">void SetMbedSerialIO(std::shared_ptr&lt; PosixSerialIO &gt;mbed)</div><div class="ttdoc">対応するmbedとのシリアル通信経路を変更する</div></div>
+<div class="ttc" id="aclassroblab_1_1ros_1_1serial_1_1_mbed_single_connection_html_acd628d872297f4a59844d075bff0f010"><div class="ttname"><a href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#acd628d872297f4a59844d075bff0f010">roblab::ros::serial::MbedSingleConnection::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdoc">パケットの送受信処理を行う．周期的に実行させること．</div></div>
+<div class="ttc" id="aclassroblab_1_1ros_1_1serial_1_1_mbed_single_connection_html_ae62d80fa5714db6725665db8c628249b"><div class="ttname"><a href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#ae62d80fa5714db6725665db8c628249b">roblab::ros::serial::MbedSingleConnection::RegisterReceiveCallback</a></div><div class="ttdeci">void RegisterReceiveCallback(common::serial::PacketId id, std::function&lt; void(T &amp;&amp;)&gt; callback_func)</div><div class="ttdoc">指定したIDのデータを受け取ったときに呼び出すコールバック関数を登録する</div><div class="ttdef"><b>Definition:</b> mbed_single_connection.hpp:67</div></div>
+<div class="ttc" id="aclassroblab_1_1ros_1_1serial_1_1_mbed_single_connection_html_aec96d263e6e4b22adeae007d6c695bed"><div class="ttname"><a href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#aec96d263e6e4b22adeae007d6c695bed">roblab::ros::serial::MbedSingleConnection::CreateSender</a></div><div class="ttdeci">common::serial::Sender&lt; T &gt; CreateSender(common::serial::PacketId id)</div><div class="ttdoc">指定したIDのデータを受け取るSenderを作る</div><div class="ttdef"><b>Definition:</b> mbed_single_connection.hpp:54</div></div>
+<div class="ttc" id="aclassroblab_1_1ros_1_1serial_1_1_mbed_single_connection_html_af00ea471a262833ad3ce939fc6082e5f"><div class="ttname"><a href="classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#af00ea471a262833ad3ce939fc6082e5f">roblab::ros::serial::MbedSingleConnection::MbedSingleConnection</a></div><div class="ttdeci">MbedSingleConnection(std::shared_ptr&lt; PosixSerialIO &gt; mbed)</div><div class="ttdoc">コンストラクタ</div></div>
+<div class="ttc" id="aid__packet__manager_8hpp_html"><div class="ttname"><a href="id__packet__manager_8hpp.html">id_packet_manager.hpp</a></div><div class="ttdoc">ID付きパケットデータを管理</div></div>
+<div class="ttc" id="anamespaceroblab_1_1common_1_1serial_html_aab66473ea2aa9d9114abbb0b5f5ff207"><div class="ttname"><a href="namespaceroblab_1_1common_1_1serial.html#aab66473ea2aa9d9114abbb0b5f5ff207">roblab::common::serial::PacketId</a></div><div class="ttdeci">uint8_t PacketId</div><div class="ttdoc">シリアルパケット通信のデータidの型エイリアス，255より沢山の種類を扱うことはないだろうという想定</div><div class="ttdef"><b>Definition:</b> id_packet_manager.hpp:35</div></div>
+<div class="ttc" id="anamespaceroblab_html"><div class="ttname"><a href="namespaceroblab.html">roblab</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dob.hpp:33</div></div>
+<div class="ttc" id="aposix__serial__io_8hpp_html"><div class="ttname"><a href="posix__serial__io_8hpp.html">posix_serial_io.hpp</a></div><div class="ttdoc">Ubuntuシリアル通信IOライブラリ</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d664d2be52076673a73e369576cfa215.html">roblab_ros_lib</a></li><li class="navelem"><a class="el" href="dir_cb2fc4cd3bfe6c26168aa580143ee2ff.html">include</a></li><li class="navelem"><a class="el" href="dir_c2c109437f8c6144fcf3c691ad5d7018.html">serial</a></li><li class="navelem"><a class="el" href="mbed__single__connection_8hpp.html">mbed_single_connection.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -2,6 +2,6 @@
 <area shape="rect" id="node1" title="ID付きパケットデータを管理" alt="" coords="115,5,337,45"/>
 <area shape="rect" id="node2" href="$sender_8hpp.html" title="シリアル通信で送るデータを登録" alt="" coords="5,93,207,133"/>
 <area shape="rect" id="node3" href="$pc__serial__connection_8hpp.html" title="パソコンと接続してパケット通信を行うライブラリ" alt="" coords="231,93,461,133"/>
-<area shape="rect" id="node4" href="$mbed__single__serial__connection_8hpp.html" title="1個のmbedとシリアル通信" alt="" coords="486,93,745,133"/>
-<area shape="rect" id="node5" href="$mbed__multi__serial__connection_8hpp.html" title="複数のMbedとシリアル通信を行うライブラリ" alt="" coords="489,181,742,221"/>
+<area shape="rect" id="node4" href="$mbed__single__connection_8hpp.html" title="1個のmbedとシリアル通信" alt="" coords="485,93,740,133"/>
+<area shape="rect" id="node5" href="$mbed__multi__connection_8hpp.html" title="複数のMbedとシリアル通信を行うライブラリ" alt="" coords="487,181,738,221"/>
 </map>

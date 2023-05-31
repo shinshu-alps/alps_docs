@@ -1,3 +1,5 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classroblab_1_1common__lib_1_1_moving_ave.html" title="移動平均クラス" alt="" coords="5,5,156,45"/>
+<area shape="rect" id="node1" href="$classroblab_1_1common_1_1serial_1_1_i_serial_i_o.html" title="シリアル通信を行うIO抽象インターフェース" alt="" coords="5,27,177,67"/>
+<area shape="rect" id="node2" href="$classroblab_1_1mbed_1_1_mbed_uart_serial_io.html" title="mbedのUartシリアル通信IOクラス" alt="" coords="225,5,455,31"/>
+<area shape="rect" id="node3" href="$classroblab_1_1ros_1_1serial_1_1_posix_serial_i_o.html" title="POSIX APIを提供する環境でのUartシリアル通信IOクラス" alt="" coords="273,55,407,95"/>
 </map>
