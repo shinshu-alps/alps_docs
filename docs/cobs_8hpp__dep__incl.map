@@ -1,8 +1,7 @@
 <map id="roblab_common_lib/include/serial/cobs.hpp" name="roblab_common_lib/include/serial/cobs.hpp">
-<area shape="rect" id="node1" title="COBS変換ライブラリ" alt="" coords="125,5,327,45"/>
-<area shape="rect" id="node2" href="$id__packet__manager_8hpp.html" title="ID付きパケットデータを管理" alt="" coords="115,93,337,133"/>
+<area shape="rect" id="node1" title="COBS変換ライブラリ" alt="" coords="123,5,324,45"/>
+<area shape="rect" id="node2" href="$id__packet__manager_8hpp.html" title="ID付きパケットデータを管理" alt="" coords="113,93,334,133"/>
 <area shape="rect" id="node3" href="$sender_8hpp.html" title="シリアル通信で送るデータを登録" alt="" coords="5,181,207,221"/>
-<area shape="rect" id="node4" href="$pc__serial__connection_8hpp.html" title="パソコンと接続してパケット通信を行うライブラリ" alt="" coords="231,181,461,221"/>
-<area shape="rect" id="node5" href="$mbed__single__connection_8hpp.html" title="1個のmbedとシリアル通信" alt="" coords="485,181,740,221"/>
-<area shape="rect" id="node6" href="$mbed__multi__connection_8hpp.html" title="複数のMbedとシリアル通信を行うライブラリ" alt="" coords="487,269,738,309"/>
+<area shape="rect" id="node4" href="$pc__uart__connection_8hpp.html" title="パソコンと接続してパケット通信を行うライブラリ" alt="" coords="231,181,451,221"/>
+<area shape="rect" id="node5" href="$mbed__uart__connection_8hpp.html" title="接続された複数のMbedとシリアル通信を行う" alt="" coords="475,181,718,221"/>
 </map>

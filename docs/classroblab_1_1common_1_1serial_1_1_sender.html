@@ -123,24 +123,21 @@ $(document).ready(function(){initNavTree('classroblab_1_1common_1_1serial_1_1_se
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a49ef3a8a1e006f497827c163d191c773"><td class="memItemLeft" align="right" valign="top"><a id="a49ef3a8a1e006f497827c163d191c773" name="a49ef3a8a1e006f497827c163d191c773"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Sender</b> (const <a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html">Sender</a> &amp;other)=default</td></tr>
-<tr class="separator:a49ef3a8a1e006f497827c163d191c773"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a999fdfe2575f6cc42f667564e37911a4"><td class="memItemLeft" align="right" valign="top"><a id="a999fdfe2575f6cc42f667564e37911a4" name="a999fdfe2575f6cc42f667564e37911a4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Sender</b> (<a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html">Sender</a> &amp;&amp;other) noexcept=default</td></tr>
-<tr class="separator:a999fdfe2575f6cc42f667564e37911a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b260733180289afea87e263a4e03363"><td class="memItemLeft" align="right" valign="top"><a id="a6b260733180289afea87e263a4e03363" name="a6b260733180289afea87e263a4e03363"></a>
-<a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html">Sender</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html">Sender</a>&lt; T &gt; &amp;other)=default</td></tr>
-<tr class="separator:a6b260733180289afea87e263a4e03363"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ba3d35acf3a298c6a86defd6f928df8"><td class="memItemLeft" align="right" valign="top"><a id="a8ba3d35acf3a298c6a86defd6f928df8" name="a8ba3d35acf3a298c6a86defd6f928df8"></a>
-<a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html">Sender</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html">Sender</a>&lt; T &gt; &amp;&amp;other)=default</td></tr>
-<tr class="separator:a8ba3d35acf3a298c6a86defd6f928df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb77af30214faf93815ad1dfdd1687c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html#acb77af30214faf93815ad1dfdd1687c7">EnqueueSendData</a> (T data)</td></tr>
-<tr class="memdesc:acb77af30214faf93815ad1dfdd1687c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">データをパケット化して書き込み待ちバッファに積む  <br /></td></tr>
-<tr class="separator:acb77af30214faf93815ad1dfdd1687c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa090de12a133fd9eb19ceeae65b96e60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceroblab_1_1common_1_1serial.html#aab66473ea2aa9d9114abbb0b5f5ff207">PacketId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html#aa090de12a133fd9eb19ceeae65b96e60">GetId</a> ()</td></tr>
-<tr class="memdesc:aa090de12a133fd9eb19ceeae65b96e60"><td class="mdescLeft">&#160;</td><td class="mdescRight">このSenderが送るデータのidを得る  <br /></td></tr>
-<tr class="separator:aa090de12a133fd9eb19ceeae65b96e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5158bfb31f7f58bda2be5056e445bf6"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html#ae5158bfb31f7f58bda2be5056e445bf6">GetData</a> ()</td></tr>
+<tr class="memdesc:ae5158bfb31f7f58bda2be5056e445bf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">送信データを得て，has_new_val_フラグを下ろす  <br /></td></tr>
+<tr class="separator:ae5158bfb31f7f58bda2be5056e445bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61277aa854376e8cfe3886ba4a9edc46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html#a61277aa854376e8cfe3886ba4a9edc46">HasNewVal</a> ()</td></tr>
+<tr class="memdesc:a61277aa854376e8cfe3886ba4a9edc46"><td class="mdescLeft">&#160;</td><td class="mdescRight">新たに値がセットされているか否か  <br /></td></tr>
+<tr class="separator:a61277aa854376e8cfe3886ba4a9edc46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ef15be650f7673e3e09ffe62cf00f65"><td class="memItemLeft" align="right" valign="top"><a id="a2ef15be650f7673e3e09ffe62cf00f65" name="a2ef15be650f7673e3e09ffe62cf00f65"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Sender</b> (const <a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html">Sender</a> &amp;)=delete</td></tr>
+<tr class="separator:a2ef15be650f7673e3e09ffe62cf00f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add873b6d496144430e89f414d385dd45"><td class="memItemLeft" align="right" valign="top"><a id="add873b6d496144430e89f414d385dd45" name="add873b6d496144430e89f414d385dd45"></a>
+<a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html">Sender</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html">Sender</a> &amp;)=delete</td></tr>
+<tr class="separator:add873b6d496144430e89f414d385dd45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4705eb8455bea9a4342a2f3393f8dac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html#aa4705eb8455bea9a4342a2f3393f8dac">SetData</a> (T send_data)</td></tr>
+<tr class="memdesc:aa4705eb8455bea9a4342a2f3393f8dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">送信するデータのセット  <br /></td></tr>
+<tr class="separator:aa4705eb8455bea9a4342a2f3393f8dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
@@ -151,10 +148,10 @@ class roblab::common::serial::Sender&lt; T &gt;</div><p>シリアル通信でデ
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>覚え書き</dt><dd>IdPacketManager::CreateSenderから作る </dd></dl>
+<dl class="section note"><dt>覚え書き</dt><dd>から作る </dd></dl>
 </div><h2 class="groupheader">関数詳解</h2>
-<a id="acb77af30214faf93815ad1dfdd1687c7" name="acb77af30214faf93815ad1dfdd1687c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb77af30214faf93815ad1dfdd1687c7">&#9670;&#160;</a></span>EnqueueSendData()</h2>
+<a id="ae5158bfb31f7f58bda2be5056e445bf6" name="ae5158bfb31f7f58bda2be5056e445bf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5158bfb31f7f58bda2be5056e445bf6">&#9670;&#160;</a></span>GetData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,43 +162,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html">roblab::common::serial::Sender</a>&lt; T &gt;::EnqueueSendData </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>データをパケット化して書き込み待ちバッファに積む </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>送りたいデータ </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aa090de12a133fd9eb19ceeae65b96e60" name="aa090de12a133fd9eb19ceeae65b96e60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa090de12a133fd9eb19ceeae65b96e60">&#9670;&#160;</a></span>GetId()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceroblab_1_1common_1_1serial.html#aab66473ea2aa9d9114abbb0b5f5ff207">PacketId</a> <a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html">roblab::common::serial::Sender</a>&lt; T &gt;::GetId </td>
+          <td class="memname">T <a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html">roblab::common::serial::Sender</a>&lt; T &gt;::GetData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -214,8 +175,74 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>このSenderが送るデータのidを得る </p>
-<dl class="section return"><dt>戻り値</dt><dd>data_id_t id </dd></dl>
+<p>送信データを得て，has_new_val_フラグを下ろす </p>
+<dl class="section return"><dt>戻り値</dt><dd>T 送信データ </dd></dl>
+
+</div>
+</div>
+<a id="a61277aa854376e8cfe3886ba4a9edc46" name="a61277aa854376e8cfe3886ba4a9edc46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61277aa854376e8cfe3886ba4a9edc46">&#9670;&#160;</a></span>HasNewVal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html">roblab::common::serial::Sender</a>&lt; T &gt;::HasNewVal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>新たに値がセットされているか否か </p>
+<dl class="section return"><dt>戻り値</dt><dd>新たに値がセットされている場合true </dd></dl>
+
+</div>
+</div>
+<a id="aa4705eb8455bea9a4342a2f3393f8dac" name="aa4705eb8455bea9a4342a2f3393f8dac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4705eb8455bea9a4342a2f3393f8dac">&#9670;&#160;</a></span>SetData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html">roblab::common::serial::Sender</a>&lt; T &gt;::SetData </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>send_data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>送信するデータのセット </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">send_data</td><td>送信データ </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['empty_0',['Empty',['../classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html#a8201b4886c5d8636c0cc8daa4a801d01',1,'roblab::common::serial::ByteRingBuffer']]],
-  ['encode_1',['Encode',['../classroblab_1_1common_1_1serial_1_1_cobs.html#a938255062dd0bea20238a2d65d2c29b8',1,'roblab::common::serial::Cobs']]],
-  ['encoding_2',['Encoding',['../classroblab_1_1mbed_1_1_rotary_encoder.html#ab2d77b4811eed06a6ea72fe31be8b842',1,'roblab::mbed::RotaryEncoder']]],
-  ['enqueuesenddata_3',['EnqueueSendData',['../classroblab_1_1common_1_1serial_1_1_sender.html#acb77af30214faf93815ad1dfdd1687c7',1,'roblab::common::serial::Sender']]],
-  ['expandcapacity_4',['ExpandCapacity',['../classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html#a10aaa95dff602a8cb3ee4da47209bc6f',1,'roblab::common::serial::ByteRingBuffer']]],
-  ['extractcobspackets_5',['ExtractCobsPackets',['../classroblab_1_1common_1_1serial_1_1_cobs.html#af76bf760651c631e8f101a2d3480c9c9',1,'roblab::common::serial::Cobs']]]
+  ['filter_0',['Filter',['../classroblab_1_1common_1_1_dob.html#ad6792faa84a0facd873a8051149193d1',1,'roblab::common::Dob::Filter()'],['../classroblab_1_1common_1_1_differential.html#a6975abcdd816371776c633840248a27b',1,'roblab::common::Differential::Filter()'],['../classroblab_1_1common_1_1_integral.html#a08e8e2104c4de91e635bd6bd026dfc7e',1,'roblab::common::Integral::Filter()'],['../classroblab_1_1common_1_1_lpf.html#aeb0800dd81e4e0e0f13d175ff9418811',1,'roblab::common::Lpf::Filter()']]],
+  ['find_1',['Find',['../classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html#a367057a6135ecb1519d6e2f4f7e71083',1,'roblab::common::serial::ByteRingBuffer']]]
 ];

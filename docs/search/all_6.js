@@ -1,27 +1,4 @@
 var searchData=
 [
-  ['getaccesstoreadbuffer_0',['GetAccessToReadBuffer',['../classroblab_1_1mbed_1_1_mbed_uart_serial_io.html#a67efe88ee65fc35df6637942a616729a',1,'roblab::mbed::MbedUartSerialIo::GetAccessToReadBuffer()'],['../classroblab_1_1ros_1_1serial_1_1_posix_serial_i_o.html#a519d9004ee5c55336d25da6f414ea58c',1,'roblab::ros::serial::PosixSerialIO::GetAccessToReadBuffer()'],['../classroblab_1_1common_1_1serial_1_1_i_serial_i_o.html#aa93710670389830299c2867f6cf3c37c',1,'roblab::common::serial::ISerialIO::GetAccessToReadBuffer()']]],
-  ['getcoeff_5fa_5f_1',['getCoeff_a_',['../classroblab_1_1common_1_1_dob.html#a1e2b00717cfa05e3ad870de323784984',1,'roblab::common::Dob']]],
-  ['getcoeff_5fb_5f_2',['getCoeff_b_',['../classroblab_1_1common_1_1_dob.html#a557e84afda9010238a13f35b5727eb2f',1,'roblab::common::Dob']]],
-  ['getcoeff_5fc_5f_3',['getCoeff_c_',['../classroblab_1_1common_1_1_dob.html#a1a16ecf9dbd8b7ad986211e0ff422942',1,'roblab::common::Dob']]],
-  ['getcurrentstate_4',['GetCurrentState',['../classroblab_1_1mbed_1_1_rotary_encoder.html#a6baf8396ea1bd2bd95bd9bf69a8ff78c',1,'roblab::mbed::RotaryEncoder']]],
-  ['getdeg_5',['GetDeg',['../classroblab_1_1mbed_1_1_rotary_encoder.html#a2c1eec16a39e69d9bf3399619f0eec34',1,'roblab::mbed::RotaryEncoder']]],
-  ['getdoboutput_5f_6',['getDobOutput_',['../classroblab_1_1common_1_1_dob.html#a89b00c4fbd25142bca48fc34420cbfea',1,'roblab::common::Dob']]],
-  ['getestimateddisturbance_5f_7',['getEstimatedDisturbance_',['../classroblab_1_1common_1_1_dob.html#a8e1a16a2fbdea49e2bf7cb77472f8160',1,'roblab::common::Dob']]],
-  ['getfront_8',['GetFront',['../classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html#a4410774e88a9477225f3408a24c5adfc',1,'roblab::common::serial::ByteRingBuffer']]],
-  ['getid_9',['GetId',['../classroblab_1_1common_1_1serial_1_1_sender.html#aa090de12a133fd9eb19ceeae65b96e60',1,'roblab::common::serial::Sender']]],
-  ['getlpfoutput_5f_10',['getLpfOutput_',['../classroblab_1_1common_1_1_dob.html#a0db87307bd36e2e4f1ae33eeaf488995',1,'roblab::common::Dob']]],
-  ['getmbedpathlist_11',['GetMbedPathList',['../classroblab_1_1ros_1_1serial_1_1_mbed_multi_connection.html#aeb32a7e87214ce4a319c5c78b319bff7',1,'roblab::ros::serial::MbedMultiConnection']]],
-  ['getmbedsingleconnection_12',['GetMbedSingleConnection',['../classroblab_1_1ros_1_1serial_1_1_mbed_multi_connection.html#acbd6db5ed6938ff4b42bc79ed9569076',1,'roblab::ros::serial::MbedMultiConnection']]],
-  ['getname_13',['GetName',['../structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf',1,'roblab::common::serial::SerializeTypeInfo::GetName()'],['../classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#a69497cf778f96d9844bb89f28f538eea',1,'roblab::ros::serial::MbedSingleConnection::GetName()']]],
-  ['getoutputd_14',['GetOutputD',['../classroblab_1_1common_1_1_pid.html#a241a5525217745e05fa80033c3347ad9',1,'roblab::common::Pid']]],
-  ['getoutputi_15',['GetOutputI',['../classroblab_1_1common_1_1_pid.html#a44872493c47daf3aa566b18000d344db',1,'roblab::common::Pid']]],
-  ['getoutputp_16',['GetOutputP',['../classroblab_1_1common_1_1_pid.html#ad90ea38ad783f580bbea3deeab36c9f3',1,'roblab::common::Pid']]],
-  ['getpidoutput_5f_17',['getPidOutput_',['../classroblab_1_1common_1_1_dob.html#a0d69a0f08037569f552d9b48896ad487',1,'roblab::common::Dob']]],
-  ['getpulses_18',['GetPulses',['../classroblab_1_1mbed_1_1_rotary_encoder.html#a531828d70723b4fbf9a4dc45b89e6291',1,'roblab::mbed::RotaryEncoder']]],
-  ['getrad_19',['GetRad',['../classroblab_1_1mbed_1_1_rotary_encoder.html#a42d4a34c09858920da9c761405729ff7',1,'roblab::mbed::RotaryEncoder']]],
-  ['getreadbuffersize_20',['GetReadBufferSize',['../classroblab_1_1mbed_1_1_mbed_uart_serial_io.html#ad415cecf47024503417bb8ac1e30520a',1,'roblab::mbed::MbedUartSerialIo']]],
-  ['getvel_21',['GetVel',['../classroblab_1_1mbed_1_1_rotary_encoder.html#ac1bb6d59537214e0ce87a383db673945',1,'roblab::mbed::RotaryEncoder']]],
-  ['getwritebaffer_22',['GetWriteBaffer',['../classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#a1d9fd7f7c7b26cf4c32300eecff34f3a',1,'roblab::common::serial::IdPacketManager']]],
-  ['getwritebuffersize_23',['GetWriteBufferSize',['../classroblab_1_1mbed_1_1_mbed_uart_serial_io.html#a6626fc9fcf4dc73c933168957b996283',1,'roblab::mbed::MbedUartSerialIo::GetWriteBufferSize()'],['../classroblab_1_1ros_1_1serial_1_1_posix_serial_i_o.html#af6e42b40559569d9f53a747f6702cbe0',1,'roblab::ros::serial::PosixSerialIO::GetWriteBufferSize()']]]
+  ['hasnewval_0',['HasNewVal',['../classroblab_1_1common_1_1serial_1_1_sender.html#a61277aa854376e8cfe3886ba4a9edc46',1,'roblab::common::serial::Sender']]]
 ];

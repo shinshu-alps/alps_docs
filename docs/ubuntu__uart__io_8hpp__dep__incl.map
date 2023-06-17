@@ -1,0 +1,4 @@
+<map id="roblab_ros_lib/include/serial/ubuntu_uart_io.hpp" name="roblab_ros_lib/include/serial/ubuntu_uart_io.hpp">
+<area shape="rect" id="node1" title="Ubuntuシリアル通信IOライブラリ" alt="" coords="31,5,222,45"/>
+<area shape="rect" id="node2" href="$mbed__uart__connection_8hpp.html" title="接続された複数のMbedとシリアル通信を行う" alt="" coords="5,93,248,133"/>
+</map>

@@ -55,7 +55,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classroblab_1_1mbed_1_1_pc_serial_connection.html#ae90024cef1e283c41477858ddb12edf9"
+"classroblab_1_1mbed_1_1_servo_motor270.html#ab3f5debc52319a007351b682036fea13"
 ];
 
 var SYNCONMSG = 'クリックで同期表示が無効になります';

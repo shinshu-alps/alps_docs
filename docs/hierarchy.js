@@ -11,23 +11,20 @@ var hierarchy =
     [ "roblab::common::serial::IdPacketManager", "classroblab_1_1common_1_1serial_1_1_id_packet_manager.html", null ],
     [ "roblab::common::Integral", "classroblab_1_1common_1_1_integral.html", null ],
     [ "roblab::common::serial::ISerialIO", "classroblab_1_1common_1_1serial_1_1_i_serial_i_o.html", [
-      [ "roblab::mbed::MbedUartSerialIo", "classroblab_1_1mbed_1_1_mbed_uart_serial_io.html", null ],
-      [ "roblab::ros::serial::PosixSerialIO", "classroblab_1_1ros_1_1serial_1_1_posix_serial_i_o.html", null ]
+      [ "roblab::mbed::serial::MbedUartSerialIo", "classroblab_1_1mbed_1_1serial_1_1_mbed_uart_serial_io.html", null ],
+      [ "roblab::ros::serial::UbuntuUartIO", "classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_i_o.html", null ]
     ] ],
     [ "roblab::common::Lpf", "classroblab_1_1common_1_1_lpf.html", [
       [ "roblab::common::Dob", "classroblab_1_1common_1_1_dob.html", null ]
     ] ],
-    [ "roblab::ros::serial::MbedMultiConnection", "classroblab_1_1ros_1_1serial_1_1_mbed_multi_connection.html", null ],
-    [ "roblab::ros::serial::MbedSingleConnection", "classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html", null ],
+    [ "roblab::ros::serial::MbedUartConnection", "classroblab_1_1ros_1_1serial_1_1_mbed_uart_connection.html", null ],
     [ "roblab::common::MovingAve", "classroblab_1_1common_1_1_moving_ave.html", null ],
-    [ "roblab::mbed::PcSerialConnection", "classroblab_1_1mbed_1_1_pc_serial_connection.html", null ],
+    [ "roblab::mbed::serial::PcUartConnection", "classroblab_1_1mbed_1_1serial_1_1_pc_uart_connection.html", null ],
     [ "roblab::common::Pid", "classroblab_1_1common_1_1_pid.html", [
       [ "roblab::common::Dob", "classroblab_1_1common_1_1_dob.html", null ]
     ] ],
     [ "roblab::mbed::RotaryEncoder", "classroblab_1_1mbed_1_1_rotary_encoder.html", null ],
     [ "roblab::common::serial::Sender< T >", "classroblab_1_1common_1_1serial_1_1_sender.html", null ],
-    [ "roblab::common::serial::Sender< std::string >", "classroblab_1_1common_1_1serial_1_1_sender.html", null ],
-    [ "roblab::common::serial::Sender< std::vector< std::string > >", "classroblab_1_1common_1_1serial_1_1_sender.html", null ],
     [ "roblab::common::serial::SerializeTypeInfoBase< is_serializable, is_single >", "structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html", null ],
     [ "roblab::common::serial::SerializeTypeInfoBase< false, false >", "structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html", [
       [ "roblab::common::serial::SerializeTypeInfo< T >", "structroblab_1_1common_1_1serial_1_1_serialize_type_info.html", null ]

@@ -24,9 +24,11 @@ var annotated_dup =
         [ "Timer", "classroblab_1_1common_1_1_timer.html", "classroblab_1_1common_1_1_timer" ]
       ] ],
       [ "mbed", "namespaceroblab_1_1mbed.html", [
+        [ "serial", "namespaceroblab_1_1mbed_1_1serial.html", [
+          [ "MbedUartSerialIo", "classroblab_1_1mbed_1_1serial_1_1_mbed_uart_serial_io.html", "classroblab_1_1mbed_1_1serial_1_1_mbed_uart_serial_io" ],
+          [ "PcUartConnection", "classroblab_1_1mbed_1_1serial_1_1_pc_uart_connection.html", "classroblab_1_1mbed_1_1serial_1_1_pc_uart_connection" ]
+        ] ],
         [ "DcMotor", "classroblab_1_1mbed_1_1_dc_motor.html", "classroblab_1_1mbed_1_1_dc_motor" ],
-        [ "MbedUartSerialIo", "classroblab_1_1mbed_1_1_mbed_uart_serial_io.html", "classroblab_1_1mbed_1_1_mbed_uart_serial_io" ],
-        [ "PcSerialConnection", "classroblab_1_1mbed_1_1_pc_serial_connection.html", "classroblab_1_1mbed_1_1_pc_serial_connection" ],
         [ "RotaryEncoder", "classroblab_1_1mbed_1_1_rotary_encoder.html", "classroblab_1_1mbed_1_1_rotary_encoder" ],
         [ "ServoMotor180", "classroblab_1_1mbed_1_1_servo_motor180.html", "classroblab_1_1mbed_1_1_servo_motor180" ],
         [ "ServoMotor270", "classroblab_1_1mbed_1_1_servo_motor270.html", "classroblab_1_1mbed_1_1_servo_motor270" ],
@@ -34,9 +36,8 @@ var annotated_dup =
       ] ],
       [ "ros", "namespaceroblab_1_1ros.html", [
         [ "serial", "namespaceroblab_1_1ros_1_1serial.html", [
-          [ "MbedMultiConnection", "classroblab_1_1ros_1_1serial_1_1_mbed_multi_connection.html", "classroblab_1_1ros_1_1serial_1_1_mbed_multi_connection" ],
-          [ "MbedSingleConnection", "classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html", "classroblab_1_1ros_1_1serial_1_1_mbed_single_connection" ],
-          [ "PosixSerialIO", "classroblab_1_1ros_1_1serial_1_1_posix_serial_i_o.html", "classroblab_1_1ros_1_1serial_1_1_posix_serial_i_o" ]
+          [ "MbedUartConnection", "classroblab_1_1ros_1_1serial_1_1_mbed_uart_connection.html", "classroblab_1_1ros_1_1serial_1_1_mbed_uart_connection" ],
+          [ "UbuntuUartIO", "classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_i_o.html", "classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_i_o" ]
         ] ]
       ] ]
     ] ]
