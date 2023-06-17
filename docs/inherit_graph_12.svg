@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classroblab_1_1common_1_1serial_1_1_sender.html" target="_top" xlink:title=" ">
+<g id="a_node1"><a xlink:href="classroblab_1_1common_1_1serial_1_1_sender.html" target="_top" xlink:title="シリアル通信でデータを送信する">
 <polygon fill="white" stroke="#666666" points="129,-30 0,-30 0,0 129,0 129,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">roblab::common::serial</text>
-<text text-anchor="middle" x="64.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::Sender&lt; std::string &gt;</text>
+<text text-anchor="middle" x="64.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::Sender&lt; T &gt;</text>
 </a>
 </g>
 </g>

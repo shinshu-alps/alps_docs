@@ -12,7 +12,7 @@ var classroblab_1_1common_1_1_pid =
     [ "ResetEndCount", "classroblab_1_1common_1_1_pid.html#a3eb8bb5bf55bd5eddc41f0db0a212812", null ],
     [ "ResetForVelocity", "classroblab_1_1common_1_1_pid.html#a3c6fdb41b975b6d4ec55a5f0798314c4", null ],
     [ "SetDiffTimeConst", "classroblab_1_1common_1_1_pid.html#ae73327d7d2df66783af2e9c03e9966aa", null ],
-    [ "SetEndStatus", "classroblab_1_1common_1_1_pid.html#a4c81465d2126792c051250fd2ec44f70", null ],
+    [ "SetEndCondition", "classroblab_1_1common_1_1_pid.html#a6c44f287e45493b10b7ac4a050c8d19c", null ],
     [ "SetGain", "classroblab_1_1common_1_1_pid.html#a90cf310d97a8c09b392b2b90896a0c07", null ],
     [ "SetIntegralMax", "classroblab_1_1common_1_1_pid.html#a23536a571f83b13e033ab43d4c4abf12", null ],
     [ "SetMaxOutput", "classroblab_1_1common_1_1_pid.html#ab72ccebd6da2df4e6dab198505af4446", null ],

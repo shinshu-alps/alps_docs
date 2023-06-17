@@ -140,9 +140,9 @@ roblab::common::Pid の継承関係図</div>
 <tr class="memitem:a90cf310d97a8c09b392b2b90896a0c07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1_pid.html#a90cf310d97a8c09b392b2b90896a0c07">SetGain</a> (float kp, float ki, float kd)</td></tr>
 <tr class="memdesc:a90cf310d97a8c09b392b2b90896a0c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIDのゲインをセットする関数  <br /></td></tr>
 <tr class="separator:a90cf310d97a8c09b392b2b90896a0c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c81465d2126792c051250fd2ec44f70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1_pid.html#a4c81465d2126792c051250fd2ec44f70">SetEndStatus</a> (float end_err, float end_diff)</td></tr>
-<tr class="memdesc:a4c81465d2126792c051250fd2ec44f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了条件値を変更する  <br /></td></tr>
-<tr class="separator:a4c81465d2126792c051250fd2ec44f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c44f287e45493b10b7ac4a050c8d19c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1_pid.html#a6c44f287e45493b10b7ac4a050c8d19c">SetEndCondition</a> (float end_err, float end_diff)</td></tr>
+<tr class="memdesc:a6c44f287e45493b10b7ac4a050c8d19c"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了条件値を変更する  <br /></td></tr>
+<tr class="separator:a6c44f287e45493b10b7ac4a050c8d19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35c014c23e05738f45e31e79704472ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1_pid.html#a35c014c23e05738f45e31e79704472ec">SetPreviousValue</a> (float first_pos)</td></tr>
 <tr class="memdesc:a35c014c23e05738f45e31e79704472ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期の値から1つ前の偏差をつくる(一番最初の微分値の対策)  <br /></td></tr>
 <tr class="separator:a35c014c23e05738f45e31e79704472ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -433,14 +433,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetForVelocity</b> 
 
 </div>
 </div>
-<a id="a4c81465d2126792c051250fd2ec44f70" name="a4c81465d2126792c051250fd2ec44f70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c81465d2126792c051250fd2ec44f70">&#9670;&#160;</a></span>SetEndStatus()</h2>
+<a id="a6c44f287e45493b10b7ac4a050c8d19c" name="a6c44f287e45493b10b7ac4a050c8d19c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c44f287e45493b10b7ac4a050c8d19c">&#9670;&#160;</a></span>SetEndCondition()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void roblab::common::Pid::SetEndStatus </td>
+          <td class="memname">void roblab::common::Pid::SetEndCondition </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>end_err</em>, </td>

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['unregisterreceiveid_0',['UnregisterReceiveId',['../classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#a7728e3ad507a23c83d8c339d206bbc72',1,'roblab::common::serial::IdPacketManager']]],
-  ['unregistersendid_1',['UnregisterSendId',['../classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#a48c147f54f68c87f305504e3381062a3',1,'roblab::common::serial::IdPacketManager']]],
-  ['update_2',['Update',['../classroblab_1_1common_1_1serial_1_1_i_serial_i_o.html#a550a2fea59c9618b59b8a703e3579187',1,'roblab::common::serial::ISerialIO::Update()'],['../classroblab_1_1mbed_1_1_mbed_uart_serial_io.html#aac899a355619ace73148c385a5b97679',1,'roblab::mbed::MbedUartSerialIo::Update()'],['../classroblab_1_1mbed_1_1_pc_serial_connection.html#a73ae0fa058d52067c6c53492438ec569',1,'roblab::mbed::PcSerialConnection::Update()'],['../classroblab_1_1ros_1_1serial_1_1_mbed_multi_connection.html#a1630ff7b1785514d7057ac84d4f1ea04',1,'roblab::ros::serial::MbedMultiConnection::Update()'],['../classroblab_1_1ros_1_1serial_1_1_mbed_single_connection.html#acd628d872297f4a59844d075bff0f010',1,'roblab::ros::serial::MbedSingleConnection::Update()'],['../classroblab_1_1ros_1_1serial_1_1_posix_serial_i_o.html#a7835d69bd3b7cd623014cbb3acc40bfc',1,'roblab::ros::serial::PosixSerialIO::Update()']]]
+  ['ubuntu_5fuart_5fio_2ehpp_0',['ubuntu_uart_io.hpp',['../ubuntu__uart__io_8hpp.html',1,'']]],
+  ['ubuntuuartio_1',['UbuntuUartIO',['../classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_i_o.html',1,'roblab::ros::serial::UbuntuUartIO'],['../classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_i_o.html#a4e90e87be4f97278afe565b46a3f4d71',1,'roblab::ros::serial::UbuntuUartIO::UbuntuUartIO()']]]
 ];
