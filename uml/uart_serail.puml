@@ -1,0 +1,85 @@
+@startuml UartSerial
+' !include https://raw.githubusercontent.com/patrik-csak/one-dark-plantuml-theme/v1.0.1/theme.puml
+
+
+hide empty members
+
+' クラス図
+set namespaceSeparator ::
+namespace roblab{
+    namespace common::serial{
+        class cobs{
+            COBS変換クラス
+        }
+        class data_serializer{
+            シリアライズ（バイト列化）クラス
+        }
+        abstract class i_serial_io{
+            シリアルIOインターフェース
+        }
+        
+        class id_packet_manager{
+            id付きパケット通信を管理するクラス
+        }
+
+        note left of id_packet_manager
+        id_packet_managerではデータの識別をid（番号）で行い
+        mbed_connectionとpc_uart_connectionでは
+        tag（文字列）で行う
+        end note
+
+        note right of id_packet_manager
+        Senderからデータを取り出して
+        シリアライズ化を行う
+        関数オブジェクトを保持
+        end note
+
+        class Sender{
+            送信するデータをセットするクラス
+        }
+        class serialize_type_info{
+            シリアライズ化するデータの型情報を保持するクラス
+        }
+
+        id_packet_manager ..> Sender : <<create>>
+        id_packet_manager ..> Sender : 送るデータを取得
+        id_packet_manager ..> data_serializer : <<use>>
+        id_packet_manager ..> cobs : <<use>>
+        i_serial_io --o id_packet_manager
+
+        data_serializer ..> serialize_type_info : <<use>>
+    }
+
+    namespace mbed::serial{
+        class pc_uart_connection{
+            PCとのUART通信を管理するクラス
+        }
+        class mbed_uart_serial_io{
+            UARTシリアルIO
+        }
+    }
+
+    namespace ros::serial{
+        class mbed_uart_connection{
+            mbedとのUART通信を管理するクラス
+        }
+
+        note left of mbed_uart_connection
+        Sender作成情報とReceiveCb登録情報を
+        関数オブジェクトとして保持し
+        リクエストされてIDが判明したタイミングで
+        対応するidでIdPacketManagerに登録する
+        end note
+
+        class UbuntuUartIO{
+            UARTシリアルIO
+        }
+    }
+    ros::serial::UbuntuUartIO <|.. common::serial::i_serial_io
+    mbed::serial::mbed_uart_serial_io <|.. common::serial::i_serial_io
+    
+    ros::serial::mbed_uart_connection o-- common::serial::id_packet_manager
+    mbed::serial::pc_uart_connection o-- common::serial::id_packet_manager
+}
+
+@enduml
