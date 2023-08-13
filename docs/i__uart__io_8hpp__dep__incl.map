@@ -1,0 +1,9 @@
+<map id="roblab_common_lib/include/roblab_common/serial/i_uart_io.hpp" name="roblab_common_lib/include/roblab_common/serial/i_uart_io.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="265,5,467,60"/>
+<area shape="rect" id="node2" href="$id__packet__manager_8hpp.html" title="ID付きパケットデータを管理" alt="" coords="49,108,251,163"/>
+<area shape="rect" id="node6" href="$uart__io_8hpp.html" title="mbedのUart通信IOライブラリ" alt="" coords="275,108,457,163"/>
+<area shape="rect" id="node7" href="$ubuntu__uart__io_8hpp.html" title="Ubuntuシリアル通信IOライブラリ" alt="" coords="481,108,664,163"/>
+<area shape="rect" id="node3" href="$sender_8hpp.html" title="シリアル通信で送るデータを登録" alt="" coords="5,218,252,258"/>
+<area shape="rect" id="node4" href="$pc__uart__connection_8hpp.html" title="パソコンと接続してパケット通信を行うライブラリ" alt="" coords="277,211,458,265"/>
+<area shape="rect" id="node5" href="$mbed__uart__connection_8hpp.html" title="接続された複数のMbedとシリアル通信を行う" alt="" coords="484,211,659,265"/>
+</map>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.9.7" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Roblab: roblab_mbed_lib/include/actuator/dc_motor.hpp ファイル</title>
+    <title>Roblab: roblab_mbed_lib/include/roblab_mbed/actuator/dc_motor.hpp ファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
     <script type="text/javascript" src="jquery.js"></script>
@@ -115,22 +115,22 @@ $(document).ready(function(){initNavTree('dc__motor_8hpp.html',''); initResizabl
   <div class="headertitle"><div class="title">dc_motor.hpp ファイル</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>DCモータ駆動ライブラリ  
-<a href="#details">[詳解]</a></p>
-<div class="textblock"><code>#include &quot;mbed.h&quot;</code><br />
+<div class="textblock"><code>#include &lt;mbed.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="dc__motor__base_8hpp_source.html">roblab_common/actuator/dc_motor_base.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pwm__out_8hpp_source.html">roblab_mbed/gpio/pwm_out.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="digital__out_8hpp_source.html">roblab_mbed/gpio/digital_out.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 dc_motor.hpp の依存先関係図:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="dc__motor_8hpp__incl.svg" width="192" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="dc__motor_8hpp__incl.svg" width="876" height="242"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="dc__motor_8hpp_source.html">[ソースコード]</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 クラス</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1mbed_1_1_dc_motor.html">roblab::mbed::DcMotor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DCモーター駆動クラス  <a href="classroblab_1_1mbed_1_1_dc_motor.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1mbed_1_1actuator_1_1_dc_motor.html">roblab::mbed::actuator::DcMotor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWMピンと方向指定ピンで動かすDCモーターのmbed用実装  <a href="classroblab_1_1mbed_1_1actuator_1_1_dc_motor.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -141,19 +141,21 @@ dc_motor.hpp の依存先関係図:</div>
 <tr class="memitem:namespaceroblab_1_1mbed"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceroblab_1_1mbed.html">roblab::mbed</a></td></tr>
 <tr class="memdesc:namespaceroblab_1_1mbed"><td class="mdescLeft">&#160;</td><td class="mdescRight">mbed用ライブラリ <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceroblab_1_1mbed_1_1actuator"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceroblab_1_1mbed_1_1actuator.html">roblab::mbed::actuator</a></td></tr>
+<tr class="memdesc:namespaceroblab_1_1mbed_1_1actuator"><td class="mdescLeft">&#160;</td><td class="mdescRight">アクチュエータ関係 <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
-<div class="textblock"><p>DCモータ駆動ライブラリ </p>
-<dl class="section author"><dt>著者</dt><dd>??? </dd></dl>
-<dl class="section version"><dt>バージョン</dt><dd>1.0 </dd></dl>
-<dl class="section date"><dt>日付</dt><dd>2023-04-07</dd></dl>
+<div class="textblock"><dl class="section author"><dt>著者</dt><dd>Keisei Tsubomoto </dd></dl>
+<dl class="section version"><dt>バージョン</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日付</dt><dd>2023-07-19</dd></dl>
 <dl class="section copyright"><dt>著作権所有</dt><dd>Copyright (c) 2023 </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c33f9a09b0104de6eebd3809920e616c.html">roblab_mbed_lib</a></li><li class="navelem"><a class="el" href="dir_858b1795adc2910eb251408166003f7f.html">include</a></li><li class="navelem"><a class="el" href="dir_159ba38c17bf5263f2c91ff271b01f4a.html">actuator</a></li><li class="navelem"><a class="el" href="dc__motor_8hpp.html">dc_motor.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_c33f9a09b0104de6eebd3809920e616c.html">roblab_mbed_lib</a></li><li class="navelem"><a class="el" href="dir_858b1795adc2910eb251408166003f7f.html">include</a></li><li class="navelem"><a class="el" href="dir_8f2461ed01872a68db9a9b31590e2846.html">roblab_mbed</a></li><li class="navelem"><a class="el" href="dir_4da496a44ec4cd966a18c67c0ee27fec.html">actuator</a></li><li class="navelem"><a class="el" href="dc__motor_8hpp.html">dc_motor.hpp</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>

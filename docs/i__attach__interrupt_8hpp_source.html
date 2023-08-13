@@ -1,0 +1,166 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roblab: roblab_common_lib/include/roblab_common/gpio/i_attach_interrupt.hpp ソースファイル</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Roblab
+                            </div>
+                            <div id="projectbrief">roboken shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('i__attach__interrupt_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">i_attach_interrupt.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="i__attach__interrupt_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ROBLAB_COMMON_I_ATTACH_INTERRUPT_HPP</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ROBLAB_COMMON_I_ATTACH_INTERRUPT_HPP</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;etl/delegate.h&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceroblab.html">roblab</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">namespace </span>common</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="namespaceroblab_1_1common_1_1gpio.html">   21</a></span>        <span class="keyword">namespace </span>gpio</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="namespaceroblab_1_1common_1_1gpio.html#a6591d88263b6540cd081e4a84bcd4b96">   27</a></span>            <span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespaceroblab_1_1common_1_1gpio.html#a6591d88263b6540cd081e4a84bcd4b96">InterruptMode</a></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                <a class="code hl_enumvalue" href="namespaceroblab_1_1common_1_1gpio.html#a6591d88263b6540cd081e4a84bcd4b96a7e2fb3a1859ce40bdfa6c187f499d423">kRise</a>,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                <a class="code hl_enumvalue" href="namespaceroblab_1_1common_1_1gpio.html#a6591d88263b6540cd081e4a84bcd4b96a25ca54211737bfd512c6b12741bcb060">kFall</a>,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                <a class="code hl_enumvalue" href="namespaceroblab_1_1common_1_1gpio.html#a6591d88263b6540cd081e4a84bcd4b96aba22a7854ef5ac45fd6eaeaa59bcf126">kChange</a>,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            };</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keyword">template</span> &lt;<span class="keyword">class</span> Derived&gt;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1gpio_1_1_i_attach_interrupt.html">   43</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classroblab_1_1common_1_1gpio_1_1_i_attach_interrupt.html">IAttachInterrupt</a></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1gpio_1_1_i_attach_interrupt.html#a723e6d6165dc79fdab28d44c0a903092">   52</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1common_1_1gpio_1_1_i_attach_interrupt.html#a723e6d6165dc79fdab28d44c0a903092">AttachInterrupt</a>(etl::delegate&lt;<span class="keywordtype">void</span>()&gt; func, <a class="code hl_enumeration" href="namespaceroblab_1_1common_1_1gpio.html#a6591d88263b6540cd081e4a84bcd4b96">InterruptMode</a> mode)</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                    <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;AttachInterruptImpl(func, mode);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            };</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassroblab_1_1common_1_1gpio_1_1_i_attach_interrupt_html"><div class="ttname"><a href="classroblab_1_1common_1_1gpio_1_1_i_attach_interrupt.html">roblab::common::gpio::IAttachInterrupt</a></div><div class="ttdoc">割り込みを設定するインターフェース</div><div class="ttdef"><b>Definition:</b> i_attach_interrupt.hpp:44</div></div>
+<div class="ttc" id="aclassroblab_1_1common_1_1gpio_1_1_i_attach_interrupt_html_a723e6d6165dc79fdab28d44c0a903092"><div class="ttname"><a href="classroblab_1_1common_1_1gpio_1_1_i_attach_interrupt.html#a723e6d6165dc79fdab28d44c0a903092">roblab::common::gpio::IAttachInterrupt::AttachInterrupt</a></div><div class="ttdeci">void AttachInterrupt(etl::delegate&lt; void()&gt; func, InterruptMode mode)</div><div class="ttdoc">割り込みを設定する</div><div class="ttdef"><b>Definition:</b> i_attach_interrupt.hpp:52</div></div>
+<div class="ttc" id="anamespaceroblab_1_1common_1_1gpio_html_a6591d88263b6540cd081e4a84bcd4b96"><div class="ttname"><a href="namespaceroblab_1_1common_1_1gpio.html#a6591d88263b6540cd081e4a84bcd4b96">roblab::common::gpio::InterruptMode</a></div><div class="ttdeci">InterruptMode</div><div class="ttdoc">割り込みの種類</div><div class="ttdef"><b>Definition:</b> i_attach_interrupt.hpp:28</div></div>
+<div class="ttc" id="anamespaceroblab_1_1common_1_1gpio_html_a6591d88263b6540cd081e4a84bcd4b96a25ca54211737bfd512c6b12741bcb060"><div class="ttname"><a href="namespaceroblab_1_1common_1_1gpio.html#a6591d88263b6540cd081e4a84bcd4b96a25ca54211737bfd512c6b12741bcb060">roblab::common::gpio::InterruptMode::kFall</a></div><div class="ttdeci">@ kFall</div><div class="ttdoc">立ち下がり</div></div>
+<div class="ttc" id="anamespaceroblab_1_1common_1_1gpio_html_a6591d88263b6540cd081e4a84bcd4b96a7e2fb3a1859ce40bdfa6c187f499d423"><div class="ttname"><a href="namespaceroblab_1_1common_1_1gpio.html#a6591d88263b6540cd081e4a84bcd4b96a7e2fb3a1859ce40bdfa6c187f499d423">roblab::common::gpio::InterruptMode::kRise</a></div><div class="ttdeci">@ kRise</div><div class="ttdoc">立ち上がり</div></div>
+<div class="ttc" id="anamespaceroblab_1_1common_1_1gpio_html_a6591d88263b6540cd081e4a84bcd4b96aba22a7854ef5ac45fd6eaeaa59bcf126"><div class="ttname"><a href="namespaceroblab_1_1common_1_1gpio.html#a6591d88263b6540cd081e4a84bcd4b96aba22a7854ef5ac45fd6eaeaa59bcf126">roblab::common::gpio::InterruptMode::kChange</a></div><div class="ttdeci">@ kChange</div><div class="ttdoc">立ち上がりと立ち下がりの両方</div></div>
+<div class="ttc" id="anamespaceroblab_html"><div class="ttname"><a href="namespaceroblab.html">roblab</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_efc7c08bb78c728619d6f844434d9ba6.html">roblab_common_lib</a></li><li class="navelem"><a class="el" href="dir_5fc43148380559492dfddd8ae81e32dd.html">include</a></li><li class="navelem"><a class="el" href="dir_28693fc7a38bf8c5629bdf3b63267db9.html">roblab_common</a></li><li class="navelem"><a class="el" href="dir_3ed44299a11fa563dc4bfc49d8344b2f.html">gpio</a></li><li class="navelem"><a class="el" href="i__attach__interrupt_8hpp.html">i_attach_interrupt.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

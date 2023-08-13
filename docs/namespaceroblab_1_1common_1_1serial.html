@@ -142,8 +142,8 @@ $(document).ready(function(){initNavTree('namespaceroblab_1_1common_1_1serial.ht
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1serial_1_1_id_packet_manager.html">IdPacketManager</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID付きパケットデータを管理するクラス  <a href="classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1serial_1_1_i_serial_i_o.html">ISerialIO</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">シリアル通信を行うIO抽象インターフェース  <a href="classroblab_1_1common_1_1serial_1_1_i_serial_i_o.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1serial_1_1_i_uart_io.html">IUartIo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uart通信IOのインターフェース  <a href="classroblab_1_1common_1_1serial_1_1_i_uart_io.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html">Sender</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">シリアル通信でデータを送信する  <a href="classroblab_1_1common_1_1serial_1_1_sender.html#details">[詳解]</a><br /></td></tr>
@@ -157,14 +157,30 @@ $(document).ready(function(){initNavTree('namespaceroblab_1_1common_1_1serial.ht
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 型定義</h2></td></tr>
-<tr class="memitem:aab66473ea2aa9d9114abbb0b5f5ff207"><td class="memItemLeft" align="right" valign="top"><a id="aab66473ea2aa9d9114abbb0b5f5ff207" name="aab66473ea2aa9d9114abbb0b5f5ff207"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>PacketId</b> = uint8_t</td></tr>
-<tr class="memdesc:aab66473ea2aa9d9114abbb0b5f5ff207"><td class="mdescLeft">&#160;</td><td class="mdescRight">シリアルパケット通信のデータidの型エイリアス，255より沢山の種類を扱うことはないだろうという想定 <br /></td></tr>
+<tr class="memitem:aab66473ea2aa9d9114abbb0b5f5ff207"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceroblab_1_1common_1_1serial.html#aab66473ea2aa9d9114abbb0b5f5ff207">PacketId</a> = uint8_t</td></tr>
+<tr class="memdesc:aab66473ea2aa9d9114abbb0b5f5ff207"><td class="mdescLeft">&#160;</td><td class="mdescRight">シリアルパケット通信のデータidの型エイリアス，255より沢山の種類を扱うことはないだろうという想定  <br /></td></tr>
 <tr class="separator:aab66473ea2aa9d9114abbb0b5f5ff207"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>シリアル通信関係 </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">型定義詳解</h2>
+<a id="aab66473ea2aa9d9114abbb0b5f5ff207" name="aab66473ea2aa9d9114abbb0b5f5ff207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab66473ea2aa9d9114abbb0b5f5ff207">&#9670;&#160;</a></span>PacketId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceroblab_1_1common_1_1serial.html#aab66473ea2aa9d9114abbb0b5f5ff207">roblab::common::serial::PacketId</a> = typedef uint8_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>シリアルパケット通信のデータidの型エイリアス，255より沢山の種類を扱うことはないだろうという想定 </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

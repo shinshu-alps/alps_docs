@@ -1,4 +1,4 @@
 var pid_8hpp =
 [
-    [ "roblab::common_lib::Pid", "classroblab_1_1common__lib_1_1_pid.html", "classroblab_1_1common__lib_1_1_pid" ]
+    [ "roblab::common::control::Pid", "classroblab_1_1common_1_1control_1_1_pid.html", "classroblab_1_1common_1_1control_1_1_pid" ]
 ];

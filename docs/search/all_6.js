@@ -1,4 +1,21 @@
 var searchData=
 [
-  ['hasnewval_0',['HasNewVal',['../classroblab_1_1common_1_1serial_1_1_sender.html#a61277aa854376e8cfe3886ba4a9edc46',1,'roblab::common::serial::Sender']]]
+  ['getcoeff_5fa_5f_0',['getCoeff_a_',['../classroblab_1_1common_1_1control_1_1_dob.html#a531b0a75c7cb04c2602013626db8f772',1,'roblab::common::control::Dob']]],
+  ['getcoeff_5fb_5f_1',['getCoeff_b_',['../classroblab_1_1common_1_1control_1_1_dob.html#aa7ab5377b07318262210e6ed2c3554b0',1,'roblab::common::control::Dob']]],
+  ['getcoeff_5fc_5f_2',['getCoeff_c_',['../classroblab_1_1common_1_1control_1_1_dob.html#ac21b16abb3e394a6be564cc91251ad02',1,'roblab::common::control::Dob']]],
+  ['getcurrentstate_3',['GetCurrentState',['../classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html#a636fe04885842f172902c7829525ca45',1,'roblab::common::sensor::IncrementalEncoderBase']]],
+  ['getdata_4',['GetData',['../classroblab_1_1common_1_1serial_1_1_sender.html#ae5158bfb31f7f58bda2be5056e445bf6',1,'roblab::common::serial::Sender']]],
+  ['getdeg_5',['GetDeg',['../classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html#a2d9158ebc820518a179526ec0b12c9c2',1,'roblab::common::sensor::IncrementalEncoderBase']]],
+  ['getdoboutput_5f_6',['getDobOutput_',['../classroblab_1_1common_1_1control_1_1_dob.html#a763470371593d1523892152a502e8388',1,'roblab::common::control::Dob']]],
+  ['getestimateddisturbance_5f_7',['getEstimatedDisturbance_',['../classroblab_1_1common_1_1control_1_1_dob.html#a061214d2969afbff7fed2305d25521cc',1,'roblab::common::control::Dob']]],
+  ['getfront_8',['GetFront',['../classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html#a4410774e88a9477225f3408a24c5adfc',1,'roblab::common::serial::ByteRingBuffer']]],
+  ['getlpfoutput_5f_9',['getLpfOutput_',['../classroblab_1_1common_1_1control_1_1_dob.html#a79ba7bcaa1822c49de598d8798de269a',1,'roblab::common::control::Dob']]],
+  ['getname_10',['GetName',['../structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf',1,'roblab::common::serial::SerializeTypeInfo']]],
+  ['getoutputd_11',['GetOutputD',['../classroblab_1_1common_1_1control_1_1_pid.html#a69d8e1dfc14062ea6c3ba7c03ddb2c61',1,'roblab::common::control::Pid']]],
+  ['getoutputi_12',['GetOutputI',['../classroblab_1_1common_1_1control_1_1_pid.html#a0e6daf7710c37ec9f1640f075b5ae836',1,'roblab::common::control::Pid']]],
+  ['getoutputp_13',['GetOutputP',['../classroblab_1_1common_1_1control_1_1_pid.html#af7a8f870ac40e25fcec836e964a98880',1,'roblab::common::control::Pid']]],
+  ['getpidoutput_5f_14',['getPidOutput_',['../classroblab_1_1common_1_1control_1_1_dob.html#a8f53c495cc9fcb254f641030b9b7fd23',1,'roblab::common::control::Dob']]],
+  ['getpulses_15',['GetPulses',['../classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html#a9bc74f83276cf45059ee93c034047d79',1,'roblab::common::sensor::IncrementalEncoderBase']]],
+  ['getrad_16',['GetRad',['../classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html#a6443ba895d4f0ecfe9b310715eed21e9',1,'roblab::common::sensor::IncrementalEncoderBase']]],
+  ['getvel_17',['GetVel',['../classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html#ab86df9bd01f04547e6f72888f6a9ab12',1,'roblab::common::sensor::IncrementalEncoderBase']]]
 ];

@@ -1,21 +1,5 @@
 var searchData=
 [
-  ['getcoeff_5fa_5f_0',['getCoeff_a_',['../classroblab_1_1common_1_1_dob.html#a1e2b00717cfa05e3ad870de323784984',1,'roblab::common::Dob']]],
-  ['getcoeff_5fb_5f_1',['getCoeff_b_',['../classroblab_1_1common_1_1_dob.html#a557e84afda9010238a13f35b5727eb2f',1,'roblab::common::Dob']]],
-  ['getcoeff_5fc_5f_2',['getCoeff_c_',['../classroblab_1_1common_1_1_dob.html#a1a16ecf9dbd8b7ad986211e0ff422942',1,'roblab::common::Dob']]],
-  ['getcurrentstate_3',['GetCurrentState',['../classroblab_1_1mbed_1_1_rotary_encoder.html#a6baf8396ea1bd2bd95bd9bf69a8ff78c',1,'roblab::mbed::RotaryEncoder']]],
-  ['getdata_4',['GetData',['../classroblab_1_1common_1_1serial_1_1_sender.html#ae5158bfb31f7f58bda2be5056e445bf6',1,'roblab::common::serial::Sender']]],
-  ['getdeg_5',['GetDeg',['../classroblab_1_1mbed_1_1_rotary_encoder.html#a2c1eec16a39e69d9bf3399619f0eec34',1,'roblab::mbed::RotaryEncoder']]],
-  ['getdoboutput_5f_6',['getDobOutput_',['../classroblab_1_1common_1_1_dob.html#a89b00c4fbd25142bca48fc34420cbfea',1,'roblab::common::Dob']]],
-  ['getestimateddisturbance_5f_7',['getEstimatedDisturbance_',['../classroblab_1_1common_1_1_dob.html#a8e1a16a2fbdea49e2bf7cb77472f8160',1,'roblab::common::Dob']]],
-  ['getfront_8',['GetFront',['../classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html#a4410774e88a9477225f3408a24c5adfc',1,'roblab::common::serial::ByteRingBuffer']]],
-  ['getlpfoutput_5f_9',['getLpfOutput_',['../classroblab_1_1common_1_1_dob.html#a0db87307bd36e2e4f1ae33eeaf488995',1,'roblab::common::Dob']]],
-  ['getname_10',['GetName',['../structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf',1,'roblab::common::serial::SerializeTypeInfo']]],
-  ['getoutputd_11',['GetOutputD',['../classroblab_1_1common_1_1_pid.html#a241a5525217745e05fa80033c3347ad9',1,'roblab::common::Pid']]],
-  ['getoutputi_12',['GetOutputI',['../classroblab_1_1common_1_1_pid.html#a44872493c47daf3aa566b18000d344db',1,'roblab::common::Pid']]],
-  ['getoutputp_13',['GetOutputP',['../classroblab_1_1common_1_1_pid.html#ad90ea38ad783f580bbea3deeab36c9f3',1,'roblab::common::Pid']]],
-  ['getpidoutput_5f_14',['getPidOutput_',['../classroblab_1_1common_1_1_dob.html#a0d69a0f08037569f552d9b48896ad487',1,'roblab::common::Dob']]],
-  ['getpulses_15',['GetPulses',['../classroblab_1_1mbed_1_1_rotary_encoder.html#a531828d70723b4fbf9a4dc45b89e6291',1,'roblab::mbed::RotaryEncoder']]],
-  ['getrad_16',['GetRad',['../classroblab_1_1mbed_1_1_rotary_encoder.html#a42d4a34c09858920da9c761405729ff7',1,'roblab::mbed::RotaryEncoder']]],
-  ['getvel_17',['GetVel',['../classroblab_1_1mbed_1_1_rotary_encoder.html#ac1bb6d59537214e0ce87a383db673945',1,'roblab::mbed::RotaryEncoder']]]
+  ['filter_0',['Filter',['../classroblab_1_1common_1_1control_1_1_differential.html#a780075380efdb81fa8b37716636160f6',1,'roblab::common::control::Differential::Filter()'],['../classroblab_1_1common_1_1control_1_1_dob.html#a6a5a4f6f02833a698d1fc4e635e78a62',1,'roblab::common::control::Dob::Filter()'],['../classroblab_1_1common_1_1control_1_1_integral.html#afaafe5b266bb2762f2a4fa3528ab37e6',1,'roblab::common::control::Integral::Filter()'],['../classroblab_1_1common_1_1control_1_1_lpf.html#a49027edab0e4af053ad57839c281e3ed',1,'roblab::common::control::Lpf::Filter()']]],
+  ['find_1',['Find',['../classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html#a367057a6135ecb1519d6e2f4f7e71083',1,'roblab::common::serial::ByteRingBuffer']]]
 ];
