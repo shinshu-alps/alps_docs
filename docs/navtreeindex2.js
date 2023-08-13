@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"structroblab_1_1common_1_1actuator_1_1_servo_motor_param.html#a996dc6d7d78b7c859c1956791bce5eba":[3,0,0,0,0,2,2],
+"structroblab_1_1common_1_1actuator_1_1_servo_motor_param.html#a996dc6d7d78b7c859c1956791bce5eba":[2,0,0,0,0,2,2],
 "structroblab_1_1common_1_1actuator_1_1_servo_motor_param.html#aaa9acca865cb7e5ae8458e72449f9a43":[3,0,0,0,0,2,4],
 "structroblab_1_1common_1_1actuator_1_1_servo_motor_param.html#aaa9acca865cb7e5ae8458e72449f9a43":[2,0,0,0,0,2,4],
 "structroblab_1_1common_1_1serial_1_1_serialize_type_info.html":[3,0,0,0,4,9],
