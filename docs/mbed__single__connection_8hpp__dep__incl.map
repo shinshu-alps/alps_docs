@@ -1,4 +1,0 @@
-<map id="roblab_ros_lib/include/serial/mbed_single_connection.hpp" name="roblab_ros_lib/include/serial/mbed_single_connection.hpp">
-<area shape="rect" id="node1" title="1個のmbedとシリアル通信" alt="" coords="5,5,260,45"/>
-<area shape="rect" id="node2" href="$mbed__multi__connection_8hpp.html" title="複数のMbedとシリアル通信を行うライブラリ" alt="" coords="7,93,258,133"/>
-</map>

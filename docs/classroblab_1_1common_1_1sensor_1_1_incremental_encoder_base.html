@@ -1,0 +1,506 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roblab: roblab::common::sensor::IncrementalEncoderBase&lt; IAttachInterruptImpl, IDigitalReadImpl &gt; クラステンプレート</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Roblab
+                            </div>
+                            <div id="projectbrief">roboken shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">roblab::common::sensor::IncrementalEncoderBase&lt; IAttachInterruptImpl, IDigitalReadImpl &gt; クラステンプレート</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>A相B相からなるインクリメンタルエンコーダの共通実装  
+ <a href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="incremental__encoder__base_8hpp_source.html">incremental_encoder_base.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a114704ae903f83c8c12847d2e3448651"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html#a114704ae903f83c8c12847d2e3448651">IncrementalEncoderBase</a> (<a class="el" href="classroblab_1_1common_1_1gpio_1_1_i_attach_interrupt.html">gpio::IAttachInterrupt</a>&lt; IAttachInterruptImpl &gt; *interrupt_A, <a class="el" href="classroblab_1_1common_1_1gpio_1_1_i_digital_read.html">gpio::IDigitalRead</a>&lt; IDigitalReadImpl &gt; *read_B, uint16_t pulses_per_rev)</td></tr>
+<tr class="memdesc:a114704ae903f83c8c12847d2e3448651"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
+<tr class="separator:a114704ae903f83c8c12847d2e3448651"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49bb2fe7228ea8ebdf0ce950d061625e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html#a49bb2fe7228ea8ebdf0ce950d061625e">Reset</a> ()</td></tr>
+<tr class="memdesc:a49bb2fe7228ea8ebdf0ce950d061625e"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の回転角度をリセット  <br /></td></tr>
+<tr class="separator:a49bb2fe7228ea8ebdf0ce950d061625e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55b78721bd60a1a98027b31acf01a4ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html#a55b78721bd60a1a98027b31acf01a4ef">SetCurrentRad</a> (float current_rad)</td></tr>
+<tr class="memdesc:a55b78721bd60a1a98027b31acf01a4ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">今の値がcurrent_radになるようにpulses_を変更  <br /></td></tr>
+<tr class="separator:a55b78721bd60a1a98027b31acf01a4ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a636fe04885842f172902c7829525ca45"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html#a636fe04885842f172902c7829525ca45">GetCurrentState</a> ()</td></tr>
+<tr class="memdesc:a636fe04885842f172902c7829525ca45"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のchannelA,Bの状態を得る  <br /></td></tr>
+<tr class="separator:a636fe04885842f172902c7829525ca45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bc74f83276cf45059ee93c034047d79"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html#a9bc74f83276cf45059ee93c034047d79">GetPulses</a> ()</td></tr>
+<tr class="memdesc:a9bc74f83276cf45059ee93c034047d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の回転角度（パルス数）を得る  <br /></td></tr>
+<tr class="separator:a9bc74f83276cf45059ee93c034047d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9158ebc820518a179526ec0b12c9c2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html#a2d9158ebc820518a179526ec0b12c9c2">GetDeg</a> ()</td></tr>
+<tr class="memdesc:a2d9158ebc820518a179526ec0b12c9c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の回転角度(deg)を得る  <br /></td></tr>
+<tr class="separator:a2d9158ebc820518a179526ec0b12c9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6443ba895d4f0ecfe9b310715eed21e9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html#a6443ba895d4f0ecfe9b310715eed21e9">GetRad</a> ()</td></tr>
+<tr class="memdesc:a6443ba895d4f0ecfe9b310715eed21e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の回転角度(rad)を得る  <br /></td></tr>
+<tr class="separator:a6443ba895d4f0ecfe9b310715eed21e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86df9bd01f04547e6f72888f6a9ab12"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html#ab86df9bd01f04547e6f72888f6a9ab12">GetVel</a> (float CTRL_PERIOD)</td></tr>
+<tr class="memdesc:ab86df9bd01f04547e6f72888f6a9ab12"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の回転速度(rad/s)を得る  <br /></td></tr>
+<tr class="separator:ab86df9bd01f04547e6f72888f6a9ab12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a4ba43cd296cb8e4ca32c23347daa5b10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html#a4ba43cd296cb8e4ca32c23347daa5b10">SetInterface</a> (<a class="el" href="classroblab_1_1common_1_1gpio_1_1_i_attach_interrupt.html">gpio::IAttachInterrupt</a>&lt; IAttachInterruptImpl &gt; *interrupt_A, <a class="el" href="classroblab_1_1common_1_1gpio_1_1_i_digital_read.html">gpio::IDigitalRead</a>&lt; IDigitalReadImpl &gt; *read_B)</td></tr>
+<tr class="memdesc:a4ba43cd296cb8e4ca32c23347daa5b10"><td class="mdescLeft">&#160;</td><td class="mdescRight">A相の割り込み設定インタフェースとB相のデジタル入力を設定する  <br /></td></tr>
+<tr class="separator:a4ba43cd296cb8e4ca32c23347daa5b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class IAttachInterruptImpl, class IDigitalReadImpl&gt;<br />
+class roblab::common::sensor::IncrementalEncoderBase&lt; IAttachInterruptImpl, IDigitalReadImpl &gt;</div><p>A相B相からなるインクリメンタルエンコーダの共通実装 </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">IAttachInterruptImpl</td><td>ピン割り込み設定インタフェースの実装クラス </td></tr>
+    <tr><td class="paramname">IDigitalReadImpl</td><td>デジタル入力インタフェースの実装クラス </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a114704ae903f83c8c12847d2e3448651" name="a114704ae903f83c8c12847d2e3448651"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a114704ae903f83c8c12847d2e3448651">&#9670;&#160;</a></span>IncrementalEncoderBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class IAttachInterruptImpl , class IDigitalReadImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html">roblab::common::sensor::IncrementalEncoderBase</a>&lt; IAttachInterruptImpl, IDigitalReadImpl &gt;::IncrementalEncoderBase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classroblab_1_1common_1_1gpio_1_1_i_attach_interrupt.html">gpio::IAttachInterrupt</a>&lt; IAttachInterruptImpl &gt; *&#160;</td>
+          <td class="paramname"><em>interrupt_A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classroblab_1_1common_1_1gpio_1_1_i_digital_read.html">gpio::IDigitalRead</a>&lt; IDigitalReadImpl &gt; *&#160;</td>
+          <td class="paramname"><em>read_B</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>pulses_per_rev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interrupt_A</td><td>A相の割り込み設定インタフェース </td></tr>
+    <tr><td class="paramname">read_B</td><td>B相のデジタル入力 </td></tr>
+    <tr><td class="paramname">pulses_per_rev</td><td>1周分のパルス数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a636fe04885842f172902c7829525ca45" name="a636fe04885842f172902c7829525ca45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a636fe04885842f172902c7829525ca45">&#9670;&#160;</a></span>GetCurrentState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class IAttachInterruptImpl , class IDigitalReadImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html">roblab::common::sensor::IncrementalEncoderBase</a>&lt; IAttachInterruptImpl, IDigitalReadImpl &gt;::GetCurrentState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在のchannelA,Bの状態を得る </p>
+<dl class="section return"><dt>戻り値</dt><dd>int channelA,Bの状態 </dd></dl>
+
+</div>
+</div>
+<a id="a2d9158ebc820518a179526ec0b12c9c2" name="a2d9158ebc820518a179526ec0b12c9c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d9158ebc820518a179526ec0b12c9c2">&#9670;&#160;</a></span>GetDeg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class IAttachInterruptImpl , class IDigitalReadImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html">roblab::common::sensor::IncrementalEncoderBase</a>&lt; IAttachInterruptImpl, IDigitalReadImpl &gt;::GetDeg </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の回転角度(deg)を得る </p>
+<dl class="section return"><dt>戻り値</dt><dd>float 回転角度(deg) </dd></dl>
+
+</div>
+</div>
+<a id="a9bc74f83276cf45059ee93c034047d79" name="a9bc74f83276cf45059ee93c034047d79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bc74f83276cf45059ee93c034047d79">&#9670;&#160;</a></span>GetPulses()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class IAttachInterruptImpl , class IDigitalReadImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html">roblab::common::sensor::IncrementalEncoderBase</a>&lt; IAttachInterruptImpl, IDigitalReadImpl &gt;::GetPulses </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の回転角度（パルス数）を得る </p>
+<dl class="section return"><dt>戻り値</dt><dd>int 回転角度（パルス数） </dd></dl>
+
+</div>
+</div>
+<a id="a6443ba895d4f0ecfe9b310715eed21e9" name="a6443ba895d4f0ecfe9b310715eed21e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6443ba895d4f0ecfe9b310715eed21e9">&#9670;&#160;</a></span>GetRad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class IAttachInterruptImpl , class IDigitalReadImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html">roblab::common::sensor::IncrementalEncoderBase</a>&lt; IAttachInterruptImpl, IDigitalReadImpl &gt;::GetRad </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の回転角度(rad)を得る </p>
+<dl class="section return"><dt>戻り値</dt><dd>float 回転角度(rad) </dd></dl>
+
+</div>
+</div>
+<a id="ab86df9bd01f04547e6f72888f6a9ab12" name="ab86df9bd01f04547e6f72888f6a9ab12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab86df9bd01f04547e6f72888f6a9ab12">&#9670;&#160;</a></span>GetVel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class IAttachInterruptImpl , class IDigitalReadImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html">roblab::common::sensor::IncrementalEncoderBase</a>&lt; IAttachInterruptImpl, IDigitalReadImpl &gt;::GetVel </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>CTRL_PERIOD</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の回転速度(rad/s)を得る </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CTRL_PERIOD</td><td>制御周期(rad/s) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>float 回転速度(rad/s) </dd></dl>
+
+</div>
+</div>
+<a id="a49bb2fe7228ea8ebdf0ce950d061625e" name="a49bb2fe7228ea8ebdf0ce950d061625e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49bb2fe7228ea8ebdf0ce950d061625e">&#9670;&#160;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class IAttachInterruptImpl , class IDigitalReadImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html">roblab::common::sensor::IncrementalEncoderBase</a>&lt; IAttachInterruptImpl, IDigitalReadImpl &gt;::Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の回転角度をリセット </p>
+
+</div>
+</div>
+<a id="a55b78721bd60a1a98027b31acf01a4ef" name="a55b78721bd60a1a98027b31acf01a4ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55b78721bd60a1a98027b31acf01a4ef">&#9670;&#160;</a></span>SetCurrentRad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class IAttachInterruptImpl , class IDigitalReadImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html">roblab::common::sensor::IncrementalEncoderBase</a>&lt; IAttachInterruptImpl, IDigitalReadImpl &gt;::SetCurrentRad </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>current_rad</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>今の値がcurrent_radになるようにpulses_を変更 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">current_rad</td><td>セットしたい現在の角度（rad) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4ba43cd296cb8e4ca32c23347daa5b10" name="a4ba43cd296cb8e4ca32c23347daa5b10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ba43cd296cb8e4ca32c23347daa5b10">&#9670;&#160;</a></span>SetInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class IAttachInterruptImpl , class IDigitalReadImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html">roblab::common::sensor::IncrementalEncoderBase</a>&lt; IAttachInterruptImpl, IDigitalReadImpl &gt;::SetInterface </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classroblab_1_1common_1_1gpio_1_1_i_attach_interrupt.html">gpio::IAttachInterrupt</a>&lt; IAttachInterruptImpl &gt; *&#160;</td>
+          <td class="paramname"><em>interrupt_A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classroblab_1_1common_1_1gpio_1_1_i_digital_read.html">gpio::IDigitalRead</a>&lt; IDigitalReadImpl &gt; *&#160;</td>
+          <td class="paramname"><em>read_B</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A相の割り込み設定インタフェースとB相のデジタル入力を設定する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interrupt_A</td><td>A相の割り込み設定インタフェース </td></tr>
+    <tr><td class="paramname">read_B</td><td>B相のデジタル入力 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>roblab_common_lib/include/roblab_common/sensor/<a class="el" href="incremental__encoder__base_8hpp_source.html">incremental_encoder_base.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceroblab.html">roblab</a></li><li class="navelem"><a class="el" href="namespaceroblab_1_1common.html">common</a></li><li class="navelem"><a class="el" href="namespaceroblab_1_1common_1_1sensor.html">sensor</a></li><li class="navelem"><a class="el" href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html">IncrementalEncoderBase</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

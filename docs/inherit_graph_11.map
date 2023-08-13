@@ -1,5 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classroblab_1_1common_1_1serial_1_1_i_serial_i_o.html" title="シリアル通信を行うIO抽象インターフェース" alt="" coords="5,37,177,77"/>
-<area shape="rect" id="node2" href="$classroblab_1_1mbed_1_1serial_1_1_mbed_uart_serial_io.html" title="mbedのUartシリアル通信IOクラス" alt="" coords="225,5,377,45"/>
-<area shape="rect" id="node3" href="$classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_i_o.html" title="Ubuntu環境でのUartシリアル通信IOクラス" alt="" coords="234,69,369,109"/>
+<area shape="rect" id="node1" href="$classroblab_1_1common_1_1gpio_1_1_i_attach_interrupt.html" title=" " alt="" coords="5,5,189,60"/>
 </map>

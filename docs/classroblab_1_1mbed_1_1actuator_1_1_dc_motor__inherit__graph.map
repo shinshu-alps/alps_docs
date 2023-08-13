@@ -1,0 +1,4 @@
+<map id="roblab::mbed::actuator::DcMotor" name="roblab::mbed::actuator::DcMotor">
+<area shape="rect" id="node1" title="PWMピンと方向指定ピンで動かすDCモーターのmbed用実装" alt="" coords="287,20,457,60"/>
+<area shape="rect" id="node2" href="$classroblab_1_1common_1_1actuator_1_1_dc_motor_base.html" title=" " alt="" coords="5,5,239,75"/>
+</map>

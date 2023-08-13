@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.9.7" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Roblab: roblab_common_lib/include/serial/data_serializer.hpp ソースファイル</title>
+    <title>Roblab: roblab_common_lib/include/roblab_common/serial/data_serializer.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
     <script type="text/javascript" src="jquery.js"></script>
@@ -123,8 +123,8 @@ $(document).ready(function(){initNavTree('data__serializer_8hpp_source.html','')
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;cstring&gt;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;mutex&gt;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="byte__ring__buffer_8hpp.html">byte_ring_buffer.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="serialize__type__info_8hpp.html">serialize_type_info.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="byte__ring__buffer_8hpp.html">roblab_common/serial/byte_ring_buffer.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="serialize__type__info_8hpp.html">roblab_common/serial/serialize_type_info.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceroblab.html">roblab</a></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
@@ -399,7 +399,7 @@ $(document).ready(function(){initNavTree('data__serializer_8hpp_source.html','')
 <div class="ttc" id="aclassroblab_1_1common_1_1serial_1_1_data_serializer_html"><div class="ttname"><a href="classroblab_1_1common_1_1serial_1_1_data_serializer.html">roblab::common::serial::DataSerializer</a></div><div class="ttdoc">データとバイト列の変換器</div><div class="ttdef"><b>Definition:</b> data_serializer.hpp:53</div></div>
 <div class="ttc" id="aclassroblab_1_1common_1_1serial_1_1_data_serializer_html_a299bb3087ff7e20070ff5059ef8a10d1"><div class="ttname"><a href="classroblab_1_1common_1_1serial_1_1_data_serializer.html#a299bb3087ff7e20070ff5059ef8a10d1">roblab::common::serial::DataSerializer::Serialize</a></div><div class="ttdeci">static ByteRingBuffer Serialize(T data)</div><div class="ttdoc">基本データをバイト列へ変換</div><div class="ttdef"><b>Definition:</b> data_serializer.hpp:61</div></div>
 <div class="ttc" id="aclassroblab_1_1common_1_1serial_1_1_data_serializer_html_ac1b640d9fe3ad1169038f55c839fb77a"><div class="ttname"><a href="classroblab_1_1common_1_1serial_1_1_data_serializer.html#ac1b640d9fe3ad1169038f55c839fb77a">roblab::common::serial::DataSerializer::Deserialize</a></div><div class="ttdeci">static T Deserialize(ByteRingBuffer &amp;bytes)</div><div class="ttdoc">バイト列から基本単一データへ逆変換</div><div class="ttdef"><b>Definition:</b> data_serializer.hpp:98</div></div>
-<div class="ttc" id="anamespaceroblab_html"><div class="ttname"><a href="namespaceroblab.html">roblab</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dob.hpp:33</div></div>
+<div class="ttc" id="anamespaceroblab_html"><div class="ttname"><a href="namespaceroblab.html">roblab</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
 <div class="ttc" id="aserialize__type__info_8hpp_html"><div class="ttname"><a href="serialize__type__info_8hpp.html">serialize_type_info.hpp</a></div><div class="ttdoc">DataSeializerで変換する型に関する情報</div></div>
 <div class="ttc" id="astructroblab_1_1common_1_1serial_1_1_serialize_type_info_base_html_a9ef233677bf5a9cf3e2851cc76284379"><div class="ttname"><a href="structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html#a9ef233677bf5a9cf3e2851cc76284379">roblab::common::serial::SerializeTypeInfoBase&lt; false, false &gt;::IsSerializable</a></div><div class="ttdeci">static constexpr bool IsSerializable()</div><div class="ttdoc">Tがバイト列変換に対応しているか</div><div class="ttdef"><b>Definition:</b> serialize_type_info.hpp:43</div></div>
 <div class="ttc" id="astructroblab_1_1common_1_1serial_1_1_serialize_type_info_base_html_abc9ba85cceeefcee7137ce56322cd600"><div class="ttname"><a href="structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html#abc9ba85cceeefcee7137ce56322cd600">roblab::common::serial::SerializeTypeInfoBase&lt; false, false &gt;::IsSingle</a></div><div class="ttdeci">static constexpr bool IsSingle()</div><div class="ttdoc">Tが単一型(int,boolなど)かどうか</div><div class="ttdef"><b>Definition:</b> serialize_type_info.hpp:54</div></div>
@@ -408,7 +408,7 @@ $(document).ready(function(){initNavTree('data__serializer_8hpp_source.html','')
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_efc7c08bb78c728619d6f844434d9ba6.html">roblab_common_lib</a></li><li class="navelem"><a class="el" href="dir_5fc43148380559492dfddd8ae81e32dd.html">include</a></li><li class="navelem"><a class="el" href="dir_e7087e48814213e4aa03bc8fb76d71c1.html">serial</a></li><li class="navelem"><a class="el" href="data__serializer_8hpp.html">data_serializer.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_efc7c08bb78c728619d6f844434d9ba6.html">roblab_common_lib</a></li><li class="navelem"><a class="el" href="dir_5fc43148380559492dfddd8ae81e32dd.html">include</a></li><li class="navelem"><a class="el" href="dir_28693fc7a38bf8c5629bdf3b63267db9.html">roblab_common</a></li><li class="navelem"><a class="el" href="dir_ec8c0e597e474906666f1240ea0baa41.html">serial</a></li><li class="navelem"><a class="el" href="data__serializer_8hpp.html">data_serializer.hpp</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>

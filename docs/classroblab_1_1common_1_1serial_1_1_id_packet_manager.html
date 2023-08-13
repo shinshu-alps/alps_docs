@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.9.7" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Roblab: roblab::common::serial::IdPacketManager クラス</title>
+    <title>Roblab: roblab::common::serial::IdPacketManager&lt; ISerialIoImpl &gt; クラステンプレート</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
     <script type="text/javascript" src="jquery.js"></script>
@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('classroblab_1_1common_1_1serial_1_1_id
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
 <a href="classroblab_1_1common_1_1serial_1_1_id_packet_manager-members.html">全メンバ一覧</a>  </div>
-  <div class="headertitle"><div class="title">roblab::common::serial::IdPacketManager クラス</div></div>
+  <div class="headertitle"><div class="title">roblab::common::serial::IdPacketManager&lt; ISerialIoImpl &gt; クラステンプレート</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -123,42 +123,49 @@ $(document).ready(function(){initNavTree('classroblab_1_1common_1_1serial_1_1_id
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a0d3790edfb44dee8a62cd3091e13e3fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#a0d3790edfb44dee8a62cd3091e13e3fd">IdPacketManager</a> (std::unique_ptr&lt; <a class="el" href="classroblab_1_1common_1_1serial_1_1_i_serial_i_o.html">ISerialIO</a> &gt; serial_io)</td></tr>
-<tr class="memdesc:a0d3790edfb44dee8a62cd3091e13e3fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ．使用するシリアル入出力オブジェクトを受け取る  <br /></td></tr>
-<tr class="separator:a0d3790edfb44dee8a62cd3091e13e3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30af13d5537d35192837cf88cdf92c4f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a30af13d5537d35192837cf88cdf92c4f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#a30af13d5537d35192837cf88cdf92c4f">RegisterSender</a> (<a class="el" href="namespaceroblab_1_1common_1_1serial.html#aab66473ea2aa9d9114abbb0b5f5ff207">PacketId</a> id, std::shared_ptr&lt; <a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html">Sender</a>&lt; T &gt; &gt; sender)</td></tr>
-<tr class="memdesc:a30af13d5537d35192837cf88cdf92c4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したIDでデータを送るSenderを登録する  <br /></td></tr>
-<tr class="separator:a30af13d5537d35192837cf88cdf92c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3009f3242eb0a5acd88576a84704f3af"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a3009f3242eb0a5acd88576a84704f3af"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#a3009f3242eb0a5acd88576a84704f3af">RegisterReceiveCallback</a> (<a class="el" href="namespaceroblab_1_1common_1_1serial.html#aab66473ea2aa9d9114abbb0b5f5ff207">PacketId</a> id, std::function&lt; void(T)&gt; callback_func)</td></tr>
-<tr class="memdesc:a3009f3242eb0a5acd88576a84704f3af"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したIDのデータを受け取ったときに呼び出すコールバック関数を登録する  <br /></td></tr>
-<tr class="separator:a3009f3242eb0a5acd88576a84704f3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d8eb37fc7b442587c21a7da0418454b"><td class="memItemLeft" align="right" valign="top"><a id="a8d8eb37fc7b442587c21a7da0418454b" name="a8d8eb37fc7b442587c21a7da0418454b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WritePacket</b> ()</td></tr>
-<tr class="memdesc:a8d8eb37fc7b442587c21a7da0418454b"><td class="mdescLeft">&#160;</td><td class="mdescRight">所持するシリアル入出力オブジェクトを通じてパケットを書き込む <br /></td></tr>
-<tr class="separator:a8d8eb37fc7b442587c21a7da0418454b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae33f81d0ec39f37426d902c3863bc438"><td class="memItemLeft" align="right" valign="top"><a id="ae33f81d0ec39f37426d902c3863bc438" name="ae33f81d0ec39f37426d902c3863bc438"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadPacket</b> ()</td></tr>
-<tr class="memdesc:ae33f81d0ec39f37426d902c3863bc438"><td class="mdescLeft">&#160;</td><td class="mdescRight">所持するシリアル入出力オブジェクトを通じてパケットを読み込む <br /></td></tr>
-<tr class="separator:ae33f81d0ec39f37426d902c3863bc438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab96b53a38597490a3dbc986d7bda1454"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#ab96b53a38597490a3dbc986d7bda1454">IdPacketManager</a> (std::unique_ptr&lt; <a class="el" href="classroblab_1_1common_1_1serial_1_1_i_uart_io.html">IUartIo</a>&lt; ISerialIoImpl &gt; &gt; serial_io)</td></tr>
+<tr class="memdesc:ab96b53a38597490a3dbc986d7bda1454"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ．使用するシリアル入出力オブジェクトを受け取る  <br /></td></tr>
+<tr class="separator:ab96b53a38597490a3dbc986d7bda1454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe71ba8b95d5409fc87ebdfdc69c4c45"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:abe71ba8b95d5409fc87ebdfdc69c4c45"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#abe71ba8b95d5409fc87ebdfdc69c4c45">RegisterSender</a> (<a class="el" href="namespaceroblab_1_1common_1_1serial.html#aab66473ea2aa9d9114abbb0b5f5ff207">PacketId</a> id, std::shared_ptr&lt; <a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html">Sender</a>&lt; T &gt; &gt; sender)</td></tr>
+<tr class="memdesc:abe71ba8b95d5409fc87ebdfdc69c4c45"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したIDでデータを送るSenderを登録する  <br /></td></tr>
+<tr class="separator:abe71ba8b95d5409fc87ebdfdc69c4c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e1fcf2f1af9e2284af6dbd9a843bac6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7e1fcf2f1af9e2284af6dbd9a843bac6"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#a7e1fcf2f1af9e2284af6dbd9a843bac6">RegisterReceiveCallback</a> (<a class="el" href="namespaceroblab_1_1common_1_1serial.html#aab66473ea2aa9d9114abbb0b5f5ff207">PacketId</a> id, std::function&lt; void(T)&gt; callback_func)</td></tr>
+<tr class="memdesc:a7e1fcf2f1af9e2284af6dbd9a843bac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したIDのデータを受け取ったときに呼び出すコールバック関数を登録する  <br /></td></tr>
+<tr class="separator:a7e1fcf2f1af9e2284af6dbd9a843bac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f0a36f6ec6407ec0888e309889495b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#a3f0a36f6ec6407ec0888e309889495b1">WritePacket</a> ()</td></tr>
+<tr class="memdesc:a3f0a36f6ec6407ec0888e309889495b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">所持するシリアル入出力オブジェクトを通じてパケットを書き込む  <br /></td></tr>
+<tr class="separator:a3f0a36f6ec6407ec0888e309889495b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7108e8ad2525cc4cbc75c47de54f201b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#a7108e8ad2525cc4cbc75c47de54f201b">ReadPacket</a> ()</td></tr>
+<tr class="memdesc:a7108e8ad2525cc4cbc75c47de54f201b"><td class="mdescLeft">&#160;</td><td class="mdescRight">所持するシリアル入出力オブジェクトを通じてパケットを読み込む  <br /></td></tr>
+<tr class="separator:a7108e8ad2525cc4cbc75c47de54f201b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
-<div class="textblock"><p>ID付きパケットデータを管理するクラス </p>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class ISerialIoImpl&gt;<br />
+class roblab::common::serial::IdPacketManager&lt; ISerialIoImpl &gt;</div><p>ID付きパケットデータを管理するクラス </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ISerialIoImpl</td><td>Uart入出力インタフェースの実装クラス </td></tr>
+  </table>
+  </dd>
+</dl>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="a0d3790edfb44dee8a62cd3091e13e3fd" name="a0d3790edfb44dee8a62cd3091e13e3fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d3790edfb44dee8a62cd3091e13e3fd">&#9670;&#160;</a></span>IdPacketManager()</h2>
+<a id="ab96b53a38597490a3dbc986d7bda1454" name="ab96b53a38597490a3dbc986d7bda1454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab96b53a38597490a3dbc986d7bda1454">&#9670;&#160;</a></span>IdPacketManager()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class ISerialIoImpl &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">roblab::common::serial::IdPacketManager::IdPacketManager </td>
+          <td class="memname"><a class="el" href="classroblab_1_1common_1_1serial_1_1_id_packet_manager.html">roblab::common::serial::IdPacketManager</a>&lt; ISerialIoImpl &gt;::IdPacketManager </td>
           <td>(</td>
-          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classroblab_1_1common_1_1serial_1_1_i_serial_i_o.html">ISerialIO</a> &gt;&#160;</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classroblab_1_1common_1_1serial_1_1_i_uart_io.html">IUartIo</a>&lt; ISerialIoImpl &gt; &gt;&#160;</td>
           <td class="paramname"><em>serial_io</em></td><td>)</td>
           <td></td>
         </tr>
@@ -181,11 +188,42 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadPacket</b> ()</td
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a3009f3242eb0a5acd88576a84704f3af" name="a3009f3242eb0a5acd88576a84704f3af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3009f3242eb0a5acd88576a84704f3af">&#9670;&#160;</a></span>RegisterReceiveCallback()</h2>
+<a id="a7108e8ad2525cc4cbc75c47de54f201b" name="a7108e8ad2525cc4cbc75c47de54f201b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7108e8ad2525cc4cbc75c47de54f201b">&#9670;&#160;</a></span>ReadPacket()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class ISerialIoImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classroblab_1_1common_1_1serial_1_1_id_packet_manager.html">roblab::common::serial::IdPacketManager</a>&lt; ISerialIoImpl &gt;::ReadPacket </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>所持するシリアル入出力オブジェクトを通じてパケットを読み込む </p>
+
+</div>
+</div>
+<a id="a7e1fcf2f1af9e2284af6dbd9a843bac6" name="a7e1fcf2f1af9e2284af6dbd9a843bac6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e1fcf2f1af9e2284af6dbd9a843bac6">&#9670;&#160;</a></span>RegisterReceiveCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ISerialIoImpl &gt; </div>
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
 <table class="mlabels">
@@ -193,7 +231,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool roblab::common::serial::IdPacketManager::RegisterReceiveCallback </td>
+          <td class="memname">bool <a class="el" href="classroblab_1_1common_1_1serial_1_1_id_packet_manager.html">roblab::common::serial::IdPacketManager</a>&lt; ISerialIoImpl &gt;::RegisterReceiveCallback </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceroblab_1_1common_1_1serial.html#aab66473ea2aa9d9114abbb0b5f5ff207">PacketId</a>&#160;</td>
           <td class="paramname"><em>id</em>, </td>
@@ -235,11 +273,13 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a30af13d5537d35192837cf88cdf92c4f" name="a30af13d5537d35192837cf88cdf92c4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30af13d5537d35192837cf88cdf92c4f">&#9670;&#160;</a></span>RegisterSender()</h2>
+<a id="abe71ba8b95d5409fc87ebdfdc69c4c45" name="abe71ba8b95d5409fc87ebdfdc69c4c45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe71ba8b95d5409fc87ebdfdc69c4c45">&#9670;&#160;</a></span>RegisterSender()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class ISerialIoImpl &gt; </div>
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
 <table class="mlabels">
@@ -247,7 +287,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool roblab::common::serial::IdPacketManager::RegisterSender </td>
+          <td class="memname">bool <a class="el" href="classroblab_1_1common_1_1serial_1_1_id_packet_manager.html">roblab::common::serial::IdPacketManager</a>&lt; ISerialIoImpl &gt;::RegisterSender </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceroblab_1_1common_1_1serial.html#aab66473ea2aa9d9114abbb0b5f5ff207">PacketId</a>&#160;</td>
           <td class="paramname"><em>id</em>, </td>
@@ -289,8 +329,37 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a3f0a36f6ec6407ec0888e309889495b1" name="a3f0a36f6ec6407ec0888e309889495b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f0a36f6ec6407ec0888e309889495b1">&#9670;&#160;</a></span>WritePacket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ISerialIoImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classroblab_1_1common_1_1serial_1_1_id_packet_manager.html">roblab::common::serial::IdPacketManager</a>&lt; ISerialIoImpl &gt;::WritePacket </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>所持するシリアル入出力オブジェクトを通じてパケットを書き込む </p>
+
+</div>
+</div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>roblab_common_lib/include/serial/<a class="el" href="id__packet__manager_8hpp_source.html">id_packet_manager.hpp</a></li>
+<li>roblab_common_lib/include/roblab_common/serial/<a class="el" href="id__packet__manager_8hpp_source.html">id_packet_manager.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

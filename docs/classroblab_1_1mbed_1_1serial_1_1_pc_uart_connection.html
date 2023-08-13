@@ -126,13 +126,11 @@ $(document).ready(function(){initNavTree('classroblab_1_1mbed_1_1serial_1_1_pc_u
 <tr class="memitem:a7230d58946197bc062e2bb6276f08240"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1mbed_1_1serial_1_1_pc_uart_connection.html#a7230d58946197bc062e2bb6276f08240">PcUartConnection</a> (const std::string mbed_name, int baud_rate)</td></tr>
 <tr class="memdesc:a7230d58946197bc062e2bb6276f08240"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定した名前のmbedとしてpcとシリアル通信を開始する  <br /></td></tr>
 <tr class="separator:a7230d58946197bc062e2bb6276f08240"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1b56065eb047a05a0cf8d40ed881590"><td class="memItemLeft" align="right" valign="top"><a id="af1b56065eb047a05a0cf8d40ed881590" name="af1b56065eb047a05a0cf8d40ed881590"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteUpdate</b> ()</td></tr>
-<tr class="memdesc:af1b56065eb047a05a0cf8d40ed881590"><td class="mdescLeft">&#160;</td><td class="mdescRight">データを送信 <br /></td></tr>
+<tr class="memitem:af1b56065eb047a05a0cf8d40ed881590"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1mbed_1_1serial_1_1_pc_uart_connection.html#af1b56065eb047a05a0cf8d40ed881590">WriteUpdate</a> ()</td></tr>
+<tr class="memdesc:af1b56065eb047a05a0cf8d40ed881590"><td class="mdescLeft">&#160;</td><td class="mdescRight">データを送信  <br /></td></tr>
 <tr class="separator:af1b56065eb047a05a0cf8d40ed881590"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3273d2d553c56a81079d8d2c70956f34"><td class="memItemLeft" align="right" valign="top"><a id="a3273d2d553c56a81079d8d2c70956f34" name="a3273d2d553c56a81079d8d2c70956f34"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadUpdate</b> ()</td></tr>
-<tr class="memdesc:a3273d2d553c56a81079d8d2c70956f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">データを受信 <br /></td></tr>
+<tr class="memitem:a3273d2d553c56a81079d8d2c70956f34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1mbed_1_1serial_1_1_pc_uart_connection.html#a3273d2d553c56a81079d8d2c70956f34">ReadUpdate</a> ()</td></tr>
+<tr class="memdesc:a3273d2d553c56a81079d8d2c70956f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">データを受信  <br /></td></tr>
 <tr class="separator:a3273d2d553c56a81079d8d2c70956f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adae993dbb2c21677b42b78dd89c74ae8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:adae993dbb2c21677b42b78dd89c74ae8"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classroblab_1_1common_1_1serial_1_1_sender.html">common::serial::Sender</a>&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classroblab_1_1mbed_1_1serial_1_1_pc_uart_connection.html#adae993dbb2c21677b42b78dd89c74ae8">CreateSender</a> (std::string tag)</td></tr>
@@ -178,7 +176,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadUpdate</b> ()</td
 <p>指定した名前のmbedとしてpcとシリアル通信を開始する </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mbed_name</td><td>mbed名 pc側で識別に使う </td></tr>
+    <tr><td class="paramname">mbed_name</td><td>mbed名 </td></tr>
     <tr><td class="paramname">baud_rate</td><td>ボーレート </td></tr>
   </table>
   </dd>
@@ -227,6 +225,25 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>戻り値</dt><dd>std::shared_ptr&lt;common::serial::Sender&lt;T&gt;&gt; 作成したsender </dd></dl>
+
+</div>
+</div>
+<a id="a3273d2d553c56a81079d8d2c70956f34" name="a3273d2d553c56a81079d8d2c70956f34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3273d2d553c56a81079d8d2c70956f34">&#9670;&#160;</a></span>ReadUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roblab::mbed::serial::PcUartConnection::ReadUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>データを受信 </p>
 
 </div>
 </div>
@@ -309,8 +326,27 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="af1b56065eb047a05a0cf8d40ed881590" name="af1b56065eb047a05a0cf8d40ed881590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1b56065eb047a05a0cf8d40ed881590">&#9670;&#160;</a></span>WriteUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roblab::mbed::serial::PcUartConnection::WriteUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>データを送信 </p>
+
+</div>
+</div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>roblab_mbed_lib/include/serial/<a class="el" href="pc__uart__connection_8hpp_source.html">pc_uart_connection.hpp</a></li>
+<li>roblab_mbed_lib/include/roblab_mbed/serial/<a class="el" href="pc__uart__connection_8hpp_source.html">pc_uart_connection.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,8 +1,8 @@
 var classroblab_1_1common_1_1serial_1_1_id_packet_manager =
 [
-    [ "IdPacketManager", "classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#a0d3790edfb44dee8a62cd3091e13e3fd", null ],
-    [ "ReadPacket", "classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#ae33f81d0ec39f37426d902c3863bc438", null ],
-    [ "RegisterReceiveCallback", "classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#a3009f3242eb0a5acd88576a84704f3af", null ],
-    [ "RegisterSender", "classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#a30af13d5537d35192837cf88cdf92c4f", null ],
-    [ "WritePacket", "classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#a8d8eb37fc7b442587c21a7da0418454b", null ]
+    [ "IdPacketManager", "classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#ab96b53a38597490a3dbc986d7bda1454", null ],
+    [ "ReadPacket", "classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#a7108e8ad2525cc4cbc75c47de54f201b", null ],
+    [ "RegisterReceiveCallback", "classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#a7e1fcf2f1af9e2284af6dbd9a843bac6", null ],
+    [ "RegisterSender", "classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#abe71ba8b95d5409fc87ebdfdc69c4c45", null ],
+    [ "WritePacket", "classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#a3f0a36f6ec6407ec0888e309889495b1", null ]
 ];

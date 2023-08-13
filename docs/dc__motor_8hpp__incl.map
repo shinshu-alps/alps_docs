@@ -1,4 +1,11 @@
-<map id="roblab_mbed_lib/include/actuator/dc_motor.hpp" name="roblab_mbed_lib/include/actuator/dc_motor.hpp">
-<area shape="rect" id="node1" title="DCモータ駆動ライブラリ" alt="" coords="5,5,187,45"/>
-<area shape="rect" id="node2" title=" " alt="" coords="61,93,131,119"/>
+<map id="roblab_mbed_lib/include/roblab_mbed/actuator/dc_motor.hpp" name="roblab_mbed_lib/include/roblab_mbed/actuator/dc_motor.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="167,5,349,60"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,203,76,229"/>
+<area shape="rect" id="node3" href="$dc__motor__base_8hpp.html" title=" " alt="" coords="472,108,657,148"/>
+<area shape="rect" id="node7" href="$pwm__out_8hpp.html" title=" " alt="" coords="273,108,448,148"/>
+<area shape="rect" id="node9" href="$digital__out_8hpp.html" title=" " alt="" coords="65,108,249,148"/>
+<area shape="rect" id="node4" href="$i__pwm__set__pulse__width_8hpp.html" title=" " alt="" coords="661,196,871,236"/>
+<area shape="rect" id="node5" href="$i__pwm__set__period_8hpp.html" title=" " alt="" coords="465,196,637,236"/>
+<area shape="rect" id="node6" href="$i__digital__write_8hpp.html" title=" " alt="" coords="283,196,441,236"/>
+<area shape="rect" id="node8" href="$i__pwm__write_8hpp.html" title=" " alt="" coords="100,196,259,236"/>
 </map>

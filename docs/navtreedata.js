@@ -31,7 +31,8 @@ var NAVTREE =
       [ "名前空間一覧", "namespaces.html", "namespaces_dup" ],
       [ "名前空間メンバ", "namespacemembers.html", [
         [ "全て", "namespacemembers.html", null ],
-        [ "型定義", "namespacemembers_type.html", null ]
+        [ "型定義", "namespacemembers_type.html", null ],
+        [ "列挙型", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
     [ "クラス", "annotated.html", [
@@ -41,9 +42,7 @@ var NAVTREE =
       [ "クラスメンバ", "functions.html", [
         [ "全て", "functions.html", null ],
         [ "関数", "functions_func.html", null ],
-        [ "変数", "functions_vars.html", null ],
-        [ "列挙型", "functions_enum.html", null ],
-        [ "列挙値", "functions_eval.html", null ]
+        [ "変数", "functions_vars.html", null ]
       ] ]
     ] ],
     [ "ファイル", "files.html", [
@@ -55,7 +54,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classroblab_1_1mbed_1_1_servo_motor270.html#ab3f5debc52319a007351b682036fea13"
+"classroblab_1_1common_1_1serial_1_1_id_packet_manager.html#abe71ba8b95d5409fc87ebdfdc69c4c45",
+"structroblab_1_1common_1_1actuator_1_1_servo_motor_param.html#aaa9acca865cb7e5ae8458e72449f9a43"
 ];
 
 var SYNCONMSG = 'クリックで同期表示が無効になります';

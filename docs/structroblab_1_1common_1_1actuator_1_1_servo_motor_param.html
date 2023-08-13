@@ -1,0 +1,286 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roblab: roblab::common::actuator::ServoMotorParam 構造体</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Roblab
+                            </div>
+                            <div id="projectbrief">roboken shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structroblab_1_1common_1_1actuator_1_1_servo_motor_param.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="structroblab_1_1common_1_1actuator_1_1_servo_motor_param-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">roblab::common::actuator::ServoMotorParam 構造体</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>サーボモータのパラメータ構造体  
+ <a href="structroblab_1_1common_1_1actuator_1_1_servo_motor_param.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="servo__motor__base_8hpp_source.html">servo_motor_base.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a236d8e3834d3a4fa88eadca8ea8fd4b0"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structroblab_1_1common_1_1actuator_1_1_servo_motor_param.html#a236d8e3834d3a4fa88eadca8ea8fd4b0">ServoMotorParam</a> (uint16_t <a class="el" href="structroblab_1_1common_1_1actuator_1_1_servo_motor_param.html#a9574ce710a5e44160505874ae4e85cbb">max_angle_deg</a>, uint16_t <a class="el" href="structroblab_1_1common_1_1actuator_1_1_servo_motor_param.html#a1b9150ec7b35d80d07f58cfebd9029c2">min_pulse_width_us</a>, uint16_t <a class="el" href="structroblab_1_1common_1_1actuator_1_1_servo_motor_param.html#a996dc6d7d78b7c859c1956791bce5eba">max_pulse_width_us</a>, uint16_t <a class="el" href="structroblab_1_1common_1_1actuator_1_1_servo_motor_param.html#aaa9acca865cb7e5ae8458e72449f9a43">pwm_period_us</a>)</td></tr>
+<tr class="memdesc:a236d8e3834d3a4fa88eadca8ea8fd4b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
+<tr class="separator:a236d8e3834d3a4fa88eadca8ea8fd4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:a9574ce710a5e44160505874ae4e85cbb"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structroblab_1_1common_1_1actuator_1_1_servo_motor_param.html#a9574ce710a5e44160505874ae4e85cbb">max_angle_deg</a></td></tr>
+<tr class="memdesc:a9574ce710a5e44160505874ae4e85cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">回転可能最大角度 [deg]  <br /></td></tr>
+<tr class="separator:a9574ce710a5e44160505874ae4e85cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9150ec7b35d80d07f58cfebd9029c2"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structroblab_1_1common_1_1actuator_1_1_servo_motor_param.html#a1b9150ec7b35d80d07f58cfebd9029c2">min_pulse_width_us</a></td></tr>
+<tr class="memdesc:a1b9150ec7b35d80d07f58cfebd9029c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">パルス幅の最小値 [us]  <br /></td></tr>
+<tr class="separator:a1b9150ec7b35d80d07f58cfebd9029c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a996dc6d7d78b7c859c1956791bce5eba"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structroblab_1_1common_1_1actuator_1_1_servo_motor_param.html#a996dc6d7d78b7c859c1956791bce5eba">max_pulse_width_us</a></td></tr>
+<tr class="memdesc:a996dc6d7d78b7c859c1956791bce5eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">パルス幅の最大値 [us]  <br /></td></tr>
+<tr class="separator:a996dc6d7d78b7c859c1956791bce5eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa9acca865cb7e5ae8458e72449f9a43"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structroblab_1_1common_1_1actuator_1_1_servo_motor_param.html#aaa9acca865cb7e5ae8458e72449f9a43">pwm_period_us</a></td></tr>
+<tr class="memdesc:aaa9acca865cb7e5ae8458e72449f9a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWM周期 [us]  <br /></td></tr>
+<tr class="separator:aaa9acca865cb7e5ae8458e72449f9a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>サーボモータのパラメータ構造体 </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a236d8e3834d3a4fa88eadca8ea8fd4b0" name="a236d8e3834d3a4fa88eadca8ea8fd4b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a236d8e3834d3a4fa88eadca8ea8fd4b0">&#9670;&#160;</a></span>ServoMotorParam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr roblab::common::actuator::ServoMotorParam::ServoMotorParam </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>max_angle_deg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>min_pulse_width_us</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>max_pulse_width_us</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>pwm_period_us</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">max_angle_deg</td><td>回転可能最大角度 [deg] </td></tr>
+    <tr><td class="paramname">min_pulse_width_us</td><td>パルス幅の最小値 [us] </td></tr>
+    <tr><td class="paramname">max_pulse_width_us</td><td>パルス幅の最大値 [us] </td></tr>
+    <tr><td class="paramname">pwm_period_us</td><td>PWM周期 [us] </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a9574ce710a5e44160505874ae4e85cbb" name="a9574ce710a5e44160505874ae4e85cbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9574ce710a5e44160505874ae4e85cbb">&#9670;&#160;</a></span>max_angle_deg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t roblab::common::actuator::ServoMotorParam::max_angle_deg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>回転可能最大角度 [deg] </p>
+
+</div>
+</div>
+<a id="a996dc6d7d78b7c859c1956791bce5eba" name="a996dc6d7d78b7c859c1956791bce5eba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a996dc6d7d78b7c859c1956791bce5eba">&#9670;&#160;</a></span>max_pulse_width_us</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t roblab::common::actuator::ServoMotorParam::max_pulse_width_us</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>パルス幅の最大値 [us] </p>
+
+</div>
+</div>
+<a id="a1b9150ec7b35d80d07f58cfebd9029c2" name="a1b9150ec7b35d80d07f58cfebd9029c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b9150ec7b35d80d07f58cfebd9029c2">&#9670;&#160;</a></span>min_pulse_width_us</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t roblab::common::actuator::ServoMotorParam::min_pulse_width_us</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>パルス幅の最小値 [us] </p>
+
+</div>
+</div>
+<a id="aaa9acca865cb7e5ae8458e72449f9a43" name="aaa9acca865cb7e5ae8458e72449f9a43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa9acca865cb7e5ae8458e72449f9a43">&#9670;&#160;</a></span>pwm_period_us</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t roblab::common::actuator::ServoMotorParam::pwm_period_us</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PWM周期 [us] </p>
+
+</div>
+</div>
+<hr/>この構造体詳解は次のファイルから抽出されました:<ul>
+<li>roblab_common_lib/include/roblab_common/actuator/<a class="el" href="servo__motor__base_8hpp_source.html">servo_motor_base.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceroblab.html">roblab</a></li><li class="navelem"><a class="el" href="namespaceroblab_1_1common.html">common</a></li><li class="navelem"><a class="el" href="namespaceroblab_1_1common_1_1actuator.html">actuator</a></li><li class="navelem"><a class="el" href="structroblab_1_1common_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

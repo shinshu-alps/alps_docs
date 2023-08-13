@@ -1,0 +1,409 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roblab: roblab::common::actuator::ServoMotorBase&lt; IPwmSetPeriodImpl, IPwmSetPulseWidthImpl &gt; クラステンプレート</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Roblab
+                            </div>
+                            <div id="projectbrief">roboken shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classroblab_1_1common_1_1actuator_1_1_servo_motor_base.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="classroblab_1_1common_1_1actuator_1_1_servo_motor_base-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">roblab::common::actuator::ServoMotorBase&lt; IPwmSetPeriodImpl, IPwmSetPulseWidthImpl &gt; クラステンプレート</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>PWMパルス幅で指定した角度に動くサーボモータの共通実装  
+ <a href="classroblab_1_1common_1_1actuator_1_1_servo_motor_base.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="servo__motor__base_8hpp_source.html">servo_motor_base.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a586a88c005c374e6c6bb577aa9e5179d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_servo_motor_base.html#a586a88c005c374e6c6bb577aa9e5179d">ServoMotorBase</a> (<a class="el" href="classroblab_1_1common_1_1gpio_1_1_i_pwm_set_period.html">gpio::IPwmSetPeriod</a>&lt; IPwmSetPeriodImpl &gt; *pwm_set_period, <a class="el" href="classroblab_1_1common_1_1gpio_1_1_i_pwm_set_pulse_width.html">gpio::IPwmSetPulseWidth</a>&lt; IPwmSetPulseWidthImpl &gt; *pwm_set_pulse_width, uint16_t max_angle_deg, uint16_t min_pulse_width_us, uint16_t max_pulse_width_us, uint16_t pwm_period_us)</td></tr>
+<tr class="memdesc:a586a88c005c374e6c6bb577aa9e5179d"><td class="mdescLeft">&#160;</td><td class="mdescRight">各パラメータを設定するコンストラクタ  <br /></td></tr>
+<tr class="separator:a586a88c005c374e6c6bb577aa9e5179d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908100ff4c23e6d761ed04157d1e6cec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_servo_motor_base.html#a908100ff4c23e6d761ed04157d1e6cec">ServoMotorBase</a> (<a class="el" href="classroblab_1_1common_1_1gpio_1_1_i_pwm_set_period.html">gpio::IPwmSetPeriod</a>&lt; IPwmSetPeriodImpl &gt; *pwm_set_period, <a class="el" href="classroblab_1_1common_1_1gpio_1_1_i_pwm_set_pulse_width.html">gpio::IPwmSetPulseWidth</a>&lt; IPwmSetPulseWidthImpl &gt; *pwm_set_pulse_width, const <a class="el" href="structroblab_1_1common_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a> &amp;parameter=kSg90)</td></tr>
+<tr class="memdesc:a908100ff4c23e6d761ed04157d1e6cec"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータのパラメータ構造体を利用するコンストラクタ  <br /></td></tr>
+<tr class="separator:a908100ff4c23e6d761ed04157d1e6cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af51556f438b34a4827c57955e660535d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_servo_motor_base.html#af51556f438b34a4827c57955e660535d">~ServoMotorBase</a> ()=default</td></tr>
+<tr class="separator:af51556f438b34a4827c57955e660535d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e0af30022fd73ae197d81c86a6878d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_servo_motor_base.html#a5e0af30022fd73ae197d81c86a6878d6">SetAngle</a> (uint16_t target_angle_deg)</td></tr>
+<tr class="memdesc:a5e0af30022fd73ae197d81c86a6878d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータを指定した動かす  <br /></td></tr>
+<tr class="separator:a5e0af30022fd73ae197d81c86a6878d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a5a3212359ebbbb9a1c8c5d69c275ad01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_servo_motor_base.html#a5a3212359ebbbb9a1c8c5d69c275ad01">SetInterface</a> (<a class="el" href="classroblab_1_1common_1_1gpio_1_1_i_pwm_set_period.html">gpio::IPwmSetPeriod</a>&lt; IPwmSetPeriodImpl &gt; *pwm_set_period, <a class="el" href="classroblab_1_1common_1_1gpio_1_1_i_pwm_set_pulse_width.html">gpio::IPwmSetPulseWidth</a>&lt; IPwmSetPulseWidthImpl &gt; *pwm_set_pulse_width)</td></tr>
+<tr class="memdesc:a5a3212359ebbbb9a1c8c5d69c275ad01"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWMパルス幅を指定して出力するインタフェースを設定する  <br /></td></tr>
+<tr class="separator:a5a3212359ebbbb9a1c8c5d69c275ad01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class IPwmSetPeriodImpl, class IPwmSetPulseWidthImpl&gt;<br />
+class roblab::common::actuator::ServoMotorBase&lt; IPwmSetPeriodImpl, IPwmSetPulseWidthImpl &gt;</div><p>PWMパルス幅で指定した角度に動くサーボモータの共通実装 </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">IPwmSetPeriodImpl</td><td>PWM周期設定インタフェースの実装クラス </td></tr>
+    <tr><td class="paramname">IPwmSetPulseWidthImpl</td><td>PWM出力時間幅指定インタフェースの実装クラス </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a586a88c005c374e6c6bb577aa9e5179d" name="a586a88c005c374e6c6bb577aa9e5179d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a586a88c005c374e6c6bb577aa9e5179d">&#9670;&#160;</a></span>ServoMotorBase() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class IPwmSetPeriodImpl , class IPwmSetPulseWidthImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_servo_motor_base.html">roblab::common::actuator::ServoMotorBase</a>&lt; IPwmSetPeriodImpl, IPwmSetPulseWidthImpl &gt;::ServoMotorBase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classroblab_1_1common_1_1gpio_1_1_i_pwm_set_period.html">gpio::IPwmSetPeriod</a>&lt; IPwmSetPeriodImpl &gt; *&#160;</td>
+          <td class="paramname"><em>pwm_set_period</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classroblab_1_1common_1_1gpio_1_1_i_pwm_set_pulse_width.html">gpio::IPwmSetPulseWidth</a>&lt; IPwmSetPulseWidthImpl &gt; *&#160;</td>
+          <td class="paramname"><em>pwm_set_pulse_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>max_angle_deg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>min_pulse_width_us</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>max_pulse_width_us</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>pwm_period_us</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>各パラメータを設定するコンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pwm_set_period</td><td>PWM周期をセットするインタフェース </td></tr>
+    <tr><td class="paramname">pwm_set_pulse_width</td><td>PWMパルス幅を指定して出力するインタフェース </td></tr>
+    <tr><td class="paramname">max_angle_deg</td><td>回転可能最大角度 [deg] </td></tr>
+    <tr><td class="paramname">min_pulse_width_us</td><td>パルス幅の最小値 [us] </td></tr>
+    <tr><td class="paramname">max_pulse_width_us</td><td>パルス幅の最大値 [us] </td></tr>
+    <tr><td class="paramname">pwm_period_us</td><td>PWM周期 [us] </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a908100ff4c23e6d761ed04157d1e6cec" name="a908100ff4c23e6d761ed04157d1e6cec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a908100ff4c23e6d761ed04157d1e6cec">&#9670;&#160;</a></span>ServoMotorBase() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class IPwmSetPeriodImpl , class IPwmSetPulseWidthImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_servo_motor_base.html">roblab::common::actuator::ServoMotorBase</a>&lt; IPwmSetPeriodImpl, IPwmSetPulseWidthImpl &gt;::ServoMotorBase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classroblab_1_1common_1_1gpio_1_1_i_pwm_set_period.html">gpio::IPwmSetPeriod</a>&lt; IPwmSetPeriodImpl &gt; *&#160;</td>
+          <td class="paramname"><em>pwm_set_period</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classroblab_1_1common_1_1gpio_1_1_i_pwm_set_pulse_width.html">gpio::IPwmSetPulseWidth</a>&lt; IPwmSetPulseWidthImpl &gt; *&#160;</td>
+          <td class="paramname"><em>pwm_set_pulse_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structroblab_1_1common_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a> &amp;&#160;</td>
+          <td class="paramname"><em>parameter</em> = <code>kSg90</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>サーボモータのパラメータ構造体を利用するコンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pwm_set_period</td><td>PWM周期をセットするインタフェース </td></tr>
+    <tr><td class="paramname">pwm_set_pulse_width</td><td>PWMパルス幅を指定して出力するインタフェース </td></tr>
+    <tr><td class="paramname">parameter</td><td>サーボモータのパラメータ構造体 デフォルトだとSG90のパラメータが使用される </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af51556f438b34a4827c57955e660535d" name="af51556f438b34a4827c57955e660535d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af51556f438b34a4827c57955e660535d">&#9670;&#160;</a></span>~ServoMotorBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class IPwmSetPeriodImpl , class IPwmSetPulseWidthImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_servo_motor_base.html">roblab::common::actuator::ServoMotorBase</a>&lt; IPwmSetPeriodImpl, IPwmSetPulseWidthImpl &gt;::~<a class="el" href="classroblab_1_1common_1_1actuator_1_1_servo_motor_base.html">ServoMotorBase</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a5e0af30022fd73ae197d81c86a6878d6" name="a5e0af30022fd73ae197d81c86a6878d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e0af30022fd73ae197d81c86a6878d6">&#9670;&#160;</a></span>SetAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class IPwmSetPeriodImpl , class IPwmSetPulseWidthImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classroblab_1_1common_1_1actuator_1_1_servo_motor_base.html">roblab::common::actuator::ServoMotorBase</a>&lt; IPwmSetPeriodImpl, IPwmSetPulseWidthImpl &gt;::SetAngle </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>target_angle_deg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>サーボモータを指定した動かす </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target_angle_deg</td><td>目標角度 [deg] </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5a3212359ebbbb9a1c8c5d69c275ad01" name="a5a3212359ebbbb9a1c8c5d69c275ad01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a3212359ebbbb9a1c8c5d69c275ad01">&#9670;&#160;</a></span>SetInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class IPwmSetPeriodImpl , class IPwmSetPulseWidthImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classroblab_1_1common_1_1actuator_1_1_servo_motor_base.html">roblab::common::actuator::ServoMotorBase</a>&lt; IPwmSetPeriodImpl, IPwmSetPulseWidthImpl &gt;::SetInterface </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classroblab_1_1common_1_1gpio_1_1_i_pwm_set_period.html">gpio::IPwmSetPeriod</a>&lt; IPwmSetPeriodImpl &gt; *&#160;</td>
+          <td class="paramname"><em>pwm_set_period</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classroblab_1_1common_1_1gpio_1_1_i_pwm_set_pulse_width.html">gpio::IPwmSetPulseWidth</a>&lt; IPwmSetPulseWidthImpl &gt; *&#160;</td>
+          <td class="paramname"><em>pwm_set_pulse_width</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PWMパルス幅を指定して出力するインタフェースを設定する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pwm_set_period</td><td>PWM周期をセットするインタフェース </td></tr>
+    <tr><td class="paramname">pwm_set_pulse_width</td><td>PWMパルス幅を指定して出力するインタフェース </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>roblab_common_lib/include/roblab_common/actuator/<a class="el" href="servo__motor__base_8hpp_source.html">servo_motor_base.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceroblab.html">roblab</a></li><li class="navelem"><a class="el" href="namespaceroblab_1_1common.html">common</a></li><li class="navelem"><a class="el" href="namespaceroblab_1_1common_1_1actuator.html">actuator</a></li><li class="navelem"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_servo_motor_base.html">ServoMotorBase</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.9.7" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Roblab: roblab_common_lib/include/differential.hpp ソースファイル</title>
+    <title>Roblab: roblab_common_lib/include/roblab_common/control/differential.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
     <script type="text/javascript" src="jquery.js"></script>
@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('differential_8hpp_source.html',''); in
   <div class="headertitle"><div class="title">differential.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<a href="differential_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">/**********************************************************************</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> Include guard</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">**********************************************************************/</span></div>
@@ -131,57 +131,61 @@ $(document).ready(function(){initNavTree('differential_8hpp_source.html',''); in
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">namespace </span>common</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1_differential.html">   37</a></span>        <span class="keyword">class </span><a class="code hl_class" href="classroblab_1_1common_1_1_differential.html">Differential</a></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1_differential.html#a880581d7d30cd9f7c36008b63fb2496c">   44</a></span>            <a class="code hl_function" href="classroblab_1_1common_1_1_differential.html#a880581d7d30cd9f7c36008b63fb2496c">Differential</a>() {}</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1_differential.html#a96db371c3db6df6082b4bdab7d3743ab">   53</a></span>            <a class="code hl_function" href="classroblab_1_1common_1_1_differential.html#a96db371c3db6df6082b4bdab7d3743ab">Differential</a>(<span class="keywordtype">float</span> t_const_sec, <span class="keywordtype">float</span> ctrl_period_sec);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1_differential.html#a03c3551f84b47502aa85327d57b1e6b2">   59</a></span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1common_1_1_differential.html#a03c3551f84b47502aa85327d57b1e6b2">SetCtrlPeriod</a>(<span class="keywordtype">float</span> ctrl_period_sec);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1_differential.html#a5babada475143109cbed4e3d9e253b8d">   66</a></span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1common_1_1_differential.html#a5babada475143109cbed4e3d9e253b8d">SetTimeConst</a>(<span class="keywordtype">float</span> t_const_sec);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1_differential.html#a1cc98639055cba47c6cfe73208ead7f8">   76</a></span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1common_1_1_differential.html#a1cc98639055cba47c6cfe73208ead7f8">SetInputPrev</a>(<span class="keywordtype">float</span> input_prev);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1_differential.html#a97cb88e46407774acc3fe5ad63ea6533">   85</a></span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1common_1_1_differential.html#a97cb88e46407774acc3fe5ad63ea6533">SetOutputPrev</a>(<span class="keywordtype">float</span> output_prev);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1_differential.html#ab5ecbe2ffa2cf4bb114e7bd8611c36df">   91</a></span>            <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1common_1_1_differential.html#ab5ecbe2ffa2cf4bb114e7bd8611c36df">Reset</a>();</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1_differential.html#a6975abcdd816371776c633840248a27b">   99</a></span>            <span class="keywordtype">float</span> <a class="code hl_function" href="classroblab_1_1common_1_1_differential.html#a6975abcdd816371776c633840248a27b">Filter</a>(<span class="keywordtype">float</span> input);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="keywordtype">float</span> t_const_sec_;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            <span class="keywordtype">float</span> ctrl_period_sec_;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <span class="keywordtype">float</span> output_;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            <span class="keywordtype">float</span> input_prev_;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            <span class="keywordtype">float</span> coeff_a_;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <span class="keywordtype">float</span> coeff_b_;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        };</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>}</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1_differential_html"><div class="ttname"><a href="classroblab_1_1common_1_1_differential.html">roblab::common::Differential</a></div><div class="ttdoc">近似微分器</div><div class="ttdef"><b>Definition:</b> differential.hpp:38</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1_differential_html_a03c3551f84b47502aa85327d57b1e6b2"><div class="ttname"><a href="classroblab_1_1common_1_1_differential.html#a03c3551f84b47502aa85327d57b1e6b2">roblab::common::Differential::SetCtrlPeriod</a></div><div class="ttdeci">void SetCtrlPeriod(float ctrl_period_sec)</div><div class="ttdoc">サンプル周期(制御周期)を設定</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1_differential_html_a1cc98639055cba47c6cfe73208ead7f8"><div class="ttname"><a href="classroblab_1_1common_1_1_differential.html#a1cc98639055cba47c6cfe73208ead7f8">roblab::common::Differential::SetInputPrev</a></div><div class="ttdeci">void SetInputPrev(float input_prev)</div><div class="ttdoc">近似微分器の初期値を設定する関数．</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1_differential_html_a5babada475143109cbed4e3d9e253b8d"><div class="ttname"><a href="classroblab_1_1common_1_1_differential.html#a5babada475143109cbed4e3d9e253b8d">roblab::common::Differential::SetTimeConst</a></div><div class="ttdeci">void SetTimeConst(float t_const_sec)</div><div class="ttdoc">時定数を設定し，時定数とサンプル周期から求まる係数を計算する関数．</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1_differential_html_a6975abcdd816371776c633840248a27b"><div class="ttname"><a href="classroblab_1_1common_1_1_differential.html#a6975abcdd816371776c633840248a27b">roblab::common::Differential::Filter</a></div><div class="ttdeci">float Filter(float input)</div><div class="ttdoc">入力値に対して近似微分器に通す関数．</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1_differential_html_a880581d7d30cd9f7c36008b63fb2496c"><div class="ttname"><a href="classroblab_1_1common_1_1_differential.html#a880581d7d30cd9f7c36008b63fb2496c">roblab::common::Differential::Differential</a></div><div class="ttdeci">Differential()</div><div class="ttdoc">デフォルトコンストラクタ.各変数の初期化は行わない</div><div class="ttdef"><b>Definition:</b> differential.hpp:44</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1_differential_html_a96db371c3db6df6082b4bdab7d3743ab"><div class="ttname"><a href="classroblab_1_1common_1_1_differential.html#a96db371c3db6df6082b4bdab7d3743ab">roblab::common::Differential::Differential</a></div><div class="ttdeci">Differential(float t_const_sec, float ctrl_period_sec)</div><div class="ttdoc">Differential型の変数を定義．時定数とサンプル周期(制御周期)を設定し， メンバ変数を初期化，時定数とサンプル周期から求まる係数を計算するコンストラクタ．</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1_differential_html_a97cb88e46407774acc3fe5ad63ea6533"><div class="ttname"><a href="classroblab_1_1common_1_1_differential.html#a97cb88e46407774acc3fe5ad63ea6533">roblab::common::Differential::SetOutputPrev</a></div><div class="ttdeci">void SetOutputPrev(float output_prev)</div><div class="ttdoc">近似微分器への出力の初期値を設定する関数．</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1_differential_html_ab5ecbe2ffa2cf4bb114e7bd8611c36df"><div class="ttname"><a href="classroblab_1_1common_1_1_differential.html#ab5ecbe2ffa2cf4bb114e7bd8611c36df">roblab::common::Differential::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">メンバ変数を初期化する関数．</div></div>
-<div class="ttc" id="anamespaceroblab_html"><div class="ttname"><a href="namespaceroblab.html">roblab</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dob.hpp:33</div></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="namespaceroblab_1_1common_1_1control.html">   33</a></span>        <span class="keyword">namespace </span>control</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1control_1_1_differential.html">   39</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classroblab_1_1common_1_1control_1_1_differential.html">Differential</a></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1control_1_1_differential.html#a311d36170c7b180c76813afa25192206">   46</a></span>                <a class="code hl_function" href="classroblab_1_1common_1_1control_1_1_differential.html#a311d36170c7b180c76813afa25192206">Differential</a>() {}</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1control_1_1_differential.html#afa2edcfc96f81f9e22c5b342369793b4">   55</a></span>                <a class="code hl_function" href="classroblab_1_1common_1_1control_1_1_differential.html#afa2edcfc96f81f9e22c5b342369793b4">Differential</a>(<span class="keywordtype">float</span> t_const_sec, <span class="keywordtype">float</span> ctrl_period_sec);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1control_1_1_differential.html#ad1aa2ae5fc4219cbfdddc4f5e0e86cf2">   61</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1common_1_1control_1_1_differential.html#ad1aa2ae5fc4219cbfdddc4f5e0e86cf2">SetCtrlPeriod</a>(<span class="keywordtype">float</span> ctrl_period_sec);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1control_1_1_differential.html#a37443d3a609a88ac3206448f0d90482b">   68</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1common_1_1control_1_1_differential.html#a37443d3a609a88ac3206448f0d90482b">SetTimeConst</a>(<span class="keywordtype">float</span> t_const_sec);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1control_1_1_differential.html#aa4b20012c433865fcbd928d2eb5011fb">   78</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1common_1_1control_1_1_differential.html#aa4b20012c433865fcbd928d2eb5011fb">SetInputPrev</a>(<span class="keywordtype">float</span> input_prev);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1control_1_1_differential.html#a196f35e121e9eeca42fd38082c16ab87">   87</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1common_1_1control_1_1_differential.html#a196f35e121e9eeca42fd38082c16ab87">SetOutputPrev</a>(<span class="keywordtype">float</span> output_prev);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1control_1_1_differential.html#a02e4b70067b2cdfaaad5656f13a6df57">   93</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1common_1_1control_1_1_differential.html#a02e4b70067b2cdfaaad5656f13a6df57">Reset</a>();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1control_1_1_differential.html#a780075380efdb81fa8b37716636160f6">  101</a></span>                <span class="keywordtype">float</span> <a class="code hl_function" href="classroblab_1_1common_1_1control_1_1_differential.html#a780075380efdb81fa8b37716636160f6">Filter</a>(<span class="keywordtype">float</span> input);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                <span class="keywordtype">float</span> t_const_sec_;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                <span class="keywordtype">float</span> ctrl_period_sec_;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                <span class="keywordtype">float</span> output_;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                <span class="keywordtype">float</span> input_prev_;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                <span class="keywordtype">float</span> coeff_a_;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                <span class="keywordtype">float</span> coeff_b_;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            };</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>}</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassroblab_1_1common_1_1control_1_1_differential_html"><div class="ttname"><a href="classroblab_1_1common_1_1control_1_1_differential.html">roblab::common::control::Differential</a></div><div class="ttdoc">近似微分器</div><div class="ttdef"><b>Definition:</b> differential.hpp:40</div></div>
+<div class="ttc" id="aclassroblab_1_1common_1_1control_1_1_differential_html_a02e4b70067b2cdfaaad5656f13a6df57"><div class="ttname"><a href="classroblab_1_1common_1_1control_1_1_differential.html#a02e4b70067b2cdfaaad5656f13a6df57">roblab::common::control::Differential::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">メンバ変数を初期化する関数．</div></div>
+<div class="ttc" id="aclassroblab_1_1common_1_1control_1_1_differential_html_a196f35e121e9eeca42fd38082c16ab87"><div class="ttname"><a href="classroblab_1_1common_1_1control_1_1_differential.html#a196f35e121e9eeca42fd38082c16ab87">roblab::common::control::Differential::SetOutputPrev</a></div><div class="ttdeci">void SetOutputPrev(float output_prev)</div><div class="ttdoc">近似微分器への出力の初期値を設定する関数．</div></div>
+<div class="ttc" id="aclassroblab_1_1common_1_1control_1_1_differential_html_a311d36170c7b180c76813afa25192206"><div class="ttname"><a href="classroblab_1_1common_1_1control_1_1_differential.html#a311d36170c7b180c76813afa25192206">roblab::common::control::Differential::Differential</a></div><div class="ttdeci">Differential()</div><div class="ttdoc">デフォルトコンストラクタ.各変数の初期化は行わない</div><div class="ttdef"><b>Definition:</b> differential.hpp:46</div></div>
+<div class="ttc" id="aclassroblab_1_1common_1_1control_1_1_differential_html_a37443d3a609a88ac3206448f0d90482b"><div class="ttname"><a href="classroblab_1_1common_1_1control_1_1_differential.html#a37443d3a609a88ac3206448f0d90482b">roblab::common::control::Differential::SetTimeConst</a></div><div class="ttdeci">void SetTimeConst(float t_const_sec)</div><div class="ttdoc">時定数を設定し，時定数とサンプル周期から求まる係数を計算する関数．</div></div>
+<div class="ttc" id="aclassroblab_1_1common_1_1control_1_1_differential_html_a780075380efdb81fa8b37716636160f6"><div class="ttname"><a href="classroblab_1_1common_1_1control_1_1_differential.html#a780075380efdb81fa8b37716636160f6">roblab::common::control::Differential::Filter</a></div><div class="ttdeci">float Filter(float input)</div><div class="ttdoc">入力値に対して近似微分器に通す関数．</div></div>
+<div class="ttc" id="aclassroblab_1_1common_1_1control_1_1_differential_html_aa4b20012c433865fcbd928d2eb5011fb"><div class="ttname"><a href="classroblab_1_1common_1_1control_1_1_differential.html#aa4b20012c433865fcbd928d2eb5011fb">roblab::common::control::Differential::SetInputPrev</a></div><div class="ttdeci">void SetInputPrev(float input_prev)</div><div class="ttdoc">近似微分器の初期値を設定する関数．</div></div>
+<div class="ttc" id="aclassroblab_1_1common_1_1control_1_1_differential_html_ad1aa2ae5fc4219cbfdddc4f5e0e86cf2"><div class="ttname"><a href="classroblab_1_1common_1_1control_1_1_differential.html#ad1aa2ae5fc4219cbfdddc4f5e0e86cf2">roblab::common::control::Differential::SetCtrlPeriod</a></div><div class="ttdeci">void SetCtrlPeriod(float ctrl_period_sec)</div><div class="ttdoc">サンプル周期(制御周期)を設定</div></div>
+<div class="ttc" id="aclassroblab_1_1common_1_1control_1_1_differential_html_afa2edcfc96f81f9e22c5b342369793b4"><div class="ttname"><a href="classroblab_1_1common_1_1control_1_1_differential.html#afa2edcfc96f81f9e22c5b342369793b4">roblab::common::control::Differential::Differential</a></div><div class="ttdeci">Differential(float t_const_sec, float ctrl_period_sec)</div><div class="ttdoc">Differential型の変数を定義．時定数とサンプル周期(制御周期)を設定し， メンバ変数を初期化，時定数とサンプル周期から求まる係数を計算するコンストラクタ．</div></div>
+<div class="ttc" id="anamespaceroblab_html"><div class="ttname"><a href="namespaceroblab.html">roblab</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_efc7c08bb78c728619d6f844434d9ba6.html">roblab_common_lib</a></li><li class="navelem"><a class="el" href="dir_5fc43148380559492dfddd8ae81e32dd.html">include</a></li><li class="navelem"><b>differential.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_efc7c08bb78c728619d6f844434d9ba6.html">roblab_common_lib</a></li><li class="navelem"><a class="el" href="dir_5fc43148380559492dfddd8ae81e32dd.html">include</a></li><li class="navelem"><a class="el" href="dir_28693fc7a38bf8c5629bdf3b63267db9.html">roblab_common</a></li><li class="navelem"><a class="el" href="dir_6623b94a4ca900a9fc193deff787d8b4.html">control</a></li><li class="navelem"><a class="el" href="differential_8hpp.html">differential.hpp</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>

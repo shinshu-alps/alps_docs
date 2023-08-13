@@ -1,4 +1,4 @@
-<map id="roblab_mbed_lib/include/actuator/stepping_motor.hpp" name="roblab_mbed_lib/include/actuator/stepping_motor.hpp">
-<area shape="rect" id="node1" title="ステッピングモータのライブラリ" alt="" coords="5,5,220,45"/>
-<area shape="rect" id="node2" title=" " alt="" coords="77,93,148,119"/>
+<map id="roblab_mbed_lib/include/roblab_mbed/actuator/stepping_motor.hpp" name="roblab_mbed_lib/include/roblab_mbed/actuator/stepping_motor.hpp">
+<area shape="rect" id="node1" title="ステッピングモータのライブラリ" alt="" coords="5,5,187,60"/>
+<area shape="rect" id="node2" title=" " alt="" coords="61,108,131,133"/>
 </map>

@@ -1,8 +1,0 @@
-<map id="roblab_common_lib/include/trapezoid_control.hpp" name="roblab_common_lib/include/trapezoid_control.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="81,5,282,45"/>
-<area shape="rect" id="node2" href="$dob_8hpp.html" title=" " alt="" coords="144,93,219,119"/>
-<area shape="rect" id="node3" href="$pid_8hpp.html" title=" " alt="" coords="99,167,170,192"/>
-<area shape="rect" id="node6" href="$lpf_8hpp.html" title=" " alt="" coords="195,167,261,192"/>
-<area shape="rect" id="node4" href="$differential_8hpp.html" title=" " alt="" coords="5,240,128,265"/>
-<area shape="rect" id="node5" href="$integral_8hpp.html" title=" " alt="" coords="153,240,253,265"/>
-</map>

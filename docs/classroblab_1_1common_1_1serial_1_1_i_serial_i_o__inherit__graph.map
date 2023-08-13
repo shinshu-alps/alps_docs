@@ -1,5 +1,0 @@
-<map id="roblab::common::serial::ISerialIO" name="roblab::common::serial::ISerialIO">
-<area shape="rect" id="node1" title="シリアル通信を行うIO抽象インターフェース" alt="" coords="79,5,251,45"/>
-<area shape="rect" id="node2" href="$classroblab_1_1mbed_1_1serial_1_1_mbed_uart_serial_io.html" title="mbedのUartシリアル通信IOクラス" alt="" coords="5,93,157,133"/>
-<area shape="rect" id="node3" href="$classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_i_o.html" title="Ubuntu環境でのUartシリアル通信IOクラス" alt="" coords="182,93,317,133"/>
-</map>

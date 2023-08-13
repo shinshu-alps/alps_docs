@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ubuntuuartio_0',['UbuntuUartIO',['../classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_i_o.html#a4e90e87be4f97278afe565b46a3f4d71',1,'roblab::ros::serial::UbuntuUartIO']]]
+  ['timer_0',['Timer',['../classroblab_1_1common_1_1_timer.html#af4f25dc124cba56e979251bbbbc1a26a',1,'roblab::common::Timer']]],
+  ['tovector_1',['ToVector',['../classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html#ad0931168e9a2e6b3b606380cfa7f09ca',1,'roblab::common::serial::ByteRingBuffer']]]
 ];

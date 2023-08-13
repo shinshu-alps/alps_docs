@@ -1,3 +1,6 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classroblab_1_1mbed_1_1_stepping_motor.html" title="ステッピングモーターを制御するクラス" alt="" coords="5,5,216,31"/>
+<area shape="rect" id="node1" href="$classroblab_1_1common_1_1gpio_1_1_i_pwm_set_period.html" title=" " alt="" coords="5,5,219,45"/>
+<area shape="rect" id="node2" href="$classroblab_1_1mbed_1_1gpio_1_1_pwm_out.html" title="PWM出力ピン" alt="" coords="267,77,411,117"/>
+<area shape="rect" id="node3" href="$classroblab_1_1common_1_1gpio_1_1_i_pwm_set_pulse_width.html" title=" " alt="" coords="27,70,197,125"/>
+<area shape="rect" id="node4" href="$classroblab_1_1common_1_1gpio_1_1_i_pwm_write.html" title=" " alt="" coords="19,149,205,189"/>
 </map>

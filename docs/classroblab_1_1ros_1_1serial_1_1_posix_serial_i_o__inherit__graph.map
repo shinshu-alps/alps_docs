@@ -1,4 +1,0 @@
-<map id="roblab::ros::serial::PosixSerialIO" name="roblab::ros::serial::PosixSerialIO">
-<area shape="rect" id="node1" title="POSIX APIを提供する環境でのUartシリアル通信IOクラス" alt="" coords="24,93,159,133"/>
-<area shape="rect" id="node2" href="$classroblab_1_1common_1_1serial_1_1_i_serial_i_o.html" title="シリアル通信を行うIO抽象インターフェース" alt="" coords="5,5,177,45"/>
-</map>

@@ -1,3 +1,4 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classroblab_1_1common_1_1_moving_ave.html" title="移動平均クラス" alt="" coords="5,5,213,31"/>
+<area shape="rect" id="node1" href="$classroblab_1_1common_1_1actuator_1_1_servo_motor_base.html" title=" " alt="" coords="5,5,208,75"/>
+<area shape="rect" id="node2" href="$classroblab_1_1mbed_1_1actuator_1_1_servo_motor.html" title="PWMパルス幅で指定した角度に動くサーボモータのmbed用実装" alt="" coords="256,20,427,60"/>
 </map>
