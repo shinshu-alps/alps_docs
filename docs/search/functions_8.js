@@ -7,7 +7,8 @@ var searchData=
   ['integral_4',['Integral',['../classroblab_1_1common_1_1control_1_1_integral.html#a2c7b992125d6461374fac3431f9b27ec',1,'roblab::common::control::Integral::Integral()'],['../classroblab_1_1common_1_1control_1_1_integral.html#af5a10ad1d7c3fbfabc4160fb809bb398',1,'roblab::common::control::Integral::Integral(float ctrl_period_sec)']]],
   ['interruptin_5',['InterruptIn',['../classroblab_1_1mbed_1_1gpio_1_1_interrupt_in.html#a2b03651d84a6a1bff6db237e45c00f60',1,'roblab::mbed::gpio::InterruptIn']]],
   ['isend_6',['IsEnd',['../classroblab_1_1common_1_1control_1_1_pid.html#a42a99f6edbdec67643dfaa16aa1c8697',1,'roblab::common::control::Pid']]],
-  ['ismultiple_7',['IsMultiple',['../structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html#a3167b81b54dd98ed27b6ebac6a50562a',1,'roblab::common::serial::SerializeTypeInfoBase']]],
-  ['isserializable_8',['IsSerializable',['../structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html#a9ef233677bf5a9cf3e2851cc76284379',1,'roblab::common::serial::SerializeTypeInfoBase']]],
-  ['issingle_9',['IsSingle',['../structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html#abc9ba85cceeefcee7137ce56322cd600',1,'roblab::common::serial::SerializeTypeInfoBase']]]
+  ['islittleendian_7',['IsLittleEndian',['../namespaceroblab_1_1common_1_1serial.html#a8e94f3183590642a04dbf2d0cdfcec5e',1,'roblab::common::serial']]],
+  ['ismultiple_8',['IsMultiple',['../structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html#a3167b81b54dd98ed27b6ebac6a50562a',1,'roblab::common::serial::SerializeTypeInfoBase']]],
+  ['isserializable_9',['IsSerializable',['../structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html#a9ef233677bf5a9cf3e2851cc76284379',1,'roblab::common::serial::SerializeTypeInfoBase']]],
+  ['issingle_10',['IsSingle',['../structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html#abc9ba85cceeefcee7137ce56322cd600',1,'roblab::common::serial::SerializeTypeInfoBase']]]
 ];

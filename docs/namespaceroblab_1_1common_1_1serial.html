@@ -111,7 +111,8 @@ $(document).ready(function(){initNavTree('namespaceroblab_1_1common_1_1serial.ht
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">クラス</a> &#124;
-<a href="#typedef-members">型定義</a>  </div>
+<a href="#typedef-members">型定義</a> &#124;
+<a href="#func-members">関数</a>  </div>
   <div class="headertitle"><div class="title">roblab::common::serial 名前空間</div></div>
 </div><!--header-->
 <div class="contents">
@@ -160,6 +161,12 @@ $(document).ready(function(){initNavTree('namespaceroblab_1_1common_1_1serial.ht
 <tr class="memitem:aab66473ea2aa9d9114abbb0b5f5ff207"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceroblab_1_1common_1_1serial.html#aab66473ea2aa9d9114abbb0b5f5ff207">PacketId</a> = uint8_t</td></tr>
 <tr class="memdesc:aab66473ea2aa9d9114abbb0b5f5ff207"><td class="mdescLeft">&#160;</td><td class="mdescRight">シリアルパケット通信のデータidの型エイリアス，255より沢山の種類を扱うことはないだろうという想定  <br /></td></tr>
 <tr class="separator:aab66473ea2aa9d9114abbb0b5f5ff207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a8e94f3183590642a04dbf2d0cdfcec5e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceroblab_1_1common_1_1serial.html#a8e94f3183590642a04dbf2d0cdfcec5e">IsLittleEndian</a> () noexcept</td></tr>
+<tr class="memdesc:a8e94f3183590642a04dbf2d0cdfcec5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">実行環境がリトルエンディアンかどうか判定  <br /></td></tr>
+<tr class="separator:a8e94f3183590642a04dbf2d0cdfcec5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>シリアル通信関係 </p>
@@ -177,6 +184,37 @@ $(document).ready(function(){initNavTree('namespaceroblab_1_1common_1_1serial.ht
 </div><div class="memdoc">
 
 <p>シリアルパケット通信のデータidの型エイリアス，255より沢山の種類を扱うことはないだろうという想定 </p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a8e94f3183590642a04dbf2d0cdfcec5e" name="a8e94f3183590642a04dbf2d0cdfcec5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e94f3183590642a04dbf2d0cdfcec5e">&#9670;&#160;</a></span>IsLittleEndian()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool roblab::common::serial::IsLittleEndian </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>実行環境がリトルエンディアンかどうか判定 </p>
+<dl class="section return"><dt>戻り値</dt><dd>true リトルエンディアン </dd>
+<dd>
+false ビッグエンディアン </dd></dl>
 
 </div>
 </div>
