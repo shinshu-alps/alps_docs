@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pwm_5fperiod_5fus_0',['pwm_period_us',['../structroblab_1_1common_1_1actuator_1_1_servo_motor_param.html#aaa9acca865cb7e5ae8458e72449f9a43',1,'roblab::common::actuator::ServoMotorParam']]]
+  ['npos_0',['npos',['../classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html#abace11aacd444c32d680521435256e2a',1,'roblab::common::serial::ByteRingBuffer']]]
 ];

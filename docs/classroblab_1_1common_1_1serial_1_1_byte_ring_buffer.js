@@ -18,5 +18,6 @@ var classroblab_1_1common_1_1serial_1_1_byte_ring_buffer =
     [ "Reserve", "classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html#af5a9a6adc73469f33f8ad229ed96b99f", null ],
     [ "ShrinkCapacity", "classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html#ad1bb8ee00175c2b174a5e47c21e04ffa", null ],
     [ "Size", "classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html#ae8be976c98e50caf36ec1f13c6f48856", null ],
-    [ "ToVector", "classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html#ad0931168e9a2e6b3b606380cfa7f09ca", null ]
+    [ "ToVector", "classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html#ad0931168e9a2e6b3b606380cfa7f09ca", null ],
+    [ "npos", "classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html#abace11aacd444c32d680521435256e2a", null ]
 ];
