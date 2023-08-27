@@ -1,4 +1,4 @@
-<map id="roblab::mbed::serial::CanIo" name="roblab::mbed::serial::CanIo">
-<area shape="rect" id="node1" title=" " alt="" coords="15,133,159,253"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,169,85"/>
+<map id="CanIo" name="CanIo">
+<area shape="rect" id="node1" title=" " alt="" coords="6,119,127,224"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,128,71"/>
 </map>

@@ -1,5 +1,5 @@
-<map id="roblab::common::control::Dob" name="roblab::common::control::Dob">
-<area shape="rect" id="node1" title="外乱オブザーバー" alt="" coords="113,319,323,604"/>
-<area shape="rect" id="node2" href="$classroblab_1_1common_1_1control_1_1_pid.html" title="PID制御を行うクラス" alt="" coords="5,5,207,271"/>
-<area shape="rect" id="node3" href="$classroblab_1_1common_1_1control_1_1_lpf.html" title="ローパスフィルタのクラス" alt="" coords="231,65,432,211"/>
+<map id="Dob" name="Dob">
+<area shape="rect" id="node1" title="外乱オブザーバー" alt="" coords="59,319,270,604"/>
+<area shape="rect" id="node2" href="$classroblab_1_1common_1_1control_1_1_pid.html" title="PID制御を行うクラス" alt="" coords="5,5,159,271"/>
+<area shape="rect" id="node3" href="$classroblab_1_1common_1_1control_1_1_lpf.html" title="ローパスフィルタのクラス" alt="" coords="183,65,312,211"/>
 </map>
