@@ -17,6 +17,9 @@ var hierarchy =
       [ "roblab::mbed::gpio::InterruptIn", "classroblab_1_1mbed_1_1gpio_1_1_interrupt_in.html", null ]
     ] ],
     [ "roblab::common::gpio::IAttachInterrupt< mbed::gpio::InterruptIn >", "classroblab_1_1common_1_1gpio_1_1_i_attach_interrupt.html", null ],
+    [ "common::serial::ICanIo", null, [
+      [ "roblab::mbed::serial::CanIo", "classroblab_1_1mbed_1_1serial_1_1_can_io.html", null ]
+    ] ],
     [ "roblab::common::gpio::IDigitalRead< Derived >", "classroblab_1_1common_1_1gpio_1_1_i_digital_read.html", null ],
     [ "roblab::common::gpio::IDigitalRead< DigitalIn >", "classroblab_1_1common_1_1gpio_1_1_i_digital_read.html", [
       [ "roblab::mbed::gpio::DigitalIn", "classroblab_1_1mbed_1_1gpio_1_1_digital_in.html", null ]
