@@ -11,11 +11,11 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classroblab_1_1common_1_1serial_1_1_data_serializer_3_01std_1_1tuple_3_01_args_8_8_8_01_4_01_4.html" target="_top" xlink:title="std::tuple型に特殊化したデータとバイト列の変換器">
+<g id="a_node1"><a xlink:href="classroblab_1_1common_1_1serial_1_1_data_serializer_3_01std_1_1string_01_4.html" target="_top" xlink:title="std::string型に特殊化したデータとバイト列の変換器">
 <polygon fill="white" stroke="#666666" points="129,-41 0,-41 0,0 129,0 129,-41"/>
 <text text-anchor="start" x="8" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">roblab::common::serial</text>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">::DataSerializer&lt; std</text>
-<text text-anchor="middle" x="64.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::tuple&lt; Args... &gt; &gt;</text>
+<text text-anchor="middle" x="64.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::string &gt;</text>
 </a>
 </g>
 </g>

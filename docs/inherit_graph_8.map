@@ -1,3 +1,5 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classroblab_1_1common_1_1gpio_1_1_i_attach_interrupt.html" title="割り込みを設定するインターフェース" alt="" coords="5,5,219,45"/>
+<area shape="rect" id="node1" href="$classroblab_1_1common_1_1control_1_1_lpf.html" title="ローパスフィルタのクラス" alt="" coords="5,5,215,31"/>
+<area shape="rect" id="node2" href="$classroblab_1_1common_1_1control_1_1_dob.html" title="外乱オブザーバー" alt="" coords="263,31,477,56"/>
+<area shape="rect" id="node3" href="$classroblab_1_1common_1_1control_1_1_pid.html" title="PID制御を行うクラス" alt="" coords="5,55,215,80"/>
 </map>

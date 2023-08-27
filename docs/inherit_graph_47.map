@@ -1,3 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classroblab_1_1ros_1_1serial_1_1_mbed_uart_connection.html" title="パソコンに接続されている複数のMbedとシリアル通信を行う" alt="" coords="5,5,172,45"/>
+<area shape="rect" id="node1" href="$classroblab_1_1mbed_1_1_stepping_motor.html" title="ステッピングモーターを制御するクラス" alt="" coords="5,5,216,31"/>
 </map>
