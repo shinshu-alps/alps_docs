@@ -1,3 +1,3 @@
-<map id="roblab::common::control::Integral" name="roblab::common::control::Integral">
-<area shape="rect" id="node1" title="積分器" alt="" coords="5,5,179,165"/>
+<map id="Integral" name="Integral">
+<area shape="rect" id="node1" title="積分器" alt="" coords="5,5,129,151"/>
 </map>

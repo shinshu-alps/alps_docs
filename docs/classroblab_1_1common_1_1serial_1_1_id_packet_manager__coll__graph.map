@@ -1,3 +1,3 @@
-<map id="roblab::common::serial::IdPacketManager&lt; ISerialIoImpl &gt;" name="roblab::common::serial::IdPacketManager&lt; ISerialIoImpl &gt;">
-<area shape="rect" id="node1" title="ID付きパケットデータを管理するクラス" alt="" coords="5,5,208,180"/>
+<map id="IdPacketManager&lt; ISerialIoImpl &gt;" name="IdPacketManager&lt; ISerialIoImpl &gt;">
+<area shape="rect" id="node1" title="ID付きパケットデータを管理するクラス" alt="" coords="5,5,207,165"/>
 </map>

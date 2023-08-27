@@ -1,3 +1,3 @@
-<map id="roblab::common::actuator::ServoMotorParam" name="roblab::common::actuator::ServoMotorParam">
-<area shape="rect" id="node1" title="サーボモータのパラメータ構造体" alt="" coords="5,5,188,145"/>
+<map id="ServoMotorParam" name="ServoMotorParam">
+<area shape="rect" id="node1" title="サーボモータのパラメータ構造体" alt="" coords="5,5,171,131"/>
 </map>

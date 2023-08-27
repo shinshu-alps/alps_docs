@@ -1,5 +1,5 @@
-<map id="roblab::ros::serial::UbuntuUartIo" name="roblab::ros::serial::UbuntuUartIo">
-<area shape="rect" id="node1" title="Ubuntu環境でのUartシリアル通信IOクラス" alt="" coords="28,317,165,457"/>
-<area shape="rect" id="node2" href="$classroblab_1_1common_1_1serial_1_1_i_uart_io.html" title=" " alt="" coords="5,168,188,268"/>
-<area shape="rect" id="node3" href="$classroblab_1_1common_1_1serial_1_1_i_uart_io.html" title="Uart通信IOのインターフェース" alt="" coords="15,5,179,105"/>
+<map id="UbuntuUartIo" name="UbuntuUartIo">
+<area shape="rect" id="node1" title="Ubuntu環境でのUartシリアル通信IOクラス" alt="" coords="24,288,161,413"/>
+<area shape="rect" id="node2" href="$classroblab_1_1common_1_1serial_1_1_i_uart_io.html" title=" " alt="" coords="5,153,180,239"/>
+<area shape="rect" id="node3" href="$classroblab_1_1common_1_1serial_1_1_i_uart_io.html" title="Uart通信IOのインターフェース" alt="" coords="23,5,162,91"/>
 </map>

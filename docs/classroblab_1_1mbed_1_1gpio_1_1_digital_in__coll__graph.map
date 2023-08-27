@@ -1,5 +1,5 @@
-<map id="roblab::mbed::gpio::DigitalIn" name="roblab::mbed::gpio::DigitalIn">
-<area shape="rect" id="node1" title="デジタル入力ピン" alt="" coords="31,277,167,397"/>
-<area shape="rect" id="node2" href="$classroblab_1_1common_1_1gpio_1_1_i_digital_read.html" title=" " alt="" coords="5,148,192,228"/>
-<area shape="rect" id="node3" href="$classroblab_1_1common_1_1gpio_1_1_i_digital_read.html" title="デジタル入力を行うインタフェース" alt="" coords="7,5,190,85"/>
+<map id="DigitalIn" name="DigitalIn">
+<area shape="rect" id="node1" title="デジタル入力ピン" alt="" coords="42,248,147,353"/>
+<area shape="rect" id="node2" href="$classroblab_1_1common_1_1gpio_1_1_i_digital_read.html" title=" " alt="" coords="5,133,184,199"/>
+<area shape="rect" id="node3" href="$classroblab_1_1common_1_1gpio_1_1_i_digital_read.html" title="デジタル入力を行うインタフェース" alt="" coords="7,5,182,71"/>
 </map>

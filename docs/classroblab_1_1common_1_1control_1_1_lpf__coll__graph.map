@@ -1,3 +1,3 @@
-<map id="roblab::common::control::Lpf" name="roblab::common::control::Lpf">
-<area shape="rect" id="node1" title="ローパスフィルタのクラス" alt="" coords="5,5,207,151"/>
+<map id="Lpf" name="Lpf">
+<area shape="rect" id="node1" title="ローパスフィルタのクラス" alt="" coords="5,5,135,151"/>
 </map>

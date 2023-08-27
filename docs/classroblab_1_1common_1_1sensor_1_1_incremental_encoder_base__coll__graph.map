@@ -1,3 +1,3 @@
-<map id="roblab::common::sensor::IncrementalEncoderBase&lt; IAttachInterruptImpl, IDigitalReadImpl &gt;" name="roblab::common::sensor::IncrementalEncoderBase&lt; IAttachInterruptImpl, IDigitalReadImpl &gt;">
-<area shape="rect" id="node1" title="A相B相からなるインクリメンタルエンコーダの共通実装" alt="" coords="5,5,207,275"/>
+<map id="IncrementalEncoderBase&lt; IAttachInterruptImpl, IDigitalReadImpl &gt;" name="IncrementalEncoderBase&lt; IAttachInterruptImpl, IDigitalReadImpl &gt;">
+<area shape="rect" id="node1" title="A相B相からなるインクリメンタルエンコーダの共通実装" alt="" coords="5,5,207,260"/>
 </map>
