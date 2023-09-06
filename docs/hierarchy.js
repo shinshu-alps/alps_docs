@@ -1,6 +1,7 @@
 var hierarchy =
 [
     [ "roblab::common::serial::ByteRingBuffer", "classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html", null ],
+    [ "roblab::common::serial::CanDataFrame", "structroblab_1_1common_1_1serial_1_1_can_data_frame.html", null ],
     [ "roblab::common::serial::Cobs", "classroblab_1_1common_1_1serial_1_1_cobs.html", null ],
     [ "roblab::common::serial::DataSerializer< T >", "classroblab_1_1common_1_1serial_1_1_data_serializer.html", null ],
     [ "roblab::common::serial::DataSerializer< std::string >", "classroblab_1_1common_1_1serial_1_1_data_serializer_3_01std_1_1string_01_4.html", null ],
@@ -17,8 +18,9 @@ var hierarchy =
       [ "roblab::mbed::gpio::InterruptIn", "classroblab_1_1mbed_1_1gpio_1_1_interrupt_in.html", null ]
     ] ],
     [ "roblab::common::gpio::IAttachInterrupt< mbed::gpio::InterruptIn >", "classroblab_1_1common_1_1gpio_1_1_i_attach_interrupt.html", null ],
-    [ "common::serial::ICanIo", null, [
-      [ "roblab::mbed::serial::CanIo", "classroblab_1_1mbed_1_1serial_1_1_can_io.html", null ]
+    [ "roblab::common::serial::ICanIo< Derived >", "classroblab_1_1common_1_1serial_1_1_i_can_io.html", null ],
+    [ "roblab::common::serial::ICanIo< BufferedCanIo >", "classroblab_1_1common_1_1serial_1_1_i_can_io.html", [
+      [ "roblab::mbed::serial::BufferedCanIo", "classroblab_1_1mbed_1_1serial_1_1_buffered_can_io.html", null ]
     ] ],
     [ "roblab::common::gpio::IDigitalRead< Derived >", "classroblab_1_1common_1_1gpio_1_1_i_digital_read.html", null ],
     [ "roblab::common::gpio::IDigitalRead< DigitalIn >", "classroblab_1_1common_1_1gpio_1_1_i_digital_read.html", [
@@ -73,6 +75,7 @@ var hierarchy =
     [ "roblab::common::control::Pid", "classroblab_1_1common_1_1control_1_1_pid.html", [
       [ "roblab::common::control::Dob", "classroblab_1_1common_1_1control_1_1_dob.html", null ]
     ] ],
+    [ "roblab::common::actuator::RobomasMotor", "classroblab_1_1common_1_1actuator_1_1_robomas_motor.html", null ],
     [ "roblab::common::serial::Sender< T >", "classroblab_1_1common_1_1serial_1_1_sender.html", null ],
     [ "roblab::common::serial::SerializeTypeInfoBase< is_serializable, is_single >", "structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html", null ],
     [ "roblab::common::serial::SerializeTypeInfoBase< false, false >", "structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html", [

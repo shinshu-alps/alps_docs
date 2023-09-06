@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['can_5fio_2ehpp_0',['can_io.hpp',['../can__io_8hpp.html',1,'']]],
-  ['canio_1',['CanIo',['../classroblab_1_1mbed_1_1serial_1_1_can_io.html#a8798b175159f97c01f67ccfec81c5d3e',1,'roblab::mbed::serial::CanIo::CanIo()'],['../classroblab_1_1mbed_1_1serial_1_1_can_io.html',1,'roblab::mbed::serial::CanIo']]],
+  ['can_5fdata_5fframe_2ehpp_0',['can_data_frame.hpp',['../can__data__frame_8hpp.html',1,'']]],
+  ['candataframe_1',['CanDataFrame',['../structroblab_1_1common_1_1serial_1_1_can_data_frame.html#a3771ecd3adfdeb7f33a66974f48adc2c',1,'roblab::common::serial::CanDataFrame::CanDataFrame()'],['../structroblab_1_1common_1_1serial_1_1_can_data_frame.html#a25d9e4303f72d6fdb58c52d43fe9e60d',1,'roblab::common::serial::CanDataFrame::CanDataFrame(uint16_t id, const etl::vector&lt; uint8_t, 8 &gt; &amp;data)'],['../structroblab_1_1common_1_1serial_1_1_can_data_frame.html#af3ded3dd25d3f428dd9b4ff82ddba078',1,'roblab::common::serial::CanDataFrame::CanDataFrame(uint16_t id, const uint8_t *data, uint8_t size)'],['../structroblab_1_1common_1_1serial_1_1_can_data_frame.html',1,'roblab::common::serial::CanDataFrame']]],
   ['checkend_2',['CheckEnd',['../classroblab_1_1common_1_1_timer.html#a70fe2dfc47ef27f2a00afb7e2171be6b',1,'roblab::common::Timer']]],
   ['clear_3',['Clear',['../classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html#a46b9606b8b8047a7449348b39b421055',1,'roblab::common::serial::ByteRingBuffer']]],
   ['cobs_4',['Cobs',['../classroblab_1_1common_1_1serial_1_1_cobs.html',1,'roblab::common::serial']]],

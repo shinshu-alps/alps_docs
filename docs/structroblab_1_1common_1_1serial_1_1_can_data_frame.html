@@ -1,0 +1,319 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: roblab::common::serial::CanDataFrame 構造体</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roboken shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structroblab_1_1common_1_1serial_1_1_can_data_frame.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="structroblab_1_1common_1_1serial_1_1_can_data_frame-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">roblab::common::serial::CanDataFrame 構造体</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>CANフレームを表す構造体．  
+ <a href="structroblab_1_1common_1_1serial_1_1_can_data_frame.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="can__data__frame_8hpp_source.html">can_data_frame.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a3771ecd3adfdeb7f33a66974f48adc2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structroblab_1_1common_1_1serial_1_1_can_data_frame.html#a3771ecd3adfdeb7f33a66974f48adc2c">CanDataFrame</a> ()</td></tr>
+<tr class="memdesc:a3771ecd3adfdeb7f33a66974f48adc2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトコンストラクタ, IDとデータを0で初期化する  <br /></td></tr>
+<tr class="separator:a3771ecd3adfdeb7f33a66974f48adc2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25d9e4303f72d6fdb58c52d43fe9e60d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structroblab_1_1common_1_1serial_1_1_can_data_frame.html#a25d9e4303f72d6fdb58c52d43fe9e60d">CanDataFrame</a> (uint16_t <a class="el" href="structroblab_1_1common_1_1serial_1_1_can_data_frame.html#a5092f6b1f7beb31adc4adc7d438dac15">id</a>, const etl::vector&lt; uint8_t, 8 &gt; &amp;<a class="el" href="structroblab_1_1common_1_1serial_1_1_can_data_frame.html#a960f06e837c162e7cf7d57d21a35ed8b">data</a>)</td></tr>
+<tr class="memdesc:a25d9e4303f72d6fdb58c52d43fe9e60d"><td class="mdescLeft">&#160;</td><td class="mdescRight">メンバにコピーして初期化するコンストラクタ  <br /></td></tr>
+<tr class="separator:a25d9e4303f72d6fdb58c52d43fe9e60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3ded3dd25d3f428dd9b4ff82ddba078"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structroblab_1_1common_1_1serial_1_1_can_data_frame.html#af3ded3dd25d3f428dd9b4ff82ddba078">CanDataFrame</a> (uint16_t <a class="el" href="structroblab_1_1common_1_1serial_1_1_can_data_frame.html#a5092f6b1f7beb31adc4adc7d438dac15">id</a>, const uint8_t *<a class="el" href="structroblab_1_1common_1_1serial_1_1_can_data_frame.html#a960f06e837c162e7cf7d57d21a35ed8b">data</a>, uint8_t size)</td></tr>
+<tr class="memdesc:af3ded3dd25d3f428dd9b4ff82ddba078"><td class="mdescLeft">&#160;</td><td class="mdescRight">C言語配列（もしくは単一バイトデータ）を指すポインタから初期化するコンストラクタ  <br /></td></tr>
+<tr class="separator:af3ded3dd25d3f428dd9b4ff82ddba078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:a5092f6b1f7beb31adc4adc7d438dac15"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structroblab_1_1common_1_1serial_1_1_can_data_frame.html#a5092f6b1f7beb31adc4adc7d438dac15">id</a></td></tr>
+<tr class="memdesc:a5092f6b1f7beb31adc4adc7d438dac15"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID  <br /></td></tr>
+<tr class="separator:a5092f6b1f7beb31adc4adc7d438dac15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a960f06e837c162e7cf7d57d21a35ed8b"><td class="memItemLeft" align="right" valign="top">etl::vector&lt; uint8_t, 8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structroblab_1_1common_1_1serial_1_1_can_data_frame.html#a960f06e837c162e7cf7d57d21a35ed8b">data</a></td></tr>
+<tr class="memdesc:a960f06e837c162e7cf7d57d21a35ed8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">データ  <br /></td></tr>
+<tr class="separator:a960f06e837c162e7cf7d57d21a35ed8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>CANフレームを表す構造体． </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a3771ecd3adfdeb7f33a66974f48adc2c" name="a3771ecd3adfdeb7f33a66974f48adc2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3771ecd3adfdeb7f33a66974f48adc2c">&#9670;&#160;</a></span>CanDataFrame() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">roblab::common::serial::CanDataFrame::CanDataFrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>デフォルトコンストラクタ, IDとデータを0で初期化する </p>
+
+</div>
+</div>
+<a id="a25d9e4303f72d6fdb58c52d43fe9e60d" name="a25d9e4303f72d6fdb58c52d43fe9e60d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25d9e4303f72d6fdb58c52d43fe9e60d">&#9670;&#160;</a></span>CanDataFrame() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">roblab::common::serial::CanDataFrame::CanDataFrame </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const etl::vector&lt; uint8_t, 8 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>メンバにコピーして初期化するコンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>ID </td></tr>
+    <tr><td class="paramname">data</td><td>データ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af3ded3dd25d3f428dd9b4ff82ddba078" name="af3ded3dd25d3f428dd9b4ff82ddba078"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3ded3dd25d3f428dd9b4ff82ddba078">&#9670;&#160;</a></span>CanDataFrame() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">roblab::common::serial::CanDataFrame::CanDataFrame </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>C言語配列（もしくは単一バイトデータ）を指すポインタから初期化するコンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>ID </td></tr>
+    <tr><td class="paramname">data</td><td>データを指すポインタ </td></tr>
+    <tr><td class="paramname">size</td><td>データのバイト数, 8バイトを超える場合は8バイトに切り詰められる </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a960f06e837c162e7cf7d57d21a35ed8b" name="a960f06e837c162e7cf7d57d21a35ed8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a960f06e837c162e7cf7d57d21a35ed8b">&#9670;&#160;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">etl::vector&lt;uint8_t, 8&gt; roblab::common::serial::CanDataFrame::data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>データ </p>
+
+</div>
+</div>
+<a id="a5092f6b1f7beb31adc4adc7d438dac15" name="a5092f6b1f7beb31adc4adc7d438dac15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5092f6b1f7beb31adc4adc7d438dac15">&#9670;&#160;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t roblab::common::serial::CanDataFrame::id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ID </p>
+
+</div>
+</div>
+<hr/>この構造体詳解は次のファイルから抽出されました:<ul>
+<li>roblab_common_lib/include/roblab_common/serial/<a class="el" href="can__data__frame_8hpp_source.html">can_data_frame.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceroblab.html">roblab</a></li><li class="navelem"><a class="el" href="namespaceroblab_1_1common.html">common</a></li><li class="navelem"><a class="el" href="namespaceroblab_1_1common_1_1serial.html">serial</a></li><li class="navelem"><a class="el" href="structroblab_1_1common_1_1serial_1_1_can_data_frame.html">CanDataFrame</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

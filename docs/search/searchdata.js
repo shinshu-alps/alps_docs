@@ -1,13 +1,13 @@
 var indexSectionsWithContent =
 {
   0: "abcdefghiklmnoprstuw~ド概",
-  1: "bcdilmpstu",
+  1: "bcdilmprstu",
   2: "r",
-  3: "bcdilmnpstuド",
+  3: "bcdilmnprstuド",
   4: "abcdefghilmoprstuw~",
-  5: "kmnp",
+  5: "dikmnp",
   6: "p",
-  7: "i",
+  7: "it",
   8: "k",
   9: "ド概"
 };

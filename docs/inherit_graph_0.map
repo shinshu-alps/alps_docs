@@ -1,4 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" title=" " alt="" coords="5,13,177,38"/>
-<area shape="rect" id="node2" href="$classroblab_1_1mbed_1_1serial_1_1_can_io.html" title=" " alt="" coords="225,5,377,45"/>
+<area shape="rect" id="node1" href="$classroblab_1_1common_1_1actuator_1_1_dc_motor_base.html" title="PWMピンと方向指定ピンで動かすDCモーターの共通実装" alt="" coords="5,5,324,60"/>
 </map>
