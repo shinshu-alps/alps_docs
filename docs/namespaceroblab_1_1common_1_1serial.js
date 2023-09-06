@@ -1,11 +1,13 @@
 var namespaceroblab_1_1common_1_1serial =
 [
     [ "ByteRingBuffer", "classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html", "classroblab_1_1common_1_1serial_1_1_byte_ring_buffer" ],
+    [ "CanDataFrame", "structroblab_1_1common_1_1serial_1_1_can_data_frame.html", "structroblab_1_1common_1_1serial_1_1_can_data_frame" ],
     [ "Cobs", "classroblab_1_1common_1_1serial_1_1_cobs.html", "classroblab_1_1common_1_1serial_1_1_cobs" ],
     [ "DataSerializer", "classroblab_1_1common_1_1serial_1_1_data_serializer.html", "classroblab_1_1common_1_1serial_1_1_data_serializer" ],
     [ "DataSerializer< std::string >", "classroblab_1_1common_1_1serial_1_1_data_serializer_3_01std_1_1string_01_4.html", "classroblab_1_1common_1_1serial_1_1_data_serializer_3_01std_1_1string_01_4" ],
     [ "DataSerializer< std::tuple< Args... > >", "classroblab_1_1common_1_1serial_1_1_data_serializer_3_01std_1_1tuple_3_01_args_8_8_8_01_4_01_4.html", "classroblab_1_1common_1_1serial_1_1_data_serializer_3_01std_1_1tuple_3_01_args_8_8_8_01_4_01_4" ],
     [ "DataSerializer< std::vector< U > >", "classroblab_1_1common_1_1serial_1_1_data_serializer_3_01std_1_1vector_3_01_u_01_4_01_4.html", "classroblab_1_1common_1_1serial_1_1_data_serializer_3_01std_1_1vector_3_01_u_01_4_01_4" ],
+    [ "ICanIo", "classroblab_1_1common_1_1serial_1_1_i_can_io.html", "classroblab_1_1common_1_1serial_1_1_i_can_io" ],
     [ "IdPacketManager", "classroblab_1_1common_1_1serial_1_1_id_packet_manager.html", "classroblab_1_1common_1_1serial_1_1_id_packet_manager" ],
     [ "IUartIo", "classroblab_1_1common_1_1serial_1_1_i_uart_io.html", "classroblab_1_1common_1_1serial_1_1_i_uart_io" ],
     [ "Sender", "classroblab_1_1common_1_1serial_1_1_sender.html", "classroblab_1_1common_1_1serial_1_1_sender" ],

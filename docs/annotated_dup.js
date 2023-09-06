@@ -4,6 +4,7 @@ var annotated_dup =
       [ "common", "namespaceroblab_1_1common.html", [
         [ "actuator", "namespaceroblab_1_1common_1_1actuator.html", [
           [ "DcMotorBase", "classroblab_1_1common_1_1actuator_1_1_dc_motor_base.html", "classroblab_1_1common_1_1actuator_1_1_dc_motor_base" ],
+          [ "RobomasMotor", "classroblab_1_1common_1_1actuator_1_1_robomas_motor.html", "classroblab_1_1common_1_1actuator_1_1_robomas_motor" ],
           [ "ServoMotorBase", "classroblab_1_1common_1_1actuator_1_1_servo_motor_base.html", "classroblab_1_1common_1_1actuator_1_1_servo_motor_base" ],
           [ "ServoMotorParam", "structroblab_1_1common_1_1actuator_1_1_servo_motor_param.html", "structroblab_1_1common_1_1actuator_1_1_servo_motor_param" ]
         ] ],
@@ -27,11 +28,13 @@ var annotated_dup =
         ] ],
         [ "serial", "namespaceroblab_1_1common_1_1serial.html", [
           [ "ByteRingBuffer", "classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html", "classroblab_1_1common_1_1serial_1_1_byte_ring_buffer" ],
+          [ "CanDataFrame", "structroblab_1_1common_1_1serial_1_1_can_data_frame.html", "structroblab_1_1common_1_1serial_1_1_can_data_frame" ],
           [ "Cobs", "classroblab_1_1common_1_1serial_1_1_cobs.html", "classroblab_1_1common_1_1serial_1_1_cobs" ],
           [ "DataSerializer", "classroblab_1_1common_1_1serial_1_1_data_serializer.html", "classroblab_1_1common_1_1serial_1_1_data_serializer" ],
           [ "DataSerializer< std::string >", "classroblab_1_1common_1_1serial_1_1_data_serializer_3_01std_1_1string_01_4.html", "classroblab_1_1common_1_1serial_1_1_data_serializer_3_01std_1_1string_01_4" ],
           [ "DataSerializer< std::tuple< Args... > >", "classroblab_1_1common_1_1serial_1_1_data_serializer_3_01std_1_1tuple_3_01_args_8_8_8_01_4_01_4.html", "classroblab_1_1common_1_1serial_1_1_data_serializer_3_01std_1_1tuple_3_01_args_8_8_8_01_4_01_4" ],
           [ "DataSerializer< std::vector< U > >", "classroblab_1_1common_1_1serial_1_1_data_serializer_3_01std_1_1vector_3_01_u_01_4_01_4.html", "classroblab_1_1common_1_1serial_1_1_data_serializer_3_01std_1_1vector_3_01_u_01_4_01_4" ],
+          [ "ICanIo", "classroblab_1_1common_1_1serial_1_1_i_can_io.html", "classroblab_1_1common_1_1serial_1_1_i_can_io" ],
           [ "IdPacketManager", "classroblab_1_1common_1_1serial_1_1_id_packet_manager.html", "classroblab_1_1common_1_1serial_1_1_id_packet_manager" ],
           [ "IUartIo", "classroblab_1_1common_1_1serial_1_1_i_uart_io.html", "classroblab_1_1common_1_1serial_1_1_i_uart_io" ],
           [ "Sender", "classroblab_1_1common_1_1serial_1_1_sender.html", "classroblab_1_1common_1_1serial_1_1_sender" ],
@@ -55,7 +58,7 @@ var annotated_dup =
           [ "IncrementalEncoder", "classroblab_1_1mbed_1_1sensor_1_1_incremental_encoder.html", "classroblab_1_1mbed_1_1sensor_1_1_incremental_encoder" ]
         ] ],
         [ "serial", "namespaceroblab_1_1mbed_1_1serial.html", [
-          [ "CanIo", "classroblab_1_1mbed_1_1serial_1_1_can_io.html", "classroblab_1_1mbed_1_1serial_1_1_can_io" ],
+          [ "BufferedCanIo", "classroblab_1_1mbed_1_1serial_1_1_buffered_can_io.html", "classroblab_1_1mbed_1_1serial_1_1_buffered_can_io" ],
           [ "PcUartConnection", "classroblab_1_1mbed_1_1serial_1_1_pc_uart_connection.html", "classroblab_1_1mbed_1_1serial_1_1_pc_uart_connection" ],
           [ "UartIo", "classroblab_1_1mbed_1_1serial_1_1_uart_io.html", "classroblab_1_1mbed_1_1serial_1_1_uart_io" ]
         ] ],

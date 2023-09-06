@@ -1,0 +1,5 @@
+<map id="roblab::common::serial::ICanIo&lt; Derived &gt;" name="roblab::common::serial::ICanIo&lt; Derived &gt;">
+<area shape="rect" id="node1" title="CAN通信IOのインターフェース" alt="" coords="20,5,184,105"/>
+<area shape="rect" id="node2" href="$classroblab_1_1common_1_1serial_1_1_i_can_io.html" title=" " alt="" coords="9,168,195,268"/>
+<area shape="rect" id="node3" href="$classroblab_1_1mbed_1_1serial_1_1_buffered_can_io.html" title="MbedのCAN通信IO. 受信割り込みによってデータをバッファリングする．" alt="" coords="5,317,199,457"/>
+</map>

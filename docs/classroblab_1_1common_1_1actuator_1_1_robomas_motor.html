@@ -1,0 +1,536 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: roblab::common::actuator::RobomasMotor クラス</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roboken shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classroblab_1_1common_1_1actuator_1_1_robomas_motor.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="classroblab_1_1common_1_1actuator_1_1_robomas_motor-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">roblab::common::actuator::RobomasMotor クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ロボマスモータのクラス  
+ <a href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="robomas__motor_8hpp_source.html">robomas_motor.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a9cd46298aeaba8e10201f60f0990f164"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html#a9cd46298aeaba8e10201f60f0990f164">Type</a> { <a class="el" href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html#a9cd46298aeaba8e10201f60f0990f164ac79f8fe34278ffdb418f6ee3b8316ed4">kM2006</a>
+, <a class="el" href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html#a9cd46298aeaba8e10201f60f0990f164a93e36269eaeb796f969adca34b7957b6">kM3508</a>
+ }</td></tr>
+<tr class="memdesc:a9cd46298aeaba8e10201f60f0990f164"><td class="mdescLeft">&#160;</td><td class="mdescRight">モータの種類  <a href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html#a9cd46298aeaba8e10201f60f0990f164">[詳解]</a><br /></td></tr>
+<tr class="separator:a9cd46298aeaba8e10201f60f0990f164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ab42c2345b605cf56f5dfaddb6a49df5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html#ab42c2345b605cf56f5dfaddb6a49df5c">RobomasMotor</a> (uint8_t id, <a class="el" href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html#a9cd46298aeaba8e10201f60f0990f164">Type</a> type=<a class="el" href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html#a9cd46298aeaba8e10201f60f0990f164ac79f8fe34278ffdb418f6ee3b8316ed4">Type::kM2006</a>)</td></tr>
+<tr class="memdesc:ab42c2345b605cf56f5dfaddb6a49df5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化コンストラクタ  <br /></td></tr>
+<tr class="separator:ab42c2345b605cf56f5dfaddb6a49df5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f7515408944e8bd9c4566dae3ad3bf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html#a2f7515408944e8bd9c4566dae3ad3bf4">GetControlFrame</a> (<a class="el" href="structroblab_1_1common_1_1serial_1_1_can_data_frame.html">roblab::common::serial::CanDataFrame</a> &amp;output_frame, float power)</td></tr>
+<tr class="memdesc:a2f7515408944e8bd9c4566dae3ad3bf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">モーターへの指令をCANフレームに変換する  <br /></td></tr>
+<tr class="separator:a2f7515408944e8bd9c4566dae3ad3bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0210ec6bac6b36d5dbb6cb1463c89629"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html#a0210ec6bac6b36d5dbb6cb1463c89629">OnReceiveSensorFrame</a> (const <a class="el" href="structroblab_1_1common_1_1serial_1_1_can_data_frame.html">roblab::common::serial::CanDataFrame</a> &amp;sensor_flame)</td></tr>
+<tr class="memdesc:a0210ec6bac6b36d5dbb6cb1463c89629"><td class="mdescLeft">&#160;</td><td class="mdescRight">モーターからのセンサーデータを受け取った際の更新処理  <br /></td></tr>
+<tr class="separator:a0210ec6bac6b36d5dbb6cb1463c89629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ddac954e532c96bd1c2e1bc5a6ca318"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html#a0ddac954e532c96bd1c2e1bc5a6ca318">GetId</a> ()</td></tr>
+<tr class="memdesc:a0ddac954e532c96bd1c2e1bc5a6ca318"><td class="mdescLeft">&#160;</td><td class="mdescRight">モーターIDを返す  <br /></td></tr>
+<tr class="separator:a0ddac954e532c96bd1c2e1bc5a6ca318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0dee74fee8aafe77ed7f312d3fe2867"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html#af0dee74fee8aafe77ed7f312d3fe2867">GetDeg</a> ()</td></tr>
+<tr class="memdesc:af0dee74fee8aafe77ed7f312d3fe2867"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の角度を度数法で返す  <br /></td></tr>
+<tr class="separator:af0dee74fee8aafe77ed7f312d3fe2867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acca8e3bc5f52490e5b4d06205abe915b"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html#acca8e3bc5f52490e5b4d06205abe915b">GetRpm</a> ()</td></tr>
+<tr class="memdesc:acca8e3bc5f52490e5b4d06205abe915b"><td class="mdescLeft">&#160;</td><td class="mdescRight">回転速度を返す  <br /></td></tr>
+<tr class="separator:acca8e3bc5f52490e5b4d06205abe915b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a401a5f7eb52da371524fa7ca7d3c1034"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html#a401a5f7eb52da371524fa7ca7d3c1034">GetRealCurrent</a> ()</td></tr>
+<tr class="memdesc:a401a5f7eb52da371524fa7ca7d3c1034"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のトルク電流を返す  <br /></td></tr>
+<tr class="separator:a401a5f7eb52da371524fa7ca7d3c1034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fb05cd3b5e7209fd7ecd236f25a5b55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html#a0fb05cd3b5e7209fd7ecd236f25a5b55">ResetAngle</a> ()</td></tr>
+<tr class="memdesc:a0fb05cd3b5e7209fd7ecd236f25a5b55"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の位置を0°とする  <br /></td></tr>
+<tr class="separator:a0fb05cd3b5e7209fd7ecd236f25a5b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:afb6e6791638e9a1539485611af35649e"><td class="memItemLeft" align="right" valign="top">static constexpr int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html#afb6e6791638e9a1539485611af35649e">kMaxAbsPowerM2006</a> {10000}</td></tr>
+<tr class="memdesc:afb6e6791638e9a1539485611af35649e"><td class="mdescLeft">&#160;</td><td class="mdescRight">M2006の最大出力  <br /></td></tr>
+<tr class="separator:afb6e6791638e9a1539485611af35649e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16aa6655ff560a2d1f651a50234d7393"><td class="memItemLeft" align="right" valign="top">static constexpr int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html#a16aa6655ff560a2d1f651a50234d7393">kMaxAbsPowerM3508</a> {16384}</td></tr>
+<tr class="memdesc:a16aa6655ff560a2d1f651a50234d7393"><td class="mdescLeft">&#160;</td><td class="mdescRight">M3508の最大出力  <br /></td></tr>
+<tr class="separator:a16aa6655ff560a2d1f651a50234d7393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5be46dfbd182071c955a5a92d23af869"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html#a5be46dfbd182071c955a5a92d23af869">kGearRatioM2006</a> {36.0 / 1.0}</td></tr>
+<tr class="memdesc:a5be46dfbd182071c955a5a92d23af869"><td class="mdescLeft">&#160;</td><td class="mdescRight">M2006のギヤ比. 36:1  <br /></td></tr>
+<tr class="separator:a5be46dfbd182071c955a5a92d23af869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a5c4c2fbf1791557481dd43f817f138"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html#a2a5c4c2fbf1791557481dd43f817f138">kGearRatioM3508</a> {19.0 / 1.0}</td></tr>
+<tr class="memdesc:a2a5c4c2fbf1791557481dd43f817f138"><td class="mdescLeft">&#160;</td><td class="mdescRight">M3508のギヤ比. 19:1  <br /></td></tr>
+<tr class="separator:a2a5c4c2fbf1791557481dd43f817f138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>ロボマスモータのクラス </p>
+</div><h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a9cd46298aeaba8e10201f60f0990f164" name="a9cd46298aeaba8e10201f60f0990f164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cd46298aeaba8e10201f60f0990f164">&#9670;&#160;</a></span>Type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html#a9cd46298aeaba8e10201f60f0990f164">roblab::common::actuator::RobomasMotor::Type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>モータの種類 </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a9cd46298aeaba8e10201f60f0990f164ac79f8fe34278ffdb418f6ee3b8316ed4" name="a9cd46298aeaba8e10201f60f0990f164ac79f8fe34278ffdb418f6ee3b8316ed4"></a>kM2006&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9cd46298aeaba8e10201f60f0990f164a93e36269eaeb796f969adca34b7957b6" name="a9cd46298aeaba8e10201f60f0990f164a93e36269eaeb796f969adca34b7957b6"></a>kM3508&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="ab42c2345b605cf56f5dfaddb6a49df5c" name="ab42c2345b605cf56f5dfaddb6a49df5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab42c2345b605cf56f5dfaddb6a49df5c">&#9670;&#160;</a></span>RobomasMotor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">roblab::common::actuator::RobomasMotor::RobomasMotor </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html#a9cd46298aeaba8e10201f60f0990f164">Type</a>&#160;</td>
+          <td class="paramname"><em>type</em> = <code><a class="el" href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html#a9cd46298aeaba8e10201f60f0990f164ac79f8fe34278ffdb418f6ee3b8316ed4">Type::kM2006</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初期化コンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>モーターID </td></tr>
+    <tr><td class="paramname">type</td><td>モーターの種類 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a2f7515408944e8bd9c4566dae3ad3bf4" name="a2f7515408944e8bd9c4566dae3ad3bf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f7515408944e8bd9c4566dae3ad3bf4">&#9670;&#160;</a></span>GetControlFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roblab::common::actuator::RobomasMotor::GetControlFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structroblab_1_1common_1_1serial_1_1_can_data_frame.html">roblab::common::serial::CanDataFrame</a> &amp;&#160;</td>
+          <td class="paramname"><em>output_frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>power</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>モーターへの指令をCANフレームに変換する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output_frame</td><td>指令を書き込むCANフレーム. 既に異なるIDのモーターへの指令が入っていてもok. </td></tr>
+    <tr><td class="paramname">power</td><td>パワー指令(1.0 ~ -1.0) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af0dee74fee8aafe77ed7f312d3fe2867" name="af0dee74fee8aafe77ed7f312d3fe2867"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0dee74fee8aafe77ed7f312d3fe2867">&#9670;&#160;</a></span>GetDeg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t roblab::common::actuator::RobomasMotor::GetDeg </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>現在の角度を度数法で返す </p>
+<dl class="section return"><dt>戻り値</dt><dd>角度[deg] </dd></dl>
+
+</div>
+</div>
+<a id="a0ddac954e532c96bd1c2e1bc5a6ca318" name="a0ddac954e532c96bd1c2e1bc5a6ca318"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ddac954e532c96bd1c2e1bc5a6ca318">&#9670;&#160;</a></span>GetId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t roblab::common::actuator::RobomasMotor::GetId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>モーターIDを返す </p>
+<dl class="section return"><dt>戻り値</dt><dd>モーターID </dd></dl>
+
+</div>
+</div>
+<a id="a401a5f7eb52da371524fa7ca7d3c1034" name="a401a5f7eb52da371524fa7ca7d3c1034"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a401a5f7eb52da371524fa7ca7d3c1034">&#9670;&#160;</a></span>GetRealCurrent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t roblab::common::actuator::RobomasMotor::GetRealCurrent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>現在のトルク電流を返す </p>
+<dl class="section return"><dt>戻り値</dt><dd>トルク電流 </dd></dl>
+
+</div>
+</div>
+<a id="acca8e3bc5f52490e5b4d06205abe915b" name="acca8e3bc5f52490e5b4d06205abe915b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acca8e3bc5f52490e5b4d06205abe915b">&#9670;&#160;</a></span>GetRpm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t roblab::common::actuator::RobomasMotor::GetRpm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>回転速度を返す </p>
+<dl class="section return"><dt>戻り値</dt><dd>回転速度[rpm] </dd></dl>
+
+</div>
+</div>
+<a id="a0210ec6bac6b36d5dbb6cb1463c89629" name="a0210ec6bac6b36d5dbb6cb1463c89629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0210ec6bac6b36d5dbb6cb1463c89629">&#9670;&#160;</a></span>OnReceiveSensorFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool roblab::common::actuator::RobomasMotor::OnReceiveSensorFrame </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structroblab_1_1common_1_1serial_1_1_can_data_frame.html">roblab::common::serial::CanDataFrame</a> &amp;&#160;</td>
+          <td class="paramname"><em>sensor_flame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>モーターからのセンサーデータを受け取った際の更新処理 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor_flame</td><td>センサーデータを含むCANフレーム. フレームID = 0x200 + モータIDである必要がある.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>モーターからのセンサー値を受け取った際の更新処理</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor_flame</td><td>センサーデータを含むCANフレーム. フレームID = 0x200 + モータIDである必要がある. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true センサー値の更新に成功した場合 </dd>
+<dd>
+false 不適なCANフレームであった場合 </dd></dl>
+
+</div>
+</div>
+<a id="a0fb05cd3b5e7209fd7ecd236f25a5b55" name="a0fb05cd3b5e7209fd7ecd236f25a5b55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fb05cd3b5e7209fd7ecd236f25a5b55">&#9670;&#160;</a></span>ResetAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roblab::common::actuator::RobomasMotor::ResetAngle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>現在の位置を0°とする </p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a5be46dfbd182071c955a5a92d23af869" name="a5be46dfbd182071c955a5a92d23af869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5be46dfbd182071c955a5a92d23af869">&#9670;&#160;</a></span>kGearRatioM2006</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float roblab::common::actuator::RobomasMotor::kGearRatioM2006 {36.0 / 1.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>M2006のギヤ比. 36:1 </p>
+
+</div>
+</div>
+<a id="a2a5c4c2fbf1791557481dd43f817f138" name="a2a5c4c2fbf1791557481dd43f817f138"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a5c4c2fbf1791557481dd43f817f138">&#9670;&#160;</a></span>kGearRatioM3508</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float roblab::common::actuator::RobomasMotor::kGearRatioM3508 {19.0 / 1.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>M3508のギヤ比. 19:1 </p>
+
+</div>
+</div>
+<a id="afb6e6791638e9a1539485611af35649e" name="afb6e6791638e9a1539485611af35649e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb6e6791638e9a1539485611af35649e">&#9670;&#160;</a></span>kMaxAbsPowerM2006</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int16_t roblab::common::actuator::RobomasMotor::kMaxAbsPowerM2006 {10000}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>M2006の最大出力 </p>
+
+</div>
+</div>
+<a id="a16aa6655ff560a2d1f651a50234d7393" name="a16aa6655ff560a2d1f651a50234d7393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16aa6655ff560a2d1f651a50234d7393">&#9670;&#160;</a></span>kMaxAbsPowerM3508</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int16_t roblab::common::actuator::RobomasMotor::kMaxAbsPowerM3508 {16384}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>M3508の最大出力 </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>roblab_common_lib/include/roblab_common/actuator/<a class="el" href="robomas__motor_8hpp_source.html">robomas_motor.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceroblab.html">roblab</a></li><li class="navelem"><a class="el" href="namespaceroblab_1_1common.html">common</a></li><li class="navelem"><a class="el" href="namespaceroblab_1_1common_1_1actuator.html">actuator</a></li><li class="navelem"><a class="el" href="classroblab_1_1common_1_1actuator_1_1_robomas_motor.html">RobomasMotor</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>
