@@ -6,8 +6,8 @@ hide empty members
 
 ' クラス図
 set namespaceSeparator ::
-namespace roblab{
-    namespace common::serial{
+namespace alps{
+    namespace cmn::serial{
         class Cobs{
             COBS変換クラス
         }
@@ -81,11 +81,11 @@ namespace roblab{
             UARTシリアルIO
         }
     }
-    ros::serial::UbuntuUartIO <|.. common::serial::ISerialIO
-    mbed::serial::MbedUartSerialIo <|.. common::serial::ISerialIO
+    ros::communication::UbuntuUartIO <|.. cmn::communication::ISerialIO
+    mbed::communication::MbedUartSerialIo <|.. cmn::communication::ISerialIO
     
-    ros::serial::MbedUartConnection  o-- common::serial::IdPacketManager
-    mbed::serial::PcUartConnection o-- common::serial::IdPacketManager
+    ros::communication::MbedUartConnection  o-- cmn::communication::IdPacketManager
+    mbed::communication::PcUartConnection o-- cmn::communication::IdPacketManager
 }
 
 @enduml

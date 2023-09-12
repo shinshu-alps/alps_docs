@@ -1,8 +1,8 @@
 /// @brief ロボ研で開発したライブラリ
-namespace roblab
+namespace alps
 {
     /// @brief 汎用ライブラリ
-    namespace common
+    namespace cmn
     {
         /// @brief アクチュエータ関係
         namespace actuator
@@ -20,8 +20,8 @@ namespace roblab
         namespace sensor
         {
         }
-        /// @brief シリアル通信関係
-        namespace serial
+        /// @brief 通信関係
+        namespace communication
         {
         }
     }
@@ -40,16 +40,16 @@ namespace roblab
         namespace sensor
         {
         }
-        /// @brief シリアル通信関係
-        namespace serial
+        /// @brief 通信関係
+        namespace communication
         {
         }
     }
     /// @brief ros用ライブラリ
     namespace ros
     {
-        /// @brief シリアル通信関係
-        namespace serial
+        /// @brief 通信関係
+        namespace communication
         {
         }
     }

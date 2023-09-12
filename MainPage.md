@@ -3,15 +3,15 @@
 ロボ研ライブラリのドキュメントページです．  
 ライブラリの使い方が分からない時などに参照してください．  
 
-関連esa記事：[ライブラリの全体概要](https://roblab-shinshu.esa.io/posts/2021)
+関連esa記事：[ライブラリの全体概要](https://alps-shinshu.esa.io/posts/2021)
 
 ## ライブラリリスト
 
-| ライブラリ名  | 名前空間       | 用途             | ソース                                                      |
-| :------------ | :------------- | :--------------- | :---------------------------------------------------------- |
-| roblab_common | roblab::common | 汎用ライブラリ   | [GitHub](https://github.com/shinshu-alps/roblab_common_lib) |
-| roblab_mbed   | roblab::mbed   | mbed用ライブラリ | [GitHub](https://github.com/shinshu-alps/roblab_mbed_lib)   |
-| roblab_ros    | roblab::ros    | ros用ライブラリ  | [GitHub](https://github.com/shinshu-alps/roblab_ros_lib)    |
+| ライブラリ名 | 名前空間     | 用途             | ソース                                                    |
+| :----------- | :----------- | :--------------- | :-------------------------------------------------------- |
+| alps_common  | alps::common | 汎用ライブラリ   | [GitHub](https://github.com/shinshu-alps/alps_common_lib) |
+| alps_mbed    | alps::mbed   | mbed用ライブラリ | [GitHub](https://github.com/shinshu-alps/alps_mbed_lib)   |
+| alps_ros     | alps::ros    | ros用ライブラリ  | [GitHub](https://github.com/shinshu-alps/alps_ros_lib)    |
 
 ## バージョン
 

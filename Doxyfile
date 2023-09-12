@@ -44,7 +44,7 @@ PROJECT_NUMBER         =
 # for a project that appears at the top of each page and should give viewer a
 # quick idea about the purpose of the project. Keep the description short.
 
-PROJECT_BRIEF          = "roboken shinshu library"
+PROJECT_BRIEF          = "roblab shinshu library"
 
 # With the PROJECT_LOGO tag one can specify a logo or an icon that is included
 # in the documentation. The maximum height of the logo should not exceed 55
@@ -830,9 +830,9 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  = roblab_common_lib/include \
-                         roblab_mbed_lib/include \
-                         roblab_ros_lib/include \
+INPUT                  = alps_common_lib/include \
+                         alps_mbed_lib/include \
+                         alps_ros_lib/include \
                          MainPage.md \
                          ドキュメント更新手順.md \
                          docs/extensions.md \
