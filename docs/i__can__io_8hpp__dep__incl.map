@@ -1,4 +1,5 @@
-<map id="roblab_common_lib/include/roblab_common/serial/i_can_io.hpp" name="roblab_common_lib/include/roblab_common/serial/i_can_io.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="10,5,211,60"/>
-<area shape="rect" id="node2" href="$buffered__can__io_8hpp.html" title="MbedのCAN通信IOクラス" alt="" coords="5,108,216,163"/>
+<map id="alps_common_lib/include/alps_cmn/communication/i_can_io.hpp" name="alps_common_lib/include/alps_cmn/communication/i_can_io.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="107,5,301,60"/>
+<area shape="rect" id="node2" href="$socket__can__io_8hpp.html" title=" " alt="" coords="5,108,187,163"/>
+<area shape="rect" id="node3" href="$buffered__can__io_8hpp.html" title="MbedのCAN通信IOクラス" alt="" coords="211,108,413,163"/>
 </map>

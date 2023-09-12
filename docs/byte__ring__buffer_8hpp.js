@@ -1,4 +1,4 @@
 var byte__ring__buffer_8hpp =
 [
-    [ "roblab::common::serial::ByteRingBuffer", "classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html", "classroblab_1_1common_1_1serial_1_1_byte_ring_buffer" ]
+    [ "alps::cmn::communication::ByteRingBuffer", "classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html", "classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer" ]
 ];

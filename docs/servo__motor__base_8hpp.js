@@ -1,7 +1,7 @@
 var servo__motor__base_8hpp =
 [
-    [ "roblab::common::actuator::ServoMotorParam", "structroblab_1_1common_1_1actuator_1_1_servo_motor_param.html", "structroblab_1_1common_1_1actuator_1_1_servo_motor_param" ],
-    [ "roblab::common::actuator::ServoMotorBase< IPwmSetPeriodImpl, IPwmSetPulseWidthImpl >", "classroblab_1_1common_1_1actuator_1_1_servo_motor_base.html", "classroblab_1_1common_1_1actuator_1_1_servo_motor_base" ],
-    [ "kGwsMicro2bbmg", "servo__motor__base_8hpp.html#a74cd051e01fbe25cfab98f06042c6ced", null ],
-    [ "kSg90", "servo__motor__base_8hpp.html#adca75341a19d1ca1a33f84889059eb95", null ]
+    [ "alps::cmn::actuator::ServoMotorParam", "structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html", "structalps_1_1cmn_1_1actuator_1_1_servo_motor_param" ],
+    [ "alps::cmn::actuator::ServoMotorBase< PwmSetPeriod, PwmSetPulseWidth >", "classalps_1_1cmn_1_1actuator_1_1_servo_motor_base.html", "classalps_1_1cmn_1_1actuator_1_1_servo_motor_base" ],
+    [ "kGwsMicro2bbmg", "servo__motor__base_8hpp.html#a41eefe6755e543b9817294673713db8b", null ],
+    [ "kSg90", "servo__motor__base_8hpp.html#a9292bb5c97cd64313214f2fc483cf8ab", null ]
 ];

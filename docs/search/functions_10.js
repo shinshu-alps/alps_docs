@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['uartio_0',['UartIo',['../classroblab_1_1mbed_1_1serial_1_1_uart_io.html#ae807c944c1fe559d53ec90e6d736768a',1,'roblab::mbed::serial::UartIo']]],
-  ['ubuntuuartio_1',['UbuntuUartIo',['../classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_io.html#a867b3f135aad7b87af7a3be7980fd1a2',1,'roblab::ros::serial::UbuntuUartIo']]]
+  ['uartio_0',['UartIo',['../classalps_1_1mbed_1_1communication_1_1_uart_io.html#a468f337139066580219d8a510ea0b91b',1,'alps::mbed::communication::UartIo']]],
+  ['ubuntuuartio_1',['UbuntuUartIo',['../classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html#a12907eb5d81151a580ca7676cd61e9ce',1,'alps::ros::communication::UbuntuUartIo']]]
 ];

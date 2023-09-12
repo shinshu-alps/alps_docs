@@ -1,0 +1,9 @@
+<map id="alps::cmn::gpio::IDigitalRead&lt; Derived &gt;" name="alps::cmn::gpio::IDigitalRead&lt; Derived &gt;">
+<area shape="rect" id="node1" title="デジタル入力を行うインタフェース" alt="" coords="365,5,533,85"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1gpio_1_1_i_digital_read.html" title=" " alt="" coords="21,148,189,228"/>
+<area shape="rect" id="node4" href="$classalps_1_1cmn_1_1gpio_1_1_i_digital_read.html" title=" " alt="" coords="218,148,386,228"/>
+<area shape="rect" id="node6" href="$classalps_1_1cmn_1_1gpio_1_1_i_digital_read.html" title=" " alt="" coords="410,148,623,228"/>
+<area shape="rect" id="node7" href="$classalps_1_1cmn_1_1gpio_1_1_i_digital_read.html" title=" " alt="" coords="647,148,815,228"/>
+<area shape="rect" id="node3" href="$classalps_1_1mbed_1_1gpio_1_1_digital_in.html" title="デジタル入力ピン" alt="" coords="5,287,191,393"/>
+<area shape="rect" id="node5" href="$classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html" title="割り込み入力ピン" alt="" coords="215,277,413,403"/>
+</map>

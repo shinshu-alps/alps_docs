@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.9.7" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alps: roblab_mbed_lib/include/roblab_mbed/gpio/digital_out.hpp ソースファイル</title>
+    <title>Alps: alps_mbed_lib/include/alps_mbed/gpio/digital_out.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
     <script type="text/javascript" src="jquery.js"></script>
@@ -47,7 +47,7 @@
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">Alps
                             </div>
-                            <div id="projectbrief">roboken shinshu library</div>
+                            <div id="projectbrief">roblab shinshu library</div>
                         </td>
                     </tr>
                 </tbody>
@@ -113,26 +113,26 @@ $(document).ready(function(){initNavTree('digital__out_8hpp_source.html',''); in
 </div><!--header-->
 <div class="contents">
 <a href="digital__out_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ROBLAB_MBED_DIGITAL_OUT_HPP</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ROBLAB_MBED_DIGITAL_OUT_HPP</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_MBED_DIGITAL_OUT_HPP</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_MBED_DIGITAL_OUT_HPP</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;mbed.h&gt;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="i__digital__write_8hpp.html">roblab_common/gpio/i_digital_write.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="i__digital__write_8hpp.html">alps_cmn/gpio/i_digital_write.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceroblab.html">roblab</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">namespace </span>mbed</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    {</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keyword">namespace </span>gpio</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classroblab_1_1mbed_1_1gpio_1_1_digital_out.html">   28</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classroblab_1_1mbed_1_1gpio_1_1_digital_out.html">DigitalOut</a> : <span class="keyword">public</span> <a class="code hl_class" href="classroblab_1_1common_1_1gpio_1_1_i_digital_write.html">roblab::common::gpio::IDigitalWrite</a>&lt;DigitalOut&gt;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html">   28</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html">DigitalOut</a> : <span class="keyword">public</span> <a class="code hl_class" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_write.html">alps::cmn::gpio::IDigitalWrite</a>&lt;DigitalOut&gt;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            {</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classroblab_1_1mbed_1_1gpio_1_1_digital_out.html#adf5990203b60c9867259fa8ef831cbc0">   36</a></span>                <a class="code hl_function" href="classroblab_1_1mbed_1_1gpio_1_1_digital_out.html#adf5990203b60c9867259fa8ef831cbc0">DigitalOut</a>(PinName pin);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#ab0e08bc4ca3f7d39281b32aafd1149a7">   36</a></span>                <a class="code hl_function" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#ab0e08bc4ca3f7d39281b32aafd1149a7">DigitalOut</a>(PinName pin);</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classroblab_1_1mbed_1_1gpio_1_1_digital_out.html#af855ee1db9b0db56c7529ebbd95840e0">   44</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1mbed_1_1gpio_1_1_digital_out.html#af855ee1db9b0db56c7529ebbd95840e0">WriteImpl</a>(<span class="keywordtype">bool</span> value);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#af5ac84747d9943414681fc8e88cc4331">   44</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#af5ac84747d9943414681fc8e88cc4331">Write</a>(<span class="keywordtype">bool</span> value);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classroblab_1_1mbed_1_1gpio_1_1_digital_out.html#a572e3dd5702a8253c7b2bfc04eb533dc">   46</a></span>                <a class="code hl_function" href="classroblab_1_1mbed_1_1gpio_1_1_digital_out.html#a572e3dd5702a8253c7b2bfc04eb533dc">~DigitalOut</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#a6eb6820df1ebf83ac37d19596507a443">   46</a></span>                <a class="code hl_function" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#a6eb6820df1ebf83ac37d19596507a443">~DigitalOut</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                ::mbed::DigitalOut mbed_digital_out_;</div>
@@ -143,19 +143,19 @@ $(document).ready(function(){initNavTree('digital__out_8hpp_source.html',''); in
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1gpio_1_1_i_digital_write_html"><div class="ttname"><a href="classroblab_1_1common_1_1gpio_1_1_i_digital_write.html">roblab::common::gpio::IDigitalWrite</a></div><div class="ttdoc">デジタル出力を行うインタフェース</div><div class="ttdef"><b>Definition:</b> i_digital_write.hpp:28</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1gpio_1_1_digital_out_html"><div class="ttname"><a href="classroblab_1_1mbed_1_1gpio_1_1_digital_out.html">roblab::mbed::gpio::DigitalOut</a></div><div class="ttdoc">デジタル出力ピン</div><div class="ttdef"><b>Definition:</b> digital_out.hpp:29</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1gpio_1_1_digital_out_html_a572e3dd5702a8253c7b2bfc04eb533dc"><div class="ttname"><a href="classroblab_1_1mbed_1_1gpio_1_1_digital_out.html#a572e3dd5702a8253c7b2bfc04eb533dc">roblab::mbed::gpio::DigitalOut::~DigitalOut</a></div><div class="ttdeci">~DigitalOut()=default</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1gpio_1_1_digital_out_html_adf5990203b60c9867259fa8ef831cbc0"><div class="ttname"><a href="classroblab_1_1mbed_1_1gpio_1_1_digital_out.html#adf5990203b60c9867259fa8ef831cbc0">roblab::mbed::gpio::DigitalOut::DigitalOut</a></div><div class="ttdeci">DigitalOut(PinName pin)</div><div class="ttdoc">コンストラクタ</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1gpio_1_1_digital_out_html_af855ee1db9b0db56c7529ebbd95840e0"><div class="ttname"><a href="classroblab_1_1mbed_1_1gpio_1_1_digital_out.html#af855ee1db9b0db56c7529ebbd95840e0">roblab::mbed::gpio::DigitalOut::WriteImpl</a></div><div class="ttdeci">void WriteImpl(bool value)</div><div class="ttdoc">デジタル出力を行う</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_digital_write_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_digital_write.html">alps::cmn::gpio::IDigitalWrite</a></div><div class="ttdoc">デジタル出力を行うインタフェース</div><div class="ttdef"><b>Definition:</b> i_digital_write.hpp:28</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_digital_out_html"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html">alps::mbed::gpio::DigitalOut</a></div><div class="ttdoc">デジタル出力ピン</div><div class="ttdef"><b>Definition:</b> digital_out.hpp:29</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_digital_out_html_a6eb6820df1ebf83ac37d19596507a443"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#a6eb6820df1ebf83ac37d19596507a443">alps::mbed::gpio::DigitalOut::~DigitalOut</a></div><div class="ttdeci">~DigitalOut()=default</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_digital_out_html_ab0e08bc4ca3f7d39281b32aafd1149a7"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#ab0e08bc4ca3f7d39281b32aafd1149a7">alps::mbed::gpio::DigitalOut::DigitalOut</a></div><div class="ttdeci">DigitalOut(PinName pin)</div><div class="ttdoc">コンストラクタ</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_digital_out_html_af5ac84747d9943414681fc8e88cc4331"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#af5ac84747d9943414681fc8e88cc4331">alps::mbed::gpio::DigitalOut::Write</a></div><div class="ttdeci">void Write(bool value)</div><div class="ttdoc">デジタル出力を行う</div></div>
 <div class="ttc" id="ai__digital__write_8hpp_html"><div class="ttname"><a href="i__digital__write_8hpp.html">i_digital_write.hpp</a></div></div>
-<div class="ttc" id="anamespaceroblab_html"><div class="ttname"><a href="namespaceroblab.html">roblab</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c33f9a09b0104de6eebd3809920e616c.html">roblab_mbed_lib</a></li><li class="navelem"><a class="el" href="dir_858b1795adc2910eb251408166003f7f.html">include</a></li><li class="navelem"><a class="el" href="dir_8f2461ed01872a68db9a9b31590e2846.html">roblab_mbed</a></li><li class="navelem"><a class="el" href="dir_f45560154fa7502d930f29fb8edf9890.html">gpio</a></li><li class="navelem"><a class="el" href="digital__out_8hpp.html">digital_out.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_074e7ce7c414df3f1b9789b8bf27b85a.html">alps_mbed_lib</a></li><li class="navelem"><a class="el" href="dir_06d0b736b1247c5c94714e69ec444f3a.html">include</a></li><li class="navelem"><a class="el" href="dir_c813e285ae311a0f099f263ae937976d.html">alps_mbed</a></li><li class="navelem"><a class="el" href="dir_cfc86feb12eb97e7fc67660f2e3b546b.html">gpio</a></li><li class="navelem"><a class="el" href="digital__out_8hpp.html">digital_out.hpp</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>

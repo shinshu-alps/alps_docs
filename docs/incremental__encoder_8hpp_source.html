@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.9.7" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alps: roblab_mbed_lib/include/roblab_mbed/sensor/incremental_encoder.hpp ソースファイル</title>
+    <title>Alps: alps_mbed_lib/include/alps_mbed/sensor/incremental_encoder.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
     <script type="text/javascript" src="jquery.js"></script>
@@ -47,7 +47,7 @@
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">Alps
                             </div>
-                            <div id="projectbrief">roboken shinshu library</div>
+                            <div id="projectbrief">roblab shinshu library</div>
                         </td>
                     </tr>
                 </tbody>
@@ -113,33 +113,33 @@ $(document).ready(function(){initNavTree('incremental__encoder_8hpp_source.html'
 </div><!--header-->
 <div class="contents">
 <a href="incremental__encoder_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ROBLAB_COMMON_SENSOR_INCREMENTAL_ENCODER_HPP_</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ROBLAB_COMMON_SENSOR_INCREMENTAL_ENCODER_HPP_</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_CMN_SENSOR_INCREMENTAL_ENCODER_HPP_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_CMN_SENSOR_INCREMENTAL_ENCODER_HPP_</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="incremental__encoder__base_8hpp.html">roblab_common/sensor/incremental_encoder_base.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="digital__in_8hpp.html">roblab_mbed/gpio/digital_in.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="interrupt__in_8hpp.html">roblab_mbed/gpio/interrupt_in.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="incremental__encoder__base_8hpp.html">alps_cmn/sensor/incremental_encoder_base.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="digital__in_8hpp.html">alps_mbed/gpio/digital_in.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="interrupt__in_8hpp.html">alps_mbed/gpio/interrupt_in.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceroblab.html">roblab</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">namespace </span>mbed</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespaceroblab_1_1mbed_1_1sensor.html">   23</a></span>        <span class="keyword">namespace </span>sensor</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keyword">namespace </span>sensor</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        {</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classroblab_1_1mbed_1_1sensor_1_1_incremental_encoder.html">   30</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classroblab_1_1mbed_1_1sensor_1_1_incremental_encoder.html">IncrementalEncoder</a> : <span class="keyword">public</span> <a class="code hl_class" href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html">common::sensor::IncrementalEncoderBase</a>&lt;mbed::gpio::InterruptIn, mbed::gpio::DigitalIn&gt;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1sensor_1_1_incremental_encoder.html">   30</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classalps_1_1mbed_1_1sensor_1_1_incremental_encoder.html">IncrementalEncoder</a> : <span class="keyword">public</span> <a class="code hl_class" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html">cmn::sensor::IncrementalEncoderBase</a>&lt;mbed::gpio::InterruptIn, mbed::gpio::DigitalIn&gt;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            {</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                <a class="code hl_class" href="classroblab_1_1mbed_1_1gpio_1_1_interrupt_in.html">gpio::InterruptIn</a> interrupt_A_;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                <a class="code hl_class" href="classroblab_1_1mbed_1_1gpio_1_1_digital_in.html">gpio::DigitalIn</a> read_B_;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                <a class="code hl_class" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html">gpio::InterruptIn</a> interrupt_A_;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                <a class="code hl_class" href="classalps_1_1mbed_1_1gpio_1_1_digital_in.html">gpio::DigitalIn</a> read_B_;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classroblab_1_1mbed_1_1sensor_1_1_incremental_encoder.html#abc59c73d9f2ee12703ba06ce923a156e">   46</a></span>                <a class="code hl_function" href="classroblab_1_1mbed_1_1sensor_1_1_incremental_encoder.html#abc59c73d9f2ee12703ba06ce923a156e">IncrementalEncoder</a>(PinName a_pin, PinName b_pin, uint16_t pulses_per_rev)</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                    : common::sensor::<a class="code hl_function" href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html#a114704ae903f83c8c12847d2e3448651">IncrementalEncoderBase</a>&lt;mbed::gpio::InterruptIn, mbed::gpio::DigitalIn&gt;(nullptr, nullptr, pulses_per_rev),</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1sensor_1_1_incremental_encoder.html#a09118460df9d82f640ea19d6b37bf0c7">   46</a></span>                <a class="code hl_function" href="classalps_1_1mbed_1_1sensor_1_1_incremental_encoder.html#a09118460df9d82f640ea19d6b37bf0c7">IncrementalEncoder</a>(PinName a_pin, PinName b_pin, uint16_t pulses_per_rev)</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                    : cmn::sensor::<a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html#a70b07c544e0db2d7d7ad31c1f51436cb">IncrementalEncoderBase</a>&lt;mbed::gpio::InterruptIn, mbed::gpio::DigitalIn&gt;(nullptr, nullptr, pulses_per_rev),</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                      interrupt_A_(a_pin),</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                      read_B_(b_pin)</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                    this-&gt;<a class="code hl_function" href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html#a4ba43cd296cb8e4ca32c23347daa5b10">SetInterface</a>(&amp;interrupt_A_, &amp;read_B_);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                    this-&gt;<a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html#a81d055b091cdc21c9302900bc3d3370b">SetInterface</a>(&amp;interrupt_A_, &amp;read_B_);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                }</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            };</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        }</div>
@@ -147,23 +147,23 @@ $(document).ready(function(){initNavTree('incremental__encoder_8hpp_source.html'
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1sensor_1_1_incremental_encoder_base_html"><div class="ttname"><a href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html">roblab::common::sensor::IncrementalEncoderBase</a></div><div class="ttdoc">A相B相からなるインクリメンタルエンコーダの共通実装</div><div class="ttdef"><b>Definition:</b> incremental_encoder_base.hpp:33</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1sensor_1_1_incremental_encoder_base_html_a114704ae903f83c8c12847d2e3448651"><div class="ttname"><a href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html#a114704ae903f83c8c12847d2e3448651">roblab::common::sensor::IncrementalEncoderBase&lt; mbed::gpio::InterruptIn, mbed::gpio::DigitalIn &gt;::IncrementalEncoderBase</a></div><div class="ttdeci">IncrementalEncoderBase(gpio::IAttachInterrupt&lt; mbed::gpio::InterruptIn &gt; *interrupt_A, gpio::IDigitalRead&lt; mbed::gpio::DigitalIn &gt; *read_B, uint16_t pulses_per_rev)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> incremental_encoder_base.hpp:42</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1sensor_1_1_incremental_encoder_base_html_a4ba43cd296cb8e4ca32c23347daa5b10"><div class="ttname"><a href="classroblab_1_1common_1_1sensor_1_1_incremental_encoder_base.html#a4ba43cd296cb8e4ca32c23347daa5b10">roblab::common::sensor::IncrementalEncoderBase&lt; mbed::gpio::InterruptIn, mbed::gpio::DigitalIn &gt;::SetInterface</a></div><div class="ttdeci">void SetInterface(gpio::IAttachInterrupt&lt; mbed::gpio::InterruptIn &gt; *interrupt_A, gpio::IDigitalRead&lt; mbed::gpio::DigitalIn &gt; *read_B)</div><div class="ttdoc">A相の割り込み設定インタフェースとB相のデジタル入力を設定する</div><div class="ttdef"><b>Definition:</b> incremental_encoder_base.hpp:129</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1gpio_1_1_digital_in_html"><div class="ttname"><a href="classroblab_1_1mbed_1_1gpio_1_1_digital_in.html">roblab::mbed::gpio::DigitalIn</a></div><div class="ttdoc">デジタル入力ピン</div><div class="ttdef"><b>Definition:</b> digital_in.hpp:29</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1gpio_1_1_interrupt_in_html"><div class="ttname"><a href="classroblab_1_1mbed_1_1gpio_1_1_interrupt_in.html">roblab::mbed::gpio::InterruptIn</a></div><div class="ttdoc">割り込み入力ピン</div><div class="ttdef"><b>Definition:</b> interrupt_in.hpp:31</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1sensor_1_1_incremental_encoder_html"><div class="ttname"><a href="classroblab_1_1mbed_1_1sensor_1_1_incremental_encoder.html">roblab::mbed::sensor::IncrementalEncoder</a></div><div class="ttdoc">A相B相からなるインクリメンタルエンコーダのmbed実装</div><div class="ttdef"><b>Definition:</b> incremental_encoder.hpp:31</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1sensor_1_1_incremental_encoder_html_abc59c73d9f2ee12703ba06ce923a156e"><div class="ttname"><a href="classroblab_1_1mbed_1_1sensor_1_1_incremental_encoder.html#abc59c73d9f2ee12703ba06ce923a156e">roblab::mbed::sensor::IncrementalEncoder::IncrementalEncoder</a></div><div class="ttdeci">IncrementalEncoder(PinName a_pin, PinName b_pin, uint16_t pulses_per_rev)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> incremental_encoder.hpp:46</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base_html"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html">alps::cmn::sensor::IncrementalEncoderBase</a></div><div class="ttdoc">A相B相からなるインクリメンタルエンコーダの共通実装</div><div class="ttdef"><b>Definition:</b> incremental_encoder_base.hpp:33</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base_html_a70b07c544e0db2d7d7ad31c1f51436cb"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html#a70b07c544e0db2d7d7ad31c1f51436cb">alps::cmn::sensor::IncrementalEncoderBase&lt; mbed::gpio::InterruptIn, mbed::gpio::DigitalIn &gt;::IncrementalEncoderBase</a></div><div class="ttdeci">IncrementalEncoderBase(gpio::IAttachInterrupt&lt; mbed::gpio::InterruptIn &gt; *interrupt_A, gpio::IDigitalRead&lt; mbed::gpio::DigitalIn &gt; *read_B, uint16_t pulses_per_rev)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> incremental_encoder_base.hpp:42</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base_html_a81d055b091cdc21c9302900bc3d3370b"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html#a81d055b091cdc21c9302900bc3d3370b">alps::cmn::sensor::IncrementalEncoderBase&lt; mbed::gpio::InterruptIn, mbed::gpio::DigitalIn &gt;::SetInterface</a></div><div class="ttdeci">void SetInterface(gpio::IAttachInterrupt&lt; mbed::gpio::InterruptIn &gt; *interrupt_A, gpio::IDigitalRead&lt; mbed::gpio::DigitalIn &gt; *read_B)</div><div class="ttdoc">A相の割り込み設定インタフェースとB相のデジタル入力を設定する</div><div class="ttdef"><b>Definition:</b> incremental_encoder_base.hpp:129</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_digital_in_html"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_digital_in.html">alps::mbed::gpio::DigitalIn</a></div><div class="ttdoc">デジタル入力ピン</div><div class="ttdef"><b>Definition:</b> digital_in.hpp:29</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_interrupt_in_html"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html">alps::mbed::gpio::InterruptIn</a></div><div class="ttdoc">割り込み入力ピン</div><div class="ttdef"><b>Definition:</b> interrupt_in.hpp:31</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1sensor_1_1_incremental_encoder_html"><div class="ttname"><a href="classalps_1_1mbed_1_1sensor_1_1_incremental_encoder.html">alps::mbed::sensor::IncrementalEncoder</a></div><div class="ttdoc">A相B相からなるインクリメンタルエンコーダのmbed実装</div><div class="ttdef"><b>Definition:</b> incremental_encoder.hpp:31</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1sensor_1_1_incremental_encoder_html_a09118460df9d82f640ea19d6b37bf0c7"><div class="ttname"><a href="classalps_1_1mbed_1_1sensor_1_1_incremental_encoder.html#a09118460df9d82f640ea19d6b37bf0c7">alps::mbed::sensor::IncrementalEncoder::IncrementalEncoder</a></div><div class="ttdeci">IncrementalEncoder(PinName a_pin, PinName b_pin, uint16_t pulses_per_rev)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> incremental_encoder.hpp:46</div></div>
 <div class="ttc" id="adigital__in_8hpp_html"><div class="ttname"><a href="digital__in_8hpp.html">digital_in.hpp</a></div></div>
 <div class="ttc" id="aincremental__encoder__base_8hpp_html"><div class="ttname"><a href="incremental__encoder__base_8hpp.html">incremental_encoder_base.hpp</a></div></div>
 <div class="ttc" id="ainterrupt__in_8hpp_html"><div class="ttname"><a href="interrupt__in_8hpp.html">interrupt_in.hpp</a></div></div>
-<div class="ttc" id="anamespaceroblab_html"><div class="ttname"><a href="namespaceroblab.html">roblab</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c33f9a09b0104de6eebd3809920e616c.html">roblab_mbed_lib</a></li><li class="navelem"><a class="el" href="dir_858b1795adc2910eb251408166003f7f.html">include</a></li><li class="navelem"><a class="el" href="dir_8f2461ed01872a68db9a9b31590e2846.html">roblab_mbed</a></li><li class="navelem"><a class="el" href="dir_ca16e9b9462a3195835ea2b0707bb836.html">sensor</a></li><li class="navelem"><a class="el" href="incremental__encoder_8hpp.html">incremental_encoder.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_074e7ce7c414df3f1b9789b8bf27b85a.html">alps_mbed_lib</a></li><li class="navelem"><a class="el" href="dir_06d0b736b1247c5c94714e69ec444f3a.html">include</a></li><li class="navelem"><a class="el" href="dir_c813e285ae311a0f099f263ae937976d.html">alps_mbed</a></li><li class="navelem"><a class="el" href="dir_44638994a5d30400bbaf5d2a0133e54c.html">sensor</a></li><li class="navelem"><a class="el" href="incremental__encoder_8hpp.html">incremental_encoder.hpp</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>

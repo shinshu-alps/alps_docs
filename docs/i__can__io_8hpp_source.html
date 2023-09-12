@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.9.7" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alps: roblab_common_lib/include/roblab_common/serial/i_can_io.hpp ソースファイル</title>
+    <title>Alps: alps_common_lib/include/alps_cmn/communication/i_can_io.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
     <script type="text/javascript" src="jquery.js"></script>
@@ -47,7 +47,7 @@
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">Alps
                             </div>
-                            <div id="projectbrief">roboken shinshu library</div>
+                            <div id="projectbrief">roblab shinshu library</div>
                         </td>
                     </tr>
                 </tbody>
@@ -113,48 +113,48 @@ $(document).ready(function(){initNavTree('i__can__io_8hpp_source.html',''); init
 </div><!--header-->
 <div class="contents">
 <a href="i__can__io_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ROBLAB_COMMON_I_CAN_IO_HPP_</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ROBLAB_COMMON_I_CAN_IO_HPP_</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_CMN_I_CAN_IO_HPP_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_CMN_I_CAN_IO_HPP_</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="can__data__frame_8hpp.html">roblab_common/serial/can_data_frame.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="can__data__frame_8hpp.html">alps_cmn/communication/can_data_frame.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceroblab.html">roblab</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">namespace </span>common</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">namespace </span>cmn</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">namespace </span>serial</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">namespace </span>communication</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        {</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keyword">template</span> &lt;<span class="keyword">class</span> Derived&gt;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1serial_1_1_i_can_io.html">   29</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classroblab_1_1common_1_1serial_1_1_i_can_io.html">ICanIo</a></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">   29</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">ICanIo</a></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            {</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1serial_1_1_i_can_io.html#a02036d8c5c1d658e607a80efa55b9307">   39</a></span>                <span class="keywordtype">bool</span> <a class="code hl_function" href="classroblab_1_1common_1_1serial_1_1_i_can_io.html#a02036d8c5c1d658e607a80efa55b9307">TryRead</a>(<a class="code hl_struct" href="structroblab_1_1common_1_1serial_1_1_can_data_frame.html">CanDataFrame</a> &amp;frame)</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;TryReadImpl(frame);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                }</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1serial_1_1_i_can_io.html#af2788b58fb3ee920c20b624b4735f355">   51</a></span>                <span class="keywordtype">bool</span> <a class="code hl_function" href="classroblab_1_1common_1_1serial_1_1_i_can_io.html#af2788b58fb3ee920c20b624b4735f355">Write</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structroblab_1_1common_1_1serial_1_1_can_data_frame.html">CanDataFrame</a> &amp;frame)</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                {</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;WriteImpl(frame);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                }</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            };</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html#af8dced04191dcc8f0415cf736a5342fd">   40</a></span>                <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html#af8dced04191dcc8f0415cf736a5342fd">CallTryRead</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">CanDataFrame</a> &amp;frame)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;TryRead(frame);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html#aed6eeb1f824156637eab480eccdf4556">   53</a></span>                <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html#aed6eeb1f824156637eab480eccdf4556">CallWrite</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">CanDataFrame</a> &amp;frame)</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;Write(frame);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            };</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="acan__data__frame_8hpp_html"><div class="ttname"><a href="can__data__frame_8hpp.html">can_data_frame.hpp</a></div><div class="ttdoc">CANフレームを表す構造体</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1serial_1_1_i_can_io_html"><div class="ttname"><a href="classroblab_1_1common_1_1serial_1_1_i_can_io.html">roblab::common::serial::ICanIo</a></div><div class="ttdoc">CAN通信IOのインターフェース</div><div class="ttdef"><b>Definition:</b> i_can_io.hpp:30</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1serial_1_1_i_can_io_html_a02036d8c5c1d658e607a80efa55b9307"><div class="ttname"><a href="classroblab_1_1common_1_1serial_1_1_i_can_io.html#a02036d8c5c1d658e607a80efa55b9307">roblab::common::serial::ICanIo::TryRead</a></div><div class="ttdeci">bool TryRead(CanDataFrame &amp;frame)</div><div class="ttdoc">CANフレームを1つ読み取る．</div><div class="ttdef"><b>Definition:</b> i_can_io.hpp:39</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1serial_1_1_i_can_io_html_af2788b58fb3ee920c20b624b4735f355"><div class="ttname"><a href="classroblab_1_1common_1_1serial_1_1_i_can_io.html#af2788b58fb3ee920c20b624b4735f355">roblab::common::serial::ICanIo::Write</a></div><div class="ttdeci">bool Write(const CanDataFrame &amp;frame)</div><div class="ttdoc">CANフレームを1つ書き込む．</div><div class="ttdef"><b>Definition:</b> i_can_io.hpp:51</div></div>
-<div class="ttc" id="anamespaceroblab_html"><div class="ttname"><a href="namespaceroblab.html">roblab</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
-<div class="ttc" id="astructroblab_1_1common_1_1serial_1_1_can_data_frame_html"><div class="ttname"><a href="structroblab_1_1common_1_1serial_1_1_can_data_frame.html">roblab::common::serial::CanDataFrame</a></div><div class="ttdoc">CANフレームを表す構造体．</div><div class="ttdef"><b>Definition:</b> can_data_frame.hpp:29</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_can_io_html"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">alps::cmn::communication::ICanIo</a></div><div class="ttdoc">CAN通信IOのインターフェース</div><div class="ttdef"><b>Definition:</b> i_can_io.hpp:30</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_can_io_html_aed6eeb1f824156637eab480eccdf4556"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html#aed6eeb1f824156637eab480eccdf4556">alps::cmn::communication::ICanIo::CallWrite</a></div><div class="ttdeci">bool CallWrite(const CanDataFrame &amp;frame)</div><div class="ttdoc">インタフェースを介してWrite()関数を呼び出す．挙動: CANフレームを1つ書き込む．</div><div class="ttdef"><b>Definition:</b> i_can_io.hpp:53</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_can_io_html_af8dced04191dcc8f0415cf736a5342fd"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html#af8dced04191dcc8f0415cf736a5342fd">alps::cmn::communication::ICanIo::CallTryRead</a></div><div class="ttdeci">bool CallTryRead(CanDataFrame &amp;frame)</div><div class="ttdoc">インタフェースを介してTryRead()関数を呼び出す．挙動: CANフレームを1つ読み取る．</div><div class="ttdef"><b>Definition:</b> i_can_io.hpp:40</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1_can_data_frame_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">alps::cmn::communication::CanDataFrame</a></div><div class="ttdoc">CANフレームを表す構造体．</div><div class="ttdef"><b>Definition:</b> can_data_frame.hpp:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_efc7c08bb78c728619d6f844434d9ba6.html">roblab_common_lib</a></li><li class="navelem"><a class="el" href="dir_5fc43148380559492dfddd8ae81e32dd.html">include</a></li><li class="navelem"><a class="el" href="dir_28693fc7a38bf8c5629bdf3b63267db9.html">roblab_common</a></li><li class="navelem"><a class="el" href="dir_ec8c0e597e474906666f1240ea0baa41.html">serial</a></li><li class="navelem"><a class="el" href="i__can__io_8hpp.html">i_can_io.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_fcd1ba41f8679fcc7bf76d667eaa0e17.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_ce1e71e2103ac83e6d6cc720a9feeeb7.html">include</a></li><li class="navelem"><a class="el" href="dir_cc648f72f51f156e42f9863c0e5bf5fb.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_76fd7680a09542374d3e212281ba6ee2.html">communication</a></li><li class="navelem"><a class="el" href="i__can__io_8hpp.html">i_can_io.hpp</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>

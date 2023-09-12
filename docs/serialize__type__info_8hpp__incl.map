@@ -1,5 +1,5 @@
-<map id="roblab_common_lib/include/roblab_common/serial/serialize_type_info.hpp" name="roblab_common_lib/include/roblab_common/serial/serialize_type_info.hpp">
-<area shape="rect" id="node1" title="DataSeializerで変換する型に関する情報" alt="" coords="132,5,363,60"/>
+<map id="alps_common_lib/include/alps_cmn/communication/serialize_type_info.hpp" name="alps_common_lib/include/alps_cmn/communication/serialize_type_info.hpp">
+<area shape="rect" id="node1" title="DataSeializerで変換する型に関する情報" alt="" coords="151,5,344,60"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,108,97,133"/>
 <area shape="rect" id="node3" title=" " alt="" coords="121,108,192,133"/>
 <area shape="rect" id="node4" title=" " alt="" coords="216,108,279,133"/>

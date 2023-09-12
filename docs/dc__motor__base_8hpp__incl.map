@@ -1,6 +1,6 @@
-<map id="roblab_common_lib/include/roblab_common/actuator/dc_motor_base.hpp" name="roblab_common_lib/include/roblab_common/actuator/dc_motor_base.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="224,5,425,60"/>
-<area shape="rect" id="node2" href="$i__pwm__set__pulse__width_8hpp.html" title=" " alt="" coords="5,108,215,148"/>
-<area shape="rect" id="node3" href="$i__pwm__set__period_8hpp.html" title=" " alt="" coords="239,108,411,148"/>
-<area shape="rect" id="node4" href="$i__digital__write_8hpp.html" title=" " alt="" coords="435,108,593,148"/>
+<map id="alps_common_lib/include/alps_cmn/actuator/dc_motor_base.hpp" name="alps_common_lib/include/alps_cmn/actuator/dc_motor_base.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="180,5,367,60"/>
+<area shape="rect" id="node2" href="$i__pwm__set__pulse__width_8hpp.html" title=" " alt="" coords="5,108,168,148"/>
+<area shape="rect" id="node3" href="$i__pwm__set__period_8hpp.html" title=" " alt="" coords="192,108,355,148"/>
+<area shape="rect" id="node4" href="$i__digital__write_8hpp.html" title=" " alt="" coords="379,108,551,148"/>
 </map>

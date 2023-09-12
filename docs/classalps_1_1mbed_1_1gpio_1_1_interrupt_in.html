@@ -1,0 +1,355 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps::mbed::gpio::InterruptIn クラス</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">alps::mbed::gpio::InterruptIn クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>割り込み入力ピン  
+ <a href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="interrupt__in_8hpp_source.html">interrupt_in.hpp</a>&gt;</code></p>
+<div class="dynheader">
+alps::mbed::gpio::InterruptIn の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classalps_1_1mbed_1_1gpio_1_1_interrupt_in__inherit__graph.svg" width="390" height="408"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a380ed716d7db062a5b6b9e1c1e6077d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#a380ed716d7db062a5b6b9e1c1e6077d2">InterruptIn</a> (PinName pin)</td></tr>
+<tr class="memdesc:a380ed716d7db062a5b6b9e1c1e6077d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
+<tr class="separator:a380ed716d7db062a5b6b9e1c1e6077d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bd2cf9b6be85f98c4c3ae4ea91b9141"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#a8bd2cf9b6be85f98c4c3ae4ea91b9141">AttachInterrupt</a> (etl::delegate&lt; void()&gt; func, <a class="el" href="namespacealps_1_1cmn_1_1gpio.html#a5e6ac69b85cb0a3ebf618df6f6e316a9">cmn::gpio::InterruptMode</a> mode)</td></tr>
+<tr class="memdesc:a8bd2cf9b6be85f98c4c3ae4ea91b9141"><td class="mdescLeft">&#160;</td><td class="mdescRight">割り込みを設定する  <br /></td></tr>
+<tr class="separator:a8bd2cf9b6be85f98c4c3ae4ea91b9141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f713f49b4f69edced5c33e4bc920e48"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#a6f713f49b4f69edced5c33e4bc920e48">Read</a> ()</td></tr>
+<tr class="memdesc:a6f713f49b4f69edced5c33e4bc920e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">デジタル入力を行う  <br /></td></tr>
+<tr class="separator:a6f713f49b4f69edced5c33e4bc920e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58c433a01a827f58f76954618ab11a6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#a58c433a01a827f58f76954618ab11a6b">~InterruptIn</a> ()=default</td></tr>
+<tr class="separator:a58c433a01a827f58f76954618ab11a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee3316c8155af686d9d5a6dade2c0045"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_attach_interrupt.html#aee3316c8155af686d9d5a6dade2c0045">CallAttachInterrupt</a> (etl::delegate&lt; void()&gt; func, InterruptMode mode)</td></tr>
+<tr class="memdesc:aee3316c8155af686d9d5a6dade2c0045"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してAttachInterrupt()関数を呼び出す．挙動: 割り込みを設定する  <br /></td></tr>
+<tr class="separator:aee3316c8155af686d9d5a6dade2c0045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e360236ea7d615c194aac85d689df1e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_read.html#a8e360236ea7d615c194aac85d689df1e">CallRead</a> ()</td></tr>
+<tr class="memdesc:a8e360236ea7d615c194aac85d689df1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してRead()関数を呼び出す．挙動: デジタル入力を読む  <br /></td></tr>
+<tr class="separator:a8e360236ea7d615c194aac85d689df1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>割り込み入力ピン </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a380ed716d7db062a5b6b9e1c1e6077d2" name="a380ed716d7db062a5b6b9e1c1e6077d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a380ed716d7db062a5b6b9e1c1e6077d2">&#9670;&#160;</a></span>InterruptIn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">alps::mbed::gpio::InterruptIn::InterruptIn </td>
+          <td>(</td>
+          <td class="paramtype">PinName&#160;</td>
+          <td class="paramname"><em>pin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pin</td><td>ピン名 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a58c433a01a827f58f76954618ab11a6b" name="a58c433a01a827f58f76954618ab11a6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58c433a01a827f58f76954618ab11a6b">&#9670;&#160;</a></span>~InterruptIn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">alps::mbed::gpio::InterruptIn::~InterruptIn </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a8bd2cf9b6be85f98c4c3ae4ea91b9141" name="a8bd2cf9b6be85f98c4c3ae4ea91b9141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bd2cf9b6be85f98c4c3ae4ea91b9141">&#9670;&#160;</a></span>AttachInterrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alps::mbed::gpio::InterruptIn::AttachInterrupt </td>
+          <td>(</td>
+          <td class="paramtype">etl::delegate&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacealps_1_1cmn_1_1gpio.html#a5e6ac69b85cb0a3ebf618df6f6e316a9">cmn::gpio::InterruptMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>割り込みを設定する </p>
+<p>IAttachInterruptの実装</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>割り込み時に呼び出される関数 </td></tr>
+    <tr><td class="paramname">mode</td><td>割り込みの種類 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aee3316c8155af686d9d5a6dade2c0045" name="aee3316c8155af686d9d5a6dade2c0045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee3316c8155af686d9d5a6dade2c0045">&#9670;&#160;</a></span>CallAttachInterrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_attach_interrupt.html">alps::cmn::gpio::IAttachInterrupt</a>&lt; <a class="el" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html">InterruptIn</a>  &gt;::CallAttachInterrupt </td>
+          <td>(</td>
+          <td class="paramtype">etl::delegate&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacealps_1_1cmn_1_1gpio.html#a5e6ac69b85cb0a3ebf618df6f6e316a9">InterruptMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>インタフェースを介してAttachInterrupt()関数を呼び出す．挙動: 割り込みを設定する </p>
+<dl class="section note"><dt>覚え書き</dt><dd>継承クラスはこの関数と同じ挙動のAttachInterrupt()関数を実装すること．</dd></dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>割り込み時に呼び出される関数 </td></tr>
+    <tr><td class="paramname">mode</td><td>割り込みの種類 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8e360236ea7d615c194aac85d689df1e" name="a8e360236ea7d615c194aac85d689df1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e360236ea7d615c194aac85d689df1e">&#9670;&#160;</a></span>CallRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_read.html">alps::cmn::gpio::IDigitalRead</a>&lt; <a class="el" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html">InterruptIn</a>  &gt;::CallRead </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>インタフェースを介してRead()関数を呼び出す．挙動: デジタル入力を読む </p>
+<dl class="section note"><dt>覚え書き</dt><dd>継承クラスはこの関数と同じ挙動のRead()関数を実装すること．</dd></dl>
+<dl class="section return"><dt>戻り値</dt><dd>true HIGH </dd>
+<dd>
+false LOW </dd></dl>
+
+</div>
+</div>
+<a id="a6f713f49b4f69edced5c33e4bc920e48" name="a6f713f49b4f69edced5c33e4bc920e48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f713f49b4f69edced5c33e4bc920e48">&#9670;&#160;</a></span>Read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool alps::mbed::gpio::InterruptIn::Read </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デジタル入力を行う </p>
+<p>IDigitalReadの実装</p>
+<dl class="section return"><dt>戻り値</dt><dd>true 入力がHigh </dd>
+<dd>
+false 入力がLow </dd></dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>alps_mbed_lib/include/alps_mbed/gpio/<a class="el" href="interrupt__in_8hpp_source.html">interrupt_in.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacealps.html">alps</a></li><li class="navelem"><a class="el" href="namespacealps_1_1mbed.html">mbed</a></li><li class="navelem"><a class="el" href="namespacealps_1_1mbed_1_1gpio.html">gpio</a></li><li class="navelem"><a class="el" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html">InterruptIn</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['bufferedcanio_0',['BufferedCanIo',['../classroblab_1_1mbed_1_1serial_1_1_buffered_can_io.html',1,'roblab::mbed::serial']]],
-  ['byteringbuffer_1',['ByteRingBuffer',['../classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html',1,'roblab::common::serial']]]
+  ['bufferedcanio_0',['BufferedCanIo',['../classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html',1,'alps::mbed::communication']]],
+  ['byteringbuffer_1',['ByteRingBuffer',['../classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html',1,'alps::cmn::communication']]]
 ];

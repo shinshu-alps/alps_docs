@@ -1,3 +1,4 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classroblab_1_1common_1_1gpio_1_1_i_digital_read.html" title=" " alt="" coords="5,5,211,60"/>
+<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1communication_1_1_i_can_io.html" title=" " alt="" coords="5,5,200,45"/>
+<area shape="rect" id="node2" href="$classalps_1_1lin_1_1communication_1_1_socket_can_io.html" title="SocketCANを用いてCAN通信を行うクラス．" alt="" coords="248,5,431,45"/>
 </map>

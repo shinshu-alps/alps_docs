@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.9.7" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alps: roblab_mbed_lib/include/roblab_mbed/serial/buffered_can_io.hpp ソースファイル</title>
+    <title>Alps: alps_mbed_lib/include/alps_mbed/communication/buffered_can_io.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
     <script type="text/javascript" src="jquery.js"></script>
@@ -47,7 +47,7 @@
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">Alps
                             </div>
-                            <div id="projectbrief">roboken shinshu library</div>
+                            <div id="projectbrief">roblab shinshu library</div>
                         </td>
                     </tr>
                 </tbody>
@@ -113,29 +113,29 @@ $(document).ready(function(){initNavTree('buffered__can__io_8hpp_source.html',''
 </div><!--header-->
 <div class="contents">
 <a href="buffered__can__io_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ROBLAB_MBED_BUFFERED_CAN_IO_HPP_</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ROBLAB_MBED_BUFFERED_CAN_IO_HPP_</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_MBED_BUFFERED_CAN_IO_HPP_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_MBED_BUFFERED_CAN_IO_HPP_</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="i__can__io_8hpp.html">roblab_common/serial/i_can_io.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="i__can__io_8hpp.html">alps_cmn/communication/i_can_io.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;mbed.h&quot;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;etl/circular_buffer.h&gt;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceroblab.html">roblab</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">namespace </span>mbed</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespaceroblab_1_1mbed_1_1serial.html">   23</a></span>        <span class="keyword">namespace </span>serial</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespacealps_1_1mbed_1_1communication.html">   23</a></span>        <span class="keyword">namespace </span>communication</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classroblab_1_1mbed_1_1serial_1_1_buffered_can_io.html">   30</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classroblab_1_1mbed_1_1serial_1_1_buffered_can_io.html">BufferedCanIo</a> : <span class="keyword">public</span> <a class="code hl_class" href="classroblab_1_1common_1_1serial_1_1_i_can_io.html">common::serial::ICanIo</a>&lt;BufferedCanIo&gt;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html">   30</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html">BufferedCanIo</a> : <span class="keyword">public</span> <a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">cmn::communication::ICanIo</a>&lt;BufferedCanIo&gt;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            {</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classroblab_1_1mbed_1_1serial_1_1_buffered_can_io.html#a84b17a05ad81c4d9c977fc44a901f68f">   40</a></span>                <a class="code hl_function" href="classroblab_1_1mbed_1_1serial_1_1_buffered_can_io.html#a84b17a05ad81c4d9c977fc44a901f68f">BufferedCanIo</a>(PinName rd, PinName td, <span class="keywordtype">int</span> bitrate = 1000000);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#a70512bb11865295755a0e7ac21a1ccbf">   40</a></span>                <a class="code hl_function" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#a70512bb11865295755a0e7ac21a1ccbf">BufferedCanIo</a>(PinName rd, PinName td, <span class="keywordtype">int</span> bitrate = 1000000);</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classroblab_1_1mbed_1_1serial_1_1_buffered_can_io.html#a5ef0839d3dd917543efe4905c3a94f09">   49</a></span>                <span class="keywordtype">bool</span> <a class="code hl_function" href="classroblab_1_1mbed_1_1serial_1_1_buffered_can_io.html#a5ef0839d3dd917543efe4905c3a94f09">TryReadImpl</a>(<a class="code hl_struct" href="structroblab_1_1common_1_1serial_1_1_can_data_frame.html">common::serial::CanDataFrame</a> &amp;frame);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#aadd4231c3015321d2b31cd2dc8f5934d">   49</a></span>                <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#aadd4231c3015321d2b31cd2dc8f5934d">TryRead</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">cmn::communication::CanDataFrame</a> &amp;frame);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classroblab_1_1mbed_1_1serial_1_1_buffered_can_io.html#aa2f169ab3e8ee1ec0a727ee0a9574d34">   58</a></span>                <span class="keywordtype">bool</span> <a class="code hl_function" href="classroblab_1_1mbed_1_1serial_1_1_buffered_can_io.html#aa2f169ab3e8ee1ec0a727ee0a9574d34">WriteImpl</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structroblab_1_1common_1_1serial_1_1_can_data_frame.html">common::serial::CanDataFrame</a> &amp;frame);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#abd5b9ecff28a04e3b1d61b06fb6e7667">   58</a></span>                <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#abd5b9ecff28a04e3b1d61b06fb6e7667">Write</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">cmn::communication::CanDataFrame</a> &amp;frame);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classroblab_1_1mbed_1_1serial_1_1_buffered_can_io.html#a70dd0adc5f9cc1c1dcdf534b65e66d93">   65</a></span>                uint16_t <a class="code hl_function" href="classroblab_1_1mbed_1_1serial_1_1_buffered_can_io.html#a70dd0adc5f9cc1c1dcdf534b65e66d93">GetReceivedFrameNum</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#aa9293a71f9868f7cb01741500c875510">   65</a></span>                uint16_t <a class="code hl_function" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#aa9293a71f9868f7cb01741500c875510">GetReceivedFrameNum</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">                </span>{</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                    <span class="keywordflow">return</span> frame_buffer_.size();</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                }</div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('buffered__can__io_8hpp_source.html',''
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                ::mbed::CAN can_;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                <span class="keyword">constexpr</span> <span class="keyword">static</span> <span class="keywordtype">size_t</span> kBufferSize = 100;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                etl::circular_buffer&lt;common::serial::CanDataFrame, kBufferSize&gt; frame_buffer_{};</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                etl::circular_buffer&lt;cmn::communication::CanDataFrame, kBufferSize&gt; frame_buffer_{};</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                Mutex mutex_;</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            };</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        }</div>
@@ -153,21 +153,21 @@ $(document).ready(function(){initNavTree('buffered__can__io_8hpp_source.html',''
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1serial_1_1_i_can_io_html"><div class="ttname"><a href="classroblab_1_1common_1_1serial_1_1_i_can_io.html">roblab::common::serial::ICanIo</a></div><div class="ttdoc">CAN通信IOのインターフェース</div><div class="ttdef"><b>Definition:</b> i_can_io.hpp:30</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1serial_1_1_buffered_can_io_html"><div class="ttname"><a href="classroblab_1_1mbed_1_1serial_1_1_buffered_can_io.html">roblab::mbed::serial::BufferedCanIo</a></div><div class="ttdoc">MbedのCAN通信IO. 受信割り込みによってデータをバッファリングする．</div><div class="ttdef"><b>Definition:</b> buffered_can_io.hpp:31</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1serial_1_1_buffered_can_io_html_a5ef0839d3dd917543efe4905c3a94f09"><div class="ttname"><a href="classroblab_1_1mbed_1_1serial_1_1_buffered_can_io.html#a5ef0839d3dd917543efe4905c3a94f09">roblab::mbed::serial::BufferedCanIo::TryReadImpl</a></div><div class="ttdeci">bool TryReadImpl(common::serial::CanDataFrame &amp;frame)</div><div class="ttdoc">CANフレームを1つ読み取る．</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1serial_1_1_buffered_can_io_html_a70dd0adc5f9cc1c1dcdf534b65e66d93"><div class="ttname"><a href="classroblab_1_1mbed_1_1serial_1_1_buffered_can_io.html#a70dd0adc5f9cc1c1dcdf534b65e66d93">roblab::mbed::serial::BufferedCanIo::GetReceivedFrameNum</a></div><div class="ttdeci">uint16_t GetReceivedFrameNum() const</div><div class="ttdoc">受信したCANフレームの数を返す</div><div class="ttdef"><b>Definition:</b> buffered_can_io.hpp:65</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1serial_1_1_buffered_can_io_html_a84b17a05ad81c4d9c977fc44a901f68f"><div class="ttname"><a href="classroblab_1_1mbed_1_1serial_1_1_buffered_can_io.html#a84b17a05ad81c4d9c977fc44a901f68f">roblab::mbed::serial::BufferedCanIo::BufferedCanIo</a></div><div class="ttdeci">BufferedCanIo(PinName rd, PinName td, int bitrate=1000000)</div><div class="ttdoc">初期化コンストラクタ</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1serial_1_1_buffered_can_io_html_aa2f169ab3e8ee1ec0a727ee0a9574d34"><div class="ttname"><a href="classroblab_1_1mbed_1_1serial_1_1_buffered_can_io.html#aa2f169ab3e8ee1ec0a727ee0a9574d34">roblab::mbed::serial::BufferedCanIo::WriteImpl</a></div><div class="ttdeci">bool WriteImpl(const common::serial::CanDataFrame &amp;frame)</div><div class="ttdoc">CANフレームを1つ書き込む．</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_can_io_html"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">alps::cmn::communication::ICanIo</a></div><div class="ttdoc">CAN通信IOのインターフェース</div><div class="ttdef"><b>Definition:</b> i_can_io.hpp:30</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1communication_1_1_buffered_can_io_html"><div class="ttname"><a href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html">alps::mbed::communication::BufferedCanIo</a></div><div class="ttdoc">MbedのCAN通信IO. 受信割り込みによってデータをバッファリングする．</div><div class="ttdef"><b>Definition:</b> buffered_can_io.hpp:31</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1communication_1_1_buffered_can_io_html_a70512bb11865295755a0e7ac21a1ccbf"><div class="ttname"><a href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#a70512bb11865295755a0e7ac21a1ccbf">alps::mbed::communication::BufferedCanIo::BufferedCanIo</a></div><div class="ttdeci">BufferedCanIo(PinName rd, PinName td, int bitrate=1000000)</div><div class="ttdoc">初期化コンストラクタ</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1communication_1_1_buffered_can_io_html_aa9293a71f9868f7cb01741500c875510"><div class="ttname"><a href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#aa9293a71f9868f7cb01741500c875510">alps::mbed::communication::BufferedCanIo::GetReceivedFrameNum</a></div><div class="ttdeci">uint16_t GetReceivedFrameNum() const</div><div class="ttdoc">受信したCANフレームの数を返す</div><div class="ttdef"><b>Definition:</b> buffered_can_io.hpp:65</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1communication_1_1_buffered_can_io_html_aadd4231c3015321d2b31cd2dc8f5934d"><div class="ttname"><a href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#aadd4231c3015321d2b31cd2dc8f5934d">alps::mbed::communication::BufferedCanIo::TryRead</a></div><div class="ttdeci">bool TryRead(cmn::communication::CanDataFrame &amp;frame)</div><div class="ttdoc">CANフレームを1つ読み取る．</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1communication_1_1_buffered_can_io_html_abd5b9ecff28a04e3b1d61b06fb6e7667"><div class="ttname"><a href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#abd5b9ecff28a04e3b1d61b06fb6e7667">alps::mbed::communication::BufferedCanIo::Write</a></div><div class="ttdeci">bool Write(const cmn::communication::CanDataFrame &amp;frame)</div><div class="ttdoc">CANフレームを1つ書き込む．</div></div>
 <div class="ttc" id="ai__can__io_8hpp_html"><div class="ttname"><a href="i__can__io_8hpp.html">i_can_io.hpp</a></div></div>
-<div class="ttc" id="anamespaceroblab_html"><div class="ttname"><a href="namespaceroblab.html">roblab</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
-<div class="ttc" id="astructroblab_1_1common_1_1serial_1_1_can_data_frame_html"><div class="ttname"><a href="structroblab_1_1common_1_1serial_1_1_can_data_frame.html">roblab::common::serial::CanDataFrame</a></div><div class="ttdoc">CANフレームを表す構造体．</div><div class="ttdef"><b>Definition:</b> can_data_frame.hpp:29</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1_can_data_frame_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">alps::cmn::communication::CanDataFrame</a></div><div class="ttdoc">CANフレームを表す構造体．</div><div class="ttdef"><b>Definition:</b> can_data_frame.hpp:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c33f9a09b0104de6eebd3809920e616c.html">roblab_mbed_lib</a></li><li class="navelem"><a class="el" href="dir_858b1795adc2910eb251408166003f7f.html">include</a></li><li class="navelem"><a class="el" href="dir_8f2461ed01872a68db9a9b31590e2846.html">roblab_mbed</a></li><li class="navelem"><a class="el" href="dir_1facac1afc55653d03baac48191ccee2.html">serial</a></li><li class="navelem"><a class="el" href="buffered__can__io_8hpp.html">buffered_can_io.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_074e7ce7c414df3f1b9789b8bf27b85a.html">alps_mbed_lib</a></li><li class="navelem"><a class="el" href="dir_06d0b736b1247c5c94714e69ec444f3a.html">include</a></li><li class="navelem"><a class="el" href="dir_c813e285ae311a0f099f263ae937976d.html">alps_mbed</a></li><li class="navelem"><a class="el" href="dir_4ee3a5073a2bddb4e83ff5cc31a8b46d.html">communication</a></li><li class="navelem"><a class="el" href="buffered__can__io_8hpp.html">buffered_can_io.hpp</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>

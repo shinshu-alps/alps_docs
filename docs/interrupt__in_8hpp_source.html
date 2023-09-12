@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.9.7" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alps: roblab_mbed_lib/include/roblab_mbed/gpio/interrupt_in.hpp ソースファイル</title>
+    <title>Alps: alps_mbed_lib/include/alps_mbed/gpio/interrupt_in.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
     <script type="text/javascript" src="jquery.js"></script>
@@ -47,7 +47,7 @@
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">Alps
                             </div>
-                            <div id="projectbrief">roboken shinshu library</div>
+                            <div id="projectbrief">roblab shinshu library</div>
                         </td>
                     </tr>
                 </tbody>
@@ -113,30 +113,30 @@ $(document).ready(function(){initNavTree('interrupt__in_8hpp_source.html',''); i
 </div><!--header-->
 <div class="contents">
 <a href="interrupt__in_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ROBLAB_MBED_LIB_GPIO_INTERRUPT_IN_HPP</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ROBLAB_MBED_LIB_GPIO_INTERRUPT_IN_HPP</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_MBED_LIB_GPIO_INTERRUPT_IN_HPP</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_MBED_LIB_GPIO_INTERRUPT_IN_HPP</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;mbed.h&gt;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="i__attach__interrupt_8hpp.html">roblab_common/gpio/i_attach_interrupt.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="i__digital__read_8hpp.html">roblab_common/gpio/i_digital_read.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="i__attach__interrupt_8hpp.html">alps_cmn/gpio/i_attach_interrupt.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="i__digital__read_8hpp.html">alps_cmn/gpio/i_digital_read.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceroblab.html">roblab</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">namespace </span>mbed</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    {</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keyword">namespace </span>gpio</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classroblab_1_1mbed_1_1gpio_1_1_interrupt_in.html">   29</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classroblab_1_1mbed_1_1gpio_1_1_interrupt_in.html">InterruptIn</a> : <span class="keyword">public</span> <a class="code hl_class" href="classroblab_1_1common_1_1gpio_1_1_i_attach_interrupt.html">roblab::common::gpio::IAttachInterrupt</a>&lt;InterruptIn&gt;,</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                                <span class="keyword">public</span> <a class="code hl_class" href="classroblab_1_1common_1_1gpio_1_1_i_digital_read.html">roblab::common::gpio::IDigitalRead</a>&lt;InterruptIn&gt;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html">   29</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html">InterruptIn</a> : <span class="keyword">public</span> <a class="code hl_class" href="classalps_1_1cmn_1_1gpio_1_1_i_attach_interrupt.html">alps::cmn::gpio::IAttachInterrupt</a>&lt;InterruptIn&gt;,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                                <span class="keyword">public</span> <a class="code hl_class" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_read.html">alps::cmn::gpio::IDigitalRead</a>&lt;InterruptIn&gt;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            {</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classroblab_1_1mbed_1_1gpio_1_1_interrupt_in.html#a2b03651d84a6a1bff6db237e45c00f60">   38</a></span>                <a class="code hl_function" href="classroblab_1_1mbed_1_1gpio_1_1_interrupt_in.html#a2b03651d84a6a1bff6db237e45c00f60">InterruptIn</a>(PinName pin);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#a380ed716d7db062a5b6b9e1c1e6077d2">   38</a></span>                <a class="code hl_function" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#a380ed716d7db062a5b6b9e1c1e6077d2">InterruptIn</a>(PinName pin);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classroblab_1_1mbed_1_1gpio_1_1_interrupt_in.html#acf90147f0f7b7a33eed245a8024d4360">   47</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1mbed_1_1gpio_1_1_interrupt_in.html#acf90147f0f7b7a33eed245a8024d4360">AttachInterruptImpl</a>(etl::delegate&lt;<span class="keywordtype">void</span>()&gt; func, <a class="code hl_enumeration" href="namespaceroblab_1_1common_1_1gpio.html#a6591d88263b6540cd081e4a84bcd4b96">common::gpio::InterruptMode</a> mode);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#a8bd2cf9b6be85f98c4c3ae4ea91b9141">   47</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#a8bd2cf9b6be85f98c4c3ae4ea91b9141">AttachInterrupt</a>(etl::delegate&lt;<span class="keywordtype">void</span>()&gt; func, <a class="code hl_enumeration" href="namespacealps_1_1cmn_1_1gpio.html#a5e6ac69b85cb0a3ebf618df6f6e316a9">cmn::gpio::InterruptMode</a> mode);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classroblab_1_1mbed_1_1gpio_1_1_interrupt_in.html#a85d2b717a4d6d657f61fe1d861c74ae3">   56</a></span>                <span class="keywordtype">bool</span> <a class="code hl_function" href="classroblab_1_1mbed_1_1gpio_1_1_interrupt_in.html#a85d2b717a4d6d657f61fe1d861c74ae3">ReadImpl</a>();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#a6f713f49b4f69edced5c33e4bc920e48">   56</a></span>                <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#a6f713f49b4f69edced5c33e4bc920e48">Read</a>();</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classroblab_1_1mbed_1_1gpio_1_1_interrupt_in.html#ad83d4d87d5a6e722c92ea955a3ab4e2d">   58</a></span>                <a class="code hl_function" href="classroblab_1_1mbed_1_1gpio_1_1_interrupt_in.html#ad83d4d87d5a6e722c92ea955a3ab4e2d">~InterruptIn</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#a58c433a01a827f58f76954618ab11a6b">   58</a></span>                <a class="code hl_function" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#a58c433a01a827f58f76954618ab11a6b">~InterruptIn</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                ::mbed::InterruptIn mbed_interrupt_in_;</div>
@@ -145,23 +145,23 @@ $(document).ready(function(){initNavTree('interrupt__in_8hpp_source.html',''); i
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1gpio_1_1_i_attach_interrupt_html"><div class="ttname"><a href="classroblab_1_1common_1_1gpio_1_1_i_attach_interrupt.html">roblab::common::gpio::IAttachInterrupt</a></div><div class="ttdoc">割り込みを設定するインターフェース</div><div class="ttdef"><b>Definition:</b> i_attach_interrupt.hpp:44</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1gpio_1_1_i_digital_read_html"><div class="ttname"><a href="classroblab_1_1common_1_1gpio_1_1_i_digital_read.html">roblab::common::gpio::IDigitalRead</a></div><div class="ttdoc">デジタル入力を行うインタフェース</div><div class="ttdef"><b>Definition:</b> i_digital_read.hpp:28</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1gpio_1_1_interrupt_in_html"><div class="ttname"><a href="classroblab_1_1mbed_1_1gpio_1_1_interrupt_in.html">roblab::mbed::gpio::InterruptIn</a></div><div class="ttdoc">割り込み入力ピン</div><div class="ttdef"><b>Definition:</b> interrupt_in.hpp:31</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1gpio_1_1_interrupt_in_html_a2b03651d84a6a1bff6db237e45c00f60"><div class="ttname"><a href="classroblab_1_1mbed_1_1gpio_1_1_interrupt_in.html#a2b03651d84a6a1bff6db237e45c00f60">roblab::mbed::gpio::InterruptIn::InterruptIn</a></div><div class="ttdeci">InterruptIn(PinName pin)</div><div class="ttdoc">コンストラクタ</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1gpio_1_1_interrupt_in_html_a85d2b717a4d6d657f61fe1d861c74ae3"><div class="ttname"><a href="classroblab_1_1mbed_1_1gpio_1_1_interrupt_in.html#a85d2b717a4d6d657f61fe1d861c74ae3">roblab::mbed::gpio::InterruptIn::ReadImpl</a></div><div class="ttdeci">bool ReadImpl()</div><div class="ttdoc">デジタル入力を行う</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1gpio_1_1_interrupt_in_html_acf90147f0f7b7a33eed245a8024d4360"><div class="ttname"><a href="classroblab_1_1mbed_1_1gpio_1_1_interrupt_in.html#acf90147f0f7b7a33eed245a8024d4360">roblab::mbed::gpio::InterruptIn::AttachInterruptImpl</a></div><div class="ttdeci">void AttachInterruptImpl(etl::delegate&lt; void()&gt; func, common::gpio::InterruptMode mode)</div><div class="ttdoc">割り込みを設定する</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1gpio_1_1_interrupt_in_html_ad83d4d87d5a6e722c92ea955a3ab4e2d"><div class="ttname"><a href="classroblab_1_1mbed_1_1gpio_1_1_interrupt_in.html#ad83d4d87d5a6e722c92ea955a3ab4e2d">roblab::mbed::gpio::InterruptIn::~InterruptIn</a></div><div class="ttdeci">~InterruptIn()=default</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_attach_interrupt_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_attach_interrupt.html">alps::cmn::gpio::IAttachInterrupt</a></div><div class="ttdoc">割り込みを設定するインターフェース</div><div class="ttdef"><b>Definition:</b> i_attach_interrupt.hpp:44</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_digital_read_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_digital_read.html">alps::cmn::gpio::IDigitalRead</a></div><div class="ttdoc">デジタル入力を行うインタフェース</div><div class="ttdef"><b>Definition:</b> i_digital_read.hpp:28</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_interrupt_in_html"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html">alps::mbed::gpio::InterruptIn</a></div><div class="ttdoc">割り込み入力ピン</div><div class="ttdef"><b>Definition:</b> interrupt_in.hpp:31</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_interrupt_in_html_a380ed716d7db062a5b6b9e1c1e6077d2"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#a380ed716d7db062a5b6b9e1c1e6077d2">alps::mbed::gpio::InterruptIn::InterruptIn</a></div><div class="ttdeci">InterruptIn(PinName pin)</div><div class="ttdoc">コンストラクタ</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_interrupt_in_html_a58c433a01a827f58f76954618ab11a6b"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#a58c433a01a827f58f76954618ab11a6b">alps::mbed::gpio::InterruptIn::~InterruptIn</a></div><div class="ttdeci">~InterruptIn()=default</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_interrupt_in_html_a6f713f49b4f69edced5c33e4bc920e48"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#a6f713f49b4f69edced5c33e4bc920e48">alps::mbed::gpio::InterruptIn::Read</a></div><div class="ttdeci">bool Read()</div><div class="ttdoc">デジタル入力を行う</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_interrupt_in_html_a8bd2cf9b6be85f98c4c3ae4ea91b9141"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#a8bd2cf9b6be85f98c4c3ae4ea91b9141">alps::mbed::gpio::InterruptIn::AttachInterrupt</a></div><div class="ttdeci">void AttachInterrupt(etl::delegate&lt; void()&gt; func, cmn::gpio::InterruptMode mode)</div><div class="ttdoc">割り込みを設定する</div></div>
 <div class="ttc" id="ai__attach__interrupt_8hpp_html"><div class="ttname"><a href="i__attach__interrupt_8hpp.html">i_attach_interrupt.hpp</a></div></div>
 <div class="ttc" id="ai__digital__read_8hpp_html"><div class="ttname"><a href="i__digital__read_8hpp.html">i_digital_read.hpp</a></div></div>
-<div class="ttc" id="anamespaceroblab_1_1common_1_1gpio_html_a6591d88263b6540cd081e4a84bcd4b96"><div class="ttname"><a href="namespaceroblab_1_1common_1_1gpio.html#a6591d88263b6540cd081e4a84bcd4b96">roblab::common::gpio::InterruptMode</a></div><div class="ttdeci">InterruptMode</div><div class="ttdoc">割り込みの種類</div><div class="ttdef"><b>Definition:</b> i_attach_interrupt.hpp:28</div></div>
-<div class="ttc" id="anamespaceroblab_html"><div class="ttname"><a href="namespaceroblab.html">roblab</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1gpio_html_a5e6ac69b85cb0a3ebf618df6f6e316a9"><div class="ttname"><a href="namespacealps_1_1cmn_1_1gpio.html#a5e6ac69b85cb0a3ebf618df6f6e316a9">alps::cmn::gpio::InterruptMode</a></div><div class="ttdeci">InterruptMode</div><div class="ttdoc">割り込みの種類</div><div class="ttdef"><b>Definition:</b> i_attach_interrupt.hpp:28</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c33f9a09b0104de6eebd3809920e616c.html">roblab_mbed_lib</a></li><li class="navelem"><a class="el" href="dir_858b1795adc2910eb251408166003f7f.html">include</a></li><li class="navelem"><a class="el" href="dir_8f2461ed01872a68db9a9b31590e2846.html">roblab_mbed</a></li><li class="navelem"><a class="el" href="dir_f45560154fa7502d930f29fb8edf9890.html">gpio</a></li><li class="navelem"><a class="el" href="interrupt__in_8hpp.html">interrupt_in.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_074e7ce7c414df3f1b9789b8bf27b85a.html">alps_mbed_lib</a></li><li class="navelem"><a class="el" href="dir_06d0b736b1247c5c94714e69ec444f3a.html">include</a></li><li class="navelem"><a class="el" href="dir_c813e285ae311a0f099f263ae937976d.html">alps_mbed</a></li><li class="navelem"><a class="el" href="dir_cfc86feb12eb97e7fc67660f2e3b546b.html">gpio</a></li><li class="navelem"><a class="el" href="interrupt__in_8hpp.html">interrupt_in.hpp</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>

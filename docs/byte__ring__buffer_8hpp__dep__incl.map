@@ -1,12 +1,12 @@
-<map id="roblab_common_lib/include/roblab_common/serial/byte_ring_buffer.hpp" name="roblab_common_lib/include/roblab_common/serial/byte_ring_buffer.hpp">
-<area shape="rect" id="node1" title="シリアル通信用リングバッファー" alt="" coords="286,5,490,60"/>
-<area shape="rect" id="node2" href="$cobs_8hpp.html" title="COBS変換ライブラリ" alt="" coords="29,115,262,155"/>
-<area shape="rect" id="node7" href="$data__serializer_8hpp.html" title="データとバイト列の変換ライブラリ" alt="" coords="286,108,490,163"/>
-<area shape="rect" id="node8" href="$i__uart__io_8hpp.html" title=" " alt="" coords="514,108,715,163"/>
-<area shape="rect" id="node9" href="$uart__io_8hpp.html" title="mbedのUart通信IOライブラリ" alt="" coords="59,211,240,265"/>
-<area shape="rect" id="node10" href="$ubuntu__uart__io_8hpp.html" title="Ubuntuシリアル通信IOライブラリ" alt="" coords="531,211,714,265"/>
-<area shape="rect" id="node3" href="$id__packet__manager_8hpp.html" title="ID付きパケットデータを管理" alt="" coords="287,211,489,265"/>
-<area shape="rect" id="node4" href="$sender_8hpp.html" title="シリアル通信で送るデータを登録" alt="" coords="265,321,511,361"/>
-<area shape="rect" id="node5" href="$pc__uart__connection_8hpp.html" title="パソコンと接続してパケット通信を行うライブラリ" alt="" coords="59,313,240,368"/>
-<area shape="rect" id="node6" href="$mbed__uart__connection_8hpp.html" title="接続された複数のMbedとシリアル通信を行う" alt="" coords="535,313,710,368"/>
+<map id="alps_common_lib/include/alps_cmn/communication/byte_ring_buffer.hpp" name="alps_common_lib/include/alps_cmn/communication/byte_ring_buffer.hpp">
+<area shape="rect" id="node1" title="シリアル通信用リングバッファー" alt="" coords="245,5,439,60"/>
+<area shape="rect" id="node2" href="$cobs_8hpp.html" title="COBS変換ライブラリ" alt="" coords="28,108,221,163"/>
+<area shape="rect" id="node7" href="$data__serializer_8hpp.html" title="データとバイト列の変換ライブラリ" alt="" coords="245,108,439,163"/>
+<area shape="rect" id="node8" href="$i__uart__io_8hpp.html" title=" " alt="" coords="463,108,656,163"/>
+<area shape="rect" id="node9" href="$uart__io_8hpp.html" title="mbedのUart通信IOライブラリ" alt="" coords="18,211,221,265"/>
+<area shape="rect" id="node10" href="$ubuntu__uart__io_8hpp.html" title="Ubuntuシリアル通信IOライブラリ" alt="" coords="472,211,657,265"/>
+<area shape="rect" id="node3" href="$id__packet__manager_8hpp.html" title="ID付きパケットデータを管理" alt="" coords="245,211,439,265"/>
+<area shape="rect" id="node4" href="$sender_8hpp.html" title="シリアル通信で送るデータを登録" alt="" coords="245,313,439,368"/>
+<area shape="rect" id="node5" href="$pc__uart__connection_8hpp.html" title="パソコンと接続してパケット通信を行うライブラリ" alt="" coords="18,313,221,368"/>
+<area shape="rect" id="node6" href="$mbed__uart__connection_8hpp.html" title="接続された複数のMbedとシリアル通信を行う" alt="" coords="463,313,666,368"/>
 </map>

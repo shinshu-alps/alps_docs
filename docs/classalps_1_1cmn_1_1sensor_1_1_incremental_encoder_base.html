@@ -1,0 +1,511 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps::cmn::sensor::IncrementalEncoderBase&lt; AttachInterrupt, DigitalRead &gt; クラステンプレート</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">alps::cmn::sensor::IncrementalEncoderBase&lt; AttachInterrupt, DigitalRead &gt; クラステンプレート</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>A相B相からなるインクリメンタルエンコーダの共通実装  
+ <a href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="incremental__encoder__base_8hpp_source.html">incremental_encoder_base.hpp</a>&gt;</code></p>
+<div class="dynheader">
+alps::cmn::sensor::IncrementalEncoderBase&lt; AttachInterrupt, DigitalRead &gt; の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base__inherit__graph.svg" width="298" height="742"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a70b07c544e0db2d7d7ad31c1f51436cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html#a70b07c544e0db2d7d7ad31c1f51436cb">IncrementalEncoderBase</a> (<a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_attach_interrupt.html">gpio::IAttachInterrupt</a>&lt; AttachInterrupt &gt; *interrupt_A, <a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_read.html">gpio::IDigitalRead</a>&lt; DigitalRead &gt; *read_B, uint16_t pulses_per_rev)</td></tr>
+<tr class="memdesc:a70b07c544e0db2d7d7ad31c1f51436cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
+<tr class="separator:a70b07c544e0db2d7d7ad31c1f51436cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72bf0b16d972528fb1fa01a71caf855e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html#a72bf0b16d972528fb1fa01a71caf855e">Reset</a> ()</td></tr>
+<tr class="memdesc:a72bf0b16d972528fb1fa01a71caf855e"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の回転角度をリセット  <br /></td></tr>
+<tr class="separator:a72bf0b16d972528fb1fa01a71caf855e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13a7baa6f45687241e2b4a9b3ed89987"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html#a13a7baa6f45687241e2b4a9b3ed89987">SetCurrentRad</a> (float current_rad)</td></tr>
+<tr class="memdesc:a13a7baa6f45687241e2b4a9b3ed89987"><td class="mdescLeft">&#160;</td><td class="mdescRight">今の値がcurrent_radになるようにpulses_を変更  <br /></td></tr>
+<tr class="separator:a13a7baa6f45687241e2b4a9b3ed89987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03950bf2582a5f1e1c7dbf38e44af521"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html#a03950bf2582a5f1e1c7dbf38e44af521">GetCurrentState</a> ()</td></tr>
+<tr class="memdesc:a03950bf2582a5f1e1c7dbf38e44af521"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のchannelA,Bの状態を得る  <br /></td></tr>
+<tr class="separator:a03950bf2582a5f1e1c7dbf38e44af521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8e1ee8b38906795b74c41e185983568"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html#aa8e1ee8b38906795b74c41e185983568">GetPulses</a> ()</td></tr>
+<tr class="memdesc:aa8e1ee8b38906795b74c41e185983568"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の回転角度（パルス数）を得る  <br /></td></tr>
+<tr class="separator:aa8e1ee8b38906795b74c41e185983568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955f4174625c998a9bec8a5ee2dfdcd8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html#a955f4174625c998a9bec8a5ee2dfdcd8">GetDeg</a> ()</td></tr>
+<tr class="memdesc:a955f4174625c998a9bec8a5ee2dfdcd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の回転角度(deg)を得る  <br /></td></tr>
+<tr class="separator:a955f4174625c998a9bec8a5ee2dfdcd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71a1b2e7266d0a0cff99adca2b46e78"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html#aa71a1b2e7266d0a0cff99adca2b46e78">GetRad</a> ()</td></tr>
+<tr class="memdesc:aa71a1b2e7266d0a0cff99adca2b46e78"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の回転角度(rad)を得る  <br /></td></tr>
+<tr class="separator:aa71a1b2e7266d0a0cff99adca2b46e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40b2ebf4db7638142816fe078f443d2b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html#a40b2ebf4db7638142816fe078f443d2b">GetVel</a> (float CTRL_PERIOD)</td></tr>
+<tr class="memdesc:a40b2ebf4db7638142816fe078f443d2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の回転速度(rad/s)を得る  <br /></td></tr>
+<tr class="separator:a40b2ebf4db7638142816fe078f443d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a81d055b091cdc21c9302900bc3d3370b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html#a81d055b091cdc21c9302900bc3d3370b">SetInterface</a> (<a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_attach_interrupt.html">gpio::IAttachInterrupt</a>&lt; AttachInterrupt &gt; *interrupt_A, <a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_read.html">gpio::IDigitalRead</a>&lt; DigitalRead &gt; *read_B)</td></tr>
+<tr class="memdesc:a81d055b091cdc21c9302900bc3d3370b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A相の割り込み設定インタフェースとB相のデジタル入力を設定する  <br /></td></tr>
+<tr class="separator:a81d055b091cdc21c9302900bc3d3370b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class AttachInterrupt, class DigitalRead&gt;<br />
+class alps::cmn::sensor::IncrementalEncoderBase&lt; AttachInterrupt, DigitalRead &gt;</div><p>A相B相からなるインクリメンタルエンコーダの共通実装 </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">AttachInterrupt</td><td>gpio::IAttachInterruptインタフェースの実装クラス </td></tr>
+    <tr><td class="paramname">DigitalRead</td><td>gpio::IDigitalReadインタフェースの実装クラス </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a70b07c544e0db2d7d7ad31c1f51436cb" name="a70b07c544e0db2d7d7ad31c1f51436cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70b07c544e0db2d7d7ad31c1f51436cb">&#9670;&#160;</a></span>IncrementalEncoderBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AttachInterrupt , class DigitalRead &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html">alps::cmn::sensor::IncrementalEncoderBase</a>&lt; AttachInterrupt, DigitalRead &gt;::IncrementalEncoderBase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_attach_interrupt.html">gpio::IAttachInterrupt</a>&lt; AttachInterrupt &gt; *&#160;</td>
+          <td class="paramname"><em>interrupt_A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_read.html">gpio::IDigitalRead</a>&lt; DigitalRead &gt; *&#160;</td>
+          <td class="paramname"><em>read_B</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>pulses_per_rev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interrupt_A</td><td>A相の割り込み設定インタフェース </td></tr>
+    <tr><td class="paramname">read_B</td><td>B相のデジタル入力 </td></tr>
+    <tr><td class="paramname">pulses_per_rev</td><td>1周分のパルス数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a03950bf2582a5f1e1c7dbf38e44af521" name="a03950bf2582a5f1e1c7dbf38e44af521"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03950bf2582a5f1e1c7dbf38e44af521">&#9670;&#160;</a></span>GetCurrentState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AttachInterrupt , class DigitalRead &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html">alps::cmn::sensor::IncrementalEncoderBase</a>&lt; AttachInterrupt, DigitalRead &gt;::GetCurrentState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在のchannelA,Bの状態を得る </p>
+<dl class="section return"><dt>戻り値</dt><dd>int channelA,Bの状態 </dd></dl>
+
+</div>
+</div>
+<a id="a955f4174625c998a9bec8a5ee2dfdcd8" name="a955f4174625c998a9bec8a5ee2dfdcd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a955f4174625c998a9bec8a5ee2dfdcd8">&#9670;&#160;</a></span>GetDeg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AttachInterrupt , class DigitalRead &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html">alps::cmn::sensor::IncrementalEncoderBase</a>&lt; AttachInterrupt, DigitalRead &gt;::GetDeg </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の回転角度(deg)を得る </p>
+<dl class="section return"><dt>戻り値</dt><dd>float 回転角度(deg) </dd></dl>
+
+</div>
+</div>
+<a id="aa8e1ee8b38906795b74c41e185983568" name="aa8e1ee8b38906795b74c41e185983568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8e1ee8b38906795b74c41e185983568">&#9670;&#160;</a></span>GetPulses()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AttachInterrupt , class DigitalRead &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html">alps::cmn::sensor::IncrementalEncoderBase</a>&lt; AttachInterrupt, DigitalRead &gt;::GetPulses </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の回転角度（パルス数）を得る </p>
+<dl class="section return"><dt>戻り値</dt><dd>int 回転角度（パルス数） </dd></dl>
+
+</div>
+</div>
+<a id="aa71a1b2e7266d0a0cff99adca2b46e78" name="aa71a1b2e7266d0a0cff99adca2b46e78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa71a1b2e7266d0a0cff99adca2b46e78">&#9670;&#160;</a></span>GetRad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AttachInterrupt , class DigitalRead &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html">alps::cmn::sensor::IncrementalEncoderBase</a>&lt; AttachInterrupt, DigitalRead &gt;::GetRad </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の回転角度(rad)を得る </p>
+<dl class="section return"><dt>戻り値</dt><dd>float 回転角度(rad) </dd></dl>
+
+</div>
+</div>
+<a id="a40b2ebf4db7638142816fe078f443d2b" name="a40b2ebf4db7638142816fe078f443d2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40b2ebf4db7638142816fe078f443d2b">&#9670;&#160;</a></span>GetVel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AttachInterrupt , class DigitalRead &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html">alps::cmn::sensor::IncrementalEncoderBase</a>&lt; AttachInterrupt, DigitalRead &gt;::GetVel </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>CTRL_PERIOD</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の回転速度(rad/s)を得る </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CTRL_PERIOD</td><td>制御周期(rad/s) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>float 回転速度(rad/s) </dd></dl>
+
+</div>
+</div>
+<a id="a72bf0b16d972528fb1fa01a71caf855e" name="a72bf0b16d972528fb1fa01a71caf855e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72bf0b16d972528fb1fa01a71caf855e">&#9670;&#160;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AttachInterrupt , class DigitalRead &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html">alps::cmn::sensor::IncrementalEncoderBase</a>&lt; AttachInterrupt, DigitalRead &gt;::Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の回転角度をリセット </p>
+
+</div>
+</div>
+<a id="a13a7baa6f45687241e2b4a9b3ed89987" name="a13a7baa6f45687241e2b4a9b3ed89987"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13a7baa6f45687241e2b4a9b3ed89987">&#9670;&#160;</a></span>SetCurrentRad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AttachInterrupt , class DigitalRead &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html">alps::cmn::sensor::IncrementalEncoderBase</a>&lt; AttachInterrupt, DigitalRead &gt;::SetCurrentRad </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>current_rad</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>今の値がcurrent_radになるようにpulses_を変更 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">current_rad</td><td>セットしたい現在の角度（rad) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a81d055b091cdc21c9302900bc3d3370b" name="a81d055b091cdc21c9302900bc3d3370b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81d055b091cdc21c9302900bc3d3370b">&#9670;&#160;</a></span>SetInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class AttachInterrupt , class DigitalRead &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html">alps::cmn::sensor::IncrementalEncoderBase</a>&lt; AttachInterrupt, DigitalRead &gt;::SetInterface </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_attach_interrupt.html">gpio::IAttachInterrupt</a>&lt; AttachInterrupt &gt; *&#160;</td>
+          <td class="paramname"><em>interrupt_A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_read.html">gpio::IDigitalRead</a>&lt; DigitalRead &gt; *&#160;</td>
+          <td class="paramname"><em>read_B</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A相の割り込み設定インタフェースとB相のデジタル入力を設定する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interrupt_A</td><td>A相の割り込み設定インタフェース </td></tr>
+    <tr><td class="paramname">read_B</td><td>B相のデジタル入力 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>alps_common_lib/include/alps_cmn/sensor/<a class="el" href="incremental__encoder__base_8hpp_source.html">incremental_encoder_base.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacealps.html">alps</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn.html">cmn</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn_1_1sensor.html">sensor</a></li><li class="navelem"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html">IncrementalEncoderBase</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

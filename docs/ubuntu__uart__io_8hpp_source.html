@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.9.7" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alps: roblab_ros_lib/include/roblab_ros/serial/ubuntu_uart_io.hpp ソースファイル</title>
+    <title>Alps: alps_ros_lib/include/alps_ros/communication/ubuntu_uart_io.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
     <script type="text/javascript" src="jquery.js"></script>
@@ -47,7 +47,7 @@
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">Alps
                             </div>
-                            <div id="projectbrief">roboken shinshu library</div>
+                            <div id="projectbrief">roblab shinshu library</div>
                         </td>
                     </tr>
                 </tbody>
@@ -113,8 +113,8 @@ $(document).ready(function(){initNavTree('ubuntu__uart__io_8hpp_source.html','')
 </div><!--header-->
 <div class="contents">
 <a href="ubuntu__uart__io_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ROBLAB_ROS_UBUNTU_UART_IO_HPP_</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ROBLAB_ROS_UBUNTU_UART_IO_HPP_</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_ROS_UBUNTU_UART_IO_HPP_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_ROS_UBUNTU_UART_IO_HPP_</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// Linux headers</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;fcntl.h&gt;</span>   <span class="comment">// Contains file controls like O_RDWR          open()等</span></div>
@@ -126,25 +126,25 @@ $(document).ready(function(){initNavTree('ubuntu__uart__io_8hpp_source.html','')
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;chrono&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="byte__ring__buffer_8hpp.html">roblab_common/serial/byte_ring_buffer.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="i__uart__io_8hpp.html">roblab_common/serial/i_uart_io.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="byte__ring__buffer_8hpp.html">alps_cmn/communication/byte_ring_buffer.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="i__uart__io_8hpp.html">alps_cmn/communication/i_uart_io.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceroblab.html">roblab</a></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">namespace </span>ros</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keyword">namespace </span>serial</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keyword">namespace </span>communication</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_io.html">   37</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_io.html">UbuntuUartIo</a> : <span class="keyword">public</span> <a class="code hl_class" href="classroblab_1_1common_1_1serial_1_1_i_uart_io.html">common::serial::IUartIo</a>&lt;UbuntuUartIo&gt;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html">   37</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html">UbuntuUartIo</a> : <span class="keyword">public</span> <a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html">cmn::communication::IUartIo</a>&lt;UbuntuUartIo&gt;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            {</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_io.html#a867b3f135aad7b87af7a3be7980fd1a2">   46</a></span>                <a class="code hl_function" href="classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_io.html#a867b3f135aad7b87af7a3be7980fd1a2">UbuntuUartIo</a>(std::string device_path, speed_t baud_rate);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html#a12907eb5d81151a580ca7676cd61e9ce">   46</a></span>                <a class="code hl_function" href="classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html#a12907eb5d81151a580ca7676cd61e9ce">UbuntuUartIo</a>(std::string device_path, speed_t baud_rate);</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_io.html#a7c573f185023638a210551d51a8ab76c">   52</a></span>                <a class="code hl_function" href="classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_io.html#a7c573f185023638a210551d51a8ab76c">~UbuntuUartIo</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html#a8998de706f9ff5624ee44bf5ed8dd02b">   52</a></span>                <a class="code hl_function" href="classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html#a8998de706f9ff5624ee44bf5ed8dd02b">~UbuntuUartIo</a>();</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_io.html#abf1910a513dfedf313f471921451d1c6">   59</a></span>                ssize_t <a class="code hl_function" href="classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_io.html#abf1910a513dfedf313f471921451d1c6">WriteImpl</a>(<a class="code hl_class" href="classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html">common::serial::ByteRingBuffer</a> write_buf);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html#a825c391569f6416634d0f1f007dab0ff">   59</a></span>                ssize_t <a class="code hl_function" href="classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html#a825c391569f6416634d0f1f007dab0ff">Write</a>(<a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html">cmn::communication::ByteRingBuffer</a> write_buf);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_io.html#abbca66e08fd4818894482692dd408353">   63</a></span>                <a class="code hl_class" href="classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html">common::serial::ByteRingBuffer</a> <a class="code hl_function" href="classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_io.html#abbca66e08fd4818894482692dd408353">ReadImpl</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html#abc447cb7bbbfb6cd8b2c4ee53e5cd741">   63</a></span>                <a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html">cmn::communication::ByteRingBuffer</a> <a class="code hl_function" href="classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html#abc447cb7bbbfb6cd8b2c4ee53e5cd741">Read</a>();</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                <span class="keywordtype">bool</span> Open() noexcept;</div>
@@ -172,21 +172,21 @@ $(document).ready(function(){initNavTree('ubuntu__uart__io_8hpp_source.html','')
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="abyte__ring__buffer_8hpp_html"><div class="ttname"><a href="byte__ring__buffer_8hpp.html">byte_ring_buffer.hpp</a></div><div class="ttdoc">シリアル通信用リングバッファー</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1serial_1_1_byte_ring_buffer_html"><div class="ttname"><a href="classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html">roblab::common::serial::ByteRingBuffer</a></div><div class="ttdoc">uint8_tバイト列のLIFOリングバッファー シリアル通信専用</div><div class="ttdef"><b>Definition:</b> byte_ring_buffer.hpp:31</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1serial_1_1_i_uart_io_html"><div class="ttname"><a href="classroblab_1_1common_1_1serial_1_1_i_uart_io.html">roblab::common::serial::IUartIo</a></div><div class="ttdoc">Uart通信IOのインターフェース</div><div class="ttdef"><b>Definition:</b> i_uart_io.hpp:30</div></div>
-<div class="ttc" id="aclassroblab_1_1ros_1_1serial_1_1_ubuntu_uart_io_html"><div class="ttname"><a href="classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_io.html">roblab::ros::serial::UbuntuUartIo</a></div><div class="ttdoc">Ubuntu環境でのUartシリアル通信IOクラス</div><div class="ttdef"><b>Definition:</b> ubuntu_uart_io.hpp:38</div></div>
-<div class="ttc" id="aclassroblab_1_1ros_1_1serial_1_1_ubuntu_uart_io_html_a7c573f185023638a210551d51a8ab76c"><div class="ttname"><a href="classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_io.html#a7c573f185023638a210551d51a8ab76c">roblab::ros::serial::UbuntuUartIo::~UbuntuUartIo</a></div><div class="ttdeci">~UbuntuUartIo()</div><div class="ttdoc">デストラクタ．送受信経路を閉じる</div></div>
-<div class="ttc" id="aclassroblab_1_1ros_1_1serial_1_1_ubuntu_uart_io_html_a867b3f135aad7b87af7a3be7980fd1a2"><div class="ttname"><a href="classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_io.html#a867b3f135aad7b87af7a3be7980fd1a2">roblab::ros::serial::UbuntuUartIo::UbuntuUartIo</a></div><div class="ttdeci">UbuntuUartIo(std::string device_path, speed_t baud_rate)</div><div class="ttdoc">シリアル通信する対象との送受信経路を確立する</div></div>
-<div class="ttc" id="aclassroblab_1_1ros_1_1serial_1_1_ubuntu_uart_io_html_abbca66e08fd4818894482692dd408353"><div class="ttname"><a href="classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_io.html#abbca66e08fd4818894482692dd408353">roblab::ros::serial::UbuntuUartIo::ReadImpl</a></div><div class="ttdeci">common::serial::ByteRingBuffer ReadImpl()</div><div class="ttdoc">受信したバイト列を返す</div></div>
-<div class="ttc" id="aclassroblab_1_1ros_1_1serial_1_1_ubuntu_uart_io_html_abf1910a513dfedf313f471921451d1c6"><div class="ttname"><a href="classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_io.html#abf1910a513dfedf313f471921451d1c6">roblab::ros::serial::UbuntuUartIo::WriteImpl</a></div><div class="ttdeci">ssize_t WriteImpl(common::serial::ByteRingBuffer write_buf)</div><div class="ttdoc">書き込みバッファ内容を送信する</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_byte_ring_buffer_html"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html">alps::cmn::communication::ByteRingBuffer</a></div><div class="ttdoc">uint8_tバイト列のLIFOリングバッファー シリアル通信専用</div><div class="ttdef"><b>Definition:</b> byte_ring_buffer.hpp:31</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_uart_io_html"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html">alps::cmn::communication::IUartIo</a></div><div class="ttdoc">Uart通信IOのインターフェース</div><div class="ttdef"><b>Definition:</b> i_uart_io.hpp:30</div></div>
+<div class="ttc" id="aclassalps_1_1ros_1_1communication_1_1_ubuntu_uart_io_html"><div class="ttname"><a href="classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html">alps::ros::communication::UbuntuUartIo</a></div><div class="ttdoc">Ubuntu環境でのUartシリアル通信IOクラス</div><div class="ttdef"><b>Definition:</b> ubuntu_uart_io.hpp:38</div></div>
+<div class="ttc" id="aclassalps_1_1ros_1_1communication_1_1_ubuntu_uart_io_html_a12907eb5d81151a580ca7676cd61e9ce"><div class="ttname"><a href="classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html#a12907eb5d81151a580ca7676cd61e9ce">alps::ros::communication::UbuntuUartIo::UbuntuUartIo</a></div><div class="ttdeci">UbuntuUartIo(std::string device_path, speed_t baud_rate)</div><div class="ttdoc">シリアル通信する対象との送受信経路を確立する</div></div>
+<div class="ttc" id="aclassalps_1_1ros_1_1communication_1_1_ubuntu_uart_io_html_a825c391569f6416634d0f1f007dab0ff"><div class="ttname"><a href="classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html#a825c391569f6416634d0f1f007dab0ff">alps::ros::communication::UbuntuUartIo::Write</a></div><div class="ttdeci">ssize_t Write(cmn::communication::ByteRingBuffer write_buf)</div><div class="ttdoc">書き込みバッファ内容を送信する</div></div>
+<div class="ttc" id="aclassalps_1_1ros_1_1communication_1_1_ubuntu_uart_io_html_a8998de706f9ff5624ee44bf5ed8dd02b"><div class="ttname"><a href="classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html#a8998de706f9ff5624ee44bf5ed8dd02b">alps::ros::communication::UbuntuUartIo::~UbuntuUartIo</a></div><div class="ttdeci">~UbuntuUartIo()</div><div class="ttdoc">デストラクタ．送受信経路を閉じる</div></div>
+<div class="ttc" id="aclassalps_1_1ros_1_1communication_1_1_ubuntu_uart_io_html_abc447cb7bbbfb6cd8b2c4ee53e5cd741"><div class="ttname"><a href="classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html#abc447cb7bbbfb6cd8b2c4ee53e5cd741">alps::ros::communication::UbuntuUartIo::Read</a></div><div class="ttdeci">cmn::communication::ByteRingBuffer Read()</div><div class="ttdoc">受信したバイト列を返す</div></div>
 <div class="ttc" id="ai__uart__io_8hpp_html"><div class="ttname"><a href="i__uart__io_8hpp.html">i_uart_io.hpp</a></div></div>
-<div class="ttc" id="anamespaceroblab_html"><div class="ttname"><a href="namespaceroblab.html">roblab</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d664d2be52076673a73e369576cfa215.html">roblab_ros_lib</a></li><li class="navelem"><a class="el" href="dir_cb2fc4cd3bfe6c26168aa580143ee2ff.html">include</a></li><li class="navelem"><a class="el" href="dir_975cfaf345aaa5bad87927f516e962b0.html">roblab_ros</a></li><li class="navelem"><a class="el" href="dir_c6bbf0e927ecc5e43d20d821a32eb8fc.html">serial</a></li><li class="navelem"><a class="el" href="ubuntu__uart__io_8hpp.html">ubuntu_uart_io.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_8868281c77c6e51814f463b41016bd4c.html">alps_ros_lib</a></li><li class="navelem"><a class="el" href="dir_d0c514d533dd526dfaa45b12386bce43.html">include</a></li><li class="navelem"><a class="el" href="dir_a74f55564645add44f143c17043d3c34.html">alps_ros</a></li><li class="navelem"><a class="el" href="dir_8d7e98b92fe29bc24de4757e1a8b67ec.html">communication</a></li><li class="navelem"><a class="el" href="ubuntu__uart__io_8hpp.html">ubuntu_uart_io.hpp</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>

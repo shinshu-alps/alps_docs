@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.9.7" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alps: roblab_common_lib/include/roblab_common/control/lpf.hpp ソースファイル</title>
+    <title>Alps: alps_common_lib/include/alps_cmn/control/lpf.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
     <script type="text/javascript" src="jquery.js"></script>
@@ -47,7 +47,7 @@
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">Alps
                             </div>
-                            <div id="projectbrief">roboken shinshu library</div>
+                            <div id="projectbrief">roblab shinshu library</div>
                         </td>
                     </tr>
                 </tbody>
@@ -116,8 +116,8 @@ $(document).ready(function(){initNavTree('lpf_8hpp_source.html',''); initResizab
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">/**********************************************************************</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> Includes guard</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">**********************************************************************/</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef ROBLAB_COMMON_LPF_HPP_</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define ROBLAB_COMMON_LPF_HPP_</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef ALPS_CMN_LPF_HPP_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define ALPS_CMN_LPF_HPP_</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/**********************************************************************</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> Includes</span></div>
@@ -127,24 +127,24 @@ $(document).ready(function(){initNavTree('lpf_8hpp_source.html',''); initResizab
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> Low-pass Filter class</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">**********************************************************************/</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceroblab.html">roblab</a></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">namespace </span>common</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">namespace </span>cmn</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">namespace </span>control</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1control_1_1_lpf.html">   40</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classroblab_1_1common_1_1control_1_1_lpf.html">Lpf</a></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_lpf.html">   40</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_lpf.html">Lpf</a></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            {</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1control_1_1_lpf.html#a9f6894839b170e74c3768f01e132256e">   50</a></span>                <a class="code hl_function" href="classroblab_1_1common_1_1control_1_1_lpf.html#a9f6894839b170e74c3768f01e132256e">Lpf</a>(<span class="keywordtype">float</span> t_const_sec, <span class="keywordtype">float</span> ctrl_period_sec);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aecaf22e00a9802414624c3423f6c60f1">   50</a></span>                <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aecaf22e00a9802414624c3423f6c60f1">Lpf</a>(<span class="keywordtype">float</span> t_const_sec, <span class="keywordtype">float</span> ctrl_period_sec);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1control_1_1_lpf.html#a0cfe816f3c592bd671b2e88a3e580ddb">   57</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1common_1_1control_1_1_lpf.html#a0cfe816f3c592bd671b2e88a3e580ddb">SetTimeConst</a>(<span class="keywordtype">float</span> t_const_sec);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aea8480539cad78ef17d887d56b19ebaf">   57</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aea8480539cad78ef17d887d56b19ebaf">SetTimeConst</a>(<span class="keywordtype">float</span> t_const_sec);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1control_1_1_lpf.html#ac97e8048333e7c60fe04a8919b6a3836">   64</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1common_1_1control_1_1_lpf.html#ac97e8048333e7c60fe04a8919b6a3836">SetInputPrev</a>(<span class="keywordtype">float</span> input_prev);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aca445f7a66fa7f4c3ce5bd05e7e56812">   64</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aca445f7a66fa7f4c3ce5bd05e7e56812">SetInputPrev</a>(<span class="keywordtype">float</span> input_prev);</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1control_1_1_lpf.html#a69272ce1ea6da47e213b9fe3d16812df">   70</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1common_1_1control_1_1_lpf.html#a69272ce1ea6da47e213b9fe3d16812df">Reset</a>();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_lpf.html#a9ed459dfde6dff3f754142ee0c75a0fb">   70</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_lpf.html#a9ed459dfde6dff3f754142ee0c75a0fb">Reset</a>();</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1control_1_1_lpf.html#a49027edab0e4af053ad57839c281e3ed">   78</a></span>                <span class="keywordtype">float</span> <a class="code hl_function" href="classroblab_1_1common_1_1control_1_1_lpf.html#a49027edab0e4af053ad57839c281e3ed">Filter</a>(<span class="keywordtype">float</span> input);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_lpf.html#a1fee169d1ad930ec33cf74cff80e64fb">   78</a></span>                <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_lpf.html#a1fee169d1ad930ec33cf74cff80e64fb">Filter</a>(<span class="keywordtype">float</span> input);</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                <span class="keywordtype">float</span> t_const_sec_;</div>
@@ -164,19 +164,19 @@ $(document).ready(function(){initNavTree('lpf_8hpp_source.html',''); initResizab
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1control_1_1_lpf_html"><div class="ttname"><a href="classroblab_1_1common_1_1control_1_1_lpf.html">roblab::common::control::Lpf</a></div><div class="ttdoc">ローパスフィルタのクラス</div><div class="ttdef"><b>Definition:</b> lpf.hpp:41</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1control_1_1_lpf_html_a0cfe816f3c592bd671b2e88a3e580ddb"><div class="ttname"><a href="classroblab_1_1common_1_1control_1_1_lpf.html#a0cfe816f3c592bd671b2e88a3e580ddb">roblab::common::control::Lpf::SetTimeConst</a></div><div class="ttdeci">void SetTimeConst(float t_const_sec)</div><div class="ttdoc">時定数を設定し，時定数とサンプル周期から求まる係数を計算する関数．変数の初期化はしない.</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1control_1_1_lpf_html_a49027edab0e4af053ad57839c281e3ed"><div class="ttname"><a href="classroblab_1_1common_1_1control_1_1_lpf.html#a49027edab0e4af053ad57839c281e3ed">roblab::common::control::Lpf::Filter</a></div><div class="ttdeci">float Filter(float input)</div><div class="ttdoc">入力値に対してローパスフィルタをかける関数．</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1control_1_1_lpf_html_a69272ce1ea6da47e213b9fe3d16812df"><div class="ttname"><a href="classroblab_1_1common_1_1control_1_1_lpf.html#a69272ce1ea6da47e213b9fe3d16812df">roblab::common::control::Lpf::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">メンバ変数を初期化する関数．</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1control_1_1_lpf_html_a9f6894839b170e74c3768f01e132256e"><div class="ttname"><a href="classroblab_1_1common_1_1control_1_1_lpf.html#a9f6894839b170e74c3768f01e132256e">roblab::common::control::Lpf::Lpf</a></div><div class="ttdeci">Lpf(float t_const_sec, float ctrl_period_sec)</div><div class="ttdoc">LPF型の変数を定義．時定数とサンプル周期(制御周期)を設定し， メンバ変数を初期化，時定数とサンプル周期から求まる係数を計算するコンストラクタ．</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1control_1_1_lpf_html_ac97e8048333e7c60fe04a8919b6a3836"><div class="ttname"><a href="classroblab_1_1common_1_1control_1_1_lpf.html#ac97e8048333e7c60fe04a8919b6a3836">roblab::common::control::Lpf::SetInputPrev</a></div><div class="ttdeci">void SetInputPrev(float input_prev)</div><div class="ttdoc">ローパスフィルタの初期値と前回の出力値を（0以外にするの場合）設定する関数．</div></div>
-<div class="ttc" id="anamespaceroblab_html"><div class="ttname"><a href="namespaceroblab.html">roblab</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_lpf_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_lpf.html">alps::cmn::control::Lpf</a></div><div class="ttdoc">ローパスフィルタのクラス</div><div class="ttdef"><b>Definition:</b> lpf.hpp:41</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_lpf_html_a1fee169d1ad930ec33cf74cff80e64fb"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_lpf.html#a1fee169d1ad930ec33cf74cff80e64fb">alps::cmn::control::Lpf::Filter</a></div><div class="ttdeci">float Filter(float input)</div><div class="ttdoc">入力値に対してローパスフィルタをかける関数．</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_lpf_html_a9ed459dfde6dff3f754142ee0c75a0fb"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_lpf.html#a9ed459dfde6dff3f754142ee0c75a0fb">alps::cmn::control::Lpf::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">メンバ変数を初期化する関数．</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_lpf_html_aca445f7a66fa7f4c3ce5bd05e7e56812"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_lpf.html#aca445f7a66fa7f4c3ce5bd05e7e56812">alps::cmn::control::Lpf::SetInputPrev</a></div><div class="ttdeci">void SetInputPrev(float input_prev)</div><div class="ttdoc">ローパスフィルタの初期値と前回の出力値を（0以外にするの場合）設定する関数．</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_lpf_html_aea8480539cad78ef17d887d56b19ebaf"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_lpf.html#aea8480539cad78ef17d887d56b19ebaf">alps::cmn::control::Lpf::SetTimeConst</a></div><div class="ttdeci">void SetTimeConst(float t_const_sec)</div><div class="ttdoc">時定数を設定し，時定数とサンプル周期から求まる係数を計算する関数．変数の初期化はしない.</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_lpf_html_aecaf22e00a9802414624c3423f6c60f1"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_lpf.html#aecaf22e00a9802414624c3423f6c60f1">alps::cmn::control::Lpf::Lpf</a></div><div class="ttdeci">Lpf(float t_const_sec, float ctrl_period_sec)</div><div class="ttdoc">LPF型の変数を定義．時定数とサンプル周期(制御周期)を設定し， メンバ変数を初期化，時定数とサンプル周期から求まる係数を計算するコンストラクタ．</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_efc7c08bb78c728619d6f844434d9ba6.html">roblab_common_lib</a></li><li class="navelem"><a class="el" href="dir_5fc43148380559492dfddd8ae81e32dd.html">include</a></li><li class="navelem"><a class="el" href="dir_28693fc7a38bf8c5629bdf3b63267db9.html">roblab_common</a></li><li class="navelem"><a class="el" href="dir_6623b94a4ca900a9fc193deff787d8b4.html">control</a></li><li class="navelem"><a class="el" href="lpf_8hpp.html">lpf.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_fcd1ba41f8679fcc7bf76d667eaa0e17.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_ce1e71e2103ac83e6d6cc720a9feeeb7.html">include</a></li><li class="navelem"><a class="el" href="dir_cc648f72f51f156e42f9863c0e5bf5fb.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_83658e075a4ab7b2cbb8779471289882.html">control</a></li><li class="navelem"><a class="el" href="lpf_8hpp.html">lpf.hpp</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
