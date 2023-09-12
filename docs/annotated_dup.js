@@ -9,19 +9,12 @@ var annotated_dup =
           [ "ServoMotorParam", "structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html", "structalps_1_1cmn_1_1actuator_1_1_servo_motor_param" ]
         ] ],
         [ "communication", "namespacealps_1_1cmn_1_1communication.html", [
-          [ "ByteRingBuffer", "classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html", "classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer" ],
           [ "CanDataFrame", "structalps_1_1cmn_1_1communication_1_1_can_data_frame.html", "structalps_1_1cmn_1_1communication_1_1_can_data_frame" ],
           [ "Cobs", "classalps_1_1cmn_1_1communication_1_1_cobs.html", "classalps_1_1cmn_1_1communication_1_1_cobs" ],
-          [ "DataSerializer", "classalps_1_1cmn_1_1communication_1_1_data_serializer.html", "classalps_1_1cmn_1_1communication_1_1_data_serializer" ],
-          [ "DataSerializer< std::string >", "classalps_1_1cmn_1_1communication_1_1_data_serializer_3_01std_1_1string_01_4.html", "classalps_1_1cmn_1_1communication_1_1_data_serializer_3_01std_1_1string_01_4" ],
-          [ "DataSerializer< std::tuple< Args... > >", "classalps_1_1cmn_1_1communication_1_1_data_serializer_3_01std_1_1tuple_3_01_args_8_8_8_01_4_01_4.html", "classalps_1_1cmn_1_1communication_1_1_data_serializer_3_01std_1_1tuple_3_01_args_8_8_8_01_4_01_4" ],
-          [ "DataSerializer< std::vector< U > >", "classalps_1_1cmn_1_1communication_1_1_data_serializer_3_01std_1_1vector_3_01_u_01_4_01_4.html", "classalps_1_1cmn_1_1communication_1_1_data_serializer_3_01std_1_1vector_3_01_u_01_4_01_4" ],
           [ "ICanIo", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", "classalps_1_1cmn_1_1communication_1_1_i_can_io" ],
           [ "IdPacketManager", "classalps_1_1cmn_1_1communication_1_1_id_packet_manager.html", "classalps_1_1cmn_1_1communication_1_1_id_packet_manager" ],
           [ "IUartIo", "classalps_1_1cmn_1_1communication_1_1_i_uart_io.html", "classalps_1_1cmn_1_1communication_1_1_i_uart_io" ],
-          [ "Sender", "classalps_1_1cmn_1_1communication_1_1_sender.html", "classalps_1_1cmn_1_1communication_1_1_sender" ],
-          [ "SerializeTypeInfo", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info" ],
-          [ "SerializeTypeInfoBase", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base" ]
+          [ "Sender", "classalps_1_1cmn_1_1communication_1_1_sender.html", "classalps_1_1cmn_1_1communication_1_1_sender" ]
         ] ],
         [ "control", "namespacealps_1_1cmn_1_1control.html", [
           [ "Differential", "classalps_1_1cmn_1_1control_1_1_differential.html", "classalps_1_1cmn_1_1control_1_1_differential" ],
@@ -40,11 +33,24 @@ var annotated_dup =
         ] ],
         [ "sensor", "namespacealps_1_1cmn_1_1sensor.html", [
           [ "IncrementalEncoderBase", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base" ]
+        ] ],
+        [ "type", "namespacealps_1_1cmn_1_1type.html", [
+          [ "ByteRingBuffer", "classalps_1_1cmn_1_1type_1_1_byte_ring_buffer.html", "classalps_1_1cmn_1_1type_1_1_byte_ring_buffer" ]
+        ] ],
+        [ "util", "namespacealps_1_1cmn_1_1util.html", [
+          [ "DataSerializer", "classalps_1_1cmn_1_1util_1_1_data_serializer.html", "classalps_1_1cmn_1_1util_1_1_data_serializer" ],
+          [ "DataSerializer< std::string >", "classalps_1_1cmn_1_1util_1_1_data_serializer_3_01std_1_1string_01_4.html", "classalps_1_1cmn_1_1util_1_1_data_serializer_3_01std_1_1string_01_4" ],
+          [ "DataSerializer< std::tuple< Args... > >", "classalps_1_1cmn_1_1util_1_1_data_serializer_3_01std_1_1tuple_3_01_args_8_8_8_01_4_01_4.html", "classalps_1_1cmn_1_1util_1_1_data_serializer_3_01std_1_1tuple_3_01_args_8_8_8_01_4_01_4" ],
+          [ "DataSerializer< std::vector< U > >", "classalps_1_1cmn_1_1util_1_1_data_serializer_3_01std_1_1vector_3_01_u_01_4_01_4.html", "classalps_1_1cmn_1_1util_1_1_data_serializer_3_01std_1_1vector_3_01_u_01_4_01_4" ],
+          [ "SerializeTypeInfo", "structalps_1_1cmn_1_1util_1_1_serialize_type_info.html", "structalps_1_1cmn_1_1util_1_1_serialize_type_info" ],
+          [ "SerializeTypeInfoBase", "structalps_1_1cmn_1_1util_1_1_serialize_type_info_base.html", "structalps_1_1cmn_1_1util_1_1_serialize_type_info_base" ]
         ] ]
       ] ],
       [ "lin", "namespacealps_1_1lin.html", [
         [ "communication", "namespacealps_1_1lin_1_1communication.html", [
-          [ "SocketCanIo", "classalps_1_1lin_1_1communication_1_1_socket_can_io.html", "classalps_1_1lin_1_1communication_1_1_socket_can_io" ]
+          [ "MbedUartConnection", "classalps_1_1lin_1_1communication_1_1_mbed_uart_connection.html", "classalps_1_1lin_1_1communication_1_1_mbed_uart_connection" ],
+          [ "SocketCanIo", "classalps_1_1lin_1_1communication_1_1_socket_can_io.html", "classalps_1_1lin_1_1communication_1_1_socket_can_io" ],
+          [ "UbuntuUartIo", "classalps_1_1lin_1_1communication_1_1_ubuntu_uart_io.html", "classalps_1_1lin_1_1communication_1_1_ubuntu_uart_io" ]
         ] ]
       ] ],
       [ "mbed", "namespacealps_1_1mbed.html", [
@@ -65,12 +71,6 @@ var annotated_dup =
         ] ],
         [ "sensor", "namespacealps_1_1mbed_1_1sensor.html", [
           [ "IncrementalEncoder", "classalps_1_1mbed_1_1sensor_1_1_incremental_encoder.html", "classalps_1_1mbed_1_1sensor_1_1_incremental_encoder" ]
-        ] ]
-      ] ],
-      [ "ros", "namespacealps_1_1ros.html", [
-        [ "communication", "namespacealps_1_1ros_1_1communication.html", [
-          [ "MbedUartConnection", "classalps_1_1ros_1_1communication_1_1_mbed_uart_connection.html", "classalps_1_1ros_1_1communication_1_1_mbed_uart_connection" ],
-          [ "UbuntuUartIo", "classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html", "classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io" ]
         ] ]
       ] ]
     ] ]

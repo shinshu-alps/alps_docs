@@ -1,3 +1,6 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1gpio_1_1_i_digital_read.html" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1gpio_1_1_i_pwm_set_period.html" title=" " alt="" coords="12,5,199,45"/>
+<area shape="rect" id="node2" href="$classalps_1_1mbed_1_1gpio_1_1_pwm_out.html" title="PWM出力ピン" alt="" coords="253,77,447,102"/>
+<area shape="rect" id="node3" href="$classalps_1_1cmn_1_1gpio_1_1_i_pwm_set_pulse_width.html" title=" " alt="" coords="12,69,199,109"/>
+<area shape="rect" id="node4" href="$classalps_1_1cmn_1_1gpio_1_1_i_pwm_write.html" title=" " alt="" coords="5,133,205,173"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="alps::cmn::communication::IUartIo&lt; Derived &gt;" name="alps::cmn::communication::IUartIo&lt; Derived &gt;">
-<area shape="rect" id="node1" title="Uart通信IOのインターフェース" alt="" coords="113,5,300,105"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_io.html" title=" " alt="" coords="9,168,196,268"/>
-<area shape="rect" id="node4" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_io.html" title=" " alt="" coords="220,168,407,268"/>
-<area shape="rect" id="node3" href="$classalps_1_1mbed_1_1communication_1_1_uart_io.html" title="mbedのUartシリアル通信IOクラス" alt="" coords="5,317,200,457"/>
-<area shape="rect" id="node5" href="$classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html" title="Ubuntu環境でのUartシリアル通信IOクラス" alt="" coords="224,317,403,457"/>
+<area shape="rect" id="node1" title="Uart通信IOのインターフェース" alt="" coords="111,5,297,105"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_io.html" title=" " alt="" coords="5,168,192,268"/>
+<area shape="rect" id="node4" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_io.html" title=" " alt="" coords="216,168,403,268"/>
+<area shape="rect" id="node3" href="$classalps_1_1lin_1_1communication_1_1_ubuntu_uart_io.html" title="Ubuntu環境でのUartシリアル通信IOクラス" alt="" coords="11,317,186,457"/>
+<area shape="rect" id="node5" href="$classalps_1_1mbed_1_1communication_1_1_uart_io.html" title="mbedのUartシリアル通信IOクラス" alt="" coords="212,317,407,457"/>
 </map>

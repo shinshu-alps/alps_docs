@@ -1,6 +1,6 @@
 var classalps_1_1cmn_1_1communication_1_1_cobs =
 [
-    [ "Decode", "classalps_1_1cmn_1_1communication_1_1_cobs.html#a78bae2e78efe78e6a17fcee57dfaa373", null ],
-    [ "Encode", "classalps_1_1cmn_1_1communication_1_1_cobs.html#a6b845ff99bcc1a2036ff91e718e1e036", null ],
-    [ "ExtractCobsPackets", "classalps_1_1cmn_1_1communication_1_1_cobs.html#afae3e61cadab203102f1227c5e75054a", null ]
+    [ "Decode", "classalps_1_1cmn_1_1communication_1_1_cobs.html#a83772a4eda2b1f18bf384a8f956ca470", null ],
+    [ "Encode", "classalps_1_1cmn_1_1communication_1_1_cobs.html#a3f569f249112686322da92be30597d02", null ],
+    [ "ExtractCobsPackets", "classalps_1_1cmn_1_1communication_1_1_cobs.html#a01e6749f65bbcb9705e68814f0145675", null ]
 ];

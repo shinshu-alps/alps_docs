@@ -11,20 +11,20 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html" target="_top" xlink:title=" ">
+<g id="a_node1"><a xlink:href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="146,-30 0,-30 0,0 146,0 146,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::communication</text>
-<text text-anchor="middle" x="73" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::ICanIo&lt; SocketCanIo &gt;</text>
+<text text-anchor="middle" x="73" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::IUartIo&lt; UbuntuUartIo &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node1 -->
 <g id="node2" class="node">
 <title>Node1</title>
-<g id="a_node2"><a xlink:href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html" target="_top" xlink:title="SocketCANを用いてCAN通信を行うクラス．">
+<g id="a_node2"><a xlink:href="classalps_1_1lin_1_1communication_1_1_ubuntu_uart_io.html" target="_top" xlink:title="Ubuntu環境でのUartシリアル通信IOクラス">
 <polygon fill="white" stroke="#666666" points="319,-30 182,-30 182,0 319,0 319,-30"/>
 <text text-anchor="start" x="190" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">alps::lin::communication</text>
-<text text-anchor="middle" x="250.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::SocketCanIo</text>
+<text text-anchor="middle" x="250.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::UbuntuUartIo</text>
 </a>
 </g>
 </g>

@@ -12,17 +12,17 @@
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Uart通信IOのインターフェース">
-<polygon fill="#999999" stroke="transparent" points="221,-339 81,-339 81,-264 221,-264 221,-339"/>
-<text text-anchor="start" x="86" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::communication</text>
-<text text-anchor="start" x="101" y="-315.5" font-family="Helvetica,sans-Serif" font-size="10.00">::IUartIo&lt; Derived &gt;</text>
-<text text-anchor="start" x="147.5" y="-300.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="101.5" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="131" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00">CallWrite()</text>
-<text text-anchor="start" x="101.5" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="131" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">CallRead()</text>
-<polygon fill="#666666" stroke="#666666" points="81,-310.5 81,-310.5 221,-310.5 221,-310.5 81,-310.5"/>
-<polygon fill="#666666" stroke="#666666" points="81,-295.5 81,-295.5 221,-295.5 221,-295.5 81,-295.5"/>
-<polygon fill="none" stroke="#666666" points="81,-264 81,-339 221,-339 221,-264 81,-264"/>
+<polygon fill="#999999" stroke="transparent" points="219,-339 79,-339 79,-264 219,-264 219,-339"/>
+<text text-anchor="start" x="84" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::communication</text>
+<text text-anchor="start" x="99" y="-315.5" font-family="Helvetica,sans-Serif" font-size="10.00">::IUartIo&lt; Derived &gt;</text>
+<text text-anchor="start" x="145.5" y="-300.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="99.5" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="129" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00">CallWrite()</text>
+<text text-anchor="start" x="99.5" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="129" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">CallRead()</text>
+<polygon fill="#666666" stroke="#666666" points="79,-310.5 79,-310.5 219,-310.5 219,-310.5 79,-310.5"/>
+<polygon fill="#666666" stroke="#666666" points="79,-295.5 79,-295.5 219,-295.5 219,-295.5 79,-295.5"/>
+<polygon fill="none" stroke="#666666" points="79,-264 79,-339 219,-339 219,-264 79,-264"/>
 </a>
 </g>
 </g>
@@ -30,107 +30,107 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="transparent" points="143,-217 3,-217 3,-142 143,-142 143,-217"/>
-<text text-anchor="start" x="8" y="-204.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::communication</text>
-<text text-anchor="start" x="27" y="-193.5" font-family="Helvetica,sans-Serif" font-size="10.00">::IUartIo&lt; UartIo &gt;</text>
-<text text-anchor="start" x="69.5" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="23.5" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="53" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00">CallWrite()</text>
-<text text-anchor="start" x="23.5" y="-148.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="53" y="-148.5" font-family="Helvetica,sans-Serif" font-size="10.00">CallRead()</text>
-<polygon fill="#666666" stroke="#666666" points="3,-188.5 3,-188.5 143,-188.5 143,-188.5 3,-188.5"/>
-<polygon fill="#666666" stroke="#666666" points="3,-173.5 3,-173.5 143,-173.5 143,-173.5 3,-173.5"/>
-<polygon fill="none" stroke="#666666" points="3,-142 3,-217 143,-217 143,-142 3,-142"/>
+<polygon fill="white" stroke="transparent" points="140,-217 0,-217 0,-142 140,-142 140,-217"/>
+<text text-anchor="start" x="5" y="-204.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::communication</text>
+<text text-anchor="start" x="6.5" y="-193.5" font-family="Helvetica,sans-Serif" font-size="10.00">::IUartIo&lt; UbuntuUartIo &gt;</text>
+<text text-anchor="start" x="66.5" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="20.5" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="50" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00">CallWrite()</text>
+<text text-anchor="start" x="20.5" y="-148.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="50" y="-148.5" font-family="Helvetica,sans-Serif" font-size="10.00">CallRead()</text>
+<polygon fill="#666666" stroke="#666666" points="0,-188.5 0,-188.5 140,-188.5 140,-188.5 0,-188.5"/>
+<polygon fill="#666666" stroke="#666666" points="0,-173.5 0,-173.5 140,-173.5 140,-173.5 0,-173.5"/>
+<polygon fill="none" stroke="#666666" points="0,-142 0,-217 140,-217 140,-142 0,-142"/>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="orange" d="M121.65,-255.34C113.5,-242.8 104.75,-229.34 96.95,-217.35"/>
-<polygon fill="orange" stroke="orange" points="118.79,-257.37 127.17,-263.84 124.66,-253.55 118.79,-257.37"/>
-<text text-anchor="middle" x="143" y="-238" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &lt; UartIo &gt;</text>
+<path fill="none" stroke="orange" d="M110.85,-255.78C108.45,-252.52 106.15,-249.25 104,-246 98.06,-237.02 92.36,-226.89 87.38,-217.32"/>
+<polygon fill="orange" stroke="orange" points="108.09,-257.94 116.93,-263.78 113.66,-253.7 108.09,-257.94"/>
+<text text-anchor="middle" x="149.5" y="-238" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &lt; UbuntuUartIo &gt;</text>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="transparent" points="301,-217 161,-217 161,-142 301,-142 301,-217"/>
-<text text-anchor="start" x="166" y="-204.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::communication</text>
-<text text-anchor="start" x="167.5" y="-193.5" font-family="Helvetica,sans-Serif" font-size="10.00">::IUartIo&lt; UbuntuUartIo &gt;</text>
-<text text-anchor="start" x="227.5" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="181.5" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="211" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00">CallWrite()</text>
-<text text-anchor="start" x="181.5" y="-148.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="211" y="-148.5" font-family="Helvetica,sans-Serif" font-size="10.00">CallRead()</text>
-<polygon fill="#666666" stroke="#666666" points="161,-188.5 161,-188.5 301,-188.5 301,-188.5 161,-188.5"/>
-<polygon fill="#666666" stroke="#666666" points="161,-173.5 161,-173.5 301,-173.5 301,-173.5 161,-173.5"/>
-<polygon fill="none" stroke="#666666" points="161,-142 161,-217 301,-217 301,-142 161,-142"/>
+<polygon fill="white" stroke="transparent" points="298,-217 158,-217 158,-142 298,-142 298,-217"/>
+<text text-anchor="start" x="163" y="-204.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::communication</text>
+<text text-anchor="start" x="182" y="-193.5" font-family="Helvetica,sans-Serif" font-size="10.00">::IUartIo&lt; UartIo &gt;</text>
+<text text-anchor="start" x="224.5" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="178.5" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="208" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00">CallWrite()</text>
+<text text-anchor="start" x="178.5" y="-148.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="208" y="-148.5" font-family="Helvetica,sans-Serif" font-size="10.00">CallRead()</text>
+<polygon fill="#666666" stroke="#666666" points="158,-188.5 158,-188.5 298,-188.5 298,-188.5 158,-188.5"/>
+<polygon fill="#666666" stroke="#666666" points="158,-173.5 158,-173.5 298,-173.5 298,-173.5 158,-173.5"/>
+<polygon fill="none" stroke="#666666" points="158,-142 158,-217 298,-217 298,-142 158,-142"/>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="orange" d="M181.11,-255.34C189.46,-242.8 198.44,-229.34 206.44,-217.35"/>
-<polygon fill="orange" stroke="orange" points="178.07,-253.58 175.44,-263.84 183.9,-257.46 178.07,-253.58"/>
-<text text-anchor="middle" x="239.5" y="-238" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &lt; UbuntuUartIo &gt;</text>
+<path fill="none" stroke="orange" d="M188.07,-255.85C190.5,-252.58 192.84,-249.28 195,-246 200.97,-236.97 206.61,-226.72 211.48,-217.04"/>
+<polygon fill="orange" stroke="orange" points="185.21,-253.82 181.88,-263.88 190.76,-258.09 185.21,-253.82"/>
+<text text-anchor="middle" x="230" y="-238" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &lt; UartIo &gt;</text>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classalps_1_1mbed_1_1communication_1_1_uart_io.html" target="_top" xlink:title="mbedのUartシリアル通信IOクラス">
-<polygon fill="white" stroke="transparent" points="146,-105 0,-105 0,0 146,0 146,-105"/>
-<text text-anchor="start" x="5" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps::mbed::communication</text>
-<text text-anchor="start" x="54.5" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">::UartIo</text>
-<text text-anchor="start" x="69.5" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="23.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="56" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">UartIo()</text>
-<text text-anchor="start" x="23.5" y="-36.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="56" y="-36.5" font-family="Helvetica,sans-Serif" font-size="10.00">~UartIo()</text>
-<text text-anchor="start" x="23.5" y="-21.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="56" y="-21.5" font-family="Helvetica,sans-Serif" font-size="10.00">Write()</text>
-<text text-anchor="start" x="23.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="56" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Read()</text>
-<polygon fill="#666666" stroke="#666666" points="0,-76.5 0,-76.5 146,-76.5 146,-76.5 0,-76.5"/>
-<polygon fill="#666666" stroke="#666666" points="0,-61.5 0,-61.5 146,-61.5 146,-61.5 0,-61.5"/>
-<polygon fill="none" stroke="#666666" points="0,0 0,-105 146,-105 146,0 0,0"/>
+<g id="a_node3"><a xlink:href="classalps_1_1lin_1_1communication_1_1_ubuntu_uart_io.html" target="_top" xlink:title="Ubuntu環境でのUartシリアル通信IOクラス">
+<polygon fill="white" stroke="transparent" points="135.5,-105 4.5,-105 4.5,0 135.5,0 135.5,-105"/>
+<text text-anchor="start" x="10" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps::lin::communication</text>
+<text text-anchor="start" x="34.5" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">::UbuntuUartIo</text>
+<text text-anchor="start" x="67" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="16" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="36" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">UbuntuUartIo()</text>
+<text text-anchor="start" x="16" y="-36.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="36" y="-36.5" font-family="Helvetica,sans-Serif" font-size="10.00">~UbuntuUartIo()</text>
+<text text-anchor="start" x="16" y="-21.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="36" y="-21.5" font-family="Helvetica,sans-Serif" font-size="10.00">Write()</text>
+<text text-anchor="start" x="16" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="36" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Read()</text>
+<polygon fill="#666666" stroke="#666666" points="5,-76.5 5,-76.5 136,-76.5 136,-76.5 5,-76.5"/>
+<polygon fill="#666666" stroke="#666666" points="5,-61.5 5,-61.5 136,-61.5 136,-61.5 5,-61.5"/>
+<polygon fill="none" stroke="#666666" points="4.5,0 4.5,-105 135.5,-105 135.5,0 4.5,0"/>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#63b8ff" d="M73,-131.51C73,-122.97 73,-114.02 73,-105.35"/>
-<polygon fill="none" stroke="#63b8ff" points="69.5,-131.67 73,-141.67 76.5,-131.67 69.5,-131.67"/>
+<path fill="none" stroke="#63b8ff" d="M70,-131.51C70,-122.97 70,-114.02 70,-105.35"/>
+<polygon fill="none" stroke="#63b8ff" points="66.5,-131.67 70,-141.67 73.5,-131.67 66.5,-131.67"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html" target="_top" xlink:title="Ubuntu環境でのUartシリアル通信IOクラス">
-<polygon fill="white" stroke="transparent" points="298,-105 164,-105 164,0 298,0 298,-105"/>
-<text text-anchor="start" x="169" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps::ros::communication</text>
-<text text-anchor="start" x="195" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">::UbuntuUartIo</text>
-<text text-anchor="start" x="227.5" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="175.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="196" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">UbuntuUartIo()</text>
-<text text-anchor="start" x="175.5" y="-36.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="196" y="-36.5" font-family="Helvetica,sans-Serif" font-size="10.00">~UbuntuUartIo()</text>
-<text text-anchor="start" x="175.5" y="-21.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="196" y="-21.5" font-family="Helvetica,sans-Serif" font-size="10.00">Write()</text>
-<text text-anchor="start" x="175.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="196" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Read()</text>
-<polygon fill="#666666" stroke="#666666" points="164,-76.5 164,-76.5 298,-76.5 298,-76.5 164,-76.5"/>
-<polygon fill="#666666" stroke="#666666" points="164,-61.5 164,-61.5 298,-61.5 298,-61.5 164,-61.5"/>
-<polygon fill="none" stroke="#666666" points="164,0 164,-105 298,-105 298,0 164,0"/>
+<g id="a_node5"><a xlink:href="classalps_1_1mbed_1_1communication_1_1_uart_io.html" target="_top" xlink:title="mbedのUartシリアル通信IOクラス">
+<polygon fill="white" stroke="transparent" points="301,-105 155,-105 155,0 301,0 301,-105"/>
+<text text-anchor="start" x="160" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps::mbed::communication</text>
+<text text-anchor="start" x="209.5" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">::UartIo</text>
+<text text-anchor="start" x="224.5" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="178.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="211" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">UartIo()</text>
+<text text-anchor="start" x="178.5" y="-36.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="211" y="-36.5" font-family="Helvetica,sans-Serif" font-size="10.00">~UartIo()</text>
+<text text-anchor="start" x="178.5" y="-21.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="211" y="-21.5" font-family="Helvetica,sans-Serif" font-size="10.00">Write()</text>
+<text text-anchor="start" x="178.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="211" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Read()</text>
+<polygon fill="#666666" stroke="#666666" points="155,-76.5 155,-76.5 301,-76.5 301,-76.5 155,-76.5"/>
+<polygon fill="#666666" stroke="#666666" points="155,-61.5 155,-61.5 301,-61.5 301,-61.5 155,-61.5"/>
+<polygon fill="none" stroke="#666666" points="155,0 155,-105 301,-105 301,0 155,0"/>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="#63b8ff" d="M231,-131.51C231,-122.97 231,-114.02 231,-105.35"/>
-<polygon fill="none" stroke="#63b8ff" points="227.5,-131.67 231,-141.67 234.5,-131.67 227.5,-131.67"/>
+<path fill="none" stroke="#63b8ff" d="M228,-131.51C228,-122.97 228,-114.02 228,-105.35"/>
+<polygon fill="none" stroke="#63b8ff" points="224.5,-131.67 228,-141.67 231.5,-131.67 224.5,-131.67"/>
 </g>
 </g>
 </svg>
