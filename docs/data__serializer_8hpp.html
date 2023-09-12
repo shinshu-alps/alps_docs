@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.9.7" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alps: alps_common_lib/include/alps_cmn/communication/data_serializer.hpp ファイル</title>
+    <title>Alps: alps_common_lib/include/alps_cmn/util/data_serializer.hpp ファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
     <script type="text/javascript" src="jquery.js"></script>
@@ -126,34 +126,34 @@ $(document).ready(function(){initNavTree('data__serializer_8hpp.html',''); initR
 <code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;mutex&gt;</code><br />
-<code>#include &quot;<a class="el" href="byte__ring__buffer_8hpp_source.html">alps_cmn/communication/byte_ring_buffer.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="serialize__type__info_8hpp_source.html">alps_cmn/communication/serialize_type_info.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="byte__ring__buffer_8hpp_source.html">alps_cmn/type/byte_ring_buffer.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="serialize__type__info_8hpp_source.html">alps_cmn/util/serialize_type_info.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 data_serializer.hpp の依存先関係図:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="data__serializer_8hpp__incl.svg" width="948" height="227"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="data__serializer_8hpp__incl.svg" width="892" height="212"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 被依存関係図:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="data__serializer_8hpp__dep__incl.svg" width="659" height="271"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="data__serializer_8hpp__dep__incl.svg" width="659" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="data__serializer_8hpp_source.html">[ソースコード]</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 クラス</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_data_serializer.html">alps::cmn::communication::DataSerializer&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">データとバイト列の変換器  <a href="classalps_1_1cmn_1_1communication_1_1_data_serializer.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1util_1_1_data_serializer.html">alps::cmn::util::DataSerializer&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">データとバイト列の変換器  <a href="classalps_1_1cmn_1_1util_1_1_data_serializer.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_data_serializer_3_01std_1_1vector_3_01_u_01_4_01_4.html">alps::cmn::communication::DataSerializer&lt; std::vector&lt; U &gt; &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::vector型に特殊化したデータとバイト列の変換器  <a href="classalps_1_1cmn_1_1communication_1_1_data_serializer_3_01std_1_1vector_3_01_u_01_4_01_4.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1util_1_1_data_serializer_3_01std_1_1vector_3_01_u_01_4_01_4.html">alps::cmn::util::DataSerializer&lt; std::vector&lt; U &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::vector型に特殊化したデータとバイト列の変換器  <a href="classalps_1_1cmn_1_1util_1_1_data_serializer_3_01std_1_1vector_3_01_u_01_4_01_4.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_data_serializer_3_01std_1_1string_01_4.html">alps::cmn::communication::DataSerializer&lt; std::string &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::string型に特殊化したデータとバイト列の変換器  <a href="classalps_1_1cmn_1_1communication_1_1_data_serializer_3_01std_1_1string_01_4.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1util_1_1_data_serializer_3_01std_1_1string_01_4.html">alps::cmn::util::DataSerializer&lt; std::string &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::string型に特殊化したデータとバイト列の変換器  <a href="classalps_1_1cmn_1_1util_1_1_data_serializer_3_01std_1_1string_01_4.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_data_serializer_3_01std_1_1tuple_3_01_args_8_8_8_01_4_01_4.html">alps::cmn::communication::DataSerializer&lt; std::tuple&lt; Args... &gt; &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::tuple型に特殊化したデータとバイト列の変換器  <a href="classalps_1_1cmn_1_1communication_1_1_data_serializer_3_01std_1_1tuple_3_01_args_8_8_8_01_4_01_4.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1util_1_1_data_serializer_3_01std_1_1tuple_3_01_args_8_8_8_01_4_01_4.html">alps::cmn::util::DataSerializer&lt; std::tuple&lt; Args... &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::tuple型に特殊化したデータとバイト列の変換器  <a href="classalps_1_1cmn_1_1util_1_1_data_serializer_3_01std_1_1tuple_3_01_args_8_8_8_01_4_01_4.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -164,15 +164,15 @@ data_serializer.hpp の依存先関係図:</div>
 <tr class="memitem:namespacealps_1_1cmn"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn.html">alps::cmn</a></td></tr>
 <tr class="memdesc:namespacealps_1_1cmn"><td class="mdescLeft">&#160;</td><td class="mdescRight">汎用ライブラリ <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacealps_1_1cmn_1_1communication"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication.html">alps::cmn::communication</a></td></tr>
-<tr class="memdesc:namespacealps_1_1cmn_1_1communication"><td class="mdescLeft">&#160;</td><td class="mdescRight">通信関係 <br /></td></tr>
+<tr class="memitem:namespacealps_1_1cmn_1_1util"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1util.html">alps::cmn::util</a></td></tr>
+<tr class="memdesc:namespacealps_1_1cmn_1_1util"><td class="mdescLeft">&#160;</td><td class="mdescRight">ユーティリティ関係 <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 関数</h2></td></tr>
-<tr class="memitem:ad6ef9f3fb96a4936e8a02431eb74aa76"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication.html#ad6ef9f3fb96a4936e8a02431eb74aa76">alps::cmn::communication::IsLittleEndian</a> () noexcept</td></tr>
-<tr class="memdesc:ad6ef9f3fb96a4936e8a02431eb74aa76"><td class="mdescLeft">&#160;</td><td class="mdescRight">実行環境がリトルエンディアンかどうか判定  <br /></td></tr>
-<tr class="separator:ad6ef9f3fb96a4936e8a02431eb74aa76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa82310ccd79d4c0cb7fb8537d994e465"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1util.html#aa82310ccd79d4c0cb7fb8537d994e465">alps::cmn::util::IsLittleEndian</a> () noexcept</td></tr>
+<tr class="memdesc:aa82310ccd79d4c0cb7fb8537d994e465"><td class="mdescLeft">&#160;</td><td class="mdescRight">実行環境がリトルエンディアンかどうか判定  <br /></td></tr>
+<tr class="separator:aa82310ccd79d4c0cb7fb8537d994e465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>データとバイト列の変換ライブラリ </p>
@@ -185,7 +185,7 @@ data_serializer.hpp の依存先関係図:</div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_fcd1ba41f8679fcc7bf76d667eaa0e17.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_ce1e71e2103ac83e6d6cc720a9feeeb7.html">include</a></li><li class="navelem"><a class="el" href="dir_cc648f72f51f156e42f9863c0e5bf5fb.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_76fd7680a09542374d3e212281ba6ee2.html">communication</a></li><li class="navelem"><a class="el" href="data__serializer_8hpp.html">data_serializer.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_fcd1ba41f8679fcc7bf76d667eaa0e17.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_ce1e71e2103ac83e6d6cc720a9feeeb7.html">include</a></li><li class="navelem"><a class="el" href="dir_cc648f72f51f156e42f9863c0e5bf5fb.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_26247a4c7d21a73996b8a7832c1a1463.html">util</a></li><li class="navelem"><a class="el" href="data__serializer_8hpp.html">data_serializer.hpp</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>

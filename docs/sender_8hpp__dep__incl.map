@@ -1,6 +1,6 @@
 <map id="alps_common_lib/include/alps_cmn/communication/sender.hpp" name="alps_common_lib/include/alps_cmn/communication/sender.hpp">
 <area shape="rect" id="node1" title="シリアル通信で送るデータを登録" alt="" coords="123,5,317,60"/>
 <area shape="rect" id="node2" href="$id__packet__manager_8hpp.html" title="ID付きパケットデータを管理" alt="" coords="123,108,317,163"/>
-<area shape="rect" id="node3" href="$pc__uart__connection_8hpp.html" title="パソコンと接続してパケット通信を行うライブラリ" alt="" coords="5,211,208,265"/>
-<area shape="rect" id="node4" href="$mbed__uart__connection_8hpp.html" title="接続された複数のMbedとシリアル通信を行う" alt="" coords="232,211,435,265"/>
+<area shape="rect" id="node3" href="$mbed__uart__connection_8hpp.html" title="接続された複数のMbedとシリアル通信を行う" alt="" coords="5,211,208,265"/>
+<area shape="rect" id="node4" href="$pc__uart__connection_8hpp.html" title="パソコンと接続してパケット通信を行うライブラリ" alt="" coords="232,211,435,265"/>
 </map>

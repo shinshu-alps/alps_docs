@@ -1,4 +1,4 @@
-<map id="alps_ros_lib/include/alps_ros/communication/ubuntu_uart_io.hpp" name="alps_ros_lib/include/alps_ros/communication/ubuntu_uart_io.hpp">
-<area shape="rect" id="node1" title="Ubuntuシリアル通信IOライブラリ" alt="" coords="14,5,199,60"/>
+<map id="alps_linux_lib/include/alps_lin/communication/ubuntu_uart_io.hpp" name="alps_linux_lib/include/alps_lin/communication/ubuntu_uart_io.hpp">
+<area shape="rect" id="node1" title="Ubuntuシリアル通信IOライブラリ" alt="" coords="16,5,197,60"/>
 <area shape="rect" id="node2" href="$mbed__uart__connection_8hpp.html" title="接続された複数のMbedとシリアル通信を行う" alt="" coords="5,108,208,163"/>
 </map>

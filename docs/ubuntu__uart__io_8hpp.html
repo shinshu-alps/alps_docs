@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.9.7" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alps: alps_ros_lib/include/alps_ros/communication/ubuntu_uart_io.hpp ファイル</title>
+    <title>Alps: alps_linux_lib/include/alps_lin/communication/ubuntu_uart_io.hpp ファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
     <script type="text/javascript" src="jquery.js"></script>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('ubuntu__uart__io_8hpp.html',''); initR
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="byte__ring__buffer_8hpp_source.html">alps_cmn/communication/byte_ring_buffer.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="byte__ring__buffer_8hpp_source.html">alps_cmn/type/byte_ring_buffer.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="i__uart__io_8hpp_source.html">alps_cmn/communication/i_uart_io.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 ubuntu_uart_io.hpp の依存先関係図:</div>
@@ -142,8 +142,8 @@ ubuntu_uart_io.hpp の依存先関係図:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 クラス</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html">alps::ros::communication::UbuntuUartIo</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ubuntu環境でのUartシリアル通信IOクラス  <a href="classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1lin_1_1communication_1_1_ubuntu_uart_io.html">alps::lin::communication::UbuntuUartIo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ubuntu環境でのUartシリアル通信IOクラス  <a href="classalps_1_1lin_1_1communication_1_1_ubuntu_uart_io.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -151,11 +151,11 @@ ubuntu_uart_io.hpp の依存先関係図:</div>
 <tr class="memitem:namespacealps"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps.html">alps</a></td></tr>
 <tr class="memdesc:namespacealps"><td class="mdescLeft">&#160;</td><td class="mdescRight">ロボ研で開発したライブラリ <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacealps_1_1ros"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros.html">alps::ros</a></td></tr>
-<tr class="memdesc:namespacealps_1_1ros"><td class="mdescLeft">&#160;</td><td class="mdescRight">ROS用ライブラリ <br /></td></tr>
+<tr class="memitem:namespacealps_1_1lin"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1lin.html">alps::lin</a></td></tr>
+<tr class="memdesc:namespacealps_1_1lin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linux用ライブラリ <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacealps_1_1ros_1_1communication"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros_1_1communication.html">alps::ros::communication</a></td></tr>
-<tr class="memdesc:namespacealps_1_1ros_1_1communication"><td class="mdescLeft">&#160;</td><td class="mdescRight">通信関係 <br /></td></tr>
+<tr class="memitem:namespacealps_1_1lin_1_1communication"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1lin_1_1communication.html">alps::lin::communication</a></td></tr>
+<tr class="memdesc:namespacealps_1_1lin_1_1communication"><td class="mdescLeft">&#160;</td><td class="mdescRight">通信関係 <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
@@ -169,7 +169,7 @@ ubuntu_uart_io.hpp の依存先関係図:</div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_8868281c77c6e51814f463b41016bd4c.html">alps_ros_lib</a></li><li class="navelem"><a class="el" href="dir_d0c514d533dd526dfaa45b12386bce43.html">include</a></li><li class="navelem"><a class="el" href="dir_a74f55564645add44f143c17043d3c34.html">alps_ros</a></li><li class="navelem"><a class="el" href="dir_8d7e98b92fe29bc24de4757e1a8b67ec.html">communication</a></li><li class="navelem"><a class="el" href="ubuntu__uart__io_8hpp.html">ubuntu_uart_io.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_1c56f1202c4b9b2556a51beaa852430f.html">alps_linux_lib</a></li><li class="navelem"><a class="el" href="dir_6d217df781fc4021ea64ca101836a906.html">include</a></li><li class="navelem"><a class="el" href="dir_a2f3e768eb1f47df90dbab1b9b2951f6.html">alps_lin</a></li><li class="navelem"><a class="el" href="dir_042306a24671901d82947867ee593e03.html">communication</a></li><li class="navelem"><a class="el" href="ubuntu__uart__io_8hpp.html">ubuntu_uart_io.hpp</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>

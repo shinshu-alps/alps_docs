@@ -23,9 +23,9 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="byte__ring__buffer_8hpp.html" target="_top" xlink:title="シリアル通信用リングバッファー">
-<polygon fill="white" stroke="#666666" points="195,-85 53,-85 53,-55 195,-55 195,-85"/>
-<text text-anchor="start" x="61" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">alps_cmn/communication</text>
-<text text-anchor="middle" x="124" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">/byte_ring_buffer.hpp</text>
+<polygon fill="white" stroke="#666666" points="180.5,-85 67.5,-85 67.5,-55 180.5,-55 180.5,-85"/>
+<text text-anchor="start" x="75.5" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">alps_cmn/type/byte</text>
+<text text-anchor="middle" x="124" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">_ring_buffer.hpp</text>
 </a>
 </g>
 </g>

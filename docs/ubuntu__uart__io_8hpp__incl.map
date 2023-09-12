@@ -1,5 +1,5 @@
-<map id="alps_ros_lib/include/alps_ros/communication/ubuntu_uart_io.hpp" name="alps_ros_lib/include/alps_ros/communication/ubuntu_uart_io.hpp">
-<area shape="rect" id="node1" title="Ubuntuシリアル通信IOライブラリ" alt="" coords="328,5,513,60"/>
+<map id="alps_linux_lib/include/alps_lin/communication/ubuntu_uart_io.hpp" name="alps_linux_lib/include/alps_lin/communication/ubuntu_uart_io.hpp">
+<area shape="rect" id="node1" title="Ubuntuシリアル通信IOライブラリ" alt="" coords="330,5,511,60"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,115,68,141"/>
 <area shape="rect" id="node3" title=" " alt="" coords="92,115,160,141"/>
 <area shape="rect" id="node4" title=" " alt="" coords="184,115,268,141"/>
@@ -7,7 +7,7 @@
 <area shape="rect" id="node6" title=" " alt="" coords="391,115,450,141"/>
 <area shape="rect" id="node7" title=" " alt="" coords="474,115,541,141"/>
 <area shape="rect" id="node8" title=" " alt="" coords="565,115,631,141"/>
-<area shape="rect" id="node9" href="$byte__ring__buffer_8hpp.html" title="シリアル通信用リングバッファー" alt="" coords="639,196,829,236"/>
+<area shape="rect" id="node9" href="$byte__ring__buffer_8hpp.html" title="シリアル通信用リングバッファー" alt="" coords="659,196,809,236"/>
 <area shape="rect" id="node14" href="$i__uart__io_8hpp.html" title=" " alt="" coords="706,108,895,148"/>
 <area shape="rect" id="node10" title=" " alt="" coords="569,284,635,309"/>
 <area shape="rect" id="node11" title=" " alt="" coords="660,284,723,309"/>

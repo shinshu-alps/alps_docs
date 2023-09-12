@@ -6,5 +6,5 @@ var searchData=
   ['_7eservomotorbase_3',['~ServoMotorBase',['../classalps_1_1cmn_1_1actuator_1_1_servo_motor_base.html#ad566ce6187ece3a85e3ec9098cf6ce72',1,'alps::cmn::actuator::ServoMotorBase']]],
   ['_7esocketcanio_4',['~SocketCanIo',['../classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a439264db8159442c3cdc66fbd065c092',1,'alps::lin::communication::SocketCanIo']]],
   ['_7euartio_5',['~UartIo',['../classalps_1_1mbed_1_1communication_1_1_uart_io.html#a31b48d006a4417add2a332d6e86d6d3e',1,'alps::mbed::communication::UartIo']]],
-  ['_7eubuntuuartio_6',['~UbuntuUartIo',['../classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html#a8998de706f9ff5624ee44bf5ed8dd02b',1,'alps::ros::communication::UbuntuUartIo']]]
+  ['_7eubuntuuartio_6',['~UbuntuUartIo',['../classalps_1_1lin_1_1communication_1_1_ubuntu_uart_io.html#a19a1c46dce8b9e19ad51e6244c0e8b3c',1,'alps::lin::communication::UbuntuUartIo']]]
 ];

@@ -56,11 +56,11 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="pc__uart__connection_8hpp.html" target="_top" xlink:title="パソコンと接続してパケット通信を行うライブラリ">
+<g id="a_node4"><a xlink:href="mbed__uart__connection_8hpp.html" target="_top" xlink:title="接続された複数のMbedとシリアル通信を行う">
 <polygon fill="white" stroke="#666666" points="315.5,-41 163.5,-41 163.5,0 315.5,0 315.5,-41"/>
-<text text-anchor="start" x="171.5" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">alps_mbed_lib/include</text>
-<text text-anchor="start" x="171.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_mbed/communication</text>
-<text text-anchor="middle" x="239.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">/pc_uart_connection.hpp</text>
+<text text-anchor="start" x="171.5" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">alps_linux_lib/include</text>
+<text text-anchor="start" x="171.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_lin/communication</text>
+<text text-anchor="middle" x="239.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">/mbed_uart_connection.hpp</text>
 </a>
 </g>
 </g>
@@ -73,11 +73,11 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="mbed__uart__connection_8hpp.html" target="_top" xlink:title="接続された複数のMbedとシリアル通信を行う">
+<g id="a_node5"><a xlink:href="pc__uart__connection_8hpp.html" target="_top" xlink:title="パソコンと接続してパケット通信を行うライブラリ">
 <polygon fill="white" stroke="#666666" points="485.5,-41 333.5,-41 333.5,0 485.5,0 485.5,-41"/>
-<text text-anchor="start" x="341.5" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">alps_ros_lib/include</text>
-<text text-anchor="start" x="341.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_ros/communication</text>
-<text text-anchor="middle" x="409.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">/mbed_uart_connection.hpp</text>
+<text text-anchor="start" x="341.5" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">alps_mbed_lib/include</text>
+<text text-anchor="start" x="341.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_mbed/communication</text>
+<text text-anchor="middle" x="409.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">/pc_uart_connection.hpp</text>
 </a>
 </g>
 </g>

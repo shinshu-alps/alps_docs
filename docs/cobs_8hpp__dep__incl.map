@@ -2,6 +2,6 @@
 <area shape="rect" id="node1" title="COBS変換ライブラリ" alt="" coords="116,5,309,60"/>
 <area shape="rect" id="node2" href="$id__packet__manager_8hpp.html" title="ID付きパケットデータを管理" alt="" coords="116,108,309,163"/>
 <area shape="rect" id="node3" href="$sender_8hpp.html" title="シリアル通信で送るデータを登録" alt="" coords="5,211,199,265"/>
-<area shape="rect" id="node4" href="$pc__uart__connection_8hpp.html" title="パソコンと接続してパケット通信を行うライブラリ" alt="" coords="223,211,426,265"/>
-<area shape="rect" id="node5" href="$mbed__uart__connection_8hpp.html" title="接続された複数のMbedとシリアル通信を行う" alt="" coords="450,211,653,265"/>
+<area shape="rect" id="node4" href="$mbed__uart__connection_8hpp.html" title="接続された複数のMbedとシリアル通信を行う" alt="" coords="223,211,426,265"/>
+<area shape="rect" id="node5" href="$pc__uart__connection_8hpp.html" title="パソコンと接続してパケット通信を行うライブラリ" alt="" coords="450,211,653,265"/>
 </map>
