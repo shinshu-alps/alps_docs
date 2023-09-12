@@ -831,14 +831,16 @@ WARN_LOGFILE           =
 # Note: If this tag is empty the current directory is searched.
 
 INPUT                  = alps_common_lib/include \
+INPUT                  = alps_linux_lib/include \
                          alps_mbed_lib/include \
+                         alps_stm32_lib/include \
                          alps_ros_lib/include \
+                         alps_ros2_lib/include \
                          MainPage.md \
                          ドキュメント更新手順.md \
                          docs/extensions.md \
                          docs/customization.md \
-                         docs/tricks.md \
-                         namespace_explanation.hpp
+                         docs/tricks.md 
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses
