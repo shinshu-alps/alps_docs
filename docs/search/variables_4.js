@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['npos_0',['npos',['../classroblab_1_1common_1_1serial_1_1_byte_ring_buffer.html#abace11aacd444c32d680521435256e2a',1,'roblab::common::serial::ByteRingBuffer']]]
+  ['npos_0',['npos',['../classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html#ab224a9c32e901a45a1650e6698ccf724',1,'alps::cmn::communication::ByteRingBuffer']]]
 ];

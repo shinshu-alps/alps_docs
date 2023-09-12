@@ -1,5 +1,0 @@
-<map id="roblab::mbed::serial::UartIo" name="roblab::mbed::serial::UartIo">
-<area shape="rect" id="node1" title="mbedのUartシリアル通信IOクラス" alt="" coords="15,317,159,457"/>
-<area shape="rect" id="node2" href="$classroblab_1_1common_1_1serial_1_1_i_uart_io.html" title=" " alt="" coords="5,168,169,268"/>
-<area shape="rect" id="node3" href="$classroblab_1_1common_1_1serial_1_1_i_uart_io.html" title="Uart通信IOのインターフェース" alt="" coords="5,5,169,105"/>
-</map>

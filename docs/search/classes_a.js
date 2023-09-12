@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['uartio_0',['UartIo',['../classroblab_1_1mbed_1_1serial_1_1_uart_io.html',1,'roblab::mbed::serial']]],
-  ['ubuntuuartio_1',['UbuntuUartIo',['../classroblab_1_1ros_1_1serial_1_1_ubuntu_uart_io.html',1,'roblab::ros::serial']]]
+  ['uartio_0',['UartIo',['../classalps_1_1mbed_1_1communication_1_1_uart_io.html',1,'alps::mbed::communication']]],
+  ['ubuntuuartio_1',['UbuntuUartIo',['../classalps_1_1ros_1_1communication_1_1_ubuntu_uart_io.html',1,'alps::ros::communication']]]
 ];

@@ -1,6 +1,6 @@
-<map id="roblab_common_lib/include/roblab_common/actuator/robomas_motor.hpp" name="roblab_common_lib/include/roblab_common/actuator/robomas_motor.hpp">
-<area shape="rect" id="node1" title="ロボマスモータのライブラリ" alt="" coords="5,5,207,60"/>
-<area shape="rect" id="node2" href="$can__data__frame_8hpp.html" title="CANフレームを表す構造体" alt="" coords="23,108,189,148"/>
-<area shape="rect" id="node3" title=" " alt="" coords="17,196,88,221"/>
-<area shape="rect" id="node4" title=" " alt="" coords="113,196,209,221"/>
+<map id="alps_common_lib/include/alps_cmn/actuator/robomas_motor.hpp" name="alps_common_lib/include/alps_cmn/actuator/robomas_motor.hpp">
+<area shape="rect" id="node1" title="ロボマスモータのライブラリ" alt="" coords="5,5,212,60"/>
+<area shape="rect" id="node2" href="$can__data__frame_8hpp.html" title="CANフレームを表す構造体" alt="" coords="14,108,203,148"/>
+<area shape="rect" id="node3" title=" " alt="" coords="20,196,91,221"/>
+<area shape="rect" id="node4" title=" " alt="" coords="115,196,211,221"/>
 </map>

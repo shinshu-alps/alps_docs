@@ -1,7 +1,0 @@
-<map id="roblab::common::gpio::IAttachInterrupt&lt; Derived &gt;" name="roblab::common::gpio::IAttachInterrupt&lt; Derived &gt;">
-<area shape="rect" id="node1" title="割り込みを設定するインターフェース" alt="" coords="238,5,443,85"/>
-<area shape="rect" id="node2" href="$classroblab_1_1common_1_1gpio_1_1_i_attach_interrupt.html" title=" " alt="" coords="5,155,228,235"/>
-<area shape="rect" id="node4" href="$classroblab_1_1common_1_1gpio_1_1_i_attach_interrupt.html" title=" " alt="" coords="253,148,429,243"/>
-<area shape="rect" id="node5" href="$classroblab_1_1common_1_1gpio_1_1_i_attach_interrupt.html" title=" " alt="" coords="463,148,648,243"/>
-<area shape="rect" id="node3" href="$classroblab_1_1mbed_1_1gpio_1_1_interrupt_in.html" title="割り込み入力ピン" alt="" coords="34,292,199,432"/>
-</map>

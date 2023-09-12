@@ -1,9 +1,9 @@
-<map id="roblab_common_lib/include/roblab_common/serial/cobs.hpp" name="roblab_common_lib/include/roblab_common/serial/cobs.hpp">
-<area shape="rect" id="node1" title="COBS変換ライブラリ" alt="" coords="159,5,393,45"/>
-<area shape="rect" id="node2" href="$byte__ring__buffer_8hpp.html" title="シリアル通信用リングバッファー" alt="" coords="46,93,213,133"/>
-<area shape="rect" id="node5" title=" " alt="" coords="184,181,245,207"/>
-<area shape="rect" id="node6" title=" " alt="" coords="270,181,335,207"/>
-<area shape="rect" id="node7" title=" " alt="" coords="339,101,408,126"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,181,72,207"/>
-<area shape="rect" id="node4" title=" " alt="" coords="97,181,159,207"/>
+<map id="alps_common_lib/include/alps_cmn/communication/cobs.hpp" name="alps_common_lib/include/alps_cmn/communication/cobs.hpp">
+<area shape="rect" id="node1" title="COBS変換ライブラリ" alt="" coords="187,5,381,60"/>
+<area shape="rect" id="node2" href="$byte__ring__buffer_8hpp.html" title="シリアル通信用リングバッファー" alt="" coords="32,108,221,148"/>
+<area shape="rect" id="node5" title=" " alt="" coords="188,196,249,221"/>
+<area shape="rect" id="node6" title=" " alt="" coords="275,196,341,221"/>
+<area shape="rect" id="node7" title=" " alt="" coords="347,115,416,141"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,196,72,221"/>
+<area shape="rect" id="node4" title=" " alt="" coords="97,196,159,221"/>
 </map>

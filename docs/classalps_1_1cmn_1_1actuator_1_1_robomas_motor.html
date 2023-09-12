@@ -1,0 +1,536 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps::cmn::actuator::RobomasMotor クラス</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">alps::cmn::actuator::RobomasMotor クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ロボマスモータのクラス  
+ <a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="robomas__motor_8hpp_source.html">robomas_motor.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a8c505d108218fe4ea9fb646f06141af2"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a8c505d108218fe4ea9fb646f06141af2">Type</a> { <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a8c505d108218fe4ea9fb646f06141af2ac79f8fe34278ffdb418f6ee3b8316ed4">kM2006</a>
+, <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a8c505d108218fe4ea9fb646f06141af2a93e36269eaeb796f969adca34b7957b6">kM3508</a>
+ }</td></tr>
+<tr class="memdesc:a8c505d108218fe4ea9fb646f06141af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">モータの種類  <a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a8c505d108218fe4ea9fb646f06141af2">[詳解]</a><br /></td></tr>
+<tr class="separator:a8c505d108218fe4ea9fb646f06141af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a198ff494789bf98ea940660bbcf611d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a198ff494789bf98ea940660bbcf611d8">RobomasMotor</a> (uint8_t id, <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a8c505d108218fe4ea9fb646f06141af2">Type</a> type=<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a8c505d108218fe4ea9fb646f06141af2ac79f8fe34278ffdb418f6ee3b8316ed4">Type::kM2006</a>)</td></tr>
+<tr class="memdesc:a198ff494789bf98ea940660bbcf611d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化コンストラクタ  <br /></td></tr>
+<tr class="separator:a198ff494789bf98ea940660bbcf611d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05dee99603174150e4852955794a3f38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a05dee99603174150e4852955794a3f38">GetControlFrame</a> (<a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">alps::cmn::communication::CanDataFrame</a> &amp;output_frame, float power)</td></tr>
+<tr class="memdesc:a05dee99603174150e4852955794a3f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">モーターへの指令をCANフレームに変換する  <br /></td></tr>
+<tr class="separator:a05dee99603174150e4852955794a3f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28868cd72a5648d5ac9ee23760647121"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a28868cd72a5648d5ac9ee23760647121">OnReceiveSensorFrame</a> (const <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">alps::cmn::communication::CanDataFrame</a> &amp;sensor_flame)</td></tr>
+<tr class="memdesc:a28868cd72a5648d5ac9ee23760647121"><td class="mdescLeft">&#160;</td><td class="mdescRight">モーターからのセンサーデータを受け取った際の更新処理  <br /></td></tr>
+<tr class="separator:a28868cd72a5648d5ac9ee23760647121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a789de3845a109691f837d7793f8b0e4c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a789de3845a109691f837d7793f8b0e4c">GetId</a> ()</td></tr>
+<tr class="memdesc:a789de3845a109691f837d7793f8b0e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">モーターIDを返す  <br /></td></tr>
+<tr class="separator:a789de3845a109691f837d7793f8b0e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac382dfe1f292081468a20cb67d003124"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#ac382dfe1f292081468a20cb67d003124">GetDeg</a> ()</td></tr>
+<tr class="memdesc:ac382dfe1f292081468a20cb67d003124"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の角度を度数法で返す  <br /></td></tr>
+<tr class="separator:ac382dfe1f292081468a20cb67d003124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade674febb1c327f5b03636fecb1c5c2a"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#ade674febb1c327f5b03636fecb1c5c2a">GetRpm</a> ()</td></tr>
+<tr class="memdesc:ade674febb1c327f5b03636fecb1c5c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">回転速度を返す  <br /></td></tr>
+<tr class="separator:ade674febb1c327f5b03636fecb1c5c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afceed7de0aca29c1b62f762a9e9812aa"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#afceed7de0aca29c1b62f762a9e9812aa">GetRealCurrent</a> ()</td></tr>
+<tr class="memdesc:afceed7de0aca29c1b62f762a9e9812aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のトルク電流を返す  <br /></td></tr>
+<tr class="separator:afceed7de0aca29c1b62f762a9e9812aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e6245a44df78d56c87fdd119817e05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a17e6245a44df78d56c87fdd119817e05">ResetAngle</a> ()</td></tr>
+<tr class="memdesc:a17e6245a44df78d56c87fdd119817e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の位置を0°とする  <br /></td></tr>
+<tr class="separator:a17e6245a44df78d56c87fdd119817e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:aa546e889fde325e79532d838d4e428cf"><td class="memItemLeft" align="right" valign="top">static constexpr int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#aa546e889fde325e79532d838d4e428cf">kMaxAbsPowerM2006</a> {10000}</td></tr>
+<tr class="memdesc:aa546e889fde325e79532d838d4e428cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">M2006の最大出力  <br /></td></tr>
+<tr class="separator:aa546e889fde325e79532d838d4e428cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a215bdd5016bb053efb966c5bf27a1e94"><td class="memItemLeft" align="right" valign="top">static constexpr int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a215bdd5016bb053efb966c5bf27a1e94">kMaxAbsPowerM3508</a> {16384}</td></tr>
+<tr class="memdesc:a215bdd5016bb053efb966c5bf27a1e94"><td class="mdescLeft">&#160;</td><td class="mdescRight">M3508の最大出力  <br /></td></tr>
+<tr class="separator:a215bdd5016bb053efb966c5bf27a1e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3be4abef401a647b0d45a1ae7e0444d"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#aa3be4abef401a647b0d45a1ae7e0444d">kGearRatioM2006</a> {36.0 / 1.0}</td></tr>
+<tr class="memdesc:aa3be4abef401a647b0d45a1ae7e0444d"><td class="mdescLeft">&#160;</td><td class="mdescRight">M2006のギヤ比. 36:1  <br /></td></tr>
+<tr class="separator:aa3be4abef401a647b0d45a1ae7e0444d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a184c57daf261222428aad3d56479a393"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a184c57daf261222428aad3d56479a393">kGearRatioM3508</a> {19.0 / 1.0}</td></tr>
+<tr class="memdesc:a184c57daf261222428aad3d56479a393"><td class="mdescLeft">&#160;</td><td class="mdescRight">M3508のギヤ比. 19:1  <br /></td></tr>
+<tr class="separator:a184c57daf261222428aad3d56479a393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>ロボマスモータのクラス </p>
+</div><h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a8c505d108218fe4ea9fb646f06141af2" name="a8c505d108218fe4ea9fb646f06141af2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c505d108218fe4ea9fb646f06141af2">&#9670;&#160;</a></span>Type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a8c505d108218fe4ea9fb646f06141af2">alps::cmn::actuator::RobomasMotor::Type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>モータの種類 </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a8c505d108218fe4ea9fb646f06141af2ac79f8fe34278ffdb418f6ee3b8316ed4" name="a8c505d108218fe4ea9fb646f06141af2ac79f8fe34278ffdb418f6ee3b8316ed4"></a>kM2006&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8c505d108218fe4ea9fb646f06141af2a93e36269eaeb796f969adca34b7957b6" name="a8c505d108218fe4ea9fb646f06141af2a93e36269eaeb796f969adca34b7957b6"></a>kM3508&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a198ff494789bf98ea940660bbcf611d8" name="a198ff494789bf98ea940660bbcf611d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a198ff494789bf98ea940660bbcf611d8">&#9670;&#160;</a></span>RobomasMotor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">alps::cmn::actuator::RobomasMotor::RobomasMotor </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a8c505d108218fe4ea9fb646f06141af2">Type</a>&#160;</td>
+          <td class="paramname"><em>type</em> = <code><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a8c505d108218fe4ea9fb646f06141af2ac79f8fe34278ffdb418f6ee3b8316ed4">Type::kM2006</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初期化コンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>モーターID </td></tr>
+    <tr><td class="paramname">type</td><td>モーターの種類 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a05dee99603174150e4852955794a3f38" name="a05dee99603174150e4852955794a3f38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05dee99603174150e4852955794a3f38">&#9670;&#160;</a></span>GetControlFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alps::cmn::actuator::RobomasMotor::GetControlFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">alps::cmn::communication::CanDataFrame</a> &amp;&#160;</td>
+          <td class="paramname"><em>output_frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>power</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>モーターへの指令をCANフレームに変換する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output_frame</td><td>指令を書き込むCANフレーム. 既に異なるIDのモーターへの指令が入っていてもok. </td></tr>
+    <tr><td class="paramname">power</td><td>パワー指令(1.0 ~ -1.0) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac382dfe1f292081468a20cb67d003124" name="ac382dfe1f292081468a20cb67d003124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac382dfe1f292081468a20cb67d003124">&#9670;&#160;</a></span>GetDeg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t alps::cmn::actuator::RobomasMotor::GetDeg </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>現在の角度を度数法で返す </p>
+<dl class="section return"><dt>戻り値</dt><dd>角度[deg] </dd></dl>
+
+</div>
+</div>
+<a id="a789de3845a109691f837d7793f8b0e4c" name="a789de3845a109691f837d7793f8b0e4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a789de3845a109691f837d7793f8b0e4c">&#9670;&#160;</a></span>GetId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t alps::cmn::actuator::RobomasMotor::GetId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>モーターIDを返す </p>
+<dl class="section return"><dt>戻り値</dt><dd>モーターID </dd></dl>
+
+</div>
+</div>
+<a id="afceed7de0aca29c1b62f762a9e9812aa" name="afceed7de0aca29c1b62f762a9e9812aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afceed7de0aca29c1b62f762a9e9812aa">&#9670;&#160;</a></span>GetRealCurrent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t alps::cmn::actuator::RobomasMotor::GetRealCurrent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>現在のトルク電流を返す </p>
+<dl class="section return"><dt>戻り値</dt><dd>トルク電流 </dd></dl>
+
+</div>
+</div>
+<a id="ade674febb1c327f5b03636fecb1c5c2a" name="ade674febb1c327f5b03636fecb1c5c2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade674febb1c327f5b03636fecb1c5c2a">&#9670;&#160;</a></span>GetRpm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t alps::cmn::actuator::RobomasMotor::GetRpm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>回転速度を返す </p>
+<dl class="section return"><dt>戻り値</dt><dd>回転速度[rpm] </dd></dl>
+
+</div>
+</div>
+<a id="a28868cd72a5648d5ac9ee23760647121" name="a28868cd72a5648d5ac9ee23760647121"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28868cd72a5648d5ac9ee23760647121">&#9670;&#160;</a></span>OnReceiveSensorFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool alps::cmn::actuator::RobomasMotor::OnReceiveSensorFrame </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">alps::cmn::communication::CanDataFrame</a> &amp;&#160;</td>
+          <td class="paramname"><em>sensor_flame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>モーターからのセンサーデータを受け取った際の更新処理 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor_flame</td><td>センサーデータを含むCANフレーム. フレームID = 0x200 + モータIDである必要がある.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>モーターからのセンサー値を受け取った際の更新処理</p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor_flame</td><td>センサーデータを含むCANフレーム. フレームID = 0x200 + モータIDである必要がある. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true センサー値の更新に成功した場合 </dd>
+<dd>
+false 不適なCANフレームであった場合 </dd></dl>
+
+</div>
+</div>
+<a id="a17e6245a44df78d56c87fdd119817e05" name="a17e6245a44df78d56c87fdd119817e05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17e6245a44df78d56c87fdd119817e05">&#9670;&#160;</a></span>ResetAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alps::cmn::actuator::RobomasMotor::ResetAngle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>現在の位置を0°とする </p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="aa3be4abef401a647b0d45a1ae7e0444d" name="aa3be4abef401a647b0d45a1ae7e0444d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3be4abef401a647b0d45a1ae7e0444d">&#9670;&#160;</a></span>kGearRatioM2006</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float alps::cmn::actuator::RobomasMotor::kGearRatioM2006 {36.0 / 1.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>M2006のギヤ比. 36:1 </p>
+
+</div>
+</div>
+<a id="a184c57daf261222428aad3d56479a393" name="a184c57daf261222428aad3d56479a393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a184c57daf261222428aad3d56479a393">&#9670;&#160;</a></span>kGearRatioM3508</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float alps::cmn::actuator::RobomasMotor::kGearRatioM3508 {19.0 / 1.0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>M3508のギヤ比. 19:1 </p>
+
+</div>
+</div>
+<a id="aa546e889fde325e79532d838d4e428cf" name="aa546e889fde325e79532d838d4e428cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa546e889fde325e79532d838d4e428cf">&#9670;&#160;</a></span>kMaxAbsPowerM2006</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int16_t alps::cmn::actuator::RobomasMotor::kMaxAbsPowerM2006 {10000}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>M2006の最大出力 </p>
+
+</div>
+</div>
+<a id="a215bdd5016bb053efb966c5bf27a1e94" name="a215bdd5016bb053efb966c5bf27a1e94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a215bdd5016bb053efb966c5bf27a1e94">&#9670;&#160;</a></span>kMaxAbsPowerM3508</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int16_t alps::cmn::actuator::RobomasMotor::kMaxAbsPowerM3508 {16384}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>M3508の最大出力 </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>alps_common_lib/include/alps_cmn/actuator/<a class="el" href="robomas__motor_8hpp_source.html">robomas_motor.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacealps.html">alps</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn.html">cmn</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn_1_1actuator.html">actuator</a></li><li class="navelem"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html">RobomasMotor</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

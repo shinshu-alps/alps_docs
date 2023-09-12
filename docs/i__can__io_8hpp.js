@@ -1,4 +1,4 @@
 var i__can__io_8hpp =
 [
-    [ "roblab::common::serial::ICanIo< Derived >", "classroblab_1_1common_1_1serial_1_1_i_can_io.html", "classroblab_1_1common_1_1serial_1_1_i_can_io" ]
+    [ "alps::cmn::communication::ICanIo< Derived >", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", "classalps_1_1cmn_1_1communication_1_1_i_can_io" ]
 ];

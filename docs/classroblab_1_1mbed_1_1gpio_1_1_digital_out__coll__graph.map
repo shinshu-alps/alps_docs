@@ -1,5 +1,0 @@
-<map id="DigitalOut" name="DigitalOut">
-<area shape="rect" id="node1" title="デジタル出力ピン" alt="" coords="43,248,159,353"/>
-<area shape="rect" id="node2" href="$classroblab_1_1common_1_1gpio_1_1_i_digital_write.html" title=" " alt="" coords="5,133,197,199"/>
-<area shape="rect" id="node3" href="$classroblab_1_1common_1_1gpio_1_1_i_digital_write.html" title="デジタル出力を行うインタフェース" alt="" coords="13,5,190,71"/>
-</map>

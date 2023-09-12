@@ -1,4 +1,4 @@
 var dob_8hpp =
 [
-    [ "roblab::common::control::Dob", "classroblab_1_1common_1_1control_1_1_dob.html", "classroblab_1_1common_1_1control_1_1_dob" ]
+    [ "alps::cmn::control::Dob", "classalps_1_1cmn_1_1control_1_1_dob.html", "classalps_1_1cmn_1_1control_1_1_dob" ]
 ];

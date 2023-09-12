@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.9.7" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alps: roblab_common_lib/include/roblab_common/serial/sender.hpp ソースファイル</title>
+    <title>Alps: alps_common_lib/include/alps_cmn/communication/sender.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
     <script type="text/javascript" src="jquery.js"></script>
@@ -47,7 +47,7 @@
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">Alps
                             </div>
-                            <div id="projectbrief">roboken shinshu library</div>
+                            <div id="projectbrief">roblab shinshu library</div>
                         </td>
                     </tr>
                 </tbody>
@@ -113,39 +113,39 @@ $(document).ready(function(){initNavTree('sender_8hpp_source.html',''); initResi
 </div><!--header-->
 <div class="contents">
 <a href="sender_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ROBLAB_COMMON_SENDER_HPP_</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ROBLAB_COMMON_SENDER_HPP_</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_CMN_SENDER_HPP_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_CMN_SENDER_HPP_</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="id__packet__manager_8hpp.html">roblab_common/serial/id_packet_manager.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="id__packet__manager_8hpp.html">alps_cmn/communication/id_packet_manager.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceroblab.html">roblab</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">namespace </span>common</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">namespace </span>cmn</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">namespace </span>serial</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">namespace </span>communication</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        {</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1serial_1_1_sender.html">   30</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classroblab_1_1common_1_1serial_1_1_sender.html">Sender</a></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_sender.html">   30</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1_sender.html">Sender</a></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            {</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1serial_1_1_sender.html#a58225c2fe29f277423be6cbcddb30035">   33</a></span>                <a class="code hl_function" href="classroblab_1_1common_1_1serial_1_1_sender.html#a58225c2fe29f277423be6cbcddb30035">Sender</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_sender.html#a8d726944919195489c7e2afbccef75b4">   33</a></span>                <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_sender.html#a8d726944919195489c7e2afbccef75b4">Sender</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1serial_1_1_sender.html#ae5158bfb31f7f58bda2be5056e445bf6">   40</a></span>                T <a class="code hl_function" href="classroblab_1_1common_1_1serial_1_1_sender.html#ae5158bfb31f7f58bda2be5056e445bf6">GetData</a>()</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_sender.html#a42a6e10f15480d537d21263964c709b2">   40</a></span>                T <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_sender.html#a42a6e10f15480d537d21263964c709b2">GetData</a>()</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                {</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                    has_new_val_ = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                    <span class="keywordflow">return</span> data_;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                }</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1serial_1_1_sender.html#a61277aa854376e8cfe3886ba4a9edc46">   48</a></span>                <span class="keywordtype">bool</span> <a class="code hl_function" href="classroblab_1_1common_1_1serial_1_1_sender.html#a61277aa854376e8cfe3886ba4a9edc46">HasNewVal</a>()</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_sender.html#ac8af77369ec815185acfcaf3cb749116">   48</a></span>                <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_sender.html#ac8af77369ec815185acfcaf3cb749116">HasNewVal</a>()</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                {</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                    <span class="keywordflow">return</span> has_new_val_;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                }</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                <span class="comment">// コピー禁止</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1serial_1_1_sender.html#a2ef15be650f7673e3e09ffe62cf00f65">   54</a></span>                <a class="code hl_function" href="classroblab_1_1common_1_1serial_1_1_sender.html#a2ef15be650f7673e3e09ffe62cf00f65">Sender</a>(<span class="keyword">const</span> <a class="code hl_class" href="classroblab_1_1common_1_1serial_1_1_sender.html">Sender</a> &amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1serial_1_1_sender.html#add873b6d496144430e89f414d385dd45">   55</a></span>                <a class="code hl_class" href="classroblab_1_1common_1_1serial_1_1_sender.html">Sender</a> &amp;<a class="code hl_function" href="classroblab_1_1common_1_1serial_1_1_sender.html#add873b6d496144430e89f414d385dd45">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classroblab_1_1common_1_1serial_1_1_sender.html">Sender</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_sender.html#a3bc35c795cc725148f6c9b1f1d9b7c24">   54</a></span>                <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_sender.html#a3bc35c795cc725148f6c9b1f1d9b7c24">Sender</a>(<span class="keyword">const</span> <a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1_sender.html">Sender</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_sender.html#a68636429fcf2701e41eb0e9ee04cdc62">   55</a></span>                <a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1_sender.html">Sender</a> &amp;<a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_sender.html#a68636429fcf2701e41eb0e9ee04cdc62">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1_sender.html">Sender</a> &amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classroblab_1_1common_1_1serial_1_1_sender.html#aa4705eb8455bea9a4342a2f3393f8dac">   61</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1common_1_1serial_1_1_sender.html#aa4705eb8455bea9a4342a2f3393f8dac">SetData</a>(T send_data)</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_sender.html#afa925bcdbd0632c67261987c747fe14d">   61</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_sender.html#afa925bcdbd0632c67261987c747fe14d">SetData</a>(T send_data)</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                {</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                    has_new_val_ = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                    data_ = send_data;</div>
@@ -160,21 +160,21 @@ $(document).ready(function(){initNavTree('sender_8hpp_source.html',''); initResi
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1serial_1_1_sender_html"><div class="ttname"><a href="classroblab_1_1common_1_1serial_1_1_sender.html">roblab::common::serial::Sender</a></div><div class="ttdoc">シリアル通信でデータを送信する</div><div class="ttdef"><b>Definition:</b> sender.hpp:31</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1serial_1_1_sender_html_a2ef15be650f7673e3e09ffe62cf00f65"><div class="ttname"><a href="classroblab_1_1common_1_1serial_1_1_sender.html#a2ef15be650f7673e3e09ffe62cf00f65">roblab::common::serial::Sender::Sender</a></div><div class="ttdeci">Sender(const Sender &amp;)=delete</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1serial_1_1_sender_html_a58225c2fe29f277423be6cbcddb30035"><div class="ttname"><a href="classroblab_1_1common_1_1serial_1_1_sender.html#a58225c2fe29f277423be6cbcddb30035">roblab::common::serial::Sender::Sender</a></div><div class="ttdeci">Sender()=default</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1serial_1_1_sender_html_a61277aa854376e8cfe3886ba4a9edc46"><div class="ttname"><a href="classroblab_1_1common_1_1serial_1_1_sender.html#a61277aa854376e8cfe3886ba4a9edc46">roblab::common::serial::Sender::HasNewVal</a></div><div class="ttdeci">bool HasNewVal()</div><div class="ttdoc">新たに値がセットされているか否か</div><div class="ttdef"><b>Definition:</b> sender.hpp:48</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1serial_1_1_sender_html_aa4705eb8455bea9a4342a2f3393f8dac"><div class="ttname"><a href="classroblab_1_1common_1_1serial_1_1_sender.html#aa4705eb8455bea9a4342a2f3393f8dac">roblab::common::serial::Sender::SetData</a></div><div class="ttdeci">void SetData(T send_data)</div><div class="ttdoc">送信するデータのセット</div><div class="ttdef"><b>Definition:</b> sender.hpp:61</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1serial_1_1_sender_html_add873b6d496144430e89f414d385dd45"><div class="ttname"><a href="classroblab_1_1common_1_1serial_1_1_sender.html#add873b6d496144430e89f414d385dd45">roblab::common::serial::Sender::operator=</a></div><div class="ttdeci">Sender &amp; operator=(const Sender &amp;)=delete</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1serial_1_1_sender_html_ae5158bfb31f7f58bda2be5056e445bf6"><div class="ttname"><a href="classroblab_1_1common_1_1serial_1_1_sender.html#ae5158bfb31f7f58bda2be5056e445bf6">roblab::common::serial::Sender::GetData</a></div><div class="ttdeci">T GetData()</div><div class="ttdoc">送信データを得て，has_new_val_フラグを下ろす</div><div class="ttdef"><b>Definition:</b> sender.hpp:40</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_sender_html"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_sender.html">alps::cmn::communication::Sender</a></div><div class="ttdoc">シリアル通信でデータを送信する</div><div class="ttdef"><b>Definition:</b> sender.hpp:31</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_sender_html_a3bc35c795cc725148f6c9b1f1d9b7c24"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_sender.html#a3bc35c795cc725148f6c9b1f1d9b7c24">alps::cmn::communication::Sender::Sender</a></div><div class="ttdeci">Sender(const Sender &amp;)=delete</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_sender_html_a42a6e10f15480d537d21263964c709b2"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_sender.html#a42a6e10f15480d537d21263964c709b2">alps::cmn::communication::Sender::GetData</a></div><div class="ttdeci">T GetData()</div><div class="ttdoc">送信データを得て，has_new_val_フラグを下ろす</div><div class="ttdef"><b>Definition:</b> sender.hpp:40</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_sender_html_a68636429fcf2701e41eb0e9ee04cdc62"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_sender.html#a68636429fcf2701e41eb0e9ee04cdc62">alps::cmn::communication::Sender::operator=</a></div><div class="ttdeci">Sender &amp; operator=(const Sender &amp;)=delete</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_sender_html_a8d726944919195489c7e2afbccef75b4"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_sender.html#a8d726944919195489c7e2afbccef75b4">alps::cmn::communication::Sender::Sender</a></div><div class="ttdeci">Sender()=default</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_sender_html_ac8af77369ec815185acfcaf3cb749116"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_sender.html#ac8af77369ec815185acfcaf3cb749116">alps::cmn::communication::Sender::HasNewVal</a></div><div class="ttdeci">bool HasNewVal()</div><div class="ttdoc">新たに値がセットされているか否か</div><div class="ttdef"><b>Definition:</b> sender.hpp:48</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_sender_html_afa925bcdbd0632c67261987c747fe14d"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_sender.html#afa925bcdbd0632c67261987c747fe14d">alps::cmn::communication::Sender::SetData</a></div><div class="ttdeci">void SetData(T send_data)</div><div class="ttdoc">送信するデータのセット</div><div class="ttdef"><b>Definition:</b> sender.hpp:61</div></div>
 <div class="ttc" id="aid__packet__manager_8hpp_html"><div class="ttname"><a href="id__packet__manager_8hpp.html">id_packet_manager.hpp</a></div><div class="ttdoc">ID付きパケットデータを管理</div></div>
-<div class="ttc" id="anamespaceroblab_html"><div class="ttname"><a href="namespaceroblab.html">roblab</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_efc7c08bb78c728619d6f844434d9ba6.html">roblab_common_lib</a></li><li class="navelem"><a class="el" href="dir_5fc43148380559492dfddd8ae81e32dd.html">include</a></li><li class="navelem"><a class="el" href="dir_28693fc7a38bf8c5629bdf3b63267db9.html">roblab_common</a></li><li class="navelem"><a class="el" href="dir_ec8c0e597e474906666f1240ea0baa41.html">serial</a></li><li class="navelem"><a class="el" href="sender_8hpp.html">sender.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_fcd1ba41f8679fcc7bf76d667eaa0e17.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_ce1e71e2103ac83e6d6cc720a9feeeb7.html">include</a></li><li class="navelem"><a class="el" href="dir_cc648f72f51f156e42f9863c0e5bf5fb.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_76fd7680a09542374d3e212281ba6ee2.html">communication</a></li><li class="navelem"><a class="el" href="sender_8hpp.html">sender.hpp</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>

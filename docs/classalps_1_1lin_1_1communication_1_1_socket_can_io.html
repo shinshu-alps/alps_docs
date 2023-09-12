@@ -1,0 +1,340 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps::lin::communication::SocketCanIo クラス</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classalps_1_1lin_1_1communication_1_1_socket_can_io.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="classalps_1_1lin_1_1communication_1_1_socket_can_io-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">alps::lin::communication::SocketCanIo クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>SocketCANを用いてCAN通信を行うクラス．  
+ <a href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="socket__can__io_8hpp_source.html">socket_can_io.hpp</a>&gt;</code></p>
+<div class="dynheader">
+alps::lin::communication::SocketCanIo の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classalps_1_1lin_1_1communication_1_1_socket_can_io__inherit__graph.svg" width="219" height="463"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a070fb75e50b86c8d7de38c35c6468b8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a070fb75e50b86c8d7de38c35c6468b8b">SocketCanIo</a> ()</td></tr>
+<tr class="memdesc:a070fb75e50b86c8d7de38c35c6468b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ．CANソケットを開く．  <br /></td></tr>
+<tr class="separator:a070fb75e50b86c8d7de38c35c6468b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a439264db8159442c3cdc66fbd065c092"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a439264db8159442c3cdc66fbd065c092">~SocketCanIo</a> ()</td></tr>
+<tr class="memdesc:a439264db8159442c3cdc66fbd065c092"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ．CANソケットを閉じる．  <br /></td></tr>
+<tr class="separator:a439264db8159442c3cdc66fbd065c092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba9f031ada5fd612d310c1a73cfaa054"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#aba9f031ada5fd612d310c1a73cfaa054">TryRead</a> (<a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">cmn::communication::CanDataFrame</a> &amp;frame)</td></tr>
+<tr class="memdesc:aba9f031ada5fd612d310c1a73cfaa054"><td class="mdescLeft">&#160;</td><td class="mdescRight">CANフレームを1つ読み取る．  <br /></td></tr>
+<tr class="separator:aba9f031ada5fd612d310c1a73cfaa054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afed24e61c35e9274a9235ceafe31e769"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#afed24e61c35e9274a9235ceafe31e769">Write</a> (const <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">cmn::communication::CanDataFrame</a> &amp;frame)</td></tr>
+<tr class="memdesc:afed24e61c35e9274a9235ceafe31e769"><td class="mdescLeft">&#160;</td><td class="mdescRight">CANフレームを1つ書き込む．  <br /></td></tr>
+<tr class="separator:afed24e61c35e9274a9235ceafe31e769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8dced04191dcc8f0415cf736a5342fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html#af8dced04191dcc8f0415cf736a5342fd">CallTryRead</a> (CanDataFrame &amp;frame)</td></tr>
+<tr class="memdesc:af8dced04191dcc8f0415cf736a5342fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してTryRead()関数を呼び出す．挙動: CANフレームを1つ読み取る．  <br /></td></tr>
+<tr class="separator:af8dced04191dcc8f0415cf736a5342fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed6eeb1f824156637eab480eccdf4556"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html#aed6eeb1f824156637eab480eccdf4556">CallWrite</a> (const CanDataFrame &amp;frame)</td></tr>
+<tr class="memdesc:aed6eeb1f824156637eab480eccdf4556"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してWrite()関数を呼び出す．挙動: CANフレームを1つ書き込む．  <br /></td></tr>
+<tr class="separator:aed6eeb1f824156637eab480eccdf4556"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>SocketCANを用いてCAN通信を行うクラス． </p>
+<p>can0インタフェースを使用する．ビットレートはターミナルコマンドで設定． </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a070fb75e50b86c8d7de38c35c6468b8b" name="a070fb75e50b86c8d7de38c35c6468b8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a070fb75e50b86c8d7de38c35c6468b8b">&#9670;&#160;</a></span>SocketCanIo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">alps::lin::communication::SocketCanIo::SocketCanIo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>コンストラクタ．CANソケットを開く． </p>
+
+</div>
+</div>
+<a id="a439264db8159442c3cdc66fbd065c092" name="a439264db8159442c3cdc66fbd065c092"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a439264db8159442c3cdc66fbd065c092">&#9670;&#160;</a></span>~SocketCanIo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">alps::lin::communication::SocketCanIo::~SocketCanIo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デストラクタ．CANソケットを閉じる． </p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="af8dced04191dcc8f0415cf736a5342fd" name="af8dced04191dcc8f0415cf736a5342fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8dced04191dcc8f0415cf736a5342fd">&#9670;&#160;</a></span>CallTryRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">alps::cmn::communication::ICanIo</a>&lt; <a class="el" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html">SocketCanIo</a>  &gt;::CallTryRead </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">CanDataFrame</a> &amp;&#160;</td>
+          <td class="paramname"><em>frame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>インタフェースを介してTryRead()関数を呼び出す．挙動: CANフレームを1つ読み取る． </p>
+<dl class="section note"><dt>覚え書き</dt><dd>継承クラスはこの関数と同じ挙動のTryRead()関数を実装すること．</dd></dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>受け取ったCANフレームを格納する変数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 受け取り成功 </dd>
+<dd>
+false 受け取り失敗 </dd></dl>
+
+</div>
+</div>
+<a id="aed6eeb1f824156637eab480eccdf4556" name="aed6eeb1f824156637eab480eccdf4556"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed6eeb1f824156637eab480eccdf4556">&#9670;&#160;</a></span>CallWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">alps::cmn::communication::ICanIo</a>&lt; <a class="el" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html">SocketCanIo</a>  &gt;::CallWrite </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">CanDataFrame</a> &amp;&#160;</td>
+          <td class="paramname"><em>frame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>インタフェースを介してWrite()関数を呼び出す．挙動: CANフレームを1つ書き込む． </p>
+<dl class="section note"><dt>覚え書き</dt><dd>継承クラスはこの関数と同じ挙動のWrite()関数を実装すること．</dd></dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>書き込むCANフレーム </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 書き込み成功 </dd>
+<dd>
+false 書き込み失敗 </dd></dl>
+
+</div>
+</div>
+<a id="aba9f031ada5fd612d310c1a73cfaa054" name="aba9f031ada5fd612d310c1a73cfaa054"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba9f031ada5fd612d310c1a73cfaa054">&#9670;&#160;</a></span>TryRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool alps::lin::communication::SocketCanIo::TryRead </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">cmn::communication::CanDataFrame</a> &amp;&#160;</td>
+          <td class="paramname"><em>frame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CANフレームを1つ読み取る． </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>受け取ったCANフレームを格納する変数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 受け取り成功 </dd>
+<dd>
+false 受け取り失敗 </dd></dl>
+
+</div>
+</div>
+<a id="afed24e61c35e9274a9235ceafe31e769" name="afed24e61c35e9274a9235ceafe31e769"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afed24e61c35e9274a9235ceafe31e769">&#9670;&#160;</a></span>Write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool alps::lin::communication::SocketCanIo::Write </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">cmn::communication::CanDataFrame</a> &amp;&#160;</td>
+          <td class="paramname"><em>frame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CANフレームを1つ書き込む． </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>書き込むCANフレーム </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 書き込み成功 </dd>
+<dd>
+false 書き込み失敗 </dd></dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>alps_linux_lib/include/alps_lin/communication/<a class="el" href="socket__can__io_8hpp_source.html">socket_can_io.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacealps.html">alps</a></li><li class="navelem"><a class="el" href="namespacealps_1_1lin.html">lin</a></li><li class="navelem"><a class="el" href="namespacealps_1_1lin_1_1communication.html">communication</a></li><li class="navelem"><a class="el" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html">SocketCanIo</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

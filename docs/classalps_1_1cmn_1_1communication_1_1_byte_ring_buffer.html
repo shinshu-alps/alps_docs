@@ -1,0 +1,713 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps::cmn::communication::ByteRingBuffer クラス</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">alps::cmn::communication::ByteRingBuffer クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>uint8_tバイト列のLIFOリングバッファー シリアル通信専用  
+ <a href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="byte__ring__buffer_8hpp_source.html">byte_ring_buffer.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a60e8b40d1e38b2c3bdafe86aae7c4051"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html#a60e8b40d1e38b2c3bdafe86aae7c4051">ByteRingBuffer</a> ()=default</td></tr>
+<tr class="memdesc:a60e8b40d1e38b2c3bdafe86aae7c4051"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトコンストラクタ 空のリングバッファーを作る  <br /></td></tr>
+<tr class="separator:a60e8b40d1e38b2c3bdafe86aae7c4051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae792aee36d89a29572241fd41d7faa9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html#ae792aee36d89a29572241fd41d7faa9a">ByteRingBuffer</a> (std::initializer_list&lt; uint8_t &gt; args)</td></tr>
+<tr class="memdesc:ae792aee36d89a29572241fd41d7faa9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化子並びコンストラクタ  <br /></td></tr>
+<tr class="separator:ae792aee36d89a29572241fd41d7faa9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcc70d021046fc8c2dadcef594053fbc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html#abcc70d021046fc8c2dadcef594053fbc">ByteRingBuffer</a> (std::vector&lt; uint8_t &gt; &amp;&amp;vec)</td></tr>
+<tr class="memdesc:abcc70d021046fc8c2dadcef594053fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector型バイト列から構築する  <br /></td></tr>
+<tr class="separator:abcc70d021046fc8c2dadcef594053fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cac518b60be7f74220091cb135453e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html">ByteRingBuffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html#a8cac518b60be7f74220091cb135453e8">operator=</a> (const std::vector&lt; uint8_t &gt; &amp;vec)</td></tr>
+<tr class="memdesc:a8cac518b60be7f74220091cb135453e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector型バイト列からコピーする  <br /></td></tr>
+<tr class="separator:a8cac518b60be7f74220091cb135453e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4700e9cb07022239a48c2896e378dc5a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html#a4700e9cb07022239a48c2896e378dc5a">ToVector</a> () const</td></tr>
+<tr class="memdesc:a4700e9cb07022239a48c2896e378dc5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在保持しているバイト列からvector型バイト列を生成する  <br /></td></tr>
+<tr class="separator:a4700e9cb07022239a48c2896e378dc5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0e94c1fb658303ba9923dd029211d12"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html#af0e94c1fb658303ba9923dd029211d12">Size</a> () const noexcept</td></tr>
+<tr class="memdesc:af0e94c1fb658303ba9923dd029211d12"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在保持しているバイト数を返す  <br /></td></tr>
+<tr class="separator:af0e94c1fb658303ba9923dd029211d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfdf3f615a5a446f8438ef5030be35f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html#acfdf3f615a5a446f8438ef5030be35f2">Empty</a> () const noexcept</td></tr>
+<tr class="memdesc:acfdf3f615a5a446f8438ef5030be35f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">空かどうか  <br /></td></tr>
+<tr class="separator:acfdf3f615a5a446f8438ef5030be35f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8db6c9bfd3031558410208a2cc39975f"><td class="memItemLeft" align="right" valign="top">uint8_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html#a8db6c9bfd3031558410208a2cc39975f">operator[]</a> (size_t idx)</td></tr>
+<tr class="memdesc:a8db6c9bfd3031558410208a2cc39975f"><td class="mdescLeft">&#160;</td><td class="mdescRight">添字演算子  <br /></td></tr>
+<tr class="separator:a8db6c9bfd3031558410208a2cc39975f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f153399fca501c643f66524469c9e75"><td class="memItemLeft" align="right" valign="top">const uint8_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html#a1f153399fca501c643f66524469c9e75">operator[]</a> (size_t idx) const</td></tr>
+<tr class="memdesc:a1f153399fca501c643f66524469c9e75"><td class="mdescLeft">&#160;</td><td class="mdescRight">添字演算子(const番)  <br /></td></tr>
+<tr class="separator:a1f153399fca501c643f66524469c9e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3326f7f2232fc5d7bffa6dffbeccb7bc"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html#a3326f7f2232fc5d7bffa6dffbeccb7bc">GetFront</a> ()</td></tr>
+<tr class="memdesc:a3326f7f2232fc5d7bffa6dffbeccb7bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">先頭のデータを得る  <br /></td></tr>
+<tr class="separator:a3326f7f2232fc5d7bffa6dffbeccb7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8bc0b17571d656fb3edad26b42fd672"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html#ac8bc0b17571d656fb3edad26b42fd672">PopFront</a> ()</td></tr>
+<tr class="memdesc:ac8bc0b17571d656fb3edad26b42fd672"><td class="mdescLeft">&#160;</td><td class="mdescRight">先頭から1バイト削除する  <br /></td></tr>
+<tr class="separator:ac8bc0b17571d656fb3edad26b42fd672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a95e6d15306a9be3ffccea35d6582f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html#ab3a95e6d15306a9be3ffccea35d6582f">PopFront</a> (size_t pop_num)</td></tr>
+<tr class="memdesc:ab3a95e6d15306a9be3ffccea35d6582f"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したバイト数先頭から削除する  <br /></td></tr>
+<tr class="separator:ab3a95e6d15306a9be3ffccea35d6582f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a453859836e4fe256e168dd9dcbbe9fc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html#a453859836e4fe256e168dd9dcbbe9fc1">PushBack</a> (uint8_t value)</td></tr>
+<tr class="memdesc:a453859836e4fe256e168dd9dcbbe9fc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">末尾にデータを追加する  <br /></td></tr>
+<tr class="separator:a453859836e4fe256e168dd9dcbbe9fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78d778fa0a322c4b56959ba9a559b333"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html#a78d778fa0a322c4b56959ba9a559b333">PushBack</a> (<a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html">ByteRingBuffer</a> value)</td></tr>
+<tr class="memdesc:a78d778fa0a322c4b56959ba9a559b333"><td class="mdescLeft">&#160;</td><td class="mdescRight">末尾にByteRingBuffer型バイト列を追加する  <br /></td></tr>
+<tr class="separator:a78d778fa0a322c4b56959ba9a559b333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f80c39e57ae1b1ad7c0e379d1768ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html#af9f80c39e57ae1b1ad7c0e379d1768ce">Clear</a> () noexcept</td></tr>
+<tr class="memdesc:af9f80c39e57ae1b1ad7c0e379d1768ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">保持している要素をクリアする（実質的にはコスト0）  <br /></td></tr>
+<tr class="separator:af9f80c39e57ae1b1ad7c0e379d1768ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20bc139fc6cfa12443345adfc72b65ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html#a20bc139fc6cfa12443345adfc72b65ee">Find</a> (uint8_t value) const</td></tr>
+<tr class="memdesc:a20bc139fc6cfa12443345adfc72b65ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定した値を持つ要素を先頭から順に探す．  <br /></td></tr>
+<tr class="separator:a20bc139fc6cfa12443345adfc72b65ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d16309fbcdccaea67ac5d07425aea32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html#a6d16309fbcdccaea67ac5d07425aea32">Reserve</a> (size_t new_capacity)</td></tr>
+<tr class="memdesc:a6d16309fbcdccaea67ac5d07425aea32"><td class="mdescLeft">&#160;</td><td class="mdescRight">容量を変更する データが失われる時はプログラムミスとみなして強制終了  <br /></td></tr>
+<tr class="separator:a6d16309fbcdccaea67ac5d07425aea32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a82d578af1da5d736df5121740f4c62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html#a6a82d578af1da5d736df5121740f4c62">ExpandCapacity</a> (size_t increment_size)</td></tr>
+<tr class="memdesc:a6a82d578af1da5d736df5121740f4c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したバイト数容量を増やす  <br /></td></tr>
+<tr class="separator:a6a82d578af1da5d736df5121740f4c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a282b7f149d8f19b7891d2df46d02f3bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html#a282b7f149d8f19b7891d2df46d02f3bc">ShrinkCapacity</a> ()</td></tr>
+<tr class="memdesc:a282b7f149d8f19b7891d2df46d02f3bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在持っているバイト数まで容量を小さくする  <br /></td></tr>
+<tr class="separator:a282b7f149d8f19b7891d2df46d02f3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:ab224a9c32e901a45a1650e6698ccf724"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html#ab224a9c32e901a45a1650e6698ccf724">npos</a> = -1</td></tr>
+<tr class="memdesc:ab224a9c32e901a45a1650e6698ccf724"><td class="mdescLeft">&#160;</td><td class="mdescRight">ByteRingBuffer::find()で一致する値を見つけられなかったときに返す戻り値  <br /></td></tr>
+<tr class="separator:ab224a9c32e901a45a1650e6698ccf724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>uint8_tバイト列のLIFOリングバッファー シリアル通信専用 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>エラー時はプログラム強制終了 </dd></dl>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a60e8b40d1e38b2c3bdafe86aae7c4051" name="a60e8b40d1e38b2c3bdafe86aae7c4051"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60e8b40d1e38b2c3bdafe86aae7c4051">&#9670;&#160;</a></span>ByteRingBuffer() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">alps::cmn::communication::ByteRingBuffer::ByteRingBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>デフォルトコンストラクタ 空のリングバッファーを作る </p>
+
+</div>
+</div>
+<a id="ae792aee36d89a29572241fd41d7faa9a" name="ae792aee36d89a29572241fd41d7faa9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae792aee36d89a29572241fd41d7faa9a">&#9670;&#160;</a></span>ByteRingBuffer() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">alps::cmn::communication::ByteRingBuffer::ByteRingBuffer </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; uint8_t &gt;&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初期化子並びコンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>格納する初期値の並び </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abcc70d021046fc8c2dadcef594053fbc" name="abcc70d021046fc8c2dadcef594053fbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcc70d021046fc8c2dadcef594053fbc">&#9670;&#160;</a></span>ByteRingBuffer() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">alps::cmn::communication::ByteRingBuffer::ByteRingBuffer </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; uint8_t &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>vec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>vector型バイト列から構築する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>std::vector&lt;uint8_t&gt;型右辺値 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="af9f80c39e57ae1b1ad7c0e379d1768ce" name="af9f80c39e57ae1b1ad7c0e379d1768ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f80c39e57ae1b1ad7c0e379d1768ce">&#9670;&#160;</a></span>Clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alps::cmn::communication::ByteRingBuffer::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>保持している要素をクリアする（実質的にはコスト0） </p>
+
+</div>
+</div>
+<a id="acfdf3f615a5a446f8438ef5030be35f2" name="acfdf3f615a5a446f8438ef5030be35f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfdf3f615a5a446f8438ef5030be35f2">&#9670;&#160;</a></span>Empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool alps::cmn::communication::ByteRingBuffer::Empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>空かどうか </p>
+<dl class="section return"><dt>戻り値</dt><dd>true 空 </dd>
+<dd>
+false 空ではない </dd></dl>
+
+</div>
+</div>
+<a id="a6a82d578af1da5d736df5121740f4c62" name="a6a82d578af1da5d736df5121740f4c62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a82d578af1da5d736df5121740f4c62">&#9670;&#160;</a></span>ExpandCapacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alps::cmn::communication::ByteRingBuffer::ExpandCapacity </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>increment_size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定したバイト数容量を増やす </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">increment_size</td><td>増やすバイト数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a20bc139fc6cfa12443345adfc72b65ee" name="a20bc139fc6cfa12443345adfc72b65ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20bc139fc6cfa12443345adfc72b65ee">&#9670;&#160;</a></span>Find()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int alps::cmn::communication::ByteRingBuffer::Find </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定した値を持つ要素を先頭から順に探す． </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>探したい値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>int 初めて見つけた一致する要素のインデックス．見つからなかった場合はCircularByteBuffer::npos = -1 </dd></dl>
+
+</div>
+</div>
+<a id="a3326f7f2232fc5d7bffa6dffbeccb7bc" name="a3326f7f2232fc5d7bffa6dffbeccb7bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3326f7f2232fc5d7bffa6dffbeccb7bc">&#9670;&#160;</a></span>GetFront()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t alps::cmn::communication::ByteRingBuffer::GetFront </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>先頭のデータを得る </p>
+<dl class="section return"><dt>戻り値</dt><dd>uint8_t 先頭の1バイト </dd></dl>
+
+</div>
+</div>
+<a id="a8cac518b60be7f74220091cb135453e8" name="a8cac518b60be7f74220091cb135453e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cac518b60be7f74220091cb135453e8">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html">ByteRingBuffer</a> &amp; alps::cmn::communication::ByteRingBuffer::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; uint8_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>vector型バイト列からコピーする </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>std::vector&lt;uint8_t&gt;型右辺値 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8db6c9bfd3031558410208a2cc39975f" name="a8db6c9bfd3031558410208a2cc39975f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8db6c9bfd3031558410208a2cc39975f">&#9670;&#160;</a></span>operator[]() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t &amp; alps::cmn::communication::ByteRingBuffer::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>添字演算子 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idx</td><td>インデックス </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>uint8_t&amp; 該当する要素の参照 </dd></dl>
+
+</div>
+</div>
+<a id="a1f153399fca501c643f66524469c9e75" name="a1f153399fca501c643f66524469c9e75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f153399fca501c643f66524469c9e75">&#9670;&#160;</a></span>operator[]() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t &amp; alps::cmn::communication::ByteRingBuffer::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>添字演算子(const番) </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idx</td><td>インデックス </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>uint8_t&amp; 該当する要素の参照 </dd></dl>
+
+</div>
+</div>
+<a id="ac8bc0b17571d656fb3edad26b42fd672" name="ac8bc0b17571d656fb3edad26b42fd672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8bc0b17571d656fb3edad26b42fd672">&#9670;&#160;</a></span>PopFront() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alps::cmn::communication::ByteRingBuffer::PopFront </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>先頭から1バイト削除する </p>
+
+</div>
+</div>
+<a id="ab3a95e6d15306a9be3ffccea35d6582f" name="ab3a95e6d15306a9be3ffccea35d6582f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3a95e6d15306a9be3ffccea35d6582f">&#9670;&#160;</a></span>PopFront() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alps::cmn::communication::ByteRingBuffer::PopFront </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>pop_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定したバイト数先頭から削除する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pop_num</td><td>削除するバイト数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a78d778fa0a322c4b56959ba9a559b333" name="a78d778fa0a322c4b56959ba9a559b333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78d778fa0a322c4b56959ba9a559b333">&#9670;&#160;</a></span>PushBack() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alps::cmn::communication::ByteRingBuffer::PushBack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html">ByteRingBuffer</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>末尾にByteRingBuffer型バイト列を追加する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>追加するバイト列 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a453859836e4fe256e168dd9dcbbe9fc1" name="a453859836e4fe256e168dd9dcbbe9fc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a453859836e4fe256e168dd9dcbbe9fc1">&#9670;&#160;</a></span>PushBack() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alps::cmn::communication::ByteRingBuffer::PushBack </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>末尾にデータを追加する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>追加する1バイトのデータ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6d16309fbcdccaea67ac5d07425aea32" name="a6d16309fbcdccaea67ac5d07425aea32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d16309fbcdccaea67ac5d07425aea32">&#9670;&#160;</a></span>Reserve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alps::cmn::communication::ByteRingBuffer::Reserve </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>new_capacity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>容量を変更する データが失われる時はプログラムミスとみなして強制終了 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_capacity</td><td>新たなバイト数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a282b7f149d8f19b7891d2df46d02f3bc" name="a282b7f149d8f19b7891d2df46d02f3bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a282b7f149d8f19b7891d2df46d02f3bc">&#9670;&#160;</a></span>ShrinkCapacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alps::cmn::communication::ByteRingBuffer::ShrinkCapacity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>現在持っているバイト数まで容量を小さくする </p>
+
+</div>
+</div>
+<a id="af0e94c1fb658303ba9923dd029211d12" name="af0e94c1fb658303ba9923dd029211d12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0e94c1fb658303ba9923dd029211d12">&#9670;&#160;</a></span>Size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t alps::cmn::communication::ByteRingBuffer::Size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在保持しているバイト数を返す </p>
+<dl class="section return"><dt>戻り値</dt><dd>バイト数 </dd></dl>
+
+</div>
+</div>
+<a id="a4700e9cb07022239a48c2896e378dc5a" name="a4700e9cb07022239a48c2896e378dc5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4700e9cb07022239a48c2896e378dc5a">&#9670;&#160;</a></span>ToVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; uint8_t &gt; alps::cmn::communication::ByteRingBuffer::ToVector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>現在保持しているバイト列からvector型バイト列を生成する </p>
+<dl class="section return"><dt>戻り値</dt><dd>vector型バイト列 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="ab224a9c32e901a45a1650e6698ccf724" name="ab224a9c32e901a45a1650e6698ccf724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab224a9c32e901a45a1650e6698ccf724">&#9670;&#160;</a></span>npos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int alps::cmn::communication::ByteRingBuffer::npos = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ByteRingBuffer::find()で一致する値を見つけられなかったときに返す戻り値 </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>alps_common_lib/include/alps_cmn/communication/<a class="el" href="byte__ring__buffer_8hpp_source.html">byte_ring_buffer.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacealps.html">alps</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn.html">cmn</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn_1_1communication.html">communication</a></li><li class="navelem"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html">ByteRingBuffer</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

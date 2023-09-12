@@ -1,5 +1,0 @@
-<map id="roblab::mbed::actuator::ServoMotor" name="roblab::mbed::actuator::ServoMotor">
-<area shape="rect" id="node1" title="PWMパルス幅で指定した角度に動くサーボモータのmbed用実装" alt="" coords="45,496,208,596"/>
-<area shape="rect" id="node2" href="$classroblab_1_1common_1_1actuator_1_1_servo_motor_base.html" title=" " alt="" coords="29,257,224,447"/>
-<area shape="rect" id="node3" href="$classroblab_1_1common_1_1actuator_1_1_servo_motor_base.html" title="PWMパルス幅で指定した角度に動くサーボモータの共通実装" alt="" coords="5,5,248,180"/>
-</map>

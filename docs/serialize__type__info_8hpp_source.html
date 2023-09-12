@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.9.7" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alps: roblab_common_lib/include/roblab_common/serial/serialize_type_info.hpp ソースファイル</title>
+    <title>Alps: alps_common_lib/include/alps_cmn/communication/serialize_type_info.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
     <script type="text/javascript" src="jquery.js"></script>
@@ -47,7 +47,7 @@
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">Alps
                             </div>
-                            <div id="projectbrief">roboken shinshu library</div>
+                            <div id="projectbrief">roblab shinshu library</div>
                         </td>
                     </tr>
                 </tbody>
@@ -113,8 +113,8 @@ $(document).ready(function(){initNavTree('serialize__type__info_8hpp_source.html
 </div><!--header-->
 <div class="contents">
 <a href="serialize__type__info_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ROBLAB_COMMON_SERIALIZE_TYPE_INFO_HPP_</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ROBLAB_COMMON_SERIALIZE_TYPE_INFO_HPP_</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_CMN_SERIALIZE_TYPE_INFO_HPP_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_CMN_SERIALIZE_TYPE_INFO_HPP_</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
@@ -122,26 +122,26 @@ $(document).ready(function(){initNavTree('serialize__type__info_8hpp_source.html
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;tuple&gt;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceroblab.html">roblab</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">namespace </span>common</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">namespace </span>cmn</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keyword">namespace </span>serial</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keyword">namespace </span>communication</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        {</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> is_serializable, <span class="keywordtype">bool</span> is_single&gt;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html">   35</a></span>            <span class="keyword">struct </span><a class="code hl_struct" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html">SerializeTypeInfoBase</a></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html">   35</a></span>            <span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html">SerializeTypeInfoBase</a></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html#a9ef233677bf5a9cf3e2851cc76284379">   43</a></span>                <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html#a9ef233677bf5a9cf3e2851cc76284379">IsSerializable</a>()</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html#aa0e8f6a8410c39ef39a8e6745c6d3bdd">   43</a></span>                <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html#aa0e8f6a8410c39ef39a8e6745c6d3bdd">IsSerializable</a>()</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                {</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                    <span class="keywordflow">return</span> is_serializable;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                }</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html#abc9ba85cceeefcee7137ce56322cd600">   54</a></span>                <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html#abc9ba85cceeefcee7137ce56322cd600">IsSingle</a>()</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html#a92f1189cc34f86e57d5235ef5b4922b1">   54</a></span>                <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html#a92f1189cc34f86e57d5235ef5b4922b1">IsSingle</a>()</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                {</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                    <span class="keywordflow">return</span> is_single;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                }</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html#a3167b81b54dd98ed27b6ebac6a50562a">   65</a></span>                <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html#a3167b81b54dd98ed27b6ebac6a50562a">IsMultiple</a>()</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html#a68e3481fb2719b8594f81e553815b3e4">   65</a></span>                <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html#a68e3481fb2719b8594f81e553815b3e4">IsMultiple</a>()</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                {</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                    <span class="keywordflow">return</span> !is_single;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                }</div>
@@ -150,9 +150,9 @@ $(document).ready(function(){initNavTree('serialize__type__info_8hpp_source.html
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="comment">// C++17だったらstd::string_viewを使ってGetName()をconstexprにできる</span></div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html">   79</a></span>            <span class="keyword">struct </span><a class="code hl_struct" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html">SerializeTypeInfo</a> : <span class="keyword">public</span> <a class="code hl_struct" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html">SerializeTypeInfoBase</a>&lt;false, false&gt;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html">   79</a></span>            <span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html">SerializeTypeInfo</a> : <span class="keyword">public</span> <a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html">SerializeTypeInfoBase</a>&lt;false, false&gt;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            {</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf">   86</a></span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf">GetName</a>()</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">   86</a></span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">GetName</a>()</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                {</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                    <span class="keywordflow">return</span> std::string(<span class="stringliteral">&quot;unsuppoted_type&quot;</span>);</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                }</div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('serialize__type__info_8hpp_source.html
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <span class="keyword">struct </span>SerializeTypeInfo&lt;int8_t&gt; : SerializeTypeInfoBase&lt;true, true&gt;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            {</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf">GetName</a>()</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">GetName</a>()</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                {</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                    <span class="keywordflow">return</span> std::string(<span class="stringliteral">&quot;int8_t&quot;</span>);</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                }</div>
@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('serialize__type__info_8hpp_source.html
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="keyword">struct </span>SerializeTypeInfo&lt;uint8_t&gt; : SerializeTypeInfoBase&lt;true, true&gt;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            {</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf">GetName</a>()</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">GetName</a>()</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                {</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                    <span class="keywordflow">return</span> std::string(<span class="stringliteral">&quot;uint8_t&quot;</span>);</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                }</div>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('serialize__type__info_8hpp_source.html
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            <span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <span class="keyword">struct </span>SerializeTypeInfo&lt;int16_t&gt; : SerializeTypeInfoBase&lt;true, true&gt;</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            {</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf">GetName</a>()</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">GetName</a>()</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                {</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                    <span class="keywordflow">return</span> std::string(<span class="stringliteral">&quot;int16_t&quot;</span>);</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                }</div>
@@ -188,7 +188,7 @@ $(document).ready(function(){initNavTree('serialize__type__info_8hpp_source.html
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            <span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <span class="keyword">struct </span>SerializeTypeInfo&lt;uint16_t&gt; : SerializeTypeInfoBase&lt;true, true&gt;</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            {</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf">GetName</a>()</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">GetName</a>()</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                {</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                    <span class="keywordflow">return</span> std::string(<span class="stringliteral">&quot;uint16_t&quot;</span>);</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                }</div>
@@ -196,7 +196,7 @@ $(document).ready(function(){initNavTree('serialize__type__info_8hpp_source.html
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            <span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            <span class="keyword">struct </span>SerializeTypeInfo&lt;int32_t&gt; : SerializeTypeInfoBase&lt;true, true&gt;</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            {</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf">GetName</a>()</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">GetName</a>()</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                {</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                    <span class="keywordflow">return</span> std::string(<span class="stringliteral">&quot;int32_t&quot;</span>);</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                }</div>
@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('serialize__type__info_8hpp_source.html
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            <span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            <span class="keyword">struct </span>SerializeTypeInfo&lt;uint32_t&gt; : SerializeTypeInfoBase&lt;true, true&gt;</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            {</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf">GetName</a>()</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">GetName</a>()</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                {</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                    <span class="keywordflow">return</span> std::string(<span class="stringliteral">&quot;uint32_t&quot;</span>);</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                }</div>
@@ -212,7 +212,7 @@ $(document).ready(function(){initNavTree('serialize__type__info_8hpp_source.html
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            <span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            <span class="keyword">struct </span>SerializeTypeInfo&lt;int64_t&gt; : SerializeTypeInfoBase&lt;true, true&gt;</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            {</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf">GetName</a>()</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">GetName</a>()</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                {</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                    <span class="keywordflow">return</span> std::string(<span class="stringliteral">&quot;int64_t&quot;</span>);</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                }</div>
@@ -220,7 +220,7 @@ $(document).ready(function(){initNavTree('serialize__type__info_8hpp_source.html
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            <span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            <span class="keyword">struct </span>SerializeTypeInfo&lt;uint64_t&gt; : SerializeTypeInfoBase&lt;true, true&gt;</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            {</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf">GetName</a>()</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">GetName</a>()</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                {</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                    <span class="keywordflow">return</span> std::string(<span class="stringliteral">&quot;uint64_t&quot;</span>);</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                }</div>
@@ -231,7 +231,7 @@ $(document).ready(function(){initNavTree('serialize__type__info_8hpp_source.html
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            <span class="keyword">struct </span>SerializeTypeInfo&lt;float&gt; : SerializeTypeInfoBase&lt;true, true&gt;</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            {</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                <span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(float) == 4, <span class="stringliteral">&quot;unexpected float size.&quot;</span>);</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf">GetName</a>()</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">GetName</a>()</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                {</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                    <span class="keywordflow">return</span> std::string(<span class="stringliteral">&quot;float&quot;</span>);</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                }</div>
@@ -240,7 +240,7 @@ $(document).ready(function(){initNavTree('serialize__type__info_8hpp_source.html
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            <span class="keyword">struct </span>SerializeTypeInfo&lt;double&gt; : SerializeTypeInfoBase&lt;true, true&gt;</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            {</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                <span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(double) == 8, <span class="stringliteral">&quot;unexpected double size.&quot;</span>);</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf">GetName</a>()</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">GetName</a>()</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                {</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                    <span class="keywordflow">return</span> std::string(<span class="stringliteral">&quot;double&quot;</span>);</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                }</div>
@@ -250,7 +250,7 @@ $(document).ready(function(){initNavTree('serialize__type__info_8hpp_source.html
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            <span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>            <span class="keyword">struct </span>SerializeTypeInfo&lt;bool&gt; : SerializeTypeInfoBase&lt;true, true&gt;</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>            {</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf">GetName</a>()</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">GetName</a>()</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                {</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                    <span class="keywordflow">return</span> std::string(<span class="stringliteral">&quot;bool&quot;</span>);</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                }</div>
@@ -260,7 +260,7 @@ $(document).ready(function(){initNavTree('serialize__type__info_8hpp_source.html
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            <span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            <span class="keyword">struct </span>SerializeTypeInfo&lt;char&gt; : SerializeTypeInfoBase&lt;true, true&gt;</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            {</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf">GetName</a>()</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">GetName</a>()</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                {</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                    <span class="keywordflow">return</span> std::string(<span class="stringliteral">&quot;char&quot;</span>);</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                }</div>
@@ -271,9 +271,9 @@ $(document).ready(function(){initNavTree('serialize__type__info_8hpp_source.html
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            <span class="keyword">struct </span>SerializeTypeInfo&lt;std::vector&lt;T&gt;&gt; : SerializeTypeInfoBase&lt;true, false&gt;</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            {</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf">GetName</a>()</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">GetName</a>()</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                {</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                    std::string name = <span class="stringliteral">&quot;std::vector&lt;&quot;</span> + <a class="code hl_function" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf">SerializeTypeInfo&lt;T&gt;::GetName</a>() + <span class="stringliteral">&quot;&gt;&quot;</span>;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                    std::string name = <span class="stringliteral">&quot;std::vector&lt;&quot;</span> + <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">SerializeTypeInfo&lt;T&gt;::GetName</a>() + <span class="stringliteral">&quot;&gt;&quot;</span>;</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                    <span class="keywordflow">return</span> name;</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>                }</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>            };</div>
@@ -282,7 +282,7 @@ $(document).ready(function(){initNavTree('serialize__type__info_8hpp_source.html
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>            <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Types&gt;</div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>            <span class="keyword">struct </span>SerializeTypeInfo&lt;std::tuple&lt;Types...&gt;&gt; : SerializeTypeInfoBase&lt;true, false&gt;</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>            {</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf">GetName</a>()</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">GetName</a>()</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                {</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>                    std::string name = <span class="stringliteral">&quot;std::tuple&lt;&quot;</span>;</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                    getTupleElementName&lt;0&gt;(name);</div>
@@ -303,7 +303,7 @@ $(document).ready(function(){initNavTree('serialize__type__info_8hpp_source.html
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>                        -&gt; <span class="keyword">typename</span> std::enable_if &lt; Index&lt;<span class="keyword">sizeof</span>...(Types)&gt;::type</div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>                {</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>                    <span class="comment">// std::tupleの要素を順番に処理する</span></div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                    name += (SerializeTypeInfo&lt;<span class="keyword">typename</span> std::tuple_element&lt;Index, std::tuple&lt;Types...&gt;&gt;::type&gt;<a class="code hl_function" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf">::GetName</a>());</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                    name += (SerializeTypeInfo&lt;<span class="keyword">typename</span> std::tuple_element&lt;Index, std::tuple&lt;Types...&gt;&gt;::type&gt;<a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">::GetName</a>());</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>                    name += <span class="stringliteral">&quot;,&quot;</span>;</div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>                    <span class="comment">// 次の要素を処理する</span></div>
@@ -315,7 +315,7 @@ $(document).ready(function(){initNavTree('serialize__type__info_8hpp_source.html
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            <span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            <span class="keyword">struct </span>SerializeTypeInfo&lt;std::string&gt; : SerializeTypeInfoBase&lt;true, false&gt;</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            {</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf">GetName</a>()</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>                <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">GetName</a>()</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>                {</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                    <span class="keywordflow">return</span> std::string(<span class="stringliteral">&quot;std::string&quot;</span>);</div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                }</div>
@@ -326,19 +326,19 @@ $(document).ready(function(){initNavTree('serialize__type__info_8hpp_source.html
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>}</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="anamespaceroblab_html"><div class="ttname"><a href="namespaceroblab.html">roblab</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
-<div class="ttc" id="astructroblab_1_1common_1_1serial_1_1_serialize_type_info_base_html"><div class="ttname"><a href="structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html">roblab::common::serial::SerializeTypeInfoBase</a></div><div class="ttdoc">バイト列変換に関する型情報の基底</div><div class="ttdef"><b>Definition:</b> serialize_type_info.hpp:36</div></div>
-<div class="ttc" id="astructroblab_1_1common_1_1serial_1_1_serialize_type_info_base_html_a3167b81b54dd98ed27b6ebac6a50562a"><div class="ttname"><a href="structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html#a3167b81b54dd98ed27b6ebac6a50562a">roblab::common::serial::SerializeTypeInfoBase::IsMultiple</a></div><div class="ttdeci">static constexpr bool IsMultiple()</div><div class="ttdoc">Tが複合型(vector, string, tupleなど)かどうか</div><div class="ttdef"><b>Definition:</b> serialize_type_info.hpp:65</div></div>
-<div class="ttc" id="astructroblab_1_1common_1_1serial_1_1_serialize_type_info_base_html_a9ef233677bf5a9cf3e2851cc76284379"><div class="ttname"><a href="structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html#a9ef233677bf5a9cf3e2851cc76284379">roblab::common::serial::SerializeTypeInfoBase::IsSerializable</a></div><div class="ttdeci">static constexpr bool IsSerializable()</div><div class="ttdoc">Tがバイト列変換に対応しているか</div><div class="ttdef"><b>Definition:</b> serialize_type_info.hpp:43</div></div>
-<div class="ttc" id="astructroblab_1_1common_1_1serial_1_1_serialize_type_info_base_html_abc9ba85cceeefcee7137ce56322cd600"><div class="ttname"><a href="structroblab_1_1common_1_1serial_1_1_serialize_type_info_base.html#abc9ba85cceeefcee7137ce56322cd600">roblab::common::serial::SerializeTypeInfoBase::IsSingle</a></div><div class="ttdeci">static constexpr bool IsSingle()</div><div class="ttdoc">Tが単一型(int,boolなど)かどうか</div><div class="ttdef"><b>Definition:</b> serialize_type_info.hpp:54</div></div>
-<div class="ttc" id="astructroblab_1_1common_1_1serial_1_1_serialize_type_info_html"><div class="ttname"><a href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html">roblab::common::serial::SerializeTypeInfo</a></div><div class="ttdoc">バイト列変換に関する型情報</div><div class="ttdef"><b>Definition:</b> serialize_type_info.hpp:80</div></div>
-<div class="ttc" id="astructroblab_1_1common_1_1serial_1_1_serialize_type_info_html_a060d63a5db2f132382deee527281e3bf"><div class="ttname"><a href="structroblab_1_1common_1_1serial_1_1_serialize_type_info.html#a060d63a5db2f132382deee527281e3bf">roblab::common::serial::SerializeTypeInfo::GetName</a></div><div class="ttdeci">static const std::string GetName()</div><div class="ttdoc">プラットフォーム環境の影響を受けずに比較できる型名を得る</div><div class="ttdef"><b>Definition:</b> serialize_type_info.hpp:86</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1_serialize_type_info_base_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html">alps::cmn::communication::SerializeTypeInfoBase</a></div><div class="ttdoc">バイト列変換に関する型情報の基底</div><div class="ttdef"><b>Definition:</b> serialize_type_info.hpp:36</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1_serialize_type_info_base_html_a68e3481fb2719b8594f81e553815b3e4"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html#a68e3481fb2719b8594f81e553815b3e4">alps::cmn::communication::SerializeTypeInfoBase::IsMultiple</a></div><div class="ttdeci">static constexpr bool IsMultiple()</div><div class="ttdoc">Tが複合型(vector, string, tupleなど)かどうか</div><div class="ttdef"><b>Definition:</b> serialize_type_info.hpp:65</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1_serialize_type_info_base_html_a92f1189cc34f86e57d5235ef5b4922b1"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html#a92f1189cc34f86e57d5235ef5b4922b1">alps::cmn::communication::SerializeTypeInfoBase::IsSingle</a></div><div class="ttdeci">static constexpr bool IsSingle()</div><div class="ttdoc">Tが単一型(int,boolなど)かどうか</div><div class="ttdef"><b>Definition:</b> serialize_type_info.hpp:54</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1_serialize_type_info_base_html_aa0e8f6a8410c39ef39a8e6745c6d3bdd"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html#aa0e8f6a8410c39ef39a8e6745c6d3bdd">alps::cmn::communication::SerializeTypeInfoBase::IsSerializable</a></div><div class="ttdeci">static constexpr bool IsSerializable()</div><div class="ttdoc">Tがバイト列変換に対応しているか</div><div class="ttdef"><b>Definition:</b> serialize_type_info.hpp:43</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1_serialize_type_info_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html">alps::cmn::communication::SerializeTypeInfo</a></div><div class="ttdoc">バイト列変換に関する型情報</div><div class="ttdef"><b>Definition:</b> serialize_type_info.hpp:80</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1_serialize_type_info_html_abcd434490acadf59e85f6d44eb98e68a"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">alps::cmn::communication::SerializeTypeInfo::GetName</a></div><div class="ttdeci">static const std::string GetName()</div><div class="ttdoc">プラットフォーム環境の影響を受けずに比較できる型名を得る</div><div class="ttdef"><b>Definition:</b> serialize_type_info.hpp:86</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_efc7c08bb78c728619d6f844434d9ba6.html">roblab_common_lib</a></li><li class="navelem"><a class="el" href="dir_5fc43148380559492dfddd8ae81e32dd.html">include</a></li><li class="navelem"><a class="el" href="dir_28693fc7a38bf8c5629bdf3b63267db9.html">roblab_common</a></li><li class="navelem"><a class="el" href="dir_ec8c0e597e474906666f1240ea0baa41.html">serial</a></li><li class="navelem"><a class="el" href="serialize__type__info_8hpp.html">serialize_type_info.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_fcd1ba41f8679fcc7bf76d667eaa0e17.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_ce1e71e2103ac83e6d6cc720a9feeeb7.html">include</a></li><li class="navelem"><a class="el" href="dir_cc648f72f51f156e42f9863c0e5bf5fb.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_76fd7680a09542374d3e212281ba6ee2.html">communication</a></li><li class="navelem"><a class="el" href="serialize__type__info_8hpp.html">serialize_type_info.hpp</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>

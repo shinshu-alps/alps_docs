@@ -1,10 +1,10 @@
-<map id="roblab_mbed_lib/include/roblab_mbed/actuator/servo_motor.hpp" name="roblab_mbed_lib/include/roblab_mbed/actuator/servo_motor.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="143,5,325,60"/>
+<map id="alps_mbed_lib/include/alps_mbed/actuator/servo_motor.hpp" name="alps_mbed_lib/include/alps_mbed/actuator/servo_motor.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="129,5,323,60"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,203,76,229"/>
-<area shape="rect" id="node3" href="$servo__motor__base_8hpp.html" title=" " alt="" coords="401,108,587,148"/>
-<area shape="rect" id="node7" href="$pwm__out_8hpp.html" title=" " alt="" coords="147,108,321,148"/>
-<area shape="rect" id="node4" title=" " alt="" coords="713,203,779,229"/>
-<area shape="rect" id="node5" href="$i__pwm__set__period_8hpp.html" title=" " alt="" coords="516,196,688,236"/>
-<area shape="rect" id="node6" href="$i__pwm__set__pulse__width_8hpp.html" title=" " alt="" coords="283,196,492,236"/>
-<area shape="rect" id="node8" href="$i__pwm__write_8hpp.html" title=" " alt="" coords="100,196,259,236"/>
+<area shape="rect" id="node3" href="$servo__motor__base_8hpp.html" title=" " alt="" coords="419,108,601,148"/>
+<area shape="rect" id="node7" href="$pwm__out_8hpp.html" title=" " alt="" coords="145,108,307,148"/>
+<area shape="rect" id="node4" title=" " alt="" coords="661,203,727,229"/>
+<area shape="rect" id="node5" href="$i__pwm__set__period_8hpp.html" title=" " alt="" coords="474,196,637,236"/>
+<area shape="rect" id="node6" href="$i__pwm__set__pulse__width_8hpp.html" title=" " alt="" coords="287,196,450,236"/>
+<area shape="rect" id="node8" href="$i__pwm__write_8hpp.html" title=" " alt="" coords="101,196,263,236"/>
 </map>

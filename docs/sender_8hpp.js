@@ -1,4 +1,4 @@
 var sender_8hpp =
 [
-    [ "roblab::common::serial::Sender< T >", "classroblab_1_1common_1_1serial_1_1_sender.html", "classroblab_1_1common_1_1serial_1_1_sender" ]
+    [ "alps::cmn::communication::Sender< T >", "classalps_1_1cmn_1_1communication_1_1_sender.html", "classalps_1_1cmn_1_1communication_1_1_sender" ]
 ];

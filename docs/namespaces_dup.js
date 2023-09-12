@@ -1,4 +1,4 @@
 var namespaces_dup =
 [
-    [ "roblab", "namespaceroblab.html", "namespaceroblab" ]
+    [ "alps", "namespacealps.html", "namespacealps" ]
 ];

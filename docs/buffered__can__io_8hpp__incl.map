@@ -1,9 +1,9 @@
-<map id="roblab_mbed_lib/include/roblab_mbed/serial/buffered_can_io.hpp" name="roblab_mbed_lib/include/roblab_mbed/serial/buffered_can_io.hpp">
-<area shape="rect" id="node1" title="MbedのCAN通信IOクラス" alt="" coords="131,5,342,60"/>
-<area shape="rect" id="node2" href="$i__can__io_8hpp.html" title=" " alt="" coords="11,108,177,148"/>
-<area shape="rect" id="node6" title=" " alt="" coords="201,115,272,141"/>
-<area shape="rect" id="node7" title=" " alt="" coords="297,115,446,141"/>
-<area shape="rect" id="node3" href="$can__data__frame_8hpp.html" title="CANフレームを表す構造体" alt="" coords="11,196,177,236"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,284,76,309"/>
-<area shape="rect" id="node5" title=" " alt="" coords="101,284,197,309"/>
+<map id="alps_mbed_lib/include/alps_mbed/communication/buffered_can_io.hpp" name="alps_mbed_lib/include/alps_mbed/communication/buffered_can_io.hpp">
+<area shape="rect" id="node1" title="MbedのCAN通信IOクラス" alt="" coords="153,5,356,60"/>
+<area shape="rect" id="node2" href="$i__can__io_8hpp.html" title=" " alt="" coords="5,108,195,148"/>
+<area shape="rect" id="node6" title=" " alt="" coords="219,115,290,141"/>
+<area shape="rect" id="node7" title=" " alt="" coords="315,115,464,141"/>
+<area shape="rect" id="node3" href="$can__data__frame_8hpp.html" title="CANフレームを表す構造体" alt="" coords="5,196,195,236"/>
+<area shape="rect" id="node4" title=" " alt="" coords="11,284,82,309"/>
+<area shape="rect" id="node5" title=" " alt="" coords="107,284,203,309"/>
 </map>

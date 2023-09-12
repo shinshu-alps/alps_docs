@@ -1,8 +1,8 @@
-<map id="roblab_common_lib/include/roblab_common/gpio/i_pwm_set_period.hpp" name="roblab_common_lib/include/roblab_common/gpio/i_pwm_set_period.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="217,5,427,60"/>
-<area shape="rect" id="node2" href="$dc__motor__base_8hpp.html" title=" " alt="" coords="5,108,207,163"/>
-<area shape="rect" id="node4" href="$servo__motor__base_8hpp.html" title=" " alt="" coords="437,108,639,163"/>
-<area shape="rect" id="node6" href="$pwm__out_8hpp.html" title=" " alt="" coords="231,108,413,163"/>
-<area shape="rect" id="node3" href="$dc__motor_8hpp.html" title=" " alt="" coords="126,211,307,265"/>
-<area shape="rect" id="node5" href="$servo__motor_8hpp.html" title=" " alt="" coords="337,211,518,265"/>
+<map id="alps_common_lib/include/alps_cmn/gpio/i_pwm_set_period.hpp" name="alps_common_lib/include/alps_cmn/gpio/i_pwm_set_period.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="229,5,424,60"/>
+<area shape="rect" id="node2" href="$dc__motor__base_8hpp.html" title=" " alt="" coords="5,108,192,163"/>
+<area shape="rect" id="node4" href="$servo__motor__base_8hpp.html" title=" " alt="" coords="461,108,648,163"/>
+<area shape="rect" id="node6" href="$pwm__out_8hpp.html" title=" " alt="" coords="216,115,437,155"/>
+<area shape="rect" id="node3" href="$dc__motor_8hpp.html" title=" " alt="" coords="130,211,305,265"/>
+<area shape="rect" id="node5" href="$servo__motor_8hpp.html" title=" " alt="" coords="339,211,533,265"/>
 </map>

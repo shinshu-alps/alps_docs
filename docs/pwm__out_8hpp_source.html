@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.9.7" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alps: roblab_mbed_lib/include/roblab_mbed/gpio/pwm_out.hpp ソースファイル</title>
+    <title>Alps: alps_mbed_lib/include/alps_mbed/gpio/pwm_out.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
     <script type="text/javascript" src="jquery.js"></script>
@@ -47,7 +47,7 @@
                         <td id="projectalign" style="padding-left: 0.5em;">
                             <div id="projectname">Alps
                             </div>
-                            <div id="projectbrief">roboken shinshu library</div>
+                            <div id="projectbrief">roblab shinshu library</div>
                         </td>
                     </tr>
                 </tbody>
@@ -113,33 +113,33 @@ $(document).ready(function(){initNavTree('pwm__out_8hpp_source.html',''); initRe
 </div><!--header-->
 <div class="contents">
 <a href="pwm__out_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ROBLAB_MBED_PWM_OUT_HPP_</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ROBLAB_MBED_PWM_OUT_HPP_</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_MBED_PWM_OUT_HPP_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_MBED_PWM_OUT_HPP_</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;mbed.h&gt;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="i__pwm__write_8hpp.html">roblab_common/gpio/i_pwm_write.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="i__pwm__set__period_8hpp.html">roblab_common/gpio/i_pwm_set_period.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="i__pwm__set__pulse__width_8hpp.html">roblab_common/gpio/i_pwm_set_pulse_width.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="i__pwm__write_8hpp.html">alps_cmn/gpio/i_pwm_write.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="i__pwm__set__period_8hpp.html">alps_cmn/gpio/i_pwm_set_period.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="i__pwm__set__pulse__width_8hpp.html">alps_cmn/gpio/i_pwm_set_pulse_width.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceroblab.html">roblab</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">namespace </span>mbed</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    {</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">namespace </span>gpio</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classroblab_1_1mbed_1_1gpio_1_1_pwm_out.html">   30</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classroblab_1_1mbed_1_1gpio_1_1_pwm_out.html">PwmOut</a></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                : <span class="keyword">public</span> <a class="code hl_class" href="classroblab_1_1common_1_1gpio_1_1_i_pwm_write.html">common::gpio::IPwmWrite</a>&lt;PwmOut&gt;,</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                  <span class="keyword">public</span> <a class="code hl_class" href="classroblab_1_1common_1_1gpio_1_1_i_pwm_set_period.html">common::gpio::IPwmSetPeriod</a>&lt;PwmOut&gt;,</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                  <span class="keyword">public</span> <a class="code hl_class" href="classroblab_1_1common_1_1gpio_1_1_i_pwm_set_pulse_width.html">common::gpio::IPwmSetPulseWidth</a>&lt;PwmOut&gt;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_pwm_out.html">   30</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classalps_1_1mbed_1_1gpio_1_1_pwm_out.html">PwmOut</a></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                : <span class="keyword">public</span> <a class="code hl_class" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_write.html">cmn::gpio::IPwmWrite</a>&lt;PwmOut&gt;,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                  <span class="keyword">public</span> <a class="code hl_class" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_set_period.html">cmn::gpio::IPwmSetPeriod</a>&lt;PwmOut&gt;,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                  <span class="keyword">public</span> <a class="code hl_class" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_set_pulse_width.html">cmn::gpio::IPwmSetPulseWidth</a>&lt;PwmOut&gt;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            {</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classroblab_1_1mbed_1_1gpio_1_1_pwm_out.html#a10d5b569ca99394be5884b9e29fb697f">   41</a></span>                <a class="code hl_function" href="classroblab_1_1mbed_1_1gpio_1_1_pwm_out.html#a10d5b569ca99394be5884b9e29fb697f">PwmOut</a>(PinName pin);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_pwm_out.html#ab3bad3cdb7df1924fa1a9095997bf046">   41</a></span>                <a class="code hl_function" href="classalps_1_1mbed_1_1gpio_1_1_pwm_out.html#ab3bad3cdb7df1924fa1a9095997bf046">PwmOut</a>(PinName pin);</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classroblab_1_1mbed_1_1gpio_1_1_pwm_out.html#a14f165648ac5f14139a10e9f99cebe63">   49</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1mbed_1_1gpio_1_1_pwm_out.html#a14f165648ac5f14139a10e9f99cebe63">WriteImpl</a>(<span class="keywordtype">float</span> value);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_pwm_out.html#add2bc0f1f9dfe9f4b340decbb05a1c79">   49</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1mbed_1_1gpio_1_1_pwm_out.html#add2bc0f1f9dfe9f4b340decbb05a1c79">Write</a>(<span class="keywordtype">float</span> value);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classroblab_1_1mbed_1_1gpio_1_1_pwm_out.html#a9a3aa7d904d802865e9c62cfbb57e1de">   57</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1mbed_1_1gpio_1_1_pwm_out.html#a9a3aa7d904d802865e9c62cfbb57e1de">SetPeriodImpl</a>(<span class="keywordtype">float</span> seconds);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_pwm_out.html#afec6b311722f6f04504d3624f0a83ac4">   57</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1mbed_1_1gpio_1_1_pwm_out.html#afec6b311722f6f04504d3624f0a83ac4">SetPeriod</a>(<span class="keywordtype">float</span> seconds);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classroblab_1_1mbed_1_1gpio_1_1_pwm_out.html#aabeed12c98ff664f5e8d9472be84bf5b">   65</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classroblab_1_1mbed_1_1gpio_1_1_pwm_out.html#aabeed12c98ff664f5e8d9472be84bf5b">SetPulseWidthImpl</a>(<span class="keywordtype">float</span> seconds);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_pwm_out.html#a17c9ef594859dd3520ce0b3f69542bc1">   65</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1mbed_1_1gpio_1_1_pwm_out.html#a17c9ef594859dd3520ce0b3f69542bc1">SetPulseWidth</a>(<span class="keywordtype">float</span> seconds);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                ::mbed::PwmOut mbed_pwm_out_;</div>
@@ -149,25 +149,25 @@ $(document).ready(function(){initNavTree('pwm__out_8hpp_source.html',''); initRe
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#endif </span><span class="comment">// ROBLAB_MBED_PWM_OUT_HPP_</span></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1gpio_1_1_i_pwm_set_period_html"><div class="ttname"><a href="classroblab_1_1common_1_1gpio_1_1_i_pwm_set_period.html">roblab::common::gpio::IPwmSetPeriod</a></div><div class="ttdoc">PWMの周期を設定するインタフェース</div><div class="ttdef"><b>Definition:</b> i_pwm_set_period.hpp:28</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1gpio_1_1_i_pwm_set_pulse_width_html"><div class="ttname"><a href="classroblab_1_1common_1_1gpio_1_1_i_pwm_set_pulse_width.html">roblab::common::gpio::IPwmSetPulseWidth</a></div><div class="ttdoc">PWMのパルス幅を時間で指定し出力するインタフェース</div><div class="ttdef"><b>Definition:</b> i_pwm_set_pulse_width.hpp:29</div></div>
-<div class="ttc" id="aclassroblab_1_1common_1_1gpio_1_1_i_pwm_write_html"><div class="ttname"><a href="classroblab_1_1common_1_1gpio_1_1_i_pwm_write.html">roblab::common::gpio::IPwmWrite</a></div><div class="ttdoc">PWM出力を行うインタフェース</div><div class="ttdef"><b>Definition:</b> i_pwm_write.hpp:28</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1gpio_1_1_pwm_out_html"><div class="ttname"><a href="classroblab_1_1mbed_1_1gpio_1_1_pwm_out.html">roblab::mbed::gpio::PwmOut</a></div><div class="ttdoc">PWM出力ピン</div><div class="ttdef"><b>Definition:</b> pwm_out.hpp:34</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1gpio_1_1_pwm_out_html_a10d5b569ca99394be5884b9e29fb697f"><div class="ttname"><a href="classroblab_1_1mbed_1_1gpio_1_1_pwm_out.html#a10d5b569ca99394be5884b9e29fb697f">roblab::mbed::gpio::PwmOut::PwmOut</a></div><div class="ttdeci">PwmOut(PinName pin)</div><div class="ttdoc">コンストラクタ</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1gpio_1_1_pwm_out_html_a14f165648ac5f14139a10e9f99cebe63"><div class="ttname"><a href="classroblab_1_1mbed_1_1gpio_1_1_pwm_out.html#a14f165648ac5f14139a10e9f99cebe63">roblab::mbed::gpio::PwmOut::WriteImpl</a></div><div class="ttdeci">void WriteImpl(float value)</div><div class="ttdoc">PWM出力を行う</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1gpio_1_1_pwm_out_html_a9a3aa7d904d802865e9c62cfbb57e1de"><div class="ttname"><a href="classroblab_1_1mbed_1_1gpio_1_1_pwm_out.html#a9a3aa7d904d802865e9c62cfbb57e1de">roblab::mbed::gpio::PwmOut::SetPeriodImpl</a></div><div class="ttdeci">void SetPeriodImpl(float seconds)</div><div class="ttdoc">PWMの周期を設定する</div></div>
-<div class="ttc" id="aclassroblab_1_1mbed_1_1gpio_1_1_pwm_out_html_aabeed12c98ff664f5e8d9472be84bf5b"><div class="ttname"><a href="classroblab_1_1mbed_1_1gpio_1_1_pwm_out.html#aabeed12c98ff664f5e8d9472be84bf5b">roblab::mbed::gpio::PwmOut::SetPulseWidthImpl</a></div><div class="ttdeci">void SetPulseWidthImpl(float seconds)</div><div class="ttdoc">PWMのパルス幅を設定する</div></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#endif </span><span class="comment">// ALPS_MBED_PWM_OUT_HPP_</span></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_pwm_set_period_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_set_period.html">alps::cmn::gpio::IPwmSetPeriod</a></div><div class="ttdoc">PWMの周期を設定するインタフェース</div><div class="ttdef"><b>Definition:</b> i_pwm_set_period.hpp:28</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_pwm_set_pulse_width_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_set_pulse_width.html">alps::cmn::gpio::IPwmSetPulseWidth</a></div><div class="ttdoc">PWMのパルス幅を時間で指定し出力するインタフェース</div><div class="ttdef"><b>Definition:</b> i_pwm_set_pulse_width.hpp:29</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_pwm_write_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_write.html">alps::cmn::gpio::IPwmWrite</a></div><div class="ttdoc">PWM出力を行うインタフェース</div><div class="ttdef"><b>Definition:</b> i_pwm_write.hpp:28</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_pwm_out_html"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_pwm_out.html">alps::mbed::gpio::PwmOut</a></div><div class="ttdoc">PWM出力ピン</div><div class="ttdef"><b>Definition:</b> pwm_out.hpp:34</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_pwm_out_html_a17c9ef594859dd3520ce0b3f69542bc1"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_pwm_out.html#a17c9ef594859dd3520ce0b3f69542bc1">alps::mbed::gpio::PwmOut::SetPulseWidth</a></div><div class="ttdeci">void SetPulseWidth(float seconds)</div><div class="ttdoc">PWMのパルス幅を設定する</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_pwm_out_html_ab3bad3cdb7df1924fa1a9095997bf046"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_pwm_out.html#ab3bad3cdb7df1924fa1a9095997bf046">alps::mbed::gpio::PwmOut::PwmOut</a></div><div class="ttdeci">PwmOut(PinName pin)</div><div class="ttdoc">コンストラクタ</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_pwm_out_html_add2bc0f1f9dfe9f4b340decbb05a1c79"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_pwm_out.html#add2bc0f1f9dfe9f4b340decbb05a1c79">alps::mbed::gpio::PwmOut::Write</a></div><div class="ttdeci">void Write(float value)</div><div class="ttdoc">PWM出力を行う</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_pwm_out_html_afec6b311722f6f04504d3624f0a83ac4"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_pwm_out.html#afec6b311722f6f04504d3624f0a83ac4">alps::mbed::gpio::PwmOut::SetPeriod</a></div><div class="ttdeci">void SetPeriod(float seconds)</div><div class="ttdoc">PWMの周期を設定する</div></div>
 <div class="ttc" id="ai__pwm__set__period_8hpp_html"><div class="ttname"><a href="i__pwm__set__period_8hpp.html">i_pwm_set_period.hpp</a></div></div>
 <div class="ttc" id="ai__pwm__set__pulse__width_8hpp_html"><div class="ttname"><a href="i__pwm__set__pulse__width_8hpp.html">i_pwm_set_pulse_width.hpp</a></div></div>
 <div class="ttc" id="ai__pwm__write_8hpp_html"><div class="ttname"><a href="i__pwm__write_8hpp.html">i_pwm_write.hpp</a></div></div>
-<div class="ttc" id="anamespaceroblab_html"><div class="ttname"><a href="namespaceroblab.html">roblab</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c33f9a09b0104de6eebd3809920e616c.html">roblab_mbed_lib</a></li><li class="navelem"><a class="el" href="dir_858b1795adc2910eb251408166003f7f.html">include</a></li><li class="navelem"><a class="el" href="dir_8f2461ed01872a68db9a9b31590e2846.html">roblab_mbed</a></li><li class="navelem"><a class="el" href="dir_f45560154fa7502d930f29fb8edf9890.html">gpio</a></li><li class="navelem"><a class="el" href="pwm__out_8hpp.html">pwm_out.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_074e7ce7c414df3f1b9789b8bf27b85a.html">alps_mbed_lib</a></li><li class="navelem"><a class="el" href="dir_06d0b736b1247c5c94714e69ec444f3a.html">include</a></li><li class="navelem"><a class="el" href="dir_c813e285ae311a0f099f263ae937976d.html">alps_mbed</a></li><li class="navelem"><a class="el" href="dir_cfc86feb12eb97e7fc67660f2e3b546b.html">gpio</a></li><li class="navelem"><a class="el" href="pwm__out_8hpp.html">pwm_out.hpp</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>

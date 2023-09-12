@@ -1,9 +1,0 @@
-<map id="roblab::mbed::gpio::PwmOut" name="roblab::mbed::gpio::PwmOut">
-<area shape="rect" id="node1" title="PWM出力ピン" alt="" coords="230,307,391,447"/>
-<area shape="rect" id="node2" href="$classroblab_1_1common_1_1gpio_1_1_i_pwm_write.html" title=" " alt="" coords="5,170,184,250"/>
-<area shape="rect" id="node3" href="$classroblab_1_1common_1_1gpio_1_1_i_pwm_write.html" title="PWM出力を行うインタフェース" alt="" coords="7,13,182,93"/>
-<area shape="rect" id="node4" href="$classroblab_1_1common_1_1gpio_1_1_i_pwm_set_period.html" title=" " alt="" coords="208,170,413,250"/>
-<area shape="rect" id="node5" href="$classroblab_1_1common_1_1gpio_1_1_i_pwm_set_period.html" title="PWMの周期を設定するインタフェース" alt="" coords="210,13,411,93"/>
-<area shape="rect" id="node6" href="$classroblab_1_1common_1_1gpio_1_1_i_pwm_set_pulse_width.html" title=" " alt="" coords="437,163,600,257"/>
-<area shape="rect" id="node7" href="$classroblab_1_1common_1_1gpio_1_1_i_pwm_set_pulse_width.html" title="PWMのパルス幅を時間で指定し出力するインタフェース" alt="" coords="437,5,600,100"/>
-</map>

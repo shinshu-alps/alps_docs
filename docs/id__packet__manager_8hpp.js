@@ -1,5 +1,5 @@
 var id__packet__manager_8hpp =
 [
-    [ "roblab::common::serial::IdPacketManager< ISerialIoImpl >", "classroblab_1_1common_1_1serial_1_1_id_packet_manager.html", "classroblab_1_1common_1_1serial_1_1_id_packet_manager" ],
-    [ "PacketId", "id__packet__manager_8hpp.html#aab66473ea2aa9d9114abbb0b5f5ff207", null ]
+    [ "alps::cmn::communication::IdPacketManager< UartIo >", "classalps_1_1cmn_1_1communication_1_1_id_packet_manager.html", "classalps_1_1cmn_1_1communication_1_1_id_packet_manager" ],
+    [ "PacketId", "id__packet__manager_8hpp.html#afa935418200ad05a0b213fe33e6a4e77", null ]
 ];

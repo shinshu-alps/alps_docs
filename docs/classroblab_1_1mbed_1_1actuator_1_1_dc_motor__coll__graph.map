@@ -1,5 +1,0 @@
-<map id="DcMotor" name="DcMotor">
-<area shape="rect" id="node1" title="PWMピンと方向指定ピンで動かすDCモーターのmbed用実装" alt="" coords="66,431,159,496"/>
-<area shape="rect" id="node2" href="$classroblab_1_1common_1_1actuator_1_1_dc_motor_base.html" title=" " alt="" coords="19,232,206,381"/>
-<area shape="rect" id="node3" href="$classroblab_1_1common_1_1actuator_1_1_dc_motor_base.html" title="PWMピンと方向指定ピンで動かすDCモーターの共通実装" alt="" coords="5,5,220,140"/>
-</map>

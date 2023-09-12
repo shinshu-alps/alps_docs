@@ -1,6 +1,6 @@
-<map id="roblab_common_lib/include/roblab_common/actuator/servo_motor_base.hpp" name="roblab_common_lib/include/roblab_common/actuator/servo_motor_base.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="82,5,283,60"/>
+<map id="alps_common_lib/include/alps_cmn/actuator/servo_motor_base.hpp" name="alps_common_lib/include/alps_cmn/actuator/servo_motor_base.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="84,5,271,60"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,115,72,141"/>
-<area shape="rect" id="node3" href="$i__pwm__set__period_8hpp.html" title=" " alt="" coords="97,108,269,148"/>
-<area shape="rect" id="node4" href="$i__pwm__set__pulse__width_8hpp.html" title=" " alt="" coords="293,108,502,148"/>
+<area shape="rect" id="node3" href="$i__pwm__set__period_8hpp.html" title=" " alt="" coords="96,108,259,148"/>
+<area shape="rect" id="node4" href="$i__pwm__set__pulse__width_8hpp.html" title=" " alt="" coords="283,108,445,148"/>
 </map>
