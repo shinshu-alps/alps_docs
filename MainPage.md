@@ -3,7 +3,7 @@
 ロボ研ライブラリのドキュメントページです．  
 ライブラリの使い方が分からない時などに参照してください．  
 
-関連esa記事：[ライブラリの全体概要](https://alps-shinshu.esa.io/posts/2021)
+関連esa記事：[ライブラリの全体概要](https://roblab-shinshu.esa.io/posts/2021)
 
 ## ライブラリリスト
 
