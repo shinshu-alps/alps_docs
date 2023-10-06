@@ -1,9 +1,8 @@
 <map id="alps_common_lib/include/alps_cmn/communication/cobs.hpp" name="alps_common_lib/include/alps_cmn/communication/cobs.hpp">
-<area shape="rect" id="node1" title="COBS変換ライブラリ" alt="" coords="175,5,369,60"/>
-<area shape="rect" id="node2" href="$byte__ring__buffer_8hpp.html" title="シリアル通信用リングバッファー" alt="" coords="58,108,209,148"/>
-<area shape="rect" id="node5" title=" " alt="" coords="184,196,245,221"/>
-<area shape="rect" id="node6" title=" " alt="" coords="270,196,335,221"/>
-<area shape="rect" id="node7" title=" " alt="" coords="335,115,404,141"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,196,72,221"/>
-<area shape="rect" id="node4" title=" " alt="" coords="97,196,159,221"/>
+<area shape="rect" id="node1" title="COBS変換ライブラリ" alt="" coords="121,5,314,60"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,108,67,133"/>
+<area shape="rect" id="node3" title=" " alt="" coords="91,108,160,133"/>
+<area shape="rect" id="node4" title=" " alt="" coords="185,108,250,133"/>
+<area shape="rect" id="node5" title=" " alt="" coords="275,108,341,133"/>
+<area shape="rect" id="node6" title=" " alt="" coords="365,108,515,133"/>
 </map>

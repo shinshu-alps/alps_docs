@@ -116,14 +116,14 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1communication_1_1
 </div><!--header-->
 <div class="contents">
 
-<p>バイト列変換に関する型情報  
+<p>型のバイト列変換に関する情報  
  <a href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#details">[詳解]</a></p>
 
 <p><code>#include &lt;<a class="el" href="serialize__type__info_8hpp_source.html">serialize_type_info.hpp</a>&gt;</code></p>
 <div class="dynheader">
 alps::cmn::communication::SerializeTypeInfo&lt; T &gt; の継承関係図</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structalps_1_1cmn_1_1communication_1_1_serialize_type_info__inherit__graph.svg" width="219" height="472"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structalps_1_1cmn_1_1communication_1_1_serialize_type_info__inherit__graph.svg" width="219" height="492"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
@@ -131,6 +131,9 @@ alps::cmn::communication::SerializeTypeInfo&lt; T &gt; の継承関係図</div>
 <tr class="memitem:abcd434490acadf59e85f6d44eb98e68a"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">GetName</a> ()</td></tr>
 <tr class="memdesc:abcd434490acadf59e85f6d44eb98e68a"><td class="mdescLeft">&#160;</td><td class="mdescRight">プラットフォーム環境の影響を受けずに比較できる型名を得る  <br /></td></tr>
 <tr class="separator:abcd434490acadf59e85f6d44eb98e68a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb0598b74eee1716be5364feeb7e4908"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#acb0598b74eee1716be5364feeb7e4908">RequiredBytesSize</a> ()</td></tr>
+<tr class="memdesc:acb0598b74eee1716be5364feeb7e4908"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイト列変換に必要なバイト数を得る  <br /></td></tr>
+<tr class="separator:acb0598b74eee1716be5364feeb7e4908"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0e8f6a8410c39ef39a8e6745c6d3bdd"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html#aa0e8f6a8410c39ef39a8e6745c6d3bdd">IsSerializable</a> ()</td></tr>
 <tr class="memdesc:aa0e8f6a8410c39ef39a8e6745c6d3bdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tがバイト列変換に対応しているか  <br /></td></tr>
 <tr class="separator:aa0e8f6a8410c39ef39a8e6745c6d3bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,7 +146,7 @@ alps::cmn::communication::SerializeTypeInfo&lt; T &gt; の継承関係図</div>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
-struct alps::cmn::communication::SerializeTypeInfo&lt; T &gt;</div><p>バイト列変換に関する型情報 </p>
+struct alps::cmn::communication::SerializeTypeInfo&lt; T &gt;</div><p>型のバイト列変換に関する情報 </p>
 <dl class="tparams"><dt>テンプレート引数</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>情報を知りたい型 </td></tr>
@@ -268,6 +271,36 @@ false 対応してない </dd></dl>
 <dl class="section return"><dt>戻り値</dt><dd>true 単一型である </dd>
 <dd>
 false 単一型でない </dd></dl>
+
+</div>
+</div>
+<a id="acb0598b74eee1716be5364feeb7e4908" name="acb0598b74eee1716be5364feeb7e4908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb0598b74eee1716be5364feeb7e4908">&#9670;&#160;</a></span>RequiredBytesSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr size_t <a class="el" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html">alps::cmn::communication::SerializeTypeInfo</a>&lt; T &gt;::RequiredBytesSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>バイト列変換に必要なバイト数を得る </p>
+<dl class="section return"><dt>戻り値</dt><dd>constexpr size_t 必要なバイト数 </dd></dl>
 
 </div>
 </div>

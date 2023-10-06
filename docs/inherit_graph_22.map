@@ -1,5 +1,8 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1gpio_1_1_i_attach_interrupt.html" title=" " alt="" coords="5,5,181,45"/>
-<area shape="rect" id="node2" href="$classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html" title="割り込み入力ピン" alt="" coords="229,45,436,70"/>
-<area shape="rect" id="node3" href="$classalps_1_1cmn_1_1gpio_1_1_i_digital_read.html" title=" " alt="" coords="5,69,181,109"/>
+<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_read.html" title="Uart読み込みのインターフェース" alt="" coords="5,37,200,77"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_io.html" title=" " alt="" coords="248,37,443,77"/>
+<area shape="rect" id="node5" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_io.html" title="Uart通信IOのインターフェース" alt="" coords="248,101,443,141"/>
+<area shape="rect" id="node3" href="$classalps_1_1lin_1_1communication_1_1_uart_io.html" title="Linux環境でのUart通信IOクラス" alt="" coords="501,5,683,45"/>
+<area shape="rect" id="node4" href="$classalps_1_1mbed_1_1communication_1_1_uart_io.html" title="mbedのUartシリアル通信IOクラス" alt="" coords="491,69,693,109"/>
+<area shape="rect" id="node6" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_write.html" title="Uart書き込みのインターフェース" alt="" coords="5,101,200,141"/>
 </map>

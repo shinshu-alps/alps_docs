@@ -1,0 +1,4 @@
+<map id="alps::cmn::communication::CanCallbackHandler&lt; kMaxCallbackNum &gt;" name="alps::cmn::communication::CanCallbackHandler&lt; kMaxCallbackNum &gt;">
+<area shape="rect" id="node1" title="CANの受信をコールバックで処理するためのクラス" alt="" coords="5,5,312,120"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html" title=" " alt="" coords="51,183,266,297"/>
+</map>

@@ -2,7 +2,6 @@ var classalps_1_1cmn_1_1control_1_1_dob =
 [
     [ "Dob", "classalps_1_1cmn_1_1control_1_1_dob.html#ae59aa0e6dad0073ec99ba8948b4b503b", null ],
     [ "Control", "classalps_1_1cmn_1_1control_1_1_dob.html#ac62a1bfeefe9178404f7b34fc365a9d7", null ],
-    [ "ControlErr", "classalps_1_1cmn_1_1control_1_1_dob.html#a8a380bdf1371ff624cdeed7b929bcca6", null ],
     [ "Filter", "classalps_1_1cmn_1_1control_1_1_dob.html#a992861c7ac592084f3e997153e984c47", null ],
     [ "getCoeff_a_", "classalps_1_1cmn_1_1control_1_1_dob.html#ad0f70e33ba22f47ac43091ea03882545", null ],
     [ "getCoeff_b_", "classalps_1_1cmn_1_1control_1_1_dob.html#a192040420f9ec1ea1f9913e886874bdd", null ],
@@ -17,7 +16,6 @@ var classalps_1_1cmn_1_1control_1_1_dob =
     [ "Init", "classalps_1_1cmn_1_1control_1_1_dob.html#a6842f947655bc9960ab8c78e05e1f58a", null ],
     [ "IsEnd", "classalps_1_1cmn_1_1control_1_1_dob.html#aedf4d565842d3c42618851cfe428834d", null ],
     [ "Reset", "classalps_1_1cmn_1_1control_1_1_dob.html#a27e707ea06d4997d72946c61be696830", null ],
-    [ "ResetEndCount", "classalps_1_1cmn_1_1control_1_1_dob.html#a8acd3fe41d14bb6605a84736a83357a7", null ],
     [ "ResetForVelocity", "classalps_1_1cmn_1_1control_1_1_dob.html#a155377ce70d35c23185671361d5d3c06", null ],
     [ "SetDiffTimeConst", "classalps_1_1cmn_1_1control_1_1_dob.html#a29d4145189fe12a07dfdf7c060767dc8", null ],
     [ "SetEndCondition", "classalps_1_1cmn_1_1control_1_1_dob.html#a2ffa84a2a615c46dc97472a815d118ef", null ],

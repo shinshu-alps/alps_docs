@@ -129,7 +129,7 @@ alps::cmn::gpio::IAttachInterrupt&lt; Derived &gt; の継承関係図</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
 <tr class="memitem:aee3316c8155af686d9d5a6dade2c0045"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_attach_interrupt.html#aee3316c8155af686d9d5a6dade2c0045">CallAttachInterrupt</a> (etl::delegate&lt; void()&gt; func, <a class="el" href="namespacealps_1_1cmn_1_1gpio.html#a5e6ac69b85cb0a3ebf618df6f6e316a9">InterruptMode</a> mode)</td></tr>
-<tr class="memdesc:aee3316c8155af686d9d5a6dade2c0045"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してAttachInterrupt()関数を呼び出す．挙動: 割り込みを設定する  <br /></td></tr>
+<tr class="memdesc:aee3316c8155af686d9d5a6dade2c0045"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してAttachInterrupt()関数を呼び出す．振る舞い: 割り込みを設定する  <br /></td></tr>
 <tr class="separator:aee3316c8155af686d9d5a6dade2c0045"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
@@ -137,7 +137,7 @@ alps::cmn::gpio::IAttachInterrupt&lt; Derived &gt; の継承関係図</div>
 class alps::cmn::gpio::IAttachInterrupt&lt; Derived &gt;</div><p>割り込みを設定するインターフェース </p>
 <dl class="tparams"><dt>テンプレート引数</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Derived</td><td>継承先クラス AttachInterrupt()を実装すること </td></tr>
+    <tr><td class="paramname">Derived</td><td>派生クラス AttachInterrupt()を実装すること </td></tr>
   </table>
   </dd>
 </dl>
@@ -178,8 +178,8 @@ template&lt;class Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>インタフェースを介してAttachInterrupt()関数を呼び出す．挙動: 割り込みを設定する </p>
-<dl class="section note"><dt>覚え書き</dt><dd>継承クラスはこの関数と同じ挙動のAttachInterrupt()関数を実装すること．</dd></dl>
+<p>インタフェースを介してAttachInterrupt()関数を呼び出す．振る舞い: 割り込みを設定する </p>
+<dl class="section note"><dt>覚え書き</dt><dd>継承クラスはこの関数と同じ振る舞いのAttachInterrupt()関数を実装すること．</dd></dl>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">callback</td><td>割り込み時に呼び出される関数 </td></tr>

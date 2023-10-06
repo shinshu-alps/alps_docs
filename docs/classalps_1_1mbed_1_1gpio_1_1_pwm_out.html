@@ -141,13 +141,13 @@ alps::mbed::gpio::PwmOut の継承関係図</div>
 <tr class="memdesc:a17c9ef594859dd3520ce0b3f69542bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWMのパルス幅を設定する  <br /></td></tr>
 <tr class="separator:a17c9ef594859dd3520ce0b3f69542bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a851a1a302baca7766d6f10756dceaf54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_write.html#a851a1a302baca7766d6f10756dceaf54">CallWrite</a> (float value)</td></tr>
-<tr class="memdesc:a851a1a302baca7766d6f10756dceaf54"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してWrite()関数を呼び出す．挙動: PWM出力を行う  <br /></td></tr>
+<tr class="memdesc:a851a1a302baca7766d6f10756dceaf54"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してWrite()関数を呼び出す．振る舞い: PWM出力を行う  <br /></td></tr>
 <tr class="separator:a851a1a302baca7766d6f10756dceaf54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d9bc0b5b6dd9e04f231151dde69914a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_set_period.html#a0d9bc0b5b6dd9e04f231151dde69914a">CallSetPeriod</a> (float seconds)</td></tr>
-<tr class="memdesc:a0d9bc0b5b6dd9e04f231151dde69914a"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してSetPeriod()関数を呼び出す．挙動: PWMの周期を設定する  <br /></td></tr>
+<tr class="memdesc:a0d9bc0b5b6dd9e04f231151dde69914a"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してSetPeriod()関数を呼び出す．振る舞い: PWMの周期を設定する  <br /></td></tr>
 <tr class="separator:a0d9bc0b5b6dd9e04f231151dde69914a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79510a04ad43642699ac85811fc2e5e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_set_pulse_width.html#a79510a04ad43642699ac85811fc2e5e1">CallSetPulseWidth</a> (float seconds)</td></tr>
-<tr class="memdesc:a79510a04ad43642699ac85811fc2e5e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してSetPulseWidth()関数を呼び出す．挙動: PWMの出力パルス幅を時間指定して出力する  <br /></td></tr>
+<tr class="memdesc:a79510a04ad43642699ac85811fc2e5e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してSetPulseWidth()関数を呼び出す．振る舞い: PWMの出力パルス幅を時間指定して出力する  <br /></td></tr>
 <tr class="separator:a79510a04ad43642699ac85811fc2e5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
@@ -204,8 +204,8 @@ alps::mbed::gpio::PwmOut の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
-<p>インタフェースを介してSetPeriod()関数を呼び出す．挙動: PWMの周期を設定する </p>
-<dl class="section note"><dt>覚え書き</dt><dd>継承クラスはこの関数と同じ挙動のSetPeriod()関数を実装すること．</dd></dl>
+<p>インタフェースを介してSetPeriod()関数を呼び出す．振る舞い: PWMの周期を設定する </p>
+<dl class="section note"><dt>覚え書き</dt><dd>継承クラスはこの関数と同じ振る舞いのSetPeriod()関数を実装すること．</dd></dl>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">seconds</td><td>パルス幅[sec] </td></tr>
@@ -239,8 +239,8 @@ alps::mbed::gpio::PwmOut の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
-<p>インタフェースを介してSetPulseWidth()関数を呼び出す．挙動: PWMの出力パルス幅を時間指定して出力する </p>
-<dl class="section note"><dt>覚え書き</dt><dd>継承クラスはこの関数と同じ挙動のSetPulseWidth()関数を実装すること．</dd></dl>
+<p>インタフェースを介してSetPulseWidth()関数を呼び出す．振る舞い: PWMの出力パルス幅を時間指定して出力する </p>
+<dl class="section note"><dt>覚え書き</dt><dd>継承クラスはこの関数と同じ振る舞いのSetPulseWidth()関数を実装すること．</dd></dl>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">seconds</td><td>パルス幅[sec] </td></tr>
@@ -274,8 +274,8 @@ alps::mbed::gpio::PwmOut の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
-<p>インタフェースを介してWrite()関数を呼び出す．挙動: PWM出力を行う </p>
-<dl class="section note"><dt>覚え書き</dt><dd>継承クラスはこの関数と同じ挙動のWrite()関数を実装すること．</dd></dl>
+<p>インタフェースを介してWrite()関数を呼び出す．振る舞い: PWM出力を行う </p>
+<dl class="section note"><dt>覚え書き</dt><dd>継承クラスはこの関数と同じ振る舞いのWrite()関数を実装すること．</dd></dl>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">value</td><td>出力値 0.0f ~ 1.0f </td></tr>

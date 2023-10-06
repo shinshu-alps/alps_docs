@@ -1,8 +1,7 @@
-<map id="alps_common_lib/include/alps_cmn/util/serialize_type_info.hpp" name="alps_common_lib/include/alps_cmn/util/serialize_type_info.hpp">
-<area shape="rect" id="node1" title="DataSeializerで変換する型に関する情報" alt="" coords="119,5,306,60"/>
-<area shape="rect" id="node2" href="$data__serializer_8hpp.html" title="データとバイト列の変換ライブラリ" alt="" coords="92,108,333,148"/>
-<area shape="rect" id="node3" href="$id__packet__manager_8hpp.html" title="ID付きパケットデータを管理" alt="" coords="116,196,309,251"/>
-<area shape="rect" id="node4" href="$sender_8hpp.html" title="シリアル通信で送るデータを登録" alt="" coords="5,299,199,353"/>
-<area shape="rect" id="node5" href="$mbed__uart__connection_8hpp.html" title="接続された複数のMbedとシリアル通信を行う" alt="" coords="223,299,426,353"/>
-<area shape="rect" id="node6" href="$pc__uart__connection_8hpp.html" title="パソコンと接続してパケット通信を行うライブラリ" alt="" coords="450,299,653,353"/>
+<map id="alps_common_lib/include/alps_cmn/communication/serialize_type_info.hpp" name="alps_common_lib/include/alps_cmn/communication/serialize_type_info.hpp">
+<area shape="rect" id="node1" title="DataSeializerで変換する型に関する情報" alt="" coords="151,5,345,60"/>
+<area shape="rect" id="node2" href="$data__serializer_8hpp.html" title="データとバイト列の変換ライブラリ" alt="" coords="151,108,345,163"/>
+<area shape="rect" id="node3" href="$can__typed__data__transceiver_8hpp.html" title="CAN通信で型付けされたデータの送受信を行うライブラリ" alt="" coords="5,211,243,265"/>
+<area shape="rect" id="node5" href="$uart__packet__transceiver_8hpp.html" title=" " alt="" coords="267,211,477,265"/>
+<area shape="rect" id="node4" href="$robomas__motors__can__controller_8hpp.html" title=" " alt="" coords="21,313,227,368"/>
 </map>

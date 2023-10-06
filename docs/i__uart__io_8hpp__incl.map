@@ -1,8 +1,4 @@
 <map id="alps_common_lib/include/alps_cmn/communication/i_uart_io.hpp" name="alps_common_lib/include/alps_cmn/communication/i_uart_io.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="74,5,267,60"/>
-<area shape="rect" id="node2" href="$byte__ring__buffer_8hpp.html" title="シリアル通信用リングバッファー" alt="" coords="95,108,246,148"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,196,72,221"/>
-<area shape="rect" id="node4" title=" " alt="" coords="97,196,159,221"/>
-<area shape="rect" id="node5" title=" " alt="" coords="184,196,245,221"/>
-<area shape="rect" id="node6" title=" " alt="" coords="270,196,335,221"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,199,60"/>
+<area shape="rect" id="node2" title=" " alt="" coords="27,108,177,133"/>
 </map>

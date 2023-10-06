@@ -48,6 +48,7 @@ var NAVTREE =
         [ "全て", "functions.html", null ],
         [ "関数", "functions_func.html", null ],
         [ "変数", "functions_vars.html", null ],
+        [ "型定義", "functions_type.html", null ],
         [ "列挙型", "functions_enum.html", null ]
       ] ]
     ] ],
@@ -60,8 +61,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "alps__common__lib_2include_2alps__cmn_2namespace_8hpp.html",
-"classalps_1_1cmn_1_1control_1_1_pid.html#ad3176cd6171641513587336b2ab4464e",
-"classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#a58c433a01a827f58f76954618ab11a6b"
+"classalps_1_1cmn_1_1control_1_1_dob.html#a27e707ea06d4997d72946c61be696830",
+"classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#a6f713f49b4f69edced5c33e4bc920e48"
 ];
 
 var SYNCONMSG = 'クリックで同期表示が無効になります';
