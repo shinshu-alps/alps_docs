@@ -1,9 +1,6 @@
 <map id="alps::mbed::communication::UartIo" name="alps::mbed::communication::UartIo">
-<area shape="rect" id="node1" title="mbedのUartシリアル通信IOクラス" alt="" coords="212,407,407,547"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_io.html" title=" " alt="" coords="216,277,403,357"/>
-<area shape="rect" id="node3" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_write.html" title="Uart書き込みのインターフェース" alt="" coords="5,135,192,215"/>
-<area shape="rect" id="node4" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_read.html" title="Uart読み込みのインターフェース" alt="" coords="216,135,403,215"/>
-<area shape="rect" id="node5" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_io.html" title="Uart通信IOのインターフェース" alt="" coords="427,135,613,215"/>
-<area shape="rect" id="node6" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_write.html" title="Uart書き込みのインターフェース" alt="" coords="321,5,508,85"/>
-<area shape="rect" id="node7" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_read.html" title="Uart読み込みのインターフェース" alt="" coords="532,5,719,85"/>
+<area shape="rect" id="node1" title="mbedのUartシリアル通信IOクラス" alt="" coords="107,261,301,401"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_io.html" title=" " alt="" coords="111,133,297,213"/>
+<area shape="rect" id="node3" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_write.html" title="Uart書き込みのインターフェース" alt="" coords="5,5,192,85"/>
+<area shape="rect" id="node4" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_read.html" title="Uart読み込みのインターフェース" alt="" coords="216,5,403,85"/>
 </map>

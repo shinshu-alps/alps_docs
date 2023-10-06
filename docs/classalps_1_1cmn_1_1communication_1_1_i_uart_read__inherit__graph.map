@@ -1,8 +1,7 @@
 <map id="alps::cmn::communication::IUartRead&lt; Derived &gt;" name="alps::cmn::communication::IUartRead&lt; Derived &gt;">
-<area shape="rect" id="node1" title="Uart読み込みのインターフェース" alt="" coords="213,5,399,85"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_io.html" title=" " alt="" coords="103,291,290,371"/>
-<area shape="rect" id="node5" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_io.html" title="Uart通信IOのインターフェース" alt="" coords="213,148,399,228"/>
-<area shape="rect" id="node6" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_read.html" title=" " alt="" coords="423,148,610,228"/>
-<area shape="rect" id="node3" href="$classalps_1_1lin_1_1communication_1_1_uart_io.html" title="Linux環境でのUart通信IOクラス" alt="" coords="5,420,180,560"/>
-<area shape="rect" id="node4" href="$classalps_1_1mbed_1_1communication_1_1_uart_io.html" title="mbedのUartシリアル通信IOクラス" alt="" coords="205,420,399,560"/>
+<area shape="rect" id="node1" title="Uart読み込みのインターフェース" alt="" coords="209,5,395,85"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_io.html" title=" " alt="" coords="103,133,290,213"/>
+<area shape="rect" id="node5" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_io.html" title="Uart通信IOのインターフェース" alt="" coords="314,133,501,213"/>
+<area shape="rect" id="node3" href="$classalps_1_1lin_1_1communication_1_1_uart_io.html" title="Linux環境でのUart通信IOクラス" alt="" coords="5,261,180,401"/>
+<area shape="rect" id="node4" href="$classalps_1_1mbed_1_1communication_1_1_uart_io.html" title="mbedのUartシリアル通信IOクラス" alt="" coords="205,261,399,401"/>
 </map>
