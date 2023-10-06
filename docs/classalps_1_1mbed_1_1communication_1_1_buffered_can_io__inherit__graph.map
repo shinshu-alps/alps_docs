@@ -1,9 +1,6 @@
 <map id="alps::mbed::communication::BufferedCanIo" name="alps::mbed::communication::BufferedCanIo">
-<area shape="rect" id="node1" title="MbedのCAN通信IO. 受信割り込みによってデータをバッファリングする．" alt="" coords="212,407,407,547"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1communication_1_1_i_can_io.html" title=" " alt="" coords="216,277,403,357"/>
-<area shape="rect" id="node3" href="$classalps_1_1cmn_1_1communication_1_1_i_can_write.html" title="CAN通信でデータを書き込むインターフェース" alt="" coords="5,135,192,215"/>
-<area shape="rect" id="node4" href="$classalps_1_1cmn_1_1communication_1_1_i_can_read.html" title="CAN通信でデータを読み込むインターフェース" alt="" coords="216,135,403,215"/>
-<area shape="rect" id="node5" href="$classalps_1_1cmn_1_1communication_1_1_i_can_io.html" title="CAN通信IOのインターフェース" alt="" coords="427,135,613,215"/>
-<area shape="rect" id="node6" href="$classalps_1_1cmn_1_1communication_1_1_i_can_write.html" title="CAN通信でデータを書き込むインターフェース" alt="" coords="321,5,508,85"/>
-<area shape="rect" id="node7" href="$classalps_1_1cmn_1_1communication_1_1_i_can_read.html" title="CAN通信でデータを読み込むインターフェース" alt="" coords="532,5,719,85"/>
+<area shape="rect" id="node1" title="MbedのCAN通信IO. 受信割り込みによってデータをバッファリングする．" alt="" coords="107,261,301,401"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1communication_1_1_i_can_io.html" title=" " alt="" coords="111,133,297,213"/>
+<area shape="rect" id="node3" href="$classalps_1_1cmn_1_1communication_1_1_i_can_write.html" title="CAN通信でデータを書き込むインターフェース" alt="" coords="5,5,192,85"/>
+<area shape="rect" id="node4" href="$classalps_1_1cmn_1_1communication_1_1_i_can_read.html" title="CAN通信でデータを読み込むインターフェース" alt="" coords="216,5,403,85"/>
 </map>

@@ -1,5 +1,4 @@
 <map id="alps::mbed::gpio::DigitalOut" name="alps::mbed::gpio::DigitalOut">
-<area shape="rect" id="node1" title="デジタル出力ピン" alt="" coords="5,277,201,383"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1gpio_1_1_i_digital_write.html" title=" " alt="" coords="19,148,187,228"/>
-<area shape="rect" id="node3" href="$classalps_1_1cmn_1_1gpio_1_1_i_digital_write.html" title="デジタル出力を行うインタフェース" alt="" coords="19,5,187,85"/>
+<area shape="rect" id="node1" title="デジタル出力ピン" alt="" coords="5,133,201,239"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1gpio_1_1_i_digital_write.html" title=" " alt="" coords="19,5,187,85"/>
 </map>
