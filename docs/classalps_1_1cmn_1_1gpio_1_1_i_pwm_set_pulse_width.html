@@ -129,7 +129,7 @@ alps::cmn::gpio::IPwmSetPulseWidth&lt; Derived &gt; の継承関係図</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
 <tr class="memitem:a79510a04ad43642699ac85811fc2e5e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_set_pulse_width.html#a79510a04ad43642699ac85811fc2e5e1">CallSetPulseWidth</a> (float seconds)</td></tr>
-<tr class="memdesc:a79510a04ad43642699ac85811fc2e5e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してSetPulseWidth()関数を呼び出す．挙動: PWMの出力パルス幅を時間指定して出力する  <br /></td></tr>
+<tr class="memdesc:a79510a04ad43642699ac85811fc2e5e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してSetPulseWidth()関数を呼び出す．振る舞い: PWMの出力パルス幅を時間指定して出力する  <br /></td></tr>
 <tr class="separator:a79510a04ad43642699ac85811fc2e5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
@@ -137,7 +137,7 @@ alps::cmn::gpio::IPwmSetPulseWidth&lt; Derived &gt; の継承関係図</div>
 class alps::cmn::gpio::IPwmSetPulseWidth&lt; Derived &gt;</div><p>PWMのパルス幅を時間で指定し出力するインタフェース </p>
 <dl class="tparams"><dt>テンプレート引数</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Derived</td><td>継承先クラス SetPulseWidth()を実装すること </td></tr>
+    <tr><td class="paramname">Derived</td><td>派生クラス SetPulseWidth()を実装すること </td></tr>
   </table>
   </dd>
 </dl>
@@ -168,8 +168,8 @@ template&lt;class Derived &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>インタフェースを介してSetPulseWidth()関数を呼び出す．挙動: PWMの出力パルス幅を時間指定して出力する </p>
-<dl class="section note"><dt>覚え書き</dt><dd>継承クラスはこの関数と同じ挙動のSetPulseWidth()関数を実装すること．</dd></dl>
+<p>インタフェースを介してSetPulseWidth()関数を呼び出す．振る舞い: PWMの出力パルス幅を時間指定して出力する </p>
+<dl class="section note"><dt>覚え書き</dt><dd>継承クラスはこの関数と同じ振る舞いのSetPulseWidth()関数を実装すること．</dd></dl>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">seconds</td><td>パルス幅[sec] </td></tr>

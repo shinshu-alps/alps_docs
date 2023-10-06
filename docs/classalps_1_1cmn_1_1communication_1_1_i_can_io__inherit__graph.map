@@ -1,7 +1,10 @@
 <map id="alps::cmn::communication::ICanIo&lt; Derived &gt;" name="alps::cmn::communication::ICanIo&lt; Derived &gt;">
-<area shape="rect" id="node1" title="CAN通信IOのインターフェース" alt="" coords="109,5,296,105"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1communication_1_1_i_can_io.html" title=" " alt="" coords="5,168,192,268"/>
-<area shape="rect" id="node4" href="$classalps_1_1cmn_1_1communication_1_1_i_can_io.html" title=" " alt="" coords="216,168,403,268"/>
-<area shape="rect" id="node3" href="$classalps_1_1lin_1_1communication_1_1_socket_can_io.html" title="SocketCANを用いてCAN通信を行うクラス．" alt="" coords="11,317,186,457"/>
-<area shape="rect" id="node5" href="$classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html" title="MbedのCAN通信IO. 受信割り込みによってデータをバッファリングする．" alt="" coords="212,317,407,457"/>
+<area shape="rect" id="node1" title="CAN通信IOのインターフェース" alt="" coords="216,135,403,215"/>
+<area shape="rect" id="node4" href="$classalps_1_1cmn_1_1communication_1_1_i_can_io.html" title=" " alt="" coords="5,277,192,357"/>
+<area shape="rect" id="node6" href="$classalps_1_1cmn_1_1communication_1_1_i_can_io.html" title=" " alt="" coords="216,277,403,357"/>
+<area shape="rect" id="node8" href="$classalps_1_1cmn_1_1communication_1_1_i_can_io.html" title=" " alt="" coords="427,277,613,357"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1communication_1_1_i_can_write.html" title="CAN通信でデータを書き込むインターフェース" alt="" coords="111,5,297,85"/>
+<area shape="rect" id="node3" href="$classalps_1_1cmn_1_1communication_1_1_i_can_read.html" title="CAN通信でデータを読み込むインターフェース" alt="" coords="321,5,508,85"/>
+<area shape="rect" id="node5" href="$classalps_1_1lin_1_1communication_1_1_socket_can_io.html" title="SocketCANを用いてCAN通信を行うクラス．" alt="" coords="11,407,186,547"/>
+<area shape="rect" id="node7" href="$classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html" title="MbedのCAN通信IO. 受信割り込みによってデータをバッファリングする．" alt="" coords="212,407,407,547"/>
 </map>

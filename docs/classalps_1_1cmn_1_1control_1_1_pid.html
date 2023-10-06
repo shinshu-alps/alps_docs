@@ -167,9 +167,6 @@ alps::cmn::control::Pid の継承関係図</div>
 <tr class="memitem:aedf4d565842d3c42618851cfe428834d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#aedf4d565842d3c42618851cfe428834d">IsEnd</a> ()</td></tr>
 <tr class="memdesc:aedf4d565842d3c42618851cfe428834d"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID制御終了判定を確認する関数．  <br /></td></tr>
 <tr class="separator:aedf4d565842d3c42618851cfe428834d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8acd3fe41d14bb6605a84736a83357a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a8acd3fe41d14bb6605a84736a83357a7">ResetEndCount</a> ()</td></tr>
-<tr class="memdesc:a8acd3fe41d14bb6605a84736a83357a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了判定をリセット  <br /></td></tr>
-<tr class="separator:a8acd3fe41d14bb6605a84736a83357a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3176cd6171641513587336b2ab4464e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#ad3176cd6171641513587336b2ab4464e">Reset</a> ()</td></tr>
 <tr class="memdesc:ad3176cd6171641513587336b2ab4464e"><td class="mdescLeft">&#160;</td><td class="mdescRight">各変数を初期化する関数．ゲインはそのまま．  <br /></td></tr>
 <tr class="separator:ad3176cd6171641513587336b2ab4464e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,9 +176,6 @@ alps::cmn::control::Pid の継承関係図</div>
 <tr class="memitem:ab37662b6bfeafc098d83ed9c153a647f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#ab37662b6bfeafc098d83ed9c153a647f">Control</a> (float input)</td></tr>
 <tr class="memdesc:ab37662b6bfeafc098d83ed9c153a647f"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御を行う関数．  <br /></td></tr>
 <tr class="separator:ab37662b6bfeafc098d83ed9c153a647f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a380bdf1371ff624cdeed7b929bcca6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a8a380bdf1371ff624cdeed7b929bcca6">ControlErr</a> (float err)</td></tr>
-<tr class="memdesc:a8a380bdf1371ff624cdeed7b929bcca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">偏差からPID制御を行う関数．  <br /></td></tr>
-<tr class="separator:a8a380bdf1371ff624cdeed7b929bcca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>PID制御を行うクラス </p>
@@ -243,33 +237,6 @@ alps::cmn::control::Pid の継承関係図</div>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">input</td><td>フィードバック値 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd>float PID制御器の出力 </dd></dl>
-
-</div>
-</div>
-<a id="a8a380bdf1371ff624cdeed7b929bcca6" name="a8a380bdf1371ff624cdeed7b929bcca6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a380bdf1371ff624cdeed7b929bcca6">&#9670;&#160;</a></span>ControlErr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float alps::cmn::control::Pid::ControlErr </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>err</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>偏差からPID制御を行う関数． </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">err</td><td>フィードバック値から求めた偏差 </td></tr>
   </table>
   </dd>
 </dl>
@@ -399,26 +366,6 @@ alps::cmn::control::Pid の継承関係図</div>
 </div><div class="memdoc">
 
 <p>各変数を初期化する関数．ゲインはそのまま． </p>
-
-</div>
-</div>
-<a id="a8acd3fe41d14bb6605a84736a83357a7" name="a8acd3fe41d14bb6605a84736a83357a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8acd3fe41d14bb6605a84736a83357a7">&#9670;&#160;</a></span>ResetEndCount()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void alps::cmn::control::Pid::ResetEndCount </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>終了判定をリセット </p>
-<p>出力をリセットせずに次の目標値に収束させるため．目標値が随時更新されていくような場合に使う？ </p>
 
 </div>
 </div>

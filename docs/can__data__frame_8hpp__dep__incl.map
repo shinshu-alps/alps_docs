@@ -1,7 +1,10 @@
 <map id="alps_common_lib/include/alps_cmn/communication/can_data_frame.hpp" name="alps_common_lib/include/alps_cmn/communication/can_data_frame.hpp">
-<area shape="rect" id="node1" title="CANフレームを表す構造体" alt="" coords="124,5,317,60"/>
-<area shape="rect" id="node2" href="$robomas__motor_8hpp.html" title="ロボマスモータのライブラリ" alt="" coords="5,108,212,163"/>
-<area shape="rect" id="node3" href="$i__can__io_8hpp.html" title=" " alt="" coords="236,108,429,163"/>
-<area shape="rect" id="node4" href="$socket__can__io_8hpp.html" title=" " alt="" coords="134,211,315,265"/>
-<area shape="rect" id="node5" href="$buffered__can__io_8hpp.html" title="MbedのCAN通信IOクラス" alt="" coords="339,211,542,265"/>
+<area shape="rect" id="node1" title="CANフレームを表す構造体" alt="" coords="135,5,328,60"/>
+<area shape="rect" id="node2" href="$robomas__motor_8hpp.html" title="ロボマスモータのライブラリ" alt="" coords="5,313,212,368"/>
+<area shape="rect" id="node4" href="$i__can__io_8hpp.html" title=" " alt="" coords="336,108,529,163"/>
+<area shape="rect" id="node3" href="$robomas__motors__can__controller_8hpp.html" title=" " alt="" coords="128,416,335,471"/>
+<area shape="rect" id="node5" href="$can__callback__handler_8hpp.html" title="CANデータフレームをコールバックで処理するためのライブラリ" alt="" coords="230,211,425,265"/>
+<area shape="rect" id="node7" href="$socket__can__io_8hpp.html" title=" " alt="" coords="449,211,630,265"/>
+<area shape="rect" id="node8" href="$buffered__can__io_8hpp.html" title="MbedのCAN通信IOクラス" alt="" coords="654,211,857,265"/>
+<area shape="rect" id="node6" href="$can__typed__data__transceiver_8hpp.html" title="CAN通信で型付けされたデータの送受信を行うライブラリ" alt="" coords="237,313,474,368"/>
 </map>

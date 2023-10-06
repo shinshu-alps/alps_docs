@@ -111,6 +111,7 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1_
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
 <a href="classalps_1_1cmn_1_1communication_1_1_cobs-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle"><div class="title">alps::cmn::communication::Cobs クラス</div></div>
 </div><!--header-->
@@ -123,21 +124,28 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 静的公開メンバ関数</h2></td></tr>
-<tr class="memitem:a3f569f249112686322da92be30597d02"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classalps_1_1cmn_1_1type_1_1_byte_ring_buffer.html">type::ByteRingBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_cobs.html#a3f569f249112686322da92be30597d02">Encode</a> (const <a class="el" href="classalps_1_1cmn_1_1type_1_1_byte_ring_buffer.html">type::ByteRingBuffer</a> &amp;input)</td></tr>
-<tr class="memdesc:a3f569f249112686322da92be30597d02"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイト列をCOBSでエンコードする  <br /></td></tr>
-<tr class="separator:a3f569f249112686322da92be30597d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83772a4eda2b1f18bf384a8f956ca470"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classalps_1_1cmn_1_1type_1_1_byte_ring_buffer.html">type::ByteRingBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_cobs.html#a83772a4eda2b1f18bf384a8f956ca470">Decode</a> (const <a class="el" href="classalps_1_1cmn_1_1type_1_1_byte_ring_buffer.html">type::ByteRingBuffer</a> &amp;input)</td></tr>
-<tr class="memdesc:a83772a4eda2b1f18bf384a8f956ca470"><td class="mdescLeft">&#160;</td><td class="mdescRight">COBSバイト列をデコードする  <br /></td></tr>
-<tr class="separator:a83772a4eda2b1f18bf384a8f956ca470"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01e6749f65bbcb9705e68814f0145675"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="classalps_1_1cmn_1_1type_1_1_byte_ring_buffer.html">type::ByteRingBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_cobs.html#a01e6749f65bbcb9705e68814f0145675">ExtractCobsPackets</a> (<a class="el" href="classalps_1_1cmn_1_1type_1_1_byte_ring_buffer.html">type::ByteRingBuffer</a> &amp;input_bytes)</td></tr>
-<tr class="memdesc:a01e6749f65bbcb9705e68814f0145675"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイト列からCOBSのパケットを抽出する  <br /></td></tr>
-<tr class="separator:a01e6749f65bbcb9705e68814f0145675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48e355f8c0efd40c1c0cdf2cc3793588"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_cobs.html#a48e355f8c0efd40c1c0cdf2cc3793588">OverheadByteSize</a> (size_t raw_data_byte_size)</td></tr>
+<tr class="memdesc:a48e355f8c0efd40c1c0cdf2cc3793588"><td class="mdescLeft">&#160;</td><td class="mdescRight">COBS変換の際，元のバイト列のサイズに追加で必要なサイズのオーバーヘッドを返す  <br /></td></tr>
+<tr class="separator:a48e355f8c0efd40c1c0cdf2cc3793588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99202c32b9c453080c534b87ee8fe08b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_cobs.html#a99202c32b9c453080c534b87ee8fe08b">Encode</a> (etl::icircular_buffer&lt; uint8_t &gt; &amp;target_bytes)</td></tr>
+<tr class="memdesc:a99202c32b9c453080c534b87ee8fe08b"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイト列をCOBSでエンコードする．  <br /></td></tr>
+<tr class="separator:a99202c32b9c453080c534b87ee8fe08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae99250721eb63cfc90dc1b101488519e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_cobs.html#ae99250721eb63cfc90dc1b101488519e">TryDecode</a> (etl::icircular_buffer&lt; uint8_t &gt; &amp;target_bytes, etl::icircular_buffer&lt; uint8_t &gt; &amp;output)</td></tr>
+<tr class="memdesc:ae99250721eb63cfc90dc1b101488519e"><td class="mdescLeft">&#160;</td><td class="mdescRight">COBSバイト列をデコードする  <br /></td></tr>
+<tr class="separator:ae99250721eb63cfc90dc1b101488519e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:aa9f93e7569b6010ab21cd5120f0aefb6"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_cobs.html#aa9f93e7569b6010ab21cd5120f0aefb6">kEndVal</a> {0x00}</td></tr>
+<tr class="memdesc:aa9f93e7569b6010ab21cd5120f0aefb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">COBS変換を行ったバイト列の終端を表す定数  <br /></td></tr>
+<tr class="separator:aa9f93e7569b6010ab21cd5120f0aefb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>COBSの変換関数群 </p>
+<dl class="section see"><dt>参照</dt><dd><a href="https://en.wikipedia.org/wiki/Consistent_Overhead_Byte_Stuffing">https://en.wikipedia.org/wiki/Consistent_Overhead_Byte_Stuffing</a> </dd></dl>
 </div><h2 class="groupheader">関数詳解</h2>
-<a id="a83772a4eda2b1f18bf384a8f956ca470" name="a83772a4eda2b1f18bf384a8f956ca470"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83772a4eda2b1f18bf384a8f956ca470">&#9670;&#160;</a></span>Decode()</h2>
+<a id="a99202c32b9c453080c534b87ee8fe08b" name="a99202c32b9c453080c534b87ee8fe08b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99202c32b9c453080c534b87ee8fe08b">&#9670;&#160;</a></span>Encode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -146,11 +154,90 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1_
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classalps_1_1cmn_1_1type_1_1_byte_ring_buffer.html">type::ByteRingBuffer</a> alps::cmn::communication::Cobs::Decode </td>
+          <td class="memname">static void alps::cmn::communication::Cobs::Encode </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classalps_1_1cmn_1_1type_1_1_byte_ring_buffer.html">type::ByteRingBuffer</a> &amp;&#160;</td>
-          <td class="paramname"><em>input</em></td><td>)</td>
+          <td class="paramtype">etl::icircular_buffer&lt; uint8_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>target_bytes</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>バイト列をCOBSでエンコードする． </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target_bytes</td><td>変換したいバイト列．関数実行後は変換後のCOBSバイト列になる． <b>COBSのオーバーヘッド分だけ余分に容量が必要な事に注意．</b> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a48e355f8c0efd40c1c0cdf2cc3793588" name="a48e355f8c0efd40c1c0cdf2cc3793588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48e355f8c0efd40c1c0cdf2cc3793588">&#9670;&#160;</a></span>OverheadByteSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr size_t alps::cmn::communication::Cobs::OverheadByteSize </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>raw_data_byte_size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>COBS変換の際，元のバイト列のサイズに追加で必要なサイズのオーバーヘッドを返す </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">raw_data_byte_size</td><td>元のバイト列のサイズ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>constexpr size_t オーバーヘッドのサイズ </dd></dl>
+
+</div>
+</div>
+<a id="ae99250721eb63cfc90dc1b101488519e" name="ae99250721eb63cfc90dc1b101488519e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae99250721eb63cfc90dc1b101488519e">&#9670;&#160;</a></span>TryDecode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool alps::cmn::communication::Cobs::TryDecode </td>
+          <td>(</td>
+          <td class="paramtype">etl::icircular_buffer&lt; uint8_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>target_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">etl::icircular_buffer&lt; uint8_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -163,16 +250,20 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1_
 <p>COBSバイト列をデコードする </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">input</td><td>変換前のバイト列 終端にのみ0が出現することが前提 その他のバイト列を渡すとプログラムが強制終了 </td></tr>
+    <tr><td class="paramname">target_bytes</td><td>デコードしたいバイト列．デコードした部分のバイト列(先頭から1番初めに見つかった0まで)は消去される． </td></tr>
+    <tr><td class="paramname">output</td><td>デコード後のバイト列を出力するバッファ．target_bytesと同じものでも可．容量が足りなければ上書きされる． </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>戻り値</dt><dd><a class="el" href="classalps_1_1cmn_1_1type_1_1_byte_ring_buffer.html" title="uint8_tバイト列のLIFOリングバッファー シリアル通信専用">type::ByteRingBuffer</a> 変換後のバイト列 変換失敗した場合は空配列を返す </dd></dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 成功 </dd>
+<dd>
+false 失敗（バイト列に0が存在しない,予期しない位置に0） </dd></dl>
 
 </div>
 </div>
-<a id="a3f569f249112686322da92be30597d02" name="a3f569f249112686322da92be30597d02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f569f249112686322da92be30597d02">&#9670;&#160;</a></span>Encode()</h2>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="aa9f93e7569b6010ab21cd5120f0aefb6" name="aa9f93e7569b6010ab21cd5120f0aefb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9f93e7569b6010ab21cd5120f0aefb6">&#9670;&#160;</a></span>kEndVal</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -181,63 +272,17 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1_
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classalps_1_1cmn_1_1type_1_1_byte_ring_buffer.html">type::ByteRingBuffer</a> alps::cmn::communication::Cobs::Encode </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classalps_1_1cmn_1_1type_1_1_byte_ring_buffer.html">type::ByteRingBuffer</a> &amp;&#160;</td>
-          <td class="paramname"><em>input</em></td><td>)</td>
-          <td></td>
+          <td class="memname">constexpr uint8_t alps::cmn::communication::Cobs::kEndVal {0x00}</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>バイト列をCOBSでエンコードする </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">input</td><td>変換したいバイト列 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd><a class="el" href="classalps_1_1cmn_1_1type_1_1_byte_ring_buffer.html" title="uint8_tバイト列のLIFOリングバッファー シリアル通信専用">type::ByteRingBuffer</a> 変換後のCOBSバイト列 </dd></dl>
-
-</div>
-</div>
-<a id="a01e6749f65bbcb9705e68814f0145675" name="a01e6749f65bbcb9705e68814f0145675"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01e6749f65bbcb9705e68814f0145675">&#9670;&#160;</a></span>ExtractCobsPackets()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static std::vector&lt; <a class="el" href="classalps_1_1cmn_1_1type_1_1_byte_ring_buffer.html">type::ByteRingBuffer</a> &gt; alps::cmn::communication::Cobs::ExtractCobsPackets </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1type_1_1_byte_ring_buffer.html">type::ByteRingBuffer</a> &amp;&#160;</td>
-          <td class="paramname"><em>input_bytes</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>バイト列からCOBSのパケットを抽出する </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">input_bytes</td><td>COBSパケットを抽出するバイト列．抽出されなかった末尾が残る． </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd>std::vector&lt;type::ByteRingBuffer&gt; 抽出したCOBSパケット </dd></dl>
+<p>COBS変換を行ったバイト列の終端を表す定数 </p>
 
 </div>
 </div>

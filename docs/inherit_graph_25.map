@@ -1,4 +1,4 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1gpio_1_1_i_digital_read.html" title=" " alt="" coords="5,5,181,45"/>
-<area shape="rect" id="node2" href="$classalps_1_1mbed_1_1gpio_1_1_digital_in.html" title="デジタル入力ピン" alt="" coords="229,13,423,38"/>
+<area shape="rect" id="node1" href="$structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html" title=" " alt="" coords="5,5,200,60"/>
+<area shape="rect" id="node2" href="$structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html" title="型のバイト列変換に関する情報" alt="" coords="248,13,443,53"/>
 </map>

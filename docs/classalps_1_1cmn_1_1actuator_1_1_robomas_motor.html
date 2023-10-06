@@ -112,6 +112,7 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1actuator_1_1_robom
   <div class="summary">
 <a href="#pub-types">公開型</a> &#124;
 <a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
 <a href="#pub-static-attribs">静的公開変数類</a> &#124;
 <a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle"><div class="title">alps::cmn::actuator::RobomasMotor クラス</div></div>
@@ -125,26 +126,46 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1actuator_1_1_robom
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 公開型</h2></td></tr>
+<tr class="memitem:a93495bd998ff2d9ed43a326e3b7955d1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a93495bd998ff2d9ed43a326e3b7955d1">Id</a> { <br />
+&#160;&#160;<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a93495bd998ff2d9ed43a326e3b7955d1a9196cf5b59980967fa220eb3a75b21bb">kMotor1</a> = 1
+, <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a93495bd998ff2d9ed43a326e3b7955d1a91b9c39d4ad1a8fd04ef00e69c5f2611">kMotor2</a>
+, <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a93495bd998ff2d9ed43a326e3b7955d1a2072c208e2973b899850cc30518de84c">kMotor3</a>
+, <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a93495bd998ff2d9ed43a326e3b7955d1a1a6832c88670070d9d9a0df727a0373c">kMotor4</a>
+, <br />
+&#160;&#160;<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a93495bd998ff2d9ed43a326e3b7955d1a6797030cd527332081457530b1a89767">kMotor5</a>
+, <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a93495bd998ff2d9ed43a326e3b7955d1a3311919a803af2c92d911fe44bc33e47">kMotor6</a>
+, <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a93495bd998ff2d9ed43a326e3b7955d1afd0b6a709f0101d3aa2d026673076448">kMotor7</a>
+, <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a93495bd998ff2d9ed43a326e3b7955d1a691227596b77a5005dd7361144d395b3">kMotor8</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a93495bd998ff2d9ed43a326e3b7955d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ロボマスモータのID（1~8）  <a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a93495bd998ff2d9ed43a326e3b7955d1">[詳解]</a><br /></td></tr>
+<tr class="separator:a93495bd998ff2d9ed43a326e3b7955d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c505d108218fe4ea9fb646f06141af2"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a8c505d108218fe4ea9fb646f06141af2">Type</a> { <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a8c505d108218fe4ea9fb646f06141af2ac79f8fe34278ffdb418f6ee3b8316ed4">kM2006</a>
 , <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a8c505d108218fe4ea9fb646f06141af2a93e36269eaeb796f969adca34b7957b6">kM3508</a>
  }</td></tr>
 <tr class="memdesc:a8c505d108218fe4ea9fb646f06141af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">モータの種類  <a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a8c505d108218fe4ea9fb646f06141af2">[詳解]</a><br /></td></tr>
 <tr class="separator:a8c505d108218fe4ea9fb646f06141af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ae6f0ae68afdb897d12f99af0ca9e24"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a1ae6f0ae68afdb897d12f99af0ca9e24">SensorCanData</a> = std::array&lt; uint8_t, 8 &gt;</td></tr>
+<tr class="memdesc:a1ae6f0ae68afdb897d12f99af0ca9e24"><td class="mdescLeft">&#160;</td><td class="mdescRight">CANでセンサー値が送られてくる際のデータ型  <br /></td></tr>
+<tr class="separator:a1ae6f0ae68afdb897d12f99af0ca9e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2a483f9ce023ecdb7ce6216b746ca1a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#aa2a483f9ce023ecdb7ce6216b746ca1a">OutputCanData</a> = std::array&lt; uint8_t, 8 &gt;</td></tr>
+<tr class="memdesc:aa2a483f9ce023ecdb7ce6216b746ca1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">CANでモーターへの指令を送る際のデータ型  <br /></td></tr>
+<tr class="separator:aa2a483f9ce023ecdb7ce6216b746ca1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a198ff494789bf98ea940660bbcf611d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a198ff494789bf98ea940660bbcf611d8">RobomasMotor</a> (uint8_t id, <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a8c505d108218fe4ea9fb646f06141af2">Type</a> type=<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a8c505d108218fe4ea9fb646f06141af2ac79f8fe34278ffdb418f6ee3b8316ed4">Type::kM2006</a>)</td></tr>
-<tr class="memdesc:a198ff494789bf98ea940660bbcf611d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化コンストラクタ  <br /></td></tr>
-<tr class="separator:a198ff494789bf98ea940660bbcf611d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05dee99603174150e4852955794a3f38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a05dee99603174150e4852955794a3f38">GetControlFrame</a> (<a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">alps::cmn::communication::CanDataFrame</a> &amp;output_frame, float power)</td></tr>
-<tr class="memdesc:a05dee99603174150e4852955794a3f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">モーターへの指令をCANフレームに変換する  <br /></td></tr>
-<tr class="separator:a05dee99603174150e4852955794a3f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28868cd72a5648d5ac9ee23760647121"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a28868cd72a5648d5ac9ee23760647121">OnReceiveSensorFrame</a> (const <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">alps::cmn::communication::CanDataFrame</a> &amp;sensor_flame)</td></tr>
-<tr class="memdesc:a28868cd72a5648d5ac9ee23760647121"><td class="mdescLeft">&#160;</td><td class="mdescRight">モーターからのセンサーデータを受け取った際の更新処理  <br /></td></tr>
-<tr class="separator:a28868cd72a5648d5ac9ee23760647121"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a789de3845a109691f837d7793f8b0e4c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a789de3845a109691f837d7793f8b0e4c">GetId</a> ()</td></tr>
-<tr class="memdesc:a789de3845a109691f837d7793f8b0e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">モーターIDを返す  <br /></td></tr>
-<tr class="separator:a789de3845a109691f837d7793f8b0e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97fb619f2231f64b070b0e7af1f8a200"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a97fb619f2231f64b070b0e7af1f8a200">RobomasMotor</a> (<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a93495bd998ff2d9ed43a326e3b7955d1">Id</a> id, <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a8c505d108218fe4ea9fb646f06141af2">Type</a> type=<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a8c505d108218fe4ea9fb646f06141af2ac79f8fe34278ffdb418f6ee3b8316ed4">Type::kM2006</a>)</td></tr>
+<tr class="memdesc:a97fb619f2231f64b070b0e7af1f8a200"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化コンストラクタ  <br /></td></tr>
+<tr class="separator:a97fb619f2231f64b070b0e7af1f8a200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9fe8f3b83d639acae3e1c200d0d437b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#ab9fe8f3b83d639acae3e1c200d0d437b">Drive</a> (float output_ratio)</td></tr>
+<tr class="memdesc:ab9fe8f3b83d639acae3e1c200d0d437b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ロボマスモーターへ指定した割合で電流出力  <br /></td></tr>
+<tr class="separator:ab9fe8f3b83d639acae3e1c200d0d437b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac8a825bb848613825c11968dfbfa9cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#aac8a825bb848613825c11968dfbfa9cf">GetOutput</a> (std::array&lt; <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#aa2a483f9ce023ecdb7ce6216b746ca1a">OutputCanData</a>, 2 &gt; &amp;output_data)</td></tr>
+<tr class="memdesc:aac8a825bb848613825c11968dfbfa9cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">CANフレームへ書き込む配列に出力値を書き込む．既に他のIDのモーター出力値が書き込まれていてもok  <br /></td></tr>
+<tr class="separator:aac8a825bb848613825c11968dfbfa9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a207fb96dd7a553b4ddb6d5ebaa1889e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a207fb96dd7a553b4ddb6d5ebaa1889e9">OnReceiveSensorFrame</a> (const <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a1ae6f0ae68afdb897d12f99af0ca9e24">SensorCanData</a> &amp;sensor_data)</td></tr>
+<tr class="memdesc:a207fb96dd7a553b4ddb6d5ebaa1889e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">モーターからのセンサー値を受け取った際の更新処理  <br /></td></tr>
+<tr class="separator:a207fb96dd7a553b4ddb6d5ebaa1889e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac382dfe1f292081468a20cb67d003124"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#ac382dfe1f292081468a20cb67d003124">GetDeg</a> ()</td></tr>
 <tr class="memdesc:ac382dfe1f292081468a20cb67d003124"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の角度を度数法で返す  <br /></td></tr>
 <tr class="separator:ac382dfe1f292081468a20cb67d003124"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,9 +178,21 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1actuator_1_1_robom
 <tr class="memitem:a17e6245a44df78d56c87fdd119817e05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a17e6245a44df78d56c87fdd119817e05">ResetAngle</a> ()</td></tr>
 <tr class="memdesc:a17e6245a44df78d56c87fdd119817e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の位置を0°とする  <br /></td></tr>
 <tr class="separator:a17e6245a44df78d56c87fdd119817e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add9362aa1368520772dc3553cc4f11d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">communication::CanDataFrame::Id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#add9362aa1368520772dc3553cc4f11d7">GetSensorDataCanId</a> ()</td></tr>
+<tr class="memdesc:add9362aa1368520772dc3553cc4f11d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">センサ値が送られてくるCANフレームのIDを返す  <br /></td></tr>
+<tr class="separator:add9362aa1368520772dc3553cc4f11d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:aea8d54d69d0dfa999753ada5c9531e56"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a93495bd998ff2d9ed43a326e3b7955d1">Id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#aea8d54d69d0dfa999753ada5c9531e56">motor_id_</a></td></tr>
+<tr class="memdesc:aea8d54d69d0dfa999753ada5c9531e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">モーターID  <br /></td></tr>
+<tr class="separator:aea8d54d69d0dfa999753ada5c9531e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 静的公開変数類</h2></td></tr>
+<tr class="memitem:ae2d5a9f75a722c7b27937006c6026c2c"><td class="memItemLeft" align="right" valign="top">static constexpr std::array&lt; <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">communication::CanDataFrame::Id</a>, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#ae2d5a9f75a722c7b27937006c6026c2c">kOutputCanIds</a> {0x200, 0x1FF}</td></tr>
+<tr class="memdesc:ae2d5a9f75a722c7b27937006c6026c2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">モーターへ指令を送る際のCANフレームのID  <br /></td></tr>
+<tr class="separator:ae2d5a9f75a722c7b27937006c6026c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa546e889fde325e79532d838d4e428cf"><td class="memItemLeft" align="right" valign="top">static constexpr int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#aa546e889fde325e79532d838d4e428cf">kMaxAbsPowerM2006</a> {10000}</td></tr>
 <tr class="memdesc:aa546e889fde325e79532d838d4e428cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">M2006の最大出力  <br /></td></tr>
 <tr class="separator:aa546e889fde325e79532d838d4e428cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,7 +208,74 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1actuator_1_1_robom
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>ロボマスモータのクラス </p>
-</div><h2 class="groupheader">列挙型メンバ詳解</h2>
+</div><h2 class="groupheader">型定義メンバ詳解</h2>
+<a id="aa2a483f9ce023ecdb7ce6216b746ca1a" name="aa2a483f9ce023ecdb7ce6216b746ca1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2a483f9ce023ecdb7ce6216b746ca1a">&#9670;&#160;</a></span>OutputCanData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#aa2a483f9ce023ecdb7ce6216b746ca1a">alps::cmn::actuator::RobomasMotor::OutputCanData</a> =  std::array&lt;uint8_t, 8&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CANでモーターへの指令を送る際のデータ型 </p>
+
+</div>
+</div>
+<a id="a1ae6f0ae68afdb897d12f99af0ca9e24" name="a1ae6f0ae68afdb897d12f99af0ca9e24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ae6f0ae68afdb897d12f99af0ca9e24">&#9670;&#160;</a></span>SensorCanData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a1ae6f0ae68afdb897d12f99af0ca9e24">alps::cmn::actuator::RobomasMotor::SensorCanData</a> =  std::array&lt;uint8_t, 8&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CANでセンサー値が送られてくる際のデータ型 </p>
+
+</div>
+</div>
+<h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a93495bd998ff2d9ed43a326e3b7955d1" name="a93495bd998ff2d9ed43a326e3b7955d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93495bd998ff2d9ed43a326e3b7955d1">&#9670;&#160;</a></span>Id</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a93495bd998ff2d9ed43a326e3b7955d1">alps::cmn::actuator::RobomasMotor::Id</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ロボマスモータのID（1~8） </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a93495bd998ff2d9ed43a326e3b7955d1a9196cf5b59980967fa220eb3a75b21bb" name="a93495bd998ff2d9ed43a326e3b7955d1a9196cf5b59980967fa220eb3a75b21bb"></a>kMotor1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a93495bd998ff2d9ed43a326e3b7955d1a91b9c39d4ad1a8fd04ef00e69c5f2611" name="a93495bd998ff2d9ed43a326e3b7955d1a91b9c39d4ad1a8fd04ef00e69c5f2611"></a>kMotor2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a93495bd998ff2d9ed43a326e3b7955d1a2072c208e2973b899850cc30518de84c" name="a93495bd998ff2d9ed43a326e3b7955d1a2072c208e2973b899850cc30518de84c"></a>kMotor3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a93495bd998ff2d9ed43a326e3b7955d1a1a6832c88670070d9d9a0df727a0373c" name="a93495bd998ff2d9ed43a326e3b7955d1a1a6832c88670070d9d9a0df727a0373c"></a>kMotor4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a93495bd998ff2d9ed43a326e3b7955d1a6797030cd527332081457530b1a89767" name="a93495bd998ff2d9ed43a326e3b7955d1a6797030cd527332081457530b1a89767"></a>kMotor5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a93495bd998ff2d9ed43a326e3b7955d1a3311919a803af2c92d911fe44bc33e47" name="a93495bd998ff2d9ed43a326e3b7955d1a3311919a803af2c92d911fe44bc33e47"></a>kMotor6&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a93495bd998ff2d9ed43a326e3b7955d1afd0b6a709f0101d3aa2d026673076448" name="a93495bd998ff2d9ed43a326e3b7955d1afd0b6a709f0101d3aa2d026673076448"></a>kMotor7&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a93495bd998ff2d9ed43a326e3b7955d1a691227596b77a5005dd7361144d395b3" name="a93495bd998ff2d9ed43a326e3b7955d1a691227596b77a5005dd7361144d395b3"></a>kMotor8&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="a8c505d108218fe4ea9fb646f06141af2" name="a8c505d108218fe4ea9fb646f06141af2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c505d108218fe4ea9fb646f06141af2">&#9670;&#160;</a></span>Type</h2>
 
@@ -205,8 +305,8 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1actuator_1_1_robom
 </div>
 </div>
 <h2 class="groupheader">構築子と解体子</h2>
-<a id="a198ff494789bf98ea940660bbcf611d8" name="a198ff494789bf98ea940660bbcf611d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a198ff494789bf98ea940660bbcf611d8">&#9670;&#160;</a></span>RobomasMotor()</h2>
+<a id="a97fb619f2231f64b070b0e7af1f8a200" name="a97fb619f2231f64b070b0e7af1f8a200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97fb619f2231f64b070b0e7af1f8a200">&#9670;&#160;</a></span>RobomasMotor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -217,7 +317,7 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1actuator_1_1_robom
         <tr>
           <td class="memname">alps::cmn::actuator::RobomasMotor::RobomasMotor </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a93495bd998ff2d9ed43a326e3b7955d1">Id</a>&#160;</td>
           <td class="paramname"><em>id</em>, </td>
         </tr>
         <tr>
@@ -251,37 +351,26 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1actuator_1_1_robom
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a05dee99603174150e4852955794a3f38" name="a05dee99603174150e4852955794a3f38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05dee99603174150e4852955794a3f38">&#9670;&#160;</a></span>GetControlFrame()</h2>
+<a id="ab9fe8f3b83d639acae3e1c200d0d437b" name="ab9fe8f3b83d639acae3e1c200d0d437b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9fe8f3b83d639acae3e1c200d0d437b">&#9670;&#160;</a></span>Drive()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void alps::cmn::actuator::RobomasMotor::GetControlFrame </td>
+          <td class="memname">void alps::cmn::actuator::RobomasMotor::Drive </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">alps::cmn::communication::CanDataFrame</a> &amp;&#160;</td>
-          <td class="paramname"><em>output_frame</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>power</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>output_ratio</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>モーターへの指令をCANフレームに変換する </p>
+<p>ロボマスモーターへ指定した割合で電流出力 </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">output_frame</td><td>指令を書き込むCANフレーム. 既に異なるIDのモーターへの指令が入っていてもok. </td></tr>
-    <tr><td class="paramname">power</td><td>パワー指令(1.0 ~ -1.0) </td></tr>
+    <tr><td class="paramname">output_ratio</td><td>電流指令(1.0 ~ -1.0) </td></tr>
   </table>
   </dd>
 </dl>
@@ -308,23 +397,29 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1actuator_1_1_robom
 
 </div>
 </div>
-<a id="a789de3845a109691f837d7793f8b0e4c" name="a789de3845a109691f837d7793f8b0e4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a789de3845a109691f837d7793f8b0e4c">&#9670;&#160;</a></span>GetId()</h2>
+<a id="aac8a825bb848613825c11968dfbfa9cf" name="aac8a825bb848613825c11968dfbfa9cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac8a825bb848613825c11968dfbfa9cf">&#9670;&#160;</a></span>GetOutput()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t alps::cmn::actuator::RobomasMotor::GetId </td>
+          <td class="memname">void alps::cmn::actuator::RobomasMotor::GetOutput </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">std::array&lt; <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#aa2a483f9ce023ecdb7ce6216b746ca1a">OutputCanData</a>, 2 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>output_data</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>モーターIDを返す </p>
-<dl class="section return"><dt>戻り値</dt><dd>モーターID </dd></dl>
+<p>CANフレームへ書き込む配列に出力値を書き込む．既に他のIDのモーター出力値が書き込まれていてもok </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output_data</td><td>出力値を書き込む配列 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -368,39 +463,48 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1actuator_1_1_robom
 
 </div>
 </div>
-<a id="a28868cd72a5648d5ac9ee23760647121" name="a28868cd72a5648d5ac9ee23760647121"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28868cd72a5648d5ac9ee23760647121">&#9670;&#160;</a></span>OnReceiveSensorFrame()</h2>
+<a id="add9362aa1368520772dc3553cc4f11d7" name="add9362aa1368520772dc3553cc4f11d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add9362aa1368520772dc3553cc4f11d7">&#9670;&#160;</a></span>GetSensorDataCanId()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool alps::cmn::actuator::RobomasMotor::OnReceiveSensorFrame </td>
+          <td class="memname"><a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">communication::CanDataFrame::Id</a> alps::cmn::actuator::RobomasMotor::GetSensorDataCanId </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">alps::cmn::communication::CanDataFrame</a> &amp;&#160;</td>
-          <td class="paramname"><em>sensor_flame</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>モーターからのセンサーデータを受け取った際の更新処理 </p>
+<p>センサ値が送られてくるCANフレームのIDを返す </p>
+
+</div>
+</div>
+<a id="a207fb96dd7a553b4ddb6d5ebaa1889e9" name="a207fb96dd7a553b4ddb6d5ebaa1889e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a207fb96dd7a553b4ddb6d5ebaa1889e9">&#9670;&#160;</a></span>OnReceiveSensorFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alps::cmn::actuator::RobomasMotor::OnReceiveSensorFrame </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a1ae6f0ae68afdb897d12f99af0ca9e24">SensorCanData</a> &amp;&#160;</td>
+          <td class="paramname"><em>sensor_data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>モーターからのセンサー値を受け取った際の更新処理 </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sensor_flame</td><td>センサーデータを含むCANフレーム. フレームID = 0x200 + モータIDである必要がある.</td></tr>
+    <tr><td class="paramname">sensor_data</td><td>センサーデータ </td></tr>
   </table>
   </dd>
 </dl>
-<p>モーターからのセンサー値を受け取った際の更新処理</p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sensor_flame</td><td>センサーデータを含むCANフレーム. フレームID = 0x200 + モータIDである必要がある. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd>true センサー値の更新に成功した場合 </dd>
-<dd>
-false 不適なCANフレームであった場合 </dd></dl>
 
 </div>
 </div>
@@ -517,6 +621,46 @@ false 不適なCANフレームであった場合 </dd></dl>
 </div><div class="memdoc">
 
 <p>M3508の最大出力 </p>
+
+</div>
+</div>
+<a id="ae2d5a9f75a722c7b27937006c6026c2c" name="ae2d5a9f75a722c7b27937006c6026c2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2d5a9f75a722c7b27937006c6026c2c">&#9670;&#160;</a></span>kOutputCanIds</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::array&lt;<a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">communication::CanDataFrame::Id</a>, 2&gt; alps::cmn::actuator::RobomasMotor::kOutputCanIds {0x200, 0x1FF}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>モーターへ指令を送る際のCANフレームのID </p>
+
+</div>
+</div>
+<a id="aea8d54d69d0dfa999753ada5c9531e56" name="aea8d54d69d0dfa999753ada5c9531e56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea8d54d69d0dfa999753ada5c9531e56">&#9670;&#160;</a></span>motor_id_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a93495bd998ff2d9ed43a326e3b7955d1">Id</a> alps::cmn::actuator::RobomasMotor::motor_id_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>モーターID </p>
 
 </div>
 </div>

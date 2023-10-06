@@ -123,25 +123,38 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 静的公開メンバ関数</h2></td></tr>
-<tr class="memitem:aea40fd9cdd34f78c32aef281b6272a47"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html">ByteRingBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_data_serializer.html#aea40fd9cdd34f78c32aef281b6272a47">Serialize</a> (T data)</td></tr>
-<tr class="memdesc:aea40fd9cdd34f78c32aef281b6272a47"><td class="mdescLeft">&#160;</td><td class="mdescRight">基本データをバイト列へ変換  <br /></td></tr>
-<tr class="separator:aea40fd9cdd34f78c32aef281b6272a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c214b51457fa93c072631e27bed032b"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_data_serializer.html#a1c214b51457fa93c072631e27bed032b">Deserialize</a> (<a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html">ByteRingBuffer</a> &amp;bytes)</td></tr>
-<tr class="memdesc:a1c214b51457fa93c072631e27bed032b"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイト列から基本単一データへ逆変換  <br /></td></tr>
-<tr class="separator:a1c214b51457fa93c072631e27bed032b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebdb4696114ba32216e04ac1ee3f758e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_data_serializer.html#aebdb4696114ba32216e04ac1ee3f758e">Serialize</a> (const T data, etl::icircular_buffer&lt; uint8_t &gt; &amp;output)</td></tr>
+<tr class="memdesc:aebdb4696114ba32216e04ac1ee3f758e"><td class="mdescLeft">&#160;</td><td class="mdescRight">基本データをバイト列へ変換  <br /></td></tr>
+<tr class="separator:aebdb4696114ba32216e04ac1ee3f758e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f6c9c35b0b69d6c65e983e7321fd6f8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_data_serializer.html#a2f6c9c35b0b69d6c65e983e7321fd6f8">Deserialize</a> (etl::icircular_buffer&lt; uint8_t &gt; &amp;target_bytes, T &amp;output)</td></tr>
+<tr class="memdesc:a2f6c9c35b0b69d6c65e983e7321fd6f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイト列から型付きデータへ逆変換  <br /></td></tr>
+<tr class="separator:a2f6c9c35b0b69d6c65e983e7321fd6f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
 class alps::cmn::communication::DataSerializer&lt; T &gt;</div><p>データとバイト列の変換器 </p>
-<dl class="tparams"><dt>テンプレート引数</dt><dd>
+<p>対応している型は以下の通り．入れ子になった型も変換可能． <br  />
+</p><ul>
+<li>基本データ型（char, int, float, double...） <br  />
+</li>
+<li>std::array <br  />
+</li>
+<li>etl::vector <br  />
+</li>
+<li>etl::string <br  />
+</li>
+<li>std::tuple <br  />
+ <dl class="tparams"><dt>テンプレート引数</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>bool,整数,浮動小数点に対応 </td></tr>
+    <tr><td class="paramname">T</td><td>変換する型 </td></tr>
   </table>
   </dd>
 </dl>
+</li>
+</ul>
 </div><h2 class="groupheader">関数詳解</h2>
-<a id="a1c214b51457fa93c072631e27bed032b" name="a1c214b51457fa93c072631e27bed032b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c214b51457fa93c072631e27bed032b">&#9670;&#160;</a></span>Deserialize()</h2>
+<a id="a2f6c9c35b0b69d6c65e983e7321fd6f8" name="a2f6c9c35b0b69d6c65e983e7321fd6f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f6c9c35b0b69d6c65e983e7321fd6f8">&#9670;&#160;</a></span>Deserialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -152,11 +165,21 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static T <a class="el" href="classalps_1_1cmn_1_1communication_1_1_data_serializer.html">alps::cmn::communication::DataSerializer</a>&lt; T &gt;::Deserialize </td>
+          <td class="memname">static bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1_data_serializer.html">alps::cmn::communication::DataSerializer</a>&lt; T &gt;::Deserialize </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html">ByteRingBuffer</a> &amp;&#160;</td>
-          <td class="paramname"><em>bytes</em></td><td>)</td>
+          <td class="paramtype">etl::icircular_buffer&lt; uint8_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>target_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -166,19 +189,22 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>バイト列から基本単一データへ逆変換 </p>
+<p>バイト列から型付きデータへ逆変換 </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bytes</td><td>ビッグエンディアンバイト列 変換した部分は削除される </td></tr>
+    <tr><td class="paramname">target_bytes</td><td>変換対象バイト列．変換した部分は削除される． </td></tr>
+    <tr><td class="paramname">output</td><td>変換後データを書き込む変数．変換失敗時は不正な値になる． </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>戻り値</dt><dd>T 変換後データ </dd></dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 成功 </dd>
+<dd>
+false 失敗 </dd></dl>
 
 </div>
 </div>
-<a id="aea40fd9cdd34f78c32aef281b6272a47" name="aea40fd9cdd34f78c32aef281b6272a47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea40fd9cdd34f78c32aef281b6272a47">&#9670;&#160;</a></span>Serialize()</h2>
+<a id="aebdb4696114ba32216e04ac1ee3f758e" name="aebdb4696114ba32216e04ac1ee3f758e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebdb4696114ba32216e04ac1ee3f758e">&#9670;&#160;</a></span>Serialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -189,11 +215,21 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html">ByteRingBuffer</a> <a class="el" href="classalps_1_1cmn_1_1communication_1_1_data_serializer.html">alps::cmn::communication::DataSerializer</a>&lt; T &gt;::Serialize </td>
+          <td class="memname">static void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_data_serializer.html">alps::cmn::communication::DataSerializer</a>&lt; T &gt;::Serialize </td>
           <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
+          <td class="paramtype">const T&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">etl::icircular_buffer&lt; uint8_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -207,10 +243,10 @@ template&lt;typename T &gt; </div>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>変換したいデータ </td></tr>
+    <tr><td class="paramname">output</td><td>変換後のバイト列を書き込むバッファ． </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>戻り値</dt><dd><a class="el" href="classalps_1_1cmn_1_1communication_1_1_byte_ring_buffer.html" title="uint8_tバイト列のLIFOリングバッファー シリアル通信専用">ByteRingBuffer</a> 変換後のビッグエンディアンバイト列 </dd></dl>
 
 </div>
 </div>

@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classalps_1_1cmn_1_1communication_1_1_sender.html" target="_top" xlink:title="シリアル通信でデータを送信する">
+<g id="a_node1"><a xlink:href="classalps_1_1cmn_1_1communication_1_1_i_can_read.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="146,-30 0,-30 0,0 146,0 146,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::communication</text>
-<text text-anchor="middle" x="73" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::Sender&lt; T &gt;</text>
+<text text-anchor="middle" x="73" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::ICanRead&lt; CanIo &gt;</text>
 </a>
 </g>
 </g>
