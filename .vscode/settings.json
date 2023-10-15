@@ -1,0 +1,6 @@
+{
+    "[cpp]": {
+        "editor.tabSize": 2
+    },
+    "ros.distro": "humble"
+}
