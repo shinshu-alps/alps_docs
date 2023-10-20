@@ -30,10 +30,10 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classalps_1_1cmn_1_1gpio_1_1_i_digital_read.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="transparent" points="132.5,-175 6.5,-175 6.5,-115 132.5,-115 132.5,-175"/>
 <text text-anchor="start" x="11.5" y="-163" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::gpio::IDigital</text>
-<text text-anchor="start" x="25" y="-152" font-family="Helvetica,sans-Serif" font-size="10.00">Read&lt; DigitalIn &gt;</text>
+<text text-anchor="start" x="33" y="-152" font-family="Helvetica,sans-Serif" font-size="10.00">In&lt; DigitalIn &gt;</text>
 <text text-anchor="start" x="66" y="-137" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <text text-anchor="start" x="23.5" y="-122" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="49.5" y="-122" font-family="Helvetica,sans-Serif" font-size="10.00">CallRead()</text>

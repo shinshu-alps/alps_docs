@@ -116,43 +116,46 @@ $(document).ready(function(){initNavTree('alps__mbed__lib_2include_2alps__mbed_2
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_MBED_UART_IO_HPP_</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_MBED_UART_IO_HPP_</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;mbed.h&quot;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="i__uart__io_8hpp.html">alps_cmn/communication/i_uart_io.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="i__uart__io_8hpp.html">alps_cmn/communication/i_uart_io.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;mbed.h&quot;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">namespace </span>mbed</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keyword">namespace </span>communication</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html">   28</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html">UartIo</a> : <span class="keyword">public</span> <a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html">cmn::communication::IUartIo</a>&lt;UartIo&gt;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a468f337139066580219d8a510ea0b91b">   38</a></span>                <a class="code hl_function" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a468f337139066580219d8a510ea0b91b">UartIo</a>(PinName tx, PinName rx, <span class="keywordtype">int</span> baud_rate);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a31b48d006a4417add2a332d6e86d6d3e">   44</a></span>                <a class="code hl_function" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a31b48d006a4417add2a332d6e86d6d3e">~UartIo</a>();</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a58758a4d04525ea16b3729cece30a5a8">   52</a></span>                ssize_t <a class="code hl_function" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a58758a4d04525ea16b3729cece30a5a8">Write</a>(<span class="keyword">const</span> etl::icircular_buffer&lt;uint8_t&gt; &amp;write_buf);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a4bb170a0846446360463ce54392157b1">   60</a></span>                ssize_t <a class="code hl_function" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a4bb170a0846446360463ce54392157b1">Read</a>(etl::icircular_buffer&lt;uint8_t&gt; &amp;output);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                ::mbed::BufferedSerial serial_port_;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> kMaxBufferSize_ = 256;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                uint8_t tmp_bytes_[kMaxBufferSize_];</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            };</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        }</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_uart_io_html"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html">alps::cmn::communication::IUartIo</a></div><div class="ttdoc">Uart通信IOのインターフェース</div><div class="ttdef"><b>Definition:</b> i_uart_io.hpp:73</div></div>
-<div class="ttc" id="aclassalps_1_1mbed_1_1communication_1_1_uart_io_html"><div class="ttname"><a href="classalps_1_1mbed_1_1communication_1_1_uart_io.html">alps::mbed::communication::UartIo</a></div><div class="ttdoc">mbedのUartシリアル通信IOクラス</div><div class="ttdef"><b>Definition:</b> uart_io.hpp:29</div></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span>mbed</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span>communication</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html">   29</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html">UartIo</a> : <span class="keyword">public</span> <a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html">cmn::communication::IUartIo</a>&lt;UartIo&gt;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a468f337139066580219d8a510ea0b91b">   39</a></span>  <a class="code hl_function" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a468f337139066580219d8a510ea0b91b">UartIo</a>(PinName tx, PinName rx, <span class="keywordtype">int</span> baud_rate);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a31b48d006a4417add2a332d6e86d6d3e">   45</a></span>  <a class="code hl_function" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a31b48d006a4417add2a332d6e86d6d3e">~UartIo</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a58758a4d04525ea16b3729cece30a5a8">   53</a></span>  ssize_t <a class="code hl_function" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a58758a4d04525ea16b3729cece30a5a8">Write</a>(<span class="keyword">const</span> etl::icircular_buffer&lt;uint8_t&gt; &amp; write_buf);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a4bb170a0846446360463ce54392157b1">   61</a></span>  ssize_t <a class="code hl_function" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a4bb170a0846446360463ce54392157b1">Read</a>(etl::icircular_buffer&lt;uint8_t&gt; &amp; output);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  ::mbed::BufferedSerial serial_port_;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> kMaxBufferSize_ = 256;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  uint8_t tmp_bytes_[kMaxBufferSize_];</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>};</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}  <span class="comment">// namespace communication</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}  <span class="comment">// namespace mbed</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_uart_io_html"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html">alps::cmn::communication::IUartIo</a></div><div class="ttdoc">Uart通信IOのインターフェース</div><div class="ttdef"><b>Definition:</b> i_uart_io.hpp:31</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1communication_1_1_uart_io_html"><div class="ttname"><a href="classalps_1_1mbed_1_1communication_1_1_uart_io.html">alps::mbed::communication::UartIo</a></div><div class="ttdoc">mbedのUartシリアル通信IOクラス</div><div class="ttdef"><b>Definition:</b> uart_io.hpp:30</div></div>
 <div class="ttc" id="aclassalps_1_1mbed_1_1communication_1_1_uart_io_html_a31b48d006a4417add2a332d6e86d6d3e"><div class="ttname"><a href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a31b48d006a4417add2a332d6e86d6d3e">alps::mbed::communication::UartIo::~UartIo</a></div><div class="ttdeci">~UartIo()</div><div class="ttdoc">デストラクタ．通信経路を閉じる</div></div>
 <div class="ttc" id="aclassalps_1_1mbed_1_1communication_1_1_uart_io_html_a468f337139066580219d8a510ea0b91b"><div class="ttname"><a href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a468f337139066580219d8a510ea0b91b">alps::mbed::communication::UartIo::UartIo</a></div><div class="ttdeci">UartIo(PinName tx, PinName rx, int baud_rate)</div><div class="ttdoc">通信相手との経路を確立する</div></div>
 <div class="ttc" id="aclassalps_1_1mbed_1_1communication_1_1_uart_io_html_a4bb170a0846446360463ce54392157b1"><div class="ttname"><a href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a4bb170a0846446360463ce54392157b1">alps::mbed::communication::UartIo::Read</a></div><div class="ttdeci">ssize_t Read(etl::icircular_buffer&lt; uint8_t &gt; &amp;output)</div><div class="ttdoc">Uartで受信したバイト列を読み込む</div></div>
 <div class="ttc" id="aclassalps_1_1mbed_1_1communication_1_1_uart_io_html_a58758a4d04525ea16b3729cece30a5a8"><div class="ttname"><a href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a58758a4d04525ea16b3729cece30a5a8">alps::mbed::communication::UartIo::Write</a></div><div class="ttdeci">ssize_t Write(const etl::icircular_buffer&lt; uint8_t &gt; &amp;write_buf)</div><div class="ttdoc">Uartでバイト列を送信する</div></div>
 <div class="ttc" id="ai__uart__io_8hpp_html"><div class="ttname"><a href="i__uart__io_8hpp.html">i_uart_io.hpp</a></div></div>
-<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

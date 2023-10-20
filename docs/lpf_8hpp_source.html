@@ -129,48 +129,50 @@ $(document).ready(function(){initNavTree('lpf_8hpp_source.html',''); initResizab
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">namespace </span>cmn</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">namespace </span>control</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_lpf.html">   40</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_lpf.html">Lpf</a></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aecaf22e00a9802414624c3423f6c60f1">   50</a></span>                <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aecaf22e00a9802414624c3423f6c60f1">Lpf</a>(<span class="keywordtype">float</span> t_const_sec, <span class="keywordtype">float</span> ctrl_period_sec);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aea8480539cad78ef17d887d56b19ebaf">   57</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aea8480539cad78ef17d887d56b19ebaf">SetTimeConst</a>(<span class="keywordtype">float</span> t_const_sec);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aca445f7a66fa7f4c3ce5bd05e7e56812">   64</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aca445f7a66fa7f4c3ce5bd05e7e56812">SetInputPrev</a>(<span class="keywordtype">float</span> input_prev);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_lpf.html#a9ed459dfde6dff3f754142ee0c75a0fb">   70</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_lpf.html#a9ed459dfde6dff3f754142ee0c75a0fb">Reset</a>();</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_lpf.html#a1fee169d1ad930ec33cf74cff80e64fb">   78</a></span>                <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_lpf.html#a1fee169d1ad930ec33cf74cff80e64fb">Filter</a>(<span class="keywordtype">float</span> input);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                <span class="keywordtype">float</span> t_const_sec_;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                <span class="keywordtype">float</span> ctrl_period_sec_;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                <span class="keywordtype">float</span> output_;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                <span class="keywordtype">float</span> input_prev_;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                <span class="keywordtype">float</span> coeff_a_;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                <span class="keywordtype">float</span> coeff_b_;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            };</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        }</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_lpf_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_lpf.html">alps::cmn::control::Lpf</a></div><div class="ttdoc">ローパスフィルタのクラス</div><div class="ttdef"><b>Definition:</b> lpf.hpp:41</div></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">namespace </span>cmn</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">namespace </span>control</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_lpf.html">   41</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_lpf.html">Lpf</a></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aecaf22e00a9802414624c3423f6c60f1">   51</a></span>  <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aecaf22e00a9802414624c3423f6c60f1">Lpf</a>(<span class="keywordtype">float</span> t_const_sec, <span class="keywordtype">float</span> ctrl_period_sec);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aea8480539cad78ef17d887d56b19ebaf">   58</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aea8480539cad78ef17d887d56b19ebaf">SetTimeConst</a>(<span class="keywordtype">float</span> t_const_sec);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aca445f7a66fa7f4c3ce5bd05e7e56812">   65</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aca445f7a66fa7f4c3ce5bd05e7e56812">SetInputPrev</a>(<span class="keywordtype">float</span> input_prev);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_lpf.html#a9ed459dfde6dff3f754142ee0c75a0fb">   71</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_lpf.html#a9ed459dfde6dff3f754142ee0c75a0fb">Reset</a>();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_lpf.html#a1fee169d1ad930ec33cf74cff80e64fb">   79</a></span>  <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_lpf.html#a1fee169d1ad930ec33cf74cff80e64fb">Filter</a>(<span class="keywordtype">float</span> input);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordtype">float</span> t_const_sec_;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="keywordtype">float</span> ctrl_period_sec_;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keywordtype">float</span> output_;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="keywordtype">float</span> input_prev_;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keywordtype">float</span> coeff_a_;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keywordtype">float</span> coeff_b_;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>};</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}  <span class="comment">// namespace control</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_lpf_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_lpf.html">alps::cmn::control::Lpf</a></div><div class="ttdoc">ローパスフィルタのクラス</div><div class="ttdef"><b>Definition:</b> lpf.hpp:42</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_lpf_html_a1fee169d1ad930ec33cf74cff80e64fb"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_lpf.html#a1fee169d1ad930ec33cf74cff80e64fb">alps::cmn::control::Lpf::Filter</a></div><div class="ttdeci">float Filter(float input)</div><div class="ttdoc">入力値に対してローパスフィルタをかける関数．</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_lpf_html_a9ed459dfde6dff3f754142ee0c75a0fb"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_lpf.html#a9ed459dfde6dff3f754142ee0c75a0fb">alps::cmn::control::Lpf::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">メンバ変数を初期化する関数．</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_lpf_html_aca445f7a66fa7f4c3ce5bd05e7e56812"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_lpf.html#aca445f7a66fa7f4c3ce5bd05e7e56812">alps::cmn::control::Lpf::SetInputPrev</a></div><div class="ttdeci">void SetInputPrev(float input_prev)</div><div class="ttdoc">ローパスフィルタの初期値と前回の出力値を（0以外にするの場合）設定する関数．</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_lpf_html_aea8480539cad78ef17d887d56b19ebaf"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_lpf.html#aea8480539cad78ef17d887d56b19ebaf">alps::cmn::control::Lpf::SetTimeConst</a></div><div class="ttdeci">void SetTimeConst(float t_const_sec)</div><div class="ttdoc">時定数を設定し，時定数とサンプル周期から求まる係数を計算する関数．変数の初期化はしない.</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_lpf_html_aecaf22e00a9802414624c3423f6c60f1"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_lpf.html#aecaf22e00a9802414624c3423f6c60f1">alps::cmn::control::Lpf::Lpf</a></div><div class="ttdeci">Lpf(float t_const_sec, float ctrl_period_sec)</div><div class="ttdoc">LPF型の変数を定義．時定数とサンプル周期(制御周期)を設定し， メンバ変数を初期化，時定数とサンプル周期から求まる係数を計算するコンストラクタ．</div></div>
-<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

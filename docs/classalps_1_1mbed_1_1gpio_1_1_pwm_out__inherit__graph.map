@@ -1,6 +1,4 @@
 <map id="alps::mbed::gpio::PwmOut" name="alps::mbed::gpio::PwmOut">
-<area shape="rect" id="node1" title="PWM出力ピン" alt="" coords="218,133,403,259"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1gpio_1_1_i_pwm_write.html" title=" " alt="" coords="5,5,197,85"/>
-<area shape="rect" id="node3" href="$classalps_1_1cmn_1_1gpio_1_1_i_pwm_set_period.html" title=" " alt="" coords="221,5,400,85"/>
-<area shape="rect" id="node4" href="$classalps_1_1cmn_1_1gpio_1_1_i_pwm_set_pulse_width.html" title=" " alt="" coords="424,5,603,85"/>
+<area shape="rect" id="node1" title="PWM出力ピン" alt="" coords="5,173,191,299"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html" title=" " alt="" coords="8,5,188,125"/>
 </map>

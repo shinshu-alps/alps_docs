@@ -3,10 +3,10 @@ var annotated_dup =
     [ "alps", "namespacealps.html", [
       [ "cmn", "namespacealps_1_1cmn.html", [
         [ "actuator", "namespacealps_1_1cmn_1_1actuator.html", [
-          [ "DcMotorBase", "classalps_1_1cmn_1_1actuator_1_1_dc_motor_base.html", "classalps_1_1cmn_1_1actuator_1_1_dc_motor_base" ],
+          [ "DcMotor", "classalps_1_1cmn_1_1actuator_1_1_dc_motor.html", "classalps_1_1cmn_1_1actuator_1_1_dc_motor" ],
           [ "RobomasMotor", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor" ],
           [ "RobomasMotorsCanController", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_controller.html", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_controller" ],
-          [ "ServoMotorBase", "classalps_1_1cmn_1_1actuator_1_1_servo_motor_base.html", "classalps_1_1cmn_1_1actuator_1_1_servo_motor_base" ],
+          [ "ServoMotor", "classalps_1_1cmn_1_1actuator_1_1_servo_motor.html", "classalps_1_1cmn_1_1actuator_1_1_servo_motor" ],
           [ "ServoMotorParam", "structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html", "structalps_1_1cmn_1_1actuator_1_1_servo_motor_param" ]
         ] ],
         [ "communication", "namespacealps_1_1cmn_1_1communication.html", [
@@ -18,11 +18,7 @@ var annotated_dup =
           [ "Cobs", "classalps_1_1cmn_1_1communication_1_1_cobs.html", "classalps_1_1cmn_1_1communication_1_1_cobs" ],
           [ "DataSerializer", "classalps_1_1cmn_1_1communication_1_1_data_serializer.html", "classalps_1_1cmn_1_1communication_1_1_data_serializer" ],
           [ "ICanIo", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", "classalps_1_1cmn_1_1communication_1_1_i_can_io" ],
-          [ "ICanRead", "classalps_1_1cmn_1_1communication_1_1_i_can_read.html", "classalps_1_1cmn_1_1communication_1_1_i_can_read" ],
-          [ "ICanWrite", "classalps_1_1cmn_1_1communication_1_1_i_can_write.html", "classalps_1_1cmn_1_1communication_1_1_i_can_write" ],
           [ "IUartIo", "classalps_1_1cmn_1_1communication_1_1_i_uart_io.html", "classalps_1_1cmn_1_1communication_1_1_i_uart_io" ],
-          [ "IUartRead", "classalps_1_1cmn_1_1communication_1_1_i_uart_read.html", "classalps_1_1cmn_1_1communication_1_1_i_uart_read" ],
-          [ "IUartWrite", "classalps_1_1cmn_1_1communication_1_1_i_uart_write.html", "classalps_1_1cmn_1_1communication_1_1_i_uart_write" ],
           [ "SerializeTypeInfo", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info" ],
           [ "SerializeTypeInfoBase", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base" ],
           [ "UartPacketTransceiver", "classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html", "classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver" ],
@@ -37,15 +33,13 @@ var annotated_dup =
           [ "Pid", "classalps_1_1cmn_1_1control_1_1_pid.html", "classalps_1_1cmn_1_1control_1_1_pid" ]
         ] ],
         [ "gpio", "namespacealps_1_1cmn_1_1gpio.html", [
-          [ "IAttachInterrupt", "classalps_1_1cmn_1_1gpio_1_1_i_attach_interrupt.html", "classalps_1_1cmn_1_1gpio_1_1_i_attach_interrupt" ],
-          [ "IDigitalRead", "classalps_1_1cmn_1_1gpio_1_1_i_digital_read.html", "classalps_1_1cmn_1_1gpio_1_1_i_digital_read" ],
-          [ "IDigitalWrite", "classalps_1_1cmn_1_1gpio_1_1_i_digital_write.html", "classalps_1_1cmn_1_1gpio_1_1_i_digital_write" ],
-          [ "IPwmSetPeriod", "classalps_1_1cmn_1_1gpio_1_1_i_pwm_set_period.html", "classalps_1_1cmn_1_1gpio_1_1_i_pwm_set_period" ],
-          [ "IPwmSetPulseWidth", "classalps_1_1cmn_1_1gpio_1_1_i_pwm_set_pulse_width.html", "classalps_1_1cmn_1_1gpio_1_1_i_pwm_set_pulse_width" ],
-          [ "IPwmWrite", "classalps_1_1cmn_1_1gpio_1_1_i_pwm_write.html", "classalps_1_1cmn_1_1gpio_1_1_i_pwm_write" ]
+          [ "IDigitalIn", "classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html", "classalps_1_1cmn_1_1gpio_1_1_i_digital_in" ],
+          [ "IDigitalOut", "classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html", "classalps_1_1cmn_1_1gpio_1_1_i_digital_out" ],
+          [ "IInterruptIn", "classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html", "classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in" ],
+          [ "IPwmOut", "classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html", "classalps_1_1cmn_1_1gpio_1_1_i_pwm_out" ]
         ] ],
         [ "sensor", "namespacealps_1_1cmn_1_1sensor.html", [
-          [ "IncrementalEncoderBase", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base.html", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder_base" ]
+          [ "IncrementalEncoder", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder" ]
         ] ]
       ] ],
       [ "lin", "namespacealps_1_1lin.html", [
@@ -55,10 +49,6 @@ var annotated_dup =
         ] ]
       ] ],
       [ "mbed", "namespacealps_1_1mbed.html", [
-        [ "actuator", "namespacealps_1_1mbed_1_1actuator.html", [
-          [ "DcMotor", "classalps_1_1mbed_1_1actuator_1_1_dc_motor.html", "classalps_1_1mbed_1_1actuator_1_1_dc_motor" ],
-          [ "ServoMotor", "classalps_1_1mbed_1_1actuator_1_1_servo_motor.html", "classalps_1_1mbed_1_1actuator_1_1_servo_motor" ]
-        ] ],
         [ "communication", "namespacealps_1_1mbed_1_1communication.html", [
           [ "BufferedCanIo", "classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html", "classalps_1_1mbed_1_1communication_1_1_buffered_can_io" ],
           [ "UartIo", "classalps_1_1mbed_1_1communication_1_1_uart_io.html", "classalps_1_1mbed_1_1communication_1_1_uart_io" ]
@@ -68,9 +58,6 @@ var annotated_dup =
           [ "DigitalOut", "classalps_1_1mbed_1_1gpio_1_1_digital_out.html", "classalps_1_1mbed_1_1gpio_1_1_digital_out" ],
           [ "InterruptIn", "classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html", "classalps_1_1mbed_1_1gpio_1_1_interrupt_in" ],
           [ "PwmOut", "classalps_1_1mbed_1_1gpio_1_1_pwm_out.html", "classalps_1_1mbed_1_1gpio_1_1_pwm_out" ]
-        ] ],
-        [ "sensor", "namespacealps_1_1mbed_1_1sensor.html", [
-          [ "IncrementalEncoder", "classalps_1_1mbed_1_1sensor_1_1_incremental_encoder.html", "classalps_1_1mbed_1_1sensor_1_1_incremental_encoder" ]
         ] ]
       ] ]
     ] ]

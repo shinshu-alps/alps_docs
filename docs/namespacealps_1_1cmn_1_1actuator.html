@@ -121,8 +121,8 @@ $(document).ready(function(){initNavTree('namespacealps_1_1cmn_1_1actuator.html'
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 クラス</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_dc_motor_base.html">DcMotorBase</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWMピンと方向指定ピンで動かすDCモーターの共通実装  <a href="classalps_1_1cmn_1_1actuator_1_1_dc_motor_base.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_dc_motor.html">DcMotor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWMピンと方向指定ピンで動かすDCモーターの共通実装  <a href="classalps_1_1cmn_1_1actuator_1_1_dc_motor.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html">RobomasMotor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ロボマスモータのクラス  <a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#details">[詳解]</a><br /></td></tr>
@@ -130,8 +130,8 @@ $(document).ready(function(){initNavTree('namespacealps_1_1cmn_1_1actuator.html'
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_controller.html">RobomasMotorsCanController</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">同じCANバスに接続された複数のロボマスモーターを管理するクラス  <a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_controller.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor_base.html">ServoMotorBase</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWMパルス幅で指定した角度に動くサーボモータの共通実装  <a href="classalps_1_1cmn_1_1actuator_1_1_servo_motor_base.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html">ServoMotor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWMパルス幅で指定した角度に動くサーボモータの共通実装  <a href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータのパラメータ構造体  <a href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#details">[詳解]</a><br /></td></tr>
@@ -139,10 +139,10 @@ $(document).ready(function(){initNavTree('namespacealps_1_1cmn_1_1actuator.html'
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 変数</h2></td></tr>
-<tr class="memitem:a9292bb5c97cd64313214f2fc483cf8ab"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1actuator.html#a9292bb5c97cd64313214f2fc483cf8ab">kSg90</a> {180, 500, 2400, 20000}</td></tr>
+<tr class="memitem:a9292bb5c97cd64313214f2fc483cf8ab"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1actuator.html#a9292bb5c97cd64313214f2fc483cf8ab">kSg90</a> {180, 500us, 2400us, 20000us}</td></tr>
 <tr class="memdesc:a9292bb5c97cd64313214f2fc483cf8ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータSG90のパラメータ  <br /></td></tr>
 <tr class="separator:a9292bb5c97cd64313214f2fc483cf8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41eefe6755e543b9817294673713db8b"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1actuator.html#a41eefe6755e543b9817294673713db8b">kGwsMicro2bbmg</a> {180, 600, 2200, 20000}</td></tr>
+<tr class="memitem:a41eefe6755e543b9817294673713db8b"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1actuator.html#a41eefe6755e543b9817294673713db8b">kGwsMicro2bbmg</a> {180, 600us, 2200us, 20000us}</td></tr>
 <tr class="memdesc:a41eefe6755e543b9817294673713db8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータGWS MICRO2BBMGのパラメータ  <br /></td></tr>
 <tr class="separator:a41eefe6755e543b9817294673713db8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('namespacealps_1_1cmn_1_1actuator.html'
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a> alps::cmn::actuator::kGwsMicro2bbmg {180, 600, 2200, 20000}</td>
+          <td class="memname">constexpr <a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a> alps::cmn::actuator::kGwsMicro2bbmg {180, 600us, 2200us, 20000us}</td>
         </tr>
       </table>
   </td>
@@ -184,7 +184,7 @@ $(document).ready(function(){initNavTree('namespacealps_1_1cmn_1_1actuator.html'
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a> alps::cmn::actuator::kSg90 {180, 500, 2400, 20000}</td>
+          <td class="memname">constexpr <a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a> alps::cmn::actuator::kSg90 {180, 500us, 2400us, 20000us}</td>
         </tr>
       </table>
   </td>

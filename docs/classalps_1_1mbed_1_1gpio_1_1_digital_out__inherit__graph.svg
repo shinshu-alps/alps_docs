@@ -30,10 +30,10 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classalps_1_1cmn_1_1gpio_1_1_i_digital_write.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="transparent" points="136.5,-175 10.5,-175 10.5,-115 136.5,-115 136.5,-175"/>
 <text text-anchor="start" x="15.5" y="-163" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::gpio::IDigital</text>
-<text text-anchor="start" x="24" y="-152" font-family="Helvetica,sans-Serif" font-size="10.00">Write&lt; DigitalOut &gt;</text>
+<text text-anchor="start" x="28.5" y="-152" font-family="Helvetica,sans-Serif" font-size="10.00">Out&lt; DigitalOut &gt;</text>
 <text text-anchor="start" x="70" y="-137" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <text text-anchor="start" x="27.5" y="-122" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="53.5" y="-122" font-family="Helvetica,sans-Serif" font-size="10.00">CallWrite()</text>

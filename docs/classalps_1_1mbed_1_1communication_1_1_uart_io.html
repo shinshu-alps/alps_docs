@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('classalps_1_1mbed_1_1communication_1_1
 <div class="dynheader">
 alps::mbed::communication::UartIo の継承関係図</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classalps_1_1mbed_1_1communication_1_1_uart_io__inherit__graph.svg" width="408" height="407"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classalps_1_1mbed_1_1communication_1_1_uart_io__inherit__graph.svg" width="206" height="299"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -140,12 +140,12 @@ alps::mbed::communication::UartIo の継承関係図</div>
 <tr class="memitem:a4bb170a0846446360463ce54392157b1"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a4bb170a0846446360463ce54392157b1">Read</a> (etl::icircular_buffer&lt; uint8_t &gt; &amp;output)</td></tr>
 <tr class="memdesc:a4bb170a0846446360463ce54392157b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uartで受信したバイト列を読み込む  <br /></td></tr>
 <tr class="separator:a4bb170a0846446360463ce54392157b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedae7938969aed62eee99ae172fdd643"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_uart_write.html#aedae7938969aed62eee99ae172fdd643">CallWrite</a> (const etl::icircular_buffer&lt; uint8_t &gt; &amp;write_buf)</td></tr>
-<tr class="memdesc:aedae7938969aed62eee99ae172fdd643"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してWrite()関数を呼び出す．振る舞い: Uartでバイト列を送信する  <br /></td></tr>
-<tr class="separator:aedae7938969aed62eee99ae172fdd643"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5576fe2312a1cb03a23bf6b74db525da"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_uart_read.html#a5576fe2312a1cb03a23bf6b74db525da">CallRead</a> (etl::icircular_buffer&lt; uint8_t &gt; &amp;output)</td></tr>
-<tr class="memdesc:a5576fe2312a1cb03a23bf6b74db525da"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してRead()関数を呼び出す．振る舞い: Uartで受信したバイト列を読み込む  <br /></td></tr>
-<tr class="separator:a5576fe2312a1cb03a23bf6b74db525da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5d2302ae11836d30d5ff53046f3eebd"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html#ac5d2302ae11836d30d5ff53046f3eebd">CallWrite</a> (const etl::icircular_buffer&lt; uint8_t &gt; &amp;write_buf)</td></tr>
+<tr class="memdesc:ac5d2302ae11836d30d5ff53046f3eebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してWrite()関数を呼び出す．振る舞い: Uartでバイト列を送信する  <br /></td></tr>
+<tr class="separator:ac5d2302ae11836d30d5ff53046f3eebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a774343caf91d67026c10388013521c6b"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html#a774343caf91d67026c10388013521c6b">CallRead</a> (etl::icircular_buffer&lt; uint8_t &gt; &amp;output)</td></tr>
+<tr class="memdesc:a774343caf91d67026c10388013521c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してRead()関数を呼び出す．振る舞い: Uartで受信したバイト列を読み込む  <br /></td></tr>
+<tr class="separator:a774343caf91d67026c10388013521c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>mbedのUartシリアル通信IOクラス </p>
@@ -214,19 +214,17 @@ alps::mbed::communication::UartIo の継承関係図</div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a5576fe2312a1cb03a23bf6b74db525da" name="a5576fe2312a1cb03a23bf6b74db525da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5576fe2312a1cb03a23bf6b74db525da">&#9670;&#160;</a></span>CallRead()</h2>
+<a id="a774343caf91d67026c10388013521c6b" name="a774343caf91d67026c10388013521c6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a774343caf91d67026c10388013521c6b">&#9670;&#160;</a></span>CallRead()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class Derived &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ssize_t <a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_uart_read.html">alps::cmn::communication::IUartRead</a>&lt; Derived &gt;::CallRead </td>
+          <td class="memname">ssize_t <a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html">alps::cmn::communication::IUartIo</a>&lt; <a class="el" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html">UartIo</a>  &gt;::CallRead </td>
           <td>(</td>
           <td class="paramtype">etl::icircular_buffer&lt; uint8_t &gt; &amp;&#160;</td>
           <td class="paramname"><em>output</em></td><td>)</td>
@@ -251,19 +249,17 @@ template&lt;class Derived &gt; </div>
 
 </div>
 </div>
-<a id="aedae7938969aed62eee99ae172fdd643" name="aedae7938969aed62eee99ae172fdd643"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedae7938969aed62eee99ae172fdd643">&#9670;&#160;</a></span>CallWrite()</h2>
+<a id="ac5d2302ae11836d30d5ff53046f3eebd" name="ac5d2302ae11836d30d5ff53046f3eebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5d2302ae11836d30d5ff53046f3eebd">&#9670;&#160;</a></span>CallWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class Derived &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ssize_t <a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_uart_write.html">alps::cmn::communication::IUartWrite</a>&lt; Derived &gt;::CallWrite </td>
+          <td class="memname">ssize_t <a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html">alps::cmn::communication::IUartIo</a>&lt; <a class="el" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html">UartIo</a>  &gt;::CallWrite </td>
           <td>(</td>
           <td class="paramtype">const etl::icircular_buffer&lt; uint8_t &gt; &amp;&#160;</td>
           <td class="paramname"><em>write_buf</em></td><td>)</td>

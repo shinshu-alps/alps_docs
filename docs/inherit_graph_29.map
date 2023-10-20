@@ -1,3 +1,5 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1communication_1_1_uart_sender.html" title="UART通信で型付きデータを送信するためのクラス．UartPacketTransceiverに登録して使用する．" alt="" coords="5,5,200,45"/>
+<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html" title=" " alt="" coords="12,5,188,45"/>
+<area shape="rect" id="node2" href="$classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html" title="割り込み入力ピン" alt="" coords="243,45,449,70"/>
+<area shape="rect" id="node3" href="$classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html" title=" " alt="" coords="5,69,195,109"/>
 </map>

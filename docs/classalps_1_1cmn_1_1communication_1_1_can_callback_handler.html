@@ -126,10 +126,10 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1_
 <tr class="memitem:abe04ac560276f71961e7b5f636555397"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html#abe04ac560276f71961e7b5f636555397">RegisterReceiveCallback</a> (<a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">CanDataFrame::Id</a> id, etl::delegate&lt; void(const <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#ad80c2254d400088df4922301c3a3dffd">CanDataFrame::Data</a> &amp;)&gt; callback)</td></tr>
 <tr class="memdesc:abe04ac560276f71961e7b5f636555397"><td class="mdescLeft">&#160;</td><td class="mdescRight">CANのIDに対応するデータを受信したときに呼び出されるコールバックを登録する  <br /></td></tr>
 <tr class="separator:abe04ac560276f71961e7b5f636555397"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5489e6172b12215c073532b2e24fc8c"><td class="memTemplParams" colspan="2">template&lt;class CanRead &gt; </td></tr>
-<tr class="memitem:ab5489e6172b12215c073532b2e24fc8c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html#ab5489e6172b12215c073532b2e24fc8c">InvokeCallbacksForReceivedFrames</a> (<a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_read.html">ICanRead</a>&lt; CanRead &gt; &amp;can_io)</td></tr>
-<tr class="memdesc:ab5489e6172b12215c073532b2e24fc8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">CANの受信インタフェースを借用し，受信したデータに対応するコールバックを呼び出す  <br /></td></tr>
-<tr class="separator:ab5489e6172b12215c073532b2e24fc8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85fd7006d5b92b4381294eb653ae52c9"><td class="memTemplParams" colspan="2">template&lt;class CanIo &gt; </td></tr>
+<tr class="memitem:a85fd7006d5b92b4381294eb653ae52c9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html#a85fd7006d5b92b4381294eb653ae52c9">InvokeCallbacksForReceivedFrames</a> (<a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">ICanIo</a>&lt; CanIo &gt; &amp;can_io)</td></tr>
+<tr class="memdesc:a85fd7006d5b92b4381294eb653ae52c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">CANの受信インタフェースを借用し，受信したデータに対応するコールバックを呼び出す  <br /></td></tr>
+<tr class="separator:a85fd7006d5b92b4381294eb653ae52c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;size_t kMaxCallbackNum = 20&gt;<br />
@@ -141,15 +141,15 @@ class alps::cmn::communication::CanCallbackHandler&lt; kMaxCallbackNum &gt;</div
   </dd>
 </dl>
 </div><h2 class="groupheader">関数詳解</h2>
-<a id="ab5489e6172b12215c073532b2e24fc8c" name="ab5489e6172b12215c073532b2e24fc8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5489e6172b12215c073532b2e24fc8c">&#9670;&#160;</a></span>InvokeCallbacksForReceivedFrames()</h2>
+<a id="a85fd7006d5b92b4381294eb653ae52c9" name="a85fd7006d5b92b4381294eb653ae52c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85fd7006d5b92b4381294eb653ae52c9">&#9670;&#160;</a></span>InvokeCallbacksForReceivedFrames()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;size_t kMaxCallbackNum = 20&gt; </div>
 <div class="memtemplate">
-template&lt;class CanRead &gt; </div>
+template&lt;class CanIo &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -157,7 +157,7 @@ template&lt;class CanRead &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html">alps::cmn::communication::CanCallbackHandler</a>&lt; kMaxCallbackNum &gt;::InvokeCallbacksForReceivedFrames </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_read.html">ICanRead</a>&lt; CanRead &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">ICanIo</a>&lt; CanIo &gt; &amp;&#160;</td>
           <td class="paramname"><em>can_io</em></td><td>)</td>
           <td></td>
         </tr>
@@ -172,7 +172,7 @@ template&lt;class CanRead &gt; </div>
 <p>CANの受信インタフェースを借用し，受信したデータに対応するコールバックを呼び出す </p>
 <dl class="tparams"><dt>テンプレート引数</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">CanRead</td><td>ICanReadインタフェースの実装クラス </td></tr>
+    <tr><td class="paramname">CanIo</td><td>ICanIoインタフェースの実装クラス </td></tr>
   </table>
   </dd>
 </dl>
