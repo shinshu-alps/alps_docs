@@ -120,45 +120,35 @@ $(document).ready(function(){initNavTree('i__uart__io_8hpp_source.html',''); ini
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">namespace </span>cmn</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">namespace </span>communication</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keyword">template</span> &lt;<span class="keyword">class</span> Derived&gt;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_i_uart_write.html">   29</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1_i_uart_write.html">IUartWrite</a></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_i_uart_write.html#aedae7938969aed62eee99ae172fdd643">   39</a></span>                ssize_t <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_i_uart_write.html#aedae7938969aed62eee99ae172fdd643">CallWrite</a>(<span class="keyword">const</span> etl::icircular_buffer&lt;uint8_t&gt; &amp;write_buf)</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;Write(write_buf);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                }</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            };</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span>cmn</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span>communication</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Derived&gt;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html">   30</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html">IUartIo</a></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html#ac5d2302ae11836d30d5ff53046f3eebd">   40</a></span>  ssize_t <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html#ac5d2302ae11836d30d5ff53046f3eebd">CallWrite</a>(<span class="keyword">const</span> etl::icircular_buffer&lt;uint8_t&gt; &amp; write_buf)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;Write(write_buf);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  }</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keyword">template</span> &lt;<span class="keyword">class</span> Derived&gt;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_i_uart_read.html">   51</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1_i_uart_read.html">IUartRead</a></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            {</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_i_uart_read.html#a5576fe2312a1cb03a23bf6b74db525da">   60</a></span>                ssize_t <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_i_uart_read.html#a5576fe2312a1cb03a23bf6b74db525da">CallRead</a>(etl::icircular_buffer&lt;uint8_t&gt; &amp;output)</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;Read(output);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            };</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="keyword">template</span> &lt;<span class="keyword">class</span> Derived&gt;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html">   72</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html">IUartIo</a> : <span class="keyword">public</span> <a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1_i_uart_write.html">IUartWrite</a>&lt;Derived&gt;, <span class="keyword">public</span> <a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1_i_uart_read.html">IUartRead</a>&lt;Derived&gt;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            {</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            };</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        }</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_uart_io_html"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html">alps::cmn::communication::IUartIo</a></div><div class="ttdoc">Uart通信IOのインターフェース</div><div class="ttdef"><b>Definition:</b> i_uart_io.hpp:73</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_uart_read_html"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_uart_read.html">alps::cmn::communication::IUartRead</a></div><div class="ttdoc">Uart読み込みのインターフェース</div><div class="ttdef"><b>Definition:</b> i_uart_io.hpp:52</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_uart_read_html_a5576fe2312a1cb03a23bf6b74db525da"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_uart_read.html#a5576fe2312a1cb03a23bf6b74db525da">alps::cmn::communication::IUartRead::CallRead</a></div><div class="ttdeci">ssize_t CallRead(etl::icircular_buffer&lt; uint8_t &gt; &amp;output)</div><div class="ttdoc">インタフェースを介してRead()関数を呼び出す．振る舞い: Uartで受信したバイト列を読み込む</div><div class="ttdef"><b>Definition:</b> i_uart_io.hpp:60</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_uart_write_html"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_uart_write.html">alps::cmn::communication::IUartWrite</a></div><div class="ttdoc">Uart書き込みのインターフェース</div><div class="ttdef"><b>Definition:</b> i_uart_io.hpp:30</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_uart_write_html_aedae7938969aed62eee99ae172fdd643"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_uart_write.html#aedae7938969aed62eee99ae172fdd643">alps::cmn::communication::IUartWrite::CallWrite</a></div><div class="ttdeci">ssize_t CallWrite(const etl::icircular_buffer&lt; uint8_t &gt; &amp;write_buf)</div><div class="ttdoc">インタフェースを介してWrite()関数を呼び出す．振る舞い: Uartでバイト列を送信する</div><div class="ttdef"><b>Definition:</b> i_uart_io.hpp:39</div></div>
-<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html#a774343caf91d67026c10388013521c6b">   51</a></span>  ssize_t <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html#a774343caf91d67026c10388013521c6b">CallRead</a>(etl::icircular_buffer&lt;uint8_t&gt; &amp; output)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;Read(output);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>};</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}  <span class="comment">// namespace communication</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_uart_io_html"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html">alps::cmn::communication::IUartIo</a></div><div class="ttdoc">Uart通信IOのインターフェース</div><div class="ttdef"><b>Definition:</b> i_uart_io.hpp:31</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_uart_io_html_a774343caf91d67026c10388013521c6b"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html#a774343caf91d67026c10388013521c6b">alps::cmn::communication::IUartIo::CallRead</a></div><div class="ttdeci">ssize_t CallRead(etl::icircular_buffer&lt; uint8_t &gt; &amp;output)</div><div class="ttdoc">インタフェースを介してRead()関数を呼び出す．振る舞い: Uartで受信したバイト列を読み込む</div><div class="ttdef"><b>Definition:</b> i_uart_io.hpp:51</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_uart_io_html_ac5d2302ae11836d30d5ff53046f3eebd"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html#ac5d2302ae11836d30d5ff53046f3eebd">alps::cmn::communication::IUartIo::CallWrite</a></div><div class="ttdeci">ssize_t CallWrite(const etl::icircular_buffer&lt; uint8_t &gt; &amp;write_buf)</div><div class="ttdoc">インタフェースを介してWrite()関数を呼び出す．振る舞い: Uartでバイト列を送信する</div><div class="ttdef"><b>Definition:</b> i_uart_io.hpp:40</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

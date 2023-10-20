@@ -127,96 +127,97 @@ $(document).ready(function(){initNavTree('pid_8hpp_source.html',''); initResizab
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">namespace </span>cmn</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    {</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">namespace </span>control</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        {</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html">   54</a></span>            <span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_pid.html">Pid</a></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a467a6fec3b2156c0519550c8e42372fc">   62</a></span>                <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a467a6fec3b2156c0519550c8e42372fc">Pid</a>(<span class="keywordtype">float</span> ctrl_period_sec);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">namespace </span>cmn</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">namespace </span>control</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html">   54</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_pid.html">Pid</a></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>{</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a467a6fec3b2156c0519550c8e42372fc">   62</a></span>  <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a467a6fec3b2156c0519550c8e42372fc">Pid</a>(<span class="keywordtype">float</span> ctrl_period_sec);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                <span class="comment">// 各変数を設定，変更する関数----------------------------</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="comment">// 各変数を設定，変更する関数----------------------------</span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a6842f947655bc9960ab8c78e05e1f58a">   71</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a6842f947655bc9960ab8c78e05e1f58a">Init</a>(<span class="keywordtype">float</span> ctrl_period_sec);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a6842f947655bc9960ab8c78e05e1f58a">   71</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a6842f947655bc9960ab8c78e05e1f58a">Init</a>(<span class="keywordtype">float</span> ctrl_period_sec);</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#add07b20c64775c928f976f3304511a26">   78</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#add07b20c64775c928f976f3304511a26">SetTarget</a>(<span class="keywordtype">float</span> target_);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#add07b20c64775c928f976f3304511a26">   78</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#add07b20c64775c928f976f3304511a26">SetTarget</a>(<span class="keywordtype">float</span> target_);</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a60e3434c38f5cb61e813f08eeba3a7f0">   87</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a60e3434c38f5cb61e813f08eeba3a7f0">SetGain</a>(<span class="keywordtype">float</span> kp, <span class="keywordtype">float</span> ki, <span class="keywordtype">float</span> kd);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a60e3434c38f5cb61e813f08eeba3a7f0">   87</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a60e3434c38f5cb61e813f08eeba3a7f0">SetGain</a>(<span class="keywordtype">float</span> kp, <span class="keywordtype">float</span> ki, <span class="keywordtype">float</span> kd);</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a2ffa84a2a615c46dc97472a815d118ef">   95</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a2ffa84a2a615c46dc97472a815d118ef">SetEndCondition</a>(<span class="keywordtype">float</span> end_err, <span class="keywordtype">float</span> end_diff);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a2ffa84a2a615c46dc97472a815d118ef">   95</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a2ffa84a2a615c46dc97472a815d118ef">SetEndCondition</a>(<span class="keywordtype">float</span> end_err, <span class="keywordtype">float</span> end_diff);</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#aa16c15d6babee6bf788e145fc1ccd373">  102</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#aa16c15d6babee6bf788e145fc1ccd373">SetPreviousValue</a>(<span class="keywordtype">float</span> first_pos);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#aa16c15d6babee6bf788e145fc1ccd373">  102</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#aa16c15d6babee6bf788e145fc1ccd373">SetPreviousValue</a>(<span class="keywordtype">float</span> first_pos);</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a29d4145189fe12a07dfdf7c060767dc8">  108</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a29d4145189fe12a07dfdf7c060767dc8">SetDiffTimeConst</a>(<span class="keywordtype">float</span> time_const);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a29d4145189fe12a07dfdf7c060767dc8">  108</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a29d4145189fe12a07dfdf7c060767dc8">SetDiffTimeConst</a>(<span class="keywordtype">float</span> time_const);</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#aa736b6581e612b954f6323304b5792c6">  115</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#aa736b6581e612b954f6323304b5792c6">SetMaxOutput</a>(<span class="keywordtype">float</span> max_output);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#aa736b6581e612b954f6323304b5792c6">  115</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#aa736b6581e612b954f6323304b5792c6">SetMaxOutput</a>(<span class="keywordtype">float</span> max_output);</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a3ed1728d29ef887117ce3c6325d15af3">  122</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a3ed1728d29ef887117ce3c6325d15af3">SetIntegralMax</a>(<span class="keywordtype">float</span> limit_i_output);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a3ed1728d29ef887117ce3c6325d15af3">  122</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a3ed1728d29ef887117ce3c6325d15af3">SetIntegralMax</a>(<span class="keywordtype">float</span> limit_i_output);</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                <span class="comment">// 計算結果を出力する関数</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#adc670a9ebf353ee3e6c5d5100c2945d1">  129</a></span><span class="comment"></span>                <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#adc670a9ebf353ee3e6c5d5100c2945d1">GetOutputP</a>();</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <span class="comment">// 計算結果を出力する関数</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#adc670a9ebf353ee3e6c5d5100c2945d1">  129</a></span><span class="comment"></span>  <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#adc670a9ebf353ee3e6c5d5100c2945d1">GetOutputP</a>();</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a5fc69a83db9ed522082a185f2c5015a8">  135</a></span>                <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a5fc69a83db9ed522082a185f2c5015a8">GetOutputI</a>();</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a5fc69a83db9ed522082a185f2c5015a8">  135</a></span>  <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a5fc69a83db9ed522082a185f2c5015a8">GetOutputI</a>();</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a774925b6be337bcbbe08957105388158">  141</a></span>                <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a774925b6be337bcbbe08957105388158">GetOutputD</a>();</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a774925b6be337bcbbe08957105388158">  141</a></span>  <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a774925b6be337bcbbe08957105388158">GetOutputD</a>();</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#aedf4d565842d3c42618851cfe428834d">  148</a></span>                <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#aedf4d565842d3c42618851cfe428834d">IsEnd</a>();</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#aedf4d565842d3c42618851cfe428834d">  148</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#aedf4d565842d3c42618851cfe428834d">IsEnd</a>();</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#ad3176cd6171641513587336b2ab4464e">  151</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#ad3176cd6171641513587336b2ab4464e">Reset</a>();</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#ad3176cd6171641513587336b2ab4464e">  151</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#ad3176cd6171641513587336b2ab4464e">Reset</a>();</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a155377ce70d35c23185671361d5d3c06">  154</a></span>                <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a155377ce70d35c23185671361d5d3c06">ResetForVelocity</a>();</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a155377ce70d35c23185671361d5d3c06">  154</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a155377ce70d35c23185671361d5d3c06">ResetForVelocity</a>();</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#ab37662b6bfeafc098d83ed9c153a647f">  162</a></span>                <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#ab37662b6bfeafc098d83ed9c153a647f">Control</a>(<span class="keywordtype">float</span> input);</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#ab37662b6bfeafc098d83ed9c153a647f">  162</a></span>  <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#ab37662b6bfeafc098d83ed9c153a647f">Control</a>(<span class="keywordtype">float</span> input);</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                <span class="comment">// 制御完了の判定------------------------------</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  <span class="comment">// 制御完了の判定------------------------------</span></div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> kInitialEndCount_ = 10;</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kInitialEndError_ = 0.0f;</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kInitialEndDifferential_ = 0.0f;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> kInitialEndCount_ = 10;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kInitialEndError_ = 0.0f;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kInitialEndDifferential_ = 0.0f;</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                <span class="keywordtype">float</span> ctrl_period_sec_;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  <span class="keywordtype">float</span> ctrl_period_sec_;</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                <span class="keywordtype">float</span> target_;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <span class="keywordtype">float</span> target_;</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                <span class="keywordtype">float</span> limit_output_;</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                <span class="keywordtype">float</span> limit_i_output_;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>  <span class="keywordtype">float</span> limit_output_;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>  <span class="keywordtype">float</span> limit_i_output_;</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kInitialDiffTimeConst_sec_ = 0.05f;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kInitialDiffTimeConst_sec_ = 0.05f;</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_differential.html">Differential</a> diff;</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_integral.html">Integral</a> intg;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_differential.html">Differential</a> diff;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_integral.html">Integral</a> intg;</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>                <span class="comment">// 偏差-----------------------</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  <span class="comment">// 偏差-----------------------</span></div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                <span class="keywordtype">float</span> err_;</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                <span class="keywordtype">float</span> err_intg_;</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                <span class="keywordtype">float</span> err_diff_;</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  <span class="keywordtype">float</span> err_;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  <span class="keywordtype">float</span> err_intg_;</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  <span class="keywordtype">float</span> err_diff_;</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                <span class="comment">// 各要素の出力値-----------------</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  <span class="comment">// 各要素の出力値-----------------</span></div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                <span class="keywordtype">float</span> p_output_;</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                <span class="keywordtype">float</span> i_output_;</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                <span class="keywordtype">float</span> d_output_;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  <span class="keywordtype">float</span> p_output_;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  <span class="keywordtype">float</span> i_output_;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>  <span class="keywordtype">float</span> d_output_;</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                <span class="comment">// ゲイン------------------------------</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  <span class="comment">// ゲイン------------------------------</span></div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>                <span class="keywordtype">float</span> kp_;</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                <span class="keywordtype">float</span> ki_;</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                <span class="keywordtype">float</span> kd_;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  <span class="keywordtype">float</span> kp_;</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  <span class="keywordtype">float</span> ki_;</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  <span class="keywordtype">float</span> kd_;</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                <span class="comment">// 終了判定---------------------------------</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  <span class="comment">// 終了判定---------------------------------</span></div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> end_count_;</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                <span class="keywordtype">float</span> end_err_;</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                <span class="keywordtype">float</span> end_diff_;</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            };</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        }</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    }</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>}</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> end_count_;</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  <span class="keywordtype">float</span> end_err_;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  <span class="keywordtype">float</span> end_diff_;</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>};</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>}  <span class="comment">// namespace control</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_differential_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_differential.html">alps::cmn::control::Differential</a></div><div class="ttdoc">近似微分器</div><div class="ttdef"><b>Definition:</b> differential.hpp:40</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_integral_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_integral.html">alps::cmn::control::Integral</a></div><div class="ttdoc">積分器</div><div class="ttdef"><b>Definition:</b> integral.hpp:40</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a></div><div class="ttdoc">PID制御を行うクラス</div><div class="ttdef"><b>Definition:</b> pid.hpp:55</div></div>
@@ -238,7 +239,7 @@ $(document).ready(function(){initNavTree('pid_8hpp_source.html',''); initResizab
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html_aedf4d565842d3c42618851cfe428834d"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html#aedf4d565842d3c42618851cfe428834d">alps::cmn::control::Pid::IsEnd</a></div><div class="ttdeci">bool IsEnd()</div><div class="ttdoc">PID制御終了判定を確認する関数．</div></div>
 <div class="ttc" id="adifferential_8hpp_html"><div class="ttname"><a href="differential_8hpp.html">differential.hpp</a></div></div>
 <div class="ttc" id="aintegral_8hpp_html"><div class="ttname"><a href="integral_8hpp.html">integral.hpp</a></div></div>
-<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor_base.hpp:20</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -37,10 +37,10 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="i__digital__read_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="i__digital__in_8hpp.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="200,-30 71,-30 71,0 200,0 200,-30"/>
 <text text-anchor="start" x="79" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">alps_cmn/gpio/i_digital</text>
-<text text-anchor="middle" x="135.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">_read.hpp</text>
+<text text-anchor="middle" x="135.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">_in.hpp</text>
 </a>
 </g>
 </g>

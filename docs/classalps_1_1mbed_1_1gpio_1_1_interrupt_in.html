@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('classalps_1_1mbed_1_1gpio_1_1_interrup
 <div class="dynheader">
 alps::mbed::gpio::InterruptIn の継承関係図</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classalps_1_1mbed_1_1gpio_1_1_interrupt_in__inherit__graph.svg" width="371" height="264"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classalps_1_1mbed_1_1gpio_1_1_interrupt_in__inherit__graph.svg" width="384" height="264"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -139,12 +139,12 @@ alps::mbed::gpio::InterruptIn の継承関係図</div>
 <tr class="separator:a6f713f49b4f69edced5c33e4bc920e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58c433a01a827f58f76954618ab11a6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#a58c433a01a827f58f76954618ab11a6b">~InterruptIn</a> ()=default</td></tr>
 <tr class="separator:a58c433a01a827f58f76954618ab11a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee3316c8155af686d9d5a6dade2c0045"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_attach_interrupt.html#aee3316c8155af686d9d5a6dade2c0045">CallAttachInterrupt</a> (etl::delegate&lt; void()&gt; func, InterruptMode mode)</td></tr>
-<tr class="memdesc:aee3316c8155af686d9d5a6dade2c0045"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してAttachInterrupt()関数を呼び出す．振る舞い: 割り込みを設定する  <br /></td></tr>
-<tr class="separator:aee3316c8155af686d9d5a6dade2c0045"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e360236ea7d615c194aac85d689df1e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_read.html#a8e360236ea7d615c194aac85d689df1e">CallRead</a> ()</td></tr>
-<tr class="memdesc:a8e360236ea7d615c194aac85d689df1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してRead()関数を呼び出す．振る舞い: デジタル入力を読む  <br /></td></tr>
-<tr class="separator:a8e360236ea7d615c194aac85d689df1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05b1bc2b9e081732f0eb96a973bf3646"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html#a05b1bc2b9e081732f0eb96a973bf3646">CallAttachInterrupt</a> (etl::delegate&lt; void()&gt; func, InterruptMode mode)</td></tr>
+<tr class="memdesc:a05b1bc2b9e081732f0eb96a973bf3646"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してAttachInterrupt()関数を呼び出す．振る舞い: 割り込みを設定する  <br /></td></tr>
+<tr class="separator:a05b1bc2b9e081732f0eb96a973bf3646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ec571adc939ca0d022e00087b0ea914"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html#a7ec571adc939ca0d022e00087b0ea914">CallRead</a> ()</td></tr>
+<tr class="memdesc:a7ec571adc939ca0d022e00087b0ea914"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してRead()関数を呼び出す．振る舞い: デジタル入力を読む  <br /></td></tr>
+<tr class="separator:a7ec571adc939ca0d022e00087b0ea914"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>割り込み入力ピン </p>
@@ -228,7 +228,7 @@ alps::mbed::gpio::InterruptIn の継承関係図</div>
 </div><div class="memdoc">
 
 <p>割り込みを設定する </p>
-<p>IAttachInterruptの実装</p>
+<p>IInterruptInの実装</p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">callback</td><td>割り込み時に呼び出される関数 </td></tr>
@@ -239,8 +239,8 @@ alps::mbed::gpio::InterruptIn の継承関係図</div>
 
 </div>
 </div>
-<a id="aee3316c8155af686d9d5a6dade2c0045" name="aee3316c8155af686d9d5a6dade2c0045"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee3316c8155af686d9d5a6dade2c0045">&#9670;&#160;</a></span>CallAttachInterrupt()</h2>
+<a id="a05b1bc2b9e081732f0eb96a973bf3646" name="a05b1bc2b9e081732f0eb96a973bf3646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05b1bc2b9e081732f0eb96a973bf3646">&#9670;&#160;</a></span>CallAttachInterrupt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -249,7 +249,7 @@ alps::mbed::gpio::InterruptIn の継承関係図</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_attach_interrupt.html">alps::cmn::gpio::IAttachInterrupt</a>&lt; <a class="el" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html">InterruptIn</a>  &gt;::CallAttachInterrupt </td>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html">alps::cmn::gpio::IInterruptIn</a>&lt; <a class="el" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html">InterruptIn</a>  &gt;::CallAttachInterrupt </td>
           <td>(</td>
           <td class="paramtype">etl::delegate&lt; void()&gt;&#160;</td>
           <td class="paramname"><em>func</em>, </td>
@@ -285,8 +285,8 @@ alps::mbed::gpio::InterruptIn の継承関係図</div>
 
 </div>
 </div>
-<a id="a8e360236ea7d615c194aac85d689df1e" name="a8e360236ea7d615c194aac85d689df1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e360236ea7d615c194aac85d689df1e">&#9670;&#160;</a></span>CallRead()</h2>
+<a id="a7ec571adc939ca0d022e00087b0ea914" name="a7ec571adc939ca0d022e00087b0ea914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ec571adc939ca0d022e00087b0ea914">&#9670;&#160;</a></span>CallRead()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -295,7 +295,7 @@ alps::mbed::gpio::InterruptIn の継承関係図</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_read.html">alps::cmn::gpio::IDigitalRead</a>&lt; <a class="el" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html">InterruptIn</a>  &gt;::CallRead </td>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html">alps::cmn::gpio::IDigitalIn</a>&lt; <a class="el" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html">InterruptIn</a>  &gt;::CallRead </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -332,7 +332,7 @@ false LOW </dd></dl>
 </div><div class="memdoc">
 
 <p>デジタル入力を行う </p>
-<p>IDigitalReadの実装</p>
+<p>IDigitalInの実装</p>
 <dl class="section return"><dt>戻り値</dt><dd>true 入力がHigh </dd>
 <dd>
 false 入力がLow </dd></dl>

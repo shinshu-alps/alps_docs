@@ -1,8 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_read.html" title="Uart読み込みのインターフェース" alt="" coords="5,37,200,77"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_io.html" title=" " alt="" coords="248,37,443,77"/>
-<area shape="rect" id="node5" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_io.html" title="Uart通信IOのインターフェース" alt="" coords="248,101,443,141"/>
-<area shape="rect" id="node3" href="$classalps_1_1lin_1_1communication_1_1_uart_io.html" title="Linux環境でのUart通信IOクラス" alt="" coords="501,5,683,45"/>
-<area shape="rect" id="node4" href="$classalps_1_1mbed_1_1communication_1_1_uart_io.html" title="mbedのUartシリアル通信IOクラス" alt="" coords="491,69,693,109"/>
-<area shape="rect" id="node6" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_write.html" title="Uart書き込みのインターフェース" alt="" coords="5,101,200,141"/>
+<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1communication_1_1_uart_receiver.html" title="UART通信で型付きデータを受信するためのクラス．UartPacketTransceiverに登録して使用する．" alt="" coords="5,5,200,45"/>
 </map>

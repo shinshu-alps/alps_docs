@@ -1,6 +1,4 @@
 <map id="alps::lin::communication::SocketCanIo" name="alps::lin::communication::SocketCanIo">
-<area shape="rect" id="node1" title="SocketCANを用いてCAN通信を行うクラス．" alt="" coords="117,261,291,401"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1communication_1_1_i_can_io.html" title=" " alt="" coords="111,133,297,213"/>
-<area shape="rect" id="node3" href="$classalps_1_1cmn_1_1communication_1_1_i_can_write.html" title="CAN通信でデータを書き込むインターフェース" alt="" coords="5,5,192,85"/>
-<area shape="rect" id="node4" href="$classalps_1_1cmn_1_1communication_1_1_i_can_read.html" title="CAN通信でデータを読み込むインターフェース" alt="" coords="216,5,403,85"/>
+<area shape="rect" id="node1" title="SocketCANを用いてCAN通信を行うクラス．" alt="" coords="11,153,186,293"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1communication_1_1_i_can_io.html" title=" " alt="" coords="5,5,192,105"/>
 </map>
