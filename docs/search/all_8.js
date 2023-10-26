@@ -19,6 +19,8 @@ var searchData=
   ['kmotor7_16',['kMotor7',['../classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a93495bd998ff2d9ed43a326e3b7955d1afd0b6a709f0101d3aa2d026673076448',1,'alps::cmn::actuator::RobomasMotor']]],
   ['kmotor8_17',['kMotor8',['../classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a93495bd998ff2d9ed43a326e3b7955d1a691227596b77a5005dd7361144d395b3',1,'alps::cmn::actuator::RobomasMotor']]],
   ['koutputcanids_18',['kOutputCanIds',['../classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#ae2d5a9f75a722c7b27937006c6026c2c',1,'alps::cmn::actuator::RobomasMotor']]],
-  ['krise_19',['kRise',['../namespacealps_1_1cmn_1_1gpio.html#a5e6ac69b85cb0a3ebf618df6f6e316a9a7e2fb3a1859ce40bdfa6c187f499d423',1,'alps::cmn::gpio']]],
-  ['ksg90_20',['kSg90',['../namespacealps_1_1cmn_1_1actuator.html#a9292bb5c97cd64313214f2fc483cf8ab',1,'alps::cmn::actuator']]]
+  ['kpi_19',['kPi',['../namespacealps_1_1cmn_1_1math.html#a88f12b4ff4040bf5b2c1cd318c29e443',1,'alps::cmn::math']]],
+  ['kpif_20',['kPiF',['../namespacealps_1_1cmn_1_1math.html#a5f1899ea808f6a1ff3d6fd8ee084e060',1,'alps::cmn::math']]],
+  ['krise_21',['kRise',['../namespacealps_1_1cmn_1_1gpio.html#a5e6ac69b85cb0a3ebf618df6f6e316a9a7e2fb3a1859ce40bdfa6c187f499d423',1,'alps::cmn::gpio']]],
+  ['ksg90_22',['kSg90',['../namespacealps_1_1cmn_1_1actuator.html#a9292bb5c97cd64313214f2fc483cf8ab',1,'alps::cmn::actuator']]]
 ];

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.9.7" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alps: alps::cmn::control::Pid クラス</title>
+    <title>Alps: alps::cmn::control::Pid&lt; Clock &gt; クラステンプレート</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
     <script type="text/javascript" src="jquery.js"></script>
@@ -112,353 +112,54 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1control_1_1_pid.ht
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
 <a href="classalps_1_1cmn_1_1control_1_1_pid-members.html">全メンバ一覧</a>  </div>
-  <div class="headertitle"><div class="title">alps::cmn::control::Pid クラス</div></div>
+  <div class="headertitle"><div class="title">alps::cmn::control::Pid&lt; Clock &gt; クラステンプレート</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>PID制御を行うクラス  
+<p>PID制御器  
  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#details">[詳解]</a></p>
 
 <p><code>#include &lt;<a class="el" href="pid_8hpp_source.html">pid.hpp</a>&gt;</code></p>
-<div class="dynheader">
-alps::cmn::control::Pid の継承関係図</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classalps_1_1cmn_1_1control_1_1_pid__inherit__graph.svg" width="222" height="610"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a467a6fec3b2156c0519550c8e42372fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a467a6fec3b2156c0519550c8e42372fc">Pid</a> (float ctrl_period_sec)</td></tr>
-<tr class="memdesc:a467a6fec3b2156c0519550c8e42372fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">各変数を初期化するコンストラクタ  <br /></td></tr>
-<tr class="separator:a467a6fec3b2156c0519550c8e42372fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6842f947655bc9960ab8c78e05e1f58a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a6842f947655bc9960ab8c78e05e1f58a">Init</a> (float ctrl_period_sec)</td></tr>
-<tr class="memdesc:a6842f947655bc9960ab8c78e05e1f58a"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御周期をセットし,メンバ変数を初期化する関数．  <br /></td></tr>
-<tr class="separator:a6842f947655bc9960ab8c78e05e1f58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add07b20c64775c928f976f3304511a26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#add07b20c64775c928f976f3304511a26">SetTarget</a> (float target_)</td></tr>
-<tr class="memdesc:add07b20c64775c928f976f3304511a26"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標値を設定する関数  <br /></td></tr>
-<tr class="separator:add07b20c64775c928f976f3304511a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60e3434c38f5cb61e813f08eeba3a7f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a60e3434c38f5cb61e813f08eeba3a7f0">SetGain</a> (float kp, float ki, float kd)</td></tr>
-<tr class="memdesc:a60e3434c38f5cb61e813f08eeba3a7f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIDのゲインをセットする関数  <br /></td></tr>
-<tr class="separator:a60e3434c38f5cb61e813f08eeba3a7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ffa84a2a615c46dc97472a815d118ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a2ffa84a2a615c46dc97472a815d118ef">SetEndCondition</a> (float end_err, float end_diff)</td></tr>
-<tr class="memdesc:a2ffa84a2a615c46dc97472a815d118ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了条件値を変更する  <br /></td></tr>
-<tr class="separator:a2ffa84a2a615c46dc97472a815d118ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa16c15d6babee6bf788e145fc1ccd373"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#aa16c15d6babee6bf788e145fc1ccd373">SetPreviousValue</a> (float first_pos)</td></tr>
-<tr class="memdesc:aa16c15d6babee6bf788e145fc1ccd373"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期の値から1つ前の偏差をつくる(一番最初の微分値の対策)  <br /></td></tr>
-<tr class="separator:aa16c15d6babee6bf788e145fc1ccd373"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29d4145189fe12a07dfdf7c060767dc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a29d4145189fe12a07dfdf7c060767dc8">SetDiffTimeConst</a> (float time_const)</td></tr>
-<tr class="memdesc:a29d4145189fe12a07dfdf7c060767dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">近似微分器の時定数を設定．初期値は0.05[s]  <br /></td></tr>
-<tr class="separator:a29d4145189fe12a07dfdf7c060767dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa736b6581e612b954f6323304b5792c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#aa736b6581e612b954f6323304b5792c6">SetMaxOutput</a> (float max_output)</td></tr>
-<tr class="memdesc:aa736b6581e612b954f6323304b5792c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID出力値の上限を変更する関数．  <br /></td></tr>
-<tr class="separator:aa736b6581e612b954f6323304b5792c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ed1728d29ef887117ce3c6325d15af3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a3ed1728d29ef887117ce3c6325d15af3">SetIntegralMax</a> (float limit_i_output)</td></tr>
-<tr class="memdesc:a3ed1728d29ef887117ce3c6325d15af3"><td class="mdescLeft">&#160;</td><td class="mdescRight">積分項の上限を変更する関数．  <br /></td></tr>
-<tr class="separator:a3ed1728d29ef887117ce3c6325d15af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc670a9ebf353ee3e6c5d5100c2945d1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#adc670a9ebf353ee3e6c5d5100c2945d1">GetOutputP</a> ()</td></tr>
-<tr class="memdesc:adc670a9ebf353ee3e6c5d5100c2945d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">P制御の出力のみを返す  <br /></td></tr>
-<tr class="separator:adc670a9ebf353ee3e6c5d5100c2945d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fc69a83db9ed522082a185f2c5015a8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a5fc69a83db9ed522082a185f2c5015a8">GetOutputI</a> ()</td></tr>
-<tr class="memdesc:a5fc69a83db9ed522082a185f2c5015a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">I制御の出力のみを返す  <br /></td></tr>
-<tr class="separator:a5fc69a83db9ed522082a185f2c5015a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a774925b6be337bcbbe08957105388158"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a774925b6be337bcbbe08957105388158">GetOutputD</a> ()</td></tr>
-<tr class="memdesc:a774925b6be337bcbbe08957105388158"><td class="mdescLeft">&#160;</td><td class="mdescRight">D制御の出力のみを返す  <br /></td></tr>
-<tr class="separator:a774925b6be337bcbbe08957105388158"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedf4d565842d3c42618851cfe428834d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#aedf4d565842d3c42618851cfe428834d">IsEnd</a> ()</td></tr>
-<tr class="memdesc:aedf4d565842d3c42618851cfe428834d"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID制御終了判定を確認する関数．  <br /></td></tr>
-<tr class="separator:aedf4d565842d3c42618851cfe428834d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3176cd6171641513587336b2ab4464e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#ad3176cd6171641513587336b2ab4464e">Reset</a> ()</td></tr>
-<tr class="memdesc:ad3176cd6171641513587336b2ab4464e"><td class="mdescLeft">&#160;</td><td class="mdescRight">各変数を初期化する関数．ゲインはそのまま．  <br /></td></tr>
-<tr class="separator:ad3176cd6171641513587336b2ab4464e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a155377ce70d35c23185671361d5d3c06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a155377ce70d35c23185671361d5d3c06">ResetForVelocity</a> ()</td></tr>
-<tr class="memdesc:a155377ce70d35c23185671361d5d3c06"><td class="mdescLeft">&#160;</td><td class="mdescRight">速度制御用リセット．積分Iをリセットする  <br /></td></tr>
-<tr class="separator:a155377ce70d35c23185671361d5d3c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab37662b6bfeafc098d83ed9c153a647f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#ab37662b6bfeafc098d83ed9c153a647f">Control</a> (float input)</td></tr>
-<tr class="memdesc:ab37662b6bfeafc098d83ed9c153a647f"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定した目標値に対してPID制御を行う関数．  <br /></td></tr>
-<tr class="separator:ab37662b6bfeafc098d83ed9c153a647f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11ca52a473a0d9bd122259366136e1f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a11ca52a473a0d9bd122259366136e1f8">Pid</a> (float kp, float ki, float kd, float max_output=std::numeric_limits&lt; float &gt;::max(), float lowest_output=std::numeric_limits&lt; float &gt;::lowest(), float max_abs_slope=std::numeric_limits&lt; float &gt;::max())</td></tr>
+<tr class="memdesc:a11ca52a473a0d9bd122259366136e1f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
+<tr class="separator:a11ca52a473a0d9bd122259366136e1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5265bcac30ca177c67757014f5c6da43"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a5265bcac30ca177c67757014f5c6da43">~Pid</a> ()=default</td></tr>
+<tr class="separator:a5265bcac30ca177c67757014f5c6da43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4772b6d7bda61b73064041628b84a02c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a4772b6d7bda61b73064041628b84a02c">Calcurate</a> (float error)</td></tr>
+<tr class="memdesc:a4772b6d7bda61b73064041628b84a02c"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID制御を実行する  <br /></td></tr>
+<tr class="separator:a4772b6d7bda61b73064041628b84a02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeeb93dc4a8c1c7ff379b3bbc5407c0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#adeeb93dc4a8c1c7ff379b3bbc5407c0c">Reset</a> ()</td></tr>
+<tr class="memdesc:adeeb93dc4a8c1c7ff379b3bbc5407c0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">前回までの計算結果をリセットする  <br /></td></tr>
+<tr class="separator:adeeb93dc4a8c1c7ff379b3bbc5407c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
-<div class="textblock"><p>PID制御を行うクラス </p>
-<p><b>例(mbed)</b> </p><div class="fragment"><div class="line"><span class="comment">// 使用例</span></div>
-<div class="line">alps::cmn::Pid pid{0.02f}; <span class="comment">// 制御周期0.02s</span></div>
-<div class="line">pid.SetGain(0.1, 0.01, 0.01);</div>
-<div class="line">pid.SetMaxOutput(10);</div>
-<div class="line">pid.SetTarget(360); <span class="comment">// 目標値360°</span></div>
-<div class="line"><span class="keywordflow">while</span> (<span class="keyword">true</span>)</div>
-<div class="line">{</div>
-<div class="line">    motor.Drive(pid.Control(encoder.GetDeg()));</div>
-<div class="line">    ThisThread::sleep_for(20ms);</div>
-<div class="line">}</div>
-</div><!-- fragment --> </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="a467a6fec3b2156c0519550c8e42372fc" name="a467a6fec3b2156c0519550c8e42372fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a467a6fec3b2156c0519550c8e42372fc">&#9670;&#160;</a></span>Pid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">alps::cmn::control::Pid::Pid </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>ctrl_period_sec</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>各変数を初期化するコンストラクタ </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ctrl_period_sec</td><td>制御周期(秒) </td></tr>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class Clock&gt;<br />
+class alps::cmn::control::Pid&lt; Clock &gt;</div><p>PID制御器 </p>
+<p>参考: <a href="https://docs.simplefoc.com/pi_controller">https://docs.simplefoc.com/pi_controller</a></p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Clock</td><td>利用するクロック型 ( <a href="https://cpprefjp.github.io/reference/chrono/is_clock.html">https://cpprefjp.github.io/reference/chrono/is_clock.html</a> )</td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<h2 class="groupheader">関数詳解</h2>
-<a id="ab37662b6bfeafc098d83ed9c153a647f" name="ab37662b6bfeafc098d83ed9c153a647f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab37662b6bfeafc098d83ed9c153a647f">&#9670;&#160;</a></span>Control()</h2>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">todo:</a></b></dt><dd>変化速度チェックは別クラスに切り出したほうがいいかも </dd></dl>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a11ca52a473a0d9bd122259366136e1f8" name="a11ca52a473a0d9bd122259366136e1f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11ca52a473a0d9bd122259366136e1f8">&#9670;&#160;</a></span>Pid()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float alps::cmn::control::Pid::Control </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>input</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>設定した目標値に対してPID制御を行う関数． </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">input</td><td>フィードバック値 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd>float PID制御器の出力 </dd></dl>
-
-</div>
-</div>
-<a id="a774925b6be337bcbbe08957105388158" name="a774925b6be337bcbbe08957105388158"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a774925b6be337bcbbe08957105388158">&#9670;&#160;</a></span>GetOutputD()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float alps::cmn::control::Pid::GetOutputD </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>D制御の出力のみを返す </p>
-<dl class="section return"><dt>戻り値</dt><dd>float D制御の出力 </dd></dl>
-
-</div>
-</div>
-<a id="a5fc69a83db9ed522082a185f2c5015a8" name="a5fc69a83db9ed522082a185f2c5015a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fc69a83db9ed522082a185f2c5015a8">&#9670;&#160;</a></span>GetOutputI()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float alps::cmn::control::Pid::GetOutputI </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>I制御の出力のみを返す </p>
-<dl class="section return"><dt>戻り値</dt><dd>float I制御の出力 </dd></dl>
-
-</div>
-</div>
-<a id="adc670a9ebf353ee3e6c5d5100c2945d1" name="adc670a9ebf353ee3e6c5d5100c2945d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc670a9ebf353ee3e6c5d5100c2945d1">&#9670;&#160;</a></span>GetOutputP()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float alps::cmn::control::Pid::GetOutputP </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>P制御の出力のみを返す </p>
-<dl class="section return"><dt>戻り値</dt><dd>float P制御の出力 </dd></dl>
-
-</div>
-</div>
-<a id="a6842f947655bc9960ab8c78e05e1f58a" name="a6842f947655bc9960ab8c78e05e1f58a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6842f947655bc9960ab8c78e05e1f58a">&#9670;&#160;</a></span>Init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void alps::cmn::control::Pid::Init </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>ctrl_period_sec</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>制御周期をセットし,メンバ変数を初期化する関数． </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ctrl_period_sec</td><td>制御周期(秒) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aedf4d565842d3c42618851cfe428834d" name="aedf4d565842d3c42618851cfe428834d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedf4d565842d3c42618851cfe428834d">&#9670;&#160;</a></span>IsEnd()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool alps::cmn::control::Pid::IsEnd </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>PID制御終了判定を確認する関数． </p>
-<dl class="section return"><dt>戻り値</dt><dd>bool 終了時:true, 未終了時:false </dd></dl>
-
-</div>
-</div>
-<a id="ad3176cd6171641513587336b2ab4464e" name="ad3176cd6171641513587336b2ab4464e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3176cd6171641513587336b2ab4464e">&#9670;&#160;</a></span>Reset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void alps::cmn::control::Pid::Reset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>各変数を初期化する関数．ゲインはそのまま． </p>
-
-</div>
-</div>
-<a id="a155377ce70d35c23185671361d5d3c06" name="a155377ce70d35c23185671361d5d3c06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a155377ce70d35c23185671361d5d3c06">&#9670;&#160;</a></span>ResetForVelocity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void alps::cmn::control::Pid::ResetForVelocity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>速度制御用リセット．積分Iをリセットする </p>
-
-</div>
-</div>
-<a id="a29d4145189fe12a07dfdf7c060767dc8" name="a29d4145189fe12a07dfdf7c060767dc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29d4145189fe12a07dfdf7c060767dc8">&#9670;&#160;</a></span>SetDiffTimeConst()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void alps::cmn::control::Pid::SetDiffTimeConst </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>time_const</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>近似微分器の時定数を設定．初期値は0.05[s] </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">time_const</td><td>近似微分器の時定数[s] </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a2ffa84a2a615c46dc97472a815d118ef" name="a2ffa84a2a615c46dc97472a815d118ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ffa84a2a615c46dc97472a815d118ef">&#9670;&#160;</a></span>SetEndCondition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void alps::cmn::control::Pid::SetEndCondition </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>end_err</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>end_diff</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>終了条件値を変更する </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">end_err</td><td>偏差の終了判定 </td></tr>
-    <tr><td class="paramname">end_diff</td><td>偏差微分の終了判定 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a60e3434c38f5cb61e813f08eeba3a7f0" name="a60e3434c38f5cb61e813f08eeba3a7f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60e3434c38f5cb61e813f08eeba3a7f0">&#9670;&#160;</a></span>SetGain()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void alps::cmn::control::Pid::SetGain </td>
+          <td class="memname"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::Pid </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>kp</em>, </td>
@@ -473,7 +174,25 @@ alps::cmn::control::Pid の継承関係図</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>kd</em>&#160;</td>
+          <td class="paramname"><em>kd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>max_output</em> = <code>std::numeric_limits&lt;float&gt;::max()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>lowest_output</em> = <code>std::numeric_limits&lt;float&gt;::lowest()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>max_abs_slope</em> = <code>std::numeric_limits&lt;float&gt;::max()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -481,121 +200,119 @@ alps::cmn::control::Pid の継承関係図</div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>PIDのゲインをセットする関数 </p>
+<p>コンストラクタ </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">kp</td><td>Pゲイン </td></tr>
     <tr><td class="paramname">ki</td><td>Iゲイン </td></tr>
     <tr><td class="paramname">kd</td><td>Dゲイン </td></tr>
+    <tr><td class="paramname">max_output</td><td>最大出力値 </td></tr>
+    <tr><td class="paramname">lowest_output</td><td>最小出力値 </td></tr>
+    <tr><td class="paramname">max_abs_slope</td><td>最大出力変化速度（絶対値） </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a3ed1728d29ef887117ce3c6325d15af3" name="a3ed1728d29ef887117ce3c6325d15af3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ed1728d29ef887117ce3c6325d15af3">&#9670;&#160;</a></span>SetIntegralMax()</h2>
+<a id="a5265bcac30ca177c67757014f5c6da43" name="a5265bcac30ca177c67757014f5c6da43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5265bcac30ca177c67757014f5c6da43">&#9670;&#160;</a></span>~Pid()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void alps::cmn::control::Pid::SetIntegralMax </td>
+          <td class="memname"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::~<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">Pid</a> </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>limit_i_output</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>積分項の上限を変更する関数． </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">limit_i_output</td><td>上限値 </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
-<a id="aa736b6581e612b954f6323304b5792c6" name="aa736b6581e612b954f6323304b5792c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa736b6581e612b954f6323304b5792c6">&#9670;&#160;</a></span>SetMaxOutput()</h2>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a4772b6d7bda61b73064041628b84a02c" name="a4772b6d7bda61b73064041628b84a02c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4772b6d7bda61b73064041628b84a02c">&#9670;&#160;</a></span>Calcurate()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void alps::cmn::control::Pid::SetMaxOutput </td>
+          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::Calcurate </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>max_output</em></td><td>)</td>
+          <td class="paramname"><em>error</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>PID出力値の上限を変更する関数． </p>
+<p>PID制御を実行する </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">max_output</td><td>上限値 </td></tr>
+    <tr><td class="paramname">error</td><td>現在の偏差 </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>戻り値</dt><dd>float PID制御による出力値 </dd></dl>
 
 </div>
 </div>
-<a id="aa16c15d6babee6bf788e145fc1ccd373" name="aa16c15d6babee6bf788e145fc1ccd373"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa16c15d6babee6bf788e145fc1ccd373">&#9670;&#160;</a></span>SetPreviousValue()</h2>
+<a id="adeeb93dc4a8c1c7ff379b3bbc5407c0c" name="adeeb93dc4a8c1c7ff379b3bbc5407c0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeeb93dc4a8c1c7ff379b3bbc5407c0c">&#9670;&#160;</a></span>Reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void alps::cmn::control::Pid::SetPreviousValue </td>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::Reset </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>first_pos</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>初期の値から1つ前の偏差をつくる(一番最初の微分値の対策) </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">first_pos</td><td>初期値 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="add07b20c64775c928f976f3304511a26" name="add07b20c64775c928f976f3304511a26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add07b20c64775c928f976f3304511a26">&#9670;&#160;</a></span>SetTarget()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void alps::cmn::control::Pid::SetTarget </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>target_</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>目標値を設定する関数 </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">target_</td><td>目標値 </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>前回までの計算結果をリセットする </p>
 
 </div>
 </div>

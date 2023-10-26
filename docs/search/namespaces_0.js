@@ -8,11 +8,12 @@ var searchData=
   ['control_5',['control',['../namespacealps_1_1cmn_1_1control.html',1,'alps::cmn']]],
   ['gpio_6',['gpio',['../namespacealps_1_1cmn_1_1gpio.html',1,'alps::cmn::gpio'],['../namespacealps_1_1mbed_1_1gpio.html',1,'alps::mbed::gpio']]],
   ['lin_7',['lin',['../namespacealps_1_1lin.html',1,'alps']]],
-  ['mbed_8',['mbed',['../namespacealps_1_1mbed.html',1,'alps']]],
-  ['ros_9',['ros',['../namespacealps_1_1ros.html',1,'alps']]],
-  ['ros2_10',['ros2',['../namespacealps_1_1ros2.html',1,'alps']]],
-  ['sensor_11',['sensor',['../namespacealps_1_1cmn_1_1sensor.html',1,'alps::cmn::sensor'],['../namespacealps_1_1mbed_1_1sensor.html',1,'alps::mbed::sensor']]],
-  ['stm_12',['stm',['../namespacealps_1_1stm.html',1,'alps']]],
-  ['type_13',['type',['../namespacealps_1_1cmn_1_1type.html',1,'alps::cmn']]],
-  ['util_14',['util',['../namespacealps_1_1cmn_1_1util.html',1,'alps::cmn']]]
+  ['math_8',['math',['../namespacealps_1_1cmn_1_1math.html',1,'alps::cmn']]],
+  ['mbed_9',['mbed',['../namespacealps_1_1mbed.html',1,'alps']]],
+  ['ros_10',['ros',['../namespacealps_1_1ros.html',1,'alps']]],
+  ['ros2_11',['ros2',['../namespacealps_1_1ros2.html',1,'alps']]],
+  ['sensor_12',['sensor',['../namespacealps_1_1cmn_1_1sensor.html',1,'alps::cmn::sensor'],['../namespacealps_1_1mbed_1_1sensor.html',1,'alps::mbed::sensor']]],
+  ['stm_13',['stm',['../namespacealps_1_1stm.html',1,'alps']]],
+  ['type_14',['type',['../namespacealps_1_1cmn_1_1type.html',1,'alps::cmn']]],
+  ['util_15',['util',['../namespacealps_1_1cmn_1_1util.html',1,'alps::cmn']]]
 ];

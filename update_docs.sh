@@ -4,6 +4,9 @@
 # mainブランチにチェックアウト
 git checkout main
 
+# ライブラリ更新
+git submodule update --remote
+
 # Doxyfile(Doxygenの設定ファイル)を使用してドキュメントを生成
 doxygen Doxyfile
 
