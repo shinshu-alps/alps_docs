@@ -1,6 +1,8 @@
 <map id="alps_common_lib/include/alps_cmn/actuator/robomas_motor.hpp" name="alps_common_lib/include/alps_cmn/actuator/robomas_motor.hpp">
-<area shape="rect" id="node1" title="ロボマスモータのライブラリ" alt="" coords="5,5,212,60"/>
-<area shape="rect" id="node2" href="$can__data__frame_8hpp.html" title="CANフレームを表す構造体" alt="" coords="14,108,203,148"/>
-<area shape="rect" id="node3" title=" " alt="" coords="20,196,91,221"/>
-<area shape="rect" id="node4" title=" " alt="" coords="115,196,211,221"/>
+<area shape="rect" id="node1" title="ロボマスモータのライブラリ" alt="" coords="172,5,379,60"/>
+<area shape="rect" id="node2" href="$i__motor_8hpp.html" title=" " alt="" coords="5,108,156,148"/>
+<area shape="rect" id="node3" href="$can__data__frame_8hpp.html" title="CANフレームを表す構造体" alt="" coords="181,108,370,148"/>
+<area shape="rect" id="node6" href="$i__rotary__sensor_8hpp.html" title=" " alt="" coords="395,108,580,148"/>
+<area shape="rect" id="node4" title=" " alt="" coords="185,196,256,221"/>
+<area shape="rect" id="node5" title=" " alt="" coords="281,196,377,221"/>
 </map>

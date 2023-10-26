@@ -122,7 +122,11 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 
 
 <h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
+<li>Calcurate()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a4772b6d7bda61b73064041628b84a02c">alps::cmn::control::Pid&lt; Clock &gt;</a></li>
 <li>CallAttachInterrupt()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html#a05b1bc2b9e081732f0eb96a973bf3646">alps::cmn::gpio::IInterruptIn&lt; Derived &gt;</a></li>
+<li>CallDrive()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html#afb69e9dace9074933926b59904ddfb13">alps::cmn::actuator::IMotor&lt; Derived &gt;</a></li>
+<li>CallGetAngle()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">alps::cmn::sensor::IRotarySensor&lt; Derived &gt;</a></li>
+<li>CallGetVelocity()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#a79e905143fc9244872749eef46745051">alps::cmn::sensor::IRotarySensor&lt; Derived &gt;</a></li>
 <li>CallRead()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html#a774343caf91d67026c10388013521c6b">alps::cmn::communication::IUartIo&lt; Derived &gt;</a>, <a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html#a7ec571adc939ca0d022e00087b0ea914">alps::cmn::gpio::IDigitalIn&lt; Derived &gt;</a></li>
 <li>CallSetPeriod()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#a5cacb90bcdc89bae801e318008bb49e8">alps::cmn::gpio::IPwmOut&lt; Derived &gt;</a></li>
 <li>CallSetPulseWidth()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#ad3baeadd20c2548313fb9702dc3e2a89">alps::cmn::gpio::IPwmOut&lt; Derived &gt;</a></li>
@@ -133,7 +137,7 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 <li>CanPublisher()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html#ad0102b4cffcf3a8d3fe351d66c49a6fe">alps::cmn::communication::CanPublisher&lt; T &gt;</a></li>
 <li>CanSubscriber()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html#a560aaf6a56d800ad2913702638436bf6">alps::cmn::communication::CanSubscriber&lt; T &gt;</a></li>
 <li>CanTypedDataTransceiver()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a8ef2fdf202e1485bf66c7dd421a0947f">alps::cmn::communication::CanTypedDataTransceiver&lt; CanIo, kMaxPublisherNum, kMaxSubscriberNum &gt;</a></li>
-<li>Control()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_dob.html#ac62a1bfeefe9178404f7b34fc365a9d7">alps::cmn::control::Dob</a>, <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#ab37662b6bfeafc098d83ed9c153a647f">alps::cmn::control::Pid</a></li>
+<li>Control()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#abca3e4e196594e27c5c2e75468b189a0">alps::cmn::control::MotorAngleVelocityController&lt; Clock, Motor, RotarySensor &gt;</a>, <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid_old.html#a2feb22bd52cd3273c2bdbf2b3134a75c">alps::cmn::control::PidOld</a></li>
 </ul>
 
 
@@ -143,8 +147,7 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 <li>Differential()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_differential.html#a71ec4ee57a98d3de7d7efffa0b69ddf4">alps::cmn::control::Differential</a></li>
 <li>DigitalIn()&#160;:&#160;<a class="el" href="classalps_1_1mbed_1_1gpio_1_1_digital_in.html#a502dc2119d21024e7bbabf41850e9da7">alps::mbed::gpio::DigitalIn</a></li>
 <li>DigitalOut()&#160;:&#160;<a class="el" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#ab0e08bc4ca3f7d39281b32aafd1149a7">alps::mbed::gpio::DigitalOut</a></li>
-<li>Dob()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_dob.html#ae59aa0e6dad0073ec99ba8948b4b503b">alps::cmn::control::Dob</a></li>
-<li>Drive()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_dc_motor.html#a092637281820bd752a463d781c791894">alps::cmn::actuator::DcMotor&lt; PwmOut, DigitalOut &gt;</a>, <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#ab9fe8f3b83d639acae3e1c200d0d437b">alps::cmn::actuator::RobomasMotor</a></li>
+<li>Drive()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_dc_motor.html#a3a8b2831facd5aab3d69ccf9eb5be526">alps::cmn::actuator::DcMotor&lt; PwmOut, DigitalOut &gt;</a>, <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#ab9fe8f3b83d639acae3e1c200d0d437b">alps::cmn::actuator::RobomasMotor</a></li>
 </ul>
 
 
@@ -154,42 +157,33 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 
 
 <h3><a id="index_f" name="index_f"></a>- f -</h3><ul>
-<li>Filter()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_differential.html#a57a12a45f7a783942ad7413f89c7e815">alps::cmn::control::Differential</a>, <a class="el" href="classalps_1_1cmn_1_1control_1_1_dob.html#a992861c7ac592084f3e997153e984c47">alps::cmn::control::Dob</a>, <a class="el" href="classalps_1_1cmn_1_1control_1_1_integral.html#a3680b0ecb754374deff882cefc25a1e0">alps::cmn::control::Integral</a>, <a class="el" href="classalps_1_1cmn_1_1control_1_1_lpf.html#a1fee169d1ad930ec33cf74cff80e64fb">alps::cmn::control::Lpf</a></li>
+<li>Filter()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_differential.html#a57a12a45f7a783942ad7413f89c7e815">alps::cmn::control::Differential</a>, <a class="el" href="classalps_1_1cmn_1_1control_1_1_integral.html#a3680b0ecb754374deff882cefc25a1e0">alps::cmn::control::Integral</a>, <a class="el" href="classalps_1_1cmn_1_1control_1_1_lpf.html#a1fee169d1ad930ec33cf74cff80e64fb">alps::cmn::control::Lpf</a></li>
 </ul>
 
 
 <h3><a id="index_g" name="index_g"></a>- g -</h3><ul>
-<li>getCoeff_a_()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_dob.html#ad0f70e33ba22f47ac43091ea03882545">alps::cmn::control::Dob</a></li>
-<li>getCoeff_b_()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_dob.html#a192040420f9ec1ea1f9913e886874bdd">alps::cmn::control::Dob</a></li>
-<li>getCoeff_c_()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_dob.html#a92811b839a1dea58b36fcadfe28a3b17">alps::cmn::control::Dob</a></li>
-<li>GetCurrentState()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#aa62141bba384e9098e3f7cd4c3e073c6">alps::cmn::sensor::IncrementalEncoder&lt; InterruptIn, DigitalIn &gt;</a></li>
-<li>GetDeg()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#ac382dfe1f292081468a20cb67d003124">alps::cmn::actuator::RobomasMotor</a></li>
-<li>getDobOutput_()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_dob.html#af3d7de9ce53352a0f98504328a2a9525">alps::cmn::control::Dob</a></li>
-<li>getEstimatedDisturbance_()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_dob.html#a0bce1fff970dff1983b534248ea5aeab">alps::cmn::control::Dob</a></li>
-<li>getLpfOutput_()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_dob.html#af754983c6993b3cada8741fe45fb2e66">alps::cmn::control::Dob</a></li>
+<li>GetAngle()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a5c0aa6e9d820459b01bf6c95fe040de8">alps::cmn::actuator::RobomasMotor</a>, <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#ad03e81cda9413ddce685ca778a8f0313">alps::cmn::sensor::IncrementalEncoder&lt; Clock, InterruptIn, DigitalIn &gt;</a></li>
+<li>GetCurrentState()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#aeb9dc338f1e61534d85baa9efea03f58">alps::cmn::sensor::IncrementalEncoder&lt; Clock, InterruptIn, DigitalIn &gt;</a></li>
 <li>GetName()&#160;:&#160;<a class="el" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">alps::cmn::communication::SerializeTypeInfo&lt; T &gt;</a></li>
 <li>GetOutput()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#aac8a825bb848613825c11968dfbfa9cf">alps::cmn::actuator::RobomasMotor</a></li>
-<li>GetOutputD()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a774925b6be337bcbbe08957105388158">alps::cmn::control::Pid</a></li>
-<li>GetOutputI()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a5fc69a83db9ed522082a185f2c5015a8">alps::cmn::control::Pid</a></li>
-<li>GetOutputP()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#adc670a9ebf353ee3e6c5d5100c2945d1">alps::cmn::control::Pid</a></li>
-<li>getPidOutput_()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_dob.html#aa75d74a4383fc29fb13f0a77e8d0920d">alps::cmn::control::Dob</a></li>
-<li>GetPulses()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#af4904949433c258fe3fcbea6054ef718">alps::cmn::sensor::IncrementalEncoder&lt; InterruptIn, DigitalIn &gt;</a></li>
-<li>GetRad()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#a242e1183088b290a1f60eded6e32e5ce">alps::cmn::sensor::IncrementalEncoder&lt; InterruptIn, DigitalIn &gt;</a></li>
+<li>GetOutputD()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid_old.html#a7d5df8046325b18b4c2c8e65fb0b1624">alps::cmn::control::PidOld</a></li>
+<li>GetOutputI()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid_old.html#a6f2539bd42bbcff144fcd1f88d4f3227">alps::cmn::control::PidOld</a></li>
+<li>GetOutputP()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid_old.html#af5370a05d22a67bdffcd50fb6e0c62b9">alps::cmn::control::PidOld</a></li>
+<li>GetPulses()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#a916d704b32c3112041dd1e1491316c03">alps::cmn::sensor::IncrementalEncoder&lt; Clock, InterruptIn, DigitalIn &gt;</a></li>
 <li>GetRealCurrent()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#afceed7de0aca29c1b62f762a9e9812aa">alps::cmn::actuator::RobomasMotor</a></li>
 <li>GetReceivedFrameNum()&#160;:&#160;<a class="el" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#aa9293a71f9868f7cb01741500c875510">alps::mbed::communication::BufferedCanIo</a></li>
-<li>GetRpm()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#ade674febb1c327f5b03636fecb1c5c2a">alps::cmn::actuator::RobomasMotor</a></li>
 <li>GetSensorDataCanId()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#add9362aa1368520772dc3553cc4f11d7">alps::cmn::actuator::RobomasMotor</a></li>
-<li>GetVel()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#acce9342437a4fe74ef8ce16769806be7">alps::cmn::sensor::IncrementalEncoder&lt; InterruptIn, DigitalIn &gt;</a></li>
+<li>GetVelocity()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a04ab045ebb659a3a80f52eb2b4606441">alps::cmn::actuator::RobomasMotor</a>, <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#af13d4da3b08293bbe049b3e8d4fd7fda">alps::cmn::sensor::IncrementalEncoder&lt; Clock, InterruptIn, DigitalIn &gt;</a></li>
 </ul>
 
 
 <h3><a id="index_i" name="index_i"></a>- i -</h3><ul>
-<li>IncrementalEncoder()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#af01a6d0762afc7e1e4a2c217e192a281">alps::cmn::sensor::IncrementalEncoder&lt; InterruptIn, DigitalIn &gt;</a></li>
-<li>Init()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a6842f947655bc9960ab8c78e05e1f58a">alps::cmn::control::Pid</a></li>
+<li>IncrementalEncoder()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#a0cc068f91cefc1903039e1f06775f5ff">alps::cmn::sensor::IncrementalEncoder&lt; Clock, InterruptIn, DigitalIn &gt;</a></li>
+<li>Init()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid_old.html#ae5adc17ed19759ec52d9cc6154991b72">alps::cmn::control::PidOld</a></li>
 <li>Integral()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_integral.html#afd9eccfb9e29b0e373ccecc4268fe32a">alps::cmn::control::Integral</a></li>
 <li>InterruptIn()&#160;:&#160;<a class="el" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#a380ed716d7db062a5b6b9e1c1e6077d2">alps::mbed::gpio::InterruptIn</a></li>
 <li>InvokeCallbacksForReceivedFrames()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html#a85fd7006d5b92b4381294eb653ae52c9">alps::cmn::communication::CanCallbackHandler&lt; kMaxCallbackNum &gt;</a></li>
-<li>IsEnd()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#aedf4d565842d3c42618851cfe428834d">alps::cmn::control::Pid</a></li>
+<li>IsEnd()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid_old.html#a3bd9dcaeaced8105472d143ea5543430">alps::cmn::control::PidOld</a></li>
 <li>IsMultiple()&#160;:&#160;<a class="el" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html#a68e3481fb2719b8594f81e553815b3e4">alps::cmn::communication::SerializeTypeInfoBase&lt; is_serializable, is_single &gt;</a></li>
 <li>IsSerializable()&#160;:&#160;<a class="el" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html#aa0e8f6a8410c39ef39a8e6745c6d3bdd">alps::cmn::communication::SerializeTypeInfoBase&lt; is_serializable, is_single &gt;</a></li>
 <li>IsSingle()&#160;:&#160;<a class="el" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html#a92f1189cc34f86e57d5235ef5b4922b1">alps::cmn::communication::SerializeTypeInfoBase&lt; is_serializable, is_single &gt;</a></li>
@@ -198,6 +192,11 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 
 <h3><a id="index_l" name="index_l"></a>- l -</h3><ul>
 <li>Lpf()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aecaf22e00a9802414624c3423f6c60f1">alps::cmn::control::Lpf</a></li>
+</ul>
+
+
+<h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
+<li>MotorAngleVelocityController()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#a4c0b6f01b2744bdd3d2a83a01fe0ed9b">alps::cmn::control::MotorAngleVelocityController&lt; Clock, Motor, RotarySensor &gt;</a></li>
 </ul>
 
 
@@ -210,7 +209,8 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 
 
 <h3><a id="index_p" name="index_p"></a>- p -</h3><ul>
-<li>Pid()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a467a6fec3b2156c0519550c8e42372fc">alps::cmn::control::Pid</a></li>
+<li>Pid()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a11ca52a473a0d9bd122259366136e1f8">alps::cmn::control::Pid&lt; Clock &gt;</a></li>
+<li>PidOld()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid_old.html#a862566e4b7585b18f7443fda8160c0fc">alps::cmn::control::PidOld</a></li>
 <li>PublishMotorOutput()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_controller.html#a04116411c106a33fdf83163036f101bb">alps::cmn::actuator::RobomasMotorsCanController</a></li>
 <li>PwmOut()&#160;:&#160;<a class="el" href="classalps_1_1mbed_1_1gpio_1_1_pwm_out.html#ab3bad3cdb7df1924fa1a9095997bf046">alps::mbed::gpio::PwmOut</a></li>
 </ul>
@@ -225,9 +225,9 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 <li>RegisterUartReceiver()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html#adca31540e628b5d5dd1f381085a902b8">alps::cmn::communication::UartPacketTransceiver&lt; UartIo, kReadBufferSize, kMaxSenderNum, kMaxReceiveNum, kMaxDataByteSize &gt;</a></li>
 <li>RegisterUartSender()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html#ac98a3e16c094fed59d8b810195ab0e58">alps::cmn::communication::UartPacketTransceiver&lt; UartIo, kReadBufferSize, kMaxSenderNum, kMaxReceiveNum, kMaxDataByteSize &gt;</a></li>
 <li>RequiredBytesSize()&#160;:&#160;<a class="el" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#acb0598b74eee1716be5364feeb7e4908">alps::cmn::communication::SerializeTypeInfo&lt; T &gt;</a></li>
-<li>Reset()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_differential.html#ab871227620e93672a07df83f613efb17">alps::cmn::control::Differential</a>, <a class="el" href="classalps_1_1cmn_1_1control_1_1_dob.html#a27e707ea06d4997d72946c61be696830">alps::cmn::control::Dob</a>, <a class="el" href="classalps_1_1cmn_1_1control_1_1_integral.html#a46c6adfbabf6b1dbde0fdf60024eff14">alps::cmn::control::Integral</a>, <a class="el" href="classalps_1_1cmn_1_1control_1_1_lpf.html#a9ed459dfde6dff3f754142ee0c75a0fb">alps::cmn::control::Lpf</a>, <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#ad3176cd6171641513587336b2ab4464e">alps::cmn::control::Pid</a>, <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#a7a6a4e2e9389b7ca9e47b57a3f1f1da0">alps::cmn::sensor::IncrementalEncoder&lt; InterruptIn, DigitalIn &gt;</a></li>
+<li>Reset()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_differential.html#ab871227620e93672a07df83f613efb17">alps::cmn::control::Differential</a>, <a class="el" href="classalps_1_1cmn_1_1control_1_1_integral.html#a46c6adfbabf6b1dbde0fdf60024eff14">alps::cmn::control::Integral</a>, <a class="el" href="classalps_1_1cmn_1_1control_1_1_lpf.html#a9ed459dfde6dff3f754142ee0c75a0fb">alps::cmn::control::Lpf</a>, <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#adeeb93dc4a8c1c7ff379b3bbc5407c0c">alps::cmn::control::Pid&lt; Clock &gt;</a>, <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid_old.html#a9e5395403958d1266fc863e7f2dde478">alps::cmn::control::PidOld</a>, <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#ac0f645b8b05ccdf1b50317374a944475">alps::cmn::sensor::IncrementalEncoder&lt; Clock, InterruptIn, DigitalIn &gt;</a></li>
 <li>ResetAngle()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a17e6245a44df78d56c87fdd119817e05">alps::cmn::actuator::RobomasMotor</a></li>
-<li>ResetForVelocity()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a155377ce70d35c23185671361d5d3c06">alps::cmn::control::Pid</a></li>
+<li>ResetForVelocity()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid_old.html#a9bf9b88b0b47b951495693eaab44e2e7">alps::cmn::control::PidOld</a></li>
 <li>RobomasMotor()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a97fb619f2231f64b070b0e7af1f8a200">alps::cmn::actuator::RobomasMotor</a></li>
 <li>RobomasMotorsCanController()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_controller.html#ae713c62acff29cff93b5091331e31caf">alps::cmn::actuator::RobomasMotorsCanController</a></li>
 </ul>
@@ -239,20 +239,21 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 <li>ServoMotorParam()&#160;:&#160;<a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#aae00a577d010256d73b4d74f6d18e994">alps::cmn::actuator::ServoMotorParam</a></li>
 <li>SetAngle()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a9dc4e8a7dbbee20bc8cab09cc7b2c2b4">alps::cmn::actuator::ServoMotor&lt; PwmOut &gt;</a></li>
 <li>SetCtrlPeriod()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_differential.html#a90c684e9eed13078bf4f077ed8835371">alps::cmn::control::Differential</a>, <a class="el" href="classalps_1_1cmn_1_1control_1_1_integral.html#ad913de4be222f7427c1b8973ce5a5b7e">alps::cmn::control::Integral</a></li>
-<li>SetDiffTimeConst()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a29d4145189fe12a07dfdf7c060767dc8">alps::cmn::control::Pid</a></li>
-<li>SetEndCondition()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a2ffa84a2a615c46dc97472a815d118ef">alps::cmn::control::Pid</a></li>
-<li>SetGain()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a60e3434c38f5cb61e813f08eeba3a7f0">alps::cmn::control::Pid</a></li>
+<li>SetDiffTimeConst()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid_old.html#aee8cf466ad601231d6785ee2f6823936">alps::cmn::control::PidOld</a></li>
+<li>SetEndCondition()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid_old.html#a76b7a8a069ab021f29057b1ea8a280cc">alps::cmn::control::PidOld</a></li>
+<li>SetGain()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid_old.html#a202a264ccb1b9d8b2293687aad65cb0f">alps::cmn::control::PidOld</a></li>
 <li>SetInputPrev()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_differential.html#a7114fb13fa690593122c3b4bf691d130">alps::cmn::control::Differential</a>, <a class="el" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aca445f7a66fa7f4c3ce5bd05e7e56812">alps::cmn::control::Lpf</a></li>
-<li>SetIntegralMax()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a3ed1728d29ef887117ce3c6325d15af3">alps::cmn::control::Pid</a></li>
-<li>setLimitOutput()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_dob.html#ae69011ba4da5999a1c3cc271211a9771">alps::cmn::control::Dob</a></li>
-<li>SetMaxOutput()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#aa736b6581e612b954f6323304b5792c6">alps::cmn::control::Pid</a></li>
+<li>SetIntegralMax()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid_old.html#a0d84e4bdf3508cb35fbc08ab5b6c5d39">alps::cmn::control::PidOld</a></li>
+<li>SetMaxOutput()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid_old.html#a0d5d59eae3d219fe501a0f50e80dec34">alps::cmn::control::PidOld</a></li>
 <li>SetOutputPrev()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_differential.html#a596f482fce61f88f3f848ffb76101ea4">alps::cmn::control::Differential</a></li>
 <li>SetPeriod()&#160;:&#160;<a class="el" href="classalps_1_1mbed_1_1gpio_1_1_pwm_out.html#ac4878958ca6903ae19dfe7bda514d754">alps::mbed::gpio::PwmOut</a></li>
-<li>SetPreviousValue()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#aa16c15d6babee6bf788e145fc1ccd373">alps::cmn::control::Pid</a></li>
+<li>SetPreviousValue()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid_old.html#ae5bbff9492e4f03207335ef811936d71">alps::cmn::control::PidOld</a></li>
 <li>SetPublishData()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html#a703542b44a552ac352c9086fea30fdf4">alps::cmn::communication::CanPublisher&lt; T &gt;</a></li>
 <li>SetPulseWidth()&#160;:&#160;<a class="el" href="classalps_1_1mbed_1_1gpio_1_1_pwm_out.html#aa71e2c6c0e7fd8d24e7039bcd1255203">alps::mbed::gpio::PwmOut</a></li>
 <li>SetSendData()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1communication_1_1_uart_sender.html#af26d77971838fbe3ffdd9e1093d5af91">alps::cmn::communication::UartSender&lt; T &gt;</a></li>
-<li>SetTarget()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#add07b20c64775c928f976f3304511a26">alps::cmn::control::Pid</a></li>
+<li>SetTarget()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid_old.html#a76744735dde87ff47c8d413a996d81fb">alps::cmn::control::PidOld</a></li>
+<li>SetTargetAngle()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#af7ff160cea06b0a96e10c32b2f9d8896">alps::cmn::control::MotorAngleVelocityController&lt; Clock, Motor, RotarySensor &gt;</a></li>
+<li>SetTargetVelocity()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#ab391d5d6bdf9a0216cb63b7fff9e2f4e">alps::cmn::control::MotorAngleVelocityController&lt; Clock, Motor, RotarySensor &gt;</a></li>
 <li>SetTimeConst()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_differential.html#aa3c64c5f3a67b34e9b16e1864760ca3e">alps::cmn::control::Differential</a>, <a class="el" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aea8480539cad78ef17d887d56b19ebaf">alps::cmn::control::Lpf</a></li>
 <li>SocketCanIo()&#160;:&#160;<a class="el" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a070fb75e50b86c8d7de38c35c6468b8b">alps::lin::communication::SocketCanIo</a></li>
 </ul>
@@ -285,6 +286,7 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 <li>~DigitalIn()&#160;:&#160;<a class="el" href="classalps_1_1mbed_1_1gpio_1_1_digital_in.html#afb1bcb3d62fb9e71240eb1d074ac9c1d">alps::mbed::gpio::DigitalIn</a></li>
 <li>~DigitalOut()&#160;:&#160;<a class="el" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#a6eb6820df1ebf83ac37d19596507a443">alps::mbed::gpio::DigitalOut</a></li>
 <li>~InterruptIn()&#160;:&#160;<a class="el" href="classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#a58c433a01a827f58f76954618ab11a6b">alps::mbed::gpio::InterruptIn</a></li>
+<li>~Pid()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a5265bcac30ca177c67757014f5c6da43">alps::cmn::control::Pid&lt; Clock &gt;</a></li>
 <li>~ServoMotor()&#160;:&#160;<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a627e096e61425b9dec00765a24139dbe">alps::cmn::actuator::ServoMotor&lt; PwmOut &gt;</a></li>
 <li>~SocketCanIo()&#160;:&#160;<a class="el" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a439264db8159442c3cdc66fbd065c092">alps::lin::communication::SocketCanIo</a></li>
 <li>~UartIo()&#160;:&#160;<a class="el" href="classalps_1_1lin_1_1communication_1_1_uart_io.html#a0b1cc2d394b98ea7d5a952fa6eac5317">alps::lin::communication::UartIo</a>, <a class="el" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a31b48d006a4417add2a332d6e86d6d3e">alps::mbed::communication::UartIo</a></li>

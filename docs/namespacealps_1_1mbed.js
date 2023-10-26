@@ -7,6 +7,6 @@ var namespacealps_1_1mbed =
     [ "communication", "namespacealps_1_1mbed_1_1communication.html", "namespacealps_1_1mbed_1_1communication" ],
     [ "gpio", "namespacealps_1_1mbed_1_1gpio.html", "namespacealps_1_1mbed_1_1gpio" ],
     [ "sensor", "namespacealps_1_1mbed_1_1sensor.html", [
-      [ "IncrementalEncoder", "namespacealps_1_1mbed_1_1sensor.html#a9a154cfe2eb99c32991eeaf8287de805", null ]
+      [ "IncrementalEncoder", "namespacealps_1_1mbed_1_1sensor.html#a5fa3c74231a053a27e8b66afc210dd84", null ]
     ] ]
 ];

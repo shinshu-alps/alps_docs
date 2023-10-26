@@ -112,134 +112,123 @@ $(document).ready(function(){initNavTree('pid_8hpp_source.html',''); initResizab
   <div class="headertitle"><div class="title">pid.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="pid_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/**********************************************************************</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">Include guard</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">**********************************************************************/</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#ifndef ALPS_CMN_PID_HPP_</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#define ALPS_CMN_PID_HPP_</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">/**********************************************************************</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">Includes</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">**********************************************************************/</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="differential_8hpp.html">alps_cmn/control/differential.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;<a class="code" href="integral_8hpp.html">alps_cmn/control/integral.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">namespace </span>cmn</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">namespace </span>control</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html">   54</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_pid.html">Pid</a></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>{</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a467a6fec3b2156c0519550c8e42372fc">   62</a></span>  <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a467a6fec3b2156c0519550c8e42372fc">Pid</a>(<span class="keywordtype">float</span> ctrl_period_sec);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="comment">// 各変数を設定，変更する関数----------------------------</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a6842f947655bc9960ab8c78e05e1f58a">   71</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a6842f947655bc9960ab8c78e05e1f58a">Init</a>(<span class="keywordtype">float</span> ctrl_period_sec);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#add07b20c64775c928f976f3304511a26">   78</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#add07b20c64775c928f976f3304511a26">SetTarget</a>(<span class="keywordtype">float</span> target_);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a60e3434c38f5cb61e813f08eeba3a7f0">   87</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a60e3434c38f5cb61e813f08eeba3a7f0">SetGain</a>(<span class="keywordtype">float</span> kp, <span class="keywordtype">float</span> ki, <span class="keywordtype">float</span> kd);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a2ffa84a2a615c46dc97472a815d118ef">   95</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a2ffa84a2a615c46dc97472a815d118ef">SetEndCondition</a>(<span class="keywordtype">float</span> end_err, <span class="keywordtype">float</span> end_diff);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#aa16c15d6babee6bf788e145fc1ccd373">  102</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#aa16c15d6babee6bf788e145fc1ccd373">SetPreviousValue</a>(<span class="keywordtype">float</span> first_pos);</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a29d4145189fe12a07dfdf7c060767dc8">  108</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a29d4145189fe12a07dfdf7c060767dc8">SetDiffTimeConst</a>(<span class="keywordtype">float</span> time_const);</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#aa736b6581e612b954f6323304b5792c6">  115</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#aa736b6581e612b954f6323304b5792c6">SetMaxOutput</a>(<span class="keywordtype">float</span> max_output);</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a3ed1728d29ef887117ce3c6325d15af3">  122</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a3ed1728d29ef887117ce3c6325d15af3">SetIntegralMax</a>(<span class="keywordtype">float</span> limit_i_output);</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <span class="comment">// 計算結果を出力する関数</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#adc670a9ebf353ee3e6c5d5100c2945d1">  129</a></span><span class="comment"></span>  <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#adc670a9ebf353ee3e6c5d5100c2945d1">GetOutputP</a>();</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a5fc69a83db9ed522082a185f2c5015a8">  135</a></span>  <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a5fc69a83db9ed522082a185f2c5015a8">GetOutputI</a>();</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a774925b6be337bcbbe08957105388158">  141</a></span>  <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a774925b6be337bcbbe08957105388158">GetOutputD</a>();</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#aedf4d565842d3c42618851cfe428834d">  148</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#aedf4d565842d3c42618851cfe428834d">IsEnd</a>();</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#ad3176cd6171641513587336b2ab4464e">  151</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#ad3176cd6171641513587336b2ab4464e">Reset</a>();</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a155377ce70d35c23185671361d5d3c06">  154</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a155377ce70d35c23185671361d5d3c06">ResetForVelocity</a>();</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#ab37662b6bfeafc098d83ed9c153a647f">  162</a></span>  <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#ab37662b6bfeafc098d83ed9c153a647f">Control</a>(<span class="keywordtype">float</span> input);</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  <span class="comment">// 制御完了の判定------------------------------</span></div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> kInitialEndCount_ = 10;</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kInitialEndError_ = 0.0f;</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kInitialEndDifferential_ = 0.0f;</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  <span class="keywordtype">float</span> ctrl_period_sec_;</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <span class="keywordtype">float</span> target_;</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>  <span class="keywordtype">float</span> limit_output_;</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>  <span class="keywordtype">float</span> limit_i_output_;</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kInitialDiffTimeConst_sec_ = 0.05f;</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_differential.html">Differential</a> diff;</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_integral.html">Integral</a> intg;</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  <span class="comment">// 偏差-----------------------</span></div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  <span class="keywordtype">float</span> err_;</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  <span class="keywordtype">float</span> err_intg_;</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  <span class="keywordtype">float</span> err_diff_;</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  <span class="comment">// 各要素の出力値-----------------</span></div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  <span class="keywordtype">float</span> p_output_;</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  <span class="keywordtype">float</span> i_output_;</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>  <span class="keywordtype">float</span> d_output_;</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  <span class="comment">// ゲイン------------------------------</span></div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  <span class="keywordtype">float</span> kp_;</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  <span class="keywordtype">float</span> ki_;</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  <span class="keywordtype">float</span> kd_;</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  <span class="comment">// 終了判定---------------------------------</span></div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> end_count_;</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  <span class="keywordtype">float</span> end_err_;</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  <span class="keywordtype">float</span> end_diff_;</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>};</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>}  <span class="comment">// namespace control</span></div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>}  <span class="comment">// namespace cmn</span></div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_differential_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_differential.html">alps::cmn::control::Differential</a></div><div class="ttdoc">近似微分器</div><div class="ttdef"><b>Definition:</b> differential.hpp:40</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_integral_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_integral.html">alps::cmn::control::Integral</a></div><div class="ttdoc">積分器</div><div class="ttdef"><b>Definition:</b> integral.hpp:40</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a></div><div class="ttdoc">PID制御を行うクラス</div><div class="ttdef"><b>Definition:</b> pid.hpp:55</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html_a155377ce70d35c23185671361d5d3c06"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html#a155377ce70d35c23185671361d5d3c06">alps::cmn::control::Pid::ResetForVelocity</a></div><div class="ttdeci">void ResetForVelocity()</div><div class="ttdoc">速度制御用リセット．積分Iをリセットする</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html_a29d4145189fe12a07dfdf7c060767dc8"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html#a29d4145189fe12a07dfdf7c060767dc8">alps::cmn::control::Pid::SetDiffTimeConst</a></div><div class="ttdeci">void SetDiffTimeConst(float time_const)</div><div class="ttdoc">近似微分器の時定数を設定．初期値は0.05[s]</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html_a2ffa84a2a615c46dc97472a815d118ef"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html#a2ffa84a2a615c46dc97472a815d118ef">alps::cmn::control::Pid::SetEndCondition</a></div><div class="ttdeci">void SetEndCondition(float end_err, float end_diff)</div><div class="ttdoc">終了条件値を変更する</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html_a3ed1728d29ef887117ce3c6325d15af3"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html#a3ed1728d29ef887117ce3c6325d15af3">alps::cmn::control::Pid::SetIntegralMax</a></div><div class="ttdeci">void SetIntegralMax(float limit_i_output)</div><div class="ttdoc">積分項の上限を変更する関数．</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html_a467a6fec3b2156c0519550c8e42372fc"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html#a467a6fec3b2156c0519550c8e42372fc">alps::cmn::control::Pid::Pid</a></div><div class="ttdeci">Pid(float ctrl_period_sec)</div><div class="ttdoc">各変数を初期化するコンストラクタ</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html_a5fc69a83db9ed522082a185f2c5015a8"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html#a5fc69a83db9ed522082a185f2c5015a8">alps::cmn::control::Pid::GetOutputI</a></div><div class="ttdeci">float GetOutputI()</div><div class="ttdoc">I制御の出力のみを返す</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html_a60e3434c38f5cb61e813f08eeba3a7f0"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html#a60e3434c38f5cb61e813f08eeba3a7f0">alps::cmn::control::Pid::SetGain</a></div><div class="ttdeci">void SetGain(float kp, float ki, float kd)</div><div class="ttdoc">PIDのゲインをセットする関数</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html_a6842f947655bc9960ab8c78e05e1f58a"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html#a6842f947655bc9960ab8c78e05e1f58a">alps::cmn::control::Pid::Init</a></div><div class="ttdeci">void Init(float ctrl_period_sec)</div><div class="ttdoc">制御周期をセットし,メンバ変数を初期化する関数．</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html_a774925b6be337bcbbe08957105388158"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html#a774925b6be337bcbbe08957105388158">alps::cmn::control::Pid::GetOutputD</a></div><div class="ttdeci">float GetOutputD()</div><div class="ttdoc">D制御の出力のみを返す</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html_aa16c15d6babee6bf788e145fc1ccd373"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html#aa16c15d6babee6bf788e145fc1ccd373">alps::cmn::control::Pid::SetPreviousValue</a></div><div class="ttdeci">void SetPreviousValue(float first_pos)</div><div class="ttdoc">初期の値から1つ前の偏差をつくる(一番最初の微分値の対策)</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html_aa736b6581e612b954f6323304b5792c6"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html#aa736b6581e612b954f6323304b5792c6">alps::cmn::control::Pid::SetMaxOutput</a></div><div class="ttdeci">void SetMaxOutput(float max_output)</div><div class="ttdoc">PID出力値の上限を変更する関数．</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html_ab37662b6bfeafc098d83ed9c153a647f"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html#ab37662b6bfeafc098d83ed9c153a647f">alps::cmn::control::Pid::Control</a></div><div class="ttdeci">float Control(float input)</div><div class="ttdoc">設定した目標値に対してPID制御を行う関数．</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html_ad3176cd6171641513587336b2ab4464e"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html#ad3176cd6171641513587336b2ab4464e">alps::cmn::control::Pid::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">各変数を初期化する関数．ゲインはそのまま．</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html_adc670a9ebf353ee3e6c5d5100c2945d1"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html#adc670a9ebf353ee3e6c5d5100c2945d1">alps::cmn::control::Pid::GetOutputP</a></div><div class="ttdeci">float GetOutputP()</div><div class="ttdoc">P制御の出力のみを返す</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html_add07b20c64775c928f976f3304511a26"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html#add07b20c64775c928f976f3304511a26">alps::cmn::control::Pid::SetTarget</a></div><div class="ttdeci">void SetTarget(float target_)</div><div class="ttdoc">目標値を設定する関数</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html_aedf4d565842d3c42618851cfe428834d"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html#aedf4d565842d3c42618851cfe428834d">alps::cmn::control::Pid::IsEnd</a></div><div class="ttdeci">bool IsEnd()</div><div class="ttdoc">PID制御終了判定を確認する関数．</div></div>
-<div class="ttc" id="adifferential_8hpp_html"><div class="ttname"><a href="differential_8hpp.html">differential.hpp</a></div></div>
-<div class="ttc" id="aintegral_8hpp_html"><div class="ttname"><a href="integral_8hpp.html">integral.hpp</a></div></div>
-<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:21</div></div>
+<a href="pid_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ALPS_CMN_CONTROL_PID_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ALPS_CMN_CONTROL_PID_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;limits&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="algorithm_8hpp.html">alps_cmn/util/algorithm.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span>cmn</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span>control</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Clock&gt;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_pid.html">Pid</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keyword">using </span>TimePoint = <span class="keyword">typename</span> Clock::time_point;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a11ca52a473a0d9bd122259366136e1f8">   41</a></span>  <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a11ca52a473a0d9bd122259366136e1f8">Pid</a>(</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">float</span> kp,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">float</span> ki,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">float</span> kd,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">float</span> max_output = std::numeric_limits&lt;float&gt;::max(),</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">float</span> lowest_output = std::numeric_limits&lt;float&gt;::lowest(),</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">float</span> max_abs_slope = std::numeric_limits&lt;float&gt;::max())</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  : kp_(kp),</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    ki_(ki),</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    kd_(kd),</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    max_output_(max_output),</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    lowest_output_(lowest_output),</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    max_abs_slope_(max_abs_slope)</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#adeeb93dc4a8c1c7ff379b3bbc5407c0c">Reset</a>();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a5265bcac30ca177c67757014f5c6da43">   58</a></span>  <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a5265bcac30ca177c67757014f5c6da43">~Pid</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#a4772b6d7bda61b73064041628b84a02c">   66</a></span>  <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#a4772b6d7bda61b73064041628b84a02c">Calcurate</a>(<span class="keywordtype">float</span> error)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// 時間の精度はfloat[秒]</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">using </span>Seconds = std::chrono::duration&lt;float, std::ratio&lt;1&gt;&gt;;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">// 前回呼び出しからの経過時間を計算</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">auto</span> timestamp_now = Clock::now();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">auto</span> elapsed = std::chrono::duration_cast&lt;Seconds&gt;(timestamp_now - timestamp_prev_);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="comment">// 比例</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">float</span> proportional = kp_ * error;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">// 積分</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">float</span> integral = integral_prev_ + ki_ * elapsed.count() * 0.5f * (error + error_prev_);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="comment">// antiwindup 積分項が過剰になるのを防ぐ</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    integral = <a class="code hl_function" href="namespacealps_1_1cmn_1_1util.html#a7056edb1e78ff96bca5fa94aa5e3d4f4">alps::cmn::util::Clamp</a>(integral, lowest_output_, max_output_);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="comment">// 微分</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordtype">float</span> derivative = kd_ * (error - error_prev_) / elapsed.count();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="comment">// PID出力を計算</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordtype">float</span> output = proportional + integral + derivative;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="comment">// 全体出力を範囲内に収める</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    output = <a class="code hl_function" href="namespacealps_1_1cmn_1_1util.html#a7056edb1e78ff96bca5fa94aa5e3d4f4">alps::cmn::util::Clamp</a>(output, lowest_output_, max_output_);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="comment">// TODO: 変化速度チェックは別クラスに切り出したほうがいいかも</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="comment">// max_output_ the acceleration by ramping the output</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordtype">float</span> output_rate = (output - output_prev_) / elapsed.count();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">if</span> (output_rate &gt; max_abs_slope_)</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>      output = output_prev_ + max_abs_slope_ * elapsed.count();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (output_rate &lt; -max_abs_slope_)</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      output = output_prev_ - max_abs_slope_ * elapsed.count();</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="comment">// 次回の計算用に値を保存</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    integral_prev_ = integral;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    output_prev_ = output;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    error_prev_ = error;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    timestamp_prev_ = timestamp_now;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordflow">return</span> output;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_pid.html#adeeb93dc4a8c1c7ff379b3bbc5407c0c">  112</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_pid.html#adeeb93dc4a8c1c7ff379b3bbc5407c0c">Reset</a>()</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  {</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    integral_prev_ = 0.0f;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    output_prev_ = 0.0f;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    error_prev_ = 0.0f;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    timestamp_prev_ = Clock::now();</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  }</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  <span class="keywordtype">float</span> kp_;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <span class="keywordtype">float</span> ki_;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  <span class="keywordtype">float</span> kd_;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keywordtype">float</span> max_output_;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <span class="keywordtype">float</span> lowest_output_;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  <span class="keywordtype">float</span> max_abs_slope_;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  <span class="keywordtype">float</span> error_prev_;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>  <span class="keywordtype">float</span> output_prev_;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  <span class="keywordtype">float</span> integral_prev_;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>  TimePoint timestamp_prev_;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>};</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>}  <span class="comment">// namespace control</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aalgorithm_8hpp_html"><div class="ttname"><a href="algorithm_8hpp.html">algorithm.hpp</a></div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a></div><div class="ttdoc">PID制御器</div><div class="ttdef"><b>Definition:</b> pid.hpp:25</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html_a11ca52a473a0d9bd122259366136e1f8"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html#a11ca52a473a0d9bd122259366136e1f8">alps::cmn::control::Pid::Pid</a></div><div class="ttdeci">Pid(float kp, float ki, float kd, float max_output=std::numeric_limits&lt; float &gt;::max(), float lowest_output=std::numeric_limits&lt; float &gt;::lowest(), float max_abs_slope=std::numeric_limits&lt; float &gt;::max())</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> pid.hpp:41</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html_a4772b6d7bda61b73064041628b84a02c"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html#a4772b6d7bda61b73064041628b84a02c">alps::cmn::control::Pid::Calcurate</a></div><div class="ttdeci">float Calcurate(float error)</div><div class="ttdoc">PID制御を実行する</div><div class="ttdef"><b>Definition:</b> pid.hpp:66</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html_a5265bcac30ca177c67757014f5c6da43"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html#a5265bcac30ca177c67757014f5c6da43">alps::cmn::control::Pid::~Pid</a></div><div class="ttdeci">~Pid()=default</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html_adeeb93dc4a8c1c7ff379b3bbc5407c0c"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html#adeeb93dc4a8c1c7ff379b3bbc5407c0c">alps::cmn::control::Pid::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">前回までの計算結果をリセットする</div><div class="ttdef"><b>Definition:</b> pid.hpp:112</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1util_html_a7056edb1e78ff96bca5fa94aa5e3d4f4"><div class="ttname"><a href="namespacealps_1_1cmn_1_1util.html#a7056edb1e78ff96bca5fa94aa5e3d4f4">alps::cmn::util::Clamp</a></div><div class="ttdeci">constexpr const T &amp; Clamp(const T &amp;value, const T &amp;low, const T &amp;high)</div><div class="ttdoc">入力値が最小値~最大値の外である場合範囲内に収める C++17で追加されたstd::clampのコピー実装</div><div class="ttdef"><b>Definition:</b> algorithm.hpp:21</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

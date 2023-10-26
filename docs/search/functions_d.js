@@ -1,6 +1,25 @@
 var searchData=
 [
-  ['trydecode_0',['TryDecode',['../classalps_1_1cmn_1_1communication_1_1_cobs.html#ae99250721eb63cfc90dc1b101488519e',1,'alps::cmn::communication::Cobs']]],
-  ['tryread_1',['TryRead',['../classalps_1_1lin_1_1communication_1_1_socket_can_io.html#aba9f031ada5fd612d310c1a73cfaa054',1,'alps::lin::communication::SocketCanIo::TryRead()'],['../classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#aadd4231c3015321d2b31cd2dc8f5934d',1,'alps::mbed::communication::BufferedCanIo::TryRead()']]],
-  ['trywrite_2',['TryWrite',['../classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a2cd03a79343100ed866bcbc7ff24bd5d',1,'alps::lin::communication::SocketCanIo::TryWrite()'],['../classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#a4e0574899684b35db36acbfe20d279fb',1,'alps::mbed::communication::BufferedCanIo::TryWrite()']]]
+  ['serialize_0',['Serialize',['../classalps_1_1cmn_1_1communication_1_1_data_serializer.html#aebdb4696114ba32216e04ac1ee3f758e',1,'alps::cmn::communication::DataSerializer']]],
+  ['servomotor_1',['ServoMotor',['../classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a26e8d156a6c9d9df713a26672bd5865e',1,'alps::cmn::actuator::ServoMotor::ServoMotor(gpio::IPwmOut&lt; PwmOut &gt; &amp;pwm_out, uint16_t max_angle_deg, std::chrono::microseconds min_pulse_width, std::chrono::microseconds max_pulse_width, std::chrono::microseconds pwm_period)'],['../classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a8bbbbbaf24604d92914b44efb4d9802a',1,'alps::cmn::actuator::ServoMotor::ServoMotor(gpio::IPwmOut&lt; PwmOut &gt; &amp;pwm_out, const ServoMotorParam &amp;parameter=kSg90)']]],
+  ['servomotorparam_2',['ServoMotorParam',['../structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#aae00a577d010256d73b4d74f6d18e994',1,'alps::cmn::actuator::ServoMotorParam']]],
+  ['setangle_3',['SetAngle',['../classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a9dc4e8a7dbbee20bc8cab09cc7b2c2b4',1,'alps::cmn::actuator::ServoMotor']]],
+  ['setctrlperiod_4',['SetCtrlPeriod',['../classalps_1_1cmn_1_1control_1_1_differential.html#a90c684e9eed13078bf4f077ed8835371',1,'alps::cmn::control::Differential::SetCtrlPeriod()'],['../classalps_1_1cmn_1_1control_1_1_integral.html#ad913de4be222f7427c1b8973ce5a5b7e',1,'alps::cmn::control::Integral::SetCtrlPeriod()']]],
+  ['setdifftimeconst_5',['SetDiffTimeConst',['../classalps_1_1cmn_1_1control_1_1_pid_old.html#aee8cf466ad601231d6785ee2f6823936',1,'alps::cmn::control::PidOld']]],
+  ['setendcondition_6',['SetEndCondition',['../classalps_1_1cmn_1_1control_1_1_pid_old.html#a76b7a8a069ab021f29057b1ea8a280cc',1,'alps::cmn::control::PidOld']]],
+  ['setgain_7',['SetGain',['../classalps_1_1cmn_1_1control_1_1_pid_old.html#a202a264ccb1b9d8b2293687aad65cb0f',1,'alps::cmn::control::PidOld']]],
+  ['setinputprev_8',['SetInputPrev',['../classalps_1_1cmn_1_1control_1_1_differential.html#a7114fb13fa690593122c3b4bf691d130',1,'alps::cmn::control::Differential::SetInputPrev()'],['../classalps_1_1cmn_1_1control_1_1_lpf.html#aca445f7a66fa7f4c3ce5bd05e7e56812',1,'alps::cmn::control::Lpf::SetInputPrev()']]],
+  ['setintegralmax_9',['SetIntegralMax',['../classalps_1_1cmn_1_1control_1_1_pid_old.html#a0d84e4bdf3508cb35fbc08ab5b6c5d39',1,'alps::cmn::control::PidOld']]],
+  ['setmaxoutput_10',['SetMaxOutput',['../classalps_1_1cmn_1_1control_1_1_pid_old.html#a0d5d59eae3d219fe501a0f50e80dec34',1,'alps::cmn::control::PidOld']]],
+  ['setoutputprev_11',['SetOutputPrev',['../classalps_1_1cmn_1_1control_1_1_differential.html#a596f482fce61f88f3f848ffb76101ea4',1,'alps::cmn::control::Differential']]],
+  ['setperiod_12',['SetPeriod',['../classalps_1_1mbed_1_1gpio_1_1_pwm_out.html#ac4878958ca6903ae19dfe7bda514d754',1,'alps::mbed::gpio::PwmOut']]],
+  ['setpreviousvalue_13',['SetPreviousValue',['../classalps_1_1cmn_1_1control_1_1_pid_old.html#ae5bbff9492e4f03207335ef811936d71',1,'alps::cmn::control::PidOld']]],
+  ['setpublishdata_14',['SetPublishData',['../classalps_1_1cmn_1_1communication_1_1_can_publisher.html#a703542b44a552ac352c9086fea30fdf4',1,'alps::cmn::communication::CanPublisher']]],
+  ['setpulsewidth_15',['SetPulseWidth',['../classalps_1_1mbed_1_1gpio_1_1_pwm_out.html#aa71e2c6c0e7fd8d24e7039bcd1255203',1,'alps::mbed::gpio::PwmOut']]],
+  ['setsenddata_16',['SetSendData',['../classalps_1_1cmn_1_1communication_1_1_uart_sender.html#af26d77971838fbe3ffdd9e1093d5af91',1,'alps::cmn::communication::UartSender']]],
+  ['settarget_17',['SetTarget',['../classalps_1_1cmn_1_1control_1_1_pid_old.html#a76744735dde87ff47c8d413a996d81fb',1,'alps::cmn::control::PidOld']]],
+  ['settargetangle_18',['SetTargetAngle',['../classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#af7ff160cea06b0a96e10c32b2f9d8896',1,'alps::cmn::control::MotorAngleVelocityController']]],
+  ['settargetvelocity_19',['SetTargetVelocity',['../classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#ab391d5d6bdf9a0216cb63b7fff9e2f4e',1,'alps::cmn::control::MotorAngleVelocityController']]],
+  ['settimeconst_20',['SetTimeConst',['../classalps_1_1cmn_1_1control_1_1_differential.html#aa3c64c5f3a67b34e9b16e1864760ca3e',1,'alps::cmn::control::Differential::SetTimeConst()'],['../classalps_1_1cmn_1_1control_1_1_lpf.html#aea8480539cad78ef17d887d56b19ebaf',1,'alps::cmn::control::Lpf::SetTimeConst()']]],
+  ['socketcanio_21',['SocketCanIo',['../classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a070fb75e50b86c8d7de38c35c6468b8b',1,'alps::lin::communication::SocketCanIo']]]
 ];

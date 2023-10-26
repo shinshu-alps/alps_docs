@@ -1,10 +1,12 @@
 <map id="alps_mbed_lib/include/alps_mbed/sensor/incremental_encoder.hpp" name="alps_mbed_lib/include/alps_mbed/sensor/incremental_encoder.hpp">
 <area shape="rect" id="node1" title=" " alt="" coords="180,5,407,60"/>
 <area shape="rect" id="node2" href="$alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="411,108,624,148"/>
-<area shape="rect" id="node6" href="$digital__in_8hpp.html" title=" " alt="" coords="5,108,176,148"/>
-<area shape="rect" id="node8" href="$interrupt__in_8hpp.html" title=" " alt="" coords="201,108,386,148"/>
-<area shape="rect" id="node3" href="$i__digital__in_8hpp.html" title=" " alt="" coords="207,196,379,236"/>
-<area shape="rect" id="node4" href="$i__interrupt__in_8hpp.html" title=" " alt="" coords="413,196,600,236"/>
-<area shape="rect" id="node5" title=" " alt="" coords="451,284,563,309"/>
-<area shape="rect" id="node7" title=" " alt="" coords="85,203,155,229"/>
+<area shape="rect" id="node8" href="$digital__in_8hpp.html" title=" " alt="" coords="5,108,176,148"/>
+<area shape="rect" id="node10" href="$interrupt__in_8hpp.html" title=" " alt="" coords="201,108,386,148"/>
+<area shape="rect" id="node3" href="$i__digital__in_8hpp.html" title=" " alt="" coords="150,196,322,236"/>
+<area shape="rect" id="node4" href="$i__interrupt__in_8hpp.html" title=" " alt="" coords="347,196,533,236"/>
+<area shape="rect" id="node6" href="$pi_8hpp.html" title=" " alt="" coords="767,203,934,229"/>
+<area shape="rect" id="node7" href="$i__rotary__sensor_8hpp.html" title=" " alt="" coords="558,196,743,236"/>
+<area shape="rect" id="node5" title=" " alt="" coords="384,284,496,309"/>
+<area shape="rect" id="node9" title=" " alt="" coords="55,203,126,229"/>
 </map>

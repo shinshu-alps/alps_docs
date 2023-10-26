@@ -1,6 +1,8 @@
 <map id="alps_common_lib/include/alps_cmn/sensor/incremental_encoder.hpp" name="alps_common_lib/include/alps_cmn/sensor/incremental_encoder.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="84,5,301,60"/>
+<area shape="rect" id="node1" title=" " alt="" coords="287,5,504,60"/>
 <area shape="rect" id="node2" href="$i__digital__in_8hpp.html" title=" " alt="" coords="5,108,177,148"/>
 <area shape="rect" id="node3" href="$i__interrupt__in_8hpp.html" title=" " alt="" coords="202,108,389,148"/>
+<area shape="rect" id="node5" href="$pi_8hpp.html" title=" " alt="" coords="413,115,580,141"/>
+<area shape="rect" id="node6" href="$i__rotary__sensor_8hpp.html" title=" " alt="" coords="604,108,789,148"/>
 <area shape="rect" id="node4" title=" " alt="" coords="239,196,351,221"/>
 </map>

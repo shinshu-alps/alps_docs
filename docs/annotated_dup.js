@@ -4,6 +4,7 @@ var annotated_dup =
       [ "cmn", "namespacealps_1_1cmn.html", [
         [ "actuator", "namespacealps_1_1cmn_1_1actuator.html", [
           [ "DcMotor", "classalps_1_1cmn_1_1actuator_1_1_dc_motor.html", "classalps_1_1cmn_1_1actuator_1_1_dc_motor" ],
+          [ "IMotor", "classalps_1_1cmn_1_1actuator_1_1_i_motor.html", "classalps_1_1cmn_1_1actuator_1_1_i_motor" ],
           [ "RobomasMotor", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor" ],
           [ "RobomasMotorsCanController", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_controller.html", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_controller" ],
           [ "ServoMotor", "classalps_1_1cmn_1_1actuator_1_1_servo_motor.html", "classalps_1_1cmn_1_1actuator_1_1_servo_motor" ],
@@ -27,10 +28,11 @@ var annotated_dup =
         ] ],
         [ "control", "namespacealps_1_1cmn_1_1control.html", [
           [ "Differential", "classalps_1_1cmn_1_1control_1_1_differential.html", "classalps_1_1cmn_1_1control_1_1_differential" ],
-          [ "Dob", "classalps_1_1cmn_1_1control_1_1_dob.html", "classalps_1_1cmn_1_1control_1_1_dob" ],
           [ "Integral", "classalps_1_1cmn_1_1control_1_1_integral.html", "classalps_1_1cmn_1_1control_1_1_integral" ],
           [ "Lpf", "classalps_1_1cmn_1_1control_1_1_lpf.html", "classalps_1_1cmn_1_1control_1_1_lpf" ],
-          [ "Pid", "classalps_1_1cmn_1_1control_1_1_pid.html", "classalps_1_1cmn_1_1control_1_1_pid" ]
+          [ "MotorAngleVelocityController", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller" ],
+          [ "Pid", "classalps_1_1cmn_1_1control_1_1_pid.html", "classalps_1_1cmn_1_1control_1_1_pid" ],
+          [ "PidOld", "classalps_1_1cmn_1_1control_1_1_pid_old.html", "classalps_1_1cmn_1_1control_1_1_pid_old" ]
         ] ],
         [ "gpio", "namespacealps_1_1cmn_1_1gpio.html", [
           [ "IDigitalIn", "classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html", "classalps_1_1cmn_1_1gpio_1_1_i_digital_in" ],
@@ -39,7 +41,8 @@ var annotated_dup =
           [ "IPwmOut", "classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html", "classalps_1_1cmn_1_1gpio_1_1_i_pwm_out" ]
         ] ],
         [ "sensor", "namespacealps_1_1cmn_1_1sensor.html", [
-          [ "IncrementalEncoder", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder" ]
+          [ "IncrementalEncoder", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder" ],
+          [ "IRotarySensor", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor" ]
         ] ]
       ] ],
       [ "lin", "namespacealps_1_1lin.html", [
