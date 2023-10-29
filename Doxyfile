@@ -831,7 +831,7 @@ WARN_LOGFILE           =
 # Note: If this tag is empty the current directory is searched.
 
 INPUT                  = alps_common_lib/include \
-INPUT                  = alps_linux_lib/include \
+                         alps_linux_lib/include \
                          alps_mbed_lib/include \
                          alps_stm32_lib/include \
                          alps_ros_lib/include \
