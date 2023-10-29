@@ -1,7 +1,8 @@
 <map id="alps_common_lib/include/alps_cmn/actuator/dc_motor.hpp" name="alps_common_lib/include/alps_cmn/actuator/dc_motor.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="101,5,288,60"/>
-<area shape="rect" id="node2" title=" " alt="" coords="201,196,268,221"/>
-<area shape="rect" id="node3" href="$i__motor_8hpp.html" title=" " alt="" coords="27,108,178,148"/>
-<area shape="rect" id="node4" href="$i__digital__out_8hpp.html" title=" " alt="" coords="202,108,374,148"/>
-<area shape="rect" id="node5" href="$i__pwm__out_8hpp.html" title="PWM出力を行うインタフェース" alt="" coords="399,108,561,148"/>
+<area shape="rect" id="node1" title=" " alt="" coords="195,5,382,60"/>
+<area shape="rect" id="node2" title=" " alt="" coords="202,196,269,221"/>
+<area shape="rect" id="node3" href="$i__motor_8hpp.html" title=" " alt="" coords="28,108,179,148"/>
+<area shape="rect" id="node4" href="$i__digital__out_8hpp.html" title=" " alt="" coords="203,108,375,148"/>
+<area shape="rect" id="node5" href="$i__pwm__out_8hpp.html" title="PWM出力を行うインタフェース" alt="" coords="399,108,562,148"/>
+<area shape="rect" id="node6" href="$algorithm_8hpp.html" title=" " alt="" coords="587,115,791,141"/>
 </map>

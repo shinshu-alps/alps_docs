@@ -39,7 +39,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="digital__out_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="digital__out_8hpp.html" target="_top" xlink:title="デジタル出力ピン">
 <polygon fill="white" stroke="#666666" points="289.5,-118 158.5,-118 158.5,-77 289.5,-77 289.5,-118"/>
 <text text-anchor="start" x="166.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">alps_mbed_lib/include</text>
 <text text-anchor="start" x="166.5" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_mbed/gpio/digital</text>

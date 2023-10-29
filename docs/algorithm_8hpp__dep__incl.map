@@ -1,5 +1,9 @@
 <map id="alps_common_lib/include/alps_cmn/util/algorithm.hpp" name="alps_common_lib/include/alps_cmn/util/algorithm.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="12,5,220,45"/>
-<area shape="rect" id="node2" href="$pid_8hpp.html" title=" " alt="" coords="21,93,211,133"/>
-<area shape="rect" id="node3" href="$motor__angle__velocity__controller_8hpp.html" title=" " alt="" coords="5,181,227,236"/>
+<area shape="rect" id="node1" title=" " alt="" coords="205,5,413,45"/>
+<area shape="rect" id="node2" href="$alps__common__lib_2include_2alps__cmn_2actuator_2dc__motor_8hpp.html" title=" " alt="" coords="5,93,192,148"/>
+<area shape="rect" id="node4" href="$alps__common__lib_2include_2alps__cmn_2actuator_2servo__motor_8hpp.html" title=" " alt="" coords="216,93,403,148"/>
+<area shape="rect" id="node6" href="$pid_8hpp.html" title=" " alt="" coords="436,101,625,141"/>
+<area shape="rect" id="node3" href="$alps__mbed__lib_2include_2alps__mbed_2actuator_2dc__motor_8hpp.html" title=" " alt="" coords="11,196,186,251"/>
+<area shape="rect" id="node5" href="$alps__mbed__lib_2include_2alps__mbed_2actuator_2servo__motor_8hpp.html" title=" " alt="" coords="211,196,405,251"/>
+<area shape="rect" id="node7" href="$motor__angle__velocity__controller_8hpp.html" title=" " alt="" coords="429,196,651,251"/>
 </map>

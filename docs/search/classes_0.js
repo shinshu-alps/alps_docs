@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bufferedcanio_0',['BufferedCanIo',['../classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html',1,'alps::mbed::communication']]]
+  ['analogin_0',['AnalogIn',['../classalps_1_1mbed_1_1gpio_1_1_analog_in.html',1,'alps::mbed::gpio']]]
 ];

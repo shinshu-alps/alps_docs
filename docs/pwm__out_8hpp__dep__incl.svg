@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="PWM出力ピン">
 <polygon fill="#999999" stroke="#666666" points="226.5,-107 60.5,-107 60.5,-77 226.5,-77 226.5,-107"/>
 <text text-anchor="start" x="68.5" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">alps_mbed_lib/include</text>
 <text text-anchor="middle" x="143.5" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_mbed/gpio/pwm_out.hpp</text>

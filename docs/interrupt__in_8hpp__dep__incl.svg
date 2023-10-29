@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="割り込み入力ピン">
 <polygon fill="#999999" stroke="#666666" points="156,-118 14,-118 14,-77 156,-77 156,-118"/>
 <text text-anchor="start" x="22" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">alps_mbed_lib/include</text>
 <text text-anchor="start" x="22" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_mbed/gpio/interrupt</text>
