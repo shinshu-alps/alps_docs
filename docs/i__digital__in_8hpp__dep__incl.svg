@@ -39,7 +39,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="digital__in_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="digital__in_8hpp.html" target="_top" xlink:title="デジタル入力ピン">
 <polygon fill="white" stroke="#666666" points="312,-118 181,-118 181,-77 312,-77 312,-118"/>
 <text text-anchor="start" x="189" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">alps_mbed_lib/include</text>
 <text text-anchor="start" x="189" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_mbed/gpio/digital</text>
@@ -56,7 +56,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="interrupt__in_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="interrupt__in_8hpp.html" target="_top" xlink:title="割り込み入力ピン">
 <polygon fill="white" stroke="#666666" points="472.5,-118 330.5,-118 330.5,-77 472.5,-77 472.5,-118"/>
 <text text-anchor="start" x="338.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">alps_mbed_lib/include</text>
 <text text-anchor="start" x="338.5" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_mbed/gpio/interrupt</text>

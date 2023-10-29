@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="デジタル入力ピン">
 <polygon fill="#999999" stroke="#666666" points="146,-107 15,-107 15,-66 146,-66 146,-107"/>
 <text text-anchor="start" x="23" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">alps_mbed_lib/include</text>
 <text text-anchor="start" x="23" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_mbed/gpio/digital</text>

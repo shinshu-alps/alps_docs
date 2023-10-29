@@ -838,9 +838,6 @@ INPUT                  = alps_linux_lib/include \
                          alps_ros2_lib/include \
                          MainPage.md \
                          ドキュメント更新手順.md \
-                         docs/extensions.md \
-                         docs/customization.md \
-                         docs/tricks.md 
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses
@@ -980,8 +977,7 @@ EXAMPLE_RECURSIVE      = NO
 # that contain images that are to be included in the documentation (see the
 # \image command).
 
-IMAGE_PATH             = img \
-                         docs/img
+IMAGE_PATH             = 
 
 # The INPUT_FILTER tag can be used to specify a program that doxygen should
 # invoke to filter for each input file. Doxygen will invoke the filter program

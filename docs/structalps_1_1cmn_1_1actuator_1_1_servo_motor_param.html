@@ -110,7 +110,6 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1actuator_1_1_serv
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">公開メンバ関数</a> &#124;
 <a href="#pub-attribs">公開変数類</a> &#124;
 <a href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle"><div class="title">alps::cmn::actuator::ServoMotorParam 構造体</div></div>
@@ -122,17 +121,11 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1actuator_1_1_serv
 
 <p><code>#include &lt;<a class="el" href="alps__common__lib_2include_2alps__cmn_2actuator_2servo__motor_8hpp_source.html">servo_motor.hpp</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-公開メンバ関数</h2></td></tr>
-<tr class="memitem:aae00a577d010256d73b4d74f6d18e994"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#aae00a577d010256d73b4d74f6d18e994">ServoMotorParam</a> (uint16_t <a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#aef4a2ccca56377cadbee6f4a52c2aa3f">max_angle_deg</a>, std::chrono::microseconds <a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#acba9759bb3beaee95cb6faf6e07d516e">min_pulse_width</a>, std::chrono::microseconds <a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a76a4aeff3cc7cdf30472ca0b7648fb17">max_pulse_width</a>, std::chrono::microseconds <a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a04a40ddaa4ed39283111f0a90fea3f73">pwm_period</a>)</td></tr>
-<tr class="memdesc:aae00a577d010256d73b4d74f6d18e994"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
-<tr class="separator:aae00a577d010256d73b4d74f6d18e994"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 公開変数類</h2></td></tr>
-<tr class="memitem:aef4a2ccca56377cadbee6f4a52c2aa3f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#aef4a2ccca56377cadbee6f4a52c2aa3f">max_angle_deg</a></td></tr>
-<tr class="memdesc:aef4a2ccca56377cadbee6f4a52c2aa3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">回転可能最大角度 [deg]  <br /></td></tr>
-<tr class="separator:aef4a2ccca56377cadbee6f4a52c2aa3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c4f9922be96039439a3401b7970d440"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a4c4f9922be96039439a3401b7970d440">max_angle</a></td></tr>
+<tr class="memdesc:a4c4f9922be96039439a3401b7970d440"><td class="mdescLeft">&#160;</td><td class="mdescRight">回転可能最大角度 [rad]  <br /></td></tr>
+<tr class="separator:a4c4f9922be96039439a3401b7970d440"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acba9759bb3beaee95cb6faf6e07d516e"><td class="memItemLeft" align="right" valign="top">std::chrono::microseconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#acba9759bb3beaee95cb6faf6e07d516e">min_pulse_width</a></td></tr>
 <tr class="memdesc:acba9759bb3beaee95cb6faf6e07d516e"><td class="mdescLeft">&#160;</td><td class="mdescRight">パルス幅の最小値  <br /></td></tr>
 <tr class="separator:acba9759bb3beaee95cb6faf6e07d516e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,80 +138,20 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1actuator_1_1_serv
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>サーボモータのパラメータ構造体 </p>
-</div><h2 class="groupheader">構築子と解体子</h2>
-<a id="aae00a577d010256d73b4d74f6d18e994" name="aae00a577d010256d73b4d74f6d18e994"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae00a577d010256d73b4d74f6d18e994">&#9670;&#160;</a></span>ServoMotorParam()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr alps::cmn::actuator::ServoMotorParam::ServoMotorParam </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>max_angle_deg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::chrono::microseconds&#160;</td>
-          <td class="paramname"><em>min_pulse_width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::chrono::microseconds&#160;</td>
-          <td class="paramname"><em>max_pulse_width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::chrono::microseconds&#160;</td>
-          <td class="paramname"><em>pwm_period</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>コンストラクタ </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">max_angle_deg</td><td>回転可能最大角度 [deg] </td></tr>
-    <tr><td class="paramname">min_pulse_width</td><td>パルス幅の最小値 </td></tr>
-    <tr><td class="paramname">max_pulse_width</td><td>パルス幅の最大値 </td></tr>
-    <tr><td class="paramname">pwm_period</td><td>PWM周期 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">メンバ詳解</h2>
-<a id="aef4a2ccca56377cadbee6f4a52c2aa3f" name="aef4a2ccca56377cadbee6f4a52c2aa3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef4a2ccca56377cadbee6f4a52c2aa3f">&#9670;&#160;</a></span>max_angle_deg</h2>
+</div><h2 class="groupheader">メンバ詳解</h2>
+<a id="a4c4f9922be96039439a3401b7970d440" name="a4c4f9922be96039439a3401b7970d440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c4f9922be96039439a3401b7970d440">&#9670;&#160;</a></span>max_angle</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t alps::cmn::actuator::ServoMotorParam::max_angle_deg</td>
+          <td class="memname">float alps::cmn::actuator::ServoMotorParam::max_angle</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>回転可能最大角度 [deg] </p>
+<p>回転可能最大角度 [rad] </p>
 
 </div>
 </div>

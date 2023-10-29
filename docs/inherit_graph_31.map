@@ -1,3 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1control_1_1_pid_old.html" title="PID制御を行うクラス" alt="" coords="5,5,144,45"/>
+<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html" title="回転センサー付きモーターの角度と速度を制御するクラス" alt="" coords="5,5,235,60"/>
 </map>

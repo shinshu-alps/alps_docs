@@ -119,10 +119,12 @@ $(document).ready(function(){initNavTree('alps__common__lib_2include_2alps__cmn_
 <div class="textblock"><code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
 <code>#include &quot;<a class="el" href="i__pwm__out_8hpp_source.html">alps_cmn/gpio/i_pwm_out.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="angle__conversion_8hpp_source.html">alps_cmn/math/angle_conversion.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="algorithm_8hpp_source.html">alps_cmn/util/algorithm.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 servo_motor.hpp の依存先関係図:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="alps__common__lib_2include_2alps__cmn_2actuator_2servo__motor_8hpp__incl.svg" width="324" height="227"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="alps__common__lib_2include_2alps__cmn_2actuator_2servo__motor_8hpp__incl.svg" width="699" height="227"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 被依存関係図:</div>
@@ -155,10 +157,13 @@ servo_motor.hpp の依存先関係図:</div>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 変数</h2></td></tr>
-<tr class="memitem:a9292bb5c97cd64313214f2fc483cf8ab"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1actuator.html#a9292bb5c97cd64313214f2fc483cf8ab">alps::cmn::actuator::kSg90</a> {180, 500us, 2400us, 20000us}</td></tr>
+<tr class="memitem:a9292bb5c97cd64313214f2fc483cf8ab"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1actuator.html#a9292bb5c97cd64313214f2fc483cf8ab">alps::cmn::actuator::kSg90</a> {<a class="el" href="namespacealps_1_1cmn_1_1math.html#a1c9e495c99689c074c6c2bbeb737849b">math::DegToRad</a>(180), 500us, 2400us, 20000us}</td></tr>
 <tr class="memdesc:a9292bb5c97cd64313214f2fc483cf8ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータSG90のパラメータ  <br /></td></tr>
 <tr class="separator:a9292bb5c97cd64313214f2fc483cf8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41eefe6755e543b9817294673713db8b"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1actuator.html#a41eefe6755e543b9817294673713db8b">alps::cmn::actuator::kGwsMicro2bbmg</a> {180, 600us, 2200us, 20000us}</td></tr>
+<tr class="memitem:ad2583a8275889f54279dc1f7811a9192"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1actuator.html#ad2583a8275889f54279dc1f7811a9192">alps::cmn::actuator::kGws2bbmg</a> {<a class="el" href="namespacealps_1_1cmn_1_1math.html#a1c9e495c99689c074c6c2bbeb737849b">math::DegToRad</a>(200), 600us, 2700us, 20000us}</td></tr>
+<tr class="memdesc:ad2583a8275889f54279dc1f7811a9192"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータGWS2BBMGのパラメータ  <br /></td></tr>
+<tr class="separator:ad2583a8275889f54279dc1f7811a9192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41eefe6755e543b9817294673713db8b"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1actuator.html#a41eefe6755e543b9817294673713db8b">alps::cmn::actuator::kGwsMicro2bbmg</a> {<a class="el" href="namespacealps_1_1cmn_1_1math.html#a1c9e495c99689c074c6c2bbeb737849b">math::DegToRad</a>(180), 600us, 2200us, 20000us}</td></tr>
 <tr class="memdesc:a41eefe6755e543b9817294673713db8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータGWS MICRO2BBMGのパラメータ  <br /></td></tr>
 <tr class="separator:a41eefe6755e543b9817294673713db8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

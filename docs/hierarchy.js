@@ -9,6 +9,10 @@ var hierarchy =
     [ "alps::cmn::communication::Cobs", "classalps_1_1cmn_1_1communication_1_1_cobs.html", null ],
     [ "alps::cmn::communication::DataSerializer< T >", "classalps_1_1cmn_1_1communication_1_1_data_serializer.html", null ],
     [ "alps::cmn::control::Differential", "classalps_1_1cmn_1_1control_1_1_differential.html", null ],
+    [ "alps::cmn::gpio::IAnalogIn< Derived >", "classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html", null ],
+    [ "alps::cmn::gpio::IAnalogIn< AnalogIn >", "classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html", [
+      [ "alps::mbed::gpio::AnalogIn", "classalps_1_1mbed_1_1gpio_1_1_analog_in.html", null ]
+    ] ],
     [ "alps::cmn::communication::ICanIo< Derived >", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", null ],
     [ "alps::cmn::communication::ICanIo< BufferedCanIo >", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", [
       [ "alps::mbed::communication::BufferedCanIo", "classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html", null ]
@@ -27,6 +31,10 @@ var hierarchy =
     [ "alps::cmn::gpio::IDigitalOut< Derived >", "classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html", null ],
     [ "alps::cmn::gpio::IDigitalOut< DigitalOut >", "classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html", [
       [ "alps::mbed::gpio::DigitalOut", "classalps_1_1mbed_1_1gpio_1_1_digital_out.html", null ]
+    ] ],
+    [ "alps::cmn::communication::II2cIo< Derived >", "classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html", null ],
+    [ "alps::cmn::communication::II2cIo< I2cIo >", "classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html", [
+      [ "alps::mbed::communication::I2cIo", "classalps_1_1mbed_1_1communication_1_1_i2c_io.html", null ]
     ] ],
     [ "alps::cmn::gpio::IInterruptIn< Derived >", "classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html", null ],
     [ "alps::cmn::gpio::IInterruptIn< InterruptIn >", "classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html", [

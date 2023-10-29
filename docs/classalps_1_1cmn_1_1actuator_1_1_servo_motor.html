@@ -123,17 +123,15 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1actuator_1_1_servo
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a26e8d156a6c9d9df713a26672bd5865e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a26e8d156a6c9d9df713a26672bd5865e">ServoMotor</a> (<a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">gpio::IPwmOut</a>&lt; PwmOut &gt; &amp;pwm_out, uint16_t max_angle_deg, std::chrono::microseconds min_pulse_width, std::chrono::microseconds max_pulse_width, std::chrono::microseconds pwm_period)</td></tr>
-<tr class="memdesc:a26e8d156a6c9d9df713a26672bd5865e"><td class="mdescLeft">&#160;</td><td class="mdescRight">各パラメータを設定するコンストラクタ  <br /></td></tr>
-<tr class="separator:a26e8d156a6c9d9df713a26672bd5865e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bbbbbaf24604d92914b44efb4d9802a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a8bbbbbaf24604d92914b44efb4d9802a">ServoMotor</a> (<a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">gpio::IPwmOut</a>&lt; PwmOut &gt; &amp;pwm_out, const <a class="el" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a> &amp;parameter=<a class="el" href="namespacealps_1_1cmn_1_1actuator.html#a9292bb5c97cd64313214f2fc483cf8ab">kSg90</a>)</td></tr>
 <tr class="memdesc:a8bbbbbaf24604d92914b44efb4d9802a"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータのパラメータ構造体を利用するコンストラクタ  <br /></td></tr>
 <tr class="separator:a8bbbbbaf24604d92914b44efb4d9802a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a627e096e61425b9dec00765a24139dbe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a627e096e61425b9dec00765a24139dbe">~ServoMotor</a> ()=default</td></tr>
-<tr class="separator:a627e096e61425b9dec00765a24139dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dc4e8a7dbbee20bc8cab09cc7b2c2b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a9dc4e8a7dbbee20bc8cab09cc7b2c2b4">SetAngle</a> (uint16_t target_angle_deg)</td></tr>
-<tr class="memdesc:a9dc4e8a7dbbee20bc8cab09cc7b2c2b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータを指定した動かす  <br /></td></tr>
-<tr class="separator:a9dc4e8a7dbbee20bc8cab09cc7b2c2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4bac006127a14185d323d93546d5252"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#ad4bac006127a14185d323d93546d5252">SetAngle</a> (float target_angle)</td></tr>
+<tr class="memdesc:ad4bac006127a14185d323d93546d5252"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータを指定した動かす  <br /></td></tr>
+<tr class="separator:ad4bac006127a14185d323d93546d5252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a135982e2673801c8bb6efd4712827316"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a135982e2673801c8bb6efd4712827316">SetFree</a> ()</td></tr>
+<tr class="memdesc:a135982e2673801c8bb6efd4712827316"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーボモータを脱力させる  <br /></td></tr>
+<tr class="separator:a135982e2673801c8bb6efd4712827316"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class PwmOut&gt;<br />
@@ -145,76 +143,8 @@ class alps::cmn::actuator::ServoMotor&lt; PwmOut &gt;</div><p>PWMパルス幅で
   </dd>
 </dl>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="a26e8d156a6c9d9df713a26672bd5865e" name="a26e8d156a6c9d9df713a26672bd5865e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26e8d156a6c9d9df713a26672bd5865e">&#9670;&#160;</a></span>ServoMotor() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class PwmOut &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html">alps::cmn::actuator::ServoMotor</a>&lt; PwmOut &gt;::ServoMotor </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">gpio::IPwmOut</a>&lt; PwmOut &gt; &amp;&#160;</td>
-          <td class="paramname"><em>pwm_out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>max_angle_deg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::chrono::microseconds&#160;</td>
-          <td class="paramname"><em>min_pulse_width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::chrono::microseconds&#160;</td>
-          <td class="paramname"><em>max_pulse_width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::chrono::microseconds&#160;</td>
-          <td class="paramname"><em>pwm_period</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>各パラメータを設定するコンストラクタ </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pwm_out</td><td>PWM出力インタフェース </td></tr>
-    <tr><td class="paramname">max_angle_deg</td><td>回転可能最大角度 [deg] </td></tr>
-    <tr><td class="paramname">min_pulse_width</td><td>パルス幅の最小値 </td></tr>
-    <tr><td class="paramname">max_pulse_width</td><td>パルス幅の最大値 </td></tr>
-    <tr><td class="paramname">pwm_period</td><td>PWM周期 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a8bbbbbaf24604d92914b44efb4d9802a" name="a8bbbbbaf24604d92914b44efb4d9802a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bbbbbaf24604d92914b44efb4d9802a">&#9670;&#160;</a></span>ServoMotor() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bbbbbaf24604d92914b44efb4d9802a">&#9670;&#160;</a></span>ServoMotor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,36 +190,9 @@ template&lt;class PwmOut &gt; </div>
 
 </div>
 </div>
-<a id="a627e096e61425b9dec00765a24139dbe" name="a627e096e61425b9dec00765a24139dbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a627e096e61425b9dec00765a24139dbe">&#9670;&#160;</a></span>~ServoMotor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class PwmOut &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html">alps::cmn::actuator::ServoMotor</a>&lt; PwmOut &gt;::~<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html">ServoMotor</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a9dc4e8a7dbbee20bc8cab09cc7b2c2b4" name="a9dc4e8a7dbbee20bc8cab09cc7b2c2b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dc4e8a7dbbee20bc8cab09cc7b2c2b4">&#9670;&#160;</a></span>SetAngle()</h2>
+<a id="ad4bac006127a14185d323d93546d5252" name="ad4bac006127a14185d323d93546d5252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4bac006127a14185d323d93546d5252">&#9670;&#160;</a></span>SetAngle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -302,8 +205,8 @@ template&lt;class PwmOut &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html">alps::cmn::actuator::ServoMotor</a>&lt; PwmOut &gt;::SetAngle </td>
           <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>target_angle_deg</em></td><td>)</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>target_angle</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -317,10 +220,39 @@ template&lt;class PwmOut &gt; </div>
 <p>サーボモータを指定した動かす </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">target_angle_deg</td><td>目標角度 [deg] </td></tr>
+    <tr><td class="paramname">target_angle</td><td>目標角度 [rad] </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a135982e2673801c8bb6efd4712827316" name="a135982e2673801c8bb6efd4712827316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a135982e2673801c8bb6efd4712827316">&#9670;&#160;</a></span>SetFree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class PwmOut &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html">alps::cmn::actuator::ServoMotor</a>&lt; PwmOut &gt;::SetFree </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>サーボモータを脱力させる </p>
 
 </div>
 </div>

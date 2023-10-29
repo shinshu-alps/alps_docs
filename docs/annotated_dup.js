@@ -19,6 +19,7 @@ var annotated_dup =
           [ "Cobs", "classalps_1_1cmn_1_1communication_1_1_cobs.html", "classalps_1_1cmn_1_1communication_1_1_cobs" ],
           [ "DataSerializer", "classalps_1_1cmn_1_1communication_1_1_data_serializer.html", "classalps_1_1cmn_1_1communication_1_1_data_serializer" ],
           [ "ICanIo", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", "classalps_1_1cmn_1_1communication_1_1_i_can_io" ],
+          [ "II2cIo", "classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html", "classalps_1_1cmn_1_1communication_1_1_i_i2c_io" ],
           [ "IUartIo", "classalps_1_1cmn_1_1communication_1_1_i_uart_io.html", "classalps_1_1cmn_1_1communication_1_1_i_uart_io" ],
           [ "SerializeTypeInfo", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info" ],
           [ "SerializeTypeInfoBase", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base" ],
@@ -35,6 +36,7 @@ var annotated_dup =
           [ "PidOld", "classalps_1_1cmn_1_1control_1_1_pid_old.html", "classalps_1_1cmn_1_1control_1_1_pid_old" ]
         ] ],
         [ "gpio", "namespacealps_1_1cmn_1_1gpio.html", [
+          [ "IAnalogIn", "classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html", "classalps_1_1cmn_1_1gpio_1_1_i_analog_in" ],
           [ "IDigitalIn", "classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html", "classalps_1_1cmn_1_1gpio_1_1_i_digital_in" ],
           [ "IDigitalOut", "classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html", "classalps_1_1cmn_1_1gpio_1_1_i_digital_out" ],
           [ "IInterruptIn", "classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html", "classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in" ],
@@ -54,9 +56,11 @@ var annotated_dup =
       [ "mbed", "namespacealps_1_1mbed.html", [
         [ "communication", "namespacealps_1_1mbed_1_1communication.html", [
           [ "BufferedCanIo", "classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html", "classalps_1_1mbed_1_1communication_1_1_buffered_can_io" ],
+          [ "I2cIo", "classalps_1_1mbed_1_1communication_1_1_i2c_io.html", "classalps_1_1mbed_1_1communication_1_1_i2c_io" ],
           [ "UartIo", "classalps_1_1mbed_1_1communication_1_1_uart_io.html", "classalps_1_1mbed_1_1communication_1_1_uart_io" ]
         ] ],
         [ "gpio", "namespacealps_1_1mbed_1_1gpio.html", [
+          [ "AnalogIn", "classalps_1_1mbed_1_1gpio_1_1_analog_in.html", "classalps_1_1mbed_1_1gpio_1_1_analog_in" ],
           [ "DigitalIn", "classalps_1_1mbed_1_1gpio_1_1_digital_in.html", "classalps_1_1mbed_1_1gpio_1_1_digital_in" ],
           [ "DigitalOut", "classalps_1_1mbed_1_1gpio_1_1_digital_out.html", "classalps_1_1mbed_1_1gpio_1_1_digital_out" ],
           [ "InterruptIn", "classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html", "classalps_1_1mbed_1_1gpio_1_1_interrupt_in" ],

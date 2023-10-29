@@ -55,7 +55,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="pwm__out_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="pwm__out_8hpp.html" target="_top" xlink:title="PWM出力ピン">
 <polygon fill="white" stroke="#666666" points="324,-112.5 158,-112.5 158,-82.5 324,-82.5 324,-112.5"/>
 <text text-anchor="start" x="166" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps_mbed_lib/include</text>
 <text text-anchor="middle" x="241" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_mbed/gpio/pwm_out.hpp</text>

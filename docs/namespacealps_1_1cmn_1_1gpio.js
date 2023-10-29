@@ -1,5 +1,6 @@
 var namespacealps_1_1cmn_1_1gpio =
 [
+    [ "IAnalogIn", "classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html", "classalps_1_1cmn_1_1gpio_1_1_i_analog_in" ],
     [ "IDigitalIn", "classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html", "classalps_1_1cmn_1_1gpio_1_1_i_digital_in" ],
     [ "IDigitalOut", "classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html", "classalps_1_1cmn_1_1gpio_1_1_i_digital_out" ],
     [ "IInterruptIn", "classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html", "classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in" ],
