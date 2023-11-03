@@ -11,14 +11,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
       - name: git config
         run: |
-            git config --global user.name "github-actions[bot]"
-            git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       - name: install doxygen
         run: |
-            sudo apt-get install -y doxygen
-            doxygen --version
+          sudo apt-get install -y doxygen
+          doxygen --version
+          
       - name: execute update script
         run: |
-            ./update.sh
+          ./update_docs.sh
