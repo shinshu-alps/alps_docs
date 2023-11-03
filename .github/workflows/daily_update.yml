@@ -1,0 +1,23 @@
+name: Daily Update
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  update_docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: git config
+        run: |
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: install doxygen
+        run: |
+            sudo apt-get install -y doxygen
+            doxygen --version
+      - name: execute update script
+        run: |
+            ./update.sh
