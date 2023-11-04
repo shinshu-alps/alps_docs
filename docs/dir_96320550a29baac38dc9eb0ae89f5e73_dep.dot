@@ -1,0 +1,13 @@
+digraph "alps_common_lib/include/alps_cmn/sensor" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_cc648f72f51f156e42f9863c0e5bf5fb {
+    graph [ bgcolor="#ddddee", pencolor="black", label="alps_cmn" fontname="Helvetica", fontsize="10", URL="dir_cc648f72f51f156e42f9863c0e5bf5fb.html"]
+  dir_563ed2d29ef623953b20c0f9d2e12d2d [shape=box label="math" URL="dir_563ed2d29ef623953b20c0f9d2e12d2d.html"];
+  dir_7913872ef1e9131c7a4facddec50fb6b [shape=box label="gpio" URL="dir_7913872ef1e9131c7a4facddec50fb6b.html"];
+  dir_96320550a29baac38dc9eb0ae89f5e73 [shape=box, label="sensor", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_96320550a29baac38dc9eb0ae89f5e73.html"];
+  }
+  dir_96320550a29baac38dc9eb0ae89f5e73->dir_563ed2d29ef623953b20c0f9d2e12d2d [headlabel="1", labeldistance=1.5 headhref="dir_000024_000011.html"];
+  dir_96320550a29baac38dc9eb0ae89f5e73->dir_7913872ef1e9131c7a4facddec50fb6b [headlabel="2", labeldistance=1.5 headhref="dir_000024_000010.html"];
+}

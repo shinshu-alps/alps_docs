@@ -7,8 +7,8 @@ var annotated_dup =
           [ "IMotor", "classalps_1_1cmn_1_1actuator_1_1_i_motor.html", "classalps_1_1cmn_1_1actuator_1_1_i_motor" ],
           [ "RobomasMotor", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor" ],
           [ "RobomasMotorsCanController", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_controller.html", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_controller" ],
-          [ "ServoMotor", "classalps_1_1cmn_1_1actuator_1_1_servo_motor.html", "classalps_1_1cmn_1_1actuator_1_1_servo_motor" ],
-          [ "ServoMotorParam", "structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html", "structalps_1_1cmn_1_1actuator_1_1_servo_motor_param" ]
+          [ "ServoMotorParam", "structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html", "structalps_1_1cmn_1_1actuator_1_1_servo_motor_param" ],
+          [ "ServoMotor", "classalps_1_1cmn_1_1actuator_1_1_servo_motor.html", "classalps_1_1cmn_1_1actuator_1_1_servo_motor" ]
         ] ],
         [ "communication", "namespacealps_1_1cmn_1_1communication.html", [
           [ "CanCallbackHandler", "classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html", "classalps_1_1cmn_1_1communication_1_1_can_callback_handler" ],
@@ -21,11 +21,11 @@ var annotated_dup =
           [ "ICanIo", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", "classalps_1_1cmn_1_1communication_1_1_i_can_io" ],
           [ "II2cIo", "classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html", "classalps_1_1cmn_1_1communication_1_1_i_i2c_io" ],
           [ "IUartIo", "classalps_1_1cmn_1_1communication_1_1_i_uart_io.html", "classalps_1_1cmn_1_1communication_1_1_i_uart_io" ],
-          [ "SerializeTypeInfo", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info" ],
           [ "SerializeTypeInfoBase", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base" ],
-          [ "UartPacketTransceiver", "classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html", "classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver" ],
+          [ "SerializeTypeInfo", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info" ],
+          [ "UartSender", "classalps_1_1cmn_1_1communication_1_1_uart_sender.html", "classalps_1_1cmn_1_1communication_1_1_uart_sender" ],
           [ "UartReceiver", "classalps_1_1cmn_1_1communication_1_1_uart_receiver.html", "classalps_1_1cmn_1_1communication_1_1_uart_receiver" ],
-          [ "UartSender", "classalps_1_1cmn_1_1communication_1_1_uart_sender.html", "classalps_1_1cmn_1_1communication_1_1_uart_sender" ]
+          [ "UartPacketTransceiver", "classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html", "classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver" ]
         ] ],
         [ "control", "namespacealps_1_1cmn_1_1control.html", [
           [ "Differential", "classalps_1_1cmn_1_1control_1_1_differential.html", "classalps_1_1cmn_1_1control_1_1_differential" ],
@@ -43,8 +43,8 @@ var annotated_dup =
           [ "IPwmOut", "classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html", "classalps_1_1cmn_1_1gpio_1_1_i_pwm_out" ]
         ] ],
         [ "sensor", "namespacealps_1_1cmn_1_1sensor.html", [
-          [ "IncrementalEncoder", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder" ],
-          [ "IRotarySensor", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor" ]
+          [ "IRotarySensor", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor" ],
+          [ "IncrementalEncoder", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder" ]
         ] ]
       ] ],
       [ "lin", "namespacealps_1_1lin.html", [

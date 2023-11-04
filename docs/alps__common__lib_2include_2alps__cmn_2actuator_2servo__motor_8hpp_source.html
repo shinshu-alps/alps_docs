@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.9.7" />
+    <meta name="generator" content="Doxygen 1.9.1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Alps: alps_common_lib/include/alps_cmn/actuator/servo_motor.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -32,11 +32,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
     <link href="doxygen.css" rel="stylesheet" type="text/css" />
-    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="custom.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
-<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
     <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -53,22 +48,21 @@
                 </tbody>
             </table>
         </div>
-        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
+        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */
-</script>
+/* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -82,7 +76,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(document).ready(function(){initNavTree('alps__common__lib_2include_2alps__cmn_2actuator_2servo__motor_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
@@ -96,117 +90,110 @@ $(document).ready(function(){initNavTree('alps__common__lib_2include_2alps__cmn_
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<div id="MSearchResults">
-<div class="SRPage">
-<div id="SRIndex">
-<div id="SRResults"></div>
-<div class="SRStatus" id="Loading">読み取り中…</div>
-<div class="SRStatus" id="Searching">検索中…</div>
-<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
-</div>
-</div>
-</div>
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">servo_motor.hpp</div></div>
+  <div class="headertitle">
+<div class="title">servo_motor.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="alps__common__lib_2include_2alps__cmn_2actuator_2servo__motor_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_CMN_ACTUATOR_SERVO_MOTOR_HPP_</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_CMN_ACTUATOR_SERVO_MOTOR_HPP_</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;chrono&gt;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="i__pwm__out_8hpp.html">alps_cmn/gpio/i_pwm_out.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="angle__conversion_8hpp.html">alps_cmn/math/angle_conversion.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="algorithm_8hpp.html">alps_cmn/util/algorithm.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>cmn</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">namespace </span>actuator</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// 各サーボモータ製品の特性 ---------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">   34</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a4c4f9922be96039439a3401b7970d440">   37</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a4c4f9922be96039439a3401b7970d440">max_angle</a>;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#acba9759bb3beaee95cb6faf6e07d516e">   39</a></span>  std::chrono::microseconds <a class="code hl_variable" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#acba9759bb3beaee95cb6faf6e07d516e">min_pulse_width</a>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a76a4aeff3cc7cdf30472ca0b7648fb17">   41</a></span>  std::chrono::microseconds <a class="code hl_variable" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a76a4aeff3cc7cdf30472ca0b7648fb17">max_pulse_width</a>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a04a40ddaa4ed39283111f0a90fea3f73">   43</a></span>  std::chrono::microseconds <a class="code hl_variable" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a04a40ddaa4ed39283111f0a90fea3f73">pwm_period</a>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>};</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">// -------------------------------------------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">using namespace </span>std::chrono_literals;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1actuator.html#a9292bb5c97cd64313214f2fc483cf8ab">   53</a></span><span class="keyword">constexpr</span> <a class="code hl_struct" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1actuator.html#a9292bb5c97cd64313214f2fc483cf8ab">kSg90</a>{<a class="code hl_function" href="namespacealps_1_1cmn_1_1math.html#a1c9e495c99689c074c6c2bbeb737849b">math::DegToRad</a>(180), 500us, 2400us, 20000us};</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1actuator.html#ad2583a8275889f54279dc1f7811a9192">   58</a></span><span class="keyword">constexpr</span> <a class="code hl_struct" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1actuator.html#ad2583a8275889f54279dc1f7811a9192">kGws2bbmg</a>{<a class="code hl_function" href="namespacealps_1_1cmn_1_1math.html#a1c9e495c99689c074c6c2bbeb737849b">math::DegToRad</a>(200), 600us, 2700us, 20000us};</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1actuator.html#a41eefe6755e543b9817294673713db8b">   63</a></span><span class="keyword">constexpr</span> <a class="code hl_struct" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1actuator.html#a41eefe6755e543b9817294673713db8b">kGwsMicro2bbmg</a>{<a class="code hl_function" href="namespacealps_1_1cmn_1_1math.html#a1c9e495c99689c074c6c2bbeb737849b">math::DegToRad</a>(180), 600us, 2200us, 20000us};</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">// サーボモータクラス実装 -------------------------------------------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> PwmOut&gt;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html">   73</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html">ServoMotor</a></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>{</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a8bbbbbaf24604d92914b44efb4d9802a">   82</a></span>  <a class="code hl_function" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a8bbbbbaf24604d92914b44efb4d9802a">ServoMotor</a>(<a class="code hl_class" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">gpio::IPwmOut&lt;PwmOut&gt;</a> &amp; pwm_out, <span class="keyword">const</span> <a class="code hl_struct" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a> &amp; parameter = <a class="code hl_variable" href="namespacealps_1_1cmn_1_1actuator.html#a9292bb5c97cd64313214f2fc483cf8ab">kSg90</a>)</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  : pwm_out_{pwm_out},</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    max_angle_{parameter.max_angle},</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    min_pulse_width_{parameter.min_pulse_width},</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    max_pulse_width_{parameter.max_pulse_width}</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  {</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    pwm_out_.<a class="code hl_function" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#a5cacb90bcdc89bae801e318008bb49e8">CallSetPeriod</a>(parameter.pwm_period);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    this-&gt;<a class="code hl_function" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a135982e2673801c8bb6efd4712827316">SetFree</a>();</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  }</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#ad4bac006127a14185d323d93546d5252">   94</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#ad4bac006127a14185d323d93546d5252">SetAngle</a>(<span class="keywordtype">float</span> target_angle)</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  {</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    target_angle = <a class="code hl_function" href="namespacealps_1_1cmn_1_1util.html#a7056edb1e78ff96bca5fa94aa5e3d4f4">util::Clamp</a>(target_angle, 0.0f, max_angle_);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    std::chrono::microseconds pulse_width =</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      min_pulse_width_ +</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        (max_pulse_width_ - min_pulse_width_) * (<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(target_angle) / max_angle_));</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    pwm_out_.<a class="code hl_function" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#ad3baeadd20c2548313fb9702dc3e2a89">CallSetPulseWidth</a>(pulse_width);</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  }</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a135982e2673801c8bb6efd4712827316">  106</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a135982e2673801c8bb6efd4712827316">SetFree</a>()</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  {</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    pwm_out_.<a class="code hl_function" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#ad3baeadd20c2548313fb9702dc3e2a89">CallSetPulseWidth</a>(0us);</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  }</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">gpio::IPwmOut&lt;PwmOut&gt;</a> &amp; pwm_out_;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keyword">const</span> <span class="keywordtype">float</span> max_angle_;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  <span class="keyword">const</span> std::chrono::microseconds min_pulse_width_;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <span class="keyword">const</span> std::chrono::microseconds max_pulse_width_;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>};</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>}  <span class="comment">// namespace actuator</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>}  <span class="comment">// namespace cmn</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="preprocessor">#endif</span></div>
+<a href="alps__common__lib_2include_2alps__cmn_2actuator_2servo__motor_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef ALPS_CMN_ACTUATOR_SERVO_MOTOR_HPP_</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define ALPS_CMN_ACTUATOR_SERVO_MOTOR_HPP_</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__pwm__out_8hpp.html">alps_cmn/gpio/i_pwm_out.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="angle__conversion_8hpp.html">alps_cmn/math/angle_conversion.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="algorithm_8hpp.html">alps_cmn/util/algorithm.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span>cmn</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>actuator</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">// 各サーボモータ製品の特性 ---------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">   34</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a4c4f9922be96039439a3401b7970d440">   37</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a4c4f9922be96039439a3401b7970d440">max_angle</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#acba9759bb3beaee95cb6faf6e07d516e">   39</a></span>&#160;  std::chrono::microseconds <a class="code" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#acba9759bb3beaee95cb6faf6e07d516e">min_pulse_width</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a76a4aeff3cc7cdf30472ca0b7648fb17">   41</a></span>&#160;  std::chrono::microseconds <a class="code" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a76a4aeff3cc7cdf30472ca0b7648fb17">max_pulse_width</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a04a40ddaa4ed39283111f0a90fea3f73">   43</a></span>&#160;  std::chrono::microseconds <a class="code" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a04a40ddaa4ed39283111f0a90fea3f73">pwm_period</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">// -------------------------------------------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">using namespace </span>std::chrono_literals;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1actuator.html#a9292bb5c97cd64313214f2fc483cf8ab">   53</a></span>&#160;constexpr <a class="code" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a> <a class="code" href="namespacealps_1_1cmn_1_1actuator.html#a9292bb5c97cd64313214f2fc483cf8ab">kSg90</a>{<a class="code" href="namespacealps_1_1cmn_1_1math.html#a1c9e495c99689c074c6c2bbeb737849b">math::DegToRad</a>(180), 500us, 2400us, 20000us};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1actuator.html#ad2583a8275889f54279dc1f7811a9192">   58</a></span>&#160;constexpr <a class="code" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a> <a class="code" href="namespacealps_1_1cmn_1_1actuator.html#ad2583a8275889f54279dc1f7811a9192">kGws2bbmg</a>{<a class="code" href="namespacealps_1_1cmn_1_1math.html#a1c9e495c99689c074c6c2bbeb737849b">math::DegToRad</a>(200), 600us, 2700us, 20000us};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1actuator.html#a41eefe6755e543b9817294673713db8b">   63</a></span>&#160;constexpr <a class="code" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a> <a class="code" href="namespacealps_1_1cmn_1_1actuator.html#a41eefe6755e543b9817294673713db8b">kGwsMicro2bbmg</a>{<a class="code" href="namespacealps_1_1cmn_1_1math.html#a1c9e495c99689c074c6c2bbeb737849b">math::DegToRad</a>(180), 600us, 2200us, 20000us};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">// サーボモータクラス実装 -------------------------------------------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> PwmOut&gt;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html">   73</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html">ServoMotor</a></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a8bbbbbaf24604d92914b44efb4d9802a">   82</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a8bbbbbaf24604d92914b44efb4d9802a">ServoMotor</a>(<a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">gpio::IPwmOut&lt;PwmOut&gt;</a> &amp; pwm_out, <span class="keyword">const</span> <a class="code" href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">ServoMotorParam</a> &amp; parameter = <a class="code" href="namespacealps_1_1cmn_1_1actuator.html#a9292bb5c97cd64313214f2fc483cf8ab">kSg90</a>)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  : pwm_out_{pwm_out},</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    max_angle_{parameter.max_angle},</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    min_pulse_width_{parameter.min_pulse_width},</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    max_pulse_width_{parameter.max_pulse_width}</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    pwm_out_.<a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#a5cacb90bcdc89bae801e318008bb49e8">CallSetPeriod</a>(parameter.pwm_period);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    this-&gt;SetFree();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#ad4bac006127a14185d323d93546d5252">   94</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#ad4bac006127a14185d323d93546d5252">SetAngle</a>(<span class="keywordtype">float</span> target_angle)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    target_angle = <a class="code" href="namespacealps_1_1cmn_1_1util.html#a13928639f0ae9b5207010ae61a2c9d2a">util::Clamp</a>(target_angle, 0.0f, max_angle_);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    std::chrono::microseconds pulse_width =</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      min_pulse_width_ +</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        (max_pulse_width_ - min_pulse_width_) * (<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(target_angle) / max_angle_));</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    pwm_out_.CallSetPulseWidth(pulse_width);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a135982e2673801c8bb6efd4712827316">  106</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a135982e2673801c8bb6efd4712827316">SetFree</a>()</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    pwm_out_.CallSetPulseWidth(0us);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">gpio::IPwmOut&lt;PwmOut&gt;</a> &amp; pwm_out_;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> max_angle_;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keyword">const</span> std::chrono::microseconds min_pulse_width_;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">const</span> std::chrono::microseconds max_pulse_width_;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;};</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}  <span class="comment">// namespace actuator</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aalgorithm_8hpp_html"><div class="ttname"><a href="algorithm_8hpp.html">algorithm.hpp</a></div></div>
 <div class="ttc" id="aangle__conversion_8hpp_html"><div class="ttname"><a href="angle__conversion_8hpp.html">angle_conversion.hpp</a></div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_servo_motor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html">alps::cmn::actuator::ServoMotor</a></div><div class="ttdoc">PWMパルス幅で指定した角度に動くサーボモータ</div><div class="ttdef"><b>Definition:</b> servo_motor.hpp:74</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_servo_motor_html_a135982e2673801c8bb6efd4712827316"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a135982e2673801c8bb6efd4712827316">alps::cmn::actuator::ServoMotor::SetFree</a></div><div class="ttdeci">void SetFree()</div><div class="ttdoc">サーボモータを脱力させる</div><div class="ttdef"><b>Definition:</b> servo_motor.hpp:106</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_servo_motor_html_a8bbbbbaf24604d92914b44efb4d9802a"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a8bbbbbaf24604d92914b44efb4d9802a">alps::cmn::actuator::ServoMotor::ServoMotor</a></div><div class="ttdeci">ServoMotor(gpio::IPwmOut&lt; PwmOut &gt; &amp;pwm_out, const ServoMotorParam &amp;parameter=kSg90)</div><div class="ttdoc">サーボモータのパラメータ構造体を利用するコンストラクタ</div><div class="ttdef"><b>Definition:</b> servo_motor.hpp:82</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_servo_motor_html_ad4bac006127a14185d323d93546d5252"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#ad4bac006127a14185d323d93546d5252">alps::cmn::actuator::ServoMotor::SetAngle</a></div><div class="ttdeci">void SetAngle(float target_angle)</div><div class="ttdoc">サーボモータを指定した動かす</div><div class="ttdef"><b>Definition:</b> servo_motor.hpp:94</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_pwm_out_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">alps::cmn::gpio::IPwmOut</a></div><div class="ttdoc">PWM出力を行うインタフェース</div><div class="ttdef"><b>Definition:</b> i_pwm_out.hpp:31</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_pwm_out_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">alps::cmn::gpio::IPwmOut&lt; PwmOut &gt;</a></div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_pwm_out_html_a5cacb90bcdc89bae801e318008bb49e8"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#a5cacb90bcdc89bae801e318008bb49e8">alps::cmn::gpio::IPwmOut::CallSetPeriod</a></div><div class="ttdeci">void CallSetPeriod(std::chrono::microseconds period)</div><div class="ttdoc">インタフェースを介してSetPeriod()関数を呼び出す．振る舞い: PWMの周期を設定する</div><div class="ttdef"><b>Definition:</b> i_pwm_out.hpp:50</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_pwm_out_html_ad3baeadd20c2548313fb9702dc3e2a89"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#ad3baeadd20c2548313fb9702dc3e2a89">alps::cmn::gpio::IPwmOut::CallSetPulseWidth</a></div><div class="ttdeci">void CallSetPulseWidth(std::chrono::microseconds width)</div><div class="ttdoc">インタフェースを介してSetPulseWidth()関数を呼び出す．振る舞い: PWMの出力パルス幅を時間指定して出力する</div><div class="ttdef"><b>Definition:</b> i_pwm_out.hpp:61</div></div>
 <div class="ttc" id="ai__pwm__out_8hpp_html"><div class="ttname"><a href="i__pwm__out_8hpp.html">i_pwm_out.hpp</a></div><div class="ttdoc">PWM出力を行うインタフェース</div></div>
 <div class="ttc" id="anamespacealps_1_1cmn_1_1actuator_html_a41eefe6755e543b9817294673713db8b"><div class="ttname"><a href="namespacealps_1_1cmn_1_1actuator.html#a41eefe6755e543b9817294673713db8b">alps::cmn::actuator::kGwsMicro2bbmg</a></div><div class="ttdeci">constexpr ServoMotorParam kGwsMicro2bbmg</div><div class="ttdoc">サーボモータGWS MICRO2BBMGのパラメータ</div><div class="ttdef"><b>Definition:</b> servo_motor.hpp:63</div></div>
 <div class="ttc" id="anamespacealps_1_1cmn_1_1actuator_html_a9292bb5c97cd64313214f2fc483cf8ab"><div class="ttname"><a href="namespacealps_1_1cmn_1_1actuator.html#a9292bb5c97cd64313214f2fc483cf8ab">alps::cmn::actuator::kSg90</a></div><div class="ttdeci">constexpr ServoMotorParam kSg90</div><div class="ttdoc">サーボモータSG90のパラメータ</div><div class="ttdef"><b>Definition:</b> servo_motor.hpp:53</div></div>
 <div class="ttc" id="anamespacealps_1_1cmn_1_1actuator_html_ad2583a8275889f54279dc1f7811a9192"><div class="ttname"><a href="namespacealps_1_1cmn_1_1actuator.html#ad2583a8275889f54279dc1f7811a9192">alps::cmn::actuator::kGws2bbmg</a></div><div class="ttdeci">constexpr ServoMotorParam kGws2bbmg</div><div class="ttdoc">サーボモータGWS2BBMGのパラメータ</div><div class="ttdef"><b>Definition:</b> servo_motor.hpp:58</div></div>
 <div class="ttc" id="anamespacealps_1_1cmn_1_1math_html_a1c9e495c99689c074c6c2bbeb737849b"><div class="ttname"><a href="namespacealps_1_1cmn_1_1math.html#a1c9e495c99689c074c6c2bbeb737849b">alps::cmn::math::DegToRad</a></div><div class="ttdeci">constexpr double DegToRad(double angle_deg)</div><div class="ttdoc">度数法をラジアンに変換する</div><div class="ttdef"><b>Definition:</b> angle_conversion.hpp:18</div></div>
-<div class="ttc" id="anamespacealps_1_1cmn_1_1util_html_a7056edb1e78ff96bca5fa94aa5e3d4f4"><div class="ttname"><a href="namespacealps_1_1cmn_1_1util.html#a7056edb1e78ff96bca5fa94aa5e3d4f4">alps::cmn::util::Clamp</a></div><div class="ttdeci">constexpr const T &amp; Clamp(const T &amp;value, const T &amp;low, const T &amp;high)</div><div class="ttdoc">入力値が最小値~最大値の外である場合範囲内に収める C++17で追加されたstd::clampのコピー実装</div><div class="ttdef"><b>Definition:</b> algorithm.hpp:21</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1util_html_a13928639f0ae9b5207010ae61a2c9d2a"><div class="ttname"><a href="namespacealps_1_1cmn_1_1util.html#a13928639f0ae9b5207010ae61a2c9d2a">alps::cmn::util::Clamp</a></div><div class="ttdeci">constexpr const T &amp; Clamp(const T &amp;value, const T &amp;low, const T &amp;high)</div><div class="ttdoc">入力値が最小値~最大値の外である場合範囲内に収める C++17で追加されたstd::clampのコピー実装</div><div class="ttdef"><b>Definition:</b> algorithm.hpp:21</div></div>
 <div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:23</div></div>
 <div class="ttc" id="astructalps_1_1cmn_1_1actuator_1_1_servo_motor_param_html"><div class="ttname"><a href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html">alps::cmn::actuator::ServoMotorParam</a></div><div class="ttdoc">サーボモータのパラメータ構造体</div><div class="ttdef"><b>Definition:</b> servo_motor.hpp:35</div></div>
 <div class="ttc" id="astructalps_1_1cmn_1_1actuator_1_1_servo_motor_param_html_a04a40ddaa4ed39283111f0a90fea3f73"><div class="ttname"><a href="structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a04a40ddaa4ed39283111f0a90fea3f73">alps::cmn::actuator::ServoMotorParam::pwm_period</a></div><div class="ttdeci">std::chrono::microseconds pwm_period</div><div class="ttdoc">PWM周期</div><div class="ttdef"><b>Definition:</b> servo_motor.hpp:43</div></div>
@@ -219,7 +206,7 @@ $(document).ready(function(){initNavTree('alps__common__lib_2include_2alps__cmn_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_fcd1ba41f8679fcc7bf76d667eaa0e17.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_ce1e71e2103ac83e6d6cc720a9feeeb7.html">include</a></li><li class="navelem"><a class="el" href="dir_cc648f72f51f156e42f9863c0e5bf5fb.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_2239b1117054295ada522fe6d99615b2.html">actuator</a></li><li class="navelem"><a class="el" href="alps__common__lib_2include_2alps__cmn_2actuator_2servo__motor_8hpp.html">servo_motor.hpp</a></li>
-    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
