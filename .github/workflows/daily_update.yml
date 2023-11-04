@@ -12,7 +12,9 @@ jobs:
       contents: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: SSH setting
         env:
@@ -36,7 +38,7 @@ jobs:
 
       - name: Checkout submodule
         run: |
-          git submodule update --init --remote doxygen-awesome-css
+          git submodule init doxygen-awesome-css
           export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/id_rsa_common_lib"
           git submodule update --init --remote alps_common_lib
           export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/id_rsa_linux_lib"
