@@ -26,11 +26,11 @@ var NAVTREE =
 [
   [ "Alps", "index.html", [
     [ "概要", "index.html", [
-      [ "ライブラリリスト", "index.html#autotoc_md1", null ]
-    ] ],
-    [ "ドキュメント更新手順", "md__xE3_x83_x89_xE3_x82_xAD_xE3_x83_xA5_xE3_x83_xA1_xE3_x83_xB3_xE3_x83_x88_xE6_x9B_xB4_xE6_x96_xB0_xE6_x89_x8B_xE9_xA0_x86.html", [
-      [ "方法1：シェルスクリプトを使用（推奨）", "md__xE3_x83_x89_xE3_x82_xAD_xE3_x83_xA5_xE3_x83_xA1_xE3_x83_xB3_xE3_x83_x88_xE6_x9B_xB4_xE6_x96_xB0_xE6_x89_x8B_xE9_xA0_x86.html#autotoc_md3", null ],
-      [ "方法2：手動で以下の操作を行う", "md__xE3_x83_x89_xE3_x82_xAD_xE3_x83_xA5_xE3_x83_xA1_xE3_x83_xB3_xE3_x83_x88_xE6_x9B_xB4_xE6_x96_xB0_xE6_x89_x8B_xE9_xA0_x86.html#autotoc_md4", null ]
+      [ "ライブラリリスト", "index.html#autotoc_md1", null ],
+      [ "ドキュメントの更新について", "index.html#autotoc_md2", [
+        [ "自動更新", "index.html#autotoc_md3", null ],
+        [ "手動更新", "index.html#autotoc_md4", null ]
+      ] ]
     ] ],
     [ "todo一覧", "todo.html", null ],
     [ "非推奨一覧", "deprecated.html", null ],
