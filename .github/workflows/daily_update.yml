@@ -38,7 +38,7 @@ jobs:
 
       - name: Checkout submodule
         run: |
-          git submodule init doxygen-awesome-css
+          git submodule update --init doxygen-awesome-css
           export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/id_rsa_common_lib"
           git submodule update --init --remote alps_common_lib
           export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/id_rsa_linux_lib"
@@ -79,7 +79,7 @@ jobs:
           git checkout main docs/
           git add .
           git commit -m "Update documentation"
-          
+
       - name: Push gh-pages branch
         run: |
           git push origin gh-pages
