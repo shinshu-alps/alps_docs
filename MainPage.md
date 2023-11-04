@@ -15,3 +15,18 @@
 | alps_stm32_lib  | alps::stm  | stm32cube用ライブラリ | [GitHub](https://github.com/shinshu-alps/alps_stm32_lib)  | [Releases](https://github.com/shinshu-alps/alps_stm32_lib/releases)  |
 | alps_ros_lib    | alps::ros  | ros用ライブラリ       | [GitHub](https://github.com/shinshu-alps/alps_ros_lib)    | [Releases](https://github.com/shinshu-alps/alps_ros_lib/releases)    |
 | alps_ros2_lib   | alps::ros2 | ros2用ライブラリ      | [GitHub](https://github.com/shinshu-alps/alps_ros2_lib)   | [Releases](https://github.com/shinshu-alps/alps_ros2_lib/releases)   |
+
+## ドキュメントの更新について
+
+### 自動更新
+
+GitHub Actionsを使用して毎日12時にドキュメントが更新されるようになっています  
+ワークフローは`.github/workflows/update_docs.yml`です
+
+### 手動更新
+
+doxygenがインストールされた環境で，リポジトリ直下にある`update_docs.sh`を実行すると諸々の処理が実行されます．  
+
+```bash
+./update_docs.sh
+```

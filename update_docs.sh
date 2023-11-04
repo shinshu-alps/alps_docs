@@ -1,5 +1,5 @@
 #!/bin/bash
-# ドキュメント更新スクリプト
+# ドキュメント手動更新スクリプト
 
 # mainブランチにチェックアウト
 git checkout main
@@ -9,7 +9,7 @@ doxygen Doxyfile
 
 # コミット
 git add .
-git commit -m "Generated documentation"
+git commit -m "ドキュメントを手動生成しました"
 git push origin main
 
 # gh-pagesブランチにチェックアウト
@@ -20,10 +20,8 @@ git checkout main docs/
 
 # コミット
 git add .
-git commit -m "Update documentation"
+git commit -m "ドキュメントを手動更新しました"
 git push origin gh-pages
 
 # メインブランチに戻る
 git checkout main
-
-echo "Documentation generation and deployment completed."

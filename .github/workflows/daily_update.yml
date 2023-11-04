@@ -1,9 +1,11 @@
+# 毎日0時にドキュメントを自動更新するワークフロー
 name: Daily Update
 
 on:
-  workflow_dispatch:
+  # 毎日0時に実行．手動で実行することも可能．
   schedule:
     - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   update_docs:
@@ -11,14 +13,15 @@ jobs:
     permissions: 
       contents: write
     steps:
+      # リポジトリをチェックアウト(すべてのブランチを取得）
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
+      # SSH（デプロイキー）の設定
       - name: SSH setting
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.ALPS_DOCS_SSH_PRIVATE_KEY }}
           ALPS_COMMON_LIB_DEPLOY_KEY: ${{ secrets.ALPS_COMMON_LIB_DEPLOY_KEY }}
           ALPS_LINUX_LIB_DEPLOY_KEY: ${{ secrets.ALPS_LINUX_LIB_DEPLOY_KEY }}
           ALPS_ROS_LIB_DEPLOY_KEY: ${{ secrets.ALPS_ROS_LIB_DEPLOY_KEY }}
@@ -27,7 +30,6 @@ jobs:
           ALPS_STM32_LIB_DEPLOY_KEY: ${{ secrets.ALPS_STM32_LIB_DEPLOY_KEY }}
         run: |
           mkdir -p /home/runner/.ssh/
-          echo -e "$SSH_PRIVATE_KEY" > /home/runner/.ssh/id_rsa
           echo -e "$ALPS_COMMON_LIB_DEPLOY_KEY" > /home/runner/.ssh/id_rsa_common_lib
           echo -e "$ALPS_LINUX_LIB_DEPLOY_KEY" > /home/runner/.ssh/id_rsa_linux_lib
           echo -e "$ALPS_ROS_LIB_DEPLOY_KEY" > /home/runner/.ssh/id_rsa_ros_lib
@@ -36,9 +38,12 @@ jobs:
           echo -e "$ALPS_STM32_LIB_DEPLOY_KEY" > /home/runner/.ssh/id_rsa_stm32_lib
           chmod 600 /home/runner/.ssh/id_rsa*
 
+      
+      # 各ライブラリのサブモジュールを更新
       - name: Checkout submodule
         run: |
           git submodule update --init doxygen-awesome-css
+
           export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/id_rsa_common_lib"
           git submodule update --init --remote alps_common_lib
           export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/id_rsa_linux_lib"
@@ -52,34 +57,40 @@ jobs:
           export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/id_rsa_stm32_lib"
           git submodule update --init --remote alps_stm32_lib
 
+      # Gitのユーザー設定
       - name: Git user config
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+      # 必要なパッケージのインストール
       - name: Install doxygen and graphviz
         run: |
           sudo apt-get install -y doxygen
           sudo apt-get install -y graphviz
           
+      # ドキュメントの生成
       - name: Generate documentation
         run: |
           git checkout main
           doxygen Doxyfile
           git add .
-          git commit -m "Generated documentation"
+          git commit -m "ドキュメントが自動生成されました"
 
+      # mainブランチにpush
       - name: Push main branch
         run: |
           git push origin main
 
+      # gh-pagesブランチにドキュメントをコピー
       - name: Update gh-pages branch
         run: |
           git checkout gh-pages
           git checkout main docs/
           git add .
-          git commit -m "Update documentation"
+          git commit -m "ドキュメントが自動更新されました"
 
+      # gh-pagesブランチにpush
       - name: Push gh-pages branch
         run: |
           git push origin gh-pages
