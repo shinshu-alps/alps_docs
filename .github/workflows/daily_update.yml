@@ -60,18 +60,25 @@ jobs:
           sudo apt-get install -y doxygen
           doxygen --version
           
-      - name: Execute update script
+      - name: Generate documentation
         run: |
           git checkout main
           doxygen Doxyfile
           git add .
           git commit -m "Generated documentation"
+
+      - name: Push main branch
+        run: |
           git push origin main
+
+      - name: Deploy documentation
+        run: |
           git checkout gh-pages
           git checkout main docs/
           git add .
           git commit -m "Update documentation"
           git push origin gh-pages
+
           git checkout main
           echo "Documentation generation and deployment completed."
 
