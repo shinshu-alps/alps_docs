@@ -18,7 +18,7 @@ jobs:
       #     chmod 600 /home/runner/.ssh/id_rsa
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
         with:
           ssh-key: ${{ secrets.ALPS_DOCS_SSH_PRIVATE_KEY }}
           submodules: recursive
@@ -27,16 +27,16 @@ jobs:
       #   run: |
       #     git submodule update --init --recursive
 
-      - name: git config
+      - name: Git config
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: install doxygen
+      - name: Install doxygen
         run: |
           sudo apt-get install -y doxygen
           doxygen --version
           
-      - name: execute update script
+      - name: Execute update script
         run: |
           ./update_docs.sh
