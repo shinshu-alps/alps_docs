@@ -4,14 +4,6 @@
 # mainブランチにチェックアウト
 git checkout main
 
-# ライブラリ更新
-git submodule update --remote alps_common_lib
-git submodule update --remote alps_linux_lib
-git submodule update --remote alps_mbed_lib
-git submodule update --remote alps_stm32_lib
-git submodule update --remote alps_ros_lib
-git submodule update --remote alps_ros2_lib
-
 # Doxyfile(Doxygenの設定ファイル)を使用してドキュメントを生成
 doxygen Doxyfile
 
