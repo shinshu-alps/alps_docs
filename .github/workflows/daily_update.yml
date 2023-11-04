@@ -52,15 +52,15 @@ jobs:
           export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/id_rsa_stm32_lib"
           git submodule update --init --remote alps_stm32_lib
 
-      - name: Git config
+      - name: Git user config
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Install doxygen
+      - name: Install doxygen and graphviz
         run: |
           sudo apt-get install -y doxygen
-          doxygen --version
+          sudo apt-get install -y graphviz
           
       - name: Generate documentation
         run: |
@@ -73,14 +73,14 @@ jobs:
         run: |
           git push origin main
 
-      - name: Deploy documentation
+      - name: Update gh-pages branch
         run: |
           git checkout gh-pages
           git checkout main docs/
           git add .
           git commit -m "Update documentation"
+          
+      - name: Push gh-pages branch
+        run: |
           git push origin gh-pages
-
-          git checkout main
-          echo "Documentation generation and deployment completed."
 
