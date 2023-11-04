@@ -9,11 +9,6 @@ jobs:
   update_docs:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          submodules: recursive
-
       - name: SSH Setting
         env:
           SSH_PRIVATE_KEY: ${{ secrets.ALPS_DOCS_SSH_PRIVATE_KEY }}
@@ -22,9 +17,14 @@ jobs:
           echo -e "$SSH_PRIVATE_KEY" > /home/runner/.ssh/id_rsa
           chmod 600 /home/runner/.ssh/id_rsa
 
-      - name: Checkout Submodule
-        run: |
-          git submodule update --init --recursive
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      # - name: Checkout Submodule
+      #   run: |
+      #     git submodule update --init --recursive
 
       - name: git config
         run: |
