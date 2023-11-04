@@ -1,5 +1,5 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="26,5,227,45"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html" title="ロボマスモータのクラス" alt="" coords="296,37,443,77"/>
-<area shape="rect" id="node3" href="$classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html" title=" " alt="" coords="5,69,248,109"/>
+<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="26,5,227,47"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html" title="ロボマスモータのクラス" alt="" coords="296,39,443,80"/>
+<area shape="rect" id="node3" href="$classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html" title=" " alt="" coords="5,71,248,112"/>
 </map>

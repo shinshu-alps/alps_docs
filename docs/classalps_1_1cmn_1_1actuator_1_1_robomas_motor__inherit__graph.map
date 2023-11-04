@@ -1,5 +1,5 @@
 <map id="alps::cmn::actuator::RobomasMotor" name="alps::cmn::actuator::RobomasMotor">
-<area shape="rect" id="node1" title="ロボマスモータのクラス" alt="" coords="124,153,317,493"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="5,15,199,95"/>
-<area shape="rect" id="node3" href="$classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html" title=" " alt="" coords="223,5,458,105"/>
+<area shape="rect" id="node1" title="ロボマスモータのクラス" alt="" coords="127,160,330,443"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="5,13,207,105"/>
+<area shape="rect" id="node3" href="$classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html" title=" " alt="" coords="231,5,474,112"/>
 </map>

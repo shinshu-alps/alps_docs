@@ -1,4 +1,4 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1communication_1_1_i_can_io.html" title=" " alt="" coords="5,5,200,45"/>
-<area shape="rect" id="node2" href="$classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html" title="MbedのCAN通信IO. 受信割り込みによってデータをバッファリングする．" alt="" coords="248,5,451,45"/>
+<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1communication_1_1_i_can_io.html" title=" " alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node2" href="$classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html" title="MbedのCAN通信IO. 受信割り込みによってデータをバッファリングする．" alt="" coords="248,5,451,47"/>
 </map>

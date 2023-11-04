@@ -1,4 +1,4 @@
 <map id="alps::cmn::sensor::IncrementalEncoder&lt; Clock, InterruptIn, DigitalIn &gt;" name="alps::cmn::sensor::IncrementalEncoder&lt; Clock, InterruptIn, DigitalIn &gt;">
-<area shape="rect" id="node1" title="A相B相からなるインクリメンタルエンコーダ" alt="" coords="20,183,189,392"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html" title=" " alt="" coords="5,5,204,135"/>
+<area shape="rect" id="node1" title="A相B相からなるインクリメンタルエンコーダ" alt="" coords="20,189,197,384"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html" title=" " alt="" coords="5,5,212,141"/>
 </map>
