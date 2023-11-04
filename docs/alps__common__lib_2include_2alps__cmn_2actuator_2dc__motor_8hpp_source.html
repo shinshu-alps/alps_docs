@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.9.7" />
+    <meta name="generator" content="Doxygen 1.9.1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Alps: alps_common_lib/include/alps_cmn/actuator/dc_motor.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -53,22 +53,21 @@
                 </tbody>
             </table>
         </div>
-        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
+        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */
-</script>
+/* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -82,7 +81,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(document).ready(function(){initNavTree('alps__common__lib_2include_2alps__cmn_2actuator_2dc__motor_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
@@ -96,97 +95,91 @@ $(document).ready(function(){initNavTree('alps__common__lib_2include_2alps__cmn_
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<div id="MSearchResults">
-<div class="SRPage">
-<div id="SRIndex">
-<div id="SRResults"></div>
-<div class="SRStatus" id="Loading">読み取り中…</div>
-<div class="SRStatus" id="Searching">検索中…</div>
-<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
-</div>
-</div>
-</div>
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">dc_motor.hpp</div></div>
+  <div class="headertitle">
+<div class="title">dc_motor.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="alps__common__lib_2include_2alps__cmn_2actuator_2dc__motor_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_CMN_LIB_ACTUATOR_DC_MOTOR_HPP_</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_CMN_LIB_ACTUATOR_DC_MOTOR_HPP_</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;chrono&gt;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="i__motor_8hpp.html">alps_cmn/actuator/i_motor.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="i__digital__out_8hpp.html">alps_cmn/gpio/i_digital_out.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="i__pwm__out_8hpp.html">alps_cmn/gpio/i_pwm_out.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="algorithm_8hpp.html">alps_cmn/util/algorithm.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="namespacealps.html">   22</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn.html">   24</a></span><span class="keyword">namespace </span>cmn</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1actuator.html">   26</a></span><span class="keyword">namespace </span>actuator</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> PwmOut, <span class="keyword">class</span> DigitalOut&gt;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_dc_motor.html">   36</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1actuator_1_1_dc_motor.html">DcMotor</a> : <span class="keyword">public</span> <a class="code hl_class" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">IMotor</a>&lt;DcMotor&lt;PwmOut, DigitalOut&gt;&gt;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>{</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_dc_motor.html#af8c48c8cfcd2dec786544dbbdcc8bad4">   46</a></span>  <a class="code hl_function" href="classalps_1_1cmn_1_1actuator_1_1_dc_motor.html#af8c48c8cfcd2dec786544dbbdcc8bad4">DcMotor</a>(</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_class" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">gpio::IPwmOut&lt;PwmOut&gt;</a> &amp; pwm_out,</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_class" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html">gpio::IDigitalOut&lt;DigitalOut&gt;</a> &amp; write_dir,</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">bool</span> base_direction = <span class="keyword">true</span>)</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  : pwm_out_{pwm_out}, write_dir_{write_dir}, base_direction_{base_direction}</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    pwm_out_.<a class="code hl_function" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#a5cacb90bcdc89bae801e318008bb49e8">CallSetPeriod</a>(std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(1s / hertz_));</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    pwm_out_.<a class="code hl_function" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#a126c2a4c46285eede39c37d72243194a">CallWrite</a>(0.0f);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    write_dir_.<a class="code hl_function" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html#ae715226da883d5a7df782f9071ecbc6e">CallWrite</a>(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  }</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_dc_motor.html#a3a8b2831facd5aab3d69ccf9eb5be526">   62</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1actuator_1_1_dc_motor.html#a3a8b2831facd5aab3d69ccf9eb5be526">Drive</a>(<span class="keywordtype">float</span> output_ratio)</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="comment">// 方向出力</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">if</span> (output_ratio &gt; 0) {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      write_dir_.<a class="code hl_function" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html#ae715226da883d5a7df782f9071ecbc6e">CallWrite</a>(base_direction_);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      write_dir_.<a class="code hl_function" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html#ae715226da883d5a7df782f9071ecbc6e">CallWrite</a>(!base_direction_);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">// パワー出力</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    output_ratio = std::fabs(output_ratio);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    output_ratio = <a class="code hl_function" href="namespacealps_1_1cmn_1_1util.html#a7056edb1e78ff96bca5fa94aa5e3d4f4">alps::cmn::util::Clamp</a>(output_ratio, 0.0f, 1.0f);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    pwm_out_.<a class="code hl_function" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#a126c2a4c46285eede39c37d72243194a">CallWrite</a>(output_ratio);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  }</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kMaxPower = 1.0f;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> hertz_{16000.0};</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">gpio::IPwmOut&lt;PwmOut&gt;</a> &amp; pwm_out_;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html">gpio::IDigitalOut&lt;DigitalOut&gt;</a> &amp; write_dir_;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keywordtype">bool</span> base_direction_;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>};</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}  <span class="comment">// namespace actuator</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>}  <span class="comment">// namespace cmn</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">#endif</span></div>
+<a href="alps__common__lib_2include_2alps__cmn_2actuator_2dc__motor_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef ALPS_CMN_LIB_ACTUATOR_DC_MOTOR_HPP_</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define ALPS_CMN_LIB_ACTUATOR_DC_MOTOR_HPP_</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__motor_8hpp.html">alps_cmn/actuator/i_motor.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__digital__out_8hpp.html">alps_cmn/gpio/i_digital_out.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__pwm__out_8hpp.html">alps_cmn/gpio/i_pwm_out.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="algorithm_8hpp.html">alps_cmn/util/algorithm.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespacealps.html">   22</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn.html">   24</a></span>&#160;<span class="keyword">namespace </span>cmn</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1actuator.html">   26</a></span>&#160;<span class="keyword">namespace </span>actuator</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> PwmOut, <span class="keyword">class</span> DigitalOut&gt;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_dc_motor.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1actuator_1_1_dc_motor.html">DcMotor</a> : <span class="keyword">public</span> <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">IMotor</a>&lt;DcMotor&lt;PwmOut, DigitalOut&gt;&gt;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_dc_motor.html#af8c48c8cfcd2dec786544dbbdcc8bad4">   46</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_dc_motor.html#af8c48c8cfcd2dec786544dbbdcc8bad4">DcMotor</a>(</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">gpio::IPwmOut&lt;PwmOut&gt;</a> &amp; pwm_out,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html">gpio::IDigitalOut&lt;DigitalOut&gt;</a> &amp; write_dir,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">bool</span> base_direction = <span class="keyword">true</span>)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  : pwm_out_{pwm_out}, write_dir_{write_dir}, base_direction_{base_direction}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    pwm_out_.<a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#a5cacb90bcdc89bae801e318008bb49e8">CallSetPeriod</a>(std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(1s / hertz_));</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    pwm_out_.<a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#a126c2a4c46285eede39c37d72243194a">CallWrite</a>(0.0f);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    write_dir_.<a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html#ae715226da883d5a7df782f9071ecbc6e">CallWrite</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_dc_motor.html#a3a8b2831facd5aab3d69ccf9eb5be526">   62</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_dc_motor.html#a3a8b2831facd5aab3d69ccf9eb5be526">Drive</a>(<span class="keywordtype">float</span> output_ratio)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// 方向出力</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (output_ratio &gt; 0) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      write_dir_.<a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html#ae715226da883d5a7df782f9071ecbc6e">CallWrite</a>(base_direction_);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      write_dir_.<a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html#ae715226da883d5a7df782f9071ecbc6e">CallWrite</a>(!base_direction_);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// パワー出力</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    output_ratio = std::fabs(output_ratio);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    output_ratio = <a class="code" href="namespacealps_1_1cmn_1_1util.html#a13928639f0ae9b5207010ae61a2c9d2a">alps::cmn::util::Clamp</a>(output_ratio, 0.0f, 1.0f);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    pwm_out_.<a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#a126c2a4c46285eede39c37d72243194a">CallWrite</a>(output_ratio);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> kMaxPower = 1.0f;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> hertz_{16000.0};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">gpio::IPwmOut&lt;PwmOut&gt;</a> &amp; pwm_out_;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html">gpio::IDigitalOut&lt;DigitalOut&gt;</a> &amp; write_dir_;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">bool</span> base_direction_;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}  <span class="comment">// namespace actuator</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aalgorithm_8hpp_html"><div class="ttname"><a href="algorithm_8hpp.html">algorithm.hpp</a></div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_dc_motor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_dc_motor.html">alps::cmn::actuator::DcMotor</a></div><div class="ttdoc">PWMピンと方向指定ピンで動かすDCモーター</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:37</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_dc_motor_html_a3a8b2831facd5aab3d69ccf9eb5be526"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_dc_motor.html#a3a8b2831facd5aab3d69ccf9eb5be526">alps::cmn::actuator::DcMotor::Drive</a></div><div class="ttdeci">void Drive(float output_ratio)</div><div class="ttdoc">指定した出力値でモーターを回転</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:62</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_dc_motor_html_af8c48c8cfcd2dec786544dbbdcc8bad4"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_dc_motor.html#af8c48c8cfcd2dec786544dbbdcc8bad4">alps::cmn::actuator::DcMotor::DcMotor</a></div><div class="ttdeci">DcMotor(gpio::IPwmOut&lt; PwmOut &gt; &amp;pwm_out, gpio::IDigitalOut&lt; DigitalOut &gt; &amp;write_dir, bool base_direction=true)</div><div class="ttdoc">初期化コンストラクタ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:46</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_i_motor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">alps::cmn::actuator::IMotor</a></div><div class="ttdoc">モーターを駆動するインタフェース</div><div class="ttdef"><b>Definition:</b> i_motor.hpp:17</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_digital_out_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html">alps::cmn::gpio::IDigitalOut</a></div><div class="ttdoc">デジタル出力を行うインタフェース</div><div class="ttdef"><b>Definition:</b> i_digital_out.hpp:29</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_digital_out_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html">alps::cmn::gpio::IDigitalOut&lt; DigitalOut &gt;</a></div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_digital_out_html_ae715226da883d5a7df782f9071ecbc6e"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html#ae715226da883d5a7df782f9071ecbc6e">alps::cmn::gpio::IDigitalOut::CallWrite</a></div><div class="ttdeci">void CallWrite(bool value)</div><div class="ttdoc">インタフェースを介してWrite()関数を呼び出す．振る舞い: デジタル出力を行う</div><div class="ttdef"><b>Definition:</b> i_digital_out.hpp:37</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_pwm_out_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">alps::cmn::gpio::IPwmOut</a></div><div class="ttdoc">PWM出力を行うインタフェース</div><div class="ttdef"><b>Definition:</b> i_pwm_out.hpp:31</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_pwm_out_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">alps::cmn::gpio::IPwmOut&lt; PwmOut &gt;</a></div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_pwm_out_html_a126c2a4c46285eede39c37d72243194a"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#a126c2a4c46285eede39c37d72243194a">alps::cmn::gpio::IPwmOut::CallWrite</a></div><div class="ttdeci">void CallWrite(float value)</div><div class="ttdoc">インタフェースを介してWrite()関数を呼び出す．振る舞い: PWM出力を行う</div><div class="ttdef"><b>Definition:</b> i_pwm_out.hpp:39</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_pwm_out_html_a5cacb90bcdc89bae801e318008bb49e8"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#a5cacb90bcdc89bae801e318008bb49e8">alps::cmn::gpio::IPwmOut::CallSetPeriod</a></div><div class="ttdeci">void CallSetPeriod(std::chrono::microseconds period)</div><div class="ttdoc">インタフェースを介してSetPeriod()関数を呼び出す．振る舞い: PWMの周期を設定する</div><div class="ttdef"><b>Definition:</b> i_pwm_out.hpp:50</div></div>
 <div class="ttc" id="ai__digital__out_8hpp_html"><div class="ttname"><a href="i__digital__out_8hpp.html">i_digital_out.hpp</a></div></div>
 <div class="ttc" id="ai__motor_8hpp_html"><div class="ttname"><a href="i__motor_8hpp.html">i_motor.hpp</a></div></div>
 <div class="ttc" id="ai__pwm__out_8hpp_html"><div class="ttname"><a href="i__pwm__out_8hpp.html">i_pwm_out.hpp</a></div><div class="ttdoc">PWM出力を行うインタフェース</div></div>
-<div class="ttc" id="anamespacealps_1_1cmn_1_1util_html_a7056edb1e78ff96bca5fa94aa5e3d4f4"><div class="ttname"><a href="namespacealps_1_1cmn_1_1util.html#a7056edb1e78ff96bca5fa94aa5e3d4f4">alps::cmn::util::Clamp</a></div><div class="ttdeci">constexpr const T &amp; Clamp(const T &amp;value, const T &amp;low, const T &amp;high)</div><div class="ttdoc">入力値が最小値~最大値の外である場合範囲内に収める C++17で追加されたstd::clampのコピー実装</div><div class="ttdef"><b>Definition:</b> algorithm.hpp:21</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1util_html_a13928639f0ae9b5207010ae61a2c9d2a"><div class="ttname"><a href="namespacealps_1_1cmn_1_1util.html#a13928639f0ae9b5207010ae61a2c9d2a">alps::cmn::util::Clamp</a></div><div class="ttdeci">constexpr const T &amp; Clamp(const T &amp;value, const T &amp;low, const T &amp;high)</div><div class="ttdoc">入力値が最小値~最大値の外である場合範囲内に収める C++17で追加されたstd::clampのコピー実装</div><div class="ttdef"><b>Definition:</b> algorithm.hpp:21</div></div>
 <div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -194,7 +187,7 @@ $(document).ready(function(){initNavTree('alps__common__lib_2include_2alps__cmn_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_fcd1ba41f8679fcc7bf76d667eaa0e17.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_ce1e71e2103ac83e6d6cc720a9feeeb7.html">include</a></li><li class="navelem"><a class="el" href="dir_cc648f72f51f156e42f9863c0e5bf5fb.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_2239b1117054295ada522fe6d99615b2.html">actuator</a></li><li class="navelem"><a class="el" href="alps__common__lib_2include_2alps__cmn_2actuator_2dc__motor_8hpp.html">dc_motor.hpp</a></li>
-    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

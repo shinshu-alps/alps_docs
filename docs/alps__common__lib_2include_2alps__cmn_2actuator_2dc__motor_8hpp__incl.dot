@@ -1,0 +1,18 @@
+digraph "alps_common_lib/include/alps_cmn/actuator/dc_motor.hpp"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="alps_common_lib/include\l/alps_cmn/actuator/dc\l_motor.hpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="chrono",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="alps_cmn/actuator/i\l_motor.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$i__motor_8hpp.html",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="alps_cmn/gpio/i_digital\l_out.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$i__digital__out_8hpp.html",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="alps_cmn/gpio/i_pwm\l_out.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$i__pwm__out_8hpp.html",tooltip="PWM出力を行うインタフェース"];
+  Node5 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="alps_cmn/util/algorithm.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$algorithm_8hpp.html",tooltip=" "];
+}

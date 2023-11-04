@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.9.7" />
+    <meta name="generator" content="Doxygen 1.9.1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Alps: alps_common_lib/include/alps_cmn/sensor/incremental_encoder.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -53,22 +53,21 @@
                 </tbody>
             </table>
         </div>
-        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
+        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */
-</script>
+/* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -82,7 +81,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(document).ready(function(){initNavTree('alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
@@ -96,158 +95,152 @@ $(document).ready(function(){initNavTree('alps__common__lib_2include_2alps__cmn_
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<div id="MSearchResults">
-<div class="SRPage">
-<div id="SRIndex">
-<div id="SRResults"></div>
-<div class="SRStatus" id="Loading">読み取り中…</div>
-<div class="SRStatus" id="Searching">検索中…</div>
-<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
-</div>
-</div>
-</div>
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">incremental_encoder.hpp</div></div>
+  <div class="headertitle">
+<div class="title">incremental_encoder.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_CMN_LIB_SENSOR_INCREMENTAL_ENCODER_HPP_</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_CMN_LIB_SENSOR_INCREMENTAL_ENCODER_HPP_</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;chrono&gt;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="i__digital__in_8hpp.html">alps_cmn/gpio/i_digital_in.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="i__interrupt__in_8hpp.html">alps_cmn/gpio/i_interrupt_in.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="pi_8hpp.html">alps_cmn/math/pi.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="i__rotary__sensor_8hpp.html">alps_cmn/sensor/i_rotary_sensor.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>cmn</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">namespace </span>sensor</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Clock, <span class="keyword">class</span> InterruptIn, <span class="keyword">class</span> DigitalIn&gt;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html">   39</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html">IncrementalEncoder</a> : <span class="keyword">public</span> <a class="code hl_class" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">IRotarySensor</a>&lt;IncrementalEncoder&lt;Clock, InterruptIn, DigitalIn&gt;&gt;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keyword">using </span>TimePoint = <span class="keyword">typename</span> Clock::time_point;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#a0cc068f91cefc1903039e1f06775f5ff">   53</a></span>  <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#a0cc068f91cefc1903039e1f06775f5ff">IncrementalEncoder</a>(</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_class" href="classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html">gpio::IInterruptIn&lt;InterruptIn&gt;</a> &amp; interrupt_A,</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_class" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html">gpio::IDigitalIn&lt;DigitalIn&gt;</a> &amp; read_B,</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    uint16_t pulses_per_rev)</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  : interrupt_A_{interrupt_A},</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    read_B_{read_B},</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    pulses_per_rev_{pulses_per_rev},</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    resolution_rad_{<a class="code hl_namespace" href="namespacealps.html">alps</a>::cmn::math::kPi / pulses_per_rev_}</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// 割り込み設定</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    interrupt_A_.<a class="code hl_function" href="classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html#a05b1bc2b9e081732f0eb96a973bf3646">CallAttachInterrupt</a>(</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      etl::delegate&lt;<span class="keywordtype">void</span>()&gt;::create&lt;IncrementalEncoder, &amp;IncrementalEncoder::OnRiseA&gt;(*<span class="keyword">this</span>),</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1gpio.html#a5e6ac69b85cb0a3ebf618df6f6e316a9a7e2fb3a1859ce40bdfa6c187f499d423">alps::cmn::gpio::InterruptMode::kRise</a>);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    interrupt_A_.<a class="code hl_function" href="classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html#a05b1bc2b9e081732f0eb96a973bf3646">CallAttachInterrupt</a>(</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      etl::delegate&lt;<span class="keywordtype">void</span>()&gt;::create&lt;IncrementalEncoder, &amp;IncrementalEncoder::OnFallA&gt;(*<span class="keyword">this</span>),</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1gpio.html#a5e6ac69b85cb0a3ebf618df6f6e316a9a25ca54211737bfd512c6b12741bcb060">alps::cmn::gpio::InterruptMode::kFall</a>);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#ac0f645b8b05ccdf1b50317374a944475">Reset</a>();</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  }</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#ac0f645b8b05ccdf1b50317374a944475">   77</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#ac0f645b8b05ccdf1b50317374a944475">Reset</a>()</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  {</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    pulse_change_count_ = 0;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    last_calc_velocity_angle_ = 0;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    last_calc_velocity_time_point_ = Clock::now();</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  }</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#aeb9dc338f1e61534d85baa9efea03f58">   89</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#aeb9dc338f1e61534d85baa9efea03f58">GetCurrentState</a>()</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  {</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordflow">return</span> curr_state_;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  }</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#a916d704b32c3112041dd1e1491316c03">   99</a></span>  int32_t <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#a916d704b32c3112041dd1e1491316c03">GetPulses</a>()</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  {</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="comment">// 2逓倍なので2で割るとパルス数に一致する</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordflow">return</span> pulse_change_count_ / 2;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  }</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#ad03e81cda9413ddce685ca778a8f0313">  110</a></span>  <span class="keywordtype">double</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#ad03e81cda9413ddce685ca778a8f0313">GetAngle</a>()</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  {</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordflow">return</span> pulse_change_count_ * resolution_rad_;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  }</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#af13d4da3b08293bbe049b3e8d4fd7fda">  120</a></span>  <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#af13d4da3b08293bbe049b3e8d4fd7fda">GetVelocity</a>()</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  {</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keyword">using namespace </span>std::chrono_literals;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keyword">using </span>Seconds = std::chrono::duration&lt;float, std::ratio&lt;1&gt;&gt;;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keyword">auto</span> timestamp_now = Clock::now();</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keyword">constexpr</span> Seconds kMinElapsed{1ms};</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keyword">auto</span> elapsed =</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>      std::chrono::duration_cast&lt;Seconds&gt;(timestamp_now - last_calc_velocity_time_point_);</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordflow">if</span> (elapsed &lt; kMinElapsed) {</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>      <span class="keywordflow">return</span> velocity_;</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    }</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordtype">double</span> now_angle = <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#ad03e81cda9413ddce685ca778a8f0313">GetAngle</a>();</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    velocity_ = (now_angle - last_calc_velocity_angle_) / elapsed.count();</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    last_calc_velocity_time_point_ = timestamp_now;</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    last_calc_velocity_angle_ = now_angle;</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keywordflow">return</span> velocity_;</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  }</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  <span class="keywordtype">void</span> OnRiseA()</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  {</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    IncrementPulses(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  }</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  <span class="keywordtype">void</span> OnFallA()</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  {</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    IncrementPulses(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  }</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  <span class="keywordtype">void</span> IncrementPulses(<span class="keywordtype">bool</span> a_state)</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  {</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    int8_t b_state = read_B_.<a class="code hl_function" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html#a7ec571adc939ca0d022e00087b0ea914">CallRead</a>();</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    curr_state_ = (<span class="keyword">static_cast&lt;</span>int8_t<span class="keyword">&gt;</span>(a_state) &lt;&lt; 1) | (b_state);</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keywordflow">if</span> ((prev_state_ == 0x3 &amp;&amp; curr_state_ == 0x0) || (prev_state_ == 0x0 &amp;&amp; curr_state_ == 0x3)) {</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>      ++pulse_change_count_;</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>      (prev_state_ == 0x2 &amp;&amp; curr_state_ == 0x1) || (prev_state_ == 0x1 &amp;&amp; curr_state_ == 0x2)) {</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>      --pulse_change_count_;</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    }</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    prev_state_ = curr_state_;</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>  }</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>  gpio::IInterruptIn&lt;InterruptIn&gt; &amp; interrupt_A_;</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  gpio::IDigitalIn&lt;DigitalIn&gt; &amp; read_B_;</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  <span class="keyword">const</span> uint16_t pulses_per_rev_;</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>  <span class="keyword">const</span> <span class="keywordtype">double</span> resolution_rad_;</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>  uint8_t prev_state_{};</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  uint8_t curr_state_{};</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>  <span class="keyword">volatile</span> int32_t pulse_change_count_{};</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <span class="keywordtype">float</span> velocity_{};</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  <span class="keywordtype">double</span> last_calc_velocity_angle_;</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  TimePoint last_calc_velocity_time_point_;</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>};</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>}  <span class="comment">// namespace sensor</span></div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>}  <span class="comment">// namespace cmn</span></div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="preprocessor">#endif  </span><span class="comment">// ALPS_CMN_LIB_SENSOR_INCREMENTAL_ENCODER_HPP_</span></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_digital_in_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html">alps::cmn::gpio::IDigitalIn</a></div><div class="ttdoc">デジタル入力を行うインタフェース</div><div class="ttdef"><b>Definition:</b> i_digital_in.hpp:28</div></div>
+<a href="alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef ALPS_CMN_LIB_SENSOR_INCREMENTAL_ENCODER_HPP_</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define ALPS_CMN_LIB_SENSOR_INCREMENTAL_ENCODER_HPP_</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__digital__in_8hpp.html">alps_cmn/gpio/i_digital_in.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__interrupt__in_8hpp.html">alps_cmn/gpio/i_interrupt_in.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pi_8hpp.html">alps_cmn/math/pi.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__rotary__sensor_8hpp.html">alps_cmn/sensor/i_rotary_sensor.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span>cmn</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>sensor</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Clock, <span class="keyword">class</span> InterruptIn, <span class="keyword">class</span> DigitalIn&gt;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html">IncrementalEncoder</a> : <span class="keyword">public</span> <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">IRotarySensor</a>&lt;IncrementalEncoder&lt;Clock, InterruptIn, DigitalIn&gt;&gt;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">using</span> TimePoint = <span class="keyword">typename</span> Clock::time_point;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#a0cc068f91cefc1903039e1f06775f5ff">   53</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#a0cc068f91cefc1903039e1f06775f5ff">IncrementalEncoder</a>(</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html">gpio::IInterruptIn&lt;InterruptIn&gt;</a> &amp; interrupt_A,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html">gpio::IDigitalIn&lt;DigitalIn&gt;</a> &amp; read_B,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    uint16_t pulses_per_rev)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  : interrupt_A_{interrupt_A},</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    read_B_{read_B},</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    pulses_per_rev_{pulses_per_rev},</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    resolution_rad_{<a class="code" href="namespacealps.html">alps</a>::cmn::math::<a class="code" href="namespacealps_1_1cmn_1_1math.html#a88f12b4ff4040bf5b2c1cd318c29e443">kPi</a> / pulses_per_rev_}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// 割り込み設定</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    interrupt_A_.<a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html#a05b1bc2b9e081732f0eb96a973bf3646">CallAttachInterrupt</a>(</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      etl::delegate&lt;<span class="keywordtype">void</span>()&gt;::create&lt;IncrementalEncoder, &amp;IncrementalEncoder::OnRiseA&gt;(*<span class="keyword">this</span>),</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <a class="code" href="namespacealps_1_1cmn_1_1gpio.html#a5e6ac69b85cb0a3ebf618df6f6e316a9a7e2fb3a1859ce40bdfa6c187f499d423">alps::cmn::gpio::InterruptMode::kRise</a>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    interrupt_A_.<a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html#a05b1bc2b9e081732f0eb96a973bf3646">CallAttachInterrupt</a>(</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      etl::delegate&lt;<span class="keywordtype">void</span>()&gt;::create&lt;IncrementalEncoder, &amp;IncrementalEncoder::OnFallA&gt;(*<span class="keyword">this</span>),</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <a class="code" href="namespacealps_1_1cmn_1_1gpio.html#a5e6ac69b85cb0a3ebf618df6f6e316a9a25ca54211737bfd512c6b12741bcb060">alps::cmn::gpio::InterruptMode::kFall</a>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#ac0f645b8b05ccdf1b50317374a944475">Reset</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#ac0f645b8b05ccdf1b50317374a944475">   77</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#ac0f645b8b05ccdf1b50317374a944475">Reset</a>()</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    pulse_change_count_ = 0;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    last_calc_velocity_angle_ = 0;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    last_calc_velocity_time_point_ = Clock::now();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#aeb9dc338f1e61534d85baa9efea03f58">   89</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#aeb9dc338f1e61534d85baa9efea03f58">GetCurrentState</a>()</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span> curr_state_;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#a916d704b32c3112041dd1e1491316c03">   99</a></span>&#160;  int32_t <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#a916d704b32c3112041dd1e1491316c03">GetPulses</a>()</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// 2逓倍なので2で割るとパルス数に一致する</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> pulse_change_count_ / 2;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#ad03e81cda9413ddce685ca778a8f0313">  110</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#ad03e81cda9413ddce685ca778a8f0313">GetAngle</a>()</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">return</span> pulse_change_count_ * resolution_rad_;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#af13d4da3b08293bbe049b3e8d4fd7fda">  120</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#af13d4da3b08293bbe049b3e8d4fd7fda">GetVelocity</a>()</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">using namespace </span>std::chrono_literals;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">using</span> Seconds = std::chrono::duration&lt;float, std::ratio&lt;1&gt;&gt;;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">auto</span> timestamp_now = Clock::now();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    constexpr Seconds kMinElapsed{1ms};</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keyword">auto</span> elapsed =</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      std::chrono::duration_cast&lt;Seconds&gt;(timestamp_now - last_calc_velocity_time_point_);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">if</span> (elapsed &lt; kMinElapsed) {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <span class="keywordflow">return</span> velocity_;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">double</span> now_angle = <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#ad03e81cda9413ddce685ca778a8f0313">GetAngle</a>();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    velocity_ = (now_angle - last_calc_velocity_angle_) / elapsed.count();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    last_calc_velocity_time_point_ = timestamp_now;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    last_calc_velocity_angle_ = now_angle;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">return</span> velocity_;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">void</span> OnRiseA()</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    IncrementPulses(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordtype">void</span> OnFallA()</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    IncrementPulses(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordtype">void</span> IncrementPulses(<span class="keywordtype">bool</span> a_state)</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    int8_t b_state = read_B_.<a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html#a7ec571adc939ca0d022e00087b0ea914">CallRead</a>();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    curr_state_ = (<span class="keyword">static_cast&lt;</span>int8_t<span class="keyword">&gt;</span>(a_state) &lt;&lt; 1) | (b_state);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">if</span> ((prev_state_ == 0x3 &amp;&amp; curr_state_ == 0x0) || (prev_state_ == 0x0 &amp;&amp; curr_state_ == 0x3)) {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      ++pulse_change_count_;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;      (prev_state_ == 0x2 &amp;&amp; curr_state_ == 0x1) || (prev_state_ == 0x1 &amp;&amp; curr_state_ == 0x2)) {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      --pulse_change_count_;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    prev_state_ = curr_state_;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  gpio::IInterruptIn&lt;InterruptIn&gt; &amp; interrupt_A_;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  gpio::IDigitalIn&lt;DigitalIn&gt; &amp; read_B_;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keyword">const</span> uint16_t pulses_per_rev_;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> resolution_rad_;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  uint8_t prev_state_{};</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  uint8_t curr_state_{};</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keyword">volatile</span> int32_t pulse_change_count_{};</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordtype">float</span> velocity_{};</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="keywordtype">double</span> last_calc_velocity_angle_;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  TimePoint last_calc_velocity_time_point_;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;};</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;}  <span class="comment">// namespace sensor</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// ALPS_CMN_LIB_SENSOR_INCREMENTAL_ENCODER_HPP_</span></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_digital_in_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html">alps::cmn::gpio::IDigitalIn&lt; DigitalIn &gt;</a></div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_digital_in_html_a7ec571adc939ca0d022e00087b0ea914"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html#a7ec571adc939ca0d022e00087b0ea914">alps::cmn::gpio::IDigitalIn::CallRead</a></div><div class="ttdeci">bool CallRead()</div><div class="ttdoc">インタフェースを介してRead()関数を呼び出す．振る舞い: デジタル入力を読む</div><div class="ttdef"><b>Definition:</b> i_digital_in.hpp:37</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_interrupt_in_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html">alps::cmn::gpio::IInterruptIn</a></div><div class="ttdoc">割り込みを設定するインターフェース</div><div class="ttdef"><b>Definition:</b> i_interrupt_in.hpp:43</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_interrupt_in_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html">alps::cmn::gpio::IInterruptIn&lt; InterruptIn &gt;</a></div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_interrupt_in_html_a05b1bc2b9e081732f0eb96a973bf3646"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html#a05b1bc2b9e081732f0eb96a973bf3646">alps::cmn::gpio::IInterruptIn::CallAttachInterrupt</a></div><div class="ttdeci">void CallAttachInterrupt(etl::delegate&lt; void()&gt; func, InterruptMode mode)</div><div class="ttdoc">インタフェースを介してAttachInterrupt()関数を呼び出す．振る舞い: 割り込みを設定する</div><div class="ttdef"><b>Definition:</b> i_interrupt_in.hpp:52</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">alps::cmn::sensor::IRotarySensor</a></div><div class="ttdoc">回転センサーのインタフェース</div><div class="ttdef"><b>Definition:</b> i_rotary_sensor.hpp:18</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_incremental_encoder_html"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html">alps::cmn::sensor::IncrementalEncoder</a></div><div class="ttdoc">A相B相からなるインクリメンタルエンコーダ</div><div class="ttdef"><b>Definition:</b> incremental_encoder.hpp:40</div></div>
@@ -262,6 +255,7 @@ $(document).ready(function(){initNavTree('alps__common__lib_2include_2alps__cmn_
 <div class="ttc" id="ai__rotary__sensor_8hpp_html"><div class="ttname"><a href="i__rotary__sensor_8hpp.html">i_rotary_sensor.hpp</a></div></div>
 <div class="ttc" id="anamespacealps_1_1cmn_1_1gpio_html_a5e6ac69b85cb0a3ebf618df6f6e316a9a25ca54211737bfd512c6b12741bcb060"><div class="ttname"><a href="namespacealps_1_1cmn_1_1gpio.html#a5e6ac69b85cb0a3ebf618df6f6e316a9a25ca54211737bfd512c6b12741bcb060">alps::cmn::gpio::InterruptMode::kFall</a></div><div class="ttdeci">@ kFall</div><div class="ttdoc">立ち下がり</div></div>
 <div class="ttc" id="anamespacealps_1_1cmn_1_1gpio_html_a5e6ac69b85cb0a3ebf618df6f6e316a9a7e2fb3a1859ce40bdfa6c187f499d423"><div class="ttname"><a href="namespacealps_1_1cmn_1_1gpio.html#a5e6ac69b85cb0a3ebf618df6f6e316a9a7e2fb3a1859ce40bdfa6c187f499d423">alps::cmn::gpio::InterruptMode::kRise</a></div><div class="ttdeci">@ kRise</div><div class="ttdoc">立ち上がり</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1math_html_a88f12b4ff4040bf5b2c1cd318c29e443"><div class="ttname"><a href="namespacealps_1_1cmn_1_1math.html#a88f12b4ff4040bf5b2c1cd318c29e443">alps::cmn::math::kPi</a></div><div class="ttdeci">constexpr double kPi</div><div class="ttdoc">円周率を表す定数（double）</div><div class="ttdef"><b>Definition:</b> pi.hpp:11</div></div>
 <div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:23</div></div>
 <div class="ttc" id="api_8hpp_html"><div class="ttname"><a href="pi_8hpp.html">pi.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -270,7 +264,7 @@ $(document).ready(function(){initNavTree('alps__common__lib_2include_2alps__cmn_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_fcd1ba41f8679fcc7bf76d667eaa0e17.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_ce1e71e2103ac83e6d6cc720a9feeeb7.html">include</a></li><li class="navelem"><a class="el" href="dir_cc648f72f51f156e42f9863c0e5bf5fb.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_96320550a29baac38dc9eb0ae89f5e73.html">sensor</a></li><li class="navelem"><a class="el" href="alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp.html">incremental_encoder.hpp</a></li>
-    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

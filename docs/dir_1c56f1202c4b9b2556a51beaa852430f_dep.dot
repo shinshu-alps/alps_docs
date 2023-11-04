@@ -1,0 +1,12 @@
+digraph "alps_linux_lib" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_1c56f1202c4b9b2556a51beaa852430f {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_1c56f1202c4b9b2556a51beaa852430f.html"];
+    dir_1c56f1202c4b9b2556a51beaa852430f [shape=plaintext label="alps_linux_lib"];
+  dir_6d217df781fc4021ea64ca101836a906 [shape=box label="include" fillcolor="white" style="filled" color="red" URL="dir_6d217df781fc4021ea64ca101836a906.html"];
+  }
+  dir_fcd1ba41f8679fcc7bf76d667eaa0e17 [shape=box label="alps_common_lib" fillcolor="white" style="filled" color="red" URL="dir_fcd1ba41f8679fcc7bf76d667eaa0e17.html"];
+  dir_6d217df781fc4021ea64ca101836a906->dir_fcd1ba41f8679fcc7bf76d667eaa0e17 [headlabel="2", labeldistance=1.5 headhref="dir_000013_000000.html"];
+}

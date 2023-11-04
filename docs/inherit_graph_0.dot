@@ -1,0 +1,10 @@
+digraph "クラス階層図"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="alps::cmn::actuator\l::IMotor\< DcMotor\< PwmOut,\l DigitalOut \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="alps::cmn::actuator\l::DcMotor\< PwmOut, Digital\lOut \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classalps_1_1cmn_1_1actuator_1_1_dc_motor.html",tooltip="PWMピンと方向指定ピンで動かすDCモーター"];
+}
