@@ -1,9 +1,9 @@
 <map id="alps_common_lib/include/alps_cmn/communication/serialize_type_info.hpp" name="alps_common_lib/include/alps_cmn/communication/serialize_type_info.hpp">
-<area shape="rect" id="node1" title="DataSeializerで変換する型に関する情報" alt="" coords="160,5,353,60"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,108,76,133"/>
-<area shape="rect" id="node3" title=" " alt="" coords="101,108,157,133"/>
-<area shape="rect" id="node4" title=" " alt="" coords="181,108,236,133"/>
-<area shape="rect" id="node5" title=" " alt="" coords="260,108,352,133"/>
-<area shape="rect" id="node6" title=" " alt="" coords="376,108,468,133"/>
-<area shape="rect" id="node7" title=" " alt="" coords="493,108,589,133"/>
+<area shape="rect" id="node1" title="DataSeializerで変換する型に関する情報" alt="" coords="160,5,353,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,109,76,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="101,109,157,136"/>
+<area shape="rect" id="node4" title=" " alt="" coords="181,109,236,136"/>
+<area shape="rect" id="node5" title=" " alt="" coords="260,109,352,136"/>
+<area shape="rect" id="node6" title=" " alt="" coords="376,109,468,136"/>
+<area shape="rect" id="node7" title=" " alt="" coords="492,109,587,136"/>
 </map>
