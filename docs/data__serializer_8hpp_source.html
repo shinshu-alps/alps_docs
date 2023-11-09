@@ -358,7 +358,7 @@ $(document).ready(function(){initNavTree('data__serializer_8hpp_source.html','')
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  <span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> Index&gt;</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> SerializeTuple(</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="keyword">const</span> std::tuple&lt;Args...&gt; &amp; tuple_data, etl::icircular_buffer&lt;uint8_t&gt; &amp; output) -&gt;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="keyword">const</span> std::tuple&lt;Args...&gt; &amp; <span class="comment">/* tuple_data */</span>, etl::icircular_buffer&lt;uint8_t&gt; &amp; <span class="comment">/* output */</span>) -&gt;</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keyword">typename</span> std::enable_if&lt;Index == <span class="keyword">sizeof</span>...(Args)&gt;::type</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  {</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="comment">// Index == sizeof...(Args)となったため処理終了</span></div>
@@ -379,7 +379,7 @@ $(document).ready(function(){initNavTree('data__serializer_8hpp_source.html','')
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  <span class="keyword">template</span> &lt;std::<span class="keywordtype">size_t</span> Index&gt;</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> DeserializeTuple(</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    etl::icircular_buffer&lt;uint8_t&gt; &amp; target_bytes, std::tuple&lt;Args...&gt; &amp; tuple_data) -&gt;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    etl::icircular_buffer&lt;uint8_t&gt; &amp; <span class="comment">/* target_bytes */</span>, std::tuple&lt;Args...&gt; &amp; <span class="comment">/* tuple_data */</span>) -&gt;</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <span class="keyword">typename</span> std::enable_if&lt;Index == <span class="keyword">sizeof</span>...(Args), <span class="keywordtype">bool</span>&gt;::type</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  {</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="comment">// Index == sizeof...(Args)となったため変換が正常に終了</span></div>
