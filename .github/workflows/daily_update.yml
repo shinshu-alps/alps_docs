@@ -75,31 +75,20 @@ jobs:
           doxygen Doxyfile
 
       # 生成したドキュメントをコミット．変更点がなければ終了．
-      - name: Commit docs
+      - name: Commit and Push
         run: |
           if git diff --quiet; then
             echo "nothing to commit"
             exit 0
-          else
-            git add .
-            git commit -m "ドキュメントが自動生成されました"
           fi
 
-      # mainブランチにpush
-      - name: Push main branch
-        run: |
+          git add .
+          git commit -m "ドキュメントが自動生成されました"
           git push origin main
 
-      # gh-pagesブランチにドキュメントをコピー
-      - name: Update gh-pages branch
-        run: |
           git checkout gh-pages
           git checkout main docs/
+
           git add .
           git commit -m "ドキュメントが自動更新されました"
-
-      # gh-pagesブランチにpush
-      - name: Push gh-pages branch
-        run: |
           git push origin gh-pages
-
