@@ -18,7 +18,7 @@ var namespacealps_1_1cmn_1_1communication =
     [ "UartSender", "classalps_1_1cmn_1_1communication_1_1_uart_sender.html", "classalps_1_1cmn_1_1communication_1_1_uart_sender" ],
     [ "UartReceiver", "classalps_1_1cmn_1_1communication_1_1_uart_receiver.html", "classalps_1_1cmn_1_1communication_1_1_uart_receiver" ],
     [ "UartPacketTransceiver", "classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html", "classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver" ],
-    [ "I2cAddress", "namespacealps_1_1cmn_1_1communication.html#a3c20a8c78507d44038a7e343d5cf60e0", null ],
+    [ "I2cAddress", "namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3", null ],
     [ "UartPacketId", "namespacealps_1_1cmn_1_1communication.html#a2fcdb1c4130d2b6f5c23a78e544e14e8", null ],
     [ "IsLittleEndian", "namespacealps_1_1cmn_1_1communication.html#ad6ef9f3fb96a4936e8a02431eb74aa76", null ],
     [ "UartPacketByteSize", "namespacealps_1_1cmn_1_1communication.html#a6e87897c36f9e01024f6ca7c81e6bd9f", null ]

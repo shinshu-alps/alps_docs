@@ -116,12 +116,12 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a4c443dda7c1b2b7c850c78b54a40d087"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#a4c443dda7c1b2b7c850c78b54a40d087">CallWrite</a> (<a class="el" href="namespacealps_1_1cmn_1_1communication.html#a3c20a8c78507d44038a7e343d5cf60e0">I2cAddress</a> address, etl::span&lt; const uint8_t &gt; write_buf)</td></tr>
-<tr class="memdesc:a4c443dda7c1b2b7c850c78b54a40d087"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してI2C通信でバイト列を送信する  <a href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#a4c443dda7c1b2b7c850c78b54a40d087">[詳解]</a><br /></td></tr>
-<tr class="separator:a4c443dda7c1b2b7c850c78b54a40d087"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56fb6c692571ea5d26c2e9f340c378dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#a56fb6c692571ea5d26c2e9f340c378dd">CallRead</a> (<a class="el" href="namespacealps_1_1cmn_1_1communication.html#a3c20a8c78507d44038a7e343d5cf60e0">I2cAddress</a> address, etl::span&lt; uint8_t &gt; read_buf)</td></tr>
-<tr class="memdesc:a56fb6c692571ea5d26c2e9f340c378dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してI2C通信でバイト列を受信する  <a href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#a56fb6c692571ea5d26c2e9f340c378dd">[詳解]</a><br /></td></tr>
-<tr class="separator:a56fb6c692571ea5d26c2e9f340c378dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af653762153caea8bbe059f868b73e5f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">CallWrite</a> (<a class="el" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">I2cAddress</a> address, etl::span&lt; const uint8_t &gt; write_buf, bool repeated=false)</td></tr>
+<tr class="memdesc:af653762153caea8bbe059f868b73e5f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してI2C通信でバイト列を送信する  <a href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">[詳解]</a><br /></td></tr>
+<tr class="separator:af653762153caea8bbe059f868b73e5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac08f337e75e152c3d2a82d7ca4a52f13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#ac08f337e75e152c3d2a82d7ca4a52f13">CallRead</a> (<a class="el" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">I2cAddress</a> address, etl::span&lt; uint8_t &gt; read_buf, bool repeated=false)</td></tr>
+<tr class="memdesc:ac08f337e75e152c3d2a82d7ca4a52f13"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してI2C通信でバイト列を受信する  <a href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#ac08f337e75e152c3d2a82d7ca4a52f13">[詳解]</a><br /></td></tr>
+<tr class="separator:ac08f337e75e152c3d2a82d7ca4a52f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><h3>template&lt;class Derived&gt;<br />
@@ -135,8 +135,8 @@ class alps::cmn::communication::II2cIo&lt; Derived &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">関数詳解</h2>
-<a id="a56fb6c692571ea5d26c2e9f340c378dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56fb6c692571ea5d26c2e9f340c378dd">&#9670;&nbsp;</a></span>CallRead()</h2>
+<a id="ac08f337e75e152c3d2a82d7ca4a52f13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac08f337e75e152c3d2a82d7ca4a52f13">&#9670;&nbsp;</a></span>CallRead()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,14 +149,20 @@ template&lt;class Derived &gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">alps::cmn::communication::II2cIo</a>&lt; Derived &gt;::CallRead </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacealps_1_1cmn_1_1communication.html#a3c20a8c78507d44038a7e343d5cf60e0">I2cAddress</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">I2cAddress</a>&#160;</td>
           <td class="paramname"><em>address</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">etl::span&lt; uint8_t &gt;&#160;</td>
-          <td class="paramname"><em>read_buf</em>&#160;</td>
+          <td class="paramname"><em>read_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>repeated</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -176,6 +182,7 @@ template&lt;class Derived &gt; </div>
   <table class="params">
     <tr><td class="paramname">address</td><td>通信先のI2Cアドレス </td></tr>
     <tr><td class="paramname">read_buf</td><td>読み込んだバイト列を格納するバッファ．spanが参照する範囲のバイト数だけ読み込まれる． </td></tr>
+    <tr><td class="paramname">repeated</td><td>true: 通信後にrepeated start conditionを送信して通信を維持．false: 通信後にstop conditionを送信．</td></tr>
   </table>
   </dd>
 </dl>
@@ -185,8 +192,8 @@ false 受信失敗 </dd></dl>
 
 </div>
 </div>
-<a id="a4c443dda7c1b2b7c850c78b54a40d087"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c443dda7c1b2b7c850c78b54a40d087">&#9670;&nbsp;</a></span>CallWrite()</h2>
+<a id="af653762153caea8bbe059f868b73e5f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af653762153caea8bbe059f868b73e5f1">&#9670;&nbsp;</a></span>CallWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -199,14 +206,20 @@ template&lt;class Derived &gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">alps::cmn::communication::II2cIo</a>&lt; Derived &gt;::CallWrite </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacealps_1_1cmn_1_1communication.html#a3c20a8c78507d44038a7e343d5cf60e0">I2cAddress</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">I2cAddress</a>&#160;</td>
           <td class="paramname"><em>address</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">etl::span&lt; const uint8_t &gt;&#160;</td>
-          <td class="paramname"><em>write_buf</em>&#160;</td>
+          <td class="paramname"><em>write_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>repeated</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -226,6 +239,7 @@ template&lt;class Derived &gt; </div>
   <table class="params">
     <tr><td class="paramname">address</td><td>通信先のI2Cアドレス </td></tr>
     <tr><td class="paramname">write_buf</td><td>書き込むバイト列．spanが参照する範囲のバイト数だけ送信される． </td></tr>
+    <tr><td class="paramname">repeated</td><td>true: 通信後にrepeated start conditionを送信して通信を維持．false: 通信後にstop conditionを送信．</td></tr>
   </table>
   </dd>
 </dl>
