@@ -72,10 +72,18 @@ jobs:
       # ドキュメントの生成
       - name: Generate documentation
         run: |
-          git checkout main
           doxygen Doxyfile
-          git add .
-          git commit -m "ドキュメントが自動生成されました"
+
+      # 生成したドキュメントをコミット．変更点がなければ終了．
+      - name: Commit docs
+        run: |
+          if git diff --quiet; then
+            echo "nothing to commit"
+            exit 0
+          else
+            git add .
+            git commit -m "ドキュメントが自動生成されました"
+          fi
 
       # mainブランチにpush
       - name: Push main branch
