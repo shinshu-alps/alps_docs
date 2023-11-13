@@ -65,7 +65,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "algorithm_8hpp.html",
-"classalps_1_1mbed_1_1communication_1_1_uart_io.html#a31b48d006a4417add2a332d6e86d6d3e"
+"classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#ae5b6fe31bee7a0c3574dfed839f9b4f5"
 ];
 
 var SYNCONMSG = 'クリックで同期表示が無効になります';

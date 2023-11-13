@@ -1,5 +1,14 @@
 var NAVTREEINDEX1 =
 {
+"classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#ae5b6fe31bee7a0c3574dfed839f9b4f5":[4,0,0,2,0,0,5],
+"classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#af8dced04191dcc8f0415cf736a5342fd":[4,0,0,2,0,0,1],
+"classalps_1_1mbed_1_1communication_1_1_i2c_io.html":[4,0,0,2,0,1],
+"classalps_1_1mbed_1_1communication_1_1_i2c_io.html#a1b5130fc84713edd3e0add8a3258e93a":[4,0,0,2,0,1,0],
+"classalps_1_1mbed_1_1communication_1_1_i2c_io.html#a82aee4f740b1e31f4656fd38d60f54d8":[4,0,0,2,0,1,4],
+"classalps_1_1mbed_1_1communication_1_1_i2c_io.html#a99670748a746af6ecb53b73f139cf179":[4,0,0,2,0,1,3],
+"classalps_1_1mbed_1_1communication_1_1_i2c_io.html#ac08f337e75e152c3d2a82d7ca4a52f13":[4,0,0,2,0,1,1],
+"classalps_1_1mbed_1_1communication_1_1_i2c_io.html#af653762153caea8bbe059f868b73e5f1":[4,0,0,2,0,1,2],
+"classalps_1_1mbed_1_1communication_1_1_uart_io.html":[4,0,0,2,0,2],
 "classalps_1_1mbed_1_1communication_1_1_uart_io.html#a31b48d006a4417add2a332d6e86d6d3e":[4,0,0,2,0,2,1],
 "classalps_1_1mbed_1_1communication_1_1_uart_io.html#a468f337139066580219d8a510ea0b91b":[4,0,0,2,0,2,0],
 "classalps_1_1mbed_1_1communication_1_1_uart_io.html#a4bb170a0846446360463ce54392157b1":[4,0,0,2,0,2,4],
@@ -186,6 +195,8 @@ var NAVTREEINDEX1 =
 "pid_8hpp_source.html":[5,0,0,0,0,2,4],
 "pid__old_8hpp.html":[5,0,0,0,0,2,5],
 "pid__old_8hpp_source.html":[5,0,0,0,0,2,5],
+"potentiometer_8hpp.html":[5,0,0,0,0,5,2],
+"potentiometer_8hpp_source.html":[5,0,0,0,0,5,2],
 "pwm__out_8hpp.html":[5,0,2,0,0,2,4],
 "pwm__out_8hpp_source.html":[5,0,2,0,0,2,4],
 "robomas__motor_8hpp.html":[5,0,0,0,0,0,2],
