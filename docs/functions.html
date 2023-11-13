@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 <h3><a id="index_b"></a>- b -</h3><ul>
 <li>BufferedCanIo()
-: <a class="el" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#a70512bb11865295755a0e7ac21a1ccbf">alps::mbed::communication::BufferedCanIo</a>
+: <a class="el" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#a76cd65aa670230eebeb382af91b8df95">alps::mbed::communication::BufferedCanIo&lt; kWriteBufSize, kReadBufSize &gt;</a>
 </li>
 </ul>
 
@@ -180,11 +180,11 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 
 <h3><a id="index_d"></a>- d -</h3><ul>
-<li>data
-: <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a4d7d845b46acffacd08217093f212426">alps::cmn::communication::CanDataFrame</a>
-</li>
 <li>Data
 : <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#ad80c2254d400088df4922301c3a3dffd">alps::cmn::communication::CanDataFrame</a>
+</li>
+<li>data
+: <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a4d7d845b46acffacd08217093f212426">alps::cmn::communication::CanDataFrame</a>
 </li>
 <li>DcMotor()
 : <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_dc_motor.html#af8c48c8cfcd2dec786544dbbdcc8bad4">alps::cmn::actuator::DcMotor&lt; PwmOut, DigitalOut &gt;</a>
@@ -228,12 +228,16 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>GetAngle()
 : <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a5c0aa6e9d820459b01bf6c95fe040de8">alps::cmn::actuator::RobomasMotor</a>
 , <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#ad03e81cda9413ddce685ca778a8f0313">alps::cmn::sensor::IncrementalEncoder&lt; Clock, InterruptIn, DigitalIn &gt;</a>
+, <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#aa884ac8ee10264569f3ef96e86b05ae1">alps::cmn::sensor::Potentiometer&lt; Clock, AnalogIn &gt;</a>
 </li>
 <li>GetCurrentState()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#aeb9dc338f1e61534d85baa9efea03f58">alps::cmn::sensor::IncrementalEncoder&lt; Clock, InterruptIn, DigitalIn &gt;</a>
 </li>
 <li>GetName()
 : <a class="el" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#abcd434490acadf59e85f6d44eb98e68a">alps::cmn::communication::SerializeTypeInfo&lt; T &gt;</a>
+</li>
+<li>GetNormalizedValue()
+: <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a4d627da9773c9a18dd4498db2f08e2a7">alps::cmn::sensor::Potentiometer&lt; Clock, AnalogIn &gt;</a>
 </li>
 <li>GetOutput()
 : <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#aac8a825bb848613825c11968dfbfa9cf">alps::cmn::actuator::RobomasMotor</a>
@@ -250,11 +254,14 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>GetPulses()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#a916d704b32c3112041dd1e1491316c03">alps::cmn::sensor::IncrementalEncoder&lt; Clock, InterruptIn, DigitalIn &gt;</a>
 </li>
+<li>GetRawValue()
+: <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a7323f143a5ecb2095a7c18311628d491">alps::cmn::sensor::Potentiometer&lt; Clock, AnalogIn &gt;</a>
+</li>
+<li>GetReadBufferCount()
+: <a class="el" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#a96e3974db813d3b8a8125e881096acc1">alps::mbed::communication::BufferedCanIo&lt; kWriteBufSize, kReadBufSize &gt;</a>
+</li>
 <li>GetRealCurrent()
 : <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#afceed7de0aca29c1b62f762a9e9812aa">alps::cmn::actuator::RobomasMotor</a>
-</li>
-<li>GetReceivedFrameNum()
-: <a class="el" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#aa9293a71f9868f7cb01741500c875510">alps::mbed::communication::BufferedCanIo</a>
 </li>
 <li>GetSensorDataCanId()
 : <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#add9362aa1368520772dc3553cc4f11d7">alps::cmn::actuator::RobomasMotor</a>
@@ -262,6 +269,10 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>GetVelocity()
 : <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a04ab045ebb659a3a80f52eb2b4606441">alps::cmn::actuator::RobomasMotor</a>
 , <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#af13d4da3b08293bbe049b3e8d4fd7fda">alps::cmn::sensor::IncrementalEncoder&lt; Clock, InterruptIn, DigitalIn &gt;</a>
+, <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a7f1e5c7c306d307f618d62d6f630a626">alps::cmn::sensor::Potentiometer&lt; Clock, AnalogIn &gt;</a>
+</li>
+<li>GetWriteBufferCount()
+: <a class="el" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#a112c9dc8ef14c9eee067b9325b719ba1">alps::mbed::communication::BufferedCanIo&lt; kWriteBufSize, kReadBufSize &gt;</a>
 </li>
 </ul>
 
@@ -272,11 +283,15 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 </li>
 <li>Id
 : <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a93495bd998ff2d9ed43a326e3b7955d1">alps::cmn::actuator::RobomasMotor</a>
-, <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">alps::cmn::communication::CanDataFrame</a>
 </li>
 <li>id
 : <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#ac4cd300534bb8689d1d8a6f8b0c0a910">alps::cmn::communication::CanDataFrame</a>
-, <a class="el" href="classalps_1_1cmn_1_1communication_1_1_uart_sender.html#a3456be6281bc4591585e5e5d6590208f">alps::cmn::communication::UartSender&lt; T &gt;</a>
+</li>
+<li>Id
+: <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">alps::cmn::communication::CanDataFrame</a>
+</li>
+<li>id
+: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_uart_sender.html#a3456be6281bc4591585e5e5d6590208f">alps::cmn::communication::UartSender&lt; T &gt;</a>
 </li>
 <li>id_
 : <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html#a70574ecd3e525b250d30feb5b1f2fee6">alps::cmn::communication::CanPublisher&lt; T &gt;</a>
@@ -386,6 +401,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 </li>
 <li>PidOld()
 : <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid_old.html#a862566e4b7585b18f7443fda8160c0fc">alps::cmn::control::PidOld</a>
+</li>
+<li>Potentiometer()
+: <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a2da13fa97fe3f12c833d555be56e44de">alps::cmn::sensor::Potentiometer&lt; Clock, AnalogIn &gt;</a>
 </li>
 <li>PublishMotorOutput()
 : <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_controller.html#a04116411c106a33fdf83163036f101bb">alps::cmn::actuator::RobomasMotorsCanController</a>
@@ -535,11 +553,11 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 </li>
 <li>TryRead()
 : <a class="el" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#aba9f031ada5fd612d310c1a73cfaa054">alps::lin::communication::SocketCanIo</a>
-, <a class="el" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#aadd4231c3015321d2b31cd2dc8f5934d">alps::mbed::communication::BufferedCanIo</a>
+, <a class="el" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#ae5b6fe31bee7a0c3574dfed839f9b4f5">alps::mbed::communication::BufferedCanIo&lt; kWriteBufSize, kReadBufSize &gt;</a>
 </li>
 <li>TryWrite()
 : <a class="el" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a2cd03a79343100ed866bcbc7ff24bd5d">alps::lin::communication::SocketCanIo</a>
-, <a class="el" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#a4e0574899684b35db36acbfe20d279fb">alps::mbed::communication::BufferedCanIo</a>
+, <a class="el" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#a637145115816929509692fe07e25edcf">alps::mbed::communication::BufferedCanIo&lt; kWriteBufSize, kReadBufSize &gt;</a>
 </li>
 <li>Type
 : <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a8c505d108218fe4ea9fb646f06141af2">alps::cmn::actuator::RobomasMotor</a>

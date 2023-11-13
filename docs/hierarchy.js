@@ -14,8 +14,8 @@ var hierarchy =
       [ "alps::mbed::gpio::AnalogIn", "classalps_1_1mbed_1_1gpio_1_1_analog_in.html", null ]
     ] ],
     [ "alps::cmn::communication::ICanIo< Derived >", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", null ],
-    [ "alps::cmn::communication::ICanIo< BufferedCanIo >", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", [
-      [ "alps::mbed::communication::BufferedCanIo", "classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html", null ]
+    [ "alps::cmn::communication::ICanIo< BufferedCanIo< 50, 100 > >", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", [
+      [ "alps::mbed::communication::BufferedCanIo< kWriteBufSize, kReadBufSize >", "classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html", null ]
     ] ],
     [ "alps::cmn::communication::ICanIo< CanIo >", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", null ],
     [ "alps::cmn::communication::ICanIo< SocketCanIo >", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", [
@@ -56,6 +56,9 @@ var hierarchy =
     [ "alps::cmn::sensor::IRotarySensor< Derived >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", null ],
     [ "alps::cmn::sensor::IRotarySensor< IncrementalEncoder< Clock, InterruptIn, DigitalIn > >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", [
       [ "alps::cmn::sensor::IncrementalEncoder< Clock, InterruptIn, DigitalIn >", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html", null ]
+    ] ],
+    [ "alps::cmn::sensor::IRotarySensor< Potentiometer< Clock, AnalogIn > >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", [
+      [ "alps::cmn::sensor::Potentiometer< Clock, AnalogIn >", "classalps_1_1cmn_1_1sensor_1_1_potentiometer.html", null ]
     ] ],
     [ "alps::cmn::sensor::IRotarySensor< RobomasMotor >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", [
       [ "alps::cmn::actuator::RobomasMotor", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html", null ]
