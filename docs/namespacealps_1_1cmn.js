@@ -11,6 +11,9 @@ var namespacealps_1_1cmn =
       [ "kPiF", "namespacealps_1_1cmn_1_1math.html#a5f1899ea808f6a1ff3d6fd8ee084e060", null ]
     ] ],
     [ "sensor", "namespacealps_1_1cmn_1_1sensor.html", "namespacealps_1_1cmn_1_1sensor" ],
+    [ "time", "namespacealps_1_1cmn_1_1time.html", [
+      [ "wait", "namespacealps_1_1cmn_1_1time.html#a60c317c943c5990f4619048af3defb26", null ]
+    ] ],
     [ "type", "namespacealps_1_1cmn_1_1type.html", null ],
     [ "util", "namespacealps_1_1cmn_1_1util.html", [
       [ "Clamp", "namespacealps_1_1cmn_1_1util.html#a13928639f0ae9b5207010ae61a2c9d2a", null ]
