@@ -1,8 +1,8 @@
 var NAVTREEINDEX0 =
 {
-"algorithm_8hpp.html":[5,0,0,0,0,6,0],
-"algorithm_8hpp.html#a13928639f0ae9b5207010ae61a2c9d2a":[5,0,0,0,0,6,0,0],
-"algorithm_8hpp_source.html":[5,0,0,0,0,6,0],
+"algorithm_8hpp.html":[5,0,0,0,0,7,0],
+"algorithm_8hpp.html#a13928639f0ae9b5207010ae61a2c9d2a":[5,0,0,0,0,7,0,0],
+"algorithm_8hpp_source.html":[5,0,0,0,0,7,0],
 "alps__common__lib_2include_2alps__cmn_2actuator_2dc__motor_8hpp.html":[5,0,0,0,0,0,0],
 "alps__common__lib_2include_2alps__cmn_2actuator_2dc__motor_8hpp_source.html":[5,0,0,0,0,0,0],
 "alps__common__lib_2include_2alps__cmn_2actuator_2servo__motor_8hpp.html":[5,0,0,0,0,0,4],
@@ -10,8 +10,8 @@ var NAVTREEINDEX0 =
 "alps__common__lib_2include_2alps__cmn_2actuator_2servo__motor_8hpp.html#a9292bb5c97cd64313214f2fc483cf8ab":[5,0,0,0,0,0,4,4],
 "alps__common__lib_2include_2alps__cmn_2actuator_2servo__motor_8hpp.html#ad2583a8275889f54279dc1f7811a9192":[5,0,0,0,0,0,4,2],
 "alps__common__lib_2include_2alps__cmn_2actuator_2servo__motor_8hpp_source.html":[5,0,0,0,0,0,4],
-"alps__common__lib_2include_2alps__cmn_2namespace_8hpp.html":[5,0,0,0,0,7],
-"alps__common__lib_2include_2alps__cmn_2namespace_8hpp_source.html":[5,0,0,0,0,7],
+"alps__common__lib_2include_2alps__cmn_2namespace_8hpp.html":[5,0,0,0,0,8],
+"alps__common__lib_2include_2alps__cmn_2namespace_8hpp_source.html":[5,0,0,0,0,8],
 "alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp.html":[5,0,0,0,0,5,1],
 "alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp_source.html":[5,0,0,0,0,5,1],
 "alps__linux__lib_2include_2alps__lin_2communication_2uart__io_8hpp.html":[5,0,1,0,0,0,1],

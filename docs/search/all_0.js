@@ -19,6 +19,7 @@ var searchData=
   ['ros2_16',['ros2',['../namespacealps_1_1ros2.html',1,'alps']]],
   ['sensor_17',['sensor',['../namespacealps_1_1cmn_1_1sensor.html',1,'alps::cmn::sensor'],['../namespacealps_1_1mbed_1_1sensor.html',1,'alps::mbed::sensor']]],
   ['stm_18',['stm',['../namespacealps_1_1stm.html',1,'alps']]],
-  ['type_19',['type',['../namespacealps_1_1cmn_1_1type.html',1,'alps::cmn']]],
-  ['util_20',['util',['../namespacealps_1_1cmn_1_1util.html',1,'alps::cmn']]]
+  ['time_19',['time',['../namespacealps_1_1cmn_1_1time.html',1,'alps::cmn']]],
+  ['type_20',['type',['../namespacealps_1_1cmn_1_1type.html',1,'alps::cmn']]],
+  ['util_21',['util',['../namespacealps_1_1cmn_1_1util.html',1,'alps::cmn']]]
 ];
