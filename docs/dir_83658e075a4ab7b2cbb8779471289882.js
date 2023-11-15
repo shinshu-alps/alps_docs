@@ -1,21 +1,24 @@
 var dir_83658e075a4ab7b2cbb8779471289882 =
 [
-    [ "differential.hpp", "differential_8hpp.html", [
-      [ "Differential", "classalps_1_1cmn_1_1control_1_1_differential.html", "classalps_1_1cmn_1_1control_1_1_differential" ]
+    [ "differentiator.hpp", "differentiator_8hpp.html", [
+      [ "Differentiator", "classalps_1_1cmn_1_1control_1_1_differentiator.html", "classalps_1_1cmn_1_1control_1_1_differentiator" ]
     ] ],
-    [ "integral.hpp", "integral_8hpp.html", [
-      [ "Integral", "classalps_1_1cmn_1_1control_1_1_integral.html", "classalps_1_1cmn_1_1control_1_1_integral" ]
+    [ "integrator.hpp", "integrator_8hpp.html", [
+      [ "Integrator", "classalps_1_1cmn_1_1control_1_1_integrator.html", "classalps_1_1cmn_1_1control_1_1_integrator" ]
     ] ],
     [ "lpf.hpp", "lpf_8hpp.html", [
       [ "Lpf", "classalps_1_1cmn_1_1control_1_1_lpf.html", "classalps_1_1cmn_1_1control_1_1_lpf" ]
     ] ],
+    [ "motor_angle_controller.hpp", "motor__angle__controller_8hpp.html", [
+      [ "MotorAngleController", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller" ]
+    ] ],
     [ "motor_angle_velocity_controller.hpp", "motor__angle__velocity__controller_8hpp.html", [
       [ "MotorAngleVelocityController", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller" ]
     ] ],
+    [ "motor_velocity_controller.hpp", "motor__velocity__controller_8hpp.html", [
+      [ "MotorVelocityController", "classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html", "classalps_1_1cmn_1_1control_1_1_motor_velocity_controller" ]
+    ] ],
     [ "pid.hpp", "pid_8hpp.html", [
       [ "Pid", "classalps_1_1cmn_1_1control_1_1_pid.html", "classalps_1_1cmn_1_1control_1_1_pid" ]
-    ] ],
-    [ "pid_old.hpp", "pid__old_8hpp.html", [
-      [ "PidOld", "classalps_1_1cmn_1_1control_1_1_pid_old.html", "classalps_1_1cmn_1_1control_1_1_pid_old" ]
     ] ]
 ];

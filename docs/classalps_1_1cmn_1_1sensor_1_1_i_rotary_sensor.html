@@ -119,9 +119,6 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1sensor_1_1_i_rotar
 <tr class="memitem:afd34b25b6fd6be03746984bf9adbd367"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">CallGetAngle</a> ()</td></tr>
 <tr class="memdesc:afd34b25b6fd6be03746984bf9adbd367"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介して現在の角度を取得する  <a href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">[詳解]</a><br /></td></tr>
 <tr class="separator:afd34b25b6fd6be03746984bf9adbd367"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79e905143fc9244872749eef46745051"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#a79e905143fc9244872749eef46745051">CallGetVelocity</a> ()</td></tr>
-<tr class="memdesc:a79e905143fc9244872749eef46745051"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介して現在の角速度を取得する  <a href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#a79e905143fc9244872749eef46745051">[詳解]</a><br /></td></tr>
-<tr class="separator:a79e905143fc9244872749eef46745051"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><h3>template&lt;class Derived&gt;<br />
@@ -130,7 +127,7 @@ class alps::cmn::sensor::IRotarySensor&lt; Derived &gt;</h3>
 <p>回転センサーのインタフェース </p>
 <dl class="tparams"><dt>テンプレート引数</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Derived</td><td>派生クラス．GetAngle()とGetVelocity()を実装すること </td></tr>
+    <tr><td class="paramname">Derived</td><td>派生クラス．GetAngle()を実装すること </td></tr>
   </table>
   </dd>
 </dl>
@@ -162,36 +159,6 @@ template&lt;class Derived &gt; </div>
 
 <p>インタフェースを介して現在の角度を取得する </p>
 <dl class="section return"><dt>戻り値</dt><dd>double 角度[rad] </dd></dl>
-
-</div>
-</div>
-<a id="a79e905143fc9244872749eef46745051"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79e905143fc9244872749eef46745051">&#9670;&nbsp;</a></span>CallGetVelocity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Derived &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">alps::cmn::sensor::IRotarySensor</a>&lt; Derived &gt;::CallGetVelocity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>インタフェースを介して現在の角速度を取得する </p>
-<dl class="section return"><dt>戻り値</dt><dd>float 角速度[rad/s] </dd></dl>
 
 </div>
 </div>

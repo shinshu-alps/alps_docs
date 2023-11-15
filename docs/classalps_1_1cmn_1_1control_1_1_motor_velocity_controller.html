@@ -1,0 +1,326 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps::cmn::control::MotorVelocityController&lt; Clock, Motor, RotarySensor &gt; クラステンプレート</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">alps::cmn::control::MotorVelocityController&lt; Clock, Motor, RotarySensor &gt; クラステンプレート</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>回転センサー付きモーターの速度を制御するクラス  
+ <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="motor__velocity__controller_8hpp_source.html">motor_velocity_controller.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:acb90f35da0cfb6568027afc204ddf814"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#acb90f35da0cfb6568027afc204ddf814">MotorVelocityController</a> (<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor</a>&lt; Motor &gt; &amp;motor, <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor</a>&lt; RotarySensor &gt; &amp;rotary_sensor, float vel_kp, float vel_ki, float vel_kd, float max_abs_drive_ratio=1.0f, float max_velocity=std::numeric_limits&lt; float &gt;::max(), float lowest_velocity=std::numeric_limits&lt; float &gt;::lowest(), float max_abs_drive_ratio_slope=std::numeric_limits&lt; float &gt;::max(), std::chrono::microseconds min_calc_differential_interval=std::chrono::milliseconds(1))</td></tr>
+<tr class="memdesc:acb90f35da0cfb6568027afc204ddf814"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#acb90f35da0cfb6568027afc204ddf814">[詳解]</a><br /></td></tr>
+<tr class="separator:acb90f35da0cfb6568027afc204ddf814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f24d1dc26454c8aea0251262aa174eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a4f24d1dc26454c8aea0251262aa174eb">SetTargetVelocity</a> (float velocity)</td></tr>
+<tr class="memdesc:a4f24d1dc26454c8aea0251262aa174eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標速度を設定する  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a4f24d1dc26454c8aea0251262aa174eb">[詳解]</a><br /></td></tr>
+<tr class="separator:a4f24d1dc26454c8aea0251262aa174eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae207d880ccf99910fe1c61c8d6b16c6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ae207d880ccf99910fe1c61c8d6b16c6b">Control</a> ()</td></tr>
+<tr class="memdesc:ae207d880ccf99910fe1c61c8d6b16c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御処理を実行する．周期的に呼び出すこと．  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ae207d880ccf99910fe1c61c8d6b16c6b">[詳解]</a><br /></td></tr>
+<tr class="separator:ae207d880ccf99910fe1c61c8d6b16c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><h3>template&lt;class Clock, class Motor, class RotarySensor&gt;<br />
+class alps::cmn::control::MotorVelocityController&lt; Clock, Motor, RotarySensor &gt;</h3>
+
+<p>回転センサー付きモーターの速度を制御するクラス </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Clock</td><td>利用するクロック型 ( <a href="https://cpprefjp.github.io/reference/chrono/is_clock.html">https://cpprefjp.github.io/reference/chrono/is_clock.html</a> ) </td></tr>
+    <tr><td class="paramname">Motor</td><td>モーター実装クラス </td></tr>
+    <tr><td class="paramname">RotarySensor</td><td>回転センサー実装クラス</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">todo:</a></b></dt><dd>速度情報に対するローパスフィルタ </dd></dl>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="acb90f35da0cfb6568027afc204ddf814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb90f35da0cfb6568027afc204ddf814">&#9670;&nbsp;</a></span>MotorVelocityController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html">alps::cmn::control::MotorVelocityController</a>&lt; Clock, Motor, RotarySensor &gt;::<a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html">MotorVelocityController</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor</a>&lt; Motor &gt; &amp;&#160;</td>
+          <td class="paramname"><em>motor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor</a>&lt; RotarySensor &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rotary_sensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>vel_kp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>vel_ki</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>vel_kd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>max_abs_drive_ratio</em> = <code>1.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>max_velocity</em> = <code>std::numeric_limits&lt;float&gt;::max()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>lowest_velocity</em> = <code>std::numeric_limits&lt;float&gt;::lowest()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>max_abs_drive_ratio_slope</em> = <code>std::numeric_limits&lt;float&gt;::max()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::chrono::microseconds&#160;</td>
+          <td class="paramname"><em>min_calc_differential_interval</em> = <code>std::chrono::milliseconds(1)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">motor</td><td>モーター </td></tr>
+    <tr><td class="paramname">rotary_sensor</td><td>回転センサー </td></tr>
+    <tr><td class="paramname">vel_kp</td><td>速度PIDのPゲイン </td></tr>
+    <tr><td class="paramname">vel_ki</td><td>速度PIDのIゲイン </td></tr>
+    <tr><td class="paramname">vel_kd</td><td>速度PIDのDゲイン </td></tr>
+    <tr><td class="paramname">max_abs_drive_ratio</td><td>モーターの最大出力割合 </td></tr>
+    <tr><td class="paramname">max_velocity</td><td>モーターの最大速度 </td></tr>
+    <tr><td class="paramname">lowest_velocity</td><td>モーターの最小速度 </td></tr>
+    <tr><td class="paramname">max_abs_drive_ratio_slope</td><td>モーターの出力割合の最大変化量 </td></tr>
+    <tr><td class="paramname">min_calc_differential_interval</td><td>角速度を計算する最小間隔 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ae207d880ccf99910fe1c61c8d6b16c6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae207d880ccf99910fe1c61c8d6b16c6b">&#9670;&nbsp;</a></span>Control()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html">alps::cmn::control::MotorVelocityController</a>&lt; Clock, Motor, RotarySensor &gt;::Control </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>制御処理を実行する．周期的に呼び出すこと． </p>
+
+</div>
+</div>
+<a id="a4f24d1dc26454c8aea0251262aa174eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f24d1dc26454c8aea0251262aa174eb">&#9670;&nbsp;</a></span>SetTargetVelocity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html">alps::cmn::control::MotorVelocityController</a>&lt; Clock, Motor, RotarySensor &gt;::SetTargetVelocity </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>velocity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>目標速度を設定する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">velocity</td><td>目標速度[rad/s] </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>alps_common_lib/include/alps_cmn/control/<a class="el" href="motor__velocity__controller_8hpp_source.html">motor_velocity_controller.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacealps.html">alps</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn.html">cmn</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn_1_1control.html">control</a></li><li class="navelem"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html">MotorVelocityController</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

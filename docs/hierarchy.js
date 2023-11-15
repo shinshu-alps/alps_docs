@@ -8,7 +8,7 @@ var hierarchy =
     [ "alps::cmn::communication::CanTypedDataTransceiver< CanIo, kMaxPublisherNum, kMaxSubscriberNum >", "classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html", null ],
     [ "alps::cmn::communication::Cobs", "classalps_1_1cmn_1_1communication_1_1_cobs.html", null ],
     [ "alps::cmn::communication::DataSerializer< T >", "classalps_1_1cmn_1_1communication_1_1_data_serializer.html", null ],
-    [ "alps::cmn::control::Differential", "classalps_1_1cmn_1_1control_1_1_differential.html", null ],
+    [ "alps::cmn::control::Differentiator< Clock >", "classalps_1_1cmn_1_1control_1_1_differentiator.html", null ],
     [ "alps::cmn::gpio::IAnalogIn< Derived >", "classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html", null ],
     [ "alps::cmn::gpio::IAnalogIn< AnalogIn >", "classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html", [
       [ "alps::mbed::gpio::AnalogIn", "classalps_1_1mbed_1_1gpio_1_1_analog_in.html", null ]
@@ -48,7 +48,7 @@ var hierarchy =
     [ "alps::cmn::actuator::IMotor< RobomasMotor >", "classalps_1_1cmn_1_1actuator_1_1_i_motor.html", [
       [ "alps::cmn::actuator::RobomasMotor", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html", null ]
     ] ],
-    [ "alps::cmn::control::Integral", "classalps_1_1cmn_1_1control_1_1_integral.html", null ],
+    [ "alps::cmn::control::Integrator< Clock >", "classalps_1_1cmn_1_1control_1_1_integrator.html", null ],
     [ "alps::cmn::gpio::IPwmOut< Derived >", "classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html", null ],
     [ "alps::cmn::gpio::IPwmOut< PwmOut >", "classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html", [
       [ "alps::mbed::gpio::PwmOut", "classalps_1_1mbed_1_1gpio_1_1_pwm_out.html", null ]
@@ -57,8 +57,8 @@ var hierarchy =
     [ "alps::cmn::sensor::IRotarySensor< IncrementalEncoder< Clock, InterruptIn, DigitalIn > >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", [
       [ "alps::cmn::sensor::IncrementalEncoder< Clock, InterruptIn, DigitalIn >", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html", null ]
     ] ],
-    [ "alps::cmn::sensor::IRotarySensor< Potentiometer< Clock, AnalogIn > >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", [
-      [ "alps::cmn::sensor::Potentiometer< Clock, AnalogIn >", "classalps_1_1cmn_1_1sensor_1_1_potentiometer.html", null ]
+    [ "alps::cmn::sensor::IRotarySensor< Potentiometer< AnalogIn > >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", [
+      [ "alps::cmn::sensor::Potentiometer< AnalogIn >", "classalps_1_1cmn_1_1sensor_1_1_potentiometer.html", null ]
     ] ],
     [ "alps::cmn::sensor::IRotarySensor< RobomasMotor >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", [
       [ "alps::cmn::actuator::RobomasMotor", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html", null ]
@@ -70,9 +70,10 @@ var hierarchy =
       [ "alps::mbed::communication::UartIo", "classalps_1_1mbed_1_1communication_1_1_uart_io.html", null ]
     ] ],
     [ "alps::cmn::control::Lpf", "classalps_1_1cmn_1_1control_1_1_lpf.html", null ],
+    [ "alps::cmn::control::MotorAngleController< Clock, Motor, RotarySensor >", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html", null ],
     [ "alps::cmn::control::MotorAngleVelocityController< Clock, Motor, RotarySensor >", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html", null ],
+    [ "alps::cmn::control::MotorVelocityController< Clock, Motor, RotarySensor >", "classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html", null ],
     [ "alps::cmn::control::Pid< Clock >", "classalps_1_1cmn_1_1control_1_1_pid.html", null ],
-    [ "alps::cmn::control::PidOld", "classalps_1_1cmn_1_1control_1_1_pid_old.html", null ],
     [ "alps::cmn::actuator::RobomasMotorsCanController", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_controller.html", null ],
     [ "alps::cmn::communication::SerializeTypeInfoBase< is_serializable, is_single >", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html", null ],
     [ "alps::cmn::communication::SerializeTypeInfoBase< false, false >", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html", [

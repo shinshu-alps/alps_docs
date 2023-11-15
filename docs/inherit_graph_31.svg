@@ -12,10 +12,10 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html" target="_top" xlink:title="回転センサー付きモーターの角度と速度を制御するクラス">
+<g id="a_node1"><a xlink:href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html" target="_top" xlink:title="回転センサー付きモーターの角度を制御するクラス">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-41.5 172,-41.5 172,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::control</text>
-<text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">::MotorAngleVelocityController</text>
+<text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">::MotorAngleController</text>
 <text text-anchor="middle" x="86" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; Clock, Motor, RotarySensor &gt;</text>
 </a>
 </g>

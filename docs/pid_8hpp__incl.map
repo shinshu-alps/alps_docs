@@ -1,5 +1,8 @@
 <map id="alps_common_lib/include/alps_cmn/control/pid.hpp" name="alps_common_lib/include/alps_cmn/control/pid.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="17,5,207,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,95,64,121"/>
-<area shape="rect" id="node3" href="$algorithm_8hpp.html" title=" " alt="" coords="89,95,293,121"/>
+<area shape="rect" id="node1" title=" " alt="" coords="247,5,437,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="258,169,325,196"/>
+<area shape="rect" id="node3" title=" " alt="" coords="405,169,463,196"/>
+<area shape="rect" id="node4" href="$differentiator_8hpp.html" title="微分器ライブラリ" alt="" coords="5,95,255,121"/>
+<area shape="rect" id="node5" href="$integrator_8hpp.html" title="積分器ライブラリ" alt="" coords="380,95,608,121"/>
+<area shape="rect" id="node6" href="$algorithm_8hpp.html" title=" " alt="" coords="516,169,720,196"/>
 </map>

@@ -33,7 +33,6 @@ var NAVTREE =
       ] ]
     ] ],
     [ "todo一覧", "todo.html", null ],
-    [ "非推奨一覧", "deprecated.html", null ],
     [ "名前空間", "namespaces.html", [
       [ "名前空間一覧", "namespaces.html", "namespaces_dup" ],
       [ "名前空間メンバ", "namespacemembers.html", [
@@ -65,7 +64,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "algorithm_8hpp.html",
-"classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#ae5b6fe31bee7a0c3574dfed839f9b4f5"
+"classalps_1_1mbed_1_1gpio_1_1_digital_in.html#a7ec571adc939ca0d022e00087b0ea914"
 ];
 
 var SYNCONMSG = 'クリックで同期表示が無効になります';
