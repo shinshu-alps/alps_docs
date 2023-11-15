@@ -1,6 +1,6 @@
 var indexSectionsWithContent =
 {
-  0: "abcdefgiklmnoprstuw~概非",
+  0: "abcdefgiklmnoprstuw~概",
   1: "abcdilmprsu",
   2: "a",
   3: "abcdilmnprsuw",
@@ -9,7 +9,7 @@ var indexSectionsWithContent =
   6: "diosu",
   7: "it",
   8: "k",
-  9: "t概非"
+  9: "t概"
 };
 
 var indexSectionNames =

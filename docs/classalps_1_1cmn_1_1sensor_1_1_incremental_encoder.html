@@ -116,14 +116,15 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1sensor_1_1_increme
 <div class="dynheader">
 alps::cmn::sensor::IncrementalEncoder&lt; Clock, InterruptIn, DigitalIn &gt; の継承関係図</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder__inherit__graph.svg" width="218" height="390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder__inherit__graph.svg" width="218" height="375"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a0cc068f91cefc1903039e1f06775f5ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#a0cc068f91cefc1903039e1f06775f5ff">IncrementalEncoder</a> (<a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html">gpio::IInterruptIn</a>&lt; InterruptIn &gt; &amp;interrupt_A, <a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html">gpio::IDigitalIn</a>&lt; DigitalIn &gt; &amp;read_B, uint16_t pulses_per_rev)</td></tr>
-<tr class="memdesc:a0cc068f91cefc1903039e1f06775f5ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#a0cc068f91cefc1903039e1f06775f5ff">[詳解]</a><br /></td></tr>
-<tr class="separator:a0cc068f91cefc1903039e1f06775f5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a582f2aee4e8a7c458afe5c4aaff5a3fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#a582f2aee4e8a7c458afe5c4aaff5a3fe">IncrementalEncoder</a> (<a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html">gpio::IInterruptIn</a>&lt; InterruptIn &gt; &amp;interrupt_A, <a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html">gpio::IDigitalIn</a>&lt; DigitalIn &gt; &amp;read_B, uint16_t pulses_per_rev, std::chrono::microseconds min_calc_vel_interval=std::chrono::milliseconds(1))</td></tr>
+<tr class="memdesc:a582f2aee4e8a7c458afe5c4aaff5a3fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#a582f2aee4e8a7c458afe5c4aaff5a3fe">[詳解]</a><br /></td></tr>
+<tr class="separator:a582f2aee4e8a7c458afe5c4aaff5a3fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0f645b8b05ccdf1b50317374a944475"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#ac0f645b8b05ccdf1b50317374a944475">Reset</a> ()</td></tr>
 <tr class="memdesc:ac0f645b8b05ccdf1b50317374a944475"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の回転角度をリセット  <a href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#ac0f645b8b05ccdf1b50317374a944475">[詳解]</a><br /></td></tr>
 <tr class="separator:ac0f645b8b05ccdf1b50317374a944475"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,9 +143,6 @@ alps::cmn::sensor::IncrementalEncoder&lt; Clock, InterruptIn, DigitalIn &gt; の
 <tr class="memitem:afd34b25b6fd6be03746984bf9adbd367"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">CallGetAngle</a> ()</td></tr>
 <tr class="memdesc:afd34b25b6fd6be03746984bf9adbd367"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介して現在の角度を取得する  <a href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">[詳解]</a><br /></td></tr>
 <tr class="separator:afd34b25b6fd6be03746984bf9adbd367"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79e905143fc9244872749eef46745051"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#a79e905143fc9244872749eef46745051">CallGetVelocity</a> ()</td></tr>
-<tr class="memdesc:a79e905143fc9244872749eef46745051"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介して現在の角速度を取得する  <a href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#a79e905143fc9244872749eef46745051">[詳解]</a><br /></td></tr>
-<tr class="separator:a79e905143fc9244872749eef46745051"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><h3>template&lt;class Clock, class InterruptIn, class DigitalIn&gt;<br />
@@ -161,8 +159,8 @@ class alps::cmn::sensor::IncrementalEncoder&lt; Clock, InterruptIn, DigitalIn &g
 </dl>
 <p>測定方法は2逓倍 (<a href="https://www.sk-solution.co.jp/blog/c7">https://www.sk-solution.co.jp/blog/c7</a>) </p>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="a0cc068f91cefc1903039e1f06775f5ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cc068f91cefc1903039e1f06775f5ff">&#9670;&nbsp;</a></span>IncrementalEncoder()</h2>
+<a id="a582f2aee4e8a7c458afe5c4aaff5a3fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a582f2aee4e8a7c458afe5c4aaff5a3fe">&#9670;&nbsp;</a></span>IncrementalEncoder()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,7 +186,13 @@ template&lt;class Clock , class InterruptIn , class DigitalIn &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>pulses_per_rev</em>&#160;</td>
+          <td class="paramname"><em>pulses_per_rev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::chrono::microseconds&#160;</td>
+          <td class="paramname"><em>min_calc_vel_interval</em> = <code>std::chrono::milliseconds(1)</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -209,6 +213,7 @@ template&lt;class Clock , class InterruptIn , class DigitalIn &gt; </div>
     <tr><td class="paramname">interrupt_A</td><td>A相の割り込み設定インタフェース </td></tr>
     <tr><td class="paramname">read_B</td><td>B相のデジタル入力 </td></tr>
     <tr><td class="paramname">pulses_per_rev</td><td>1周分のパルス数 </td></tr>
+    <tr><td class="paramname">min_calc_vel_interval</td><td>角速度を計算する最小間隔 </td></tr>
   </table>
   </dd>
 </dl>
@@ -241,34 +246,6 @@ template&lt;class Clock , class InterruptIn , class DigitalIn &gt; </div>
 
 <p>インタフェースを介して現在の角度を取得する </p>
 <dl class="section return"><dt>戻り値</dt><dd>double 角度[rad] </dd></dl>
-
-</div>
-</div>
-<a id="a79e905143fc9244872749eef46745051"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79e905143fc9244872749eef46745051">&#9670;&nbsp;</a></span>CallGetVelocity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">alps::cmn::sensor::IRotarySensor</a>&lt; <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html">IncrementalEncoder</a>&lt; Clock, InterruptIn, DigitalIn &gt;  &gt;::CallGetVelocity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>インタフェースを介して現在の角速度を取得する </p>
-<dl class="section return"><dt>戻り値</dt><dd>float 角速度[rad/s] </dd></dl>
 
 </div>
 </div>

@@ -138,11 +138,10 @@ class alps::cmn::control::MotorAngleVelocityController&lt; Clock, Motor, RotaryS
   <table class="tparams">
     <tr><td class="paramname">Clock</td><td>利用するクロック型 ( <a href="https://cpprefjp.github.io/reference/chrono/is_clock.html">https://cpprefjp.github.io/reference/chrono/is_clock.html</a> ) </td></tr>
     <tr><td class="paramname">Motor</td><td>モーター実装クラス </td></tr>
-    <tr><td class="paramname">RotarySensor</td><td>回転センサー実装クラス</td></tr>
+    <tr><td class="paramname">RotarySensor</td><td>回転センサー実装クラス </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">todo:</a></b></dt><dd>速度情報に対するローパスフィルタ </dd></dl>
 </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="a4c0b6f01b2744bdd3d2a83a01fe0ed9b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4c0b6f01b2744bdd3d2a83a01fe0ed9b">&#9670;&nbsp;</a></span>MotorAngleVelocityController()</h2>
@@ -271,11 +270,11 @@ template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
     <tr><td class="paramname">angle_kd</td><td>角度PIDのDゲイン </td></tr>
     <tr><td class="paramname">max_abs_drive_ratio</td><td>モーターの最大出力割合 </td></tr>
     <tr><td class="paramname">max_velocity</td><td>モーターの最大速度 </td></tr>
-    <tr><td class="paramname">lowest_velocity</td><td>モーターの最低速度 </td></tr>
+    <tr><td class="paramname">lowest_velocity</td><td>モーターの最小速度 </td></tr>
     <tr><td class="paramname">max_angle</td><td>モーターの最大角度 </td></tr>
-    <tr><td class="paramname">lowest_angle</td><td>モーターの最低角度 </td></tr>
-    <tr><td class="paramname">max_abs_drive_ratio_slope</td><td>モーターの最大出力割合の変化量 </td></tr>
-    <tr><td class="paramname">max_abs_vel_slope</td><td>モーターの最大速度の変化量 </td></tr>
+    <tr><td class="paramname">lowest_angle</td><td>モーターの最小角度 </td></tr>
+    <tr><td class="paramname">max_abs_drive_ratio_slope</td><td>モーターの出力割合の最大変化量 </td></tr>
+    <tr><td class="paramname">max_abs_vel_slope</td><td>モーターの速度の最大変化量 </td></tr>
   </table>
   </dd>
 </dl>

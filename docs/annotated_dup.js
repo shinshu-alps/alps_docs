@@ -28,12 +28,13 @@ var annotated_dup =
           [ "UartPacketTransceiver", "classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html", "classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver" ]
         ] ],
         [ "control", "namespacealps_1_1cmn_1_1control.html", [
-          [ "Differential", "classalps_1_1cmn_1_1control_1_1_differential.html", "classalps_1_1cmn_1_1control_1_1_differential" ],
-          [ "Integral", "classalps_1_1cmn_1_1control_1_1_integral.html", "classalps_1_1cmn_1_1control_1_1_integral" ],
+          [ "Differentiator", "classalps_1_1cmn_1_1control_1_1_differentiator.html", "classalps_1_1cmn_1_1control_1_1_differentiator" ],
+          [ "Integrator", "classalps_1_1cmn_1_1control_1_1_integrator.html", "classalps_1_1cmn_1_1control_1_1_integrator" ],
           [ "Lpf", "classalps_1_1cmn_1_1control_1_1_lpf.html", "classalps_1_1cmn_1_1control_1_1_lpf" ],
+          [ "MotorAngleController", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller" ],
           [ "MotorAngleVelocityController", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller" ],
-          [ "Pid", "classalps_1_1cmn_1_1control_1_1_pid.html", "classalps_1_1cmn_1_1control_1_1_pid" ],
-          [ "PidOld", "classalps_1_1cmn_1_1control_1_1_pid_old.html", "classalps_1_1cmn_1_1control_1_1_pid_old" ]
+          [ "MotorVelocityController", "classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html", "classalps_1_1cmn_1_1control_1_1_motor_velocity_controller" ],
+          [ "Pid", "classalps_1_1cmn_1_1control_1_1_pid.html", "classalps_1_1cmn_1_1control_1_1_pid" ]
         ] ],
         [ "gpio", "namespacealps_1_1cmn_1_1gpio.html", [
           [ "IAnalogIn", "classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html", "classalps_1_1cmn_1_1gpio_1_1_i_analog_in" ],

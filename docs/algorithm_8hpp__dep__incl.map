@@ -1,9 +1,12 @@
 <map id="alps_common_lib/include/alps_cmn/util/algorithm.hpp" name="alps_common_lib/include/alps_cmn/util/algorithm.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="205,5,413,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="321,5,529,47"/>
 <area shape="rect" id="node2" href="$alps__common__lib_2include_2alps__cmn_2actuator_2dc__motor_8hpp.html" title=" " alt="" coords="5,95,192,151"/>
 <area shape="rect" id="node4" href="$alps__common__lib_2include_2alps__cmn_2actuator_2servo__motor_8hpp.html" title=" " alt="" coords="216,95,403,151"/>
-<area shape="rect" id="node6" href="$pid_8hpp.html" title=" " alt="" coords="436,102,625,143"/>
+<area shape="rect" id="node6" href="$integrator_8hpp.html" title="積分器ライブラリ" alt="" coords="427,102,659,143"/>
+<area shape="rect" id="node7" href="$pid_8hpp.html" title=" " alt="" coords="524,206,713,247"/>
 <area shape="rect" id="node3" href="$alps__mbed__lib_2include_2alps__mbed_2actuator_2dc__motor_8hpp.html" title=" " alt="" coords="11,199,186,255"/>
-<area shape="rect" id="node5" href="$alps__mbed__lib_2include_2alps__mbed_2actuator_2servo__motor_8hpp.html" title=" " alt="" coords="211,199,405,255"/>
-<area shape="rect" id="node7" href="$motor__angle__velocity__controller_8hpp.html" title=" " alt="" coords="430,199,650,255"/>
+<area shape="rect" id="node5" href="$alps__mbed__lib_2include_2alps__mbed_2actuator_2servo__motor_8hpp.html" title=" " alt="" coords="212,199,407,255"/>
+<area shape="rect" id="node8" href="$motor__angle__controller_8hpp.html" title=" " alt="" coords="395,303,581,359"/>
+<area shape="rect" id="node9" href="$motor__angle__velocity__controller_8hpp.html" title=" " alt="" coords="574,407,794,463"/>
+<area shape="rect" id="node10" href="$motor__velocity__controller_8hpp.html" title=" " alt="" coords="656,303,843,359"/>
 </map>

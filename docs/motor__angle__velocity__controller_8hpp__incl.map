@@ -1,8 +1,12 @@
 <map id="alps_common_lib/include/alps_cmn/control/motor_angle_velocity_controller.hpp" name="alps_common_lib/include/alps_cmn/control/motor_angle_velocity_controller.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="163,5,383,61"/>
-<area shape="rect" id="node2" href="$i__motor_8hpp.html" title=" " alt="" coords="5,109,156,151"/>
-<area shape="rect" id="node3" href="$pid_8hpp.html" title=" " alt="" coords="180,117,365,143"/>
-<area shape="rect" id="node6" href="$i__rotary__sensor_8hpp.html" title=" " alt="" coords="389,109,575,151"/>
-<area shape="rect" id="node4" title=" " alt="" coords="165,199,223,225"/>
-<area shape="rect" id="node5" href="$algorithm_8hpp.html" title=" " alt="" coords="248,199,452,225"/>
+<area shape="rect" id="node1" title=" " alt="" coords="160,5,380,61"/>
+<area shape="rect" id="node2" href="$i__motor_8hpp.html" title=" " alt="" coords="5,199,156,240"/>
+<area shape="rect" id="node3" href="$motor__velocity__controller_8hpp.html" title=" " alt="" coords="119,109,296,151"/>
+<area shape="rect" id="node6" href="$pid_8hpp.html" title=" " alt="" coords="232,206,417,233"/>
+<area shape="rect" id="node10" href="$i__rotary__sensor_8hpp.html" title=" " alt="" coords="441,199,627,240"/>
+<area shape="rect" id="node4" href="$differentiator_8hpp.html" title="微分器ライブラリ" alt="" coords="13,288,263,315"/>
+<area shape="rect" id="node5" title=" " alt="" coords="266,363,333,389"/>
+<area shape="rect" id="node7" title=" " alt="" coords="413,363,471,389"/>
+<area shape="rect" id="node8" href="$integrator_8hpp.html" title="積分器ライブラリ" alt="" coords="388,288,616,315"/>
+<area shape="rect" id="node9" href="$algorithm_8hpp.html" title=" " alt="" coords="524,363,728,389"/>
 </map>

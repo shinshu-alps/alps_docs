@@ -19,7 +19,6 @@ var classalps_1_1cmn_1_1actuator_1_1_robomas_motor =
     [ "RobomasMotor", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a97fb619f2231f64b070b0e7af1f8a200", null ],
     [ "CallDrive", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#afb69e9dace9074933926b59904ddfb13", null ],
     [ "CallGetAngle", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#afd34b25b6fd6be03746984bf9adbd367", null ],
-    [ "CallGetVelocity", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a79e905143fc9244872749eef46745051", null ],
     [ "Drive", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#ab9fe8f3b83d639acae3e1c200d0d437b", null ],
     [ "GetAngle", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a5c0aa6e9d820459b01bf6c95fe040de8", null ],
     [ "GetOutput", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#aac8a825bb848613825c11968dfbfa9cf", null ],
