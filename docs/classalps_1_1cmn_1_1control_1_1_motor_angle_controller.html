@@ -116,9 +116,9 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1control_1_1_motor_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a19e84a6114215c86c03d845955d45f04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#a19e84a6114215c86c03d845955d45f04">MotorAngleController</a> (<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor</a>&lt; Motor &gt; &amp;motor, <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor</a>&lt; RotarySensor &gt; &amp;rotary_sensor, float angle_kp, float angle_ki, float angle_kd, float max_abs_drive_ratio=1.0f, double max_angle=std::numeric_limits&lt; double &gt;::max(), double lowest_angle=std::numeric_limits&lt; double &gt;::lowest(), float max_abs_drive_ratio_slope=std::numeric_limits&lt; float &gt;::max())</td></tr>
-<tr class="memdesc:a19e84a6114215c86c03d845955d45f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#a19e84a6114215c86c03d845955d45f04">[詳解]</a><br /></td></tr>
-<tr class="separator:a19e84a6114215c86c03d845955d45f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad470f50e161b699bf2ebe36941ada9bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#ad470f50e161b699bf2ebe36941ada9bf">MotorAngleController</a> (<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor</a>&lt; Motor &gt; &amp;motor, <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor</a>&lt; RotarySensor &gt; &amp;rotary_sensor, float angle_kp, float angle_ki, float angle_kd, float max_abs_drive_ratio=1.0f, double max_angle=std::numeric_limits&lt; double &gt;::max(), double lowest_angle=std::numeric_limits&lt; double &gt;::lowest())</td></tr>
+<tr class="memdesc:ad470f50e161b699bf2ebe36941ada9bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#ad470f50e161b699bf2ebe36941ada9bf">[詳解]</a><br /></td></tr>
+<tr class="separator:ad470f50e161b699bf2ebe36941ada9bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af25c7452db7fa9b4996e059f898c7314"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#af25c7452db7fa9b4996e059f898c7314">SetTargetAngle</a> (double angle)</td></tr>
 <tr class="memdesc:af25c7452db7fa9b4996e059f898c7314"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標角度を設定する  <a href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#af25c7452db7fa9b4996e059f898c7314">[詳解]</a><br /></td></tr>
 <tr class="separator:af25c7452db7fa9b4996e059f898c7314"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,8 +140,8 @@ class alps::cmn::control::MotorAngleController&lt; Clock, Motor, RotarySensor &g
   </dd>
 </dl>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="a19e84a6114215c86c03d845955d45f04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19e84a6114215c86c03d845955d45f04">&#9670;&nbsp;</a></span>MotorAngleController()</h2>
+<a id="ad470f50e161b699bf2ebe36941ada9bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad470f50e161b699bf2ebe36941ada9bf">&#9670;&nbsp;</a></span>MotorAngleController()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -197,13 +197,7 @@ template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>lowest_angle</em> = <code>std::numeric_limits&lt;double&gt;::lowest()</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>max_abs_drive_ratio_slope</em> = <code>std::numeric_limits&lt;float&gt;::max()</code>&#160;</td>
+          <td class="paramname"><em>lowest_angle</em> = <code>std::numeric_limits&lt;double&gt;::lowest()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -229,7 +223,6 @@ template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
     <tr><td class="paramname">max_abs_drive_ratio</td><td>モーターの最大出力割合 </td></tr>
     <tr><td class="paramname">max_angle</td><td>モーターの最大角度 </td></tr>
     <tr><td class="paramname">lowest_angle</td><td>モーターの最小角度 </td></tr>
-    <tr><td class="paramname">max_abs_drive_ratio_slope</td><td>モーターの出力割合の最大変化量 </td></tr>
   </table>
   </dd>
 </dl>

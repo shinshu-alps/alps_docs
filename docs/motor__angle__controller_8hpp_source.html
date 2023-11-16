@@ -123,65 +123,58 @@ $(document).ready(function(){initNavTree('motor__angle__controller_8hpp_source.h
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html">MotorAngleController</a></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#a19e84a6114215c86c03d845955d45f04">   39</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#a19e84a6114215c86c03d845955d45f04">MotorAngleController</a>(</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor&lt;Motor&gt;</a> &amp; motor,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor&lt;RotarySensor&gt;</a> &amp; rotary_sensor,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">float</span> angle_kp,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">float</span> angle_ki,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">float</span> angle_kd,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">float</span> max_abs_drive_ratio = 1.0f,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">double</span> max_angle = std::numeric_limits&lt;double&gt;::max(),</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">double</span> lowest_angle = std::numeric_limits&lt;double&gt;::lowest(),</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">float</span> max_abs_drive_ratio_slope = std::numeric_limits&lt;float&gt;::max())</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  : motor_{motor},</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    rotary_sensor_{rotary_sensor},</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    angle_pid_(</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      angle_kp,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      angle_ki,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      angle_kd,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      max_abs_drive_ratio,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      -max_abs_drive_ratio,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      max_abs_drive_ratio_slope),</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    max_angle_{max_angle},</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    lowest_angle_{lowest_angle}</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#af25c7452db7fa9b4996e059f898c7314">   68</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#af25c7452db7fa9b4996e059f898c7314">SetTargetAngle</a>(<span class="keywordtype">double</span> angle)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    target_angle_ = <a class="code" href="namespacealps_1_1cmn_1_1util.html#a13928639f0ae9b5207010ae61a2c9d2a">alps::cmn::util::Clamp</a>(angle, lowest_angle_, max_angle_);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  };</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#af707fafe8def4b0606c413d7d3d25252">   77</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#af707fafe8def4b0606c413d7d3d25252">Control</a>()</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// 角度制御</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">double</span> now_angle = rotary_sensor_.<a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">CallGetAngle</a>();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">float</span> output = angle_pid_.Calculate(target_angle_ - now_angle);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// モーターを駆動</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    motor_.<a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html#afb69e9dace9074933926b59904ddfb13">CallDrive</a>(output);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor&lt;Motor&gt;</a> &amp; motor_;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor&lt;RotarySensor&gt;</a> &amp; rotary_sensor_;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_pid.html">control::Pid&lt;Clock&gt;</a> angle_pid_;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">double</span> max_angle_;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">double</span> lowest_angle_;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">double</span> target_angle_;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}  <span class="comment">// namespace control</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}  <span class="comment">// namespace cmn</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#ad470f50e161b699bf2ebe36941ada9bf">   38</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#ad470f50e161b699bf2ebe36941ada9bf">MotorAngleController</a>(</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor&lt;Motor&gt;</a> &amp; motor,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor&lt;RotarySensor&gt;</a> &amp; rotary_sensor,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">float</span> angle_kp,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">float</span> angle_ki,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">float</span> angle_kd,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">float</span> max_abs_drive_ratio = 1.0f,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">double</span> max_angle = std::numeric_limits&lt;double&gt;::max(),</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">double</span> lowest_angle = std::numeric_limits&lt;double&gt;::lowest())</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  : motor_{motor},</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    rotary_sensor_{rotary_sensor},</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    angle_pid_(angle_kp, angle_ki, angle_kd, max_abs_drive_ratio, -max_abs_drive_ratio),</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    max_angle_{max_angle},</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    lowest_angle_{lowest_angle}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#af25c7452db7fa9b4996e059f898c7314">   60</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#af25c7452db7fa9b4996e059f898c7314">SetTargetAngle</a>(<span class="keywordtype">double</span> angle)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    target_angle_ = <a class="code" href="namespacealps_1_1cmn_1_1util.html#a13928639f0ae9b5207010ae61a2c9d2a">alps::cmn::util::Clamp</a>(angle, lowest_angle_, max_angle_);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  };</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#af707fafe8def4b0606c413d7d3d25252">   69</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#af707fafe8def4b0606c413d7d3d25252">Control</a>()</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// 角度制御</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">double</span> now_angle = rotary_sensor_.<a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">CallGetAngle</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">float</span> output = angle_pid_.Calculate(target_angle_ - now_angle);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// モーターを駆動</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    motor_.<a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html#afb69e9dace9074933926b59904ddfb13">CallDrive</a>(output);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor&lt;Motor&gt;</a> &amp; motor_;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor&lt;RotarySensor&gt;</a> &amp; rotary_sensor_;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_pid.html">control::Pid&lt;Clock&gt;</a> angle_pid_;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">double</span> max_angle_;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">double</span> lowest_angle_;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">double</span> target_angle_;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}  <span class="comment">// namespace control</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_i_motor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">alps::cmn::actuator::IMotor&lt; Motor &gt;</a></div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_i_motor_html_afb69e9dace9074933926b59904ddfb13"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html#afb69e9dace9074933926b59904ddfb13">alps::cmn::actuator::IMotor::CallDrive</a></div><div class="ttdeci">void CallDrive(float output_ratio)</div><div class="ttdoc">インタフェースを介してモーターを駆動する</div><div class="ttdef"><b>Definition:</b> i_motor.hpp:24</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_angle_controller_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html">alps::cmn::control::MotorAngleController</a></div><div class="ttdoc">回転センサー付きモーターの角度を制御するクラス</div><div class="ttdef"><b>Definition:</b> motor_angle_controller.hpp:24</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_angle_controller_html_a19e84a6114215c86c03d845955d45f04"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#a19e84a6114215c86c03d845955d45f04">alps::cmn::control::MotorAngleController::MotorAngleController</a></div><div class="ttdeci">MotorAngleController(actuator::IMotor&lt; Motor &gt; &amp;motor, sensor::IRotarySensor&lt; RotarySensor &gt; &amp;rotary_sensor, float angle_kp, float angle_ki, float angle_kd, float max_abs_drive_ratio=1.0f, double max_angle=std::numeric_limits&lt; double &gt;::max(), double lowest_angle=std::numeric_limits&lt; double &gt;::lowest(), float max_abs_drive_ratio_slope=std::numeric_limits&lt; float &gt;::max())</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> motor_angle_controller.hpp:39</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_angle_controller_html_af25c7452db7fa9b4996e059f898c7314"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#af25c7452db7fa9b4996e059f898c7314">alps::cmn::control::MotorAngleController::SetTargetAngle</a></div><div class="ttdeci">void SetTargetAngle(double angle)</div><div class="ttdoc">目標角度を設定する</div><div class="ttdef"><b>Definition:</b> motor_angle_controller.hpp:68</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_angle_controller_html_af707fafe8def4b0606c413d7d3d25252"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#af707fafe8def4b0606c413d7d3d25252">alps::cmn::control::MotorAngleController::Control</a></div><div class="ttdeci">void Control()</div><div class="ttdoc">制御処理を実行する．周期的に呼び出すこと．</div><div class="ttdef"><b>Definition:</b> motor_angle_controller.hpp:77</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_angle_controller_html_ad470f50e161b699bf2ebe36941ada9bf"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#ad470f50e161b699bf2ebe36941ada9bf">alps::cmn::control::MotorAngleController::MotorAngleController</a></div><div class="ttdeci">MotorAngleController(actuator::IMotor&lt; Motor &gt; &amp;motor, sensor::IRotarySensor&lt; RotarySensor &gt; &amp;rotary_sensor, float angle_kp, float angle_ki, float angle_kd, float max_abs_drive_ratio=1.0f, double max_angle=std::numeric_limits&lt; double &gt;::max(), double lowest_angle=std::numeric_limits&lt; double &gt;::lowest())</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> motor_angle_controller.hpp:38</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_angle_controller_html_af25c7452db7fa9b4996e059f898c7314"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#af25c7452db7fa9b4996e059f898c7314">alps::cmn::control::MotorAngleController::SetTargetAngle</a></div><div class="ttdeci">void SetTargetAngle(double angle)</div><div class="ttdoc">目標角度を設定する</div><div class="ttdef"><b>Definition:</b> motor_angle_controller.hpp:60</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_angle_controller_html_af707fafe8def4b0606c413d7d3d25252"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#af707fafe8def4b0606c413d7d3d25252">alps::cmn::control::MotorAngleController::Control</a></div><div class="ttdeci">void Control()</div><div class="ttdoc">制御処理を実行する．周期的に呼び出すこと．</div><div class="ttdef"><b>Definition:</b> motor_angle_controller.hpp:69</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a></div><div class="ttdoc">PID制御器</div><div class="ttdef"><b>Definition:</b> pid.hpp:28</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">alps::cmn::sensor::IRotarySensor&lt; RotarySensor &gt;</a></div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor_html_afd34b25b6fd6be03746984bf9adbd367"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">alps::cmn::sensor::IRotarySensor::CallGetAngle</a></div><div class="ttdeci">double CallGetAngle()</div><div class="ttdoc">インタフェースを介して現在の角度を取得する</div><div class="ttdef"><b>Definition:</b> i_rotary_sensor.hpp:25</div></div>

@@ -124,64 +124,62 @@ $(document).ready(function(){initNavTree('motor__velocity__controller_8hpp_sourc
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html">MotorVelocityController</a></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#acb90f35da0cfb6568027afc204ddf814">   43</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#acb90f35da0cfb6568027afc204ddf814">MotorVelocityController</a>(</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor&lt;Motor&gt;</a> &amp; motor,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor&lt;RotarySensor&gt;</a> &amp; rotary_sensor,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">float</span> vel_kp,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">float</span> vel_ki,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">float</span> vel_kd,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">float</span> max_abs_drive_ratio = 1.0f,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">float</span> max_velocity = std::numeric_limits&lt;float&gt;::max(),</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">float</span> lowest_velocity = std::numeric_limits&lt;float&gt;::lowest(),</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">float</span> max_abs_drive_ratio_slope = std::numeric_limits&lt;float&gt;::max(),</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    std::chrono::microseconds min_calc_differential_interval = std::chrono::milliseconds(1))</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  : motor_{motor},</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    rotary_sensor_{rotary_sensor},</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    differentiator_{min_calc_differential_interval},</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    vel_pid_(</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      vel_kp, vel_ki, vel_kd, max_abs_drive_ratio, -max_abs_drive_ratio, max_abs_drive_ratio_slope),</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    max_vel_{max_velocity},</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    lowest_vel_{lowest_velocity}</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a4f24d1dc26454c8aea0251262aa174eb">   69</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a4f24d1dc26454c8aea0251262aa174eb">SetTargetVelocity</a>(<span class="keywordtype">float</span> velocity)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    target_velocity_ = <a class="code" href="namespacealps_1_1cmn_1_1util.html#a13928639f0ae9b5207010ae61a2c9d2a">alps::cmn::util::Clamp</a>(velocity, lowest_vel_, max_vel_);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  };</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ae207d880ccf99910fe1c61c8d6b16c6b">   78</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ae207d880ccf99910fe1c61c8d6b16c6b">Control</a>()</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// 速度制御</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">float</span> now_velocity = differentiator_.Calculate(rotary_sensor_.<a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">CallGetAngle</a>());</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">float</span> output = vel_pid_.Calculate(target_velocity_ - now_velocity);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// モーターを駆動</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    motor_.<a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html#afb69e9dace9074933926b59904ddfb13">CallDrive</a>(output);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor&lt;Motor&gt;</a> &amp; motor_;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor&lt;RotarySensor&gt;</a> &amp; rotary_sensor_;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_differentiator.html">control::Differentiator&lt;Clock&gt;</a> differentiator_;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_pid.html">control::Pid&lt;Clock&gt;</a> vel_pid_;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">float</span> max_vel_;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">float</span> lowest_vel_;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">float</span> target_velocity_;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}  <span class="comment">// namespace control</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}  <span class="comment">// namespace cmn</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a5370c26c7ed034f65381c0aab7e3b05b">   42</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a5370c26c7ed034f65381c0aab7e3b05b">MotorVelocityController</a>(</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor&lt;Motor&gt;</a> &amp; motor,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor&lt;RotarySensor&gt;</a> &amp; rotary_sensor,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">float</span> vel_kp,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">float</span> vel_ki,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">float</span> vel_kd,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">float</span> max_abs_drive_ratio = 1.0f,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">float</span> max_velocity = std::numeric_limits&lt;float&gt;::max(),</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">float</span> lowest_velocity = std::numeric_limits&lt;float&gt;::lowest(),</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    std::chrono::microseconds min_calc_differential_interval = std::chrono::milliseconds(1))</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  : motor_{motor},</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    rotary_sensor_{rotary_sensor},</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    differentiator_{min_calc_differential_interval},</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    vel_pid_(vel_kp, vel_ki, vel_kd, max_abs_drive_ratio, -max_abs_drive_ratio),</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    max_vel_{max_velocity},</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    lowest_vel_{lowest_velocity}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a4f24d1dc26454c8aea0251262aa174eb">   66</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a4f24d1dc26454c8aea0251262aa174eb">SetTargetVelocity</a>(<span class="keywordtype">float</span> velocity)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    target_velocity_ = <a class="code" href="namespacealps_1_1cmn_1_1util.html#a13928639f0ae9b5207010ae61a2c9d2a">alps::cmn::util::Clamp</a>(velocity, lowest_vel_, max_vel_);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  };</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ae207d880ccf99910fe1c61c8d6b16c6b">   75</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ae207d880ccf99910fe1c61c8d6b16c6b">Control</a>()</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">// 速度制御</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">float</span> now_velocity = differentiator_.Calculate(rotary_sensor_.<a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">CallGetAngle</a>());</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">float</span> output = vel_pid_.Calculate(target_velocity_ - now_velocity);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// モーターを駆動</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    motor_.<a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html#afb69e9dace9074933926b59904ddfb13">CallDrive</a>(output);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor&lt;Motor&gt;</a> &amp; motor_;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor&lt;RotarySensor&gt;</a> &amp; rotary_sensor_;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_differentiator.html">control::Differentiator&lt;Clock&gt;</a> differentiator_;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_pid.html">control::Pid&lt;Clock&gt;</a> vel_pid_;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">float</span> max_vel_;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">float</span> lowest_vel_;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">float</span> target_velocity_;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}  <span class="comment">// namespace control</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_i_motor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">alps::cmn::actuator::IMotor&lt; Motor &gt;</a></div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_i_motor_html_afb69e9dace9074933926b59904ddfb13"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html#afb69e9dace9074933926b59904ddfb13">alps::cmn::actuator::IMotor::CallDrive</a></div><div class="ttdeci">void CallDrive(float output_ratio)</div><div class="ttdoc">インタフェースを介してモーターを駆動する</div><div class="ttdef"><b>Definition:</b> i_motor.hpp:24</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_differentiator_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_differentiator.html">alps::cmn::control::Differentiator</a></div><div class="ttdoc">微分器</div><div class="ttdef"><b>Definition:</b> differentiator.hpp:30</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_velocity_controller_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html">alps::cmn::control::MotorVelocityController</a></div><div class="ttdoc">回転センサー付きモーターの速度を制御するクラス</div><div class="ttdef"><b>Definition:</b> motor_velocity_controller.hpp:27</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_velocity_controller_html_a4f24d1dc26454c8aea0251262aa174eb"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a4f24d1dc26454c8aea0251262aa174eb">alps::cmn::control::MotorVelocityController::SetTargetVelocity</a></div><div class="ttdeci">void SetTargetVelocity(float velocity)</div><div class="ttdoc">目標速度を設定する</div><div class="ttdef"><b>Definition:</b> motor_velocity_controller.hpp:69</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_velocity_controller_html_acb90f35da0cfb6568027afc204ddf814"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#acb90f35da0cfb6568027afc204ddf814">alps::cmn::control::MotorVelocityController::MotorVelocityController</a></div><div class="ttdeci">MotorVelocityController(actuator::IMotor&lt; Motor &gt; &amp;motor, sensor::IRotarySensor&lt; RotarySensor &gt; &amp;rotary_sensor, float vel_kp, float vel_ki, float vel_kd, float max_abs_drive_ratio=1.0f, float max_velocity=std::numeric_limits&lt; float &gt;::max(), float lowest_velocity=std::numeric_limits&lt; float &gt;::lowest(), float max_abs_drive_ratio_slope=std::numeric_limits&lt; float &gt;::max(), std::chrono::microseconds min_calc_differential_interval=std::chrono::milliseconds(1))</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> motor_velocity_controller.hpp:43</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_velocity_controller_html_ae207d880ccf99910fe1c61c8d6b16c6b"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ae207d880ccf99910fe1c61c8d6b16c6b">alps::cmn::control::MotorVelocityController::Control</a></div><div class="ttdeci">void Control()</div><div class="ttdoc">制御処理を実行する．周期的に呼び出すこと．</div><div class="ttdef"><b>Definition:</b> motor_velocity_controller.hpp:78</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_velocity_controller_html_a4f24d1dc26454c8aea0251262aa174eb"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a4f24d1dc26454c8aea0251262aa174eb">alps::cmn::control::MotorVelocityController::SetTargetVelocity</a></div><div class="ttdeci">void SetTargetVelocity(float velocity)</div><div class="ttdoc">目標速度を設定する</div><div class="ttdef"><b>Definition:</b> motor_velocity_controller.hpp:66</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_velocity_controller_html_a5370c26c7ed034f65381c0aab7e3b05b"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a5370c26c7ed034f65381c0aab7e3b05b">alps::cmn::control::MotorVelocityController::MotorVelocityController</a></div><div class="ttdeci">MotorVelocityController(actuator::IMotor&lt; Motor &gt; &amp;motor, sensor::IRotarySensor&lt; RotarySensor &gt; &amp;rotary_sensor, float vel_kp, float vel_ki, float vel_kd, float max_abs_drive_ratio=1.0f, float max_velocity=std::numeric_limits&lt; float &gt;::max(), float lowest_velocity=std::numeric_limits&lt; float &gt;::lowest(), std::chrono::microseconds min_calc_differential_interval=std::chrono::milliseconds(1))</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> motor_velocity_controller.hpp:42</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_velocity_controller_html_ae207d880ccf99910fe1c61c8d6b16c6b"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ae207d880ccf99910fe1c61c8d6b16c6b">alps::cmn::control::MotorVelocityController::Control</a></div><div class="ttdeci">void Control()</div><div class="ttdoc">制御処理を実行する．周期的に呼び出すこと．</div><div class="ttdef"><b>Definition:</b> motor_velocity_controller.hpp:75</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a></div><div class="ttdoc">PID制御器</div><div class="ttdef"><b>Definition:</b> pid.hpp:28</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">alps::cmn::sensor::IRotarySensor&lt; RotarySensor &gt;</a></div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor_html_afd34b25b6fd6be03746984bf9adbd367"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">alps::cmn::sensor::IRotarySensor::CallGetAngle</a></div><div class="ttdeci">double CallGetAngle()</div><div class="ttdoc">インタフェースを介して現在の角度を取得する</div><div class="ttdef"><b>Definition:</b> i_rotary_sensor.hpp:25</div></div>
