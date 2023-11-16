@@ -116,9 +116,9 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1control_1_1_pid.ht
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:acccf854742fa5e3dbc1a806971836ef8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#acccf854742fa5e3dbc1a806971836ef8">Pid</a> (float kp, float ki, float kd, float max_output=std::numeric_limits&lt; float &gt;::max(), float lowest_output=std::numeric_limits&lt; float &gt;::lowest(), float max_abs_slope=std::numeric_limits&lt; float &gt;::max(), std::chrono::microseconds min_calc_differential_interval=std::chrono::milliseconds(1))</td></tr>
-<tr class="memdesc:acccf854742fa5e3dbc1a806971836ef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#acccf854742fa5e3dbc1a806971836ef8">[詳解]</a><br /></td></tr>
-<tr class="separator:acccf854742fa5e3dbc1a806971836ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71296ab0f445c34c98cb46f96417c6a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a71296ab0f445c34c98cb46f96417c6a4">Pid</a> (float kp, float ki, float kd, float max_output=std::numeric_limits&lt; float &gt;::max(), float lowest_output=std::numeric_limits&lt; float &gt;::lowest(), std::chrono::microseconds min_calc_differential_interval=std::chrono::milliseconds(1))</td></tr>
+<tr class="memdesc:a71296ab0f445c34c98cb46f96417c6a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#a71296ab0f445c34c98cb46f96417c6a4">[詳解]</a><br /></td></tr>
+<tr class="separator:a71296ab0f445c34c98cb46f96417c6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a665cc71812c75d485ab514372ffdd9e3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a665cc71812c75d485ab514372ffdd9e3">Calculate</a> (const float error)</td></tr>
 <tr class="memdesc:a665cc71812c75d485ab514372ffdd9e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID制御を実行する  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#a665cc71812c75d485ab514372ffdd9e3">[詳解]</a><br /></td></tr>
 <tr class="separator:a665cc71812c75d485ab514372ffdd9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,8 +140,8 @@ class alps::cmn::control::Pid&lt; Clock &gt;</h3>
 </dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">todo:</a></b></dt><dd>変化速度チェックは別クラスに切り出したほうがいいかも </dd></dl>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="acccf854742fa5e3dbc1a806971836ef8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acccf854742fa5e3dbc1a806971836ef8">&#9670;&nbsp;</a></span>Pid()</h2>
+<a id="a71296ab0f445c34c98cb46f96417c6a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71296ab0f445c34c98cb46f96417c6a4">&#9670;&nbsp;</a></span>Pid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,12 +184,6 @@ template&lt;class Clock &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>max_abs_slope</em> = <code>std::numeric_limits&lt;float&gt;::max()</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">std::chrono::microseconds&#160;</td>
           <td class="paramname"><em>min_calc_differential_interval</em> = <code>std::chrono::milliseconds(1)</code>&#160;</td>
         </tr>
@@ -214,7 +208,6 @@ template&lt;class Clock &gt; </div>
     <tr><td class="paramname">kd</td><td>Dゲイン </td></tr>
     <tr><td class="paramname">max_output</td><td>最大出力値 </td></tr>
     <tr><td class="paramname">lowest_output</td><td>最小出力値 </td></tr>
-    <tr><td class="paramname">max_abs_slope</td><td>最大出力変化速度（絶対値） </td></tr>
     <tr><td class="paramname">min_calc_differential_interval</td><td>微分計算を行う最小間隔 </td></tr>
   </table>
   </dd>

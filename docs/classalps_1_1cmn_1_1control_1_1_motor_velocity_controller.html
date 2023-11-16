@@ -116,9 +116,9 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1control_1_1_motor_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:acb90f35da0cfb6568027afc204ddf814"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#acb90f35da0cfb6568027afc204ddf814">MotorVelocityController</a> (<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor</a>&lt; Motor &gt; &amp;motor, <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor</a>&lt; RotarySensor &gt; &amp;rotary_sensor, float vel_kp, float vel_ki, float vel_kd, float max_abs_drive_ratio=1.0f, float max_velocity=std::numeric_limits&lt; float &gt;::max(), float lowest_velocity=std::numeric_limits&lt; float &gt;::lowest(), float max_abs_drive_ratio_slope=std::numeric_limits&lt; float &gt;::max(), std::chrono::microseconds min_calc_differential_interval=std::chrono::milliseconds(1))</td></tr>
-<tr class="memdesc:acb90f35da0cfb6568027afc204ddf814"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#acb90f35da0cfb6568027afc204ddf814">[詳解]</a><br /></td></tr>
-<tr class="separator:acb90f35da0cfb6568027afc204ddf814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5370c26c7ed034f65381c0aab7e3b05b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a5370c26c7ed034f65381c0aab7e3b05b">MotorVelocityController</a> (<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor</a>&lt; Motor &gt; &amp;motor, <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor</a>&lt; RotarySensor &gt; &amp;rotary_sensor, float vel_kp, float vel_ki, float vel_kd, float max_abs_drive_ratio=1.0f, float max_velocity=std::numeric_limits&lt; float &gt;::max(), float lowest_velocity=std::numeric_limits&lt; float &gt;::lowest(), std::chrono::microseconds min_calc_differential_interval=std::chrono::milliseconds(1))</td></tr>
+<tr class="memdesc:a5370c26c7ed034f65381c0aab7e3b05b"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a5370c26c7ed034f65381c0aab7e3b05b">[詳解]</a><br /></td></tr>
+<tr class="separator:a5370c26c7ed034f65381c0aab7e3b05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f24d1dc26454c8aea0251262aa174eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a4f24d1dc26454c8aea0251262aa174eb">SetTargetVelocity</a> (float velocity)</td></tr>
 <tr class="memdesc:a4f24d1dc26454c8aea0251262aa174eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標速度を設定する  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a4f24d1dc26454c8aea0251262aa174eb">[詳解]</a><br /></td></tr>
 <tr class="separator:a4f24d1dc26454c8aea0251262aa174eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,8 +141,8 @@ class alps::cmn::control::MotorVelocityController&lt; Clock, Motor, RotarySensor
 </dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">todo:</a></b></dt><dd>速度情報に対するローパスフィルタ </dd></dl>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="acb90f35da0cfb6568027afc204ddf814"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb90f35da0cfb6568027afc204ddf814">&#9670;&nbsp;</a></span>MotorVelocityController()</h2>
+<a id="a5370c26c7ed034f65381c0aab7e3b05b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5370c26c7ed034f65381c0aab7e3b05b">&#9670;&nbsp;</a></span>MotorVelocityController()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,12 +203,6 @@ template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>max_abs_drive_ratio_slope</em> = <code>std::numeric_limits&lt;float&gt;::max()</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">std::chrono::microseconds&#160;</td>
           <td class="paramname"><em>min_calc_differential_interval</em> = <code>std::chrono::milliseconds(1)</code>&#160;</td>
         </tr>
@@ -236,7 +230,6 @@ template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
     <tr><td class="paramname">max_abs_drive_ratio</td><td>モーターの最大出力割合 </td></tr>
     <tr><td class="paramname">max_velocity</td><td>モーターの最大速度 </td></tr>
     <tr><td class="paramname">lowest_velocity</td><td>モーターの最小速度 </td></tr>
-    <tr><td class="paramname">max_abs_drive_ratio_slope</td><td>モーターの出力割合の最大変化量 </td></tr>
     <tr><td class="paramname">min_calc_differential_interval</td><td>角速度を計算する最小間隔 </td></tr>
   </table>
   </dd>
