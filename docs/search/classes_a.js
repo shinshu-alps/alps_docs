@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['uartio_309',['UartIo',['../classalps_1_1lin_1_1communication_1_1_uart_io.html',1,'alps::lin::communication::UartIo'],['../classalps_1_1mbed_1_1communication_1_1_uart_io.html',1,'alps::mbed::communication::UartIo']]],
-  ['uartpackettransceiver_310',['UartPacketTransceiver',['../classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html',1,'alps::cmn::communication']]],
-  ['uartreceiver_311',['UartReceiver',['../classalps_1_1cmn_1_1communication_1_1_uart_receiver.html',1,'alps::cmn::communication']]],
-  ['uartsender_312',['UartSender',['../classalps_1_1cmn_1_1communication_1_1_uart_sender.html',1,'alps::cmn::communication']]]
+  ['quaternion_343',['Quaternion',['../structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html',1,'alps::cmn::sensor::Bno055']]]
 ];

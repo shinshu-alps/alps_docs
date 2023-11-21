@@ -35,9 +35,9 @@
 <path fill="none" stroke="midnightblue" d="M176.67,-52.74C190.69,-50.79 204.88,-48.82 217.87,-47.02"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="175.94,-49.31 166.51,-54.15 176.9,-56.24 175.94,-49.31"/>
 </g>
-<!-- Node47 -->
+<!-- Node52 -->
 <g id="node3" class="node">
-<title>Node47</title>
+<title>Node52</title>
 <g id="a_node3"><a xlink:href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-30.5 182,-30.5 182,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::sensor::</text>
@@ -45,9 +45,9 @@
 </a>
 </g>
 </g>
-<!-- Node47&#45;&gt;Node1 -->
+<!-- Node52&#45;&gt;Node1 -->
 <g id="edge2" class="edge">
-<title>Node47&#45;&gt;Node1</title>
+<title>Node52&#45;&gt;Node1</title>
 <path fill="none" stroke="midnightblue" d="M192.46,-28.89C201.1,-30.05 209.62,-31.18 217.68,-32.26"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="192.64,-25.39 182.26,-27.54 191.71,-32.33 192.64,-25.39"/>
 </g>

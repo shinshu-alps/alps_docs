@@ -1,0 +1,189 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps_common_lib/include/alps_cmn/util/angle.hpp ソースファイル</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('angle_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">angle.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="angle_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ALPS_CMN_UTIL_ANGLE_HPP_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ALPS_CMN_UTIL_ANGLE_HPP_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>cmn</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>util</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1util.html#abacb36e12ae88805742c5817072a32b8">   11</a></span>&#160;constexpr <span class="keywordtype">double</span> <a class="code" href="namespacealps_1_1cmn_1_1util.html#abacb36e12ae88805742c5817072a32b8">kPi</a>{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  3.14159265358979323846264338327950288419716939937510582097494459230781640628620899};</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1util.html#adde0c2a64d434fb9780d6b6c2af09607">   15</a></span>&#160;constexpr <span class="keywordtype">float</span> <a class="code" href="namespacealps_1_1cmn_1_1util.html#adde0c2a64d434fb9780d6b6c2af09607">kPiF</a>{<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code" href="namespacealps_1_1cmn_1_1util.html#abacb36e12ae88805742c5817072a32b8">kPi</a>)};</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// double型の角度を扱う関数群 -------------------------------------------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1util.html#a8678facb181110787bea7d9af291db9a">   25</a></span>&#160;constexpr <span class="keywordtype">double</span> <a class="code" href="namespacealps_1_1cmn_1_1util.html#a8678facb181110787bea7d9af291db9a">DegToRad</a>(<span class="keywordtype">double</span> angle_deg)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordflow">return</span> angle_deg * <a class="code" href="namespacealps_1_1cmn_1_1util.html#abacb36e12ae88805742c5817072a32b8">kPi</a> / 180.0;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1util.html#a7221e13d89b7e00969f1e0633d38e528">   36</a></span>&#160;constexpr <span class="keywordtype">double</span> <a class="code" href="namespacealps_1_1cmn_1_1util.html#a7221e13d89b7e00969f1e0633d38e528">RadToDeg</a>(<span class="keywordtype">double</span> angle_rad)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">return</span> angle_rad * 180.0 / <a class="code" href="namespacealps_1_1cmn_1_1util.html#abacb36e12ae88805742c5817072a32b8">kPi</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1util.html#a6facc7bbdf89eb176f4ede22d70c200e">   47</a></span>&#160;constexpr <span class="keywordtype">double</span> <a class="code" href="namespacealps_1_1cmn_1_1util.html#a6facc7bbdf89eb176f4ede22d70c200e">NormalizeAngle</a>(<span class="keywordtype">double</span> angle_rad)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">while</span> (angle_rad &gt; <a class="code" href="namespacealps_1_1cmn_1_1util.html#abacb36e12ae88805742c5817072a32b8">kPi</a>) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    angle_rad -= 2 * <a class="code" href="namespacealps_1_1cmn_1_1util.html#abacb36e12ae88805742c5817072a32b8">kPi</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">while</span> (angle_rad &lt; -<a class="code" href="namespacealps_1_1cmn_1_1util.html#abacb36e12ae88805742c5817072a32b8">kPi</a>) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    angle_rad += 2 * <a class="code" href="namespacealps_1_1cmn_1_1util.html#abacb36e12ae88805742c5817072a32b8">kPi</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">return</span> angle_rad;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">// float版 -------------------------------------------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1util.html#abca0b5b8905b931b8d2c300c72bb9f11">   66</a></span>&#160;constexpr <span class="keywordtype">float</span> <a class="code" href="namespacealps_1_1cmn_1_1util.html#a8678facb181110787bea7d9af291db9a">DegToRad</a>(<span class="keywordtype">float</span> angle_deg)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">return</span> angle_deg * <a class="code" href="namespacealps_1_1cmn_1_1util.html#adde0c2a64d434fb9780d6b6c2af09607">kPiF</a> / 180.0f;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1util.html#a17db2f3b5fe7a9780118a5e8b9c77148">   77</a></span>&#160;constexpr <span class="keywordtype">float</span> <a class="code" href="namespacealps_1_1cmn_1_1util.html#a7221e13d89b7e00969f1e0633d38e528">RadToDeg</a>(<span class="keywordtype">float</span> angle_rad)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">return</span> angle_rad * 180.0f / <a class="code" href="namespacealps_1_1cmn_1_1util.html#adde0c2a64d434fb9780d6b6c2af09607">kPiF</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1util.html#a7dd23efe5c4394aa3ad742b313d0a2c0">   88</a></span>&#160;constexpr <span class="keywordtype">float</span> <a class="code" href="namespacealps_1_1cmn_1_1util.html#a6facc7bbdf89eb176f4ede22d70c200e">NormalizeAngle</a>(<span class="keywordtype">float</span> angle_rad)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordflow">while</span> (angle_rad &gt; <a class="code" href="namespacealps_1_1cmn_1_1util.html#adde0c2a64d434fb9780d6b6c2af09607">kPiF</a>) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    angle_rad -= 2.0f * <a class="code" href="namespacealps_1_1cmn_1_1util.html#adde0c2a64d434fb9780d6b6c2af09607">kPiF</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">while</span> (angle_rad &lt; -<a class="code" href="namespacealps_1_1cmn_1_1util.html#adde0c2a64d434fb9780d6b6c2af09607">kPiF</a>) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    angle_rad += 2.0f * <a class="code" href="namespacealps_1_1cmn_1_1util.html#adde0c2a64d434fb9780d6b6c2af09607">kPiF</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordflow">return</span> angle_rad;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}  <span class="comment">// namespace util</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// ALPS_CMN_UTIL_ANGLE_HPP_</span></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1util_html_a6facc7bbdf89eb176f4ede22d70c200e"><div class="ttname"><a href="namespacealps_1_1cmn_1_1util.html#a6facc7bbdf89eb176f4ede22d70c200e">alps::cmn::util::NormalizeAngle</a></div><div class="ttdeci">constexpr double NormalizeAngle(double angle_rad)</div><div class="ttdoc">角度をπ~-πの範囲に正規化する</div><div class="ttdef"><b>Definition:</b> angle.hpp:47</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1util_html_a7221e13d89b7e00969f1e0633d38e528"><div class="ttname"><a href="namespacealps_1_1cmn_1_1util.html#a7221e13d89b7e00969f1e0633d38e528">alps::cmn::util::RadToDeg</a></div><div class="ttdeci">constexpr double RadToDeg(double angle_rad)</div><div class="ttdoc">ラジアンを度数法に変換する</div><div class="ttdef"><b>Definition:</b> angle.hpp:36</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1util_html_a8678facb181110787bea7d9af291db9a"><div class="ttname"><a href="namespacealps_1_1cmn_1_1util.html#a8678facb181110787bea7d9af291db9a">alps::cmn::util::DegToRad</a></div><div class="ttdeci">constexpr double DegToRad(double angle_deg)</div><div class="ttdoc">度数法をラジアンに変換する</div><div class="ttdef"><b>Definition:</b> angle.hpp:25</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1util_html_abacb36e12ae88805742c5817072a32b8"><div class="ttname"><a href="namespacealps_1_1cmn_1_1util.html#abacb36e12ae88805742c5817072a32b8">alps::cmn::util::kPi</a></div><div class="ttdeci">constexpr double kPi</div><div class="ttdoc">円周率を表す定数（double）</div><div class="ttdef"><b>Definition:</b> angle.hpp:11</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1util_html_adde0c2a64d434fb9780d6b6c2af09607"><div class="ttname"><a href="namespacealps_1_1cmn_1_1util.html#adde0c2a64d434fb9780d6b6c2af09607">alps::cmn::util::kPiF</a></div><div class="ttdeci">constexpr float kPiF</div><div class="ttdoc">円周率を表す定数（float）</div><div class="ttdef"><b>Definition:</b> angle.hpp:15</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_fcd1ba41f8679fcc7bf76d667eaa0e17.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_ce1e71e2103ac83e6d6cc720a9feeeb7.html">include</a></li><li class="navelem"><a class="el" href="dir_cc648f72f51f156e42f9863c0e5bf5fb.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_26247a4c7d21a73996b8a7832c1a1463.html">util</a></li><li class="navelem"><a class="el" href="angle_8hpp.html">angle.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

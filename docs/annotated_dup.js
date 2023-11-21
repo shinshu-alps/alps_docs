@@ -44,6 +44,7 @@ var annotated_dup =
           [ "IPwmOut", "classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html", "classalps_1_1cmn_1_1gpio_1_1_i_pwm_out" ]
         ] ],
         [ "sensor", "namespacealps_1_1cmn_1_1sensor.html", [
+          [ "Bno055", "classalps_1_1cmn_1_1sensor_1_1_bno055.html", "classalps_1_1cmn_1_1sensor_1_1_bno055" ],
           [ "IRotarySensor", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor" ],
           [ "IncrementalEncoder", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder" ],
           [ "Potentiometer", "classalps_1_1cmn_1_1sensor_1_1_potentiometer.html", "classalps_1_1cmn_1_1sensor_1_1_potentiometer" ]

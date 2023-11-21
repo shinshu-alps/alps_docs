@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('alps__common__lib_2include_2alps__cmn_
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="differentiator_8hpp.html">alps_cmn/control/differentiator.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__digital__in_8hpp.html">alps_cmn/gpio/i_digital_in.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__interrupt__in_8hpp.html">alps_cmn/gpio/i_interrupt_in.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pi_8hpp.html">alps_cmn/math/pi.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="angle_8hpp.html">alps_cmn/util/angle.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__rotary__sensor_8hpp.html">alps_cmn/sensor/i_rotary_sensor.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('alps__common__lib_2include_2alps__cmn_
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  : interrupt_A_{interrupt_A},</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    read_B_{read_B},</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    pulses_per_rev_{pulses_per_rev},</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    resolution_rad_{<a class="code" href="namespacealps.html">alps</a>::cmn::math::<a class="code" href="namespacealps_1_1cmn_1_1math.html#a88f12b4ff4040bf5b2c1cd318c29e443">kPi</a> / pulses_per_rev_},</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    resolution_rad_{<a class="code" href="namespacealps.html">alps</a>::cmn::util::<a class="code" href="namespacealps_1_1cmn_1_1util.html#abacb36e12ae88805742c5817072a32b8">kPi</a> / pulses_per_rev_},</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    differentiator_{min_calc_vel_interval}</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// 割り込み設定</span></div>
@@ -223,6 +223,7 @@ $(document).ready(function(){initNavTree('alps__common__lib_2include_2alps__cmn_
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;}  <span class="comment">// namespace alps</span></div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// ALPS_CMN_LIB_SENSOR_INCREMENTAL_ENCODER_HPP_</span></div>
+<div class="ttc" id="aangle_8hpp_html"><div class="ttname"><a href="angle_8hpp.html">angle.hpp</a></div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_digital_in_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html">alps::cmn::gpio::IDigitalIn&lt; DigitalIn &gt;</a></div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_digital_in_html_a7ec571adc939ca0d022e00087b0ea914"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html#a7ec571adc939ca0d022e00087b0ea914">alps::cmn::gpio::IDigitalIn::CallRead</a></div><div class="ttdeci">bool CallRead()</div><div class="ttdoc">インタフェースを介してRead()関数を呼び出す．振る舞い: デジタル入力を読む</div><div class="ttdef"><b>Definition:</b> i_digital_in.hpp:37</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_interrupt_in_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html">alps::cmn::gpio::IInterruptIn&lt; InterruptIn &gt;</a></div></div>
@@ -241,9 +242,8 @@ $(document).ready(function(){initNavTree('alps__common__lib_2include_2alps__cmn_
 <div class="ttc" id="ai__rotary__sensor_8hpp_html"><div class="ttname"><a href="i__rotary__sensor_8hpp.html">i_rotary_sensor.hpp</a></div></div>
 <div class="ttc" id="anamespacealps_1_1cmn_1_1gpio_html_a5e6ac69b85cb0a3ebf618df6f6e316a9a25ca54211737bfd512c6b12741bcb060"><div class="ttname"><a href="namespacealps_1_1cmn_1_1gpio.html#a5e6ac69b85cb0a3ebf618df6f6e316a9a25ca54211737bfd512c6b12741bcb060">alps::cmn::gpio::InterruptMode::kFall</a></div><div class="ttdeci">@ kFall</div><div class="ttdoc">立ち下がり</div></div>
 <div class="ttc" id="anamespacealps_1_1cmn_1_1gpio_html_a5e6ac69b85cb0a3ebf618df6f6e316a9a7e2fb3a1859ce40bdfa6c187f499d423"><div class="ttname"><a href="namespacealps_1_1cmn_1_1gpio.html#a5e6ac69b85cb0a3ebf618df6f6e316a9a7e2fb3a1859ce40bdfa6c187f499d423">alps::cmn::gpio::InterruptMode::kRise</a></div><div class="ttdeci">@ kRise</div><div class="ttdoc">立ち上がり</div></div>
-<div class="ttc" id="anamespacealps_1_1cmn_1_1math_html_a88f12b4ff4040bf5b2c1cd318c29e443"><div class="ttname"><a href="namespacealps_1_1cmn_1_1math.html#a88f12b4ff4040bf5b2c1cd318c29e443">alps::cmn::math::kPi</a></div><div class="ttdeci">constexpr double kPi</div><div class="ttdoc">円周率を表す定数（double）</div><div class="ttdef"><b>Definition:</b> pi.hpp:11</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1util_html_abacb36e12ae88805742c5817072a32b8"><div class="ttname"><a href="namespacealps_1_1cmn_1_1util.html#abacb36e12ae88805742c5817072a32b8">alps::cmn::util::kPi</a></div><div class="ttdeci">constexpr double kPi</div><div class="ttdoc">円周率を表す定数（double）</div><div class="ttdef"><b>Definition:</b> angle.hpp:11</div></div>
 <div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:23</div></div>
-<div class="ttc" id="api_8hpp_html"><div class="ttname"><a href="pi_8hpp.html">pi.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
