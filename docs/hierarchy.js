@@ -1,5 +1,8 @@
 var hierarchy =
 [
+    [ "alps::cmn::sensor::Bno055< Clock, I2cIo >::Acceleration", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_acceleration.html", null ],
+    [ "alps::cmn::sensor::Bno055< Clock, I2cIo >::AngularVelocity", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_angular_velocity.html", null ],
+    [ "alps::cmn::sensor::Bno055< Clock, I2cIo >", "classalps_1_1cmn_1_1sensor_1_1_bno055.html", null ],
     [ "alps::cmn::communication::CanCallbackHandler< kMaxCallbackNum >", "classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html", null ],
     [ "alps::cmn::communication::CanCallbackHandler< 20 >", "classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html", null ],
     [ "alps::cmn::communication::CanDataFrame", "structalps_1_1cmn_1_1communication_1_1_can_data_frame.html", null ],
@@ -9,6 +12,8 @@ var hierarchy =
     [ "alps::cmn::communication::Cobs", "classalps_1_1cmn_1_1communication_1_1_cobs.html", null ],
     [ "alps::cmn::communication::DataSerializer< T >", "classalps_1_1cmn_1_1communication_1_1_data_serializer.html", null ],
     [ "alps::cmn::control::Differentiator< Clock >", "classalps_1_1cmn_1_1control_1_1_differentiator.html", null ],
+    [ "alps::cmn::sensor::Bno055< Clock, I2cIo >::Euler", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_euler.html", null ],
+    [ "alps::cmn::sensor::Bno055< Clock, I2cIo >::GravityVector", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_gravity_vector.html", null ],
     [ "alps::cmn::gpio::IAnalogIn< Derived >", "classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html", null ],
     [ "alps::cmn::gpio::IAnalogIn< AnalogIn >", "classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html", [
       [ "alps::mbed::gpio::AnalogIn", "classalps_1_1mbed_1_1gpio_1_1_analog_in.html", null ]
@@ -69,11 +74,14 @@ var hierarchy =
       [ "alps::lin::communication::UartIo", "classalps_1_1lin_1_1communication_1_1_uart_io.html", null ],
       [ "alps::mbed::communication::UartIo", "classalps_1_1mbed_1_1communication_1_1_uart_io.html", null ]
     ] ],
+    [ "alps::cmn::sensor::Bno055< Clock, I2cIo >::LinearAcceleration", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_linear_acceleration.html", null ],
     [ "alps::cmn::control::Lpf", "classalps_1_1cmn_1_1control_1_1_lpf.html", null ],
+    [ "alps::cmn::sensor::Bno055< Clock, I2cIo >::MagneticVector", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_magnetic_vector.html", null ],
     [ "alps::cmn::control::MotorAngleController< Clock, Motor, RotarySensor >", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html", null ],
     [ "alps::cmn::control::MotorAngleVelocityController< Clock, Motor, RotarySensor >", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html", null ],
     [ "alps::cmn::control::MotorVelocityController< Clock, Motor, RotarySensor >", "classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html", null ],
     [ "alps::cmn::control::Pid< Clock >", "classalps_1_1cmn_1_1control_1_1_pid.html", null ],
+    [ "alps::cmn::sensor::Bno055< Clock, I2cIo >::Quaternion", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html", null ],
     [ "alps::cmn::actuator::RobomasMotorsCanController", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_controller.html", null ],
     [ "alps::cmn::communication::SerializeTypeInfoBase< is_serializable, is_single >", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html", null ],
     [ "alps::cmn::communication::SerializeTypeInfoBase< false, false >", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html", [

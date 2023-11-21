@@ -1,0 +1,9 @@
+<map id="alps_common_lib/include/alps_cmn/sensor/bno055.hpp" name="alps_common_lib/include/alps_cmn/sensor/bno055.hpp">
+<area shape="rect" id="node1" title="BNO055 9軸センサ" alt="" coords="111,5,325,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="18,184,85,211"/>
+<area shape="rect" id="node3" href="$i__i2c__io_8hpp.html" title="I2C通信インタフェース" alt="" coords="227,95,417,136"/>
+<area shape="rect" id="node6" href="$wait_8hpp.html" title="wait関数" alt="" coords="25,102,203,129"/>
+<area shape="rect" id="node7" href="$angle_8hpp.html" title=" " alt="" coords="441,102,619,129"/>
+<area shape="rect" id="node4" title=" " alt="" coords="238,184,305,211"/>
+<area shape="rect" id="node5" title=" " alt="" coords="329,184,416,211"/>
+</map>

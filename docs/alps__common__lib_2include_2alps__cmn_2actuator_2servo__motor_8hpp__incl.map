@@ -1,9 +1,8 @@
 <map id="alps_common_lib/include/alps_cmn/actuator/servo_motor.hpp" name="alps_common_lib/include/alps_cmn/actuator/servo_motor.hpp">
 <area shape="rect" id="node1" title=" " alt="" coords="103,5,290,61"/>
-<area shape="rect" id="node2" title=" " alt="" coords="59,199,126,225"/>
+<area shape="rect" id="node2" title=" " alt="" coords="58,199,125,225"/>
 <area shape="rect" id="node3" title=" " alt="" coords="25,117,91,143"/>
 <area shape="rect" id="node4" href="$i__pwm__out_8hpp.html" title="PWM出力を行うインタフェース" alt="" coords="115,109,278,151"/>
-<area shape="rect" id="node5" href="$angle__conversion_8hpp.html" title=" " alt="" coords="302,109,465,151"/>
-<area shape="rect" id="node7" href="$algorithm_8hpp.html" title=" " alt="" coords="489,117,693,143"/>
-<area shape="rect" id="node6" href="$pi_8hpp.html" title=" " alt="" coords="300,199,467,225"/>
+<area shape="rect" id="node5" href="$angle_8hpp.html" title=" " alt="" coords="303,117,480,143"/>
+<area shape="rect" id="node6" href="$algorithm_8hpp.html" title=" " alt="" coords="504,117,708,143"/>
 </map>
