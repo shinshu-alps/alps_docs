@@ -56,7 +56,11 @@ var NAVTREE =
       ] ]
     ] ],
     [ "ファイル", "files.html", [
-      [ "ファイル一覧", "files.html", "files_dup" ]
+      [ "ファイル一覧", "files.html", "files_dup" ],
+      [ "ファイルメンバ", "globals.html", [
+        [ "全て", "globals.html", null ],
+        [ "マクロ定義", "globals_defs.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
@@ -64,8 +68,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "algorithm_8hpp.html",
-"classalps_1_1lin_1_1communication_1_1_uart_io.html#a804a747654c41fefdfa557ffdf766122",
-"structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_euler.html#a798afae2ce1031946c9bf8284d155946"
+"classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a070fb75e50b86c8d7de38c35c6468b8b",
+"structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#acba9759bb3beaee95cb6faf6e07d516e"
 ];
 
 var SYNCONMSG = 'クリックで同期表示が無効になります';

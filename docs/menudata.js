@@ -94,4 +94,7 @@ var menudata={children:[
 {text:"型定義",url:"functions_type.html"},
 {text:"列挙型",url:"functions_enum.html"}]}]},
 {text:"ファイル",url:"files.html",children:[
-{text:"ファイル一覧",url:"files.html"}]}]}
+{text:"ファイル一覧",url:"files.html"},
+{text:"ファイルメンバ",url:"globals.html",children:[
+{text:"全て",url:"globals.html"},
+{text:"マクロ定義",url:"globals_defs.html"}]}]}]}

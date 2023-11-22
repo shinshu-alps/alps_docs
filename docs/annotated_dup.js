@@ -43,6 +43,9 @@ var annotated_dup =
           [ "IInterruptIn", "classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html", "classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in" ],
           [ "IPwmOut", "classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html", "classalps_1_1cmn_1_1gpio_1_1_i_pwm_out" ]
         ] ],
+        [ "log", "namespacealps_1_1cmn_1_1log.html", [
+          [ "Logger", "classalps_1_1cmn_1_1log_1_1_logger.html", "classalps_1_1cmn_1_1log_1_1_logger" ]
+        ] ],
         [ "sensor", "namespacealps_1_1cmn_1_1sensor.html", [
           [ "Bno055", "classalps_1_1cmn_1_1sensor_1_1_bno055.html", "classalps_1_1cmn_1_1sensor_1_1_bno055" ],
           [ "IRotarySensor", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor" ],
