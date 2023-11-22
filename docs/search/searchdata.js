@@ -7,9 +7,10 @@ var indexSectionsWithContent =
   4: "abcdefgilmnoprstuw~",
   5: "dikmprwxyz",
   6: "diosu",
-  7: "ipt",
+  7: "ilpt",
   8: "k",
-  9: "t概"
+  9: "a",
+  10: "t概"
 };
 
 var indexSectionNames =
@@ -23,7 +24,8 @@ var indexSectionNames =
   6: "typedefs",
   7: "enums",
   8: "enumvalues",
-  9: "pages"
+  9: "defines",
+  10: "pages"
 };
 
 var indexSectionLabels =
@@ -37,6 +39,7 @@ var indexSectionLabels =
   6: "型定義",
   7: "列挙型",
   8: "列挙値",
-  9: "ページ"
+  9: "マクロ定義",
+  10: "ページ"
 };
 
