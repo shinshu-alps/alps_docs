@@ -121,9 +121,9 @@ alps::mbed::communication::I2cIo の継承関係図</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a1b5130fc84713edd3e0add8a3258e93a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mbed_1_1communication_1_1_i2c_io.html#a1b5130fc84713edd3e0add8a3258e93a">I2cIo</a> (PinName sda, PinName scl)</td></tr>
-<tr class="memdesc:a1b5130fc84713edd3e0add8a3258e93a"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1mbed_1_1communication_1_1_i2c_io.html#a1b5130fc84713edd3e0add8a3258e93a">[詳解]</a><br /></td></tr>
-<tr class="separator:a1b5130fc84713edd3e0add8a3258e93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af52e3f83a4a6152de04c5c76cb59601c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mbed_1_1communication_1_1_i2c_io.html#af52e3f83a4a6152de04c5c76cb59601c">I2cIo</a> (PinName sda, PinName scl, int frequency=100000)</td></tr>
+<tr class="memdesc:af52e3f83a4a6152de04c5c76cb59601c"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1mbed_1_1communication_1_1_i2c_io.html#af52e3f83a4a6152de04c5c76cb59601c">[詳解]</a><br /></td></tr>
+<tr class="separator:af52e3f83a4a6152de04c5c76cb59601c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82aee4f740b1e31f4656fd38d60f54d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mbed_1_1communication_1_1_i2c_io.html#a82aee4f740b1e31f4656fd38d60f54d8">Write</a> (<a class="el" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">cmn::communication::I2cAddress</a> address, etl::span&lt; const uint8_t &gt; write_buf, bool repeated=false)</td></tr>
 <tr class="memdesc:a82aee4f740b1e31f4656fd38d60f54d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C通信でバイト列を送信する  <a href="classalps_1_1mbed_1_1communication_1_1_i2c_io.html#a82aee4f740b1e31f4656fd38d60f54d8">[詳解]</a><br /></td></tr>
 <tr class="separator:a82aee4f740b1e31f4656fd38d60f54d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,8 +140,8 @@ alps::mbed::communication::I2cIo の継承関係図</div>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>mbedのI2C通信IOクラス </p>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="a1b5130fc84713edd3e0add8a3258e93a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b5130fc84713edd3e0add8a3258e93a">&#9670;&nbsp;</a></span>I2cIo()</h2>
+<a id="af52e3f83a4a6152de04c5c76cb59601c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af52e3f83a4a6152de04c5c76cb59601c">&#9670;&nbsp;</a></span>I2cIo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,7 +156,13 @@ alps::mbed::communication::I2cIo の継承関係図</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">PinName&#160;</td>
-          <td class="paramname"><em>scl</em>&#160;</td>
+          <td class="paramname"><em>scl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frequency</em> = <code>100000</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -171,6 +177,7 @@ alps::mbed::communication::I2cIo の継承関係図</div>
   <table class="params">
     <tr><td class="paramname">sda</td><td>データラインのピン番号 </td></tr>
     <tr><td class="paramname">scl</td><td>クロックラインのピン番号 </td></tr>
+    <tr><td class="paramname">frequency</td><td>通信周波数[Hz]（デフォルト100kHz） </td></tr>
   </table>
   </dd>
 </dl>
