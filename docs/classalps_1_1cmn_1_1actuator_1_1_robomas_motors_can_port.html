@@ -1,0 +1,311 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps::cmn::actuator::RobomasMotorsCanPort クラス</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">alps::cmn::actuator::RobomasMotorsCanPort クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>同じCANバスに接続された複数のロボマスモーターのCAN通信を管理する  
+ <a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="robomas__motors__can__port_8hpp_source.html">robomas_motors_can_port.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a6add4725a0c984b6d7af362ccbf56af5"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5">Id</a> { <br />
+&#160;&#160;<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5a9196cf5b59980967fa220eb3a75b21bb">kMotor1</a> = 1
+, <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5a91b9c39d4ad1a8fd04ef00e69c5f2611">kMotor2</a>
+, <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5a2072c208e2973b899850cc30518de84c">kMotor3</a>
+, <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5a1a6832c88670070d9d9a0df727a0373c">kMotor4</a>
+, <br />
+&#160;&#160;<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5a6797030cd527332081457530b1a89767">kMotor5</a>
+, <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5a3311919a803af2c92d911fe44bc33e47">kMotor6</a>
+, <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5afd0b6a709f0101d3aa2d026673076448">kMotor7</a>
+, <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5a691227596b77a5005dd7361144d395b3">kMotor8</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a6add4725a0c984b6d7af362ccbf56af5"><td class="mdescLeft">&#160;</td><td class="mdescRight">ロボマスモータのID（1~8）  <a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5">[詳解]</a><br /></td></tr>
+<tr class="separator:a6add4725a0c984b6d7af362ccbf56af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a654556d4e8b6166170143e8b3b01f0c1"><td class="memTemplParams" colspan="2">template&lt;class CanIo , size_t kMaxPublisherNum, size_t kMaxSubscriberNum&gt; </td></tr>
+<tr class="memitem:a654556d4e8b6166170143e8b3b01f0c1"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a654556d4e8b6166170143e8b3b01f0c1">RobomasMotorsCanPort</a> (etl::vector&lt; etl::pair&lt; const <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5">RobomasMotorsCanPort::Id</a>, <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html">RobomasMotor</a> * &gt;, <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6cc534acc5123a5f89085975a4207704">kMaxMotorNum</a> &gt; id_motor_pairs, <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">communication::CanTypedDataTransceiver</a>&lt; CanIo, kMaxPublisherNum, kMaxSubscriberNum &gt; &amp;transceiver)</td></tr>
+<tr class="memdesc:a654556d4e8b6166170143e8b3b01f0c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a654556d4e8b6166170143e8b3b01f0c1">[詳解]</a><br /></td></tr>
+<tr class="separator:a654556d4e8b6166170143e8b3b01f0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a182073c24e53189e3d39ed349eeca3bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a182073c24e53189e3d39ed349eeca3bc">PublishMotorOutput</a> ()</td></tr>
+<tr class="memdesc:a182073c24e53189e3d39ed349eeca3bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">ロボマスモータの出力値をCanPublisherに書き込む  <a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a182073c24e53189e3d39ed349eeca3bc">[詳解]</a><br /></td></tr>
+<tr class="separator:a182073c24e53189e3d39ed349eeca3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:a6cc534acc5123a5f89085975a4207704"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6cc534acc5123a5f89085975a4207704">kMaxMotorNum</a> {8}</td></tr>
+<tr class="memdesc:a6cc534acc5123a5f89085975a4207704"><td class="mdescLeft">&#160;</td><td class="mdescRight">一つのCANバスに接続できるロボマスモーターの最大数  <a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6cc534acc5123a5f89085975a4207704">[詳解]</a><br /></td></tr>
+<tr class="separator:a6cc534acc5123a5f89085975a4207704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>同じCANバスに接続された複数のロボマスモーターのCAN通信を管理する </p>
+</div><h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a6add4725a0c984b6d7af362ccbf56af5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6add4725a0c984b6d7af362ccbf56af5">&#9670;&nbsp;</a></span>Id</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5">alps::cmn::actuator::RobomasMotorsCanPort::Id</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ロボマスモータのID（1~8） </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a6add4725a0c984b6d7af362ccbf56af5a9196cf5b59980967fa220eb3a75b21bb"></a>kMotor1&#160;</td><td class="fielddoc"><p>モーターID1 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6add4725a0c984b6d7af362ccbf56af5a91b9c39d4ad1a8fd04ef00e69c5f2611"></a>kMotor2&#160;</td><td class="fielddoc"><p>モーターID2 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6add4725a0c984b6d7af362ccbf56af5a2072c208e2973b899850cc30518de84c"></a>kMotor3&#160;</td><td class="fielddoc"><p>モーターID3 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6add4725a0c984b6d7af362ccbf56af5a1a6832c88670070d9d9a0df727a0373c"></a>kMotor4&#160;</td><td class="fielddoc"><p>モーターID4 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6add4725a0c984b6d7af362ccbf56af5a6797030cd527332081457530b1a89767"></a>kMotor5&#160;</td><td class="fielddoc"><p>モーターID5 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6add4725a0c984b6d7af362ccbf56af5a3311919a803af2c92d911fe44bc33e47"></a>kMotor6&#160;</td><td class="fielddoc"><p>モーターID6 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6add4725a0c984b6d7af362ccbf56af5afd0b6a709f0101d3aa2d026673076448"></a>kMotor7&#160;</td><td class="fielddoc"><p>モーターID7 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6add4725a0c984b6d7af362ccbf56af5a691227596b77a5005dd7361144d395b3"></a>kMotor8&#160;</td><td class="fielddoc"><p>モーターID8 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a654556d4e8b6166170143e8b3b01f0c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a654556d4e8b6166170143e8b3b01f0c1">&#9670;&nbsp;</a></span>RobomasMotorsCanPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo , size_t kMaxPublisherNum, size_t kMaxSubscriberNum&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">alps::cmn::actuator::RobomasMotorsCanPort::RobomasMotorsCanPort </td>
+          <td>(</td>
+          <td class="paramtype">etl::vector&lt; etl::pair&lt; const <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5">RobomasMotorsCanPort::Id</a>, <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html">RobomasMotor</a> * &gt;, <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6cc534acc5123a5f89085975a4207704">kMaxMotorNum</a> &gt;&#160;</td>
+          <td class="paramname"><em>id_motor_pairs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">communication::CanTypedDataTransceiver</a>&lt; CanIo, kMaxPublisherNum, kMaxSubscriberNum &gt; &amp;&#160;</td>
+          <td class="paramname"><em>transceiver</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">CanIo</td><td>CANの入出力クラス </td></tr>
+    <tr><td class="paramname">kMaxPublisherNum</td><td>CANのパブリッシャーの最大数 </td></tr>
+    <tr><td class="paramname">kMaxSubscriberNum</td><td>CANのサブスクライバーの最大数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id_motor_pairs</td><td>登録するロボマスモーターのIDとポインタのペアのリスト </td></tr>
+    <tr><td class="paramname">transceiver</td><td>対応付けるCANの送受信クラス </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a182073c24e53189e3d39ed349eeca3bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a182073c24e53189e3d39ed349eeca3bc">&#9670;&nbsp;</a></span>PublishMotorOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alps::cmn::actuator::RobomasMotorsCanPort::PublishMotorOutput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ロボマスモータの出力値をCanPublisherに書き込む </p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a6cc534acc5123a5f89085975a4207704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cc534acc5123a5f89085975a4207704">&#9670;&nbsp;</a></span>kMaxMotorNum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t alps::cmn::actuator::RobomasMotorsCanPort::kMaxMotorNum {8}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>一つのCANバスに接続できるロボマスモーターの最大数 </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>alps_common_lib/include/alps_cmn/actuator/<a class="el" href="robomas__motors__can__port_8hpp_source.html">robomas_motors_can_port.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacealps.html">alps</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn.html">cmn</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn_1_1actuator.html">actuator</a></li><li class="navelem"><a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html">RobomasMotorsCanPort</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

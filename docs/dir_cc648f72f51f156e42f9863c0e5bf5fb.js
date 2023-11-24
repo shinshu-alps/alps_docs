@@ -5,6 +5,7 @@ var dir_cc648f72f51f156e42f9863c0e5bf5fb =
     [ "control", "dir_83658e075a4ab7b2cbb8779471289882.html", "dir_83658e075a4ab7b2cbb8779471289882" ],
     [ "gpio", "dir_7913872ef1e9131c7a4facddec50fb6b.html", "dir_7913872ef1e9131c7a4facddec50fb6b" ],
     [ "log", "dir_c42d739f81e7f8c788f3b0a5285dd299.html", "dir_c42d739f81e7f8c788f3b0a5285dd299" ],
+    [ "robotics", "dir_699f9106423e7a7cab26b00d3847951b.html", "dir_699f9106423e7a7cab26b00d3847951b" ],
     [ "sensor", "dir_96320550a29baac38dc9eb0ae89f5e73.html", "dir_96320550a29baac38dc9eb0ae89f5e73" ],
     [ "time", "dir_1367935105ebc251618457953f8d2b80.html", "dir_1367935105ebc251618457953f8d2b80" ],
     [ "util", "dir_26247a4c7d21a73996b8a7832c1a1463.html", "dir_26247a4c7d21a73996b8a7832c1a1463" ],

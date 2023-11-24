@@ -1,8 +1,9 @@
 <map id="alps_common_lib/include/alps_cmn/util/angle.hpp" name="alps_common_lib/include/alps_cmn/util/angle.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="235,5,421,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="332,5,519,47"/>
 <area shape="rect" id="node2" href="$alps__common__lib_2include_2alps__cmn_2actuator_2servo__motor_8hpp.html" title=" " alt="" coords="9,95,196,151"/>
-<area shape="rect" id="node4" href="$bno055_8hpp.html" title="BNO055 9軸センサ" alt="" coords="221,102,435,143"/>
-<area shape="rect" id="node5" href="$alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="459,95,677,151"/>
+<area shape="rect" id="node4" href="$four__wheel__omni_8hpp.html" title=" " alt="" coords="220,95,407,151"/>
+<area shape="rect" id="node5" href="$bno055_8hpp.html" title="BNO055 9軸センサ" alt="" coords="431,102,646,143"/>
+<area shape="rect" id="node6" href="$alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="670,95,887,151"/>
 <area shape="rect" id="node3" href="$alps__mbed__lib_2include_2alps__mbed_2actuator_2servo__motor_8hpp.html" title=" " alt="" coords="5,199,200,255"/>
-<area shape="rect" id="node6" href="$alps__mbed__lib_2include_2alps__mbed_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="455,199,681,255"/>
+<area shape="rect" id="node7" href="$alps__mbed__lib_2include_2alps__mbed_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="665,199,892,255"/>
 </map>

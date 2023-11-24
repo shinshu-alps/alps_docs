@@ -23,11 +23,11 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="robomas__motors__can__controller_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="robomas__motors__can__port_8hpp.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="11,-0.5 11,-41.5 166,-41.5 166,-0.5 11,-0.5"/>
 <text text-anchor="start" x="19" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps_common_lib/include</text>
 <text text-anchor="start" x="19" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_cmn/actuator/robomas</text>
-<text text-anchor="middle" x="88.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_motors_can_controller.hpp</text>
+<text text-anchor="middle" x="88.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_motors_can_port.hpp</text>
 </a>
 </g>
 </g>
