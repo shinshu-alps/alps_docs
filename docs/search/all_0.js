@@ -30,11 +30,12 @@ var searchData=
   ['lin_27',['lin',['../namespacealps_1_1lin.html',1,'alps']]],
   ['log_28',['log',['../namespacealps_1_1cmn_1_1log.html',1,'alps::cmn']]],
   ['mbed_29',['mbed',['../namespacealps_1_1mbed.html',1,'alps']]],
-  ['ros_30',['ros',['../namespacealps_1_1ros.html',1,'alps']]],
-  ['ros2_31',['ros2',['../namespacealps_1_1ros2.html',1,'alps']]],
-  ['sensor_32',['sensor',['../namespacealps_1_1cmn_1_1sensor.html',1,'alps::cmn::sensor'],['../namespacealps_1_1mbed_1_1sensor.html',1,'alps::mbed::sensor']]],
-  ['stm_33',['stm',['../namespacealps_1_1stm.html',1,'alps']]],
-  ['time_34',['time',['../namespacealps_1_1cmn_1_1time.html',1,'alps::cmn']]],
-  ['type_35',['type',['../namespacealps_1_1cmn_1_1type.html',1,'alps::cmn']]],
-  ['util_36',['util',['../namespacealps_1_1cmn_1_1util.html',1,'alps::cmn']]]
+  ['robotics_30',['robotics',['../namespacealps_1_1cmn_1_1robotics.html',1,'alps::cmn']]],
+  ['ros_31',['ros',['../namespacealps_1_1ros.html',1,'alps']]],
+  ['ros2_32',['ros2',['../namespacealps_1_1ros2.html',1,'alps']]],
+  ['sensor_33',['sensor',['../namespacealps_1_1cmn_1_1sensor.html',1,'alps::cmn::sensor'],['../namespacealps_1_1mbed_1_1sensor.html',1,'alps::mbed::sensor']]],
+  ['stm_34',['stm',['../namespacealps_1_1stm.html',1,'alps']]],
+  ['time_35',['time',['../namespacealps_1_1cmn_1_1time.html',1,'alps::cmn']]],
+  ['type_36',['type',['../namespacealps_1_1cmn_1_1type.html',1,'alps::cmn']]],
+  ['util_37',['util',['../namespacealps_1_1cmn_1_1util.html',1,'alps::cmn']]]
 ];

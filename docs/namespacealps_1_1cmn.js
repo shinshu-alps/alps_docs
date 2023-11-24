@@ -5,6 +5,7 @@ var namespacealps_1_1cmn =
     [ "control", "namespacealps_1_1cmn_1_1control.html", "namespacealps_1_1cmn_1_1control" ],
     [ "gpio", "namespacealps_1_1cmn_1_1gpio.html", "namespacealps_1_1cmn_1_1gpio" ],
     [ "log", "namespacealps_1_1cmn_1_1log.html", "namespacealps_1_1cmn_1_1log" ],
+    [ "robotics", "namespacealps_1_1cmn_1_1robotics.html", "namespacealps_1_1cmn_1_1robotics" ],
     [ "sensor", "namespacealps_1_1cmn_1_1sensor.html", "namespacealps_1_1cmn_1_1sensor" ],
     [ "time", "namespacealps_1_1cmn_1_1time.html", [
       [ "wait", "namespacealps_1_1cmn_1_1time.html#a60c317c943c5990f4619048af3defb26", null ]

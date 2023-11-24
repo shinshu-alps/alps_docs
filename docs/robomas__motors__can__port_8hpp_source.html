@@ -1,0 +1,227 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps_common_lib/include/alps_cmn/actuator/robomas_motors_can_port.hpp ソースファイル</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('robomas__motors__can__port_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">robomas_motors_can_port.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="robomas__motors__can__port_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ALPS_CMN_ACTUATOR_ROBOMAS_MOTOR_CAN_CONTROLLER_HPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ALPS_CMN_ACTUATOR_ROBOMAS_MOTOR_CAN_CONTROLLER_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="robomas__motor_8hpp.html">alps_cmn/actuator/robomas_motor.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="can__typed__data__transceiver_8hpp.html">alps_cmn/communication/can_typed_data_transceiver.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;etl/unordered_map.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>cmn</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>actuator</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html">RobomasMotorsCanPort</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6cc534acc5123a5f89085975a4207704">   22</a></span>&#160;  <span class="keyword">static</span> constexpr uint8_t <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6cc534acc5123a5f89085975a4207704">kMaxMotorNum</a>{8};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5">   25</a></span>&#160;  <span class="keyword">enum class</span> <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5">Id</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5a9196cf5b59980967fa220eb3a75b21bb">kMotor1</a> = 1,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5a91b9c39d4ad1a8fd04ef00e69c5f2611">kMotor2</a>,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5a2072c208e2973b899850cc30518de84c">kMotor3</a>,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5a1a6832c88670070d9d9a0df727a0373c">kMotor4</a>,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5a6797030cd527332081457530b1a89767">kMotor5</a>,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5a3311919a803af2c92d911fe44bc33e47">kMotor6</a>,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5afd0b6a709f0101d3aa2d026673076448">kMotor7</a>,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5a691227596b77a5005dd7361144d395b3">kMotor8</a>,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  };</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> CanIo, <span class="keywordtype">size_t</span> kMaxPublisherNum, <span class="keywordtype">size_t</span> kMaxSubscriberNum&gt;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a654556d4e8b6166170143e8b3b01f0c1">   55</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a654556d4e8b6166170143e8b3b01f0c1">RobomasMotorsCanPort</a>(</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    etl::vector&lt;etl::pair&lt;const RobomasMotorsCanPort::Id, RobomasMotor *&gt;, <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6cc534acc5123a5f89085975a4207704">kMaxMotorNum</a>&gt;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      id_motor_pairs,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">communication::CanTypedDataTransceiver&lt;CanIo, kMaxPublisherNum, kMaxSubscriberNum&gt;</a> &amp;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      transceiver)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// モーター回転出力のパブリッシャーを登録</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    transceiver.<a class="code" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a9249016b1741a3ee755a19784c10bc1b">RegisterCanPublisher</a>(motor_output_publishers_[0]);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    transceiver.<a class="code" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a9249016b1741a3ee755a19784c10bc1b">RegisterCanPublisher</a>(motor_output_publishers_[1]);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp; id_motor_pair : id_motor_pairs) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="comment">// モーターIDの重複チェック</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">if</span> (registered_motors_.count(id_motor_pair.first) != 0) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">// ID重複エラー</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="comment">// TODO: もっとマシなエラー処理</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="comment">// モーターを登録</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      registered_motors_.insert(id_motor_pair);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="comment">// センサー値を受け取るためのサブスクライバーを登録</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <a class="code" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">communication::CanDataFrame::Id</a> sensor_data_can_id =</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        GetSensorDataCanIdFromMotorId(id_motor_pair.first);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      sensor_subscribers_.emplace_back(</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        sensor_data_can_id,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        etl::delegate&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a1ae6f0ae68afdb897d12f99af0ca9e24">RobomasMotor::SensorCanData</a> &amp;)&gt;::</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;          create&lt;RobomasMotor, &amp;RobomasMotor::OnReceiveSensorFrame&gt;(*id_motor_pair.second));</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      transceiver.<a class="code" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#aac6a292c5fee7d9bdc60fe1fefd64102">RegisterCanSubscriber</a>(sensor_subscribers_.back());</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a182073c24e53189e3d39ed349eeca3bc">   91</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a182073c24e53189e3d39ed349eeca3bc">PublishMotorOutput</a>();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">communication::CanDataFrame::Id</a> GetSensorDataCanIdFromMotorId(<a class="code" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5">RobomasMotorsCanPort::Id</a> motor_id)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// センサーデータが送られてくるCANフレームのIDは0x200 + モーターID</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    constexpr <a class="code" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">communication::CanDataFrame::Id</a> kSensorCanIdOffset{0x200};</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">return</span> kSensorCanIdOffset + <span class="keyword">static_cast&lt;</span><a class="code" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">communication::CanDataFrame::Id</a><span class="keyword">&gt;</span>(motor_id);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  etl::unordered_map&lt;RobomasMotorsCanPort::Id, RobomasMotor *, kMaxMotorNum&gt; registered_motors_;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  etl::vector&lt;communication::CanSubscriber&lt;RobomasMotor::SensorCanData&gt;, <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6cc534acc5123a5f89085975a4207704">kMaxMotorNum</a>&gt;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    sensor_subscribers_;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  std::array&lt;communication::CanPublisher&lt;RobomasMotor::OutputCanData&gt;, 2&gt; motor_output_publishers_{</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html">communication::CanPublisher&lt;RobomasMotor::OutputCanData&gt;</a>{<a class="code" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#ae2d5a9f75a722c7b27937006c6026c2c">RobomasMotor::kOutputCanIds</a>[0]},</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    communication::CanPublisher&lt;RobomasMotor::OutputCanData&gt;{<a class="code" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#ae2d5a9f75a722c7b27937006c6026c2c">RobomasMotor::kOutputCanIds</a>[1]}};</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;};</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}  <span class="comment">// namespace actuator</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="acan__typed__data__transceiver_8hpp_html"><div class="ttname"><a href="can__typed__data__transceiver_8hpp.html">can_typed_data_transceiver.hpp</a></div><div class="ttdoc">CAN通信で型付けされたデータの送受信を行うライブラリ</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_robomas_motor_html_a1ae6f0ae68afdb897d12f99af0ca9e24"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a1ae6f0ae68afdb897d12f99af0ca9e24">alps::cmn::actuator::RobomasMotor::SensorCanData</a></div><div class="ttdeci">std::array&lt; uint8_t, 8 &gt; SensorCanData</div><div class="ttdoc">CANでセンサー値が送られてくる際のデータ型</div><div class="ttdef"><b>Definition:</b> robomas_motor.hpp:42</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_robomas_motor_html_ae2d5a9f75a722c7b27937006c6026c2c"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#ae2d5a9f75a722c7b27937006c6026c2c">alps::cmn::actuator::RobomasMotor::kOutputCanIds</a></div><div class="ttdeci">static constexpr std::array&lt; communication::CanDataFrame::Id, 2 &gt; kOutputCanIds</div><div class="ttdoc">モーターへ指令を送る際のCANフレームのID</div><div class="ttdef"><b>Definition:</b> robomas_motor.hpp:47</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port_html"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html">alps::cmn::actuator::RobomasMotorsCanPort</a></div><div class="ttdoc">同じCANバスに接続された複数のロボマスモーターのCAN通信を管理する</div><div class="ttdef"><b>Definition:</b> robomas_motors_can_port.hpp:19</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port_html_a182073c24e53189e3d39ed349eeca3bc"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a182073c24e53189e3d39ed349eeca3bc">alps::cmn::actuator::RobomasMotorsCanPort::PublishMotorOutput</a></div><div class="ttdeci">void PublishMotorOutput()</div><div class="ttdoc">ロボマスモータの出力値をCanPublisherに書き込む</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port_html_a654556d4e8b6166170143e8b3b01f0c1"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a654556d4e8b6166170143e8b3b01f0c1">alps::cmn::actuator::RobomasMotorsCanPort::RobomasMotorsCanPort</a></div><div class="ttdeci">RobomasMotorsCanPort(etl::vector&lt; etl::pair&lt; const RobomasMotorsCanPort::Id, RobomasMotor * &gt;, kMaxMotorNum &gt; id_motor_pairs, communication::CanTypedDataTransceiver&lt; CanIo, kMaxPublisherNum, kMaxSubscriberNum &gt; &amp;transceiver)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> robomas_motors_can_port.hpp:55</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port_html_a6add4725a0c984b6d7af362ccbf56af5"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5">alps::cmn::actuator::RobomasMotorsCanPort::Id</a></div><div class="ttdeci">Id</div><div class="ttdoc">ロボマスモータのID（1~8）</div><div class="ttdef"><b>Definition:</b> robomas_motors_can_port.hpp:25</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port_html_a6add4725a0c984b6d7af362ccbf56af5a1a6832c88670070d9d9a0df727a0373c"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5a1a6832c88670070d9d9a0df727a0373c">alps::cmn::actuator::RobomasMotorsCanPort::Id::kMotor4</a></div><div class="ttdeci">@ kMotor4</div><div class="ttdoc">モーターID4</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port_html_a6add4725a0c984b6d7af362ccbf56af5a2072c208e2973b899850cc30518de84c"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5a2072c208e2973b899850cc30518de84c">alps::cmn::actuator::RobomasMotorsCanPort::Id::kMotor3</a></div><div class="ttdeci">@ kMotor3</div><div class="ttdoc">モーターID3</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port_html_a6add4725a0c984b6d7af362ccbf56af5a3311919a803af2c92d911fe44bc33e47"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5a3311919a803af2c92d911fe44bc33e47">alps::cmn::actuator::RobomasMotorsCanPort::Id::kMotor6</a></div><div class="ttdeci">@ kMotor6</div><div class="ttdoc">モーターID6</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port_html_a6add4725a0c984b6d7af362ccbf56af5a6797030cd527332081457530b1a89767"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5a6797030cd527332081457530b1a89767">alps::cmn::actuator::RobomasMotorsCanPort::Id::kMotor5</a></div><div class="ttdeci">@ kMotor5</div><div class="ttdoc">モーターID5</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port_html_a6add4725a0c984b6d7af362ccbf56af5a691227596b77a5005dd7361144d395b3"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5a691227596b77a5005dd7361144d395b3">alps::cmn::actuator::RobomasMotorsCanPort::Id::kMotor8</a></div><div class="ttdeci">@ kMotor8</div><div class="ttdoc">モーターID8</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port_html_a6add4725a0c984b6d7af362ccbf56af5a9196cf5b59980967fa220eb3a75b21bb"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5a9196cf5b59980967fa220eb3a75b21bb">alps::cmn::actuator::RobomasMotorsCanPort::Id::kMotor1</a></div><div class="ttdeci">@ kMotor1</div><div class="ttdoc">モーターID1</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port_html_a6add4725a0c984b6d7af362ccbf56af5a91b9c39d4ad1a8fd04ef00e69c5f2611"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5a91b9c39d4ad1a8fd04ef00e69c5f2611">alps::cmn::actuator::RobomasMotorsCanPort::Id::kMotor2</a></div><div class="ttdeci">@ kMotor2</div><div class="ttdoc">モーターID2</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port_html_a6add4725a0c984b6d7af362ccbf56af5afd0b6a709f0101d3aa2d026673076448"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5afd0b6a709f0101d3aa2d026673076448">alps::cmn::actuator::RobomasMotorsCanPort::Id::kMotor7</a></div><div class="ttdeci">@ kMotor7</div><div class="ttdoc">モーターID7</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port_html_a6cc534acc5123a5f89085975a4207704"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6cc534acc5123a5f89085975a4207704">alps::cmn::actuator::RobomasMotorsCanPort::kMaxMotorNum</a></div><div class="ttdeci">static constexpr uint8_t kMaxMotorNum</div><div class="ttdoc">一つのCANバスに接続できるロボマスモーターの最大数</div><div class="ttdef"><b>Definition:</b> robomas_motors_can_port.hpp:22</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_can_publisher_html"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html">alps::cmn::communication::CanPublisher</a></div><div class="ttdoc">CAN通信で型付けされたデータを送信するクラス．CanTypedDataTransceiverに登録して使う．</div><div class="ttdef"><b>Definition:</b> can_typed_data_transceiver.hpp:50</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver_html"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">alps::cmn::communication::CanTypedDataTransceiver</a></div><div class="ttdoc">CAN通信で型付けされたデータの送受信を行うクラス</div><div class="ttdef"><b>Definition:</b> can_typed_data_transceiver.hpp:219</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver_html_a9249016b1741a3ee755a19784c10bc1b"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a9249016b1741a3ee755a19784c10bc1b">alps::cmn::communication::CanTypedDataTransceiver::RegisterCanPublisher</a></div><div class="ttdeci">void RegisterCanPublisher(CanPublisher&lt; T &gt; &amp;sender)</div><div class="ttdoc">CanPublisherを登録する</div><div class="ttdef"><b>Definition:</b> can_typed_data_transceiver.hpp:235</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver_html_aac6a292c5fee7d9bdc60fe1fefd64102"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#aac6a292c5fee7d9bdc60fe1fefd64102">alps::cmn::communication::CanTypedDataTransceiver::RegisterCanSubscriber</a></div><div class="ttdeci">void RegisterCanSubscriber(CanSubscriber&lt; T &gt; &amp;receiver)</div><div class="ttdoc">CanSubscriberを登録する</div><div class="ttdef"><b>Definition:</b> can_typed_data_transceiver.hpp:253</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:23</div></div>
+<div class="ttc" id="arobomas__motor_8hpp_html"><div class="ttname"><a href="robomas__motor_8hpp.html">robomas_motor.hpp</a></div><div class="ttdoc">ロボマスモータのライブラリ</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1_can_data_frame_html_a71f3c6326cd6375c2bfe754539f3d07f"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">alps::cmn::communication::CanDataFrame::Id</a></div><div class="ttdeci">uint16_t Id</div><div class="ttdoc">IDを表す型</div><div class="ttdef"><b>Definition:</b> can_data_frame.hpp:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_fcd1ba41f8679fcc7bf76d667eaa0e17.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_ce1e71e2103ac83e6d6cc720a9feeeb7.html">include</a></li><li class="navelem"><a class="el" href="dir_cc648f72f51f156e42f9863c0e5bf5fb.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_2239b1117054295ada522fe6d99615b2.html">actuator</a></li><li class="navelem"><a class="el" href="robomas__motors__can__port_8hpp.html">robomas_motors_can_port.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -9,8 +9,8 @@ var dir_2239b1117054295ada522fe6d99615b2 =
     [ "robomas_motor.hpp", "robomas__motor_8hpp.html", [
       [ "RobomasMotor", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor" ]
     ] ],
-    [ "robomas_motors_can_controller.hpp", "robomas__motors__can__controller_8hpp.html", [
-      [ "RobomasMotorsCanController", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_controller.html", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_controller" ]
+    [ "robomas_motors_can_port.hpp", "robomas__motors__can__port_8hpp.html", [
+      [ "RobomasMotorsCanPort", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port" ]
     ] ],
     [ "servo_motor.hpp", "alps__common__lib_2include_2alps__cmn_2actuator_2servo__motor_8hpp.html", "alps__common__lib_2include_2alps__cmn_2actuator_2servo__motor_8hpp" ]
 ];

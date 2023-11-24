@@ -6,7 +6,7 @@ var annotated_dup =
           [ "DcMotor", "classalps_1_1cmn_1_1actuator_1_1_dc_motor.html", "classalps_1_1cmn_1_1actuator_1_1_dc_motor" ],
           [ "IMotor", "classalps_1_1cmn_1_1actuator_1_1_i_motor.html", "classalps_1_1cmn_1_1actuator_1_1_i_motor" ],
           [ "RobomasMotor", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor" ],
-          [ "RobomasMotorsCanController", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_controller.html", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_controller" ],
+          [ "RobomasMotorsCanPort", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port" ],
           [ "ServoMotorParam", "structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html", "structalps_1_1cmn_1_1actuator_1_1_servo_motor_param" ],
           [ "ServoMotor", "classalps_1_1cmn_1_1actuator_1_1_servo_motor.html", "classalps_1_1cmn_1_1actuator_1_1_servo_motor" ]
         ] ],
@@ -45,6 +45,9 @@ var annotated_dup =
         ] ],
         [ "log", "namespacealps_1_1cmn_1_1log.html", [
           [ "Logger", "classalps_1_1cmn_1_1log_1_1_logger.html", "classalps_1_1cmn_1_1log_1_1_logger" ]
+        ] ],
+        [ "robotics", "namespacealps_1_1cmn_1_1robotics.html", [
+          [ "FourWheelOmni", "classalps_1_1cmn_1_1robotics_1_1_four_wheel_omni.html", "classalps_1_1cmn_1_1robotics_1_1_four_wheel_omni" ]
         ] ],
         [ "sensor", "namespacealps_1_1cmn_1_1sensor.html", [
           [ "Bno055", "classalps_1_1cmn_1_1sensor_1_1_bno055.html", "classalps_1_1cmn_1_1sensor_1_1_bno055" ],
