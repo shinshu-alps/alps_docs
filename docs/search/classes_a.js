@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['pid_371',['Pid',['../classalps_1_1cmn_1_1control_1_1_pid.html',1,'alps::cmn::control']]],
-  ['potentiometer_372',['Potentiometer',['../classalps_1_1cmn_1_1sensor_1_1_potentiometer.html',1,'alps::cmn::sensor']]],
-  ['pwmout_373',['PwmOut',['../classalps_1_1mbed_1_1gpio_1_1_pwm_out.html',1,'alps::mbed::gpio']]]
+  ['odometory_377',['Odometory',['../classalps_1_1cmn_1_1robotics_1_1_odometory.html',1,'alps::cmn::robotics']]]
 ];

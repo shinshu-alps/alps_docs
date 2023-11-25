@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="4輪オムニホイールロボットの運動学モデルクラス">
 <polygon fill="#bfbfbf" stroke="black" points="52,-56.5 52,-97.5 192,-97.5 192,-56.5 52,-56.5"/>
 <text text-anchor="start" x="60" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps_common_lib/include</text>
 <text text-anchor="start" x="60" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_cmn/robotics/four</text>

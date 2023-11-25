@@ -128,52 +128,71 @@ $(document).ready(function(){initNavTree('integrator_8hpp_source.html',''); init
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">using</span> Seconds = std::chrono::duration&lt;float, std::ratio&lt;1&gt;&gt;;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_integrator.html#a74996c272e755ac126c16c9b0fc0a568">   44</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_integrator.html#a74996c272e755ac126c16c9b0fc0a568">Integrator</a>() {}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_integrator.html#ad70e30e599f89c87ca1dca0ba8cc86e0">   52</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_integrator.html#ad70e30e599f89c87ca1dca0ba8cc86e0">Calculate</a>(<span class="keywordtype">float</span> input)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// 前回呼び出しからの経過時間を計算</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">auto</span> timestamp_now = Clock::now();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">auto</span> elapsed = std::chrono::duration_cast&lt;Seconds&gt;(timestamp_now - prev_timestamp_);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// 積分（台形公式）</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    integral_ = integral_ + elapsed.count() * 0.5f * (input + prev_input);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    prev_input = input;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    prev_timestamp_ = timestamp_now;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> integral_;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_integrator.html#a07cc4bc33ba2d7f6e9e4f2787cece866">   72</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_integrator.html#a07cc4bc33ba2d7f6e9e4f2787cece866">SetCurrentIntegral</a>(<span class="keywordtype">float</span> integral)</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    integral_ = integral;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_integrator.html#ae7116d8536d24b90022d8421df0a0ba0">   81</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_integrator.html#ae7116d8536d24b90022d8421df0a0ba0">Reset</a>()</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    integral_ = 0.0f;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    prev_input = 0.0f;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    prev_timestamp_ = Clock::now();</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_integrator.html#a74996c272e755ac126c16c9b0fc0a568">   44</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_integrator.html#a74996c272e755ac126c16c9b0fc0a568">Integrator</a>()</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1control_1_1_integrator.html#ae7116d8536d24b90022d8421df0a0ba0">Reset</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_integrator.html#ad70e30e599f89c87ca1dca0ba8cc86e0">   55</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_integrator.html#ad70e30e599f89c87ca1dca0ba8cc86e0">Calculate</a>(<span class="keywordtype">float</span> input)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// 初回計算のときは計算スキップ</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (first_flag_) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      first_flag_ = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      prev_input_ = input;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      prev_timestamp_ = Clock::now();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">return</span> 0.0f;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// 前回呼び出しからの経過時間を計算</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">auto</span> timestamp_now = Clock::now();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">auto</span> elapsed = std::chrono::duration_cast&lt;Seconds&gt;(timestamp_now - prev_timestamp_);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// 積分（台形公式）</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    integral_ = integral_ + elapsed.count() * 0.5f * (input + prev_input_);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    prev_input_ = input;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    prev_timestamp_ = timestamp_now;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> integral_;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_integrator.html#a64bbbab4a4fef22cc25d656483188546">   83</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_integrator.html#a64bbbab4a4fef22cc25d656483188546">GetCurrentValue</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> integral_;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">float</span> integral_;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">float</span> prev_input;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  TimePoint prev_timestamp_;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}  <span class="comment">// namespace control</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}  <span class="comment">// namespace cmn</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_integrator.html#a29107c9c15fc320a8dcd29c75bd2ead3">   93</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_integrator.html#a29107c9c15fc320a8dcd29c75bd2ead3">SetCurrentValue</a>(<span class="keywordtype">float</span> value)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    integral_ = value;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_integrator.html#ae7116d8536d24b90022d8421df0a0ba0">  102</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_integrator.html#ae7116d8536d24b90022d8421df0a0ba0">Reset</a>()</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    first_flag_ = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    integral_ = 0.0f;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    prev_input_ = 0.0f;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    prev_timestamp_ = Clock::now();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">bool</span> first_flag_;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordtype">float</span> integral_;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordtype">float</span> prev_input_;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  TimePoint prev_timestamp_;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}  <span class="comment">// namespace control</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aalgorithm_8hpp_html"><div class="ttname"><a href="algorithm_8hpp.html">algorithm.hpp</a></div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_integrator_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_integrator.html">alps::cmn::control::Integrator</a></div><div class="ttdoc">積分器</div><div class="ttdef"><b>Definition:</b> integrator.hpp:32</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_integrator_html_a07cc4bc33ba2d7f6e9e4f2787cece866"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_integrator.html#a07cc4bc33ba2d7f6e9e4f2787cece866">alps::cmn::control::Integrator::SetCurrentIntegral</a></div><div class="ttdeci">void SetCurrentIntegral(float integral)</div><div class="ttdoc">現在の積分値を変更する</div><div class="ttdef"><b>Definition:</b> integrator.hpp:72</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_integrator_html_a29107c9c15fc320a8dcd29c75bd2ead3"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_integrator.html#a29107c9c15fc320a8dcd29c75bd2ead3">alps::cmn::control::Integrator::SetCurrentValue</a></div><div class="ttdeci">void SetCurrentValue(float value)</div><div class="ttdoc">現在の積分値を変更する</div><div class="ttdef"><b>Definition:</b> integrator.hpp:93</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_integrator_html_a64bbbab4a4fef22cc25d656483188546"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_integrator.html#a64bbbab4a4fef22cc25d656483188546">alps::cmn::control::Integrator::GetCurrentValue</a></div><div class="ttdeci">float GetCurrentValue() const</div><div class="ttdoc">現在の積分値を取得する</div><div class="ttdef"><b>Definition:</b> integrator.hpp:83</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_integrator_html_a74996c272e755ac126c16c9b0fc0a568"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_integrator.html#a74996c272e755ac126c16c9b0fc0a568">alps::cmn::control::Integrator::Integrator</a></div><div class="ttdeci">Integrator()</div><div class="ttdoc">コンストラクタ.</div><div class="ttdef"><b>Definition:</b> integrator.hpp:44</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_integrator_html_ad70e30e599f89c87ca1dca0ba8cc86e0"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_integrator.html#ad70e30e599f89c87ca1dca0ba8cc86e0">alps::cmn::control::Integrator::Calculate</a></div><div class="ttdeci">float Calculate(float input)</div><div class="ttdoc">積分計算を行う</div><div class="ttdef"><b>Definition:</b> integrator.hpp:52</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_integrator_html_ae7116d8536d24b90022d8421df0a0ba0"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_integrator.html#ae7116d8536d24b90022d8421df0a0ba0">alps::cmn::control::Integrator::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">現在の値をリセット</div><div class="ttdef"><b>Definition:</b> integrator.hpp:81</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_integrator_html_ad70e30e599f89c87ca1dca0ba8cc86e0"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_integrator.html#ad70e30e599f89c87ca1dca0ba8cc86e0">alps::cmn::control::Integrator::Calculate</a></div><div class="ttdeci">float Calculate(float input)</div><div class="ttdoc">積分計算を行う</div><div class="ttdef"><b>Definition:</b> integrator.hpp:55</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_integrator_html_ae7116d8536d24b90022d8421df0a0ba0"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_integrator.html#ae7116d8536d24b90022d8421df0a0ba0">alps::cmn::control::Integrator::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">現在の値をリセット</div><div class="ttdef"><b>Definition:</b> integrator.hpp:102</div></div>
 <div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

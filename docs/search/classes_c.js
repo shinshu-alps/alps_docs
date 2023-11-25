@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['robomasmotor_375',['RobomasMotor',['../classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html',1,'alps::cmn::actuator']]],
-  ['robomasmotorscanport_376',['RobomasMotorsCanPort',['../classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html',1,'alps::cmn::actuator']]]
+  ['quaternion_381',['Quaternion',['../structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html',1,'alps::cmn::sensor::Bno055']]]
 ];

@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('pid_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// 参考: http://brettbeauregard.com/blog/2011/04/improving-the-beginner%e2%80%99s-pid-reset-windup/</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">if</span> (integral &gt; max_output_ || integral &lt; lowest_output_) {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      integral = <a class="code" href="namespacealps_1_1cmn_1_1util.html#a13928639f0ae9b5207010ae61a2c9d2a">alps::cmn::util::Clamp</a>(integral, lowest_output_, max_output_);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      integrator_.SetCurrentIntegral(integral / ki_);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      integrator_.SetCurrentValue(integral / ki_);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// 微分</span></div>

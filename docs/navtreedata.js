@@ -48,7 +48,7 @@ var NAVTREE =
       [ "クラス索引", "classes.html", null ],
       [ "クラス階層", "hierarchy.html", "hierarchy" ],
       [ "クラスメンバ", "functions.html", [
-        [ "全て", "functions.html", null ],
+        [ "全て", "functions.html", "functions_dup" ],
         [ "関数", "functions_func.html", null ],
         [ "変数", "functions_vars.html", null ],
         [ "型定義", "functions_type.html", null ],
@@ -68,8 +68,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "algorithm_8hpp.html",
-"classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a868c05afd3ec4c56dd72101abedf9824",
-"serialize__type__info_8hpp_source.html"
+"classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#af13d4da3b08293bbe049b3e8d4fd7fda",
+"namespacealps_1_1mbed_1_1actuator.html"
 ];
 
 var SYNCONMSG = 'クリックで同期表示が無効になります';
