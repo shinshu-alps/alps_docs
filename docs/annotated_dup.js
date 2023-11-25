@@ -47,7 +47,8 @@ var annotated_dup =
           [ "Logger", "classalps_1_1cmn_1_1log_1_1_logger.html", "classalps_1_1cmn_1_1log_1_1_logger" ]
         ] ],
         [ "robotics", "namespacealps_1_1cmn_1_1robotics.html", [
-          [ "FourWheelOmni", "classalps_1_1cmn_1_1robotics_1_1_four_wheel_omni.html", "classalps_1_1cmn_1_1robotics_1_1_four_wheel_omni" ]
+          [ "FourWheelOmni", "classalps_1_1cmn_1_1robotics_1_1_four_wheel_omni.html", "classalps_1_1cmn_1_1robotics_1_1_four_wheel_omni" ],
+          [ "Odometory", "classalps_1_1cmn_1_1robotics_1_1_odometory.html", "classalps_1_1cmn_1_1robotics_1_1_odometory" ]
         ] ],
         [ "sensor", "namespacealps_1_1cmn_1_1sensor.html", [
           [ "Bno055", "classalps_1_1cmn_1_1sensor_1_1_bno055.html", "classalps_1_1cmn_1_1sensor_1_1_bno055" ],

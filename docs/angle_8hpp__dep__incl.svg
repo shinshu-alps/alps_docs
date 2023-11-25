@@ -39,7 +39,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="four__wheel__omni_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="four__wheel__omni_8hpp.html" target="_top" xlink:title="4輪オムニホイールロボットの運動学モデルクラス">
 <polygon fill="white" stroke="black" points="161,-78.5 161,-119.5 301,-119.5 301,-78.5 161,-78.5"/>
 <text text-anchor="start" x="169" y="-107.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps_common_lib/include</text>
 <text text-anchor="start" x="169" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_cmn/robotics/four</text>

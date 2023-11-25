@@ -12,7 +12,7 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classalps_1_1cmn_1_1robotics_1_1_four_wheel_omni.html" target="_top" xlink:title="4輪オムニホイールロボットのモデル">
+<g id="a_node1"><a xlink:href="classalps_1_1cmn_1_1robotics_1_1_four_wheel_omni.html" target="_top" xlink:title="4輪オムニホイールロボットの運動学モデル">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-30.5 109,-30.5 109,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::robotics</text>
 <text text-anchor="middle" x="54.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::FourWheelOmni</text>

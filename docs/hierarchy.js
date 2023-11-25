@@ -82,6 +82,7 @@ var hierarchy =
     [ "alps::cmn::control::MotorAngleController< Clock, Motor, RotarySensor >", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html", null ],
     [ "alps::cmn::control::MotorAngleVelocityController< Clock, Motor, RotarySensor >", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html", null ],
     [ "alps::cmn::control::MotorVelocityController< Clock, Motor, RotarySensor >", "classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html", null ],
+    [ "alps::cmn::robotics::Odometory< Clock >", "classalps_1_1cmn_1_1robotics_1_1_odometory.html", null ],
     [ "alps::cmn::control::Pid< Clock >", "classalps_1_1cmn_1_1control_1_1_pid.html", null ],
     [ "alps::cmn::sensor::Bno055< Clock, I2cIo >::Quaternion", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html", null ],
     [ "alps::cmn::actuator::RobomasMotorsCanPort", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html", null ],

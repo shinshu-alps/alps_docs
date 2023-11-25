@@ -240,6 +240,9 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 <li>GetCurrentState()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#aeb9dc338f1e61534d85baa9efea03f58">alps::cmn::sensor::IncrementalEncoder&lt; Clock, InterruptIn, DigitalIn &gt;</a>
 </li>
+<li>GetCurrentValue()
+: <a class="el" href="classalps_1_1cmn_1_1control_1_1_integrator.html#a64bbbab4a4fef22cc25d656483188546">alps::cmn::control::Integrator&lt; Clock &gt;</a>
+</li>
 <li>GetEulerAngle()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_bno055.html#a308d21863631e3c18f7ae420b75237a2">alps::cmn::sensor::Bno055&lt; Clock, I2cIo &gt;</a>
 </li>
@@ -257,6 +260,9 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 </li>
 <li>GetNormalizedValue()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a1ee538cb372b2e697722f260c17a7506">alps::cmn::sensor::Potentiometer&lt; AnalogIn &gt;</a>
+</li>
+<li>GetPose()
+: <a class="el" href="classalps_1_1cmn_1_1robotics_1_1_odometory.html#a761da3b2a169ada60a3ae1c115328dd2">alps::cmn::robotics::Odometory&lt; Clock &gt;</a>
 </li>
 <li>GetPulses()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#a916d704b32c3112041dd1e1491316c03">alps::cmn::sensor::IncrementalEncoder&lt; Clock, InterruptIn, DigitalIn &gt;</a>
@@ -411,6 +417,7 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 , <a class="el" href="classalps_1_1cmn_1_1control_1_1_integrator.html#ae7116d8536d24b90022d8421df0a0ba0">alps::cmn::control::Integrator&lt; Clock &gt;</a>
 , <a class="el" href="classalps_1_1cmn_1_1control_1_1_lpf.html#a9ed459dfde6dff3f754142ee0c75a0fb">alps::cmn::control::Lpf</a>
 , <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#adeeb93dc4a8c1c7ff379b3bbc5407c0c">alps::cmn::control::Pid&lt; Clock &gt;</a>
+, <a class="el" href="classalps_1_1cmn_1_1robotics_1_1_odometory.html#ab9e69807924e953c456f80fb51bb68d4">alps::cmn::robotics::Odometory&lt; Clock &gt;</a>
 , <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_bno055.html#a59854198ec8d9bfc2e24cb3dee723407">alps::cmn::sensor::Bno055&lt; Clock, I2cIo &gt;</a>
 , <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#ac0f645b8b05ccdf1b50317374a944475">alps::cmn::sensor::IncrementalEncoder&lt; Clock, InterruptIn, DigitalIn &gt;</a>
 </li>
@@ -436,8 +443,8 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 <li>SetAngle()
 : <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#ad4bac006127a14185d323d93546d5252">alps::cmn::actuator::ServoMotor&lt; PwmOut &gt;</a>
 </li>
-<li>SetCurrentIntegral()
-: <a class="el" href="classalps_1_1cmn_1_1control_1_1_integrator.html#a07cc4bc33ba2d7f6e9e4f2787cece866">alps::cmn::control::Integrator&lt; Clock &gt;</a>
+<li>SetCurrentValue()
+: <a class="el" href="classalps_1_1cmn_1_1control_1_1_integrator.html#a29107c9c15fc320a8dcd29c75bd2ead3">alps::cmn::control::Integrator&lt; Clock &gt;</a>
 </li>
 <li>SetFree()
 : <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a135982e2673801c8bb6efd4712827316">alps::cmn::actuator::ServoMotor&lt; PwmOut &gt;</a>
@@ -450,6 +457,9 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 </li>
 <li>SetPeriod()
 : <a class="el" href="classalps_1_1mbed_1_1gpio_1_1_pwm_out.html#ac4878958ca6903ae19dfe7bda514d754">alps::mbed::gpio::PwmOut</a>
+</li>
+<li>SetPose()
+: <a class="el" href="classalps_1_1cmn_1_1robotics_1_1_odometory.html#a68c2240c32e2e81e2efd3dfa96b45231">alps::cmn::robotics::Odometory&lt; Clock &gt;</a>
 </li>
 <li>SetPublishData()
 : <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html#a703542b44a552ac352c9086fea30fdf4">alps::cmn::communication::CanPublisher&lt; T &gt;</a>
@@ -505,6 +515,9 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 </li>
 <li>UartSender()
 : <a class="el" href="classalps_1_1cmn_1_1communication_1_1_uart_sender.html#a7fbff380d50a1874b2cddbab4e7451ff">alps::cmn::communication::UartSender&lt; T &gt;</a>
+</li>
+<li>Update()
+: <a class="el" href="classalps_1_1cmn_1_1robotics_1_1_odometory.html#aa8cbf53e7bb262a6dde7663625b9d8c3">alps::cmn::robotics::Odometory&lt; Clock &gt;</a>
 </li>
 </ul>
 
