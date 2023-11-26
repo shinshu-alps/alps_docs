@@ -55,6 +55,11 @@ var annotated_dup =
           [ "IRotarySensor", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor" ],
           [ "IncrementalEncoder", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder" ],
           [ "Potentiometer", "classalps_1_1cmn_1_1sensor_1_1_potentiometer.html", "classalps_1_1cmn_1_1sensor_1_1_potentiometer" ]
+        ] ],
+        [ "time", "namespacealps_1_1cmn_1_1time.html", [
+          [ "OneShotPollingTimer", "classalps_1_1cmn_1_1time_1_1_one_shot_polling_timer.html", "classalps_1_1cmn_1_1time_1_1_one_shot_polling_timer" ],
+          [ "RepeatingPollingTimer", "classalps_1_1cmn_1_1time_1_1_repeating_polling_timer.html", "classalps_1_1cmn_1_1time_1_1_repeating_polling_timer" ],
+          [ "TimeoutChecker", "classalps_1_1cmn_1_1time_1_1_timeout_checker.html", "classalps_1_1cmn_1_1time_1_1_timeout_checker" ]
         ] ]
       ] ],
       [ "lin", "namespacealps_1_1lin.html", [

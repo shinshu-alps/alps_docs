@@ -69,7 +69,7 @@ var NAVTREEINDEX =
 [
 "algorithm_8hpp.html",
 "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#af13d4da3b08293bbe049b3e8d4fd7fda",
-"namespacealps_1_1mbed_1_1actuator.html"
+"namespacealps_1_1cmn_1_1type.html"
 ];
 
 var SYNCONMSG = 'クリックで同期表示が無効になります';
