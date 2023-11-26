@@ -1,0 +1,299 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps::cmn::time::TimeoutChecker&lt; Clock &gt; クラステンプレート</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classalps_1_1cmn_1_1time_1_1_timeout_checker.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="classalps_1_1cmn_1_1time_1_1_timeout_checker-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">alps::cmn::time::TimeoutChecker&lt; Clock &gt; クラステンプレート</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>タイムアウトを検知するクラス  
+ <a href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="timeout__checker_8hpp_source.html">timeout_checker.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a78206f930eba5911190f9bea0775989c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html#a78206f930eba5911190f9bea0775989c">TimePoint</a> = typename Clock::time_point</td></tr>
+<tr class="memdesc:a78206f930eba5911190f9bea0775989c"><td class="mdescLeft">&#160;</td><td class="mdescRight">時刻型  <a href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html#a78206f930eba5911190f9bea0775989c">[詳解]</a><br /></td></tr>
+<tr class="separator:a78206f930eba5911190f9bea0775989c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca24b9e01b2e38fc2835a5fca30a3588"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html#aca24b9e01b2e38fc2835a5fca30a3588">Duration</a> = typename Clock::duration</td></tr>
+<tr class="memdesc:aca24b9e01b2e38fc2835a5fca30a3588"><td class="mdescLeft">&#160;</td><td class="mdescRight">時間間隔型  <a href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html#aca24b9e01b2e38fc2835a5fca30a3588">[詳解]</a><br /></td></tr>
+<tr class="separator:aca24b9e01b2e38fc2835a5fca30a3588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a47dcaddd1e391df7ed2ae1bf0d95f111"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html#a47dcaddd1e391df7ed2ae1bf0d95f111">TimeoutChecker</a> (<a class="el" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html#aca24b9e01b2e38fc2835a5fca30a3588">Duration</a> timeout_duration)</td></tr>
+<tr class="memdesc:a47dcaddd1e391df7ed2ae1bf0d95f111"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ．カウントはこの時点から開始される．  <a href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html#a47dcaddd1e391df7ed2ae1bf0d95f111">[詳解]</a><br /></td></tr>
+<tr class="separator:a47dcaddd1e391df7ed2ae1bf0d95f111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815e5973740017cbb0996c8532208db4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html#a815e5973740017cbb0996c8532208db4">ResetCount</a> ()</td></tr>
+<tr class="memdesc:a815e5973740017cbb0996c8532208db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">タイムアウトのカウント開始時刻をリセットする  <a href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html#a815e5973740017cbb0996c8532208db4">[詳解]</a><br /></td></tr>
+<tr class="separator:a815e5973740017cbb0996c8532208db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66e1502b844abe2ce9e3a978fa432ab4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html#a66e1502b844abe2ce9e3a978fa432ab4">IsTimeout</a> () const</td></tr>
+<tr class="memdesc:a66e1502b844abe2ce9e3a978fa432ab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">タイムアウトかどうかを返す  <a href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html#a66e1502b844abe2ce9e3a978fa432ab4">[詳解]</a><br /></td></tr>
+<tr class="separator:a66e1502b844abe2ce9e3a978fa432ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><h3>template&lt;class Clock&gt;<br />
+class alps::cmn::time::TimeoutChecker&lt; Clock &gt;</h3>
+
+<p>タイムアウトを検知するクラス </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Clock</td><td>検知に使用するクロック </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">型定義メンバ詳解</h2>
+<a id="aca24b9e01b2e38fc2835a5fca30a3588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca24b9e01b2e38fc2835a5fca30a3588">&#9670;&nbsp;</a></span>Duration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html">alps::cmn::time::TimeoutChecker</a>&lt; Clock &gt;::<a class="el" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html#aca24b9e01b2e38fc2835a5fca30a3588">Duration</a> =  typename Clock::duration</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>時間間隔型 </p>
+
+</div>
+</div>
+<a id="a78206f930eba5911190f9bea0775989c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78206f930eba5911190f9bea0775989c">&#9670;&nbsp;</a></span>TimePoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html">alps::cmn::time::TimeoutChecker</a>&lt; Clock &gt;::<a class="el" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html#a78206f930eba5911190f9bea0775989c">TimePoint</a> =  typename Clock::time_point</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>時刻型 </p>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a47dcaddd1e391df7ed2ae1bf0d95f111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47dcaddd1e391df7ed2ae1bf0d95f111">&#9670;&nbsp;</a></span>TimeoutChecker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html">alps::cmn::time::TimeoutChecker</a>&lt; Clock &gt;::<a class="el" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html">TimeoutChecker</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html#aca24b9e01b2e38fc2835a5fca30a3588">Duration</a>&#160;</td>
+          <td class="paramname"><em>timeout_duration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンストラクタ．カウントはこの時点から開始される． </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout_duration</td><td>タイムアウト時間 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a66e1502b844abe2ce9e3a978fa432ab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66e1502b844abe2ce9e3a978fa432ab4">&#9670;&nbsp;</a></span>IsTimeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html">alps::cmn::time::TimeoutChecker</a>&lt; Clock &gt;::IsTimeout </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>タイムアウトかどうかを返す </p>
+<dl class="section return"><dt>戻り値</dt><dd>true タイムアウトしている </dd>
+<dd>
+false タイムアウトしていない </dd></dl>
+
+</div>
+</div>
+<a id="a815e5973740017cbb0996c8532208db4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a815e5973740017cbb0996c8532208db4">&#9670;&nbsp;</a></span>ResetCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html">alps::cmn::time::TimeoutChecker</a>&lt; Clock &gt;::ResetCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>タイムアウトのカウント開始時刻をリセットする </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>alps_common_lib/include/alps_cmn/time/<a class="el" href="timeout__checker_8hpp_source.html">timeout_checker.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacealps.html">alps</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn.html">cmn</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn_1_1time.html">time</a></li><li class="navelem"><a class="el" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html">TimeoutChecker</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>
