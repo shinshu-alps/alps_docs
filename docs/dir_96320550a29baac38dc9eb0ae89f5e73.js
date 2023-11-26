@@ -18,5 +18,8 @@ var dir_96320550a29baac38dc9eb0ae89f5e73 =
     ] ],
     [ "potentiometer.hpp", "potentiometer_8hpp.html", [
       [ "Potentiometer", "classalps_1_1cmn_1_1sensor_1_1_potentiometer.html", "classalps_1_1cmn_1_1sensor_1_1_potentiometer" ]
+    ] ],
+    [ "vl53l0x.hpp", "vl53l0x_8hpp.html", [
+      [ "Vl53l0x", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x" ]
     ] ]
 ];
