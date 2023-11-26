@@ -52,8 +52,7 @@ var NAVTREE =
         [ "関数", "functions_func.html", null ],
         [ "変数", "functions_vars.html", null ],
         [ "型定義", "functions_type.html", null ],
-        [ "列挙型", "functions_enum.html", null ],
-        [ "列挙値", "functions_eval.html", null ]
+        [ "列挙型", "functions_enum.html", null ]
       ] ]
     ] ],
     [ "ファイル", "files.html", [
@@ -70,7 +69,7 @@ var NAVTREEINDEX =
 [
 "algorithm_8hpp.html",
 "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#af13d4da3b08293bbe049b3e8d4fd7fda",
-"motor__velocity__controller_8hpp.html"
+"lpf_8hpp_source.html"
 ];
 
 var SYNCONMSG = 'クリックで同期表示が無効になります';

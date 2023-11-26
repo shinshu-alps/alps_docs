@@ -83,7 +83,9 @@ var menudata={children:[
 {text:"w",url:"functions_func.html#index_w"},
 {text:"~",url:"functions_func.html#index__7E"}]},
 {text:"変数",url:"functions_vars.html",children:[
+{text:"b",url:"functions_vars.html#index_b"},
 {text:"d",url:"functions_vars.html#index_d"},
+{text:"g",url:"functions_vars.html#index_g"},
 {text:"i",url:"functions_vars.html#index_i"},
 {text:"k",url:"functions_vars.html#index_k"},
 {text:"m",url:"functions_vars.html#index_m"},
@@ -94,8 +96,7 @@ var menudata={children:[
 {text:"y",url:"functions_vars.html#index_y"},
 {text:"z",url:"functions_vars.html#index_z"}]},
 {text:"型定義",url:"functions_type.html"},
-{text:"列挙型",url:"functions_enum.html"},
-{text:"列挙値",url:"functions_eval.html"}]}]},
+{text:"列挙型",url:"functions_enum.html"}]}]},
 {text:"ファイル",url:"files.html",children:[
 {text:"ファイル一覧",url:"files.html"},
 {text:"ファイルメンバ",url:"globals.html",children:[

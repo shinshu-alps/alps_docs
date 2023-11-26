@@ -82,12 +82,15 @@ var hierarchy =
     [ "alps::cmn::control::MotorAngleController< Clock, Motor, RotarySensor >", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html", null ],
     [ "alps::cmn::control::MotorAngleVelocityController< Clock, Motor, RotarySensor >", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html", null ],
     [ "alps::cmn::control::MotorVelocityController< Clock, Motor, RotarySensor >", "classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html", null ],
+    [ "alps::cmn::sensor::S11059< I2cIo >::NormalizedData", "structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html", null ],
     [ "alps::cmn::robotics::Odometory< Clock >", "classalps_1_1cmn_1_1robotics_1_1_odometory.html", null ],
     [ "alps::cmn::time::OneShotPollingTimer< Clock >", "classalps_1_1cmn_1_1time_1_1_one_shot_polling_timer.html", null ],
     [ "alps::cmn::control::Pid< Clock >", "classalps_1_1cmn_1_1control_1_1_pid.html", null ],
     [ "alps::cmn::sensor::Bno055< Clock, I2cIo >::Quaternion", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html", null ],
+    [ "alps::cmn::sensor::S11059< I2cIo >::RawData", "structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html", null ],
     [ "alps::cmn::time::RepeatingPollingTimer< Clock >", "classalps_1_1cmn_1_1time_1_1_repeating_polling_timer.html", null ],
     [ "alps::cmn::actuator::RobomasMotorsCanPort", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html", null ],
+    [ "alps::cmn::sensor::S11059< I2cIo >", "classalps_1_1cmn_1_1sensor_1_1_s11059.html", null ],
     [ "alps::cmn::communication::SerializeTypeInfoBase< is_serializable, is_single >", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html", null ],
     [ "alps::cmn::communication::SerializeTypeInfoBase< false, false >", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html", [
       [ "alps::cmn::communication::SerializeTypeInfo< T >", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html", null ]

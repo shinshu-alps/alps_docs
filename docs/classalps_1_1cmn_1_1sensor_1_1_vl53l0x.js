@@ -13,10 +13,6 @@ var classalps_1_1cmn_1_1sensor_1_1_vl53l0x =
       [ "kDefaultRange", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a27c4145bb7ec554861b487c8c3e5a0c8a4782a47befda9cb1e853fc4b452616e3", null ],
       [ "kLongRange", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a27c4145bb7ec554861b487c8c3e5a0c8a2d878afcb4ba193744c3b67c9c1b667f", null ]
     ] ],
-    [ "VcselPeriodType", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a22803d78965366dd54dc6a830efa9f6c", [
-      [ "kVcselPeriodPreRange", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a22803d78965366dd54dc6a830efa9f6cae6cb416d5732dfb1c5f505bab6855ee3", null ],
-      [ "kVcselPeriodFinalRange", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a22803d78965366dd54dc6a830efa9f6ca060c4662301373ad780ab2d8aa6609b0", null ]
-    ] ],
     [ "Vl53l0x", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a469dc00c20ff8f778d1111f50c08c5f0", null ],
     [ "GetI2cLastStatus", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a8a8555efd05c7b302fd947d5f69106d8", null ],
     [ "GetOperationMode", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a2461ebbd367492fe95447da932ba9129", null ],

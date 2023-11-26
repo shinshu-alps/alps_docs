@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['x_666',['x',['../structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_acceleration.html#a76a3ddb1d7991a18b3c19a739717cbae',1,'alps::cmn::sensor::Bno055::Acceleration::x()'],['../structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_magnetic_vector.html#a1a6f35aafea5e212aeaeeaf473657908',1,'alps::cmn::sensor::Bno055::MagneticVector::x()'],['../structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_angular_velocity.html#ab837a40cf7c9496f84d2c0eb796d756d',1,'alps::cmn::sensor::Bno055::AngularVelocity::x()'],['../structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html#a4a2d5c4ad9943c5373d8bf2aade5a5d5',1,'alps::cmn::sensor::Bno055::Quaternion::x()'],['../structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_linear_acceleration.html#a8b40a592c70b8aa74643f3d9b9bf62e7',1,'alps::cmn::sensor::Bno055::LinearAcceleration::x()'],['../structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_gravity_vector.html#af4d8ae9db73cd4608319f502a8872e82',1,'alps::cmn::sensor::Bno055::GravityVector::x()']]]
+  ['red_692',['red',['../structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#add99d6528fec470857fd1e118403137f',1,'alps::cmn::sensor::S11059::RawData']]],
+  ['red_5fratio_693',['red_ratio',['../structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#a19e44cd929ffaebc2389e7a136d23205',1,'alps::cmn::sensor::S11059::NormalizedData']]],
+  ['rgb_5fsum_694',['rgb_sum',['../structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#aaf6f4ac3ea62166cbadaaf3f92003438',1,'alps::cmn::sensor::S11059::NormalizedData']]],
+  ['roll_695',['roll',['../structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_euler.html#a6c0c5b3fdc9eae9497d1c986996138a5',1,'alps::cmn::sensor::Bno055::Euler']]]
 ];
