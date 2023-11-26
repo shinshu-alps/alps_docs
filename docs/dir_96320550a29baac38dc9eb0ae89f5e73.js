@@ -19,6 +19,11 @@ var dir_96320550a29baac38dc9eb0ae89f5e73 =
     [ "potentiometer.hpp", "potentiometer_8hpp.html", [
       [ "Potentiometer", "classalps_1_1cmn_1_1sensor_1_1_potentiometer.html", "classalps_1_1cmn_1_1sensor_1_1_potentiometer" ]
     ] ],
+    [ "s11059.hpp", "s11059_8hpp.html", [
+      [ "S11059", "classalps_1_1cmn_1_1sensor_1_1_s11059.html", "classalps_1_1cmn_1_1sensor_1_1_s11059" ],
+      [ "RawData", "structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html", "structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data" ],
+      [ "NormalizedData", "structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html", "structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data" ]
+    ] ],
     [ "vl53l0x.hpp", "vl53l0x_8hpp.html", [
       [ "Vl53l0x", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x" ]
     ] ]

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['roll_664',['roll',['../structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_euler.html#a6c0c5b3fdc9eae9497d1c986996138a5',1,'alps::cmn::sensor::Bno055::Euler']]]
+  ['max_5fangle_687',['max_angle',['../structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a4c4f9922be96039439a3401b7970d440',1,'alps::cmn::actuator::ServoMotorParam']]],
+  ['max_5fpulse_5fwidth_688',['max_pulse_width',['../structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a76a4aeff3cc7cdf30472ca0b7648fb17',1,'alps::cmn::actuator::ServoMotorParam']]],
+  ['min_5fpulse_5fwidth_689',['min_pulse_width',['../structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#acba9759bb3beaee95cb6faf6e07d516e',1,'alps::cmn::actuator::ServoMotorParam']]]
 ];

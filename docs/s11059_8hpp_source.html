@@ -1,0 +1,263 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps_common_lib/include/alps_cmn/sensor/s11059.hpp ソースファイル</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('s11059_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">s11059.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="s11059_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef ALPS_CMN_SENSOR_S11059_HPP_</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define ALPS_CMN_SENSOR_S11059_HPP_</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__i2c__io_8hpp.html">alps_cmn/communication/i_i2c_io.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>cmn</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>sensor</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> I2cIo&gt;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html">S11059</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#ac96ef6ada41502ab9d5ef04dabb1956a">   37</a></span>&#160;  <span class="keyword">enum class</span> <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#ac96ef6ada41502ab9d5ef04dabb1956a">IntegrationTimeOption</a> {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#ac96ef6ada41502ab9d5ef04dabb1956aae1d59dd07a04c9f5dbc786c56f800d4f">k87_5us</a>,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#ac96ef6ada41502ab9d5ef04dabb1956aa3f9272e34d136107f0382bc330aa6a11">k1_4ms</a>,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#ac96ef6ada41502ab9d5ef04dabb1956aa9184853ad1aded0e1d2c0b00acc6070e">k22_4ms</a>,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#ac96ef6ada41502ab9d5ef04dabb1956aa31893e92f978d6f068eca6fb4cbc82df">k179_2ms</a>,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  };</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html">   52</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html">RawData</a></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  {</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#add99d6528fec470857fd1e118403137f">   55</a></span>&#160;    uint16_t <a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#add99d6528fec470857fd1e118403137f">red</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#a8bf993e99acbecfab7f1513b226751c3">   57</a></span>&#160;    uint16_t <a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#a8bf993e99acbecfab7f1513b226751c3">green</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#a082c93f127940751023d1d51aeae9a64">   59</a></span>&#160;    uint16_t <a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#a082c93f127940751023d1d51aeae9a64">blue</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#adac51dab2d7d70d2cae8f6d1592a85c2">   61</a></span>&#160;    uint16_t <a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#adac51dab2d7d70d2cae8f6d1592a85c2">infrared</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  };</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html">   68</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html">NormalizedData</a></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  {</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#aaf6f4ac3ea62166cbadaaf3f92003438">   71</a></span>&#160;    uint32_t <a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#aaf6f4ac3ea62166cbadaaf3f92003438">rgb_sum</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#a19e44cd929ffaebc2389e7a136d23205">   73</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#a19e44cd929ffaebc2389e7a136d23205">red_ratio</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#a4ea990c9eb55c68fe867ec8743e1bc61">   75</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#a4ea990c9eb55c68fe867ec8743e1bc61">green_ratio</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#a5e5a62bedb6fadc84a79e41703dd828c">   77</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#a5e5a62bedb6fadc84a79e41703dd828c">blue_ratio</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  };</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#a8b167c379373b156394eec4b0e4e7cd6">   86</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#a8b167c379373b156394eec4b0e4e7cd6">S11059</a>(<a class="code" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">cmn::communication::II2cIo&lt;I2cIo&gt;</a> &amp; i2c_io, <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#ac96ef6ada41502ab9d5ef04dabb1956a">IntegrationTimeOption</a> integral_time_option)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  : i2c_io_(i2c_io)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">const</span> uint8_t init[] = {kCtrl, kReset};  <span class="comment">//初期化のコマンド</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// 積分時間設定以外のビット設定</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    uint8_t config_byte{0b00001000};</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">switch</span> (integral_time_option) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#ac96ef6ada41502ab9d5ef04dabb1956aae1d59dd07a04c9f5dbc786c56f800d4f">IntegrationTimeOption::k87_5us</a>:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        config_byte |= 0b00000000;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#ac96ef6ada41502ab9d5ef04dabb1956aa3f9272e34d136107f0382bc330aa6a11">IntegrationTimeOption::k1_4ms</a>:</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        config_byte |= 0b00000001;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#ac96ef6ada41502ab9d5ef04dabb1956aa9184853ad1aded0e1d2c0b00acc6070e">IntegrationTimeOption::k22_4ms</a>:</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        config_byte |= 0b00000010;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#ac96ef6ada41502ab9d5ef04dabb1956aa31893e92f978d6f068eca6fb4cbc82df">IntegrationTimeOption::k179_2ms</a>:</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        config_byte |= 0b00000011;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keyword">const</span> uint8_t start[] = {kCtrl, config_byte};  <span class="comment">//動作開始のコマンド</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    i2c_io_.<a class="code" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">CallWrite</a>(kI2cAddress, init);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    i2c_io_.<a class="code" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">CallWrite</a>(kI2cAddress, start);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  };</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#a6a906ae81d28f83caac1b629b9b2ba9f">  120</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#a6a906ae81d28f83caac1b629b9b2ba9f">GetRawData</a>(<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html">RawData</a> &amp; output)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    uint8_t data[8];                        <span class="comment">//データを受信</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> uint8_t data_pos = kRead;  <span class="comment">//レジスタの読み初めの場所</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="comment">//読み込み先の指定</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">if</span> (i2c_io_.<a class="code" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">CallWrite</a>(kI2cAddress, etl::span&lt;const uint8_t&gt;{&amp;data_pos, 1}) == <span class="keyword">false</span>) {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="comment">//データの受信</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">if</span> (i2c_io_.<a class="code" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#ac08f337e75e152c3d2a82d7ca4a52f13">CallRead</a>(kI2cAddress, data) == <span class="keyword">false</span>) {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    output.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#add99d6528fec470857fd1e118403137f">red</a> = (data[0] &lt;&lt; 8 | data[1]);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    output.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#a8bf993e99acbecfab7f1513b226751c3">green</a> = (data[2] &lt;&lt; 8 | data[3]);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    output.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#a082c93f127940751023d1d51aeae9a64">blue</a> = (data[4] &lt;&lt; 8 | data[5]);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    output.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#adac51dab2d7d70d2cae8f6d1592a85c2">infrared</a> = (data[6] &lt;&lt; 8 | data[7]);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  }</div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#a27848e6389f0f41d7080380dbfdfef6a">  148</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#a27848e6389f0f41d7080380dbfdfef6a">GetNormalizedData</a>(<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html">NormalizedData</a> &amp; output)</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html">RawData</a> raw_data;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#a6a906ae81d28f83caac1b629b9b2ba9f">GetRawData</a>(raw_data) == <span class="keyword">false</span>) {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">// 青の感度を他２つに合わせる</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    raw_data.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#a082c93f127940751023d1d51aeae9a64">blue</a> *= 2.0f;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    output.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#aaf6f4ac3ea62166cbadaaf3f92003438">rgb_sum</a> = raw_data.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#add99d6528fec470857fd1e118403137f">red</a> + raw_data.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#a8bf993e99acbecfab7f1513b226751c3">green</a> + raw_data.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#add99d6528fec470857fd1e118403137f">red</a>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    output.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#a19e44cd929ffaebc2389e7a136d23205">red_ratio</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(raw_data.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#add99d6528fec470857fd1e118403137f">red</a>) / output.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#aaf6f4ac3ea62166cbadaaf3f92003438">rgb_sum</a>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    output.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#a4ea990c9eb55c68fe867ec8743e1bc61">green_ratio</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(raw_data.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#a8bf993e99acbecfab7f1513b226751c3">green</a>) / output.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#aaf6f4ac3ea62166cbadaaf3f92003438">rgb_sum</a>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    output.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#a5e5a62bedb6fadc84a79e41703dd828c">blue_ratio</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(raw_data.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#a082c93f127940751023d1d51aeae9a64">blue</a>) / output.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#aaf6f4ac3ea62166cbadaaf3f92003438">rgb_sum</a>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keyword">using</span> RegAddress = uint8_t;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keyword">static</span> constexpr <a class="code" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">alps::cmn::communication::I2cAddress</a> kI2cAddress{0x2A};</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keyword">static</span> constexpr RegAddress kCtrl{0x00};</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keyword">static</span> constexpr RegAddress kRead{0x03};</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keyword">static</span> constexpr RegAddress kReset{0x89};</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  cmn::communication::II2cIo&lt;I2cIo&gt; &amp; i2c_io_;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;};</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;}  <span class="comment">// namespace sensor</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_i2c_io_html"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">alps::cmn::communication::II2cIo&lt; I2cIo &gt;</a></div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_i2c_io_html_ac08f337e75e152c3d2a82d7ca4a52f13"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#ac08f337e75e152c3d2a82d7ca4a52f13">alps::cmn::communication::II2cIo::CallRead</a></div><div class="ttdeci">bool CallRead(I2cAddress address, etl::span&lt; uint8_t &gt; read_buf, bool repeated=false)</div><div class="ttdoc">インタフェースを介してI2C通信でバイト列を受信する</div><div class="ttdef"><b>Definition:</b> i_i2c_io.hpp:63</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_i2c_io_html_af653762153caea8bbe059f868b73e5f1"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">alps::cmn::communication::II2cIo::CallWrite</a></div><div class="ttdeci">bool CallWrite(I2cAddress address, etl::span&lt; const uint8_t &gt; write_buf, bool repeated=false)</div><div class="ttdoc">インタフェースを介してI2C通信でバイト列を送信する</div><div class="ttdef"><b>Definition:</b> i_i2c_io.hpp:48</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_s11059_html"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_s11059.html">alps::cmn::sensor::S11059</a></div><div class="ttdoc">s11059のカラーセンサのクラス</div><div class="ttdef"><b>Definition:</b> s11059.hpp:31</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_s11059_html_a27848e6389f0f41d7080380dbfdfef6a"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#a27848e6389f0f41d7080380dbfdfef6a">alps::cmn::sensor::S11059::GetNormalizedData</a></div><div class="ttdeci">bool GetNormalizedData(NormalizedData &amp;output)</div><div class="ttdoc">正規化したデータを取得する</div><div class="ttdef"><b>Definition:</b> s11059.hpp:148</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_s11059_html_a6a906ae81d28f83caac1b629b9b2ba9f"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#a6a906ae81d28f83caac1b629b9b2ba9f">alps::cmn::sensor::S11059::GetRawData</a></div><div class="ttdeci">bool GetRawData(RawData &amp;output)</div><div class="ttdoc">センサーの生データを取得する</div><div class="ttdef"><b>Definition:</b> s11059.hpp:120</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_s11059_html_a8b167c379373b156394eec4b0e4e7cd6"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#a8b167c379373b156394eec4b0e4e7cd6">alps::cmn::sensor::S11059::S11059</a></div><div class="ttdeci">S11059(cmn::communication::II2cIo&lt; I2cIo &gt; &amp;i2c_io, IntegrationTimeOption integral_time_option)</div><div class="ttdoc">コンストラクタ　</div><div class="ttdef"><b>Definition:</b> s11059.hpp:86</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_s11059_html_ac96ef6ada41502ab9d5ef04dabb1956a"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#ac96ef6ada41502ab9d5ef04dabb1956a">alps::cmn::sensor::S11059::IntegrationTimeOption</a></div><div class="ttdeci">IntegrationTimeOption</div><div class="ttdoc">積分時間のオプション</div><div class="ttdef"><b>Definition:</b> s11059.hpp:37</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_s11059_html_ac96ef6ada41502ab9d5ef04dabb1956aa31893e92f978d6f068eca6fb4cbc82df"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#ac96ef6ada41502ab9d5ef04dabb1956aa31893e92f978d6f068eca6fb4cbc82df">alps::cmn::sensor::S11059::IntegrationTimeOption::k179_2ms</a></div><div class="ttdeci">@ k179_2ms</div><div class="ttdoc">179.2ミリ秒</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_s11059_html_ac96ef6ada41502ab9d5ef04dabb1956aa3f9272e34d136107f0382bc330aa6a11"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#ac96ef6ada41502ab9d5ef04dabb1956aa3f9272e34d136107f0382bc330aa6a11">alps::cmn::sensor::S11059::IntegrationTimeOption::k1_4ms</a></div><div class="ttdeci">@ k1_4ms</div><div class="ttdoc">1.4ミリ秒</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_s11059_html_ac96ef6ada41502ab9d5ef04dabb1956aa9184853ad1aded0e1d2c0b00acc6070e"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#ac96ef6ada41502ab9d5ef04dabb1956aa9184853ad1aded0e1d2c0b00acc6070e">alps::cmn::sensor::S11059::IntegrationTimeOption::k22_4ms</a></div><div class="ttdeci">@ k22_4ms</div><div class="ttdoc">22.4ミリ秒</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_s11059_html_ac96ef6ada41502ab9d5ef04dabb1956aae1d59dd07a04c9f5dbc786c56f800d4f"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#ac96ef6ada41502ab9d5ef04dabb1956aae1d59dd07a04c9f5dbc786c56f800d4f">alps::cmn::sensor::S11059::IntegrationTimeOption::k87_5us</a></div><div class="ttdeci">@ k87_5us</div><div class="ttdoc">87.5マイクロ秒</div></div>
+<div class="ttc" id="ai__i2c__io_8hpp_html"><div class="ttname"><a href="i__i2c__io_8hpp.html">i_i2c_io.hpp</a></div><div class="ttdoc">I2C通信インタフェース</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1communication_html_a31fcf69557e3ea7c625eddbe09e241c3"><div class="ttname"><a href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">alps::cmn::communication::I2cAddress</a></div><div class="ttdeci">uint8_t I2cAddress</div><div class="ttdoc">7bit I2Cアドレス</div><div class="ttdef"><b>Definition:</b> i_i2c_io.hpp:27</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:23</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data_html"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html">alps::cmn::sensor::S11059::NormalizedData</a></div><div class="ttdoc">正規化されたデータ</div><div class="ttdef"><b>Definition:</b> s11059.hpp:69</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data_html_a19e44cd929ffaebc2389e7a136d23205"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#a19e44cd929ffaebc2389e7a136d23205">alps::cmn::sensor::S11059::NormalizedData::red_ratio</a></div><div class="ttdeci">float red_ratio</div><div class="ttdoc">赤の比率</div><div class="ttdef"><b>Definition:</b> s11059.hpp:73</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data_html_a4ea990c9eb55c68fe867ec8743e1bc61"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#a4ea990c9eb55c68fe867ec8743e1bc61">alps::cmn::sensor::S11059::NormalizedData::green_ratio</a></div><div class="ttdeci">float green_ratio</div><div class="ttdoc">緑の比率</div><div class="ttdef"><b>Definition:</b> s11059.hpp:75</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data_html_a5e5a62bedb6fadc84a79e41703dd828c"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#a5e5a62bedb6fadc84a79e41703dd828c">alps::cmn::sensor::S11059::NormalizedData::blue_ratio</a></div><div class="ttdeci">float blue_ratio</div><div class="ttdoc">青の比率</div><div class="ttdef"><b>Definition:</b> s11059.hpp:77</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data_html_aaf6f4ac3ea62166cbadaaf3f92003438"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#aaf6f4ac3ea62166cbadaaf3f92003438">alps::cmn::sensor::S11059::NormalizedData::rgb_sum</a></div><div class="ttdeci">uint32_t rgb_sum</div><div class="ttdoc">rgbの合計値</div><div class="ttdef"><b>Definition:</b> s11059.hpp:71</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data_html"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html">alps::cmn::sensor::S11059::RawData</a></div><div class="ttdoc">センサーの生データ</div><div class="ttdef"><b>Definition:</b> s11059.hpp:53</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data_html_a082c93f127940751023d1d51aeae9a64"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#a082c93f127940751023d1d51aeae9a64">alps::cmn::sensor::S11059::RawData::blue</a></div><div class="ttdeci">uint16_t blue</div><div class="ttdoc">青</div><div class="ttdef"><b>Definition:</b> s11059.hpp:59</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data_html_a8bf993e99acbecfab7f1513b226751c3"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#a8bf993e99acbecfab7f1513b226751c3">alps::cmn::sensor::S11059::RawData::green</a></div><div class="ttdeci">uint16_t green</div><div class="ttdoc">緑</div><div class="ttdef"><b>Definition:</b> s11059.hpp:57</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data_html_adac51dab2d7d70d2cae8f6d1592a85c2"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#adac51dab2d7d70d2cae8f6d1592a85c2">alps::cmn::sensor::S11059::RawData::infrared</a></div><div class="ttdeci">uint16_t infrared</div><div class="ttdoc">赤外線</div><div class="ttdef"><b>Definition:</b> s11059.hpp:61</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data_html_add99d6528fec470857fd1e118403137f"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#add99d6528fec470857fd1e118403137f">alps::cmn::sensor::S11059::RawData::red</a></div><div class="ttdeci">uint16_t red</div><div class="ttdoc">赤</div><div class="ttdef"><b>Definition:</b> s11059.hpp:55</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_fcd1ba41f8679fcc7bf76d667eaa0e17.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_ce1e71e2103ac83e6d6cc720a9feeeb7.html">include</a></li><li class="navelem"><a class="el" href="dir_cc648f72f51f156e42f9863c0e5bf5fb.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_96320550a29baac38dc9eb0ae89f5e73.html">sensor</a></li><li class="navelem"><a class="el" href="s11059_8hpp.html">s11059.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

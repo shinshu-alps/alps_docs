@@ -4,5 +4,6 @@ var namespacealps_1_1cmn_1_1sensor =
     [ "IRotarySensor", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor" ],
     [ "IncrementalEncoder", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder" ],
     [ "Potentiometer", "classalps_1_1cmn_1_1sensor_1_1_potentiometer.html", "classalps_1_1cmn_1_1sensor_1_1_potentiometer" ],
+    [ "S11059", "classalps_1_1cmn_1_1sensor_1_1_s11059.html", "classalps_1_1cmn_1_1sensor_1_1_s11059" ],
     [ "Vl53l0x", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x" ]
 ];
