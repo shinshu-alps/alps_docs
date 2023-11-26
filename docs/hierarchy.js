@@ -97,5 +97,6 @@ var hierarchy =
     [ "alps::cmn::time::TimeoutChecker< Clock >", "classalps_1_1cmn_1_1time_1_1_timeout_checker.html", null ],
     [ "alps::cmn::communication::UartPacketTransceiver< UartIo, kReadBufferSize, kMaxSenderNum, kMaxReceiveNum, kMaxDataByteSize >", "classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html", null ],
     [ "alps::cmn::communication::UartReceiver< T >", "classalps_1_1cmn_1_1communication_1_1_uart_receiver.html", null ],
-    [ "alps::cmn::communication::UartSender< T >", "classalps_1_1cmn_1_1communication_1_1_uart_sender.html", null ]
+    [ "alps::cmn::communication::UartSender< T >", "classalps_1_1cmn_1_1communication_1_1_uart_sender.html", null ],
+    [ "alps::cmn::sensor::Vl53l0x< Clock, I2cIo >", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html", null ]
 ];
