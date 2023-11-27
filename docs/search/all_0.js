@@ -37,6 +37,5 @@ var searchData=
   ['sensor_34',['sensor',['../namespacealps_1_1cmn_1_1sensor.html',1,'alps::cmn::sensor'],['../namespacealps_1_1mbed_1_1sensor.html',1,'alps::mbed::sensor']]],
   ['stm_35',['stm',['../namespacealps_1_1stm.html',1,'alps']]],
   ['time_36',['time',['../namespacealps_1_1cmn_1_1time.html',1,'alps::cmn']]],
-  ['type_37',['type',['../namespacealps_1_1cmn_1_1type.html',1,'alps::cmn']]],
-  ['util_38',['util',['../namespacealps_1_1cmn_1_1util.html',1,'alps::cmn']]]
+  ['util_37',['util',['../namespacealps_1_1cmn_1_1util.html',1,'alps::cmn']]]
 ];

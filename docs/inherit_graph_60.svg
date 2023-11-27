@@ -12,7 +12,7 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classalps_1_1cmn_1_1sensor_1_1_s11059.html" target="_top" xlink:title="s11059のカラーセンサのクラス">
+<g id="a_node1"><a xlink:href="classalps_1_1cmn_1_1sensor_1_1_s11059.html" target="_top" xlink:title="カラーセンサS11059のクラス">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-30.5 108,-30.5 108,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::sensor::</text>
 <text text-anchor="middle" x="54" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">S11059&lt; I2cIo &gt;</text>
