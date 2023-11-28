@@ -75,6 +75,7 @@ var hierarchy =
       [ "alps::lin::communication::UartIo", "classalps_1_1lin_1_1communication_1_1_uart_io.html", null ],
       [ "alps::mbed::communication::UartIo", "classalps_1_1mbed_1_1communication_1_1_uart_io.html", null ]
     ] ],
+    [ "alps::ros2::ui::Joy", "classalps_1_1ros2_1_1ui_1_1_joy.html", null ],
     [ "alps::cmn::sensor::Bno055< Clock, I2cIo >::LinearAcceleration", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_linear_acceleration.html", null ],
     [ "alps::cmn::log::Logger", "classalps_1_1cmn_1_1log_1_1_logger.html", null ],
     [ "alps::cmn::control::Lpf", "classalps_1_1cmn_1_1control_1_1_lpf.html", null ],

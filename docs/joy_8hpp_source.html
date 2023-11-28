@@ -1,0 +1,271 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps_ros2_lib/include/alps_ros2/ui/joy.hpp ソースファイル</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('joy_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">joy.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="joy_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef ALPS_ROS2__UI_JOY_HPP_</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define ALPS_ROS2__UI_JOY_HPP_</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;rclcpp/rclcpp.hpp&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;sensor_msgs/msg/joy.hpp&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span>ros2</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>ui</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html">Joy</a></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541">   40</a></span>&#160;  <span class="keyword">enum class</span> <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541">Button</a> {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541ad48b8c20b76c6b5fa978b00bf8fe17ed">kCross</a> = 0,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541ab64649c0868f16dbd568590263b21af2">kCircle</a>,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a3a53496ffe96227ef579995d332425c1">kTriangle</a>,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541ad162a24951292981801a308b26a5b692">kSquare</a>,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a17dfd658b280414d471dea3e8bf4a510">kL1</a>,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541ad7789ca4b871d5ecec2849d713364fa4">kR1</a>,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a156fe1d78bb72d3412ac145bd941879a">kL2</a>,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a86fba42a90b505b3eb3313111d35af9d">kR2</a>,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a0f74d4695fd4cccbe4380a5fcf6f8cc0">kSelect</a>,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a127f8e8149d57253ad94c9d2c752113d">kStart</a>,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a463cdbc971349a89a8c71df341024a15">kPS</a>,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a0dd8dde131fa8dbbe94f13151bf7a6f6">kStickL</a>,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a2aa3189643b45bcfbf4ce07a13728db0">kStickR</a>,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a8a9e8c8811f2a710615e133456229ee5">kUp</a>,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a3bc2ec3237c6d119b0b5c4225122a07e">kDown</a>,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a2d5fde1d924910a2a01ecd8e70a87c28">kLeft</a>,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a2dd2b017192f8a09367d48c7648213c9">kRight</a>,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  };</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a7d09067615c8a0b728d7d08bba1eeaf6">   77</a></span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">size_t</span> <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a7d09067615c8a0b728d7d08bba1eeaf6">kNumButtons</a>{17};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58">   83</a></span>&#160;  <span class="keyword">enum class</span> <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58">Axis</a> {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58a688e3d30358e432816565d122e081fe2">kStickLX</a> = 0,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58acfcf7cbcfdef4730f725aeff53a108de">kStickLY</a>,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58a156fe1d78bb72d3412ac145bd941879a">kL2</a>,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58ae52512db60258ca4c0f4337f18fa0efd">kStickRX</a>,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58ab9159460b6f2a5821b2d259ca32b9a43">kStickRY</a>,</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58a86fba42a90b505b3eb3313111d35af9d">kR2</a>,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  };</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a432eac68c86897a9e46f33cab8277c82">   98</a></span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">size_t</span> <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a432eac68c86897a9e46f33cab8277c82">kNumAxes</a>{6};</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#ae39070d2de281ff2f71b60b1dfeb49d1">  106</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#ae39070d2de281ff2f71b60b1dfeb49d1">Joy</a>(rclcpp::Node &amp; node, <span class="keyword">const</span> std::string_view &amp; topic_name = <span class="stringliteral">&quot;joy&quot;</span>)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// サブスクライバーの作成</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">using</span> std::placeholders::_1;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    sub_joy_ = node.create_subscription&lt;sensor_msgs::msg::Joy&gt;(</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      topic_name.data(), 1, std::bind(&amp;Joy::TopicCallback, <span class="keyword">this</span>, _1));</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a63210a55c8f5ab6d162012151b94cd64">  121</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a63210a55c8f5ab6d162012151b94cd64">GetButtonState</a>(<a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541">Button</a> button)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">return</span> buttons_[<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(button)];</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#ad03253d14b6b1916cd7bb5d8bd093b75">  132</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#ad03253d14b6b1916cd7bb5d8bd093b75">GetAxisState</a>(<a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58">Axis</a> axis)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">return</span> axes_[<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(axis)];</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a21891bd40e35cfdcd42ad3cd45687c6f">  142</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a21891bd40e35cfdcd42ad3cd45687c6f">SetOnReceivedTopicCallback</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; callback)</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    topic_callback_ = callback;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#aefc6a3484dad7a5ac8bca53c806df4ce">  153</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#aefc6a3484dad7a5ac8bca53c806df4ce">SetOnPressedButtonCallback</a>(<a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541">Button</a> button, std::function&lt;<span class="keywordtype">void</span>()&gt; callback)</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    pressed_button_callbacks_[button] = callback;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordtype">void</span> TopicCallback(<span class="keyword">const</span> sensor_msgs::msg::Joy::SharedPtr msg)</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; msg-&gt;buttons.size(); ++i) {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      <span class="comment">// ボタンが押されたときにコールバックを呼び出す</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;      <span class="keywordflow">if</span> (buttons_[i] == <span class="keyword">false</span> &amp;&amp; msg-&gt;buttons[i] == <span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">if</span> (pressed_button_callbacks_.count(<span class="keyword">static_cast&lt;</span><a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541">Button</a><span class="keyword">&gt;</span>(i)) &gt; 0) {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;          pressed_button_callbacks_[<span class="keyword">static_cast&lt;</span><a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541">Button</a><span class="keyword">&gt;</span>(i)]();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      <span class="comment">// ボタンの状態を更新</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      buttons_[i] = msg-&gt;buttons[i];</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="comment">// 軸の状態を更新</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; msg-&gt;axes.size(); ++i) {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      axes_[i] = msg-&gt;axes[i];</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="comment">// トピックを受信したときのコールバックを呼び出す</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">if</span> (topic_callback_) {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      topic_callback_();</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  rclcpp::Subscription&lt;sensor_msgs::msg::Joy&gt;::SharedPtr sub_joy_;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  std::array&lt;bool, kNumButtons&gt; buttons_;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  std::array&lt;float, kNumAxes&gt; axes_;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  std::function&lt;void()&gt; topic_callback_;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  std::map&lt;<a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541">Button</a>, std::function&lt;void()&gt;&gt; pressed_button_callbacks_;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;};</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;}  <span class="comment">// namespace ui</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;}  <span class="comment">// namespace ros2</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html">alps::ros2::ui::Joy</a></div><div class="ttdoc">プレイステーションジョイコントローラーのトピックデータを扱いやすくするためのクラス</div><div class="ttdef"><b>Definition:</b> joy.hpp:34</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a1a96f85c68d02a31a90274e3b5f75541"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541">alps::ros2::ui::Joy::Button</a></div><div class="ttdeci">Button</div><div class="ttdoc">ボタンの種類</div><div class="ttdef"><b>Definition:</b> joy.hpp:40</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a1a96f85c68d02a31a90274e3b5f75541a0dd8dde131fa8dbbe94f13151bf7a6f6"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a0dd8dde131fa8dbbe94f13151bf7a6f6">alps::ros2::ui::Joy::Button::kStickL</a></div><div class="ttdeci">@ kStickL</div><div class="ttdoc">左スティックの押し込み</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a1a96f85c68d02a31a90274e3b5f75541a0f74d4695fd4cccbe4380a5fcf6f8cc0"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a0f74d4695fd4cccbe4380a5fcf6f8cc0">alps::ros2::ui::Joy::Button::kSelect</a></div><div class="ttdeci">@ kSelect</div><div class="ttdoc">SELECTボタン</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a1a96f85c68d02a31a90274e3b5f75541a127f8e8149d57253ad94c9d2c752113d"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a127f8e8149d57253ad94c9d2c752113d">alps::ros2::ui::Joy::Button::kStart</a></div><div class="ttdeci">@ kStart</div><div class="ttdoc">STARTボタン</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a1a96f85c68d02a31a90274e3b5f75541a156fe1d78bb72d3412ac145bd941879a"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a156fe1d78bb72d3412ac145bd941879a">alps::ros2::ui::Joy::Button::kL2</a></div><div class="ttdeci">@ kL2</div><div class="ttdoc">L2ボタン</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a1a96f85c68d02a31a90274e3b5f75541a17dfd658b280414d471dea3e8bf4a510"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a17dfd658b280414d471dea3e8bf4a510">alps::ros2::ui::Joy::Button::kL1</a></div><div class="ttdeci">@ kL1</div><div class="ttdoc">L1ボタン</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a1a96f85c68d02a31a90274e3b5f75541a2aa3189643b45bcfbf4ce07a13728db0"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a2aa3189643b45bcfbf4ce07a13728db0">alps::ros2::ui::Joy::Button::kStickR</a></div><div class="ttdeci">@ kStickR</div><div class="ttdoc">右スティックの押し込み</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a1a96f85c68d02a31a90274e3b5f75541a2d5fde1d924910a2a01ecd8e70a87c28"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a2d5fde1d924910a2a01ecd8e70a87c28">alps::ros2::ui::Joy::Button::kLeft</a></div><div class="ttdeci">@ kLeft</div><div class="ttdoc">左ボタン</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a1a96f85c68d02a31a90274e3b5f75541a2dd2b017192f8a09367d48c7648213c9"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a2dd2b017192f8a09367d48c7648213c9">alps::ros2::ui::Joy::Button::kRight</a></div><div class="ttdeci">@ kRight</div><div class="ttdoc">右ボタン</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a1a96f85c68d02a31a90274e3b5f75541a3a53496ffe96227ef579995d332425c1"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a3a53496ffe96227ef579995d332425c1">alps::ros2::ui::Joy::Button::kTriangle</a></div><div class="ttdeci">@ kTriangle</div><div class="ttdoc">△ボタン</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a1a96f85c68d02a31a90274e3b5f75541a3bc2ec3237c6d119b0b5c4225122a07e"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a3bc2ec3237c6d119b0b5c4225122a07e">alps::ros2::ui::Joy::Button::kDown</a></div><div class="ttdeci">@ kDown</div><div class="ttdoc">下ボタン</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a1a96f85c68d02a31a90274e3b5f75541a463cdbc971349a89a8c71df341024a15"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a463cdbc971349a89a8c71df341024a15">alps::ros2::ui::Joy::Button::kPS</a></div><div class="ttdeci">@ kPS</div><div class="ttdoc">PSボタン</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a1a96f85c68d02a31a90274e3b5f75541a86fba42a90b505b3eb3313111d35af9d"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a86fba42a90b505b3eb3313111d35af9d">alps::ros2::ui::Joy::Button::kR2</a></div><div class="ttdeci">@ kR2</div><div class="ttdoc">R2ボタン</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a1a96f85c68d02a31a90274e3b5f75541a8a9e8c8811f2a710615e133456229ee5"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a8a9e8c8811f2a710615e133456229ee5">alps::ros2::ui::Joy::Button::kUp</a></div><div class="ttdeci">@ kUp</div><div class="ttdoc">上ボタン</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a1a96f85c68d02a31a90274e3b5f75541ab64649c0868f16dbd568590263b21af2"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541ab64649c0868f16dbd568590263b21af2">alps::ros2::ui::Joy::Button::kCircle</a></div><div class="ttdeci">@ kCircle</div><div class="ttdoc">○ボタン</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a1a96f85c68d02a31a90274e3b5f75541ad162a24951292981801a308b26a5b692"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541ad162a24951292981801a308b26a5b692">alps::ros2::ui::Joy::Button::kSquare</a></div><div class="ttdeci">@ kSquare</div><div class="ttdoc">□ボタン</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a1a96f85c68d02a31a90274e3b5f75541ad48b8c20b76c6b5fa978b00bf8fe17ed"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541ad48b8c20b76c6b5fa978b00bf8fe17ed">alps::ros2::ui::Joy::Button::kCross</a></div><div class="ttdeci">@ kCross</div><div class="ttdoc">×ボタン</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a1a96f85c68d02a31a90274e3b5f75541ad7789ca4b871d5ecec2849d713364fa4"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541ad7789ca4b871d5ecec2849d713364fa4">alps::ros2::ui::Joy::Button::kR1</a></div><div class="ttdeci">@ kR1</div><div class="ttdoc">R1ボタン</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a20dab25572264e7d0e9286efec807e58"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58">alps::ros2::ui::Joy::Axis</a></div><div class="ttdeci">Axis</div><div class="ttdoc">軸の種類</div><div class="ttdef"><b>Definition:</b> joy.hpp:83</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a20dab25572264e7d0e9286efec807e58a156fe1d78bb72d3412ac145bd941879a"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58a156fe1d78bb72d3412ac145bd941879a">alps::ros2::ui::Joy::Axis::kL2</a></div><div class="ttdeci">@ kL2</div><div class="ttdoc">L2ボタンの押し込み具合</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a20dab25572264e7d0e9286efec807e58a688e3d30358e432816565d122e081fe2"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58a688e3d30358e432816565d122e081fe2">alps::ros2::ui::Joy::Axis::kStickLX</a></div><div class="ttdeci">@ kStickLX</div><div class="ttdoc">左スティックのx方向</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a20dab25572264e7d0e9286efec807e58a86fba42a90b505b3eb3313111d35af9d"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58a86fba42a90b505b3eb3313111d35af9d">alps::ros2::ui::Joy::Axis::kR2</a></div><div class="ttdeci">@ kR2</div><div class="ttdoc">R2ボタンの押し込み具合</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a20dab25572264e7d0e9286efec807e58ab9159460b6f2a5821b2d259ca32b9a43"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58ab9159460b6f2a5821b2d259ca32b9a43">alps::ros2::ui::Joy::Axis::kStickRY</a></div><div class="ttdeci">@ kStickRY</div><div class="ttdoc">右スティックのy方向</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a20dab25572264e7d0e9286efec807e58acfcf7cbcfdef4730f725aeff53a108de"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58acfcf7cbcfdef4730f725aeff53a108de">alps::ros2::ui::Joy::Axis::kStickLY</a></div><div class="ttdeci">@ kStickLY</div><div class="ttdoc">左スティックのy方向</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a20dab25572264e7d0e9286efec807e58ae52512db60258ca4c0f4337f18fa0efd"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58ae52512db60258ca4c0f4337f18fa0efd">alps::ros2::ui::Joy::Axis::kStickRX</a></div><div class="ttdeci">@ kStickRX</div><div class="ttdoc">右スティックのx方向</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a21891bd40e35cfdcd42ad3cd45687c6f"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a21891bd40e35cfdcd42ad3cd45687c6f">alps::ros2::ui::Joy::SetOnReceivedTopicCallback</a></div><div class="ttdeci">void SetOnReceivedTopicCallback(std::function&lt; void()&gt; callback)</div><div class="ttdoc">トピックを受信したときのコールバックを設定</div><div class="ttdef"><b>Definition:</b> joy.hpp:142</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a432eac68c86897a9e46f33cab8277c82"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a432eac68c86897a9e46f33cab8277c82">alps::ros2::ui::Joy::kNumAxes</a></div><div class="ttdeci">static constexpr size_t kNumAxes</div><div class="ttdoc">軸の数</div><div class="ttdef"><b>Definition:</b> joy.hpp:98</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a63210a55c8f5ab6d162012151b94cd64"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a63210a55c8f5ab6d162012151b94cd64">alps::ros2::ui::Joy::GetButtonState</a></div><div class="ttdeci">bool GetButtonState(Button button) const</div><div class="ttdoc">ボタンの状態を取得</div><div class="ttdef"><b>Definition:</b> joy.hpp:121</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a7d09067615c8a0b728d7d08bba1eeaf6"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a7d09067615c8a0b728d7d08bba1eeaf6">alps::ros2::ui::Joy::kNumButtons</a></div><div class="ttdeci">static constexpr size_t kNumButtons</div><div class="ttdoc">ボタンの数</div><div class="ttdef"><b>Definition:</b> joy.hpp:77</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_ad03253d14b6b1916cd7bb5d8bd093b75"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#ad03253d14b6b1916cd7bb5d8bd093b75">alps::ros2::ui::Joy::GetAxisState</a></div><div class="ttdeci">float GetAxisState(Axis axis) const</div><div class="ttdoc">軸の状態を取得</div><div class="ttdef"><b>Definition:</b> joy.hpp:132</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_ae39070d2de281ff2f71b60b1dfeb49d1"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#ae39070d2de281ff2f71b60b1dfeb49d1">alps::ros2::ui::Joy::Joy</a></div><div class="ttdeci">Joy(rclcpp::Node &amp;node, const std::string_view &amp;topic_name=&quot;joy&quot;)</div><div class="ttdoc">コンストラクタ．内部でjoyトピックのサブスクライバーを作成する．</div><div class="ttdef"><b>Definition:</b> joy.hpp:106</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_aefc6a3484dad7a5ac8bca53c806df4ce"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#aefc6a3484dad7a5ac8bca53c806df4ce">alps::ros2::ui::Joy::SetOnPressedButtonCallback</a></div><div class="ttdeci">void SetOnPressedButtonCallback(Button button, std::function&lt; void()&gt; callback)</div><div class="ttdoc">ボタンが押されたときのコールバックを設定</div><div class="ttdef"><b>Definition:</b> joy.hpp:153</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_7ebb08d2631605158f57f066fc85c832.html">alps_ros2_lib</a></li><li class="navelem"><a class="el" href="dir_d90eac5d112df8937e227330719f4f85.html">include</a></li><li class="navelem"><a class="el" href="dir_c1e6a71faa0eb7f68193916a54ca9466.html">alps_ros2</a></li><li class="navelem"><a class="el" href="dir_1f337407fa66791c1f72ce9c082d3c68.html">ui</a></li><li class="navelem"><a class="el" href="joy_8hpp.html">joy.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

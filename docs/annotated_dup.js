@@ -83,6 +83,11 @@ var annotated_dup =
           [ "InterruptIn", "classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html", "classalps_1_1mbed_1_1gpio_1_1_interrupt_in" ],
           [ "PwmOut", "classalps_1_1mbed_1_1gpio_1_1_pwm_out.html", "classalps_1_1mbed_1_1gpio_1_1_pwm_out" ]
         ] ]
+      ] ],
+      [ "ros2", "namespacealps_1_1ros2.html", [
+        [ "ui", "namespacealps_1_1ros2_1_1ui.html", [
+          [ "Joy", "classalps_1_1ros2_1_1ui_1_1_joy.html", "classalps_1_1ros2_1_1ui_1_1_joy" ]
+        ] ]
       ] ]
     ] ]
 ];

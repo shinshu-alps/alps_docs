@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operationmode_716',['OperationMode',['../classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a73e9b76fe9123246d7dcf8713e8c83a9',1,'alps::cmn::sensor::Vl53l0x']]]
+  ['level_759',['Level',['../classalps_1_1cmn_1_1log_1_1_logger.html#a8dc02f64cdf5155657cd0ed473e29df4',1,'alps::cmn::log::Logger']]]
 ];
