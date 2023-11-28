@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rangemode_718',['RangeMode',['../classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a27c4145bb7ec554861b487c8c3e5a0c8',1,'alps::cmn::sensor::Vl53l0x']]]
+  ['placement_761',['Placement',['../classalps_1_1cmn_1_1sensor_1_1_bno055.html#acf1f991489c4624e3dc42561815cc4ad',1,'alps::cmn::sensor::Bno055']]]
 ];

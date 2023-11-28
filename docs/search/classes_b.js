@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['odometory_427',['Odometory',['../classalps_1_1cmn_1_1robotics_1_1_odometory.html',1,'alps::cmn::robotics']]],
-  ['oneshotpollingtimer_428',['OneShotPollingTimer',['../classalps_1_1cmn_1_1time_1_1_one_shot_polling_timer.html',1,'alps::cmn::time']]]
+  ['normalizeddata_459',['NormalizedData',['../structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html',1,'alps::cmn::sensor::S11059']]]
 ];

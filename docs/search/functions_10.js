@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['uartio_648',['UartIo',['../classalps_1_1lin_1_1communication_1_1_uart_io.html#af15b2ad063250199174ecbae333c3fc6',1,'alps::lin::communication::UartIo::UartIo()'],['../classalps_1_1mbed_1_1communication_1_1_uart_io.html#a468f337139066580219d8a510ea0b91b',1,'alps::mbed::communication::UartIo::UartIo()']]],
-  ['uartpacketbytesize_649',['UartPacketByteSize',['../namespacealps_1_1cmn_1_1communication.html#a6e87897c36f9e01024f6ca7c81e6bd9f',1,'alps::cmn::communication']]],
-  ['uartpackettransceiver_650',['UartPacketTransceiver',['../classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html#afdbea85783e85f0588bb4b022ba728fe',1,'alps::cmn::communication::UartPacketTransceiver']]],
-  ['uartreceiver_651',['UartReceiver',['../classalps_1_1cmn_1_1communication_1_1_uart_receiver.html#a532a7d82cb7bea29f5fdb54ce903e9a6',1,'alps::cmn::communication::UartReceiver']]],
-  ['uartsender_652',['UartSender',['../classalps_1_1cmn_1_1communication_1_1_uart_sender.html#a7fbff380d50a1874b2cddbab4e7451ff',1,'alps::cmn::communication::UartSender']]],
-  ['update_653',['Update',['../classalps_1_1cmn_1_1robotics_1_1_odometory.html#aa8cbf53e7bb262a6dde7663625b9d8c3',1,'alps::cmn::robotics::Odometory::Update()'],['../classalps_1_1cmn_1_1time_1_1_one_shot_polling_timer.html#a34c08039ade1c5e70a7949f99f262d31',1,'alps::cmn::time::OneShotPollingTimer::Update()'],['../classalps_1_1cmn_1_1time_1_1_repeating_polling_timer.html#aca08125497845164f395d7fc68fa0061',1,'alps::cmn::time::RepeatingPollingTimer::Update()']]]
+  ['timeoutchecker_683',['TimeoutChecker',['../classalps_1_1cmn_1_1time_1_1_timeout_checker.html#a47dcaddd1e391df7ed2ae1bf0d95f111',1,'alps::cmn::time::TimeoutChecker']]],
+  ['timeoutoccurred_684',['TimeoutOccurred',['../classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a816f9728704d7e51a4ff1d2cc1f379c9',1,'alps::cmn::sensor::Vl53l0x']]],
+  ['trydecode_685',['TryDecode',['../classalps_1_1cmn_1_1communication_1_1_cobs.html#ae99250721eb63cfc90dc1b101488519e',1,'alps::cmn::communication::Cobs']]],
+  ['tryread_686',['TryRead',['../classalps_1_1lin_1_1communication_1_1_socket_can_io.html#aba9f031ada5fd612d310c1a73cfaa054',1,'alps::lin::communication::SocketCanIo::TryRead()'],['../classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#ae5b6fe31bee7a0c3574dfed839f9b4f5',1,'alps::mbed::communication::BufferedCanIo::TryRead()']]],
+  ['trywrite_687',['TryWrite',['../classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a2cd03a79343100ed866bcbc7ff24bd5d',1,'alps::lin::communication::SocketCanIo::TryWrite()'],['../classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#a637145115816929509692fe07e25edcf',1,'alps::mbed::communication::BufferedCanIo::TryWrite()']]]
 ];

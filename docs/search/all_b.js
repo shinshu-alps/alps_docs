@@ -1,6 +1,14 @@
 var searchData=
 [
-  ['namespace_2ehpp_249',['namespace.hpp',['../alps__common__lib_2include_2alps__cmn_2namespace_8hpp.html',1,'(大域名前空間)'],['../alps__linux__lib_2include_2alps__lin_2namespace_8hpp.html',1,'(大域名前空間)'],['../alps__mbed__lib_2include_2alps__mbed_2namespace_8hpp.html',1,'(大域名前空間)'],['../alps__stm32__lib_2include_2alps__stm_2namespace_8hpp.html',1,'(大域名前空間)'],['../alps__ros__lib_2include_2alps__ros_2namespace_8hpp.html',1,'(大域名前空間)'],['../alps__ros2__lib_2include_2alps__ros2_2namespace_8hpp.html',1,'(大域名前空間)']]],
-  ['normalizeangle_250',['NormalizeAngle',['../namespacealps_1_1cmn_1_1util.html#a6facc7bbdf89eb176f4ede22d70c200e',1,'alps::cmn::util::NormalizeAngle(double angle_rad)'],['../namespacealps_1_1cmn_1_1util.html#a7dd23efe5c4394aa3ad742b313d0a2c0',1,'alps::cmn::util::NormalizeAngle(float angle_rad)']]],
-  ['normalizeddata_251',['NormalizedData',['../structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html',1,'alps::cmn::sensor::S11059']]]
+  ['magneticvector_268',['MagneticVector',['../structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_magnetic_vector.html',1,'alps::cmn::sensor::Bno055']]],
+  ['mainpage_2emd_269',['MainPage.md',['../_main_page_8md.html',1,'']]],
+  ['max_5fangle_270',['max_angle',['../structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a4c4f9922be96039439a3401b7970d440',1,'alps::cmn::actuator::ServoMotorParam']]],
+  ['max_5fpulse_5fwidth_271',['max_pulse_width',['../structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a76a4aeff3cc7cdf30472ca0b7648fb17',1,'alps::cmn::actuator::ServoMotorParam']]],
+  ['min_5fpulse_5fwidth_272',['min_pulse_width',['../structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#acba9759bb3beaee95cb6faf6e07d516e',1,'alps::cmn::actuator::ServoMotorParam']]],
+  ['motor_5fangle_5fcontroller_2ehpp_273',['motor_angle_controller.hpp',['../motor__angle__controller_8hpp.html',1,'']]],
+  ['motor_5fangle_5fvelocity_5fcontroller_2ehpp_274',['motor_angle_velocity_controller.hpp',['../motor__angle__velocity__controller_8hpp.html',1,'']]],
+  ['motor_5fvelocity_5fcontroller_2ehpp_275',['motor_velocity_controller.hpp',['../motor__velocity__controller_8hpp.html',1,'']]],
+  ['motoranglecontroller_276',['MotorAngleController',['../classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html',1,'alps::cmn::control::MotorAngleController&lt; Clock, Motor, RotarySensor &gt;'],['../classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#ad470f50e161b699bf2ebe36941ada9bf',1,'alps::cmn::control::MotorAngleController::MotorAngleController()']]],
+  ['motoranglevelocitycontroller_277',['MotorAngleVelocityController',['../classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html',1,'alps::cmn::control::MotorAngleVelocityController&lt; Clock, Motor, RotarySensor &gt;'],['../classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#af615f64120b8d932e5ab019ed471822c',1,'alps::cmn::control::MotorAngleVelocityController::MotorAngleVelocityController()']]],
+  ['motorvelocitycontroller_278',['MotorVelocityController',['../classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html',1,'alps::cmn::control::MotorVelocityController&lt; Clock, Motor, RotarySensor &gt;'],['../classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a5370c26c7ed034f65381c0aab7e3b05b',1,'alps::cmn::control::MotorVelocityController::MotorVelocityController()']]]
 ];
