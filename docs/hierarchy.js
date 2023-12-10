@@ -99,6 +99,7 @@ var hierarchy =
     [ "alps::cmn::actuator::ServoMotor< PwmOut >", "classalps_1_1cmn_1_1actuator_1_1_servo_motor.html", null ],
     [ "alps::cmn::actuator::ServoMotorParam", "structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html", null ],
     [ "alps::cmn::time::TimeoutChecker< Clock >", "classalps_1_1cmn_1_1time_1_1_timeout_checker.html", null ],
+    [ "alps::cmn::time::TimeoutChecker< std::chrono::system_clock >", "classalps_1_1cmn_1_1time_1_1_timeout_checker.html", null ],
     [ "alps::cmn::communication::UartPacketTransceiver< UartIo, kReadBufferSize, kMaxSenderNum, kMaxReceiveNum, kMaxDataByteSize >", "classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html", null ],
     [ "alps::cmn::communication::UartReceiver< T >", "classalps_1_1cmn_1_1communication_1_1_uart_receiver.html", null ],
     [ "alps::cmn::communication::UartSender< T >", "classalps_1_1cmn_1_1communication_1_1_uart_sender.html", null ],

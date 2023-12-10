@@ -121,9 +121,9 @@ alps::lin::communication::SocketCanIo の継承関係図</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a070fb75e50b86c8d7de38c35c6468b8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a070fb75e50b86c8d7de38c35c6468b8b">SocketCanIo</a> ()</td></tr>
-<tr class="memdesc:a070fb75e50b86c8d7de38c35c6468b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ．CANソケットを開く．  <a href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a070fb75e50b86c8d7de38c35c6468b8b">[詳解]</a><br /></td></tr>
-<tr class="separator:a070fb75e50b86c8d7de38c35c6468b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f88e8c393d8469f64324c566dae5233"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a2f88e8c393d8469f64324c566dae5233">SocketCanIo</a> (std::string interface_name=&quot;can0&quot;)</td></tr>
+<tr class="memdesc:a2f88e8c393d8469f64324c566dae5233"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ．CANソケットを開く．  <a href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a2f88e8c393d8469f64324c566dae5233">[詳解]</a><br /></td></tr>
+<tr class="separator:a2f88e8c393d8469f64324c566dae5233"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a439264db8159442c3cdc66fbd065c092"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a439264db8159442c3cdc66fbd065c092">~SocketCanIo</a> ()</td></tr>
 <tr class="memdesc:a439264db8159442c3cdc66fbd065c092"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ．CANソケットを閉じる．  <a href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a439264db8159442c3cdc66fbd065c092">[詳解]</a><br /></td></tr>
 <tr class="separator:a439264db8159442c3cdc66fbd065c092"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,8 +144,8 @@ alps::lin::communication::SocketCanIo の継承関係図</div>
 <div class="textblock"><p>SocketCANを用いてCAN通信を行うクラス． </p>
 <p>can0インタフェースを使用する．ビットレートはターミナルコマンドで設定． </p>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="a070fb75e50b86c8d7de38c35c6468b8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a070fb75e50b86c8d7de38c35c6468b8b">&#9670;&nbsp;</a></span>SocketCanIo()</h2>
+<a id="a2f88e8c393d8469f64324c566dae5233"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f88e8c393d8469f64324c566dae5233">&#9670;&nbsp;</a></span>SocketCanIo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,13 +153,20 @@ alps::lin::communication::SocketCanIo の継承関係図</div>
         <tr>
           <td class="memname">alps::lin::communication::SocketCanIo::SocketCanIo </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>interface_name</em> = <code>&quot;can0&quot;</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>コンストラクタ．CANソケットを開く． </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interface_name</td><td>CANインタフェース名（デフォルトは"can0"） </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

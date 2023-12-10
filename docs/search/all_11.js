@@ -31,5 +31,5 @@ var searchData=
   ['settimeconst_358',['SetTimeConst',['../classalps_1_1cmn_1_1control_1_1_lpf.html#aea8480539cad78ef17d887d56b19ebaf',1,'alps::cmn::control::Lpf']]],
   ['settimeout_359',['SetTimeout',['../classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#ab854cb26bdc83be7dbcca18e37b74388',1,'alps::cmn::sensor::Vl53l0x']]],
   ['socket_5fcan_5fio_2ehpp_360',['socket_can_io.hpp',['../socket__can__io_8hpp.html',1,'']]],
-  ['socketcanio_361',['SocketCanIo',['../classalps_1_1lin_1_1communication_1_1_socket_can_io.html',1,'alps::lin::communication::SocketCanIo'],['../classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a070fb75e50b86c8d7de38c35c6468b8b',1,'alps::lin::communication::SocketCanIo::SocketCanIo()']]]
+  ['socketcanio_361',['SocketCanIo',['../classalps_1_1lin_1_1communication_1_1_socket_can_io.html',1,'alps::lin::communication::SocketCanIo'],['../classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a2f88e8c393d8469f64324c566dae5233',1,'alps::lin::communication::SocketCanIo::SocketCanIo()']]]
 ];
