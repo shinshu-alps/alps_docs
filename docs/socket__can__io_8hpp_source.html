@@ -111,45 +111,60 @@ $(document).ready(function(){initNavTree('socket__can__io_8hpp_source.html','');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;linux/can.h&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;sys/select.h&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__can__io_8hpp.html">alps_cmn/communication/i_can_io.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="namespacealps_1_1lin.html">   11</a></span>&#160;<span class="keyword">namespace </span>lin</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespacealps_1_1lin_1_1communication.html">   13</a></span>&#160;<span class="keyword">namespace </span>communication</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html">SocketCanIo</a> : <span class="keyword">public</span> <a class="code" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">cmn::communication::ICanIo</a>&lt;SocketCanIo&gt;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a070fb75e50b86c8d7de38c35c6468b8b">   25</a></span>&#160;  <a class="code" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a070fb75e50b86c8d7de38c35c6468b8b">SocketCanIo</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a439264db8159442c3cdc66fbd065c092">   28</a></span>&#160;  <a class="code" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a439264db8159442c3cdc66fbd065c092">~SocketCanIo</a>();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a2cd03a79343100ed866bcbc7ff24bd5d">   37</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a2cd03a79343100ed866bcbc7ff24bd5d">TryWrite</a>(<span class="keyword">const</span> <a class="code" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">cmn::communication::CanDataFrame</a> &amp; frame);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#aba9f031ada5fd612d310c1a73cfaa054">   46</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#aba9f031ada5fd612d310c1a73cfaa054">TryRead</a>(<a class="code" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">cmn::communication::CanDataFrame</a> &amp; frame);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">int</span> socket_;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  can_frame tmp_frame_;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__can__io_8hpp.html">alps_cmn/communication/i_can_io.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="timeout__checker_8hpp.html">alps_cmn/time/timeout_checker.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespacealps_1_1lin.html">   14</a></span>&#160;<span class="keyword">namespace </span>lin</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespacealps_1_1lin_1_1communication.html">   16</a></span>&#160;<span class="keyword">namespace </span>communication</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html">SocketCanIo</a> : <span class="keyword">public</span> <a class="code" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">cmn::communication::ICanIo</a>&lt;SocketCanIo&gt;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a2f88e8c393d8469f64324c566dae5233">   32</a></span>&#160;  <a class="code" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a2f88e8c393d8469f64324c566dae5233">SocketCanIo</a>(std::string interface_name = <span class="stringliteral">&quot;can0&quot;</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a439264db8159442c3cdc66fbd065c092">   35</a></span>&#160;  <a class="code" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a439264db8159442c3cdc66fbd065c092">~SocketCanIo</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a2cd03a79343100ed866bcbc7ff24bd5d">   44</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a2cd03a79343100ed866bcbc7ff24bd5d">TryWrite</a>(<span class="keyword">const</span> <a class="code" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">cmn::communication::CanDataFrame</a> &amp; frame);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#aba9f031ada5fd612d310c1a73cfaa054">   53</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#aba9f031ada5fd612d310c1a73cfaa054">TryRead</a>(<a class="code" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">cmn::communication::CanDataFrame</a> &amp; frame);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}  <span class="comment">// namespace communication</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}  <span class="comment">// namespace lin</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> OpenSocket();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> CloseSocket();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> RetryOpenSocket();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">const</span> std::string interface_name_;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">int</span> socket_;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">bool</span> is_valid_{<span class="keyword">false</span>};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  can_frame tmp_frame_;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html">alps::cmn::time::TimeoutChecker&lt;std::chrono::system_clock&gt;</a> retry_open_timeout_{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    std::chrono::seconds(5)};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}  <span class="comment">// namespace communication</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}  <span class="comment">// namespace lin</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_can_io_html"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">alps::cmn::communication::ICanIo</a></div><div class="ttdoc">CAN通信IOのインターフェース</div><div class="ttdef"><b>Definition:</b> i_can_io.hpp:31</div></div>
-<div class="ttc" id="aclassalps_1_1lin_1_1communication_1_1_socket_can_io_html"><div class="ttname"><a href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html">alps::lin::communication::SocketCanIo</a></div><div class="ttdoc">SocketCANを用いてCAN通信を行うクラス．</div><div class="ttdef"><b>Definition:</b> socket_can_io.hpp:22</div></div>
-<div class="ttc" id="aclassalps_1_1lin_1_1communication_1_1_socket_can_io_html_a070fb75e50b86c8d7de38c35c6468b8b"><div class="ttname"><a href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a070fb75e50b86c8d7de38c35c6468b8b">alps::lin::communication::SocketCanIo::SocketCanIo</a></div><div class="ttdeci">SocketCanIo()</div><div class="ttdoc">コンストラクタ．CANソケットを開く．</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1time_1_1_timeout_checker_html"><div class="ttname"><a href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html">alps::cmn::time::TimeoutChecker&lt; std::chrono::system_clock &gt;</a></div></div>
+<div class="ttc" id="aclassalps_1_1lin_1_1communication_1_1_socket_can_io_html"><div class="ttname"><a href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html">alps::lin::communication::SocketCanIo</a></div><div class="ttdoc">SocketCANを用いてCAN通信を行うクラス．</div><div class="ttdef"><b>Definition:</b> socket_can_io.hpp:25</div></div>
 <div class="ttc" id="aclassalps_1_1lin_1_1communication_1_1_socket_can_io_html_a2cd03a79343100ed866bcbc7ff24bd5d"><div class="ttname"><a href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a2cd03a79343100ed866bcbc7ff24bd5d">alps::lin::communication::SocketCanIo::TryWrite</a></div><div class="ttdeci">bool TryWrite(const cmn::communication::CanDataFrame &amp;frame)</div><div class="ttdoc">CANフレームを1つ書き込む．</div></div>
+<div class="ttc" id="aclassalps_1_1lin_1_1communication_1_1_socket_can_io_html_a2f88e8c393d8469f64324c566dae5233"><div class="ttname"><a href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a2f88e8c393d8469f64324c566dae5233">alps::lin::communication::SocketCanIo::SocketCanIo</a></div><div class="ttdeci">SocketCanIo(std::string interface_name=&quot;can0&quot;)</div><div class="ttdoc">コンストラクタ．CANソケットを開く．</div></div>
 <div class="ttc" id="aclassalps_1_1lin_1_1communication_1_1_socket_can_io_html_a439264db8159442c3cdc66fbd065c092"><div class="ttname"><a href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a439264db8159442c3cdc66fbd065c092">alps::lin::communication::SocketCanIo::~SocketCanIo</a></div><div class="ttdeci">~SocketCanIo()</div><div class="ttdoc">デストラクタ．CANソケットを閉じる．</div></div>
 <div class="ttc" id="aclassalps_1_1lin_1_1communication_1_1_socket_can_io_html_aba9f031ada5fd612d310c1a73cfaa054"><div class="ttname"><a href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#aba9f031ada5fd612d310c1a73cfaa054">alps::lin::communication::SocketCanIo::TryRead</a></div><div class="ttdeci">bool TryRead(cmn::communication::CanDataFrame &amp;frame)</div><div class="ttdoc">CANフレームを1つ読み取る．</div></div>
 <div class="ttc" id="ai__can__io_8hpp_html"><div class="ttname"><a href="i__can__io_8hpp.html">i_can_io.hpp</a></div></div>
 <div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:23</div></div>
 <div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1_can_data_frame_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">alps::cmn::communication::CanDataFrame</a></div><div class="ttdoc">CANフレームを表す構造体．</div><div class="ttdef"><b>Definition:</b> can_data_frame.hpp:30</div></div>
+<div class="ttc" id="atimeout__checker_8hpp_html"><div class="ttname"><a href="timeout__checker_8hpp.html">timeout_checker.hpp</a></div><div class="ttdoc">タイムアウトを検知するクラス</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
