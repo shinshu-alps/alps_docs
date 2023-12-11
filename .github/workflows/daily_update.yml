@@ -19,42 +19,23 @@ jobs:
         with:
           fetch-depth: 0
 
-      # SSH（デプロイキー）の設定
+      # SSHキーの設定
       - name: SSH setting
-        env:
-          ALPS_COMMON_LIB_DEPLOY_KEY: ${{ secrets.ALPS_COMMON_LIB_DEPLOY_KEY }}
-          ALPS_LINUX_LIB_DEPLOY_KEY: ${{ secrets.ALPS_LINUX_LIB_DEPLOY_KEY }}
-          ALPS_ROS_LIB_DEPLOY_KEY: ${{ secrets.ALPS_ROS_LIB_DEPLOY_KEY }}
-          ALPS_ROS2_LIB_DEPLOY_KEY: ${{ secrets.ALPS_ROS2_LIB_DEPLOY_KEY }}
-          ALPS_MBED_LIB_DEPLOY_KEY: ${{ secrets.ALPS_MBED_LIB_DEPLOY_KEY }}
-          ALPS_STM32_LIB_DEPLOY_KEY: ${{ secrets.ALPS_STM32_LIB_DEPLOY_KEY }}
         run: |
-          mkdir -p /home/runner/.ssh/
-          echo -e "$ALPS_COMMON_LIB_DEPLOY_KEY" > /home/runner/.ssh/id_rsa_common_lib
-          echo -e "$ALPS_LINUX_LIB_DEPLOY_KEY" > /home/runner/.ssh/id_rsa_linux_lib
-          echo -e "$ALPS_ROS_LIB_DEPLOY_KEY" > /home/runner/.ssh/id_rsa_ros_lib
-          echo -e "$ALPS_ROS2_LIB_DEPLOY_KEY" > /home/runner/.ssh/id_rsa_ros2_lib
-          echo -e "$ALPS_MBED_LIB_DEPLOY_KEY" > /home/runner/.ssh/id_rsa_mbed_lib
-          echo -e "$ALPS_STM32_LIB_DEPLOY_KEY" > /home/runner/.ssh/id_rsa_stm32_lib
-          chmod 600 /home/runner/.ssh/id_rsa*
+          mkdir -p ${HOME}/.ssh/
+          echo -e "${{ secrets.SSH_PRIVATE_KEY }}" > ${HOME}/.ssh/id_rsa
+          chmod 700 ${HOME}/.ssh/id_rsa*
 
-      
       # 各ライブラリのサブモジュールを更新
       - name: Checkout submodule
         run: |
           git submodule update --init doxygen-awesome-css
 
-          export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/id_rsa_common_lib"
           git submodule update --init --remote alps_common_lib
-          export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/id_rsa_linux_lib"
           git submodule update --init --remote alps_linux_lib
-          export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/id_rsa_ros_lib"
           git submodule update --init --remote alps_ros_lib
-          export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/id_rsa_ros2_lib"
           git submodule update --init --remote alps_ros2_lib
-          export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/id_rsa_mbed_lib"
           git submodule update --init --remote alps_mbed_lib
-          export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/id_rsa_stm32_lib"
           git submodule update --init --remote alps_stm32_lib
 
       # Gitのユーザー設定
