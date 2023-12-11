@@ -103,42 +103,32 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1_
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
-<a href="#pub-attribs">公開変数類</a> &#124;
 <a href="classalps_1_1cmn_1_1communication_1_1_can_publisher-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">alps::cmn::communication::CanPublisher&lt; T &gt; クラステンプレート</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>CAN通信で型付けされたデータを送信するクラス．CanTypedDataTransceiverに登録して使う．  
+<p>CAN通信で型付けされたデータを送信するクラス．  
  <a href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html#details">[詳解]</a></p>
 
 <p><code>#include &lt;<a class="el" href="can__typed__data__transceiver_8hpp_source.html">can_typed_data_transceiver.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:ad0102b4cffcf3a8d3fe351d66c49a6fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html#ad0102b4cffcf3a8d3fe351d66c49a6fe">CanPublisher</a> (<a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">CanDataFrame::Id</a> id)</td></tr>
-<tr class="memdesc:ad0102b4cffcf3a8d3fe351d66c49a6fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html#ad0102b4cffcf3a8d3fe351d66c49a6fe">[詳解]</a><br /></td></tr>
-<tr class="separator:ad0102b4cffcf3a8d3fe351d66c49a6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a703542b44a552ac352c9086fea30fdf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html#a703542b44a552ac352c9086fea30fdf4">SetPublishData</a> (const T &amp;data)</td></tr>
-<tr class="memdesc:a703542b44a552ac352c9086fea30fdf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">送信データをセットする  <a href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html#a703542b44a552ac352c9086fea30fdf4">[詳解]</a><br /></td></tr>
-<tr class="separator:a703542b44a552ac352c9086fea30fdf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f5e3423bd5704377a3ff8fd197b8d6b"><td class="memTemplParams" colspan="2">template&lt;class CanIo &gt; </td></tr>
-<tr class="memitem:a4f5e3423bd5704377a3ff8fd197b8d6b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html#a4f5e3423bd5704377a3ff8fd197b8d6b">WriteFrame</a> (<a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">ICanIo</a>&lt; CanIo &gt; &amp;can_io)</td></tr>
-<tr class="memdesc:a4f5e3423bd5704377a3ff8fd197b8d6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">新しい送信データがセットされている場合，送信データをCANフレームに変換して送信する  <a href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html#a4f5e3423bd5704377a3ff8fd197b8d6b">[詳解]</a><br /></td></tr>
-<tr class="separator:a4f5e3423bd5704377a3ff8fd197b8d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-公開変数類</h2></td></tr>
-<tr class="memitem:a70574ecd3e525b250d30feb5b1f2fee6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">CanDataFrame::Id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html#a70574ecd3e525b250d30feb5b1f2fee6">id_</a></td></tr>
-<tr class="memdesc:a70574ecd3e525b250d30feb5b1f2fee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">送信データのID  <a href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html#a70574ecd3e525b250d30feb5b1f2fee6">[詳解]</a><br /></td></tr>
-<tr class="separator:a70574ecd3e525b250d30feb5b1f2fee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0844abe6bcbdcf118c62a959d322f1dd"><td class="memTemplParams" colspan="2">template&lt;class CanIo , size_t kMaxSubscriberNum&gt; </td></tr>
+<tr class="memitem:a0844abe6bcbdcf118c62a959d322f1dd"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html#a0844abe6bcbdcf118c62a959d322f1dd">CanPublisher</a> (<a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">CanTypedDataTransceiver</a>&lt; CanIo, kMaxSubscriberNum &gt; &amp;transceiver, <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">CanDataFrame::Id</a> id)</td></tr>
+<tr class="memdesc:a0844abe6bcbdcf118c62a959d322f1dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ．引数として渡したCanTypedDataTransceiverと紐付ける．  <a href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html#a0844abe6bcbdcf118c62a959d322f1dd">[詳解]</a><br /></td></tr>
+<tr class="separator:a0844abe6bcbdcf118c62a959d322f1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad71812af582b0fb1f179723296cd8623"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html#ad71812af582b0fb1f179723296cd8623">Publish</a> (const T &amp;data)</td></tr>
+<tr class="memdesc:ad71812af582b0fb1f179723296cd8623"><td class="mdescLeft">&#160;</td><td class="mdescRight">送信データをパブリッシュする  <a href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html#ad71812af582b0fb1f179723296cd8623">[詳解]</a><br /></td></tr>
+<tr class="separator:ad71812af582b0fb1f179723296cd8623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><h3>template&lt;class T&gt;<br />
 class alps::cmn::communication::CanPublisher&lt; T &gt;</h3>
 
-<p>CAN通信で型付けされたデータを送信するクラス．CanTypedDataTransceiverに登録して使う． </p>
+<p>CAN通信で型付けされたデータを送信するクラス． </p>
 <dl class="tparams"><dt>テンプレート引数</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>送信するデータの型 </td></tr>
@@ -146,13 +136,15 @@ class alps::cmn::communication::CanPublisher&lt; T &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="ad0102b4cffcf3a8d3fe351d66c49a6fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0102b4cffcf3a8d3fe351d66c49a6fe">&#9670;&nbsp;</a></span>CanPublisher()</h2>
+<a id="a0844abe6bcbdcf118c62a959d322f1dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0844abe6bcbdcf118c62a959d322f1dd">&#9670;&nbsp;</a></span>CanPublisher()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T &gt; </div>
+<div class="memtemplate">
+template&lt;class CanIo , size_t kMaxSubscriberNum&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -160,22 +152,41 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html">alps::cmn::communication::CanPublisher</a>&lt; T &gt;::<a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html">CanPublisher</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">CanDataFrame::Id</a>&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">CanTypedDataTransceiver</a>&lt; CanIo, kMaxSubscriberNum &gt; &amp;&#160;</td>
+          <td class="paramname"><em>transceiver</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">CanDataFrame::Id</a>&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>コンストラクタ </p>
+<p>コンストラクタ．引数として渡したCanTypedDataTransceiverと紐付ける． </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">CanIo</td><td>CAN通信IOの実装クラス </td></tr>
+    <tr><td class="paramname">kMaxSubscriberNum</td><td>登録できるCanSubscriberの最大数 </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>送信データのID </td></tr>
+    <tr><td class="paramname">transceiver</td><td>紐付けるCanTypedDataTransceiverのインスタンス <br  />
+ </td></tr>
+    <tr><td class="paramname">id</td><td>送信データのCAN-ID </td></tr>
   </table>
   </dd>
 </dl>
@@ -183,8 +194,8 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a703542b44a552ac352c9086fea30fdf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a703542b44a552ac352c9086fea30fdf4">&#9670;&nbsp;</a></span>SetPublishData()</h2>
+<a id="ad71812af582b0fb1f179723296cd8623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad71812af582b0fb1f179723296cd8623">&#9670;&nbsp;</a></span>Publish()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -195,7 +206,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html">alps::cmn::communication::CanPublisher</a>&lt; T &gt;::SetPublishData </td>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html">alps::cmn::communication::CanPublisher</a>&lt; T &gt;::Publish </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
@@ -209,79 +220,13 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>送信データをセットする </p>
+<p>送信データをパブリッシュする </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>送信データ </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a4f5e3423bd5704377a3ff8fd197b8d6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f5e3423bd5704377a3ff8fd197b8d6b">&#9670;&nbsp;</a></span>WriteFrame()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<div class="memtemplate">
-template&lt;class CanIo &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html">alps::cmn::communication::CanPublisher</a>&lt; T &gt;::WriteFrame </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">ICanIo</a>&lt; CanIo &gt; &amp;&#160;</td>
-          <td class="paramname"><em>can_io</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>新しい送信データがセットされている場合，送信データをCANフレームに変換して送信する </p>
-<dl class="tparams"><dt>テンプレート引数</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">CanIo</td><td>CanIoの実装クラス </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">can_io</td><td>CanIoの実装クラスのインスタンス </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd>true 成功 </dd>
-<dd>
-false 失敗 </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">メンバ詳解</h2>
-<a id="a70574ecd3e525b250d30feb5b1f2fee6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70574ecd3e525b250d30feb5b1f2fee6">&#9670;&nbsp;</a></span>id_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">CanDataFrame::Id</a> <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html">alps::cmn::communication::CanPublisher</a>&lt; T &gt;::id_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>送信データのID </p>
 
 </div>
 </div>

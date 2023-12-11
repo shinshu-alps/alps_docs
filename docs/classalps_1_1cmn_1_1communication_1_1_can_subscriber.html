@@ -103,38 +103,32 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1_
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
-<a href="#pub-attribs">公開変数類</a> &#124;
 <a href="classalps_1_1cmn_1_1communication_1_1_can_subscriber-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
 <div class="title">alps::cmn::communication::CanSubscriber&lt; T &gt; クラステンプレート</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>CAN通信で型付けされたデータを受信するクラス．CanTypedDataTransceiverに登録して使う．  
+<p>CAN通信で型付けされたデータを受信するクラス．  
  <a href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html#details">[詳解]</a></p>
 
 <p><code>#include &lt;<a class="el" href="can__typed__data__transceiver_8hpp_source.html">can_typed_data_transceiver.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a560aaf6a56d800ad2913702638436bf6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html#a560aaf6a56d800ad2913702638436bf6">CanSubscriber</a> (<a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">CanDataFrame::Id</a> id, etl::delegate&lt; void(const T &amp;)&gt; receive_data_callback)</td></tr>
-<tr class="memdesc:a560aaf6a56d800ad2913702638436bf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html#a560aaf6a56d800ad2913702638436bf6">[詳解]</a><br /></td></tr>
-<tr class="separator:a560aaf6a56d800ad2913702638436bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a437dd7292fea3ad03acc0606cd40b3a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html#a437dd7292fea3ad03acc0606cd40b3a9">OnSubscribeCanFrame</a> (const <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#ad80c2254d400088df4922301c3a3dffd">CanDataFrame::Data</a> &amp;data)</td></tr>
-<tr class="memdesc:a437dd7292fea3ad03acc0606cd40b3a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">受信したCANフレームのデータをデコードしてコールバックを呼ぶ  <a href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html#a437dd7292fea3ad03acc0606cd40b3a9">[詳解]</a><br /></td></tr>
-<tr class="separator:a437dd7292fea3ad03acc0606cd40b3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-公開変数類</h2></td></tr>
-<tr class="memitem:aa409f8f6b10cd4b65e4d5e9c0e94c6c5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">CanDataFrame::Id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html#aa409f8f6b10cd4b65e4d5e9c0e94c6c5">id_</a></td></tr>
-<tr class="memdesc:aa409f8f6b10cd4b65e4d5e9c0e94c6c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">受信データのID  <a href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html#aa409f8f6b10cd4b65e4d5e9c0e94c6c5">[詳解]</a><br /></td></tr>
-<tr class="separator:aa409f8f6b10cd4b65e4d5e9c0e94c6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a550cb139f2eea1fdd7bc1085bf8de0cb"><td class="memTemplParams" colspan="2">template&lt;class CanIo , size_t kMaxSubscriberNum&gt; </td></tr>
+<tr class="memitem:a550cb139f2eea1fdd7bc1085bf8de0cb"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html#a550cb139f2eea1fdd7bc1085bf8de0cb">CanSubscriber</a> (<a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">CanTypedDataTransceiver</a>&lt; CanIo, kMaxSubscriberNum &gt; &amp;transceiver, <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">CanDataFrame::Id</a> id, etl::delegate&lt; void(const T &amp;)&gt; receive_data_callback)</td></tr>
+<tr class="memdesc:a550cb139f2eea1fdd7bc1085bf8de0cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ．引数として渡したCanTypedDataTransceiverと紐付ける．  <a href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html#a550cb139f2eea1fdd7bc1085bf8de0cb">[詳解]</a><br /></td></tr>
+<tr class="separator:a550cb139f2eea1fdd7bc1085bf8de0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41f211b36614408dd271f0a95c76d98d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html#a41f211b36614408dd271f0a95c76d98d">SetReceiveDataCallback</a> (etl::delegate&lt; void(const T &amp;)&gt; receive_data_callback)</td></tr>
+<tr class="memdesc:a41f211b36614408dd271f0a95c76d98d"><td class="mdescLeft">&#160;</td><td class="mdescRight">コールバック関数を変更する  <a href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html#a41f211b36614408dd271f0a95c76d98d">[詳解]</a><br /></td></tr>
+<tr class="separator:a41f211b36614408dd271f0a95c76d98d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><h3>template&lt;class T&gt;<br />
 class alps::cmn::communication::CanSubscriber&lt; T &gt;</h3>
 
-<p>CAN通信で型付けされたデータを受信するクラス．CanTypedDataTransceiverに登録して使う． </p>
+<p>CAN通信で型付けされたデータを受信するクラス． </p>
 <dl class="tparams"><dt>テンプレート引数</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>受信するデータの型 </td></tr>
@@ -142,13 +136,15 @@ class alps::cmn::communication::CanSubscriber&lt; T &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="a560aaf6a56d800ad2913702638436bf6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a560aaf6a56d800ad2913702638436bf6">&#9670;&nbsp;</a></span>CanSubscriber()</h2>
+<a id="a550cb139f2eea1fdd7bc1085bf8de0cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a550cb139f2eea1fdd7bc1085bf8de0cb">&#9670;&nbsp;</a></span>CanSubscriber()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T &gt; </div>
+<div class="memtemplate">
+template&lt;class CanIo , size_t kMaxSubscriberNum&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -156,6 +152,12 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html">alps::cmn::communication::CanSubscriber</a>&lt; T &gt;::<a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html">CanSubscriber</a> </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">CanTypedDataTransceiver</a>&lt; CanIo, kMaxSubscriberNum &gt; &amp;&#160;</td>
+          <td class="paramname"><em>transceiver</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">CanDataFrame::Id</a>&#160;</td>
           <td class="paramname"><em>id</em>, </td>
         </tr>
@@ -178,9 +180,18 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>コンストラクタ </p>
+<p>コンストラクタ．引数として渡したCanTypedDataTransceiverと紐付ける． </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">CanIo</td><td>CAN通信IOの実装クラス </td></tr>
+    <tr><td class="paramname">kMaxSubscriberNum</td><td>登録できるCanSubscriberの最大数 </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
+    <tr><td class="paramname">transceiver</td><td>紐付けるCanTypedDataTransceiverのインスタンス <br  />
+ </td></tr>
     <tr><td class="paramname">id</td><td>受信データのID </td></tr>
     <tr><td class="paramname">receive_data_callback</td><td>受信データを受け取ったときに呼ばれるコールバック関数. <b>関数の型はvoid(const T &amp;)で引数として受信したデータを受け取る</b> </td></tr>
   </table>
@@ -190,8 +201,8 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a437dd7292fea3ad03acc0606cd40b3a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a437dd7292fea3ad03acc0606cd40b3a9">&#9670;&nbsp;</a></span>OnSubscribeCanFrame()</h2>
+<a id="a41f211b36614408dd271f0a95c76d98d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41f211b36614408dd271f0a95c76d98d">&#9670;&nbsp;</a></span>SetReceiveDataCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -202,10 +213,10 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html">alps::cmn::communication::CanSubscriber</a>&lt; T &gt;::OnSubscribeCanFrame </td>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html">alps::cmn::communication::CanSubscriber</a>&lt; T &gt;::SetReceiveDataCallback </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#ad80c2254d400088df4922301c3a3dffd">CanDataFrame::Data</a> &amp;&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
+          <td class="paramtype">etl::delegate&lt; void(const T &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>receive_data_callback</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -216,32 +227,13 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>受信したCANフレームのデータをデコードしてコールバックを呼ぶ </p>
+<p>コールバック関数を変更する </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>受信したデータ </td></tr>
+    <tr><td class="paramname">receive_data_callback</td><td>受信データを受け取ったときに呼ばれるコールバック関数. </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<h2 class="groupheader">メンバ詳解</h2>
-<a id="aa409f8f6b10cd4b65e4d5e9c0e94c6c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa409f8f6b10cd4b65e4d5e9c0e94c6c5">&#9670;&nbsp;</a></span>id_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">CanDataFrame::Id</a> <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html">alps::cmn::communication::CanSubscriber</a>&lt; T &gt;::id_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>受信データのID </p>
 
 </div>
 </div>

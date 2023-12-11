@@ -10,7 +10,7 @@ var classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port =
       [ "kMotor7", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5afd0b6a709f0101d3aa2d026673076448", null ],
       [ "kMotor8", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6add4725a0c984b6d7af362ccbf56af5a691227596b77a5005dd7361144d395b3", null ]
     ] ],
-    [ "RobomasMotorsCanPort", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a654556d4e8b6166170143e8b3b01f0c1", null ],
+    [ "RobomasMotorsCanPort", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6bd33cb185fb7b53de2bef0a469c65c3", null ],
     [ "PublishMotorOutput", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a182073c24e53189e3d39ed349eeca3bc", null ],
     [ "kMaxMotorNum", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6cc534acc5123a5f89085975a4207704", null ]
 ];

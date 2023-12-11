@@ -166,13 +166,13 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 : <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a45fd273cdf3080ae70c388682cbcd543">alps::cmn::communication::CanDataFrame</a>
 </li>
 <li>CanPublisher()
-: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html#ad0102b4cffcf3a8d3fe351d66c49a6fe">alps::cmn::communication::CanPublisher&lt; T &gt;</a>
+: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html#a0844abe6bcbdcf118c62a959d322f1dd">alps::cmn::communication::CanPublisher&lt; T &gt;</a>
 </li>
 <li>CanSubscriber()
-: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html#a560aaf6a56d800ad2913702638436bf6">alps::cmn::communication::CanSubscriber&lt; T &gt;</a>
+: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html#a550cb139f2eea1fdd7bc1085bf8de0cb">alps::cmn::communication::CanSubscriber&lt; T &gt;</a>
 </li>
 <li>CanTypedDataTransceiver()
-: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a8ef2fdf202e1485bf66c7dd421a0947f">alps::cmn::communication::CanTypedDataTransceiver&lt; CanIo, kMaxPublisherNum, kMaxSubscriberNum &gt;</a>
+: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a4108eda6e14e13f4aa614e97b096d777">alps::cmn::communication::CanTypedDataTransceiver&lt; CanIo, kMaxSubscriberNum &gt;</a>
 </li>
 <li>Control()
 : <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#af707fafe8def4b0606c413d7d3d25252">alps::cmn::control::MotorAngleController&lt; Clock, Motor, RotarySensor &gt;</a>
@@ -242,6 +242,12 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 </li>
 <li>GetButtonState()
 : <a class="el" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a63210a55c8f5ab6d162012151b94cd64">alps::ros2::ui::Joy</a>
+</li>
+<li>GetCallbackHandlerRef()
+: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a305b2a2ff1d360cf14a18c960afa420a">alps::cmn::communication::CanTypedDataTransceiver&lt; CanIo, kMaxSubscriberNum &gt;</a>
+</li>
+<li>GetCanIoRef()
+: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#af0532a7650e3d8a02fa6c6833a2ce49a">alps::cmn::communication::CanTypedDataTransceiver&lt; CanIo, kMaxSubscriberNum &gt;</a>
 </li>
 <li>GetCurrentState()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#aeb9dc338f1e61534d85baa9efea03f58">alps::cmn::sensor::IncrementalEncoder&lt; Clock, InterruptIn, DigitalIn &gt;</a>
@@ -387,9 +393,6 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 <li>OnReceiveSensorFrame()
 : <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a207fb96dd7a553b4ddb6d5ebaa1889e9">alps::cmn::actuator::RobomasMotor</a>
 </li>
-<li>OnSubscribeCanFrame()
-: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html#a437dd7292fea3ad03acc0606cd40b3a9">alps::cmn::communication::CanSubscriber&lt; T &gt;</a>
-</li>
 <li>Output()
 : <a class="el" href="classalps_1_1cmn_1_1log_1_1_logger.html#a66a7dab9a46930bccf35fcf9de1d1ccf">alps::cmn::log::Logger</a>
 </li>
@@ -405,6 +408,9 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 </li>
 <li>Potentiometer()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a0283221b006d669323289a57fd1e9217">alps::cmn::sensor::Potentiometer&lt; AnalogIn &gt;</a>
+</li>
+<li>Publish()
+: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html#ad71812af582b0fb1f179723296cd8623">alps::cmn::communication::CanPublisher&lt; T &gt;</a>
 </li>
 <li>PublishMotorOutput()
 : <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a182073c24e53189e3d39ed349eeca3bc">alps::cmn::actuator::RobomasMotorsCanPort</a>
@@ -428,14 +434,8 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a3cfb0998c9123e31903597bc1dddb88a">alps::cmn::sensor::Vl53l0x&lt; Clock, I2cIo &gt;</a>
 </li>
 <li>ReadUpdate()
-: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a9545fd92bf642711733f171e5d260ae3">alps::cmn::communication::CanTypedDataTransceiver&lt; CanIo, kMaxPublisherNum, kMaxSubscriberNum &gt;</a>
+: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#aecc26173b48d407d0ef45f19a04dbcb6">alps::cmn::communication::CanTypedDataTransceiver&lt; CanIo, kMaxSubscriberNum &gt;</a>
 , <a class="el" href="classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html#ac48fb6dc7fdeab3611fbddfff0cb779e">alps::cmn::communication::UartPacketTransceiver&lt; UartIo, kReadBufferSize, kMaxSenderNum, kMaxReceiveNum, kMaxDataByteSize &gt;</a>
-</li>
-<li>RegisterCanPublisher()
-: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a9249016b1741a3ee755a19784c10bc1b">alps::cmn::communication::CanTypedDataTransceiver&lt; CanIo, kMaxPublisherNum, kMaxSubscriberNum &gt;</a>
-</li>
-<li>RegisterCanSubscriber()
-: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#aac6a292c5fee7d9bdc60fe1fefd64102">alps::cmn::communication::CanTypedDataTransceiver&lt; CanIo, kMaxPublisherNum, kMaxSubscriberNum &gt;</a>
 </li>
 <li>RegisterReceiveCallback()
 : <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html#abe04ac560276f71961e7b5f636555397">alps::cmn::communication::CanCallbackHandler&lt; kMaxCallbackNum &gt;</a>
@@ -472,7 +472,7 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 : <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a6d90a3fe070b076967aaf60ce1c9ac71">alps::cmn::actuator::RobomasMotor</a>
 </li>
 <li>RobomasMotorsCanPort()
-: <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a654556d4e8b6166170143e8b3b01f0c1">alps::cmn::actuator::RobomasMotorsCanPort</a>
+: <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html#a6bd33cb185fb7b53de2bef0a469c65c3">alps::cmn::actuator::RobomasMotorsCanPort</a>
 </li>
 </ul>
 
@@ -520,14 +520,14 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 <li>SetPose()
 : <a class="el" href="classalps_1_1cmn_1_1robotics_1_1_odometory.html#a68c2240c32e2e81e2efd3dfa96b45231">alps::cmn::robotics::Odometory&lt; Clock &gt;</a>
 </li>
-<li>SetPublishData()
-: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html#a703542b44a552ac352c9086fea30fdf4">alps::cmn::communication::CanPublisher&lt; T &gt;</a>
-</li>
 <li>SetPulseWidth()
 : <a class="el" href="classalps_1_1mbed_1_1gpio_1_1_pwm_out.html#aa71e2c6c0e7fd8d24e7039bcd1255203">alps::mbed::gpio::PwmOut</a>
 </li>
 <li>SetRangeMode()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a056a717f843b68db979f53fa70360851">alps::cmn::sensor::Vl53l0x&lt; Clock, I2cIo &gt;</a>
+</li>
+<li>SetReceiveDataCallback()
+: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html#a41f211b36614408dd271f0a95c76d98d">alps::cmn::communication::CanSubscriber&lt; T &gt;</a>
 </li>
 <li>SetSendData()
 : <a class="el" href="classalps_1_1cmn_1_1communication_1_1_uart_sender.html#af26d77971838fbe3ffdd9e1093d5af91">alps::cmn::communication::UartSender&lt; T &gt;</a>
@@ -610,15 +610,11 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 , <a class="el" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#af5ac84747d9943414681fc8e88cc4331">alps::mbed::gpio::DigitalOut</a>
 , <a class="el" href="classalps_1_1mbed_1_1gpio_1_1_pwm_out.html#add2bc0f1f9dfe9f4b340decbb05a1c79">alps::mbed::gpio::PwmOut</a>
 </li>
-<li>WriteFrame()
-: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html#a4f5e3423bd5704377a3ff8fd197b8d6b">alps::cmn::communication::CanPublisher&lt; T &gt;</a>
-</li>
 <li>WritePacket()
 : <a class="el" href="classalps_1_1cmn_1_1communication_1_1_uart_sender.html#ac74f3dc47ed12d7a61108b7cff9b1675">alps::cmn::communication::UartSender&lt; T &gt;</a>
 </li>
 <li>WriteUpdate()
-: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a73170d14d41741a7e62a57bb8fdb2e84">alps::cmn::communication::CanTypedDataTransceiver&lt; CanIo, kMaxPublisherNum, kMaxSubscriberNum &gt;</a>
-, <a class="el" href="classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html#a8698ff8ee6cd0ce1ec96483794bbe8b1">alps::cmn::communication::UartPacketTransceiver&lt; UartIo, kReadBufferSize, kMaxSenderNum, kMaxReceiveNum, kMaxDataByteSize &gt;</a>
+: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html#a8698ff8ee6cd0ce1ec96483794bbe8b1">alps::cmn::communication::UartPacketTransceiver&lt; UartIo, kReadBufferSize, kMaxSenderNum, kMaxReceiveNum, kMaxDataByteSize &gt;</a>
 </li>
 </ul>
 
