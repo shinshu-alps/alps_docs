@@ -13,9 +13,9 @@ var annotated_dup =
         [ "communication", "namespacealps_1_1cmn_1_1communication.html", [
           [ "CanCallbackHandler", "classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html", "classalps_1_1cmn_1_1communication_1_1_can_callback_handler" ],
           [ "CanDataFrame", "structalps_1_1cmn_1_1communication_1_1_can_data_frame.html", "structalps_1_1cmn_1_1communication_1_1_can_data_frame" ],
+          [ "CanTypedDataTransceiver", "classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html", "classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver" ],
           [ "CanPublisher", "classalps_1_1cmn_1_1communication_1_1_can_publisher.html", "classalps_1_1cmn_1_1communication_1_1_can_publisher" ],
           [ "CanSubscriber", "classalps_1_1cmn_1_1communication_1_1_can_subscriber.html", "classalps_1_1cmn_1_1communication_1_1_can_subscriber" ],
-          [ "CanTypedDataTransceiver", "classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html", "classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver" ],
           [ "Cobs", "classalps_1_1cmn_1_1communication_1_1_cobs.html", "classalps_1_1cmn_1_1communication_1_1_cobs" ],
           [ "DataSerializer", "classalps_1_1cmn_1_1communication_1_1_data_serializer.html", "classalps_1_1cmn_1_1communication_1_1_data_serializer" ],
           [ "ICanIo", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", "classalps_1_1cmn_1_1communication_1_1_i_can_io" ],

@@ -1,9 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"i__motor_8hpp_source.html":[4,0,0,0,0,0,1],
-"i__pwm__out_8hpp.html":[4,0,0,0,0,3,4],
-"i__pwm__out_8hpp_source.html":[4,0,0,0,0,3,4],
-"i__rotary__sensor_8hpp.html":[4,0,0,0,0,6,1],
 "i__rotary__sensor_8hpp_source.html":[4,0,0,0,0,6,1],
 "i__uart__io_8hpp.html":[4,0,0,0,0,1,7],
 "i__uart__io_8hpp_source.html":[4,0,0,0,0,1,7],

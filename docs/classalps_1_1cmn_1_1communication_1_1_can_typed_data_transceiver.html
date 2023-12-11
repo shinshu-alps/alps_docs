@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.9.1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alps: alps::cmn::communication::CanTypedDataTransceiver&lt; CanIo, kMaxPublisherNum, kMaxSubscriberNum &gt; クラステンプレート</title>
+    <title>Alps: alps::cmn::communication::CanTypedDataTransceiver&lt; CanIo, kMaxSubscriberNum &gt; クラステンプレート</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
     <script type="text/javascript" src="jquery.js"></script>
@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1_
 <a href="#pub-methods">公開メンバ関数</a> &#124;
 <a href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
-<div class="title">alps::cmn::communication::CanTypedDataTransceiver&lt; CanIo, kMaxPublisherNum, kMaxSubscriberNum &gt; クラステンプレート</div>  </div>
+<div class="title">alps::cmn::communication::CanTypedDataTransceiver&lt; CanIo, kMaxSubscriberNum &gt; クラステンプレート</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -116,51 +116,45 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a8ef2fdf202e1485bf66c7dd421a0947f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a8ef2fdf202e1485bf66c7dd421a0947f">CanTypedDataTransceiver</a> (<a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">ICanIo</a>&lt; CanIo &gt; &amp;can_io)</td></tr>
-<tr class="memdesc:a8ef2fdf202e1485bf66c7dd421a0947f"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a8ef2fdf202e1485bf66c7dd421a0947f">[詳解]</a><br /></td></tr>
-<tr class="separator:a8ef2fdf202e1485bf66c7dd421a0947f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9249016b1741a3ee755a19784c10bc1b"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a9249016b1741a3ee755a19784c10bc1b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a9249016b1741a3ee755a19784c10bc1b">RegisterCanPublisher</a> (<a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html">CanPublisher</a>&lt; T &gt; &amp;sender)</td></tr>
-<tr class="memdesc:a9249016b1741a3ee755a19784c10bc1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">CanPublisherを登録する  <a href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a9249016b1741a3ee755a19784c10bc1b">[詳解]</a><br /></td></tr>
-<tr class="separator:a9249016b1741a3ee755a19784c10bc1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac6a292c5fee7d9bdc60fe1fefd64102"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:aac6a292c5fee7d9bdc60fe1fefd64102"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#aac6a292c5fee7d9bdc60fe1fefd64102">RegisterCanSubscriber</a> (<a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html">CanSubscriber</a>&lt; T &gt; &amp;receiver)</td></tr>
-<tr class="memdesc:aac6a292c5fee7d9bdc60fe1fefd64102"><td class="mdescLeft">&#160;</td><td class="mdescRight">CanSubscriberを登録する  <a href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#aac6a292c5fee7d9bdc60fe1fefd64102">[詳解]</a><br /></td></tr>
-<tr class="separator:aac6a292c5fee7d9bdc60fe1fefd64102"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73170d14d41741a7e62a57bb8fdb2e84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a73170d14d41741a7e62a57bb8fdb2e84">WriteUpdate</a> ()</td></tr>
-<tr class="memdesc:a73170d14d41741a7e62a57bb8fdb2e84"><td class="mdescLeft">&#160;</td><td class="mdescRight">登録されているCanPublisherが持つ送信データを送信する  <a href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a73170d14d41741a7e62a57bb8fdb2e84">[詳解]</a><br /></td></tr>
-<tr class="separator:a73170d14d41741a7e62a57bb8fdb2e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9545fd92bf642711733f171e5d260ae3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a9545fd92bf642711733f171e5d260ae3">ReadUpdate</a> ()</td></tr>
-<tr class="memdesc:a9545fd92bf642711733f171e5d260ae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">CANを受信し，受け取ったデータのIDに対応するコールバックを呼ぶ  <a href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a9545fd92bf642711733f171e5d260ae3">[詳解]</a><br /></td></tr>
-<tr class="separator:a9545fd92bf642711733f171e5d260ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4108eda6e14e13f4aa614e97b096d777"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a4108eda6e14e13f4aa614e97b096d777">CanTypedDataTransceiver</a> (<a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">ICanIo</a>&lt; CanIo &gt; &amp;can_io)</td></tr>
+<tr class="memdesc:a4108eda6e14e13f4aa614e97b096d777"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a4108eda6e14e13f4aa614e97b096d777">[詳解]</a><br /></td></tr>
+<tr class="separator:a4108eda6e14e13f4aa614e97b096d777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecc26173b48d407d0ef45f19a04dbcb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#aecc26173b48d407d0ef45f19a04dbcb6">ReadUpdate</a> ()</td></tr>
+<tr class="memdesc:aecc26173b48d407d0ef45f19a04dbcb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">CANを受信し，受け取ったデータのIDに対応するコールバックを呼ぶ  <a href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#aecc26173b48d407d0ef45f19a04dbcb6">[詳解]</a><br /></td></tr>
+<tr class="separator:aecc26173b48d407d0ef45f19a04dbcb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0532a7650e3d8a02fa6c6833a2ce49a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">ICanIo</a>&lt; CanIo &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#af0532a7650e3d8a02fa6c6833a2ce49a">GetCanIoRef</a> ()</td></tr>
+<tr class="memdesc:af0532a7650e3d8a02fa6c6833a2ce49a"><td class="mdescLeft">&#160;</td><td class="mdescRight">保持するCAN通信IOインタフェースの参照を返す  <a href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#af0532a7650e3d8a02fa6c6833a2ce49a">[詳解]</a><br /></td></tr>
+<tr class="separator:af0532a7650e3d8a02fa6c6833a2ce49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a305b2a2ff1d360cf14a18c960afa420a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html">CanCallbackHandler</a>&lt; kMaxSubscriberNum &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a305b2a2ff1d360cf14a18c960afa420a">GetCallbackHandlerRef</a> ()</td></tr>
+<tr class="memdesc:a305b2a2ff1d360cf14a18c960afa420a"><td class="mdescLeft">&#160;</td><td class="mdescRight">保持するCANコールバックハンドラの参照を返す  <a href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a305b2a2ff1d360cf14a18c960afa420a">[詳解]</a><br /></td></tr>
+<tr class="separator:a305b2a2ff1d360cf14a18c960afa420a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
-<div class="textblock"><h3>template&lt;class CanIo, size_t kMaxPublisherNum = 20, size_t kMaxSubscriberNum = 20&gt;<br />
-class alps::cmn::communication::CanTypedDataTransceiver&lt; CanIo, kMaxPublisherNum, kMaxSubscriberNum &gt;</h3>
+<div class="textblock"><h3>template&lt;class CanIo, size_t kMaxSubscriberNum = 30&gt;<br />
+class alps::cmn::communication::CanTypedDataTransceiver&lt; CanIo, kMaxSubscriberNum &gt;</h3>
 
 <p>CAN通信で型付けされたデータの送受信を行うクラス </p>
 <dl class="tparams"><dt>テンプレート引数</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">CanIo</td><td>CAN通信IOの実装クラス </td></tr>
-    <tr><td class="paramname">kMaxPublisherNum</td><td>登録できるCanPublisherの最大数 </td></tr>
     <tr><td class="paramname">kMaxSubscriberNum</td><td>登録できるCanSubscriberの最大数 </td></tr>
   </table>
   </dd>
 </dl>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="a8ef2fdf202e1485bf66c7dd421a0947f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ef2fdf202e1485bf66c7dd421a0947f">&#9670;&nbsp;</a></span>CanTypedDataTransceiver()</h2>
+<a id="a4108eda6e14e13f4aa614e97b096d777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4108eda6e14e13f4aa614e97b096d777">&#9670;&nbsp;</a></span>CanTypedDataTransceiver()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class CanIo , size_t kMaxPublisherNum = 20, size_t kMaxSubscriberNum = 20&gt; </div>
+template&lt;class CanIo , size_t kMaxSubscriberNum = 30&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">alps::cmn::communication::CanTypedDataTransceiver</a>&lt; CanIo, kMaxPublisherNum, kMaxSubscriberNum &gt;::<a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">CanTypedDataTransceiver</a> </td>
+          <td class="memname"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">alps::cmn::communication::CanTypedDataTransceiver</a>&lt; CanIo, kMaxSubscriberNum &gt;::<a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">CanTypedDataTransceiver</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">ICanIo</a>&lt; CanIo &gt; &amp;&#160;</td>
           <td class="paramname"><em>can_io</em></td><td>)</td>
@@ -185,19 +179,79 @@ template&lt;class CanIo , size_t kMaxPublisherNum = 20, size_t kMaxSubscriberNum
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a9545fd92bf642711733f171e5d260ae3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9545fd92bf642711733f171e5d260ae3">&#9670;&nbsp;</a></span>ReadUpdate()</h2>
+<a id="a305b2a2ff1d360cf14a18c960afa420a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a305b2a2ff1d360cf14a18c960afa420a">&#9670;&nbsp;</a></span>GetCallbackHandlerRef()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class CanIo , size_t kMaxPublisherNum = 20, size_t kMaxSubscriberNum = 20&gt; </div>
+template&lt;class CanIo , size_t kMaxSubscriberNum = 30&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">alps::cmn::communication::CanTypedDataTransceiver</a>&lt; CanIo, kMaxPublisherNum, kMaxSubscriberNum &gt;::ReadUpdate </td>
+          <td class="memname"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html">CanCallbackHandler</a>&lt;kMaxSubscriberNum&gt;&amp; <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">alps::cmn::communication::CanTypedDataTransceiver</a>&lt; CanIo, kMaxSubscriberNum &gt;::GetCallbackHandlerRef </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>保持するCANコールバックハンドラの参照を返す </p>
+<dl class="section return"><dt>戻り値</dt><dd>CanCallbackHandler&lt;kMaxSubscriberNum&gt;&amp; CANコールバックハンドラの参照 </dd></dl>
+
+</div>
+</div>
+<a id="af0532a7650e3d8a02fa6c6833a2ce49a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0532a7650e3d8a02fa6c6833a2ce49a">&#9670;&nbsp;</a></span>GetCanIoRef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo , size_t kMaxSubscriberNum = 30&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">ICanIo</a>&lt;CanIo&gt;&amp; <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">alps::cmn::communication::CanTypedDataTransceiver</a>&lt; CanIo, kMaxSubscriberNum &gt;::GetCanIoRef </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>保持するCAN通信IOインタフェースの参照を返す </p>
+<dl class="section return"><dt>戻り値</dt><dd><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">ICanIo&lt;CanIo&gt;</a>&amp; CAN通信IOインタフェースの参照 </dd></dl>
+
+</div>
+</div>
+<a id="aecc26173b48d407d0ef45f19a04dbcb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecc26173b48d407d0ef45f19a04dbcb6">&#9670;&nbsp;</a></span>ReadUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo , size_t kMaxSubscriberNum = 30&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">alps::cmn::communication::CanTypedDataTransceiver</a>&lt; CanIo, kMaxSubscriberNum &gt;::ReadUpdate </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -211,123 +265,6 @@ template&lt;class CanIo , size_t kMaxPublisherNum = 20, size_t kMaxSubscriberNum
 </div><div class="memdoc">
 
 <p>CANを受信し，受け取ったデータのIDに対応するコールバックを呼ぶ </p>
-
-</div>
-</div>
-<a id="a9249016b1741a3ee755a19784c10bc1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9249016b1741a3ee755a19784c10bc1b">&#9670;&nbsp;</a></span>RegisterCanPublisher()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class CanIo , size_t kMaxPublisherNum = 20, size_t kMaxSubscriberNum = 20&gt; </div>
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">alps::cmn::communication::CanTypedDataTransceiver</a>&lt; CanIo, kMaxPublisherNum, kMaxSubscriberNum &gt;::RegisterCanPublisher </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html">CanPublisher</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>sender</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>CanPublisherを登録する </p>
-<dl class="tparams"><dt>テンプレート引数</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>送信データの型 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sender</td><td>登録するCanPublisherのインスタンス </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aac6a292c5fee7d9bdc60fe1fefd64102"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac6a292c5fee7d9bdc60fe1fefd64102">&#9670;&nbsp;</a></span>RegisterCanSubscriber()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class CanIo , size_t kMaxPublisherNum = 20, size_t kMaxSubscriberNum = 20&gt; </div>
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">alps::cmn::communication::CanTypedDataTransceiver</a>&lt; CanIo, kMaxPublisherNum, kMaxSubscriberNum &gt;::RegisterCanSubscriber </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html">CanSubscriber</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>receiver</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>CanSubscriberを登録する </p>
-<dl class="tparams"><dt>テンプレート引数</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>受信データの型 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">receiver</td><td>登録するCanSubscriberのインスタンス </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a73170d14d41741a7e62a57bb8fdb2e84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73170d14d41741a7e62a57bb8fdb2e84">&#9670;&nbsp;</a></span>WriteUpdate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class CanIo , size_t kMaxPublisherNum = 20, size_t kMaxSubscriberNum = 20&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">alps::cmn::communication::CanTypedDataTransceiver</a>&lt; CanIo, kMaxPublisherNum, kMaxSubscriberNum &gt;::WriteUpdate </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>登録されているCanPublisherが持つ送信データを送信する </p>
 
 </div>
 </div>
