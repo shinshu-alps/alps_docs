@@ -1,3 +1,11 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="5,5,152,47"/>
+<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="252,5,464,47"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m2006.html" title="M2006のクラス" alt="" coords="512,71,697,127"/>
+<area shape="rect" id="node3" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="252,232,464,273"/>
+<area shape="rect" id="node4" href="$classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m3508.html" title="M3508のクラス" alt="" coords="512,225,697,281"/>
+<area shape="rect" id="node5" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="26,111,183,167"/>
+<area shape="rect" id="node6" href="$classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail_1_1_motor_base.html" title="ロボマスモータの基底クラス．" alt="" coords="269,151,447,207"/>
+<area shape="rect" id="node7" href="$classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html" title=" " alt="" coords="272,71,444,127"/>
+<area shape="rect" id="node8" href="$classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html" title=" " alt="" coords="272,298,444,354"/>
+<area shape="rect" id="node9" href="$classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html" title=" " alt="" coords="5,191,204,247"/>
 </map>

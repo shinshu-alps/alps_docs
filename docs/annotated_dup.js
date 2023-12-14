@@ -3,10 +3,16 @@ var annotated_dup =
     [ "alps", "namespacealps.html", [
       [ "cmn", "namespacealps_1_1cmn.html", [
         [ "actuator", "namespacealps_1_1cmn_1_1actuator.html", [
+          [ "robomas_motor", "namespacealps_1_1cmn_1_1actuator_1_1robomas__motor.html", [
+            [ "detail", "namespacealps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail.html", [
+              [ "MotorBase", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail_1_1_motor_base.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail_1_1_motor_base" ]
+            ] ],
+            [ "CanPort", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_can_port.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_can_port" ],
+            [ "M2006", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m2006.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m2006" ],
+            [ "M3508", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m3508.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m3508" ]
+          ] ],
           [ "DcMotor", "classalps_1_1cmn_1_1actuator_1_1_dc_motor.html", "classalps_1_1cmn_1_1actuator_1_1_dc_motor" ],
           [ "IMotor", "classalps_1_1cmn_1_1actuator_1_1_i_motor.html", "classalps_1_1cmn_1_1actuator_1_1_i_motor" ],
-          [ "RobomasMotor", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor" ],
-          [ "RobomasMotorsCanPort", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port" ],
           [ "ServoMotorParam", "structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html", "structalps_1_1cmn_1_1actuator_1_1_servo_motor_param" ],
           [ "ServoMotor", "classalps_1_1cmn_1_1actuator_1_1_servo_motor.html", "classalps_1_1cmn_1_1actuator_1_1_servo_motor" ]
         ] ],

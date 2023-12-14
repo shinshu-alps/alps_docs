@@ -53,10 +53,10 @@
 <path fill="none" stroke="midnightblue" d="M359.38,-152.4C335.7,-142.34 306.23,-129.83 282.02,-119.55"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="358.23,-155.72 368.81,-156.4 360.97,-149.27 358.23,-155.72"/>
 </g>
-<!-- Node6 -->
-<g id="node6" class="node">
-<title>Node6</title>
-<g id="a_node6"><a xlink:href="motor__angle__controller_8hpp.html" target="_top" xlink:title=" ">
+<!-- Node5 -->
+<g id="node5" class="node">
+<title>Node5</title>
+<g id="a_node5"><a xlink:href="motor__angle__controller_8hpp.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="332,-78.5 332,-119.5 472,-119.5 472,-78.5 332,-78.5"/>
 <text text-anchor="start" x="340" y="-107.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps_common_lib/include</text>
 <text text-anchor="start" x="340" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_cmn/control/motor</text>
@@ -64,16 +64,16 @@
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node6 -->
-<g id="edge5" class="edge">
-<title>Node1&#45;&gt;Node6</title>
+<!-- Node1&#45;&gt;Node5 -->
+<g id="edge4" class="edge">
+<title>Node1&#45;&gt;Node5</title>
 <path fill="none" stroke="midnightblue" d="M402,-145.98C402,-137.35 402,-127.76 402,-119.59"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="398.5,-146.23 402,-156.23 405.5,-146.23 398.5,-146.23"/>
 </g>
-<!-- Node7 -->
-<g id="node7" class="node">
-<title>Node7</title>
-<g id="a_node7"><a xlink:href="motor__angle__velocity__controller_8hpp.html" target="_top" xlink:title=" ">
+<!-- Node6 -->
+<g id="node6" class="node">
+<title>Node6</title>
+<g id="a_node6"><a xlink:href="motor__angle__velocity__controller_8hpp.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="466.5,-0.5 466.5,-41.5 631.5,-41.5 631.5,-0.5 466.5,-0.5"/>
 <text text-anchor="start" x="474.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps_common_lib/include</text>
 <text text-anchor="start" x="474.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_cmn/control/motor</text>
@@ -81,16 +81,16 @@
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node7 -->
-<g id="edge6" class="edge">
-<title>Node1&#45;&gt;Node7</title>
+<!-- Node1&#45;&gt;Node6 -->
+<g id="edge5" class="edge">
+<title>Node1&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M438.85,-151.09C452.94,-142.65 468.59,-131.95 481,-120 505.46,-96.44 526.49,-62.85 538.44,-41.75"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="436.76,-148.25 429.87,-156.3 440.28,-154.31 436.76,-148.25"/>
 </g>
-<!-- Node8 -->
-<g id="node8" class="node">
-<title>Node8</title>
-<g id="a_node8"><a xlink:href="motor__velocity__controller_8hpp.html" target="_top" xlink:title=" ">
+<!-- Node7 -->
+<g id="node7" class="node">
+<title>Node7</title>
+<g id="a_node7"><a xlink:href="motor__velocity__controller_8hpp.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="528,-78.5 528,-119.5 668,-119.5 668,-78.5 528,-78.5"/>
 <text text-anchor="start" x="536" y="-107.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps_common_lib/include</text>
 <text text-anchor="start" x="536" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_cmn/control/motor</text>
@@ -98,9 +98,9 @@
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node8 -->
-<g id="edge7" class="edge">
-<title>Node1&#45;&gt;Node8</title>
+<!-- Node1&#45;&gt;Node7 -->
+<g id="edge6" class="edge">
+<title>Node1&#45;&gt;Node7</title>
 <path fill="none" stroke="midnightblue" d="M450.84,-152.93C479.04,-142.79 514.57,-130.01 543.66,-119.55"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="449.42,-149.72 441.19,-156.4 451.79,-156.31 449.42,-149.72"/>
 </g>
@@ -121,26 +121,9 @@
 <path fill="none" stroke="midnightblue" d="M70,-68.3C70,-59.3 70,-49.65 70,-41.51"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="66.5,-68.43 70,-78.43 73.5,-68.43 66.5,-68.43"/>
 </g>
-<!-- Node5 -->
-<g id="node5" class="node">
-<title>Node5</title>
-<g id="a_node5"><a xlink:href="robomas__motors__can__port_8hpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="158.5,-0.5 158.5,-41.5 313.5,-41.5 313.5,-0.5 158.5,-0.5"/>
-<text text-anchor="start" x="166.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps_common_lib/include</text>
-<text text-anchor="start" x="166.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_cmn/actuator/robomas</text>
-<text text-anchor="middle" x="236" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_motors_can_port.hpp</text>
-</a>
-</g>
-</g>
-<!-- Node4&#45;&gt;Node5 -->
-<g id="edge4" class="edge">
-<title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M236,-68.3C236,-59.3 236,-49.65 236,-41.51"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="232.5,-68.43 236,-78.43 239.5,-68.43 232.5,-68.43"/>
-</g>
-<!-- Node8&#45;&gt;Node7 -->
-<g id="edge8" class="edge">
-<title>Node8&#45;&gt;Node7</title>
+<!-- Node7&#45;&gt;Node6 -->
+<g id="edge7" class="edge">
+<title>Node7&#45;&gt;Node6</title>
 <path fill="none" stroke="midnightblue" d="M579.79,-69.76C573.73,-60.35 567.11,-50.1 561.58,-41.51"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="577.02,-71.92 585.38,-78.43 582.9,-68.13 577.02,-71.92"/>
 </g>

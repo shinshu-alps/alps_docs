@@ -68,8 +68,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "algorithm_8hpp.html",
-"classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a0c4757d30aa5d561c974cb3d65de4589",
-"i__rotary__sensor_8hpp_source.html"
+"classalps_1_1cmn_1_1sensor_1_1_bno055.html#ae283bf6a2efb829fa88f5802bb59e59f",
+"i__i2c__io_8hpp.html#a31fcf69557e3ea7c625eddbe09e241c3"
 ];
 
 var SYNCONMSG = 'クリックで同期表示が無効になります';
