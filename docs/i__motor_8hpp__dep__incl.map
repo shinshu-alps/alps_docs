@@ -2,9 +2,8 @@
 <area shape="rect" id="node1" title=" " alt="" coords="428,5,655,47"/>
 <area shape="rect" id="node2" href="$alps__common__lib_2include_2alps__cmn_2actuator_2dc__motor_8hpp.html" title=" " alt="" coords="5,95,192,151"/>
 <area shape="rect" id="node4" href="$robomas__motor_8hpp.html" title="ロボマスモータのライブラリ" alt="" coords="217,95,423,151"/>
-<area shape="rect" id="node6" href="$motor__angle__controller_8hpp.html" title=" " alt="" coords="448,95,635,151"/>
-<area shape="rect" id="node7" href="$motor__angle__velocity__controller_8hpp.html" title=" " alt="" coords="627,199,847,255"/>
-<area shape="rect" id="node8" href="$motor__velocity__controller_8hpp.html" title=" " alt="" coords="709,95,896,151"/>
+<area shape="rect" id="node5" href="$motor__angle__controller_8hpp.html" title=" " alt="" coords="448,95,635,151"/>
+<area shape="rect" id="node6" href="$motor__angle__velocity__controller_8hpp.html" title=" " alt="" coords="627,199,847,255"/>
+<area shape="rect" id="node7" href="$motor__velocity__controller_8hpp.html" title=" " alt="" coords="709,95,896,151"/>
 <area shape="rect" id="node3" href="$alps__mbed__lib_2include_2alps__mbed_2actuator_2dc__motor_8hpp.html" title=" " alt="" coords="11,199,186,255"/>
-<area shape="rect" id="node5" href="$robomas__motors__can__port_8hpp.html" title=" " alt="" coords="217,199,423,255"/>
 </map>

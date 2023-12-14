@@ -6,6 +6,7 @@ var hierarchy =
     [ "alps::cmn::communication::CanCallbackHandler< kMaxCallbackNum >", "classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html", null ],
     [ "alps::cmn::communication::CanCallbackHandler< 30 >", "classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html", null ],
     [ "alps::cmn::communication::CanDataFrame", "structalps_1_1cmn_1_1communication_1_1_can_data_frame.html", null ],
+    [ "alps::cmn::actuator::robomas_motor::CanPort", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_can_port.html", null ],
     [ "alps::cmn::communication::CanPublisher< T >", "classalps_1_1cmn_1_1communication_1_1_can_publisher.html", null ],
     [ "alps::cmn::communication::CanSubscriber< T >", "classalps_1_1cmn_1_1communication_1_1_can_subscriber.html", null ],
     [ "alps::cmn::communication::CanTypedDataTransceiver< CanIo, kMaxSubscriberNum >", "classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html", null ],
@@ -50,9 +51,18 @@ var hierarchy =
     [ "alps::cmn::actuator::IMotor< DcMotor< PwmOut, DigitalOut > >", "classalps_1_1cmn_1_1actuator_1_1_i_motor.html", [
       [ "alps::cmn::actuator::DcMotor< PwmOut, DigitalOut >", "classalps_1_1cmn_1_1actuator_1_1_dc_motor.html", null ]
     ] ],
+    [ "alps::cmn::actuator::IMotor< M2006< Clock > >", "classalps_1_1cmn_1_1actuator_1_1_i_motor.html", [
+      [ "alps::cmn::actuator::robomas_motor::M2006< Clock >", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m2006.html", null ]
+    ] ],
+    [ "alps::cmn::actuator::IMotor< M3508< Clock > >", "classalps_1_1cmn_1_1actuator_1_1_i_motor.html", [
+      [ "alps::cmn::actuator::robomas_motor::M3508< Clock >", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m3508.html", null ]
+    ] ],
     [ "alps::cmn::actuator::IMotor< Motor >", "classalps_1_1cmn_1_1actuator_1_1_i_motor.html", null ],
-    [ "alps::cmn::actuator::IMotor< RobomasMotor >", "classalps_1_1cmn_1_1actuator_1_1_i_motor.html", [
-      [ "alps::cmn::actuator::RobomasMotor", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html", null ]
+    [ "alps::cmn::actuator::IMotor< MotorBase< Clock > >", "classalps_1_1cmn_1_1actuator_1_1_i_motor.html", [
+      [ "alps::cmn::actuator::robomas_motor::detail::MotorBase< Clock >", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail_1_1_motor_base.html", [
+        [ "alps::cmn::actuator::robomas_motor::M2006< Clock >", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m2006.html", null ],
+        [ "alps::cmn::actuator::robomas_motor::M3508< Clock >", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m3508.html", null ]
+      ] ]
     ] ],
     [ "alps::cmn::control::Integrator< Clock >", "classalps_1_1cmn_1_1control_1_1_integrator.html", null ],
     [ "alps::cmn::gpio::IPwmOut< Derived >", "classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html", null ],
@@ -63,11 +73,17 @@ var hierarchy =
     [ "alps::cmn::sensor::IRotarySensor< IncrementalEncoder< Clock, InterruptIn, DigitalIn > >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", [
       [ "alps::cmn::sensor::IncrementalEncoder< Clock, InterruptIn, DigitalIn >", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html", null ]
     ] ],
+    [ "alps::cmn::sensor::IRotarySensor< M2006< Clock > >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", [
+      [ "alps::cmn::actuator::robomas_motor::M2006< Clock >", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m2006.html", null ]
+    ] ],
+    [ "alps::cmn::sensor::IRotarySensor< M3508< Clock > >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", [
+      [ "alps::cmn::actuator::robomas_motor::M3508< Clock >", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m3508.html", null ]
+    ] ],
+    [ "alps::cmn::sensor::IRotarySensor< MotorBase< Clock > >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", [
+      [ "alps::cmn::actuator::robomas_motor::detail::MotorBase< Clock >", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail_1_1_motor_base.html", null ]
+    ] ],
     [ "alps::cmn::sensor::IRotarySensor< Potentiometer< AnalogIn > >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", [
       [ "alps::cmn::sensor::Potentiometer< AnalogIn >", "classalps_1_1cmn_1_1sensor_1_1_potentiometer.html", null ]
-    ] ],
-    [ "alps::cmn::sensor::IRotarySensor< RobomasMotor >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", [
-      [ "alps::cmn::actuator::RobomasMotor", "classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html", null ]
     ] ],
     [ "alps::cmn::sensor::IRotarySensor< RotarySensor >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", null ],
     [ "alps::cmn::communication::IUartIo< Derived >", "classalps_1_1cmn_1_1communication_1_1_i_uart_io.html", null ],
@@ -90,7 +106,6 @@ var hierarchy =
     [ "alps::cmn::sensor::Bno055< Clock, I2cIo >::Quaternion", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html", null ],
     [ "alps::cmn::sensor::S11059< I2cIo >::RawData", "structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html", null ],
     [ "alps::cmn::time::RepeatingPollingTimer< Clock >", "classalps_1_1cmn_1_1time_1_1_repeating_polling_timer.html", null ],
-    [ "alps::cmn::actuator::RobomasMotorsCanPort", "classalps_1_1cmn_1_1actuator_1_1_robomas_motors_can_port.html", null ],
     [ "alps::cmn::sensor::S11059< I2cIo >", "classalps_1_1cmn_1_1sensor_1_1_s11059.html", null ],
     [ "alps::cmn::communication::SerializeTypeInfoBase< is_serializable, is_single >", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html", null ],
     [ "alps::cmn::communication::SerializeTypeInfoBase< false, false >", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html", [

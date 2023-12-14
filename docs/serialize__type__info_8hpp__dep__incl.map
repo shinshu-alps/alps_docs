@@ -3,5 +3,5 @@
 <area shape="rect" id="node2" href="$data__serializer_8hpp.html" title="データとバイト列の変換ライブラリ" alt="" coords="149,109,343,165"/>
 <area shape="rect" id="node3" href="$can__typed__data__transceiver_8hpp.html" title="CAN通信で型付けされたデータの送受信を行うライブラリ" alt="" coords="5,213,241,269"/>
 <area shape="rect" id="node5" href="$uart__packet__transceiver_8hpp.html" title=" " alt="" coords="265,213,475,269"/>
-<area shape="rect" id="node4" href="$robomas__motors__can__port_8hpp.html" title=" " alt="" coords="20,317,227,373"/>
+<area shape="rect" id="node4" href="$robomas__motor_8hpp.html" title="ロボマスモータのライブラリ" alt="" coords="20,317,227,373"/>
 </map>
