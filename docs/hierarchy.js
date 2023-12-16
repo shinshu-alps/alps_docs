@@ -106,6 +106,7 @@ var hierarchy =
     [ "alps::cmn::sensor::Bno055< Clock, I2cIo >::Quaternion", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html", null ],
     [ "alps::cmn::sensor::S11059< I2cIo >::RawData", "structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html", null ],
     [ "alps::cmn::time::RepeatingPollingTimer< Clock >", "classalps_1_1cmn_1_1time_1_1_repeating_polling_timer.html", null ],
+    [ "alps::cmn::sensor::Tcs34725< Clock, I2cIo >::RgbColor", "structalps_1_1cmn_1_1sensor_1_1_tcs34725_1_1_rgb_color.html", null ],
     [ "alps::cmn::sensor::S11059< I2cIo >", "classalps_1_1cmn_1_1sensor_1_1_s11059.html", null ],
     [ "alps::cmn::communication::SerializeTypeInfoBase< is_serializable, is_single >", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html", null ],
     [ "alps::cmn::communication::SerializeTypeInfoBase< false, false >", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html", [
@@ -113,6 +114,7 @@ var hierarchy =
     ] ],
     [ "alps::cmn::actuator::ServoMotor< PwmOut >", "classalps_1_1cmn_1_1actuator_1_1_servo_motor.html", null ],
     [ "alps::cmn::actuator::ServoMotorParam", "structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html", null ],
+    [ "alps::cmn::sensor::Tcs34725< Clock, I2cIo >", "classalps_1_1cmn_1_1sensor_1_1_tcs34725.html", null ],
     [ "alps::cmn::time::TimeoutChecker< Clock >", "classalps_1_1cmn_1_1time_1_1_timeout_checker.html", null ],
     [ "alps::cmn::time::TimeoutChecker< std::chrono::system_clock >", "classalps_1_1cmn_1_1time_1_1_timeout_checker.html", null ],
     [ "alps::cmn::communication::UartPacketTransceiver< UartIo, kReadBufferSize, kMaxSenderNum, kMaxReceiveNum, kMaxDataByteSize >", "classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html", null ],
