@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['data_721',['data',['../structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a4d7d845b46acffacd08217093f212426',1,'alps::cmn::communication::CanDataFrame']]]
+  ['clear_734',['clear',['../structalps_1_1cmn_1_1sensor_1_1_tcs34725_1_1_rgb_color.html#ab26ce5edb7aaf37b61ace28feb63fb5e',1,'alps::cmn::sensor::Tcs34725::RgbColor']]]
 ];

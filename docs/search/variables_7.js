@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['red_743',['red',['../structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#add99d6528fec470857fd1e118403137f',1,'alps::cmn::sensor::S11059::RawData']]],
-  ['red_5fratio_744',['red_ratio',['../structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#a19e44cd929ffaebc2389e7a136d23205',1,'alps::cmn::sensor::S11059::NormalizedData']]],
-  ['rgb_5fsum_745',['rgb_sum',['../structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#aaf6f4ac3ea62166cbadaaf3f92003438',1,'alps::cmn::sensor::S11059::NormalizedData']]],
-  ['roll_746',['roll',['../structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_euler.html#a6c0c5b3fdc9eae9497d1c986996138a5',1,'alps::cmn::sensor::Bno055::Euler']]]
+  ['pitch_755',['pitch',['../structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_euler.html#a426451dc9f202ebc29d5ca9529727c0f',1,'alps::cmn::sensor::Bno055::Euler']]],
+  ['pwm_5fperiod_756',['pwm_period',['../structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a04a40ddaa4ed39283111f0a90fea3f73',1,'alps::cmn::actuator::ServoMotorParam']]]
 ];
