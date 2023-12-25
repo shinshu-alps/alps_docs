@@ -125,6 +125,21 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1control_1_1_pid.ht
 <tr class="memitem:adeeb93dc4a8c1c7ff379b3bbc5407c0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#adeeb93dc4a8c1c7ff379b3bbc5407c0c">Reset</a> ()</td></tr>
 <tr class="memdesc:adeeb93dc4a8c1c7ff379b3bbc5407c0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">前回までの計算結果をリセットする  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#adeeb93dc4a8c1c7ff379b3bbc5407c0c">[詳解]</a><br /></td></tr>
 <tr class="separator:adeeb93dc4a8c1c7ff379b3bbc5407c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3644e9d21ea9805961eb5af326e8c4ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a3644e9d21ea9805961eb5af326e8c4ad">CheckConvergence</a> (float allowable_error, float alloweable_differential_value) const</td></tr>
+<tr class="memdesc:a3644e9d21ea9805961eb5af326e8c4ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">前回の計算結果から収束しているかどうかを判定する  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#a3644e9d21ea9805961eb5af326e8c4ad">[詳解]</a><br /></td></tr>
+<tr class="separator:a3644e9d21ea9805961eb5af326e8c4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6b69486544923a1bca0a2a4934122ee"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#aa6b69486544923a1bca0a2a4934122ee">GetPIDOutput</a> () const</td></tr>
+<tr class="memdesc:aa6b69486544923a1bca0a2a4934122ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">前回のPID制御計算結果を取得する  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#aa6b69486544923a1bca0a2a4934122ee">[詳解]</a><br /></td></tr>
+<tr class="separator:aa6b69486544923a1bca0a2a4934122ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef7f79651f47f7d991917fd01af16c89"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#aef7f79651f47f7d991917fd01af16c89">GetPOutput</a> () const</td></tr>
+<tr class="memdesc:aef7f79651f47f7d991917fd01af16c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">前回の比例項の計算結果を取得する  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#aef7f79651f47f7d991917fd01af16c89">[詳解]</a><br /></td></tr>
+<tr class="separator:aef7f79651f47f7d991917fd01af16c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b1df5efe47c9046d7caa7a295db34e3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a1b1df5efe47c9046d7caa7a295db34e3">GetIOutput</a> () const</td></tr>
+<tr class="memdesc:a1b1df5efe47c9046d7caa7a295db34e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">前回の積分項の計算結果を取得する  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#a1b1df5efe47c9046d7caa7a295db34e3">[詳解]</a><br /></td></tr>
+<tr class="separator:a1b1df5efe47c9046d7caa7a295db34e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe3d975c41e110475576c3e120a01750"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#afe3d975c41e110475576c3e120a01750">GetDOutput</a> () const</td></tr>
+<tr class="memdesc:afe3d975c41e110475576c3e120a01750"><td class="mdescLeft">&#160;</td><td class="mdescRight">前回の微分項の計算結果を取得する  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#afe3d975c41e110475576c3e120a01750">[詳解]</a><br /></td></tr>
+<tr class="separator:afe3d975c41e110475576c3e120a01750"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><h3>template&lt;class Clock&gt;<br />
@@ -250,6 +265,176 @@ template&lt;class Clock &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>戻り値</dt><dd>float PID制御による出力値 </dd></dl>
+
+</div>
+</div>
+<a id="a3644e9d21ea9805961eb5af326e8c4ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3644e9d21ea9805961eb5af326e8c4ad">&#9670;&nbsp;</a></span>CheckConvergence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::CheckConvergence </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>allowable_error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>alloweable_differential_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>前回の計算結果から収束しているかどうかを判定する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">allowable_error</td><td>許容誤差 </td></tr>
+    <tr><td class="paramname">alloweable_differential_value</td><td>許容微分値</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 収束している </dd>
+<dd>
+false 収束していない </dd></dl>
+
+</div>
+</div>
+<a id="afe3d975c41e110475576c3e120a01750"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe3d975c41e110475576c3e120a01750">&#9670;&nbsp;</a></span>GetDOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::GetDOutput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>前回の微分項の計算結果を取得する </p>
+<dl class="section return"><dt>戻り値</dt><dd>float 微分項の計算結果 </dd></dl>
+
+</div>
+</div>
+<a id="a1b1df5efe47c9046d7caa7a295db34e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b1df5efe47c9046d7caa7a295db34e3">&#9670;&nbsp;</a></span>GetIOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::GetIOutput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>前回の積分項の計算結果を取得する </p>
+<dl class="section return"><dt>戻り値</dt><dd>float 積分項の計算結果 </dd></dl>
+
+</div>
+</div>
+<a id="aa6b69486544923a1bca0a2a4934122ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6b69486544923a1bca0a2a4934122ee">&#9670;&nbsp;</a></span>GetPIDOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::GetPIDOutput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>前回のPID制御計算結果を取得する </p>
+<dl class="section return"><dt>戻り値</dt><dd>float 前回のPIDの出力値 </dd></dl>
+
+</div>
+</div>
+<a id="aef7f79651f47f7d991917fd01af16c89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef7f79651f47f7d991917fd01af16c89">&#9670;&nbsp;</a></span>GetPOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::GetPOutput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>前回の比例項の計算結果を取得する </p>
+<dl class="section return"><dt>戻り値</dt><dd>float 比例項の計算結果 </dd></dl>
 
 </div>
 </div>

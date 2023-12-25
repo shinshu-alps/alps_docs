@@ -1,5 +1,10 @@
 var NAVTREEINDEX1 =
 {
+"classalps_1_1cmn_1_1sensor_1_1_bno055.html#acf1f991489c4624e3dc42561815cc4ada42db61944964fac3908da41807af39ba":[3,0,0,0,6,0,8,1],
+"classalps_1_1cmn_1_1sensor_1_1_bno055.html#acf1f991489c4624e3dc42561815cc4ada6ef57404216998a2429edfc4bc94d58d":[3,0,0,0,6,0,8,5],
+"classalps_1_1cmn_1_1sensor_1_1_bno055.html#acf1f991489c4624e3dc42561815cc4ada8bc23378a3ec2814815d05106cf0c957":[3,0,0,0,6,0,8,6],
+"classalps_1_1cmn_1_1sensor_1_1_bno055.html#acf1f991489c4624e3dc42561815cc4adaa438ad77c3cceadaee8d48be3c48bfe8":[3,0,0,0,6,0,8,7],
+"classalps_1_1cmn_1_1sensor_1_1_bno055.html#acf1f991489c4624e3dc42561815cc4adac83a5fadec9c3803bfdcf84998fc4999":[3,0,0,0,6,0,8,4],
 "classalps_1_1cmn_1_1sensor_1_1_bno055.html#ae283bf6a2efb829fa88f5802bb59e59f":[3,0,0,0,6,0,10],
 "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html":[3,0,0,0,6,1],
 "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367":[3,0,0,0,6,1,0],
@@ -211,8 +216,8 @@ var NAVTREEINDEX1 =
 "files.html":[4,0],
 "four__wheel__omni_8hpp.html":[4,0,0,0,0,5,0],
 "four__wheel__omni_8hpp_source.html":[4,0,0,0,0,5,0],
-"functions.html":[3,3,0,0],
 "functions.html":[3,3,0],
+"functions.html":[3,3,0,0],
 "functions_b.html":[3,3,0,1],
 "functions_c.html":[3,3,0,2],
 "functions_d.html":[3,3,0,3],
@@ -244,10 +249,5 @@ var NAVTREEINDEX1 =
 "globals_defs.html":[4,1,1],
 "hierarchy.html":[3,2],
 "i2c__io_8hpp.html":[4,0,2,0,0,1,1],
-"i2c__io_8hpp_source.html":[4,0,2,0,0,1,1],
-"i__analog__in_8hpp.html":[4,0,0,0,0,3,0],
-"i__analog__in_8hpp_source.html":[4,0,0,0,0,3,0],
-"i__can__io_8hpp.html":[4,0,0,0,0,1,5],
-"i__can__io_8hpp_source.html":[4,0,0,0,0,1,5],
-"i__digital__in_8hpp.html":[4,0,0,0,0,3,1]
+"i2c__io_8hpp_source.html":[4,0,2,0,0,1,1]
 };

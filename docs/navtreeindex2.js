@@ -1,5 +1,10 @@
 var NAVTREEINDEX2 =
 {
+"i__analog__in_8hpp.html":[4,0,0,0,0,3,0],
+"i__analog__in_8hpp_source.html":[4,0,0,0,0,3,0],
+"i__can__io_8hpp.html":[4,0,0,0,0,1,5],
+"i__can__io_8hpp_source.html":[4,0,0,0,0,1,5],
+"i__digital__in_8hpp.html":[4,0,0,0,0,3,1],
 "i__digital__in_8hpp_source.html":[4,0,0,0,0,3,1],
 "i__digital__out_8hpp.html":[4,0,0,0,0,3,2],
 "i__digital__out_8hpp_source.html":[4,0,0,0,0,3,2],
@@ -49,8 +54,8 @@ var NAVTREEINDEX2 =
 "logging__macros_8hpp.html#aeb6ce5351773b08bf07278e7c1274735":[4,0,0,0,0,4,1,7],
 "logging__macros_8hpp.html#aede9f4f4f61b7e20067f2bf0d4eafb40":[4,0,0,0,0,4,1,3],
 "logging__macros_8hpp_source.html":[4,0,0,0,0,4,1],
-"lpf_8hpp.html":[4,0,0,0,0,2,2],
-"lpf_8hpp_source.html":[4,0,0,0,0,2,2],
+"low__pass__filter_8hpp.html":[4,0,0,0,0,2,2],
+"low__pass__filter_8hpp_source.html":[4,0,0,0,0,2,2],
 "motor__angle__controller_8hpp.html":[4,0,0,0,0,2,3],
 "motor__angle__controller_8hpp_source.html":[4,0,0,0,0,2,3],
 "motor__angle__velocity__controller_8hpp.html":[4,0,0,0,0,2,4],
@@ -244,6 +249,5 @@ var NAVTREEINDEX2 =
 "vl53l0x_8hpp.html":[4,0,0,0,0,6,6],
 "vl53l0x_8hpp_source.html":[4,0,0,0,0,6,6],
 "wait_8hpp.html":[4,0,0,0,0,7,3],
-"wait_8hpp.html#a60c317c943c5990f4619048af3defb26":[4,0,0,0,0,7,3,0],
-"wait_8hpp_source.html":[4,0,0,0,0,7,3]
+"wait_8hpp.html#a60c317c943c5990f4619048af3defb26":[4,0,0,0,0,7,3,0]
 };
