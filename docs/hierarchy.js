@@ -94,7 +94,7 @@ var hierarchy =
     [ "alps::ros2::ui::Joy", "classalps_1_1ros2_1_1ui_1_1_joy.html", null ],
     [ "alps::cmn::sensor::Bno055< Clock, I2cIo >::LinearAcceleration", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_linear_acceleration.html", null ],
     [ "alps::cmn::log::Logger", "classalps_1_1cmn_1_1log_1_1_logger.html", null ],
-    [ "alps::cmn::control::Lpf", "classalps_1_1cmn_1_1control_1_1_lpf.html", null ],
+    [ "alps::cmn::control::LowPassFilter< Clock >", "classalps_1_1cmn_1_1control_1_1_low_pass_filter.html", null ],
     [ "alps::cmn::sensor::Bno055< Clock, I2cIo >::MagneticVector", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_magnetic_vector.html", null ],
     [ "alps::cmn::control::MotorAngleController< Clock, Motor, RotarySensor >", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html", null ],
     [ "alps::cmn::control::MotorAngleVelocityController< Clock, Motor, RotarySensor >", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html", null ],

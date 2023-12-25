@@ -177,6 +177,9 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 <li>CanTypedDataTransceiver()
 : <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#a4108eda6e14e13f4aa614e97b096d777">alps::cmn::communication::CanTypedDataTransceiver&lt; CanIo, kMaxSubscriberNum &gt;</a>
 </li>
+<li>CheckConvergence()
+: <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a3644e9d21ea9805961eb5af326e8c4ad">alps::cmn::control::Pid&lt; Clock &gt;</a>
+</li>
 <li>Control()
 : <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#af707fafe8def4b0606c413d7d3d25252">alps::cmn::control::MotorAngleController&lt; Clock, Motor, RotarySensor &gt;</a>
 , <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#abca3e4e196594e27c5c2e75468b189a0">alps::cmn::control::MotorAngleVelocityController&lt; Clock, Motor, RotarySensor &gt;</a>
@@ -216,9 +219,6 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 
 
 <h3><a id="index_f"></a>- f -</h3><ul>
-<li>Filter()
-: <a class="el" href="classalps_1_1cmn_1_1control_1_1_lpf.html#a1fee169d1ad930ec33cf74cff80e64fb">alps::cmn::control::Lpf</a>
-</li>
 <li>ForwardKinematics()
 : <a class="el" href="classalps_1_1cmn_1_1robotics_1_1_four_wheel_omni.html#a96c35f9a4fd825ab4153b2c0cb308686">alps::cmn::robotics::FourWheelOmni</a>
 </li>
@@ -258,6 +258,9 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 <li>GetCurrentValue()
 : <a class="el" href="classalps_1_1cmn_1_1control_1_1_integrator.html#a64bbbab4a4fef22cc25d656483188546">alps::cmn::control::Integrator&lt; Clock &gt;</a>
 </li>
+<li>GetDOutput()
+: <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#afe3d975c41e110475576c3e120a01750">alps::cmn::control::Pid&lt; Clock &gt;</a>
+</li>
 <li>GetEulerAngle()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_bno055.html#a308d21863631e3c18f7ae420b75237a2">alps::cmn::sensor::Bno055&lt; Clock, I2cIo &gt;</a>
 </li>
@@ -266,6 +269,12 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 </li>
 <li>GetI2cLastStatus()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a8a8555efd05c7b302fd947d5f69106d8">alps::cmn::sensor::Vl53l0x&lt; Clock, I2cIo &gt;</a>
+</li>
+<li>GetIOutput()
+: <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a1b1df5efe47c9046d7caa7a295db34e3">alps::cmn::control::Pid&lt; Clock &gt;</a>
+</li>
+<li>GetLastOutput()
+: <a class="el" href="classalps_1_1cmn_1_1control_1_1_differentiator.html#aa6afcf596898ac9a12b2bfda60502eb0">alps::cmn::control::Differentiator&lt; Clock &gt;</a>
 </li>
 <li>GetLinearAcceleration()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_bno055.html#a0529b54858d1d263063a85b9b7f6f5fb">alps::cmn::sensor::Bno055&lt; Clock, I2cIo &gt;</a>
@@ -285,8 +294,14 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 <li>GetOperationMode()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a2461ebbd367492fe95447da932ba9129">alps::cmn::sensor::Vl53l0x&lt; Clock, I2cIo &gt;</a>
 </li>
+<li>GetPIDOutput()
+: <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#aa6b69486544923a1bca0a2a4934122ee">alps::cmn::control::Pid&lt; Clock &gt;</a>
+</li>
 <li>GetPose()
 : <a class="el" href="classalps_1_1cmn_1_1robotics_1_1_odometory.html#a761da3b2a169ada60a3ae1c115328dd2">alps::cmn::robotics::Odometory&lt; Clock &gt;</a>
+</li>
+<li>GetPOutput()
+: <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#aef7f79651f47f7d991917fd01af16c89">alps::cmn::control::Pid&lt; Clock &gt;</a>
 </li>
 <li>GetPulses()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#a916d704b32c3112041dd1e1491316c03">alps::cmn::sensor::IncrementalEncoder&lt; Clock, InterruptIn, DigitalIn &gt;</a>
@@ -374,8 +389,8 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 
 
 <h3><a id="index_l"></a>- l -</h3><ul>
-<li>Lpf()
-: <a class="el" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aecaf22e00a9802414624c3423f6c60f1">alps::cmn::control::Lpf</a>
+<li>LowPassFilter()
+: <a class="el" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#aad6942f6aedd8a36c70df04dbcce2812">alps::cmn::control::LowPassFilter&lt; Clock &gt;</a>
 </li>
 </ul>
 
@@ -477,7 +492,7 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 <li>Reset()
 : <a class="el" href="classalps_1_1cmn_1_1control_1_1_differentiator.html#a1f346bd83c82908f23b765624f4ef371">alps::cmn::control::Differentiator&lt; Clock &gt;</a>
 , <a class="el" href="classalps_1_1cmn_1_1control_1_1_integrator.html#ae7116d8536d24b90022d8421df0a0ba0">alps::cmn::control::Integrator&lt; Clock &gt;</a>
-, <a class="el" href="classalps_1_1cmn_1_1control_1_1_lpf.html#a9ed459dfde6dff3f754142ee0c75a0fb">alps::cmn::control::Lpf</a>
+, <a class="el" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#a8b79857a965dec54588e36d2a6081484">alps::cmn::control::LowPassFilter&lt; Clock &gt;</a>
 , <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#aa5c17b161b9da228d4a67bf7b6985fe6">alps::cmn::control::MotorAngleController&lt; Clock, Motor, RotarySensor &gt;</a>
 , <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#aa21f10dca06a665d853e5ee236c2fc23">alps::cmn::control::MotorAngleVelocityController&lt; Clock, Motor, RotarySensor &gt;</a>
 , <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a9acef8a677691c396f2e4001427b7261">alps::cmn::control::MotorVelocityController&lt; Clock, Motor, RotarySensor &gt;</a>
@@ -518,9 +533,6 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 <li>SetFree()
 : <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a135982e2673801c8bb6efd4712827316">alps::cmn::actuator::ServoMotor&lt; PwmOut &gt;</a>
 </li>
-<li>SetInputPrev()
-: <a class="el" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aca445f7a66fa7f4c3ce5bd05e7e56812">alps::cmn::control::Lpf</a>
-</li>
 <li>SetLogWriter()
 : <a class="el" href="classalps_1_1cmn_1_1log_1_1_logger.html#a57fe22abd270134774111ead3abd568f">alps::cmn::log::Logger</a>
 </li>
@@ -559,8 +571,8 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 : <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#ab391d5d6bdf9a0216cb63b7fff9e2f4e">alps::cmn::control::MotorAngleVelocityController&lt; Clock, Motor, RotarySensor &gt;</a>
 , <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a4f24d1dc26454c8aea0251262aa174eb">alps::cmn::control::MotorVelocityController&lt; Clock, Motor, RotarySensor &gt;</a>
 </li>
-<li>SetTimeConst()
-: <a class="el" href="classalps_1_1cmn_1_1control_1_1_lpf.html#aea8480539cad78ef17d887d56b19ebaf">alps::cmn::control::Lpf</a>
+<li>SetTimeConstant()
+: <a class="el" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#a6c995ae61a492b0f71e0acc267f5b70e">alps::cmn::control::LowPassFilter&lt; Clock &gt;</a>
 </li>
 <li>SetTimeout()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#ab854cb26bdc83be7dbcca18e37b74388">alps::cmn::sensor::Vl53l0x&lt; Clock, I2cIo &gt;</a>
@@ -610,7 +622,8 @@ $(document).ready(function(){initNavTree('functions_func.html',''); initResizabl
 : <a class="el" href="classalps_1_1cmn_1_1communication_1_1_uart_sender.html#a7fbff380d50a1874b2cddbab4e7451ff">alps::cmn::communication::UartSender&lt; T &gt;</a>
 </li>
 <li>Update()
-: <a class="el" href="classalps_1_1cmn_1_1robotics_1_1_odometory.html#aa8cbf53e7bb262a6dde7663625b9d8c3">alps::cmn::robotics::Odometory&lt; Clock &gt;</a>
+: <a class="el" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#a532e0e74f64ef8f37549cf7045ec6766">alps::cmn::control::LowPassFilter&lt; Clock &gt;</a>
+, <a class="el" href="classalps_1_1cmn_1_1robotics_1_1_odometory.html#aa8cbf53e7bb262a6dde7663625b9d8c3">alps::cmn::robotics::Odometory&lt; Clock &gt;</a>
 , <a class="el" href="classalps_1_1cmn_1_1time_1_1_one_shot_polling_timer.html#a34c08039ade1c5e70a7949f99f262d31">alps::cmn::time::OneShotPollingTimer&lt; Clock &gt;</a>
 , <a class="el" href="classalps_1_1cmn_1_1time_1_1_repeating_polling_timer.html#aca08125497845164f395d7fc68fa0061">alps::cmn::time::RepeatingPollingTimer&lt; Clock &gt;</a>
 </li>

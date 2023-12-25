@@ -6,8 +6,8 @@ var dir_83658e075a4ab7b2cbb8779471289882 =
     [ "integrator.hpp", "integrator_8hpp.html", [
       [ "Integrator", "classalps_1_1cmn_1_1control_1_1_integrator.html", "classalps_1_1cmn_1_1control_1_1_integrator" ]
     ] ],
-    [ "lpf.hpp", "lpf_8hpp.html", [
-      [ "Lpf", "classalps_1_1cmn_1_1control_1_1_lpf.html", "classalps_1_1cmn_1_1control_1_1_lpf" ]
+    [ "low_pass_filter.hpp", "low__pass__filter_8hpp.html", [
+      [ "LowPassFilter", "classalps_1_1cmn_1_1control_1_1_low_pass_filter.html", "classalps_1_1cmn_1_1control_1_1_low_pass_filter" ]
     ] ],
     [ "motor_angle_controller.hpp", "motor__angle__controller_8hpp.html", [
       [ "MotorAngleController", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller" ]
