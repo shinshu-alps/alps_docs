@@ -1,11 +1,13 @@
 <map id="alps_common_lib/include/alps_cmn/control/motor_velocity_controller.hpp" name="alps_common_lib/include/alps_cmn/control/motor_velocity_controller.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="166,5,353,61"/>
-<area shape="rect" id="node2" href="$i__motor_8hpp.html" title=" " alt="" coords="5,109,156,151"/>
-<area shape="rect" id="node3" href="$differentiator_8hpp.html" title="微分器ライブラリ" alt="" coords="13,199,263,225"/>
-<area shape="rect" id="node5" href="$pid_8hpp.html" title=" " alt="" coords="232,117,417,143"/>
-<area shape="rect" id="node9" href="$i__rotary__sensor_8hpp.html" title=" " alt="" coords="441,109,627,151"/>
-<area shape="rect" id="node4" title=" " alt="" coords="266,273,333,300"/>
-<area shape="rect" id="node6" title=" " alt="" coords="413,273,471,300"/>
-<area shape="rect" id="node7" href="$integrator_8hpp.html" title="積分器ライブラリ" alt="" coords="388,199,616,225"/>
-<area shape="rect" id="node8" href="$algorithm_8hpp.html" title=" " alt="" coords="524,273,728,300"/>
+<area shape="rect" id="node1" title=" " alt="" coords="236,5,423,61"/>
+<area shape="rect" id="node2" href="$i__motor_8hpp.html" title=" " alt="" coords="90,109,241,151"/>
+<area shape="rect" id="node3" href="$differentiator_8hpp.html" title="微分器ライブラリ" alt="" coords="190,206,439,233"/>
+<area shape="rect" id="node5" href="$low__pass__filter_8hpp.html" title="ローパスフィルタのクラス" alt="" coords="5,199,165,240"/>
+<area shape="rect" id="node6" href="$pid_8hpp.html" title=" " alt="" coords="418,117,603,143"/>
+<area shape="rect" id="node11" href="$i__rotary__sensor_8hpp.html" title=" " alt="" coords="627,109,813,151"/>
+<area shape="rect" id="node4" title=" " alt="" coords="363,288,429,315"/>
+<area shape="rect" id="node7" title=" " alt="" coords="514,206,577,233"/>
+<area shape="rect" id="node8" title=" " alt="" coords="697,288,756,315"/>
+<area shape="rect" id="node9" href="$integrator_8hpp.html" title="積分器ライブラリ" alt="" coords="601,206,829,233"/>
+<area shape="rect" id="node10" href="$algorithm_8hpp.html" title=" " alt="" coords="803,288,1007,315"/>
 </map>
