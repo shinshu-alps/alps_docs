@@ -119,9 +119,12 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1control_1_1_low_pa
 <tr class="memitem:aad6942f6aedd8a36c70df04dbcce2812"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#aad6942f6aedd8a36c70df04dbcce2812">LowPassFilter</a> (std::chrono::microseconds time_constant)</td></tr>
 <tr class="memdesc:aad6942f6aedd8a36c70df04dbcce2812"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#aad6942f6aedd8a36c70df04dbcce2812">[詳解]</a><br /></td></tr>
 <tr class="separator:aad6942f6aedd8a36c70df04dbcce2812"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a532e0e74f64ef8f37549cf7045ec6766"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#a532e0e74f64ef8f37549cf7045ec6766">Update</a> (float input)</td></tr>
-<tr class="memdesc:a532e0e74f64ef8f37549cf7045ec6766"><td class="mdescLeft">&#160;</td><td class="mdescRight">入力値をローパスフィルタにかける  <a href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#a532e0e74f64ef8f37549cf7045ec6766">[詳解]</a><br /></td></tr>
-<tr class="separator:a532e0e74f64ef8f37549cf7045ec6766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cdf7e554c629583d950c67952037977"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#a8cdf7e554c629583d950c67952037977">Filter</a> (float input)</td></tr>
+<tr class="memdesc:a8cdf7e554c629583d950c67952037977"><td class="mdescLeft">&#160;</td><td class="mdescRight">入力値をローパスフィルタにかける  <a href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#a8cdf7e554c629583d950c67952037977">[詳解]</a><br /></td></tr>
+<tr class="separator:a8cdf7e554c629583d950c67952037977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8644cbaee47def981fc23038a2bd992"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#af8644cbaee47def981fc23038a2bd992">GetLastOutput</a> () const</td></tr>
+<tr class="memdesc:af8644cbaee47def981fc23038a2bd992"><td class="mdescLeft">&#160;</td><td class="mdescRight">前回のフィルター出力値を返す  <a href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#af8644cbaee47def981fc23038a2bd992">[詳解]</a><br /></td></tr>
+<tr class="separator:af8644cbaee47def981fc23038a2bd992"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c995ae61a492b0f71e0acc267f5b70e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#a6c995ae61a492b0f71e0acc267f5b70e">SetTimeConstant</a> (std::chrono::microseconds time_constant)</td></tr>
 <tr class="memdesc:a6c995ae61a492b0f71e0acc267f5b70e"><td class="mdescLeft">&#160;</td><td class="mdescRight">フィルター時定数を設定する  <a href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#a6c995ae61a492b0f71e0acc267f5b70e">[詳解]</a><br /></td></tr>
 <tr class="separator:a6c995ae61a492b0f71e0acc267f5b70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,6 +182,73 @@ template&lt;class Clock &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
+<a id="a8cdf7e554c629583d950c67952037977"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cdf7e554c629583d950c67952037977">&#9670;&nbsp;</a></span>Filter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html">alps::cmn::control::LowPassFilter</a>&lt; Clock &gt;::Filter </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>入力値をローパスフィルタにかける </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>入力値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>float フィルター後の値 </dd></dl>
+
+</div>
+</div>
+<a id="af8644cbaee47def981fc23038a2bd992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8644cbaee47def981fc23038a2bd992">&#9670;&nbsp;</a></span>GetLastOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html">alps::cmn::control::LowPassFilter</a>&lt; Clock &gt;::GetLastOutput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>前回のフィルター出力値を返す </p>
+<dl class="section return"><dt>戻り値</dt><dd>float 前回のフィルター出力値 </dd></dl>
+
+</div>
+</div>
 <a id="a8b79857a965dec54588e36d2a6081484"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8b79857a965dec54588e36d2a6081484">&#9670;&nbsp;</a></span>Reset()</h2>
 
@@ -241,43 +311,6 @@ template&lt;class Clock &gt; </div>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a532e0e74f64ef8f37549cf7045ec6766"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a532e0e74f64ef8f37549cf7045ec6766">&#9670;&nbsp;</a></span>Update()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Clock &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html">alps::cmn::control::LowPassFilter</a>&lt; Clock &gt;::Update </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>input</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>入力値をローパスフィルタにかける </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">input</td><td>入力値 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd>float フィルター後の値 </dd></dl>
 
 </div>
 </div>

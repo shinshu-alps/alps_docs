@@ -97,7 +97,7 @@ var hierarchy =
     [ "alps::cmn::control::LowPassFilter< Clock >", "classalps_1_1cmn_1_1control_1_1_low_pass_filter.html", null ],
     [ "alps::cmn::sensor::Bno055< Clock, I2cIo >::MagneticVector", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_magnetic_vector.html", null ],
     [ "alps::cmn::control::MotorAngleController< Clock, Motor, RotarySensor >", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html", null ],
-    [ "alps::cmn::control::MotorAngleVelocityController< Clock, Motor, RotarySensor >", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html", null ],
+    [ "alps::cmn::control::MotorAngleVelocityController< Clock >", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html", null ],
     [ "alps::cmn::control::MotorVelocityController< Clock, Motor, RotarySensor >", "classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html", null ],
     [ "alps::cmn::sensor::S11059< I2cIo >::NormalizedData", "structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html", null ],
     [ "alps::cmn::robotics::Odometory< Clock >", "classalps_1_1cmn_1_1robotics_1_1_odometory.html", null ],

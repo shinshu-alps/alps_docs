@@ -136,6 +136,9 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>GetDOutput()
 : <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#afe3d975c41e110475576c3e120a01750">alps::cmn::control::Pid&lt; Clock &gt;</a>
 </li>
+<li>GetError()
+: <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a589f6bc234146578e4e35141d8d244bd">alps::cmn::control::Pid&lt; Clock &gt;</a>
+</li>
 <li>GetEulerAngle()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_bno055.html#a308d21863631e3c18f7ae420b75237a2">alps::cmn::sensor::Bno055&lt; Clock, I2cIo &gt;</a>
 </li>
@@ -150,6 +153,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 </li>
 <li>GetLastOutput()
 : <a class="el" href="classalps_1_1cmn_1_1control_1_1_differentiator.html#aa6afcf596898ac9a12b2bfda60502eb0">alps::cmn::control::Differentiator&lt; Clock &gt;</a>
+, <a class="el" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#af8644cbaee47def981fc23038a2bd992">alps::cmn::control::LowPassFilter&lt; Clock &gt;</a>
 </li>
 <li>GetLinearAcceleration()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_bno055.html#a0529b54858d1d263063a85b9b7f6f5fb">alps::cmn::sensor::Bno055&lt; Clock, I2cIo &gt;</a>
@@ -166,8 +170,23 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>GetNormalizedValue()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a1ee538cb372b2e697722f260c17a7506">alps::cmn::sensor::Potentiometer&lt; AnalogIn &gt;</a>
 </li>
+<li>GetNowAngle()
+: <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#ad81218e69513f6bbc042e87b5febcb1b">alps::cmn::control::MotorAngleController&lt; Clock, Motor, RotarySensor &gt;</a>
+, <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a7acf3c666348a705e8a2599f65083660">alps::cmn::control::MotorVelocityController&lt; Clock, Motor, RotarySensor &gt;</a>
+</li>
+<li>GetNowLowPassedVelocity()
+: <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a2ea8ec1f46c4a16fde76ea61a2e4f2af">alps::cmn::control::MotorVelocityController&lt; Clock, Motor, RotarySensor &gt;</a>
+</li>
+<li>GetNowRawVelocity()
+: <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#aea55f7ad71ab559b6f87ead9e78b0e2a">alps::cmn::control::MotorVelocityController&lt; Clock, Motor, RotarySensor &gt;</a>
+</li>
 <li>GetOperationMode()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a2461ebbd367492fe95447da932ba9129">alps::cmn::sensor::Vl53l0x&lt; Clock, I2cIo &gt;</a>
+</li>
+<li>GetPid()
+: <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#a47954ec9c2918a6351bf648867154a27">alps::cmn::control::MotorAngleController&lt; Clock, Motor, RotarySensor &gt;</a>
+, <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#aa4dc8b2fbc3929cb1b90eea65223a1bd">alps::cmn::control::MotorAngleVelocityController&lt; Clock &gt;</a>
+, <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#aed5e5006c0c193e8ff65af7083c25a2e">alps::cmn::control::MotorVelocityController&lt; Clock, Motor, RotarySensor &gt;</a>
 </li>
 <li>GetPIDOutput()
 : <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#aa6b69486544923a1bca0a2a4934122ee">alps::cmn::control::Pid&lt; Clock &gt;</a>
@@ -199,8 +218,15 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>GetRgbColor()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_tcs34725.html#a046d7b37a2291c8b8786925786783f35">alps::cmn::sensor::Tcs34725&lt; Clock, I2cIo &gt;</a>
 </li>
+<li>GetTargetAngle()
+: <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#ab3997b7cf6f71e01b5cebecea9ff2020">alps::cmn::control::MotorAngleController&lt; Clock, Motor, RotarySensor &gt;</a>
+, <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#a0b6a3ffe073217bbdcb3fc4049675bc6">alps::cmn::control::MotorAngleVelocityController&lt; Clock &gt;</a>
+</li>
 <li>GetTargetCurrent()
 : <a class="el" href="classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail_1_1_motor_base.html#a91bb72d00a8a26449053c85ae9cc1c1f">alps::cmn::actuator::robomas_motor::detail::MotorBase&lt; Clock &gt;</a>
+</li>
+<li>GetTargetVelocity()
+: <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#aa44d05cd9a0012582e7eff591d3b0e74">alps::cmn::control::MotorVelocityController&lt; Clock, Motor, RotarySensor &gt;</a>
 </li>
 <li>GetTemperature()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_bno055.html#aa5028d09bac12a53250ad1bf88a71f1b">alps::cmn::sensor::Bno055&lt; Clock, I2cIo &gt;</a>
