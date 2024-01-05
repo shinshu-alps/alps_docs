@@ -1,5 +1,8 @@
 var dir_83658e075a4ab7b2cbb8779471289882 =
 [
+    [ "change_rate_limiter.hpp", "change__rate__limiter_8hpp.html", [
+      [ "ChangeRateLimiter", "classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html", "classalps_1_1cmn_1_1control_1_1_change_rate_limiter" ]
+    ] ],
     [ "differentiator.hpp", "differentiator_8hpp.html", [
       [ "Differentiator", "classalps_1_1cmn_1_1control_1_1_differentiator.html", "classalps_1_1cmn_1_1control_1_1_differentiator" ]
     ] ],

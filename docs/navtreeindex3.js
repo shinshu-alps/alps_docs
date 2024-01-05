@@ -1,5 +1,16 @@
 var NAVTREEINDEX3 =
 {
+"structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_gravity_vector.html#af4d8ae9db73cd4608319f502a8872e82":[3,0,0,0,6,0,3,0],
+"structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_linear_acceleration.html":[3,0,0,0,6,0,4],
+"structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_linear_acceleration.html#a03d44488c618e86c119941dcd435a4f6":[3,0,0,0,6,0,4,2],
+"structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_linear_acceleration.html#a8b40a592c70b8aa74643f3d9b9bf62e7":[3,0,0,0,6,0,4,0],
+"structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_linear_acceleration.html#ac81a8d80962613f87ab204fa6cc9c906":[3,0,0,0,6,0,4,1],
+"structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_magnetic_vector.html":[3,0,0,0,6,0,5],
+"structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_magnetic_vector.html#a1a6f35aafea5e212aeaeeaf473657908":[3,0,0,0,6,0,5,0],
+"structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_magnetic_vector.html#a1dfd0508230f401ed5e57c55264e6bc6":[3,0,0,0,6,0,5,1],
+"structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_magnetic_vector.html#a35b976129d987d4c5f5d9363e6fb1548":[3,0,0,0,6,0,5,2],
+"structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html":[3,0,0,0,6,0,6],
+"structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html#a44b739c998aecc1944b6eeabc3059db5":[3,0,0,0,6,0,6,2],
 "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html#a4a2d5c4ad9943c5373d8bf2aade5a5d5":[3,0,0,0,6,0,6,1],
 "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html#a69f0183ca080585aaf5bb250c3db0ed6":[3,0,0,0,6,0,6,3],
 "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html#aa8ed36aa79f51aada1564488ad0c9b80":[3,0,0,0,6,0,6,0],

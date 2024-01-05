@@ -1,0 +1,469 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps::cmn::control::ChangeRateLimiter&lt; Clock &gt; クラステンプレート</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">alps::cmn::control::ChangeRateLimiter&lt; Clock &gt; クラステンプレート</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>時間あたりの変化量に制限をかけるクラス．  
+ <a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="change__rate__limiter_8hpp_source.html">change_rate_limiter.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:aee1bfcea083cef334a5bc8c448e86b97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#aee1bfcea083cef334a5bc8c448e86b97">ChangeRateLimiter</a> (float max_change_rate, float lower_change_rate)</td></tr>
+<tr class="memdesc:aee1bfcea083cef334a5bc8c448e86b97"><td class="mdescLeft">&#160;</td><td class="mdescRight">変化率の制限を上限と下限で設定するコンストラクタ  <a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#aee1bfcea083cef334a5bc8c448e86b97">[詳解]</a><br /></td></tr>
+<tr class="separator:aee1bfcea083cef334a5bc8c448e86b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d7f793ba2e52570521116fd22999ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a07d7f793ba2e52570521116fd22999ad">ChangeRateLimiter</a> (float max_abs_change_rate)</td></tr>
+<tr class="memdesc:a07d7f793ba2e52570521116fd22999ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">変化率の制限を絶対値で設定するコンストラクタ  <a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a07d7f793ba2e52570521116fd22999ad">[詳解]</a><br /></td></tr>
+<tr class="separator:a07d7f793ba2e52570521116fd22999ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61302dc702f5091c9b1691af0010dba4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a61302dc702f5091c9b1691af0010dba4">SetChangeRateLimit</a> (float max_change_rate, float lower_change_rate)</td></tr>
+<tr class="memdesc:a61302dc702f5091c9b1691af0010dba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">変化率の制限値を設定する（上限と下限）  <a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a61302dc702f5091c9b1691af0010dba4">[詳解]</a><br /></td></tr>
+<tr class="separator:a61302dc702f5091c9b1691af0010dba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16a2856d0c117d6111f6ffbbb2cce353"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a16a2856d0c117d6111f6ffbbb2cce353">SetAbsChangeRateLimit</a> (float max_abs_change_rate)</td></tr>
+<tr class="memdesc:a16a2856d0c117d6111f6ffbbb2cce353"><td class="mdescLeft">&#160;</td><td class="mdescRight">変化率の制限値を設定する（絶対値）  <a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a16a2856d0c117d6111f6ffbbb2cce353">[詳解]</a><br /></td></tr>
+<tr class="separator:a16a2856d0c117d6111f6ffbbb2cce353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e17798ccae737978deb417d345985a7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a2e17798ccae737978deb417d345985a7">Update</a> (float input)</td></tr>
+<tr class="memdesc:a2e17798ccae737978deb417d345985a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">入力値に対して変化率の制限をかけて出力する．初回は入力値をそのまま出力する．  <a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a2e17798ccae737978deb417d345985a7">[詳解]</a><br /></td></tr>
+<tr class="separator:a2e17798ccae737978deb417d345985a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fddb4488af84dd04478b0842592d1c2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a6fddb4488af84dd04478b0842592d1c2">GetLastOutput</a> () const</td></tr>
+<tr class="memdesc:a6fddb4488af84dd04478b0842592d1c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">最後に出力した値を取得する  <a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a6fddb4488af84dd04478b0842592d1c2">[詳解]</a><br /></td></tr>
+<tr class="separator:a6fddb4488af84dd04478b0842592d1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8de74ebcdf4c6fa175d2b55483ed290f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a8de74ebcdf4c6fa175d2b55483ed290f">SetLastOutput</a> (float last_output)</td></tr>
+<tr class="memdesc:a8de74ebcdf4c6fa175d2b55483ed290f"><td class="mdescLeft">&#160;</td><td class="mdescRight">前回の出力値を外部から設定する  <a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a8de74ebcdf4c6fa175d2b55483ed290f">[詳解]</a><br /></td></tr>
+<tr class="separator:a8de74ebcdf4c6fa175d2b55483ed290f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8e16921dd45cd3e14327a21340a5a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#adb8e16921dd45cd3e14327a21340a5a0">Reset</a> ()</td></tr>
+<tr class="memdesc:adb8e16921dd45cd3e14327a21340a5a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">初回フラグをリセットする  <a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#adb8e16921dd45cd3e14327a21340a5a0">[詳解]</a><br /></td></tr>
+<tr class="separator:adb8e16921dd45cd3e14327a21340a5a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><h3>template&lt;class Clock&gt;<br />
+class alps::cmn::control::ChangeRateLimiter&lt; Clock &gt;</h3>
+
+<p>時間あたりの変化量に制限をかけるクラス． </p>
+<p>ローパスフィルタと違って制限閾値以下の変化には影響を与えない．</p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Clock</td><td>利用するクロック型 </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="aee1bfcea083cef334a5bc8c448e86b97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee1bfcea083cef334a5bc8c448e86b97">&#9670;&nbsp;</a></span>ChangeRateLimiter() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">alps::cmn::control::ChangeRateLimiter</a>&lt; Clock &gt;::<a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">ChangeRateLimiter</a> </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>max_change_rate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>lower_change_rate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>変化率の制限を上限と下限で設定するコンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">max_change_rate</td><td>変化率の上限 [/sec] </td></tr>
+    <tr><td class="paramname">lower_change_rate</td><td>変化率の下限 [/sec] </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a07d7f793ba2e52570521116fd22999ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07d7f793ba2e52570521116fd22999ad">&#9670;&nbsp;</a></span>ChangeRateLimiter() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">alps::cmn::control::ChangeRateLimiter</a>&lt; Clock &gt;::<a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">ChangeRateLimiter</a> </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>max_abs_change_rate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>変化率の制限を絶対値で設定するコンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">max_abs_change_rate</td><td>変化率の絶対値上限 [/sec]（正の値） </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a6fddb4488af84dd04478b0842592d1c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fddb4488af84dd04478b0842592d1c2">&#9670;&nbsp;</a></span>GetLastOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">alps::cmn::control::ChangeRateLimiter</a>&lt; Clock &gt;::GetLastOutput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>最後に出力した値を取得する </p>
+<dl class="section return"><dt>戻り値</dt><dd>float 最後に出力した値 </dd></dl>
+
+</div>
+</div>
+<a id="adb8e16921dd45cd3e14327a21340a5a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb8e16921dd45cd3e14327a21340a5a0">&#9670;&nbsp;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">alps::cmn::control::ChangeRateLimiter</a>&lt; Clock &gt;::Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初回フラグをリセットする </p>
+
+</div>
+</div>
+<a id="a16a2856d0c117d6111f6ffbbb2cce353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16a2856d0c117d6111f6ffbbb2cce353">&#9670;&nbsp;</a></span>SetAbsChangeRateLimit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">alps::cmn::control::ChangeRateLimiter</a>&lt; Clock &gt;::SetAbsChangeRateLimit </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>max_abs_change_rate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>変化率の制限値を設定する（絶対値） </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">max_abs_change_rate</td><td>変化率の絶対値上限 [/sec]（正の値） </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a61302dc702f5091c9b1691af0010dba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61302dc702f5091c9b1691af0010dba4">&#9670;&nbsp;</a></span>SetChangeRateLimit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">alps::cmn::control::ChangeRateLimiter</a>&lt; Clock &gt;::SetChangeRateLimit </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>max_change_rate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>lower_change_rate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>変化率の制限値を設定する（上限と下限） </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">max_change_rate</td><td>変化率の上限 [/sec] </td></tr>
+    <tr><td class="paramname">lower_change_rate</td><td>変化率の下限 [/sec] </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8de74ebcdf4c6fa175d2b55483ed290f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8de74ebcdf4c6fa175d2b55483ed290f">&#9670;&nbsp;</a></span>SetLastOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">alps::cmn::control::ChangeRateLimiter</a>&lt; Clock &gt;::SetLastOutput </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>last_output</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>前回の出力値を外部から設定する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">last_output</td><td>設定する前回の出力値 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2e17798ccae737978deb417d345985a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e17798ccae737978deb417d345985a7">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">alps::cmn::control::ChangeRateLimiter</a>&lt; Clock &gt;::Update </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>入力値に対して変化率の制限をかけて出力する．初回は入力値をそのまま出力する． </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>入力値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>float 出力値（制限後） </dd></dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>alps_common_lib/include/alps_cmn/control/<a class="el" href="change__rate__limiter_8hpp_source.html">change_rate_limiter.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacealps.html">alps</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn.html">cmn</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn_1_1control.html">control</a></li><li class="navelem"><a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">ChangeRateLimiter</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

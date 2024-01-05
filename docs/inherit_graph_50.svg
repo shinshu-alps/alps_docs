@@ -12,11 +12,11 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_angular_velocity.html" target="_top" xlink:title="角速度のセンサーデータ">
+<g id="a_node1"><a xlink:href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_acceleration.html" target="_top" xlink:title="加速度のセンサーデータ">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-41.5 121,-41.5 121,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::sensor::</text>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Bno055&lt; Clock, I2cIo</text>
-<text text-anchor="middle" x="60.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt;::AngularVelocity</text>
+<text text-anchor="middle" x="60.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt;::Acceleration</text>
 </a>
 </g>
 </g>
