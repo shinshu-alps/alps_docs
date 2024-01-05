@@ -55,7 +55,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="tcs34725_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="tcs34725_8hpp.html" target="_top" xlink:title="カラーセンサーTCS34725のクラス">
 <polygon fill="white" stroke="black" points="358.5,-6 358.5,-36 528.5,-36 528.5,-6 358.5,-6"/>
 <text text-anchor="start" x="366.5" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">alps_common_lib/include</text>
 <text text-anchor="middle" x="443.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_cmn/sensor/tcs34725.hpp</text>

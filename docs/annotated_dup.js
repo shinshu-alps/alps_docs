@@ -34,6 +34,7 @@ var annotated_dup =
           [ "UartPacketTransceiver", "classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html", "classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver" ]
         ] ],
         [ "control", "namespacealps_1_1cmn_1_1control.html", [
+          [ "ChangeRateLimiter", "classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html", "classalps_1_1cmn_1_1control_1_1_change_rate_limiter" ],
           [ "Differentiator", "classalps_1_1cmn_1_1control_1_1_differentiator.html", "classalps_1_1cmn_1_1control_1_1_differentiator" ],
           [ "Integrator", "classalps_1_1cmn_1_1control_1_1_integrator.html", "classalps_1_1cmn_1_1control_1_1_integrator" ],
           [ "LowPassFilter", "classalps_1_1cmn_1_1control_1_1_low_pass_filter.html", "classalps_1_1cmn_1_1control_1_1_low_pass_filter" ],

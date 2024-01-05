@@ -1,5 +1,5 @@
 <map id="alps_common_lib/include/alps_cmn/sensor/tcs34725.hpp" name="alps_common_lib/include/alps_cmn/sensor/tcs34725.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,232,47"/>
+<area shape="rect" id="node1" title="カラーセンサーTCS34725のクラス" alt="" coords="5,5,232,47"/>
 <area shape="rect" id="node2" title=" " alt="" coords="23,184,89,211"/>
 <area shape="rect" id="node3" href="$i__i2c__io_8hpp.html" title="I2C通信インタフェース" alt="" coords="232,95,421,136"/>
 <area shape="rect" id="node6" href="$wait_8hpp.html" title="wait関数" alt="" coords="29,102,208,129"/>

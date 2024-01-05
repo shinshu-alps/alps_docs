@@ -10,6 +10,7 @@ var hierarchy =
     [ "alps::cmn::communication::CanPublisher< T >", "classalps_1_1cmn_1_1communication_1_1_can_publisher.html", null ],
     [ "alps::cmn::communication::CanSubscriber< T >", "classalps_1_1cmn_1_1communication_1_1_can_subscriber.html", null ],
     [ "alps::cmn::communication::CanTypedDataTransceiver< CanIo, kMaxSubscriberNum >", "classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html", null ],
+    [ "alps::cmn::control::ChangeRateLimiter< Clock >", "classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html", null ],
     [ "alps::cmn::communication::Cobs", "classalps_1_1cmn_1_1communication_1_1_cobs.html", null ],
     [ "alps::cmn::communication::DataSerializer< T >", "classalps_1_1cmn_1_1communication_1_1_data_serializer.html", null ],
     [ "alps::cmn::control::Differentiator< Clock >", "classalps_1_1cmn_1_1control_1_1_differentiator.html", null ],
