@@ -121,9 +121,9 @@ alps::mbed::communication::BufferedCanIo&lt; kWriteBufSize, kReadBufSize &gt; �
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a76cd65aa670230eebeb382af91b8df95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#a76cd65aa670230eebeb382af91b8df95">BufferedCanIo</a> (PinName rd, PinName td, int bitrate=1000000)</td></tr>
-<tr class="memdesc:a76cd65aa670230eebeb382af91b8df95"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化コンストラクタ  <a href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#a76cd65aa670230eebeb382af91b8df95">[詳解]</a><br /></td></tr>
-<tr class="separator:a76cd65aa670230eebeb382af91b8df95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a345a27955bb2a3ffaac52647dd444f61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#a345a27955bb2a3ffaac52647dd444f61">BufferedCanIo</a> (PinName rd, PinName td)</td></tr>
+<tr class="memdesc:a345a27955bb2a3ffaac52647dd444f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化コンストラクタ  <a href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#a345a27955bb2a3ffaac52647dd444f61">[詳解]</a><br /></td></tr>
+<tr class="separator:a345a27955bb2a3ffaac52647dd444f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5b6fe31bee7a0c3574dfed839f9b4f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#ae5b6fe31bee7a0c3574dfed839f9b4f5">TryRead</a> (<a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">cmn::communication::CanDataFrame</a> &amp;frame)</td></tr>
 <tr class="memdesc:ae5b6fe31bee7a0c3574dfed839f9b4f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">CANフレームを1つ読み取る．  <a href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#ae5b6fe31bee7a0c3574dfed839f9b4f5">[詳解]</a><br /></td></tr>
 <tr class="separator:ae5b6fe31bee7a0c3574dfed839f9b4f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,6 +148,7 @@ alps::mbed::communication::BufferedCanIo&lt; kWriteBufSize, kReadBufSize &gt; �
 class alps::mbed::communication::BufferedCanIo&lt; kWriteBufSize, kReadBufSize &gt;</h3>
 
 <p>MbedのCAN通信IO. 割り込みによってデータをバッファリングする． </p>
+<p>ビットレートは1Mbpsで固定．</p>
 <dl class="tparams"><dt>テンプレート引数</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">kWriteBufSize</td><td>送信バッファのサイズ．デフォルトは50 </td></tr>
@@ -156,8 +157,8 @@ class alps::mbed::communication::BufferedCanIo&lt; kWriteBufSize, kReadBufSize &
   </dd>
 </dl>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="a76cd65aa670230eebeb382af91b8df95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76cd65aa670230eebeb382af91b8df95">&#9670;&nbsp;</a></span>BufferedCanIo()</h2>
+<a id="a345a27955bb2a3ffaac52647dd444f61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a345a27955bb2a3ffaac52647dd444f61">&#9670;&nbsp;</a></span>BufferedCanIo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,13 +178,7 @@ template&lt;size_t kWriteBufSize = 50, size_t kReadBufSize = 100&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">PinName&#160;</td>
-          <td class="paramname"><em>td</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>bitrate</em> = <code>1000000</code>&#160;</td>
+          <td class="paramname"><em>td</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -203,7 +198,6 @@ template&lt;size_t kWriteBufSize = 50, size_t kReadBufSize = 100&gt; </div>
   <table class="params">
     <tr><td class="paramname">rd</td><td>CAN_RDピン </td></tr>
     <tr><td class="paramname">td</td><td>CAN_TDピン </td></tr>
-    <tr><td class="paramname">bitrate</td><td>ビットレート. デフォルトは1Mbps </td></tr>
   </table>
   </dd>
 </dl>

@@ -266,29 +266,32 @@ $(document).ready(function(){initNavTree('can__typed__data__transceiver_8hpp_sou
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;          <span class="keywordflow">if</span> (result) {</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            receive_data_callback_(data);</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;          }</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        }</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      }</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    } <span class="keywordflow">else</span>  <span class="comment">// 1つのメッセージで収まる場合</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    {</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      T data;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;      <span class="keywordtype">bool</span> result = <a class="code" href="classalps_1_1cmn_1_1communication_1_1_data_serializer.html#a2f6c9c35b0b69d6c65e983e7321fd6f8">DataSerializer&lt;T&gt;::Deserialize</a>(received_bytes_, data);</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;      <span class="keywordflow">if</span> (result) {</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        receive_data_callback_(data);</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;      }</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    }</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  }</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keyword">const</span> <a class="code" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">CanDataFrame::Id</a> id_;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  etl::delegate&lt;void(<span class="keyword">const</span> T &amp;)&gt; receive_data_callback_;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  etl::circular_buffer&lt;uint8_t, RequiredBufferSizeForCanTypedDataCommunication&lt;T&gt;()&gt;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    received_bytes_;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;};</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;}  <span class="comment">// namespace communication</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;}  <span class="comment">// namespace cmn</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;          <a class="code" href="logging__macros_8hpp.html#a412fcca2f6cf87abd03b30589763cf20">ALPS_LOG_WARN</a>(</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            <span class="stringliteral">&quot;Subscribed CAN data(CAN-ID: %x) is broken. COBS decode failed.&quot;</span>, this-&gt;id_);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        }</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      }</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    } <span class="keywordflow">else</span>  <span class="comment">// 1つのメッセージで収まる場合</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    {</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      T data;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;      <span class="keywordtype">bool</span> result = <a class="code" href="classalps_1_1cmn_1_1communication_1_1_data_serializer.html#a2f6c9c35b0b69d6c65e983e7321fd6f8">DataSerializer&lt;T&gt;::Deserialize</a>(received_bytes_, data);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      <span class="keywordflow">if</span> (result) {</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        receive_data_callback_(data);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  }</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160; </div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="keyword">const</span> <a class="code" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">CanDataFrame::Id</a> id_;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  etl::delegate&lt;void(<span class="keyword">const</span> T &amp;)&gt; receive_data_callback_;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  etl::circular_buffer&lt;uint8_t, RequiredBufferSizeForCanTypedDataCommunication&lt;T&gt;()&gt;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    received_bytes_;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;};</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;}  <span class="comment">// namespace communication</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="acan__callback__handler_8hpp_html"><div class="ttname"><a href="can__callback__handler_8hpp.html">can_callback_handler.hpp</a></div><div class="ttdoc">CANデータフレームをコールバックで処理するためのライブラリ</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_can_callback_handler_html"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html">alps::cmn::communication::CanCallbackHandler</a></div><div class="ttdoc">CANの受信をコールバックで処理するためのクラス</div><div class="ttdef"><b>Definition:</b> can_callback_handler.hpp:32</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_can_publisher_html"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_can_publisher.html">alps::cmn::communication::CanPublisher</a></div><div class="ttdoc">CAN通信で型付けされたデータを送信するクラス．</div><div class="ttdef"><b>Definition:</b> can_typed_data_transceiver.hpp:104</div></div>
