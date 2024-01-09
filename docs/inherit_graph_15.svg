@@ -23,7 +23,7 @@
 <!-- Node1 -->
 <g id="node2" class="node">
 <title>Node1</title>
-<g id="a_node2"><a xlink:href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html" target="_top" xlink:title="MbedのCAN通信IO. 割り込みによってデータをバッファリングする．">
+<g id="a_node2"><a xlink:href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html" target="_top" xlink:title="MbedのCAN通信IO. 割り込みによってデータをバッファリングして扱う．">
 <polygon fill="white" stroke="black" points="182,-0.5 182,-41.5 357,-41.5 357,-0.5 182,-0.5"/>
 <text text-anchor="start" x="190" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps::mbed::communication</text>
 <text text-anchor="start" x="190" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">::BufferedCanIo&lt; kWriteBufSize,</text>

@@ -109,21 +109,22 @@ $(document).ready(function(){initNavTree('classalps_1_1mbed_1_1communication_1_1
 </div><!--header-->
 <div class="contents">
 
-<p>MbedのCAN通信IO. 割り込みによってデータをバッファリングする．  
+<p>MbedのCAN通信IO. 割り込みによってデータをバッファリングして扱う．  
  <a href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#details">[詳解]</a></p>
 
 <p><code>#include &lt;<a class="el" href="buffered__can__io_8hpp_source.html">buffered_can_io.hpp</a>&gt;</code></p>
 <div class="dynheader">
 alps::mbed::communication::BufferedCanIo&lt; kWriteBufSize, kReadBufSize &gt; の継承関係図</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classalps_1_1mbed_1_1communication_1_1_buffered_can_io__inherit__graph.svg" width="244" height="346"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classalps_1_1mbed_1_1communication_1_1_buffered_can_io__inherit__graph.svg" width="244" height="346"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a345a27955bb2a3ffaac52647dd444f61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#a345a27955bb2a3ffaac52647dd444f61">BufferedCanIo</a> (PinName rd, PinName td)</td></tr>
-<tr class="memdesc:a345a27955bb2a3ffaac52647dd444f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化コンストラクタ  <a href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#a345a27955bb2a3ffaac52647dd444f61">[詳解]</a><br /></td></tr>
-<tr class="separator:a345a27955bb2a3ffaac52647dd444f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2447e36bcfa631fc4b3772ad2e315ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#aa2447e36bcfa631fc4b3772ad2e315ff">BufferedCanIo</a> (PinName rd, PinName td, std::chrono::microseconds write_interrupt_cycle=std::chrono::microseconds(500))</td></tr>
+<tr class="memdesc:aa2447e36bcfa631fc4b3772ad2e315ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化コンストラクタ  <a href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#aa2447e36bcfa631fc4b3772ad2e315ff">[詳解]</a><br /></td></tr>
+<tr class="separator:aa2447e36bcfa631fc4b3772ad2e315ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5b6fe31bee7a0c3574dfed839f9b4f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#ae5b6fe31bee7a0c3574dfed839f9b4f5">TryRead</a> (<a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">cmn::communication::CanDataFrame</a> &amp;frame)</td></tr>
 <tr class="memdesc:ae5b6fe31bee7a0c3574dfed839f9b4f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">CANフレームを1つ読み取る．  <a href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#ae5b6fe31bee7a0c3574dfed839f9b4f5">[詳解]</a><br /></td></tr>
 <tr class="separator:ae5b6fe31bee7a0c3574dfed839f9b4f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,7 +148,7 @@ alps::mbed::communication::BufferedCanIo&lt; kWriteBufSize, kReadBufSize &gt; �
 <div class="textblock"><h3>template&lt;size_t kWriteBufSize = 50, size_t kReadBufSize = 100&gt;<br />
 class alps::mbed::communication::BufferedCanIo&lt; kWriteBufSize, kReadBufSize &gt;</h3>
 
-<p>MbedのCAN通信IO. 割り込みによってデータをバッファリングする． </p>
+<p>MbedのCAN通信IO. 割り込みによってデータをバッファリングして扱う． </p>
 <p>ビットレートは1Mbpsで固定．</p>
 <dl class="tparams"><dt>テンプレート引数</dt><dd>
   <table class="tparams">
@@ -157,8 +158,8 @@ class alps::mbed::communication::BufferedCanIo&lt; kWriteBufSize, kReadBufSize &
   </dd>
 </dl>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="a345a27955bb2a3ffaac52647dd444f61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a345a27955bb2a3ffaac52647dd444f61">&#9670;&nbsp;</a></span>BufferedCanIo()</h2>
+<a id="aa2447e36bcfa631fc4b3772ad2e315ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2447e36bcfa631fc4b3772ad2e315ff">&#9670;&nbsp;</a></span>BufferedCanIo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -178,7 +179,13 @@ template&lt;size_t kWriteBufSize = 50, size_t kReadBufSize = 100&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">PinName&#160;</td>
-          <td class="paramname"><em>td</em>&#160;</td>
+          <td class="paramname"><em>td</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::chrono::microseconds&#160;</td>
+          <td class="paramname"><em>write_interrupt_cycle</em> = <code>std::chrono::microseconds(500)</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -198,6 +205,7 @@ template&lt;size_t kWriteBufSize = 50, size_t kReadBufSize = 100&gt; </div>
   <table class="params">
     <tr><td class="paramname">rd</td><td>CAN_RDピン </td></tr>
     <tr><td class="paramname">td</td><td>CAN_TDピン </td></tr>
+    <tr><td class="paramname">write_interrupt_cycle</td><td>書き込み割り込み周期．デフォルトは500us．短くすると遅延は小さくなるが送信順が乱れる場合があり，長くすると安定するが遅延が大きくなる． </td></tr>
   </table>
   </dd>
 </dl>
