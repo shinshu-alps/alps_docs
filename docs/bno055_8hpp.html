@@ -113,40 +113,41 @@ $(document).ready(function(){initNavTree('bno055_8hpp.html',''); initResizable()
 <a href="#details">[詳解]</a></p>
 <div class="textblock"><code>#include &lt;chrono&gt;</code><br />
 <code>#include &quot;<a class="el" href="i__i2c__io_8hpp_source.html">alps_cmn/communication/i_i2c_io.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="wait_8hpp_source.html">alps_cmn/time/wait.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sleep_8hpp_source.html">alps_cmn/time/sleep.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="angle_8hpp_source.html">alps_cmn/util/angle.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 bno055.hpp の依存先関係図:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="bno055_8hpp__incl.svg" width="624" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="bno055_8hpp__incl.svg" width="684" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="bno055_8hpp_source.html">[ソースコード]</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 クラス</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_bno055.html">alps::cmn::sensor::Bno055&lt; Clock, I2cIo &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_bno055.html">alps::cmn::sensor::Bno055&lt; I2cIo &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">9軸センサ(加速度，ジャイロ，地磁気) BNO055  <a href="classalps_1_1cmn_1_1sensor_1_1_bno055.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_acceleration.html">alps::cmn::sensor::Bno055&lt; Clock, I2cIo &gt;::Acceleration</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_acceleration.html">alps::cmn::sensor::Bno055&lt; I2cIo &gt;::Acceleration</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">加速度のセンサーデータ  <a href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_acceleration.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_magnetic_vector.html">alps::cmn::sensor::Bno055&lt; Clock, I2cIo &gt;::MagneticVector</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_magnetic_vector.html">alps::cmn::sensor::Bno055&lt; I2cIo &gt;::MagneticVector</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">地磁気のセンサーデータ  <a href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_magnetic_vector.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_angular_velocity.html">alps::cmn::sensor::Bno055&lt; Clock, I2cIo &gt;::AngularVelocity</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_angular_velocity.html">alps::cmn::sensor::Bno055&lt; I2cIo &gt;::AngularVelocity</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">角速度のセンサーデータ  <a href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_angular_velocity.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_euler.html">alps::cmn::sensor::Bno055&lt; Clock, I2cIo &gt;::Euler</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_euler.html">alps::cmn::sensor::Bno055&lt; I2cIo &gt;::Euler</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">オイラー角のセンサーデータ  <a href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_euler.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html">alps::cmn::sensor::Bno055&lt; Clock, I2cIo &gt;::Quaternion</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html">alps::cmn::sensor::Bno055&lt; I2cIo &gt;::Quaternion</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">クォータニオンのセンサーデータ  <a href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_linear_acceleration.html">alps::cmn::sensor::Bno055&lt; Clock, I2cIo &gt;::LinearAcceleration</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_linear_acceleration.html">alps::cmn::sensor::Bno055&lt; I2cIo &gt;::LinearAcceleration</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">線形加速度のセンサーデータ  <a href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_linear_acceleration.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_gravity_vector.html">alps::cmn::sensor::Bno055&lt; Clock, I2cIo &gt;::GravityVector</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_gravity_vector.html">alps::cmn::sensor::Bno055&lt; I2cIo &gt;::GravityVector</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">重力加速度のセンサーデータ  <a href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_gravity_vector.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">

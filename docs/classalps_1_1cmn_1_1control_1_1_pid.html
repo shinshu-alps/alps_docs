@@ -116,9 +116,9 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1control_1_1_pid.ht
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a71296ab0f445c34c98cb46f96417c6a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a71296ab0f445c34c98cb46f96417c6a4">Pid</a> (float kp, float ki, float kd, float max_output=std::numeric_limits&lt; float &gt;::max(), float lowest_output=std::numeric_limits&lt; float &gt;::lowest(), std::chrono::microseconds min_calc_differential_interval=std::chrono::milliseconds(1))</td></tr>
-<tr class="memdesc:a71296ab0f445c34c98cb46f96417c6a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#a71296ab0f445c34c98cb46f96417c6a4">[詳解]</a><br /></td></tr>
-<tr class="separator:a71296ab0f445c34c98cb46f96417c6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a15f01ac6da203251a91a69de392a9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a7a15f01ac6da203251a91a69de392a9a">Pid</a> (<a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a> pid_param, <a class="el" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange</a>&lt; float &gt; output_limit={})</td></tr>
+<tr class="memdesc:a7a15f01ac6da203251a91a69de392a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#a7a15f01ac6da203251a91a69de392a9a">[詳解]</a><br /></td></tr>
+<tr class="separator:a7a15f01ac6da203251a91a69de392a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a665cc71812c75d485ab514372ffdd9e3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a665cc71812c75d485ab514372ffdd9e3">Calculate</a> (const float error)</td></tr>
 <tr class="memdesc:a665cc71812c75d485ab514372ffdd9e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID制御を実行する  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#a665cc71812c75d485ab514372ffdd9e3">[詳解]</a><br /></td></tr>
 <tr class="separator:a665cc71812c75d485ab514372ffdd9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,21 +128,15 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1control_1_1_pid.ht
 <tr class="memitem:a3644e9d21ea9805961eb5af326e8c4ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a3644e9d21ea9805961eb5af326e8c4ad">CheckConvergence</a> (float allowable_error, float alloweable_differential_value) const</td></tr>
 <tr class="memdesc:a3644e9d21ea9805961eb5af326e8c4ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">前回の計算結果から収束しているかどうかを判定する  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#a3644e9d21ea9805961eb5af326e8c4ad">[詳解]</a><br /></td></tr>
 <tr class="separator:a3644e9d21ea9805961eb5af326e8c4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a589f6bc234146578e4e35141d8d244bd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a589f6bc234146578e4e35141d8d244bd">GetError</a> () const</td></tr>
-<tr class="memdesc:a589f6bc234146578e4e35141d8d244bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">前回の計算時点での偏差を取得する  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#a589f6bc234146578e4e35141d8d244bd">[詳解]</a><br /></td></tr>
-<tr class="separator:a589f6bc234146578e4e35141d8d244bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6b69486544923a1bca0a2a4934122ee"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#aa6b69486544923a1bca0a2a4934122ee">GetPIDOutput</a> () const</td></tr>
-<tr class="memdesc:aa6b69486544923a1bca0a2a4934122ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">前回のPID制御計算結果を取得する  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#aa6b69486544923a1bca0a2a4934122ee">[詳解]</a><br /></td></tr>
-<tr class="separator:aa6b69486544923a1bca0a2a4934122ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef7f79651f47f7d991917fd01af16c89"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#aef7f79651f47f7d991917fd01af16c89">GetPOutput</a> () const</td></tr>
-<tr class="memdesc:aef7f79651f47f7d991917fd01af16c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">前回の比例項の計算結果を取得する  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#aef7f79651f47f7d991917fd01af16c89">[詳解]</a><br /></td></tr>
-<tr class="separator:aef7f79651f47f7d991917fd01af16c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b1df5efe47c9046d7caa7a295db34e3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a1b1df5efe47c9046d7caa7a295db34e3">GetIOutput</a> () const</td></tr>
-<tr class="memdesc:a1b1df5efe47c9046d7caa7a295db34e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">前回の積分項の計算結果を取得する  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#a1b1df5efe47c9046d7caa7a295db34e3">[詳解]</a><br /></td></tr>
-<tr class="separator:a1b1df5efe47c9046d7caa7a295db34e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe3d975c41e110475576c3e120a01750"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#afe3d975c41e110475576c3e120a01750">GetDOutput</a> () const</td></tr>
-<tr class="memdesc:afe3d975c41e110475576c3e120a01750"><td class="mdescLeft">&#160;</td><td class="mdescRight">前回の微分項の計算結果を取得する  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#afe3d975c41e110475576c3e120a01750">[詳解]</a><br /></td></tr>
-<tr class="separator:afe3d975c41e110475576c3e120a01750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c91c1c15dfd42fcb68e99649612da7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_result.html">PidResult</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a79c91c1c15dfd42fcb68e99649612da7">GetPidResult</a> () const</td></tr>
+<tr class="memdesc:a79c91c1c15dfd42fcb68e99649612da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIDの計算結果を取得する  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#a79c91c1c15dfd42fcb68e99649612da7">[詳解]</a><br /></td></tr>
+<tr class="separator:a79c91c1c15dfd42fcb68e99649612da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc9b7b1320e2b7413845b222ea579d2b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#afc9b7b1320e2b7413845b222ea579d2b">GetPidParam</a> () const</td></tr>
+<tr class="memdesc:afc9b7b1320e2b7413845b222ea579d2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIDのパラメータを取得する  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#afc9b7b1320e2b7413845b222ea579d2b">[詳解]</a><br /></td></tr>
+<tr class="separator:afc9b7b1320e2b7413845b222ea579d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76574f26efe3c7c8e510222adaad856b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a76574f26efe3c7c8e510222adaad856b">SetPidParam</a> (const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a> &amp;pid_param)</td></tr>
+<tr class="memdesc:a76574f26efe3c7c8e510222adaad856b"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIDのパラメータを設定する  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#a76574f26efe3c7c8e510222adaad856b">[詳解]</a><br /></td></tr>
+<tr class="separator:a76574f26efe3c7c8e510222adaad856b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><h3>template&lt;class Clock&gt;<br />
@@ -152,14 +146,13 @@ class alps::cmn::control::Pid&lt; Clock &gt;</h3>
 <p>参考: <a href="https://docs.simplefoc.com/pi_controller">https://docs.simplefoc.com/pi_controller</a></p>
 <dl class="tparams"><dt>テンプレート引数</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Clock</td><td>利用するクロック型 ( <a href="https://cpprefjp.github.io/reference/chrono/is_clock.html">https://cpprefjp.github.io/reference/chrono/is_clock.html</a> )</td></tr>
+    <tr><td class="paramname">Clock</td><td>利用するクロック型 ( <a href="https://cpprefjp.github.io/reference/chrono/is_clock.html">https://cpprefjp.github.io/reference/chrono/is_clock.html</a> ) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">todo:</a></b></dt><dd>変化速度チェックは別クラスに切り出したほうがいいかも </dd></dl>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="a71296ab0f445c34c98cb46f96417c6a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71296ab0f445c34c98cb46f96417c6a4">&#9670;&nbsp;</a></span>Pid()</h2>
+<a id="a7a15f01ac6da203251a91a69de392a9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a15f01ac6da203251a91a69de392a9a">&#9670;&nbsp;</a></span>Pid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -172,38 +165,14 @@ template&lt;class Clock &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">Pid</a> </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>kp</em>, </td>
+          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a>&#160;</td>
+          <td class="paramname"><em>pid_param</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>ki</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>kd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>max_output</em> = <code>std::numeric_limits&lt;float&gt;::max()</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>lowest_output</em> = <code>std::numeric_limits&lt;float&gt;::lowest()</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::chrono::microseconds&#160;</td>
-          <td class="paramname"><em>min_calc_differential_interval</em> = <code>std::chrono::milliseconds(1)</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange</a>&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>output_limit</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -221,12 +190,8 @@ template&lt;class Clock &gt; </div>
 <p>コンストラクタ </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">kp</td><td>Pゲイン </td></tr>
-    <tr><td class="paramname">ki</td><td>Iゲイン </td></tr>
-    <tr><td class="paramname">kd</td><td>Dゲイン </td></tr>
-    <tr><td class="paramname">max_output</td><td>最大出力値 </td></tr>
-    <tr><td class="paramname">lowest_output</td><td>最小出力値 </td></tr>
-    <tr><td class="paramname">min_calc_differential_interval</td><td>微分計算を行う最小間隔 </td></tr>
+    <tr><td class="paramname">pid_param</td><td>PIDのパラメータ </td></tr>
+    <tr><td class="paramname">output_limit</td><td>出力値の範囲(デフォルトは無制限) </td></tr>
   </table>
   </dd>
 </dl>
@@ -321,8 +286,8 @@ false 収束していない </dd></dl>
 
 </div>
 </div>
-<a id="afe3d975c41e110475576c3e120a01750"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe3d975c41e110475576c3e120a01750">&#9670;&nbsp;</a></span>GetDOutput()</h2>
+<a id="afc9b7b1320e2b7413845b222ea579d2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc9b7b1320e2b7413845b222ea579d2b">&#9670;&nbsp;</a></span>GetPidParam()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -333,7 +298,7 @@ template&lt;class Clock &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::GetDOutput </td>
+          <td class="memname">const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a>&amp; <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::GetPidParam </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -346,13 +311,12 @@ template&lt;class Clock &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>前回の微分項の計算結果を取得する </p>
-<dl class="section return"><dt>戻り値</dt><dd>float 微分項の計算結果 </dd></dl>
+<p>PIDのパラメータを取得する </p>
 
 </div>
 </div>
-<a id="a589f6bc234146578e4e35141d8d244bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a589f6bc234146578e4e35141d8d244bd">&#9670;&nbsp;</a></span>GetError()</h2>
+<a id="a79c91c1c15dfd42fcb68e99649612da7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79c91c1c15dfd42fcb68e99649612da7">&#9670;&nbsp;</a></span>GetPidResult()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -363,7 +327,7 @@ template&lt;class Clock &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::GetError </td>
+          <td class="memname">const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_result.html">PidResult</a>&amp; <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::GetPidResult </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -376,98 +340,8 @@ template&lt;class Clock &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>前回の計算時点での偏差を取得する </p>
-<dl class="section return"><dt>戻り値</dt><dd>float 前回の偏差 </dd></dl>
-
-</div>
-</div>
-<a id="a1b1df5efe47c9046d7caa7a295db34e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b1df5efe47c9046d7caa7a295db34e3">&#9670;&nbsp;</a></span>GetIOutput()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Clock &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::GetIOutput </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>前回の積分項の計算結果を取得する </p>
-<dl class="section return"><dt>戻り値</dt><dd>float 積分項の計算結果 </dd></dl>
-
-</div>
-</div>
-<a id="aa6b69486544923a1bca0a2a4934122ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6b69486544923a1bca0a2a4934122ee">&#9670;&nbsp;</a></span>GetPIDOutput()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Clock &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::GetPIDOutput </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>前回のPID制御計算結果を取得する </p>
-<dl class="section return"><dt>戻り値</dt><dd>float 前回のPIDの出力値 </dd></dl>
-
-</div>
-</div>
-<a id="aef7f79651f47f7d991917fd01af16c89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef7f79651f47f7d991917fd01af16c89">&#9670;&nbsp;</a></span>GetPOutput()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Clock &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::GetPOutput </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>前回の比例項の計算結果を取得する </p>
-<dl class="section return"><dt>戻り値</dt><dd>float 比例項の計算結果 </dd></dl>
+<p>PIDの計算結果を取得する </p>
+<dl class="section return"><dt>戻り値</dt><dd>const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_result.html" title="PID制御の計算結果">PidResult</a>&amp; PIDの計算結果 </dd></dl>
 
 </div>
 </div>
@@ -497,6 +371,42 @@ template&lt;class Clock &gt; </div>
 </div><div class="memdoc">
 
 <p>前回までの計算結果をリセットする </p>
+
+</div>
+</div>
+<a id="a76574f26efe3c7c8e510222adaad856b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76574f26efe3c7c8e510222adaad856b">&#9670;&nbsp;</a></span>SetPidParam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::SetPidParam </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a> &amp;&#160;</td>
+          <td class="paramname"><em>pid_param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PIDのパラメータを設定する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pid_param</td><td>PIDのパラメータ </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

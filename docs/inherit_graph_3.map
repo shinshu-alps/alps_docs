@@ -1,3 +1,4 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="5,5,152,47"/>
+<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="5,5,231,76"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html" title="モーターに対して摩擦補償を行うデコレーター" alt="" coords="279,13,540,69"/>
 </map>

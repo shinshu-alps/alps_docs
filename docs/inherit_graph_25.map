@@ -1,3 +1,4 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html" title="UART通信でパケットを送受信するためのクラス" alt="" coords="5,5,275,91"/>
+<area shape="rect" id="node1" href="$structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html" title=" " alt="" coords="5,5,200,61"/>
+<area shape="rect" id="node2" href="$structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html" title="型のバイト列変換に関する情報" alt="" coords="248,13,443,54"/>
 </map>

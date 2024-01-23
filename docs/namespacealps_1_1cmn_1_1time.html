@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('namespacealps_1_1cmn_1_1time.html','')
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">クラス</a> &#124;
+<a href="#typedef-members">型定義</a> &#124;
 <a href="#func-members">関数</a>  </div>
   <div class="headertitle">
 <div class="title">alps::cmn::time 名前空間</div>  </div>
@@ -124,46 +125,59 @@ $(document).ready(function(){initNavTree('namespacealps_1_1cmn_1_1time.html','')
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">タイムアウトを検知するクラス  <a href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:a4dc32b93ee736cf2c098e6467107ee56"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">Seconds</a> = std::chrono::duration&lt; float, std::ratio&lt; 1 &gt; &gt;</td></tr>
+<tr class="memdesc:a4dc32b93ee736cf2c098e6467107ee56"><td class="mdescLeft">&#160;</td><td class="mdescRight">float精度の秒  <a href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">[詳解]</a><br /></td></tr>
+<tr class="separator:a4dc32b93ee736cf2c098e6467107ee56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 関数</h2></td></tr>
-<tr class="memitem:a60c317c943c5990f4619048af3defb26"><td class="memTemplParams" colspan="2">template&lt;class Clock , class Rep , class Period &gt; </td></tr>
-<tr class="memitem:a60c317c943c5990f4619048af3defb26"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1time.html#a60c317c943c5990f4619048af3defb26">wait</a> (const std::chrono::duration&lt; Rep, Period &gt; &amp;duration)</td></tr>
-<tr class="memdesc:a60c317c943c5990f4619048af3defb26"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定した期間待機する．  <a href="namespacealps_1_1cmn_1_1time.html#a60c317c943c5990f4619048af3defb26">[詳解]</a><br /></td></tr>
-<tr class="separator:a60c317c943c5990f4619048af3defb26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f667b84910e28a6a2426a8994c05f37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1time.html#a2f667b84910e28a6a2426a8994c05f37">SleepFor</a> (std::chrono::milliseconds duration)</td></tr>
+<tr class="memdesc:a2f667b84910e28a6a2426a8994c05f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定した時間スリープする(デフォルト実装）  <a href="namespacealps_1_1cmn_1_1time.html#a2f667b84910e28a6a2426a8994c05f37">[詳解]</a><br /></td></tr>
+<tr class="separator:a2f667b84910e28a6a2426a8994c05f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>時間関係 </p>
-</div><h2 class="groupheader">関数詳解</h2>
-<a id="a60c317c943c5990f4619048af3defb26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60c317c943c5990f4619048af3defb26">&#9670;&nbsp;</a></span>wait()</h2>
+</div><h2 class="groupheader">型定義詳解</h2>
+<a id="a4dc32b93ee736cf2c098e6467107ee56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dc32b93ee736cf2c098e6467107ee56">&#9670;&nbsp;</a></span>Seconds</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class Clock , class Rep , class Period &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void alps::cmn::time::wait </td>
+          <td class="memname">using <a class="el" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">alps::cmn::time::Seconds</a> = typedef std::chrono::duration&lt;float, std::ratio&lt;1&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>float精度の秒 </p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a2f667b84910e28a6a2426a8994c05f37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f667b84910e28a6a2426a8994c05f37">&#9670;&nbsp;</a></span>SleepFor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alps::cmn::time::SleepFor </td>
           <td>(</td>
-          <td class="paramtype">const std::chrono::duration&lt; Rep, Period &gt; &amp;&#160;</td>
+          <td class="paramtype">std::chrono::milliseconds&#160;</td>
           <td class="paramname"><em>duration</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>指定した期間待機する． </p>
-<dl class="tparams"><dt>テンプレート引数</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">Clock</td><td>使用するクロッククラス </td></tr>
-    <tr><td class="paramname">Rep</td><td>時間の型 </td></tr>
-    <tr><td class="paramname">Period</td><td>時間の単位 </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>指定した時間スリープする(デフォルト実装） </p>
+<dl class="section note"><dt>覚え書き</dt><dd>他に方法が思いつかなかったので，プリプロセッサのマクロ分岐でプラットフォームごとに別のスリープ関数を定義している．</dd></dl>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">duration</td><td>待機時間 </td></tr>
+    <tr><td class="paramname">duration</td><td>スリープ時間 </td></tr>
   </table>
   </dd>
 </dl>

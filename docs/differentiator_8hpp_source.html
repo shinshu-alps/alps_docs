@@ -110,89 +110,90 @@ $(document).ready(function(){initNavTree('differentiator_8hpp_source.html',''); 
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define ALPS_CMN_DIFFERENTIATOR_HPP_</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>cmn</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>control</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Clock&gt;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_differentiator.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1control_1_1_differentiator.html">Differentiator</a></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">using</span> TimePoint = <span class="keyword">typename</span> Clock::time_point;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">using</span> Seconds = std::chrono::duration&lt;float, std::ratio&lt;1&gt;&gt;;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_differentiator.html#accb58396db10dee2b9f323ca152d9407">   43</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_differentiator.html#accb58396db10dee2b9f323ca152d9407">Differentiator</a>(std::chrono::microseconds min_calc_interval = std::chrono::milliseconds(1))</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  : min_calc_interval_{min_calc_interval}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// 各メンバ変数を初期化</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1control_1_1_differentiator.html#a1f346bd83c82908f23b765624f4ef371">Reset</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_differentiator.html#a3921884199ac78e35a8f61fa5b971ae7">   56</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_differentiator.html#a3921884199ac78e35a8f61fa5b971ae7">Calculate</a>(<span class="keywordtype">double</span> input)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// 初回計算のときは計算スキップ</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span> (first_flag_) {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      first_flag_ = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      prev_input_ = input;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      prev_timestamp_ = Clock::now();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">return</span> 0.0f;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// 前回呼び出しからの経過時間を計算</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">auto</span> timestamp_now = Clock::now();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">auto</span> elapsed = std::chrono::duration_cast&lt;Seconds&gt;(timestamp_now - prev_timestamp_);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// 前回の計算から十分に時間が立っていない場合は前回の計算結果を返す</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">if</span> (elapsed &lt; min_calc_interval_) {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">return</span> last_output_;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// 微分計算</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    last_output_ = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>((input - prev_input_) / elapsed.count());</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    prev_input_ = input;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    prev_timestamp_ = timestamp_now;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> last_output_;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_differentiator.html#aa6afcf596898ac9a12b2bfda60502eb0">   89</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_differentiator.html#aa6afcf596898ac9a12b2bfda60502eb0">GetLastOutput</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span> last_output_;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_differentiator.html#a1f346bd83c82908f23b765624f4ef371">   98</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_differentiator.html#a1f346bd83c82908f23b765624f4ef371">Reset</a>()</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">// 各メンバ変数を初期化</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    first_flag_ = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    last_output_ = 0.0f;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    prev_input_ = 0.0f;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    prev_timestamp_ = Clock::now();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">float</span> last_output_;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">bool</span> first_flag_;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">double</span> prev_input_;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  TimePoint prev_timestamp_;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  std::chrono::microseconds min_calc_interval_;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}  <span class="comment">// namespace control</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}  <span class="comment">// namespace cmn</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_differentiator_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_differentiator.html">alps::cmn::control::Differentiator</a></div><div class="ttdoc">微分器</div><div class="ttdef"><b>Definition:</b> differentiator.hpp:30</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_differentiator_html_a1f346bd83c82908f23b765624f4ef371"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_differentiator.html#a1f346bd83c82908f23b765624f4ef371">alps::cmn::control::Differentiator::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">メンバ変数を初期化する関数．</div><div class="ttdef"><b>Definition:</b> differentiator.hpp:98</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_differentiator_html_a3921884199ac78e35a8f61fa5b971ae7"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_differentiator.html#a3921884199ac78e35a8f61fa5b971ae7">alps::cmn::control::Differentiator::Calculate</a></div><div class="ttdeci">float Calculate(double input)</div><div class="ttdoc">微分計算を行う</div><div class="ttdef"><b>Definition:</b> differentiator.hpp:56</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_differentiator_html_aa6afcf596898ac9a12b2bfda60502eb0"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_differentiator.html#aa6afcf596898ac9a12b2bfda60502eb0">alps::cmn::control::Differentiator::GetLastOutput</a></div><div class="ttdeci">float GetLastOutput() const</div><div class="ttdoc">前回の計算値を返す</div><div class="ttdef"><b>Definition:</b> differentiator.hpp:89</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_differentiator_html_accb58396db10dee2b9f323ca152d9407"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_differentiator.html#accb58396db10dee2b9f323ca152d9407">alps::cmn::control::Differentiator::Differentiator</a></div><div class="ttdeci">Differentiator(std::chrono::microseconds min_calc_interval=std::chrono::milliseconds(1))</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> differentiator.hpp:43</div></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="duration_8hpp.html">alps_cmn/time/duration.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>cmn</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span>control</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Clock&gt;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_differentiator.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1control_1_1_differentiator.html">Differentiator</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">using</span> TimePoint = <span class="keyword">typename</span> Clock::time_point;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_differentiator.html#accb58396db10dee2b9f323ca152d9407">   42</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_differentiator.html#accb58396db10dee2b9f323ca152d9407">Differentiator</a>(std::chrono::microseconds min_calc_interval = std::chrono::milliseconds(1))</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  : min_calc_interval_{min_calc_interval}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// 各メンバ変数を初期化</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1control_1_1_differentiator.html#a1f346bd83c82908f23b765624f4ef371">Reset</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_differentiator.html#a3921884199ac78e35a8f61fa5b971ae7">   55</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_differentiator.html#a3921884199ac78e35a8f61fa5b971ae7">Calculate</a>(<span class="keywordtype">double</span> input)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// 初回計算のときは計算スキップ</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (first_flag_) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      first_flag_ = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      prev_input_ = input;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      prev_timestamp_ = Clock::now();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">return</span> 0.0f;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// 前回呼び出しからの経過時間を計算</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">auto</span> timestamp_now = Clock::now();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">auto</span> elapsed = std::chrono::duration_cast&lt;time::Seconds&gt;(timestamp_now - prev_timestamp_);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// 前回の計算から十分に時間が立っていない場合は前回の計算結果を返す（繰り返し呼び出されたときのため）</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> (elapsed &lt; min_calc_interval_) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">return</span> last_output_;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// 微分計算</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    last_output_ = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>((input - prev_input_) / elapsed.count());</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    prev_input_ = input;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    prev_timestamp_ = timestamp_now;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> last_output_;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_differentiator.html#aa6afcf596898ac9a12b2bfda60502eb0">   88</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_differentiator.html#aa6afcf596898ac9a12b2bfda60502eb0">GetLastOutput</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> last_output_;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_differentiator.html#a1f346bd83c82908f23b765624f4ef371">   97</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_differentiator.html#a1f346bd83c82908f23b765624f4ef371">Reset</a>()</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// 各メンバ変数を初期化</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    first_flag_ = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    last_output_ = 0.0f;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    prev_input_ = 0.0f;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    prev_timestamp_ = Clock::now();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">float</span> last_output_;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">bool</span> first_flag_;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">double</span> prev_input_;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  TimePoint prev_timestamp_;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  std::chrono::microseconds min_calc_interval_;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;};</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}  <span class="comment">// namespace control</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_differentiator_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_differentiator.html">alps::cmn::control::Differentiator</a></div><div class="ttdoc">微分器</div><div class="ttdef"><b>Definition:</b> differentiator.hpp:31</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_differentiator_html_a1f346bd83c82908f23b765624f4ef371"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_differentiator.html#a1f346bd83c82908f23b765624f4ef371">alps::cmn::control::Differentiator::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">メンバ変数を初期化する関数．</div><div class="ttdef"><b>Definition:</b> differentiator.hpp:97</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_differentiator_html_a3921884199ac78e35a8f61fa5b971ae7"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_differentiator.html#a3921884199ac78e35a8f61fa5b971ae7">alps::cmn::control::Differentiator::Calculate</a></div><div class="ttdeci">float Calculate(double input)</div><div class="ttdoc">微分計算を行う</div><div class="ttdef"><b>Definition:</b> differentiator.hpp:55</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_differentiator_html_aa6afcf596898ac9a12b2bfda60502eb0"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_differentiator.html#aa6afcf596898ac9a12b2bfda60502eb0">alps::cmn::control::Differentiator::GetLastOutput</a></div><div class="ttdeci">float GetLastOutput() const</div><div class="ttdoc">前回の計算値を返す</div><div class="ttdef"><b>Definition:</b> differentiator.hpp:88</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_differentiator_html_accb58396db10dee2b9f323ca152d9407"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_differentiator.html#accb58396db10dee2b9f323ca152d9407">alps::cmn::control::Differentiator::Differentiator</a></div><div class="ttdeci">Differentiator(std::chrono::microseconds min_calc_interval=std::chrono::milliseconds(1))</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> differentiator.hpp:42</div></div>
+<div class="ttc" id="aduration_8hpp_html"><div class="ttname"><a href="duration_8hpp.html">duration.hpp</a></div><div class="ttdoc">時間間隔の型エイリアス</div></div>
 <div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

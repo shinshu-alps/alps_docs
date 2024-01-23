@@ -1,9 +1,11 @@
 <map id="alps_common_lib/include/alps_cmn/actuator/i_motor.hpp" name="alps_common_lib/include/alps_cmn/actuator/i_motor.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="428,5,655,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="563,5,789,47"/>
 <area shape="rect" id="node2" href="$alps__common__lib_2include_2alps__cmn_2actuator_2dc__motor_8hpp.html" title=" " alt="" coords="5,95,192,151"/>
 <area shape="rect" id="node4" href="$robomas__motor_8hpp.html" title="ロボマスモータのライブラリ" alt="" coords="217,95,423,151"/>
-<area shape="rect" id="node5" href="$motor__angle__controller_8hpp.html" title=" " alt="" coords="448,95,635,151"/>
-<area shape="rect" id="node6" href="$motor__angle__velocity__controller_8hpp.html" title=" " alt="" coords="627,199,847,255"/>
-<area shape="rect" id="node7" href="$motor__velocity__controller_8hpp.html" title=" " alt="" coords="709,95,896,151"/>
+<area shape="rect" id="node5" href="$friction__compensated__motor_8hpp.html" title="モーターに対して摩擦補償を行うデコレーター" alt="" coords="447,95,638,151"/>
+<area shape="rect" id="node6" href="$motor__friction__analyzer_8hpp.html" title="モーター軸の摩擦力を計測するクラス" alt="" coords="503,199,716,255"/>
+<area shape="rect" id="node7" href="$motor__angle__controller_8hpp.html" title=" " alt="" coords="713,95,900,151"/>
+<area shape="rect" id="node8" href="$motor__angle__velocity__controller_8hpp.html" title=" " alt="" coords="893,199,1113,255"/>
+<area shape="rect" id="node9" href="$motor__velocity__controller_8hpp.html" title=" " alt="" coords="975,95,1161,151"/>
 <area shape="rect" id="node3" href="$alps__mbed__lib_2include_2alps__mbed_2actuator_2dc__motor_8hpp.html" title=" " alt="" coords="11,199,186,255"/>
 </map>

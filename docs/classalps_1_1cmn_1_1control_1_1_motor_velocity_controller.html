@@ -116,20 +116,20 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1control_1_1_motor_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:afcff2cf0e9c9a4dc60b74d272bcecc9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#afcff2cf0e9c9a4dc60b74d272bcecc9a">MotorVelocityController</a> (<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor</a>&lt; Motor &gt; &amp;motor, <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor</a>&lt; RotarySensor &gt; &amp;rotary_sensor, float vel_kp, float vel_ki, float vel_kd, float max_abs_drive_ratio=1.0f, float max_velocity=std::numeric_limits&lt; float &gt;::max(), float lowest_velocity=std::numeric_limits&lt; float &gt;::lowest(), std::chrono::microseconds lpf_time_constant=std::chrono::milliseconds(50), std::chrono::microseconds min_calc_differential_interval=std::chrono::milliseconds(1))</td></tr>
-<tr class="memdesc:afcff2cf0e9c9a4dc60b74d272bcecc9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#afcff2cf0e9c9a4dc60b74d272bcecc9a">[詳解]</a><br /></td></tr>
-<tr class="separator:afcff2cf0e9c9a4dc60b74d272bcecc9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c7a2a8bf2379af42d85d34f8481b6c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a9c7a2a8bf2379af42d85d34f8481b6c7">MotorVelocityController</a> (<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor</a>&lt; Motor &gt; &amp;motor, <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor</a>&lt; RotarySensor &gt; &amp;rotary_sensor, <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a> velocity_pid_param, <a class="el" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange</a>&lt; float &gt; drive_ratio_limit={-1.0f, 1.0f}, <a class="el" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange</a>&lt; float &gt; velocity_limit={}, std::chrono::microseconds lpf_time_constant=std::chrono::milliseconds(50), std::chrono::microseconds min_calc_differential_interval=std::chrono::milliseconds(1))</td></tr>
+<tr class="memdesc:a9c7a2a8bf2379af42d85d34f8481b6c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a9c7a2a8bf2379af42d85d34f8481b6c7">[詳解]</a><br /></td></tr>
+<tr class="separator:a9c7a2a8bf2379af42d85d34f8481b6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae207d880ccf99910fe1c61c8d6b16c6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ae207d880ccf99910fe1c61c8d6b16c6b">Control</a> ()</td></tr>
 <tr class="memdesc:ae207d880ccf99910fe1c61c8d6b16c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御処理を実行する．周期的に呼び出すこと．  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ae207d880ccf99910fe1c61c8d6b16c6b">[詳解]</a><br /></td></tr>
 <tr class="separator:ae207d880ccf99910fe1c61c8d6b16c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9acef8a677691c396f2e4001427b7261"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a9acef8a677691c396f2e4001427b7261">Reset</a> ()</td></tr>
 <tr class="memdesc:a9acef8a677691c396f2e4001427b7261"><td class="mdescLeft">&#160;</td><td class="mdescRight">今までの計算で蓄積された値をリセットする  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a9acef8a677691c396f2e4001427b7261">[詳解]</a><br /></td></tr>
 <tr class="separator:a9acef8a677691c396f2e4001427b7261"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f24d1dc26454c8aea0251262aa174eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a4f24d1dc26454c8aea0251262aa174eb">SetTargetVelocity</a> (float velocity)</td></tr>
-<tr class="memdesc:a4f24d1dc26454c8aea0251262aa174eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標速度を設定する  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a4f24d1dc26454c8aea0251262aa174eb">[詳解]</a><br /></td></tr>
-<tr class="separator:a4f24d1dc26454c8aea0251262aa174eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38b57d4239f209bd883c64ec1d2b4d1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a38b57d4239f209bd883c64ec1d2b4d1d">SetTargetVelocity</a> (float target_velocity)</td></tr>
+<tr class="memdesc:a38b57d4239f209bd883c64ec1d2b4d1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標速度を設定する．制限値の範囲外の値は自動で制限される  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a38b57d4239f209bd883c64ec1d2b4d1d">[詳解]</a><br /></td></tr>
+<tr class="separator:a38b57d4239f209bd883c64ec1d2b4d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68078bfc0c56485e05d6a879ffd98261"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a68078bfc0c56485e05d6a879ffd98261">GetTargetVelocity</a> () const</td></tr>
-<tr class="memdesc:a68078bfc0c56485e05d6a879ffd98261"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標角度を取得する  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a68078bfc0c56485e05d6a879ffd98261">[詳解]</a><br /></td></tr>
+<tr class="memdesc:a68078bfc0c56485e05d6a879ffd98261"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標速度を取得する  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a68078bfc0c56485e05d6a879ffd98261">[詳解]</a><br /></td></tr>
 <tr class="separator:a68078bfc0c56485e05d6a879ffd98261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7acf3c666348a705e8a2599f65083660"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a7acf3c666348a705e8a2599f65083660">GetNowAngle</a> () const</td></tr>
 <tr class="memdesc:a7acf3c666348a705e8a2599f65083660"><td class="mdescLeft">&#160;</td><td class="mdescRight">回転センサーから現在の角度を取得する  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a7acf3c666348a705e8a2599f65083660">[詳解]</a><br /></td></tr>
@@ -140,9 +140,18 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1control_1_1_motor_
 <tr class="memitem:a2ea8ec1f46c4a16fde76ea61a2e4f2af"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a2ea8ec1f46c4a16fde76ea61a2e4f2af">GetNowLowPassedVelocity</a> () const</td></tr>
 <tr class="memdesc:a2ea8ec1f46c4a16fde76ea61a2e4f2af"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のローパスフィルタを通した角速度を取得する  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a2ea8ec1f46c4a16fde76ea61a2e4f2af">[詳解]</a><br /></td></tr>
 <tr class="separator:a2ea8ec1f46c4a16fde76ea61a2e4f2af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed5e5006c0c193e8ff65af7083c25a2e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">control::Pid</a>&lt; Clock &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#aed5e5006c0c193e8ff65af7083c25a2e">GetPid</a> () const</td></tr>
-<tr class="memdesc:aed5e5006c0c193e8ff65af7083c25a2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">内部の計算に使用しているPID制御機へのconst参照を取得する  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#aed5e5006c0c193e8ff65af7083c25a2e">[詳解]</a><br /></td></tr>
-<tr class="separator:aed5e5006c0c193e8ff65af7083c25a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2350378e6e05b89b05dfea22059c878"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_result.html">PidResult</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ae2350378e6e05b89b05dfea22059c878">GetPidResult</a> () const</td></tr>
+<tr class="memdesc:ae2350378e6e05b89b05dfea22059c878"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIDの計算結果を取得する  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ae2350378e6e05b89b05dfea22059c878">[詳解]</a><br /></td></tr>
+<tr class="separator:ae2350378e6e05b89b05dfea22059c878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ccbf1ed1f511336ac0e7c285c84117c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a4ccbf1ed1f511336ac0e7c285c84117c">CheckConvergence</a> (float allowable_error, float alloweable_differential_value) const</td></tr>
+<tr class="memdesc:a4ccbf1ed1f511336ac0e7c285c84117c"><td class="mdescLeft">&#160;</td><td class="mdescRight">収束しているかどうかを判定する  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a4ccbf1ed1f511336ac0e7c285c84117c">[詳解]</a><br /></td></tr>
+<tr class="separator:a4ccbf1ed1f511336ac0e7c285c84117c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d2510afa741d93d217349b593860617"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a1d2510afa741d93d217349b593860617">GetPidParam</a> () const</td></tr>
+<tr class="memdesc:a1d2510afa741d93d217349b593860617"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIDのパラメータを取得する  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a1d2510afa741d93d217349b593860617">[詳解]</a><br /></td></tr>
+<tr class="separator:a1d2510afa741d93d217349b593860617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a427e2c6d4b03f6567b9dc88e61f22ab1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a427e2c6d4b03f6567b9dc88e61f22ab1">SetPidParam</a> (const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a> &amp;pid_param)</td></tr>
+<tr class="memdesc:a427e2c6d4b03f6567b9dc88e61f22ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIDのパラメータを設定する  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a427e2c6d4b03f6567b9dc88e61f22ab1">[詳解]</a><br /></td></tr>
+<tr class="separator:a427e2c6d4b03f6567b9dc88e61f22ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><h3>template&lt;class Clock, class Motor, class RotarySensor&gt;<br />
@@ -153,14 +162,13 @@ class alps::cmn::control::MotorVelocityController&lt; Clock, Motor, RotarySensor
   <table class="tparams">
     <tr><td class="paramname">Clock</td><td>利用するクロック型 ( <a href="https://cpprefjp.github.io/reference/chrono/is_clock.html">https://cpprefjp.github.io/reference/chrono/is_clock.html</a> ) </td></tr>
     <tr><td class="paramname">Motor</td><td>モーター実装クラス </td></tr>
-    <tr><td class="paramname">RotarySensor</td><td>回転センサー実装クラス</td></tr>
+    <tr><td class="paramname">RotarySensor</td><td>回転センサー実装クラス </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">todo:</a></b></dt><dd>速度情報に対するローパスフィルタ </dd></dl>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="afcff2cf0e9c9a4dc60b74d272bcecc9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcff2cf0e9c9a4dc60b74d272bcecc9a">&#9670;&nbsp;</a></span>MotorVelocityController()</h2>
+<a id="a9c7a2a8bf2379af42d85d34f8481b6c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c7a2a8bf2379af42d85d34f8481b6c7">&#9670;&nbsp;</a></span>MotorVelocityController()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -185,38 +193,20 @@ template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>vel_kp</em>, </td>
+          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a>&#160;</td>
+          <td class="paramname"><em>velocity_pid_param</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>vel_ki</em>, </td>
+          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange</a>&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>drive_ratio_limit</em> = <code>{-1.0f,&#160;1.0f}</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>vel_kd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>max_abs_drive_ratio</em> = <code>1.0f</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>max_velocity</em> = <code>std::numeric_limits&lt;float&gt;::max()</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>lowest_velocity</em> = <code>std::numeric_limits&lt;float&gt;::lowest()</code>, </td>
+          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange</a>&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>velocity_limit</em> = <code>{}</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -248,12 +238,9 @@ template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
   <table class="params">
     <tr><td class="paramname">motor</td><td>モーター </td></tr>
     <tr><td class="paramname">rotary_sensor</td><td>回転センサー </td></tr>
-    <tr><td class="paramname">vel_kp</td><td>速度PIDのPゲイン </td></tr>
-    <tr><td class="paramname">vel_ki</td><td>速度PIDのIゲイン </td></tr>
-    <tr><td class="paramname">vel_kd</td><td>速度PIDのDゲイン </td></tr>
-    <tr><td class="paramname">max_abs_drive_ratio</td><td>モーターの最大出力割合 </td></tr>
-    <tr><td class="paramname">max_velocity</td><td>モーターの最大速度 </td></tr>
-    <tr><td class="paramname">lowest_velocity</td><td>モーターの最小速度 </td></tr>
+    <tr><td class="paramname">velocity_pid_param</td><td>速度PIDパラメータ </td></tr>
+    <tr><td class="paramname">drive_ratio_limit</td><td>モーターの駆動比率の制限 </td></tr>
+    <tr><td class="paramname">velocity_limit</td><td>速度の制限 </td></tr>
     <tr><td class="paramname">lpf_time_constant</td><td>角速度に対するローパスフィルタの時定数 </td></tr>
     <tr><td class="paramname">min_calc_differential_interval</td><td>角速度を計算する最小間隔 </td></tr>
   </table>
@@ -263,6 +250,56 @@ template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
+<a id="a4ccbf1ed1f511336ac0e7c285c84117c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ccbf1ed1f511336ac0e7c285c84117c">&#9670;&nbsp;</a></span>CheckConvergence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html">alps::cmn::control::MotorVelocityController</a>&lt; Clock, Motor, RotarySensor &gt;::CheckConvergence </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>allowable_error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>alloweable_differential_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>収束しているかどうかを判定する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">allowable_error</td><td>許容誤差 </td></tr>
+    <tr><td class="paramname">alloweable_differential_value</td><td>許容微分値</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 収束している </dd>
+<dd>
+false 収束していない </dd></dl>
+
+</div>
+</div>
 <a id="ae207d880ccf99910fe1c61c8d6b16c6b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae207d880ccf99910fe1c61c8d6b16c6b">&#9670;&nbsp;</a></span>Control()</h2>
 
@@ -384,8 +421,8 @@ template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
 
 </div>
 </div>
-<a id="aed5e5006c0c193e8ff65af7083c25a2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed5e5006c0c193e8ff65af7083c25a2e">&#9670;&nbsp;</a></span>GetPid()</h2>
+<a id="a1d2510afa741d93d217349b593860617"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d2510afa741d93d217349b593860617">&#9670;&nbsp;</a></span>GetPidParam()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -396,7 +433,7 @@ template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">control::Pid</a>&lt;Clock&gt;&amp; <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html">alps::cmn::control::MotorVelocityController</a>&lt; Clock, Motor, RotarySensor &gt;::GetPid </td>
+          <td class="memname">const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a>&amp; <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html">alps::cmn::control::MotorVelocityController</a>&lt; Clock, Motor, RotarySensor &gt;::GetPidParam </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -409,9 +446,37 @@ template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>内部の計算に使用しているPID制御機へのconst参照を取得する </p>
-<p>PIDの各項計算結果などを取得したいときに使用する</p>
-<dl class="section return"><dt>戻り値</dt><dd>const control::Pid&lt;Clock&gt;&amp; PID制御機へのconst参照 </dd></dl>
+<p>PIDのパラメータを取得する </p>
+
+</div>
+</div>
+<a id="ae2350378e6e05b89b05dfea22059c878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2350378e6e05b89b05dfea22059c878">&#9670;&nbsp;</a></span>GetPidResult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_result.html">PidResult</a>&amp; <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html">alps::cmn::control::MotorVelocityController</a>&lt; Clock, Motor, RotarySensor &gt;::GetPidResult </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PIDの計算結果を取得する </p>
+<dl class="section return"><dt>戻り値</dt><dd>const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_result.html" title="PID制御の計算結果">PidResult</a>&amp; PIDの計算結果 </dd></dl>
 
 </div>
 </div>
@@ -440,8 +505,8 @@ template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>目標角度を取得する </p>
-<dl class="section return"><dt>戻り値</dt><dd>float 目標角度[rad] </dd></dl>
+<p>目標速度を取得する </p>
+<dl class="section return"><dt>戻り値</dt><dd>float 目標速度[rad/s] </dd></dl>
 
 </div>
 </div>
@@ -474,8 +539,44 @@ template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
 
 </div>
 </div>
-<a id="a4f24d1dc26454c8aea0251262aa174eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f24d1dc26454c8aea0251262aa174eb">&#9670;&nbsp;</a></span>SetTargetVelocity()</h2>
+<a id="a427e2c6d4b03f6567b9dc88e61f22ab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a427e2c6d4b03f6567b9dc88e61f22ab1">&#9670;&nbsp;</a></span>SetPidParam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html">alps::cmn::control::MotorVelocityController</a>&lt; Clock, Motor, RotarySensor &gt;::SetPidParam </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a> &amp;&#160;</td>
+          <td class="paramname"><em>pid_param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PIDのパラメータを設定する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pid_param</td><td>PIDのパラメータ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a38b57d4239f209bd883c64ec1d2b4d1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38b57d4239f209bd883c64ec1d2b4d1d">&#9670;&nbsp;</a></span>SetTargetVelocity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -489,7 +590,7 @@ template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
           <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html">alps::cmn::control::MotorVelocityController</a>&lt; Clock, Motor, RotarySensor &gt;::SetTargetVelocity </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>velocity</em></td><td>)</td>
+          <td class="paramname"><em>target_velocity</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -500,10 +601,10 @@ template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>目標速度を設定する </p>
+<p>目標速度を設定する．制限値の範囲外の値は自動で制限される </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">velocity</td><td>目標速度[rad/s] </td></tr>
+    <tr><td class="paramname">target_velocity</td><td>目標速度[rad/s] </td></tr>
   </table>
   </dd>
 </dl>

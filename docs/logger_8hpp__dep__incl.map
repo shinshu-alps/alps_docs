@@ -1,6 +1,7 @@
 <map id="alps_common_lib/include/alps_cmn/log/logger.hpp" name="alps_common_lib/include/alps_cmn/log/logger.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="15,5,202,47"/>
-<area shape="rect" id="node2" href="$logging__macros_8hpp.html" title=" " alt="" coords="15,95,202,151"/>
+<area shape="rect" id="node1" title=" " alt="" coords="93,5,279,47"/>
+<area shape="rect" id="node2" href="$logging__macros_8hpp.html" title=" " alt="" coords="93,95,279,151"/>
 <area shape="rect" id="node3" href="$robomas__motor_8hpp.html" title="ロボマスモータのライブラリ" alt="" coords="5,303,212,359"/>
 <area shape="rect" id="node4" href="$can__typed__data__transceiver_8hpp.html" title="CAN通信で型付けされたデータの送受信を行うライブラリ" alt="" coords="68,199,304,255"/>
+<area shape="rect" id="node5" href="$motor__friction__analyzer_8hpp.html" title="モーター軸の摩擦力を計測するクラス" alt="" coords="329,199,542,255"/>
 </map>

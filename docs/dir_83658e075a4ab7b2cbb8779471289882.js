@@ -6,6 +6,9 @@ var dir_83658e075a4ab7b2cbb8779471289882 =
     [ "differentiator.hpp", "differentiator_8hpp.html", [
       [ "Differentiator", "classalps_1_1cmn_1_1control_1_1_differentiator.html", "classalps_1_1cmn_1_1control_1_1_differentiator" ]
     ] ],
+    [ "friction_compensated_motor.hpp", "friction__compensated__motor_8hpp.html", [
+      [ "FrictionCompensatedMotor", "classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html", "classalps_1_1cmn_1_1control_1_1_friction_compensated_motor" ]
+    ] ],
     [ "integrator.hpp", "integrator_8hpp.html", [
       [ "Integrator", "classalps_1_1cmn_1_1control_1_1_integrator.html", "classalps_1_1cmn_1_1control_1_1_integrator" ]
     ] ],
@@ -22,6 +25,8 @@ var dir_83658e075a4ab7b2cbb8779471289882 =
       [ "MotorVelocityController", "classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html", "classalps_1_1cmn_1_1control_1_1_motor_velocity_controller" ]
     ] ],
     [ "pid.hpp", "pid_8hpp.html", [
+      [ "PidParam", "structalps_1_1cmn_1_1control_1_1_pid_param.html", "structalps_1_1cmn_1_1control_1_1_pid_param" ],
+      [ "PidResult", "structalps_1_1cmn_1_1control_1_1_pid_result.html", "structalps_1_1cmn_1_1control_1_1_pid_result" ],
       [ "Pid", "classalps_1_1cmn_1_1control_1_1_pid.html", "classalps_1_1cmn_1_1control_1_1_pid" ]
     ] ]
 ];

@@ -1,10 +1,13 @@
 var classalps_1_1cmn_1_1control_1_1_motor_angle_controller =
 [
-    [ "MotorAngleController", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#ad470f50e161b699bf2ebe36941ada9bf", null ],
+    [ "MotorAngleController", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#ad407427f8e66d5d3210d0a9c33b3e373", null ],
+    [ "CheckConvergence", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#a0f4eb018449fb5aad114312364b16e5c", null ],
     [ "Control", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#af707fafe8def4b0606c413d7d3d25252", null ],
     [ "GetNowAngle", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#ad81218e69513f6bbc042e87b5febcb1b", null ],
-    [ "GetPid", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#a47954ec9c2918a6351bf648867154a27", null ],
+    [ "GetPidParam", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#a88c62e349012b7e0204ecdf888e08cd4", null ],
+    [ "GetPidResult", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#a20ea8dbfca10600e2ef160748851d1aa", null ],
     [ "GetTargetAngle", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#ab3997b7cf6f71e01b5cebecea9ff2020", null ],
     [ "Reset", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#aa5c17b161b9da228d4a67bf7b6985fe6", null ],
-    [ "SetTargetAngle", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#af25c7452db7fa9b4996e059f898c7314", null ]
+    [ "SetPidParam", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#a4f6a4da25ede9ff90a5bc06a4c3fcd3f", null ],
+    [ "SetTargetAngle", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#a791bd2ef41c419d819110db8eeeee0d7", null ]
 ];

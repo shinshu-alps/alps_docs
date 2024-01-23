@@ -3,14 +3,14 @@ var indexSectionsWithContent =
   0: "abcdefgijklmnopqrstuvwxyz~概",
   1: "abcdefgijlmnopqrstuv",
   2: "a",
-  3: "abcdfijlmnoprstuvw",
+  3: "abcdfijlmnoprstuv",
   4: "abcdefgijlmnoprstuvw~",
-  5: "bcdgikmprwxyz",
+  5: "bcdegikmprswxyz",
   6: "diostu",
   7: "abilopr",
   8: "k",
   9: "a",
-  10: "t概"
+  10: "概"
 };
 
 var indexSectionNames =
