@@ -1,7 +1,7 @@
 var structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion =
 [
-    [ "w", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html#aa8ed36aa79f51aada1564488ad0c9b80", null ],
-    [ "x", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html#a4a2d5c4ad9943c5373d8bf2aade5a5d5", null ],
-    [ "y", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html#a44b739c998aecc1944b6eeabc3059db5", null ],
-    [ "z", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html#a69f0183ca080585aaf5bb250c3db0ed6", null ]
+    [ "w", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html#a7001950c3be6803ffbd4a96e6f2e8a09", null ],
+    [ "x", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html#abb1b1a162218b149427694ea0d4550cd", null ],
+    [ "y", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html#a60fe2d6b0475f99be1ecd9aed22075d3", null ],
+    [ "z", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html#a4fe94eaedb4bd658548114c495a17ffe", null ]
 ];

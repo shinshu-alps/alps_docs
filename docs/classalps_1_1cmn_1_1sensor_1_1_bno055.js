@@ -21,14 +21,14 @@ var classalps_1_1cmn_1_1sensor_1_1_bno055 =
       [ "kP6", "classalps_1_1cmn_1_1sensor_1_1_bno055.html#acf1f991489c4624e3dc42561815cc4ada8bc23378a3ec2814815d05106cf0c957", null ],
       [ "kP7", "classalps_1_1cmn_1_1sensor_1_1_bno055.html#acf1f991489c4624e3dc42561815cc4adaa438ad77c3cceadaee8d48be3c48bfe8", null ]
     ] ],
-    [ "Bno055", "classalps_1_1cmn_1_1sensor_1_1_bno055.html#a3cc708f22da3d87331962c5367cad6ca", null ],
-    [ "GetAcceleration", "classalps_1_1cmn_1_1sensor_1_1_bno055.html#ae283bf6a2efb829fa88f5802bb59e59f", null ],
-    [ "GetAngularVelocity", "classalps_1_1cmn_1_1sensor_1_1_bno055.html#a6852c2b78f4c27d50db1b8a5eae26974", null ],
-    [ "GetEulerAngle", "classalps_1_1cmn_1_1sensor_1_1_bno055.html#a308d21863631e3c18f7ae420b75237a2", null ],
-    [ "GetGravityVector", "classalps_1_1cmn_1_1sensor_1_1_bno055.html#a46e1f04a473a123762903ba9b1242d52", null ],
-    [ "GetLinearAcceleration", "classalps_1_1cmn_1_1sensor_1_1_bno055.html#a0529b54858d1d263063a85b9b7f6f5fb", null ],
-    [ "GetMagneticVector", "classalps_1_1cmn_1_1sensor_1_1_bno055.html#a0167677b83156d9c0b059bbd0bfa377b", null ],
-    [ "GetQuaternion", "classalps_1_1cmn_1_1sensor_1_1_bno055.html#a26f33267bc57d2aa333876973ef9b903", null ],
-    [ "GetTemperature", "classalps_1_1cmn_1_1sensor_1_1_bno055.html#aa5028d09bac12a53250ad1bf88a71f1b", null ],
-    [ "Reset", "classalps_1_1cmn_1_1sensor_1_1_bno055.html#a59854198ec8d9bfc2e24cb3dee723407", null ]
+    [ "Bno055", "classalps_1_1cmn_1_1sensor_1_1_bno055.html#a860fb0e5cfdc67308815e44893966f61", null ],
+    [ "GetAcceleration", "classalps_1_1cmn_1_1sensor_1_1_bno055.html#a04b86b5049d9b8fd34def2b0e1b18abe", null ],
+    [ "GetAngularVelocity", "classalps_1_1cmn_1_1sensor_1_1_bno055.html#ad89d56c87ba2b9cfed1b38f0e7da8058", null ],
+    [ "GetEulerAngle", "classalps_1_1cmn_1_1sensor_1_1_bno055.html#afb0f9beabfab11b62813db109fdc649e", null ],
+    [ "GetGravityVector", "classalps_1_1cmn_1_1sensor_1_1_bno055.html#aa034ce78d1b0a6cf446f24d011e7cd13", null ],
+    [ "GetLinearAcceleration", "classalps_1_1cmn_1_1sensor_1_1_bno055.html#a9e3c2415766a83f659e1f25e2f49b15d", null ],
+    [ "GetMagneticVector", "classalps_1_1cmn_1_1sensor_1_1_bno055.html#afe13c36dcdbf06dc0dbb965a7b6c3a43", null ],
+    [ "GetQuaternion", "classalps_1_1cmn_1_1sensor_1_1_bno055.html#a0e57254d12b029cee35b19d17214e699", null ],
+    [ "GetTemperature", "classalps_1_1cmn_1_1sensor_1_1_bno055.html#a11562969f969d606711e4d043c6333bc", null ],
+    [ "Reset", "classalps_1_1cmn_1_1sensor_1_1_bno055.html#a6a7ac82ec6acb11c1ba843cb5dea0f10", null ]
 ];

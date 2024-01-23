@@ -1,5 +1,7 @@
 <map id="alps_common_lib/include/alps_cmn/control/low_pass_filter.hpp" name="alps_common_lib/include/alps_cmn/control/low_pass_filter.hpp">
-<area shape="rect" id="node1" title="ローパスフィルタのクラス" alt="" coords="22,5,209,61"/>
-<area shape="rect" id="node2" href="$motor__velocity__controller_8hpp.html" title=" " alt="" coords="22,109,209,165"/>
-<area shape="rect" id="node3" href="$motor__angle__velocity__controller_8hpp.html" title=" " alt="" coords="5,213,225,269"/>
+<area shape="rect" id="node1" title="ローパスフィルタのクラス" alt="" coords="71,5,257,61"/>
+<area shape="rect" id="node2" href="$motor__velocity__controller_8hpp.html" title=" " alt="" coords="5,199,192,255"/>
+<area shape="rect" id="node4" href="$pid_8hpp.html" title=" " alt="" coords="136,109,325,151"/>
+<area shape="rect" id="node3" href="$motor__angle__velocity__controller_8hpp.html" title=" " alt="" coords="54,303,274,359"/>
+<area shape="rect" id="node5" href="$motor__angle__controller_8hpp.html" title=" " alt="" coords="267,199,453,255"/>
 </map>

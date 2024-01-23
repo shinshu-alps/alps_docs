@@ -1,0 +1,283 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps_common_lib/include/alps_cmn/tool/motor_friction_analyzer.hpp ソースファイル</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('motor__friction__analyzer_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">motor_friction_analyzer.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="motor__friction__analyzer_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef ALPS_CMN_MOTOR_FRICTION_ANALYZER_HPP_</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define ALPS_CMN_MOTOR_FRICTION_ANALYZER_HPP_</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__motor_8hpp.html">alps_cmn/actuator/i_motor.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="differentiator_8hpp.html">alps_cmn/control/differentiator.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="friction__compensated__motor_8hpp.html">alps_cmn/control/friction_compensated_motor.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="logging__macros_8hpp.html">alps_cmn/log/logging_macros.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__rotary__sensor_8hpp.html">alps_cmn/sensor/i_rotary_sensor.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sleep_8hpp.html">alps_cmn/time/sleep.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>cmn</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>tool</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Clock, <span class="keyword">class</span> Motor, <span class="keyword">class</span> RorarySensor&gt;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer.html">MotorFrictionAnalyzer</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_1_1_friction_result.html">   43</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_1_1_friction_result.html">FrictionResult</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  {</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_1_1_friction_result.html#a8751afff1a5db072b702d7158b53ef7e">   46</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_1_1_friction_result.html#a8751afff1a5db072b702d7158b53ef7e">static_friction</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_1_1_friction_result.html#a5dbb361918887f34fd1c809e6c6ed6dd">   48</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_1_1_friction_result.html#a5dbb361918887f34fd1c809e6c6ed6dd">kinetic_friction</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  };</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer.html#a57653b2325ab66c80f51f072d4370e39">   60</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer.html#a57653b2325ab66c80f51f072d4370e39">MotorFrictionAnalyzer</a>(</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor&lt;Motor&gt;</a> &amp; base_motor,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor&lt;RorarySensor&gt;</a> &amp; rotary_sensor,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">float</span> motor_output_change_step = 0.002f,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::chrono::milliseconds motor_output_change_interval = std::chrono::milliseconds(500))</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  : motor_{base_motor},</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    rotary_sensor_{rotary_sensor},</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    motor_output_change_step_{motor_output_change_step},</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    motor_output_change_interval_{motor_output_change_interval}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer.html#ac70f404b45ff4f421b7e010e3a85793f">   76</a></span>&#160;  <a class="code" href="structalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_1_1_friction_result.html">FrictionResult</a> <a class="code" href="classalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer.html#ac70f404b45ff4f421b7e010e3a85793f">Analyze</a>()</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    Reset();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    AnalyzeStaticFriction();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    AnalyzeKineticFriction();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    ShowFrictionResult();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> {static_friction_, kinetic_friction_};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">bool</span> IsMotorRotating()</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> std::abs(velocity_calculator_.Calculate(rotary_sensor_.<a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">CallGetAngle</a>())) &gt;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;           <a class="code" href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html">control::FrictionCompensatedMotor&lt;Clock, Motor, RorarySensor&gt;::kStopVelocityThreshold</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">void</span> Reset()</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    motor_.<a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html#afb69e9dace9074933926b59904ddfb13">CallDrive</a>(0.0f);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    velocity_calculator_.Reset();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="namespacealps_1_1cmn_1_1time.html#a2f667b84910e28a6a2426a8994c05f37">time::SleepFor</a>(motor_output_change_interval_);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordtype">void</span> AnalyzeStaticFriction()</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keyword">using namespace </span>std::chrono_literals;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">// モーター軸が静止していることを確認</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">while</span> (IsMotorRotating()) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      <a class="code" href="logging__macros_8hpp.html#a412fcca2f6cf87abd03b30589763cf20">ALPS_LOG_WARN</a>(<span class="stringliteral">&quot;Motor is rotating. Please stop the motor.&quot;</span>);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <a class="code" href="namespacealps_1_1cmn_1_1time.html#a2f667b84910e28a6a2426a8994c05f37">time::SleepFor</a>(1s);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="logging__macros_8hpp.html#aede9f4f4f61b7e20067f2bf0d4eafb40">ALPS_LOG_INFO</a>(<span class="stringliteral">&quot;Start static friction analysis&quot;</span>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">// モーター出力を徐々に上げていき，モーター軸が回転し始めるまでの出力を計測</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">float</span> output = 0.0f;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">while</span> (!IsMotorRotating()) {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      output += motor_output_change_step_;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <a class="code" href="logging__macros_8hpp.html#aede9f4f4f61b7e20067f2bf0d4eafb40">ALPS_LOG_INFO</a>(<span class="stringliteral">&quot;\toutput: %f&quot;</span>, output);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      motor_.CallDrive(output);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      <a class="code" href="namespacealps_1_1cmn_1_1time.html#a2f667b84910e28a6a2426a8994c05f37">time::SleepFor</a>(motor_output_change_interval_);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    static_friction_ = output;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <a class="code" href="logging__macros_8hpp.html#aede9f4f4f61b7e20067f2bf0d4eafb40">ALPS_LOG_INFO</a>(<span class="stringliteral">&quot;Static friction: %f&quot;</span>, static_friction_);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">void</span> AnalyzeKineticFriction()</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keyword">using namespace </span>std::chrono_literals;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">float</span> output = static_friction_;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="comment">// モーター軸が回転していることを確認</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">while</span> (!IsMotorRotating()) {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      <a class="code" href="logging__macros_8hpp.html#a412fcca2f6cf87abd03b30589763cf20">ALPS_LOG_WARN</a>(<span class="stringliteral">&quot;Motor is not rotating. Increase the motor output.&quot;</span>);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      output += motor_output_change_step_;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      <a class="code" href="logging__macros_8hpp.html#aede9f4f4f61b7e20067f2bf0d4eafb40">ALPS_LOG_INFO</a>(<span class="stringliteral">&quot;\toutput: %f&quot;</span>, output);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      motor_.CallDrive(output);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      <a class="code" href="namespacealps_1_1cmn_1_1time.html#a2f667b84910e28a6a2426a8994c05f37">time::SleepFor</a>(motor_output_change_interval_);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <a class="code" href="logging__macros_8hpp.html#aede9f4f4f61b7e20067f2bf0d4eafb40">ALPS_LOG_INFO</a>(<span class="stringliteral">&quot;Start kinetic friction analysis&quot;</span>);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="comment">// モーター出力を徐々に下げていき，モーター軸が回転しなくなるまでの出力を計測</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">while</span> (IsMotorRotating()) {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      output -= motor_output_change_step_;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      <a class="code" href="logging__macros_8hpp.html#aede9f4f4f61b7e20067f2bf0d4eafb40">ALPS_LOG_INFO</a>(<span class="stringliteral">&quot;\toutput: %f&quot;</span>, output);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      motor_.CallDrive(output);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      <a class="code" href="namespacealps_1_1cmn_1_1time.html#a2f667b84910e28a6a2426a8994c05f37">time::SleepFor</a>(motor_output_change_interval_);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    kinetic_friction_ = output;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <a class="code" href="logging__macros_8hpp.html#aede9f4f4f61b7e20067f2bf0d4eafb40">ALPS_LOG_INFO</a>(<span class="stringliteral">&quot;Kinetic friction: %f&quot;</span>, kinetic_friction_);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordtype">void</span> ShowFrictionResult()</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <a class="code" href="logging__macros_8hpp.html#aede9f4f4f61b7e20067f2bf0d4eafb40">ALPS_LOG_INFO</a>(<span class="stringliteral">&quot;Friction analysis result&quot;</span>);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <a class="code" href="logging__macros_8hpp.html#aede9f4f4f61b7e20067f2bf0d4eafb40">ALPS_LOG_INFO</a>(<span class="stringliteral">&quot;\tStatic friction:  %f&quot;</span>, static_friction_);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <a class="code" href="logging__macros_8hpp.html#aede9f4f4f61b7e20067f2bf0d4eafb40">ALPS_LOG_INFO</a>(<span class="stringliteral">&quot;\tKinetic friction: %f&quot;</span>, kinetic_friction_);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  }</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  actuator::IMotor&lt;Motor&gt; &amp; motor_;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  sensor::IRotarySensor&lt;RorarySensor&gt; &amp; rotary_sensor_;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> motor_output_change_step_;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  std::chrono::milliseconds motor_output_change_interval_;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  control::Differentiator&lt;Clock&gt; velocity_calculator_;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keywordtype">float</span> static_friction_{0.0f};</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keywordtype">float</span> kinetic_friction_{0.0f};</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;};</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}  <span class="comment">// namespace tool</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// ALPS_CMN_MOTOR_FRICTION_ANALYZER_HPP_</span></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_i_motor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">alps::cmn::actuator::IMotor&lt; Motor &gt;</a></div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_i_motor_html_afb69e9dace9074933926b59904ddfb13"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html#afb69e9dace9074933926b59904ddfb13">alps::cmn::actuator::IMotor::CallDrive</a></div><div class="ttdeci">void CallDrive(float output_ratio)</div><div class="ttdoc">インタフェースを介してモーターを駆動する</div><div class="ttdef"><b>Definition:</b> i_motor.hpp:24</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_friction_compensated_motor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html">alps::cmn::control::FrictionCompensatedMotor</a></div><div class="ttdoc">モーターに対して摩擦補償を行うデコレーター</div><div class="ttdef"><b>Definition:</b> friction_compensated_motor.hpp:37</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">alps::cmn::sensor::IRotarySensor&lt; RorarySensor &gt;</a></div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor_html_afd34b25b6fd6be03746984bf9adbd367"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">alps::cmn::sensor::IRotarySensor::CallGetAngle</a></div><div class="ttdeci">double CallGetAngle()</div><div class="ttdoc">インタフェースを介して現在の角度を取得する</div><div class="ttdef"><b>Definition:</b> i_rotary_sensor.hpp:25</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_html"><div class="ttname"><a href="classalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer.html">alps::cmn::tool::MotorFrictionAnalyzer</a></div><div class="ttdoc">モーター軸の摩擦力を計測するクラス</div><div class="ttdef"><b>Definition:</b> motor_friction_analyzer.hpp:40</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_html_a57653b2325ab66c80f51f072d4370e39"><div class="ttname"><a href="classalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer.html#a57653b2325ab66c80f51f072d4370e39">alps::cmn::tool::MotorFrictionAnalyzer::MotorFrictionAnalyzer</a></div><div class="ttdeci">MotorFrictionAnalyzer(actuator::IMotor&lt; Motor &gt; &amp;base_motor, sensor::IRotarySensor&lt; RorarySensor &gt; &amp;rotary_sensor, float motor_output_change_step=0.002f, std::chrono::milliseconds motor_output_change_interval=std::chrono::milliseconds(500))</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> motor_friction_analyzer.hpp:60</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_html_ac70f404b45ff4f421b7e010e3a85793f"><div class="ttname"><a href="classalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer.html#ac70f404b45ff4f421b7e010e3a85793f">alps::cmn::tool::MotorFrictionAnalyzer::Analyze</a></div><div class="ttdeci">FrictionResult Analyze()</div><div class="ttdoc">摩擦計測の一連の処理を実行</div><div class="ttdef"><b>Definition:</b> motor_friction_analyzer.hpp:76</div></div>
+<div class="ttc" id="adifferentiator_8hpp_html"><div class="ttname"><a href="differentiator_8hpp.html">differentiator.hpp</a></div><div class="ttdoc">微分器ライブラリ</div></div>
+<div class="ttc" id="afriction__compensated__motor_8hpp_html"><div class="ttname"><a href="friction__compensated__motor_8hpp.html">friction_compensated_motor.hpp</a></div><div class="ttdoc">モーターに対して摩擦補償を行うデコレーター</div></div>
+<div class="ttc" id="ai__motor_8hpp_html"><div class="ttname"><a href="i__motor_8hpp.html">i_motor.hpp</a></div></div>
+<div class="ttc" id="ai__rotary__sensor_8hpp_html"><div class="ttname"><a href="i__rotary__sensor_8hpp.html">i_rotary_sensor.hpp</a></div></div>
+<div class="ttc" id="alogging__macros_8hpp_html"><div class="ttname"><a href="logging__macros_8hpp.html">logging_macros.hpp</a></div></div>
+<div class="ttc" id="alogging__macros_8hpp_html_a412fcca2f6cf87abd03b30589763cf20"><div class="ttname"><a href="logging__macros_8hpp.html#a412fcca2f6cf87abd03b30589763cf20">ALPS_LOG_WARN</a></div><div class="ttdeci">#define ALPS_LOG_WARN(...)</div><div class="ttdoc">警告レベルのログ出力を行う</div><div class="ttdef"><b>Definition:</b> logging_macros.hpp:60</div></div>
+<div class="ttc" id="alogging__macros_8hpp_html_aede9f4f4f61b7e20067f2bf0d4eafb40"><div class="ttname"><a href="logging__macros_8hpp.html#aede9f4f4f61b7e20067f2bf0d4eafb40">ALPS_LOG_INFO</a></div><div class="ttdeci">#define ALPS_LOG_INFO(...)</div><div class="ttdoc">インフォメーションレベルのログ出力を行う</div><div class="ttdef"><b>Definition:</b> logging_macros.hpp:46</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1time_html_a2f667b84910e28a6a2426a8994c05f37"><div class="ttname"><a href="namespacealps_1_1cmn_1_1time.html#a2f667b84910e28a6a2426a8994c05f37">alps::cmn::time::SleepFor</a></div><div class="ttdeci">void SleepFor(std::chrono::milliseconds duration)</div><div class="ttdoc">指定した時間スリープする(デフォルト実装）</div><div class="ttdef"><b>Definition:</b> sleep.hpp:82</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:23</div></div>
+<div class="ttc" id="asleep_8hpp_html"><div class="ttname"><a href="sleep_8hpp.html">sleep.hpp</a></div><div class="ttdoc">スリープ関数の定義</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_1_1_friction_result_html"><div class="ttname"><a href="structalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_1_1_friction_result.html">alps::cmn::tool::MotorFrictionAnalyzer::FrictionResult</a></div><div class="ttdoc">摩擦計測結果</div><div class="ttdef"><b>Definition:</b> motor_friction_analyzer.hpp:44</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_1_1_friction_result_html_a5dbb361918887f34fd1c809e6c6ed6dd"><div class="ttname"><a href="structalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_1_1_friction_result.html#a5dbb361918887f34fd1c809e6c6ed6dd">alps::cmn::tool::MotorFrictionAnalyzer::FrictionResult::kinetic_friction</a></div><div class="ttdeci">float kinetic_friction</div><div class="ttdoc">動摩擦</div><div class="ttdef"><b>Definition:</b> motor_friction_analyzer.hpp:48</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_1_1_friction_result_html_a8751afff1a5db072b702d7158b53ef7e"><div class="ttname"><a href="structalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_1_1_friction_result.html#a8751afff1a5db072b702d7158b53ef7e">alps::cmn::tool::MotorFrictionAnalyzer::FrictionResult::static_friction</a></div><div class="ttdeci">float static_friction</div><div class="ttdoc">静止摩擦</div><div class="ttdef"><b>Definition:</b> motor_friction_analyzer.hpp:46</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_fcd1ba41f8679fcc7bf76d667eaa0e17.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_ce1e71e2103ac83e6d6cc720a9feeeb7.html">include</a></li><li class="navelem"><a class="el" href="dir_cc648f72f51f156e42f9863c0e5bf5fb.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_6f7706dde26c4d1d2e9f795efa9b22f1.html">tool</a></li><li class="navelem"><a class="el" href="motor__friction__analyzer_8hpp.html">motor_friction_analyzer.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

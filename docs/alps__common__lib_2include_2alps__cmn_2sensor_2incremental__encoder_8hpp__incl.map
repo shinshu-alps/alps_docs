@@ -1,10 +1,11 @@
 <map id="alps_common_lib/include/alps_cmn/sensor/incremental_encoder.hpp" name="alps_common_lib/include/alps_cmn/sensor/incremental_encoder.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="378,5,595,61"/>
-<area shape="rect" id="node2" title=" " alt="" coords="37,199,104,225"/>
-<area shape="rect" id="node3" href="$differentiator_8hpp.html" title="微分器ライブラリ" alt="" coords="26,117,275,143"/>
-<area shape="rect" id="node4" href="$i__digital__in_8hpp.html" title=" " alt="" coords="299,109,471,151"/>
-<area shape="rect" id="node5" href="$i__interrupt__in_8hpp.html" title=" " alt="" coords="496,109,682,151"/>
-<area shape="rect" id="node7" href="$angle_8hpp.html" title=" " alt="" coords="707,117,884,143"/>
-<area shape="rect" id="node8" href="$i__rotary__sensor_8hpp.html" title=" " alt="" coords="908,109,1094,151"/>
-<area shape="rect" id="node6" title=" " alt="" coords="533,199,645,225"/>
+<area shape="rect" id="node1" title=" " alt="" coords="388,5,606,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="17,273,84,300"/>
+<area shape="rect" id="node3" href="$differentiator_8hpp.html" title="微分器ライブラリ" alt="" coords="36,117,286,143"/>
+<area shape="rect" id="node5" href="$i__digital__in_8hpp.html" title=" " alt="" coords="310,109,482,151"/>
+<area shape="rect" id="node6" href="$i__interrupt__in_8hpp.html" title=" " alt="" coords="506,109,693,151"/>
+<area shape="rect" id="node8" href="$angle_8hpp.html" title=" " alt="" coords="718,117,895,143"/>
+<area shape="rect" id="node9" href="$i__rotary__sensor_8hpp.html" title=" " alt="" coords="919,109,1104,151"/>
+<area shape="rect" id="node4" href="$duration_8hpp.html" title="時間間隔の型エイリアス" alt="" coords="88,199,292,225"/>
+<area shape="rect" id="node7" title=" " alt="" coords="544,199,656,225"/>
 </map>

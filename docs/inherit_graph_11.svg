@@ -12,10 +12,10 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classalps_1_1cmn_1_1communication_1_1_can_subscriber.html" target="_top" xlink:title="CAN通信で型付けされたデータを受信するクラス．">
+<g id="a_node1"><a xlink:href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html" target="_top" xlink:title="CANフレームを表す構造体．">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-30.5 146,-30.5 146,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::communication</text>
-<text text-anchor="middle" x="73" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::CanSubscriber&lt; T &gt;</text>
+<text text-anchor="middle" x="73" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::CanDataFrame</text>
 </a>
 </g>
 </g>
