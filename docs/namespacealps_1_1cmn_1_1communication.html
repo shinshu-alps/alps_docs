@@ -118,6 +118,9 @@ $(document).ready(function(){initNavTree('namespacealps_1_1cmn_1_1communication.
 名前空間</h2></td></tr>
 <tr class="memitem:namespacealps_1_1cmn_1_1communication_1_1anonymous__namespace_02can__typed__data__transceiver_8hpp_03"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1anonymous__namespace_02can__typed__data__transceiver_8hpp_03.html">anonymous_namespace{can_typed_data_transceiver.hpp}</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacealps_1_1cmn_1_1communication_1_1detail"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1detail.html">detail</a></td></tr>
+<tr class="memdesc:namespacealps_1_1cmn_1_1communication_1_1detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">実装詳細 <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 クラス</h2></td></tr>
@@ -139,9 +142,6 @@ $(document).ready(function(){initNavTree('namespacealps_1_1cmn_1_1communication.
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_cobs.html">Cobs</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">COBSの変換関数群  <a href="classalps_1_1cmn_1_1communication_1_1_cobs.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_data_serializer.html">DataSerializer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">データとバイト列の変換器  <a href="classalps_1_1cmn_1_1communication_1_1_data_serializer.html#details">[詳解]</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">ICanIo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAN通信IOのインターフェース  <a href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,11 +151,8 @@ $(document).ready(function(){initNavTree('namespacealps_1_1cmn_1_1communication.
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html">IUartIo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uart通信IOのインターフェース  <a href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html">SerializeTypeInfoBase</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">バイト列変換に関する型情報の基底  <a href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html#details">[詳解]</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html">SerializeTypeInfo</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">型のバイト列変換に関する情報  <a href="structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1_serializer.html">Serializer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">データとバイト列の変換器  <a href="structalps_1_1cmn_1_1communication_1_1_serializer.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_uart_sender.html">UartSender</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART通信で型付きデータを送信するためのクラス．UartPacketTransceiverに登録して使用する．  <a href="classalps_1_1cmn_1_1communication_1_1_uart_sender.html#details">[詳解]</a><br /></td></tr>
@@ -178,9 +175,6 @@ $(document).ready(function(){initNavTree('namespacealps_1_1cmn_1_1communication.
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 関数</h2></td></tr>
-<tr class="memitem:ad6ef9f3fb96a4936e8a02431eb74aa76"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication.html#ad6ef9f3fb96a4936e8a02431eb74aa76">IsLittleEndian</a> () noexcept</td></tr>
-<tr class="memdesc:ad6ef9f3fb96a4936e8a02431eb74aa76"><td class="mdescLeft">&#160;</td><td class="mdescRight">実行環境がリトルエンディアンかどうか判定  <a href="namespacealps_1_1cmn_1_1communication.html#ad6ef9f3fb96a4936e8a02431eb74aa76">[詳解]</a><br /></td></tr>
-<tr class="separator:ad6ef9f3fb96a4936e8a02431eb74aa76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e87897c36f9e01024f6ca7c81e6bd9f"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a6e87897c36f9e01024f6ca7c81e6bd9f"><td class="memTemplItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication.html#a6e87897c36f9e01024f6ca7c81e6bd9f">UartPacketByteSize</a> ()</td></tr>
 <tr class="memdesc:a6e87897c36f9e01024f6ca7c81e6bd9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">UARTパケット通信のパケットサイズを計算する  <a href="namespacealps_1_1cmn_1_1communication.html#a6e87897c36f9e01024f6ca7c81e6bd9f">[詳解]</a><br /></td></tr>
@@ -222,36 +216,6 @@ $(document).ready(function(){initNavTree('namespacealps_1_1cmn_1_1communication.
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="ad6ef9f3fb96a4936e8a02431eb74aa76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6ef9f3fb96a4936e8a02431eb74aa76">&#9670;&nbsp;</a></span>IsLittleEndian()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool alps::cmn::communication::IsLittleEndian </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>実行環境がリトルエンディアンかどうか判定 </p>
-<dl class="section return"><dt>戻り値</dt><dd>true リトルエンディアン </dd>
-<dd>
-false ビッグエンディアン </dd></dl>
-
-</div>
-</div>
 <a id="a6e87897c36f9e01024f6ca7c81e6bd9f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6e87897c36f9e01024f6ca7c81e6bd9f">&#9670;&nbsp;</a></span>UartPacketByteSize()</h2>
 

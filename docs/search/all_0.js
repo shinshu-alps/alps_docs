@@ -29,7 +29,7 @@ var searchData=
   ['cmn_26',['cmn',['../namespacealps_1_1cmn.html',1,'alps']]],
   ['communication_27',['communication',['../namespacealps_1_1cmn_1_1communication.html',1,'alps::cmn::communication'],['../namespacealps_1_1lin_1_1communication.html',1,'alps::lin::communication'],['../namespacealps_1_1mbed_1_1communication.html',1,'alps::mbed::communication']]],
   ['control_28',['control',['../namespacealps_1_1cmn_1_1control.html',1,'alps::cmn']]],
-  ['detail_29',['detail',['../namespacealps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail.html',1,'alps::cmn::actuator::robomas_motor']]],
+  ['detail_29',['detail',['../namespacealps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail.html',1,'alps::cmn::actuator::robomas_motor::detail'],['../namespacealps_1_1cmn_1_1communication_1_1detail.html',1,'alps::cmn::communication::detail']]],
   ['gpio_30',['gpio',['../namespacealps_1_1cmn_1_1gpio.html',1,'alps::cmn::gpio'],['../namespacealps_1_1mbed_1_1gpio.html',1,'alps::mbed::gpio']]],
   ['lin_31',['lin',['../namespacealps_1_1lin.html',1,'alps']]],
   ['log_32',['log',['../namespacealps_1_1cmn_1_1log.html',1,'alps::cmn']]],
