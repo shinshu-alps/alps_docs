@@ -12,7 +12,6 @@ var hierarchy =
     [ "alps::cmn::communication::CanTypedDataTransceiver< CanIo, kMaxSubscriberNum >", "classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html", null ],
     [ "alps::cmn::control::ChangeRateLimiter< Clock >", "classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html", null ],
     [ "alps::cmn::communication::Cobs", "classalps_1_1cmn_1_1communication_1_1_cobs.html", null ],
-    [ "alps::cmn::communication::DataSerializer< T >", "classalps_1_1cmn_1_1communication_1_1_data_serializer.html", null ],
     [ "alps::cmn::control::Differentiator< Clock >", "classalps_1_1cmn_1_1control_1_1_differentiator.html", null ],
     [ "alps::cmn::sensor::Bno055< I2cIo >::Euler", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_euler.html", null ],
     [ "alps::cmn::robotics::FourWheelOmni", "classalps_1_1cmn_1_1robotics_1_1_four_wheel_omni.html", null ],
@@ -93,6 +92,7 @@ var hierarchy =
     ] ],
     [ "alps::cmn::sensor::IRotarySensor< RorarySensor >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", null ],
     [ "alps::cmn::sensor::IRotarySensor< RotarySensor >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", null ],
+    [ "alps::cmn::communication::detail::IsBuiltinType< T >", "structalps_1_1cmn_1_1communication_1_1detail_1_1_is_builtin_type.html", null ],
     [ "alps::cmn::communication::IUartIo< Derived >", "classalps_1_1cmn_1_1communication_1_1_i_uart_io.html", null ],
     [ "alps::cmn::communication::IUartIo< UartIo >", "classalps_1_1cmn_1_1communication_1_1_i_uart_io.html", [
       [ "alps::lin::communication::UartIo", "classalps_1_1lin_1_1communication_1_1_uart_io.html", null ],
@@ -121,10 +121,7 @@ var hierarchy =
     [ "alps::cmn::time::RepeatingPollingTimer< Clock >", "classalps_1_1cmn_1_1time_1_1_repeating_polling_timer.html", null ],
     [ "alps::cmn::sensor::Tcs34725< Clock, I2cIo >::RgbColor", "structalps_1_1cmn_1_1sensor_1_1_tcs34725_1_1_rgb_color.html", null ],
     [ "alps::cmn::sensor::S11059< I2cIo >", "classalps_1_1cmn_1_1sensor_1_1_s11059.html", null ],
-    [ "alps::cmn::communication::SerializeTypeInfoBase< is_serializable, is_single >", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html", null ],
-    [ "alps::cmn::communication::SerializeTypeInfoBase< false, false >", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info_base.html", [
-      [ "alps::cmn::communication::SerializeTypeInfo< T >", "structalps_1_1cmn_1_1communication_1_1_serialize_type_info.html", null ]
-    ] ],
+    [ "alps::cmn::communication::Serializer< T >", "structalps_1_1cmn_1_1communication_1_1_serializer.html", null ],
     [ "alps::cmn::actuator::ServoMotor< PwmOut >", "classalps_1_1cmn_1_1actuator_1_1_servo_motor.html", null ],
     [ "alps::cmn::actuator::ServoMotorParam", "structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html", null ],
     [ "alps::cmn::sensor::Tcs34725< Clock, I2cIo >", "classalps_1_1cmn_1_1sensor_1_1_tcs34725.html", null ],

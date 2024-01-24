@@ -12,10 +12,10 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classalps_1_1cmn_1_1control_1_1_pid.html" target="_top" xlink:title="PID制御器">
+<g id="a_node1"><a xlink:href="structalps_1_1cmn_1_1control_1_1_pid_param.html" target="_top" xlink:title="PID制御のパラメータ因子">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-30.5 104,-30.5 104,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::control</text>
-<text text-anchor="middle" x="52" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::Pid&lt; Clock &gt;</text>
+<text text-anchor="middle" x="52" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::PidParam</text>
 </a>
 </g>
 </g>

@@ -1,3 +1,4 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html" title="デジタル入力を行うインタフェース" alt="" coords="5,5,181,47"/>
+<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html" title=" " alt="" coords="5,5,181,47"/>
+<area shape="rect" id="node2" href="$classalps_1_1mbed_1_1gpio_1_1_digital_in.html" title="デジタル入力ピン" alt="" coords="229,13,423,39"/>
 </map>
