@@ -104,7 +104,8 @@ $(document).ready(function(){initNavTree('logger_8hpp.html',''); initResizable()
   <div class="summary">
 <a href="#nested-classes">クラス</a> &#124;
 <a href="#namespaces">名前空間</a> &#124;
-<a href="#define-members">マクロ定義</a>  </div>
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#enum-members">列挙型</a>  </div>
   <div class="headertitle">
 <div class="title">logger.hpp ファイル</div>  </div>
 </div><!--header-->
@@ -119,7 +120,8 @@ logger.hpp の依存先関係図:</div>
 </div><div class="textblock"><div class="dynheader">
 被依存関係図:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="logger_8hpp__dep__incl.svg" width="548" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="logger_8hpp__dep__incl.svg" width="671" height="364"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="logger_8hpp_source.html">[ソースコード]</a></p>
@@ -127,6 +129,7 @@ logger.hpp の依存先関係図:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 クラス</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1log_1_1_logger.html">alps::cmn::log::Logger</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ログ出力を行うクラス．  <a href="classalps_1_1cmn_1_1log_1_1_logger.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -138,13 +141,27 @@ logger.hpp の依存先関係図:</div>
 <tr class="memdesc:namespacealps_1_1cmn"><td class="mdescLeft">&#160;</td><td class="mdescRight">汎用ライブラリ <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacealps_1_1cmn_1_1log"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1log.html">alps::cmn::log</a></td></tr>
-<tr class="memdesc:namespacealps_1_1cmn_1_1log"><td class="mdescLeft">&#160;</td><td class="mdescRight">ログ出力関係 <br /></td></tr>
+<tr class="memdesc:namespacealps_1_1cmn_1_1log"><td class="mdescLeft">&#160;</td><td class="mdescRight">ログ関係 <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 マクロ定義</h2></td></tr>
 <tr class="memitem:aecf2374f36e81b59660c74940c3cbf71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#aecf2374f36e81b59660c74940c3cbf71">ALPS_CMN_LOG_BUFFER_SIZE</a>&#160;&#160;&#160;256</td></tr>
 <tr class="separator:aecf2374f36e81b59660c74940c3cbf71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:a21f6c434d5f34524986e7181833143b4"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4">alps::cmn::log::LogLevel</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4abb53ce21b7c0b7c8a8f7860a41901d29">alps::cmn::log::kDebug</a>
+, <a class="el" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4a176a473e63c17ccdac91640c67f149bf">alps::cmn::log::kInfo</a>
+, <a class="el" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4a61a920eb4a24199ec6a36dd90f2a30b7">alps::cmn::log::kWarn</a>
+, <a class="el" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4ae3587c730cc1aa530fa4ddc9c4204e97">alps::cmn::log::kError</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4ae66f945a3c2423ef09406cf09fa9de26">alps::cmn::log::kFatal</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a21f6c434d5f34524986e7181833143b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ログレベルを表す列挙型  <a href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4">[詳解]</a><br /></td></tr>
+<tr class="separator:a21f6c434d5f34524986e7181833143b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">マクロ定義詳解</h2>
 <a id="aecf2374f36e81b59660c74940c3cbf71"></a>

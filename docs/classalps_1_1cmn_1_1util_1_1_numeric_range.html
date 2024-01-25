@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1util_1_1_numeric_r
 </div><!--header-->
 <div class="contents">
 
-<p>数値の範囲を表すクラス  
+<p>最小値と最大値による数値の範囲を表すクラス  
  <a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#details">[詳解]</a></p>
 
 <p><code>#include &lt;<a class="el" href="numeric__range_8hpp_source.html">numeric_range.hpp</a>&gt;</code></p>
@@ -117,7 +117,8 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1util_1_1_numeric_r
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
 <tr class="memitem:a7862f202b1ab8f261e1f1eab29dcd553"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a7862f202b1ab8f261e1f1eab29dcd553">NumericRange</a> (T lowest=std::numeric_limits&lt; T &gt;::lowest(), T max=std::numeric_limits&lt; T &gt;::max())</td></tr>
-<tr class="memdesc:a7862f202b1ab8f261e1f1eab29dcd553"><td class="mdescLeft">&#160;</td><td class="mdescRight">最小値と最大値を指定し構築するコンストラクタ． デフォルト引数はstd::numeric_limits&lt;T&gt;::lowest()とstd::numeric_limits&lt;T&gt;::max()，すなわち無制限．  <a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a7862f202b1ab8f261e1f1eab29dcd553">[詳解]</a><br /></td></tr>
+<tr class="memdesc:a7862f202b1ab8f261e1f1eab29dcd553"><td class="mdescLeft">&#160;</td><td class="mdescRight">最小値と最大値を指定し構築するコンストラクタ． <br  />
+ デフォルト引数はstd::numeric_limits&lt;T&gt;::lowest()とstd::numeric_limits&lt;T&gt;::max()．（つまり無制限）  <a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a7862f202b1ab8f261e1f1eab29dcd553">[詳解]</a><br /></td></tr>
 <tr class="separator:a7862f202b1ab8f261e1f1eab29dcd553"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66c7718ead08a905dab99d68507e95cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a66c7718ead08a905dab99d68507e95cf">NumericRange</a> (const <a class="el" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">NumericRange</a> &amp;)=default</td></tr>
 <tr class="memdesc:a66c7718ead08a905dab99d68507e95cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">コピー構築可能  <a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a66c7718ead08a905dab99d68507e95cf">[詳解]</a><br /></td></tr>
@@ -148,7 +149,7 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1util_1_1_numeric_r
 <div class="textblock"><h3>template&lt;class T = float&gt;<br />
 class alps::cmn::util::NumericRange&lt; T &gt;</h3>
 
-<p>数値の範囲を表すクラス </p>
+<p>最小値と最大値による数値の範囲を表すクラス </p>
 <dl class="tparams"><dt>テンプレート引数</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>数値型（デフォルトはfloat） </td></tr>
@@ -192,7 +193,8 @@ template&lt;class T  = float&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>最小値と最大値を指定し構築するコンストラクタ． デフォルト引数はstd::numeric_limits&lt;T&gt;::lowest()とstd::numeric_limits&lt;T&gt;::max()，すなわち無制限． </p>
+<p>最小値と最大値を指定し構築するコンストラクタ． <br  />
+ デフォルト引数はstd::numeric_limits&lt;T&gt;::lowest()とstd::numeric_limits&lt;T&gt;::max()．（つまり無制限） </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">lowest</td><td>最小値 </td></tr>

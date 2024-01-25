@@ -4,7 +4,6 @@ var logging__macros_8hpp =
     [ "ALPS_LOG_ERROR", "logging__macros_8hpp.html#a15ccf5878c9b195b71adfeb4fe9d19d4", null ],
     [ "ALPS_LOG_FATAL", "logging__macros_8hpp.html#acde12e4dcfad4b0ae2e98ec347855a22", null ],
     [ "ALPS_LOG_INFO", "logging__macros_8hpp.html#aede9f4f4f61b7e20067f2bf0d4eafb40", null ],
-    [ "ALPS_LOG_LEVEL", "logging__macros_8hpp.html#adfbb8c988ac0fae97dd7c8f2e8f5f545", null ],
     [ "ALPS_LOG_LEVEL_DEBUG", "logging__macros_8hpp.html#a0c001142fb0ce5e35e07eb5763d4d60c", null ],
     [ "ALPS_LOG_LEVEL_ERROR", "logging__macros_8hpp.html#a651b4a65255cc6e9ca1d41a124a988dd", null ],
     [ "ALPS_LOG_LEVEL_FATAL", "logging__macros_8hpp.html#aeb6ce5351773b08bf07278e7c1274735", null ],
