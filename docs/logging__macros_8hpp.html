@@ -135,9 +135,8 @@ logging_macros.hpp の依存先関係図:</div>
 <tr class="separator:aeb6ce5351773b08bf07278e7c1274735"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a675aa039e2b2f684de42f0e7890be83c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging__macros_8hpp.html#a675aa039e2b2f684de42f0e7890be83c">ALPS_LOG_LEVEL_NONE</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a675aa039e2b2f684de42f0e7890be83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfbb8c988ac0fae97dd7c8f2e8f5f545"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging__macros_8hpp.html#adfbb8c988ac0fae97dd7c8f2e8f5f545">ALPS_LOG_LEVEL</a>&#160;&#160;&#160;<a class="el" href="logging__macros_8hpp.html#a45f08a193e4489a1844fa9aae7fa3e79">ALPS_LOG_LEVEL_INFO</a></td></tr>
-<tr class="separator:adfbb8c988ac0fae97dd7c8f2e8f5f545"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf66ea1ba15fffa1b82a603ed89b9aa2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging__macros_8hpp.html#adf66ea1ba15fffa1b82a603ed89b9aa2">ALPS_LOG_DEBUG</a>(...)</td></tr>
+<tr class="memdesc:adf66ea1ba15fffa1b82a603ed89b9aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">デバッグレベルのログ出力を行う  <a href="logging__macros_8hpp.html#adf66ea1ba15fffa1b82a603ed89b9aa2">[詳解]</a><br /></td></tr>
 <tr class="separator:adf66ea1ba15fffa1b82a603ed89b9aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aede9f4f4f61b7e20067f2bf0d4eafb40"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging__macros_8hpp.html#aede9f4f4f61b7e20067f2bf0d4eafb40">ALPS_LOG_INFO</a>(...)</td></tr>
 <tr class="memdesc:aede9f4f4f61b7e20067f2bf0d4eafb40"><td class="mdescLeft">&#160;</td><td class="mdescRight">インフォメーションレベルのログ出力を行う  <a href="logging__macros_8hpp.html#aede9f4f4f61b7e20067f2bf0d4eafb40">[詳解]</a><br /></td></tr>
@@ -152,7 +151,12 @@ logging_macros.hpp の依存先関係図:</div>
 <tr class="memdesc:acde12e4dcfad4b0ae2e98ec347855a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">致命的エラーレベルのログ出力を行う  <a href="logging__macros_8hpp.html#acde12e4dcfad4b0ae2e98ec347855a22">[詳解]</a><br /></td></tr>
 <tr class="separator:acde12e4dcfad4b0ae2e98ec347855a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">マクロ定義詳解</h2>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><dl class="section author"><dt>著者</dt><dd>プリプロセッサ定数で有効レベルを設定できるログ出力マクロ </dd></dl>
+<dl class="section version"><dt>バージョン</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>日付</dt><dd>2024-01-24</dd></dl>
+<dl class="section copyright"><dt>著作権所有</dt><dd>Copyright (c) 2024 </dd></dl>
+</div><h2 class="groupheader">マクロ定義詳解</h2>
 <a id="adf66ea1ba15fffa1b82a603ed89b9aa2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf66ea1ba15fffa1b82a603ed89b9aa2">&#9670;&nbsp;</a></span>ALPS_LOG_DEBUG</h2>
 
@@ -168,6 +172,19 @@ logging_macros.hpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                             <a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a2737158404cd93bd6fb369753fa92d80">\</a></div>
+<div class="line"><a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a2737158404cd93bd6fb369753fa92d80">    alps::cmn::log::Logger::Output</a>(<a class="code" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4abb53ce21b7c0b7c8a8f7860a41901d29">alps::cmn::log::LogLevel::kDebug</a>, __VA_ARGS__); \</div>
+<div class="line">  } <span class="keywordflow">while</span> (0)</div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1log_1_1_logger_html_a2737158404cd93bd6fb369753fa92d80"><div class="ttname"><a href="classalps_1_1cmn_1_1log_1_1_logger.html#a2737158404cd93bd6fb369753fa92d80">alps::cmn::log::Logger::Output</a></div><div class="ttdeci">static void Output(LogLevel level, const char *format,...)</div><div class="ttdoc">ログ出力を行う</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1log_html_a21f6c434d5f34524986e7181833143b4abb53ce21b7c0b7c8a8f7860a41901d29"><div class="ttname"><a href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4abb53ce21b7c0b7c8a8f7860a41901d29">alps::cmn::log::LogLevel::kDebug</a></div><div class="ttdeci">@ kDebug</div><div class="ttdoc">デバッグレベル</div></div>
+</div><!-- fragment -->
+<p>デバッグレベルのログ出力を行う </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">&lt;strong&gt;VA_ARGS&lt;/strong&gt;...</td><td>フォーマット文字列，及びフォーマットに対応する引数 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -186,11 +203,10 @@ logging_macros.hpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                                  <a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a66a7dab9a46930bccf35fcf9de1d1ccf">\</a></div>
-<div class="line"><a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a66a7dab9a46930bccf35fcf9de1d1ccf">    alps::cmn::log::Logger::Output</a>(<a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a8dc02f64cdf5155657cd0ed473e29df4ae3587c730cc1aa530fa4ddc9c4204e97">alps::cmn::log::Logger::Level::kError</a>, __VA_ARGS__); \</div>
+<b>値:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                             <a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a2737158404cd93bd6fb369753fa92d80">\</a></div>
+<div class="line"><a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a2737158404cd93bd6fb369753fa92d80">    alps::cmn::log::Logger::Output</a>(<a class="code" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4ae3587c730cc1aa530fa4ddc9c4204e97">alps::cmn::log::LogLevel::kError</a>, __VA_ARGS__); \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1log_1_1_logger_html_a66a7dab9a46930bccf35fcf9de1d1ccf"><div class="ttname"><a href="classalps_1_1cmn_1_1log_1_1_logger.html#a66a7dab9a46930bccf35fcf9de1d1ccf">alps::cmn::log::Logger::Output</a></div><div class="ttdeci">static void Output(Level level, const char *format,...)</div><div class="ttdoc">ログ出力を行う</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1log_1_1_logger_html_a8dc02f64cdf5155657cd0ed473e29df4ae3587c730cc1aa530fa4ddc9c4204e97"><div class="ttname"><a href="classalps_1_1cmn_1_1log_1_1_logger.html#a8dc02f64cdf5155657cd0ed473e29df4ae3587c730cc1aa530fa4ddc9c4204e97">alps::cmn::log::Logger::Level::kError</a></div><div class="ttdeci">@ kError</div><div class="ttdoc">エラーレベル</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1log_html_a21f6c434d5f34524986e7181833143b4ae3587c730cc1aa530fa4ddc9c4204e97"><div class="ttname"><a href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4ae3587c730cc1aa530fa4ddc9c4204e97">alps::cmn::log::LogLevel::kError</a></div><div class="ttdeci">@ kError</div><div class="ttdoc">エラーレベル</div></div>
 </div><!-- fragment -->
 <p>エラーレベルのログ出力を行う </p>
 <dl class="params"><dt>引数</dt><dd>
@@ -217,10 +233,10 @@ logging_macros.hpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                                  <a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a66a7dab9a46930bccf35fcf9de1d1ccf">\</a></div>
-<div class="line"><a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a66a7dab9a46930bccf35fcf9de1d1ccf">    alps::cmn::log::Logger::Output</a>(<a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a8dc02f64cdf5155657cd0ed473e29df4ae66f945a3c2423ef09406cf09fa9de26">alps::cmn::log::Logger::Level::kFatal</a>, __VA_ARGS__); \</div>
+<b>値:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                             <a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a2737158404cd93bd6fb369753fa92d80">\</a></div>
+<div class="line"><a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a2737158404cd93bd6fb369753fa92d80">    alps::cmn::log::Logger::Output</a>(<a class="code" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4ae66f945a3c2423ef09406cf09fa9de26">alps::cmn::log::LogLevel::kFatal</a>, __VA_ARGS__); \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1log_1_1_logger_html_a8dc02f64cdf5155657cd0ed473e29df4ae66f945a3c2423ef09406cf09fa9de26"><div class="ttname"><a href="classalps_1_1cmn_1_1log_1_1_logger.html#a8dc02f64cdf5155657cd0ed473e29df4ae66f945a3c2423ef09406cf09fa9de26">alps::cmn::log::Logger::Level::kFatal</a></div><div class="ttdeci">@ kFatal</div><div class="ttdoc">致命的エラーレベル</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1log_html_a21f6c434d5f34524986e7181833143b4ae66f945a3c2423ef09406cf09fa9de26"><div class="ttname"><a href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4ae66f945a3c2423ef09406cf09fa9de26">alps::cmn::log::LogLevel::kFatal</a></div><div class="ttdeci">@ kFatal</div><div class="ttdoc">致命的エラーレベル</div></div>
 </div><!-- fragment -->
 <p>致命的エラーレベルのログ出力を行う </p>
 <dl class="params"><dt>引数</dt><dd>
@@ -247,10 +263,10 @@ logging_macros.hpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                                 <a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a66a7dab9a46930bccf35fcf9de1d1ccf">\</a></div>
-<div class="line"><a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a66a7dab9a46930bccf35fcf9de1d1ccf">    alps::cmn::log::Logger::Output</a>(<a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a8dc02f64cdf5155657cd0ed473e29df4a176a473e63c17ccdac91640c67f149bf">alps::cmn::log::Logger::Level::kInfo</a>, __VA_ARGS__); \</div>
+<b>値:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                            <a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a2737158404cd93bd6fb369753fa92d80">\</a></div>
+<div class="line"><a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a2737158404cd93bd6fb369753fa92d80">    alps::cmn::log::Logger::Output</a>(<a class="code" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4a176a473e63c17ccdac91640c67f149bf">alps::cmn::log::LogLevel::kInfo</a>, __VA_ARGS__); \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1log_1_1_logger_html_a8dc02f64cdf5155657cd0ed473e29df4a176a473e63c17ccdac91640c67f149bf"><div class="ttname"><a href="classalps_1_1cmn_1_1log_1_1_logger.html#a8dc02f64cdf5155657cd0ed473e29df4a176a473e63c17ccdac91640c67f149bf">alps::cmn::log::Logger::Level::kInfo</a></div><div class="ttdeci">@ kInfo</div><div class="ttdoc">情報レベル</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1log_html_a21f6c434d5f34524986e7181833143b4a176a473e63c17ccdac91640c67f149bf"><div class="ttname"><a href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4a176a473e63c17ccdac91640c67f149bf">alps::cmn::log::LogLevel::kInfo</a></div><div class="ttdeci">@ kInfo</div><div class="ttdoc">情報レベル</div></div>
 </div><!-- fragment -->
 <p>インフォメーションレベルのログ出力を行う </p>
 <dl class="params"><dt>引数</dt><dd>
@@ -259,20 +275,6 @@ logging_macros.hpp の依存先関係図:</div>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="adfbb8c988ac0fae97dd7c8f2e8f5f545"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfbb8c988ac0fae97dd7c8f2e8f5f545">&#9670;&nbsp;</a></span>ALPS_LOG_LEVEL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ALPS_LOG_LEVEL&#160;&#160;&#160;<a class="el" href="logging__macros_8hpp.html#a45f08a193e4489a1844fa9aae7fa3e79">ALPS_LOG_LEVEL_INFO</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -375,10 +377,10 @@ logging_macros.hpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                                 <a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a66a7dab9a46930bccf35fcf9de1d1ccf">\</a></div>
-<div class="line"><a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a66a7dab9a46930bccf35fcf9de1d1ccf">    alps::cmn::log::Logger::Output</a>(<a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a8dc02f64cdf5155657cd0ed473e29df4a61a920eb4a24199ec6a36dd90f2a30b7">alps::cmn::log::Logger::Level::kWarn</a>, __VA_ARGS__); \</div>
+<b>値:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                            <a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a2737158404cd93bd6fb369753fa92d80">\</a></div>
+<div class="line"><a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a2737158404cd93bd6fb369753fa92d80">    alps::cmn::log::Logger::Output</a>(<a class="code" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4a61a920eb4a24199ec6a36dd90f2a30b7">alps::cmn::log::LogLevel::kWarn</a>, __VA_ARGS__); \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1log_1_1_logger_html_a8dc02f64cdf5155657cd0ed473e29df4a61a920eb4a24199ec6a36dd90f2a30b7"><div class="ttname"><a href="classalps_1_1cmn_1_1log_1_1_logger.html#a8dc02f64cdf5155657cd0ed473e29df4a61a920eb4a24199ec6a36dd90f2a30b7">alps::cmn::log::Logger::Level::kWarn</a></div><div class="ttdeci">@ kWarn</div><div class="ttdoc">警告レベル</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1log_html_a21f6c434d5f34524986e7181833143b4a61a920eb4a24199ec6a36dd90f2a30b7"><div class="ttname"><a href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4a61a920eb4a24199ec6a36dd90f2a30b7">alps::cmn::log::LogLevel::kWarn</a></div><div class="ttdeci">@ kWarn</div><div class="ttdoc">警告レベル</div></div>
 </div><!-- fragment -->
 <p>警告レベルのログ出力を行う </p>
 <dl class="params"><dt>引数</dt><dd>

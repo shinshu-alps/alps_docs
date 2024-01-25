@@ -102,7 +102,6 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1log_1_1_logger.htm
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">公開型</a> &#124;
 <a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
 <a href="classalps_1_1cmn_1_1log_1_1_logger-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
@@ -110,71 +109,26 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1log_1_1_logger.htm
 </div><!--header-->
 <div class="contents">
 
+<p>ログ出力を行うクラス．  
+ <a href="classalps_1_1cmn_1_1log_1_1_logger.html#details">[詳解]</a></p>
+
 <p><code>#include &lt;<a class="el" href="logger_8hpp_source.html">logger.hpp</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-公開型</h2></td></tr>
-<tr class="memitem:a8dc02f64cdf5155657cd0ed473e29df4"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1log_1_1_logger.html#a8dc02f64cdf5155657cd0ed473e29df4">Level</a> : uint8_t { <br />
-&#160;&#160;<a class="el" href="classalps_1_1cmn_1_1log_1_1_logger.html#a8dc02f64cdf5155657cd0ed473e29df4abb53ce21b7c0b7c8a8f7860a41901d29">kDebug</a>
-, <a class="el" href="classalps_1_1cmn_1_1log_1_1_logger.html#a8dc02f64cdf5155657cd0ed473e29df4a176a473e63c17ccdac91640c67f149bf">kInfo</a>
-, <a class="el" href="classalps_1_1cmn_1_1log_1_1_logger.html#a8dc02f64cdf5155657cd0ed473e29df4a61a920eb4a24199ec6a36dd90f2a30b7">kWarn</a>
-, <a class="el" href="classalps_1_1cmn_1_1log_1_1_logger.html#a8dc02f64cdf5155657cd0ed473e29df4ae3587c730cc1aa530fa4ddc9c4204e97">kError</a>
-, <br />
-&#160;&#160;<a class="el" href="classalps_1_1cmn_1_1log_1_1_logger.html#a8dc02f64cdf5155657cd0ed473e29df4ae66f945a3c2423ef09406cf09fa9de26">kFatal</a>
-<br />
- }</td></tr>
-<tr class="memdesc:a8dc02f64cdf5155657cd0ed473e29df4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ログレベルを表す列挙型  <a href="classalps_1_1cmn_1_1log_1_1_logger.html#a8dc02f64cdf5155657cd0ed473e29df4">[詳解]</a><br /></td></tr>
-<tr class="separator:a8dc02f64cdf5155657cd0ed473e29df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 静的公開メンバ関数</h2></td></tr>
-<tr class="memitem:a66a7dab9a46930bccf35fcf9de1d1ccf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1log_1_1_logger.html#a66a7dab9a46930bccf35fcf9de1d1ccf">Output</a> (<a class="el" href="classalps_1_1cmn_1_1log_1_1_logger.html#a8dc02f64cdf5155657cd0ed473e29df4">Level</a> level, const char *format,...)</td></tr>
-<tr class="memdesc:a66a7dab9a46930bccf35fcf9de1d1ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">ログ出力を行う  <a href="classalps_1_1cmn_1_1log_1_1_logger.html#a66a7dab9a46930bccf35fcf9de1d1ccf">[詳解]</a><br /></td></tr>
-<tr class="separator:a66a7dab9a46930bccf35fcf9de1d1ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57fe22abd270134774111ead3abd568f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1log_1_1_logger.html#a57fe22abd270134774111ead3abd568f">SetLogWriter</a> (etl::delegate&lt; void(etl::string_view)&gt; writer_func)</td></tr>
-<tr class="memdesc:a57fe22abd270134774111ead3abd568f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ログ出力関数を設定する  <a href="classalps_1_1cmn_1_1log_1_1_logger.html#a57fe22abd270134774111ead3abd568f">[詳解]</a><br /></td></tr>
-<tr class="separator:a57fe22abd270134774111ead3abd568f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2737158404cd93bd6fb369753fa92d80"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1log_1_1_logger.html#a2737158404cd93bd6fb369753fa92d80">Output</a> (<a class="el" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4">LogLevel</a> level, const char *format,...)</td></tr>
+<tr class="memdesc:a2737158404cd93bd6fb369753fa92d80"><td class="mdescLeft">&#160;</td><td class="mdescRight">ログ出力を行う  <a href="classalps_1_1cmn_1_1log_1_1_logger.html#a2737158404cd93bd6fb369753fa92d80">[詳解]</a><br /></td></tr>
+<tr class="separator:a2737158404cd93bd6fb369753fa92d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e3349a5cdcdb3cc7707e0ddb3da5ef"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1log_1_1_logger.html#a54e3349a5cdcdb3cc7707e0ddb3da5ef">SetLogWriter</a> (etl::delegate&lt; void(<a class="el" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4">LogLevel</a>, etl::string_view)&gt; log_writer)</td></tr>
+<tr class="memdesc:a54e3349a5cdcdb3cc7707e0ddb3da5ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">ログ出力関数を設定する  <a href="classalps_1_1cmn_1_1log_1_1_logger.html#a54e3349a5cdcdb3cc7707e0ddb3da5ef">[詳解]</a><br /></td></tr>
+<tr class="separator:a54e3349a5cdcdb3cc7707e0ddb3da5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">列挙型メンバ詳解</h2>
-<a id="a8dc02f64cdf5155657cd0ed473e29df4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dc02f64cdf5155657cd0ed473e29df4">&#9670;&nbsp;</a></span>Level</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="classalps_1_1cmn_1_1log_1_1_logger.html#a8dc02f64cdf5155657cd0ed473e29df4">alps::cmn::log::Logger::Level</a> : uint8_t</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>ログレベルを表す列挙型 </p>
-<table class="fieldtable">
-<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a8dc02f64cdf5155657cd0ed473e29df4abb53ce21b7c0b7c8a8f7860a41901d29"></a>kDebug&#160;</td><td class="fielddoc"><p>デバッグレベル </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a8dc02f64cdf5155657cd0ed473e29df4a176a473e63c17ccdac91640c67f149bf"></a>kInfo&#160;</td><td class="fielddoc"><p>情報レベル </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a8dc02f64cdf5155657cd0ed473e29df4a61a920eb4a24199ec6a36dd90f2a30b7"></a>kWarn&#160;</td><td class="fielddoc"><p>警告レベル </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a8dc02f64cdf5155657cd0ed473e29df4ae3587c730cc1aa530fa4ddc9c4204e97"></a>kError&#160;</td><td class="fielddoc"><p>エラーレベル </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a8dc02f64cdf5155657cd0ed473e29df4ae66f945a3c2423ef09406cf09fa9de26"></a>kFatal&#160;</td><td class="fielddoc"><p>致命的エラーレベル </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">関数詳解</h2>
-<a id="a66a7dab9a46930bccf35fcf9de1d1ccf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66a7dab9a46930bccf35fcf9de1d1ccf">&#9670;&nbsp;</a></span>Output()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>ログ出力を行うクラス． </p>
+<dl class="section note"><dt>覚え書き</dt><dd>ログ出力方法はグローバル変数として保持される． </dd></dl>
+</div><h2 class="groupheader">関数詳解</h2>
+<a id="a2737158404cd93bd6fb369753fa92d80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2737158404cd93bd6fb369753fa92d80">&#9670;&nbsp;</a></span>Output()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -185,7 +139,7 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1log_1_1_logger.htm
         <tr>
           <td class="memname">static void alps::cmn::log::Logger::Output </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1log_1_1_logger.html#a8dc02f64cdf5155657cd0ed473e29df4">Level</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4">LogLevel</a>&#160;</td>
           <td class="paramname"><em>level</em>, </td>
         </tr>
         <tr>
@@ -225,8 +179,8 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1log_1_1_logger.htm
 
 </div>
 </div>
-<a id="a57fe22abd270134774111ead3abd568f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57fe22abd270134774111ead3abd568f">&#9670;&nbsp;</a></span>SetLogWriter()</h2>
+<a id="a54e3349a5cdcdb3cc7707e0ddb3da5ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54e3349a5cdcdb3cc7707e0ddb3da5ef">&#9670;&nbsp;</a></span>SetLogWriter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -237,8 +191,8 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1log_1_1_logger.htm
         <tr>
           <td class="memname">static void alps::cmn::log::Logger::SetLogWriter </td>
           <td>(</td>
-          <td class="paramtype">etl::delegate&lt; void(etl::string_view)&gt;&#160;</td>
-          <td class="paramname"><em>writer_func</em></td><td>)</td>
+          <td class="paramtype">etl::delegate&lt; void(<a class="el" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4">LogLevel</a>, etl::string_view)&gt;&#160;</td>
+          <td class="paramname"><em>log_writer</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -252,7 +206,7 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1log_1_1_logger.htm
 <p>ログ出力関数を設定する </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">writer_func</td><td>ログ出力関数 </td></tr>
+    <tr><td class="paramname">log_writer</td><td>ログ出力関数．第一引数にログレベル，第二引数にログメッセージを受け取る． </td></tr>
   </table>
   </dd>
 </dl>
