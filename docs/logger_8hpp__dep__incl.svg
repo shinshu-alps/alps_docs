@@ -13,9 +13,9 @@
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="79,-234.5 79,-264.5 219,-264.5 219,-234.5 79,-234.5"/>
-<text text-anchor="start" x="87" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps_common_lib/include</text>
-<text text-anchor="middle" x="149" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_cmn/log/logger.hpp</text>
+<polygon fill="#bfbfbf" stroke="black" points="158,-234.5 158,-264.5 298,-264.5 298,-234.5 158,-234.5"/>
+<text text-anchor="start" x="166" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps_common_lib/include</text>
+<text text-anchor="middle" x="228" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_cmn/log/logger.hpp</text>
 </a>
 </g>
 </g>
@@ -32,8 +32,8 @@
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M125.43,-227.46C112.59,-216 97.05,-202.14 85.69,-192"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="123.22,-230.19 133.01,-234.23 127.88,-224.96 123.22,-230.19"/>
+<path fill="none" stroke="midnightblue" d="M186.96,-230.19C160.3,-218.29 126.07,-203.02 101.54,-192.07"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="185.85,-233.52 196.41,-234.4 188.7,-227.13 185.85,-233.52"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
@@ -49,8 +49,24 @@
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M172.67,-227.38C183.26,-217.93 195.67,-206.85 206.05,-197.59"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="170.12,-224.96 164.99,-234.23 174.78,-230.19 170.12,-224.96"/>
+<path fill="none" stroke="midnightblue" d="M228,-223.98C228,-215.35 228,-205.76 228,-197.59"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="224.5,-224.23 228,-234.23 231.5,-224.23 224.5,-224.23"/>
+</g>
+<!-- Node7 -->
+<g id="node7" class="node">
+<title>Node7</title>
+<g id="a_node7"><a xlink:href="log__writer_8hpp.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="316,-162 316,-192 472,-192 472,-162 316,-162"/>
+<text text-anchor="start" x="324" y="-180" font-family="Helvetica,sans-Serif" font-size="10.00">alps_ros2_lib/include</text>
+<text text-anchor="middle" x="394" y="-169" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_ros2/log/log_writer.hpp</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node7 -->
+<g id="edge7" class="edge">
+<title>Node1&#45;&gt;Node7</title>
+<path fill="none" stroke="midnightblue" d="M270.75,-230.34C298.82,-218.42 334.98,-203.07 360.86,-192.07"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="269.03,-227.27 261.19,-234.4 271.77,-233.72 269.03,-227.27"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">

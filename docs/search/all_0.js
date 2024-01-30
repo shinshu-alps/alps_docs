@@ -33,7 +33,7 @@ var searchData=
   ['detail_30',['detail',['../namespacealps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail.html',1,'alps::cmn::actuator::robomas_motor::detail'],['../namespacealps_1_1cmn_1_1communication_1_1detail.html',1,'alps::cmn::communication::detail']]],
   ['gpio_31',['gpio',['../namespacealps_1_1cmn_1_1gpio.html',1,'alps::cmn::gpio'],['../namespacealps_1_1mbed_1_1gpio.html',1,'alps::mbed::gpio']]],
   ['lin_32',['lin',['../namespacealps_1_1lin.html',1,'alps']]],
-  ['log_33',['log',['../namespacealps_1_1cmn_1_1log.html',1,'alps::cmn']]],
+  ['log_33',['log',['../namespacealps_1_1cmn_1_1log.html',1,'alps::cmn::log'],['../namespacealps_1_1ros2_1_1log.html',1,'alps::ros2::log']]],
   ['mbed_34',['mbed',['../namespacealps_1_1mbed.html',1,'alps']]],
   ['robomas_5fmotor_35',['robomas_motor',['../namespacealps_1_1cmn_1_1actuator_1_1robomas__motor.html',1,'alps::cmn::actuator']]],
   ['robotics_36',['robotics',['../namespacealps_1_1cmn_1_1robotics.html',1,'alps::cmn']]],
