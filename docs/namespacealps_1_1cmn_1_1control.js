@@ -4,6 +4,7 @@ var namespacealps_1_1cmn_1_1control =
     [ "Differentiator", "classalps_1_1cmn_1_1control_1_1_differentiator.html", "classalps_1_1cmn_1_1control_1_1_differentiator" ],
     [ "FrictionCompensatedMotor", "classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html", "classalps_1_1cmn_1_1control_1_1_friction_compensated_motor" ],
     [ "Integrator", "classalps_1_1cmn_1_1control_1_1_integrator.html", "classalps_1_1cmn_1_1control_1_1_integrator" ],
+    [ "LowPassDifferentiator", "classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html", "classalps_1_1cmn_1_1control_1_1_low_pass_differentiator" ],
     [ "LowPassFilter", "classalps_1_1cmn_1_1control_1_1_low_pass_filter.html", "classalps_1_1cmn_1_1control_1_1_low_pass_filter" ],
     [ "MotorAngleController", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller" ],
     [ "MotorAngleVelocityController", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller" ],

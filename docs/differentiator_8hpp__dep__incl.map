@@ -1,11 +1,12 @@
 <map id="alps_common_lib/include/alps_cmn/control/differentiator.hpp" name="alps_common_lib/include/alps_cmn/control/differentiator.hpp">
-<area shape="rect" id="node1" title="微分器ライブラリ" alt="" coords="208,5,461,47"/>
-<area shape="rect" id="node2" href="$friction__compensated__motor_8hpp.html" title="モーターに対して摩擦補償を行うデコレーター" alt="" coords="27,95,218,151"/>
+<area shape="rect" id="node1" title="微分器ライブラリ" alt="" coords="199,5,452,47"/>
+<area shape="rect" id="node2" href="$friction__compensated__motor_8hpp.html" title="モーターに対して摩擦補償を行うデコレーター" alt="" coords="17,95,207,151"/>
+<area shape="rect" id="node4" href="$low__pass__differentiator_8hpp.html" title=" " alt="" coords="232,95,419,151"/>
+<area shape="rect" id="node9" href="$alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="477,95,694,151"/>
 <area shape="rect" id="node3" href="$motor__friction__analyzer_8hpp.html" title="モーター軸の摩擦力を計測するクラス" alt="" coords="5,199,219,255"/>
-<area shape="rect" id="node4" href="$motor__velocity__controller_8hpp.html" title=" " alt="" coords="243,199,429,255"/>
-<area shape="rect" id="node6" href="$pid_8hpp.html" title=" " alt="" coords="372,102,561,143"/>
-<area shape="rect" id="node8" href="$alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="653,95,870,151"/>
-<area shape="rect" id="node5" href="$motor__angle__velocity__controller_8hpp.html" title=" " alt="" coords="291,303,511,359"/>
-<area shape="rect" id="node7" href="$motor__angle__controller_8hpp.html" title=" " alt="" coords="504,199,691,255"/>
-<area shape="rect" id="node9" href="$alps__mbed__lib_2include_2alps__mbed_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="715,199,941,255"/>
+<area shape="rect" id="node5" href="$motor__velocity__controller_8hpp.html" title=" " alt="" coords="163,303,349,359"/>
+<area shape="rect" id="node7" href="$pid_8hpp.html" title=" " alt="" coords="293,206,483,247"/>
+<area shape="rect" id="node6" href="$motor__angle__velocity__controller_8hpp.html" title=" " alt="" coords="211,407,431,463"/>
+<area shape="rect" id="node8" href="$motor__angle__controller_8hpp.html" title=" " alt="" coords="424,303,611,359"/>
+<area shape="rect" id="node10" href="$alps__mbed__lib_2include_2alps__mbed_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="507,199,733,255"/>
 </map>

@@ -113,15 +113,19 @@ $(document).ready(function(){initNavTree('motor__friction__analyzer_8hpp.html','
 <a href="#details">[詳解]</a></p>
 <div class="textblock"><code>#include &lt;cmath&gt;</code><br />
 <code>#include &quot;<a class="el" href="i__motor_8hpp_source.html">alps_cmn/actuator/i_motor.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="differentiator_8hpp_source.html">alps_cmn/control/differentiator.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="friction__compensated__motor_8hpp_source.html">alps_cmn/control/friction_compensated_motor.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="low__pass__differentiator_8hpp_source.html">alps_cmn/control/low_pass_differentiator.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="logging__macros_8hpp_source.html">alps_cmn/log/logging_macros.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="i__rotary__sensor_8hpp_source.html">alps_cmn/sensor/i_rotary_sensor.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sleep_8hpp_source.html">alps_cmn/time/sleep.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="timeout__checker_8hpp_source.html">alps_cmn/time/timeout_checker.hpp</a>&quot;</code><br />
+<code>#include &quot;etl/delegate.h&quot;</code><br />
+<code>#include &quot;etl/optional.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 motor_friction_analyzer.hpp の依存先関係図:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="motor__friction__analyzer_8hpp__incl.svg" width="1103" height="395"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="motor__friction__analyzer_8hpp__incl.svg" width="1499" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="motor__friction__analyzer_8hpp_source.html">[ソースコード]</a></p>
@@ -129,7 +133,8 @@ motor_friction_analyzer.hpp の依存先関係図:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 クラス</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer.html">alps::cmn::tool::MotorFrictionAnalyzer&lt; Clock, Motor, RorarySensor &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">モーター軸の摩擦力を計測するクラス  <a href="classalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer.html#details">[詳解]</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">モーター軸の摩擦力を計測するクラス <br  />
+ <a class="el" href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html" title="モーターに対して摩擦補償を行うデコレーター">alps::cmn::control::FrictionCompensatedMotor</a> に使用する値を求めるときに使う  <a href="classalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_1_1_friction_result.html">alps::cmn::tool::MotorFrictionAnalyzer&lt; Clock, Motor, RorarySensor &gt;::FrictionResult</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">摩擦計測結果  <a href="structalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_1_1_friction_result.html#details">[詳解]</a><br /></td></tr>
