@@ -12,6 +12,9 @@ var dir_83658e075a4ab7b2cbb8779471289882 =
     [ "integrator.hpp", "integrator_8hpp.html", [
       [ "Integrator", "classalps_1_1cmn_1_1control_1_1_integrator.html", "classalps_1_1cmn_1_1control_1_1_integrator" ]
     ] ],
+    [ "low_pass_differentiator.hpp", "low__pass__differentiator_8hpp.html", [
+      [ "LowPassDifferentiator", "classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html", "classalps_1_1cmn_1_1control_1_1_low_pass_differentiator" ]
+    ] ],
     [ "low_pass_filter.hpp", "low__pass__filter_8hpp.html", [
       [ "LowPassFilter", "classalps_1_1cmn_1_1control_1_1_low_pass_filter.html", "classalps_1_1cmn_1_1control_1_1_low_pass_filter" ]
     ] ],
