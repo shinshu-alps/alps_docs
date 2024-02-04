@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['w_868',['w',['../structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html#a7001950c3be6803ffbd4a96e6f2e8a09',1,'alps::cmn::sensor::Bno055::Quaternion']]]
+  ['static_5ffriction_868',['static_friction',['../structalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_1_1_friction_result.html#a8751afff1a5db072b702d7158b53ef7e',1,'alps::cmn::tool::MotorFrictionAnalyzer::FrictionResult']]]
 ];
