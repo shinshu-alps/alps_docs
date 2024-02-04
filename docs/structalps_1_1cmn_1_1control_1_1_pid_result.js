@@ -1,9 +1,10 @@
 var structalps_1_1cmn_1_1control_1_1_pid_result =
 [
-    [ "before_lpf_d_output", "structalps_1_1cmn_1_1control_1_1_pid_result.html#afab86a8f139272bbc675adc7ce24ecd4", null ],
-    [ "d_output", "structalps_1_1cmn_1_1control_1_1_pid_result.html#a451497f060af283b1fb9cfcd4448bad3", null ],
+    [ "before_lpf_d_term", "structalps_1_1cmn_1_1control_1_1_pid_result.html#a1175cb1744ee4ddf9684e551197a6cc3", null ],
+    [ "d_term", "structalps_1_1cmn_1_1control_1_1_pid_result.html#abfdcb553397af93350b75e1b9f00716c", null ],
     [ "error", "structalps_1_1cmn_1_1control_1_1_pid_result.html#a8f9bb7b00cb424ed4b4e5151e4a1fb9b", null ],
-    [ "i_output", "structalps_1_1cmn_1_1control_1_1_pid_result.html#a1eafdc8405905b9be946d0651087dc51", null ],
-    [ "p_output", "structalps_1_1cmn_1_1control_1_1_pid_result.html#a92579d58f21b434ca95c58c85c192056", null ],
-    [ "pid_output", "structalps_1_1cmn_1_1control_1_1_pid_result.html#ae94dd2fabb21d64e0aba4ea5335c8d7a", null ]
+    [ "ff_term", "structalps_1_1cmn_1_1control_1_1_pid_result.html#a4f88530d61389b7897e5eae6944338cb", null ],
+    [ "i_term", "structalps_1_1cmn_1_1control_1_1_pid_result.html#ae9434b7b5267f20fbf3def716108b5ce", null ],
+    [ "output", "structalps_1_1cmn_1_1control_1_1_pid_result.html#a701c83d256dc7c1c158122aab2ff2a06", null ],
+    [ "p_term", "structalps_1_1cmn_1_1control_1_1_pid_result.html#a840c9ac106500874736bb0d54f8896c2", null ]
 ];

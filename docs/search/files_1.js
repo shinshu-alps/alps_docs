@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['bno055_2ehpp_589',['bno055.hpp',['../bno055_8hpp.html',1,'']]],
-  ['buffered_5fcan_5fio_2ehpp_590',['buffered_can_io.hpp',['../buffered__can__io_8hpp.html',1,'']]]
+  ['bno055_2ehpp_590',['bno055.hpp',['../bno055_8hpp.html',1,'']]],
+  ['buffered_5fcan_5fio_2ehpp_591',['buffered_can_io.hpp',['../buffered__can__io_8hpp.html',1,'']]]
 ];

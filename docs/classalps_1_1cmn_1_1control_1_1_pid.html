@@ -116,18 +116,18 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1control_1_1_pid.ht
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a7a15f01ac6da203251a91a69de392a9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a7a15f01ac6da203251a91a69de392a9a">Pid</a> (<a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a> pid_param, <a class="el" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange</a>&lt; float &gt; output_limit={})</td></tr>
-<tr class="memdesc:a7a15f01ac6da203251a91a69de392a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#a7a15f01ac6da203251a91a69de392a9a">[詳解]</a><br /></td></tr>
-<tr class="separator:a7a15f01ac6da203251a91a69de392a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a665cc71812c75d485ab514372ffdd9e3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a665cc71812c75d485ab514372ffdd9e3">Calculate</a> (const float error)</td></tr>
-<tr class="memdesc:a665cc71812c75d485ab514372ffdd9e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID制御を実行する  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#a665cc71812c75d485ab514372ffdd9e3">[詳解]</a><br /></td></tr>
-<tr class="separator:a665cc71812c75d485ab514372ffdd9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba94f15b855e4fce9fdc348b8878b7fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#aba94f15b855e4fce9fdc348b8878b7fd">Pid</a> (const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a> &amp;pid_param, <a class="el" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange</a>&lt; float &gt; output_limit={}, std::chrono::microseconds diff_min_calc_interval=std::chrono::milliseconds(1))</td></tr>
+<tr class="memdesc:aba94f15b855e4fce9fdc348b8878b7fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#aba94f15b855e4fce9fdc348b8878b7fd">[詳解]</a><br /></td></tr>
+<tr class="separator:aba94f15b855e4fce9fdc348b8878b7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9da9407186a1f6ac3b96cd8766815e68"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a9da9407186a1f6ac3b96cd8766815e68">Calculate</a> (float error, float ff_output=0.0f)</td></tr>
+<tr class="memdesc:a9da9407186a1f6ac3b96cd8766815e68"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID制御を実行する  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#a9da9407186a1f6ac3b96cd8766815e68">[詳解]</a><br /></td></tr>
+<tr class="separator:a9da9407186a1f6ac3b96cd8766815e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeeb93dc4a8c1c7ff379b3bbc5407c0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#adeeb93dc4a8c1c7ff379b3bbc5407c0c">Reset</a> ()</td></tr>
 <tr class="memdesc:adeeb93dc4a8c1c7ff379b3bbc5407c0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">前回までの計算結果をリセットする  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#adeeb93dc4a8c1c7ff379b3bbc5407c0c">[詳解]</a><br /></td></tr>
 <tr class="separator:adeeb93dc4a8c1c7ff379b3bbc5407c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3644e9d21ea9805961eb5af326e8c4ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a3644e9d21ea9805961eb5af326e8c4ad">CheckConvergence</a> (float allowable_error, float alloweable_differential_value) const</td></tr>
-<tr class="memdesc:a3644e9d21ea9805961eb5af326e8c4ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">前回の計算結果から収束しているかどうかを判定する  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#a3644e9d21ea9805961eb5af326e8c4ad">[詳解]</a><br /></td></tr>
-<tr class="separator:a3644e9d21ea9805961eb5af326e8c4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fdfa0f626a70268d01adfff18389dcb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a7fdfa0f626a70268d01adfff18389dcb">CheckConvergence</a> (float allowable_error, float alloweable_differential_value=std::numeric_limits&lt; float &gt;::max()) const</td></tr>
+<tr class="memdesc:a7fdfa0f626a70268d01adfff18389dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">前回の計算結果から収束しているかどうかを判定する  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#a7fdfa0f626a70268d01adfff18389dcb">[詳解]</a><br /></td></tr>
+<tr class="separator:a7fdfa0f626a70268d01adfff18389dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79c91c1c15dfd42fcb68e99649612da7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_result.html">PidResult</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a79c91c1c15dfd42fcb68e99649612da7">GetPidResult</a> () const</td></tr>
 <tr class="memdesc:a79c91c1c15dfd42fcb68e99649612da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIDの計算結果を取得する  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#a79c91c1c15dfd42fcb68e99649612da7">[詳解]</a><br /></td></tr>
 <tr class="separator:a79c91c1c15dfd42fcb68e99649612da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,8 +151,8 @@ class alps::cmn::control::Pid&lt; Clock &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="a7a15f01ac6da203251a91a69de392a9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a15f01ac6da203251a91a69de392a9a">&#9670;&nbsp;</a></span>Pid()</h2>
+<a id="aba94f15b855e4fce9fdc348b8878b7fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba94f15b855e4fce9fdc348b8878b7fd">&#9670;&nbsp;</a></span>Pid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,14 +165,20 @@ template&lt;class Clock &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::<a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">Pid</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a> &amp;&#160;</td>
           <td class="paramname"><em>pid_param</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange</a>&lt; float &gt;&#160;</td>
-          <td class="paramname"><em>output_limit</em> = <code>{}</code>&#160;</td>
+          <td class="paramname"><em>output_limit</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::chrono::microseconds&#160;</td>
+          <td class="paramname"><em>diff_min_calc_interval</em> = <code>std::chrono::milliseconds(1)</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -192,6 +198,7 @@ template&lt;class Clock &gt; </div>
   <table class="params">
     <tr><td class="paramname">pid_param</td><td>PIDのパラメータ </td></tr>
     <tr><td class="paramname">output_limit</td><td>出力値の範囲(デフォルトは無制限) </td></tr>
+    <tr><td class="paramname">diff_min_calc_interval</td><td>微分器の最小計算間隔(デフォルトは1ms) </td></tr>
   </table>
   </dd>
 </dl>
@@ -199,8 +206,8 @@ template&lt;class Clock &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a665cc71812c75d485ab514372ffdd9e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a665cc71812c75d485ab514372ffdd9e3">&#9670;&nbsp;</a></span>Calculate()</h2>
+<a id="a9da9407186a1f6ac3b96cd8766815e68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9da9407186a1f6ac3b96cd8766815e68">&#9670;&nbsp;</a></span>Calculate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -213,9 +220,19 @@ template&lt;class Clock &gt; </div>
         <tr>
           <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::Calculate </td>
           <td>(</td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>error</em></td><td>)</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ff_output</em> = <code>0.0f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -229,6 +246,7 @@ template&lt;class Clock &gt; </div>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">error</td><td>現在の偏差 </td></tr>
+    <tr><td class="paramname">ff_output</td><td>フィードフォワード出力(デフォルトは0.0f)</td></tr>
   </table>
   </dd>
 </dl>
@@ -236,8 +254,8 @@ template&lt;class Clock &gt; </div>
 
 </div>
 </div>
-<a id="a3644e9d21ea9805961eb5af326e8c4ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3644e9d21ea9805961eb5af326e8c4ad">&#9670;&nbsp;</a></span>CheckConvergence()</h2>
+<a id="a7fdfa0f626a70268d01adfff18389dcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fdfa0f626a70268d01adfff18389dcb">&#9670;&nbsp;</a></span>CheckConvergence()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -257,7 +275,7 @@ template&lt;class Clock &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>alloweable_differential_value</em>&#160;</td>
+          <td class="paramname"><em>alloweable_differential_value</em> = <code>std::numeric_limits&lt;float&gt;::max()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -275,8 +293,8 @@ template&lt;class Clock &gt; </div>
 <p>前回の計算結果から収束しているかどうかを判定する </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">allowable_error</td><td>許容誤差 </td></tr>
-    <tr><td class="paramname">alloweable_differential_value</td><td>許容微分値</td></tr>
+    <tr><td class="paramname">allowable_error</td><td>許容誤差の絶対値 </td></tr>
+    <tr><td class="paramname">alloweable_differential_value</td><td>許容微分値の絶対値，デフォルトでは無制限．</td></tr>
   </table>
   </dd>
 </dl>

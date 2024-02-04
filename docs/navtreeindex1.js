@@ -1,7 +1,7 @@
 var NAVTREEINDEX1 =
 {
-"classalps_1_1cmn_1_1control_1_1_pid.html#a79c91c1c15dfd42fcb68e99649612da7":[2,0,0,0,2,11,4],
-"classalps_1_1cmn_1_1control_1_1_pid.html#a7a15f01ac6da203251a91a69de392a9a":[2,0,0,0,2,11,0],
+"classalps_1_1cmn_1_1control_1_1_pid.html#a9da9407186a1f6ac3b96cd8766815e68":[2,0,0,0,2,11,1],
+"classalps_1_1cmn_1_1control_1_1_pid.html#aba94f15b855e4fce9fdc348b8878b7fd":[2,0,0,0,2,11,0],
 "classalps_1_1cmn_1_1control_1_1_pid.html#adeeb93dc4a8c1c7ff379b3bbc5407c0c":[2,0,0,0,2,11,5],
 "classalps_1_1cmn_1_1control_1_1_pid.html#afc9b7b1320e2b7413845b222ea579d2b":[2,0,0,0,2,11,3],
 "classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html":[2,0,0,0,3,0],

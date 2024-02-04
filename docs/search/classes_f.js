@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['rawdata_548',['RawData',['../structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html',1,'alps::cmn::sensor::S11059']]],
-  ['repeatingpollingtimer_549',['RepeatingPollingTimer',['../classalps_1_1cmn_1_1time_1_1_repeating_polling_timer.html',1,'alps::cmn::time']]],
-  ['rgbcolor_550',['RgbColor',['../structalps_1_1cmn_1_1sensor_1_1_tcs34725_1_1_rgb_color.html',1,'alps::cmn::sensor::Tcs34725']]]
+  ['rawdata_549',['RawData',['../structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html',1,'alps::cmn::sensor::S11059']]],
+  ['repeatingpollingtimer_550',['RepeatingPollingTimer',['../classalps_1_1cmn_1_1time_1_1_repeating_polling_timer.html',1,'alps::cmn::time']]],
+  ['rgbcolor_551',['RgbColor',['../structalps_1_1cmn_1_1sensor_1_1_tcs34725_1_1_rgb_color.html',1,'alps::cmn::sensor::Tcs34725']]]
 ];
