@@ -104,9 +104,6 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 &#160;
 
 <h3><a id="index_b"></a>- b -</h3><ul>
-<li>before_lpf_d_term
-: <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_result.html#a1175cb1744ee4ddf9684e551197a6cc3">alps::cmn::control::PidResult</a>
-</li>
 <li>blue
 : <a class="el" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#a082c93f127940751023d1d51aeae9a64">alps::cmn::sensor::S11059&lt; I2cIo &gt;::RawData</a>
 , <a class="el" href="structalps_1_1cmn_1_1sensor_1_1_tcs34725_1_1_rgb_color.html#ac7077d1707b260fc3953e85b5ad8049f">alps::cmn::sensor::Tcs34725&lt; Clock, I2cIo &gt;::RgbColor</a>
@@ -126,7 +123,7 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 
 <h3><a id="index_d"></a>- d -</h3><ul>
 <li>d_term
-: <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_result.html#abfdcb553397af93350b75e1b9f00716c">alps::cmn::control::PidResult</a>
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#a910cb4395263953c0fcaee4557fc996f">alps::cmn::control::PidCalcInfo</a>
 </li>
 <li>data
 : <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a4d7d845b46acffacd08217093f212426">alps::cmn::communication::CanDataFrame</a>
@@ -139,14 +136,26 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 
 <h3><a id="index_e"></a>- e -</h3><ul>
 <li>error
-: <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_result.html#a8f9bb7b00cb424ed4b4e5151e4a1fb9b">alps::cmn::control::PidResult</a>
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#ad4f534f48ba54993aa4aad1a1158b32c">alps::cmn::control::PidCalcInfo</a>
+</li>
+<li>error_diff
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#a47ad9b9a6bae6ba89e9715c93cce6ca8">alps::cmn::control::PidCalcInfo</a>
+</li>
+<li>error_diff_before_lpf
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#a80f1d779edf7d804b8e2543813285a95">alps::cmn::control::PidCalcInfo</a>
 </li>
 </ul>
 
 
 <h3><a id="index_f"></a>- f -</h3><ul>
+<li>ff_acceleration_term
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#aa3d48dafc9b0d55346d8b2165c94d018">alps::cmn::control::MotorVelocityControllerCalcInfo</a>
+</li>
 <li>ff_term
-: <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_result.html#a4f88530d61389b7897e5eae6944338cb">alps::cmn::control::PidResult</a>
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#a39cb5f708ef69416ca061f15647115a7">alps::cmn::control::PidCalcInfo</a>
+</li>
+<li>ff_velocity_term
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#af9af791c36aba1acfec215eba8f4c012">alps::cmn::control::MotorVelocityControllerCalcInfo</a>
 </li>
 </ul>
 
@@ -164,7 +173,7 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 
 <h3><a id="index_i"></a>- i -</h3><ul>
 <li>i_term
-: <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_result.html#ae9434b7b5267f20fbf3def716108b5ce">alps::cmn::control::PidResult</a>
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#a29ea0b7247686505f09f1794bd9d66a0">alps::cmn::control::PidCalcInfo</a>
 </li>
 <li>id
 : <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#ac4cd300534bb8689d1d8a6f8b0c0a910">alps::cmn::communication::CanDataFrame</a>
@@ -187,6 +196,12 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 </li>
 <li>kEndVal
 : <a class="el" href="classalps_1_1cmn_1_1communication_1_1_cobs.html#aa9f93e7569b6010ab21cd5120f0aefb6">alps::cmn::communication::Cobs</a>
+</li>
+<li>kff_acceleration
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#aa42e1b756097893f29c2b9152bd3a594">alps::cmn::control::MotorVelocityControllerParam</a>
+</li>
+<li>kff_velocity
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#abeada49dcefaa39a1439a1a09eaef91c">alps::cmn::control::MotorVelocityControllerParam</a>
 </li>
 <li>ki
 : <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html#ad254b8043c219d76405305e26dcbcd98">alps::cmn::control::PidParam</a>
@@ -222,16 +237,39 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 </ul>
 
 
+<h3><a id="index_n"></a>- n -</h3><ul>
+<li>now_angle
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_angle_controller_calc_info.html#a69bb804b2fa1749092ae502a6f946aad">alps::cmn::control::MotorAngleControllerCalcInfo</a>
+</li>
+<li>now_velocity
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#ad644ddfbb42bb03338d956cf9bf49b0c">alps::cmn::control::MotorVelocityControllerCalcInfo</a>
+</li>
+<li>now_velocity_before_lpf
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a4926ae0b15220af38a9a94284a941c99">alps::cmn::control::MotorVelocityControllerCalcInfo</a>
+</li>
+<li>now_velocity_lpf_time_constant
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a523055527df9c2e02ad9deabdfcb8a5c">alps::cmn::control::MotorVelocityControllerParam</a>
+</li>
+</ul>
+
+
 <h3><a id="index_o"></a>- o -</h3><ul>
 <li>output
-: <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_result.html#a701c83d256dc7c1c158122aab2ff2a06">alps::cmn::control::PidResult</a>
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#a2c8d30a703c9c4ebd64b0d44403147e2">alps::cmn::control::PidCalcInfo</a>
 </li>
 </ul>
 
 
 <h3><a id="index_p"></a>- p -</h3><ul>
 <li>p_term
-: <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_result.html#a840c9ac106500874736bb0d54f8896c2">alps::cmn::control::PidResult</a>
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#abf63278244e262e53d62a4b2f6288663">alps::cmn::control::PidCalcInfo</a>
+</li>
+<li>pid_calc_info
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_angle_controller_calc_info.html#a9b83068c6b25fbca087f4c96703766b9">alps::cmn::control::MotorAngleControllerCalcInfo</a>
+, <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a00aaa0c062827fd9243f5ab188a43cb1">alps::cmn::control::MotorVelocityControllerCalcInfo</a>
+</li>
+<li>pid_param
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a94c0cf6e73fc510cb1c94b910a524f1e">alps::cmn::control::MotorVelocityControllerParam</a>
 </li>
 <li>pitch
 : <a class="el" href="structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_euler.html#ae578e71aeef4ef899efaf707778384e7">alps::cmn::sensor::Bno055&lt; I2cIo &gt;::Euler</a>
@@ -262,6 +300,25 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <h3><a id="index_s"></a>- s -</h3><ul>
 <li>static_friction
 : <a class="el" href="structalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_1_1_friction_result.html#a8751afff1a5db072b702d7158b53ef7e">alps::cmn::tool::MotorFrictionAnalyzer&lt; Clock, Motor, RorarySensor &gt;::FrictionResult</a>
+</li>
+</ul>
+
+
+<h3><a id="index_t"></a>- t -</h3><ul>
+<li>target_acceleration
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a97eff29d5734c18a2e62ccc95e9cde3b">alps::cmn::control::MotorVelocityControllerCalcInfo</a>
+</li>
+<li>target_acceleration_before_lpf
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a6443f95f5c1669d4aa08dc0a5c456afb">alps::cmn::control::MotorVelocityControllerCalcInfo</a>
+</li>
+<li>target_acceleration_lpf_time_constant
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#adb39f440e1f81d63d2211f25fa1cb771">alps::cmn::control::MotorVelocityControllerParam</a>
+</li>
+<li>target_angle
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_angle_controller_calc_info.html#a793d3bbb669e08cbbb3ad020a75fc4bb">alps::cmn::control::MotorAngleControllerCalcInfo</a>
+</li>
+<li>target_velocity
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a48d4049c0b85bf5e3b4cabf5f6978264">alps::cmn::control::MotorVelocityControllerCalcInfo</a>
 </li>
 </ul>
 

@@ -1,9 +1,10 @@
 <map id="alps_common_lib/include/alps_cmn/control/motor_angle_velocity_controller.hpp" name="alps_common_lib/include/alps_cmn/control/motor_angle_velocity_controller.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="559,5,779,61"/>
+<area shape="rect" id="node1" title=" " alt="" coords="613,5,833,61"/>
 <area shape="rect" id="node2" href="$i__motor_8hpp.html" title=" " alt="" coords="405,199,555,240"/>
-<area shape="rect" id="node3" href="$motor__velocity__controller_8hpp.html" title=" " alt="" coords="518,109,695,151"/>
+<area shape="rect" id="node3" href="$motor__velocity__controller_8hpp.html" title=" " alt="" coords="507,109,685,151"/>
 <area shape="rect" id="node9" href="$pid_8hpp.html" title=" " alt="" coords="631,206,817,233"/>
 <area shape="rect" id="node15" href="$i__rotary__sensor_8hpp.html" title=" " alt="" coords="841,199,1026,240"/>
+<area shape="rect" id="node16" href="$motor__angle__controller_8hpp.html" title=" " alt="" coords="760,109,936,151"/>
 <area shape="rect" id="node4" href="$low__pass__differentiator_8hpp.html" title=" " alt="" coords="185,288,364,329"/>
 <area shape="rect" id="node5" href="$differentiator_8hpp.html" title="微分器ライブラリ" alt="" coords="190,385,439,411"/>
 <area shape="rect" id="node8" href="$low__pass__filter_8hpp.html" title="ローパスフィルタのクラス" alt="" coords="5,377,165,419"/>
