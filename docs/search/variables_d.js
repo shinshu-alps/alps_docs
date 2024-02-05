@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value_869',['value',['../structalps_1_1cmn_1_1communication_1_1detail_1_1_is_builtin_type.html#a95881a6421d29a7b2ccd3d92fc4bce02',1,'alps::cmn::communication::detail::IsBuiltinType']]]
+  ['static_5ffriction_895',['static_friction',['../structalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_1_1_friction_result.html#a8751afff1a5db072b702d7158b53ef7e',1,'alps::cmn::tool::MotorFrictionAnalyzer::FrictionResult']]]
 ];

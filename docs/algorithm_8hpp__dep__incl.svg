@@ -98,7 +98,7 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node13 -->
-<g id="edge13" class="edge">
+<g id="edge14" class="edge">
 <title>Node1&#45;&gt;Node13</title>
 <path fill="none" stroke="midnightblue" d="M442.87,-308.26C465.35,-298.23 493.26,-285.78 516.19,-275.55"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="441.3,-305.13 433.59,-312.4 444.15,-311.52 441.3,-305.13"/>
@@ -164,7 +164,7 @@
 </g>
 </g>
 <!-- Node7&#45;&gt;Node12 -->
-<g id="edge12" class="edge">
+<g id="edge13" class="edge">
 <title>Node7&#45;&gt;Node12</title>
 <path fill="none" stroke="midnightblue" d="M737.57,-229.59C738.87,-217.26 740.4,-202.72 741.5,-192.23"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="734.07,-229.39 736.5,-239.7 741.03,-230.13 734.07,-229.39"/>
@@ -190,18 +190,18 @@
 <g id="node10" class="node">
 <title>Node10</title>
 <g id="a_node10"><a xlink:href="motor__angle__velocity__controller_8hpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="528.5,-0.5 528.5,-41.5 693.5,-41.5 693.5,-0.5 528.5,-0.5"/>
-<text text-anchor="start" x="536.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps_common_lib/include</text>
-<text text-anchor="start" x="536.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_cmn/control/motor</text>
-<text text-anchor="middle" x="611" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_angle_velocity_controller.hpp</text>
+<polygon fill="white" stroke="black" points="479.5,-0.5 479.5,-41.5 644.5,-41.5 644.5,-0.5 479.5,-0.5"/>
+<text text-anchor="start" x="487.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps_common_lib/include</text>
+<text text-anchor="start" x="487.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">/alps_cmn/control/motor</text>
+<text text-anchor="middle" x="562" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_angle_velocity_controller.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node10 -->
-<g id="edge9" class="edge">
+<g id="edge10" class="edge">
 <title>Node8&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M564.68,-151.5C567.36,-131.34 572.38,-102.25 581,-78 585.51,-65.32 592.53,-52.01 598.65,-41.55"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="561.17,-151.34 563.41,-161.69 568.12,-152.2 561.17,-151.34"/>
+<path fill="none" stroke="midnightblue" d="M562,-151.61C562,-121.17 562,-69.73 562,-41.68"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="558.5,-151.79 562,-161.79 565.5,-151.79 558.5,-151.79"/>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node">
@@ -215,19 +215,25 @@
 </g>
 </g>
 <!-- Node8&#45;&gt;Node11 -->
-<g id="edge10" class="edge">
+<g id="edge11" class="edge">
 <title>Node8&#45;&gt;Node11</title>
 <path fill="none" stroke="midnightblue" d="M588.45,-155.49C602.8,-144.36 620.44,-130.68 634.62,-119.68"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="586.19,-152.81 580.43,-161.7 590.48,-158.34 586.19,-152.81"/>
 </g>
+<!-- Node9&#45;&gt;Node10 -->
+<g id="edge9" class="edge">
+<title>Node9&#45;&gt;Node10</title>
+<path fill="none" stroke="midnightblue" d="M497.44,-72.06C510.35,-62.06 524.86,-50.8 536.85,-41.51"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="494.99,-69.53 489.24,-78.43 499.28,-75.07 494.99,-69.53"/>
+</g>
 <!-- Node11&#45;&gt;Node10 -->
-<g id="edge11" class="edge">
+<g id="edge12" class="edge">
 <title>Node11&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M641.79,-69.76C635.73,-60.35 629.11,-50.1 623.58,-41.51"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="639.02,-71.92 647.38,-78.43 644.9,-68.13 639.02,-71.92"/>
+<path fill="none" stroke="midnightblue" d="M626.56,-72.06C613.65,-62.06 599.14,-50.8 587.15,-41.51"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="624.72,-75.07 634.76,-78.43 629.01,-69.53 624.72,-75.07"/>
 </g>
 <!-- Node13&#45;&gt;Node8 -->
-<g id="edge14" class="edge">
+<g id="edge15" class="edge">
 <title>Node13&#45;&gt;Node8</title>
 <path fill="none" stroke="midnightblue" d="M560.78,-224.28C561.07,-213.25 561.39,-201.25 561.63,-192.23"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="557.28,-224.34 560.52,-234.43 564.28,-224.52 557.28,-224.34"/>

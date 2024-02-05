@@ -12,10 +12,10 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classalps_1_1cmn_1_1time_1_1_one_shot_polling_timer.html" target="_top" xlink:title="1回だけ実行するポーリングタイマークラス">
+<g id="a_node1"><a xlink:href="classalps_1_1cmn_1_1sensor_1_1_tcs34725.html" target="_top" xlink:title="カラーセンサーTCS34725のクラス">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-30.5 140,-30.5 140,-0.5 0,-0.5"/>
-<text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::time::OneShot</text>
-<text text-anchor="middle" x="70" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">PollingTimer&lt; Clock &gt;</text>
+<text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::sensor::</text>
+<text text-anchor="middle" x="70" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Tcs34725&lt; Clock, I2cIo &gt;</text>
 </a>
 </g>
 </g>

@@ -5,7 +5,7 @@
 <area shape="rect" id="node5" href="$friction__compensated__motor_8hpp.html" title="モーターに対して摩擦補償を行うデコレーター" alt="" coords="447,95,638,151"/>
 <area shape="rect" id="node6" href="$motor__friction__analyzer_8hpp.html" title="モーター軸の摩擦力を計測するクラス" alt="" coords="503,199,716,255"/>
 <area shape="rect" id="node7" href="$motor__angle__controller_8hpp.html" title=" " alt="" coords="713,95,900,151"/>
-<area shape="rect" id="node8" href="$motor__angle__velocity__controller_8hpp.html" title=" " alt="" coords="893,199,1113,255"/>
+<area shape="rect" id="node8" href="$motor__angle__velocity__controller_8hpp.html" title=" " alt="" coords="827,199,1047,255"/>
 <area shape="rect" id="node9" href="$motor__velocity__controller_8hpp.html" title=" " alt="" coords="975,95,1161,151"/>
 <area shape="rect" id="node3" href="$alps__mbed__lib_2include_2alps__mbed_2actuator_2dc__motor_8hpp.html" title=" " alt="" coords="11,199,186,255"/>
 </map>

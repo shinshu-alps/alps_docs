@@ -1,3 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html" title="回転センサー付きモーターの角度&#45;&gt;速度制御クラス．単なる速度制御クラスと組み合わせて使用する．" alt="" coords="5,5,227,61"/>
+<area shape="rect" id="node1" href="$structalps_1_1cmn_1_1control_1_1_motor_angle_controller_calc_info.html" title="モーターの角度制御の計算情報" alt="" coords="5,5,228,47"/>
 </map>
