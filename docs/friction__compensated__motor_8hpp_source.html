@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="generator" content="Doxygen 1.9.7" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Alps: alps_common_lib/include/alps_cmn/control/friction_compensated_motor.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -53,21 +53,22 @@
                 </tbody>
             </table>
         </div>
-        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -81,7 +82,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(document).ready(function(){initNavTree('friction__compensated__motor_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
@@ -95,94 +96,100 @@ $(document).ready(function(){initNavTree('friction__compensated__motor_8hpp_sour
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="header">
-  <div class="headertitle">
-<div class="title">friction_compensated_motor.hpp</div>  </div>
+  <div class="headertitle"><div class="title">friction_compensated_motor.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="friction__compensated__motor_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef ALPS_CMN_FRICTION_COMPENSATED_MOTOR_HPP_</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define ALPS_CMN_FRICTION_COMPENSATED_MOTOR_HPP_</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__motor_8hpp.html">alps_cmn/actuator/i_motor.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="differentiator_8hpp.html">alps_cmn/control/differentiator.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__rotary__sensor_8hpp.html">alps_cmn/sensor/i_rotary_sensor.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>cmn</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>control</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Clock, <span class="keyword">class</span> BaseMotor, <span class="keyword">class</span> RorarySensor&gt;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html">FrictionCompensatedMotor</a></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;: <span class="keyword">public</span> <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor</a>&lt;FrictionCompensatedMotor&lt;Clock, BaseMotor, RorarySensor&gt;&gt;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a9f1a2637941edbb2f25fcae9ab7cebe5">   49</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a9f1a2637941edbb2f25fcae9ab7cebe5">FrictionCompensatedMotor</a>(</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor&lt;BaseMotor&gt;</a> &amp; base_motor,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor&lt;RorarySensor&gt;</a> &amp; rotary_sensor,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">float</span> static_friction,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">float</span> kinetic_friction)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  : base_motor_{base_motor},</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    rotary_sensor_{rotary_sensor},</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    static_friction_{static_friction},</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    kinetic_friction_{kinetic_friction}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a2f9871c323781a5590bb636564b3cb62">   66</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a2f9871c323781a5590bb636564b3cb62">Drive</a>(<span class="keywordtype">float</span> output_ratio)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// 目標出力が0.0fのときはそのまま出力</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span> (output_ratio == 0.0f) {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      base_motor_.<a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html#afb69e9dace9074933926b59904ddfb13">CallDrive</a>(0.0f);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// 止まってるか回ってるかで加味する摩擦力を選択</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">float</span> abs_vel = std::abs(velocity_calculator_.Calculate(rotary_sensor_.<a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">CallGetAngle</a>()));</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">float</span> friction;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">if</span> (abs_vel &lt; <a class="code" href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a2c53689c7bd52fe546ae40c041203200">kStopVelocityThreshold</a>) {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      friction = static_friction_;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      friction = kinetic_friction_;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// 摩擦補償後の出力を計算</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">float</span> scale = 1.0f - friction;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">float</span> output;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">if</span> (output_ratio &gt; 0.0f) {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      output = friction + scale * output_ratio;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      output = -friction + scale * output_ratio;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// 本来のモーターを駆動</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    base_motor_.<a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html#afb69e9dace9074933926b59904ddfb13">CallDrive</a>(output);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a2c53689c7bd52fe546ae40c041203200">   97</a></span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a2c53689c7bd52fe546ae40c041203200">kStopVelocityThreshold</a>{0.01f};</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor&lt;BaseMotor&gt;</a> &amp; base_motor_;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor&lt;RorarySensor&gt;</a> &amp; rotary_sensor_;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">float</span> static_friction_;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordtype">float</span> kinetic_friction_;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_differentiator.html">control::Differentiator&lt;Clock&gt;</a> velocity_calculator_;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;};</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}  <span class="comment">// namespace control</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}  <span class="comment">// namespace cmn</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif</span></div>
+<a href="friction__compensated__motor_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_CMN_FRICTION_COMPENSATED_MOTOR_HPP_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_CMN_FRICTION_COMPENSATED_MOTOR_HPP_</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="i__motor_8hpp.html">alps_cmn/actuator/i_motor.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="differentiator_8hpp.html">alps_cmn/control/differentiator.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="i__rotary__sensor_8hpp.html">alps_cmn/sensor/i_rotary_sensor.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">namespace </span>cmn</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span>control</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Clock, <span class="keyword">class</span> BaseMotor, <span class="keyword">class</span> RorarySensor&gt;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html">   35</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html">FrictionCompensatedMotor</a></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>: <span class="keyword">public</span> <a class="code hl_class" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor</a>&lt;FrictionCompensatedMotor&lt;Clock, BaseMotor, RorarySensor&gt;&gt;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>{</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a9f1a2637941edbb2f25fcae9ab7cebe5">   49</a></span>  <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a9f1a2637941edbb2f25fcae9ab7cebe5">FrictionCompensatedMotor</a>(</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_class" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor&lt;BaseMotor&gt;</a> &amp; base_motor,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_class" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor&lt;RorarySensor&gt;</a> &amp; rotary_sensor,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">float</span> static_friction,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">float</span> kinetic_friction)</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  : base_motor_{base_motor},</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    rotary_sensor_{rotary_sensor},</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    static_friction_{static_friction},</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    kinetic_friction_{kinetic_friction}</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a2f9871c323781a5590bb636564b3cb62">   66</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a2f9871c323781a5590bb636564b3cb62">Drive</a>(<span class="keywordtype">float</span> output_ratio)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// 目標出力が0.0fのときはそのまま出力</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">if</span> (output_ratio == 0.0f) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      base_motor_.<a class="code hl_function" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html#afb69e9dace9074933926b59904ddfb13">CallDrive</a>(0.0f);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">// 止まってるか回ってるかで加味する摩擦力を選択</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">float</span> abs_vel = std::abs(velocity_calculator_.Calculate(rotary_sensor_.<a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">CallGetAngle</a>()));</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">float</span> friction;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">if</span> (abs_vel &lt; <a class="code hl_variable" href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a2c53689c7bd52fe546ae40c041203200">kStopVelocityThreshold</a>) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>      friction = static_friction_;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      friction = kinetic_friction_;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="comment">// 摩擦補償後の出力を計算</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordtype">float</span> scale = 1.0f - friction;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordtype">float</span> output;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordflow">if</span> (output_ratio &gt; 0.0f) {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>      output = friction + scale * output_ratio;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      output = -friction + scale * output_ratio;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="comment">// 本来のモーターを駆動</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    base_motor_.<a class="code hl_function" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html#afb69e9dace9074933926b59904ddfb13">CallDrive</a>(output);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a2c53689c7bd52fe546ae40c041203200">   97</a></span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a2c53689c7bd52fe546ae40c041203200">kStopVelocityThreshold</a>{0.01f};</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor&lt;BaseMotor&gt;</a> &amp; base_motor_;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor&lt;RorarySensor&gt;</a> &amp; rotary_sensor_;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="keywordtype">float</span> static_friction_;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keywordtype">float</span> kinetic_friction_;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_differentiator.html">control::Differentiator&lt;Clock&gt;</a> velocity_calculator_;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>};</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>}  <span class="comment">// namespace control</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_i_motor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">alps::cmn::actuator::IMotor</a></div><div class="ttdoc">モーターを駆動するインタフェース</div><div class="ttdef"><b>Definition:</b> i_motor.hpp:17</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_i_motor_html_afb69e9dace9074933926b59904ddfb13"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html#afb69e9dace9074933926b59904ddfb13">alps::cmn::actuator::IMotor::CallDrive</a></div><div class="ttdeci">void CallDrive(float output_ratio)</div><div class="ttdoc">インタフェースを介してモーターを駆動する</div><div class="ttdef"><b>Definition:</b> i_motor.hpp:24</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_differentiator_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_differentiator.html">alps::cmn::control::Differentiator</a></div><div class="ttdoc">微分器</div><div class="ttdef"><b>Definition:</b> differentiator.hpp:31</div></div>
@@ -190,7 +197,7 @@ $(document).ready(function(){initNavTree('friction__compensated__motor_8hpp_sour
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_friction_compensated_motor_html_a2c53689c7bd52fe546ae40c041203200"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a2c53689c7bd52fe546ae40c041203200">alps::cmn::control::FrictionCompensatedMotor::kStopVelocityThreshold</a></div><div class="ttdeci">static constexpr float kStopVelocityThreshold</div><div class="ttdoc">停止状態と判定する閾値</div><div class="ttdef"><b>Definition:</b> friction_compensated_motor.hpp:97</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_friction_compensated_motor_html_a2f9871c323781a5590bb636564b3cb62"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a2f9871c323781a5590bb636564b3cb62">alps::cmn::control::FrictionCompensatedMotor::Drive</a></div><div class="ttdeci">void Drive(float output_ratio)</div><div class="ttdoc">摩擦が補償されたモーターを駆動する</div><div class="ttdef"><b>Definition:</b> friction_compensated_motor.hpp:66</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_friction_compensated_motor_html_a9f1a2637941edbb2f25fcae9ab7cebe5"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a9f1a2637941edbb2f25fcae9ab7cebe5">alps::cmn::control::FrictionCompensatedMotor::FrictionCompensatedMotor</a></div><div class="ttdeci">FrictionCompensatedMotor(actuator::IMotor&lt; BaseMotor &gt; &amp;base_motor, sensor::IRotarySensor&lt; RorarySensor &gt; &amp;rotary_sensor, float static_friction, float kinetic_friction)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> friction_compensated_motor.hpp:49</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">alps::cmn::sensor::IRotarySensor&lt; RorarySensor &gt;</a></div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">alps::cmn::sensor::IRotarySensor</a></div><div class="ttdoc">回転センサーのインタフェース</div><div class="ttdef"><b>Definition:</b> i_rotary_sensor.hpp:18</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor_html_afd34b25b6fd6be03746984bf9adbd367"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">alps::cmn::sensor::IRotarySensor::CallGetAngle</a></div><div class="ttdeci">double CallGetAngle()</div><div class="ttdoc">インタフェースを介して現在の角度を取得する</div><div class="ttdef"><b>Definition:</b> i_rotary_sensor.hpp:25</div></div>
 <div class="ttc" id="adifferentiator_8hpp_html"><div class="ttname"><a href="differentiator_8hpp.html">differentiator.hpp</a></div><div class="ttdoc">微分器ライブラリ</div></div>
 <div class="ttc" id="ai__motor_8hpp_html"><div class="ttname"><a href="i__motor_8hpp.html">i_motor.hpp</a></div></div>
@@ -202,7 +209,7 @@ $(document).ready(function(){initNavTree('friction__compensated__motor_8hpp_sour
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_fcd1ba41f8679fcc7bf76d667eaa0e17.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_ce1e71e2103ac83e6d6cc720a9feeeb7.html">include</a></li><li class="navelem"><a class="el" href="dir_cc648f72f51f156e42f9863c0e5bf5fb.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_83658e075a4ab7b2cbb8779471289882.html">control</a></li><li class="navelem"><a class="el" href="friction__compensated__motor_8hpp.html">friction_compensated_motor.hpp</a></li>
-    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
 </body>

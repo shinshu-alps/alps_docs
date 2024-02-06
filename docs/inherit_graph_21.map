@@ -1,3 +1,4 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html" title="I2C通信インタフェース" alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1communication_1_1_i_can_io.html" title="CAN通信IOのインターフェース" alt="" coords="5,13,200,53"/>
+<area shape="rect" id="node2" href="$classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html" title="MbedのCAN通信IO. 割り込みによってデータをバッファリングして扱う．" alt="" coords="248,5,483,60"/>
 </map>

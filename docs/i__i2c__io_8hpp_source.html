@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="generator" content="Doxygen 1.9.7" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Alps: alps_common_lib/include/alps_cmn/communication/i_i2c_io.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -53,21 +53,22 @@
                 </tbody>
             </table>
         </div>
-        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -81,7 +82,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(document).ready(function(){initNavTree('i__i2c__io_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
@@ -95,53 +96,59 @@ $(document).ready(function(){initNavTree('i__i2c__io_8hpp_source.html',''); init
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="header">
-  <div class="headertitle">
-<div class="title">i_i2c_io.hpp</div>  </div>
+  <div class="headertitle"><div class="title">i_i2c_io.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="i__i2c__io_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef ALPS_CMN_COMMUNICATION_I_I2C_IO_HPP</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define ALPS_CMN_COMMUNICATION_I_I2C_IO_HPP</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;etl/span.h&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>cmn</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>communication</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">   27</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">I2cAddress</a> = uint8_t;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Derived&gt;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">II2cIo</a></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">   48</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">CallWrite</a>(<a class="code" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">I2cAddress</a> address, etl::span&lt;const uint8_t&gt; write_buf, <span class="keywordtype">bool</span> repeated = <span class="keyword">false</span>)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;Write(address, write_buf, repeated);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#ac08f337e75e152c3d2a82d7ca4a52f13">   63</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#ac08f337e75e152c3d2a82d7ca4a52f13">CallRead</a>(<a class="code" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">I2cAddress</a> address, etl::span&lt;uint8_t&gt; read_buf, <span class="keywordtype">bool</span> repeated = <span class="keyword">false</span>)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;Read(address, read_buf, repeated);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}  <span class="comment">// namespace communication</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}  <span class="comment">// namespace cmn</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
+<a href="i__i2c__io_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_CMN_COMMUNICATION_I_I2C_IO_HPP</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_CMN_COMMUNICATION_I_I2C_IO_HPP</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;etl/span.h&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span>cmn</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">namespace </span>communication</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">   27</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">I2cAddress</a> = uint8_t;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Derived&gt;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">   35</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">II2cIo</a></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">   48</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">CallWrite</a>(<a class="code hl_typedef" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">I2cAddress</a> address, etl::span&lt;const uint8_t&gt; write_buf, <span class="keywordtype">bool</span> repeated = <span class="keyword">false</span>)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;Write(address, write_buf, repeated);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#ac08f337e75e152c3d2a82d7ca4a52f13">   63</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#ac08f337e75e152c3d2a82d7ca4a52f13">CallRead</a>(<a class="code hl_typedef" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">I2cAddress</a> address, etl::span&lt;uint8_t&gt; read_buf, <span class="keywordtype">bool</span> repeated = <span class="keyword">false</span>)</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;Read(address, read_buf, repeated);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>};</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}  <span class="comment">// namespace communication</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_i2c_io_html"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">alps::cmn::communication::II2cIo</a></div><div class="ttdoc">I2C通信インタフェース</div><div class="ttdef"><b>Definition:</b> i_i2c_io.hpp:36</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_i2c_io_html_ac08f337e75e152c3d2a82d7ca4a52f13"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#ac08f337e75e152c3d2a82d7ca4a52f13">alps::cmn::communication::II2cIo::CallRead</a></div><div class="ttdeci">bool CallRead(I2cAddress address, etl::span&lt; uint8_t &gt; read_buf, bool repeated=false)</div><div class="ttdoc">インタフェースを介してI2C通信でバイト列を受信する</div><div class="ttdef"><b>Definition:</b> i_i2c_io.hpp:63</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_i2c_io_html_af653762153caea8bbe059f868b73e5f1"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">alps::cmn::communication::II2cIo::CallWrite</a></div><div class="ttdeci">bool CallWrite(I2cAddress address, etl::span&lt; const uint8_t &gt; write_buf, bool repeated=false)</div><div class="ttdoc">インタフェースを介してI2C通信でバイト列を送信する</div><div class="ttdef"><b>Definition:</b> i_i2c_io.hpp:48</div></div>
@@ -153,7 +160,7 @@ $(document).ready(function(){initNavTree('i__i2c__io_8hpp_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_fcd1ba41f8679fcc7bf76d667eaa0e17.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_ce1e71e2103ac83e6d6cc720a9feeeb7.html">include</a></li><li class="navelem"><a class="el" href="dir_cc648f72f51f156e42f9863c0e5bf5fb.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_76fd7680a09542374d3e212281ba6ee2.html">communication</a></li><li class="navelem"><a class="el" href="i__i2c__io_8hpp.html">i_i2c_io.hpp</a></li>
-    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
 </body>

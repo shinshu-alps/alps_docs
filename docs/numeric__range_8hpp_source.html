@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="generator" content="Doxygen 1.9.7" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Alps: alps_common_lib/include/alps_cmn/util/numeric_range.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -53,21 +53,22 @@
                 </tbody>
             </table>
         </div>
-        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -81,7 +82,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(document).ready(function(){initNavTree('numeric__range_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
@@ -95,87 +96,93 @@ $(document).ready(function(){initNavTree('numeric__range_8hpp_source.html',''); 
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="header">
-  <div class="headertitle">
-<div class="title">numeric_range.hpp</div>  </div>
+  <div class="headertitle"><div class="title">numeric_range.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="numeric__range_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef ALPS_CMN_UTIL_NUMERIC_RANGE_HPP_</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define ALPS_CMN_UTIL_NUMERIC_RANGE_HPP_</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="algorithm_8hpp.html">alps_cmn/util/algorithm.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>cmn</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>util</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T = <span class="keywordtype">float</span>&gt;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">NumericRange</a></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a7862f202b1ab8f261e1f1eab29dcd553">   42</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a7862f202b1ab8f261e1f1eab29dcd553">NumericRange</a>(T lowest = std::numeric_limits&lt;T&gt;::lowest(), T max = std::numeric_limits&lt;T&gt;::max())</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  : lowest_{lowest}, max_{max}</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a66c7718ead08a905dab99d68507e95cf">   48</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a66c7718ead08a905dab99d68507e95cf">NumericRange</a>(<span class="keyword">const</span> <a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">NumericRange</a> &amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a1a7720c6f3fbfc870eed5b09e85a7f2f">   50</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">NumericRange</a> &amp; <a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a1a7720c6f3fbfc870eed5b09e85a7f2f">operator=</a>(<span class="keyword">const</span> <a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">NumericRange</a> &amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#ab35a1afc75a9a9785b9b37964619918e">   52</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#ab35a1afc75a9a9785b9b37964619918e">NumericRange</a>(<a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">NumericRange</a> &amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#ada10c50a8bd5e0290dc0ac83ca4cc42a">   54</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">NumericRange</a> &amp; <a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#ada10c50a8bd5e0290dc0ac83ca4cc42a">operator=</a>(<a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">NumericRange</a> &amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a68254483eb7784e88c231259e896b8a9">   62</a></span>&#160;  <span class="keyword">const</span> T &amp; <a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a68254483eb7784e88c231259e896b8a9">Clamp</a>(<span class="keyword">const</span> T &amp; value)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacealps_1_1cmn_1_1util.html#a13928639f0ae9b5207010ae61a2c9d2a">util::Clamp</a>(value, lowest_, max_);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#af4a53b8d1342919830d4d77ef080b4ea">   73</a></span>&#160;  T <a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#af4a53b8d1342919830d4d77ef080b4ea">Normalize</a>(<span class="keyword">const</span> T &amp; value)</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> (value - lowest_) / (max_ - lowest_);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a2a311b4a9bffcc182f0b9b014a1afdd5">   83</a></span>&#160;  <span class="keyword">const</span> T &amp; <a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a2a311b4a9bffcc182f0b9b014a1afdd5">GetLowest</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> lowest_;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#ac8c561bce51dadc8ebbfe90a40c8e583">   93</a></span>&#160;  <span class="keyword">const</span> T &amp; <a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#ac8c561bce51dadc8ebbfe90a40c8e583">GetMax</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> max_;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  T lowest_;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  T max_;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}  <span class="comment">// namespace util</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}  <span class="comment">// namespace cmn</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif</span></div>
+<a href="numeric__range_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_CMN_UTIL_NUMERIC_RANGE_HPP_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_CMN_UTIL_NUMERIC_RANGE_HPP_</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;limits&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="algorithm_8hpp.html">alps_cmn/util/algorithm.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span>cmn</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">namespace </span>util</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T = <span class="keywordtype">float</span>&gt;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">   32</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">NumericRange</a></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a7862f202b1ab8f261e1f1eab29dcd553">   42</a></span>  <a class="code hl_function" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a7862f202b1ab8f261e1f1eab29dcd553">NumericRange</a>(T lowest = std::numeric_limits&lt;T&gt;::lowest(), T max = std::numeric_limits&lt;T&gt;::max())</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  : lowest_{lowest}, max_{max}</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a66c7718ead08a905dab99d68507e95cf">   48</a></span>  <a class="code hl_function" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a66c7718ead08a905dab99d68507e95cf">NumericRange</a>(<span class="keyword">const</span> <a class="code hl_class" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">NumericRange</a> &amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a393f05c7dd180014bc564dafc3674c9b">   50</a></span>  <a class="code hl_class" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">NumericRange</a> &amp; <a class="code hl_function" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a393f05c7dd180014bc564dafc3674c9b">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">NumericRange</a> &amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#ab35a1afc75a9a9785b9b37964619918e">   52</a></span>  <a class="code hl_function" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#ab35a1afc75a9a9785b9b37964619918e">NumericRange</a>(<a class="code hl_class" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">NumericRange</a> &amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a3a521648c520284bef764f390b245b49">   54</a></span>  <a class="code hl_class" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">NumericRange</a> &amp; <a class="code hl_function" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a3a521648c520284bef764f390b245b49">operator=</a>(<a class="code hl_class" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">NumericRange</a> &amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a55afbb6a6a2ba8919bddf954c4de990e">   62</a></span>  <span class="keyword">const</span> T &amp; <a class="code hl_function" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a55afbb6a6a2ba8919bddf954c4de990e">Clamp</a>(<span class="keyword">const</span> T &amp; value)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacealps_1_1cmn_1_1util.html#a7056edb1e78ff96bca5fa94aa5e3d4f4">util::Clamp</a>(value, lowest_, max_);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#af4a53b8d1342919830d4d77ef080b4ea">   73</a></span>  T <a class="code hl_function" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#af4a53b8d1342919830d4d77ef080b4ea">Normalize</a>(<span class="keyword">const</span> T &amp; value)</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">return</span> (value - lowest_) / (max_ - lowest_);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#aac5dbe18353d8f1c6c48a879b724a5f4">   83</a></span>  <span class="keyword">const</span> T &amp; <a class="code hl_function" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#aac5dbe18353d8f1c6c48a879b724a5f4">GetLowest</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">return</span> lowest_;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a930457ecadc5a5efd590f15d9bf1a546">   93</a></span>  <span class="keyword">const</span> T &amp; <a class="code hl_function" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a930457ecadc5a5efd590f15d9bf1a546">GetMax</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordflow">return</span> max_;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  T lowest_;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  T max_;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>};</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>}  <span class="comment">// namespace util</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aalgorithm_8hpp_html"><div class="ttname"><a href="algorithm_8hpp.html">algorithm.hpp</a></div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1util_1_1_numeric_range_html"><div class="ttname"><a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">alps::cmn::util::NumericRange</a></div><div class="ttdoc">最小値と最大値による数値の範囲を表すクラス</div><div class="ttdef"><b>Definition:</b> numeric_range.hpp:33</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1util_1_1_numeric_range_html_a1a7720c6f3fbfc870eed5b09e85a7f2f"><div class="ttname"><a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a1a7720c6f3fbfc870eed5b09e85a7f2f">alps::cmn::util::NumericRange::operator=</a></div><div class="ttdeci">NumericRange &amp; operator=(const NumericRange &amp;)=default</div><div class="ttdoc">コピー代入可能</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1util_1_1_numeric_range_html_a2a311b4a9bffcc182f0b9b014a1afdd5"><div class="ttname"><a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a2a311b4a9bffcc182f0b9b014a1afdd5">alps::cmn::util::NumericRange::GetLowest</a></div><div class="ttdeci">const T &amp; GetLowest() const</div><div class="ttdoc">最小値を取得する</div><div class="ttdef"><b>Definition:</b> numeric_range.hpp:83</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1util_1_1_numeric_range_html_a393f05c7dd180014bc564dafc3674c9b"><div class="ttname"><a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a393f05c7dd180014bc564dafc3674c9b">alps::cmn::util::NumericRange::operator=</a></div><div class="ttdeci">NumericRange &amp; operator=(const NumericRange &amp;)=default</div><div class="ttdoc">コピー代入可能</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1util_1_1_numeric_range_html_a3a521648c520284bef764f390b245b49"><div class="ttname"><a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a3a521648c520284bef764f390b245b49">alps::cmn::util::NumericRange::operator=</a></div><div class="ttdeci">NumericRange &amp; operator=(NumericRange &amp;&amp;)=default</div><div class="ttdoc">ムーブ代入可能</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1util_1_1_numeric_range_html_a55afbb6a6a2ba8919bddf954c4de990e"><div class="ttname"><a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a55afbb6a6a2ba8919bddf954c4de990e">alps::cmn::util::NumericRange::Clamp</a></div><div class="ttdeci">const T &amp; Clamp(const T &amp;value)</div><div class="ttdoc">指定した値がこのクラスの範囲内に収まるようにする</div><div class="ttdef"><b>Definition:</b> numeric_range.hpp:62</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1util_1_1_numeric_range_html_a66c7718ead08a905dab99d68507e95cf"><div class="ttname"><a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a66c7718ead08a905dab99d68507e95cf">alps::cmn::util::NumericRange::NumericRange</a></div><div class="ttdeci">NumericRange(const NumericRange &amp;)=default</div><div class="ttdoc">コピー構築可能</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1util_1_1_numeric_range_html_a68254483eb7784e88c231259e896b8a9"><div class="ttname"><a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a68254483eb7784e88c231259e896b8a9">alps::cmn::util::NumericRange::Clamp</a></div><div class="ttdeci">const T &amp; Clamp(const T &amp;value)</div><div class="ttdoc">指定した値がこのクラスの範囲内に収まるようにする</div><div class="ttdef"><b>Definition:</b> numeric_range.hpp:62</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1util_1_1_numeric_range_html_a7862f202b1ab8f261e1f1eab29dcd553"><div class="ttname"><a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a7862f202b1ab8f261e1f1eab29dcd553">alps::cmn::util::NumericRange::NumericRange</a></div><div class="ttdeci">NumericRange(T lowest=std::numeric_limits&lt; T &gt;::lowest(), T max=std::numeric_limits&lt; T &gt;::max())</div><div class="ttdoc">最小値と最大値を指定し構築するコンストラクタ．   デフォルト引数はstd::numeric_limits&lt;T&gt;::lowest()とstd::numeric_limits&lt;T&gt;::max()．（つまり...</div><div class="ttdef"><b>Definition:</b> numeric_range.hpp:42</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1util_1_1_numeric_range_html_a930457ecadc5a5efd590f15d9bf1a546"><div class="ttname"><a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a930457ecadc5a5efd590f15d9bf1a546">alps::cmn::util::NumericRange::GetMax</a></div><div class="ttdeci">const T &amp; GetMax() const</div><div class="ttdoc">最大値を取得する</div><div class="ttdef"><b>Definition:</b> numeric_range.hpp:93</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1util_1_1_numeric_range_html_aac5dbe18353d8f1c6c48a879b724a5f4"><div class="ttname"><a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#aac5dbe18353d8f1c6c48a879b724a5f4">alps::cmn::util::NumericRange::GetLowest</a></div><div class="ttdeci">const T &amp; GetLowest() const</div><div class="ttdoc">最小値を取得する</div><div class="ttdef"><b>Definition:</b> numeric_range.hpp:83</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1util_1_1_numeric_range_html_ab35a1afc75a9a9785b9b37964619918e"><div class="ttname"><a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#ab35a1afc75a9a9785b9b37964619918e">alps::cmn::util::NumericRange::NumericRange</a></div><div class="ttdeci">NumericRange(NumericRange &amp;&amp;)=default</div><div class="ttdoc">ムーブ構築可能</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1util_1_1_numeric_range_html_ac8c561bce51dadc8ebbfe90a40c8e583"><div class="ttname"><a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#ac8c561bce51dadc8ebbfe90a40c8e583">alps::cmn::util::NumericRange::GetMax</a></div><div class="ttdeci">const T &amp; GetMax() const</div><div class="ttdoc">最大値を取得する</div><div class="ttdef"><b>Definition:</b> numeric_range.hpp:93</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1util_1_1_numeric_range_html_ada10c50a8bd5e0290dc0ac83ca4cc42a"><div class="ttname"><a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#ada10c50a8bd5e0290dc0ac83ca4cc42a">alps::cmn::util::NumericRange::operator=</a></div><div class="ttdeci">NumericRange &amp; operator=(NumericRange &amp;&amp;)=default</div><div class="ttdoc">ムーブ代入可能</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1util_1_1_numeric_range_html_af4a53b8d1342919830d4d77ef080b4ea"><div class="ttname"><a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#af4a53b8d1342919830d4d77ef080b4ea">alps::cmn::util::NumericRange::Normalize</a></div><div class="ttdeci">T Normalize(const T &amp;value)</div><div class="ttdoc">指定した値をこのクラスの尺度で正規化する</div><div class="ttdef"><b>Definition:</b> numeric_range.hpp:73</div></div>
-<div class="ttc" id="anamespacealps_1_1cmn_1_1util_html_a13928639f0ae9b5207010ae61a2c9d2a"><div class="ttname"><a href="namespacealps_1_1cmn_1_1util.html#a13928639f0ae9b5207010ae61a2c9d2a">alps::cmn::util::Clamp</a></div><div class="ttdeci">constexpr const T &amp; Clamp(const T &amp;value, const T &amp;low, const T &amp;high)</div><div class="ttdoc">入力値が最小値~最大値の外である場合範囲内に収める C++17で追加されたstd::clampのコピー実装</div><div class="ttdef"><b>Definition:</b> algorithm.hpp:21</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1util_html_a7056edb1e78ff96bca5fa94aa5e3d4f4"><div class="ttname"><a href="namespacealps_1_1cmn_1_1util.html#a7056edb1e78ff96bca5fa94aa5e3d4f4">alps::cmn::util::Clamp</a></div><div class="ttdeci">constexpr const T &amp; Clamp(const T &amp;value, const T &amp;low, const T &amp;high)</div><div class="ttdoc">入力値が最小値~最大値の外である場合範囲内に収める C++17で追加されたstd::clampのコピー実装</div><div class="ttdef"><b>Definition:</b> algorithm.hpp:21</div></div>
 <div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -183,7 +190,7 @@ $(document).ready(function(){initNavTree('numeric__range_8hpp_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_fcd1ba41f8679fcc7bf76d667eaa0e17.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_ce1e71e2103ac83e6d6cc720a9feeeb7.html">include</a></li><li class="navelem"><a class="el" href="dir_cc648f72f51f156e42f9863c0e5bf5fb.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_26247a4c7d21a73996b8a7832c1a1463.html">util</a></li><li class="navelem"><a class="el" href="numeric__range_8hpp.html">numeric_range.hpp</a></li>
-    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
 </body>

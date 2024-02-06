@@ -1,5 +1,4 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1communication_1_1_i_uart_io.html" title=" " alt="" coords="5,39,200,80"/>
-<area shape="rect" id="node2" href="$classalps_1_1lin_1_1communication_1_1_uart_io.html" title="Linux環境でのUart通信IOクラス" alt="" coords="258,5,441,47"/>
-<area shape="rect" id="node3" href="$classalps_1_1mbed_1_1communication_1_1_uart_io.html" title="mbedのUartシリアル通信IOクラス" alt="" coords="248,71,451,112"/>
+<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html" title=" " alt="" coords="5,5,200,45"/>
+<area shape="rect" id="node2" href="$classalps_1_1mbed_1_1communication_1_1_i2c_io.html" title="mbedのI2C通信IOクラス" alt="" coords="248,5,451,45"/>
 </map>

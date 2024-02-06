@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="generator" content="Doxygen 1.9.7" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Alps: alps::cmn::sensor::Vl53l0x&lt; Clock, I2cIo &gt; クラステンプレート</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -53,21 +53,22 @@
                 </tbody>
             </table>
         </div>
-        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -81,7 +82,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html',''); initResizable(); });
 /* @license-end */
 </script>
@@ -95,9 +96,16 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1sensor_1_1_vl53l0x
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="header">
@@ -106,8 +114,7 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1sensor_1_1_vl53l0x
 <a href="#pub-types">公開型</a> &#124;
 <a href="#pub-methods">公開メンバ関数</a> &#124;
 <a href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x-members.html">全メンバ一覧</a>  </div>
-  <div class="headertitle">
-<div class="title">alps::cmn::sensor::Vl53l0x&lt; Clock, I2cIo &gt; クラステンプレート</div>  </div>
+  <div class="headertitle"><div class="title">alps::cmn::sensor::Vl53l0x&lt; Clock, I2cIo &gt; クラステンプレート</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -116,7 +123,7 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1sensor_1_1_vl53l0x
 
 <p><code>#include &lt;<a class="el" href="vl53l0x_8hpp_source.html">vl53l0x.hpp</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 公開型</h2></td></tr>
 <tr class="memitem:a73e9b76fe9123246d7dcf8713e8c83a9"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a73e9b76fe9123246d7dcf8713e8c83a9">OperationMode</a> { <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a73e9b76fe9123246d7dcf8713e8c83a9aae04036f1585391b8a9a0fde295243da">kSingleRanging</a>
 , <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a73e9b76fe9123246d7dcf8713e8c83a9afbb9f8b3152f5fa3cc492ce0e621ba4e">kContinuousRanging</a>
@@ -135,44 +142,42 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1sensor_1_1_vl53l0x
 <tr class="memdesc:a27c4145bb7ec554861b487c8c3e5a0c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">測定範囲を設定するパラメータ  <a href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a27c4145bb7ec554861b487c8c3e5a0c8">[詳解]</a><br /></td></tr>
 <tr class="separator:a27c4145bb7ec554861b487c8c3e5a0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
 <tr class="memitem:a469dc00c20ff8f778d1111f50c08c5f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a469dc00c20ff8f778d1111f50c08c5f0">Vl53l0x</a> (<a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">cmn::communication::II2cIo</a>&lt; I2cIo &gt; &amp;i2c_io, <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a73e9b76fe9123246d7dcf8713e8c83a9">OperationMode</a> operation_mode=<a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a73e9b76fe9123246d7dcf8713e8c83a9afbb9f8b3152f5fa3cc492ce0e621ba4e">OperationMode::kContinuousRanging</a>, <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a555c1bb531c527b4442a952ddd6addf0">AccuracyMode</a> accuracy_mode=<a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a555c1bb531c527b4442a952ddd6addf0a7b19c02b0a00ebe3e1e6abeddc95b863">AccuracyMode::kDefaultAccuracy</a>, <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a27c4145bb7ec554861b487c8c3e5a0c8">RangeMode</a> range_mode=<a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a27c4145bb7ec554861b487c8c3e5a0c8a4782a47befda9cb1e853fc4b452616e3">RangeMode::kDefaultRange</a>, bool io_2v8=true, Duration timeout=std::chrono::milliseconds{500})</td></tr>
-<tr class="memdesc:a469dc00c20ff8f778d1111f50c08c5f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a469dc00c20ff8f778d1111f50c08c5f0">[詳解]</a><br /></td></tr>
+<tr class="memdesc:a469dc00c20ff8f778d1111f50c08c5f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
 <tr class="separator:a469dc00c20ff8f778d1111f50c08c5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a056a717f843b68db979f53fa70360851"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a056a717f843b68db979f53fa70360851">SetRangeMode</a> (<a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a27c4145bb7ec554861b487c8c3e5a0c8">RangeMode</a> range_mode)</td></tr>
-<tr class="memdesc:a056a717f843b68db979f53fa70360851"><td class="mdescLeft">&#160;</td><td class="mdescRight">測定範囲を設定する(テンプレとして用意したパラメータで設定する)  <a href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a056a717f843b68db979f53fa70360851">[詳解]</a><br /></td></tr>
+<tr class="memdesc:a056a717f843b68db979f53fa70360851"><td class="mdescLeft">&#160;</td><td class="mdescRight">測定範囲を設定する(テンプレとして用意したパラメータで設定する)  <br /></td></tr>
 <tr class="separator:a056a717f843b68db979f53fa70360851"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f0686f201e0d483c21d73fb99aed5d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a0f0686f201e0d483c21d73fb99aed5d6">SetAccuracyMode</a> (<a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a555c1bb531c527b4442a952ddd6addf0">AccuracyMode</a> accuracy_mode)</td></tr>
-<tr class="memdesc:a0f0686f201e0d483c21d73fb99aed5d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">測定精度及び測定周期に関する設定をする(テンプレとして用意したパラメータで設定する)  <a href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a0f0686f201e0d483c21d73fb99aed5d6">[詳解]</a><br /></td></tr>
+<tr class="memdesc:a0f0686f201e0d483c21d73fb99aed5d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">測定精度及び測定周期に関する設定をする(テンプレとして用意したパラメータで設定する)  <br /></td></tr>
 <tr class="separator:a0f0686f201e0d483c21d73fb99aed5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affbb57df7cfeb12b95d314f8be4efbc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#affbb57df7cfeb12b95d314f8be4efbc9">SetOperationMode</a> (<a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a73e9b76fe9123246d7dcf8713e8c83a9">OperationMode</a> operation_mode)</td></tr>
-<tr class="memdesc:affbb57df7cfeb12b95d314f8be4efbc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">動作モードを設定する  <a href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#affbb57df7cfeb12b95d314f8be4efbc9">[詳解]</a><br /></td></tr>
+<tr class="memdesc:affbb57df7cfeb12b95d314f8be4efbc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">動作モードを設定する  <br /></td></tr>
 <tr class="separator:affbb57df7cfeb12b95d314f8be4efbc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2461ebbd367492fe95447da932ba9129"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a73e9b76fe9123246d7dcf8713e8c83a9">OperationMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a2461ebbd367492fe95447da932ba9129">GetOperationMode</a> ()</td></tr>
-<tr class="memdesc:a2461ebbd367492fe95447da932ba9129"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の動作モードを取得する  <a href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a2461ebbd367492fe95447da932ba9129">[詳解]</a><br /></td></tr>
+<tr class="memdesc:a2461ebbd367492fe95447da932ba9129"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の動作モードを取得する  <br /></td></tr>
 <tr class="separator:a2461ebbd367492fe95447da932ba9129"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cfb0998c9123e31903597bc1dddb88a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a3cfb0998c9123e31903597bc1dddb88a">ReadRangeMillimeters</a> ()</td></tr>
-<tr class="memdesc:a3cfb0998c9123e31903597bc1dddb88a"><td class="mdescLeft">&#160;</td><td class="mdescRight">動作モードによらず(関数内で条件分岐)距離を測定しmm単位で返す  <a href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a3cfb0998c9123e31903597bc1dddb88a">[詳解]</a><br /></td></tr>
+<tr class="memdesc:a3cfb0998c9123e31903597bc1dddb88a"><td class="mdescLeft">&#160;</td><td class="mdescRight">動作モードによらず(関数内で条件分岐)距離を測定しmm単位で返す  <br /></td></tr>
 <tr class="separator:a3cfb0998c9123e31903597bc1dddb88a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab854cb26bdc83be7dbcca18e37b74388"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#ab854cb26bdc83be7dbcca18e37b74388">SetTimeout</a> (Duration timeout)</td></tr>
-<tr class="memdesc:ab854cb26bdc83be7dbcca18e37b74388"><td class="mdescLeft">&#160;</td><td class="mdescRight">タイムアウト時間を設定する  <a href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#ab854cb26bdc83be7dbcca18e37b74388">[詳解]</a><br /></td></tr>
+<tr class="memdesc:ab854cb26bdc83be7dbcca18e37b74388"><td class="mdescLeft">&#160;</td><td class="mdescRight">タイムアウト時間を設定する  <br /></td></tr>
 <tr class="separator:ab854cb26bdc83be7dbcca18e37b74388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52e738323045354e58884726e2dbdefc"><td class="memItemLeft" align="right" valign="top">Duration&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a52e738323045354e58884726e2dbdefc">GetTimeout</a> ()</td></tr>
-<tr class="memdesc:a52e738323045354e58884726e2dbdefc"><td class="mdescLeft">&#160;</td><td class="mdescRight">タイムアウト時間の設定を取得する  <a href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a52e738323045354e58884726e2dbdefc">[詳解]</a><br /></td></tr>
+<tr class="memdesc:a52e738323045354e58884726e2dbdefc"><td class="mdescLeft">&#160;</td><td class="mdescRight">タイムアウト時間の設定を取得する  <br /></td></tr>
 <tr class="separator:a52e738323045354e58884726e2dbdefc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a816f9728704d7e51a4ff1d2cc1f379c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a816f9728704d7e51a4ff1d2cc1f379c9">TimeoutOccurred</a> ()</td></tr>
-<tr class="memdesc:a816f9728704d7e51a4ff1d2cc1f379c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">タイムアウト発生を調べる  <a href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a816f9728704d7e51a4ff1d2cc1f379c9">[詳解]</a><br /></td></tr>
+<tr class="memdesc:a816f9728704d7e51a4ff1d2cc1f379c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">タイムアウト発生を調べる  <br /></td></tr>
 <tr class="separator:a816f9728704d7e51a4ff1d2cc1f379c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a8555efd05c7b302fd947d5f69106d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a8a8555efd05c7b302fd947d5f69106d8">GetI2cLastStatus</a> ()</td></tr>
-<tr class="memdesc:a8a8555efd05c7b302fd947d5f69106d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">最後のI2Cの結果を返す  <a href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a8a8555efd05c7b302fd947d5f69106d8">[詳解]</a><br /></td></tr>
+<tr class="memdesc:a8a8555efd05c7b302fd947d5f69106d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">最後のI2Cの結果を返す  <br /></td></tr>
 <tr class="separator:a8a8555efd05c7b302fd947d5f69106d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
-<div class="textblock"><h3>template&lt;class Clock, class I2cIo&gt;<br />
-class alps::cmn::sensor::Vl53l0x&lt; Clock, I2cIo &gt;</h3>
-
-<p>距離センサVL53L0Xクラス </p>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class Clock, class I2cIo&gt;<br />
+class alps::cmn::sensor::Vl53l0x&lt; Clock, I2cIo &gt;</div><p>距離センサVL53L0Xクラス </p>
 <dl class="tparams"><dt>テンプレート引数</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Clock</td><td>利用するクロック型 </td></tr>
@@ -181,8 +186,8 @@ class alps::cmn::sensor::Vl53l0x&lt; Clock, I2cIo &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">列挙型メンバ詳解</h2>
-<a id="a555c1bb531c527b4442a952ddd6addf0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a555c1bb531c527b4442a952ddd6addf0">&#9670;&nbsp;</a></span>AccuracyMode</h2>
+<a id="a555c1bb531c527b4442a952ddd6addf0" name="a555c1bb531c527b4442a952ddd6addf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a555c1bb531c527b4442a952ddd6addf0">&#9670;&#160;</a></span>AccuracyMode</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -193,7 +198,7 @@ template&lt;class Clock , class I2cIo &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a555c1bb531c527b4442a952ddd6addf0">alps::cmn::sensor::Vl53l0x::AccuracyMode</a></td>
+          <td class="memname">enum class <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a555c1bb531c527b4442a952ddd6addf0">alps::cmn::sensor::Vl53l0x::AccuracyMode</a></td>
         </tr>
       </table>
   </td>
@@ -205,18 +210,18 @@ template&lt;class Clock , class I2cIo &gt; </div>
 
 <p>測定精度及び測定周期に関する設定パラメータ </p>
 <table class="fieldtable">
-<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a555c1bb531c527b4442a952ddd6addf0a7482e1a2a3b40a0fbbeef93742861042"></a>kHighAccuracy&#160;</td><td class="fielddoc"><p>高精度測定 測定許容時間:200ms </p>
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a555c1bb531c527b4442a952ddd6addf0a7482e1a2a3b40a0fbbeef93742861042" name="a555c1bb531c527b4442a952ddd6addf0a7482e1a2a3b40a0fbbeef93742861042"></a>kHighAccuracy&#160;</td><td class="fielddoc"><p>高精度測定 測定許容時間:200ms </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a555c1bb531c527b4442a952ddd6addf0a7b19c02b0a00ebe3e1e6abeddc95b863"></a>kDefaultAccuracy&#160;</td><td class="fielddoc"><p>デフォルト精度 測定許容時間:33ms </p>
+<tr><td class="fieldname"><a id="a555c1bb531c527b4442a952ddd6addf0a7b19c02b0a00ebe3e1e6abeddc95b863" name="a555c1bb531c527b4442a952ddd6addf0a7b19c02b0a00ebe3e1e6abeddc95b863"></a>kDefaultAccuracy&#160;</td><td class="fielddoc"><p>デフォルト精度 測定許容時間:33ms </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a555c1bb531c527b4442a952ddd6addf0ab94b580b44f5148e3f0725d18c37cdba"></a>kHighSpeed&#160;</td><td class="fielddoc"><p>高速測定 測定許容時間:20ms </p>
+<tr><td class="fieldname"><a id="a555c1bb531c527b4442a952ddd6addf0ab94b580b44f5148e3f0725d18c37cdba" name="a555c1bb531c527b4442a952ddd6addf0ab94b580b44f5148e3f0725d18c37cdba"></a>kHighSpeed&#160;</td><td class="fielddoc"><p>高速測定 測定許容時間:20ms </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a id="a73e9b76fe9123246d7dcf8713e8c83a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73e9b76fe9123246d7dcf8713e8c83a9">&#9670;&nbsp;</a></span>OperationMode</h2>
+<a id="a73e9b76fe9123246d7dcf8713e8c83a9" name="a73e9b76fe9123246d7dcf8713e8c83a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73e9b76fe9123246d7dcf8713e8c83a9">&#9670;&#160;</a></span>OperationMode</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,7 +232,7 @@ template&lt;class Clock , class I2cIo &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a73e9b76fe9123246d7dcf8713e8c83a9">alps::cmn::sensor::Vl53l0x::OperationMode</a></td>
+          <td class="memname">enum class <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a73e9b76fe9123246d7dcf8713e8c83a9">alps::cmn::sensor::Vl53l0x::OperationMode</a></td>
         </tr>
       </table>
   </td>
@@ -239,16 +244,16 @@ template&lt;class Clock , class I2cIo &gt; </div>
 
 <p>動作モードの設定パラメータ </p>
 <table class="fieldtable">
-<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a73e9b76fe9123246d7dcf8713e8c83a9aae04036f1585391b8a9a0fde295243da"></a>kSingleRanging&#160;</td><td class="fielddoc"><p>単発測定モード </p>
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a73e9b76fe9123246d7dcf8713e8c83a9aae04036f1585391b8a9a0fde295243da" name="a73e9b76fe9123246d7dcf8713e8c83a9aae04036f1585391b8a9a0fde295243da"></a>kSingleRanging&#160;</td><td class="fielddoc"><p>単発測定モード </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a73e9b76fe9123246d7dcf8713e8c83a9afbb9f8b3152f5fa3cc492ce0e621ba4e"></a>kContinuousRanging&#160;</td><td class="fielddoc"><p>連続測定モード </p>
+<tr><td class="fieldname"><a id="a73e9b76fe9123246d7dcf8713e8c83a9afbb9f8b3152f5fa3cc492ce0e621ba4e" name="a73e9b76fe9123246d7dcf8713e8c83a9afbb9f8b3152f5fa3cc492ce0e621ba4e"></a>kContinuousRanging&#160;</td><td class="fielddoc"><p>連続測定モード </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a id="a27c4145bb7ec554861b487c8c3e5a0c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27c4145bb7ec554861b487c8c3e5a0c8">&#9670;&nbsp;</a></span>RangeMode</h2>
+<a id="a27c4145bb7ec554861b487c8c3e5a0c8" name="a27c4145bb7ec554861b487c8c3e5a0c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27c4145bb7ec554861b487c8c3e5a0c8">&#9670;&#160;</a></span>RangeMode</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -259,7 +264,7 @@ template&lt;class Clock , class I2cIo &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a27c4145bb7ec554861b487c8c3e5a0c8">alps::cmn::sensor::Vl53l0x::RangeMode</a></td>
+          <td class="memname">enum class <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a27c4145bb7ec554861b487c8c3e5a0c8">alps::cmn::sensor::Vl53l0x::RangeMode</a></td>
         </tr>
       </table>
   </td>
@@ -271,17 +276,17 @@ template&lt;class Clock , class I2cIo &gt; </div>
 
 <p>測定範囲を設定するパラメータ </p>
 <table class="fieldtable">
-<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a27c4145bb7ec554861b487c8c3e5a0c8a4782a47befda9cb1e853fc4b452616e3"></a>kDefaultRange&#160;</td><td class="fielddoc"><p>デフォルト </p>
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a27c4145bb7ec554861b487c8c3e5a0c8a4782a47befda9cb1e853fc4b452616e3" name="a27c4145bb7ec554861b487c8c3e5a0c8a4782a47befda9cb1e853fc4b452616e3"></a>kDefaultRange&#160;</td><td class="fielddoc"><p>デフォルト </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a27c4145bb7ec554861b487c8c3e5a0c8a2d878afcb4ba193744c3b67c9c1b667f"></a>kLongRange&#160;</td><td class="fielddoc"><p>長距離 </p>
+<tr><td class="fieldname"><a id="a27c4145bb7ec554861b487c8c3e5a0c8a2d878afcb4ba193744c3b67c9c1b667f" name="a27c4145bb7ec554861b487c8c3e5a0c8a2d878afcb4ba193744c3b67c9c1b667f"></a>kLongRange&#160;</td><td class="fielddoc"><p>長距離 </p>
 </td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">構築子と解体子</h2>
-<a id="a469dc00c20ff8f778d1111f50c08c5f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a469dc00c20ff8f778d1111f50c08c5f0">&#9670;&nbsp;</a></span>Vl53l0x()</h2>
+<a id="a469dc00c20ff8f778d1111f50c08c5f0" name="a469dc00c20ff8f778d1111f50c08c5f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a469dc00c20ff8f778d1111f50c08c5f0">&#9670;&#160;</a></span>Vl53l0x()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -292,7 +297,7 @@ template&lt;class Clock , class I2cIo &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html">alps::cmn::sensor::Vl53l0x</a>&lt; Clock, I2cIo &gt;::<a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html">Vl53l0x</a> </td>
+          <td class="memname"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html">alps::cmn::sensor::Vl53l0x</a>&lt; Clock, I2cIo &gt;::Vl53l0x </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">cmn::communication::II2cIo</a>&lt; I2cIo &gt; &amp;&#160;</td>
           <td class="paramname"><em>i2c_io</em>, </td>
@@ -356,8 +361,8 @@ template&lt;class Clock , class I2cIo &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a8a8555efd05c7b302fd947d5f69106d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a8555efd05c7b302fd947d5f69106d8">&#9670;&nbsp;</a></span>GetI2cLastStatus()</h2>
+<a id="a8a8555efd05c7b302fd947d5f69106d8" name="a8a8555efd05c7b302fd947d5f69106d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a8555efd05c7b302fd947d5f69106d8">&#9670;&#160;</a></span>GetI2cLastStatus()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -388,8 +393,8 @@ false 失敗 </dd></dl>
 
 </div>
 </div>
-<a id="a2461ebbd367492fe95447da932ba9129"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2461ebbd367492fe95447da932ba9129">&#9670;&nbsp;</a></span>GetOperationMode()</h2>
+<a id="a2461ebbd367492fe95447da932ba9129" name="a2461ebbd367492fe95447da932ba9129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2461ebbd367492fe95447da932ba9129">&#9670;&#160;</a></span>GetOperationMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -418,8 +423,8 @@ template&lt;class Clock , class I2cIo &gt; </div>
 
 </div>
 </div>
-<a id="a52e738323045354e58884726e2dbdefc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52e738323045354e58884726e2dbdefc">&#9670;&nbsp;</a></span>GetTimeout()</h2>
+<a id="a52e738323045354e58884726e2dbdefc" name="a52e738323045354e58884726e2dbdefc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52e738323045354e58884726e2dbdefc">&#9670;&#160;</a></span>GetTimeout()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -448,8 +453,8 @@ template&lt;class Clock , class I2cIo &gt; </div>
 
 </div>
 </div>
-<a id="a3cfb0998c9123e31903597bc1dddb88a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cfb0998c9123e31903597bc1dddb88a">&#9670;&nbsp;</a></span>ReadRangeMillimeters()</h2>
+<a id="a3cfb0998c9123e31903597bc1dddb88a" name="a3cfb0998c9123e31903597bc1dddb88a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cfb0998c9123e31903597bc1dddb88a">&#9670;&#160;</a></span>ReadRangeMillimeters()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -478,8 +483,8 @@ template&lt;class Clock , class I2cIo &gt; </div>
 
 </div>
 </div>
-<a id="a0f0686f201e0d483c21d73fb99aed5d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f0686f201e0d483c21d73fb99aed5d6">&#9670;&nbsp;</a></span>SetAccuracyMode()</h2>
+<a id="a0f0686f201e0d483c21d73fb99aed5d6" name="a0f0686f201e0d483c21d73fb99aed5d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f0686f201e0d483c21d73fb99aed5d6">&#9670;&#160;</a></span>SetAccuracyMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -514,8 +519,8 @@ template&lt;class Clock , class I2cIo &gt; </div>
 
 </div>
 </div>
-<a id="affbb57df7cfeb12b95d314f8be4efbc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affbb57df7cfeb12b95d314f8be4efbc9">&#9670;&nbsp;</a></span>SetOperationMode()</h2>
+<a id="affbb57df7cfeb12b95d314f8be4efbc9" name="affbb57df7cfeb12b95d314f8be4efbc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affbb57df7cfeb12b95d314f8be4efbc9">&#9670;&#160;</a></span>SetOperationMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -550,8 +555,8 @@ template&lt;class Clock , class I2cIo &gt; </div>
 
 </div>
 </div>
-<a id="a056a717f843b68db979f53fa70360851"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a056a717f843b68db979f53fa70360851">&#9670;&nbsp;</a></span>SetRangeMode()</h2>
+<a id="a056a717f843b68db979f53fa70360851" name="a056a717f843b68db979f53fa70360851"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a056a717f843b68db979f53fa70360851">&#9670;&#160;</a></span>SetRangeMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -586,8 +591,8 @@ template&lt;class Clock , class I2cIo &gt; </div>
 
 </div>
 </div>
-<a id="ab854cb26bdc83be7dbcca18e37b74388"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab854cb26bdc83be7dbcca18e37b74388">&#9670;&nbsp;</a></span>SetTimeout()</h2>
+<a id="ab854cb26bdc83be7dbcca18e37b74388" name="ab854cb26bdc83be7dbcca18e37b74388"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab854cb26bdc83be7dbcca18e37b74388">&#9670;&#160;</a></span>SetTimeout()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -622,8 +627,8 @@ template&lt;class Clock , class I2cIo &gt; </div>
 
 </div>
 </div>
-<a id="a816f9728704d7e51a4ff1d2cc1f379c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a816f9728704d7e51a4ff1d2cc1f379c9">&#9670;&nbsp;</a></span>TimeoutOccurred()</h2>
+<a id="a816f9728704d7e51a4ff1d2cc1f379c9" name="a816f9728704d7e51a4ff1d2cc1f379c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a816f9728704d7e51a4ff1d2cc1f379c9">&#9670;&#160;</a></span>TimeoutOccurred()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -663,7 +668,7 @@ false 未発生 </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacealps.html">alps</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn.html">cmn</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn_1_1sensor.html">sensor</a></li><li class="navelem"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html">Vl53l0x</a></li>
-    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
 </body>

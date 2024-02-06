@@ -1,0 +1,377 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps_ros2_lib/include/alps_ros2/communication/can_topic_converter.hpp ファイル</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('can__topic__converter_8hpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle"><div class="title">can_topic_converter.hpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="can__typed__data__transceiver_8hpp_source.html">alps_cmn/communication/can_typed_data_transceiver.hpp</a>&quot;</code><br />
+<code>#include &quot;rclcpp/rclcpp.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/bool.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/byte.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/byte_multi_array.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/char.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/float32.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/float32_multi_array.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/float64.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/float64_multi_array.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/int16.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/int16_multi_array.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/int32.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/int32_multi_array.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/int64.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/int64_multi_array.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/int8.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/int8_multi_array.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/string.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/u_int16.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/u_int16_multi_array.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/u_int32.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/u_int32_multi_array.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/u_int64.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/u_int64_multi_array.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/u_int8.hpp&quot;</code><br />
+<code>#include &quot;std_msgs/msg/u_int8_multi_array.hpp&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+can_topic_converter.hpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="can__topic__converter_8hpp__incl.svg" width="6294" height="491"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="can__topic__converter_8hpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1communication_1_1_topic_to_can_converter.html">alps::ros2::communication::TopicToCanConverter&lt; CanType, RosTopicType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ROSトピックからCANバスへメッセージを転送するクラス  <a href="classalps_1_1ros2_1_1communication_1_1_topic_to_can_converter.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1communication_1_1_can_to_topic_converter.html">alps::ros2::communication::CanToTopicConverter&lt; CanType, RosTopicType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CANバスからROSトピックへメッセージを転送するクラス  <a href="classalps_1_1ros2_1_1communication_1_1_can_to_topic_converter.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespacealps"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps.html">alps</a></td></tr>
+<tr class="memdesc:namespacealps"><td class="mdescLeft">&#160;</td><td class="mdescRight">ロボ研で開発したライブラリ <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacealps_1_1ros2"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2.html">alps::ros2</a></td></tr>
+<tr class="memdesc:namespacealps_1_1ros2"><td class="mdescLeft">&#160;</td><td class="mdescRight">ROS2用ライブラリ <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacealps_1_1ros2_1_1communication"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html">alps::ros2::communication</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ac5347bc351707ec56c9af7585dab184b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#ac5347bc351707ec56c9af7585dab184b">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::Bool &amp;ros_msg, bool &amp;can_data)</td></tr>
+<tr class="separator:ac5347bc351707ec56c9af7585dab184b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd691f16971fcc9a8591ad905118d020"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#acd691f16971fcc9a8591ad905118d020">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const bool &amp;can_data, std_msgs::msg::Bool &amp;ros_msg)</td></tr>
+<tr class="separator:acd691f16971fcc9a8591ad905118d020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03eafd0e62f28bf745b2a23d6eef7a42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a03eafd0e62f28bf745b2a23d6eef7a42">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const uint8_t &amp;can_data, std_msgs::msg::Byte &amp;ros_msg)</td></tr>
+<tr class="separator:a03eafd0e62f28bf745b2a23d6eef7a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa356197e93a173b756bf0bcd94dbff02"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#aa356197e93a173b756bf0bcd94dbff02">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::Byte &amp;ros_msg, uint8_t &amp;can_data)</td></tr>
+<tr class="separator:aa356197e93a173b756bf0bcd94dbff02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6966128ca7a8d40d2700bca7ac3e4e73"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:a6966128ca7a8d40d2700bca7ac3e4e73"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a6966128ca7a8d40d2700bca7ac3e4e73">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::ByteMultiArray &amp;ros_msg, std::array&lt; uint8_t, kSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:a6966128ca7a8d40d2700bca7ac3e4e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad910585cf45002065b1409aa40ae086f"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:ad910585cf45002065b1409aa40ae086f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#ad910585cf45002065b1409aa40ae086f">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const std::array&lt; uint8_t, kSize &gt; &amp;can_data, std_msgs::msg::ByteMultiArray &amp;ros_msg)</td></tr>
+<tr class="separator:ad910585cf45002065b1409aa40ae086f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d0804530ffdf593f8fd82ba9d5e6f4b"><td class="memTemplParams" colspan="2">template&lt;size_t kMaxSize&gt; </td></tr>
+<tr class="memitem:a2d0804530ffdf593f8fd82ba9d5e6f4b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a2d0804530ffdf593f8fd82ba9d5e6f4b">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::ByteMultiArray &amp;ros_msg, etl::vector&lt; uint8_t, kMaxSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:a2d0804530ffdf593f8fd82ba9d5e6f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f9e7afcae814518b32bcac60a093844"><td class="memTemplParams" colspan="2">template&lt;size_t kMaxSize&gt; </td></tr>
+<tr class="memitem:a6f9e7afcae814518b32bcac60a093844"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a6f9e7afcae814518b32bcac60a093844">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const etl::vector&lt; uint8_t, kMaxSize &gt; &amp;can_data, std_msgs::msg::ByteMultiArray &amp;ros_msg)</td></tr>
+<tr class="separator:a6f9e7afcae814518b32bcac60a093844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a323a84eab8034ace5000f3454bf661b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a323a84eab8034ace5000f3454bf661b4">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::Char &amp;ros_msg, char &amp;can_data)</td></tr>
+<tr class="separator:a323a84eab8034ace5000f3454bf661b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e67302cd3315cceaf4d37f46ae8fd30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a7e67302cd3315cceaf4d37f46ae8fd30">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const char &amp;can_data, std_msgs::msg::Char &amp;ros_msg)</td></tr>
+<tr class="separator:a7e67302cd3315cceaf4d37f46ae8fd30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d8fe0c5b4093e498d066fcf52d3e800"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a5d8fe0c5b4093e498d066fcf52d3e800">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::Int8 &amp;ros_msg, int8_t &amp;can_data)</td></tr>
+<tr class="separator:a5d8fe0c5b4093e498d066fcf52d3e800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad96777ab483b020f94eeee6abf1820c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#ad96777ab483b020f94eeee6abf1820c5">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const int8_t &amp;can_data, std_msgs::msg::Int8 &amp;ros_msg)</td></tr>
+<tr class="separator:ad96777ab483b020f94eeee6abf1820c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3581eb42e7aa7a1dba69d314699c7c6"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:af3581eb42e7aa7a1dba69d314699c7c6"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#af3581eb42e7aa7a1dba69d314699c7c6">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::Int8MultiArray &amp;ros_msg, std::array&lt; int8_t, kSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:af3581eb42e7aa7a1dba69d314699c7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab94019b4c96a09f87278d64bbc9dae46"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:ab94019b4c96a09f87278d64bbc9dae46"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#ab94019b4c96a09f87278d64bbc9dae46">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const std::array&lt; int8_t, kSize &gt; &amp;can_data, std_msgs::msg::Int8MultiArray &amp;ros_msg)</td></tr>
+<tr class="separator:ab94019b4c96a09f87278d64bbc9dae46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac455b64dd6f8b9d0074188eaad2fc7ff"><td class="memTemplParams" colspan="2">template&lt;size_t kMaxSize&gt; </td></tr>
+<tr class="memitem:ac455b64dd6f8b9d0074188eaad2fc7ff"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#ac455b64dd6f8b9d0074188eaad2fc7ff">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::Int8MultiArray &amp;ros_msg, etl::vector&lt; int8_t, kMaxSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:ac455b64dd6f8b9d0074188eaad2fc7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a54d85f06445881b1560b61edd390ff"><td class="memTemplParams" colspan="2">template&lt;size_t kMaxSize&gt; </td></tr>
+<tr class="memitem:a5a54d85f06445881b1560b61edd390ff"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a5a54d85f06445881b1560b61edd390ff">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const etl::vector&lt; int8_t, kMaxSize &gt; &amp;can_data, std_msgs::msg::Int8MultiArray &amp;ros_msg)</td></tr>
+<tr class="separator:a5a54d85f06445881b1560b61edd390ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a419e684bc01f3fba5b09b443ef8890a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a419e684bc01f3fba5b09b443ef8890a5">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::Int16 &amp;ros_msg, int16_t &amp;can_data)</td></tr>
+<tr class="separator:a419e684bc01f3fba5b09b443ef8890a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0192c176b3c8df440829de3969fe3ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#aa0192c176b3c8df440829de3969fe3ba">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const int16_t &amp;can_data, std_msgs::msg::Int16 &amp;ros_msg)</td></tr>
+<tr class="separator:aa0192c176b3c8df440829de3969fe3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6431ac7310ee10e3ac638b1345bb18c4"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:a6431ac7310ee10e3ac638b1345bb18c4"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a6431ac7310ee10e3ac638b1345bb18c4">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::Int16MultiArray &amp;ros_msg, std::array&lt; int16_t, kSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:a6431ac7310ee10e3ac638b1345bb18c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc3ba5d2f0a6aaeb9b71d0ca3f079624"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:abc3ba5d2f0a6aaeb9b71d0ca3f079624"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#abc3ba5d2f0a6aaeb9b71d0ca3f079624">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const std::array&lt; int16_t, kSize &gt; &amp;can_data, std_msgs::msg::Int16MultiArray &amp;ros_msg)</td></tr>
+<tr class="separator:abc3ba5d2f0a6aaeb9b71d0ca3f079624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac61ad5923af6e090ef20ec15c5044548"><td class="memTemplParams" colspan="2">template&lt;size_t kMaxSize&gt; </td></tr>
+<tr class="memitem:ac61ad5923af6e090ef20ec15c5044548"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#ac61ad5923af6e090ef20ec15c5044548">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::Int16MultiArray &amp;ros_msg, etl::vector&lt; int16_t, kMaxSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:ac61ad5923af6e090ef20ec15c5044548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef9c60fc817a9b801a5b143e0c51839"><td class="memTemplParams" colspan="2">template&lt;size_t kMaxSize&gt; </td></tr>
+<tr class="memitem:aaef9c60fc817a9b801a5b143e0c51839"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#aaef9c60fc817a9b801a5b143e0c51839">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const etl::vector&lt; int16_t, kMaxSize &gt; &amp;can_data, std_msgs::msg::Int16MultiArray &amp;ros_msg)</td></tr>
+<tr class="separator:aaef9c60fc817a9b801a5b143e0c51839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a137c538bd43f9ba65431ed3a0e48eff0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a137c538bd43f9ba65431ed3a0e48eff0">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::Int32 &amp;ros_msg, int32_t &amp;can_data)</td></tr>
+<tr class="separator:a137c538bd43f9ba65431ed3a0e48eff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdf0e14914527609e6a43d9781fb7672"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#abdf0e14914527609e6a43d9781fb7672">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const int32_t &amp;can_data, std_msgs::msg::Int32 &amp;ros_msg)</td></tr>
+<tr class="separator:abdf0e14914527609e6a43d9781fb7672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7389bfde021f800c1be4ede164cd2abc"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:a7389bfde021f800c1be4ede164cd2abc"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a7389bfde021f800c1be4ede164cd2abc">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::Int32MultiArray &amp;ros_msg, std::array&lt; int32_t, kSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:a7389bfde021f800c1be4ede164cd2abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3da3b205debd5aa7fc1f6db813712aa5"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:a3da3b205debd5aa7fc1f6db813712aa5"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a3da3b205debd5aa7fc1f6db813712aa5">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const std::array&lt; int32_t, kSize &gt; &amp;can_data, std_msgs::msg::Int32MultiArray &amp;ros_msg)</td></tr>
+<tr class="separator:a3da3b205debd5aa7fc1f6db813712aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa534bec24216669380a501721d5a4b19"><td class="memTemplParams" colspan="2">template&lt;size_t kMaxSize&gt; </td></tr>
+<tr class="memitem:aa534bec24216669380a501721d5a4b19"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#aa534bec24216669380a501721d5a4b19">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::Int32MultiArray &amp;ros_msg, etl::vector&lt; int32_t, kMaxSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:aa534bec24216669380a501721d5a4b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae18e4200ac2eb6d8a33b2a73d9795bed"><td class="memTemplParams" colspan="2">template&lt;size_t kMaxSize&gt; </td></tr>
+<tr class="memitem:ae18e4200ac2eb6d8a33b2a73d9795bed"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#ae18e4200ac2eb6d8a33b2a73d9795bed">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const etl::vector&lt; int32_t, kMaxSize &gt; &amp;can_data, std_msgs::msg::Int32MultiArray &amp;ros_msg)</td></tr>
+<tr class="separator:ae18e4200ac2eb6d8a33b2a73d9795bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6973dd8b17aab59ca5459687e602038c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a6973dd8b17aab59ca5459687e602038c">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::Int64 &amp;ros_msg, int64_t &amp;can_data)</td></tr>
+<tr class="separator:a6973dd8b17aab59ca5459687e602038c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe7e87ba6d6ca1ffc9a425c12bd628b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#abe7e87ba6d6ca1ffc9a425c12bd628b8">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const int64_t &amp;can_data, std_msgs::msg::Int64 &amp;ros_msg)</td></tr>
+<tr class="separator:abe7e87ba6d6ca1ffc9a425c12bd628b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affb2b82314675d6935ba0632017facf0"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:affb2b82314675d6935ba0632017facf0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#affb2b82314675d6935ba0632017facf0">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::Int64MultiArray &amp;ros_msg, std::array&lt; int64_t, kSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:affb2b82314675d6935ba0632017facf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f40d48be542bbbeaa631afb64fff8ae"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:a3f40d48be542bbbeaa631afb64fff8ae"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a3f40d48be542bbbeaa631afb64fff8ae">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const std::array&lt; int64_t, kSize &gt; &amp;can_data, std_msgs::msg::Int64MultiArray &amp;ros_msg)</td></tr>
+<tr class="separator:a3f40d48be542bbbeaa631afb64fff8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88baa442578a32778c676895869b6794"><td class="memTemplParams" colspan="2">template&lt;size_t kMaxSize&gt; </td></tr>
+<tr class="memitem:a88baa442578a32778c676895869b6794"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a88baa442578a32778c676895869b6794">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::Int64MultiArray &amp;ros_msg, etl::vector&lt; int64_t, kMaxSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:a88baa442578a32778c676895869b6794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9c5645bff4f817e4fb24676caf18080"><td class="memTemplParams" colspan="2">template&lt;size_t kMaxSize&gt; </td></tr>
+<tr class="memitem:af9c5645bff4f817e4fb24676caf18080"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#af9c5645bff4f817e4fb24676caf18080">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const etl::vector&lt; int64_t, kMaxSize &gt; &amp;can_data, std_msgs::msg::Int64MultiArray &amp;ros_msg)</td></tr>
+<tr class="separator:af9c5645bff4f817e4fb24676caf18080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79d60f467c8cc811e5dfb1feae6f3446"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a79d60f467c8cc811e5dfb1feae6f3446">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::UInt8 &amp;ros_msg, uint8_t &amp;can_data)</td></tr>
+<tr class="separator:a79d60f467c8cc811e5dfb1feae6f3446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd6fb1c3150aced28747687903f82e0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#abd6fb1c3150aced28747687903f82e0c">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const uint8_t &amp;can_data, std_msgs::msg::UInt8 &amp;ros_msg)</td></tr>
+<tr class="separator:abd6fb1c3150aced28747687903f82e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30349943b5e19a433cb11fbc81d5e856"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:a30349943b5e19a433cb11fbc81d5e856"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a30349943b5e19a433cb11fbc81d5e856">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::UInt8MultiArray &amp;ros_msg, std::array&lt; uint8_t, kSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:a30349943b5e19a433cb11fbc81d5e856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a1979948eef24caa3f7a2a62d5c665a"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:a5a1979948eef24caa3f7a2a62d5c665a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a5a1979948eef24caa3f7a2a62d5c665a">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const std::array&lt; uint8_t, kSize &gt; &amp;can_data, std_msgs::msg::UInt8MultiArray &amp;ros_msg)</td></tr>
+<tr class="separator:a5a1979948eef24caa3f7a2a62d5c665a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e0b62730001fa2bb6578c667c90b22d"><td class="memTemplParams" colspan="2">template&lt;size_t kMaxSize&gt; </td></tr>
+<tr class="memitem:a7e0b62730001fa2bb6578c667c90b22d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a7e0b62730001fa2bb6578c667c90b22d">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::UInt8MultiArray &amp;ros_msg, etl::vector&lt; uint8_t, kMaxSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:a7e0b62730001fa2bb6578c667c90b22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ebd88f5fb13b3c6bb0208b9ca3b0c9e"><td class="memTemplParams" colspan="2">template&lt;size_t kMaxSize&gt; </td></tr>
+<tr class="memitem:a2ebd88f5fb13b3c6bb0208b9ca3b0c9e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a2ebd88f5fb13b3c6bb0208b9ca3b0c9e">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const etl::vector&lt; uint8_t, kMaxSize &gt; &amp;can_data, std_msgs::msg::UInt8MultiArray &amp;ros_msg)</td></tr>
+<tr class="separator:a2ebd88f5fb13b3c6bb0208b9ca3b0c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a435069ecbdcc5bdc5e122cde6a3b3bb1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a435069ecbdcc5bdc5e122cde6a3b3bb1">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::UInt16 &amp;ros_msg, uint16_t &amp;can_data)</td></tr>
+<tr class="separator:a435069ecbdcc5bdc5e122cde6a3b3bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c28146ab80405b5f06cd5530101ed42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a1c28146ab80405b5f06cd5530101ed42">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const uint16_t &amp;can_data, std_msgs::msg::UInt16 &amp;ros_msg)</td></tr>
+<tr class="separator:a1c28146ab80405b5f06cd5530101ed42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8434c915924a6f14ee28ad2b0992b59"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:aa8434c915924a6f14ee28ad2b0992b59"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#aa8434c915924a6f14ee28ad2b0992b59">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::UInt16MultiArray &amp;ros_msg, std::array&lt; uint16_t, kSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:aa8434c915924a6f14ee28ad2b0992b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a524f1afcfd1c40091cf1b17ebf977b36"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:a524f1afcfd1c40091cf1b17ebf977b36"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a524f1afcfd1c40091cf1b17ebf977b36">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const std::array&lt; uint16_t, kSize &gt; &amp;can_data, std_msgs::msg::UInt16MultiArray &amp;ros_msg)</td></tr>
+<tr class="separator:a524f1afcfd1c40091cf1b17ebf977b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a61205a3122a5e90e6078af76ddde84"><td class="memTemplParams" colspan="2">template&lt;size_t kMaxSize&gt; </td></tr>
+<tr class="memitem:a0a61205a3122a5e90e6078af76ddde84"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a0a61205a3122a5e90e6078af76ddde84">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::UInt16MultiArray &amp;ros_msg, etl::vector&lt; uint16_t, kMaxSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:a0a61205a3122a5e90e6078af76ddde84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e2d6c15184632bcca3ccf2d7dbd9716"><td class="memTemplParams" colspan="2">template&lt;size_t kMaxSize&gt; </td></tr>
+<tr class="memitem:a9e2d6c15184632bcca3ccf2d7dbd9716"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a9e2d6c15184632bcca3ccf2d7dbd9716">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const etl::vector&lt; uint16_t, kMaxSize &gt; &amp;can_data, std_msgs::msg::UInt16MultiArray &amp;ros_msg)</td></tr>
+<tr class="separator:a9e2d6c15184632bcca3ccf2d7dbd9716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a468ee37a39abbbf2edf357d3889a2bcc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a468ee37a39abbbf2edf357d3889a2bcc">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::UInt32 &amp;ros_msg, uint32_t &amp;can_data)</td></tr>
+<tr class="separator:a468ee37a39abbbf2edf357d3889a2bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a738842df72bf7e17c49bc28361f9394e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a738842df72bf7e17c49bc28361f9394e">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const uint32_t &amp;can_data, std_msgs::msg::UInt32 &amp;ros_msg)</td></tr>
+<tr class="separator:a738842df72bf7e17c49bc28361f9394e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a053a4900ccbadd11620b073fb1c451d7"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:a053a4900ccbadd11620b073fb1c451d7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a053a4900ccbadd11620b073fb1c451d7">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::UInt32MultiArray &amp;ros_msg, std::array&lt; uint32_t, kSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:a053a4900ccbadd11620b073fb1c451d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab151fdcc8b9c5f35f0a601879189399a"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:ab151fdcc8b9c5f35f0a601879189399a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#ab151fdcc8b9c5f35f0a601879189399a">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const std::array&lt; uint32_t, kSize &gt; &amp;can_data, std_msgs::msg::UInt32MultiArray &amp;ros_msg)</td></tr>
+<tr class="separator:ab151fdcc8b9c5f35f0a601879189399a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75f01c72df52427ce876c9de452077e0"><td class="memTemplParams" colspan="2">template&lt;size_t kMaxSize&gt; </td></tr>
+<tr class="memitem:a75f01c72df52427ce876c9de452077e0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a75f01c72df52427ce876c9de452077e0">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::UInt32MultiArray &amp;ros_msg, etl::vector&lt; uint32_t, kMaxSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:a75f01c72df52427ce876c9de452077e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a726e3c5bc26461580ce7b05277f009db"><td class="memTemplParams" colspan="2">template&lt;size_t kMaxSize&gt; </td></tr>
+<tr class="memitem:a726e3c5bc26461580ce7b05277f009db"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a726e3c5bc26461580ce7b05277f009db">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const etl::vector&lt; uint32_t, kMaxSize &gt; &amp;can_data, std_msgs::msg::UInt32MultiArray &amp;ros_msg)</td></tr>
+<tr class="separator:a726e3c5bc26461580ce7b05277f009db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ca4ac97d65739a5057cdfe5ee1ad1d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a60ca4ac97d65739a5057cdfe5ee1ad1d">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::UInt64 &amp;ros_msg, uint64_t &amp;can_data)</td></tr>
+<tr class="separator:a60ca4ac97d65739a5057cdfe5ee1ad1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a374603ae2843b02608ce5d3ef8c1f245"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a374603ae2843b02608ce5d3ef8c1f245">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const uint64_t &amp;can_data, std_msgs::msg::UInt64 &amp;ros_msg)</td></tr>
+<tr class="separator:a374603ae2843b02608ce5d3ef8c1f245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac107fc94b3aa6f6a162854d0db329891"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:ac107fc94b3aa6f6a162854d0db329891"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#ac107fc94b3aa6f6a162854d0db329891">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::UInt64MultiArray &amp;ros_msg, std::array&lt; uint64_t, kSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:ac107fc94b3aa6f6a162854d0db329891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27d53392d626c4b385c085130c75edfc"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:a27d53392d626c4b385c085130c75edfc"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a27d53392d626c4b385c085130c75edfc">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const std::array&lt; uint64_t, kSize &gt; &amp;can_data, std_msgs::msg::UInt64MultiArray &amp;ros_msg)</td></tr>
+<tr class="separator:a27d53392d626c4b385c085130c75edfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9de9344267807aa027815b1b66700dc7"><td class="memTemplParams" colspan="2">template&lt;size_t kMaxSize&gt; </td></tr>
+<tr class="memitem:a9de9344267807aa027815b1b66700dc7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a9de9344267807aa027815b1b66700dc7">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::UInt64MultiArray &amp;ros_msg, etl::vector&lt; uint64_t, kMaxSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:a9de9344267807aa027815b1b66700dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf67640ceae4efb5261e08b165b8b829"><td class="memTemplParams" colspan="2">template&lt;size_t kMaxSize&gt; </td></tr>
+<tr class="memitem:abf67640ceae4efb5261e08b165b8b829"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#abf67640ceae4efb5261e08b165b8b829">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const etl::vector&lt; uint64_t, kMaxSize &gt; &amp;can_data, std_msgs::msg::UInt64MultiArray &amp;ros_msg)</td></tr>
+<tr class="separator:abf67640ceae4efb5261e08b165b8b829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5ad055b8f1879cdf10c1b10af4554df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#ab5ad055b8f1879cdf10c1b10af4554df">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::Float32 &amp;ros_msg, float &amp;can_data)</td></tr>
+<tr class="separator:ab5ad055b8f1879cdf10c1b10af4554df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec065d40405ebcb5b831420cbfb0c4e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#aec065d40405ebcb5b831420cbfb0c4e7">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const float &amp;can_data, std_msgs::msg::Float32 &amp;ros_msg)</td></tr>
+<tr class="separator:aec065d40405ebcb5b831420cbfb0c4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0f2f7b47861b74e946c7fd1c481bbba"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:aa0f2f7b47861b74e946c7fd1c481bbba"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#aa0f2f7b47861b74e946c7fd1c481bbba">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::Float32MultiArray &amp;ros_msg, std::array&lt; float, kSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:aa0f2f7b47861b74e946c7fd1c481bbba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab96fa1b643e6e8586f67ae2adb8dea65"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:ab96fa1b643e6e8586f67ae2adb8dea65"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#ab96fa1b643e6e8586f67ae2adb8dea65">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const std::array&lt; float, kSize &gt; &amp;can_data, std_msgs::msg::Float32MultiArray &amp;ros_msg)</td></tr>
+<tr class="separator:ab96fa1b643e6e8586f67ae2adb8dea65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab39907e6e9e059425a19450c74c34dae"><td class="memTemplParams" colspan="2">template&lt;size_t kMaxSize&gt; </td></tr>
+<tr class="memitem:ab39907e6e9e059425a19450c74c34dae"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#ab39907e6e9e059425a19450c74c34dae">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::Float32MultiArray &amp;ros_msg, etl::vector&lt; float, kMaxSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:ab39907e6e9e059425a19450c74c34dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c6182d27eaff03982fdffea917bb26"><td class="memTemplParams" colspan="2">template&lt;size_t kMaxSize&gt; </td></tr>
+<tr class="memitem:af2c6182d27eaff03982fdffea917bb26"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#af2c6182d27eaff03982fdffea917bb26">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const etl::vector&lt; float, kMaxSize &gt; &amp;can_data, std_msgs::msg::Float32MultiArray &amp;ros_msg)</td></tr>
+<tr class="separator:af2c6182d27eaff03982fdffea917bb26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa88d4f9e1c39cf3223410d7d3d57aed5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#aa88d4f9e1c39cf3223410d7d3d57aed5">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::Float64 &amp;ros_msg, double &amp;can_data)</td></tr>
+<tr class="separator:aa88d4f9e1c39cf3223410d7d3d57aed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea82070b06aabce4945f7d923e786a9a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#aea82070b06aabce4945f7d923e786a9a">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const double &amp;can_data, std_msgs::msg::Float64 &amp;ros_msg)</td></tr>
+<tr class="separator:aea82070b06aabce4945f7d923e786a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b25e6ffd96973047d01abd20429f8b1"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:a2b25e6ffd96973047d01abd20429f8b1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a2b25e6ffd96973047d01abd20429f8b1">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::Float64MultiArray &amp;ros_msg, std::array&lt; double, kSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:a2b25e6ffd96973047d01abd20429f8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41e0e2303ca7d187b5d3d44fbe2ca43c"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:a41e0e2303ca7d187b5d3d44fbe2ca43c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a41e0e2303ca7d187b5d3d44fbe2ca43c">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const std::array&lt; double, kSize &gt; &amp;can_data, std_msgs::msg::Float64MultiArray &amp;ros_msg)</td></tr>
+<tr class="separator:a41e0e2303ca7d187b5d3d44fbe2ca43c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae053ed137e1aeda846cd62079b49f53"><td class="memTemplParams" colspan="2">template&lt;size_t kMaxSize&gt; </td></tr>
+<tr class="memitem:aae053ed137e1aeda846cd62079b49f53"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#aae053ed137e1aeda846cd62079b49f53">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::Float64MultiArray &amp;ros_msg, etl::vector&lt; double, kMaxSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:aae053ed137e1aeda846cd62079b49f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d6c90ba6ea8658c148f4bdd759642ca"><td class="memTemplParams" colspan="2">template&lt;size_t kMaxSize&gt; </td></tr>
+<tr class="memitem:a8d6c90ba6ea8658c148f4bdd759642ca"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a8d6c90ba6ea8658c148f4bdd759642ca">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const etl::vector&lt; double, kMaxSize &gt; &amp;can_data, std_msgs::msg::Float64MultiArray &amp;ros_msg)</td></tr>
+<tr class="separator:a8d6c90ba6ea8658c148f4bdd759642ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b8ecc42f97cae1a4134019a402b9c0"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:a58b8ecc42f97cae1a4134019a402b9c0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a58b8ecc42f97cae1a4134019a402b9c0">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const std_msgs::msg::String &amp;ros_msg, etl::string&lt; kSize &gt; &amp;can_data)</td></tr>
+<tr class="separator:a58b8ecc42f97cae1a4134019a402b9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18386b04b005a7765958fceccc5a5829"><td class="memTemplParams" colspan="2">template&lt;size_t kSize&gt; </td></tr>
+<tr class="memitem:a18386b04b005a7765958fceccc5a5829"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a18386b04b005a7765958fceccc5a5829">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const etl::string&lt; kSize &gt; &amp;can_data, std_msgs::msg::String &amp;ros_msg)</td></tr>
+<tr class="separator:a18386b04b005a7765958fceccc5a5829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_7ebb08d2631605158f57f066fc85c832.html">alps_ros2_lib</a></li><li class="navelem"><a class="el" href="dir_d90eac5d112df8937e227330719f4f85.html">include</a></li><li class="navelem"><a class="el" href="dir_c1e6a71faa0eb7f68193916a54ca9466.html">alps_ros2</a></li><li class="navelem"><a class="el" href="dir_ed551a56b1c4fafaf4bd37570c44b109.html">communication</a></li><li class="navelem"><a class="el" href="can__topic__converter_8hpp.html">can_topic_converter.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

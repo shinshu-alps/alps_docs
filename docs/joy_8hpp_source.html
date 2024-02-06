@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="generator" content="Doxygen 1.9.7" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Alps: alps_ros2_lib/include/alps_ros2/ui/joy.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -53,21 +53,22 @@
                 </tbody>
             </table>
         </div>
-        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -81,7 +82,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(document).ready(function(){initNavTree('joy_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
@@ -95,94 +96,100 @@ $(document).ready(function(){initNavTree('joy_8hpp_source.html',''); initResizab
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="header">
-  <div class="headertitle">
-<div class="title">joy.hpp</div>  </div>
+  <div class="headertitle"><div class="title">joy.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="joy_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef ALPS_ROS2__UI_JOY_HPP_</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define ALPS_ROS2__UI_JOY_HPP_</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;rclcpp/rclcpp.hpp&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;sensor_msgs/msg/joy.hpp&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>ros2</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span>ui</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html">Joy</a></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541">   41</a></span>&#160;  <span class="keyword">enum class</span> <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541">Button</a> {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541ad48b8c20b76c6b5fa978b00bf8fe17ed">kCross</a>,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541ab64649c0868f16dbd568590263b21af2">kCircle</a>,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a3a53496ffe96227ef579995d332425c1">kTriangle</a>,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541ad162a24951292981801a308b26a5b692">kSquare</a>,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a17dfd658b280414d471dea3e8bf4a510">kL1</a>,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541ad7789ca4b871d5ecec2849d713364fa4">kR1</a>,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a156fe1d78bb72d3412ac145bd941879a">kL2</a>,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a86fba42a90b505b3eb3313111d35af9d">kR2</a>,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a0f74d4695fd4cccbe4380a5fcf6f8cc0">kSelect</a>,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a127f8e8149d57253ad94c9d2c752113d">kStart</a>,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a463cdbc971349a89a8c71df341024a15">kPS</a>,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a0dd8dde131fa8dbbe94f13151bf7a6f6">kStickL</a>,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a2aa3189643b45bcfbf4ce07a13728db0">kStickR</a>,</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a8a9e8c8811f2a710615e133456229ee5">kUp</a>,</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a3bc2ec3237c6d119b0b5c4225122a07e">kDown</a>,</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a2d5fde1d924910a2a01ecd8e70a87c28">kLeft</a>,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a2dd2b017192f8a09367d48c7648213c9">kRight</a>,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  };</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a7d09067615c8a0b728d7d08bba1eeaf6">   78</a></span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">size_t</span> <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a7d09067615c8a0b728d7d08bba1eeaf6">kNumButtons</a>{17};</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58">   84</a></span>&#160;  <span class="keyword">enum class</span> <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58">Axis</a> {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58a688e3d30358e432816565d122e081fe2">kStickLX</a>,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58acfcf7cbcfdef4730f725aeff53a108de">kStickLY</a>,</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58a156fe1d78bb72d3412ac145bd941879a">kL2</a>,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58ae52512db60258ca4c0f4337f18fa0efd">kStickRX</a>,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58ab9159460b6f2a5821b2d259ca32b9a43">kStickRY</a>,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58a86fba42a90b505b3eb3313111d35af9d">kR2</a>,</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  };</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a432eac68c86897a9e46f33cab8277c82">   99</a></span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">size_t</span> <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a432eac68c86897a9e46f33cab8277c82">kNumAxes</a>{6};</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#ae39070d2de281ff2f71b60b1dfeb49d1">  107</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#ae39070d2de281ff2f71b60b1dfeb49d1">Joy</a>(rclcpp::Node &amp; node, <span class="keyword">const</span> std::string_view &amp; topic_name = <span class="stringliteral">&quot;joy&quot;</span>);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a63210a55c8f5ab6d162012151b94cd64">  116</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a63210a55c8f5ab6d162012151b94cd64">GetButtonState</a>(<a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541">Button</a> button) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#ad03253d14b6b1916cd7bb5d8bd093b75">  124</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#ad03253d14b6b1916cd7bb5d8bd093b75">GetAxisState</a>(<a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58">Axis</a> axis) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a21891bd40e35cfdcd42ad3cd45687c6f">  131</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a21891bd40e35cfdcd42ad3cd45687c6f">SetOnReceivedTopicCallback</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; callback);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#aefc6a3484dad7a5ac8bca53c806df4ce">  139</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#aefc6a3484dad7a5ac8bca53c806df4ce">SetOnPressedButtonCallback</a>(<a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541">Button</a> button, std::function&lt;<span class="keywordtype">void</span>()&gt; callback);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keywordtype">void</span> TopicCallback(<span class="keyword">const</span> sensor_msgs::msg::Joy::SharedPtr msg);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  rclcpp::Subscription&lt;sensor_msgs::msg::Joy&gt;::SharedPtr sub_joy_;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  std::array&lt;bool, kNumButtons&gt; buttons_;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  std::array&lt;float, kNumAxes&gt; axes_;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  std::function&lt;void()&gt; topic_callback_;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  std::map&lt;<a class="code" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541">Button</a>, std::function&lt;void()&gt;&gt; pressed_button_callbacks_;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;};</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}  <span class="comment">// namespace ui</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}  <span class="comment">// namespace ros2</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#endif</span></div>
+<a href="joy_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_ROS2__UI_JOY_HPP_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_ROS2__UI_JOY_HPP_</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;rclcpp/rclcpp.hpp&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;sensor_msgs/msg/joy.hpp&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span>ros2</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">namespace </span>ui</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html">   34</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1ros2_1_1ui_1_1_joy.html">Joy</a></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541">   41</a></span>  <span class="keyword">enum class</span> <a class="code hl_enumeration" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541">Button</a> {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541ad48b8c20b76c6b5fa978b00bf8fe17ed">kCross</a>,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541ab64649c0868f16dbd568590263b21af2">kCircle</a>,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a3a53496ffe96227ef579995d332425c1">kTriangle</a>,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541ad162a24951292981801a308b26a5b692">kSquare</a>,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a17dfd658b280414d471dea3e8bf4a510">kL1</a>,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541ad7789ca4b871d5ecec2849d713364fa4">kR1</a>,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a156fe1d78bb72d3412ac145bd941879a">kL2</a>,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a86fba42a90b505b3eb3313111d35af9d">kR2</a>,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a0f74d4695fd4cccbe4380a5fcf6f8cc0">kSelect</a>,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a127f8e8149d57253ad94c9d2c752113d">kStart</a>,</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a463cdbc971349a89a8c71df341024a15">kPS</a>,</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a0dd8dde131fa8dbbe94f13151bf7a6f6">kStickL</a>,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a2aa3189643b45bcfbf4ce07a13728db0">kStickR</a>,</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a8a9e8c8811f2a710615e133456229ee5">kUp</a>,</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a3bc2ec3237c6d119b0b5c4225122a07e">kDown</a>,</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a2d5fde1d924910a2a01ecd8e70a87c28">kLeft</a>,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a2dd2b017192f8a09367d48c7648213c9">kRight</a>,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  };</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a7d09067615c8a0b728d7d08bba1eeaf6">   78</a></span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> <a class="code hl_variable" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a7d09067615c8a0b728d7d08bba1eeaf6">kNumButtons</a>{17};</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58">   84</a></span>  <span class="keyword">enum class</span> <a class="code hl_enumeration" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58">Axis</a> {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58a688e3d30358e432816565d122e081fe2">kStickLX</a>,</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58acfcf7cbcfdef4730f725aeff53a108de">kStickLY</a>,</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a156fe1d78bb72d3412ac145bd941879a">kL2</a>,</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58ae52512db60258ca4c0f4337f18fa0efd">kStickRX</a>,</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58ab9159460b6f2a5821b2d259ca32b9a43">kStickRY</a>,</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_enumvalue" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a86fba42a90b505b3eb3313111d35af9d">kR2</a>,</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  };</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a432eac68c86897a9e46f33cab8277c82">   99</a></span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> <a class="code hl_variable" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a432eac68c86897a9e46f33cab8277c82">kNumAxes</a>{6};</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#ae39070d2de281ff2f71b60b1dfeb49d1">  107</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classalps_1_1ros2_1_1ui_1_1_joy.html#ae39070d2de281ff2f71b60b1dfeb49d1">Joy</a>(rclcpp::Node &amp; node, <span class="keyword">const</span> std::string_view &amp; topic_name = <span class="stringliteral">&quot;joy&quot;</span>);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a63210a55c8f5ab6d162012151b94cd64">  116</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a63210a55c8f5ab6d162012151b94cd64">GetButtonState</a>(<a class="code hl_enumeration" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541">Button</a> button) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#ad03253d14b6b1916cd7bb5d8bd093b75">  124</a></span>  <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1ros2_1_1ui_1_1_joy.html#ad03253d14b6b1916cd7bb5d8bd093b75">GetAxisState</a>(<a class="code hl_enumeration" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58">Axis</a> axis) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a21891bd40e35cfdcd42ad3cd45687c6f">  131</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a21891bd40e35cfdcd42ad3cd45687c6f">SetOnReceivedTopicCallback</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; callback);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1ui_1_1_joy.html#aefc6a3484dad7a5ac8bca53c806df4ce">  139</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1ros2_1_1ui_1_1_joy.html#aefc6a3484dad7a5ac8bca53c806df4ce">SetOnPressedButtonCallback</a>(<a class="code hl_enumeration" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541">Button</a> button, std::function&lt;<span class="keywordtype">void</span>()&gt; callback);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  <span class="keywordtype">void</span> TopicCallback(<span class="keyword">const</span> sensor_msgs::msg::Joy::SharedPtr msg);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  rclcpp::Subscription&lt;sensor_msgs::msg::Joy&gt;::SharedPtr sub_joy_;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  std::array&lt;bool, kNumButtons&gt; buttons_;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  std::array&lt;float, kNumAxes&gt; axes_;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  std::function&lt;void()&gt; topic_callback_;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  std::map&lt;<a class="code hl_enumeration" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541">Button</a>, std::function&lt;void()&gt;&gt; pressed_button_callbacks_;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>};</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>}  <span class="comment">// namespace ui</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>}  <span class="comment">// namespace ros2</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html">alps::ros2::ui::Joy</a></div><div class="ttdoc">プレイステーションジョイコントローラーのトピックデータを扱いやすくするためのクラス</div><div class="ttdef"><b>Definition:</b> joy.hpp:35</div></div>
 <div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a1a96f85c68d02a31a90274e3b5f75541"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541">alps::ros2::ui::Joy::Button</a></div><div class="ttdeci">Button</div><div class="ttdoc">ボタンの種類</div><div class="ttdef"><b>Definition:</b> joy.hpp:41</div></div>
 <div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a1a96f85c68d02a31a90274e3b5f75541a0dd8dde131fa8dbbe94f13151bf7a6f6"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541a0dd8dde131fa8dbbe94f13151bf7a6f6">alps::ros2::ui::Joy::Button::kStickL</a></div><div class="ttdeci">@ kStickL</div><div class="ttdoc">左スティックの押し込み</div></div>
@@ -203,9 +210,7 @@ $(document).ready(function(){initNavTree('joy_8hpp_source.html',''); initResizab
 <div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a1a96f85c68d02a31a90274e3b5f75541ad48b8c20b76c6b5fa978b00bf8fe17ed"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541ad48b8c20b76c6b5fa978b00bf8fe17ed">alps::ros2::ui::Joy::Button::kCross</a></div><div class="ttdeci">@ kCross</div><div class="ttdoc">×ボタン</div></div>
 <div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a1a96f85c68d02a31a90274e3b5f75541ad7789ca4b871d5ecec2849d713364fa4"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a1a96f85c68d02a31a90274e3b5f75541ad7789ca4b871d5ecec2849d713364fa4">alps::ros2::ui::Joy::Button::kR1</a></div><div class="ttdeci">@ kR1</div><div class="ttdoc">R1ボタン</div></div>
 <div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a20dab25572264e7d0e9286efec807e58"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58">alps::ros2::ui::Joy::Axis</a></div><div class="ttdeci">Axis</div><div class="ttdoc">軸の種類</div><div class="ttdef"><b>Definition:</b> joy.hpp:84</div></div>
-<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a20dab25572264e7d0e9286efec807e58a156fe1d78bb72d3412ac145bd941879a"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58a156fe1d78bb72d3412ac145bd941879a">alps::ros2::ui::Joy::Axis::kL2</a></div><div class="ttdeci">@ kL2</div><div class="ttdoc">L2ボタンの押し込み具合</div></div>
 <div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a20dab25572264e7d0e9286efec807e58a688e3d30358e432816565d122e081fe2"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58a688e3d30358e432816565d122e081fe2">alps::ros2::ui::Joy::Axis::kStickLX</a></div><div class="ttdeci">@ kStickLX</div><div class="ttdoc">左スティックのx方向</div></div>
-<div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a20dab25572264e7d0e9286efec807e58a86fba42a90b505b3eb3313111d35af9d"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58a86fba42a90b505b3eb3313111d35af9d">alps::ros2::ui::Joy::Axis::kR2</a></div><div class="ttdeci">@ kR2</div><div class="ttdoc">R2ボタンの押し込み具合</div></div>
 <div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a20dab25572264e7d0e9286efec807e58ab9159460b6f2a5821b2d259ca32b9a43"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58ab9159460b6f2a5821b2d259ca32b9a43">alps::ros2::ui::Joy::Axis::kStickRY</a></div><div class="ttdeci">@ kStickRY</div><div class="ttdoc">右スティックのy方向</div></div>
 <div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a20dab25572264e7d0e9286efec807e58acfcf7cbcfdef4730f725aeff53a108de"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58acfcf7cbcfdef4730f725aeff53a108de">alps::ros2::ui::Joy::Axis::kStickLY</a></div><div class="ttdeci">@ kStickLY</div><div class="ttdoc">左スティックのy方向</div></div>
 <div class="ttc" id="aclassalps_1_1ros2_1_1ui_1_1_joy_html_a20dab25572264e7d0e9286efec807e58ae52512db60258ca4c0f4337f18fa0efd"><div class="ttname"><a href="classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58ae52512db60258ca4c0f4337f18fa0efd">alps::ros2::ui::Joy::Axis::kStickRX</a></div><div class="ttdeci">@ kStickRX</div><div class="ttdoc">右スティックのx方向</div></div>
@@ -223,7 +228,7 @@ $(document).ready(function(){initNavTree('joy_8hpp_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7ebb08d2631605158f57f066fc85c832.html">alps_ros2_lib</a></li><li class="navelem"><a class="el" href="dir_d90eac5d112df8937e227330719f4f85.html">include</a></li><li class="navelem"><a class="el" href="dir_c1e6a71faa0eb7f68193916a54ca9466.html">alps_ros2</a></li><li class="navelem"><a class="el" href="dir_1f337407fa66791c1f72ce9c082d3c68.html">ui</a></li><li class="navelem"><a class="el" href="joy_8hpp.html">joy.hpp</a></li>
-    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
   </ul>
 </div>
 </body>

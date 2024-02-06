@@ -1,8 +1,8 @@
 <map id="alps::cmn::actuator::robomas_motor::M2006&lt; Clock &gt;" name="alps::cmn::actuator::robomas_motor::M2006&lt; Clock &gt;">
-<area shape="rect" id="node1" title="M2006のクラス" alt="" coords="325,432,510,539"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail_1_1_motor_base.html" title="ロボマスモータの基底クラス．" alt="" coords="84,160,287,384"/>
-<area shape="rect" id="node3" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="5,5,163,112"/>
-<area shape="rect" id="node4" href="$classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html" title=" " alt="" coords="187,5,386,112"/>
-<area shape="rect" id="node5" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="311,226,523,318"/>
-<area shape="rect" id="node6" href="$classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html" title=" " alt="" coords="547,219,719,325"/>
+<area shape="rect" id="node1" title="M2006のクラス" alt="" coords="311,451,489,545"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail_1_1_motor_base.html" title="ロボマスモータの基底クラス．" alt="" coords="81,148,274,403"/>
+<area shape="rect" id="node3" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="5,5,155,100"/>
+<area shape="rect" id="node4" href="$classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html" title=" " alt="" coords="179,5,370,100"/>
+<area shape="rect" id="node5" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="298,235,502,315"/>
+<area shape="rect" id="node6" href="$classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html" title=" " alt="" coords="526,228,690,323"/>
 </map>

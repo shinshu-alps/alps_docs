@@ -1,10 +1,10 @@
 <map id="alps_common_lib/include/alps_cmn/sensor/bno055.hpp" name="alps_common_lib/include/alps_cmn/sensor/bno055.hpp">
-<area shape="rect" id="node1" title="BNO055 9軸センサ" alt="" coords="211,5,426,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="244,184,311,211"/>
-<area shape="rect" id="node3" href="$i__i2c__io_8hpp.html" title="I2C通信インタフェース" alt="" coords="27,95,216,136"/>
-<area shape="rect" id="node6" href="$sleep_8hpp.html" title="スリープ関数の定義" alt="" coords="291,102,477,129"/>
-<area shape="rect" id="node8" href="$angle_8hpp.html" title=" " alt="" coords="501,102,678,129"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,184,72,211"/>
-<area shape="rect" id="node5" title=" " alt="" coords="97,184,183,211"/>
-<area shape="rect" id="node7" title=" " alt="" coords="352,184,416,211"/>
+<area shape="rect" id="node1" title="BNO055 9軸センサ" alt="" coords="211,5,426,45"/>
+<area shape="rect" id="node2" title=" " alt="" coords="244,181,311,207"/>
+<area shape="rect" id="node3" href="$i__i2c__io_8hpp.html" title="I2C通信インタフェース" alt="" coords="27,93,216,133"/>
+<area shape="rect" id="node6" href="$sleep_8hpp.html" title="スリープ関数の定義" alt="" coords="291,101,477,126"/>
+<area shape="rect" id="node8" href="$angle_8hpp.html" title=" " alt="" coords="501,101,678,126"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,181,72,207"/>
+<area shape="rect" id="node5" title=" " alt="" coords="97,181,183,207"/>
+<area shape="rect" id="node7" title=" " alt="" coords="352,181,416,207"/>
 </map>
