@@ -28,7 +28,7 @@ var searchData=
   ['attachinterrupt_25',['AttachInterrupt',['../classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html#a8bd2cf9b6be85f98c4c3ae4ea91b9141',1,'alps::mbed::gpio::InterruptIn']]],
   ['axis_26',['Axis',['../classalps_1_1ros2_1_1ui_1_1_joy.html#a20dab25572264e7d0e9286efec807e58',1,'alps::ros2::ui::Joy']]],
   ['cmn_27',['cmn',['../namespacealps_1_1cmn.html',1,'alps']]],
-  ['communication_28',['communication',['../namespacealps_1_1cmn_1_1communication.html',1,'alps::cmn::communication'],['../namespacealps_1_1lin_1_1communication.html',1,'alps::lin::communication'],['../namespacealps_1_1mbed_1_1communication.html',1,'alps::mbed::communication']]],
+  ['communication_28',['communication',['../namespacealps_1_1cmn_1_1communication.html',1,'alps::cmn::communication'],['../namespacealps_1_1lin_1_1communication.html',1,'alps::lin::communication'],['../namespacealps_1_1mbed_1_1communication.html',1,'alps::mbed::communication'],['../namespacealps_1_1ros2_1_1communication.html',1,'alps::ros2::communication']]],
   ['control_29',['control',['../namespacealps_1_1cmn_1_1control.html',1,'alps::cmn']]],
   ['detail_30',['detail',['../namespacealps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail.html',1,'alps::cmn::actuator::robomas_motor::detail'],['../namespacealps_1_1cmn_1_1communication_1_1detail.html',1,'alps::cmn::communication::detail']]],
   ['gpio_31',['gpio',['../namespacealps_1_1cmn_1_1gpio.html',1,'alps::cmn::gpio'],['../namespacealps_1_1mbed_1_1gpio.html',1,'alps::mbed::gpio']]],

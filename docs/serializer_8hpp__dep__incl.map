@@ -1,6 +1,7 @@
 <map id="alps_common_lib/include/alps_cmn/communication/serializer.hpp" name="alps_common_lib/include/alps_cmn/communication/serializer.hpp">
-<area shape="rect" id="node1" title="データとバイト列の変換ライブラリ" alt="" coords="149,5,343,61"/>
-<area shape="rect" id="node2" href="$can__typed__data__transceiver_8hpp.html" title="CAN通信で型付けされたデータの送受信を行うライブラリ" alt="" coords="5,109,241,165"/>
-<area shape="rect" id="node4" href="$uart__packet__transceiver_8hpp.html" title=" " alt="" coords="265,109,475,165"/>
-<area shape="rect" id="node3" href="$robomas__motor_8hpp.html" title="ロボマスモータのライブラリ" alt="" coords="20,213,227,269"/>
+<area shape="rect" id="node1" title="データとバイト列の変換ライブラリ" alt="" coords="247,5,440,61"/>
+<area shape="rect" id="node2" href="$can__typed__data__transceiver_8hpp.html" title="CAN通信で型付けされたデータの送受信を行うライブラリ" alt="" coords="103,109,339,165"/>
+<area shape="rect" id="node5" href="$uart__packet__transceiver_8hpp.html" title=" " alt="" coords="363,109,572,165"/>
+<area shape="rect" id="node3" href="$robomas__motor_8hpp.html" title="ロボマスモータのライブラリ" alt="" coords="5,213,212,269"/>
+<area shape="rect" id="node4" href="$can__topic__converter_8hpp.html" title=" " alt="" coords="236,213,429,269"/>
 </map>
