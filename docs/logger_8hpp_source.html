@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.9.7" />
+    <meta name="generator" content="Doxygen 1.9.1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Alps: alps_common_lib/include/alps_cmn/log/logger.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -53,22 +53,21 @@
                 </tbody>
             </table>
         </div>
-        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
+        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */
-</script>
+/* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -82,7 +81,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(document).ready(function(){initNavTree('logger_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
@@ -96,64 +95,58 @@ $(document).ready(function(){initNavTree('logger_8hpp_source.html',''); initResi
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<div id="MSearchResults">
-<div class="SRPage">
-<div id="SRIndex">
-<div id="SRResults"></div>
-<div class="SRStatus" id="Loading">読み取り中…</div>
-<div class="SRStatus" id="Searching">検索中…</div>
-<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
-</div>
-</div>
-</div>
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">logger.hpp</div></div>
+  <div class="headertitle">
+<div class="title">logger.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="logger_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ALPS_CMN_LOGGER_HPP_</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ALPS_CMN_LOGGER_HPP_</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// デフォルトのログバッファサイズは256バイト</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef ALPS_CMN_LOG_BUFFER_SIZE</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="logger_8hpp.html#aecf2374f36e81b59660c74940c3cbf71">    6</a></span><span class="preprocessor">#define ALPS_CMN_LOG_BUFFER_SIZE 256</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;etl/delegate.h&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;etl/string.h&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span>cmn</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1log.html">   16</a></span><span class="keyword">namespace </span>log</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4">   20</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4">LogLevel</a> : uint8_t {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4abb53ce21b7c0b7c8a8f7860a41901d29">kDebug</a>,</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4a176a473e63c17ccdac91640c67f149bf">kInfo</a>,</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4a61a920eb4a24199ec6a36dd90f2a30b7">kWarn</a>,</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4ae3587c730cc1aa530fa4ddc9c4204e97">kError</a>,</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4ae66f945a3c2423ef09406cf09fa9de26">kFatal</a>,</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>};</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1log_1_1_logger.html">   37</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1log_1_1_logger.html">Logger</a></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1log_1_1_logger.html#a2737158404cd93bd6fb369753fa92d80">   47</a></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1log_1_1_logger.html#a2737158404cd93bd6fb369753fa92d80">Output</a>(<a class="code hl_enumeration" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4">LogLevel</a> level, <span class="keyword">const</span> <span class="keywordtype">char</span> * format, ...);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1log_1_1_logger.html#a54e3349a5cdcdb3cc7707e0ddb3da5ef">   54</a></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1log_1_1_logger.html#a54e3349a5cdcdb3cc7707e0ddb3da5ef">SetLogWriter</a>(etl::delegate&lt;<span class="keywordtype">void</span>(<a class="code hl_enumeration" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4">LogLevel</a>, etl::string_view)&gt; log_writer);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keyword">static</span> etl::delegate&lt;void(<a class="code hl_enumeration" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4">LogLevel</a>, etl::string_view)&gt; log_writer_;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>};</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}  <span class="comment">// namespace log</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}  <span class="comment">// namespace cmn</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#endif  </span><span class="comment">// ALPS_CMN_LOGGER_HPP_</span></div>
+<a href="logger_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ALPS_CMN_LOGGER_HPP_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ALPS_CMN_LOGGER_HPP_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// デフォルトのログバッファサイズは256バイト</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef ALPS_CMN_LOG_BUFFER_SIZE</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="logger_8hpp.html#aecf2374f36e81b59660c74940c3cbf71">    6</a></span>&#160;<span class="preprocessor">#define ALPS_CMN_LOG_BUFFER_SIZE 256</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;etl/delegate.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;etl/string.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>cmn</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1log.html">   16</a></span>&#160;<span class="keyword">namespace </span>log</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4">   20</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4">LogLevel</a> : uint8_t {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <a class="code" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4abb53ce21b7c0b7c8a8f7860a41901d29">kDebug</a>,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4a176a473e63c17ccdac91640c67f149bf">kInfo</a>,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4a61a920eb4a24199ec6a36dd90f2a30b7">kWarn</a>,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4ae3587c730cc1aa530fa4ddc9c4204e97">kError</a>,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4ae66f945a3c2423ef09406cf09fa9de26">kFatal</a>,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1log_1_1_logger.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html">Logger</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1log_1_1_logger.html#a2737158404cd93bd6fb369753fa92d80">   47</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a2737158404cd93bd6fb369753fa92d80">Output</a>(<a class="code" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4">LogLevel</a> level, <span class="keyword">const</span> <span class="keywordtype">char</span> * format, ...);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1log_1_1_logger.html#a54e3349a5cdcdb3cc7707e0ddb3da5ef">   54</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1log_1_1_logger.html#a54e3349a5cdcdb3cc7707e0ddb3da5ef">SetLogWriter</a>(etl::delegate&lt;<span class="keywordtype">void</span>(<a class="code" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4">LogLevel</a>, etl::string_view)&gt; log_writer);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">static</span> etl::delegate&lt;void(<a class="code" href="namespacealps_1_1cmn_1_1log.html#a21f6c434d5f34524986e7181833143b4">LogLevel</a>, etl::string_view)&gt; log_writer_;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}  <span class="comment">// namespace log</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// ALPS_CMN_LOGGER_HPP_</span></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1log_1_1_logger_html"><div class="ttname"><a href="classalps_1_1cmn_1_1log_1_1_logger.html">alps::cmn::log::Logger</a></div><div class="ttdoc">ログ出力を行うクラス．</div><div class="ttdef"><b>Definition:</b> logger.hpp:38</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1log_1_1_logger_html_a2737158404cd93bd6fb369753fa92d80"><div class="ttname"><a href="classalps_1_1cmn_1_1log_1_1_logger.html#a2737158404cd93bd6fb369753fa92d80">alps::cmn::log::Logger::Output</a></div><div class="ttdeci">static void Output(LogLevel level, const char *format,...)</div><div class="ttdoc">ログ出力を行う</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1log_1_1_logger_html_a54e3349a5cdcdb3cc7707e0ddb3da5ef"><div class="ttname"><a href="classalps_1_1cmn_1_1log_1_1_logger.html#a54e3349a5cdcdb3cc7707e0ddb3da5ef">alps::cmn::log::Logger::SetLogWriter</a></div><div class="ttdeci">static void SetLogWriter(etl::delegate&lt; void(LogLevel, etl::string_view)&gt; log_writer)</div><div class="ttdoc">ログ出力関数を設定する</div></div>
@@ -170,7 +163,7 @@ $(document).ready(function(){initNavTree('logger_8hpp_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_fcd1ba41f8679fcc7bf76d667eaa0e17.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_ce1e71e2103ac83e6d6cc720a9feeeb7.html">include</a></li><li class="navelem"><a class="el" href="dir_cc648f72f51f156e42f9863c0e5bf5fb.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_c42d739f81e7f8c788f3b0a5285dd299.html">log</a></li><li class="navelem"><a class="el" href="logger_8hpp.html">logger.hpp</a></li>
-    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

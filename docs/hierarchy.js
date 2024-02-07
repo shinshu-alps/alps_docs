@@ -24,10 +24,10 @@ var hierarchy =
     [ "alps::cmn::gpio::IAnalogIn< AnalogIn >", "classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html", [
       [ "alps::mbed::gpio::AnalogIn", "classalps_1_1mbed_1_1gpio_1_1_analog_in.html", null ]
     ] ],
-    [ "alps::cmn::communication::ICanIo< Derived >", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", [
+    [ "alps::cmn::communication::ICanIo< Derived >", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", null ],
+    [ "alps::cmn::communication::ICanIo< BufferedCanIo< 50, 100 > >", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", [
       [ "alps::mbed::communication::BufferedCanIo< kWriteBufSize, kReadBufSize >", "classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html", null ]
     ] ],
-    [ "alps::cmn::communication::ICanIo< BufferedCanIo< 50, 100 > >", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", null ],
     [ "alps::cmn::communication::ICanIo< CanIo >", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", null ],
     [ "alps::cmn::communication::ICanIo< SocketCanIo >", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", [
       [ "alps::lin::communication::SocketCanIo", "classalps_1_1lin_1_1communication_1_1_socket_can_io.html", null ]

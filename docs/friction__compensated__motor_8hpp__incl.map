@@ -1,9 +1,9 @@
 <map id="alps_common_lib/include/alps_cmn/control/friction_compensated_motor.hpp" name="alps_common_lib/include/alps_cmn/control/friction_compensated_motor.hpp">
-<area shape="rect" id="node1" title="モーターに対して摩擦補償を行うデコレーター" alt="" coords="184,5,375,60"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,115,68,141"/>
-<area shape="rect" id="node3" href="$i__motor_8hpp.html" title=" " alt="" coords="92,108,243,148"/>
-<area shape="rect" id="node4" href="$differentiator_8hpp.html" title="微分器ライブラリ" alt="" coords="267,115,518,141"/>
-<area shape="rect" id="node7" href="$i__rotary__sensor_8hpp.html" title=" " alt="" coords="543,108,728,148"/>
-<area shape="rect" id="node5" title=" " alt="" coords="358,269,425,295"/>
-<area shape="rect" id="node6" href="$duration_8hpp.html" title="時間間隔の型エイリアス" alt="" coords="360,196,564,221"/>
+<area shape="rect" id="node1" title="モーターに対して摩擦補償を行うデコレーター" alt="" coords="184,5,375,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,117,68,143"/>
+<area shape="rect" id="node3" href="$i__motor_8hpp.html" title=" " alt="" coords="92,109,243,151"/>
+<area shape="rect" id="node4" href="$differentiator_8hpp.html" title="微分器ライブラリ" alt="" coords="267,117,516,143"/>
+<area shape="rect" id="node7" href="$i__rotary__sensor_8hpp.html" title=" " alt="" coords="540,109,725,151"/>
+<area shape="rect" id="node5" title=" " alt="" coords="357,273,423,300"/>
+<area shape="rect" id="node6" href="$duration_8hpp.html" title="時間間隔の型エイリアス" alt="" coords="359,199,563,225"/>
 </map>

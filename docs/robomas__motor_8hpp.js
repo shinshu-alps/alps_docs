@@ -1,9 +1,9 @@
 var robomas__motor_8hpp =
 [
-    [ "alps::cmn::actuator::robomas_motor::CanPort", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_can_port.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_can_port" ],
-    [ "alps::cmn::actuator::robomas_motor::detail::MotorBase< Clock >", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail_1_1_motor_base.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail_1_1_motor_base" ],
-    [ "alps::cmn::actuator::robomas_motor::M2006< Clock >", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m2006.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m2006" ],
-    [ "alps::cmn::actuator::robomas_motor::M3508< Clock >", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m3508.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m3508" ],
+    [ "CanPort", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_can_port.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_can_port" ],
+    [ "MotorBase", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail_1_1_motor_base.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail_1_1_motor_base" ],
+    [ "M2006", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m2006.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m2006" ],
+    [ "M3508", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m3508.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m3508" ],
     [ "OutputCanData", "robomas__motor_8hpp.html#a945d4793c71f86892670c6e0729bd06d", null ],
     [ "SensorCanData", "robomas__motor_8hpp.html#adf71a36d8c7f026c7f07669936152e6f", null ],
     [ "Id", "robomas__motor_8hpp.html#a077c583d5192bda6b0a75bbe96f41782", [

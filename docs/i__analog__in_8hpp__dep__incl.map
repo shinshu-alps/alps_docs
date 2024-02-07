@@ -1,5 +1,5 @@
 <map id="alps_common_lib/include/alps_cmn/gpio/i_analog_in.hpp" name="alps_common_lib/include/alps_cmn/gpio/i_analog_in.hpp">
-<area shape="rect" id="node1" title="アナログ入力インタフェース" alt="" coords="163,5,350,60"/>
-<area shape="rect" id="node2" href="$potentiometer_8hpp.html" title="ポテンショメータのクラス" alt="" coords="5,115,265,155"/>
-<area shape="rect" id="node3" href="$analog__in_8hpp.html" title="アナログ入力ピン" alt="" coords="289,108,467,163"/>
+<area shape="rect" id="node1" title="アナログ入力インタフェース" alt="" coords="163,5,349,61"/>
+<area shape="rect" id="node2" href="$potentiometer_8hpp.html" title="ポテンショメータのクラス" alt="" coords="5,117,264,158"/>
+<area shape="rect" id="node3" href="$analog__in_8hpp.html" title="アナログ入力ピン" alt="" coords="289,109,466,165"/>
 </map>

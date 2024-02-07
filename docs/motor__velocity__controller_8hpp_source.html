@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.9.7" />
+    <meta name="generator" content="Doxygen 1.9.1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Alps: alps_common_lib/include/alps_cmn/control/motor_velocity_controller.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -53,22 +53,21 @@
                 </tbody>
             </table>
         </div>
-        <!-- end header part --><!-- 構築: Doxygen 1.9.7 -->
+        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */
-</script>
+/* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -82,7 +81,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(document).ready(function(){initNavTree('motor__velocity__controller_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
@@ -96,183 +95,177 @@ $(document).ready(function(){initNavTree('motor__velocity__controller_8hpp_sourc
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<div id="MSearchResults">
-<div class="SRPage">
-<div id="SRIndex">
-<div id="SRResults"></div>
-<div class="SRStatus" id="Loading">読み取り中…</div>
-<div class="SRStatus" id="Searching">検索中…</div>
-<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
-</div>
-</div>
-</div>
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">motor_velocity_controller.hpp</div></div>
+  <div class="headertitle">
+<div class="title">motor_velocity_controller.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="motor__velocity__controller_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ALPS_CMN_MOTOR_VELOCITY_CONTROLLER_HPP</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ALPS_CMN_MOTOR_VELOCITY_CONTROLLER_HPP</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="i__motor_8hpp.html">alps_cmn/actuator/i_motor.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="low__pass__differentiator_8hpp.html">alps_cmn/control/low_pass_differentiator.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="pid_8hpp.html">alps_cmn/control/pid.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="i__rotary__sensor_8hpp.html">alps_cmn/sensor/i_rotary_sensor.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span>cmn</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>control</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html">   20</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html">MotorVelocityControllerParam</a></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a94c0cf6e73fc510cb1c94b910a524f1e">   23</a></span>  <a class="code hl_struct" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a> <a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a94c0cf6e73fc510cb1c94b910a524f1e">pid_param</a>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a523055527df9c2e02ad9deabdfcb8a5c">   25</a></span>  <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">time::Seconds</a> <a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a523055527df9c2e02ad9deabdfcb8a5c">now_velocity_lpf_time_constant</a> = std::chrono::milliseconds(50);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#abeada49dcefaa39a1439a1a09eaef91c">   27</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#abeada49dcefaa39a1439a1a09eaef91c">kff_velocity</a> = 0.0f;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#aa42e1b756097893f29c2b9152bd3a594">   29</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#aa42e1b756097893f29c2b9152bd3a594">kff_acceleration</a> = 0.0f;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#adb39f440e1f81d63d2211f25fa1cb771">   31</a></span>  <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">time::Seconds</a> <a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#adb39f440e1f81d63d2211f25fa1cb771">target_acceleration_lpf_time_constant</a> = std::chrono::milliseconds(50);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>};</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html">   38</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html">MotorVelocityControllerCalcInfo</a></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a48d4049c0b85bf5e3b4cabf5f6978264">   41</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a48d4049c0b85bf5e3b4cabf5f6978264">target_velocity</a>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#ad644ddfbb42bb03338d956cf9bf49b0c">   43</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#ad644ddfbb42bb03338d956cf9bf49b0c">now_velocity</a>;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a4926ae0b15220af38a9a94284a941c99">   45</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a4926ae0b15220af38a9a94284a941c99">now_velocity_before_lpf</a>;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a00aaa0c062827fd9243f5ab188a43cb1">   47</a></span>  <a class="code hl_struct" href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html">PidCalcInfo</a> <a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a00aaa0c062827fd9243f5ab188a43cb1">pid_calc_info</a>;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#af9af791c36aba1acfec215eba8f4c012">   49</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#af9af791c36aba1acfec215eba8f4c012">ff_velocity_term</a>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#aa3d48dafc9b0d55346d8b2165c94d018">   51</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#aa3d48dafc9b0d55346d8b2165c94d018">ff_acceleration_term</a>;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a97eff29d5734c18a2e62ccc95e9cde3b">   53</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a97eff29d5734c18a2e62ccc95e9cde3b">target_acceleration</a>;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a6443f95f5c1669d4aa08dc0a5c456afb">   55</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a6443f95f5c1669d4aa08dc0a5c456afb">target_acceleration_before_lpf</a>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Clock, <span class="keyword">class</span> Motor, <span class="keyword">class</span> RotarySensor&gt;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html">   66</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html">MotorVelocityController</a></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>{</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a2afe109138b6bdeb2f6b013ee1475d5a">   79</a></span>  <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a2afe109138b6bdeb2f6b013ee1475d5a">MotorVelocityController</a>(</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <a class="code hl_class" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor&lt;Motor&gt;</a> &amp; motor,</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_class" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor&lt;RotarySensor&gt;</a> &amp; rotary_sensor,</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html">MotorVelocityControllerParam</a> &amp; param,</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <a class="code hl_class" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange&lt;float&gt;</a> drive_ratio_limit = {-1.0f, 1.0f},</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_class" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange&lt;float&gt;</a> velocity_limit = {},</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    std::chrono::microseconds min_calc_interval = std::chrono::milliseconds(1))</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  : motor_{motor},</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    rotary_sensor_{rotary_sensor},</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    param_{param},</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    now_velocity_calculator_{param_.now_velocity_lpf_time_constant, min_calc_interval},</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    target_acceleration_calculator_{</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      param_.target_acceleration_lpf_time_constant, min_calc_interval},</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    vel_pid_{param_.pid_param, drive_ratio_limit, min_calc_interval},</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    velocity_limit_{velocity_limit}</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  {</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  }</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ad7db09ea125622565e0a1674832a4edf">  102</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ad7db09ea125622565e0a1674832a4edf">Control</a>(<span class="keywordtype">float</span> ff_output = 0.0f)</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  {</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="comment">// calc_info_の値は全て更新される</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="comment">// 現在の角速度計算</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    calc_info_.<a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#ad644ddfbb42bb03338d956cf9bf49b0c">now_velocity</a> = now_velocity_calculator_.Calculate(rotary_sensor_.<a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">CallGetAngle</a>());</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    calc_info_.<a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a4926ae0b15220af38a9a94284a941c99">now_velocity_before_lpf</a> = now_velocity_calculator_.GetLastRawOutput();</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordtype">float</span> velocity_error = calc_info_.<a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a48d4049c0b85bf5e3b4cabf5f6978264">target_velocity</a> - calc_info_.<a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#ad644ddfbb42bb03338d956cf9bf49b0c">now_velocity</a>;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="comment">// 目標角加速度計算</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    calc_info_.<a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a97eff29d5734c18a2e62ccc95e9cde3b">target_acceleration</a> =</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>      target_acceleration_calculator_.Calculate(calc_info_.<a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a48d4049c0b85bf5e3b4cabf5f6978264">target_velocity</a>);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    calc_info_.<a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a6443f95f5c1669d4aa08dc0a5c456afb">target_acceleration_before_lpf</a> = target_acceleration_calculator_.GetLastRawOutput();</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="comment">// フィードフォワード項計算</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    calc_info_.<a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#af9af791c36aba1acfec215eba8f4c012">ff_velocity_term</a> = param_.<a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#abeada49dcefaa39a1439a1a09eaef91c">kff_velocity</a> * calc_info_.<a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a48d4049c0b85bf5e3b4cabf5f6978264">target_velocity</a>;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    calc_info_.<a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#aa3d48dafc9b0d55346d8b2165c94d018">ff_acceleration_term</a> = param_.<a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#aa42e1b756097893f29c2b9152bd3a594">kff_acceleration</a> * calc_info_.<a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a97eff29d5734c18a2e62ccc95e9cde3b">target_acceleration</a>;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordtype">float</span> ff_output_term =</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>      calc_info_.<a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#af9af791c36aba1acfec215eba8f4c012">ff_velocity_term</a> + calc_info_.<a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#aa3d48dafc9b0d55346d8b2165c94d018">ff_acceleration_term</a> + ff_output;</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="comment">// PID計算</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordtype">float</span> output = vel_pid_.Calculate(velocity_error, ff_output_term);</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    calc_info_.<a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a00aaa0c062827fd9243f5ab188a43cb1">pid_calc_info</a> = vel_pid_.GetCalcInfo();</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="comment">// モーターを駆動</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    motor_.<a class="code hl_function" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html#afb69e9dace9074933926b59904ddfb13">CallDrive</a>(output);</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  }</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a9acef8a677691c396f2e4001427b7261">  134</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a9acef8a677691c396f2e4001427b7261">Reset</a>()</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  {</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    now_velocity_calculator_.Reset();</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    target_acceleration_calculator_.Reset();</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    vel_pid_.Reset();</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  }</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a38b57d4239f209bd883c64ec1d2b4d1d">  146</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a38b57d4239f209bd883c64ec1d2b4d1d">SetTargetVelocity</a>(<span class="keywordtype">float</span> target_velocity)</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  {</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    calc_info_.<a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a48d4049c0b85bf5e3b4cabf5f6978264">target_velocity</a> = velocity_limit_.<a class="code hl_function" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a55afbb6a6a2ba8919bddf954c4de990e">Clamp</a>(target_velocity);</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  };</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a7acf3c666348a705e8a2599f65083660">  156</a></span>  <span class="keywordtype">double</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a7acf3c666348a705e8a2599f65083660">GetNowAngle</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keywordflow">return</span> rotary_sensor_.<a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">CallGetAngle</a>();</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  }</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a6754e8f3d63e882a1fbacf3fb1233c9f">  166</a></span>  <span class="keyword">const</span> <a class="code hl_struct" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html">MotorVelocityControllerCalcInfo</a> &amp; <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a6754e8f3d63e882a1fbacf3fb1233c9f">GetCalcInfo</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keywordflow">return</span> calc_info_;</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  }</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a1f8153619e14f046bbe17c74f3d6c10e">  180</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a1f8153619e14f046bbe17c74f3d6c10e">CheckConvergence</a>(</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keywordtype">float</span> allowable_error, <span class="keywordtype">float</span> allowable_error_diff = std::numeric_limits&lt;float&gt;::max())<span class="keyword"> const</span></div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <span class="keywordflow">return</span> vel_pid_.CheckConvergence(allowable_error, allowable_error_diff);</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>  }</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a9602307dc2bc6c4f69dca5b6ba36c349">  191</a></span>  <span class="keyword">const</span> <a class="code hl_struct" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html">MotorVelocityControllerParam</a> &amp; <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a9602307dc2bc6c4f69dca5b6ba36c349">GetParam</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordflow">return</span> param_;</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  }</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#acb1336fd3d6dc36c53bf15c51667ddaa">  201</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#acb1336fd3d6dc36c53bf15c51667ddaa">SetParam</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html">MotorVelocityControllerParam</a> &amp; param)</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  {</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    param_ = param;</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    now_velocity_calculator_.SetTimeConstant(param_.<a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a523055527df9c2e02ad9deabdfcb8a5c">now_velocity_lpf_time_constant</a>);</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    target_acceleration_calculator_.SetTimeConstant(param_.<a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#adb39f440e1f81d63d2211f25fa1cb771">target_acceleration_lpf_time_constant</a>);</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    vel_pid_.SetParam(param_.<a class="code hl_variable" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a94c0cf6e73fc510cb1c94b910a524f1e">pid_param</a>);</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  }</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor&lt;Motor&gt;</a> &amp; motor_;</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor&lt;RotarySensor&gt;</a> &amp; rotary_sensor_;</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  <a class="code hl_struct" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html">MotorVelocityControllerParam</a> param_;</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  <a class="code hl_struct" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html">MotorVelocityControllerCalcInfo</a> calc_info_{};</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html">control::LowPassDifferentiator&lt;Clock&gt;</a> now_velocity_calculator_;</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html">control::LowPassDifferentiator&lt;Clock&gt;</a> target_acceleration_calculator_;</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_pid.html">control::Pid&lt;Clock&gt;</a> vel_pid_;</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange&lt;float&gt;</a> velocity_limit_;</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>};</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>}  <span class="comment">// namespace control</span></div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>}  <span class="comment">// namespace cmn</span></div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_i_motor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">alps::cmn::actuator::IMotor</a></div><div class="ttdoc">モーターを駆動するインタフェース</div><div class="ttdef"><b>Definition:</b> i_motor.hpp:17</div></div>
+<a href="motor__velocity__controller_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ALPS_CMN_MOTOR_VELOCITY_CONTROLLER_HPP</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ALPS_CMN_MOTOR_VELOCITY_CONTROLLER_HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__motor_8hpp.html">alps_cmn/actuator/i_motor.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="low__pass__differentiator_8hpp.html">alps_cmn/control/low_pass_differentiator.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pid_8hpp.html">alps_cmn/control/pid.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__rotary__sensor_8hpp.html">alps_cmn/sensor/i_rotary_sensor.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>cmn</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>control</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html">MotorVelocityControllerParam</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a94c0cf6e73fc510cb1c94b910a524f1e">   23</a></span>&#160;  <a class="code" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a> <a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a94c0cf6e73fc510cb1c94b910a524f1e">pid_param</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a523055527df9c2e02ad9deabdfcb8a5c">   25</a></span>&#160;  <a class="code" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">time::Seconds</a> <a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a523055527df9c2e02ad9deabdfcb8a5c">now_velocity_lpf_time_constant</a> = std::chrono::milliseconds(50);</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#abeada49dcefaa39a1439a1a09eaef91c">   27</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#abeada49dcefaa39a1439a1a09eaef91c">kff_velocity</a> = 0.0f;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#aa42e1b756097893f29c2b9152bd3a594">   29</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#aa42e1b756097893f29c2b9152bd3a594">kff_acceleration</a> = 0.0f;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#adb39f440e1f81d63d2211f25fa1cb771">   31</a></span>&#160;  <a class="code" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">time::Seconds</a> <a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#adb39f440e1f81d63d2211f25fa1cb771">target_acceleration_lpf_time_constant</a> = std::chrono::milliseconds(50);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html">   38</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html">MotorVelocityControllerCalcInfo</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a48d4049c0b85bf5e3b4cabf5f6978264">   41</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a48d4049c0b85bf5e3b4cabf5f6978264">target_velocity</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#ad644ddfbb42bb03338d956cf9bf49b0c">   43</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#ad644ddfbb42bb03338d956cf9bf49b0c">now_velocity</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a4926ae0b15220af38a9a94284a941c99">   45</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a4926ae0b15220af38a9a94284a941c99">now_velocity_before_lpf</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a00aaa0c062827fd9243f5ab188a43cb1">   47</a></span>&#160;  <a class="code" href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html">PidCalcInfo</a> <a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a00aaa0c062827fd9243f5ab188a43cb1">pid_calc_info</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#af9af791c36aba1acfec215eba8f4c012">   49</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#af9af791c36aba1acfec215eba8f4c012">ff_velocity_term</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#aa3d48dafc9b0d55346d8b2165c94d018">   51</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#aa3d48dafc9b0d55346d8b2165c94d018">ff_acceleration_term</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a97eff29d5734c18a2e62ccc95e9cde3b">   53</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a97eff29d5734c18a2e62ccc95e9cde3b">target_acceleration</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a6443f95f5c1669d4aa08dc0a5c456afb">   55</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a6443f95f5c1669d4aa08dc0a5c456afb">target_acceleration_before_lpf</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Clock, <span class="keyword">class</span> Motor, <span class="keyword">class</span> RotarySensor&gt;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html">   66</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html">MotorVelocityController</a></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a2afe109138b6bdeb2f6b013ee1475d5a">   79</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a2afe109138b6bdeb2f6b013ee1475d5a">MotorVelocityController</a>(</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor&lt;Motor&gt;</a> &amp; motor,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor&lt;RotarySensor&gt;</a> &amp; rotary_sensor,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">const</span> <a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html">MotorVelocityControllerParam</a> &amp; param,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange&lt;float&gt;</a> drive_ratio_limit = {-1.0f, 1.0f},</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange&lt;float&gt;</a> velocity_limit = {},</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    std::chrono::microseconds min_calc_interval = std::chrono::milliseconds(1))</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  : motor_{motor},</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    rotary_sensor_{rotary_sensor},</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    param_{param},</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    now_velocity_calculator_{param_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a523055527df9c2e02ad9deabdfcb8a5c">now_velocity_lpf_time_constant</a>, min_calc_interval},</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    target_acceleration_calculator_{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      param_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#adb39f440e1f81d63d2211f25fa1cb771">target_acceleration_lpf_time_constant</a>, min_calc_interval},</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    vel_pid_{param_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a94c0cf6e73fc510cb1c94b910a524f1e">pid_param</a>, drive_ratio_limit, min_calc_interval},</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    velocity_limit_{velocity_limit}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ad7db09ea125622565e0a1674832a4edf">  102</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ad7db09ea125622565e0a1674832a4edf">Control</a>(<span class="keywordtype">float</span> ff_output = 0.0f)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">// calc_info_の値は全て更新される</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">// 現在の角速度計算</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    calc_info_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#ad644ddfbb42bb03338d956cf9bf49b0c">now_velocity</a> = now_velocity_calculator_.Calculate(rotary_sensor_.<a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">CallGetAngle</a>());</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    calc_info_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a4926ae0b15220af38a9a94284a941c99">now_velocity_before_lpf</a> = now_velocity_calculator_.GetLastRawOutput();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">float</span> velocity_error = calc_info_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a48d4049c0b85bf5e3b4cabf5f6978264">target_velocity</a> - calc_info_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#ad644ddfbb42bb03338d956cf9bf49b0c">now_velocity</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">// 目標角加速度計算</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    calc_info_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a97eff29d5734c18a2e62ccc95e9cde3b">target_acceleration</a> =</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      target_acceleration_calculator_.Calculate(calc_info_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a48d4049c0b85bf5e3b4cabf5f6978264">target_velocity</a>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    calc_info_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a6443f95f5c1669d4aa08dc0a5c456afb">target_acceleration_before_lpf</a> = target_acceleration_calculator_.GetLastRawOutput();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">// フィードフォワード項計算</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    calc_info_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#af9af791c36aba1acfec215eba8f4c012">ff_velocity_term</a> = param_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#abeada49dcefaa39a1439a1a09eaef91c">kff_velocity</a> * calc_info_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a48d4049c0b85bf5e3b4cabf5f6978264">target_velocity</a>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    calc_info_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#aa3d48dafc9b0d55346d8b2165c94d018">ff_acceleration_term</a> = param_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#aa42e1b756097893f29c2b9152bd3a594">kff_acceleration</a> * calc_info_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a97eff29d5734c18a2e62ccc95e9cde3b">target_acceleration</a>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">float</span> ff_output_term =</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      calc_info_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#af9af791c36aba1acfec215eba8f4c012">ff_velocity_term</a> + calc_info_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#aa3d48dafc9b0d55346d8b2165c94d018">ff_acceleration_term</a> + ff_output;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="comment">// PID計算</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">float</span> output = vel_pid_.Calculate(velocity_error, ff_output_term);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    calc_info_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a00aaa0c062827fd9243f5ab188a43cb1">pid_calc_info</a> = vel_pid_.GetCalcInfo();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">// モーターを駆動</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    motor_.<a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html#afb69e9dace9074933926b59904ddfb13">CallDrive</a>(output);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a9acef8a677691c396f2e4001427b7261">  134</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a9acef8a677691c396f2e4001427b7261">Reset</a>()</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    now_velocity_calculator_.Reset();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    target_acceleration_calculator_.Reset();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    vel_pid_.Reset();</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a38b57d4239f209bd883c64ec1d2b4d1d">  146</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a38b57d4239f209bd883c64ec1d2b4d1d">SetTargetVelocity</a>(<span class="keywordtype">float</span> target_velocity)</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    calc_info_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a48d4049c0b85bf5e3b4cabf5f6978264">target_velocity</a> = velocity_limit_.<a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a68254483eb7784e88c231259e896b8a9">Clamp</a>(target_velocity);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  };</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a7acf3c666348a705e8a2599f65083660">  156</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a7acf3c666348a705e8a2599f65083660">GetNowAngle</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">return</span> rotary_sensor_.<a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">CallGetAngle</a>();</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a7fcfb372adae10d0ef176f806af67f02">  166</a></span>&#160;  <span class="keyword">const</span> <a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html">MotorVelocityControllerCalcInfo</a> &amp; <a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a7fcfb372adae10d0ef176f806af67f02">GetCalcInfo</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> calc_info_;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  }</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a1f8153619e14f046bbe17c74f3d6c10e">  180</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a1f8153619e14f046bbe17c74f3d6c10e">CheckConvergence</a>(</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordtype">float</span> allowable_error, <span class="keywordtype">float</span> allowable_error_diff = std::numeric_limits&lt;float&gt;::max())<span class="keyword"> const</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordflow">return</span> vel_pid_.CheckConvergence(allowable_error, allowable_error_diff);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  }</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ac29f0ea00d83d805b753e13ff7919451">  191</a></span>&#160;  <span class="keyword">const</span> <a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html">MotorVelocityControllerParam</a> &amp; <a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ac29f0ea00d83d805b753e13ff7919451">GetParam</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">return</span> param_;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#acb1336fd3d6dc36c53bf15c51667ddaa">  201</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#acb1336fd3d6dc36c53bf15c51667ddaa">SetParam</a>(<span class="keyword">const</span> <a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html">MotorVelocityControllerParam</a> &amp; param)</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  {</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    param_ = param;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    now_velocity_calculator_.SetLowPassTimeConstant(param_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a523055527df9c2e02ad9deabdfcb8a5c">now_velocity_lpf_time_constant</a>);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    target_acceleration_calculator_.SetLowPassTimeConstant(param_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#adb39f440e1f81d63d2211f25fa1cb771">target_acceleration_lpf_time_constant</a>);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    vel_pid_.SetParam(param_.<a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a94c0cf6e73fc510cb1c94b910a524f1e">pid_param</a>);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  }</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor&lt;Motor&gt;</a> &amp; motor_;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor&lt;RotarySensor&gt;</a> &amp; rotary_sensor_;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html">MotorVelocityControllerParam</a> param_;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <a class="code" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html">MotorVelocityControllerCalcInfo</a> calc_info_{};</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html">control::LowPassDifferentiator&lt;Clock&gt;</a> now_velocity_calculator_;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html">control::LowPassDifferentiator&lt;Clock&gt;</a> target_acceleration_calculator_;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_pid.html">control::Pid&lt;Clock&gt;</a> vel_pid_;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange&lt;float&gt;</a> velocity_limit_;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;};</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;}  <span class="comment">// namespace control</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_i_motor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">alps::cmn::actuator::IMotor&lt; Motor &gt;</a></div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_i_motor_html_afb69e9dace9074933926b59904ddfb13"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html#afb69e9dace9074933926b59904ddfb13">alps::cmn::actuator::IMotor::CallDrive</a></div><div class="ttdeci">void CallDrive(float output_ratio)</div><div class="ttdoc">インタフェースを介してモーターを駆動する</div><div class="ttdef"><b>Definition:</b> i_motor.hpp:24</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_differentiator_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html">alps::cmn::control::LowPassDifferentiator</a></div><div class="ttdoc">ローパスフィルタを通す微分器. ノイズ成分をカットする.</div><div class="ttdef"><b>Definition:</b> low_pass_differentiator.hpp:21</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_velocity_controller_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html">alps::cmn::control::MotorVelocityController</a></div><div class="ttdoc">回転センサー付きモーターの速度制御クラス</div><div class="ttdef"><b>Definition:</b> motor_velocity_controller.hpp:67</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_velocity_controller_html_a1f8153619e14f046bbe17c74f3d6c10e"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a1f8153619e14f046bbe17c74f3d6c10e">alps::cmn::control::MotorVelocityController::CheckConvergence</a></div><div class="ttdeci">bool CheckConvergence(float allowable_error, float allowable_error_diff=std::numeric_limits&lt; float &gt;::max()) const</div><div class="ttdoc">収束しているかどうかを判定する</div><div class="ttdef"><b>Definition:</b> motor_velocity_controller.hpp:180</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_velocity_controller_html_a2afe109138b6bdeb2f6b013ee1475d5a"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a2afe109138b6bdeb2f6b013ee1475d5a">alps::cmn::control::MotorVelocityController::MotorVelocityController</a></div><div class="ttdeci">MotorVelocityController(actuator::IMotor&lt; Motor &gt; &amp;motor, sensor::IRotarySensor&lt; RotarySensor &gt; &amp;rotary_sensor, const MotorVelocityControllerParam &amp;param, util::NumericRange&lt; float &gt; drive_ratio_limit={-1.0f, 1.0f}, util::NumericRange&lt; float &gt; velocity_limit={}, std::chrono::microseconds min_calc_interval=std::chrono::milliseconds(1))</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> motor_velocity_controller.hpp:79</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_velocity_controller_html_a38b57d4239f209bd883c64ec1d2b4d1d"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a38b57d4239f209bd883c64ec1d2b4d1d">alps::cmn::control::MotorVelocityController::SetTargetVelocity</a></div><div class="ttdeci">void SetTargetVelocity(float target_velocity)</div><div class="ttdoc">目標角速度を設定する．制限値の範囲外の値は自動で制限される</div><div class="ttdef"><b>Definition:</b> motor_velocity_controller.hpp:146</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_velocity_controller_html_a6754e8f3d63e882a1fbacf3fb1233c9f"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a6754e8f3d63e882a1fbacf3fb1233c9f">alps::cmn::control::MotorVelocityController::GetCalcInfo</a></div><div class="ttdeci">const MotorVelocityControllerCalcInfo &amp; GetCalcInfo() const</div><div class="ttdoc">角速度制御の計算情報を取得する</div><div class="ttdef"><b>Definition:</b> motor_velocity_controller.hpp:166</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_velocity_controller_html_a7acf3c666348a705e8a2599f65083660"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a7acf3c666348a705e8a2599f65083660">alps::cmn::control::MotorVelocityController::GetNowAngle</a></div><div class="ttdeci">double GetNowAngle() const</div><div class="ttdoc">回転センサーから現在の角度を取得する</div><div class="ttdef"><b>Definition:</b> motor_velocity_controller.hpp:156</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_velocity_controller_html_a9602307dc2bc6c4f69dca5b6ba36c349"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a9602307dc2bc6c4f69dca5b6ba36c349">alps::cmn::control::MotorVelocityController::GetParam</a></div><div class="ttdeci">const MotorVelocityControllerParam &amp; GetParam() const</div><div class="ttdoc">パラメータを取得する</div><div class="ttdef"><b>Definition:</b> motor_velocity_controller.hpp:191</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_velocity_controller_html_a7fcfb372adae10d0ef176f806af67f02"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a7fcfb372adae10d0ef176f806af67f02">alps::cmn::control::MotorVelocityController::GetCalcInfo</a></div><div class="ttdeci">const MotorVelocityControllerCalcInfo &amp; GetCalcInfo() const</div><div class="ttdoc">角速度制御の計算情報を取得する</div><div class="ttdef"><b>Definition:</b> motor_velocity_controller.hpp:166</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_velocity_controller_html_a9acef8a677691c396f2e4001427b7261"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a9acef8a677691c396f2e4001427b7261">alps::cmn::control::MotorVelocityController::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">今までの計算で蓄積された値をリセットする</div><div class="ttdef"><b>Definition:</b> motor_velocity_controller.hpp:134</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_velocity_controller_html_ac29f0ea00d83d805b753e13ff7919451"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ac29f0ea00d83d805b753e13ff7919451">alps::cmn::control::MotorVelocityController::GetParam</a></div><div class="ttdeci">const MotorVelocityControllerParam &amp; GetParam() const</div><div class="ttdoc">パラメータを取得する</div><div class="ttdef"><b>Definition:</b> motor_velocity_controller.hpp:191</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_velocity_controller_html_acb1336fd3d6dc36c53bf15c51667ddaa"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#acb1336fd3d6dc36c53bf15c51667ddaa">alps::cmn::control::MotorVelocityController::SetParam</a></div><div class="ttdeci">void SetParam(const MotorVelocityControllerParam &amp;param)</div><div class="ttdoc">パラメータを設定する</div><div class="ttdef"><b>Definition:</b> motor_velocity_controller.hpp:201</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_motor_velocity_controller_html_ad7db09ea125622565e0a1674832a4edf"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ad7db09ea125622565e0a1674832a4edf">alps::cmn::control::MotorVelocityController::Control</a></div><div class="ttdeci">void Control(float ff_output=0.0f)</div><div class="ttdoc">制御処理を実行する．周期的に呼び出すこと．</div><div class="ttdef"><b>Definition:</b> motor_velocity_controller.hpp:102</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_pid_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a></div><div class="ttdoc">PID制御器</div><div class="ttdef"><b>Definition:</b> pid.hpp:68</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">alps::cmn::sensor::IRotarySensor</a></div><div class="ttdoc">回転センサーのインタフェース</div><div class="ttdef"><b>Definition:</b> i_rotary_sensor.hpp:18</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">alps::cmn::sensor::IRotarySensor&lt; RotarySensor &gt;</a></div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor_html_afd34b25b6fd6be03746984bf9adbd367"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">alps::cmn::sensor::IRotarySensor::CallGetAngle</a></div><div class="ttdeci">double CallGetAngle()</div><div class="ttdoc">インタフェースを介して現在の角度を取得する</div><div class="ttdef"><b>Definition:</b> i_rotary_sensor.hpp:25</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1util_1_1_numeric_range_html"><div class="ttname"><a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">alps::cmn::util::NumericRange</a></div><div class="ttdoc">最小値と最大値による数値の範囲を表すクラス</div><div class="ttdef"><b>Definition:</b> numeric_range.hpp:33</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1util_1_1_numeric_range_html_a55afbb6a6a2ba8919bddf954c4de990e"><div class="ttname"><a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a55afbb6a6a2ba8919bddf954c4de990e">alps::cmn::util::NumericRange::Clamp</a></div><div class="ttdeci">const T &amp; Clamp(const T &amp;value)</div><div class="ttdoc">指定した値がこのクラスの範囲内に収まるようにする</div><div class="ttdef"><b>Definition:</b> numeric_range.hpp:62</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1util_1_1_numeric_range_html"><div class="ttname"><a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">alps::cmn::util::NumericRange&lt; float &gt;</a></div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1util_1_1_numeric_range_html_a68254483eb7784e88c231259e896b8a9"><div class="ttname"><a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a68254483eb7784e88c231259e896b8a9">alps::cmn::util::NumericRange::Clamp</a></div><div class="ttdeci">const T &amp; Clamp(const T &amp;value)</div><div class="ttdoc">指定した値がこのクラスの範囲内に収まるようにする</div><div class="ttdef"><b>Definition:</b> numeric_range.hpp:62</div></div>
 <div class="ttc" id="ai__motor_8hpp_html"><div class="ttname"><a href="i__motor_8hpp.html">i_motor.hpp</a></div></div>
 <div class="ttc" id="ai__rotary__sensor_8hpp_html"><div class="ttname"><a href="i__rotary__sensor_8hpp.html">i_rotary_sensor.hpp</a></div></div>
 <div class="ttc" id="alow__pass__differentiator_8hpp_html"><div class="ttname"><a href="low__pass__differentiator_8hpp.html">low_pass_differentiator.hpp</a></div></div>
@@ -302,7 +295,7 @@ $(document).ready(function(){initNavTree('motor__velocity__controller_8hpp_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_fcd1ba41f8679fcc7bf76d667eaa0e17.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_ce1e71e2103ac83e6d6cc720a9feeeb7.html">include</a></li><li class="navelem"><a class="el" href="dir_cc648f72f51f156e42f9863c0e5bf5fb.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_83658e075a4ab7b2cbb8779471289882.html">control</a></li><li class="navelem"><a class="el" href="motor__velocity__controller_8hpp.html">motor_velocity_controller.hpp</a></li>
-    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

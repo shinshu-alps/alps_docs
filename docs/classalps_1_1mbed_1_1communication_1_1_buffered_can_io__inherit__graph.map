@@ -1,4 +1,4 @@
 <map id="alps::mbed::communication::BufferedCanIo&lt; kWriteBufSize, kReadBufSize &gt;" name="alps::mbed::communication::BufferedCanIo&lt; kWriteBufSize, kReadBufSize &gt;">
-<area shape="rect" id="node1" title="MbedのCAN通信IO. 割り込みによってデータをバッファリングして扱う．" alt="" coords="5,153,232,328"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1communication_1_1_i_can_io.html" title="CAN通信IOのインターフェース" alt="" coords="25,5,212,105"/>
+<area shape="rect" id="node1" title="MbedのCAN通信IO. 割り込みによってデータをバッファリングして扱う．" alt="" coords="5,175,239,340"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1communication_1_1_i_can_io.html" title=" " alt="" coords="25,5,219,127"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="alps::mbed::gpio::PwmOut" name="alps::mbed::gpio::PwmOut">
-<area shape="rect" id="node1" title="PWM出力ピン" alt="" coords="5,173,191,299"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html" title=" " alt="" coords="8,5,188,125"/>
+<area shape="rect" id="node1" title="PWM出力ピン" alt="" coords="5,175,199,296"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html" title=" " alt="" coords="8,5,196,127"/>
 </map>
