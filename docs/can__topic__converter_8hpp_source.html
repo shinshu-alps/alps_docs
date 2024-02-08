@@ -467,7 +467,7 @@ $(document).ready(function(){initNavTree('can__topic__converter_8hpp_source.html
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;  {</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    CanType can_data;</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160; </div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="namespacealps_1_1ros2_1_1communication.html#a1d28b489912ffeee862b7fd6cd731d2c">ConvertRosTopicToCanMsg</a>(*msg, can_data)) {</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="namespacealps_1_1ros2_1_1communication.html#a1d28b489912ffeee862b7fd6cd731d2c">ConvertRosTopicToCanMsg</a>(*msg, can_data)) {</div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;      RCLCPP_WARN(</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        logger_,</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        <span class="stringliteral">&quot;Failed to convert ROS topic to CAN message. \n\t topic: %s, can_id: 0x%03x&quot;</span>,</div>
@@ -509,7 +509,7 @@ $(document).ready(function(){initNavTree('can__topic__converter_8hpp_source.html
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;  {</div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    RosTopicType ros_msg;</div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160; </div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="namespacealps_1_1ros2_1_1communication.html#aec9dc653c0547119c270f5d72819d45f">ConvertCanMsgToRosTopic</a>(can_data, ros_msg)) {</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="namespacealps_1_1ros2_1_1communication.html#aec9dc653c0547119c270f5d72819d45f">ConvertCanMsgToRosTopic</a>(can_data, ros_msg)) {</div>
 <div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;      RCLCPP_WARN(</div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        logger_,</div>
 <div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        <span class="stringliteral">&quot;Failed to convert CAN message to ROS topic. \n\t topic: %s, can_id: 0x%03x&quot;</span>,</div>
