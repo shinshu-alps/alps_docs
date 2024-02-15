@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['repeating_5fpolling_5ftimer_2ehpp_671',['repeating_polling_timer.hpp',['../repeating__polling__timer_8hpp.html',1,'']]],
-  ['robomas_5fmotor_2ehpp_672',['robomas_motor.hpp',['../robomas__motor_8hpp.html',1,'']]]
+  ['pid_2ehpp_681',['pid.hpp',['../pid_8hpp.html',1,'']]],
+  ['potentiometer_2ehpp_682',['potentiometer.hpp',['../potentiometer_8hpp.html',1,'']]],
+  ['pwm_5fout_2ehpp_683',['pwm_out.hpp',['../pwm__out_8hpp.html',1,'']]]
 ];

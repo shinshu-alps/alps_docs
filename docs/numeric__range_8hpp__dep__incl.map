@@ -1,7 +1,8 @@
 <map id="alps_common_lib/include/alps_cmn/util/numeric_range.hpp" name="alps_common_lib/include/alps_cmn/util/numeric_range.hpp">
-<area shape="rect" id="node1" title="数値の範囲を扱うクラス" alt="" coords="136,5,323,61"/>
-<area shape="rect" id="node2" href="$pid_8hpp.html" title=" " alt="" coords="135,109,324,151"/>
-<area shape="rect" id="node3" href="$motor__angle__controller_8hpp.html" title=" " alt="" coords="5,199,192,255"/>
-<area shape="rect" id="node4" href="$motor__angle__velocity__controller_8hpp.html" title=" " alt="" coords="119,303,339,359"/>
-<area shape="rect" id="node5" href="$motor__velocity__controller_8hpp.html" title=" " alt="" coords="267,199,453,255"/>
+<area shape="rect" id="node1" title="数値の範囲を扱うクラス" alt="" coords="162,5,349,61"/>
+<area shape="rect" id="node2" href="$output__change__limit__motor__decorator_8hpp.html" title="出力変化制限を掛けるモーターデコレータ" alt="" coords="5,109,260,165"/>
+<area shape="rect" id="node3" href="$pid_8hpp.html" title=" " alt="" coords="285,117,474,158"/>
+<area shape="rect" id="node4" href="$motor__angle__controller_8hpp.html" title=" " alt="" coords="155,213,342,269"/>
+<area shape="rect" id="node5" href="$motor__angle__velocity__controller_8hpp.html" title=" " alt="" coords="269,317,489,373"/>
+<area shape="rect" id="node6" href="$motor__velocity__controller_8hpp.html" title=" " alt="" coords="417,213,603,269"/>
 </map>

@@ -1,17 +1,18 @@
 <map id="alps_common_lib/include/alps_cmn/time/duration.hpp" name="alps_common_lib/include/alps_cmn/time/duration.hpp">
-<area shape="rect" id="node1" title="時間間隔の型エイリアス" alt="" coords="362,5,570,47"/>
-<area shape="rect" id="node2" href="$change__rate__limiter_8hpp.html" title="時間あたりの変化量に制限をかけるクラス" alt="" coords="5,95,193,151"/>
-<area shape="rect" id="node3" href="$differentiator_8hpp.html" title="微分器ライブラリ" alt="" coords="218,102,471,143"/>
-<area shape="rect" id="node13" href="$integrator_8hpp.html" title="積分器ライブラリ" alt="" coords="706,102,938,143"/>
-<area shape="rect" id="node15" href="$low__pass__filter_8hpp.html" title="ローパスフィルタのクラス" alt="" coords="495,95,682,151"/>
-<area shape="rect" id="node4" href="$friction__compensated__motor_8hpp.html" title="モーターに対して摩擦補償を行うデコレーター" alt="" coords="261,199,452,255"/>
-<area shape="rect" id="node6" href="$low__pass__differentiator_8hpp.html" title=" " alt="" coords="477,199,663,255"/>
-<area shape="rect" id="node11" href="$alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="20,199,237,255"/>
-<area shape="rect" id="node5" href="$motor__friction__analyzer_8hpp.html" title="モーター軸の摩擦力を計測するクラス" alt="" coords="293,303,506,359"/>
-<area shape="rect" id="node7" href="$motor__velocity__controller_8hpp.html" title=" " alt="" coords="477,407,663,463"/>
-<area shape="rect" id="node9" href="$pid_8hpp.html" title=" " alt="" coords="686,310,875,351"/>
-<area shape="rect" id="node8" href="$motor__angle__velocity__controller_8hpp.html" title=" " alt="" coords="671,511,891,567"/>
-<area shape="rect" id="node10" href="$motor__angle__controller_8hpp.html" title=" " alt="" coords="687,407,874,463"/>
-<area shape="rect" id="node12" href="$alps__mbed__lib_2include_2alps__mbed_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="15,303,242,359"/>
-<area shape="rect" id="node14" href="$odometory_8hpp.html" title="オドメトリ計算クラス" alt="" coords="687,206,933,247"/>
+<area shape="rect" id="node1" title="時間間隔の型エイリアス" alt="" coords="607,5,815,47"/>
+<area shape="rect" id="node2" href="$change__rate__limiter_8hpp.html" title="時間あたりの変化量に制限をかけるクラス" alt="" coords="145,95,333,151"/>
+<area shape="rect" id="node4" href="$differentiator_8hpp.html" title="微分器ライブラリ" alt="" coords="463,102,717,143"/>
+<area shape="rect" id="node14" href="$integrator_8hpp.html" title="積分器ライブラリ" alt="" coords="951,102,1183,143"/>
+<area shape="rect" id="node16" href="$low__pass__filter_8hpp.html" title="ローパスフィルタのクラス" alt="" coords="741,95,927,151"/>
+<area shape="rect" id="node3" href="$output__change__limit__motor__decorator_8hpp.html" title="出力変化制限を掛けるモーターデコレータ" alt="" coords="5,199,260,255"/>
+<area shape="rect" id="node5" href="$friction__compensated__motor_8hpp.html" title="モーターに対して摩擦補償を行うデコレーター" alt="" coords="525,199,716,255"/>
+<area shape="rect" id="node7" href="$low__pass__differentiator_8hpp.html" title=" " alt="" coords="741,199,927,255"/>
+<area shape="rect" id="node12" href="$alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="284,199,501,255"/>
+<area shape="rect" id="node6" href="$motor__friction__analyzer_8hpp.html" title="モーター軸の摩擦力を計測するクラス" alt="" coords="543,303,757,359"/>
+<area shape="rect" id="node8" href="$motor__velocity__controller_8hpp.html" title=" " alt="" coords="689,407,875,463"/>
+<area shape="rect" id="node10" href="$pid_8hpp.html" title=" " alt="" coords="885,310,1074,351"/>
+<area shape="rect" id="node9" href="$motor__angle__velocity__controller_8hpp.html" title=" " alt="" coords="883,511,1103,567"/>
+<area shape="rect" id="node11" href="$motor__angle__controller_8hpp.html" title=" " alt="" coords="899,407,1086,463"/>
+<area shape="rect" id="node13" href="$alps__mbed__lib_2include_2alps__mbed_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="279,303,506,359"/>
+<area shape="rect" id="node15" href="$odometory_8hpp.html" title="オドメトリ計算クラス" alt="" coords="1017,206,1262,247"/>
 </map>

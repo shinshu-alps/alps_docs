@@ -1,0 +1,187 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps_common_lib/include/alps_cmn/actuator/esc_bldc_motor.hpp ソースファイル</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('esc__bldc__motor_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">esc_bldc_motor.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="esc__bldc__motor_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef ALPS_CMN_LIB_ACTUATOR_ESC_BLDC_MOTOR_HPP_</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define ALPS_CMN_LIB_ACTUATOR_ESC_BLDC_MOTOR_HPP_</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__motor_8hpp.html">alps_cmn/actuator/i_motor.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__pwm__out_8hpp.html">alps_cmn/gpio/i_pwm_out.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="algorithm_8hpp.html">alps_cmn/util/algorithm.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>cmn</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>actuator</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> PwmOut&gt;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor.html">EscBldcMotor</a> : <span class="keyword">public</span> <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">IMotor</a>&lt;EscBldcMotor&lt;PwmOut&gt;&gt;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor.html#aa62c5c1786c077f281ced6fdb390d264">   44</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor.html#aa62c5c1786c077f281ced6fdb390d264">EscBldcMotor</a>(</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">gpio::IPwmOut&lt;PwmOut&gt;</a> &amp; pwm_out,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::chrono::microseconds min_pulse_width,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    std::chrono::microseconds max_pulse_width,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::chrono::microseconds pwm_period)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  : pwm_out_{pwm_out},</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    min_pulse_width_{min_pulse_width},</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    max_pulse_width_{max_pulse_width}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    pwm_out_.<a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#a5cacb90bcdc89bae801e318008bb49e8">CallSetPeriod</a>(pwm_period);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    pwm_out_.<a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#a126c2a4c46285eede39c37d72243194a">CallWrite</a>(0.0f);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor.html#aa1da2e642263d47b050f4f3778b35aeb">   62</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor.html#aa1da2e642263d47b050f4f3778b35aeb">Drive</a>(<span class="keywordtype">float</span> output_ratio)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// PWM出力</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    output_ratio = <a class="code" href="namespacealps_1_1cmn_1_1util.html#a13928639f0ae9b5207010ae61a2c9d2a">alps::cmn::util::Clamp</a>(output_ratio, 0.0f, 1.0f);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    std::chrono::microseconds pulse_width =</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      min_pulse_width_ + std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                           (max_pulse_width_ - min_pulse_width_) * output_ratio);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    pwm_out_.<a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#ad3baeadd20c2548313fb9702dc3e2a89">CallSetPulseWidth</a>(pulse_width);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">gpio::IPwmOut&lt;PwmOut&gt;</a> &amp; pwm_out_;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">const</span> std::chrono::microseconds min_pulse_width_;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">const</span> std::chrono::microseconds max_pulse_width_;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}  <span class="comment">// namespace actuator</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aalgorithm_8hpp_html"><div class="ttname"><a href="algorithm_8hpp.html">algorithm.hpp</a></div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor.html">alps::cmn::actuator::EscBldcMotor</a></div><div class="ttdoc">ESCで動かすブラシレスDCモーター</div><div class="ttdef"><b>Definition:</b> esc_bldc_motor.hpp:34</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor_html_aa1da2e642263d47b050f4f3778b35aeb"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor.html#aa1da2e642263d47b050f4f3778b35aeb">alps::cmn::actuator::EscBldcMotor::Drive</a></div><div class="ttdeci">void Drive(float output_ratio)</div><div class="ttdoc">指定した出力値でモーターを回転. 逆転はできない．</div><div class="ttdef"><b>Definition:</b> esc_bldc_motor.hpp:62</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor_html_aa62c5c1786c077f281ced6fdb390d264"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor.html#aa62c5c1786c077f281ced6fdb390d264">alps::cmn::actuator::EscBldcMotor::EscBldcMotor</a></div><div class="ttdeci">EscBldcMotor(gpio::IPwmOut&lt; PwmOut &gt; &amp;pwm_out, std::chrono::microseconds min_pulse_width, std::chrono::microseconds max_pulse_width, std::chrono::microseconds pwm_period)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> esc_bldc_motor.hpp:44</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_i_motor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">alps::cmn::actuator::IMotor</a></div><div class="ttdoc">モーターを駆動するインタフェース</div><div class="ttdef"><b>Definition:</b> i_motor.hpp:17</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_pwm_out_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">alps::cmn::gpio::IPwmOut&lt; PwmOut &gt;</a></div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_pwm_out_html_a126c2a4c46285eede39c37d72243194a"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#a126c2a4c46285eede39c37d72243194a">alps::cmn::gpio::IPwmOut::CallWrite</a></div><div class="ttdeci">void CallWrite(float value)</div><div class="ttdoc">インタフェースを介してWrite()関数を呼び出す．振る舞い: PWM出力を行う</div><div class="ttdef"><b>Definition:</b> i_pwm_out.hpp:39</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_pwm_out_html_a5cacb90bcdc89bae801e318008bb49e8"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#a5cacb90bcdc89bae801e318008bb49e8">alps::cmn::gpio::IPwmOut::CallSetPeriod</a></div><div class="ttdeci">void CallSetPeriod(std::chrono::microseconds period)</div><div class="ttdoc">インタフェースを介してSetPeriod()関数を呼び出す．振る舞い: PWMの周期を設定する</div><div class="ttdef"><b>Definition:</b> i_pwm_out.hpp:50</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_pwm_out_html_ad3baeadd20c2548313fb9702dc3e2a89"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#ad3baeadd20c2548313fb9702dc3e2a89">alps::cmn::gpio::IPwmOut::CallSetPulseWidth</a></div><div class="ttdeci">void CallSetPulseWidth(std::chrono::microseconds width)</div><div class="ttdoc">インタフェースを介してSetPulseWidth()関数を呼び出す．振る舞い: PWMの出力パルス幅を時間指定して出力する</div><div class="ttdef"><b>Definition:</b> i_pwm_out.hpp:61</div></div>
+<div class="ttc" id="ai__motor_8hpp_html"><div class="ttname"><a href="i__motor_8hpp.html">i_motor.hpp</a></div></div>
+<div class="ttc" id="ai__pwm__out_8hpp_html"><div class="ttname"><a href="i__pwm__out_8hpp.html">i_pwm_out.hpp</a></div><div class="ttdoc">PWM出力を行うインタフェース</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1util_html_a13928639f0ae9b5207010ae61a2c9d2a"><div class="ttname"><a href="namespacealps_1_1cmn_1_1util.html#a13928639f0ae9b5207010ae61a2c9d2a">alps::cmn::util::Clamp</a></div><div class="ttdeci">constexpr const T &amp; Clamp(const T &amp;value, const T &amp;low, const T &amp;high)</div><div class="ttdoc">入力値が最小値~最大値の外である場合範囲内に収める C++17で追加されたstd::clampのコピー実装</div><div class="ttdef"><b>Definition:</b> algorithm.hpp:21</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_fcd1ba41f8679fcc7bf76d667eaa0e17.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_ce1e71e2103ac83e6d6cc720a9feeeb7.html">include</a></li><li class="navelem"><a class="el" href="dir_cc648f72f51f156e42f9863c0e5bf5fb.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_2239b1117054295ada522fe6d99615b2.html">actuator</a></li><li class="navelem"><a class="el" href="esc__bldc__motor_8hpp.html">esc_bldc_motor.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>
