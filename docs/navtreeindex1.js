@@ -1,5 +1,14 @@
 var NAVTREEINDEX1 =
 {
+"classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ac29f0ea00d83d805b753e13ff7919451":[2,0,0,0,2,11,5],
+"classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#acb1336fd3d6dc36c53bf15c51667ddaa":[2,0,0,0,2,11,7],
+"classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ad7db09ea125622565e0a1674832a4edf":[2,0,0,0,2,11,2],
+"classalps_1_1cmn_1_1control_1_1_pid.html":[2,0,0,0,2,14],
+"classalps_1_1cmn_1_1control_1_1_pid.html#a4f644037e0796d2ea39cfd4028f2aba6":[2,0,0,0,2,14,4],
+"classalps_1_1cmn_1_1control_1_1_pid.html#a9da9407186a1f6ac3b96cd8766815e68":[2,0,0,0,2,14,1],
+"classalps_1_1cmn_1_1control_1_1_pid.html#a9de7c53135d0f925376371273d11997d":[2,0,0,0,2,14,2],
+"classalps_1_1cmn_1_1control_1_1_pid.html#aaa3770deafbba61b15284915d30adb3f":[2,0,0,0,2,14,3],
+"classalps_1_1cmn_1_1control_1_1_pid.html#ab74c144cb4cf2ea73e46a981671389fb":[2,0,0,0,2,14,6],
 "classalps_1_1cmn_1_1control_1_1_pid.html#aba94f15b855e4fce9fdc348b8878b7fd":[2,0,0,0,2,14,0],
 "classalps_1_1cmn_1_1control_1_1_pid.html#adeeb93dc4a8c1c7ff379b3bbc5407c0c":[2,0,0,0,2,14,5],
 "classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html":[2,0,0,0,3,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX1 =
 "differentiator_8hpp_source.html":[3,0,0,0,0,2,1],
 "digital__in_8hpp.html":[3,0,2,0,0,2,1],
 "digital__in_8hpp_source.html":[3,0,2,0,0,2,1],
-"digital__out_8hpp.html":[3,0,2,0,0,2,2],
-"digital__out_8hpp_source.html":[3,0,2,0,0,2,2],
-"dir_042306a24671901d82947867ee593e03.html":[3,0,1,0,0,0],
-"dir_06d0b736b1247c5c94714e69ec444f3a.html":[3,0,2,0],
-"dir_074e7ce7c414df3f1b9789b8bf27b85a.html":[3,0,2],
-"dir_1367935105ebc251618457953f8d2b80.html":[3,0,0,0,0,7],
-"dir_1c56f1202c4b9b2556a51beaa852430f.html":[3,0,1],
-"dir_1f337407fa66791c1f72ce9c082d3c68.html":[3,0,3,0,0,2],
-"dir_2239b1117054295ada522fe6d99615b2.html":[3,0,0,0,0,0],
-"dir_26247a4c7d21a73996b8a7832c1a1463.html":[3,0,0,0,0,9]
+"digital__out_8hpp.html":[3,0,2,0,0,2,2]
 };

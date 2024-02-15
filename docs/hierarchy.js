@@ -56,6 +56,9 @@ var hierarchy =
     [ "alps::cmn::actuator::IMotor< DcMotor< PwmOut, DigitalOut > >", "classalps_1_1cmn_1_1actuator_1_1_i_motor.html", [
       [ "alps::cmn::actuator::DcMotor< PwmOut, DigitalOut >", "classalps_1_1cmn_1_1actuator_1_1_dc_motor.html", null ]
     ] ],
+    [ "alps::cmn::actuator::IMotor< EscBldcMotor< PwmOut > >", "classalps_1_1cmn_1_1actuator_1_1_i_motor.html", [
+      [ "alps::cmn::actuator::EscBldcMotor< PwmOut >", "classalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor.html", null ]
+    ] ],
     [ "alps::cmn::actuator::IMotor< FrictionCompensatedMotor< Clock, BaseMotor, RorarySensor > >", "classalps_1_1cmn_1_1actuator_1_1_i_motor.html", [
       [ "alps::cmn::control::FrictionCompensatedMotor< Clock, BaseMotor, RorarySensor >", "classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html", null ]
     ] ],
@@ -71,6 +74,9 @@ var hierarchy =
         [ "alps::cmn::actuator::robomas_motor::M2006< Clock >", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m2006.html", null ],
         [ "alps::cmn::actuator::robomas_motor::M3508< Clock >", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m3508.html", null ]
       ] ]
+    ] ],
+    [ "alps::cmn::actuator::IMotor< OutputChangeLimitMotorDecorator< Clock, BaseMotor > >", "classalps_1_1cmn_1_1actuator_1_1_i_motor.html", [
+      [ "alps::cmn::actuator::OutputChangeLimitMotorDecorator< Clock, BaseMotor >", "classalps_1_1cmn_1_1actuator_1_1_output_change_limit_motor_decorator.html", null ]
     ] ],
     [ "alps::cmn::control::Integrator< Clock >", "classalps_1_1cmn_1_1control_1_1_integrator.html", null ],
     [ "alps::cmn::gpio::IPwmOut< Derived >", "classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html", null ],
