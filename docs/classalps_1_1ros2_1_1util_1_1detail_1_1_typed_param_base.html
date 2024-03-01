@@ -1,0 +1,555 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps::ros2::util::detail::TypedParamBase&lt; T &gt; クラステンプレート</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">alps::ros2::util::detail::TypedParamBase&lt; T &gt; クラステンプレート</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>型付きパラメーターの基底クラス  
+ <a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="typed__param_8hpp_source.html">typed_param.hpp</a>&gt;</code></p>
+<div class="dynheader">
+alps::ros2::util::detail::TypedParamBase&lt; T &gt; の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base__inherit__graph.svg" width="438" height="375"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a2af815a328044f0d4150d936fdd3d8f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a2af815a328044f0d4150d936fdd3d8f7">SetParam</a> (const T &amp;value)</td></tr>
+<tr class="memdesc:a2af815a328044f0d4150d936fdd3d8f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータを設定する  <a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a2af815a328044f0d4150d936fdd3d8f7">[詳解]</a><br /></td></tr>
+<tr class="separator:a2af815a328044f0d4150d936fdd3d8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a603178fede1505264ad2b6074eb6f281"><td class="memItemLeft" align="right" valign="top">std::optional&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a603178fede1505264ad2b6074eb6f281">GetParam</a> ()</td></tr>
+<tr class="memdesc:a603178fede1505264ad2b6074eb6f281"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータを取得する  <a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a603178fede1505264ad2b6074eb6f281">[詳解]</a><br /></td></tr>
+<tr class="separator:a603178fede1505264ad2b6074eb6f281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ae6f03fa1cfe95ddf0e99ba0d24e2e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a2ae6f03fa1cfe95ddf0e99ba0d24e2e4">SetParamCallback</a> (std::function&lt; void(const T &amp;)&gt; callback)</td></tr>
+<tr class="memdesc:a2ae6f03fa1cfe95ddf0e99ba0d24e2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータの変更を監視するコールバックを設定する  <a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a2ae6f03fa1cfe95ddf0e99ba0d24e2e4">[詳解]</a><br /></td></tr>
+<tr class="separator:a2ae6f03fa1cfe95ddf0e99ba0d24e2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fd7d71fbfbb57b48d27b673dd9d5ae9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a3fd7d71fbfbb57b48d27b673dd9d5ae9">IsServerReady</a> ()</td></tr>
+<tr class="memdesc:a3fd7d71fbfbb57b48d27b673dd9d5ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータサーバーが準備できているか確認する  <a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a3fd7d71fbfbb57b48d27b673dd9d5ae9">[詳解]</a><br /></td></tr>
+<tr class="separator:a3fd7d71fbfbb57b48d27b673dd9d5ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa98d3fac34aea4df24cf29cf3add1f2c"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#aa98d3fac34aea4df24cf29cf3add1f2c">GetServerNodeName</a> () const</td></tr>
+<tr class="memdesc:aa98d3fac34aea4df24cf29cf3add1f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーバーノード名を取得する  <a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#aa98d3fac34aea4df24cf29cf3add1f2c">[詳解]</a><br /></td></tr>
+<tr class="separator:aa98d3fac34aea4df24cf29cf3add1f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4072fe8b53938e2387a9c1d11a332217"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a4072fe8b53938e2387a9c1d11a332217">GetParamName</a> () const</td></tr>
+<tr class="memdesc:a4072fe8b53938e2387a9c1d11a332217"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータ名を取得する  <a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a4072fe8b53938e2387a9c1d11a332217">[詳解]</a><br /></td></tr>
+<tr class="separator:a4072fe8b53938e2387a9c1d11a332217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:abb8f5a5ae6f61c7c9f8ec265170cd49e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#abb8f5a5ae6f61c7c9f8ec265170cd49e">TypedParamBase</a> (const std::string &amp;server_node_name, rclcpp::Node &amp;node, const std::string &amp;name, const T &amp;default_value=T{})</td></tr>
+<tr class="memdesc:abb8f5a5ae6f61c7c9f8ec265170cd49e"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ．  <a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#abb8f5a5ae6f61c7c9f8ec265170cd49e">[詳解]</a><br /></td></tr>
+<tr class="separator:abb8f5a5ae6f61c7c9f8ec265170cd49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:adb456b187ca42d46135596731bf9afeb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#adb456b187ca42d46135596731bf9afeb">server_node_name_</a></td></tr>
+<tr class="memdesc:adb456b187ca42d46135596731bf9afeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータのサーバーノード名  <a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#adb456b187ca42d46135596731bf9afeb">[詳解]</a><br /></td></tr>
+<tr class="separator:adb456b187ca42d46135596731bf9afeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae410419dd95eff92ba1a0baff31c8c61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalps_1_1ros2_1_1util_1_1_param_map.html">alps::ros2::util::ParamMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ae410419dd95eff92ba1a0baff31c8c61">param_map_</a></td></tr>
+<tr class="memdesc:ae410419dd95eff92ba1a0baff31c8c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータのマップ  <a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ae410419dd95eff92ba1a0baff31c8c61">[詳解]</a><br /></td></tr>
+<tr class="separator:ae410419dd95eff92ba1a0baff31c8c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1871f31fe759016b46e5f010497d2d8"><td class="memItemLeft" align="right" valign="top">rclcpp::AsyncParametersClient::SharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ab1871f31fe759016b46e5f010497d2d8">parameters_client_</a></td></tr>
+<tr class="memdesc:ab1871f31fe759016b46e5f010497d2d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータクライアント  <a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ab1871f31fe759016b46e5f010497d2d8">[詳解]</a><br /></td></tr>
+<tr class="separator:ab1871f31fe759016b46e5f010497d2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46231632bf332481f8df33147650ffb7"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a46231632bf332481f8df33147650ffb7">element_name_to_is_set_</a></td></tr>
+<tr class="memdesc:a46231632bf332481f8df33147650ffb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータ名(各要素)と値がセットされたかどうかのフラグ  <a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a46231632bf332481f8df33147650ffb7">[詳解]</a><br /></td></tr>
+<tr class="separator:a46231632bf332481f8df33147650ffb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+class alps::ros2::util::detail::TypedParamBase&lt; T &gt;</h3>
+
+<p>型付きパラメーターの基底クラス </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>パラメータとして扱う型 </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="abb8f5a5ae6f61c7c9f8ec265170cd49e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb8f5a5ae6f61c7c9f8ec265170cd49e">&#9670;&nbsp;</a></span>TypedParamBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">alps::ros2::util::detail::TypedParamBase</a>&lt; T &gt;::<a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">TypedParamBase</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>server_node_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">rclcpp::Node &amp;&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>default_value</em> = <code>T{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンストラクタ． </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>紐付けるノード </td></tr>
+    <tr><td class="paramname">name</td><td>パラメータ名 </td></tr>
+    <tr><td class="paramname">default_value</td><td>デフォルト値 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a603178fede1505264ad2b6074eb6f281"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a603178fede1505264ad2b6074eb6f281">&#9670;&nbsp;</a></span>GetParam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt;T&gt; <a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">alps::ros2::util::detail::TypedParamBase</a>&lt; T &gt;::GetParam </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>パラメータを取得する </p>
+<dl class="section return"><dt>戻り値</dt><dd>std::optional&lt;T&gt; パラメータの値. 取得に失敗した場合はstd::nullopt </dd></dl>
+
+</div>
+</div>
+<a id="a4072fe8b53938e2387a9c1d11a332217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4072fe8b53938e2387a9c1d11a332217">&#9670;&nbsp;</a></span>GetParamName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string_view <a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">alps::ros2::util::detail::TypedParamBase</a>&lt; T &gt;::GetParamName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>パラメータ名を取得する </p>
+<dl class="section return"><dt>戻り値</dt><dd>std::string_view パラメータ名 </dd></dl>
+
+</div>
+</div>
+<a id="aa98d3fac34aea4df24cf29cf3add1f2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa98d3fac34aea4df24cf29cf3add1f2c">&#9670;&nbsp;</a></span>GetServerNodeName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string_view <a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">alps::ros2::util::detail::TypedParamBase</a>&lt; T &gt;::GetServerNodeName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>サーバーノード名を取得する </p>
+<dl class="section return"><dt>戻り値</dt><dd>std::string_view サーバーノード名 </dd></dl>
+
+</div>
+</div>
+<a id="a3fd7d71fbfbb57b48d27b673dd9d5ae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fd7d71fbfbb57b48d27b673dd9d5ae9">&#9670;&nbsp;</a></span>IsServerReady()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">alps::ros2::util::detail::TypedParamBase</a>&lt; T &gt;::IsServerReady </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>パラメータサーバーが準備できているか確認する </p>
+<dl class="section return"><dt>戻り値</dt><dd>true 準備できている </dd>
+<dd>
+false 準備できていない </dd></dl>
+
+</div>
+</div>
+<a id="a2af815a328044f0d4150d936fdd3d8f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2af815a328044f0d4150d936fdd3d8f7">&#9670;&nbsp;</a></span>SetParam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">alps::ros2::util::detail::TypedParamBase</a>&lt; T &gt;::SetParam </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>パラメータを設定する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>設定する値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 値セットのサービス呼び出し成功 </dd>
+<dd>
+false 値セットのサービス呼び出し失敗 </dd></dl>
+
+</div>
+</div>
+<a id="a2ae6f03fa1cfe95ddf0e99ba0d24e2e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ae6f03fa1cfe95ddf0e99ba0d24e2e4">&#9670;&nbsp;</a></span>SetParamCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">alps::ros2::util::detail::TypedParamBase</a>&lt; T &gt;::SetParamCallback </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(const T &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>パラメータの変更を監視するコールバックを設定する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>コールバック関数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a46231632bf332481f8df33147650ffb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46231632bf332481f8df33147650ffb7">&#9670;&nbsp;</a></span>element_name_to_is_set_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;std::string, bool&gt; <a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">alps::ros2::util::detail::TypedParamBase</a>&lt; T &gt;::element_name_to_is_set_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>パラメータ名(各要素)と値がセットされたかどうかのフラグ </p>
+
+</div>
+</div>
+<a id="ae410419dd95eff92ba1a0baff31c8c61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae410419dd95eff92ba1a0baff31c8c61">&#9670;&nbsp;</a></span>param_map_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalps_1_1ros2_1_1util_1_1_param_map.html">alps::ros2::util::ParamMap</a> <a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">alps::ros2::util::detail::TypedParamBase</a>&lt; T &gt;::param_map_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>パラメータのマップ </p>
+
+</div>
+</div>
+<a id="ab1871f31fe759016b46e5f010497d2d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1871f31fe759016b46e5f010497d2d8">&#9670;&nbsp;</a></span>parameters_client_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rclcpp::AsyncParametersClient::SharedPtr <a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">alps::ros2::util::detail::TypedParamBase</a>&lt; T &gt;::parameters_client_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>パラメータクライアント </p>
+
+</div>
+</div>
+<a id="adb456b187ca42d46135596731bf9afeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb456b187ca42d46135596731bf9afeb">&#9670;&nbsp;</a></span>server_node_name_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">alps::ros2::util::detail::TypedParamBase</a>&lt; T &gt;::server_node_name_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>パラメータのサーバーノード名 </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>alps_ros2_lib/include/alps_ros2/util/<a class="el" href="typed__param_8hpp_source.html">typed_param.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacealps.html">alps</a></li><li class="navelem"><a class="el" href="namespacealps_1_1ros2.html">ros2</a></li><li class="navelem"><a class="el" href="namespacealps_1_1ros2_1_1util.html">util</a></li><li class="navelem"><a class="el" href="namespacealps_1_1ros2_1_1util_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">TypedParamBase</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

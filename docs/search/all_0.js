@@ -31,7 +31,7 @@ var searchData=
   ['cmn_28',['cmn',['../namespacealps_1_1cmn.html',1,'alps']]],
   ['communication_29',['communication',['../namespacealps_1_1cmn_1_1communication.html',1,'alps::cmn::communication'],['../namespacealps_1_1lin_1_1communication.html',1,'alps::lin::communication'],['../namespacealps_1_1mbed_1_1communication.html',1,'alps::mbed::communication'],['../namespacealps_1_1ros2_1_1communication.html',1,'alps::ros2::communication']]],
   ['control_30',['control',['../namespacealps_1_1cmn_1_1control.html',1,'alps::cmn']]],
-  ['detail_31',['detail',['../namespacealps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail.html',1,'alps::cmn::actuator::robomas_motor::detail'],['../namespacealps_1_1cmn_1_1communication_1_1detail.html',1,'alps::cmn::communication::detail']]],
+  ['detail_31',['detail',['../namespacealps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail.html',1,'alps::cmn::actuator::robomas_motor::detail'],['../namespacealps_1_1cmn_1_1communication_1_1detail.html',1,'alps::cmn::communication::detail'],['../namespacealps_1_1ros2_1_1util_1_1detail.html',1,'alps::ros2::util::detail']]],
   ['gpio_32',['gpio',['../namespacealps_1_1cmn_1_1gpio.html',1,'alps::cmn::gpio'],['../namespacealps_1_1mbed_1_1gpio.html',1,'alps::mbed::gpio']]],
   ['lin_33',['lin',['../namespacealps_1_1lin.html',1,'alps']]],
   ['log_34',['log',['../namespacealps_1_1cmn_1_1log.html',1,'alps::cmn::log'],['../namespacealps_1_1mbed_1_1log.html',1,'alps::mbed::log'],['../namespacealps_1_1ros2_1_1log.html',1,'alps::ros2::log']]],
@@ -45,5 +45,5 @@ var searchData=
   ['time_42',['time',['../namespacealps_1_1cmn_1_1time.html',1,'alps::cmn']]],
   ['tool_43',['tool',['../namespacealps_1_1cmn_1_1tool.html',1,'alps::cmn']]],
   ['ui_44',['ui',['../namespacealps_1_1ros2_1_1ui.html',1,'alps::ros2']]],
-  ['util_45',['util',['../namespacealps_1_1cmn_1_1util.html',1,'alps::cmn']]]
+  ['util_45',['util',['../namespacealps_1_1cmn_1_1util.html',1,'alps::cmn::util'],['../namespacealps_1_1ros2_1_1util.html',1,'alps::ros2::util']]]
 ];
