@@ -31,7 +31,8 @@ var searchData=
   ['clear_82',['clear',['../structalps_1_1cmn_1_1sensor_1_1_tcs34725_1_1_rgb_color.html#ab26ce5edb7aaf37b61ace28feb63fb5e',1,'alps::cmn::sensor::Tcs34725::RgbColor']]],
   ['cobs_83',['Cobs',['../classalps_1_1cmn_1_1communication_1_1_cobs.html',1,'alps::cmn::communication']]],
   ['cobs_2ehpp_84',['cobs.hpp',['../cobs_8hpp.html',1,'']]],
-  ['control_85',['Control',['../classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#a42302077a402de3e6ab8fe96bd097ee1',1,'alps::cmn::control::MotorAngleVelocityController::Control()'],['../classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ad7db09ea125622565e0a1674832a4edf',1,'alps::cmn::control::MotorVelocityController::Control()'],['../classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#a99dfaf0d28918cb866dca76c6b3143f8',1,'alps::cmn::control::MotorAngleController::Control()']]],
-  ['convertcanmsgtorostopic_86',['ConvertCanMsgToRosTopic',['../namespacealps_1_1ros2_1_1communication.html#aec9dc653c0547119c270f5d72819d45f',1,'alps::ros2::communication']]],
-  ['convertrostopictocanmsg_87',['ConvertRosTopicToCanMsg',['../namespacealps_1_1ros2_1_1communication.html#a1d28b489912ffeee862b7fd6cd731d2c',1,'alps::ros2::communication']]]
+  ['contains_85',['Contains',['../classalps_1_1ros2_1_1util_1_1_param_map.html#a415cbeea6f9836d77dd12e7b38ec4867',1,'alps::ros2::util::ParamMap']]],
+  ['control_86',['Control',['../classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#a99dfaf0d28918cb866dca76c6b3143f8',1,'alps::cmn::control::MotorAngleController::Control()'],['../classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#a42302077a402de3e6ab8fe96bd097ee1',1,'alps::cmn::control::MotorAngleVelocityController::Control()'],['../classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ad7db09ea125622565e0a1674832a4edf',1,'alps::cmn::control::MotorVelocityController::Control()']]],
+  ['convertcanmsgtorostopic_87',['ConvertCanMsgToRosTopic',['../namespacealps_1_1ros2_1_1communication.html#aec9dc653c0547119c270f5d72819d45f',1,'alps::ros2::communication']]],
+  ['convertrostopictocanmsg_88',['ConvertRosTopicToCanMsg',['../namespacealps_1_1ros2_1_1communication.html#a1d28b489912ffeee862b7fd6cd731d2c',1,'alps::ros2::communication']]]
 ];

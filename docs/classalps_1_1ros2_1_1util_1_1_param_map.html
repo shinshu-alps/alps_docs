@@ -1,0 +1,467 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps::ros2::util::ParamMap クラス</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classalps_1_1ros2_1_1util_1_1_param_map.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="classalps_1_1ros2_1_1util_1_1_param_map-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">alps::ros2::util::ParamMap クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>ROS Parameterの値を辞書として内部に保持するクラス  
+ <a href="classalps_1_1ros2_1_1util_1_1_param_map.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="param__map_8hpp_source.html">param_map.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a9b422ead1c8b83dd237ba59d39d1982b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1_param_map.html#a9b422ead1c8b83dd237ba59d39d1982b">ParamMap</a> ()=default</td></tr>
+<tr class="memdesc:a9b422ead1c8b83dd237ba59d39d1982b"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトコンストラクタ  <a href="classalps_1_1ros2_1_1util_1_1_param_map.html#a9b422ead1c8b83dd237ba59d39d1982b">[詳解]</a><br /></td></tr>
+<tr class="separator:a9b422ead1c8b83dd237ba59d39d1982b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa8ef9307caadcaa7dfc50edbe5bcce2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1_param_map.html#afa8ef9307caadcaa7dfc50edbe5bcce2">ParamMap</a> (const std::unordered_map&lt; std::string, rclcpp::Parameter &gt; &amp;name_to_value)</td></tr>
+<tr class="memdesc:afa8ef9307caadcaa7dfc50edbe5bcce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">マップから初期化するコンストラクタ  <a href="classalps_1_1ros2_1_1util_1_1_param_map.html#afa8ef9307caadcaa7dfc50edbe5bcce2">[詳解]</a><br /></td></tr>
+<tr class="separator:afa8ef9307caadcaa7dfc50edbe5bcce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af474fd8322e98053c09f993a91995540"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1_param_map.html#af474fd8322e98053c09f993a91995540">ParamMap</a> (const std::vector&lt; rclcpp::Parameter &gt; &amp;params)</td></tr>
+<tr class="memdesc:af474fd8322e98053c09f993a91995540"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータのリストから初期化するコンストラクタ  <a href="classalps_1_1ros2_1_1util_1_1_param_map.html#af474fd8322e98053c09f993a91995540">[詳解]</a><br /></td></tr>
+<tr class="separator:af474fd8322e98053c09f993a91995540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a415cbeea6f9836d77dd12e7b38ec4867"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1_param_map.html#a415cbeea6f9836d77dd12e7b38ec4867">Contains</a> (const std::string &amp;name) const</td></tr>
+<tr class="memdesc:a415cbeea6f9836d77dd12e7b38ec4867"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定した名前のパラメータが含まれているかどうかを返す  <a href="classalps_1_1ros2_1_1util_1_1_param_map.html#a415cbeea6f9836d77dd12e7b38ec4867">[詳解]</a><br /></td></tr>
+<tr class="separator:a415cbeea6f9836d77dd12e7b38ec4867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a113d38db2657773b5b5556f0877f35ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classalps_1_1ros2_1_1util_1_1_param_map.html">ParamMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1_param_map.html#a113d38db2657773b5b5556f0877f35ca">Merge</a> (const <a class="el" href="classalps_1_1ros2_1_1util_1_1_param_map.html">ParamMap</a> &amp;other)</td></tr>
+<tr class="memdesc:a113d38db2657773b5b5556f0877f35ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">他のパラメータマップとマージする  <a href="classalps_1_1ros2_1_1util_1_1_param_map.html#a113d38db2657773b5b5556f0877f35ca">[詳解]</a><br /></td></tr>
+<tr class="separator:a113d38db2657773b5b5556f0877f35ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f5636d6a7351afd41fdc7053e3becb"><td class="memItemLeft" align="right" valign="top">std::optional&lt; rclcpp::Parameter &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1_param_map.html#ad1f5636d6a7351afd41fdc7053e3becb">GetParam</a> (const std::string &amp;name) const</td></tr>
+<tr class="memdesc:ad1f5636d6a7351afd41fdc7053e3becb"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定した名前のパラメータを取得する  <a href="classalps_1_1ros2_1_1util_1_1_param_map.html#ad1f5636d6a7351afd41fdc7053e3becb">[詳解]</a><br /></td></tr>
+<tr class="separator:ad1f5636d6a7351afd41fdc7053e3becb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fdce7b047ee0a710b129f3741fc6c16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1_param_map.html#a3fdce7b047ee0a710b129f3741fc6c16">SetParam</a> (const std::string &amp;name, const rclcpp::Parameter &amp;value)</td></tr>
+<tr class="memdesc:a3fdce7b047ee0a710b129f3741fc6c16"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータを設定する  <a href="classalps_1_1ros2_1_1util_1_1_param_map.html#a3fdce7b047ee0a710b129f3741fc6c16">[詳解]</a><br /></td></tr>
+<tr class="separator:a3fdce7b047ee0a710b129f3741fc6c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfe4538ef93709aced887519201aca02"><td class="memItemLeft" align="right" valign="top">std::vector&lt; rclcpp::Parameter &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1_param_map.html#adfe4538ef93709aced887519201aca02">ToVector</a> () const</td></tr>
+<tr class="memdesc:adfe4538ef93709aced887519201aca02"><td class="mdescLeft">&#160;</td><td class="mdescRight">保持するパラメータのリストを作成する  <a href="classalps_1_1ros2_1_1util_1_1_param_map.html#adfe4538ef93709aced887519201aca02">[詳解]</a><br /></td></tr>
+<tr class="separator:adfe4538ef93709aced887519201aca02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff37e908f07000b8735a4e3a061d066a"><td class="memItemLeft" align="right" valign="top">const std::unordered_map&lt; std::string, rclcpp::Parameter &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1_param_map.html#aff37e908f07000b8735a4e3a061d066a">GetMap</a> () const</td></tr>
+<tr class="memdesc:aff37e908f07000b8735a4e3a061d066a"><td class="mdescLeft">&#160;</td><td class="mdescRight">保持するパラメータのマップへの参照を取得する  <a href="classalps_1_1ros2_1_1util_1_1_param_map.html#aff37e908f07000b8735a4e3a061d066a">[詳解]</a><br /></td></tr>
+<tr class="separator:aff37e908f07000b8735a4e3a061d066a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>ROS Parameterの値を辞書として内部に保持するクラス </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a9b422ead1c8b83dd237ba59d39d1982b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b422ead1c8b83dd237ba59d39d1982b">&#9670;&nbsp;</a></span>ParamMap() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">alps::ros2::util::ParamMap::ParamMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>デフォルトコンストラクタ </p>
+
+</div>
+</div>
+<a id="afa8ef9307caadcaa7dfc50edbe5bcce2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa8ef9307caadcaa7dfc50edbe5bcce2">&#9670;&nbsp;</a></span>ParamMap() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">alps::ros2::util::ParamMap::ParamMap </td>
+          <td>(</td>
+          <td class="paramtype">const std::unordered_map&lt; std::string, rclcpp::Parameter &gt; &amp;&#160;</td>
+          <td class="paramname"><em>name_to_value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>マップから初期化するコンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name_to_value</td><td>パラメータ名と値のマップ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af474fd8322e98053c09f993a91995540"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af474fd8322e98053c09f993a91995540">&#9670;&nbsp;</a></span>ParamMap() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">alps::ros2::util::ParamMap::ParamMap </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; rclcpp::Parameter &gt; &amp;&#160;</td>
+          <td class="paramname"><em>params</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>パラメータのリストから初期化するコンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>パラメータのリスト </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a415cbeea6f9836d77dd12e7b38ec4867"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a415cbeea6f9836d77dd12e7b38ec4867">&#9670;&nbsp;</a></span>Contains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool alps::ros2::util::ParamMap::Contains </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定した名前のパラメータが含まれているかどうかを返す </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>パラメータ名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 含まれている </dd>
+<dd>
+false 含まれていない </dd></dl>
+
+</div>
+</div>
+<a id="aff37e908f07000b8735a4e3a061d066a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff37e908f07000b8735a4e3a061d066a">&#9670;&nbsp;</a></span>GetMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::unordered_map&lt;std::string, rclcpp::Parameter&gt;&amp; alps::ros2::util::ParamMap::GetMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>保持するパラメータのマップへの参照を取得する </p>
+<dl class="section return"><dt>戻り値</dt><dd>const std::unordered_map&lt;std::string, rclcpp::Parameter&gt;&amp; パラメータのマップ </dd></dl>
+
+</div>
+</div>
+<a id="ad1f5636d6a7351afd41fdc7053e3becb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1f5636d6a7351afd41fdc7053e3becb">&#9670;&nbsp;</a></span>GetParam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt;rclcpp::Parameter&gt; alps::ros2::util::ParamMap::GetParam </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定した名前のパラメータを取得する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>パラメータ名</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>std::optional&lt;rclcpp::Parameter&gt; パラメータの値. 取得に失敗した場合はstd::nullopt </dd></dl>
+
+</div>
+</div>
+<a id="a113d38db2657773b5b5556f0877f35ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a113d38db2657773b5b5556f0877f35ca">&#9670;&nbsp;</a></span>Merge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalps_1_1ros2_1_1util_1_1_param_map.html">ParamMap</a>&amp; alps::ros2::util::ParamMap::Merge </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classalps_1_1ros2_1_1util_1_1_param_map.html">ParamMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>他のパラメータマップとマージする </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>他のパラメータマップ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd><a class="el" href="classalps_1_1ros2_1_1util_1_1_param_map.html" title="ROS Parameterの値を辞書として内部に保持するクラス">ParamMap</a> マージ後のパラメータマップ </dd></dl>
+
+</div>
+</div>
+<a id="a3fdce7b047ee0a710b129f3741fc6c16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fdce7b047ee0a710b129f3741fc6c16">&#9670;&nbsp;</a></span>SetParam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alps::ros2::util::ParamMap::SetParam </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const rclcpp::Parameter &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>パラメータを設定する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>パラメータ名 </td></tr>
+    <tr><td class="paramname">value</td><td>パラメータの値 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adfe4538ef93709aced887519201aca02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfe4538ef93709aced887519201aca02">&#9670;&nbsp;</a></span>ToVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;rclcpp::Parameter&gt; alps::ros2::util::ParamMap::ToVector </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>保持するパラメータのリストを作成する </p>
+<dl class="section return"><dt>戻り値</dt><dd>std::vector&lt;rclcpp::Parameter&gt; パラメータのリスト </dd></dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>alps_ros2_lib/include/alps_ros2/util/<a class="el" href="param__map_8hpp_source.html">param_map.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacealps.html">alps</a></li><li class="navelem"><a class="el" href="namespacealps_1_1ros2.html">ros2</a></li><li class="navelem"><a class="el" href="namespacealps_1_1ros2_1_1util.html">util</a></li><li class="navelem"><a class="el" href="classalps_1_1ros2_1_1util_1_1_param_map.html">ParamMap</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>
