@@ -96,14 +96,14 @@ var hierarchy =
     [ "alps::cmn::sensor::IRotarySensor< MotorBase< Clock > >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", [
       [ "alps::cmn::actuator::robomas_motor::detail::MotorBase< Clock >", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail_1_1_motor_base.html", null ]
     ] ],
-    [ "alps::cmn::sensor::IRotarySensor< Potentiometer< AnalogIn > >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", [
-      [ "alps::cmn::sensor::Potentiometer< AnalogIn >", "classalps_1_1cmn_1_1sensor_1_1_potentiometer.html", null ]
+    [ "alps::cmn::sensor::IRotarySensor< Potentiometer< Clock, AnalogIn > >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", [
+      [ "alps::cmn::sensor::Potentiometer< Clock, AnalogIn >", "classalps_1_1cmn_1_1sensor_1_1_potentiometer.html", null ]
     ] ],
     [ "alps::cmn::sensor::IRotarySensor< RorarySensor >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", null ],
     [ "alps::cmn::sensor::IRotarySensor< RotarySensor >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", null ],
     [ "alps::cmn::communication::detail::IsBuiltinType< T >", "structalps_1_1cmn_1_1communication_1_1detail_1_1_is_builtin_type.html", null ],
-    [ "alps::ros2::util::IsStandardType< T >", "structalps_1_1ros2_1_1util_1_1_is_standard_type.html", null ],
-    [ "alps::ros2::util::IsStandardVectorValueType< T >", "structalps_1_1ros2_1_1util_1_1_is_standard_vector_value_type.html", null ],
+    [ "alps::ros2::util::detail::IsStandardType< T >", "structalps_1_1ros2_1_1util_1_1detail_1_1_is_standard_type.html", null ],
+    [ "alps::ros2::util::detail::IsStandardVectorValueType< T >", "structalps_1_1ros2_1_1util_1_1detail_1_1_is_standard_vector_value_type.html", null ],
     [ "alps::cmn::communication::IUartIo< Derived >", "classalps_1_1cmn_1_1communication_1_1_i_uart_io.html", null ],
     [ "alps::cmn::communication::IUartIo< UartIo >", "classalps_1_1cmn_1_1communication_1_1_i_uart_io.html", [
       [ "alps::lin::communication::UartIo", "classalps_1_1lin_1_1communication_1_1_uart_io.html", null ],
@@ -129,16 +129,25 @@ var hierarchy =
     [ "alps::cmn::robotics::Odometory< Clock >", "classalps_1_1cmn_1_1robotics_1_1_odometory.html", null ],
     [ "alps::cmn::time::OneShotPollingTimer< Clock >", "classalps_1_1cmn_1_1time_1_1_one_shot_polling_timer.html", null ],
     [ "alps::ros2::util::ParamConverter< T >", "structalps_1_1ros2_1_1util_1_1_param_converter.html", null ],
+    [ "alps::ros2::util::ParamConverter< cmn::control::MotorVelocityControllerParam >", "structalps_1_1ros2_1_1util_1_1_param_converter_3_01cmn_1_1control_1_1_motor_velocity_controller_param_01_4.html", null ],
+    [ "alps::ros2::util::ParamConverter< cmn::control::PidParam >", "structalps_1_1ros2_1_1util_1_1_param_converter_3_01cmn_1_1control_1_1_pid_param_01_4.html", null ],
+    [ "alps::ros2::util::ParamConverter< cmn::time::Seconds >", "structalps_1_1ros2_1_1util_1_1_param_converter_3_01cmn_1_1time_1_1_seconds_01_4.html", null ],
     [ "alps::ros2::util::ParamMap", "classalps_1_1ros2_1_1util_1_1_param_map.html", null ],
     [ "alps::cmn::control::Pid< Clock >", "classalps_1_1cmn_1_1control_1_1_pid.html", null ],
     [ "alps::cmn::control::PidCalcInfo", "structalps_1_1cmn_1_1control_1_1_pid_calc_info.html", null ],
     [ "alps::cmn::control::PidParam", "structalps_1_1cmn_1_1control_1_1_pid_param.html", null ],
+    [ "alps::cmn::sensor::PotentiometerParam", "structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html", null ],
     [ "alps::cmn::sensor::Bno055< I2cIo >::Quaternion", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html", null ],
     [ "alps::cmn::sensor::S11059< I2cIo >::RawData", "structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html", null ],
     [ "alps::cmn::time::RepeatingPollingTimer< Clock >", "classalps_1_1cmn_1_1time_1_1_repeating_polling_timer.html", null ],
     [ "alps::cmn::sensor::Tcs34725< Clock, I2cIo >::RgbColor", "structalps_1_1cmn_1_1sensor_1_1_tcs34725_1_1_rgb_color.html", null ],
     [ "alps::cmn::sensor::S11059< I2cIo >", "classalps_1_1cmn_1_1sensor_1_1_s11059.html", null ],
     [ "alps::cmn::communication::Serializer< T >", "structalps_1_1cmn_1_1communication_1_1_serializer.html", null ],
+    [ "alps::cmn::communication::Serializer< control::MotorVelocityControllerCalcInfo >", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_motor_velocity_controller_calc_info_01_4.html", null ],
+    [ "alps::cmn::communication::Serializer< control::MotorVelocityControllerParam >", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_motor_velocity_controller_param_01_4.html", null ],
+    [ "alps::cmn::communication::Serializer< control::PidCalcInfo >", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_pid_calc_info_01_4.html", null ],
+    [ "alps::cmn::communication::Serializer< control::PidParam >", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_pid_param_01_4.html", null ],
+    [ "alps::cmn::communication::Serializer< time::Seconds >", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01time_1_1_seconds_01_4.html", null ],
     [ "alps::cmn::actuator::ServoMotor< PwmOut >", "classalps_1_1cmn_1_1actuator_1_1_servo_motor.html", null ],
     [ "alps::cmn::actuator::ServoMotorParam", "structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html", null ],
     [ "alps::cmn::sensor::Tcs34725< Clock, I2cIo >", "classalps_1_1cmn_1_1sensor_1_1_tcs34725.html", null ],

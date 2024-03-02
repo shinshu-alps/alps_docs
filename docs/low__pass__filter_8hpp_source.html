@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('low__pass__filter_8hpp_source.html',''
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">using</span> TimePoint = <span class="keyword">typename</span> Clock::time_point;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#a6fb970f280b46ae0fcece1d1855bc479">   45</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#a6fb970f280b46ae0fcece1d1855bc479">LowPassFilter</a>(<a class="code" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">time::Seconds</a> time_constant) : time_constant_{time_constant} {};</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#accf96027bda5372af9b58a6ee5e902a6">   45</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#accf96027bda5372af9b58a6ee5e902a6">LowPassFilter</a>(<a class="code" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">time::Seconds</a> time_const) : time_const_{time_const} {};</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#a8cdf7e554c629583d950c67952037977">   54</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#a8cdf7e554c629583d950c67952037977">Filter</a>(<span class="keywordtype">float</span> input)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  {</div>
@@ -142,49 +142,52 @@ $(document).ready(function(){initNavTree('low__pass__filter_8hpp_source.html',''
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// フィルター計算</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    TimePoint now = Clock::now();</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">time::Seconds</a> elapsed_time = std::chrono::duration_cast&lt;time::Seconds&gt;(now - prev_timestamp_);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">float</span> alpha = time_constant_.count() / (time_constant_.count() + elapsed_time.count());</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">float</span> output = alpha * last_output_ + (1.0f - alpha) * input;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    prev_timestamp_ = now;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    last_output_ = output;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">float</span> alpha = 0.0f;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> ((time_const_.count() + elapsed_time.count()) != 0) {  <span class="comment">// ゼロ割りを防ぐ</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      alpha = time_const_.count() / (time_const_.count() + elapsed_time.count());</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">float</span> output = alpha * last_output_ + (1.0f - alpha) * input;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> output;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    prev_timestamp_ = now;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    last_output_ = output;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#af8644cbaee47def981fc23038a2bd992">   81</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#af8644cbaee47def981fc23038a2bd992">GetLastOutput</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    first_flag_ = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> last_output_;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#aaa844888d289e4bd8635b2c8c5aecfe5">   92</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#aaa844888d289e4bd8635b2c8c5aecfe5">SetTimeConstant</a>(<a class="code" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">time::Seconds</a> time_constant)</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    time_constant_ = time_constant;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#a8b79857a965dec54588e36d2a6081484">  101</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#a8b79857a965dec54588e36d2a6081484">Reset</a>()</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    first_flag_ = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">bool</span> first_flag_{<span class="keyword">true</span>};</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">float</span> last_output_{0.0f};</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <a class="code" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">time::Seconds</a> time_constant_;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  TimePoint prev_timestamp_;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;};</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}  <span class="comment">// namespace control</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}  <span class="comment">// namespace cmn</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// ALPS_CMN_CONTROL_LOW_PASS_FILTER_HPP_</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> output;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#af8644cbaee47def981fc23038a2bd992">   84</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#af8644cbaee47def981fc23038a2bd992">GetLastOutput</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    first_flag_ = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> last_output_;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#afefb1f3852bc8f87c445cc8e6c682b17">   95</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#afefb1f3852bc8f87c445cc8e6c682b17">SetTimeConstant</a>(<a class="code" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">time::Seconds</a> time_const)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    time_const_ = time_const;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#a8b79857a965dec54588e36d2a6081484">  104</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#a8b79857a965dec54588e36d2a6081484">Reset</a>()</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    first_flag_ = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">bool</span> first_flag_{<span class="keyword">true</span>};</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">float</span> last_output_{0.0f};</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <a class="code" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">time::Seconds</a> time_const_;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  TimePoint prev_timestamp_;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}  <span class="comment">// namespace control</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// ALPS_CMN_CONTROL_LOW_PASS_FILTER_HPP_</span></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_filter_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html">alps::cmn::control::LowPassFilter</a></div><div class="ttdoc">ローパスフィルタのクラス</div><div class="ttdef"><b>Definition:</b> low_pass_filter.hpp:34</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_filter_html_a6fb970f280b46ae0fcece1d1855bc479"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#a6fb970f280b46ae0fcece1d1855bc479">alps::cmn::control::LowPassFilter::LowPassFilter</a></div><div class="ttdeci">LowPassFilter(time::Seconds time_constant)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> low_pass_filter.hpp:45</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_filter_html_a8b79857a965dec54588e36d2a6081484"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#a8b79857a965dec54588e36d2a6081484">alps::cmn::control::LowPassFilter::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">フィルターをリセットする</div><div class="ttdef"><b>Definition:</b> low_pass_filter.hpp:101</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_filter_html_a8b79857a965dec54588e36d2a6081484"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#a8b79857a965dec54588e36d2a6081484">alps::cmn::control::LowPassFilter::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">フィルターをリセットする</div><div class="ttdef"><b>Definition:</b> low_pass_filter.hpp:104</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_filter_html_a8cdf7e554c629583d950c67952037977"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#a8cdf7e554c629583d950c67952037977">alps::cmn::control::LowPassFilter::Filter</a></div><div class="ttdeci">float Filter(float input)</div><div class="ttdoc">入力値をローパスフィルタにかける</div><div class="ttdef"><b>Definition:</b> low_pass_filter.hpp:54</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_filter_html_aaa844888d289e4bd8635b2c8c5aecfe5"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#aaa844888d289e4bd8635b2c8c5aecfe5">alps::cmn::control::LowPassFilter::SetTimeConstant</a></div><div class="ttdeci">void SetTimeConstant(time::Seconds time_constant)</div><div class="ttdoc">フィルター時定数を設定する</div><div class="ttdef"><b>Definition:</b> low_pass_filter.hpp:92</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_filter_html_af8644cbaee47def981fc23038a2bd992"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#af8644cbaee47def981fc23038a2bd992">alps::cmn::control::LowPassFilter::GetLastOutput</a></div><div class="ttdeci">float GetLastOutput() const</div><div class="ttdoc">前回のフィルター出力値を返す</div><div class="ttdef"><b>Definition:</b> low_pass_filter.hpp:81</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_filter_html_accf96027bda5372af9b58a6ee5e902a6"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#accf96027bda5372af9b58a6ee5e902a6">alps::cmn::control::LowPassFilter::LowPassFilter</a></div><div class="ttdeci">LowPassFilter(time::Seconds time_const)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> low_pass_filter.hpp:45</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_filter_html_af8644cbaee47def981fc23038a2bd992"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#af8644cbaee47def981fc23038a2bd992">alps::cmn::control::LowPassFilter::GetLastOutput</a></div><div class="ttdeci">float GetLastOutput() const</div><div class="ttdoc">前回のフィルター出力値を返す</div><div class="ttdef"><b>Definition:</b> low_pass_filter.hpp:84</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_filter_html_afefb1f3852bc8f87c445cc8e6c682b17"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#afefb1f3852bc8f87c445cc8e6c682b17">alps::cmn::control::LowPassFilter::SetTimeConstant</a></div><div class="ttdeci">void SetTimeConstant(time::Seconds time_const)</div><div class="ttdoc">フィルター時定数を設定する</div><div class="ttdef"><b>Definition:</b> low_pass_filter.hpp:95</div></div>
 <div class="ttc" id="aduration_8hpp_html"><div class="ttname"><a href="duration_8hpp.html">duration.hpp</a></div><div class="ttdoc">時間間隔の型エイリアス</div></div>
 <div class="ttc" id="anamespacealps_1_1cmn_1_1time_html_a4dc32b93ee736cf2c098e6467107ee56"><div class="ttname"><a href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">alps::cmn::time::Seconds</a></div><div class="ttdeci">std::chrono::duration&lt; float, std::ratio&lt; 1 &gt; &gt; Seconds</div><div class="ttdoc">float精度の秒</div><div class="ttdef"><b>Definition:</b> duration.hpp:25</div></div>
 <div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:23</div></div>

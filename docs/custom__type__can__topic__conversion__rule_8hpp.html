@@ -1,0 +1,176 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps_ros2_lib/include/alps_ros2/communication/custom_type_can_topic_conversion_rule.hpp ファイル</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('custom__type__can__topic__conversion__rule_8hpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">custom_type_can_topic_conversion_rule.hpp ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="motor__velocity__controller_8hpp_source.html">alps_cmn/control/motor_velocity_controller.hpp</a>&quot;</code><br />
+<code>#include &quot;alps_interfaces/msg/motor_velocity_controller_calc_info.hpp&quot;</code><br />
+<code>#include &quot;alps_interfaces/msg/motor_velocity_controller_param.hpp&quot;</code><br />
+<code>#include &quot;alps_interfaces/msg/pid_calc_info.hpp&quot;</code><br />
+<code>#include &quot;alps_interfaces/msg/pid_param.hpp&quot;</code><br />
+<code>#include &quot;alps_interfaces/msg/seconds.hpp&quot;</code><br />
+<code>#include &quot;<a class="el" href="can__topic__converter_8hpp_source.html">alps_ros2/communication/can_topic_converter.hpp</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+custom_type_can_topic_conversion_rule.hpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="custom__type__can__topic__conversion__rule_8hpp__incl.svg" width="6726" height="528"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div>
+<p><a href="custom__type__can__topic__conversion__rule_8hpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespacealps"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps.html">alps</a></td></tr>
+<tr class="memdesc:namespacealps"><td class="mdescLeft">&#160;</td><td class="mdescRight">ロボ研で開発したライブラリ <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacealps_1_1ros2"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2.html">alps::ros2</a></td></tr>
+<tr class="memdesc:namespacealps_1_1ros2"><td class="mdescLeft">&#160;</td><td class="mdescRight">ROS2用ライブラリ <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacealps_1_1ros2_1_1communication"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html">alps::ros2::communication</a></td></tr>
+<tr class="memdesc:namespacealps_1_1ros2_1_1communication"><td class="mdescLeft">&#160;</td><td class="mdescRight">通信関係 <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a15fea0ad72701eb6e5d4a5f4882b6a73"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a15fea0ad72701eb6e5d4a5f4882b6a73"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a15fea0ad72701eb6e5d4a5f4882b6a73">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const <a class="el" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">alps::cmn::time::Seconds</a> &amp;can_data, alps_interfaces::msg::Seconds &amp;ros_msg)</td></tr>
+<tr class="separator:a15fea0ad72701eb6e5d4a5f4882b6a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeafeca258510cf5148e54ab5cabe763"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:abeafeca258510cf5148e54ab5cabe763"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#abeafeca258510cf5148e54ab5cabe763">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const alps_interfaces::msg::Seconds &amp;ros_msg, <a class="el" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">alps::cmn::time::Seconds</a> &amp;can_data)</td></tr>
+<tr class="separator:abeafeca258510cf5148e54ab5cabe763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a227f2d9b4abdea82e5224b30e185de91"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a227f2d9b4abdea82e5224b30e185de91"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a227f2d9b4abdea82e5224b30e185de91">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">alps::cmn::control::PidParam</a> &amp;can_data, alps_interfaces::msg::PidParam &amp;ros_msg)</td></tr>
+<tr class="separator:a227f2d9b4abdea82e5224b30e185de91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a517bfdeeb30ca58502c613d7b9dee864"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a517bfdeeb30ca58502c613d7b9dee864"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a517bfdeeb30ca58502c613d7b9dee864">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const alps_interfaces::msg::PidParam &amp;ros_msg, <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">alps::cmn::control::PidParam</a> &amp;can_data)</td></tr>
+<tr class="separator:a517bfdeeb30ca58502c613d7b9dee864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a8143df061bdf24b0ee3d2814fcdd29"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a9a8143df061bdf24b0ee3d2814fcdd29"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a9a8143df061bdf24b0ee3d2814fcdd29">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html">alps::cmn::control::PidCalcInfo</a> &amp;can_data, alps_interfaces::msg::PidCalcInfo &amp;ros_msg)</td></tr>
+<tr class="separator:a9a8143df061bdf24b0ee3d2814fcdd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40bf041c577e23576d55b09ee66f702e"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a40bf041c577e23576d55b09ee66f702e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a40bf041c577e23576d55b09ee66f702e">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html">alps::cmn::control::MotorVelocityControllerParam</a> &amp;can_data, alps_interfaces::msg::MotorVelocityControllerParam &amp;ros_msg)</td></tr>
+<tr class="separator:a40bf041c577e23576d55b09ee66f702e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97a9e706c31e7c9874d49f3c9d4ecaf7"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a97a9e706c31e7c9874d49f3c9d4ecaf7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#a97a9e706c31e7c9874d49f3c9d4ecaf7">alps::ros2::communication::ConvertRosTopicToCanMsg</a> (const alps_interfaces::msg::MotorVelocityControllerParam &amp;ros_msg, <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html">alps::cmn::control::MotorVelocityControllerParam</a> &amp;can_data)</td></tr>
+<tr class="separator:a97a9e706c31e7c9874d49f3c9d4ecaf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1340b4a960e9543db9e6b08e405c49c"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:af1340b4a960e9543db9e6b08e405c49c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1ros2_1_1communication.html#af1340b4a960e9543db9e6b08e405c49c">alps::ros2::communication::ConvertCanMsgToRosTopic</a> (const <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html">alps::cmn::control::MotorVelocityControllerCalcInfo</a> &amp;can_data, alps_interfaces::msg::MotorVelocityControllerCalcInfo &amp;ros_msg)</td></tr>
+<tr class="separator:af1340b4a960e9543db9e6b08e405c49c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_7ebb08d2631605158f57f066fc85c832.html">alps_ros2_lib</a></li><li class="navelem"><a class="el" href="dir_d90eac5d112df8937e227330719f4f85.html">include</a></li><li class="navelem"><a class="el" href="dir_c1e6a71faa0eb7f68193916a54ca9466.html">alps_ros2</a></li><li class="navelem"><a class="el" href="dir_ed551a56b1c4fafaf4bd37570c44b109.html">communication</a></li><li class="navelem"><a class="el" href="custom__type__can__topic__conversion__rule_8hpp.html">custom_type_can_topic_conversion_rule.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

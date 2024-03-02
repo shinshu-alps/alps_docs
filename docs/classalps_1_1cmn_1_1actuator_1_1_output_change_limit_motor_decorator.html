@@ -192,15 +192,6 @@ template&lt;class Clock , class BaseMotor &gt; </div>
 <p>コンストラクタ </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">base_motor</td><td>摩擦補償対象となる元のモーター </td></tr>
-    <tr><td class="paramname">max_change_rate</td><td>変化率の上限 [/sec] </td></tr>
-    <tr><td class="paramname">lower_change_rate</td><td>変化率の下限 [/sec]</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>コンストラクタ</p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
     <tr><td class="paramname">base_motor</td><td>変化率制限を掛ける元のモーター </td></tr>
     <tr><td class="paramname">change_rate_limit</td><td>変化率制限範囲 </td></tr>
     <tr><td class="paramname">output_observer</td><td>出力値監視オブザーバー．第一引数が元の出力値，第二引数が制限後の出力値 </td></tr>
@@ -274,7 +265,7 @@ template&lt;class Clock , class BaseMotor &gt; </div>
 <p>出力変化制限を掛けた上でモーターを回転させる </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">output_ratio</td><td>出力割合（-1.0 ~ 1.0） </td></tr>
+    <tr><td class="paramname">output_ratio</td><td>出力割合（-1.0 〜 1.0） </td></tr>
   </table>
   </dd>
 </dl>
