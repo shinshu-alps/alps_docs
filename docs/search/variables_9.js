@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['now_5fangle_970',['now_angle',['../structalps_1_1cmn_1_1control_1_1_motor_angle_controller_calc_info.html#a69bb804b2fa1749092ae502a6f946aad',1,'alps::cmn::control::MotorAngleControllerCalcInfo']]],
-  ['now_5fvelocity_971',['now_velocity',['../structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#ad644ddfbb42bb03338d956cf9bf49b0c',1,'alps::cmn::control::MotorVelocityControllerCalcInfo']]],
-  ['now_5fvelocity_5fbefore_5flpf_972',['now_velocity_before_lpf',['../structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a4926ae0b15220af38a9a94284a941c99',1,'alps::cmn::control::MotorVelocityControllerCalcInfo']]],
-  ['now_5fvelocity_5flpf_5ftime_5fconstant_973',['now_velocity_lpf_time_constant',['../structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a523055527df9c2e02ad9deabdfcb8a5c',1,'alps::cmn::control::MotorVelocityControllerParam']]]
+  ['lpf_5ftime_5fconst_999',['lpf_time_const',['../structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#af9221bffc4df55484f6b5288f8437ec8',1,'alps::cmn::sensor::PotentiometerParam']]]
 ];

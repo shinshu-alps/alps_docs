@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['green_943',['green',['../structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#a8bf993e99acbecfab7f1513b226751c3',1,'alps::cmn::sensor::S11059::RawData::green()'],['../structalps_1_1cmn_1_1sensor_1_1_tcs34725_1_1_rgb_color.html#aad5a0665c3f1e27c75e2ef68b66301bd',1,'alps::cmn::sensor::Tcs34725::RgbColor::green()']]],
-  ['green_5fratio_944',['green_ratio',['../structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#a4ea990c9eb55c68fe867ec8743e1bc61',1,'alps::cmn::sensor::S11059::NormalizedData']]]
+  ['ff_5facceleration_5fterm_972',['ff_acceleration_term',['../structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#aa3d48dafc9b0d55346d8b2165c94d018',1,'alps::cmn::control::MotorVelocityControllerCalcInfo']]],
+  ['ff_5fterm_973',['ff_term',['../structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#a39cb5f708ef69416ca061f15647115a7',1,'alps::cmn::control::PidCalcInfo']]],
+  ['ff_5fvelocity_5fterm_974',['ff_velocity_term',['../structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#af9af791c36aba1acfec215eba8f4c012',1,'alps::cmn::control::MotorVelocityControllerCalcInfo']]]
 ];

@@ -17,6 +17,7 @@ var dir_96320550a29baac38dc9eb0ae89f5e73 =
       [ "IncrementalEncoder", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder" ]
     ] ],
     [ "potentiometer.hpp", "potentiometer_8hpp.html", [
+      [ "PotentiometerParam", "structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html", "structalps_1_1cmn_1_1sensor_1_1_potentiometer_param" ],
       [ "Potentiometer", "classalps_1_1cmn_1_1sensor_1_1_potentiometer.html", "classalps_1_1cmn_1_1sensor_1_1_potentiometer" ]
     ] ],
     [ "s11059.hpp", "s11059_8hpp.html", [

@@ -97,6 +97,7 @@ var menudata={children:[
 {text:"w",url:"functions_func_w.html#index_w"},
 {text:"~",url:"functions_func_~.html#index__7E"}]},
 {text:"変数",url:"functions_vars.html",children:[
+{text:"a",url:"functions_vars.html#index_a"},
 {text:"b",url:"functions_vars.html#index_b"},
 {text:"c",url:"functions_vars.html#index_c"},
 {text:"d",url:"functions_vars.html#index_d"},
@@ -105,6 +106,7 @@ var menudata={children:[
 {text:"g",url:"functions_vars.html#index_g"},
 {text:"i",url:"functions_vars.html#index_i"},
 {text:"k",url:"functions_vars.html#index_k"},
+{text:"l",url:"functions_vars.html#index_l"},
 {text:"m",url:"functions_vars.html#index_m"},
 {text:"n",url:"functions_vars.html#index_n"},
 {text:"o",url:"functions_vars.html#index_o"},

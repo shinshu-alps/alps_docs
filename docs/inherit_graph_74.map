@@ -1,3 +1,4 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html" title="正規化されたデータ" alt="" coords="5,5,251,47"/>
+<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html" title=" " alt="" coords="5,5,212,76"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html" title="A相B相からなるインクリメンタルエンコーダ" alt="" coords="260,5,423,76"/>
 </map>

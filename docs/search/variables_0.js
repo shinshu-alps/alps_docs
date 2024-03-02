@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['blue_930',['blue',['../structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html#a082c93f127940751023d1d51aeae9a64',1,'alps::cmn::sensor::S11059::RawData::blue()'],['../structalps_1_1cmn_1_1sensor_1_1_tcs34725_1_1_rgb_color.html#ac7077d1707b260fc3953e85b5ad8049f',1,'alps::cmn::sensor::Tcs34725::RgbColor::blue()']]],
-  ['blue_5fratio_931',['blue_ratio',['../structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#a5e5a62bedb6fadc84a79e41703dd828c',1,'alps::cmn::sensor::S11059::NormalizedData']]]
+  ['angle_5foffset_960',['angle_offset',['../structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a4ba93241999895c311dbfe00ed691545',1,'alps::cmn::sensor::PotentiometerParam']]],
+  ['angle_5frange_961',['angle_range',['../structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#aca615b9d7792c7d9f0de58540ef38235',1,'alps::cmn::sensor::PotentiometerParam']]]
 ];

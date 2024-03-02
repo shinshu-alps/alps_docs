@@ -110,115 +110,129 @@ $(document).ready(function(){initNavTree('change__rate__limiter_8hpp_source.html
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define ALPS_CMN_CHANGE_RATE_LIMITER_HPP_</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="duration_8hpp.html">alps_cmn/time/duration.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>cmn</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="duration_8hpp.html">alps_cmn/time/duration.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="numeric__range_8hpp.html">alps_cmn/util/numeric_range.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1control.html">   22</a></span>&#160;<span class="keyword">namespace </span>control</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span>cmn</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Clock&gt;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">ChangeRateLimiter</a></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">using</span> TimePoint = <span class="keyword">typename</span> Clock::time_point;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#aee1bfcea083cef334a5bc8c448e86b97">   45</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#aee1bfcea083cef334a5bc8c448e86b97">ChangeRateLimiter</a>(<span class="keywordtype">float</span> max_change_rate, <span class="keywordtype">float</span> lower_change_rate)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a61302dc702f5091c9b1691af0010dba4">SetChangeRateLimit</a>(max_change_rate, lower_change_rate);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#adb8e16921dd45cd3e14327a21340a5a0">Reset</a>();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a07d7f793ba2e52570521116fd22999ad">   56</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a07d7f793ba2e52570521116fd22999ad">ChangeRateLimiter</a>(<span class="keywordtype">float</span> max_abs_change_rate)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a16a2856d0c117d6111f6ffbbb2cce353">SetAbsChangeRateLimit</a>(max_abs_change_rate);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#adb8e16921dd45cd3e14327a21340a5a0">Reset</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a61302dc702f5091c9b1691af0010dba4">   68</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a61302dc702f5091c9b1691af0010dba4">SetChangeRateLimit</a>(<span class="keywordtype">float</span> max_change_rate, <span class="keywordtype">float</span> lower_change_rate)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    max_change_rate_ = max_change_rate;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    lower_change_rate_ = lower_change_rate;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a16a2856d0c117d6111f6ffbbb2cce353">   79</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a16a2856d0c117d6111f6ffbbb2cce353">SetAbsChangeRateLimit</a>(<span class="keywordtype">float</span> max_abs_change_rate)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a61302dc702f5091c9b1691af0010dba4">SetChangeRateLimit</a>(max_abs_change_rate, -max_abs_change_rate);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a2e17798ccae737978deb417d345985a7">   90</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a2e17798ccae737978deb417d345985a7">Update</a>(<span class="keywordtype">float</span> input)</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// 初回の値はそのまま出力する</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">if</span> (first_flag_) {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      first_flag_ = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      last_timestamp_ = Clock::now();</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      last_output_ = input;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <span class="keywordflow">return</span> input;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">// 変化率を計算</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">auto</span> current_timestamp = Clock::now();</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">auto</span> delta_time = std::chrono::duration_cast&lt;time::Seconds&gt;(current_timestamp - last_timestamp_);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">auto</span> change_rate = (input - last_output_) / delta_time.count();</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">// 変化率が閾値を超えていたら、閾値に制限する</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">float</span> output = input;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">if</span> (change_rate &gt; max_change_rate_) {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      output = last_output_ + max_change_rate_ * delta_time.count();</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (change_rate &lt; lower_change_rate_) {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      output = last_output_ + lower_change_rate_ * delta_time.count();</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">// 次回のために値を更新</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    last_timestamp_ = current_timestamp;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    last_output_ = output;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">return</span> output;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a6fddb4488af84dd04478b0842592d1c2">  125</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a6fddb4488af84dd04478b0842592d1c2">GetLastOutput</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">return</span> last_output_;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  }</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a8de74ebcdf4c6fa175d2b55483ed290f">  135</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a8de74ebcdf4c6fa175d2b55483ed290f">SetLastOutput</a>(<span class="keywordtype">float</span> last_output)</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  {</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    first_flag_ = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    last_output_ = last_output;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  }</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#adb8e16921dd45cd3e14327a21340a5a0">  142</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#adb8e16921dd45cd3e14327a21340a5a0">Reset</a>()</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    first_flag_ = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordtype">float</span> max_change_rate_;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keywordtype">float</span> lower_change_rate_;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordtype">float</span> last_output_;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  TimePoint last_timestamp_;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordtype">bool</span> first_flag_;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;};</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}  <span class="comment">// namespace control</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}  <span class="comment">// namespace cmn</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// ALPS_CMN_CHANGE_RATE_LIMITER_HPP_</span></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">alps::cmn::control::ChangeRateLimiter</a></div><div class="ttdoc">時間あたりの変化量に制限をかけるクラス．</div><div class="ttdef"><b>Definition:</b> change_rate_limiter.hpp:33</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html_a07d7f793ba2e52570521116fd22999ad"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a07d7f793ba2e52570521116fd22999ad">alps::cmn::control::ChangeRateLimiter::ChangeRateLimiter</a></div><div class="ttdeci">ChangeRateLimiter(float max_abs_change_rate)</div><div class="ttdoc">変化率の制限を絶対値で設定するコンストラクタ</div><div class="ttdef"><b>Definition:</b> change_rate_limiter.hpp:56</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html_a16a2856d0c117d6111f6ffbbb2cce353"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a16a2856d0c117d6111f6ffbbb2cce353">alps::cmn::control::ChangeRateLimiter::SetAbsChangeRateLimit</a></div><div class="ttdeci">void SetAbsChangeRateLimit(float max_abs_change_rate)</div><div class="ttdoc">変化率の制限値を設定する（絶対値）</div><div class="ttdef"><b>Definition:</b> change_rate_limiter.hpp:79</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html_a2e17798ccae737978deb417d345985a7"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a2e17798ccae737978deb417d345985a7">alps::cmn::control::ChangeRateLimiter::Update</a></div><div class="ttdeci">float Update(float input)</div><div class="ttdoc">入力値に対して変化率の制限をかけて出力する．初回は入力値をそのまま出力する．</div><div class="ttdef"><b>Definition:</b> change_rate_limiter.hpp:90</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html_a61302dc702f5091c9b1691af0010dba4"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a61302dc702f5091c9b1691af0010dba4">alps::cmn::control::ChangeRateLimiter::SetChangeRateLimit</a></div><div class="ttdeci">void SetChangeRateLimit(float max_change_rate, float lower_change_rate)</div><div class="ttdoc">変化率の制限値を設定する（上限と下限）</div><div class="ttdef"><b>Definition:</b> change_rate_limiter.hpp:68</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html_a6fddb4488af84dd04478b0842592d1c2"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a6fddb4488af84dd04478b0842592d1c2">alps::cmn::control::ChangeRateLimiter::GetLastOutput</a></div><div class="ttdeci">float GetLastOutput() const</div><div class="ttdoc">最後に出力した値を取得する</div><div class="ttdef"><b>Definition:</b> change_rate_limiter.hpp:125</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html_a8de74ebcdf4c6fa175d2b55483ed290f"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a8de74ebcdf4c6fa175d2b55483ed290f">alps::cmn::control::ChangeRateLimiter::SetLastOutput</a></div><div class="ttdeci">void SetLastOutput(float last_output)</div><div class="ttdoc">前回の出力値を外部から設定する</div><div class="ttdef"><b>Definition:</b> change_rate_limiter.hpp:135</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html_adb8e16921dd45cd3e14327a21340a5a0"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#adb8e16921dd45cd3e14327a21340a5a0">alps::cmn::control::ChangeRateLimiter::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">初回フラグをリセットする</div><div class="ttdef"><b>Definition:</b> change_rate_limiter.hpp:142</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html_aee1bfcea083cef334a5bc8c448e86b97"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#aee1bfcea083cef334a5bc8c448e86b97">alps::cmn::control::ChangeRateLimiter::ChangeRateLimiter</a></div><div class="ttdeci">ChangeRateLimiter(float max_change_rate, float lower_change_rate)</div><div class="ttdoc">変化率の制限を上限と下限で設定するコンストラクタ</div><div class="ttdef"><b>Definition:</b> change_rate_limiter.hpp:45</div></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1control.html">   24</a></span>&#160;<span class="keyword">namespace </span>control</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Clock&gt;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">ChangeRateLimiter</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">using</span> TimePoint = <span class="keyword">typename</span> Clock::time_point;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#afd1e24be97a52c1a9b5e7ab3a2470b7e">   47</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#afd1e24be97a52c1a9b5e7ab3a2470b7e">ChangeRateLimiter</a>(<span class="keywordtype">float</span> lower_change_rate, <span class="keywordtype">float</span> max_change_rate)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a476b79916c06c5d6c5f783a76711e1c2">SetChangeRateLimit</a>(lower_change_rate, max_change_rate);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#adb8e16921dd45cd3e14327a21340a5a0">Reset</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a07d7f793ba2e52570521116fd22999ad">   58</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a07d7f793ba2e52570521116fd22999ad">ChangeRateLimiter</a>(<span class="keywordtype">float</span> max_abs_change_rate)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a16a2856d0c117d6111f6ffbbb2cce353">SetAbsChangeRateLimit</a>(max_abs_change_rate);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#adb8e16921dd45cd3e14327a21340a5a0">Reset</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a4e61af9f4ce39dc8b0d89a4c050c3d6e">   64</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a4e61af9f4ce39dc8b0d89a4c050c3d6e">ChangeRateLimiter</a>(<span class="keyword">const</span> <a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange&lt;float&gt;</a> &amp; change_rate_range)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a476b79916c06c5d6c5f783a76711e1c2">SetChangeRateLimit</a>(change_rate_range.<a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a2a311b4a9bffcc182f0b9b014a1afdd5">GetLowest</a>(), change_rate_range.<a class="code" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#ac8c561bce51dadc8ebbfe90a40c8e583">GetMax</a>());</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#adb8e16921dd45cd3e14327a21340a5a0">Reset</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a476b79916c06c5d6c5f783a76711e1c2">   76</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a476b79916c06c5d6c5f783a76711e1c2">SetChangeRateLimit</a>(<span class="keywordtype">float</span> lower_change_rate, <span class="keywordtype">float</span> max_change_rate)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    lower_change_rate_ = lower_change_rate;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    max_change_rate_ = max_change_rate;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a16a2856d0c117d6111f6ffbbb2cce353">   87</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a16a2856d0c117d6111f6ffbbb2cce353">SetAbsChangeRateLimit</a>(<span class="keywordtype">float</span> max_abs_change_rate)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a476b79916c06c5d6c5f783a76711e1c2">SetChangeRateLimit</a>(-max_abs_change_rate, max_abs_change_rate);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a2e17798ccae737978deb417d345985a7">   98</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a2e17798ccae737978deb417d345985a7">Update</a>(<span class="keywordtype">float</span> input)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">// 初回の値はそのまま出力する</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">if</span> (first_flag_) {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      first_flag_ = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      last_timestamp_ = Clock::now();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      last_output_ = input;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <span class="keywordflow">return</span> input;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// 変化率を計算</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">auto</span> current_timestamp = Clock::now();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">auto</span> delta_time =</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      std::chrono::duration_cast&lt;time::Seconds&gt;(current_timestamp - last_timestamp_);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keyword">auto</span> change_rate = (input - last_output_) / delta_time.count();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">// 変化率が閾値を超えていたら、閾値に制限する</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">float</span> output = input;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">if</span> (change_rate &gt; max_change_rate_) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      output = last_output_ + max_change_rate_ * delta_time.count();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (change_rate &lt; lower_change_rate_) {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      output = last_output_ + lower_change_rate_ * delta_time.count();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="comment">// 次回のために値を更新</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    last_timestamp_ = current_timestamp;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    last_output_ = output;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">return</span> output;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a6fddb4488af84dd04478b0842592d1c2">  134</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a6fddb4488af84dd04478b0842592d1c2">GetLastOutput</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">return</span> last_output_;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a8de74ebcdf4c6fa175d2b55483ed290f">  144</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a8de74ebcdf4c6fa175d2b55483ed290f">SetLastOutput</a>(<span class="keywordtype">float</span> last_output)</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    first_flag_ = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    last_output_ = last_output;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#adb8e16921dd45cd3e14327a21340a5a0">  151</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#adb8e16921dd45cd3e14327a21340a5a0">Reset</a>()</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    first_flag_ = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordtype">float</span> lower_change_rate_;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordtype">float</span> max_change_rate_;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordtype">float</span> last_output_;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  TimePoint last_timestamp_;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keywordtype">bool</span> first_flag_;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;};</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}  <span class="comment">// namespace control</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// ALPS_CMN_CHANGE_RATE_LIMITER_HPP_</span></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">alps::cmn::control::ChangeRateLimiter</a></div><div class="ttdoc">時間あたりの変化量に制限をかけるクラス．</div><div class="ttdef"><b>Definition:</b> change_rate_limiter.hpp:35</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html_a07d7f793ba2e52570521116fd22999ad"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a07d7f793ba2e52570521116fd22999ad">alps::cmn::control::ChangeRateLimiter::ChangeRateLimiter</a></div><div class="ttdeci">ChangeRateLimiter(float max_abs_change_rate)</div><div class="ttdoc">変化率の制限を絶対値で設定するコンストラクタ</div><div class="ttdef"><b>Definition:</b> change_rate_limiter.hpp:58</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html_a16a2856d0c117d6111f6ffbbb2cce353"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a16a2856d0c117d6111f6ffbbb2cce353">alps::cmn::control::ChangeRateLimiter::SetAbsChangeRateLimit</a></div><div class="ttdeci">void SetAbsChangeRateLimit(float max_abs_change_rate)</div><div class="ttdoc">変化率の制限値を設定する（絶対値）</div><div class="ttdef"><b>Definition:</b> change_rate_limiter.hpp:87</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html_a2e17798ccae737978deb417d345985a7"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a2e17798ccae737978deb417d345985a7">alps::cmn::control::ChangeRateLimiter::Update</a></div><div class="ttdeci">float Update(float input)</div><div class="ttdoc">入力値に対して変化率の制限をかけて出力する．初回は入力値をそのまま出力する．</div><div class="ttdef"><b>Definition:</b> change_rate_limiter.hpp:98</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html_a476b79916c06c5d6c5f783a76711e1c2"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a476b79916c06c5d6c5f783a76711e1c2">alps::cmn::control::ChangeRateLimiter::SetChangeRateLimit</a></div><div class="ttdeci">void SetChangeRateLimit(float lower_change_rate, float max_change_rate)</div><div class="ttdoc">変化率の制限値を設定する（上限と下限）</div><div class="ttdef"><b>Definition:</b> change_rate_limiter.hpp:76</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html_a4e61af9f4ce39dc8b0d89a4c050c3d6e"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a4e61af9f4ce39dc8b0d89a4c050c3d6e">alps::cmn::control::ChangeRateLimiter::ChangeRateLimiter</a></div><div class="ttdeci">ChangeRateLimiter(const util::NumericRange&lt; float &gt; &amp;change_rate_range)</div><div class="ttdef"><b>Definition:</b> change_rate_limiter.hpp:64</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html_a6fddb4488af84dd04478b0842592d1c2"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a6fddb4488af84dd04478b0842592d1c2">alps::cmn::control::ChangeRateLimiter::GetLastOutput</a></div><div class="ttdeci">float GetLastOutput() const</div><div class="ttdoc">最後に出力した値を取得する</div><div class="ttdef"><b>Definition:</b> change_rate_limiter.hpp:134</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html_a8de74ebcdf4c6fa175d2b55483ed290f"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a8de74ebcdf4c6fa175d2b55483ed290f">alps::cmn::control::ChangeRateLimiter::SetLastOutput</a></div><div class="ttdeci">void SetLastOutput(float last_output)</div><div class="ttdoc">前回の出力値を外部から設定する</div><div class="ttdef"><b>Definition:</b> change_rate_limiter.hpp:144</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html_adb8e16921dd45cd3e14327a21340a5a0"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#adb8e16921dd45cd3e14327a21340a5a0">alps::cmn::control::ChangeRateLimiter::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">初回フラグをリセットする</div><div class="ttdef"><b>Definition:</b> change_rate_limiter.hpp:151</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html_afd1e24be97a52c1a9b5e7ab3a2470b7e"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#afd1e24be97a52c1a9b5e7ab3a2470b7e">alps::cmn::control::ChangeRateLimiter::ChangeRateLimiter</a></div><div class="ttdeci">ChangeRateLimiter(float lower_change_rate, float max_change_rate)</div><div class="ttdoc">変化率の制限を上限と下限で設定するコンストラクタ</div><div class="ttdef"><b>Definition:</b> change_rate_limiter.hpp:47</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1util_1_1_numeric_range_html"><div class="ttname"><a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">alps::cmn::util::NumericRange&lt; float &gt;</a></div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1util_1_1_numeric_range_html_a2a311b4a9bffcc182f0b9b014a1afdd5"><div class="ttname"><a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#a2a311b4a9bffcc182f0b9b014a1afdd5">alps::cmn::util::NumericRange::GetLowest</a></div><div class="ttdeci">const T &amp; GetLowest() const</div><div class="ttdoc">最小値を取得する</div><div class="ttdef"><b>Definition:</b> numeric_range.hpp:83</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1util_1_1_numeric_range_html_ac8c561bce51dadc8ebbfe90a40c8e583"><div class="ttname"><a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#ac8c561bce51dadc8ebbfe90a40c8e583">alps::cmn::util::NumericRange::GetMax</a></div><div class="ttdeci">const T &amp; GetMax() const</div><div class="ttdoc">最大値を取得する</div><div class="ttdef"><b>Definition:</b> numeric_range.hpp:93</div></div>
 <div class="ttc" id="aduration_8hpp_html"><div class="ttname"><a href="duration_8hpp.html">duration.hpp</a></div><div class="ttdoc">時間間隔の型エイリアス</div></div>
 <div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:23</div></div>
+<div class="ttc" id="anumeric__range_8hpp_html"><div class="ttname"><a href="numeric__range_8hpp.html">numeric_range.hpp</a></div><div class="ttdoc">数値の範囲を扱うクラス</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
