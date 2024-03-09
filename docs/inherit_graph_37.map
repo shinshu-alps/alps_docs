@@ -1,3 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1communication_1_1_uart_sender.html" title="UART通信で型付きデータを送信するためのクラス．UartPacketTransceiverに登録して使用する．" alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1control_1_1_integrator.html" title="積分器" alt="" coords="5,5,165,47"/>
 </map>

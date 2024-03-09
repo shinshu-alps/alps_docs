@@ -1,9 +1,12 @@
-<map id="alps_common_lib/include/alps_cmn/communication/serializer.hpp" name="alps_common_lib/include/alps_cmn/communication/serializer.hpp">
-<area shape="rect" id="node1" title="データとバイト列の変換ライブラリ" alt="" coords="383,5,576,61"/>
-<area shape="rect" id="node2" href="$can__typed__data__transceiver_8hpp.html" title="CAN通信で型付けされたデータの送受信を行うライブラリ" alt="" coords="103,109,339,165"/>
-<area shape="rect" id="node6" href="$custom__type__serialize__rule_8hpp.html" title="カスタム型のシリアライズ規則を定義する" alt="" coords="363,109,595,165"/>
-<area shape="rect" id="node7" href="$uart__packet__transceiver_8hpp.html" title=" " alt="" coords="620,109,829,165"/>
-<area shape="rect" id="node3" href="$robomas__motor_8hpp.html" title="ロボマスモータのライブラリ" alt="" coords="5,213,212,269"/>
-<area shape="rect" id="node4" href="$can__topic__converter_8hpp.html" title=" " alt="" coords="236,213,429,269"/>
-<area shape="rect" id="node5" href="$custom__type__can__topic__conversion__rule_8hpp.html" title=" " alt="" coords="204,317,461,388"/>
+<map id="alps_common_lib/include/alps_cmn/type/serializer.hpp" name="alps_common_lib/include/alps_cmn/type/serializer.hpp">
+<area shape="rect" id="node1" title="データとバイト列の変換ライブラリ" alt="" coords="540,5,752,47"/>
+<area shape="rect" id="node2" href="$can__typed__data__transceiver_8hpp.html" title="CAN通信で型付けされたデータの送受信を行うライブラリ" alt="" coords="281,95,517,151"/>
+<area shape="rect" id="node9" href="$uart__packet__transceiver_8hpp.html" title=" " alt="" coords="541,95,751,151"/>
+<area shape="rect" id="node10" href="$custom__type__serialize__rule_8hpp.html" title="カスタム型のシリアライズ規則を定義する" alt="" coords="775,95,962,151"/>
+<area shape="rect" id="node3" href="$robomas__motor_8hpp.html" title="ロボマスモータのライブラリ" alt="" coords="5,199,212,255"/>
+<area shape="rect" id="node4" href="$can__param_8hpp.html" title=" " alt="" coords="236,199,429,255"/>
+<area shape="rect" id="node6" href="$can__topic__bridge_8hpp.html" title=" " alt="" coords="412,310,605,366"/>
+<area shape="rect" id="node7" href="$topic__converter_8hpp.html" title=" " alt="" coords="505,199,664,255"/>
+<area shape="rect" id="node5" href="$can__param__bridge_8hpp.html" title=" " alt="" coords="195,310,388,366"/>
+<area shape="rect" id="node8" href="$custom__type__topic__conversion__rule_8hpp.html" title=" " alt="" coords="629,303,804,373"/>
 </map>
