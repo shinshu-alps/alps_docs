@@ -9,5 +9,6 @@ var namespacealps_1_1cmn =
     [ "sensor", "namespacealps_1_1cmn_1_1sensor.html", "namespacealps_1_1cmn_1_1sensor" ],
     [ "time", "namespacealps_1_1cmn_1_1time.html", "namespacealps_1_1cmn_1_1time" ],
     [ "tool", "namespacealps_1_1cmn_1_1tool.html", "namespacealps_1_1cmn_1_1tool" ],
+    [ "type", "namespacealps_1_1cmn_1_1type.html", "namespacealps_1_1cmn_1_1type" ],
     [ "util", "namespacealps_1_1cmn_1_1util.html", "namespacealps_1_1cmn_1_1util" ]
 ];

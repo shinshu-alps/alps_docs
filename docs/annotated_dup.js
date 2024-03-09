@@ -20,23 +20,20 @@ var annotated_dup =
         ] ],
         [ "communication", "namespacealps_1_1cmn_1_1communication.html", [
           [ "detail", "namespacealps_1_1cmn_1_1communication_1_1detail.html", [
-            [ "IsBuiltinType", "structalps_1_1cmn_1_1communication_1_1detail_1_1_is_builtin_type.html", "structalps_1_1cmn_1_1communication_1_1detail_1_1_is_builtin_type" ]
+            [ "CanParamBase", "classalps_1_1cmn_1_1communication_1_1detail_1_1_can_param_base.html", "classalps_1_1cmn_1_1communication_1_1detail_1_1_can_param_base" ]
           ] ],
           [ "CanCallbackHandler", "classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html", "classalps_1_1cmn_1_1communication_1_1_can_callback_handler" ],
           [ "CanDataFrame", "structalps_1_1cmn_1_1communication_1_1_can_data_frame.html", "structalps_1_1cmn_1_1communication_1_1_can_data_frame" ],
+          [ "CanParamPort", "classalps_1_1cmn_1_1communication_1_1_can_param_port.html", "classalps_1_1cmn_1_1communication_1_1_can_param_port" ],
+          [ "CanParamServer", "classalps_1_1cmn_1_1communication_1_1_can_param_server.html", "classalps_1_1cmn_1_1communication_1_1_can_param_server" ],
+          [ "CanParamClient", "classalps_1_1cmn_1_1communication_1_1_can_param_client.html", "classalps_1_1cmn_1_1communication_1_1_can_param_client" ],
           [ "CanTypedDataTransceiver", "classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html", "classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver" ],
           [ "CanPublisher", "classalps_1_1cmn_1_1communication_1_1_can_publisher.html", "classalps_1_1cmn_1_1communication_1_1_can_publisher" ],
           [ "CanSubscriber", "classalps_1_1cmn_1_1communication_1_1_can_subscriber.html", "classalps_1_1cmn_1_1communication_1_1_can_subscriber" ],
           [ "Cobs", "classalps_1_1cmn_1_1communication_1_1_cobs.html", "classalps_1_1cmn_1_1communication_1_1_cobs" ],
-          [ "Serializer< time::Seconds >", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01time_1_1_seconds_01_4.html", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01time_1_1_seconds_01_4" ],
-          [ "Serializer< control::PidParam >", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_pid_param_01_4.html", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_pid_param_01_4" ],
-          [ "Serializer< control::PidCalcInfo >", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_pid_calc_info_01_4.html", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_pid_calc_info_01_4" ],
-          [ "Serializer< control::MotorVelocityControllerParam >", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_motor_velocity_controller_param_01_4.html", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_motor_velocity_controller_param_01_4" ],
-          [ "Serializer< control::MotorVelocityControllerCalcInfo >", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_motor_velocity_controller_calc_info_01_4.html", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_motor_velocity_controller_calc_info_01_4" ],
           [ "ICanIo", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", "classalps_1_1cmn_1_1communication_1_1_i_can_io" ],
           [ "II2cIo", "classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html", "classalps_1_1cmn_1_1communication_1_1_i_i2c_io" ],
           [ "IUartIo", "classalps_1_1cmn_1_1communication_1_1_i_uart_io.html", "classalps_1_1cmn_1_1communication_1_1_i_uart_io" ],
-          [ "Serializer", "structalps_1_1cmn_1_1communication_1_1_serializer.html", "structalps_1_1cmn_1_1communication_1_1_serializer" ],
           [ "UartSender", "classalps_1_1cmn_1_1communication_1_1_uart_sender.html", "classalps_1_1cmn_1_1communication_1_1_uart_sender" ],
           [ "UartReceiver", "classalps_1_1cmn_1_1communication_1_1_uart_receiver.html", "classalps_1_1cmn_1_1communication_1_1_uart_receiver" ],
           [ "UartPacketTransceiver", "classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html", "classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver" ]
@@ -90,6 +87,19 @@ var annotated_dup =
         [ "tool", "namespacealps_1_1cmn_1_1tool.html", [
           [ "MotorFrictionAnalyzer", "classalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer.html", "classalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer" ]
         ] ],
+        [ "type", "namespacealps_1_1cmn_1_1type.html", [
+          [ "detail", "namespacealps_1_1cmn_1_1type_1_1detail.html", [
+            [ "IsBuiltinType", "structalps_1_1cmn_1_1type_1_1detail_1_1_is_builtin_type.html", "structalps_1_1cmn_1_1type_1_1detail_1_1_is_builtin_type" ]
+          ] ],
+          [ "Serializer< time::Seconds >", "structalps_1_1cmn_1_1type_1_1_serializer_3_01time_1_1_seconds_01_4.html", "structalps_1_1cmn_1_1type_1_1_serializer_3_01time_1_1_seconds_01_4" ],
+          [ "Serializer", "structalps_1_1cmn_1_1type_1_1_serializer.html", "structalps_1_1cmn_1_1type_1_1_serializer" ],
+          [ "SupportsToTiedTuple", "structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple.html", null ],
+          [ "SupportsToTiedTuple< T, std::void_t< decltype(ToTiedTuple(std::declval< T & >()))> >", "structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple_3_01_t_00_01std_1_1void__t_3_01decltype_07_9f44abe140632721ed0d7f78ca803e5b.html", "structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple_3_01_t_00_01std_1_1void__t_3_01decltype_07_9f44abe140632721ed0d7f78ca803e5b" ],
+          [ "SupportsGetElementNames", "structalps_1_1cmn_1_1type_1_1_supports_get_element_names.html", null ],
+          [ "SupportsGetElementNames< T, std::void_t< decltype(GetElementNames(std::declval< T & >()))> >", "structalps_1_1cmn_1_1type_1_1_supports_get_element_names_3_01_t_00_01std_1_1void__t_3_01decltype2f43caa8b955e7f8195f525d3aa247f1.html", null ],
+          [ "GetNonRefTuple", "structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple.html", null ],
+          [ "GetNonRefTuple< std::tuple< RefTypes... > >", "structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple_3_01std_1_1tuple_3_01_ref_types_8_8_8_01_4_01_4.html", "structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple_3_01std_1_1tuple_3_01_ref_types_8_8_8_01_4_01_4" ]
+        ] ],
         [ "util", "namespacealps_1_1cmn_1_1util.html", [
           [ "NumericRange", "classalps_1_1cmn_1_1util_1_1_numeric_range.html", "classalps_1_1cmn_1_1util_1_1_numeric_range" ]
         ] ]
@@ -116,22 +126,32 @@ var annotated_dup =
       ] ],
       [ "ros2", "namespacealps_1_1ros2.html", [
         [ "communication", "namespacealps_1_1ros2_1_1communication.html", [
-          [ "TopicToCanConverter", "classalps_1_1ros2_1_1communication_1_1_topic_to_can_converter.html", "classalps_1_1ros2_1_1communication_1_1_topic_to_can_converter" ],
-          [ "CanToTopicConverter", "classalps_1_1ros2_1_1communication_1_1_can_to_topic_converter.html", "classalps_1_1ros2_1_1communication_1_1_can_to_topic_converter" ]
+          [ "RosToCanParamBridge", "classalps_1_1ros2_1_1communication_1_1_ros_to_can_param_bridge.html", "classalps_1_1ros2_1_1communication_1_1_ros_to_can_param_bridge" ],
+          [ "RosToCanTopicBridge", "classalps_1_1ros2_1_1communication_1_1_ros_to_can_topic_bridge.html", "classalps_1_1ros2_1_1communication_1_1_ros_to_can_topic_bridge" ],
+          [ "CanToRosTopicBridge", "classalps_1_1ros2_1_1communication_1_1_can_to_ros_topic_bridge.html", "classalps_1_1ros2_1_1communication_1_1_can_to_ros_topic_bridge" ]
+        ] ],
+        [ "type", "namespacealps_1_1ros2_1_1type.html", [
+          [ "detail", "namespacealps_1_1ros2_1_1type_1_1detail.html", [
+            [ "IsStandardType", "structalps_1_1ros2_1_1type_1_1detail_1_1_is_standard_type.html", "structalps_1_1ros2_1_1type_1_1detail_1_1_is_standard_type" ],
+            [ "IsStandardVectorValueType", "structalps_1_1ros2_1_1type_1_1detail_1_1_is_standard_vector_value_type.html", "structalps_1_1ros2_1_1type_1_1detail_1_1_is_standard_vector_value_type" ]
+          ] ],
+          [ "ParamConverter< cmn::time::Seconds >", "structalps_1_1ros2_1_1type_1_1_param_converter_3_01cmn_1_1time_1_1_seconds_01_4.html", "structalps_1_1ros2_1_1type_1_1_param_converter_3_01cmn_1_1time_1_1_seconds_01_4" ],
+          [ "TopicConverter< cmn::time::Seconds, alps_interfaces::msg::Seconds >", "structalps_1_1ros2_1_1type_1_1_topic_converter_3_01cmn_1_1time_1_1_seconds_00_01alps__interfaces_1_1msg_1_1_seconds_01_4.html", "structalps_1_1ros2_1_1type_1_1_topic_converter_3_01cmn_1_1time_1_1_seconds_00_01alps__interfaces_1_1msg_1_1_seconds_01_4" ],
+          [ "IsConvertibleStructTypePair< alps::cmn::control::PidParam, alps_interfaces::msg::PidParam >", "structalps_1_1ros2_1_1type_1_1_is_convertible_struct_type_pair_3_01alps_1_1cmn_1_1control_1_1_pi49a2afdf21dc3fe460d3e87ed9785ac5.html", null ],
+          [ "IsConvertibleStructTypePair< alps::cmn::control::PidCalcInfo, alps_interfaces::msg::PidCalcInfo >", "structalps_1_1ros2_1_1type_1_1_is_convertible_struct_type_pair_3_01alps_1_1cmn_1_1control_1_1_pif6c2a1d0266368d7014650e64ec44968.html", null ],
+          [ "IsConvertibleStructTypePair< alps::cmn::control::MotorVelocityControllerParam, alps_interfaces::msg::MotorVelocityControllerParam >", "structalps_1_1ros2_1_1type_1_1_is_convertible_struct_type_pair_3_01alps_1_1cmn_1_1control_1_1_mo772900ea21d35c46435d1467e5891735.html", null ],
+          [ "IsConvertibleStructTypePair< alps::cmn::control::MotorVelocityControllerCalcInfo, alps_interfaces::msg::MotorVelocityControllerCalcInfo >", "structalps_1_1ros2_1_1type_1_1_is_convertible_struct_type_pair_3_01alps_1_1cmn_1_1control_1_1_mo432b1e850addee0eca3d6278415c3a1d.html", null ],
+          [ "ParamConverter", "structalps_1_1ros2_1_1type_1_1_param_converter.html", "structalps_1_1ros2_1_1type_1_1_param_converter" ],
+          [ "IsConvertibleStructTypePair", "structalps_1_1ros2_1_1type_1_1_is_convertible_struct_type_pair.html", null ],
+          [ "TopicConverter", "structalps_1_1ros2_1_1type_1_1_topic_converter.html", "structalps_1_1ros2_1_1type_1_1_topic_converter" ]
         ] ],
         [ "ui", "namespacealps_1_1ros2_1_1ui.html", [
           [ "Joy", "classalps_1_1ros2_1_1ui_1_1_joy.html", "classalps_1_1ros2_1_1ui_1_1_joy" ]
         ] ],
         [ "util", "namespacealps_1_1ros2_1_1util.html", [
           [ "detail", "namespacealps_1_1ros2_1_1util_1_1detail.html", [
-            [ "IsStandardType", "structalps_1_1ros2_1_1util_1_1detail_1_1_is_standard_type.html", "structalps_1_1ros2_1_1util_1_1detail_1_1_is_standard_type" ],
-            [ "IsStandardVectorValueType", "structalps_1_1ros2_1_1util_1_1detail_1_1_is_standard_vector_value_type.html", "structalps_1_1ros2_1_1util_1_1detail_1_1_is_standard_vector_value_type" ],
             [ "TypedParamBase", "classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html", "classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base" ]
           ] ],
-          [ "ParamConverter< cmn::time::Seconds >", "structalps_1_1ros2_1_1util_1_1_param_converter_3_01cmn_1_1time_1_1_seconds_01_4.html", "structalps_1_1ros2_1_1util_1_1_param_converter_3_01cmn_1_1time_1_1_seconds_01_4" ],
-          [ "ParamConverter< cmn::control::PidParam >", "structalps_1_1ros2_1_1util_1_1_param_converter_3_01cmn_1_1control_1_1_pid_param_01_4.html", "structalps_1_1ros2_1_1util_1_1_param_converter_3_01cmn_1_1control_1_1_pid_param_01_4" ],
-          [ "ParamConverter< cmn::control::MotorVelocityControllerParam >", "structalps_1_1ros2_1_1util_1_1_param_converter_3_01cmn_1_1control_1_1_motor_velocity_controller_param_01_4.html", "structalps_1_1ros2_1_1util_1_1_param_converter_3_01cmn_1_1control_1_1_motor_velocity_controller_param_01_4" ],
-          [ "ParamConverter", "structalps_1_1ros2_1_1util_1_1_param_converter.html", "structalps_1_1ros2_1_1util_1_1_param_converter" ],
           [ "ParamMap", "classalps_1_1ros2_1_1util_1_1_param_map.html", "classalps_1_1ros2_1_1util_1_1_param_map" ],
           [ "TypedParamServer", "classalps_1_1ros2_1_1util_1_1_typed_param_server.html", "classalps_1_1ros2_1_1util_1_1_typed_param_server" ],
           [ "TypedParamClient", "classalps_1_1ros2_1_1util_1_1_typed_param_client.html", "classalps_1_1ros2_1_1util_1_1_typed_param_client" ]

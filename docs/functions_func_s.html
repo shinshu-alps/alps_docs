@@ -107,13 +107,11 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>S11059()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#a8b167c379373b156394eec4b0e4e7cd6">alps::cmn::sensor::S11059&lt; I2cIo &gt;</a>
 </li>
-<li>Serialize()
-: <a class="el" href="structalps_1_1cmn_1_1communication_1_1_serializer.html#a6f05bd3a73c14e949abbfdacd4615cad">alps::cmn::communication::Serializer&lt; T &gt;</a>
-, <a class="el" href="structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_motor_velocity_controller_calc_info_01_4.html#a0f407efe26f6d846edd5b57ccd840088">alps::cmn::communication::Serializer&lt; control::MotorVelocityControllerCalcInfo &gt;</a>
-, <a class="el" href="structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_motor_velocity_controller_param_01_4.html#a82242a4b7daa625c6c1c50af8b31999f">alps::cmn::communication::Serializer&lt; control::MotorVelocityControllerParam &gt;</a>
-, <a class="el" href="structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_pid_calc_info_01_4.html#a3531d4441f5f50b154c0cab95a566873">alps::cmn::communication::Serializer&lt; control::PidCalcInfo &gt;</a>
-, <a class="el" href="structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_pid_param_01_4.html#abb78481e61b5d397c97954831dd74fde">alps::cmn::communication::Serializer&lt; control::PidParam &gt;</a>
-, <a class="el" href="structalps_1_1cmn_1_1communication_1_1_serializer_3_01time_1_1_seconds_01_4.html#aa0798780002e16c97c2cbb35f318e200">alps::cmn::communication::Serializer&lt; time::Seconds &gt;</a>
+<li>SendAllCliantRequest()
+: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_param_port.html#a5bf3ccbb1a23d0071382907c1e145f59">alps::cmn::communication::CanParamPort&lt; kMaxParamNum &gt;</a>
+</li>
+<li>SendAllServerValue()
+: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_param_port.html#ac6bc68a3d8f2ae98ef77c9a2323c5825">alps::cmn::communication::CanParamPort&lt; kMaxParamNum &gt;</a>
 </li>
 <li>ServoMotor()
 : <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_servo_motor.html#a8bbbbbaf24604d92914b44efb4d9802a">alps::cmn::actuator::ServoMotor&lt; PwmOut &gt;</a>
@@ -130,6 +128,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>SetChangeRateLimit()
 : <a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a476b79916c06c5d6c5f783a76711e1c2">alps::cmn::control::ChangeRateLimiter&lt; Clock &gt;</a>
 </li>
+<li>SetClientParamReady()
+: <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_param_port.html#a782cdb04c24627809edcae87b8ca7c8f">alps::cmn::communication::CanParamPort&lt; kMaxParamNum &gt;</a>
+</li>
 <li>SetCurrentValue()
 : <a class="el" href="classalps_1_1cmn_1_1control_1_1_integrator.html#a29107c9c15fc320a8dcd29c75bd2ead3">alps::cmn::control::Integrator&lt; Clock &gt;</a>
 </li>
@@ -145,6 +146,10 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>SetLpfTimeConstant()
 : <a class="el" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#ad3406b12a3cd03c031ac0a3c7d075006">alps::cmn::control::LowPassDifferentiator&lt; Clock &gt;</a>
 </li>
+<li>SetOnChangeCallback()
+: <a class="el" href="classalps_1_1cmn_1_1communication_1_1detail_1_1_can_param_base.html#acc9a96539c5ffd259579d869052b627c">alps::cmn::communication::detail::CanParamBase&lt; T &gt;</a>
+, <a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ad8699478f14f87e699e3f324230a5401">alps::ros2::util::detail::TypedParamBase&lt; T &gt;</a>
+</li>
 <li>SetOnPressedButtonCallback()
 : <a class="el" href="classalps_1_1ros2_1_1ui_1_1_joy.html#aefc6a3484dad7a5ac8bca53c806df4ce">alps::ros2::ui::Joy</a>
 </li>
@@ -158,15 +163,13 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classalps_1_1cmn_1_1actuator_1_1_output_change_limit_motor_decorator.html#aef92625480f93c3d51722065b4487e98">alps::cmn::actuator::OutputChangeLimitMotorDecorator&lt; Clock, BaseMotor &gt;</a>
 </li>
 <li>SetParam()
-: <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#a8cdf277b5280185073d6dd162caabed2">alps::cmn::control::MotorAngleController&lt; Clock, Motor, RotarySensor &gt;</a>
+: <a class="el" href="classalps_1_1cmn_1_1communication_1_1detail_1_1_can_param_base.html#a71ce86b57792ae045c59499cebd12f79">alps::cmn::communication::detail::CanParamBase&lt; T &gt;</a>
+, <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#a8cdf277b5280185073d6dd162caabed2">alps::cmn::control::MotorAngleController&lt; Clock, Motor, RotarySensor &gt;</a>
 , <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#acb1336fd3d6dc36c53bf15c51667ddaa">alps::cmn::control::MotorVelocityController&lt; Clock, Motor, RotarySensor &gt;</a>
 , <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#ab74c144cb4cf2ea73e46a981671389fb">alps::cmn::control::Pid&lt; Clock &gt;</a>
 , <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a2f6b87061fa35c65a21c184a77608677">alps::cmn::sensor::Potentiometer&lt; Clock, AnalogIn &gt;</a>
 , <a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a2af815a328044f0d4150d936fdd3d8f7">alps::ros2::util::detail::TypedParamBase&lt; T &gt;</a>
 , <a class="el" href="classalps_1_1ros2_1_1util_1_1_param_map.html#a3fdce7b047ee0a710b129f3741fc6c16">alps::ros2::util::ParamMap</a>
-</li>
-<li>SetParamCallback()
-: <a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a2ae6f03fa1cfe95ddf0e99ba0d24e2e4">alps::ros2::util::detail::TypedParamBase&lt; T &gt;</a>
 </li>
 <li>SetPeriod()
 : <a class="el" href="classalps_1_1mbed_1_1gpio_1_1_pwm_out.html#ac4878958ca6903ae19dfe7bda514d754">alps::mbed::gpio::PwmOut</a>

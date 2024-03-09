@@ -114,17 +114,19 @@ $(document).ready(function(){initNavTree('can__typed__data__transceiver_8hpp.htm
 <a href="#details">[詳解]</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="can__callback__handler_8hpp_source.html">alps_cmn/communication/can_callback_handler.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="cobs_8hpp_source.html">alps_cmn/communication/cobs.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="serializer_8hpp_source.html">alps_cmn/communication/serializer.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="logging__macros_8hpp_source.html">alps_cmn/log/logging_macros.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="serializer_8hpp_source.html">alps_cmn/type/serializer.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 can_typed_data_transceiver.hpp の依存先関係図:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="can__typed__data__transceiver_8hpp__incl.svg" width="1746" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="can__typed__data__transceiver_8hpp__incl.svg" width="1830" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 被依存関係図:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="can__typed__data__transceiver_8hpp__dep__incl.svg" width="467" height="290"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="can__typed__data__transceiver_8hpp__dep__incl.svg" width="810" height="290"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="can__typed__data__transceiver_8hpp_source.html">[ソースコード]</a></p>
@@ -152,15 +154,16 @@ can_typed_data_transceiver.hpp の依存先関係図:</div>
 <tr class="memitem:namespacealps_1_1cmn_1_1communication"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication.html">alps::cmn::communication</a></td></tr>
 <tr class="memdesc:namespacealps_1_1cmn_1_1communication"><td class="mdescLeft">&#160;</td><td class="mdescRight">通信関係 <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacealps_1_1cmn_1_1communication_1_1anonymous__namespace_02can__typed__data__transceiver_8hpp_03"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1anonymous__namespace_02can__typed__data__transceiver_8hpp_03.html">alps::cmn::communication::anonymous_namespace{can_typed_data_transceiver.hpp}</a></td></tr>
+<tr class="memitem:namespacealps_1_1cmn_1_1communication_1_1detail"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1detail.html">alps::cmn::communication::detail</a></td></tr>
+<tr class="memdesc:namespacealps_1_1cmn_1_1communication_1_1detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">実装詳細 <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 関数</h2></td></tr>
-<tr class="memitem:a36e0b6a30581e13eddd0d303c8324b69"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a36e0b6a30581e13eddd0d303c8324b69"><td class="memTemplItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1anonymous__namespace_02can__typed__data__transceiver_8hpp_03.html#a36e0b6a30581e13eddd0d303c8324b69">alps::cmn::communication::anonymous_namespace{can_typed_data_transceiver.hpp}::RequiredBufferSizeForCanTypedDataCommunication</a> ()</td></tr>
-<tr class="memdesc:a36e0b6a30581e13eddd0d303c8324b69"><td class="mdescLeft">&#160;</td><td class="mdescRight">データの型に応じて，型付きCAN通信に必要なバッファサイズを返す  <a href="namespacealps_1_1cmn_1_1communication_1_1anonymous__namespace_02can__typed__data__transceiver_8hpp_03.html#a36e0b6a30581e13eddd0d303c8324b69">[詳解]</a><br /></td></tr>
-<tr class="separator:a36e0b6a30581e13eddd0d303c8324b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accfe9487bbd17924fb2708c5ee09ec3b"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:accfe9487bbd17924fb2708c5ee09ec3b"><td class="memTemplItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1detail.html#accfe9487bbd17924fb2708c5ee09ec3b">alps::cmn::communication::detail::RequiredBufferSizeForCanTypedDataCommunication</a> ()</td></tr>
+<tr class="memdesc:accfe9487bbd17924fb2708c5ee09ec3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">データの型に応じて，型付きCAN通信に必要なバッファサイズを返す  <a href="namespacealps_1_1cmn_1_1communication_1_1detail.html#accfe9487bbd17924fb2708c5ee09ec3b">[詳解]</a><br /></td></tr>
+<tr class="separator:accfe9487bbd17924fb2708c5ee09ec3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>CAN通信で型付けされたデータの送受信を行うライブラリ </p>

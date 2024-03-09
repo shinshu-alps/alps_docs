@@ -6,16 +6,15 @@ var dir_76fd7680a09542374d3e212281ba6ee2 =
     [ "can_data_frame.hpp", "can__data__frame_8hpp.html", [
       [ "CanDataFrame", "structalps_1_1cmn_1_1communication_1_1_can_data_frame.html", "structalps_1_1cmn_1_1communication_1_1_can_data_frame" ]
     ] ],
+    [ "can_param.hpp", "can__param_8hpp.html", [
+      [ "CanParamPort", "classalps_1_1cmn_1_1communication_1_1_can_param_port.html", "classalps_1_1cmn_1_1communication_1_1_can_param_port" ],
+      [ "CanParamBase", "classalps_1_1cmn_1_1communication_1_1detail_1_1_can_param_base.html", "classalps_1_1cmn_1_1communication_1_1detail_1_1_can_param_base" ],
+      [ "CanParamServer", "classalps_1_1cmn_1_1communication_1_1_can_param_server.html", "classalps_1_1cmn_1_1communication_1_1_can_param_server" ],
+      [ "CanParamClient", "classalps_1_1cmn_1_1communication_1_1_can_param_client.html", "classalps_1_1cmn_1_1communication_1_1_can_param_client" ]
+    ] ],
     [ "can_typed_data_transceiver.hpp", "can__typed__data__transceiver_8hpp.html", "can__typed__data__transceiver_8hpp" ],
     [ "cobs.hpp", "cobs_8hpp.html", [
       [ "Cobs", "classalps_1_1cmn_1_1communication_1_1_cobs.html", "classalps_1_1cmn_1_1communication_1_1_cobs" ]
-    ] ],
-    [ "custom_type_serialize_rule.hpp", "custom__type__serialize__rule_8hpp.html", [
-      [ "Serializer< time::Seconds >", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01time_1_1_seconds_01_4.html", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01time_1_1_seconds_01_4" ],
-      [ "Serializer< control::PidParam >", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_pid_param_01_4.html", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_pid_param_01_4" ],
-      [ "Serializer< control::PidCalcInfo >", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_pid_calc_info_01_4.html", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_pid_calc_info_01_4" ],
-      [ "Serializer< control::MotorVelocityControllerParam >", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_motor_velocity_controller_param_01_4.html", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_motor_velocity_controller_param_01_4" ],
-      [ "Serializer< control::MotorVelocityControllerCalcInfo >", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_motor_velocity_controller_calc_info_01_4.html", "structalps_1_1cmn_1_1communication_1_1_serializer_3_01control_1_1_motor_velocity_controller_calc_info_01_4" ]
     ] ],
     [ "i_can_io.hpp", "i__can__io_8hpp.html", [
       [ "ICanIo", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", "classalps_1_1cmn_1_1communication_1_1_i_can_io" ]
@@ -24,6 +23,5 @@ var dir_76fd7680a09542374d3e212281ba6ee2 =
     [ "i_uart_io.hpp", "i__uart__io_8hpp.html", [
       [ "IUartIo", "classalps_1_1cmn_1_1communication_1_1_i_uart_io.html", "classalps_1_1cmn_1_1communication_1_1_i_uart_io" ]
     ] ],
-    [ "serializer.hpp", "serializer_8hpp.html", "serializer_8hpp" ],
     [ "uart_packet_transceiver.hpp", "uart__packet__transceiver_8hpp.html", "uart__packet__transceiver_8hpp" ]
 ];

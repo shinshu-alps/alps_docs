@@ -25,14 +25,6 @@ var dir_83658e075a4ab7b2cbb8779471289882 =
     [ "motor_angle_velocity_controller.hpp", "motor__angle__velocity__controller_8hpp.html", [
       [ "MotorAngleVelocityController", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller" ]
     ] ],
-    [ "motor_velocity_controller.hpp", "motor__velocity__controller_8hpp.html", [
-      [ "MotorVelocityControllerParam", "structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html", "structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param" ],
-      [ "MotorVelocityControllerCalcInfo", "structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html", "structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info" ],
-      [ "MotorVelocityController", "classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html", "classalps_1_1cmn_1_1control_1_1_motor_velocity_controller" ]
-    ] ],
-    [ "pid.hpp", "pid_8hpp.html", [
-      [ "PidParam", "structalps_1_1cmn_1_1control_1_1_pid_param.html", "structalps_1_1cmn_1_1control_1_1_pid_param" ],
-      [ "PidCalcInfo", "structalps_1_1cmn_1_1control_1_1_pid_calc_info.html", "structalps_1_1cmn_1_1control_1_1_pid_calc_info" ],
-      [ "Pid", "classalps_1_1cmn_1_1control_1_1_pid.html", "classalps_1_1cmn_1_1control_1_1_pid" ]
-    ] ]
+    [ "motor_velocity_controller.hpp", "motor__velocity__controller_8hpp.html", "motor__velocity__controller_8hpp" ],
+    [ "pid.hpp", "pid_8hpp.html", "pid_8hpp" ]
 ];

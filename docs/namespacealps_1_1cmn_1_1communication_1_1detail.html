@@ -114,30 +114,33 @@ $(document).ready(function(){initNavTree('namespacealps_1_1cmn_1_1communication_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 クラス</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1detail_1_1_is_builtin_type.html">IsBuiltinType</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tが組み込み型かどうか判定  <a href="structalps_1_1cmn_1_1communication_1_1detail_1_1_is_builtin_type.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1detail_1_1_can_param_base.html">CanParamBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータの基底クラス  <a href="classalps_1_1cmn_1_1communication_1_1detail_1_1_can_param_base.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 関数</h2></td></tr>
-<tr class="memitem:af5ccf1c7398c45bbdd18eb0c36c28f97"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1detail.html#af5ccf1c7398c45bbdd18eb0c36c28f97">IsLittleEndian</a> () noexcept</td></tr>
-<tr class="memdesc:af5ccf1c7398c45bbdd18eb0c36c28f97"><td class="mdescLeft">&#160;</td><td class="mdescRight">実行環境がリトルエンディアンかどうか判定  <a href="namespacealps_1_1cmn_1_1communication_1_1detail.html#af5ccf1c7398c45bbdd18eb0c36c28f97">[詳解]</a><br /></td></tr>
-<tr class="separator:af5ccf1c7398c45bbdd18eb0c36c28f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accfe9487bbd17924fb2708c5ee09ec3b"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:accfe9487bbd17924fb2708c5ee09ec3b"><td class="memTemplItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1detail.html#accfe9487bbd17924fb2708c5ee09ec3b">RequiredBufferSizeForCanTypedDataCommunication</a> ()</td></tr>
+<tr class="memdesc:accfe9487bbd17924fb2708c5ee09ec3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">データの型に応じて，型付きCAN通信に必要なバッファサイズを返す  <a href="namespacealps_1_1cmn_1_1communication_1_1detail.html#accfe9487bbd17924fb2708c5ee09ec3b">[詳解]</a><br /></td></tr>
+<tr class="separator:accfe9487bbd17924fb2708c5ee09ec3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>実装詳細 </p>
 </div><h2 class="groupheader">関数詳解</h2>
-<a id="af5ccf1c7398c45bbdd18eb0c36c28f97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5ccf1c7398c45bbdd18eb0c36c28f97">&#9670;&nbsp;</a></span>IsLittleEndian()</h2>
+<a id="accfe9487bbd17924fb2708c5ee09ec3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accfe9487bbd17924fb2708c5ee09ec3b">&#9670;&nbsp;</a></span>RequiredBufferSizeForCanTypedDataCommunication()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool alps::cmn::communication::detail::IsLittleEndian </td>
+          <td class="memname">constexpr size_t alps::cmn::communication::detail::RequiredBufferSizeForCanTypedDataCommunication </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -145,15 +148,19 @@ $(document).ready(function(){initNavTree('namespacealps_1_1cmn_1_1communication_
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>実行環境がリトルエンディアンかどうか判定 </p>
-<dl class="section return"><dt>戻り値</dt><dd>true リトルエンディアン </dd>
-<dd>
-false ビッグエンディアン </dd></dl>
+<p>データの型に応じて，型付きCAN通信に必要なバッファサイズを返す </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>送受信データの型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>constexpr size_t 必要なバッファサイズ </dd></dl>
 
 </div>
 </div>

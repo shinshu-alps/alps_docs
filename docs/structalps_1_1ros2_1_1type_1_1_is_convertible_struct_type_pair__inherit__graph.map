@@ -1,0 +1,4 @@
+<map id="alps::ros2::type::IsConvertibleStructTypePair&lt; OriginalType, RosTopicType &gt;" name="alps::ros2::type::IsConvertibleStructTypePair&lt; OriginalType, RosTopicType &gt;">
+<area shape="rect" id="node1" title="相互に変換可能な構造体型(struct)かどうかを判定する． &#160;&#160;このテンプレート構造体を特殊化して，std::true_typeを継承することで変換可能な構造体型を追加できる． &#160;&#160;構造体はそれぞれの..." alt="" coords="5,131,221,237"/>
+<area shape="rect" id="node2" title=" " alt="" coords="54,5,173,83"/>
+</map>

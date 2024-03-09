@@ -1,16 +1,17 @@
 <map id="alps_common_lib/include/alps_cmn/control/motor_angle_controller.hpp" name="alps_common_lib/include/alps_cmn/control/motor_angle_controller.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="179,5,366,61"/>
-<area shape="rect" id="node2" href="$i__motor_8hpp.html" title=" " alt="" coords="5,109,156,151"/>
-<area shape="rect" id="node3" href="$pid_8hpp.html" title=" " alt="" coords="180,117,365,143"/>
-<area shape="rect" id="node14" href="$i__rotary__sensor_8hpp.html" title=" " alt="" coords="389,109,575,151"/>
-<area shape="rect" id="node4" title=" " alt="" coords="638,452,705,479"/>
-<area shape="rect" id="node5" title=" " alt="" coords="112,206,175,233"/>
-<area shape="rect" id="node6" title=" " alt="" coords="206,295,265,322"/>
-<area shape="rect" id="node7" href="$integrator_8hpp.html" title="積分器ライブラリ" alt="" coords="441,206,669,233"/>
-<area shape="rect" id="node10" href="$low__pass__differentiator_8hpp.html" title=" " alt="" coords="694,199,873,240"/>
-<area shape="rect" id="node13" href="$numeric__range_8hpp.html" title="数値の範囲を扱うクラス" alt="" coords="251,199,417,240"/>
-<area shape="rect" id="node8" href="$algorithm_8hpp.html" title=" " alt="" coords="289,295,493,322"/>
-<area shape="rect" id="node9" href="$duration_8hpp.html" title="時間間隔の型エイリアス" alt="" coords="569,377,773,404"/>
-<area shape="rect" id="node11" href="$differentiator_8hpp.html" title="微分器ライブラリ" alt="" coords="804,295,1053,322"/>
-<area shape="rect" id="node12" href="$low__pass__filter_8hpp.html" title="ローパスフィルタのクラス" alt="" coords="619,288,779,329"/>
+<area shape="rect" id="node1" title=" " alt="" coords="653,5,839,61"/>
+<area shape="rect" id="node2" href="$i__motor_8hpp.html" title=" " alt="" coords="479,109,629,151"/>
+<area shape="rect" id="node3" href="$pid_8hpp.html" title=" " alt="" coords="653,117,839,143"/>
+<area shape="rect" id="node15" href="$i__rotary__sensor_8hpp.html" title=" " alt="" coords="863,109,1048,151"/>
+<area shape="rect" id="node4" title=" " alt="" coords="163,452,230,479"/>
+<area shape="rect" id="node5" title=" " alt="" coords="905,206,968,233"/>
+<area shape="rect" id="node6" title=" " alt="" coords="815,295,874,322"/>
+<area shape="rect" id="node7" title=" " alt="" coords="992,206,1047,233"/>
+<area shape="rect" id="node8" href="$integrator_8hpp.html" title="積分器ライブラリ" alt="" coords="411,206,639,233"/>
+<area shape="rect" id="node11" href="$low__pass__differentiator_8hpp.html" title=" " alt="" coords="207,199,386,240"/>
+<area shape="rect" id="node14" href="$numeric__range_8hpp.html" title="数値の範囲を扱うクラス" alt="" coords="663,199,829,240"/>
+<area shape="rect" id="node9" href="$algorithm_8hpp.html" title=" " alt="" coords="587,295,791,322"/>
+<area shape="rect" id="node10" href="$duration_8hpp.html" title="時間間隔の型エイリアス" alt="" coords="235,377,439,404"/>
+<area shape="rect" id="node12" href="$differentiator_8hpp.html" title="微分器ライブラリ" alt="" coords="212,295,461,322"/>
+<area shape="rect" id="node13" href="$low__pass__filter_8hpp.html" title="ローパスフィルタのクラス" alt="" coords="27,288,187,329"/>
 </map>

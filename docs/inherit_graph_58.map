@@ -1,4 +1,4 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html" title=" " alt="" coords="5,5,181,47"/>
-<area shape="rect" id="node2" href="$classalps_1_1mbed_1_1gpio_1_1_digital_out.html" title="デジタル出力ピン" alt="" coords="229,13,433,39"/>
+<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html" title=" " alt="" coords="5,5,193,47"/>
+<area shape="rect" id="node2" href="$classalps_1_1mbed_1_1gpio_1_1_pwm_out.html" title="PWM出力ピン" alt="" coords="241,13,435,39"/>
 </map>
