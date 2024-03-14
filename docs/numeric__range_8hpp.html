@@ -103,7 +103,8 @@ $(document).ready(function(){initNavTree('numeric__range_8hpp.html',''); initRes
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">クラス</a> &#124;
-<a href="#namespaces">名前空間</a>  </div>
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#func-members">関数</a>  </div>
   <div class="headertitle">
 <div class="title">numeric_range.hpp ファイル</div>  </div>
 </div><!--header-->
@@ -112,11 +113,13 @@ $(document).ready(function(){initNavTree('numeric__range_8hpp.html',''); initRes
 <p>数値の範囲を扱うクラス  
 <a href="#details">[詳解]</a></p>
 <div class="textblock"><code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;tuple&gt;</code><br />
 <code>#include &quot;<a class="el" href="algorithm_8hpp_source.html">alps_cmn/util/algorithm.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 numeric_range.hpp の依存先関係図:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="numeric__range_8hpp__incl.svg" width="299" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="numeric__range_8hpp__incl.svg" width="378" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 被依存関係図:</div>
@@ -128,8 +131,8 @@ numeric_range.hpp の依存先関係図:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 クラス</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1util_1_1_numeric_range.html">alps::cmn::util::NumericRange&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">最小値と最大値による数値の範囲を表すクラス  <a href="classalps_1_1cmn_1_1util_1_1_numeric_range.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1util_1_1_numeric_range.html">alps::cmn::util::NumericRange&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">最小値と最大値による数値の範囲を表す構造体  <a href="structalps_1_1cmn_1_1util_1_1_numeric_range.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -143,6 +146,17 @@ numeric_range.hpp の依存先関係図:</div>
 <tr class="memitem:namespacealps_1_1cmn_1_1util"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1util.html">alps::cmn::util</a></td></tr>
 <tr class="memdesc:namespacealps_1_1cmn_1_1util"><td class="mdescLeft">&#160;</td><td class="mdescRight">ユーティリティ関係 <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a66aa2c77a634b03eb025fd23ec7872ac"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a66aa2c77a634b03eb025fd23ec7872ac"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::tuple&lt; T &amp;, T &amp; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1util.html#a66aa2c77a634b03eb025fd23ec7872ac">alps::cmn::util::ToTiedTuple</a> (NumericRange&lt; T &gt; &amp;range)</td></tr>
+<tr class="memdesc:a66aa2c77a634b03eb025fd23ec7872ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">NumericRangeのタプル変換関数  <a href="namespacealps_1_1cmn_1_1util.html#a66aa2c77a634b03eb025fd23ec7872ac">[詳解]</a><br /></td></tr>
+<tr class="separator:a66aa2c77a634b03eb025fd23ec7872ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5197f01316a66383d77b45693034bcfc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a5197f01316a66383d77b45693034bcfc"><td class="memTemplItemLeft" align="right" valign="top">std::array&lt; const char *, 2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1util.html#a5197f01316a66383d77b45693034bcfc">alps::cmn::util::GetElementNames</a> (const NumericRange&lt; T &gt; &amp;)</td></tr>
+<tr class="memdesc:a5197f01316a66383d77b45693034bcfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">NumericRangeの要素名取得関数  <a href="namespacealps_1_1cmn_1_1util.html#a5197f01316a66383d77b45693034bcfc">[詳解]</a><br /></td></tr>
+<tr class="separator:a5197f01316a66383d77b45693034bcfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>数値の範囲を扱うクラス </p>

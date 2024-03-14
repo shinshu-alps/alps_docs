@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['m2006_355',['M2006',['../classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m2006.html',1,'alps::cmn::actuator::robomas_motor::M2006&lt; Clock &gt;'],['../classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m2006.html#afb9d10434dbbb72353797065b65698b7',1,'alps::cmn::actuator::robomas_motor::M2006::M2006()']]],
-  ['m3508_356',['M3508',['../classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m3508.html',1,'alps::cmn::actuator::robomas_motor::M3508&lt; Clock &gt;'],['../classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m3508.html#a20ef25f177444f797304a2ce4bc7f5f5',1,'alps::cmn::actuator::robomas_motor::M3508::M3508()']]],
-  ['magneticvector_357',['MagneticVector',['../structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_magnetic_vector.html',1,'alps::cmn::sensor::Bno055']]],
-  ['mainpage_2emd_358',['MainPage.md',['../_main_page_8md.html',1,'']]],
+  ['m2006_354',['M2006',['../classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m2006.html',1,'alps::cmn::actuator::robomas_motor::M2006&lt; Clock &gt;'],['../classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m2006.html#afb9d10434dbbb72353797065b65698b7',1,'alps::cmn::actuator::robomas_motor::M2006::M2006()']]],
+  ['m3508_355',['M3508',['../classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m3508.html',1,'alps::cmn::actuator::robomas_motor::M3508&lt; Clock &gt;'],['../classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m3508.html#a20ef25f177444f797304a2ce4bc7f5f5',1,'alps::cmn::actuator::robomas_motor::M3508::M3508()']]],
+  ['magneticvector_356',['MagneticVector',['../structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_magnetic_vector.html',1,'alps::cmn::sensor::Bno055']]],
+  ['mainpage_2emd_357',['MainPage.md',['../_main_page_8md.html',1,'']]],
+  ['max_358',['max',['../structalps_1_1cmn_1_1util_1_1_numeric_range.html#ae64e8d42c779b95efebe8809649da81e',1,'alps::cmn::util::NumericRange']]],
   ['max_5fangle_359',['max_angle',['../structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a4c4f9922be96039439a3401b7970d440',1,'alps::cmn::actuator::ServoMotorParam']]],
   ['max_5fpulse_5fwidth_360',['max_pulse_width',['../structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html#a76a4aeff3cc7cdf30472ca0b7648fb17',1,'alps::cmn::actuator::ServoMotorParam']]],
   ['max_5fraw_5fval_361',['max_raw_val',['../structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#ad46fa63996a57b76efa6b58bad526439',1,'alps::cmn::sensor::PotentiometerParam']]],

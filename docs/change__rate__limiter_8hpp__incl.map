@@ -1,8 +1,9 @@
 <map id="alps_common_lib/include/alps_cmn/control/change_rate_limiter.hpp" name="alps_common_lib/include/alps_cmn/control/change_rate_limiter.hpp">
-<area shape="rect" id="node1" title="時間あたりの変化量に制限をかけるクラス" alt="" coords="32,5,220,61"/>
-<area shape="rect" id="node2" title=" " alt="" coords="49,199,116,225"/>
-<area shape="rect" id="node3" href="$duration_8hpp.html" title="時間間隔の型エイリアス" alt="" coords="24,117,228,143"/>
-<area shape="rect" id="node4" href="$numeric__range_8hpp.html" title="数値の範囲を扱うクラス" alt="" coords="252,109,419,151"/>
-<area shape="rect" id="node5" title=" " alt="" coords="193,199,252,225"/>
-<area shape="rect" id="node6" href="$algorithm_8hpp.html" title=" " alt="" coords="276,199,480,225"/>
+<area shape="rect" id="node1" title="時間あたりの変化量に制限をかけるクラス" alt="" coords="31,5,219,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="22,199,89,225"/>
+<area shape="rect" id="node3" href="$duration_8hpp.html" title="時間間隔の型エイリアス" alt="" coords="23,117,227,143"/>
+<area shape="rect" id="node4" href="$numeric__range_8hpp.html" title="数値の範囲を扱うクラス" alt="" coords="251,109,418,151"/>
+<area shape="rect" id="node5" title=" " alt="" coords="224,199,282,225"/>
+<area shape="rect" id="node6" title=" " alt="" coords="307,199,362,225"/>
+<area shape="rect" id="node7" href="$algorithm_8hpp.html" title=" " alt="" coords="386,199,590,225"/>
 </map>

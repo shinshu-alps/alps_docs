@@ -65,9 +65,9 @@ var annotated_dup =
         [ "log", "namespacealps_1_1cmn_1_1log.html", [
           [ "Logger", "classalps_1_1cmn_1_1log_1_1_logger.html", "classalps_1_1cmn_1_1log_1_1_logger" ]
         ] ],
-        [ "robotics", "namespacealps_1_1cmn_1_1robotics.html", [
-          [ "FourWheelOmni", "classalps_1_1cmn_1_1robotics_1_1_four_wheel_omni.html", "classalps_1_1cmn_1_1robotics_1_1_four_wheel_omni" ],
-          [ "Odometory", "classalps_1_1cmn_1_1robotics_1_1_odometory.html", "classalps_1_1cmn_1_1robotics_1_1_odometory" ]
+        [ "robot", "namespacealps_1_1cmn_1_1robot.html", [
+          [ "FourWheelOmni", "classalps_1_1cmn_1_1robot_1_1_four_wheel_omni.html", "classalps_1_1cmn_1_1robot_1_1_four_wheel_omni" ],
+          [ "Odometory", "classalps_1_1cmn_1_1robot_1_1_odometory.html", "classalps_1_1cmn_1_1robot_1_1_odometory" ]
         ] ],
         [ "sensor", "namespacealps_1_1cmn_1_1sensor.html", [
           [ "Bno055", "classalps_1_1cmn_1_1sensor_1_1_bno055.html", "classalps_1_1cmn_1_1sensor_1_1_bno055" ],
@@ -101,7 +101,7 @@ var annotated_dup =
           [ "GetNonRefTuple< std::tuple< RefTypes... > >", "structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple_3_01std_1_1tuple_3_01_ref_types_8_8_8_01_4_01_4.html", "structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple_3_01std_1_1tuple_3_01_ref_types_8_8_8_01_4_01_4" ]
         ] ],
         [ "util", "namespacealps_1_1cmn_1_1util.html", [
-          [ "NumericRange", "classalps_1_1cmn_1_1util_1_1_numeric_range.html", "classalps_1_1cmn_1_1util_1_1_numeric_range" ]
+          [ "NumericRange", "structalps_1_1cmn_1_1util_1_1_numeric_range.html", "structalps_1_1cmn_1_1util_1_1_numeric_range" ]
         ] ]
       ] ],
       [ "lin", "namespacealps_1_1lin.html", [

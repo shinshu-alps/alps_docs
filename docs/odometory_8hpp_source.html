@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.9.1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alps: alps_common_lib/include/alps_cmn/robotics/odometory.hpp ソースファイル</title>
+    <title>Alps: alps_common_lib/include/alps_cmn/robot/odometory.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
     <script type="text/javascript" src="jquery.js"></script>
@@ -106,8 +106,8 @@ $(document).ready(function(){initNavTree('odometory_8hpp_source.html',''); initR
 </div><!--header-->
 <div class="contents">
 <a href="odometory_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef ALPS_CMN_ROBOTICS_ODOMETORY_HPP_</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define ALPS_CMN_ROBOTICS_ODOMETORY_HPP_</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef ALPS_CMN_ROBOT_ODOMETORY_HPP_</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define ALPS_CMN_ROBOT_ODOMETORY_HPP_</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
@@ -117,33 +117,33 @@ $(document).ready(function(){initNavTree('odometory_8hpp_source.html',''); initR
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>cmn</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>robotics</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>robot</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Clock&gt;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1robotics_1_1_odometory.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1robotics_1_1_odometory.html">Odometory</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1robot_1_1_odometory.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1robot_1_1_odometory.html">Odometory</a></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1robotics_1_1_odometory.html#aa8cbf53e7bb262a6dde7663625b9d8c3">   42</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1robotics_1_1_odometory.html#aa8cbf53e7bb262a6dde7663625b9d8c3">Update</a>(<span class="keywordtype">float</span> vx, <span class="keywordtype">float</span> vy, <span class="keywordtype">float</span> vtheta)</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1robot_1_1_odometory.html#ab8b189a833585379d4a27f167ab85e94">   42</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1robot_1_1_odometory.html#ab8b189a833585379d4a27f167ab85e94">Update</a>(<span class="keywordtype">float</span> vx, <span class="keywordtype">float</span> vy, <span class="keywordtype">float</span> vtheta)</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    x_.Calculate(vx);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    y_.Calculate(vy);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    theta_.Calculate(vtheta);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1robotics_1_1_odometory.html#a584ff43310581a5257a1817831aedc30">   54</a></span>&#160;  std::array&lt;float, 3&gt; <a class="code" href="classalps_1_1cmn_1_1robotics_1_1_odometory.html#a584ff43310581a5257a1817831aedc30">GetPose</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1robot_1_1_odometory.html#a04abe98521c4a19139f29cc7051e397c">   54</a></span>&#160;  std::array&lt;float, 3&gt; <a class="code" href="classalps_1_1cmn_1_1robot_1_1_odometory.html#a04abe98521c4a19139f29cc7051e397c">GetPose</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">  </span>{</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> {x_.GetCurrentValue(), y_.GetCurrentValue(), theta_.GetCurrentValue()};</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1robotics_1_1_odometory.html#a68c2240c32e2e81e2efd3dfa96b45231">   66</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1robotics_1_1_odometory.html#a68c2240c32e2e81e2efd3dfa96b45231">SetPose</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> theta)</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1robot_1_1_odometory.html#ae4a630aa4322caca5bb201aa67dffe28">   66</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1robot_1_1_odometory.html#ae4a630aa4322caca5bb201aa67dffe28">SetPose</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> theta)</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    x_.SetIntegral(x);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    y_.SetIntegral(y);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    theta_.SetIntegral(theta);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1robotics_1_1_odometory.html#ab9e69807924e953c456f80fb51bb68d4">   77</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1robotics_1_1_odometory.html#ab9e69807924e953c456f80fb51bb68d4">Reset</a>()</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1robot_1_1_odometory.html#a6a514b790d39d996edcf5d17d2868ce6">   77</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1robot_1_1_odometory.html#a6a514b790d39d996edcf5d17d2868ce6">Reset</a>()</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    x_.Reset();</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    y_.Reset();</div>
@@ -156,17 +156,17 @@ $(document).ready(function(){initNavTree('odometory_8hpp_source.html',''); initR
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_integrator.html">alps::cmn::control::Integrator&lt;Clock&gt;</a> theta_;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}  <span class="comment">// namespace robotics</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}  <span class="comment">// namespace robot</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}  <span class="comment">// namespace cmn</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}  <span class="comment">// namespace alps</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// ALPS_CMN_ROBOTICS_ODOMETORY_HPP_</span></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_integrator_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_integrator.html">alps::cmn::control::Integrator</a></div><div class="ttdoc">積分器</div><div class="ttdef"><b>Definition:</b> integrator.hpp:33</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1robotics_1_1_odometory_html"><div class="ttname"><a href="classalps_1_1cmn_1_1robotics_1_1_odometory.html">alps::cmn::robotics::Odometory</a></div><div class="ttdoc">オドメトリ計算クラス</div><div class="ttdef"><b>Definition:</b> odometory.hpp:33</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1robotics_1_1_odometory_html_a584ff43310581a5257a1817831aedc30"><div class="ttname"><a href="classalps_1_1cmn_1_1robotics_1_1_odometory.html#a584ff43310581a5257a1817831aedc30">alps::cmn::robotics::Odometory::GetPose</a></div><div class="ttdeci">std::array&lt; float, 3 &gt; GetPose() const</div><div class="ttdoc">現在のオドメトリ計算値を取得する</div><div class="ttdef"><b>Definition:</b> odometory.hpp:54</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1robotics_1_1_odometory_html_a68c2240c32e2e81e2efd3dfa96b45231"><div class="ttname"><a href="classalps_1_1cmn_1_1robotics_1_1_odometory.html#a68c2240c32e2e81e2efd3dfa96b45231">alps::cmn::robotics::Odometory::SetPose</a></div><div class="ttdeci">void SetPose(float x, float y, float theta)</div><div class="ttdoc">現在のオドメトリ計算値を設定する</div><div class="ttdef"><b>Definition:</b> odometory.hpp:66</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1robotics_1_1_odometory_html_aa8cbf53e7bb262a6dde7663625b9d8c3"><div class="ttname"><a href="classalps_1_1cmn_1_1robotics_1_1_odometory.html#aa8cbf53e7bb262a6dde7663625b9d8c3">alps::cmn::robotics::Odometory::Update</a></div><div class="ttdeci">void Update(float vx, float vy, float vtheta)</div><div class="ttdoc">速度入力からオドメトリを計算する</div><div class="ttdef"><b>Definition:</b> odometory.hpp:42</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1robotics_1_1_odometory_html_ab9e69807924e953c456f80fb51bb68d4"><div class="ttname"><a href="classalps_1_1cmn_1_1robotics_1_1_odometory.html#ab9e69807924e953c456f80fb51bb68d4">alps::cmn::robotics::Odometory::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">オドメトリ計算値をリセットする</div><div class="ttdef"><b>Definition:</b> odometory.hpp:77</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1robot_1_1_odometory_html"><div class="ttname"><a href="classalps_1_1cmn_1_1robot_1_1_odometory.html">alps::cmn::robot::Odometory</a></div><div class="ttdoc">オドメトリ計算クラス</div><div class="ttdef"><b>Definition:</b> odometory.hpp:33</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1robot_1_1_odometory_html_a04abe98521c4a19139f29cc7051e397c"><div class="ttname"><a href="classalps_1_1cmn_1_1robot_1_1_odometory.html#a04abe98521c4a19139f29cc7051e397c">alps::cmn::robot::Odometory::GetPose</a></div><div class="ttdeci">std::array&lt; float, 3 &gt; GetPose() const</div><div class="ttdoc">現在のオドメトリ計算値を取得する</div><div class="ttdef"><b>Definition:</b> odometory.hpp:54</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1robot_1_1_odometory_html_a6a514b790d39d996edcf5d17d2868ce6"><div class="ttname"><a href="classalps_1_1cmn_1_1robot_1_1_odometory.html#a6a514b790d39d996edcf5d17d2868ce6">alps::cmn::robot::Odometory::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">オドメトリ計算値をリセットする</div><div class="ttdef"><b>Definition:</b> odometory.hpp:77</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1robot_1_1_odometory_html_ab8b189a833585379d4a27f167ab85e94"><div class="ttname"><a href="classalps_1_1cmn_1_1robot_1_1_odometory.html#ab8b189a833585379d4a27f167ab85e94">alps::cmn::robot::Odometory::Update</a></div><div class="ttdeci">void Update(float vx, float vy, float vtheta)</div><div class="ttdoc">速度入力からオドメトリを計算する</div><div class="ttdef"><b>Definition:</b> odometory.hpp:42</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1robot_1_1_odometory_html_ae4a630aa4322caca5bb201aa67dffe28"><div class="ttname"><a href="classalps_1_1cmn_1_1robot_1_1_odometory.html#ae4a630aa4322caca5bb201aa67dffe28">alps::cmn::robot::Odometory::SetPose</a></div><div class="ttdeci">void SetPose(float x, float y, float theta)</div><div class="ttdoc">現在のオドメトリ計算値を設定する</div><div class="ttdef"><b>Definition:</b> odometory.hpp:66</div></div>
 <div class="ttc" id="aintegrator_8hpp_html"><div class="ttname"><a href="integrator_8hpp.html">integrator.hpp</a></div><div class="ttdoc">積分器ライブラリ</div></div>
 <div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('odometory_8hpp_source.html',''); initR
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_fcd1ba41f8679fcc7bf76d667eaa0e17.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_ce1e71e2103ac83e6d6cc720a9feeeb7.html">include</a></li><li class="navelem"><a class="el" href="dir_cc648f72f51f156e42f9863c0e5bf5fb.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_699f9106423e7a7cab26b00d3847951b.html">robotics</a></li><li class="navelem"><a class="el" href="odometory_8hpp.html">odometory.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_fcd1ba41f8679fcc7bf76d667eaa0e17.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_ce1e71e2103ac83e6d6cc720a9feeeb7.html">include</a></li><li class="navelem"><a class="el" href="dir_cc648f72f51f156e42f9863c0e5bf5fb.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_eac69d423eace7de4b81e52d620405d0.html">robot</a></li><li class="navelem"><a class="el" href="odometory_8hpp.html">odometory.hpp</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
