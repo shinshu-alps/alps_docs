@@ -1,0 +1,324 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps::cmn::robot::Odometory&lt; Clock &gt; クラステンプレート</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classalps_1_1cmn_1_1robot_1_1_odometory.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="classalps_1_1cmn_1_1robot_1_1_odometory-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">alps::cmn::robot::Odometory&lt; Clock &gt; クラステンプレート</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>オドメトリ計算クラス  
+ <a href="classalps_1_1cmn_1_1robot_1_1_odometory.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="odometory_8hpp_source.html">odometory.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ab8b189a833585379d4a27f167ab85e94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1robot_1_1_odometory.html#ab8b189a833585379d4a27f167ab85e94">Update</a> (float vx, float vy, float vtheta)</td></tr>
+<tr class="memdesc:ab8b189a833585379d4a27f167ab85e94"><td class="mdescLeft">&#160;</td><td class="mdescRight">速度入力からオドメトリを計算する  <a href="classalps_1_1cmn_1_1robot_1_1_odometory.html#ab8b189a833585379d4a27f167ab85e94">[詳解]</a><br /></td></tr>
+<tr class="separator:ab8b189a833585379d4a27f167ab85e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04abe98521c4a19139f29cc7051e397c"><td class="memItemLeft" align="right" valign="top">std::array&lt; float, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1robot_1_1_odometory.html#a04abe98521c4a19139f29cc7051e397c">GetPose</a> () const</td></tr>
+<tr class="memdesc:a04abe98521c4a19139f29cc7051e397c"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のオドメトリ計算値を取得する  <a href="classalps_1_1cmn_1_1robot_1_1_odometory.html#a04abe98521c4a19139f29cc7051e397c">[詳解]</a><br /></td></tr>
+<tr class="separator:a04abe98521c4a19139f29cc7051e397c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a630aa4322caca5bb201aa67dffe28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1robot_1_1_odometory.html#ae4a630aa4322caca5bb201aa67dffe28">SetPose</a> (float x, float y, float theta)</td></tr>
+<tr class="memdesc:ae4a630aa4322caca5bb201aa67dffe28"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のオドメトリ計算値を設定する  <a href="classalps_1_1cmn_1_1robot_1_1_odometory.html#ae4a630aa4322caca5bb201aa67dffe28">[詳解]</a><br /></td></tr>
+<tr class="separator:ae4a630aa4322caca5bb201aa67dffe28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a514b790d39d996edcf5d17d2868ce6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1robot_1_1_odometory.html#a6a514b790d39d996edcf5d17d2868ce6">Reset</a> ()</td></tr>
+<tr class="memdesc:a6a514b790d39d996edcf5d17d2868ce6"><td class="mdescLeft">&#160;</td><td class="mdescRight">オドメトリ計算値をリセットする  <a href="classalps_1_1cmn_1_1robot_1_1_odometory.html#a6a514b790d39d996edcf5d17d2868ce6">[詳解]</a><br /></td></tr>
+<tr class="separator:a6a514b790d39d996edcf5d17d2868ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><h3>template&lt;class Clock&gt;<br />
+class alps::cmn::robot::Odometory&lt; Clock &gt;</h3>
+
+<p>オドメトリ計算クラス </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Clock</td><td>クロッククラス </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">関数詳解</h2>
+<a id="a04abe98521c4a19139f29cc7051e397c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04abe98521c4a19139f29cc7051e397c">&#9670;&nbsp;</a></span>GetPose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;float, 3&gt; <a class="el" href="classalps_1_1cmn_1_1robot_1_1_odometory.html">alps::cmn::robot::Odometory</a>&lt; Clock &gt;::GetPose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在のオドメトリ計算値を取得する </p>
+<dl class="section return"><dt>戻り値</dt><dd>std::array&lt;float, 3&gt; 姿勢．[0]:x座標, [1]:y座標, [2]:theta角度 </dd></dl>
+
+</div>
+</div>
+<a id="a6a514b790d39d996edcf5d17d2868ce6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a514b790d39d996edcf5d17d2868ce6">&#9670;&nbsp;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1robot_1_1_odometory.html">alps::cmn::robot::Odometory</a>&lt; Clock &gt;::Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>オドメトリ計算値をリセットする </p>
+
+</div>
+</div>
+<a id="ae4a630aa4322caca5bb201aa67dffe28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4a630aa4322caca5bb201aa67dffe28">&#9670;&nbsp;</a></span>SetPose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1robot_1_1_odometory.html">alps::cmn::robot::Odometory</a>&lt; Clock &gt;::SetPose </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>theta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在のオドメトリ計算値を設定する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>x座標 </td></tr>
+    <tr><td class="paramname">y</td><td>y座標 </td></tr>
+    <tr><td class="paramname">theta</td><td>角度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab8b189a833585379d4a27f167ab85e94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8b189a833585379d4a27f167ab85e94">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1robot_1_1_odometory.html">alps::cmn::robot::Odometory</a>&lt; Clock &gt;::Update </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>vx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>vy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>vtheta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>速度入力からオドメトリを計算する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vx</td><td>x方向速度 </td></tr>
+    <tr><td class="paramname">vy</td><td>y方向速度 </td></tr>
+    <tr><td class="paramname">vtheta</td><td>角速度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>alps_common_lib/include/alps_cmn/robot/<a class="el" href="odometory_8hpp_source.html">odometory.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacealps.html">alps</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn.html">cmn</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn_1_1robot.html">robot</a></li><li class="navelem"><a class="el" href="classalps_1_1cmn_1_1robot_1_1_odometory.html">Odometory</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -40,7 +40,7 @@ var searchData=
   ['mbed_37',['mbed',['../namespacealps_1_1mbed.html',1,'alps']]],
   ['msg_38',['msg',['../namespacealps__interfaces_1_1msg.html',1,'alps_interfaces']]],
   ['robomas_5fmotor_39',['robomas_motor',['../namespacealps_1_1cmn_1_1actuator_1_1robomas__motor.html',1,'alps::cmn::actuator']]],
-  ['robotics_40',['robotics',['../namespacealps_1_1cmn_1_1robotics.html',1,'alps::cmn']]],
+  ['robot_40',['robot',['../namespacealps_1_1cmn_1_1robot.html',1,'alps::cmn']]],
   ['ros_41',['ros',['../namespacealps_1_1ros.html',1,'alps']]],
   ['ros2_42',['ros2',['../namespacealps_1_1ros2.html',1,'alps']]],
   ['sensor_43',['sensor',['../namespacealps_1_1cmn_1_1sensor.html',1,'alps::cmn::sensor'],['../namespacealps_1_1mbed_1_1sensor.html',1,'alps::mbed::sensor']]],
