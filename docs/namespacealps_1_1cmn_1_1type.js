@@ -2,6 +2,7 @@ var namespacealps_1_1cmn_1_1type =
 [
     [ "detail", "namespacealps_1_1cmn_1_1type_1_1detail.html", "namespacealps_1_1cmn_1_1type_1_1detail" ],
     [ "Serializer< time::Seconds >", "structalps_1_1cmn_1_1type_1_1_serializer_3_01time_1_1_seconds_01_4.html", "structalps_1_1cmn_1_1type_1_1_serializer_3_01time_1_1_seconds_01_4" ],
+    [ "Serializer< etl::optional< T > >", "structalps_1_1cmn_1_1type_1_1_serializer_3_01etl_1_1optional_3_01_t_01_4_01_4.html", "structalps_1_1cmn_1_1type_1_1_serializer_3_01etl_1_1optional_3_01_t_01_4_01_4" ],
     [ "Serializer", "structalps_1_1cmn_1_1type_1_1_serializer.html", "structalps_1_1cmn_1_1type_1_1_serializer" ],
     [ "SupportsToTiedTuple", "structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple.html", null ],
     [ "SupportsToTiedTuple< T, std::void_t< decltype(ToTiedTuple(std::declval< T & >()))> >", "structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple_3_01_t_00_01std_1_1void__t_3_01decltype_07_9f44abe140632721ed0d7f78ca803e5b.html", "structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple_3_01_t_00_01std_1_1void__t_3_01decltype_07_9f44abe140632721ed0d7f78ca803e5b" ],

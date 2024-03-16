@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"low__pass__differentiator_8hpp_source.html":[3,0,0,0,0,2,4],
 "low__pass__filter_8hpp.html":[3,0,0,0,0,2,5],
 "low__pass__filter_8hpp_source.html":[3,0,0,0,0,2,5],
 "motor__angle__controller_8hpp.html":[3,0,0,0,0,2,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_magnetic_vector.html":[2,0,0,0,6,0,5],
 "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_magnetic_vector.html#a03c8fc6fa36ebc95f025ee500ae5d5b3":[2,0,0,0,6,0,5,2],
 "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_magnetic_vector.html#a9e3bcb83a4504e9c62eeb98607187acf":[2,0,0,0,6,0,5,1],
-"structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_magnetic_vector.html#af8b6e8b1619998c480cce3479aae5fa1":[2,0,0,0,6,0,5,0],
-"structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html":[2,0,0,0,6,0,6]
+"structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_magnetic_vector.html#af8b6e8b1619998c480cce3479aae5fa1":[2,0,0,0,6,0,5,0]
 };
