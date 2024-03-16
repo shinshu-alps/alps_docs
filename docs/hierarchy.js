@@ -157,6 +157,7 @@ var hierarchy =
     [ "alps::ros2::communication::RosToCanTopicBridge< CanType, RosTopicType >", "classalps_1_1ros2_1_1communication_1_1_ros_to_can_topic_bridge.html", null ],
     [ "alps::cmn::sensor::S11059< I2cIo >", "classalps_1_1cmn_1_1sensor_1_1_s11059.html", null ],
     [ "alps::cmn::type::Serializer< T, typename >", "structalps_1_1cmn_1_1type_1_1_serializer.html", null ],
+    [ "alps::cmn::type::Serializer< etl::optional< T > >", "structalps_1_1cmn_1_1type_1_1_serializer_3_01etl_1_1optional_3_01_t_01_4_01_4.html", null ],
     [ "alps::cmn::type::Serializer< time::Seconds >", "structalps_1_1cmn_1_1type_1_1_serializer_3_01time_1_1_seconds_01_4.html", null ],
     [ "alps::cmn::actuator::ServoMotor< PwmOut >", "classalps_1_1cmn_1_1actuator_1_1_servo_motor.html", null ],
     [ "alps::cmn::actuator::ServoMotorParam", "structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html", null ],

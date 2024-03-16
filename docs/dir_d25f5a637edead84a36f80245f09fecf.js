@@ -1,7 +1,8 @@
 var dir_d25f5a637edead84a36f80245f09fecf =
 [
     [ "custom_type_serialize_rule.hpp", "custom__type__serialize__rule_8hpp.html", [
-      [ "Serializer< time::Seconds >", "structalps_1_1cmn_1_1type_1_1_serializer_3_01time_1_1_seconds_01_4.html", "structalps_1_1cmn_1_1type_1_1_serializer_3_01time_1_1_seconds_01_4" ]
+      [ "Serializer< time::Seconds >", "structalps_1_1cmn_1_1type_1_1_serializer_3_01time_1_1_seconds_01_4.html", "structalps_1_1cmn_1_1type_1_1_serializer_3_01time_1_1_seconds_01_4" ],
+      [ "Serializer< etl::optional< T > >", "structalps_1_1cmn_1_1type_1_1_serializer_3_01etl_1_1optional_3_01_t_01_4_01_4.html", "structalps_1_1cmn_1_1type_1_1_serializer_3_01etl_1_1optional_3_01_t_01_4_01_4" ]
     ] ],
     [ "serializer.hpp", "serializer_8hpp.html", "serializer_8hpp" ],
     [ "tuple_traits.hpp", "tuple__traits_8hpp.html", [
