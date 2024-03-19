@@ -70,7 +70,16 @@ var annotated_dup =
           [ "Odometory", "classalps_1_1cmn_1_1robot_1_1_odometory.html", "classalps_1_1cmn_1_1robot_1_1_odometory" ]
         ] ],
         [ "sensor", "namespacealps_1_1cmn_1_1sensor.html", [
-          [ "Bno055", "classalps_1_1cmn_1_1sensor_1_1_bno055.html", "classalps_1_1cmn_1_1sensor_1_1_bno055" ],
+          [ "bno055", "namespacealps_1_1cmn_1_1sensor_1_1bno055.html", [
+            [ "Acceleration", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration" ],
+            [ "MagneticVector", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector" ],
+            [ "AngularVelocity", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity" ],
+            [ "Euler", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler" ],
+            [ "Quaternion", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion" ],
+            [ "LinearAcceleration", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration" ],
+            [ "GravityVector", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector" ],
+            [ "Bno055", "classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html", "classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055" ]
+          ] ],
           [ "IRotarySensor", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor" ],
           [ "IncrementalEncoder", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder" ],
           [ "PotentiometerParam", "structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html", "structalps_1_1cmn_1_1sensor_1_1_potentiometer_param" ],

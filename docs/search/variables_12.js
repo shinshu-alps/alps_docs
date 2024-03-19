@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['w_1095',['w',['../structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html#a7001950c3be6803ffbd4a96e6f2e8a09',1,'alps::cmn::sensor::Bno055::Quaternion']]]
+  ['w_1097',['w',['../structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#a44082014ee327b6ff23e78c4b7205d3a',1,'alps::cmn::sensor::bno055::Quaternion']]]
 ];
