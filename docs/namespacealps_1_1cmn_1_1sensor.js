@@ -1,6 +1,6 @@
 var namespacealps_1_1cmn_1_1sensor =
 [
-    [ "Bno055", "classalps_1_1cmn_1_1sensor_1_1_bno055.html", "classalps_1_1cmn_1_1sensor_1_1_bno055" ],
+    [ "bno055", "namespacealps_1_1cmn_1_1sensor_1_1bno055.html", "namespacealps_1_1cmn_1_1sensor_1_1bno055" ],
     [ "IRotarySensor", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor" ],
     [ "IncrementalEncoder", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder" ],
     [ "PotentiometerParam", "structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html", "structalps_1_1cmn_1_1sensor_1_1_potentiometer_param" ],

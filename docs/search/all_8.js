@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['joy_264',['Joy',['../classalps_1_1ros2_1_1ui_1_1_joy.html',1,'alps::ros2::ui::Joy'],['../classalps_1_1ros2_1_1ui_1_1_joy.html#ae39070d2de281ff2f71b60b1dfeb49d1',1,'alps::ros2::ui::Joy::Joy()']]],
-  ['joy_2ehpp_265',['joy.hpp',['../joy_8hpp.html',1,'']]]
+  ['joy_265',['Joy',['../classalps_1_1ros2_1_1ui_1_1_joy.html',1,'alps::ros2::ui::Joy'],['../classalps_1_1ros2_1_1ui_1_1_joy.html#ae39070d2de281ff2f71b60b1dfeb49d1',1,'alps::ros2::ui::Joy::Joy()']]],
+  ['joy_2ehpp_266',['joy.hpp',['../joy_8hpp.html',1,'']]]
 ];

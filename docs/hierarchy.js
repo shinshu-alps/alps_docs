@@ -1,8 +1,8 @@
 var hierarchy =
 [
-    [ "alps::cmn::sensor::Bno055< I2cIo >::Acceleration", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_acceleration.html", null ],
-    [ "alps::cmn::sensor::Bno055< I2cIo >::AngularVelocity", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_angular_velocity.html", null ],
-    [ "alps::cmn::sensor::Bno055< I2cIo >", "classalps_1_1cmn_1_1sensor_1_1_bno055.html", null ],
+    [ "alps::cmn::sensor::bno055::Acceleration", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html", null ],
+    [ "alps::cmn::sensor::bno055::AngularVelocity", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html", null ],
+    [ "alps::cmn::sensor::bno055::Bno055< I2cIo >", "classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html", null ],
     [ "alps::cmn::communication::CanCallbackHandler< kMaxCallbackNum >", "classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html", null ],
     [ "alps::cmn::communication::CanCallbackHandler< 30 >", "classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html", null ],
     [ "alps::cmn::communication::CanDataFrame", "structalps_1_1cmn_1_1communication_1_1_can_data_frame.html", null ],
@@ -23,7 +23,7 @@ var hierarchy =
     [ "alps::cmn::control::ChangeRateLimiter< Clock >", "classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html", null ],
     [ "alps::cmn::communication::Cobs", "classalps_1_1cmn_1_1communication_1_1_cobs.html", null ],
     [ "alps::cmn::control::Differentiator< Clock >", "classalps_1_1cmn_1_1control_1_1_differentiator.html", null ],
-    [ "alps::cmn::sensor::Bno055< I2cIo >::Euler", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_euler.html", null ],
+    [ "alps::cmn::sensor::bno055::Euler", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html", null ],
     [ "std::false_type", null, [
       [ "alps::cmn::type::SupportsGetElementNames< T, typename >", "structalps_1_1cmn_1_1type_1_1_supports_get_element_names.html", null ],
       [ "alps::cmn::type::SupportsToTiedTuple< T, typename >", "structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple.html", null ],
@@ -33,7 +33,7 @@ var hierarchy =
     [ "alps::cmn::tool::MotorFrictionAnalyzer< Clock, Motor, RorarySensor >::FrictionResult", "structalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_1_1_friction_result.html", null ],
     [ "alps::cmn::type::GetNonRefTuple< T >", "structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple.html", null ],
     [ "alps::cmn::type::GetNonRefTuple< std::tuple< RefTypes... > >", "structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple_3_01std_1_1tuple_3_01_ref_types_8_8_8_01_4_01_4.html", null ],
-    [ "alps::cmn::sensor::Bno055< I2cIo >::GravityVector", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_gravity_vector.html", null ],
+    [ "alps::cmn::sensor::bno055::GravityVector", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html", null ],
     [ "alps::cmn::gpio::IAnalogIn< Derived >", "classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html", null ],
     [ "alps::cmn::gpio::IAnalogIn< AnalogIn >", "classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html", [
       [ "alps::mbed::gpio::AnalogIn", "classalps_1_1mbed_1_1gpio_1_1_analog_in.html", null ]
@@ -124,11 +124,11 @@ var hierarchy =
       [ "alps::mbed::communication::UartIo", "classalps_1_1mbed_1_1communication_1_1_uart_io.html", null ]
     ] ],
     [ "alps::ros2::ui::Joy", "classalps_1_1ros2_1_1ui_1_1_joy.html", null ],
-    [ "alps::cmn::sensor::Bno055< I2cIo >::LinearAcceleration", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_linear_acceleration.html", null ],
+    [ "alps::cmn::sensor::bno055::LinearAcceleration", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html", null ],
     [ "alps::cmn::log::Logger", "classalps_1_1cmn_1_1log_1_1_logger.html", null ],
     [ "alps::cmn::control::LowPassDifferentiator< Clock >", "classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html", null ],
     [ "alps::cmn::control::LowPassFilter< Clock >", "classalps_1_1cmn_1_1control_1_1_low_pass_filter.html", null ],
-    [ "alps::cmn::sensor::Bno055< I2cIo >::MagneticVector", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_magnetic_vector.html", null ],
+    [ "alps::cmn::sensor::bno055::MagneticVector", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html", null ],
     [ "alps::cmn::control::MotorAngleController< Clock, Motor, RotarySensor >", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html", null ],
     [ "alps::cmn::control::MotorAngleControllerCalcInfo", "structalps_1_1cmn_1_1control_1_1_motor_angle_controller_calc_info.html", null ],
     [ "alps::cmn::control::MotorAngleVelocityController< Clock >", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html", null ],
@@ -149,7 +149,7 @@ var hierarchy =
     [ "alps::cmn::control::PidCalcInfo", "structalps_1_1cmn_1_1control_1_1_pid_calc_info.html", null ],
     [ "alps::cmn::control::PidParam", "structalps_1_1cmn_1_1control_1_1_pid_param.html", null ],
     [ "alps::cmn::sensor::PotentiometerParam", "structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html", null ],
-    [ "alps::cmn::sensor::Bno055< I2cIo >::Quaternion", "structalps_1_1cmn_1_1sensor_1_1_bno055_1_1_quaternion.html", null ],
+    [ "alps::cmn::sensor::bno055::Quaternion", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html", null ],
     [ "alps::cmn::sensor::S11059< I2cIo >::RawData", "structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_raw_data.html", null ],
     [ "alps::cmn::time::RepeatingPollingTimer< Clock >", "classalps_1_1cmn_1_1time_1_1_repeating_polling_timer.html", null ],
     [ "alps::cmn::sensor::Tcs34725< Clock, I2cIo >::RgbColor", "structalps_1_1cmn_1_1sensor_1_1_tcs34725_1_1_rgb_color.html", null ],
