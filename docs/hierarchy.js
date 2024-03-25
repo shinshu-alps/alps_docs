@@ -166,6 +166,7 @@ var hierarchy =
     [ "alps::cmn::time::TimeoutChecker< std::chrono::system_clock >", "classalps_1_1cmn_1_1time_1_1_timeout_checker.html", null ],
     [ "alps::ros2::type::TopicConverter< OriginalType, RosTopicType, typename >", "structalps_1_1ros2_1_1type_1_1_topic_converter.html", null ],
     [ "alps::ros2::type::TopicConverter< cmn::time::Seconds, alps_interfaces::msg::Seconds >", "structalps_1_1ros2_1_1type_1_1_topic_converter_3_01cmn_1_1time_1_1_seconds_00_01alps__interfaces_1_1msg_1_1_seconds_01_4.html", null ],
+    [ "alps::ros2::type::TopicConverter< OriginalEnumType, alps_interfaces::msg::Enum, std::enable_if_t< std::is_enum_v< OriginalEnumType > > >", "structalps_1_1ros2_1_1type_1_1_topic_converter_3_01_original_enum_type_00_01alps__interfaces_1_1a86b12c586acc4f645b4f22f3aa145d3.html", null ],
     [ "std::true_type", null, [
       [ "alps::cmn::type::SupportsGetElementNames< T, std::void_t< decltype(GetElementNames(std::declval< T & >()))> >", "structalps_1_1cmn_1_1type_1_1_supports_get_element_names_3_01_t_00_01std_1_1void__t_3_01decltype2f43caa8b955e7f8195f525d3aa247f1.html", null ],
       [ "alps::cmn::type::SupportsToTiedTuple< T, std::void_t< decltype(ToTiedTuple(std::declval< T & >()))> >", "structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple_3_01_t_00_01std_1_1void__t_3_01decltype_07_9f44abe140632721ed0d7f78ca803e5b.html", null ],
