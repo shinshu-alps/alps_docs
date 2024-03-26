@@ -9,6 +9,8 @@ var namespacealps_1_1ros2_1_1type =
     [ "IsConvertibleStructTypePair< alps::cmn::control::MotorVelocityControllerParam, alps_interfaces::msg::MotorVelocityControllerParam >", "structalps_1_1ros2_1_1type_1_1_is_convertible_struct_type_pair_3_01alps_1_1cmn_1_1control_1_1_mo772900ea21d35c46435d1467e5891735.html", null ],
     [ "IsConvertibleStructTypePair< alps::cmn::control::MotorVelocityControllerCalcInfo, alps_interfaces::msg::MotorVelocityControllerCalcInfo >", "structalps_1_1ros2_1_1type_1_1_is_convertible_struct_type_pair_3_01alps_1_1cmn_1_1control_1_1_mo432b1e850addee0eca3d6278415c3a1d.html", null ],
     [ "ParamConverter", "structalps_1_1ros2_1_1type_1_1_param_converter.html", "structalps_1_1ros2_1_1type_1_1_param_converter" ],
+    [ "IsSingleElementStdMsgsType", "structalps_1_1ros2_1_1type_1_1_is_single_element_std_msgs_type.html", null ],
+    [ "IsSingleElementStdMsgsType< RosTopicType, std::void_t< typename RosTopicType::_data_type >, std::enable_if_t< std::is_same_v< typename RosTopicType::_data_type, decltype(std::declval< RosTopicType >().data)> > >", "structalps_1_1ros2_1_1type_1_1_is_single_element_std_msgs_type_3_01_ros_topic_type_00_01std_1_1vacc211517e2782de2f7efe73018b7548.html", null ],
     [ "IsConvertibleStructTypePair", "structalps_1_1ros2_1_1type_1_1_is_convertible_struct_type_pair.html", null ],
     [ "TopicConverter", "structalps_1_1ros2_1_1type_1_1_topic_converter.html", "structalps_1_1ros2_1_1type_1_1_topic_converter" ]
 ];

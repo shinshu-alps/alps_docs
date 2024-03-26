@@ -1,3 +1,15 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$structalps_1_1cmn_1_1type_1_1_serializer.html" title="データとバイト列の変換器" alt="" coords="5,5,196,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,373,124,399"/>
+<area shape="rect" id="node2" href="$structalps_1_1cmn_1_1type_1_1_has_clear.html" title="clearメソッドを持つかどうかを判定する型述語" alt="" coords="211,5,400,47"/>
+<area shape="rect" id="node3" href="$structalps_1_1cmn_1_1type_1_1_has_push_back.html" title="push_backメソッドを持つかどうかを判定する型述語" alt="" coords="212,71,399,112"/>
+<area shape="rect" id="node4" href="$structalps_1_1cmn_1_1type_1_1_has_resize.html" title="resizeメソッドを持つかどうかを判定する型述語" alt="" coords="206,136,405,177"/>
+<area shape="rect" id="node5" href="$structalps_1_1cmn_1_1type_1_1_has_size.html" title="sizeメソッドを持つかどうかを判定する型述語" alt="" coords="214,201,397,243"/>
+<area shape="rect" id="node6" href="$structalps_1_1cmn_1_1type_1_1_has_subscript_operator.html" title="添字演算子[]を持つかどうかを判定する型述語" alt="" coords="198,267,413,308"/>
+<area shape="rect" id="node7" href="$structalps_1_1cmn_1_1type_1_1_has_value_type.html" title="value_type型を持つかどうかを判定する型述語" alt="" coords="210,332,401,373"/>
+<area shape="rect" id="node8" href="$structalps_1_1cmn_1_1type_1_1_is_array.html" title="Array型かどうかを判定する型述語. cスタイルの配列とvectorはArrayではないと判定する" alt="" coords="217,397,393,439"/>
+<area shape="rect" id="node9" href="$structalps_1_1cmn_1_1type_1_1_is_vector_like.html" title="vector型のように振る舞う型かどうかを判定する型述語" alt="" coords="214,463,397,504"/>
+<area shape="rect" id="node10" href="$structalps_1_1cmn_1_1type_1_1_supports_get_element_names.html" title="T型がGetElementNames関数をサポートしているかどうかを判定する" alt="" coords="177,528,434,569"/>
+<area shape="rect" id="node11" href="$structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple.html" title="T型がstd::tupleに変換可能かどうかを判定する" alt="" coords="200,593,411,635"/>
+<area shape="rect" id="node12" href="$structalps_1_1ros2_1_1type_1_1_is_convertible_struct_type_pair.html" title="相互に変換可能な構造体型(struct)かどうかを判定する． &#160;&#160;このテンプレート構造体を特殊化して，std::true_typeを継承することで変換可能な構造体型を追加できる． &#160;&#160;構造体はそれぞれの..." alt="" coords="197,659,413,715"/>
+<area shape="rect" id="node13" href="$structalps_1_1ros2_1_1type_1_1_is_single_element_std_msgs_type.html" title="std_msgs::msg名前空間内のデータを1つだけ持つ型かどうかを判定する型述語 例) std_msgs::msg::Bool, std_msgs::msg::Float32MultiArray" alt="" coords="172,739,439,795"/>
 </map>

@@ -100,6 +100,20 @@ var annotated_dup =
           [ "detail", "namespacealps_1_1cmn_1_1type_1_1detail.html", [
             [ "IsBuiltinType", "structalps_1_1cmn_1_1type_1_1detail_1_1_is_builtin_type.html", "structalps_1_1cmn_1_1type_1_1detail_1_1_is_builtin_type" ]
           ] ],
+          [ "IsArray", "structalps_1_1cmn_1_1type_1_1_is_array.html", null ],
+          [ "IsArray< T, std::enable_if_t< HasSubscriptOperator< T >::value &&HasValueType< T >::value &&HasSize< T >::value &&!HasClear< T >::value &&!HasPushBack< T >::value &&!HasResize< T >::value > >", "structalps_1_1cmn_1_1type_1_1_is_array_3_01_t_00_01std_1_1enable__if__t_3_01_has_subscript_opera7d851a1419eee690e6f6fea77e5acf54.html", null ],
+          [ "HasSubscriptOperator", "structalps_1_1cmn_1_1type_1_1_has_subscript_operator.html", null ],
+          [ "HasSubscriptOperator< T, std::void_t< decltype(std::declval< T >()[0])> >", "structalps_1_1cmn_1_1type_1_1_has_subscript_operator_3_01_t_00_01std_1_1void__t_3_01decltype_07s7980cab35474ab672bcbf46f74921ed4.html", null ],
+          [ "HasResize", "structalps_1_1cmn_1_1type_1_1_has_resize.html", null ],
+          [ "HasResize< T, std::void_t< decltype(std::declval< T >().resize(std::declval< size_t >()))> >", "structalps_1_1cmn_1_1type_1_1_has_resize_3_01_t_00_01std_1_1void__t_3_01decltype_07std_1_1declvadbc02f6ffc52050966e695ec909bfc32.html", null ],
+          [ "HasPushBack", "structalps_1_1cmn_1_1type_1_1_has_push_back.html", null ],
+          [ "HasPushBack< T, std::void_t< decltype(std::declval< T >().push_back(std::declval< typename T::value_type >()))> >", "structalps_1_1cmn_1_1type_1_1_has_push_back_3_01_t_00_01std_1_1void__t_3_01decltype_07std_1_1dec4f52fd5e74f3ece7a8b46a29b385b63b.html", null ],
+          [ "HasValueType", "structalps_1_1cmn_1_1type_1_1_has_value_type.html", null ],
+          [ "HasValueType< T, std::void_t< typename T::value_type > >", "structalps_1_1cmn_1_1type_1_1_has_value_type_3_01_t_00_01std_1_1void__t_3_01typename_01_t_1_1value__type_01_4_01_4.html", null ],
+          [ "HasSize", "structalps_1_1cmn_1_1type_1_1_has_size.html", null ],
+          [ "HasSize< T, std::void_t< decltype(std::declval< T >().size())> >", "structalps_1_1cmn_1_1type_1_1_has_size_3_01_t_00_01std_1_1void__t_3_01decltype_07std_1_1declval_a5da36a8240e1bc573a239efeb859d1d.html", null ],
+          [ "HasClear", "structalps_1_1cmn_1_1type_1_1_has_clear.html", null ],
+          [ "HasClear< T, std::void_t< decltype(std::declval< T >().clear())> >", "structalps_1_1cmn_1_1type_1_1_has_clear_3_01_t_00_01std_1_1void__t_3_01decltype_07std_1_1declval96b6f92e64ab8d06fead1c42af732212.html", null ],
           [ "Serializer< time::Seconds >", "structalps_1_1cmn_1_1type_1_1_serializer_3_01time_1_1_seconds_01_4.html", "structalps_1_1cmn_1_1type_1_1_serializer_3_01time_1_1_seconds_01_4" ],
           [ "Serializer< etl::optional< T > >", "structalps_1_1cmn_1_1type_1_1_serializer_3_01etl_1_1optional_3_01_t_01_4_01_4.html", "structalps_1_1cmn_1_1type_1_1_serializer_3_01etl_1_1optional_3_01_t_01_4_01_4" ],
           [ "Serializer", "structalps_1_1cmn_1_1type_1_1_serializer.html", "structalps_1_1cmn_1_1type_1_1_serializer" ],
@@ -108,7 +122,9 @@ var annotated_dup =
           [ "SupportsGetElementNames", "structalps_1_1cmn_1_1type_1_1_supports_get_element_names.html", null ],
           [ "SupportsGetElementNames< T, std::void_t< decltype(GetElementNames(std::declval< T & >()))> >", "structalps_1_1cmn_1_1type_1_1_supports_get_element_names_3_01_t_00_01std_1_1void__t_3_01decltype2f43caa8b955e7f8195f525d3aa247f1.html", null ],
           [ "GetNonRefTuple", "structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple.html", null ],
-          [ "GetNonRefTuple< std::tuple< RefTypes... > >", "structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple_3_01std_1_1tuple_3_01_ref_types_8_8_8_01_4_01_4.html", "structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple_3_01std_1_1tuple_3_01_ref_types_8_8_8_01_4_01_4" ]
+          [ "GetNonRefTuple< std::tuple< RefTypes... > >", "structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple_3_01std_1_1tuple_3_01_ref_types_8_8_8_01_4_01_4.html", "structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple_3_01std_1_1tuple_3_01_ref_types_8_8_8_01_4_01_4" ],
+          [ "IsVectorLike", "structalps_1_1cmn_1_1type_1_1_is_vector_like.html", null ],
+          [ "IsVectorLike< T, std::enable_if_t< HasSubscriptOperator< T >::value &&HasValueType< T >::value &&HasSize< T >::value &&HasClear< T >::value &&HasPushBack< T >::value &&HasResize< T >::value > >", "structalps_1_1cmn_1_1type_1_1_is_vector_like_3_01_t_00_01std_1_1enable__if__t_3_01_has_subscript5b230c3dfb1f1bba6bb554fc1992d723.html", null ]
         ] ],
         [ "util", "namespacealps_1_1cmn_1_1util.html", [
           [ "NumericRange", "structalps_1_1cmn_1_1util_1_1_numeric_range.html", "structalps_1_1cmn_1_1util_1_1_numeric_range" ]
@@ -153,6 +169,8 @@ var annotated_dup =
           [ "IsConvertibleStructTypePair< alps::cmn::control::MotorVelocityControllerParam, alps_interfaces::msg::MotorVelocityControllerParam >", "structalps_1_1ros2_1_1type_1_1_is_convertible_struct_type_pair_3_01alps_1_1cmn_1_1control_1_1_mo772900ea21d35c46435d1467e5891735.html", null ],
           [ "IsConvertibleStructTypePair< alps::cmn::control::MotorVelocityControllerCalcInfo, alps_interfaces::msg::MotorVelocityControllerCalcInfo >", "structalps_1_1ros2_1_1type_1_1_is_convertible_struct_type_pair_3_01alps_1_1cmn_1_1control_1_1_mo432b1e850addee0eca3d6278415c3a1d.html", null ],
           [ "ParamConverter", "structalps_1_1ros2_1_1type_1_1_param_converter.html", "structalps_1_1ros2_1_1type_1_1_param_converter" ],
+          [ "IsSingleElementStdMsgsType", "structalps_1_1ros2_1_1type_1_1_is_single_element_std_msgs_type.html", null ],
+          [ "IsSingleElementStdMsgsType< RosTopicType, std::void_t< typename RosTopicType::_data_type >, std::enable_if_t< std::is_same_v< typename RosTopicType::_data_type, decltype(std::declval< RosTopicType >().data)> > >", "structalps_1_1ros2_1_1type_1_1_is_single_element_std_msgs_type_3_01_ros_topic_type_00_01std_1_1vacc211517e2782de2f7efe73018b7548.html", null ],
           [ "IsConvertibleStructTypePair", "structalps_1_1ros2_1_1type_1_1_is_convertible_struct_type_pair.html", null ],
           [ "TopicConverter", "structalps_1_1ros2_1_1type_1_1_topic_converter.html", "structalps_1_1ros2_1_1type_1_1_topic_converter" ]
         ] ],
