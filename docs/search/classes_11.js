@@ -1,12 +1,14 @@
 var searchData=
 [
-  ['tcs34725_703',['Tcs34725',['../classalps_1_1cmn_1_1sensor_1_1_tcs34725.html',1,'alps::cmn::sensor']]],
-  ['timeoutchecker_704',['TimeoutChecker',['../classalps_1_1cmn_1_1time_1_1_timeout_checker.html',1,'alps::cmn::time']]],
-  ['timeoutchecker_3c_20std_3a_3achrono_3a_3asystem_5fclock_20_3e_705',['TimeoutChecker&lt; std::chrono::system_clock &gt;',['../classalps_1_1cmn_1_1time_1_1_timeout_checker.html',1,'alps::cmn::time']]],
-  ['topicconverter_706',['TopicConverter',['../structalps_1_1ros2_1_1type_1_1_topic_converter.html',1,'alps::ros2::type']]],
-  ['topicconverter_3c_20cmn_3a_3atime_3a_3aseconds_2c_20alps_5finterfaces_3a_3amsg_3a_3aseconds_20_3e_707',['TopicConverter&lt; cmn::time::Seconds, alps_interfaces::msg::Seconds &gt;',['../structalps_1_1ros2_1_1type_1_1_topic_converter_3_01cmn_1_1time_1_1_seconds_00_01alps__interfaces_1_1msg_1_1_seconds_01_4.html',1,'alps::ros2::type']]],
-  ['topicconverter_3c_20originalenumtype_2c_20alps_5finterfaces_3a_3amsg_3a_3aenum_2c_20std_3a_3aenable_5fif_5ft_3c_20std_3a_3ais_5fenum_5fv_3c_20originalenumtype_20_3e_20_3e_20_3e_708',['TopicConverter&lt; OriginalEnumType, alps_interfaces::msg::Enum, std::enable_if_t&lt; std::is_enum_v&lt; OriginalEnumType &gt; &gt; &gt;',['../structalps_1_1ros2_1_1type_1_1_topic_converter_3_01_original_enum_type_00_01alps__interfaces_1_1a86b12c586acc4f645b4f22f3aa145d3.html',1,'alps::ros2::type']]],
-  ['typedparambase_709',['TypedParamBase',['../classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html',1,'alps::ros2::util::detail']]],
-  ['typedparamclient_710',['TypedParamClient',['../classalps_1_1ros2_1_1util_1_1_typed_param_client.html',1,'alps::ros2::util']]],
-  ['typedparamserver_711',['TypedParamServer',['../classalps_1_1ros2_1_1util_1_1_typed_param_server.html',1,'alps::ros2::util']]]
+  ['s11059_736',['S11059',['../classalps_1_1cmn_1_1sensor_1_1_s11059.html',1,'alps::cmn::sensor']]],
+  ['serializer_737',['Serializer',['../structalps_1_1cmn_1_1type_1_1_serializer.html',1,'alps::cmn::type']]],
+  ['serializer_3c_20etl_3a_3aoptional_3c_20t_20_3e_20_3e_738',['Serializer&lt; etl::optional&lt; T &gt; &gt;',['../structalps_1_1cmn_1_1type_1_1_serializer_3_01etl_1_1optional_3_01_t_01_4_01_4.html',1,'alps::cmn::type']]],
+  ['serializer_3c_20time_3a_3aseconds_20_3e_739',['Serializer&lt; time::Seconds &gt;',['../structalps_1_1cmn_1_1type_1_1_serializer_3_01time_1_1_seconds_01_4.html',1,'alps::cmn::type']]],
+  ['servomotor_740',['ServoMotor',['../classalps_1_1cmn_1_1actuator_1_1_servo_motor.html',1,'alps::cmn::actuator']]],
+  ['servomotorparam_741',['ServoMotorParam',['../structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html',1,'alps::cmn::actuator']]],
+  ['socketcanio_742',['SocketCanIo',['../classalps_1_1lin_1_1communication_1_1_socket_can_io.html',1,'alps::lin::communication']]],
+  ['supportsgetelementnames_743',['SupportsGetElementNames',['../structalps_1_1cmn_1_1type_1_1_supports_get_element_names.html',1,'alps::cmn::type']]],
+  ['supportsgetelementnames_3c_20t_2c_20std_3a_3avoid_5ft_3c_20decltype_28getelementnames_28std_3a_3adeclval_3c_20t_20_26_20_3e_28_29_29_29_3e_20_3e_744',['SupportsGetElementNames&lt; T, std::void_t&lt; decltype(GetElementNames(std::declval&lt; T &amp; &gt;()))&gt; &gt;',['../structalps_1_1cmn_1_1type_1_1_supports_get_element_names_3_01_t_00_01std_1_1void__t_3_01decltype2f43caa8b955e7f8195f525d3aa247f1.html',1,'alps::cmn::type']]],
+  ['supportstotiedtuple_745',['SupportsToTiedTuple',['../structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple.html',1,'alps::cmn::type']]],
+  ['supportstotiedtuple_3c_20t_2c_20std_3a_3avoid_5ft_3c_20decltype_28totiedtuple_28std_3a_3adeclval_3c_20t_20_26_20_3e_28_29_29_29_3e_20_3e_746',['SupportsToTiedTuple&lt; T, std::void_t&lt; decltype(ToTiedTuple(std::declval&lt; T &amp; &gt;()))&gt; &gt;',['../structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple_3_01_t_00_01std_1_1void__t_3_01decltype_07_9f44abe140632721ed0d7f78ca803e5b.html',1,'alps::cmn::type']]]
 ];

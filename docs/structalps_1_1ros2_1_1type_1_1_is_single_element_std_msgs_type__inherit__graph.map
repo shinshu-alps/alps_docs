@@ -1,0 +1,4 @@
+<map id="alps::ros2::type::IsSingleElementStdMsgsType&lt; RosTopicType, typename, typename &gt;" name="alps::ros2::type::IsSingleElementStdMsgsType&lt; RosTopicType, typename, typename &gt;">
+<area shape="rect" id="node1" title="std_msgs::msg名前空間内のデータを1つだけ持つ型かどうかを判定する型述語 例) std_msgs::msg::Bool, std_msgs::msg::Float32MultiArray" alt="" coords="5,131,272,237"/>
+<area shape="rect" id="node2" title=" " alt="" coords="79,5,198,83"/>
+</map>

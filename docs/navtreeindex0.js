@@ -46,6 +46,9 @@ var NAVTREEINDEX0 =
 "alps__ros__lib_2include_2alps__ros_2namespace_8hpp_source.html":[3,0,4,0,0,0],
 "alps__stm32__lib_2include_2alps__stm_2namespace_8hpp.html":[3,0,5,0,0,0],
 "alps__stm32__lib_2include_2alps__stm_2namespace_8hpp_source.html":[3,0,5,0,0,0],
+"always__false_8hpp.html":[3,0,0,0,0,9,0],
+"always__false_8hpp.html#aca2ef0632e9e1dffd714b62befb705ac":[3,0,0,0,0,9,0,0],
+"always__false_8hpp_source.html":[3,0,0,0,0,9,0],
 "analog__in_8hpp.html":[3,0,2,0,0,2,0],
 "analog__in_8hpp_source.html":[3,0,2,0,0,2,0],
 "angle_8hpp.html":[3,0,0,0,0,10,1],
@@ -59,6 +62,8 @@ var NAVTREEINDEX0 =
 "angle_8hpp.html#adde0c2a64d434fb9780d6b6c2af09607":[3,0,0,0,0,10,1,7],
 "angle_8hpp_source.html":[3,0,0,0,0,10,1],
 "annotated.html":[2,0],
+"array__traits_8hpp.html":[3,0,0,0,0,9,1],
+"array__traits_8hpp_source.html":[3,0,0,0,0,9,1],
 "assert_8hpp.html":[3,0,0,0,0,4,0],
 "assert_8hpp.html#a441b85a9413dd2cd9798b2ef103acf28":[3,0,0,0,0,4,0,0],
 "assert_8hpp_source.html":[3,0,0,0,0,4,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX0 =
 "classalps_1_1cmn_1_1control_1_1_differentiator.html#a1f346bd83c82908f23b765624f4ef371":[2,0,0,0,2,1,3],
 "classalps_1_1cmn_1_1control_1_1_differentiator.html#a3921884199ac78e35a8f61fa5b971ae7":[2,0,0,0,2,1,1],
 "classalps_1_1cmn_1_1control_1_1_differentiator.html#aa6afcf596898ac9a12b2bfda60502eb0":[2,0,0,0,2,1,2],
-"classalps_1_1cmn_1_1control_1_1_differentiator.html#accb58396db10dee2b9f323ca152d9407":[2,0,0,0,2,1,0],
-"classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html":[2,0,0,0,2,2],
-"classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a2c53689c7bd52fe546ae40c041203200":[2,0,0,0,2,2,3],
-"classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a2f9871c323781a5590bb636564b3cb62":[2,0,0,0,2,2,2],
-"classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a9f1a2637941edbb2f25fcae9ab7cebe5":[2,0,0,0,2,2,0],
-"classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#afb69e9dace9074933926b59904ddfb13":[2,0,0,0,2,2,1]
+"classalps_1_1cmn_1_1control_1_1_differentiator.html#accb58396db10dee2b9f323ca152d9407":[2,0,0,0,2,1,0]
 };

@@ -1,5 +1,10 @@
 var NAVTREEINDEX1 =
 {
+"classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html":[2,0,0,0,2,2],
+"classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a2c53689c7bd52fe546ae40c041203200":[2,0,0,0,2,2,3],
+"classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a2f9871c323781a5590bb636564b3cb62":[2,0,0,0,2,2,2],
+"classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#a9f1a2637941edbb2f25fcae9ab7cebe5":[2,0,0,0,2,2,0],
+"classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html#afb69e9dace9074933926b59904ddfb13":[2,0,0,0,2,2,1],
 "classalps_1_1cmn_1_1control_1_1_integrator.html":[2,0,0,0,2,3],
 "classalps_1_1cmn_1_1control_1_1_integrator.html#a29107c9c15fc320a8dcd29c75bd2ead3":[2,0,0,0,2,3,4],
 "classalps_1_1cmn_1_1control_1_1_integrator.html#a64bbbab4a4fef22cc25d656483188546":[2,0,0,0,2,3,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX1 =
 "classalps_1_1ros2_1_1ui_1_1_joy.html#a85fb42f18898bcb09e3b65c21cd2a2fda156fe1d78bb72d3412ac145bd941879a":[2,0,0,3,2,0,0,2],
 "classalps_1_1ros2_1_1ui_1_1_joy.html#a85fb42f18898bcb09e3b65c21cd2a2fda688e3d30358e432816565d122e081fe2":[2,0,0,3,2,0,0,0],
 "classalps_1_1ros2_1_1ui_1_1_joy.html#a85fb42f18898bcb09e3b65c21cd2a2fda86fba42a90b505b3eb3313111d35af9d":[2,0,0,3,2,0,0,5],
-"classalps_1_1ros2_1_1ui_1_1_joy.html#a85fb42f18898bcb09e3b65c21cd2a2fdab9159460b6f2a5821b2d259ca32b9a43":[2,0,0,3,2,0,0,4],
-"classalps_1_1ros2_1_1ui_1_1_joy.html#a85fb42f18898bcb09e3b65c21cd2a2fdacfcf7cbcfdef4730f725aeff53a108de":[2,0,0,3,2,0,0,1],
-"classalps_1_1ros2_1_1ui_1_1_joy.html#a85fb42f18898bcb09e3b65c21cd2a2fdae52512db60258ca4c0f4337f18fa0efd":[2,0,0,3,2,0,0,3],
-"classalps_1_1ros2_1_1ui_1_1_joy.html#aa1b3916bf616d0486bdbb646a422e3dc":[2,0,0,3,2,0,3],
-"classalps_1_1ros2_1_1ui_1_1_joy.html#ad03253d14b6b1916cd7bb5d8bd093b75":[2,0,0,3,2,0,5],
-"classalps_1_1ros2_1_1ui_1_1_joy.html#adda26a26634be1935b6621ed2f549c45":[2,0,0,3,2,0,1]
+"classalps_1_1ros2_1_1ui_1_1_joy.html#a85fb42f18898bcb09e3b65c21cd2a2fdab9159460b6f2a5821b2d259ca32b9a43":[2,0,0,3,2,0,0,4]
 };

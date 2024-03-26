@@ -1,0 +1,4 @@
+<map id="alps::cmn::type::IsArray&lt; T, typename &gt;" name="alps::cmn::type::IsArray&lt; T, typename &gt;">
+<area shape="rect" id="node1" title="Array型かどうかを判定する型述語. cスタイルの配列とvectorはArrayではないと判定する" alt="" coords="5,131,181,223"/>
+<area shape="rect" id="node2" title=" " alt="" coords="34,5,153,83"/>
+</map>
