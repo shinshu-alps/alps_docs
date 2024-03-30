@@ -1,10 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"logging__macros_8hpp.html#a96e1a912badeef2bda11825296c0882b":[3,0,0,0,0,4,2,9],
-"logging__macros_8hpp.html#acde12e4dcfad4b0ae2e98ec347855a22":[3,0,0,0,0,4,2,2],
-"logging__macros_8hpp.html#adf66ea1ba15fffa1b82a603ed89b9aa2":[3,0,0,0,0,4,2,0],
-"logging__macros_8hpp.html#aeb6ce5351773b08bf07278e7c1274735":[3,0,0,0,0,4,2,6],
-"logging__macros_8hpp.html#aede9f4f4f61b7e20067f2bf0d4eafb40":[3,0,0,0,0,4,2,3],
 "logging__macros_8hpp_source.html":[3,0,0,0,0,4,2],
 "low__pass__differentiator_8hpp.html":[3,0,0,0,0,2,4],
 "low__pass__differentiator_8hpp_source.html":[3,0,0,0,0,2,4],
@@ -137,9 +132,8 @@ var NAVTREEINDEX3 =
 "namespacealps__interfaces.html":[1,0,1],
 "namespacealps__interfaces_1_1msg.html":[1,0,1,0],
 "namespacealps__interfaces_1_1msg.html#a6405c3370c36852d6ac18af7286bd97e":[1,0,1,0,0],
-"namespacealps__interfaces_1_1msg.html#a658902fd39e192300c0f768c939b4a52":[1,0,1,0,1],
-"namespacealps__interfaces_1_1msg.html#a9b5844af327afe12caddf6592ff4ad31":[1,0,1,0,2],
-"namespacealps__interfaces_1_1msg.html#af9a6486bc21c7c82e7b4e21b55b2155f":[1,0,1,0,3],
+"namespacealps__interfaces_1_1msg.html#a9b5844af327afe12caddf6592ff4ad31":[1,0,1,0,1],
+"namespacealps__interfaces_1_1msg.html#af9a6486bc21c7c82e7b4e21b55b2155f":[1,0,1,0,2],
 "namespacemembers.html":[1,1,0],
 "namespacemembers_enum.html":[1,1,4],
 "namespacemembers_func.html":[1,1,1],
@@ -249,5 +243,11 @@ var NAVTREEINDEX3 =
 "structalps_1_1cmn_1_1control_1_1_pid_param.html#ad254b8043c219d76405305e26dcbcd98":[2,0,0,0,2,12,2],
 "structalps_1_1cmn_1_1control_1_1_pid_param.html#ad3f8eca8af360ff2586f5db76485ee9d":[2,0,0,0,2,12,0],
 "structalps_1_1cmn_1_1control_1_1_pid_param.html#ae23e438611ae534e7e4075118bc8a663":[2,0,0,0,2,12,3],
-"structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html":[2,0,0,0,6,3]
+"structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html":[2,0,0,0,6,3],
+"structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a4ba93241999895c311dbfe00ed691545":[2,0,0,0,6,3,0],
+"structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a90d99811692bce2c86249fa996c00d36":[2,0,0,0,6,3,4],
+"structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#aca615b9d7792c7d9f0de58540ef38235":[2,0,0,0,6,3,1],
+"structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#ad46fa63996a57b76efa6b58bad526439":[2,0,0,0,6,3,3],
+"structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#af9221bffc4df55484f6b5288f8437ec8":[2,0,0,0,6,3,2],
+"structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html":[2,0,0,0,6,5,0]
 };

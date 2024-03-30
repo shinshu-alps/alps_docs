@@ -28,14 +28,10 @@ var classalps_1_1ros2_1_1ui_1_1_joy =
       [ "kRight", "classalps_1_1ros2_1_1ui_1_1_joy.html#adda26a26634be1935b6621ed2f549c45a2dd2b017192f8a09367d48c7648213c9", null ]
     ] ],
     [ "Joy", "classalps_1_1ros2_1_1ui_1_1_joy.html#ae39070d2de281ff2f71b60b1dfeb49d1", null ],
-    [ "AxisToString", "classalps_1_1ros2_1_1ui_1_1_joy.html#aa1b3916bf616d0486bdbb646a422e3dc", null ],
-    [ "ButtonToString", "classalps_1_1ros2_1_1ui_1_1_joy.html#a6fcf771ad2fb1fe877e38f89b8c2cf10", null ],
     [ "GetAxisState", "classalps_1_1ros2_1_1ui_1_1_joy.html#ad03253d14b6b1916cd7bb5d8bd093b75", null ],
     [ "GetButtonState", "classalps_1_1ros2_1_1ui_1_1_joy.html#a63210a55c8f5ab6d162012151b94cd64", null ],
     [ "SetOnPressedButtonCallback", "classalps_1_1ros2_1_1ui_1_1_joy.html#aefc6a3484dad7a5ac8bca53c806df4ce", null ],
     [ "SetOnReceivedTopicCallback", "classalps_1_1ros2_1_1ui_1_1_joy.html#a21891bd40e35cfdcd42ad3cd45687c6f", null ],
-    [ "StringToAxis", "classalps_1_1ros2_1_1ui_1_1_joy.html#a1e12d51b82ec09d2adccd662744a7f31", null ],
-    [ "StringToButton", "classalps_1_1ros2_1_1ui_1_1_joy.html#a19b36d4aafe3be056ebd82b649def2be", null ],
     [ "kNumAxes", "classalps_1_1ros2_1_1ui_1_1_joy.html#a432eac68c86897a9e46f33cab8277c82", null ],
     [ "kNumButtons", "classalps_1_1ros2_1_1ui_1_1_joy.html#a7d09067615c8a0b728d7d08bba1eeaf6", null ]
 ];
