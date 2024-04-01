@@ -1,5 +1,8 @@
 var NAVTREEINDEX4 =
 {
+"structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#ad46fa63996a57b76efa6b58bad526439":[2,0,0,0,6,3,3],
+"structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#af9221bffc4df55484f6b5288f8437ec8":[2,0,0,0,6,3,2],
+"structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html":[2,0,0,0,6,5,0],
 "structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#a19e44cd929ffaebc2389e7a136d23205":[2,0,0,0,6,5,0,2],
 "structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#a4ea990c9eb55c68fe867ec8743e1bc61":[2,0,0,0,6,5,0,1],
 "structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#a5e5a62bedb6fadc84a79e41703dd828c":[2,0,0,0,6,5,0,0],

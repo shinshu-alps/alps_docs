@@ -42,7 +42,8 @@ var searchData=
   ['container_5ftraits_2ehpp_98',['container_traits.hpp',['../container__traits_8hpp.html',1,'']]],
   ['contains_99',['Contains',['../classalps_1_1ros2_1_1util_1_1_param_map.html#a415cbeea6f9836d77dd12e7b38ec4867',1,'alps::ros2::util::ParamMap']]],
   ['control_100',['Control',['../classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#a99dfaf0d28918cb866dca76c6b3143f8',1,'alps::cmn::control::MotorAngleController::Control()'],['../classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#a42302077a402de3e6ab8fe96bd097ee1',1,'alps::cmn::control::MotorAngleVelocityController::Control()'],['../classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ad7db09ea125622565e0a1674832a4edf',1,'alps::cmn::control::MotorVelocityController::Control()']]],
-  ['custom_5ftype_5fparam_5fconversion_5frule_2ehpp_101',['custom_type_param_conversion_rule.hpp',['../custom__type__param__conversion__rule_8hpp.html',1,'']]],
-  ['custom_5ftype_5fserialize_5frule_2ehpp_102',['custom_type_serialize_rule.hpp',['../custom__type__serialize__rule_8hpp.html',1,'']]],
-  ['custom_5ftype_5ftopic_5fconversion_5frule_2ehpp_103',['custom_type_topic_conversion_rule.hpp',['../custom__type__topic__conversion__rule_8hpp.html',1,'']]]
+  ['current_5fvalue_5f_101',['current_value_',['../classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a978317f3b09c15d7cf9cafb3008a651e',1,'alps::ros2::util::detail::TypedParamBase']]],
+  ['custom_5ftype_5fparam_5fconversion_5frule_2ehpp_102',['custom_type_param_conversion_rule.hpp',['../custom__type__param__conversion__rule_8hpp.html',1,'']]],
+  ['custom_5ftype_5fserialize_5frule_2ehpp_103',['custom_type_serialize_rule.hpp',['../custom__type__serialize__rule_8hpp.html',1,'']]],
+  ['custom_5ftype_5ftopic_5fconversion_5frule_2ehpp_104',['custom_type_topic_conversion_rule.hpp',['../custom__type__topic__conversion__rule_8hpp.html',1,'']]]
 ];
