@@ -1,5 +1,8 @@
 var NAVTREEINDEX3 =
 {
+"logging__macros_8hpp.html#adf66ea1ba15fffa1b82a603ed89b9aa2":[3,0,0,0,0,4,2,0],
+"logging__macros_8hpp.html#aeb6ce5351773b08bf07278e7c1274735":[3,0,0,0,0,4,2,6],
+"logging__macros_8hpp.html#aede9f4f4f61b7e20067f2bf0d4eafb40":[3,0,0,0,0,4,2,3],
 "logging__macros_8hpp_source.html":[3,0,0,0,0,4,2],
 "low__pass__differentiator_8hpp.html":[3,0,0,0,0,2,4],
 "low__pass__differentiator_8hpp_source.html":[3,0,0,0,0,2,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX3 =
 "structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html":[2,0,0,0,6,3],
 "structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a4ba93241999895c311dbfe00ed691545":[2,0,0,0,6,3,0],
 "structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a90d99811692bce2c86249fa996c00d36":[2,0,0,0,6,3,4],
-"structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#aca615b9d7792c7d9f0de58540ef38235":[2,0,0,0,6,3,1],
-"structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#ad46fa63996a57b76efa6b58bad526439":[2,0,0,0,6,3,3],
-"structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#af9221bffc4df55484f6b5288f8437ec8":[2,0,0,0,6,3,2],
-"structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html":[2,0,0,0,6,5,0]
+"structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#aca615b9d7792c7d9f0de58540ef38235":[2,0,0,0,6,3,1]
 };
