@@ -116,10 +116,10 @@ $(document).ready(function(){initNavTree('classalps_1_1ros2_1_1communication_1_1
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a0c035e1b9a7ed42222c1a07d691c7fba"><td class="memTemplParams" colspan="2">template&lt;class CanIo , size_t kMaxSubscriberNum&gt; </td></tr>
-<tr class="memitem:a0c035e1b9a7ed42222c1a07d691c7fba"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1communication_1_1_ros_to_can_topic_bridge.html#a0c035e1b9a7ed42222c1a07d691c7fba">RosToCanTopicBridge</a> (<a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">cmn::communication::CanTypedDataTransceiver</a>&lt; CanIo, kMaxSubscriberNum &gt; &amp;transceiver, rclcpp::Node &amp;node, <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">cmn::communication::CanDataFrame::Id</a> can_id, const std::string &amp;topic_name)</td></tr>
-<tr class="memdesc:a0c035e1b9a7ed42222c1a07d691c7fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1ros2_1_1communication_1_1_ros_to_can_topic_bridge.html#a0c035e1b9a7ed42222c1a07d691c7fba">[詳解]</a><br /></td></tr>
-<tr class="separator:a0c035e1b9a7ed42222c1a07d691c7fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8249b7fc2a5265d2336c78eefa773739"><td class="memTemplParams" colspan="2">template&lt;class CanIo , size_t kMaxSubscriberNum&gt; </td></tr>
+<tr class="memitem:a8249b7fc2a5265d2336c78eefa773739"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1communication_1_1_ros_to_can_topic_bridge.html#a8249b7fc2a5265d2336c78eefa773739">RosToCanTopicBridge</a> (<a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">cmn::communication::CanTypedDataTransceiver</a>&lt; CanIo, kMaxSubscriberNum &gt; &amp;transceiver, rclcpp::Node &amp;node, <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">cmn::communication::CanDataFrame::Id</a> can_id, const std::string &amp;topic_name, const rclcpp::QoS &amp;qos=10)</td></tr>
+<tr class="memdesc:a8249b7fc2a5265d2336c78eefa773739"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1ros2_1_1communication_1_1_ros_to_can_topic_bridge.html#a8249b7fc2a5265d2336c78eefa773739">[詳解]</a><br /></td></tr>
+<tr class="separator:a8249b7fc2a5265d2336c78eefa773739"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><h3>template&lt;class CanType, class RosTopicType&gt;<br />
@@ -135,8 +135,8 @@ class alps::ros2::communication::RosToCanTopicBridge&lt; CanType, RosTopicType &
 </dl>
 <dl class="section note"><dt>覚え書き</dt><dd>テンプレート引数の要件: alps::cmn::type::TopicConverter&lt;CanType, RosTopicType&gt;::ToOriginal() が定義されている </dd></dl>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="a0c035e1b9a7ed42222c1a07d691c7fba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c035e1b9a7ed42222c1a07d691c7fba">&#9670;&nbsp;</a></span>RosToCanTopicBridge()</h2>
+<a id="a8249b7fc2a5265d2336c78eefa773739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8249b7fc2a5265d2336c78eefa773739">&#9670;&nbsp;</a></span>RosToCanTopicBridge()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -170,7 +170,13 @@ template&lt;class CanIo , size_t kMaxSubscriberNum&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>topic_name</em>&#160;</td>
+          <td class="paramname"><em>topic_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const rclcpp::QoS &amp;&#160;</td>
+          <td class="paramname"><em>qos</em> = <code>10</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -200,6 +206,7 @@ template&lt;class CanIo , size_t kMaxSubscriberNum&gt; </div>
  </td></tr>
     <tr><td class="paramname">can_id</td><td>CAN-ID </td></tr>
     <tr><td class="paramname">topic_name</td><td>ROSトピック名 </td></tr>
+    <tr><td class="paramname">qos</td><td>ROSトピックのQoS(default: 10) </td></tr>
   </table>
   </dd>
 </dl>
