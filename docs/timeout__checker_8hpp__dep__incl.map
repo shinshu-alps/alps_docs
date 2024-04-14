@@ -1,8 +1,9 @@
 <map id="alps_common_lib/include/alps_cmn/time/timeout_checker.hpp" name="alps_common_lib/include/alps_cmn/time/timeout_checker.hpp">
-<area shape="rect" id="node1" title="タイムアウトを検知するクラス" alt="" coords="449,5,635,61"/>
-<area shape="rect" id="node2" href="$robomas__motor_8hpp.html" title="ロボマスモータのライブラリ" alt="" coords="5,109,212,165"/>
-<area shape="rect" id="node3" href="$one__shot__polling__timer_8hpp.html" title="1回だけ実行するポーリングタイマー" alt="" coords="237,109,423,165"/>
-<area shape="rect" id="node4" href="$repeating__polling__timer_8hpp.html" title="繰り返し実行するポーリングタイマー" alt="" coords="448,109,636,165"/>
-<area shape="rect" id="node5" href="$motor__friction__analyzer_8hpp.html" title="モーター軸の摩擦力を計測するクラス" alt="" coords="661,109,874,165"/>
-<area shape="rect" id="node6" href="$socket__can__io_8hpp.html" title=" " alt="" coords="898,109,1079,165"/>
+<area shape="rect" id="node1" title="タイムアウトを検知するクラス" alt="" coords="553,5,740,61"/>
+<area shape="rect" id="node2" href="$esc__bldc__motor_8hpp.html" title="ESCで動かすブラシレスDCモーター" alt="" coords="5,109,192,165"/>
+<area shape="rect" id="node3" href="$robomas__motor_8hpp.html" title="ロボマスモータのライブラリ" alt="" coords="217,109,423,165"/>
+<area shape="rect" id="node4" href="$one__shot__polling__timer_8hpp.html" title="1回だけ実行するポーリングタイマー" alt="" coords="448,109,635,165"/>
+<area shape="rect" id="node5" href="$repeating__polling__timer_8hpp.html" title="繰り返し実行するポーリングタイマー" alt="" coords="659,109,847,165"/>
+<area shape="rect" id="node6" href="$motor__friction__analyzer_8hpp.html" title="モーター軸の摩擦力を計測するクラス" alt="" coords="872,109,1085,165"/>
+<area shape="rect" id="node7" href="$socket__can__io_8hpp.html" title=" " alt="" coords="1109,109,1291,165"/>
 </map>

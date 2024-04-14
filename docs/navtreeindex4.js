@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#aca615b9d7792c7d9f0de58540ef38235":[2,0,0,0,6,3,1],
 "structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#ad46fa63996a57b76efa6b58bad526439":[2,0,0,0,6,3,3],
 "structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#af9221bffc4df55484f6b5288f8437ec8":[2,0,0,0,6,3,2],
 "structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html":[2,0,0,0,6,5,0],

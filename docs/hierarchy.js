@@ -79,8 +79,8 @@ var hierarchy =
     [ "alps::cmn::actuator::IMotor< DcMotor< PwmOut, DigitalOut > >", "classalps_1_1cmn_1_1actuator_1_1_i_motor.html", [
       [ "alps::cmn::actuator::DcMotor< PwmOut, DigitalOut >", "classalps_1_1cmn_1_1actuator_1_1_dc_motor.html", null ]
     ] ],
-    [ "alps::cmn::actuator::IMotor< EscBldcMotor< PwmOut > >", "classalps_1_1cmn_1_1actuator_1_1_i_motor.html", [
-      [ "alps::cmn::actuator::EscBldcMotor< PwmOut >", "classalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor.html", null ]
+    [ "alps::cmn::actuator::IMotor< EscBldcMotor< Clock, PwmOut > >", "classalps_1_1cmn_1_1actuator_1_1_i_motor.html", [
+      [ "alps::cmn::actuator::EscBldcMotor< Clock, PwmOut >", "classalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor.html", null ]
     ] ],
     [ "alps::cmn::actuator::IMotor< FrictionCompensatedMotor< Clock, BaseMotor, RorarySensor > >", "classalps_1_1cmn_1_1actuator_1_1_i_motor.html", [
       [ "alps::cmn::control::FrictionCompensatedMotor< Clock, BaseMotor, RorarySensor >", "classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html", null ]
