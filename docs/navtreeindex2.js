@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classalps_1_1ros2_1_1ui_1_1_joy.html#ad03253d14b6b1916cd7bb5d8bd093b75":[2,0,0,3,2,0,3],
 "classalps_1_1ros2_1_1ui_1_1_joy.html#adda26a26634be1935b6621ed2f549c45":[2,0,0,3,2,0,1],
 "classalps_1_1ros2_1_1ui_1_1_joy.html#adda26a26634be1935b6621ed2f549c45a0dd8dde131fa8dbbe94f13151bf7a6f6":[2,0,0,3,2,0,1,11],
 "classalps_1_1ros2_1_1ui_1_1_joy.html#adda26a26634be1935b6621ed2f549c45a0f74d4695fd4cccbe4380a5fcf6f8cc0":[2,0,0,3,2,0,1,8],
@@ -220,8 +221,8 @@ var NAVTREEINDEX2 =
 "i__rotary__sensor_8hpp_source.html":[3,0,0,0,0,6,1],
 "i__uart__io_8hpp.html":[3,0,0,0,0,1,7],
 "i__uart__io_8hpp_source.html":[3,0,0,0,0,1,7],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "index.html#autotoc_md1":[0,0],
 "index.html#autotoc_md2":[0,1],
 "index.html#autotoc_md3":[0,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "logging__macros_8hpp.html#a45f08a193e4489a1844fa9aae7fa3e79":[3,0,0,0,0,4,2,7],
 "logging__macros_8hpp.html#a651b4a65255cc6e9ca1d41a124a988dd":[3,0,0,0,0,4,2,5],
 "logging__macros_8hpp.html#a675aa039e2b2f684de42f0e7890be83c":[3,0,0,0,0,4,2,8],
-"logging__macros_8hpp.html#a96e1a912badeef2bda11825296c0882b":[3,0,0,0,0,4,2,9],
-"logging__macros_8hpp.html#acde12e4dcfad4b0ae2e98ec347855a22":[3,0,0,0,0,4,2,2]
+"logging__macros_8hpp.html#a96e1a912badeef2bda11825296c0882b":[3,0,0,0,0,4,2,9]
 };

@@ -1,4 +1,4 @@
 <map id="クラス階層図" name="クラス階層図">
 <area shape="rect" id="node1" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="5,5,180,61"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor.html" title="ESCで動かすブラシレスDCモーター" alt="" coords="228,13,431,54"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor.html" title="ESCで動かすブラシレスDCモーター" alt="" coords="228,5,401,61"/>
 </map>
