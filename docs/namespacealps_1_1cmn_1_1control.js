@@ -12,6 +12,7 @@ var namespacealps_1_1cmn_1_1control =
     [ "MotorVelocityControllerParam", "structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html", "structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param" ],
     [ "MotorVelocityControllerCalcInfo", "structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html", "structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info" ],
     [ "MotorVelocityController", "classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html", "classalps_1_1cmn_1_1control_1_1_motor_velocity_controller" ],
+    [ "MovingAverage", "classalps_1_1cmn_1_1control_1_1_moving_average.html", "classalps_1_1cmn_1_1control_1_1_moving_average" ],
     [ "PidParam", "structalps_1_1cmn_1_1control_1_1_pid_param.html", "structalps_1_1cmn_1_1control_1_1_pid_param" ],
     [ "PidCalcInfo", "structalps_1_1cmn_1_1control_1_1_pid_calc_info.html", "structalps_1_1cmn_1_1control_1_1_pid_calc_info" ],
     [ "Pid", "classalps_1_1cmn_1_1control_1_1_pid.html", "classalps_1_1cmn_1_1control_1_1_pid" ],
