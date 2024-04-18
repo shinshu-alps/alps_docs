@@ -26,5 +26,8 @@ var dir_83658e075a4ab7b2cbb8779471289882 =
       [ "MotorAngleVelocityController", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller" ]
     ] ],
     [ "motor_velocity_controller.hpp", "motor__velocity__controller_8hpp.html", "motor__velocity__controller_8hpp" ],
+    [ "moving_average.hpp", "moving__average_8hpp.html", [
+      [ "MovingAverage", "classalps_1_1cmn_1_1control_1_1_moving_average.html", "classalps_1_1cmn_1_1control_1_1_moving_average" ]
+    ] ],
     [ "pid.hpp", "pid_8hpp.html", "pid_8hpp" ]
 ];

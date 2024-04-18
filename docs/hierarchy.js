@@ -145,6 +145,7 @@ var hierarchy =
     [ "alps::cmn::control::MotorVelocityController< Clock, Motor, RotarySensor >", "classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html", null ],
     [ "alps::cmn::control::MotorVelocityControllerCalcInfo", "structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html", null ],
     [ "alps::cmn::control::MotorVelocityControllerParam", "structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html", null ],
+    [ "alps::cmn::control::MovingAverage< kMaxWindowSize >", "classalps_1_1cmn_1_1control_1_1_moving_average.html", null ],
     [ "alps::cmn::sensor::S11059< I2cIo >::NormalizedData", "structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html", null ],
     [ "alps::cmn::util::NumericRange< T >", "structalps_1_1cmn_1_1util_1_1_numeric_range.html", null ],
     [ "alps::cmn::util::NumericRange< double >", "structalps_1_1cmn_1_1util_1_1_numeric_range.html", null ],

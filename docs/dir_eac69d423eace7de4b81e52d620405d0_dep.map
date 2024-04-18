@@ -1,7 +1,7 @@
 <map id="alps_common_lib/include/alps_cmn/robot" name="alps_common_lib/include/alps_cmn/robot">
 <area shape="rect" id="node1" href="dir_26247a4c7d21a73996b8a7832c1a1463.html" title="util" alt="" coords="40,244,112,292"/>
 <area shape="rect" id="node2" href="dir_83658e075a4ab7b2cbb8779471289882.html" title="control" alt="" coords="53,148,125,196"/>
-<area shape="rect" id="edge3-headlabel" href="dir_000009_000030.html" title="3" alt="" coords="86,220,95,234"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000009_000030.html" title="4" alt="" coords="86,220,95,234"/>
 <area shape="rect" id="node3" href="dir_eac69d423eace7de4b81e52d620405d0.html" title="robot" alt="" coords="40,52,112,100"/>
 <area shape="rect" id="edge1-headlabel" href="dir_000024_000030.html" title="1" alt="" coords="55,216,65,231"/>
 <area shape="rect" id="edge2-headlabel" href="dir_000024_000009.html" title="1" alt="" coords="87,121,97,136"/>
