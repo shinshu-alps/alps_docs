@@ -69,8 +69,8 @@ var NAVTREEINDEX =
 "algorithm_8hpp.html",
 "classalps_1_1cmn_1_1control_1_1_differentiator.html#accb58396db10dee2b9f323ca152d9407",
 "classalps_1_1ros2_1_1ui_1_1_joy.html#a85fb42f18898bcb09e3b65c21cd2a2fda156fe1d78bb72d3412ac145bd941879a",
-"logging__macros_8hpp.html#a15ccf5878c9b195b71adfeb4fe9d19d4",
-"structalps_1_1cmn_1_1control_1_1_pid_param.html"
+"logging__macros_8hpp.html#a0c001142fb0ce5e35e07eb5763d4d60c",
+"structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#abf63278244e262e53d62a4b2f6288663"
 ];
 
 var SYNCONMSG = 'クリックで同期表示が無効になります';
