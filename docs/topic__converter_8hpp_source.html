@@ -434,14 +434,39 @@ $(document).ready(function(){initNavTree('topic__converter_8hpp_source.html','')
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="comment">// Doxygen出力ON ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160; </div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;}  <span class="comment">// namespace alps::ros2::type</span></div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> RosTopicType, <span class="keyword">typename</span> OriginalType&gt;</div>
+<div class="line"><a name="l00389"></a><span class="lineno"><a class="line" href="namespacealps_1_1ros2_1_1type.html#a7f8994e2f6578ee1bd23c9291a886108">  389</a></span>&#160;RosTopicType <a class="code" href="namespacealps_1_1ros2_1_1type.html#a7f8994e2f6578ee1bd23c9291a886108">ToRosTopic</a>(<span class="keyword">const</span> OriginalType &amp; original_data)</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;{</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  std::optional&lt;RosTopicType&gt; optional_ros_topic_data =</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <a class="code" href="structalps_1_1ros2_1_1type_1_1_topic_converter.html#a3ef327595b15302ccc8cd44c2a3e7619">TopicConverter&lt;OriginalType, RosTopicType&gt;::ToTopic</a>(original_data);</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  <span class="keywordflow">if</span> (optional_ros_topic_data.has_value()) {</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordflow">return</span> optional_ros_topic_data.value();</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Failed to convert OriginalType to RosTopicType&quot;</span>);</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  }</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;}</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> OriginalType, <span class="keyword">typename</span> RosTopicType&gt;</div>
+<div class="line"><a name="l00408"></a><span class="lineno"><a class="line" href="namespacealps_1_1ros2_1_1type.html#aa2225b66b2a595843b0e988d3a14b2b7">  408</a></span>&#160;OriginalType <a class="code" href="namespacealps_1_1ros2_1_1type.html#aa2225b66b2a595843b0e988d3a14b2b7">ToOriginal</a>(<span class="keyword">const</span> RosTopicType &amp; ros_topic_data)</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;{</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  std::optional&lt;OriginalType&gt; optional_original_data =</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <a class="code" href="structalps_1_1ros2_1_1type_1_1_topic_converter.html#a6eb763d9348fc5707584f313dd77137d">TopicConverter&lt;OriginalType, RosTopicType&gt;::ToOriginal</a>(ros_topic_data);</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;  <span class="keywordflow">if</span> (optional_original_data.has_value()) {</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keywordflow">return</span> optional_original_data.value();</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Failed to convert RosTopicType to OriginalType&quot;</span>);</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  }</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;}</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160; </div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;}  <span class="comment">// namespace alps::ros2::type</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160; </div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aalways__false_8hpp_html"><div class="ttname"><a href="always__false_8hpp.html">always_false.hpp</a></div></div>
 <div class="ttc" id="aarray__traits_8hpp_html"><div class="ttname"><a href="array__traits_8hpp.html">array_traits.hpp</a></div><div class="ttdoc">array関係の型特性</div></div>
 <div class="ttc" id="acan__typed__data__transceiver_8hpp_html"><div class="ttname"><a href="can__typed__data__transceiver_8hpp.html">can_typed_data_transceiver.hpp</a></div><div class="ttdoc">CAN通信で型付けされたデータの送受信を行うライブラリ</div></div>
 <div class="ttc" id="anamespacealps_1_1cmn_1_1control_html_acd6ac0a4e41ae483c3938e540cad06b2"><div class="ttname"><a href="namespacealps_1_1cmn_1_1control.html#acd6ac0a4e41ae483c3938e540cad06b2">alps::cmn::control::ToTiedTuple</a></div><div class="ttdeci">auto ToTiedTuple(MotorAngleControllerCalcInfo &amp;calc_info)</div><div class="ttdef"><b>Definition:</b> motor_angle_controller.hpp:29</div></div>
 <div class="ttc" id="anamespacealps_1_1ros2_1_1type_html"><div class="ttname"><a href="namespacealps_1_1ros2_1_1type.html">alps::ros2::type</a></div><div class="ttdoc">型関係</div><div class="ttdef"><b>Definition:</b> namespace.hpp:31</div></div>
+<div class="ttc" id="anamespacealps_1_1ros2_1_1type_html_a7f8994e2f6578ee1bd23c9291a886108"><div class="ttname"><a href="namespacealps_1_1ros2_1_1type.html#a7f8994e2f6578ee1bd23c9291a886108">alps::ros2::type::ToRosTopic</a></div><div class="ttdeci">RosTopicType ToRosTopic(const OriginalType &amp;original_data)</div><div class="ttdoc">OriginalTypeからRosTopicTypeへの変換関数</div><div class="ttdef"><b>Definition:</b> topic_converter.hpp:389</div></div>
+<div class="ttc" id="anamespacealps_1_1ros2_1_1type_html_aa2225b66b2a595843b0e988d3a14b2b7"><div class="ttname"><a href="namespacealps_1_1ros2_1_1type.html#aa2225b66b2a595843b0e988d3a14b2b7">alps::ros2::type::ToOriginal</a></div><div class="ttdeci">OriginalType ToOriginal(const RosTopicType &amp;ros_topic_data)</div><div class="ttdoc">RosTopicTypeからOriginalTypeへの変換関数</div><div class="ttdef"><b>Definition:</b> topic_converter.hpp:408</div></div>
 <div class="ttc" id="astd__msgs__traits_8hpp_html"><div class="ttname"><a href="std__msgs__traits_8hpp.html">std_msgs_traits.hpp</a></div></div>
 <div class="ttc" id="astructalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple_html"><div class="ttname"><a href="structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple.html">alps::cmn::type::SupportsToTiedTuple</a></div><div class="ttdoc">T型がstd::tupleに変換可能かどうかを判定する</div><div class="ttdef"><b>Definition:</b> tuple_traits.hpp:33</div></div>
 <div class="ttc" id="astructalps_1_1ros2_1_1type_1_1_is_convertible_struct_type_pair_html"><div class="ttname"><a href="structalps_1_1ros2_1_1type_1_1_is_convertible_struct_type_pair.html">alps::ros2::type::IsConvertibleStructTypePair</a></div><div class="ttdoc">相互に変換可能な構造体型(struct)かどうかを判定する．   このテンプレート構造体を特殊化して，std::true_typeを継承することで変換可能な構造体型を追加できる．   構造体はそれぞれの...</div><div class="ttdef"><b>Definition:</b> topic_converter.hpp:26</div></div>
