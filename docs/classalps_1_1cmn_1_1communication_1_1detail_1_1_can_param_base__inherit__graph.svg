@@ -13,16 +13,16 @@
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="パラメータの基底クラス">
-<polygon fill="#bfbfbf" stroke="black" points="76,-105.5 76,-206.5 234,-206.5 234,-105.5 76,-105.5"/>
-<text text-anchor="start" x="84" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::communication</text>
+<polygon fill="#bfbfbf" stroke="black" points="71,-105.5 71,-206.5 239,-206.5 239,-105.5 71,-105.5"/>
+<text text-anchor="start" x="79" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::communication</text>
 <text text-anchor="middle" x="155" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">::detail::CanParamBase&lt; T &gt;</text>
-<polyline fill="none" stroke="black" points="76,-176.5 234,-176.5 "/>
-<text text-anchor="start" x="84" y="-164.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ id_</text>
-<polyline fill="none" stroke="black" points="76,-157.5 234,-157.5 "/>
-<text text-anchor="start" x="84" y="-145.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetParam()</text>
-<text text-anchor="start" x="84" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SetParam()</text>
-<text text-anchor="start" x="84" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SetOnChangeCallback()</text>
-<text text-anchor="start" x="84" y="-112.5" font-family="Helvetica,sans-Serif" font-size="10.00"># CanParamBase()</text>
+<polyline fill="none" stroke="black" points="71,-176.5 239,-176.5 "/>
+<text text-anchor="start" x="79" y="-164.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ id_</text>
+<polyline fill="none" stroke="black" points="71,-157.5 239,-157.5 "/>
+<text text-anchor="start" x="79" y="-145.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetParam()</text>
+<text text-anchor="start" x="79" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SetParam()</text>
+<text text-anchor="start" x="79" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ RegisterOnChangeCallback()</text>
+<text text-anchor="start" x="79" y="-112.5" font-family="Helvetica,sans-Serif" font-size="10.00"># CanParamBase()</text>
 </a>
 </g>
 </g>
