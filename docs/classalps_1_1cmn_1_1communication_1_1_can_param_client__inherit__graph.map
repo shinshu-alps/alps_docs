@@ -1,4 +1,4 @@
 <map id="alps::cmn::communication::CanParamClient&lt; T &gt;" name="alps::cmn::communication::CanParamClient&lt; T &gt;">
-<area shape="rect" id="node1" title="CANパラメータクライアント" alt="" coords="13,189,208,281"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1communication_1_1detail_1_1_can_param_base.html" title="パラメータの基底クラス" alt="" coords="5,5,216,141"/>
+<area shape="rect" id="node1" title="CANパラメータクライアント" alt="" coords="20,189,215,281"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1communication_1_1detail_1_1_can_param_base.html" title="パラメータの基底クラス" alt="" coords="5,5,229,141"/>
 </map>
