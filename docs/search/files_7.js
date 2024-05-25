@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['joy_2ehpp_830',['joy.hpp',['../joy_8hpp.html',1,'']]]
+  ['joy_2ehpp_833',['joy.hpp',['../joy_8hpp.html',1,'']]]
 ];

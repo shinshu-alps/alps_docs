@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('classalps_1_1ros2_1_1util_1_1_typed_pa
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
 <a href="#pro-attribs">限定公開変数類</a> &#124;
 <a href="classalps_1_1ros2_1_1util_1_1_typed_param_client-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle">
@@ -117,23 +118,24 @@ $(document).ready(function(){initNavTree('classalps_1_1ros2_1_1util_1_1_typed_pa
 <div class="dynheader">
 alps::ros2::util::TypedParamClient&lt; T &gt; の継承関係図</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classalps_1_1ros2_1_1util_1_1_typed_param_client__inherit__graph.svg" width="222" height="390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classalps_1_1ros2_1_1util_1_1_typed_param_client__inherit__graph.svg" width="235" height="419"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:ab7f4a2d5de05c35173b334e6a0911b91"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1_typed_param_client.html#ab7f4a2d5de05c35173b334e6a0911b91">TypedParamClient</a> (rclcpp::Node &amp;node, const std::string &amp;host_node_name, const std::string &amp;param_name, std::function&lt; void(const T &amp;)&gt; initial_value_callback=nullptr)</td></tr>
-<tr class="memdesc:ab7f4a2d5de05c35173b334e6a0911b91"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ．初期化時にパラメータを取得する．  <a href="classalps_1_1ros2_1_1util_1_1_typed_param_client.html#ab7f4a2d5de05c35173b334e6a0911b91">[詳解]</a><br /></td></tr>
-<tr class="separator:ab7f4a2d5de05c35173b334e6a0911b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b2ef509835d377ddec316640dfa880e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1_typed_param_client.html#a0b2ef509835d377ddec316640dfa880e">SetParam</a> (const T &amp;value)</td></tr>
-<tr class="memdesc:a0b2ef509835d377ddec316640dfa880e"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータを設定する  <a href="classalps_1_1ros2_1_1util_1_1_typed_param_client.html#a0b2ef509835d377ddec316640dfa880e">[詳解]</a><br /></td></tr>
-<tr class="separator:a0b2ef509835d377ddec316640dfa880e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ed055bba9554a7b52cb2bc1f431263a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1_typed_param_client.html#a2ed055bba9554a7b52cb2bc1f431263a">TypedParamClient</a> (rclcpp::Node &amp;node, const std::string &amp;host_node_name, const std::string &amp;param_name, std::function&lt; void(const T &amp;)&gt; on_change_callback=nullptr)</td></tr>
+<tr class="memdesc:a2ed055bba9554a7b52cb2bc1f431263a"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ．初期化時にパラメータを取得する．  <a href="classalps_1_1ros2_1_1util_1_1_typed_param_client.html#a2ed055bba9554a7b52cb2bc1f431263a">[詳解]</a><br /></td></tr>
+<tr class="separator:a2ed055bba9554a7b52cb2bc1f431263a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a603178fede1505264ad2b6074eb6f281"><td class="memItemLeft" align="right" valign="top">std::optional&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a603178fede1505264ad2b6074eb6f281">GetParam</a> ()</td></tr>
 <tr class="memdesc:a603178fede1505264ad2b6074eb6f281"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータを取得する  <a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a603178fede1505264ad2b6074eb6f281">[詳解]</a><br /></td></tr>
 <tr class="separator:a603178fede1505264ad2b6074eb6f281"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8699478f14f87e699e3f324230a5401"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ad8699478f14f87e699e3f324230a5401">SetOnChangeCallback</a> (std::function&lt; void(const T &amp;)&gt; callback)</td></tr>
-<tr class="memdesc:ad8699478f14f87e699e3f324230a5401"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータの変更を監視するコールバックを設定する．  <a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ad8699478f14f87e699e3f324230a5401">[詳解]</a><br /></td></tr>
-<tr class="separator:ad8699478f14f87e699e3f324230a5401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44094b4b8cfb2876fe07c1891e86c91b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a44094b4b8cfb2876fe07c1891e86c91b">HasValidValue</a> () const</td></tr>
+<tr class="memdesc:a44094b4b8cfb2876fe07c1891e86c91b"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータが有効な値を持っているか確認する  <a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a44094b4b8cfb2876fe07c1891e86c91b">[詳解]</a><br /></td></tr>
+<tr class="separator:a44094b4b8cfb2876fe07c1891e86c91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf71de40700ebeb8e3258bbe14a5d29f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#aaf71de40700ebeb8e3258bbe14a5d29f">RegisterOnChangeCallback</a> (std::function&lt; void(const T &amp;)&gt; callback)</td></tr>
+<tr class="memdesc:aaf71de40700ebeb8e3258bbe14a5d29f"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータの変更を監視するコールバックを設定する．  <a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#aaf71de40700ebeb8e3258bbe14a5d29f">[詳解]</a><br /></td></tr>
+<tr class="separator:aaf71de40700ebeb8e3258bbe14a5d29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e1f43cb316a0c2c6c0a1d7415e4bc62"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a7e1f43cb316a0c2c6c0a1d7415e4bc62">IsServerReady</a> () const</td></tr>
 <tr class="memdesc:a7e1f43cb316a0c2c6c0a1d7415e4bc62"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータサーバーが準備できているか確認する  <a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a7e1f43cb316a0c2c6c0a1d7415e4bc62">[詳解]</a><br /></td></tr>
 <tr class="separator:a7e1f43cb316a0c2c6c0a1d7415e4bc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,6 +148,15 @@ alps::ros2::util::TypedParamClient&lt; T &gt; の継承関係図</div>
 <tr class="memitem:aba13e871b07b3f6a0eb7d619c7bd965b"><td class="memItemLeft" align="right" valign="top">const std::unordered_set&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#aba13e871b07b3f6a0eb7d619c7bd965b">GetParamElementNames</a> () const</td></tr>
 <tr class="memdesc:aba13e871b07b3f6a0eb7d619c7bd965b"><td class="mdescLeft">&#160;</td><td class="mdescRight">このパラメータを構成するROSパラメータの名前リストを取得する  <a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#aba13e871b07b3f6a0eb7d619c7bd965b">[詳解]</a><br /></td></tr>
 <tr class="separator:aba13e871b07b3f6a0eb7d619c7bd965b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a7b91b95db06238567090b5264c3b490a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a7b91b95db06238567090b5264c3b490a">UpdateValue</a> ()</td></tr>
+<tr class="memdesc:a7b91b95db06238567090b5264c3b490a"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のmapからパラメータ値を更新する  <a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a7b91b95db06238567090b5264c3b490a">[詳解]</a><br /></td></tr>
+<tr class="separator:a7b91b95db06238567090b5264c3b490a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af061b3933c1a317b264aac9a51a98b05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#af061b3933c1a317b264aac9a51a98b05">InvokeOnChangeCallback</a> ()</td></tr>
+<tr class="memdesc:af061b3933c1a317b264aac9a51a98b05"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータが変更されたときのコールバック関数を呼び出す  <a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#af061b3933c1a317b264aac9a51a98b05">[詳解]</a><br /></td></tr>
+<tr class="separator:af061b3933c1a317b264aac9a51a98b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 限定公開変数類</h2></td></tr>
@@ -174,8 +185,8 @@ class alps::ros2::util::TypedParamClient&lt; T &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="ab7f4a2d5de05c35173b334e6a0911b91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7f4a2d5de05c35173b334e6a0911b91">&#9670;&nbsp;</a></span>TypedParamClient()</h2>
+<a id="a2ed055bba9554a7b52cb2bc1f431263a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ed055bba9554a7b52cb2bc1f431263a">&#9670;&nbsp;</a></span>TypedParamClient()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -207,7 +218,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::function&lt; void(const T &amp;)&gt;&#160;</td>
-          <td class="paramname"><em>initial_value_callback</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramname"><em>on_change_callback</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -228,7 +239,7 @@ template&lt;typename T &gt; </div>
     <tr><td class="paramname">node</td><td>紐付けるノード </td></tr>
     <tr><td class="paramname">host_node_name</td><td>パラメータのサーバーノード名 </td></tr>
     <tr><td class="paramname">param_name</td><td>パラメータ名 </td></tr>
-    <tr><td class="paramname">initial_value_callback</td><td>初期値取得時に呼び出すコールバック関数(呼び出しまでラグ有り) </td></tr>
+    <tr><td class="paramname">on_change_callback</td><td>パラメータが変更されたときに呼び出すコールバック関数 </td></tr>
   </table>
   </dd>
 </dl>
@@ -357,6 +368,67 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a44094b4b8cfb2876fe07c1891e86c91b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44094b4b8cfb2876fe07c1891e86c91b">&#9670;&nbsp;</a></span>HasValidValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">alps::ros2::util::detail::TypedParamBase</a>&lt; T &gt;::HasValidValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>パラメータが有効な値を持っているか確認する </p>
+<dl class="section return"><dt>戻り値</dt><dd>true 有効な値を持っている </dd>
+<dd>
+false 有効な値を持っていない </dd></dl>
+
+</div>
+</div>
+<a id="af061b3933c1a317b264aac9a51a98b05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af061b3933c1a317b264aac9a51a98b05">&#9670;&nbsp;</a></span>InvokeOnChangeCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">alps::ros2::util::detail::TypedParamBase</a>&lt; T &gt;::InvokeOnChangeCallback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>パラメータが変更されたときのコールバック関数を呼び出す </p>
+
+</div>
+</div>
 <a id="a7e1f43cb316a0c2c6c0a1d7415e4bc62"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7e1f43cb316a0c2c6c0a1d7415e4bc62">&#9670;&nbsp;</a></span>IsServerReady()</h2>
 
@@ -389,8 +461,8 @@ false 準備できていない </dd></dl>
 
 </div>
 </div>
-<a id="ad8699478f14f87e699e3f324230a5401"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8699478f14f87e699e3f324230a5401">&#9670;&nbsp;</a></span>SetOnChangeCallback()</h2>
+<a id="aaf71de40700ebeb8e3258bbe14a5d29f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf71de40700ebeb8e3258bbe14a5d29f">&#9670;&nbsp;</a></span>RegisterOnChangeCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -401,7 +473,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">alps::ros2::util::detail::TypedParamBase</a>&lt; T &gt;::SetOnChangeCallback </td>
+          <td class="memname">void <a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">alps::ros2::util::detail::TypedParamBase</a>&lt; T &gt;::RegisterOnChangeCallback </td>
           <td>(</td>
           <td class="paramtype">std::function&lt; void(const T &amp;)&gt;&#160;</td>
           <td class="paramname"><em>callback</em></td><td>)</td>
@@ -426,8 +498,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a0b2ef509835d377ddec316640dfa880e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b2ef509835d377ddec316640dfa880e">&#9670;&nbsp;</a></span>SetParam()</h2>
+<a id="a7b91b95db06238567090b5264c3b490a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b91b95db06238567090b5264c3b490a">&#9670;&nbsp;</a></span>UpdateValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -438,30 +510,20 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classalps_1_1ros2_1_1util_1_1_typed_param_client.html">alps::ros2::util::TypedParamClient</a>&lt; T &gt;::SetParam </td>
+          <td class="memname">void <a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">alps::ros2::util::detail::TypedParamBase</a>&lt; T &gt;::UpdateValue </td>
           <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>パラメータを設定する </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">value</td><td>設定する値 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd>true 値セットのサービス呼び出し成功 </dd>
-<dd>
-false 値セットのサービス呼び出し失敗 </dd></dl>
+<p>現在のmapからパラメータ値を更新する </p>
 
 </div>
 </div>
