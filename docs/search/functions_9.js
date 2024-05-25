@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['lowpassdifferentiator_969',['LowPassDifferentiator',['../classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#a1d290d680a7859ad189a8e5c3ec0a3ac',1,'alps::cmn::control::LowPassDifferentiator']]],
-  ['lowpassfilter_970',['LowPassFilter',['../classalps_1_1cmn_1_1control_1_1_low_pass_filter.html#accf96027bda5372af9b58a6ee5e902a6',1,'alps::cmn::control::LowPassFilter']]]
+  ['joy_973',['Joy',['../classalps_1_1ros2_1_1ui_1_1_joy.html#ae39070d2de281ff2f71b60b1dfeb49d1',1,'alps::ros2::ui::Joy']]]
 ];
