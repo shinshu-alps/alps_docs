@@ -1,5 +1,11 @@
 var NAVTREEINDEX4 =
 {
+"structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a6443f95f5c1669d4aa08dc0a5c456afb":[2,0,0,0,2,10,6],
+"structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a97eff29d5734c18a2e62ccc95e9cde3b":[2,0,0,0,2,10,5],
+"structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#aa3d48dafc9b0d55346d8b2165c94d018":[2,0,0,0,2,10,0],
+"structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#ad644ddfbb42bb03338d956cf9bf49b0c":[2,0,0,0,2,10,2],
+"structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#af9af791c36aba1acfec215eba8f4c012":[2,0,0,0,2,10,1],
+"structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html":[2,0,0,0,2,9],
 "structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a87b3fe2f73c5061610cdedd314d46966":[2,0,0,0,2,9,2],
 "structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a94c0cf6e73fc510cb1c94b910a524f1e":[2,0,0,0,2,9,3],
 "structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#aa42e1b756097893f29c2b9152bd3a594":[2,0,0,0,2,9,0],

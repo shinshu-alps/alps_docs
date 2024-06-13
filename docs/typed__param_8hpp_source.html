@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('typed__param_8hpp_source.html',''); in
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a4072fe8b53938e2387a9c1d11a332217">   99</a></span>&#160;  std::string_view <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a4072fe8b53938e2387a9c1d11a332217">GetParamName</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> param_name_;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a6042daa9b174c1bb0016065fad38c8b6">param_name_</a>;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  }</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
 <div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#aba13e871b07b3f6a0eb7d619c7bd965b">  109</a></span>&#160;  <span class="keyword">const</span> std::unordered_set&lt;std::string&gt; &amp; <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#aba13e871b07b3f6a0eb7d619c7bd965b">GetParamElementNames</a>()<span class="keyword"> const</span></div>
@@ -172,17 +172,17 @@ $(document).ready(function(){initNavTree('typed__param_8hpp_source.html',''); in
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    std::function&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> T &amp;)&gt; on_change_callback = <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  : <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a033f4b748aac2bba500af6fc8be15bbf">logger_</a>{node.get_logger()},</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    server_node_name_{server_node_name},</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    node_{node},</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    param_name_{param_name},</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a1d25b87c6c4f013c74027601c4122ff8">node_</a>{node},</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a6042daa9b174c1bb0016065fad38c8b6">param_name_</a>{param_name},</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    on_change_callback_{on_change_callback}</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  {</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="comment">// パラメータクライアントを作成</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ab1871f31fe759016b46e5f010497d2d8">parameters_client_</a> = std::make_shared&lt;rclcpp::AsyncParametersClient&gt;(&amp;node_, server_node_name);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ab1871f31fe759016b46e5f010497d2d8">parameters_client_</a> = std::make_shared&lt;rclcpp::AsyncParametersClient&gt;(&amp;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a1d25b87c6c4f013c74027601c4122ff8">node_</a>, server_node_name);</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    sub_parameter_event_ = <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ab1871f31fe759016b46e5f010497d2d8">parameters_client_</a>-&gt;on_parameter_event(</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      std::bind(&amp;TypedParamBase::OnParameterEvent, <span class="keyword">this</span>, std::placeholders::_1));</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="comment">// 名前の登録</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keyword">auto</span> dummy_map = <a class="code" href="structalps_1_1ros2_1_1type_1_1_param_converter.html#abf4e077e5c70d32dd82703af1a29330c">type::ParamConverter&lt;T&gt;::ToParamMap</a>(param_name_, T{});</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keyword">auto</span> dummy_map = <a class="code" href="structalps_1_1ros2_1_1type_1_1_param_converter.html#abf4e077e5c70d32dd82703af1a29330c">type::ParamConverter&lt;T&gt;::ToParamMap</a>(<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a6042daa9b174c1bb0016065fad38c8b6">param_name_</a>, T{});</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; [param_name, param] : dummy_map.GetMap()) {</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      param_element_names_.insert(param_name);</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div>
@@ -190,7 +190,7 @@ $(document).ready(function(){initNavTree('typed__param_8hpp_source.html',''); in
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
 <div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a7b91b95db06238567090b5264c3b490a">  149</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a7b91b95db06238567090b5264c3b490a">UpdateValue</a>()</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  {</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a978317f3b09c15d7cf9cafb3008a651e">current_value_</a> = <a class="code" href="structalps_1_1ros2_1_1type_1_1_param_converter.html#a04e0d8eb7b89618d685e517587d6eff1">type::ParamConverter&lt;T&gt;::ToOriginal</a>(param_name_, <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ae410419dd95eff92ba1a0baff31c8c61">param_map_</a>);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a978317f3b09c15d7cf9cafb3008a651e">current_value_</a> = <a class="code" href="structalps_1_1ros2_1_1type_1_1_param_converter.html#a04e0d8eb7b89618d685e517587d6eff1">type::ParamConverter&lt;T&gt;::ToOriginal</a>(<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a6042daa9b174c1bb0016065fad38c8b6">param_name_</a>, <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ae410419dd95eff92ba1a0baff31c8c61">param_map_</a>);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  }</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
 <div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#af061b3933c1a317b264aac9a51a98b05">  155</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#af061b3933c1a317b264aac9a51a98b05">InvokeOnChangeCallback</a>()</div>
@@ -205,222 +205,225 @@ $(document).ready(function(){initNavTree('typed__param_8hpp_source.html',''); in
 <div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a978317f3b09c15d7cf9cafb3008a651e">  167</a></span>&#160;  std::optional&lt;T&gt; <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a978317f3b09c15d7cf9cafb3008a651e">current_value_</a>{std::nullopt};</div>
 <div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a033f4b748aac2bba500af6fc8be15bbf">  169</a></span>&#160;  rclcpp::Logger <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a033f4b748aac2bba500af6fc8be15bbf">logger_</a>;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordtype">void</span> OnParameterEvent(<span class="keyword">const</span> rcl_interfaces::msg::ParameterEvent::SharedPtr event)</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  {</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="comment">// サーバーノード名が一致しない場合は何もしない</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordflow">if</span> (event-&gt;node.substr(1) != server_node_name_) {  <span class="comment">// 1文字目の&#39;/&#39;を除いて比較</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    }</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="comment">// 削除パラメータを監視</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; param : event-&gt;deleted_parameters) {</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      <span class="comment">// このパラメータを構成するパラメータである場合</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      <span class="keywordflow">if</span> (param_element_names_.count(param.name) &gt; 0) {</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a978317f3b09c15d7cf9cafb3008a651e">current_value_</a> = std::nullopt;       <span class="comment">// 値を未セット状態に戻す</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ae410419dd95eff92ba1a0baff31c8c61">param_map_</a>.<a class="code" href="classalps_1_1ros2_1_1util_1_1_param_map.html#aca9003cff14bd36c42cc5947c261b36e">RemoveParam</a>(param.name);  <span class="comment">// マップから削除</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      }</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    }</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="comment">// 新規パラメータと変更パラメータを監視</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordtype">bool</span> is_this_param_changed = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; target_params : {<span class="keyword">event</span>-&gt;new_parameters, <span class="keyword">event</span>-&gt;changed_parameters}) {</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; param : target_params) {</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="comment">// このパラメータを構成するパラメータである場合</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">if</span> (param_element_names_.count(param.name) &gt; 0) {</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;          is_this_param_changed = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;          <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ae410419dd95eff92ba1a0baff31c8c61">param_map_</a>.<a class="code" href="classalps_1_1ros2_1_1util_1_1_param_map.html#a3fdce7b047ee0a710b129f3741fc6c16">SetParam</a>(param.name, rclcpp::Parameter::from_parameter_msg(param));</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        }</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;      }</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    }</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="comment">// 関係ないパラメータの変更時は何もしない</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordflow">if</span> (!is_this_param_changed) {</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a1d25b87c6c4f013c74027601c4122ff8">  172</a></span>&#160;  rclcpp::Node &amp; <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a1d25b87c6c4f013c74027601c4122ff8">node_</a>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a6042daa9b174c1bb0016065fad38c8b6">  174</a></span>&#160;  <span class="keyword">const</span> std::string <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a6042daa9b174c1bb0016065fad38c8b6">param_name_</a>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordtype">void</span> OnParameterEvent(<span class="keyword">const</span> rcl_interfaces::msg::ParameterEvent::SharedPtr event)</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="comment">// サーバーノード名が一致しない場合は何もしない</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">if</span> (event-&gt;node.substr(1) != server_node_name_) {  <span class="comment">// 1文字目の&#39;/&#39;を除いて比較</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="comment">// 削除パラメータを監視</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; param : event-&gt;deleted_parameters) {</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;      <span class="comment">// このパラメータを構成するパラメータである場合</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      <span class="keywordflow">if</span> (param_element_names_.count(param.name) &gt; 0) {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a978317f3b09c15d7cf9cafb3008a651e">current_value_</a> = std::nullopt;       <span class="comment">// 値を未セット状態に戻す</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ae410419dd95eff92ba1a0baff31c8c61">param_map_</a>.<a class="code" href="classalps_1_1ros2_1_1util_1_1_param_map.html#aca9003cff14bd36c42cc5947c261b36e">RemoveParam</a>(param.name);  <span class="comment">// マップから削除</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      }</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    }</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="comment">// 新規パラメータと変更パラメータを監視</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordtype">bool</span> is_this_param_changed = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; target_params : {<span class="keyword">event</span>-&gt;new_parameters, <span class="keyword">event</span>-&gt;changed_parameters}) {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; param : target_params) {</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="comment">// このパラメータを構成するパラメータである場合</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordflow">if</span> (param_element_names_.count(param.name) &gt; 0) {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;          is_this_param_changed = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;          <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ae410419dd95eff92ba1a0baff31c8c61">param_map_</a>.<a class="code" href="classalps_1_1ros2_1_1util_1_1_param_map.html#a3fdce7b047ee0a710b129f3741fc6c16">SetParam</a>(param.name, rclcpp::Parameter::from_parameter_msg(param));</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        }</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      }</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    }</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="comment">// 値の更新</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a7b91b95db06238567090b5264c3b490a">UpdateValue</a>();</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a44094b4b8cfb2876fe07c1891e86c91b">HasValidValue</a>() == <span class="keyword">false</span>) {</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;      <span class="keywordflow">if</span> (std::all_of(</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            param_element_names_.begin(),</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            param_element_names_.end(),</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            [<span class="keyword">this</span>](<span class="keyword">const</span> std::string &amp; name) { return param_map_.Contains(name); })) {</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="comment">// 全てのパラメータを持っているのにも関わらず値取得に失敗した場合エラー</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        RCLCPP_WARN(<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a033f4b748aac2bba500af6fc8be15bbf">logger_</a>, <span class="stringliteral">&quot;Failed to get parameter. Elements may be invalid.&quot;</span>);</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        RCLCPP_WARN(</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;          this-&gt;logger_,</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;          <span class="stringliteral">&quot;\tserver_node_name: %s, param_name: %s&quot;</span>,</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;          this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#aa98d3fac34aea4df24cf29cf3add1f2c">GetServerNodeName</a>().data(),</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;          this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a4072fe8b53938e2387a9c1d11a332217">GetParamName</a>().data());</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;      }</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    }</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="comment">// コールバック関数の呼び出し</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#af061b3933c1a317b264aac9a51a98b05">InvokeOnChangeCallback</a>();</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  }</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  rclcpp::Node &amp; node_;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keyword">const</span> std::string param_name_;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  std::unordered_set&lt;std::string&gt; param_element_names_;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  std::string server_node_name_;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  rclcpp::Subscription&lt;rcl_interfaces::msg::ParameterEvent&gt;::SharedPtr sub_parameter_event_;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  std::function&lt;void(<span class="keyword">const</span> T &amp;)&gt; on_change_callback_;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;};</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;}  <span class="comment">// namespace detail</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1util_1_1_typed_param_server.html">  255</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1ros2_1_1util_1_1_typed_param_server.html">TypedParamServer</a> : <span class="keyword">public</span> <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">detail::TypedParamBase</a>&lt;T&gt;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;{</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00266"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1util_1_1_typed_param_server.html#a1759f666de851d583808468984308184">  266</a></span>&#160;  <a class="code" href="classalps_1_1ros2_1_1util_1_1_typed_param_server.html#a1759f666de851d583808468984308184">TypedParamServer</a>(</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    rclcpp::Node &amp; node,</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keyword">const</span> std::string &amp; name,</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    std::optional&lt;T&gt; default_value = std::nullopt,</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    std::function&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> T &amp;)&gt; on_change_callback = <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  : detail::<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ae42e0ca3b225290794a30ad201475a45">TypedParamBase</a>&lt;T&gt;{node.get_name(), node, name, default_value, on_change_callback}</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  {</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="comment">// パラメータを宣言する</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keyword">auto</span> default_value_map = <a class="code" href="structalps_1_1ros2_1_1type_1_1_param_converter.html#abf4e077e5c70d32dd82703af1a29330c">type::ParamConverter&lt;T&gt;::ToParamMap</a>(name, default_value.value_or(T{}));</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; [name, param] : default_value_map.GetMap()) {</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;      <span class="keyword">const</span> rclcpp::ParameterValue &amp; param_value =</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        node.declare_parameter(name, param.get_parameter_value());  <span class="comment">// 宣言&amp;初期値の取得</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ae410419dd95eff92ba1a0baff31c8c61">param_map_</a>.<a class="code" href="classalps_1_1ros2_1_1util_1_1_param_map.html#a3fdce7b047ee0a710b129f3741fc6c16">SetParam</a>(</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        name, rclcpp::Parameter{name, param_value});  <span class="comment">// 初期値のマップへの登録</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    }</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="comment">// 初期値の取得</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a7b91b95db06238567090b5264c3b490a">UpdateValue</a>();</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="comment">// コールバック関数の呼び出し</span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#af061b3933c1a317b264aac9a51a98b05">InvokeOnChangeCallback</a>();</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  }</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160; </div>
-<div class="line"><a name="l00289"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1util_1_1_typed_param_server.html#abb63beaef578f05d12a0dd504654cde7">  289</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1ros2_1_1util_1_1_typed_param_server.html#abb63beaef578f05d12a0dd504654cde7">SetParam</a>(<span class="keyword">const</span> T &amp; value)</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  {</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="comment">// パラメータを設定する</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a978317f3b09c15d7cf9cafb3008a651e">current_value_</a> = value;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1util_1_1_param_map.html">ParamMap</a> param = <a class="code" href="structalps_1_1ros2_1_1type_1_1_param_converter.html#abf4e077e5c70d32dd82703af1a29330c">type::ParamConverter&lt;T&gt;::ToParamMap</a>(this-&gt;param_name_, value);</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    this-&gt;node_.set_parameters(param.<a class="code" href="classalps_1_1ros2_1_1util_1_1_param_map.html#adfe4538ef93709aced887519201aca02">ToVector</a>());</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  }</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;};</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00304"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1util_1_1_typed_param_client.html">  304</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1ros2_1_1util_1_1_typed_param_client.html">TypedParamClient</a> : <span class="keyword">public</span> <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">detail::TypedParamBase</a>&lt;T&gt;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;{</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00315"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1util_1_1_typed_param_client.html#a2ed055bba9554a7b52cb2bc1f431263a">  315</a></span>&#160;  <a class="code" href="classalps_1_1ros2_1_1util_1_1_typed_param_client.html#a2ed055bba9554a7b52cb2bc1f431263a">TypedParamClient</a>(</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    rclcpp::Node &amp; node,</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keyword">const</span> std::string &amp; host_node_name,</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keyword">const</span> std::string &amp; param_name,</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    std::function&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> T &amp;)&gt; on_change_callback = <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  : detail::<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ae42e0ca3b225290794a30ad201475a45">TypedParamBase</a>&lt;T&gt;{host_node_name, node, param_name, std::nullopt, on_change_callback}</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  {</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keyword">using namespace </span>std::chrono_literals;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="comment">// 初期値取得タイマーの開始</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    this-&gt;timer_try_get_initial_value_ =</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      node.create_wall_timer(500ms, std::bind(&amp;TypedParamClient::CbTimerTryGetInitialValue, <span class="keyword">this</span>));</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="comment">// サーバーチェックタイマーの開始</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    this-&gt;timer_check_server_ =</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;      node.create_wall_timer(3s, std::bind(&amp;TypedParamClient::CbTimerCheckServer, <span class="keyword">this</span>));</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  }</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  <span class="keywordtype">void</span> CbTimerTryGetInitialValue()</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  {</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="comment">// サービスが準備できていない場合は何もしない</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a7e1f43cb316a0c2c6c0a1d7415e4bc62">IsServerReady</a>()) {</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    }</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="comment">// 既に有効値を持っている場合は何もしない</span></div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a44094b4b8cfb2876fe07c1891e86c91b">HasValidValue</a>()) {</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;      <span class="comment">// タイマーの停止</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;      this-&gt;timer_try_get_initial_value_-&gt;cancel();</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    }</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    std::vector&lt;std::string&gt; param_element_names{</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;      this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#aba13e871b07b3f6a0eb7d619c7bd965b">GetParamElementNames</a>().begin(), this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#aba13e871b07b3f6a0eb7d619c7bd965b">GetParamElementNames</a>().end()};</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    this-&gt;initial_param_request_result_ = this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ab1871f31fe759016b46e5f010497d2d8">parameters_client_</a>-&gt;get_parameters(</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;      param_element_names, [<span class="keyword">this</span>](std::shared_future&lt;std::vector&lt;rclcpp::Parameter&gt;&gt; result) {</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="comment">// 受け取れなかった場合は何もしない</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="keywordflow">if</span> (!result.valid()) {</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;          return;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        }</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="comment">// タイマーの停止</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        this-&gt;timer_try_get_initial_value_-&gt;cancel();</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="comment">// 既に有効値を持っている場合は何もしない</span></div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        if (this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a44094b4b8cfb2876fe07c1891e86c91b">HasValidValue</a>()) {</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;          <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        }</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <span class="comment">// 初期値取得</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; param : result.get()) {</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;          this-&gt;param_map_.SetParam(param.get_name(), param);</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        }</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        this-&gt;UpdateValue();</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        <span class="comment">// コールバック関数の呼び出し</span></div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        this-&gt;InvokeOnChangeCallback();</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <span class="comment">// 取得したパラメータから値を取得できなかった場合警告</span></div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        if (this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a44094b4b8cfb2876fe07c1891e86c91b">HasValidValue</a>() == <span class="keyword">false</span>) {</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;          RCLCPP_WARN(</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;            this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a033f4b748aac2bba500af6fc8be15bbf">logger_</a>,</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            <span class="stringliteral">&quot;Failed to get initial parameter. Param type or element may be invalid. &quot;</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            <span class="stringliteral">&quot;server_node_name: &quot;</span></div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            <span class="stringliteral">&quot;%s, param_name: %s&quot;</span>,</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#aa98d3fac34aea4df24cf29cf3add1f2c">GetServerNodeName</a>().data(),</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a4072fe8b53938e2387a9c1d11a332217">GetParamName</a>().data());</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        }</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;      });</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  }</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  <span class="keywordtype">void</span> CbTimerCheckServer()</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  {</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="comment">// タイマーの停止</span></div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    timer_check_server_-&gt;cancel();</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    timer_try_get_initial_value_-&gt;cancel();</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160; </div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="comment">// まだサーバーが準備できていない場合警告</span></div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a7e1f43cb316a0c2c6c0a1d7415e4bc62">IsServerReady</a>() == <span class="keyword">false</span>) {</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;      RCLCPP_WARN(</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a033f4b748aac2bba500af6fc8be15bbf">logger_</a>,</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="stringliteral">&quot;Parameter server is not found. server_node_name: %s, param_name: %s&quot;</span>,</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#aa98d3fac34aea4df24cf29cf3add1f2c">GetServerNodeName</a>().data(),</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a4072fe8b53938e2387a9c1d11a332217">GetParamName</a>().data());</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    }</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;  }</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160; </div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;  rclcpp::TimerBase::SharedPtr timer_try_get_initial_value_;</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;  rclcpp::TimerBase::SharedPtr timer_check_server_;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  std::shared_future&lt;std::vector&lt;rclcpp::Parameter&gt;&gt; initial_param_request_result_;</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;};</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;}  <span class="comment">// namespace alps::ros2::util</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; </div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="comment">// 関係ないパラメータの変更時は何もしない</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordflow">if</span> (!is_this_param_changed) {</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="comment">// 値の更新</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a7b91b95db06238567090b5264c3b490a">UpdateValue</a>();</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a44094b4b8cfb2876fe07c1891e86c91b">HasValidValue</a>() == <span class="keyword">false</span>) {</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;      <span class="keywordflow">if</span> (std::all_of(</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            param_element_names_.begin(),</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            param_element_names_.end(),</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            [<span class="keyword">this</span>](<span class="keyword">const</span> std::string &amp; name) { return param_map_.Contains(name); })) {</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="comment">// 全てのパラメータを持っているのにも関わらず値取得に失敗した場合エラー</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        RCLCPP_WARN(<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a033f4b748aac2bba500af6fc8be15bbf">logger_</a>, <span class="stringliteral">&quot;Failed to get parameter. Elements may be invalid.&quot;</span>);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        RCLCPP_WARN(</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;          this-&gt;logger_,</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;          <span class="stringliteral">&quot;\tserver_node_name: %s, param_name: %s&quot;</span>,</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;          this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#aa98d3fac34aea4df24cf29cf3add1f2c">GetServerNodeName</a>().data(),</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;          this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a4072fe8b53938e2387a9c1d11a332217">GetParamName</a>().data());</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;      }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="comment">// コールバック関数の呼び出し</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#af061b3933c1a317b264aac9a51a98b05">InvokeOnChangeCallback</a>();</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  }</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  std::unordered_set&lt;std::string&gt; param_element_names_;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  std::string server_node_name_;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  rclcpp::Subscription&lt;rcl_interfaces::msg::ParameterEvent&gt;::SharedPtr sub_parameter_event_;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  std::function&lt;void(<span class="keyword">const</span> T &amp;)&gt; on_change_callback_;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;};</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;}  <span class="comment">// namespace detail</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1util_1_1_typed_param_server.html">  256</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1ros2_1_1util_1_1_typed_param_server.html">TypedParamServer</a> : <span class="keyword">public</span> <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">detail::TypedParamBase</a>&lt;T&gt;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;{</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00267"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1util_1_1_typed_param_server.html#a1759f666de851d583808468984308184">  267</a></span>&#160;  <a class="code" href="classalps_1_1ros2_1_1util_1_1_typed_param_server.html#a1759f666de851d583808468984308184">TypedParamServer</a>(</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    rclcpp::Node &amp; node,</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keyword">const</span> std::string &amp; name,</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    std::optional&lt;T&gt; default_value = std::nullopt,</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    std::function&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> T &amp;)&gt; on_change_callback = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  : detail::<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ae42e0ca3b225290794a30ad201475a45">TypedParamBase</a>&lt;T&gt;{node.get_name(), node, name, default_value, on_change_callback}</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  {</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="comment">// パラメータを宣言する</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keyword">auto</span> default_value_map = <a class="code" href="structalps_1_1ros2_1_1type_1_1_param_converter.html#abf4e077e5c70d32dd82703af1a29330c">type::ParamConverter&lt;T&gt;::ToParamMap</a>(name, default_value.value_or(T{}));</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; [name, param] : default_value_map.GetMap()) {</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      <span class="keyword">const</span> rclcpp::ParameterValue &amp; param_value =</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        node.declare_parameter(name, param.get_parameter_value());  <span class="comment">// 宣言&amp;初期値の取得</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ae410419dd95eff92ba1a0baff31c8c61">param_map_</a>.<a class="code" href="classalps_1_1ros2_1_1util_1_1_param_map.html#a3fdce7b047ee0a710b129f3741fc6c16">SetParam</a>(</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        name, rclcpp::Parameter{name, param_value});  <span class="comment">// 初期値のマップへの登録</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    }</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="comment">// 初期値の取得</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a7b91b95db06238567090b5264c3b490a">UpdateValue</a>();</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="comment">// コールバック関数の呼び出し</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#af061b3933c1a317b264aac9a51a98b05">InvokeOnChangeCallback</a>();</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  }</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160; </div>
+<div class="line"><a name="l00290"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1util_1_1_typed_param_server.html#abb63beaef578f05d12a0dd504654cde7">  290</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1ros2_1_1util_1_1_typed_param_server.html#abb63beaef578f05d12a0dd504654cde7">SetParam</a>(<span class="keyword">const</span> T &amp; value)</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  {</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="comment">// パラメータを設定する</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a978317f3b09c15d7cf9cafb3008a651e">current_value_</a> = value;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <a class="code" href="classalps_1_1ros2_1_1util_1_1_param_map.html">ParamMap</a> param = <a class="code" href="structalps_1_1ros2_1_1type_1_1_param_converter.html#abf4e077e5c70d32dd82703af1a29330c">type::ParamConverter&lt;T&gt;::ToParamMap</a>(this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a6042daa9b174c1bb0016065fad38c8b6">param_name_</a>, value);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a1d25b87c6c4f013c74027601c4122ff8">node_</a>.set_parameters(param.<a class="code" href="classalps_1_1ros2_1_1util_1_1_param_map.html#adfe4538ef93709aced887519201aca02">ToVector</a>());</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  }</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;};</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00305"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1util_1_1_typed_param_client.html">  305</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1ros2_1_1util_1_1_typed_param_client.html">TypedParamClient</a> : <span class="keyword">public</span> <a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">detail::TypedParamBase</a>&lt;T&gt;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;{</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="classalps_1_1ros2_1_1util_1_1_typed_param_client.html#a2ed055bba9554a7b52cb2bc1f431263a">  316</a></span>&#160;  <a class="code" href="classalps_1_1ros2_1_1util_1_1_typed_param_client.html#a2ed055bba9554a7b52cb2bc1f431263a">TypedParamClient</a>(</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    rclcpp::Node &amp; node,</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keyword">const</span> std::string &amp; host_node_name,</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keyword">const</span> std::string &amp; param_name,</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    std::function&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> T &amp;)&gt; on_change_callback = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  : detail::<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ae42e0ca3b225290794a30ad201475a45">TypedParamBase</a>&lt;T&gt;{host_node_name, node, param_name, std::nullopt, on_change_callback}</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  {</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keyword">using namespace </span>std::chrono_literals;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="comment">// 初期値取得タイマーの開始</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    this-&gt;timer_try_get_initial_value_ =</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      node.create_wall_timer(500ms, std::bind(&amp;TypedParamClient::CbTimerTryGetInitialValue, <span class="keyword">this</span>));</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="comment">// サーバーチェックタイマーの開始</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    this-&gt;timer_check_server_ =</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;      node.create_wall_timer(3s, std::bind(&amp;TypedParamClient::CbTimerCheckServer, <span class="keyword">this</span>));</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  }</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  <span class="keywordtype">void</span> CbTimerTryGetInitialValue()</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;  {</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="comment">// サービスが準備できていない場合は何もしない</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a7e1f43cb316a0c2c6c0a1d7415e4bc62">IsServerReady</a>()) {</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    }</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="comment">// 既に有効値を持っている場合は何もしない</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a44094b4b8cfb2876fe07c1891e86c91b">HasValidValue</a>()) {</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;      <span class="comment">// タイマーの停止</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;      this-&gt;timer_try_get_initial_value_-&gt;cancel();</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    }</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    std::vector&lt;std::string&gt; param_element_names{</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;      this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#aba13e871b07b3f6a0eb7d619c7bd965b">GetParamElementNames</a>().begin(), this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#aba13e871b07b3f6a0eb7d619c7bd965b">GetParamElementNames</a>().end()};</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160; </div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    this-&gt;initial_param_request_result_ = this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ab1871f31fe759016b46e5f010497d2d8">parameters_client_</a>-&gt;get_parameters(</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;      param_element_names, [<span class="keyword">this</span>](std::shared_future&lt;std::vector&lt;rclcpp::Parameter&gt;&gt; result) {</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="comment">// 受け取れなかった場合は何もしない</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        <span class="keywordflow">if</span> (!result.valid()) {</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;          return;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        }</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160; </div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <span class="comment">// タイマーの停止</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        this-&gt;timer_try_get_initial_value_-&gt;cancel();</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <span class="comment">// 既に有効値を持っている場合は何もしない</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        if (this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a44094b4b8cfb2876fe07c1891e86c91b">HasValidValue</a>()) {</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;          <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        }</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160; </div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="comment">// 初期値取得</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; param : result.get()) {</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;          this-&gt;param_map_.SetParam(param.get_name(), param);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        }</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        this-&gt;UpdateValue();</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="comment">// コールバック関数の呼び出し</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        this-&gt;InvokeOnChangeCallback();</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160; </div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="comment">// 取得したパラメータから値を取得できなかった場合警告</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        if (this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a44094b4b8cfb2876fe07c1891e86c91b">HasValidValue</a>() == <span class="keyword">false</span>) {</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;          RCLCPP_WARN(</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a033f4b748aac2bba500af6fc8be15bbf">logger_</a>,</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            <span class="stringliteral">&quot;Failed to get initial parameter. Param type or element may be invalid. &quot;</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            <span class="stringliteral">&quot;server_node_name: &quot;</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            <span class="stringliteral">&quot;%s, param_name: %s&quot;</span>,</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#aa98d3fac34aea4df24cf29cf3add1f2c">GetServerNodeName</a>().data(),</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;            this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a4072fe8b53938e2387a9c1d11a332217">GetParamName</a>().data());</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        }</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;      });</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  }</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160; </div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  <span class="keywordtype">void</span> CbTimerCheckServer()</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  {</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="comment">// タイマーの停止</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    timer_check_server_-&gt;cancel();</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    timer_try_get_initial_value_-&gt;cancel();</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160; </div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="comment">// まだサーバーが準備できていない場合警告</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a7e1f43cb316a0c2c6c0a1d7415e4bc62">IsServerReady</a>() == <span class="keyword">false</span>) {</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;      RCLCPP_WARN(</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a033f4b748aac2bba500af6fc8be15bbf">logger_</a>,</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        <span class="stringliteral">&quot;Parameter server is not found. server_node_name: %s, param_name: %s&quot;</span>,</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#aa98d3fac34aea4df24cf29cf3add1f2c">GetServerNodeName</a>().data(),</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        this-&gt;<a class="code" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a4072fe8b53938e2387a9c1d11a332217">GetParamName</a>().data());</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    }</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  }</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160; </div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;  rclcpp::TimerBase::SharedPtr timer_try_get_initial_value_;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  rclcpp::TimerBase::SharedPtr timer_check_server_;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  std::shared_future&lt;std::vector&lt;rclcpp::Parameter&gt;&gt; initial_param_request_result_;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;};</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;}  <span class="comment">// namespace alps::ros2::util</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160; </div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1_param_map_html"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1_param_map.html">alps::ros2::util::ParamMap</a></div><div class="ttdoc">ROS Parameterの値を辞書として内部に保持するクラス</div><div class="ttdef"><b>Definition:</b> param_map.hpp:28</div></div>
 <div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1_param_map_html_a3fdce7b047ee0a710b129f3741fc6c16"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1_param_map.html#a3fdce7b047ee0a710b129f3741fc6c16">alps::ros2::util::ParamMap::SetParam</a></div><div class="ttdeci">void SetParam(const std::string &amp;name, const rclcpp::Parameter &amp;value)</div><div class="ttdoc">パラメータを設定する</div><div class="ttdef"><b>Definition:</b> param_map.hpp:103</div></div>
 <div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1_param_map_html_aca9003cff14bd36c42cc5947c261b36e"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1_param_map.html#aca9003cff14bd36c42cc5947c261b36e">alps::ros2::util::ParamMap::RemoveParam</a></div><div class="ttdeci">void RemoveParam(const std::string &amp;name)</div><div class="ttdoc">パラメータを削除する</div><div class="ttdef"><b>Definition:</b> param_map.hpp:113</div></div>
 <div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1_param_map_html_adfe4538ef93709aced887519201aca02"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1_param_map.html#adfe4538ef93709aced887519201aca02">alps::ros2::util::ParamMap::ToVector</a></div><div class="ttdeci">std::vector&lt; rclcpp::Parameter &gt; ToVector() const</div><div class="ttdoc">保持するパラメータのリストを作成する</div><div class="ttdef"><b>Definition:</b> param_map.hpp:123</div></div>
-<div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1_typed_param_client_html"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1_typed_param_client.html">alps::ros2::util::TypedParamClient</a></div><div class="ttdoc">型付きパラメーターのクライアント</div><div class="ttdef"><b>Definition:</b> typed_param.hpp:305</div></div>
-<div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1_typed_param_client_html_a2ed055bba9554a7b52cb2bc1f431263a"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1_typed_param_client.html#a2ed055bba9554a7b52cb2bc1f431263a">alps::ros2::util::TypedParamClient::TypedParamClient</a></div><div class="ttdeci">TypedParamClient(rclcpp::Node &amp;node, const std::string &amp;host_node_name, const std::string &amp;param_name, std::function&lt; void(const T &amp;)&gt; on_change_callback=nullptr)</div><div class="ttdoc">コンストラクタ．初期化時にパラメータを取得する．</div><div class="ttdef"><b>Definition:</b> typed_param.hpp:315</div></div>
-<div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1_typed_param_server_html"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1_typed_param_server.html">alps::ros2::util::TypedParamServer</a></div><div class="ttdoc">型付きパラメーターのサーバー</div><div class="ttdef"><b>Definition:</b> typed_param.hpp:256</div></div>
-<div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1_typed_param_server_html_a1759f666de851d583808468984308184"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1_typed_param_server.html#a1759f666de851d583808468984308184">alps::ros2::util::TypedParamServer::TypedParamServer</a></div><div class="ttdeci">TypedParamServer(rclcpp::Node &amp;node, const std::string &amp;name, std::optional&lt; T &gt; default_value=std::nullopt, std::function&lt; void(const T &amp;)&gt; on_change_callback=nullptr)</div><div class="ttdoc">コンストラクタ．初期化時にパラメータを宣言する．</div><div class="ttdef"><b>Definition:</b> typed_param.hpp:266</div></div>
-<div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1_typed_param_server_html_abb63beaef578f05d12a0dd504654cde7"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1_typed_param_server.html#abb63beaef578f05d12a0dd504654cde7">alps::ros2::util::TypedParamServer::SetParam</a></div><div class="ttdeci">void SetParam(const T &amp;value)</div><div class="ttdef"><b>Definition:</b> typed_param.hpp:289</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1_typed_param_client_html"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1_typed_param_client.html">alps::ros2::util::TypedParamClient</a></div><div class="ttdoc">型付きパラメーターのクライアント</div><div class="ttdef"><b>Definition:</b> typed_param.hpp:306</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1_typed_param_client_html_a2ed055bba9554a7b52cb2bc1f431263a"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1_typed_param_client.html#a2ed055bba9554a7b52cb2bc1f431263a">alps::ros2::util::TypedParamClient::TypedParamClient</a></div><div class="ttdeci">TypedParamClient(rclcpp::Node &amp;node, const std::string &amp;host_node_name, const std::string &amp;param_name, std::function&lt; void(const T &amp;)&gt; on_change_callback=nullptr)</div><div class="ttdoc">コンストラクタ．初期化時にパラメータを取得する．</div><div class="ttdef"><b>Definition:</b> typed_param.hpp:316</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1_typed_param_server_html"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1_typed_param_server.html">alps::ros2::util::TypedParamServer</a></div><div class="ttdoc">型付きパラメーターのサーバー</div><div class="ttdef"><b>Definition:</b> typed_param.hpp:257</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1_typed_param_server_html_a1759f666de851d583808468984308184"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1_typed_param_server.html#a1759f666de851d583808468984308184">alps::ros2::util::TypedParamServer::TypedParamServer</a></div><div class="ttdeci">TypedParamServer(rclcpp::Node &amp;node, const std::string &amp;name, std::optional&lt; T &gt; default_value=std::nullopt, std::function&lt; void(const T &amp;)&gt; on_change_callback=nullptr)</div><div class="ttdoc">コンストラクタ．初期化時にパラメータを宣言する．</div><div class="ttdef"><b>Definition:</b> typed_param.hpp:267</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1_typed_param_server_html_abb63beaef578f05d12a0dd504654cde7"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1_typed_param_server.html#abb63beaef578f05d12a0dd504654cde7">alps::ros2::util::TypedParamServer::SetParam</a></div><div class="ttdeci">void SetParam(const T &amp;value)</div><div class="ttdef"><b>Definition:</b> typed_param.hpp:290</div></div>
 <div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base_html"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html">alps::ros2::util::detail::TypedParamBase</a></div><div class="ttdoc">型付きパラメーターの基底クラス</div><div class="ttdef"><b>Definition:</b> typed_param.hpp:34</div></div>
 <div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base_html_a033f4b748aac2bba500af6fc8be15bbf"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a033f4b748aac2bba500af6fc8be15bbf">alps::ros2::util::detail::TypedParamBase::logger_</a></div><div class="ttdeci">rclcpp::Logger logger_</div><div class="ttdoc">ロガー</div><div class="ttdef"><b>Definition:</b> typed_param.hpp:169</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base_html_a1d25b87c6c4f013c74027601c4122ff8"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a1d25b87c6c4f013c74027601c4122ff8">alps::ros2::util::detail::TypedParamBase::node_</a></div><div class="ttdeci">rclcpp::Node &amp; node_</div><div class="ttdoc">紐付けるノード</div><div class="ttdef"><b>Definition:</b> typed_param.hpp:172</div></div>
 <div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base_html_a4072fe8b53938e2387a9c1d11a332217"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a4072fe8b53938e2387a9c1d11a332217">alps::ros2::util::detail::TypedParamBase::GetParamName</a></div><div class="ttdeci">std::string_view GetParamName() const</div><div class="ttdoc">このパラメータの総称名を取得する</div><div class="ttdef"><b>Definition:</b> typed_param.hpp:99</div></div>
 <div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base_html_a44094b4b8cfb2876fe07c1891e86c91b"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a44094b4b8cfb2876fe07c1891e86c91b">alps::ros2::util::detail::TypedParamBase::HasValidValue</a></div><div class="ttdeci">bool HasValidValue() const</div><div class="ttdoc">パラメータが有効な値を持っているか確認する</div><div class="ttdef"><b>Definition:</b> typed_param.hpp:56</div></div>
 <div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base_html_a603178fede1505264ad2b6074eb6f281"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a603178fede1505264ad2b6074eb6f281">alps::ros2::util::detail::TypedParamBase::GetParam</a></div><div class="ttdeci">std::optional&lt; T &gt; GetParam()</div><div class="ttdoc">パラメータを取得する</div><div class="ttdef"><b>Definition:</b> typed_param.hpp:41</div></div>
+<div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base_html_a6042daa9b174c1bb0016065fad38c8b6"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a6042daa9b174c1bb0016065fad38c8b6">alps::ros2::util::detail::TypedParamBase::param_name_</a></div><div class="ttdeci">const std::string param_name_</div><div class="ttdoc">パラメータ名(総称)</div><div class="ttdef"><b>Definition:</b> typed_param.hpp:174</div></div>
 <div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base_html_a7b91b95db06238567090b5264c3b490a"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a7b91b95db06238567090b5264c3b490a">alps::ros2::util::detail::TypedParamBase::UpdateValue</a></div><div class="ttdeci">void UpdateValue()</div><div class="ttdoc">現在のmapからパラメータ値を更新する</div><div class="ttdef"><b>Definition:</b> typed_param.hpp:149</div></div>
 <div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base_html_a7e1f43cb316a0c2c6c0a1d7415e4bc62"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a7e1f43cb316a0c2c6c0a1d7415e4bc62">alps::ros2::util::detail::TypedParamBase::IsServerReady</a></div><div class="ttdeci">bool IsServerReady() const</div><div class="ttdoc">パラメータサーバーが準備できているか確認する</div><div class="ttdef"><b>Definition:</b> typed_param.hpp:78</div></div>
 <div class="ttc" id="aclassalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base_html_a978317f3b09c15d7cf9cafb3008a651e"><div class="ttname"><a href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a978317f3b09c15d7cf9cafb3008a651e">alps::ros2::util::detail::TypedParamBase::current_value_</a></div><div class="ttdeci">std::optional&lt; T &gt; current_value_</div><div class="ttdoc">現在のパラメータ値</div><div class="ttdef"><b>Definition:</b> typed_param.hpp:167</div></div>
