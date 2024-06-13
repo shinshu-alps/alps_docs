@@ -12,6 +12,8 @@ var classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base =
     [ "UpdateValue", "classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a7b91b95db06238567090b5264c3b490a", null ],
     [ "current_value_", "classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a978317f3b09c15d7cf9cafb3008a651e", null ],
     [ "logger_", "classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a033f4b748aac2bba500af6fc8be15bbf", null ],
+    [ "node_", "classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a1d25b87c6c4f013c74027601c4122ff8", null ],
     [ "param_map_", "classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ae410419dd95eff92ba1a0baff31c8c61", null ],
+    [ "param_name_", "classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a6042daa9b174c1bb0016065fad38c8b6", null ],
     [ "parameters_client_", "classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#ab1871f31fe759016b46e5f010497d2d8", null ]
 ];
