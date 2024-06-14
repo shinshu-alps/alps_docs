@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a4926ae0b15220af38a9a94284a941c99":[2,0,0,0,2,10,3],
 "structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a6443f95f5c1669d4aa08dc0a5c456afb":[2,0,0,0,2,10,6],
 "structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a97eff29d5734c18a2e62ccc95e9cde3b":[2,0,0,0,2,10,5],
 "structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#aa3d48dafc9b0d55346d8b2165c94d018":[2,0,0,0,2,10,0],
@@ -18,6 +19,7 @@ var NAVTREEINDEX4 =
 "structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#a47ad9b9a6bae6ba89e9715c93cce6ca8":[2,0,0,0,2,14,2],
 "structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#a80f1d779edf7d804b8e2543813285a95":[2,0,0,0,2,14,3],
 "structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#a910cb4395263953c0fcaee4557fc996f":[2,0,0,0,2,14,0],
+"structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#abd36689dc0614def4cb03724b9723459":[2,0,0,0,2,14,8],
 "structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#abf63278244e262e53d62a4b2f6288663":[2,0,0,0,2,14,7],
 "structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#ad4f534f48ba54993aa4aad1a1158b32c":[2,0,0,0,2,14,1],
 "structalps_1_1cmn_1_1control_1_1_pid_param.html":[2,0,0,0,2,13],

@@ -140,6 +140,9 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1control_1_1_pid.ht
 <tr class="memitem:ac8f190f4d2d38bf835a28f2da63924af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#ac8f190f4d2d38bf835a28f2da63924af">SetLimit</a> (const <a class="el" href="structalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange</a>&lt; float &gt; &amp;output_limit)</td></tr>
 <tr class="memdesc:ac8f190f4d2d38bf835a28f2da63924af"><td class="mdescLeft">&#160;</td><td class="mdescRight">出力値の範囲を設定する  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#ac8f190f4d2d38bf835a28f2da63924af">[詳解]</a><br /></td></tr>
 <tr class="separator:ac8f190f4d2d38bf835a28f2da63924af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a5828e20f1956ab992b348e70906bf3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a6a5828e20f1956ab992b348e70906bf3">IsSaturated</a> () const</td></tr>
+<tr class="memdesc:a6a5828e20f1956ab992b348e70906bf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">出力値が飽和しているかどうか  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#a6a5828e20f1956ab992b348e70906bf3">[詳解]</a><br /></td></tr>
+<tr class="separator:a6a5828e20f1956ab992b348e70906bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><h3>template&lt;class Clock&gt;<br />
@@ -149,11 +152,15 @@ class alps::cmn::control::Pid&lt; Clock &gt;</h3>
 <p>参考: <a href="https://docs.simplefoc.com/pi_controller">https://docs.simplefoc.com/pi_controller</a></p>
 <dl class="tparams"><dt>テンプレート引数</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Clock</td><td>利用するクロック型 ( <a href="https://cpprefjp.github.io/reference/chrono/is_clock.html">https://cpprefjp.github.io/reference/chrono/is_clock.html</a> ) </td></tr>
+    <tr><td class="paramname">Clock</td><td>利用するクロック型 ( <a href="https://cpprefjp.github.io/reference/chrono/is_clock.html">https://cpprefjp.github.io/reference/chrono/is_clock.html</a> )</td></tr>
   </table>
   </dd>
 </dl>
-</div><h2 class="groupheader">構築子と解体子</h2>
+<div class="image">
+<object type="image/svg+xml" data="pid.drawio.svg" style="pointer-events: none;"></object>
+<div class="caption">
+ブロック線図的な何か</div></div>
+ </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="a660060f3952a0b1095ff909ce0564327"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a660060f3952a0b1095ff909ce0564327">&#9670;&nbsp;</a></span>Pid()</h2>
 
@@ -363,6 +370,38 @@ template&lt;class Clock &gt; </div>
 </div><div class="memdoc">
 
 <p>PIDのパラメータを取得する </p>
+
+</div>
+</div>
+<a id="a6a5828e20f1956ab992b348e70906bf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a5828e20f1956ab992b348e70906bf3">&#9670;&nbsp;</a></span>IsSaturated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::IsSaturated </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>出力値が飽和しているかどうか </p>
+<dl class="section return"><dt>戻り値</dt><dd>true 飽和している </dd>
+<dd>
+false 飽和していない </dd></dl>
 
 </div>
 </div>
