@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"index.html#autotoc_md4":[0,1,1],
 "integrator_8hpp.html":[3,0,0,0,0,2,3],
 "integrator_8hpp_source.html":[3,0,0,0,0,2,3],
 "interrupt__in_8hpp.html":[3,0,2,0,0,2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "structalps_1_1cmn_1_1control_1_1_motor_angle_controller_calc_info.html#a9b83068c6b25fbca087f4c96703766b9":[2,0,0,0,2,6,1],
 "structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html":[2,0,0,0,2,10],
 "structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a00aaa0c062827fd9243f5ab188a43cb1":[2,0,0,0,2,10,4],
-"structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a48d4049c0b85bf5e3b4cabf5f6978264":[2,0,0,0,2,10,7],
-"structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a4926ae0b15220af38a9a94284a941c99":[2,0,0,0,2,10,3]
+"structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a48d4049c0b85bf5e3b4cabf5f6978264":[2,0,0,0,2,10,7]
 };

@@ -125,9 +125,6 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1control_1_1_pid_c
 <tr class="memitem:a80f1d779edf7d804b8e2543813285a95"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#a80f1d779edf7d804b8e2543813285a95">error_diff_before_lpf</a></td></tr>
 <tr class="memdesc:a80f1d779edf7d804b8e2543813285a95"><td class="mdescLeft">&#160;</td><td class="mdescRight">偏差の微分値（ローパスフィルタをかける前）  <a href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#a80f1d779edf7d804b8e2543813285a95">[詳解]</a><br /></td></tr>
 <tr class="separator:a80f1d779edf7d804b8e2543813285a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c8d30a703c9c4ebd64b0d44403147e2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#a2c8d30a703c9c4ebd64b0d44403147e2">output</a></td></tr>
-<tr class="memdesc:a2c8d30a703c9c4ebd64b0d44403147e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">出力値（P項 + I項 + D項 + フィードフォワード項）  <a href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#a2c8d30a703c9c4ebd64b0d44403147e2">[詳解]</a><br /></td></tr>
-<tr class="separator:a2c8d30a703c9c4ebd64b0d44403147e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf63278244e262e53d62a4b2f6288663"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#abf63278244e262e53d62a4b2f6288663">p_term</a></td></tr>
 <tr class="memdesc:abf63278244e262e53d62a4b2f6288663"><td class="mdescLeft">&#160;</td><td class="mdescRight">P項  <a href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#abf63278244e262e53d62a4b2f6288663">[詳解]</a><br /></td></tr>
 <tr class="separator:abf63278244e262e53d62a4b2f6288663"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,6 +137,12 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1control_1_1_pid_c
 <tr class="memitem:a39cb5f708ef69416ca061f15647115a7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#a39cb5f708ef69416ca061f15647115a7">ff_term</a></td></tr>
 <tr class="memdesc:a39cb5f708ef69416ca061f15647115a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">フィードフォワード項  <a href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#a39cb5f708ef69416ca061f15647115a7">[詳解]</a><br /></td></tr>
 <tr class="separator:a39cb5f708ef69416ca061f15647115a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd36689dc0614def4cb03724b9723459"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#abd36689dc0614def4cb03724b9723459">sum</a></td></tr>
+<tr class="memdesc:abd36689dc0614def4cb03724b9723459"><td class="mdescLeft">&#160;</td><td class="mdescRight">各項の合計値: P項 + I項 + D項 + フィードフォワード項  <a href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#abd36689dc0614def4cb03724b9723459">[詳解]</a><br /></td></tr>
+<tr class="separator:abd36689dc0614def4cb03724b9723459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c8d30a703c9c4ebd64b0d44403147e2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#a2c8d30a703c9c4ebd64b0d44403147e2">output</a></td></tr>
+<tr class="memdesc:a2c8d30a703c9c4ebd64b0d44403147e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">出力値: sumを出力値の範囲にクランプした値  <a href="structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#a2c8d30a703c9c4ebd64b0d44403147e2">[詳解]</a><br /></td></tr>
+<tr class="separator:a2c8d30a703c9c4ebd64b0d44403147e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>PID制御の計算情報 </p>
@@ -252,7 +255,7 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1control_1_1_pid_c
       </table>
 </div><div class="memdoc">
 
-<p>出力値（P項 + I項 + D項 + フィードフォワード項） </p>
+<p>出力値: sumを出力値の範囲にクランプした値 </p>
 
 </div>
 </div>
@@ -269,6 +272,22 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1control_1_1_pid_c
 </div><div class="memdoc">
 
 <p>P項 </p>
+
+</div>
+</div>
+<a id="abd36689dc0614def4cb03724b9723459"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd36689dc0614def4cb03724b9723459">&#9670;&nbsp;</a></span>sum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float alps::cmn::control::PidCalcInfo::sum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>各項の合計値: P項 + I項 + D項 + フィードフォワード項 </p>
 
 </div>
 </div>

@@ -7,5 +7,6 @@ var structalps_1_1cmn_1_1control_1_1_pid_calc_info =
     [ "ff_term", "structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#a39cb5f708ef69416ca061f15647115a7", null ],
     [ "i_term", "structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#a29ea0b7247686505f09f1794bd9d66a0", null ],
     [ "output", "structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#a2c8d30a703c9c4ebd64b0d44403147e2", null ],
-    [ "p_term", "structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#abf63278244e262e53d62a4b2f6288663", null ]
+    [ "p_term", "structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#abf63278244e262e53d62a4b2f6288663", null ],
+    [ "sum", "structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#abd36689dc0614def4cb03724b9723459", null ]
 ];
