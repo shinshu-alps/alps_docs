@@ -1,5 +1,5 @@
-<map id="alps_common_lib/include/alps_cmn/communication/can_data_frame.hpp" name="alps_common_lib/include/alps_cmn/communication/can_data_frame.hpp">
-<area shape="rect" id="node1" title="CANフレームを表す構造体" alt="" coords="5,5,199,61"/>
-<area shape="rect" id="node2" title=" " alt="" coords="13,109,84,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="108,109,203,136"/>
+<map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/can_data_frame.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/can_data_frame.hpp">
+<area shape="rect" id="node1" title="CANフレームを表す構造体" alt="" coords="5,5,199,76"/>
+<area shape="rect" id="node2" title=" " alt="" coords="13,124,84,151"/>
+<area shape="rect" id="node3" title=" " alt="" coords="108,124,203,151"/>
 </map>

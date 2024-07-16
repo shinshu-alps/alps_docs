@@ -111,8 +111,6 @@ $(document).ready(function(){initNavTree('classalps_1_1mbed_1_1communication_1_1
 
 <p>mbedのUartシリアル通信IOクラス  
  <a href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="alps__mbed__lib_2include_2alps__mbed_2communication_2uart__io_8hpp_source.html">uart_io.hpp</a>&gt;</code></p>
 <div class="dynheader">
 alps::mbed::communication::UartIo の継承関係図</div>
 <div class="dyncontent">
@@ -133,12 +131,13 @@ alps::mbed::communication::UartIo の継承関係図</div>
 <tr class="memitem:a4bb170a0846446360463ce54392157b1"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a4bb170a0846446360463ce54392157b1">Read</a> (etl::icircular_buffer&lt; uint8_t &gt; &amp;output)</td></tr>
 <tr class="memdesc:a4bb170a0846446360463ce54392157b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uartで受信したバイト列を読み込む  <a href="classalps_1_1mbed_1_1communication_1_1_uart_io.html#a4bb170a0846446360463ce54392157b1">[詳解]</a><br /></td></tr>
 <tr class="separator:a4bb170a0846446360463ce54392157b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5d2302ae11836d30d5ff53046f3eebd"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html#ac5d2302ae11836d30d5ff53046f3eebd">CallWrite</a> (const etl::icircular_buffer&lt; uint8_t &gt; &amp;write_buf)</td></tr>
-<tr class="memdesc:ac5d2302ae11836d30d5ff53046f3eebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してWrite()関数を呼び出す．振る舞い: Uartでバイト列を送信する  <a href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html#ac5d2302ae11836d30d5ff53046f3eebd">[詳解]</a><br /></td></tr>
-<tr class="separator:ac5d2302ae11836d30d5ff53046f3eebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a774343caf91d67026c10388013521c6b"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html#a774343caf91d67026c10388013521c6b">CallRead</a> (etl::icircular_buffer&lt; uint8_t &gt; &amp;output)</td></tr>
-<tr class="memdesc:a774343caf91d67026c10388013521c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してRead()関数を呼び出す．振る舞い: Uartで受信したバイト列を読み込む  <a href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html#a774343caf91d67026c10388013521c6b">[詳解]</a><br /></td></tr>
-<tr class="separator:a774343caf91d67026c10388013521c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classalps_1_1cmn_1_1communication_1_1_i_uart_io"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classalps_1_1cmn_1_1communication_1_1_i_uart_io')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html">alps::cmn::communication::IUartIo&lt; UartIo &gt;</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:ac5d2302ae11836d30d5ff53046f3eebd inherit pub_methods_classalps_1_1cmn_1_1communication_1_1_i_uart_io"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html#ac5d2302ae11836d30d5ff53046f3eebd">CallWrite</a> (const etl::icircular_buffer&lt; uint8_t &gt; &amp;write_buf)</td></tr>
+<tr class="memdesc:ac5d2302ae11836d30d5ff53046f3eebd inherit pub_methods_classalps_1_1cmn_1_1communication_1_1_i_uart_io"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してWrite()関数を呼び出す．振る舞い: Uartでバイト列を送信する  <a href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html#ac5d2302ae11836d30d5ff53046f3eebd">[詳解]</a><br /></td></tr>
+<tr class="separator:ac5d2302ae11836d30d5ff53046f3eebd inherit pub_methods_classalps_1_1cmn_1_1communication_1_1_i_uart_io"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a774343caf91d67026c10388013521c6b inherit pub_methods_classalps_1_1cmn_1_1communication_1_1_i_uart_io"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html#a774343caf91d67026c10388013521c6b">CallRead</a> (etl::icircular_buffer&lt; uint8_t &gt; &amp;output)</td></tr>
+<tr class="memdesc:a774343caf91d67026c10388013521c6b inherit pub_methods_classalps_1_1cmn_1_1communication_1_1_i_uart_io"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してRead()関数を呼び出す．振る舞い: Uartで受信したバイト列を読み込む  <a href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html#a774343caf91d67026c10388013521c6b">[詳解]</a><br /></td></tr>
+<tr class="separator:a774343caf91d67026c10388013521c6b inherit pub_methods_classalps_1_1cmn_1_1communication_1_1_i_uart_io"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>mbedのUartシリアル通信IOクラス </p>
@@ -207,74 +206,30 @@ alps::mbed::communication::UartIo の継承関係図</div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a774343caf91d67026c10388013521c6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a774343caf91d67026c10388013521c6b">&#9670;&nbsp;</a></span>CallRead()</h2>
+<a id="a58758a4d04525ea16b3729cece30a5a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58758a4d04525ea16b3729cece30a5a8">&#9670;&nbsp;</a></span>Write()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ssize_t <a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html">alps::cmn::communication::IUartIo</a>&lt; <a class="el" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html">UartIo</a>  &gt;::CallRead </td>
-          <td>(</td>
-          <td class="paramtype">etl::icircular_buffer&lt; uint8_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>output</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>インタフェースを介してRead()関数を呼び出す．振る舞い: Uartで受信したバイト列を読み込む </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">output</td><td>受信したバイト列を格納するバッファ </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd>ssize_t 受信したバイト数．エラー時は-1 </dd></dl>
-
-</div>
-</div>
-<a id="ac5d2302ae11836d30d5ff53046f3eebd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5d2302ae11836d30d5ff53046f3eebd">&#9670;&nbsp;</a></span>CallWrite()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ssize_t <a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html">alps::cmn::communication::IUartIo</a>&lt; <a class="el" href="classalps_1_1mbed_1_1communication_1_1_uart_io.html">UartIo</a>  &gt;::CallWrite </td>
+          <td class="memname">ssize_t alps::mbed::communication::UartIo::Write </td>
           <td>(</td>
           <td class="paramtype">const etl::icircular_buffer&lt; uint8_t &gt; &amp;&#160;</td>
           <td class="paramname"><em>write_buf</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>インタフェースを介してWrite()関数を呼び出す．振る舞い: Uartでバイト列を送信する </p>
-<dl class="section note"><dt>覚え書き</dt><dd>継承クラスはこの関数と同じ振る舞いのTryRead()関数を実装すること．</dd></dl>
+<p>Uartでバイト列を送信する </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">write_buf</td><td>送信するバイト列 </td></tr>
+    <tr><td class="paramname">write_buf</td><td>書き込み対象バッファ </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>戻り値</dt><dd>ssize_t 送信したバイト数．エラー時は-1 </dd></dl>
+<dl class="section return"><dt>戻り値</dt><dd>ssize_t 送ったバイト数．エラー時は-1 </dd></dl>
 
 </div>
 </div>
@@ -305,35 +260,8 @@ alps::mbed::communication::UartIo の継承関係図</div>
 
 </div>
 </div>
-<a id="a58758a4d04525ea16b3729cece30a5a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58758a4d04525ea16b3729cece30a5a8">&#9670;&nbsp;</a></span>Write()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ssize_t alps::mbed::communication::UartIo::Write </td>
-          <td>(</td>
-          <td class="paramtype">const etl::icircular_buffer&lt; uint8_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>write_buf</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Uartでバイト列を送信する </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">write_buf</td><td>書き込み対象バッファ </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd>ssize_t 送ったバイト数．エラー時は-1 </dd></dl>
-
-</div>
-</div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>alps_mbed_lib/include/alps_mbed/communication/<a class="el" href="alps__mbed__lib_2include_2alps__mbed_2communication_2uart__io_8hpp_source.html">uart_io.hpp</a></li>
+<li>alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/communication/<a class="el" href="alps__mbed__lib_2include_2alps__mbed_2communication_2uart__io_8hpp_source.html">uart_io.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

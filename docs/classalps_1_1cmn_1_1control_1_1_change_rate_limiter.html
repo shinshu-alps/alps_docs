@@ -111,8 +111,6 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1control_1_1_change
 
 <p>時間あたりの変化量に制限をかけるクラス．  
  <a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="change__rate__limiter_8hpp_source.html">change_rate_limiter.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -227,101 +225,6 @@ template&lt;class Clock &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a6fddb4488af84dd04478b0842592d1c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fddb4488af84dd04478b0842592d1c2">&#9670;&nbsp;</a></span>GetLastOutput()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Clock &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">alps::cmn::control::ChangeRateLimiter</a>&lt; Clock &gt;::GetLastOutput </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>最後に出力した値を取得する </p>
-<dl class="section return"><dt>戻り値</dt><dd>float 最後に出力した値 </dd></dl>
-
-</div>
-</div>
-<a id="adb8e16921dd45cd3e14327a21340a5a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb8e16921dd45cd3e14327a21340a5a0">&#9670;&nbsp;</a></span>Reset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Clock &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">alps::cmn::control::ChangeRateLimiter</a>&lt; Clock &gt;::Reset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>初回フラグをリセットする </p>
-
-</div>
-</div>
-<a id="a16a2856d0c117d6111f6ffbbb2cce353"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16a2856d0c117d6111f6ffbbb2cce353">&#9670;&nbsp;</a></span>SetAbsChangeRateLimit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Clock &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">alps::cmn::control::ChangeRateLimiter</a>&lt; Clock &gt;::SetAbsChangeRateLimit </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>max_abs_change_rate</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>変化率の制限値を設定する（絶対値） </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">max_abs_change_rate</td><td>変化率の絶対値上限 [/sec]（正の値） </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="ad43383a570b70b93392936ae4176d7e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad43383a570b70b93392936ae4176d7e7">&#9670;&nbsp;</a></span>SetChangeRateLimit()</h2>
 
@@ -358,8 +261,8 @@ template&lt;class Clock &gt; </div>
 
 </div>
 </div>
-<a id="a8de74ebcdf4c6fa175d2b55483ed290f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8de74ebcdf4c6fa175d2b55483ed290f">&#9670;&nbsp;</a></span>SetLastOutput()</h2>
+<a id="a16a2856d0c117d6111f6ffbbb2cce353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16a2856d0c117d6111f6ffbbb2cce353">&#9670;&nbsp;</a></span>SetAbsChangeRateLimit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -370,10 +273,10 @@ template&lt;class Clock &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">alps::cmn::control::ChangeRateLimiter</a>&lt; Clock &gt;::SetLastOutput </td>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">alps::cmn::control::ChangeRateLimiter</a>&lt; Clock &gt;::SetAbsChangeRateLimit </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>last_output</em></td><td>)</td>
+          <td class="paramname"><em>max_abs_change_rate</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -384,10 +287,10 @@ template&lt;class Clock &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>前回の出力値を外部から設定する </p>
+<p>変化率の制限値を設定する（絶対値） </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">last_output</td><td>設定する前回の出力値 </td></tr>
+    <tr><td class="paramname">max_abs_change_rate</td><td>変化率の絶対値上限 [/sec]（正の値） </td></tr>
   </table>
   </dd>
 </dl>
@@ -431,8 +334,103 @@ template&lt;class Clock &gt; </div>
 
 </div>
 </div>
+<a id="a6fddb4488af84dd04478b0842592d1c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fddb4488af84dd04478b0842592d1c2">&#9670;&nbsp;</a></span>GetLastOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">alps::cmn::control::ChangeRateLimiter</a>&lt; Clock &gt;::GetLastOutput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>最後に出力した値を取得する </p>
+<dl class="section return"><dt>戻り値</dt><dd>float 最後に出力した値 </dd></dl>
+
+</div>
+</div>
+<a id="a8de74ebcdf4c6fa175d2b55483ed290f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8de74ebcdf4c6fa175d2b55483ed290f">&#9670;&nbsp;</a></span>SetLastOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">alps::cmn::control::ChangeRateLimiter</a>&lt; Clock &gt;::SetLastOutput </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>last_output</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>前回の出力値を外部から設定する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">last_output</td><td>設定する前回の出力値 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adb8e16921dd45cd3e14327a21340a5a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb8e16921dd45cd3e14327a21340a5a0">&#9670;&nbsp;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">alps::cmn::control::ChangeRateLimiter</a>&lt; Clock &gt;::Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初回フラグをリセットする </p>
+
+</div>
+</div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>alps_common_lib/include/alps_cmn/control/<a class="el" href="change__rate__limiter_8hpp_source.html">change_rate_limiter.hpp</a></li>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/control/<a class="el" href="change__rate__limiter_8hpp_source.html">change_rate_limiter.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

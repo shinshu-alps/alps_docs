@@ -1,7 +1,7 @@
-<map id="alps_common_lib/include/alps_cmn/gpio/i_digital_in.hpp" name="alps_common_lib/include/alps_cmn/gpio/i_digital_in.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="241,5,427,61"/>
-<area shape="rect" id="node2" href="$alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="5,109,223,165"/>
-<area shape="rect" id="node4" href="$digital__in_8hpp.html" title="デジタル入力ピン" alt="" coords="247,109,421,165"/>
-<area shape="rect" id="node5" href="$interrupt__in_8hpp.html" title="割り込み入力ピン" alt="" coords="446,109,635,165"/>
-<area shape="rect" id="node3" href="$alps__mbed__lib_2include_2alps__mbed_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="221,213,447,269"/>
+<map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/gpio/i_digital_in.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/gpio/i_digital_in.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="247,5,469,61"/>
+<area shape="rect" id="node2" href="$alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="5,109,223,180"/>
+<area shape="rect" id="node4" href="$digital__in_8hpp.html" title="デジタル入力ピン" alt="" coords="247,117,469,173"/>
+<area shape="rect" id="node5" href="$interrupt__in_8hpp.html" title="割り込み入力ピン" alt="" coords="493,117,729,173"/>
+<area shape="rect" id="node3" href="$alps__mbed__lib_2include_2alps__mbed_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="245,228,471,299"/>
 </map>

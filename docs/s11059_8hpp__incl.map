@@ -1,6 +1,6 @@
-<map id="alps_common_lib/include/alps_cmn/sensor/s11059.hpp" name="alps_common_lib/include/alps_cmn/sensor/s11059.hpp">
-<area shape="rect" id="node1" title="S11059&#45;02DTカラーセンサー用のライブラリ" alt="" coords="5,5,220,47"/>
-<area shape="rect" id="node2" href="$i__i2c__io_8hpp.html" title="I2C通信インタフェース" alt="" coords="18,95,207,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="29,184,95,211"/>
-<area shape="rect" id="node4" title=" " alt="" coords="120,184,207,211"/>
+<map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/s11059.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/s11059.hpp">
+<area shape="rect" id="node1" title="S11059&#45;02DTカラーセンサー用のライブラリ" alt="" coords="5,5,220,61"/>
+<area shape="rect" id="node2" href="$i__i2c__io_8hpp.html" title="I2C通信インタフェース" alt="" coords="18,109,207,151"/>
+<area shape="rect" id="node3" title=" " alt="" coords="29,199,95,225"/>
+<area shape="rect" id="node4" title=" " alt="" coords="120,199,207,225"/>
 </map>

@@ -260,8 +260,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="abca0b5b8905b931b8d2c300c72bb9f11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abca0b5b8905b931b8d2c300c72bb9f11">&#9670;&nbsp;</a></span>DegToRad() <span class="overload">[2/2]</span></h2>
+<a id="a7221e13d89b7e00969f1e0633d38e528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7221e13d89b7e00969f1e0633d38e528">&#9670;&nbsp;</a></span>RadToDeg() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -270,10 +270,10 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr float alps::cmn::util::DegToRad </td>
+          <td class="memname">constexpr double alps::cmn::util::RadToDeg </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>angle_deg</em></td><td>)</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle_rad</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -284,43 +284,14 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>度数法をラジアンに変換する </p>
+<p>ラジアンを度数法に変換する </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">angle_deg</td><td>角度 [deg] </td></tr>
+    <tr><td class="paramname">angle_rad</td><td>角度 [rad] </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>戻り値</dt><dd>float ラジアンへ変換後の角度 [rad] </dd></dl>
-
-</div>
-</div>
-<a id="a5197f01316a66383d77b45693034bcfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5197f01316a66383d77b45693034bcfc">&#9670;&nbsp;</a></span>GetElementNames()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::array&lt;const char *, 2&gt; alps::cmn::util::GetElementNames </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structalps_1_1cmn_1_1util_1_1_numeric_range.html">NumericRange</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>NumericRangeの要素名取得関数 </p>
-<dl class="tparams"><dt>テンプレート引数</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>数値型 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd>std::array&lt;const char *, 2&gt; 要素名の配列 </dd></dl>
+<dl class="section return"><dt>戻り値</dt><dd>double 度数法へ変換後の角度 [deg] </dd></dl>
 
 </div>
 </div>
@@ -359,8 +330,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a7dd23efe5c4394aa3ad742b313d0a2c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7dd23efe5c4394aa3ad742b313d0a2c0">&#9670;&nbsp;</a></span>NormalizeAngle() <span class="overload">[2/2]</span></h2>
+<a id="abca0b5b8905b931b8d2c300c72bb9f11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abca0b5b8905b931b8d2c300c72bb9f11">&#9670;&nbsp;</a></span>DegToRad() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -369,10 +340,10 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr float alps::cmn::util::NormalizeAngle </td>
+          <td class="memname">constexpr float alps::cmn::util::DegToRad </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>angle_rad</em></td><td>)</td>
+          <td class="paramname"><em>angle_deg</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -383,49 +354,14 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>角度をπ~-πの範囲に正規化する </p>
+<p>度数法をラジアンに変換する </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">angle_rad</td><td>角度 [rad] </td></tr>
+    <tr><td class="paramname">angle_deg</td><td>角度 [deg] </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>戻り値</dt><dd>float 正規化された角度 [rad] </dd></dl>
-
-</div>
-</div>
-<a id="a7221e13d89b7e00969f1e0633d38e528"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7221e13d89b7e00969f1e0633d38e528">&#9670;&nbsp;</a></span>RadToDeg() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr double alps::cmn::util::RadToDeg </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>angle_rad</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>ラジアンを度数法に変換する </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">angle_rad</td><td>角度 [rad] </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd>double 度数法へ変換後の角度 [deg] </dd></dl>
+<dl class="section return"><dt>戻り値</dt><dd>float ラジアンへ変換後の角度 [rad] </dd></dl>
 
 </div>
 </div>
@@ -461,6 +397,41 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>戻り値</dt><dd>float 度数法へ変換後の角度 [deg] </dd></dl>
+
+</div>
+</div>
+<a id="a7dd23efe5c4394aa3ad742b313d0a2c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dd23efe5c4394aa3ad742b313d0a2c0">&#9670;&nbsp;</a></span>NormalizeAngle() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float alps::cmn::util::NormalizeAngle </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>angle_rad</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>角度をπ~-πの範囲に正規化する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle_rad</td><td>角度 [rad] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>float 正規化された角度 [rad] </dd></dl>
 
 </div>
 </div>
@@ -504,6 +475,35 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>戻り値</dt><dd>constexpr std::tuple&lt;T &amp;, T &amp;&gt; 変換後のタプル．元のNumericRangeのlowestとmaxへの参照を持つ </dd></dl>
+
+</div>
+</div>
+<a id="a5197f01316a66383d77b45693034bcfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5197f01316a66383d77b45693034bcfc">&#9670;&nbsp;</a></span>GetElementNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;const char *, 2&gt; alps::cmn::util::GetElementNames </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structalps_1_1cmn_1_1util_1_1_numeric_range.html">NumericRange</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NumericRangeの要素名取得関数 </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>数値型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>std::array&lt;const char *, 2&gt; 要素名の配列 </dd></dl>
 
 </div>
 </div>

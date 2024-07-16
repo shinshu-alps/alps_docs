@@ -1,9 +1,9 @@
-<map id="alps_common_lib/include/alps_cmn/communication/can_callback_handler.hpp" name="alps_common_lib/include/alps_cmn/communication/can_callback_handler.hpp">
-<area shape="rect" id="node1" title="CANデータフレームをコールバックで処理するためのライブラリ" alt="" coords="178,5,371,61"/>
-<area shape="rect" id="node2" href="$i__can__io_8hpp.html" title=" " alt="" coords="5,109,195,151"/>
-<area shape="rect" id="node6" title=" " alt="" coords="219,117,331,143"/>
-<area shape="rect" id="node7" title=" " alt="" coords="355,117,512,143"/>
-<area shape="rect" id="node3" href="$can__data__frame_8hpp.html" title="CANフレームを表す構造体" alt="" coords="5,199,195,240"/>
-<area shape="rect" id="node4" title=" " alt="" coords="11,288,82,315"/>
-<area shape="rect" id="node5" title=" " alt="" coords="106,288,201,315"/>
+<map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/can_callback_handler.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/can_callback_handler.hpp">
+<area shape="rect" id="node1" title="CANデータフレームをコールバックで処理するためのライブラリ" alt="" coords="178,5,371,76"/>
+<area shape="rect" id="node2" href="$i__can__io_8hpp.html" title=" " alt="" coords="5,124,195,165"/>
+<area shape="rect" id="node6" title=" " alt="" coords="219,131,331,158"/>
+<area shape="rect" id="node7" title=" " alt="" coords="355,131,512,158"/>
+<area shape="rect" id="node3" href="$can__data__frame_8hpp.html" title="CANフレームを表す構造体" alt="" coords="5,213,195,255"/>
+<area shape="rect" id="node4" title=" " alt="" coords="11,303,82,329"/>
+<area shape="rect" id="node5" title=" " alt="" coords="106,303,201,329"/>
 </map>

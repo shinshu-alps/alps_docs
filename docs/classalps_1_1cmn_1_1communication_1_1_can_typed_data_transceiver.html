@@ -111,8 +111,6 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1_
 
 <p>CAN通信で型付けされたデータの送受信を行うクラス  
  <a href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="can__typed__data__transceiver_8hpp_source.html">can_typed_data_transceiver.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -179,8 +177,8 @@ template&lt;class CanIo , size_t kMaxSubscriberNum = 30&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a305b2a2ff1d360cf14a18c960afa420a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a305b2a2ff1d360cf14a18c960afa420a">&#9670;&nbsp;</a></span>GetCallbackHandlerRef()</h2>
+<a id="aecc26173b48d407d0ef45f19a04dbcb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecc26173b48d407d0ef45f19a04dbcb6">&#9670;&nbsp;</a></span>ReadUpdate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,7 +189,7 @@ template&lt;class CanIo , size_t kMaxSubscriberNum = 30&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html">CanCallbackHandler</a>&lt;kMaxSubscriberNum&gt;&amp; <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">alps::cmn::communication::CanTypedDataTransceiver</a>&lt; CanIo, kMaxSubscriberNum &gt;::GetCallbackHandlerRef </td>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">alps::cmn::communication::CanTypedDataTransceiver</a>&lt; CanIo, kMaxSubscriberNum &gt;::ReadUpdate </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -204,8 +202,7 @@ template&lt;class CanIo , size_t kMaxSubscriberNum = 30&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>保持するCANコールバックハンドラの参照を返す </p>
-<dl class="section return"><dt>戻り値</dt><dd>CanCallbackHandler&lt;kMaxSubscriberNum&gt;&amp; CANコールバックハンドラの参照 </dd></dl>
+<p>CANを受信し，受け取ったデータのIDに対応するコールバックを呼ぶ </p>
 
 </div>
 </div>
@@ -239,8 +236,8 @@ template&lt;class CanIo , size_t kMaxSubscriberNum = 30&gt; </div>
 
 </div>
 </div>
-<a id="aecc26173b48d407d0ef45f19a04dbcb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecc26173b48d407d0ef45f19a04dbcb6">&#9670;&nbsp;</a></span>ReadUpdate()</h2>
+<a id="a305b2a2ff1d360cf14a18c960afa420a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a305b2a2ff1d360cf14a18c960afa420a">&#9670;&nbsp;</a></span>GetCallbackHandlerRef()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -251,7 +248,7 @@ template&lt;class CanIo , size_t kMaxSubscriberNum = 30&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">alps::cmn::communication::CanTypedDataTransceiver</a>&lt; CanIo, kMaxSubscriberNum &gt;::ReadUpdate </td>
+          <td class="memname"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html">CanCallbackHandler</a>&lt;kMaxSubscriberNum&gt;&amp; <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html">alps::cmn::communication::CanTypedDataTransceiver</a>&lt; CanIo, kMaxSubscriberNum &gt;::GetCallbackHandlerRef </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -264,12 +261,13 @@ template&lt;class CanIo , size_t kMaxSubscriberNum = 30&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>CANを受信し，受け取ったデータのIDに対応するコールバックを呼ぶ </p>
+<p>保持するCANコールバックハンドラの参照を返す </p>
+<dl class="section return"><dt>戻り値</dt><dd>CanCallbackHandler&lt;kMaxSubscriberNum&gt;&amp; CANコールバックハンドラの参照 </dd></dl>
 
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>alps_common_lib/include/alps_cmn/communication/<a class="el" href="can__typed__data__transceiver_8hpp_source.html">can_typed_data_transceiver.hpp</a></li>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/<a class="el" href="can__typed__data__transceiver_8hpp_source.html">can_typed_data_transceiver.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

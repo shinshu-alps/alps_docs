@@ -111,8 +111,6 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1_
 
 <p>UART通信でパケットを送受信するためのクラス  
  <a href="classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="uart__packet__transceiver_8hpp_source.html">uart_packet_transceiver.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -188,21 +186,24 @@ template&lt;class UartIo , size_t kReadBufferSize = 512, size_t kMaxSenderNum = 
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="ac48fb6dc7fdeab3611fbddfff0cb779e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac48fb6dc7fdeab3611fbddfff0cb779e">&#9670;&nbsp;</a></span>ReadUpdate()</h2>
+<a id="ac98a3e16c094fed59d8b810195ab0e58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac98a3e16c094fed59d8b810195ab0e58">&#9670;&nbsp;</a></span>RegisterUartSender()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class UartIo , size_t kReadBufferSize = 512, size_t kMaxSenderNum = 20, size_t kMaxReceiveNum = 20, size_t kMaxDataByteSize = kReadBufferSize&gt; </div>
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html">alps::cmn::communication::UartPacketTransceiver</a>&lt; UartIo, kReadBufferSize, kMaxSenderNum, kMaxReceiveNum, kMaxDataByteSize &gt;::ReadUpdate </td>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html">alps::cmn::communication::UartPacketTransceiver</a>&lt; UartIo, kReadBufferSize, kMaxSenderNum, kMaxReceiveNum, kMaxDataByteSize &gt;::RegisterUartSender </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_uart_sender.html">UartSender</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sender</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -213,7 +214,19 @@ template&lt;class UartIo , size_t kReadBufferSize = 512, size_t kMaxSenderNum = 
 </table>
 </div><div class="memdoc">
 
-<p>UART通信IOからデータを読み込み，UartReceiverに登録されたコールバック関数を呼び出す． </p>
+<p>UartSenderを登録する </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>送信するデータの型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sender</td><td>登録するUartSenderのインスタンス </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -264,50 +277,6 @@ false 登録失敗（IDが重複している） </dd></dl>
 
 </div>
 </div>
-<a id="ac98a3e16c094fed59d8b810195ab0e58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac98a3e16c094fed59d8b810195ab0e58">&#9670;&nbsp;</a></span>RegisterUartSender()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class UartIo , size_t kReadBufferSize = 512, size_t kMaxSenderNum = 20, size_t kMaxReceiveNum = 20, size_t kMaxDataByteSize = kReadBufferSize&gt; </div>
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html">alps::cmn::communication::UartPacketTransceiver</a>&lt; UartIo, kReadBufferSize, kMaxSenderNum, kMaxReceiveNum, kMaxDataByteSize &gt;::RegisterUartSender </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_uart_sender.html">UartSender</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>sender</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>UartSenderを登録する </p>
-<dl class="tparams"><dt>テンプレート引数</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>送信するデータの型 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sender</td><td>登録するUartSenderのインスタンス </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a8698ff8ee6cd0ce1ec96483794bbe8b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8698ff8ee6cd0ce1ec96483794bbe8b1">&#9670;&nbsp;</a></span>WriteUpdate()</h2>
 
@@ -340,8 +309,37 @@ false 送信失敗 </dd></dl>
 
 </div>
 </div>
+<a id="ac48fb6dc7fdeab3611fbddfff0cb779e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac48fb6dc7fdeab3611fbddfff0cb779e">&#9670;&nbsp;</a></span>ReadUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UartIo , size_t kReadBufferSize = 512, size_t kMaxSenderNum = 20, size_t kMaxReceiveNum = 20, size_t kMaxDataByteSize = kReadBufferSize&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html">alps::cmn::communication::UartPacketTransceiver</a>&lt; UartIo, kReadBufferSize, kMaxSenderNum, kMaxReceiveNum, kMaxDataByteSize &gt;::ReadUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>UART通信IOからデータを読み込み，UartReceiverに登録されたコールバック関数を呼び出す． </p>
+
+</div>
+</div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>alps_common_lib/include/alps_cmn/communication/<a class="el" href="uart__packet__transceiver_8hpp_source.html">uart_packet_transceiver.hpp</a></li>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/<a class="el" href="uart__packet__transceiver_8hpp_source.html">uart_packet_transceiver.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

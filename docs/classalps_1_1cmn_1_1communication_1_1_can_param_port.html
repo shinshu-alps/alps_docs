@@ -112,8 +112,6 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1_
 
 <p>CANでパラメータを送受信するための管理クラス  
  <a href="classalps_1_1cmn_1_1communication_1_1_can_param_port.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="can__param_8hpp_source.html">can_param.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -224,8 +222,8 @@ template&lt;class CanIo , size_t kMaxSubscriberNum&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a684025a3bbc5195b7a0471c92657934e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a684025a3bbc5195b7a0471c92657934e">&#9670;&nbsp;</a></span>EnqueueUpdatedParamQueue()</h2>
+<a id="ae5c38e796d671ccd257eb3b51d677a06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c38e796d671ccd257eb3b51d677a06">&#9670;&nbsp;</a></span>Update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -236,10 +234,9 @@ template&lt;size_t kMaxParamNum&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_param_port.html">alps::cmn::communication::CanParamPort</a>&lt; kMaxParamNum &gt;::EnqueueUpdatedParamQueue </td>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_param_port.html">alps::cmn::communication::CanParamPort</a>&lt; kMaxParamNum &gt;::Update </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">CanDataFrame::Id</a>&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -250,13 +247,65 @@ template&lt;size_t kMaxParamNum&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>指定したIDのパラメータ値を送信するようにキューに追加する </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td>パラメータID </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>周期処理 </p>
+
+</div>
+</div>
+<a id="ac6bc68a3d8f2ae98ef77c9a2323c5825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6bc68a3d8f2ae98ef77c9a2323c5825">&#9670;&nbsp;</a></span>SendAllServerValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t kMaxParamNum&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_param_port.html">alps::cmn::communication::CanParamPort</a>&lt; kMaxParamNum &gt;::SendAllServerValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>すべてのサーバーのパラメータを送信する </p>
+
+</div>
+</div>
+<a id="a5bf3ccbb1a23d0071382907c1e145f59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bf3ccbb1a23d0071382907c1e145f59">&#9670;&nbsp;</a></span>SendAllCliantRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t kMaxParamNum&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_param_port.html">alps::cmn::communication::CanParamPort</a>&lt; kMaxParamNum &gt;::SendAllCliantRequest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>すべてのクライアントのパラメータ取得リクエストを送信する </p>
 
 </div>
 </div>
@@ -339,42 +388,6 @@ template&lt;size_t kMaxParamNum&gt; </div>
 
 </div>
 </div>
-<a id="a890acf778c49d2a4ac113b814046bcae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a890acf778c49d2a4ac113b814046bcae">&#9670;&nbsp;</a></span>RegisterParamClient()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t kMaxParamNum&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_param_port.html">alps::cmn::communication::CanParamPort</a>&lt; kMaxParamNum &gt;::RegisterParamClient </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">CanDataFrame::Id</a>&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>パラメータクライアントを登録する </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td>パラメータID </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="aecc6a170e2be859b1583eb88a9563d08"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aecc6a170e2be859b1583eb88a9563d08">&#9670;&nbsp;</a></span>RegisterParamServer()</h2>
 
@@ -411,8 +424,8 @@ template&lt;size_t kMaxParamNum&gt; </div>
 
 </div>
 </div>
-<a id="a5bf3ccbb1a23d0071382907c1e145f59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5bf3ccbb1a23d0071382907c1e145f59">&#9670;&nbsp;</a></span>SendAllCliantRequest()</h2>
+<a id="a890acf778c49d2a4ac113b814046bcae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a890acf778c49d2a4ac113b814046bcae">&#9670;&nbsp;</a></span>RegisterParamClient()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -423,9 +436,10 @@ template&lt;size_t kMaxParamNum&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_param_port.html">alps::cmn::communication::CanParamPort</a>&lt; kMaxParamNum &gt;::SendAllCliantRequest </td>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_param_port.html">alps::cmn::communication::CanParamPort</a>&lt; kMaxParamNum &gt;::RegisterParamClient </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">CanDataFrame::Id</a>&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -436,36 +450,13 @@ template&lt;size_t kMaxParamNum&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>すべてのクライアントのパラメータ取得リクエストを送信する </p>
-
-</div>
-</div>
-<a id="ac6bc68a3d8f2ae98ef77c9a2323c5825"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6bc68a3d8f2ae98ef77c9a2323c5825">&#9670;&nbsp;</a></span>SendAllServerValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t kMaxParamNum&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_param_port.html">alps::cmn::communication::CanParamPort</a>&lt; kMaxParamNum &gt;::SendAllServerValue </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>すべてのサーバーのパラメータを送信する </p>
+<p>パラメータクライアントを登録する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>パラメータID </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -505,8 +496,8 @@ template&lt;size_t kMaxParamNum&gt; </div>
 
 </div>
 </div>
-<a id="ae5c38e796d671ccd257eb3b51d677a06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5c38e796d671ccd257eb3b51d677a06">&#9670;&nbsp;</a></span>Update()</h2>
+<a id="a684025a3bbc5195b7a0471c92657934e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a684025a3bbc5195b7a0471c92657934e">&#9670;&nbsp;</a></span>EnqueueUpdatedParamQueue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -517,9 +508,10 @@ template&lt;size_t kMaxParamNum&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_param_port.html">alps::cmn::communication::CanParamPort</a>&lt; kMaxParamNum &gt;::Update </td>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_param_port.html">alps::cmn::communication::CanParamPort</a>&lt; kMaxParamNum &gt;::EnqueueUpdatedParamQueue </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html#a71f3c6326cd6375c2bfe754539f3d07f">CanDataFrame::Id</a>&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -530,7 +522,13 @@ template&lt;size_t kMaxParamNum&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>周期処理 </p>
+<p>指定したIDのパラメータ値を送信するようにキューに追加する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>パラメータID </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -554,7 +552,7 @@ template&lt;size_t kMaxParamNum&gt; </div>
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>alps_common_lib/include/alps_cmn/communication/<a class="el" href="can__param_8hpp_source.html">can_param.hpp</a></li>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/<a class="el" href="can__param_8hpp_source.html">can_param.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

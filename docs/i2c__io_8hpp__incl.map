@@ -1,7 +1,7 @@
-<map id="alps_mbed_lib/include/alps_mbed/communication/i2c_io.hpp" name="alps_mbed_lib/include/alps_mbed/communication/i2c_io.hpp">
-<area shape="rect" id="node1" title="I2C通信インタフェース" alt="" coords="76,5,279,61"/>
-<area shape="rect" id="node2" href="$i__i2c__io_8hpp.html" title="I2C通信インタフェース" alt="" coords="5,109,195,151"/>
-<area shape="rect" id="node5" title=" " alt="" coords="219,117,290,143"/>
-<area shape="rect" id="node3" title=" " alt="" coords="16,199,83,225"/>
-<area shape="rect" id="node4" title=" " alt="" coords="107,199,194,225"/>
+<map id="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/communication/i2c_io.hpp" name="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/communication/i2c_io.hpp">
+<area shape="rect" id="node1" title="I2C通信インタフェース" alt="" coords="76,5,279,76"/>
+<area shape="rect" id="node2" href="$i__i2c__io_8hpp.html" title="I2C通信インタフェース" alt="" coords="5,124,195,165"/>
+<area shape="rect" id="node5" title=" " alt="" coords="219,131,290,158"/>
+<area shape="rect" id="node3" title=" " alt="" coords="16,213,83,240"/>
+<area shape="rect" id="node4" title=" " alt="" coords="107,213,194,240"/>
 </map>

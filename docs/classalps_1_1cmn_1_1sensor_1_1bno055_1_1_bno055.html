@@ -111,8 +111,6 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1sensor_1_1bno055_1
 
 <p>9軸センサ(加速度，ジャイロ，地磁気) BNO055  
  <a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="bno055_8hpp_source.html">bno055.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -254,6 +252,45 @@ false 取得失敗 </dd></dl>
 
 </div>
 </div>
+<a id="afaa7b52032f49e1205c68cf0370c2f53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaa7b52032f49e1205c68cf0370c2f53">&#9670;&nbsp;</a></span>GetMagneticVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html">alps::cmn::sensor::bno055::Bno055</a>&lt; I2cIo &gt;::GetMagneticVector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html">MagneticVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>output</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>地磁気を取得する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output</td><td>取得した地磁気を格納する変数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 取得成功 </dd>
+<dd>
+false 取得失敗 </dd></dl>
+
+</div>
+</div>
 <a id="a9c34e3548306e0fdf84db81b892e5a0f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9c34e3548306e0fdf84db81b892e5a0f">&#9670;&nbsp;</a></span>GetAngularVelocity()</h2>
 
@@ -332,8 +369,8 @@ false 取得失敗 </dd></dl>
 
 </div>
 </div>
-<a id="ac41f26014293156d61cc8612d3c1c815"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac41f26014293156d61cc8612d3c1c815">&#9670;&nbsp;</a></span>GetGravityVector()</h2>
+<a id="a0159547bfccec39fbe363fa1bd4ae6e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0159547bfccec39fbe363fa1bd4ae6e0">&#9670;&nbsp;</a></span>GetQuaternion()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -344,9 +381,9 @@ template&lt;class I2cIo &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html">alps::cmn::sensor::bno055::Bno055</a>&lt; I2cIo &gt;::GetGravityVector </td>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html">alps::cmn::sensor::bno055::Bno055</a>&lt; I2cIo &gt;::GetQuaternion </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html">GravityVector</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td>
           <td class="paramname"><em>output</em></td><td>)</td>
           <td></td>
         </tr>
@@ -358,10 +395,10 @@ template&lt;class I2cIo &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>重力加速度を取得する </p>
+<p>クォータニオンを取得する </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">output</td><td>取得した重力加速度を格納する変数 </td></tr>
+    <tr><td class="paramname">output</td><td>取得したクォータニオンを格納する変数 </td></tr>
   </table>
   </dd>
 </dl>
@@ -410,8 +447,8 @@ false 取得失敗 </dd></dl>
 
 </div>
 </div>
-<a id="afaa7b52032f49e1205c68cf0370c2f53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afaa7b52032f49e1205c68cf0370c2f53">&#9670;&nbsp;</a></span>GetMagneticVector()</h2>
+<a id="ac41f26014293156d61cc8612d3c1c815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac41f26014293156d61cc8612d3c1c815">&#9670;&nbsp;</a></span>GetGravityVector()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -422,9 +459,9 @@ template&lt;class I2cIo &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html">alps::cmn::sensor::bno055::Bno055</a>&lt; I2cIo &gt;::GetMagneticVector </td>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html">alps::cmn::sensor::bno055::Bno055</a>&lt; I2cIo &gt;::GetGravityVector </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html">MagneticVector</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html">GravityVector</a> &amp;&#160;</td>
           <td class="paramname"><em>output</em></td><td>)</td>
           <td></td>
         </tr>
@@ -436,49 +473,10 @@ template&lt;class I2cIo &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>地磁気を取得する </p>
+<p>重力加速度を取得する </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">output</td><td>取得した地磁気を格納する変数 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd>true 取得成功 </dd>
-<dd>
-false 取得失敗 </dd></dl>
-
-</div>
-</div>
-<a id="a0159547bfccec39fbe363fa1bd4ae6e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0159547bfccec39fbe363fa1bd4ae6e0">&#9670;&nbsp;</a></span>GetQuaternion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class I2cIo &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html">alps::cmn::sensor::bno055::Bno055</a>&lt; I2cIo &gt;::GetQuaternion </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td>
-          <td class="paramname"><em>output</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>クォータニオンを取得する </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">output</td><td>取得したクォータニオンを格納する変数 </td></tr>
+    <tr><td class="paramname">output</td><td>取得した重力加速度を格納する変数 </td></tr>
   </table>
   </dd>
 </dl>
@@ -557,7 +555,7 @@ template&lt;class I2cIo &gt; </div>
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>alps_common_lib/include/alps_cmn/sensor/<a class="el" href="bno055_8hpp_source.html">bno055.hpp</a></li>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/<a class="el" href="bno055_8hpp_source.html">bno055.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

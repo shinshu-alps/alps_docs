@@ -111,8 +111,6 @@ $(document).ready(function(){initNavTree('structalps_1_1ros2_1_1type_1_1_topic_c
 
 <p>あるデータ型とROSトピック型の相互変換関数をまとめた構造体  
  <a href="structalps_1_1ros2_1_1type_1_1_topic_converter.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="topic__converter_8hpp_source.html">topic_converter.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 静的公開メンバ関数</h2></td></tr>
@@ -181,43 +179,6 @@ struct alps::ros2::type::TopicConverter&lt; OriginalType, RosTopicType, typename
   </dd>
 </dl>
 </div><h2 class="groupheader">関数詳解</h2>
-<a id="a6eb763d9348fc5707584f313dd77137d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6eb763d9348fc5707584f313dd77137d">&#9670;&nbsp;</a></span>ToOriginal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename OriginalType , typename RosTopicType , typename  = void&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static std::optional&lt;OriginalType&gt; <a class="el" href="structalps_1_1ros2_1_1type_1_1_topic_converter.html">alps::ros2::type::TopicConverter</a>&lt; OriginalType, RosTopicType, typename &gt;::ToOriginal </td>
-          <td>(</td>
-          <td class="paramtype">const RosTopicType &amp;&#160;</td>
-          <td class="paramname"><em>ros_topic_data</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>ROSトピック型から元のデータ型への変換関数 </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ros_topic_data</td><td>ROSトピック型のデータ </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd>std::optional&lt;OriginalType&gt; 元のデータ型に変換したデータ </dd></dl>
-
-</div>
-</div>
 <a id="a3ef327595b15302ccc8cd44c2a3e7619"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ef327595b15302ccc8cd44c2a3e7619">&#9670;&nbsp;</a></span>ToTopic()</h2>
 
@@ -255,8 +216,45 @@ template&lt;typename OriginalType , typename RosTopicType , typename  = void&gt;
 
 </div>
 </div>
+<a id="a6eb763d9348fc5707584f313dd77137d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eb763d9348fc5707584f313dd77137d">&#9670;&nbsp;</a></span>ToOriginal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename OriginalType , typename RosTopicType , typename  = void&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::optional&lt;OriginalType&gt; <a class="el" href="structalps_1_1ros2_1_1type_1_1_topic_converter.html">alps::ros2::type::TopicConverter</a>&lt; OriginalType, RosTopicType, typename &gt;::ToOriginal </td>
+          <td>(</td>
+          <td class="paramtype">const RosTopicType &amp;&#160;</td>
+          <td class="paramname"><em>ros_topic_data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ROSトピック型から元のデータ型への変換関数 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ros_topic_data</td><td>ROSトピック型のデータ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>std::optional&lt;OriginalType&gt; 元のデータ型に変換したデータ </dd></dl>
+
+</div>
+</div>
 <hr/>この構造体詳解は次のファイルから抽出されました:<ul>
-<li>alps_ros2_lib/include/alps_ros2/type/<a class="el" href="topic__converter_8hpp_source.html">topic_converter.hpp</a></li>
+<li>alps_core/lib_internal/alps_ros2_lib/include/alps_ros2/type/<a class="el" href="topic__converter_8hpp_source.html">topic_converter.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,7 +1,7 @@
-<map id="alps_common_lib/include/alps_cmn/sensor/tcs34725.hpp" name="alps_common_lib/include/alps_cmn/sensor/tcs34725.hpp">
-<area shape="rect" id="node1" title="カラーセンサーTCS34725のクラス" alt="" coords="5,5,232,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="9,102,76,129"/>
-<area shape="rect" id="node3" href="$i__i2c__io_8hpp.html" title="I2C通信インタフェース" alt="" coords="100,95,289,136"/>
-<area shape="rect" id="node4" title=" " alt="" coords="111,184,177,211"/>
-<area shape="rect" id="node5" title=" " alt="" coords="202,184,289,211"/>
+<map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/tcs34725.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/tcs34725.hpp">
+<area shape="rect" id="node1" title="カラーセンサーTCS34725のクラス" alt="" coords="5,5,232,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="9,117,76,143"/>
+<area shape="rect" id="node3" href="$i__i2c__io_8hpp.html" title="I2C通信インタフェース" alt="" coords="100,109,289,151"/>
+<area shape="rect" id="node4" title=" " alt="" coords="111,199,177,225"/>
+<area shape="rect" id="node5" title=" " alt="" coords="202,199,289,225"/>
 </map>

@@ -111,8 +111,6 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1_
 
 <p>CANの受信をコールバックで処理するためのクラス  
  <a href="classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="can__callback__handler_8hpp_source.html">can_callback_handler.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -136,50 +134,6 @@ class alps::cmn::communication::CanCallbackHandler&lt; kMaxCallbackNum &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">関数詳解</h2>
-<a id="a85fd7006d5b92b4381294eb653ae52c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85fd7006d5b92b4381294eb653ae52c9">&#9670;&nbsp;</a></span>InvokeCallbacksForReceivedFrames()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t kMaxCallbackNum = 30&gt; </div>
-<div class="memtemplate">
-template&lt;class CanIo &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html">alps::cmn::communication::CanCallbackHandler</a>&lt; kMaxCallbackNum &gt;::InvokeCallbacksForReceivedFrames </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">ICanIo</a>&lt; CanIo &gt; &amp;&#160;</td>
-          <td class="paramname"><em>can_io</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>CANの受信インタフェースを借用し，受信したデータに対応するコールバックを呼び出す </p>
-<dl class="tparams"><dt>テンプレート引数</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">CanIo</td><td>ICanIoインタフェースの実装クラス </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">can_io</td><td>CANの読み取りインタフェース </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="abe04ac560276f71961e7b5f636555397"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abe04ac560276f71961e7b5f636555397">&#9670;&nbsp;</a></span>RegisterReceiveCallback()</h2>
 
@@ -230,8 +184,52 @@ false 登録失敗（コールバックの登録数が上限に達している�
 
 </div>
 </div>
+<a id="a85fd7006d5b92b4381294eb653ae52c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85fd7006d5b92b4381294eb653ae52c9">&#9670;&nbsp;</a></span>InvokeCallbacksForReceivedFrames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t kMaxCallbackNum = 30&gt; </div>
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html">alps::cmn::communication::CanCallbackHandler</a>&lt; kMaxCallbackNum &gt;::InvokeCallbacksForReceivedFrames </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">ICanIo</a>&lt; CanIo &gt; &amp;&#160;</td>
+          <td class="paramname"><em>can_io</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>CANの受信インタフェースを借用し，受信したデータに対応するコールバックを呼び出す </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">CanIo</td><td>ICanIoインタフェースの実装クラス </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">can_io</td><td>CANの読み取りインタフェース </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>alps_common_lib/include/alps_cmn/communication/<a class="el" href="can__callback__handler_8hpp_source.html">can_callback_handler.hpp</a></li>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/<a class="el" href="can__callback__handler_8hpp_source.html">can_callback_handler.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

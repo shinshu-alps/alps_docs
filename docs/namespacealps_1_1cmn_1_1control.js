@@ -16,11 +16,11 @@ var namespacealps_1_1cmn_1_1control =
     [ "PidParam", "structalps_1_1cmn_1_1control_1_1_pid_param.html", "structalps_1_1cmn_1_1control_1_1_pid_param" ],
     [ "PidCalcInfo", "structalps_1_1cmn_1_1control_1_1_pid_calc_info.html", "structalps_1_1cmn_1_1control_1_1_pid_calc_info" ],
     [ "Pid", "classalps_1_1cmn_1_1control_1_1_pid.html", "classalps_1_1cmn_1_1control_1_1_pid" ],
-    [ "GetElementNames", "namespacealps_1_1cmn_1_1control.html#a96de904d363dbe5fb59028c6832844f4", null ],
-    [ "GetElementNames", "namespacealps_1_1cmn_1_1control.html#a5e1283f1785840b33a35ac4506eb1751", null ],
     [ "ToTiedTuple", "namespacealps_1_1cmn_1_1control.html#acd6ac0a4e41ae483c3938e540cad06b2", null ],
-    [ "ToTiedTuple", "namespacealps_1_1cmn_1_1control.html#a0316f7de5ad97ee8265f974ac6125dcd", null ],
     [ "ToTiedTuple", "namespacealps_1_1cmn_1_1control.html#a7cc4e8bfd147c3a996a1c374d47a998f", null ],
-    [ "ToTiedTuple", "namespacealps_1_1cmn_1_1control.html#a66474af000aa23edf755391252043e0b", null ],
-    [ "ToTiedTuple", "namespacealps_1_1cmn_1_1control.html#a6fe8c1a308bb53f775a5d63327a396e6", null ]
+    [ "GetElementNames", "namespacealps_1_1cmn_1_1control.html#a96de904d363dbe5fb59028c6832844f4", null ],
+    [ "ToTiedTuple", "namespacealps_1_1cmn_1_1control.html#a0316f7de5ad97ee8265f974ac6125dcd", null ],
+    [ "ToTiedTuple", "namespacealps_1_1cmn_1_1control.html#a6fe8c1a308bb53f775a5d63327a396e6", null ],
+    [ "GetElementNames", "namespacealps_1_1cmn_1_1control.html#a5e1283f1785840b33a35ac4506eb1751", null ],
+    [ "ToTiedTuple", "namespacealps_1_1cmn_1_1control.html#a66474af000aa23edf755391252043e0b", null ]
 ];

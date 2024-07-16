@@ -111,8 +111,6 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1control_1_1_pid.ht
 
 <p>PID制御器  
  <a href="classalps_1_1cmn_1_1control_1_1_pid.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="pid_8hpp_source.html">pid.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -264,6 +262,35 @@ template&lt;class Clock &gt; </div>
 
 </div>
 </div>
+<a id="adeeb93dc4a8c1c7ff379b3bbc5407c0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeeb93dc4a8c1c7ff379b3bbc5407c0c">&#9670;&nbsp;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>前回までの計算情報をリセットする </p>
+
+</div>
+</div>
 <a id="a9de7c53135d0f925376371273d11997d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9de7c53135d0f925376371273d11997d">&#9670;&nbsp;</a></span>CheckConvergence()</h2>
 
@@ -373,8 +400,8 @@ template&lt;class Clock &gt; </div>
 
 </div>
 </div>
-<a id="a6a5828e20f1956ab992b348e70906bf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a5828e20f1956ab992b348e70906bf3">&#9670;&nbsp;</a></span>IsSaturated()</h2>
+<a id="ab74c144cb4cf2ea73e46a981671389fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74c144cb4cf2ea73e46a981671389fb">&#9670;&nbsp;</a></span>SetParam()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -385,41 +412,10 @@ template&lt;class Clock &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::IsSaturated </td>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::SetParam </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>出力値が飽和しているかどうか </p>
-<dl class="section return"><dt>戻り値</dt><dd>true 飽和している </dd>
-<dd>
-false 飽和していない </dd></dl>
-
-</div>
-</div>
-<a id="adeeb93dc4a8c1c7ff379b3bbc5407c0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adeeb93dc4a8c1c7ff379b3bbc5407c0c">&#9670;&nbsp;</a></span>Reset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Clock &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::Reset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a> &amp;&#160;</td>
+          <td class="paramname"><em>pid_param</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -430,7 +426,13 @@ template&lt;class Clock &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>前回までの計算情報をリセットする </p>
+<p>PIDのパラメータを設定する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pid_param</td><td>PIDのパラメータ </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -470,8 +472,8 @@ template&lt;class Clock &gt; </div>
 
 </div>
 </div>
-<a id="ab74c144cb4cf2ea73e46a981671389fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab74c144cb4cf2ea73e46a981671389fb">&#9670;&nbsp;</a></span>SetParam()</h2>
+<a id="a6a5828e20f1956ab992b348e70906bf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a5828e20f1956ab992b348e70906bf3">&#9670;&nbsp;</a></span>IsSaturated()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -482,11 +484,10 @@ template&lt;class Clock &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::SetParam </td>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html">alps::cmn::control::Pid</a>&lt; Clock &gt;::IsSaturated </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a> &amp;&#160;</td>
-          <td class="paramname"><em>pid_param</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -496,18 +497,15 @@ template&lt;class Clock &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>PIDのパラメータを設定する </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pid_param</td><td>PIDのパラメータ </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>出力値が飽和しているかどうか </p>
+<dl class="section return"><dt>戻り値</dt><dd>true 飽和している </dd>
+<dd>
+false 飽和していない </dd></dl>
 
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>alps_common_lib/include/alps_cmn/control/<a class="el" href="pid_8hpp_source.html">pid.hpp</a></li>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/control/<a class="el" href="pid_8hpp_source.html">pid.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

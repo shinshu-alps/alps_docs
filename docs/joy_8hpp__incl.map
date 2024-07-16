@@ -1,9 +1,9 @@
-<map id="alps_ros2_lib/include/alps_ros2/ui/joy.hpp" name="alps_ros2_lib/include/alps_ros2/ui/joy.hpp">
-<area shape="rect" id="node1" title="プレイステーションジョイコントローラーのクラス" alt="" coords="193,5,351,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,95,61,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="86,95,173,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="197,95,248,121"/>
-<area shape="rect" id="node5" title=" " alt="" coords="273,95,370,121"/>
-<area shape="rect" id="node6" title=" " alt="" coords="394,95,526,121"/>
-<area shape="rect" id="node7" title=" " alt="" coords="551,95,740,121"/>
+<map id="alps_core/lib_internal/alps_ros2_lib/include/alps_ros2/ui/joy.hpp" name="alps_core/lib_internal/alps_ros2_lib/include/alps_ros2/ui/joy.hpp">
+<area shape="rect" id="node1" title="プレイステーションジョイコントローラーのクラス" alt="" coords="191,5,353,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,109,61,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="86,109,173,136"/>
+<area shape="rect" id="node4" title=" " alt="" coords="197,109,248,136"/>
+<area shape="rect" id="node5" title=" " alt="" coords="273,109,370,136"/>
+<area shape="rect" id="node6" title=" " alt="" coords="394,109,526,136"/>
+<area shape="rect" id="node7" title=" " alt="" coords="551,109,740,136"/>
 </map>

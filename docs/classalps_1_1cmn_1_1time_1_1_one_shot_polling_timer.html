@@ -112,8 +112,6 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1time_1_1_one_shot_
 
 <p>1回だけ実行するポーリングタイマークラス  
  <a href="classalps_1_1cmn_1_1time_1_1_one_shot_polling_timer.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="one__shot__polling__timer_8hpp_source.html">one_shot_polling_timer.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 公開型</h2></td></tr>
@@ -212,35 +210,6 @@ template&lt;class Clock &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a17758d8d537864f96938f53b74b7a8f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17758d8d537864f96938f53b74b7a8f6">&#9670;&nbsp;</a></span>Reset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Clock &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1time_1_1_one_shot_polling_timer.html">alps::cmn::time::OneShotPollingTimer</a>&lt; Clock &gt;::Reset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>コールバックの実行済みフラグと，タイムアウトのカウント開始時刻をリセットする </p>
-
-</div>
-</div>
 <a id="a34c08039ade1c5e70a7949f99f262d31"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a34c08039ade1c5e70a7949f99f262d31">&#9670;&nbsp;</a></span>Update()</h2>
 
@@ -273,8 +242,37 @@ false タイムアウトしていない or コールバックは実行済み </d
 
 </div>
 </div>
+<a id="a17758d8d537864f96938f53b74b7a8f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17758d8d537864f96938f53b74b7a8f6">&#9670;&nbsp;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1time_1_1_one_shot_polling_timer.html">alps::cmn::time::OneShotPollingTimer</a>&lt; Clock &gt;::Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コールバックの実行済みフラグと，タイムアウトのカウント開始時刻をリセットする </p>
+
+</div>
+</div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>alps_common_lib/include/alps_cmn/time/<a class="el" href="one__shot__polling__timer_8hpp_source.html">one_shot_polling_timer.hpp</a></li>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/time/<a class="el" href="one__shot__polling__timer_8hpp_source.html">one_shot_polling_timer.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -111,8 +111,6 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1control_1_1_motor
 
 <p>モーターの速度制御のパラメータ  
  <a href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="motor__velocity__controller_8hpp_source.html">motor_velocity_controller.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 公開変数類</h2></td></tr>
@@ -135,35 +133,19 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1control_1_1_motor
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>モーターの速度制御のパラメータ </p>
 </div><h2 class="groupheader">メンバ詳解</h2>
-<a id="aa42e1b756097893f29c2b9152bd3a594"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa42e1b756097893f29c2b9152bd3a594">&#9670;&nbsp;</a></span>kff_acceleration</h2>
+<a id="a94c0cf6e73fc510cb1c94b910a524f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94c0cf6e73fc510cb1c94b910a524f1e">&#9670;&nbsp;</a></span>pid_param</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float alps::cmn::control::MotorVelocityControllerParam::kff_acceleration = 0.0f</td>
+          <td class="memname"><a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a> alps::cmn::control::MotorVelocityControllerParam::pid_param</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>角加速度フィードフォワードゲイン </p>
-
-</div>
-</div>
-<a id="abeada49dcefaa39a1439a1a09eaef91c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abeada49dcefaa39a1439a1a09eaef91c">&#9670;&nbsp;</a></span>kff_velocity</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float alps::cmn::control::MotorVelocityControllerParam::kff_velocity = 0.0f</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>角速度フィードフォワードゲイン </p>
+<p>角速度PIDパラメータ </p>
 
 </div>
 </div>
@@ -183,19 +165,35 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1control_1_1_motor
 
 </div>
 </div>
-<a id="a94c0cf6e73fc510cb1c94b910a524f1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94c0cf6e73fc510cb1c94b910a524f1e">&#9670;&nbsp;</a></span>pid_param</h2>
+<a id="abeada49dcefaa39a1439a1a09eaef91c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeada49dcefaa39a1439a1a09eaef91c">&#9670;&nbsp;</a></span>kff_velocity</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a> alps::cmn::control::MotorVelocityControllerParam::pid_param</td>
+          <td class="memname">float alps::cmn::control::MotorVelocityControllerParam::kff_velocity = 0.0f</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>角速度PIDパラメータ </p>
+<p>角速度フィードフォワードゲイン </p>
+
+</div>
+</div>
+<a id="aa42e1b756097893f29c2b9152bd3a594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa42e1b756097893f29c2b9152bd3a594">&#9670;&nbsp;</a></span>kff_acceleration</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float alps::cmn::control::MotorVelocityControllerParam::kff_acceleration = 0.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>角加速度フィードフォワードゲイン </p>
 
 </div>
 </div>
@@ -216,7 +214,7 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1control_1_1_motor
 </div>
 </div>
 <hr/>この構造体詳解は次のファイルから抽出されました:<ul>
-<li>alps_common_lib/include/alps_cmn/control/<a class="el" href="motor__velocity__controller_8hpp_source.html">motor_velocity_controller.hpp</a></li>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/control/<a class="el" href="motor__velocity__controller_8hpp_source.html">motor_velocity_controller.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

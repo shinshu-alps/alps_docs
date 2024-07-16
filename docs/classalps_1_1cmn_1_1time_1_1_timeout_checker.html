@@ -112,8 +112,6 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1time_1_1_timeout_c
 
 <p>タイムアウトを検知するクラス  
  <a href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="timeout__checker_8hpp_source.html">timeout_checker.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 公開型</h2></td></tr>
@@ -148,24 +146,6 @@ class alps::cmn::time::TimeoutChecker&lt; Clock &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">型定義メンバ詳解</h2>
-<a id="aca24b9e01b2e38fc2835a5fca30a3588"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca24b9e01b2e38fc2835a5fca30a3588">&#9670;&nbsp;</a></span>Duration</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Clock &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html">alps::cmn::time::TimeoutChecker</a>&lt; Clock &gt;::<a class="el" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html#aca24b9e01b2e38fc2835a5fca30a3588">Duration</a> =  typename Clock::duration</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>時間間隔型 </p>
-
-</div>
-</div>
 <a id="a78206f930eba5911190f9bea0775989c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a78206f930eba5911190f9bea0775989c">&#9670;&nbsp;</a></span>TimePoint</h2>
 
@@ -181,6 +161,24 @@ template&lt;class Clock &gt; </div>
 </div><div class="memdoc">
 
 <p>時刻型 </p>
+
+</div>
+</div>
+<a id="aca24b9e01b2e38fc2835a5fca30a3588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca24b9e01b2e38fc2835a5fca30a3588">&#9670;&nbsp;</a></span>Duration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html">alps::cmn::time::TimeoutChecker</a>&lt; Clock &gt;::<a class="el" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html#aca24b9e01b2e38fc2835a5fca30a3588">Duration</a> =  typename Clock::duration</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>時間間隔型 </p>
 
 </div>
 </div>
@@ -222,6 +220,35 @@ template&lt;class Clock &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
+<a id="a815e5973740017cbb0996c8532208db4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a815e5973740017cbb0996c8532208db4">&#9670;&nbsp;</a></span>ResetCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html">alps::cmn::time::TimeoutChecker</a>&lt; Clock &gt;::ResetCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>タイムアウトのカウント開始時刻をリセットする </p>
+
+</div>
+</div>
 <a id="a66e1502b844abe2ce9e3a978fa432ab4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a66e1502b844abe2ce9e3a978fa432ab4">&#9670;&nbsp;</a></span>IsTimeout()</h2>
 
@@ -254,37 +281,8 @@ false タイムアウトしていない </dd></dl>
 
 </div>
 </div>
-<a id="a815e5973740017cbb0996c8532208db4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a815e5973740017cbb0996c8532208db4">&#9670;&nbsp;</a></span>ResetCount()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Clock &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html">alps::cmn::time::TimeoutChecker</a>&lt; Clock &gt;::ResetCount </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>タイムアウトのカウント開始時刻をリセットする </p>
-
-</div>
-</div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>alps_common_lib/include/alps_cmn/time/<a class="el" href="timeout__checker_8hpp_source.html">timeout_checker.hpp</a></li>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/time/<a class="el" href="timeout__checker_8hpp_source.html">timeout_checker.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

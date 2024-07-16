@@ -111,8 +111,6 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1control_1_1_pid_p
 
 <p>PID制御のパラメータ  
  <a href="structalps_1_1cmn_1_1control_1_1_pid_param.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="pid_8hpp_source.html">pid.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 公開変数類</h2></td></tr>
@@ -132,35 +130,19 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1control_1_1_pid_p
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>PID制御のパラメータ </p>
 </div><h2 class="groupheader">メンバ詳解</h2>
-<a id="ad3f8eca8af360ff2586f5db76485ee9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3f8eca8af360ff2586f5db76485ee9d">&#9670;&nbsp;</a></span>diff_lpf_time_const</h2>
+<a id="ae23e438611ae534e7e4075118bc8a663"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae23e438611ae534e7e4075118bc8a663">&#9670;&nbsp;</a></span>kp</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">time::Seconds</a> alps::cmn::control::PidParam::diff_lpf_time_const {std::chrono::milliseconds(5)}</td>
+          <td class="memname">float alps::cmn::control::PidParam::kp</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>微分値にかけるローパスフィルタの時定数(デフォルトは5ms) </p>
-
-</div>
-</div>
-<a id="a034d1bfdbb8e2efe4ecba00255667e7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a034d1bfdbb8e2efe4ecba00255667e7f">&#9670;&nbsp;</a></span>kd</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float alps::cmn::control::PidParam::kd</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Dゲイン </p>
+<p>Pゲイン </p>
 
 </div>
 </div>
@@ -180,24 +162,40 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1control_1_1_pid_p
 
 </div>
 </div>
-<a id="ae23e438611ae534e7e4075118bc8a663"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae23e438611ae534e7e4075118bc8a663">&#9670;&nbsp;</a></span>kp</h2>
+<a id="a034d1bfdbb8e2efe4ecba00255667e7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a034d1bfdbb8e2efe4ecba00255667e7f">&#9670;&nbsp;</a></span>kd</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float alps::cmn::control::PidParam::kp</td>
+          <td class="memname">float alps::cmn::control::PidParam::kd</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Pゲイン </p>
+<p>Dゲイン </p>
+
+</div>
+</div>
+<a id="ad3f8eca8af360ff2586f5db76485ee9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3f8eca8af360ff2586f5db76485ee9d">&#9670;&nbsp;</a></span>diff_lpf_time_const</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">time::Seconds</a> alps::cmn::control::PidParam::diff_lpf_time_const {std::chrono::milliseconds(5)}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>微分値にかけるローパスフィルタの時定数(デフォルトは5ms) </p>
 
 </div>
 </div>
 <hr/>この構造体詳解は次のファイルから抽出されました:<ul>
-<li>alps_common_lib/include/alps_cmn/control/<a class="el" href="pid_8hpp_source.html">pid.hpp</a></li>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/control/<a class="el" href="pid_8hpp_source.html">pid.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
