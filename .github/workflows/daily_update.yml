@@ -21,15 +21,8 @@ jobs:
           ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
           submodules: recursive
 
-      # # SSHキーの設定
-      # - name: SSH setting
-      #   run: |
-      #     mkdir -p ${HOME}/.ssh/
-      #     echo -e "${{ secrets.SSH_PRIVATE_KEY }}" > ${HOME}/.ssh/id_rsa
-      #     chmod 700 ${HOME}/.ssh/id_rsa*
-
       # alps_coreを最新に更新
-      - name: Checkout submodule
+      - name: Update alps_core
         run: |
           git submodule update --remote alps_core
 
