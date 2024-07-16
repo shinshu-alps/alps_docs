@@ -1,21 +1,6 @@
 [submodule "doxygen-awesome-css"]
 	path = doxygen-awesome-css
 	url = https://github.com/jothepro/doxygen-awesome-css.git
-[submodule "alps_common_lib"]
-	path = alps_common_lib
-	url = git@github.com:shinshu-alps/alps_common_lib.git
-[submodule "alps_linux_lib"]
-	path = alps_linux_lib
-	url = git@github.com:shinshu-alps/alps_linux_lib.git
-[submodule "alps_mbed_lib"]
-	path = alps_mbed_lib
-	url = git@github.com:shinshu-alps/alps_mbed_lib.git
-[submodule "alps_stm32_lib"]
-	path = alps_stm32_lib
-	url = git@github.com:shinshu-alps/alps_stm32_lib.git
-[submodule "alps_ros_lib"]
-	path = alps_ros_lib
-	url = git@github.com:shinshu-alps/alps_ros_lib.git
-[submodule "alps_ros2_lib"]
-	path = alps_ros2_lib
-	url = git@github.com:shinshu-alps/alps_ros2_lib.git
+[submodule "alps_core"]
+	path = alps_core
+	url = git@github.com:shinshu-alps/alps_core.git
