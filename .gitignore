@@ -1,9 +1,4 @@
 doxygen-awesome-css
-alps_common_lib
-alps_linux_lib
-alps_mbed_lib
-alps_stm32_lib
-alps_ros_lib
-alps_ros2_lib
+alps_core
 .vscode/
 .github/
