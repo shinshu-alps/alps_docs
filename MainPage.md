@@ -5,22 +5,26 @@
 
 関連esa記事：[ライブラリの全体概要](https://roblab-shinshu.esa.io/posts/2021)
 
-## ライブラリリスト
+## 名前空間
 
-| ライブラリ名    | 名前空間   | 用途                  | ソース                                                    | 更新履歴                                                             |
-| :-------------- | :--------- | :-------------------- | :-------------------------------------------------------- | :------------------------------------------------------------------- |
-| alps_common_lib | alps::cmn  | 汎用ライブラリ        | [GitHub](https://github.com/shinshu-alps/alps_common_lib) | [Releases](https://github.com/shinshu-alps/alps_common_lib/releases) |
-| alps_linux_lib  | alps::lin  | Linux用ライブラリ     | [GitHub](https://github.com/shinshu-alps/alps_linux_lib)  | [Releases](https://github.com/shinshu-alps/alps_linux_lib/releases)  |
-| alps_mbed_lib   | alps::mbed | mbed用ライブラリ      | [GitHub](https://github.com/shinshu-alps/alps_mbed_lib)   | [Releases](https://github.com/shinshu-alps/alps_mbed_lib/releases)   |
-| alps_stm32_lib  | alps::stm  | stm32cube用ライブラリ | [GitHub](https://github.com/shinshu-alps/alps_stm32_lib)  | [Releases](https://github.com/shinshu-alps/alps_stm32_lib/releases)  |
-| alps_ros_lib    | alps::ros  | ros用ライブラリ       | [GitHub](https://github.com/shinshu-alps/alps_ros_lib)    | [Releases](https://github.com/shinshu-alps/alps_ros_lib/releases)    |
-| alps_ros2_lib   | alps::ros2 | ros2用ライブラリ      | [GitHub](https://github.com/shinshu-alps/alps_ros2_lib)   | [Releases](https://github.com/shinshu-alps/alps_ros2_lib/releases)   |
+| 名前空間   | 用途                  | ソース                                                                                     |
+| :--------- | :-------------------- | :----------------------------------------------------------------------------------------- |
+| alps::cmn  | 汎用ライブラリ        | [GitHub](https://github.com/shinshu-alps/alps_core/tree/main/lib_internal/alps_common_lib) |
+| alps::lin  | Linux用ライブラリ     | [GitHub](https://github.com/shinshu-alps/alps_core/tree/main/lib_internal/alps_linux_lib)  |
+| alps::mbed | mbed用ライブラリ      | [GitHub](https://github.com/shinshu-alps/alps_core/tree/main/lib_internal/alps_mbed_lib)   |
+| alps::stm  | stm32cube用ライブラリ | [GitHub](https://github.com/shinshu-alps/alps_core/tree/main/lib_internal/alps_stm32_lib)  |
+| alps::ros  | ros用ライブラリ       | [GitHub](https://github.com/shinshu-alps/alps_core/tree/main/lib_internal/alps_ros_lib)    |
+| alps::ros2 | ros2用ライブラリ      | [GitHub](https://github.com/shinshu-alps/alps_core/tree/main/lib_internal/alps_ros2_lib)   |
+
+## ライブラリ更新履歴
+
+[Releases · shinshu-alps/alps_core](https://github.com/shinshu-alps/alps_core/releases/)
 
 ## ドキュメントの更新について
 
 ### 自動更新
 
-各ライブラリのmainブランチの変更を取り込んで1日1回ドキュメントが更新されるようになっています．  
+alps_coreのmainブランチの変更を取り込んで1日1回ドキュメントが更新されるようになっています．  
 
 ### 手動更新
 
