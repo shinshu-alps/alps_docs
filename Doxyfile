@@ -151,7 +151,7 @@ ALWAYS_DETAILED_SEC    = YES
 # operators of the base classes will not be shown.
 # The default value is: NO.
 
-INLINE_INHERITED_MEMB  = YES
+INLINE_INHERITED_MEMB  = NO
 
 # If the FULL_PATH_NAMES tag is set to YES, doxygen will prepend the full path
 # before files name in the file list and in the header files. If set to NO the
@@ -583,7 +583,7 @@ HIDE_COMPOUND_REFERENCE= NO
 # the files that are included by a file in the documentation of that file.
 # The default value is: YES.
 
-SHOW_INCLUDE_FILES     = YES
+SHOW_INCLUDE_FILES     = NO
 
 # If the SHOW_GROUPED_MEMB_INC tag is set to YES then Doxygen will add for each
 # grouped member an include statement to the documentation, telling the reader
@@ -609,7 +609,7 @@ INLINE_INFO            = YES
 # name. If set to NO, the members will appear in declaration order.
 # The default value is: YES.
 
-SORT_MEMBER_DOCS       = YES
+SORT_MEMBER_DOCS       = NO
 
 # If the SORT_BRIEF_DOCS tag is set to YES then doxygen will sort the brief
 # descriptions of file, namespace and class members alphabetically by member
@@ -830,12 +830,12 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  = alps_common_lib/include \
-                         alps_linux_lib/include \
-                         alps_mbed_lib/include \
-                         alps_stm32_lib/include \
-                         alps_ros_lib/include \
-                         alps_ros2_lib/include \
+INPUT                  = alps_core/lib_internal/alps_common_lib/include \
+                         alps_core/lib_internal/alps_linux_lib/include \
+                         alps_core/lib_internal/alps_mbed_lib/include \
+                         alps_core/lib_internal/alps_stm32_lib/include \
+                         alps_core/lib_internal/alps_ros_lib/include \
+                         alps_core/lib_internal/alps_ros2_lib/include \
                          MainPage.md 
 
 # This tag can be used to specify the character encoding of the source files
@@ -977,7 +977,7 @@ EXAMPLE_RECURSIVE      = NO
 # \image command).
 
 IMAGE_PATH             = diagrams \
-                         alps_common_lib/diagrams
+                         alps_core/lib_internal/alps_common_lib/diagrams
 
 # The INPUT_FILTER tag can be used to specify a program that doxygen should
 # invoke to filter for each input file. Doxygen will invoke the filter program
