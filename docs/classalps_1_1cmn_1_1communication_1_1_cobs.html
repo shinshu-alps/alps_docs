@@ -112,8 +112,6 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1_
 
 <p>COBSの変換関数群  
  <a href="classalps_1_1cmn_1_1communication_1_1_cobs.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="cobs_8hpp_source.html">cobs.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 静的公開メンバ関数</h2></td></tr>
@@ -137,40 +135,6 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1_
 <div class="textblock"><p>COBSの変換関数群 </p>
 <dl class="section see"><dt>参照</dt><dd><a href="https://en.wikipedia.org/wiki/Consistent_Overhead_Byte_Stuffing">https://en.wikipedia.org/wiki/Consistent_Overhead_Byte_Stuffing</a> </dd></dl>
 </div><h2 class="groupheader">関数詳解</h2>
-<a id="a99202c32b9c453080c534b87ee8fe08b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99202c32b9c453080c534b87ee8fe08b">&#9670;&nbsp;</a></span>Encode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void alps::cmn::communication::Cobs::Encode </td>
-          <td>(</td>
-          <td class="paramtype">etl::icircular_buffer&lt; uint8_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>target_bytes</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>バイト列をCOBSでエンコードする． </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">target_bytes</td><td>変換したいバイト列．関数実行後は変換後のCOBSバイト列になる． <b>COBSのオーバーヘッド分だけ余分に容量が必要な事に注意．</b> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a48e355f8c0efd40c1c0cdf2cc3793588"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a48e355f8c0efd40c1c0cdf2cc3793588">&#9670;&nbsp;</a></span>OverheadByteSize()</h2>
 
@@ -203,6 +167,40 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1_
   </dd>
 </dl>
 <dl class="section return"><dt>戻り値</dt><dd>constexpr size_t オーバーヘッドのサイズ </dd></dl>
+
+</div>
+</div>
+<a id="a99202c32b9c453080c534b87ee8fe08b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99202c32b9c453080c534b87ee8fe08b">&#9670;&nbsp;</a></span>Encode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void alps::cmn::communication::Cobs::Encode </td>
+          <td>(</td>
+          <td class="paramtype">etl::icircular_buffer&lt; uint8_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>target_bytes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>バイト列をCOBSでエンコードする． </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target_bytes</td><td>変換したいバイト列．関数実行後は変換後のCOBSバイト列になる． <b>COBSのオーバーヘッド分だけ余分に容量が必要な事に注意．</b> </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -280,7 +278,7 @@ false 失敗（バイト列に0が存在しない,予期しない位置に0） <
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>alps_common_lib/include/alps_cmn/communication/<a class="el" href="cobs_8hpp_source.html">cobs.hpp</a></li>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/<a class="el" href="cobs_8hpp_source.html">cobs.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -111,8 +111,6 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1robot_1_1_odometor
 
 <p>オドメトリ計算クラス  
  <a href="classalps_1_1cmn_1_1robot_1_1_odometory.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="odometory_8hpp_source.html">odometory.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -141,6 +139,60 @@ class alps::cmn::robot::Odometory&lt; Clock &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">関数詳解</h2>
+<a id="ab8b189a833585379d4a27f167ab85e94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8b189a833585379d4a27f167ab85e94">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1robot_1_1_odometory.html">alps::cmn::robot::Odometory</a>&lt; Clock &gt;::Update </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>vx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>vy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>vtheta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>速度入力からオドメトリを計算する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vx</td><td>x方向速度 </td></tr>
+    <tr><td class="paramname">vy</td><td>y方向速度 </td></tr>
+    <tr><td class="paramname">vtheta</td><td>角速度 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a04abe98521c4a19139f29cc7051e397c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a04abe98521c4a19139f29cc7051e397c">&#9670;&nbsp;</a></span>GetPose()</h2>
 
@@ -168,35 +220,6 @@ template&lt;class Clock &gt; </div>
 
 <p>現在のオドメトリ計算値を取得する </p>
 <dl class="section return"><dt>戻り値</dt><dd>std::array&lt;float, 3&gt; 姿勢．[0]:x座標, [1]:y座標, [2]:theta角度 </dd></dl>
-
-</div>
-</div>
-<a id="a6a514b790d39d996edcf5d17d2868ce6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a514b790d39d996edcf5d17d2868ce6">&#9670;&nbsp;</a></span>Reset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Clock &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1robot_1_1_odometory.html">alps::cmn::robot::Odometory</a>&lt; Clock &gt;::Reset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>オドメトリ計算値をリセットする </p>
 
 </div>
 </div>
@@ -254,8 +277,8 @@ template&lt;class Clock &gt; </div>
 
 </div>
 </div>
-<a id="ab8b189a833585379d4a27f167ab85e94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8b189a833585379d4a27f167ab85e94">&#9670;&nbsp;</a></span>Update()</h2>
+<a id="a6a514b790d39d996edcf5d17d2868ce6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a514b790d39d996edcf5d17d2868ce6">&#9670;&nbsp;</a></span>Reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -266,27 +289,10 @@ template&lt;class Clock &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1robot_1_1_odometory.html">alps::cmn::robot::Odometory</a>&lt; Clock &gt;::Update </td>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1robot_1_1_odometory.html">alps::cmn::robot::Odometory</a>&lt; Clock &gt;::Reset </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>vx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>vy</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>vtheta</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -296,20 +302,12 @@ template&lt;class Clock &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>速度入力からオドメトリを計算する </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vx</td><td>x方向速度 </td></tr>
-    <tr><td class="paramname">vy</td><td>y方向速度 </td></tr>
-    <tr><td class="paramname">vtheta</td><td>角速度 </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>オドメトリ計算値をリセットする </p>
 
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>alps_common_lib/include/alps_cmn/robot/<a class="el" href="odometory_8hpp_source.html">odometory.hpp</a></li>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/robot/<a class="el" href="odometory_8hpp_source.html">odometory.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

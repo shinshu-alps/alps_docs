@@ -111,8 +111,6 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1_
 
 <p>I2C通信インタフェース  
  <a href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="i__i2c__io_8hpp_source.html">i_i2c_io.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -135,63 +133,6 @@ class alps::cmn::communication::II2cIo&lt; Derived &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">関数詳解</h2>
-<a id="ac08f337e75e152c3d2a82d7ca4a52f13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac08f337e75e152c3d2a82d7ca4a52f13">&#9670;&nbsp;</a></span>CallRead()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Derived &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">alps::cmn::communication::II2cIo</a>&lt; Derived &gt;::CallRead </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">I2cAddress</a>&#160;</td>
-          <td class="paramname"><em>address</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">etl::span&lt; uint8_t &gt;&#160;</td>
-          <td class="paramname"><em>read_buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>repeated</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>インタフェースを介してI2C通信でバイト列を受信する </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">address</td><td>通信先のI2Cアドレス </td></tr>
-    <tr><td class="paramname">read_buf</td><td>読み込んだバイト列を格納するバッファ．spanが参照する範囲のバイト数だけ読み込まれる． </td></tr>
-    <tr><td class="paramname">repeated</td><td>true: 通信後にrepeated start conditionを送信して通信を維持．false: 通信後にstop conditionを送信．</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd>true 受信成功 </dd>
-<dd>
-false 受信失敗 </dd></dl>
-
-</div>
-</div>
 <a id="af653762153caea8bbe059f868b73e5f1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af653762153caea8bbe059f868b73e5f1">&#9670;&nbsp;</a></span>CallWrite()</h2>
 
@@ -249,8 +190,65 @@ false 送信失敗 </dd></dl>
 
 </div>
 </div>
+<a id="ac08f337e75e152c3d2a82d7ca4a52f13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac08f337e75e152c3d2a82d7ca4a52f13">&#9670;&nbsp;</a></span>CallRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">alps::cmn::communication::II2cIo</a>&lt; Derived &gt;::CallRead </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">I2cAddress</a>&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">etl::span&lt; uint8_t &gt;&#160;</td>
+          <td class="paramname"><em>read_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>repeated</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>インタフェースを介してI2C通信でバイト列を受信する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>通信先のI2Cアドレス </td></tr>
+    <tr><td class="paramname">read_buf</td><td>読み込んだバイト列を格納するバッファ．spanが参照する範囲のバイト数だけ読み込まれる． </td></tr>
+    <tr><td class="paramname">repeated</td><td>true: 通信後にrepeated start conditionを送信して通信を維持．false: 通信後にstop conditionを送信．</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 受信成功 </dd>
+<dd>
+false 受信失敗 </dd></dl>
+
+</div>
+</div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>alps_common_lib/include/alps_cmn/communication/<a class="el" href="i__i2c__io_8hpp_source.html">i_i2c_io.hpp</a></li>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/<a class="el" href="i__i2c__io_8hpp_source.html">i_i2c_io.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -111,8 +111,6 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1sensor_1_1_s11059
 
 <p>正規化されたデータ  
  <a href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="s11059_8hpp_source.html">s11059.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 公開変数類</h2></td></tr>
@@ -135,8 +133,8 @@ struct alps::cmn::sensor::S11059&lt; I2cIo &gt;::NormalizedData</h3>
 
 <p>正規化されたデータ </p>
 </div><h2 class="groupheader">メンバ詳解</h2>
-<a id="a5e5a62bedb6fadc84a79e41703dd828c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e5a62bedb6fadc84a79e41703dd828c">&#9670;&nbsp;</a></span>blue_ratio</h2>
+<a id="aaf6f4ac3ea62166cbadaaf3f92003438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf6f4ac3ea62166cbadaaf3f92003438">&#9670;&nbsp;</a></span>rgb_sum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -144,30 +142,12 @@ struct alps::cmn::sensor::S11059&lt; I2cIo &gt;::NormalizedData</h3>
 template&lt;class I2cIo &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html">alps::cmn::sensor::S11059</a>&lt; I2cIo &gt;::NormalizedData::blue_ratio</td>
+          <td class="memname">uint32_t <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html">alps::cmn::sensor::S11059</a>&lt; I2cIo &gt;::NormalizedData::rgb_sum</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>青の比率 </p>
-
-</div>
-</div>
-<a id="a4ea990c9eb55c68fe867ec8743e1bc61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ea990c9eb55c68fe867ec8743e1bc61">&#9670;&nbsp;</a></span>green_ratio</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class I2cIo &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html">alps::cmn::sensor::S11059</a>&lt; I2cIo &gt;::NormalizedData::green_ratio</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>緑の比率 </p>
+<p>rgbの合計値 </p>
 
 </div>
 </div>
@@ -189,8 +169,8 @@ template&lt;class I2cIo &gt; </div>
 
 </div>
 </div>
-<a id="aaf6f4ac3ea62166cbadaaf3f92003438"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf6f4ac3ea62166cbadaaf3f92003438">&#9670;&nbsp;</a></span>rgb_sum</h2>
+<a id="a4ea990c9eb55c68fe867ec8743e1bc61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ea990c9eb55c68fe867ec8743e1bc61">&#9670;&nbsp;</a></span>green_ratio</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,17 +178,35 @@ template&lt;class I2cIo &gt; </div>
 template&lt;class I2cIo &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html">alps::cmn::sensor::S11059</a>&lt; I2cIo &gt;::NormalizedData::rgb_sum</td>
+          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html">alps::cmn::sensor::S11059</a>&lt; I2cIo &gt;::NormalizedData::green_ratio</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>rgbの合計値 </p>
+<p>緑の比率 </p>
+
+</div>
+</div>
+<a id="a5e5a62bedb6fadc84a79e41703dd828c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e5a62bedb6fadc84a79e41703dd828c">&#9670;&nbsp;</a></span>blue_ratio</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html">alps::cmn::sensor::S11059</a>&lt; I2cIo &gt;::NormalizedData::blue_ratio</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>青の比率 </p>
 
 </div>
 </div>
 <hr/>この構造体詳解は次のファイルから抽出されました:<ul>
-<li>alps_common_lib/include/alps_cmn/sensor/<a class="el" href="s11059_8hpp_source.html">s11059.hpp</a></li>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/<a class="el" href="s11059_8hpp_source.html">s11059.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

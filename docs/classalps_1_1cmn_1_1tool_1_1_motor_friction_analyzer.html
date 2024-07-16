@@ -113,8 +113,6 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1tool_1_1_motor_fri
 <p>モーター軸の摩擦力を計測するクラス <br  />
  <a class="el" href="classalps_1_1cmn_1_1control_1_1_friction_compensated_motor.html" title="モーターに対して摩擦補償を行うデコレーター">alps::cmn::control::FrictionCompensatedMotor</a> に使用する値を求めるときに使う  
  <a href="classalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="motor__friction__analyzer_8hpp_source.html">motor_friction_analyzer.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 クラス</h2></td></tr>
@@ -226,6 +224,42 @@ template&lt;class Clock , class Motor , class RorarySensor &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
+<a id="a978a2e301134a6b5e053a480a5ed0fd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a978a2e301134a6b5e053a480a5ed0fd2">&#9670;&nbsp;</a></span>SetPeriodicTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock , class Motor , class RorarySensor &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer.html">alps::cmn::tool::MotorFrictionAnalyzer</a>&lt; Clock, Motor, RorarySensor &gt;::SetPeriodicTask </td>
+          <td>(</td>
+          <td class="paramtype">etl::delegate&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>periodic_task</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>定期的に実行してほしい処理を設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">periodic_task</td><td>定期的に実行してほしい処理 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a68793457af0a200b42cc76d4c7c6ff61"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a68793457af0a200b42cc76d4c7c6ff61">&#9670;&nbsp;</a></span>Analyze()</h2>
 
@@ -274,44 +308,8 @@ template&lt;class Clock , class Motor , class RorarySensor &gt; </div>
 
 </div>
 </div>
-<a id="a978a2e301134a6b5e053a480a5ed0fd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a978a2e301134a6b5e053a480a5ed0fd2">&#9670;&nbsp;</a></span>SetPeriodicTask()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Clock , class Motor , class RorarySensor &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer.html">alps::cmn::tool::MotorFrictionAnalyzer</a>&lt; Clock, Motor, RorarySensor &gt;::SetPeriodicTask </td>
-          <td>(</td>
-          <td class="paramtype">etl::delegate&lt; void()&gt;&#160;</td>
-          <td class="paramname"><em>periodic_task</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>定期的に実行してほしい処理を設定 </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">periodic_task</td><td>定期的に実行してほしい処理 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>alps_common_lib/include/alps_cmn/tool/<a class="el" href="motor__friction__analyzer_8hpp_source.html">motor_friction_analyzer.hpp</a></li>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/tool/<a class="el" href="motor__friction__analyzer_8hpp_source.html">motor_friction_analyzer.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

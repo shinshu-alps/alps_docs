@@ -4,8 +4,8 @@ var robomas__motor_8hpp =
     [ "MotorBase", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail_1_1_motor_base.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail_1_1_motor_base" ],
     [ "M2006", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m2006.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m2006" ],
     [ "M3508", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m3508.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m3508" ],
-    [ "OutputCanData", "robomas__motor_8hpp.html#a945d4793c71f86892670c6e0729bd06d", null ],
     [ "SensorCanData", "robomas__motor_8hpp.html#adf71a36d8c7f026c7f07669936152e6f", null ],
+    [ "OutputCanData", "robomas__motor_8hpp.html#a945d4793c71f86892670c6e0729bd06d", null ],
     [ "Id", "robomas__motor_8hpp.html#a077c583d5192bda6b0a75bbe96f41782", [
       [ "kMotor1", "robomas__motor_8hpp.html#a077c583d5192bda6b0a75bbe96f41782a9196cf5b59980967fa220eb3a75b21bb", null ],
       [ "kMotor2", "robomas__motor_8hpp.html#a077c583d5192bda6b0a75bbe96f41782a91b9c39d4ad1a8fd04ef00e69c5f2611", null ],

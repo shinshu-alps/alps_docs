@@ -111,8 +111,6 @@ $(document).ready(function(){initNavTree('classalps_1_1mbed_1_1communication_1_1
 
 <p>mbedのI2C通信IOクラス  
  <a href="classalps_1_1mbed_1_1communication_1_1_i2c_io.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="i2c__io_8hpp_source.html">i2c_io.hpp</a>&gt;</code></p>
 <div class="dynheader">
 alps::mbed::communication::I2cIo の継承関係図</div>
 <div class="dyncontent">
@@ -130,12 +128,13 @@ alps::mbed::communication::I2cIo の継承関係図</div>
 <tr class="memitem:a99670748a746af6ecb53b73f139cf179"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mbed_1_1communication_1_1_i2c_io.html#a99670748a746af6ecb53b73f139cf179">Read</a> (<a class="el" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">cmn::communication::I2cAddress</a> address, etl::span&lt; uint8_t &gt; read_buf, bool repeated=false)</td></tr>
 <tr class="memdesc:a99670748a746af6ecb53b73f139cf179"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C通信でバイト列を受信する  <a href="classalps_1_1mbed_1_1communication_1_1_i2c_io.html#a99670748a746af6ecb53b73f139cf179">[詳解]</a><br /></td></tr>
 <tr class="separator:a99670748a746af6ecb53b73f139cf179"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af653762153caea8bbe059f868b73e5f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">CallWrite</a> (I2cAddress address, etl::span&lt; const uint8_t &gt; write_buf, bool repeated=false)</td></tr>
-<tr class="memdesc:af653762153caea8bbe059f868b73e5f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してI2C通信でバイト列を送信する  <a href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">[詳解]</a><br /></td></tr>
-<tr class="separator:af653762153caea8bbe059f868b73e5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac08f337e75e152c3d2a82d7ca4a52f13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#ac08f337e75e152c3d2a82d7ca4a52f13">CallRead</a> (I2cAddress address, etl::span&lt; uint8_t &gt; read_buf, bool repeated=false)</td></tr>
-<tr class="memdesc:ac08f337e75e152c3d2a82d7ca4a52f13"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してI2C通信でバイト列を受信する  <a href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#ac08f337e75e152c3d2a82d7ca4a52f13">[詳解]</a><br /></td></tr>
-<tr class="separator:ac08f337e75e152c3d2a82d7ca4a52f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classalps_1_1cmn_1_1communication_1_1_i_i2c_io"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classalps_1_1cmn_1_1communication_1_1_i_i2c_io')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">alps::cmn::communication::II2cIo&lt; I2cIo &gt;</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:af653762153caea8bbe059f868b73e5f1 inherit pub_methods_classalps_1_1cmn_1_1communication_1_1_i_i2c_io"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">CallWrite</a> (<a class="el" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">I2cAddress</a> address, etl::span&lt; const uint8_t &gt; write_buf, bool repeated=false)</td></tr>
+<tr class="memdesc:af653762153caea8bbe059f868b73e5f1 inherit pub_methods_classalps_1_1cmn_1_1communication_1_1_i_i2c_io"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してI2C通信でバイト列を送信する  <a href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">[詳解]</a><br /></td></tr>
+<tr class="separator:af653762153caea8bbe059f868b73e5f1 inherit pub_methods_classalps_1_1cmn_1_1communication_1_1_i_i2c_io"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac08f337e75e152c3d2a82d7ca4a52f13 inherit pub_methods_classalps_1_1cmn_1_1communication_1_1_i_i2c_io"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#ac08f337e75e152c3d2a82d7ca4a52f13">CallRead</a> (<a class="el" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">I2cAddress</a> address, etl::span&lt; uint8_t &gt; read_buf, bool repeated=false)</td></tr>
+<tr class="memdesc:ac08f337e75e152c3d2a82d7ca4a52f13 inherit pub_methods_classalps_1_1cmn_1_1communication_1_1_i_i2c_io"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してI2C通信でバイト列を受信する  <a href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#ac08f337e75e152c3d2a82d7ca4a52f13">[詳解]</a><br /></td></tr>
+<tr class="separator:ac08f337e75e152c3d2a82d7ca4a52f13 inherit pub_methods_classalps_1_1cmn_1_1communication_1_1_i_i2c_io"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>mbedのI2C通信IOクラス </p>
@@ -185,74 +184,16 @@ alps::mbed::communication::I2cIo の継承関係図</div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="ac08f337e75e152c3d2a82d7ca4a52f13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac08f337e75e152c3d2a82d7ca4a52f13">&#9670;&nbsp;</a></span>CallRead()</h2>
+<a id="a82aee4f740b1e31f4656fd38d60f54d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82aee4f740b1e31f4656fd38d60f54d8">&#9670;&nbsp;</a></span>Write()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">alps::cmn::communication::II2cIo</a>&lt; <a class="el" href="classalps_1_1mbed_1_1communication_1_1_i2c_io.html">I2cIo</a>  &gt;::CallRead </td>
+          <td class="memname">bool alps::mbed::communication::I2cIo::Write </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">I2cAddress</a>&#160;</td>
-          <td class="paramname"><em>address</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">etl::span&lt; uint8_t &gt;&#160;</td>
-          <td class="paramname"><em>read_buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>repeated</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>インタフェースを介してI2C通信でバイト列を受信する </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">address</td><td>通信先のI2Cアドレス </td></tr>
-    <tr><td class="paramname">read_buf</td><td>読み込んだバイト列を格納するバッファ．spanが参照する範囲のバイト数だけ読み込まれる． </td></tr>
-    <tr><td class="paramname">repeated</td><td>true: 通信後にrepeated start conditionを送信して通信を維持．false: 通信後にstop conditionを送信．</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd>true 受信成功 </dd>
-<dd>
-false 受信失敗 </dd></dl>
-
-</div>
-</div>
-<a id="af653762153caea8bbe059f868b73e5f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af653762153caea8bbe059f868b73e5f1">&#9670;&nbsp;</a></span>CallWrite()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">alps::cmn::communication::II2cIo</a>&lt; <a class="el" href="classalps_1_1mbed_1_1communication_1_1_i2c_io.html">I2cIo</a>  &gt;::CallWrite </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">I2cAddress</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">cmn::communication::I2cAddress</a>&#160;</td>
           <td class="paramname"><em>address</em>, </td>
         </tr>
         <tr>
@@ -273,14 +214,9 @@ false 受信失敗 </dd></dl>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>インタフェースを介してI2C通信でバイト列を送信する </p>
+<p>I2C通信でバイト列を送信する </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">address</td><td>通信先のI2Cアドレス </td></tr>
@@ -342,55 +278,8 @@ false 受信失敗 </dd></dl>
 
 </div>
 </div>
-<a id="a82aee4f740b1e31f4656fd38d60f54d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82aee4f740b1e31f4656fd38d60f54d8">&#9670;&nbsp;</a></span>Write()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool alps::mbed::communication::I2cIo::Write </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">cmn::communication::I2cAddress</a>&#160;</td>
-          <td class="paramname"><em>address</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">etl::span&lt; const uint8_t &gt;&#160;</td>
-          <td class="paramname"><em>write_buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>repeated</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>I2C通信でバイト列を送信する </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">address</td><td>通信先のI2Cアドレス </td></tr>
-    <tr><td class="paramname">write_buf</td><td>書き込むバイト列．spanが参照する範囲のバイト数だけ送信される． </td></tr>
-    <tr><td class="paramname">repeated</td><td>true: 通信後にrepeated start conditionを送信して通信を維持．false: 通信後にstop conditionを送信．</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd>true 送信成功 </dd>
-<dd>
-false 送信失敗 </dd></dl>
-
-</div>
-</div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>alps_mbed_lib/include/alps_mbed/communication/<a class="el" href="i2c__io_8hpp_source.html">i2c_io.hpp</a></li>
+<li>alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/communication/<a class="el" href="i2c__io_8hpp_source.html">i2c_io.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -111,8 +111,6 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1gpio_1_1_i_pwm_out
 
 <p>PWM出力を行うインタフェース  
  <a href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="i__pwm__out_8hpp_source.html">i_pwm_out.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -138,6 +136,43 @@ class alps::cmn::gpio::IPwmOut&lt; Derived &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">関数詳解</h2>
+<a id="a126c2a4c46285eede39c37d72243194a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a126c2a4c46285eede39c37d72243194a">&#9670;&nbsp;</a></span>CallWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">alps::cmn::gpio::IPwmOut</a>&lt; Derived &gt;::CallWrite </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>インタフェースを介してWrite()関数を呼び出す．振る舞い: PWM出力を行う </p>
+<dl class="section note"><dt>覚え書き</dt><dd>継承クラスはこの関数と同じ振る舞いのWrite()関数を実装すること．</dd></dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>出力値 0.0f ~ 1.0f </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a5cacb90bcdc89bae801e318008bb49e8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5cacb90bcdc89bae801e318008bb49e8">&#9670;&nbsp;</a></span>CallSetPeriod()</h2>
 
@@ -212,45 +247,8 @@ template&lt;class Derived &gt; </div>
 
 </div>
 </div>
-<a id="a126c2a4c46285eede39c37d72243194a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a126c2a4c46285eede39c37d72243194a">&#9670;&nbsp;</a></span>CallWrite()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Derived &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">alps::cmn::gpio::IPwmOut</a>&lt; Derived &gt;::CallWrite </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>インタフェースを介してWrite()関数を呼び出す．振る舞い: PWM出力を行う </p>
-<dl class="section note"><dt>覚え書き</dt><dd>継承クラスはこの関数と同じ振る舞いのWrite()関数を実装すること．</dd></dl>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">value</td><td>出力値 0.0f ~ 1.0f </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>alps_common_lib/include/alps_cmn/gpio/<a class="el" href="i__pwm__out_8hpp_source.html">i_pwm_out.hpp</a></li>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/gpio/<a class="el" href="i__pwm__out_8hpp_source.html">i_pwm_out.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

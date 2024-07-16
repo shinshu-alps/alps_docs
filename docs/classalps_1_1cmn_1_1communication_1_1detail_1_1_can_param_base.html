@@ -113,8 +113,6 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1d
 
 <p>パラメータの基底クラス  
  <a href="classalps_1_1cmn_1_1communication_1_1detail_1_1_can_param_base.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="can__param_8hpp_source.html">can_param.hpp</a>&gt;</code></p>
 <div class="dynheader">
 alps::cmn::communication::detail::CanParamBase&lt; T &gt; の継承関係図</div>
 <div class="dyncontent">
@@ -267,42 +265,6 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a47ed4f025ae7d31f5606b4c0fd6672d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47ed4f025ae7d31f5606b4c0fd6672d5">&#9670;&nbsp;</a></span>RegisterOnChangeCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1detail_1_1_can_param_base.html">alps::cmn::communication::detail::CanParamBase</a>&lt; T &gt;::RegisterOnChangeCallback </td>
-          <td>(</td>
-          <td class="paramtype">etl::delegate&lt; void(const T &amp;)&gt;&#160;</td>
-          <td class="paramname"><em>callback</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>パラメータ値が変更されたときのコールバックを設定する </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">callback</td><td>コールバック関数 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a71ce86b57792ae045c59499cebd12f79"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a71ce86b57792ae045c59499cebd12f79">&#9670;&nbsp;</a></span>SetParam()</h2>
 
@@ -339,6 +301,42 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a47ed4f025ae7d31f5606b4c0fd6672d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47ed4f025ae7d31f5606b4c0fd6672d5">&#9670;&nbsp;</a></span>RegisterOnChangeCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1detail_1_1_can_param_base.html">alps::cmn::communication::detail::CanParamBase</a>&lt; T &gt;::RegisterOnChangeCallback </td>
+          <td>(</td>
+          <td class="paramtype">etl::delegate&lt; void(const T &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>パラメータ値が変更されたときのコールバックを設定する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>コールバック関数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">メンバ詳解</h2>
 <a id="a241e8ed43b03f45175d5988ab11c3940"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a241e8ed43b03f45175d5988ab11c3940">&#9670;&nbsp;</a></span>id_</h2>
@@ -359,7 +357,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>alps_common_lib/include/alps_cmn/communication/<a class="el" href="can__param_8hpp_source.html">can_param.hpp</a></li>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/<a class="el" href="can__param_8hpp_source.html">can_param.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -113,8 +113,6 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1sensor_1_1_s11059.
 
 <p>カラーセンサS11059のクラス  
  <a href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="s11059_8hpp_source.html">s11059.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 クラス</h2></td></tr>
@@ -244,45 +242,6 @@ template&lt;class I2cIo &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a27848e6389f0f41d7080380dbfdfef6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27848e6389f0f41d7080380dbfdfef6a">&#9670;&nbsp;</a></span>GetNormalizedData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class I2cIo &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html">alps::cmn::sensor::S11059</a>&lt; I2cIo &gt;::GetNormalizedData </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html">NormalizedData</a> &amp;&#160;</td>
-          <td class="paramname"><em>output</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>正規化したデータを取得する </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">output</td><td>取得した正規化データを格納する変数 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd>true 取得成功 </dd>
-<dd>
-false 取得失敗 </dd></dl>
-
-</div>
-</div>
 <a id="a6a906ae81d28f83caac1b629b9b2ba9f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6a906ae81d28f83caac1b629b9b2ba9f">&#9670;&nbsp;</a></span>GetRawData()</h2>
 
@@ -322,8 +281,47 @@ false 取得失敗 </dd></dl>
 
 </div>
 </div>
+<a id="a27848e6389f0f41d7080380dbfdfef6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27848e6389f0f41d7080380dbfdfef6a">&#9670;&nbsp;</a></span>GetNormalizedData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html">alps::cmn::sensor::S11059</a>&lt; I2cIo &gt;::GetNormalizedData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1sensor_1_1_s11059_1_1_normalized_data.html">NormalizedData</a> &amp;&#160;</td>
+          <td class="paramname"><em>output</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>正規化したデータを取得する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output</td><td>取得した正規化データを格納する変数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 取得成功 </dd>
+<dd>
+false 取得失敗 </dd></dl>
+
+</div>
+</div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>alps_common_lib/include/alps_cmn/sensor/<a class="el" href="s11059_8hpp_source.html">s11059.hpp</a></li>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/<a class="el" href="s11059_8hpp_source.html">s11059.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

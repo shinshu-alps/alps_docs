@@ -111,8 +111,6 @@ $(document).ready(function(){initNavTree('classalps_1_1lin_1_1communication_1_1_
 
 <p>SocketCANを用いてCAN通信を行うクラス．  
  <a href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="socket__can__io_8hpp_source.html">socket_can_io.hpp</a>&gt;</code></p>
 <div class="dynheader">
 alps::lin::communication::SocketCanIo の継承関係図</div>
 <div class="dyncontent">
@@ -133,12 +131,13 @@ alps::lin::communication::SocketCanIo の継承関係図</div>
 <tr class="memitem:aba9f031ada5fd612d310c1a73cfaa054"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#aba9f031ada5fd612d310c1a73cfaa054">TryRead</a> (<a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">cmn::communication::CanDataFrame</a> &amp;frame)</td></tr>
 <tr class="memdesc:aba9f031ada5fd612d310c1a73cfaa054"><td class="mdescLeft">&#160;</td><td class="mdescRight">CANフレームを1つ読み取る．  <a href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html#aba9f031ada5fd612d310c1a73cfaa054">[詳解]</a><br /></td></tr>
 <tr class="separator:aba9f031ada5fd612d310c1a73cfaa054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8dced04191dcc8f0415cf736a5342fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html#af8dced04191dcc8f0415cf736a5342fd">CallTryRead</a> (CanDataFrame &amp;frame)</td></tr>
-<tr class="memdesc:af8dced04191dcc8f0415cf736a5342fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してTryRead()関数を呼び出す．振る舞い: CANフレームを1つ読み取る．  <a href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html#af8dced04191dcc8f0415cf736a5342fd">[詳解]</a><br /></td></tr>
-<tr class="separator:af8dced04191dcc8f0415cf736a5342fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a371116906000bce88dce9c208b06e249"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html#a371116906000bce88dce9c208b06e249">CallTryWrite</a> (const CanDataFrame &amp;frame)</td></tr>
-<tr class="memdesc:a371116906000bce88dce9c208b06e249"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してWrite()関数を呼び出す．振る舞い: CANフレームを1つ書き込む．  <a href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html#a371116906000bce88dce9c208b06e249">[詳解]</a><br /></td></tr>
-<tr class="separator:a371116906000bce88dce9c208b06e249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classalps_1_1cmn_1_1communication_1_1_i_can_io"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classalps_1_1cmn_1_1communication_1_1_i_can_io')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">alps::cmn::communication::ICanIo&lt; SocketCanIo &gt;</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:af8dced04191dcc8f0415cf736a5342fd inherit pub_methods_classalps_1_1cmn_1_1communication_1_1_i_can_io"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html#af8dced04191dcc8f0415cf736a5342fd">CallTryRead</a> (<a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">CanDataFrame</a> &amp;frame)</td></tr>
+<tr class="memdesc:af8dced04191dcc8f0415cf736a5342fd inherit pub_methods_classalps_1_1cmn_1_1communication_1_1_i_can_io"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してTryRead()関数を呼び出す．振る舞い: CANフレームを1つ読み取る．  <a href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html#af8dced04191dcc8f0415cf736a5342fd">[詳解]</a><br /></td></tr>
+<tr class="separator:af8dced04191dcc8f0415cf736a5342fd inherit pub_methods_classalps_1_1cmn_1_1communication_1_1_i_can_io"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a371116906000bce88dce9c208b06e249 inherit pub_methods_classalps_1_1cmn_1_1communication_1_1_i_can_io"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html#a371116906000bce88dce9c208b06e249">CallTryWrite</a> (const <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">CanDataFrame</a> &amp;frame)</td></tr>
+<tr class="memdesc:a371116906000bce88dce9c208b06e249 inherit pub_methods_classalps_1_1cmn_1_1communication_1_1_i_can_io"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介してWrite()関数を呼び出す．振る舞い: CANフレームを1つ書き込む．  <a href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html#a371116906000bce88dce9c208b06e249">[詳解]</a><br /></td></tr>
+<tr class="separator:a371116906000bce88dce9c208b06e249 inherit pub_methods_classalps_1_1cmn_1_1communication_1_1_i_can_io"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>SocketCANを用いてCAN通信を行うクラス． </p>
@@ -190,70 +189,23 @@ alps::lin::communication::SocketCanIo の継承関係図</div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="af8dced04191dcc8f0415cf736a5342fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8dced04191dcc8f0415cf736a5342fd">&#9670;&nbsp;</a></span>CallTryRead()</h2>
+<a id="a2cd03a79343100ed866bcbc7ff24bd5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cd03a79343100ed866bcbc7ff24bd5d">&#9670;&nbsp;</a></span>TryWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">alps::cmn::communication::ICanIo</a>&lt; <a class="el" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html">SocketCanIo</a>  &gt;::CallTryRead </td>
+          <td class="memname">bool alps::lin::communication::SocketCanIo::TryWrite </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">CanDataFrame</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">cmn::communication::CanDataFrame</a> &amp;&#160;</td>
           <td class="paramname"><em>frame</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>インタフェースを介してTryRead()関数を呼び出す．振る舞い: CANフレームを1つ読み取る． </p>
-<dl class="section note"><dt>覚え書き</dt><dd>継承クラスはこの関数と同じ振る舞いのTryRead()関数を実装すること．</dd></dl>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">frame</td><td>受け取ったCANフレームを格納する変数 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd>true 受け取り成功 </dd>
-<dd>
-false 受け取り失敗 </dd></dl>
-
-</div>
-</div>
-<a id="a371116906000bce88dce9c208b06e249"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a371116906000bce88dce9c208b06e249">&#9670;&nbsp;</a></span>CallTryWrite()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_can_io.html">alps::cmn::communication::ICanIo</a>&lt; <a class="el" href="classalps_1_1lin_1_1communication_1_1_socket_can_io.html">SocketCanIo</a>  &gt;::CallTryWrite </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">CanDataFrame</a> &amp;&#160;</td>
-          <td class="paramname"><em>frame</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>インタフェースを介してWrite()関数を呼び出す．振る舞い: CANフレームを1つ書き込む． </p>
-<dl class="section note"><dt>覚え書き</dt><dd>継承クラスはこの関数と同じ振る舞いのWrite()関数を実装すること．</dd></dl>
+<p>CANフレームを1つ書き込む． </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">frame</td><td>書き込むCANフレーム </td></tr>
@@ -295,37 +247,8 @@ false 受け取り失敗 </dd></dl>
 
 </div>
 </div>
-<a id="a2cd03a79343100ed866bcbc7ff24bd5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cd03a79343100ed866bcbc7ff24bd5d">&#9670;&nbsp;</a></span>TryWrite()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool alps::lin::communication::SocketCanIo::TryWrite </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structalps_1_1cmn_1_1communication_1_1_can_data_frame.html">cmn::communication::CanDataFrame</a> &amp;&#160;</td>
-          <td class="paramname"><em>frame</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>CANフレームを1つ書き込む． </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">frame</td><td>書き込むCANフレーム </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd>true 書き込み成功 </dd>
-<dd>
-false 書き込み失敗 </dd></dl>
-
-</div>
-</div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>alps_linux_lib/include/alps_lin/communication/<a class="el" href="socket__can__io_8hpp_source.html">socket_can_io.hpp</a></li>
+<li>alps_core/lib_internal/alps_linux_lib/include/alps_lin/communication/<a class="el" href="socket__can__io_8hpp_source.html">socket_can_io.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

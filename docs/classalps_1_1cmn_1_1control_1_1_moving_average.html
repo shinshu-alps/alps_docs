@@ -111,8 +111,6 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1control_1_1_moving
 
 <p>移動平均の計算を行うクラス．  
  <a href="classalps_1_1cmn_1_1control_1_1_moving_average.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="moving__average_8hpp_source.html">moving_average.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -181,6 +179,43 @@ template&lt;uint8_t kMaxWindowSize&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
+<a id="ab0a4b4f3c4f706a63020ac3716167d44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0a4b4f3c4f706a63020ac3716167d44">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint8_t kMaxWindowSize&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1control_1_1_moving_average.html">alps::cmn::control::MovingAverage</a>&lt; kMaxWindowSize &gt;::Update </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移動平均の更新 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>最新の値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>float 更新した移動平均値 </dd></dl>
+
+</div>
+</div>
 <a id="a087e2f2d25d6e66a01b2f0c0eca980b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a087e2f2d25d6e66a01b2f0c0eca980b1">&#9670;&nbsp;</a></span>GetNowValue()</h2>
 
@@ -208,35 +243,6 @@ template&lt;uint8_t kMaxWindowSize&gt; </div>
 
 <p>現在の移動平均値を取得 </p>
 <dl class="section return"><dt>戻り値</dt><dd>float 現在の移動平均値 </dd></dl>
-
-</div>
-</div>
-<a id="a20f7dadf9ca971efab80ced16cd201c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20f7dadf9ca971efab80ced16cd201c5">&#9670;&nbsp;</a></span>Reset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uint8_t kMaxWindowSize&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_moving_average.html">alps::cmn::control::MovingAverage</a>&lt; kMaxWindowSize &gt;::Reset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>移動平均のリセット </p>
 
 </div>
 </div>
@@ -276,8 +282,8 @@ template&lt;uint8_t kMaxWindowSize&gt; </div>
 
 </div>
 </div>
-<a id="ab0a4b4f3c4f706a63020ac3716167d44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0a4b4f3c4f706a63020ac3716167d44">&#9670;&nbsp;</a></span>Update()</h2>
+<a id="a20f7dadf9ca971efab80ced16cd201c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20f7dadf9ca971efab80ced16cd201c5">&#9670;&nbsp;</a></span>Reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -288,10 +294,9 @@ template&lt;uint8_t kMaxWindowSize&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1control_1_1_moving_average.html">alps::cmn::control::MovingAverage</a>&lt; kMaxWindowSize &gt;::Update </td>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_moving_average.html">alps::cmn::control::MovingAverage</a>&lt; kMaxWindowSize &gt;::Reset </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -302,19 +307,12 @@ template&lt;uint8_t kMaxWindowSize&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>移動平均の更新 </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">value</td><td>最新の値 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd>float 更新した移動平均値 </dd></dl>
+<p>移動平均のリセット </p>
 
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>alps_common_lib/include/alps_cmn/control/<a class="el" href="moving__average_8hpp_source.html">moving_average.hpp</a></li>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/control/<a class="el" href="moving__average_8hpp_source.html">moving_average.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,8 +1,8 @@
-<map id="alps_common_lib/include/alps_cmn/communication/i_i2c_io.hpp" name="alps_common_lib/include/alps_cmn/communication/i_i2c_io.hpp">
-<area shape="rect" id="node1" title="I2C通信インタフェース" alt="" coords="500,5,693,61"/>
-<area shape="rect" id="node2" href="$bno055_8hpp.html" title="BNO055 9軸センサ" alt="" coords="5,117,220,158"/>
-<area shape="rect" id="node3" href="$s11059_8hpp.html" title="S11059&#45;02DTカラーセンサー用のライブラリ" alt="" coords="244,117,459,158"/>
-<area shape="rect" id="node4" href="$tcs34725_8hpp.html" title="カラーセンサーTCS34725のクラス" alt="" coords="483,117,710,158"/>
-<area shape="rect" id="node5" href="$vl53l0x_8hpp.html" title="VL53L0X 距離センサ" alt="" coords="735,117,949,158"/>
-<area shape="rect" id="node6" href="$i2c__io_8hpp.html" title="I2C通信インタフェース" alt="" coords="974,109,1177,165"/>
+<map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/i_i2c_io.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/i_i2c_io.hpp">
+<area shape="rect" id="node1" title="I2C通信インタフェース" alt="" coords="500,5,693,76"/>
+<area shape="rect" id="node2" href="$bno055_8hpp.html" title="BNO055 9軸センサ" alt="" coords="5,131,220,187"/>
+<area shape="rect" id="node3" href="$s11059_8hpp.html" title="S11059&#45;02DTカラーセンサー用のライブラリ" alt="" coords="244,131,459,187"/>
+<area shape="rect" id="node4" href="$tcs34725_8hpp.html" title="カラーセンサーTCS34725のクラス" alt="" coords="483,131,710,187"/>
+<area shape="rect" id="node5" href="$vl53l0x_8hpp.html" title="VL53L0X 距離センサ" alt="" coords="735,131,949,187"/>
+<area shape="rect" id="node6" href="$i2c__io_8hpp.html" title="I2C通信インタフェース" alt="" coords="974,124,1177,195"/>
 </map>

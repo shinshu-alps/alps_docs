@@ -111,8 +111,6 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1control_1_1_motor
 
 <p>モーターの速度制御の計算情報  
  <a href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="motor__velocity__controller_8hpp_source.html">motor_velocity_controller.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 公開変数類</h2></td></tr>
@@ -144,35 +142,19 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1control_1_1_motor
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>モーターの速度制御の計算情報 </p>
 </div><h2 class="groupheader">メンバ詳解</h2>
-<a id="aa3d48dafc9b0d55346d8b2165c94d018"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3d48dafc9b0d55346d8b2165c94d018">&#9670;&nbsp;</a></span>ff_acceleration_term</h2>
+<a id="a48d4049c0b85bf5e3b4cabf5f6978264"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48d4049c0b85bf5e3b4cabf5f6978264">&#9670;&nbsp;</a></span>target_velocity</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float alps::cmn::control::MotorVelocityControllerCalcInfo::ff_acceleration_term</td>
+          <td class="memname">float alps::cmn::control::MotorVelocityControllerCalcInfo::target_velocity</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>加速度フィードフォワード項 </p>
-
-</div>
-</div>
-<a id="af9af791c36aba1acfec215eba8f4c012"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9af791c36aba1acfec215eba8f4c012">&#9670;&nbsp;</a></span>ff_velocity_term</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float alps::cmn::control::MotorVelocityControllerCalcInfo::ff_velocity_term</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>速度フィードフォワード項 </p>
+<p>目標角速度 </p>
 
 </div>
 </div>
@@ -224,6 +206,38 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1control_1_1_motor
 
 </div>
 </div>
+<a id="af9af791c36aba1acfec215eba8f4c012"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9af791c36aba1acfec215eba8f4c012">&#9670;&nbsp;</a></span>ff_velocity_term</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float alps::cmn::control::MotorVelocityControllerCalcInfo::ff_velocity_term</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>速度フィードフォワード項 </p>
+
+</div>
+</div>
+<a id="aa3d48dafc9b0d55346d8b2165c94d018"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3d48dafc9b0d55346d8b2165c94d018">&#9670;&nbsp;</a></span>ff_acceleration_term</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float alps::cmn::control::MotorVelocityControllerCalcInfo::ff_acceleration_term</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加速度フィードフォワード項 </p>
+
+</div>
+</div>
 <a id="a97eff29d5734c18a2e62ccc95e9cde3b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a97eff29d5734c18a2e62ccc95e9cde3b">&#9670;&nbsp;</a></span>target_acceleration</h2>
 
@@ -256,24 +270,8 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1control_1_1_motor
 
 </div>
 </div>
-<a id="a48d4049c0b85bf5e3b4cabf5f6978264"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48d4049c0b85bf5e3b4cabf5f6978264">&#9670;&nbsp;</a></span>target_velocity</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float alps::cmn::control::MotorVelocityControllerCalcInfo::target_velocity</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>目標角速度 </p>
-
-</div>
-</div>
 <hr/>この構造体詳解は次のファイルから抽出されました:<ul>
-<li>alps_common_lib/include/alps_cmn/control/<a class="el" href="motor__velocity__controller_8hpp_source.html">motor_velocity_controller.hpp</a></li>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/control/<a class="el" href="motor__velocity__controller_8hpp_source.html">motor_velocity_controller.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

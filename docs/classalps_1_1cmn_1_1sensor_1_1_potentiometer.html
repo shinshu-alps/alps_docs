@@ -111,8 +111,6 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1sensor_1_1_potenti
 
 <p>ポテンショメータのクラス．  
  <a href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#details">[詳解]</a></p>
-
-<p><code>#include &lt;<a class="el" href="potentiometer_8hpp_source.html">potentiometer.hpp</a>&gt;</code></p>
 <div class="dynheader">
 alps::cmn::sensor::Potentiometer&lt; Clock, AnalogIn &gt; の継承関係図</div>
 <div class="dyncontent">
@@ -139,9 +137,10 @@ alps::cmn::sensor::Potentiometer&lt; Clock, AnalogIn &gt; の継承関係図</di
 <tr class="memitem:aa884ac8ee10264569f3ef96e86b05ae1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#aa884ac8ee10264569f3ef96e86b05ae1">GetAngle</a> ()</td></tr>
 <tr class="memdesc:aa884ac8ee10264569f3ef96e86b05ae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">角度を得る  <a href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#aa884ac8ee10264569f3ef96e86b05ae1">[詳解]</a><br /></td></tr>
 <tr class="separator:aa884ac8ee10264569f3ef96e86b05ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd34b25b6fd6be03746984bf9adbd367"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">CallGetAngle</a> ()</td></tr>
-<tr class="memdesc:afd34b25b6fd6be03746984bf9adbd367"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介して現在の角度を取得する  <a href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">[詳解]</a><br /></td></tr>
-<tr class="separator:afd34b25b6fd6be03746984bf9adbd367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">alps::cmn::sensor::IRotarySensor&lt; Potentiometer&lt; Clock, AnalogIn &gt; &gt;</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:afd34b25b6fd6be03746984bf9adbd367 inherit pub_methods_classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">CallGetAngle</a> ()</td></tr>
+<tr class="memdesc:afd34b25b6fd6be03746984bf9adbd367 inherit pub_methods_classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor"><td class="mdescLeft">&#160;</td><td class="mdescRight">インタフェースを介して現在の角度を取得する  <a href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html#afd34b25b6fd6be03746984bf9adbd367">[詳解]</a><br /></td></tr>
+<tr class="separator:afd34b25b6fd6be03746984bf9adbd367 inherit pub_methods_classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><h3>template&lt;class Clock, class AnalogIn&gt;<br />
@@ -204,36 +203,8 @@ template&lt;class Clock , class AnalogIn &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="afd34b25b6fd6be03746984bf9adbd367"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd34b25b6fd6be03746984bf9adbd367">&#9670;&nbsp;</a></span>CallGetAngle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">alps::cmn::sensor::IRotarySensor</a>&lt; <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html">Potentiometer</a>&lt; Clock, AnalogIn &gt;  &gt;::CallGetAngle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>インタフェースを介して現在の角度を取得する </p>
-<dl class="section return"><dt>戻り値</dt><dd>double 角度[rad] </dd></dl>
-
-</div>
-</div>
-<a id="aa884ac8ee10264569f3ef96e86b05ae1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa884ac8ee10264569f3ef96e86b05ae1">&#9670;&nbsp;</a></span>GetAngle()</h2>
+<a id="a2f6b87061fa35c65a21c184a77608677"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f6b87061fa35c65a21c184a77608677">&#9670;&nbsp;</a></span>SetParam()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,7 +215,43 @@ template&lt;class Clock , class AnalogIn &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html">alps::cmn::sensor::Potentiometer</a>&lt; Clock, AnalogIn &gt;::GetAngle </td>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html">alps::cmn::sensor::Potentiometer</a>&lt; Clock, AnalogIn &gt;::SetParam </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html">PotentiometerParam</a> &amp;&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>パラメータを設定する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">param</td><td>パラメータ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7323f143a5ecb2095a7c18311628d491"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7323f143a5ecb2095a7c18311628d491">&#9670;&nbsp;</a></span>GetRawValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock , class AnalogIn &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html">alps::cmn::sensor::Potentiometer</a>&lt; Clock, AnalogIn &gt;::GetRawValue </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -257,8 +264,8 @@ template&lt;class Clock , class AnalogIn &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>角度を得る </p>
-<dl class="section return"><dt>戻り値</dt><dd>double 角度[rad] </dd></dl>
+<p>ポテンショメータの生値を得る．この関数で最小，最大値を確認すると良い． </p>
+<dl class="section return"><dt>戻り値</dt><dd>float 生値(0.0 〜 1.0) </dd></dl>
 
 </div>
 </div>
@@ -322,8 +329,8 @@ template&lt;class Clock , class AnalogIn &gt; </div>
 
 </div>
 </div>
-<a id="a7323f143a5ecb2095a7c18311628d491"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7323f143a5ecb2095a7c18311628d491">&#9670;&nbsp;</a></span>GetRawValue()</h2>
+<a id="aa884ac8ee10264569f3ef96e86b05ae1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa884ac8ee10264569f3ef96e86b05ae1">&#9670;&nbsp;</a></span>GetAngle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -334,7 +341,7 @@ template&lt;class Clock , class AnalogIn &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html">alps::cmn::sensor::Potentiometer</a>&lt; Clock, AnalogIn &gt;::GetRawValue </td>
+          <td class="memname">double <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html">alps::cmn::sensor::Potentiometer</a>&lt; Clock, AnalogIn &gt;::GetAngle </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -347,49 +354,13 @@ template&lt;class Clock , class AnalogIn &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>ポテンショメータの生値を得る．この関数で最小，最大値を確認すると良い． </p>
-<dl class="section return"><dt>戻り値</dt><dd>float 生値(0.0 〜 1.0) </dd></dl>
-
-</div>
-</div>
-<a id="a2f6b87061fa35c65a21c184a77608677"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f6b87061fa35c65a21c184a77608677">&#9670;&nbsp;</a></span>SetParam()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Clock , class AnalogIn &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html">alps::cmn::sensor::Potentiometer</a>&lt; Clock, AnalogIn &gt;::SetParam </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html">PotentiometerParam</a> &amp;&#160;</td>
-          <td class="paramname"><em>param</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>パラメータを設定する </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">param</td><td>パラメータ </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>角度を得る </p>
+<dl class="section return"><dt>戻り値</dt><dd>double 角度[rad] </dd></dl>
 
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>alps_common_lib/include/alps_cmn/sensor/<a class="el" href="potentiometer_8hpp_source.html">potentiometer.hpp</a></li>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/<a class="el" href="potentiometer_8hpp_source.html">potentiometer.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
