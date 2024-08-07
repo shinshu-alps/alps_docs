@@ -55,9 +55,16 @@ jobs:
           git commit -m "ドキュメントが自動生成されました"
           git push origin main
 
-          # gh-pagesブランチに切り替えてdocsディレクトリをmainからコピー
+      # gh-pagesブランチに切り替えてdocsディレクトリをmainからコピー
+      - name: Update gh-pages
+        run: |
           git checkout gh-pages
           git checkout main docs/
+
+          if git diff --quiet; then
+            echo "nothing to commit"
+            exit 0
+          fi
 
           git add .
           git commit -m "ドキュメントが自動更新されました"
