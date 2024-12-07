@@ -131,7 +131,14 @@ class alps::ros2::communication::RosToCanTopicBridge&lt; CanType, RosTopicType &
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>覚え書き</dt><dd>テンプレート引数の要件: <a class="el" href="namespacealps_1_1ros2_1_1type.html#aa2225b66b2a595843b0e988d3a14b2b7" title="RosTopicTypeからOriginalTypeへの変換関数">alps::cmn::type::TopicConverter&lt;CanType, RosTopicType&gt;::ToOriginal()</a> が定義されている </dd></dl>
+<dl class="section note"><dt>覚え書き</dt><dd>テンプレート引数の要件 <br  />
+<ul>
+<li><a class="el" href="namespacealps_1_1ros2_1_1type.html#aa2225b66b2a595843b0e988d3a14b2b7" title="RosTopicTypeからOriginalTypeへの変換関数">alps::cmn::type::TopicConverter&lt;CanType, RosTopicType&gt;::ToOriginal()</a> が定義されている <br  />
+</li>
+<li>alps::cmn::type::Serializer&lt;CanType&gt; が実装されている <br  />
+ </li>
+</ul>
+</dd></dl>
 </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="a8249b7fc2a5265d2336c78eefa773739"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8249b7fc2a5265d2336c78eefa773739">&#9670;&nbsp;</a></span>RosToCanTopicBridge()</h2>

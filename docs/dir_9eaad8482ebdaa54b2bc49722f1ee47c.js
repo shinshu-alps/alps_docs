@@ -6,6 +6,7 @@ var dir_9eaad8482ebdaa54b2bc49722f1ee47c =
     [ "i2c_io.hpp", "i2c__io_8hpp.html", [
       [ "I2cIo", "classalps_1_1mbed_1_1communication_1_1_i2c_io.html", "classalps_1_1mbed_1_1communication_1_1_i2c_io" ]
     ] ],
+    [ "stm_ordered_can.hpp", "stm__ordered__can_8hpp.html", null ],
     [ "uart_io.hpp", "alps__mbed__lib_2include_2alps__mbed_2communication_2uart__io_8hpp.html", [
       [ "UartIo", "classalps_1_1mbed_1_1communication_1_1_uart_io.html", "classalps_1_1mbed_1_1communication_1_1_uart_io" ]
     ] ]

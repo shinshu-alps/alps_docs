@@ -110,7 +110,8 @@ $(document).ready(function(){initNavTree('classalps_1_1ros2_1_1communication_1_1
 <div class="contents">
 
 <p>ROSパラメータをCANパラメータに変換して送信するクラス． <br  />
- ROSパラメータはクライアント，CANパラメータはサーバーとして動作する．  
+ ROSパラメータはクライアント，CANパラメータはサーバーとして動作する． <br  />
+ 
  <a href="classalps_1_1ros2_1_1communication_1_1_ros_to_can_param_bridge.html#details">[詳解]</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -125,13 +126,22 @@ $(document).ready(function(){initNavTree('classalps_1_1ros2_1_1communication_1_1
 class alps::ros2::communication::RosToCanParamBridge&lt; T &gt;</h3>
 
 <p>ROSパラメータをCANパラメータに変換して送信するクラス． <br  />
- ROSパラメータはクライアント，CANパラメータはサーバーとして動作する． </p>
+ ROSパラメータはクライアント，CANパラメータはサーバーとして動作する． <br  />
+</p>
 <dl class="tparams"><dt>テンプレート引数</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>パラメータとして扱う型 </td></tr>
+    <tr><td class="paramname">T</td><td>パラメータとして扱う型.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>覚え書き</dt><dd>テンプレート引数の要件 <br  />
+<ul>
+<li>alps::ros2::type::ParamConverter&lt;T&gt; が実装されている <br  />
+</li>
+<li>alps::cmn::type::Serializer&lt;T&gt; が実装されている <br  />
+ </li>
+</ul>
+</dd></dl>
 </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="aadf6364226ba9084467a9795898b465f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aadf6364226ba9084467a9795898b465f">&#9670;&nbsp;</a></span>RosToCanParamBridge()</h2>

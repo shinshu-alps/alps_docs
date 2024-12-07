@@ -104,6 +104,10 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 &#160;
 
 <h3><a id="index_a"></a>- a -</h3><ul>
+<li>angle_limit
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_angle_controller_param.html#a5cc427ad47027e1de0f217644cab60b9">alps::cmn::control::MotorAngleControllerParam</a>
+, <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller_param.html#abf8d424c8b0fc6e43765b65746aaf5e7">alps::cmn::control::MotorAngleVelocityControllerParam</a>
+</li>
 <li>angle_offset
 : <a class="el" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a4ba93241999895c311dbfe00ed691545">alps::cmn::sensor::PotentiometerParam</a>
 </li>
@@ -143,6 +147,10 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 </li>
 <li>diff_lpf_time_const
 : <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html#ad3f8eca8af360ff2586f5db76485ee9d">alps::cmn::control::PidParam</a>
+</li>
+<li>drive_ratio_limit
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_angle_controller_param.html#af5c088bfa1aa962d08b529caa9ff571a">alps::cmn::control::MotorAngleControllerParam</a>
+, <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a7532d461441e8f81cc7597438fd1a4ac">alps::cmn::control::MotorVelocityControllerParam</a>
 </li>
 </ul>
 
@@ -217,11 +225,20 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <li>kff_velocity
 : <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#abeada49dcefaa39a1439a1a09eaef91c">alps::cmn::control::MotorVelocityControllerParam</a>
 </li>
+<li>kGearRatio
+: <a class="el" href="classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_paramed_motor.html#af4afa1801635790f9f805655fb3a5d7b">alps::cmn::actuator::robomas_motor::ParamedMotor&lt; Clock, max_abs_output, max_current_num, max_current_denom, gear_ratio_num, gear_ratio_denom &gt;</a>
+</li>
 <li>ki
 : <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html#ad254b8043c219d76405305e26dcbcd98">alps::cmn::control::PidParam</a>
 </li>
 <li>kinetic_friction
 : <a class="el" href="structalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_1_1_friction_result.html#a5dbb361918887f34fd1c809e6c6ed6dd">alps::cmn::tool::MotorFrictionAnalyzer&lt; Clock, Motor, RorarySensor &gt;::FrictionResult</a>
+</li>
+<li>kMaxAbsOutput
+: <a class="el" href="classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_paramed_motor.html#a355d12acccd509ee5e777b8190c54f22">alps::cmn::actuator::robomas_motor::ParamedMotor&lt; Clock, max_abs_output, max_current_num, max_current_denom, gear_ratio_num, gear_ratio_denom &gt;</a>
+</li>
+<li>kMaxCurrent
+: <a class="el" href="classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_paramed_motor.html#adbd40e157d6e12f8fe9bb1fd15982e7f">alps::cmn::actuator::robomas_motor::ParamedMotor&lt; Clock, max_abs_output, max_current_num, max_current_denom, gear_ratio_num, gear_ratio_denom &gt;</a>
 </li>
 <li>kNumAxes
 : <a class="el" href="classalps_1_1ros2_1_1ui_1_1_joy.html#a432eac68c86897a9e46f33cab8277c82">alps::ros2::ui::Joy</a>
@@ -320,7 +337,9 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 , <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a00aaa0c062827fd9243f5ab188a43cb1">alps::cmn::control::MotorVelocityControllerCalcInfo</a>
 </li>
 <li>pid_param
-: <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a94c0cf6e73fc510cb1c94b910a524f1e">alps::cmn::control::MotorVelocityControllerParam</a>
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_angle_controller_param.html#a506535ae13fc8918f3db69738faa65c7">alps::cmn::control::MotorAngleControllerParam</a>
+, <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller_param.html#af8b5baf8733177d1637305e84d950702">alps::cmn::control::MotorAngleVelocityControllerParam</a>
+, <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a94c0cf6e73fc510cb1c94b910a524f1e">alps::cmn::control::MotorVelocityControllerParam</a>
 </li>
 <li>pitch
 : <a class="el" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#a30e024e60e3ea71d63b30562bd2b9964">alps::cmn::sensor::bno055::Euler</a>
@@ -382,6 +401,10 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 : <a class="el" href="structalps_1_1cmn_1_1type_1_1detail_1_1_is_builtin_type.html#abebfd282d9c8d5a6b3e90b7cd7d9136a">alps::cmn::type::detail::IsBuiltinType&lt; T &gt;</a>
 , <a class="el" href="structalps_1_1ros2_1_1type_1_1detail_1_1_is_standard_type.html#a80bc0c187a390d3a20d14a3e302b41c1">alps::ros2::type::detail::IsStandardType&lt; T &gt;</a>
 , <a class="el" href="structalps_1_1ros2_1_1type_1_1detail_1_1_is_standard_vector_value_type.html#a4ae3e15171057c777ea66fb5c5be14a0">alps::ros2::type::detail::IsStandardVectorValueType&lt; T &gt;</a>
+</li>
+<li>velocity_limit
+: <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller_param.html#a00bd414773db43ad47c8ac581909ee9b">alps::cmn::control::MotorAngleVelocityControllerParam</a>
+, <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#af9edcd113de2e72915bd80073ffc5822">alps::cmn::control::MotorVelocityControllerParam</a>
 </li>
 </ul>
 

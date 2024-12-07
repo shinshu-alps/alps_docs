@@ -114,9 +114,9 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1control_1_1_motor_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a47c128a23fede436faa783b1fa3a0e39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#a47c128a23fede436faa783b1fa3a0e39">MotorAngleVelocityController</a> (const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a> &amp;param, <a class="el" href="structalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange</a>&lt; float &gt; velocity_limit={}, <a class="el" href="structalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange</a>&lt; double &gt; angle_limit={}, std::chrono::microseconds min_calc_interval=std::chrono::milliseconds(1))</td></tr>
-<tr class="memdesc:a47c128a23fede436faa783b1fa3a0e39"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#a47c128a23fede436faa783b1fa3a0e39">[詳解]</a><br /></td></tr>
-<tr class="separator:a47c128a23fede436faa783b1fa3a0e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6beed98ef83aed8d9e7e551c1c51a10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#aa6beed98ef83aed8d9e7e551c1c51a10">MotorAngleVelocityController</a> (const <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller_param.html">MotorAngleVelocityControllerParam</a> &amp;param, std::chrono::microseconds min_calc_interval=std::chrono::milliseconds(1))</td></tr>
+<tr class="memdesc:aa6beed98ef83aed8d9e7e551c1c51a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#aa6beed98ef83aed8d9e7e551c1c51a10">[詳解]</a><br /></td></tr>
+<tr class="separator:aa6beed98ef83aed8d9e7e551c1c51a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42302077a402de3e6ab8fe96bd097ee1"><td class="memTemplParams" colspan="2">template&lt;class Motor , class RotarySensor &gt; </td></tr>
 <tr class="memitem:a42302077a402de3e6ab8fe96bd097ee1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#a42302077a402de3e6ab8fe96bd097ee1">Control</a> (<a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html">control::MotorVelocityController</a>&lt; Clock, Motor, RotarySensor &gt; &amp;vel_controller, float ff_output=0.0f)</td></tr>
 <tr class="memdesc:a42302077a402de3e6ab8fe96bd097ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御処理を実行する．周期的に呼び出すこと．  <a href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#a42302077a402de3e6ab8fe96bd097ee1">[詳解]</a><br /></td></tr>
@@ -133,12 +133,12 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1control_1_1_motor_
 <tr class="memitem:ac8569798206b7c6a7e9ab4bf10190e8d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#ac8569798206b7c6a7e9ab4bf10190e8d">CheckConvergence</a> (float allowable_error, float allowable_error_diff=std::numeric_limits&lt; float &gt;::max()) const</td></tr>
 <tr class="memdesc:ac8569798206b7c6a7e9ab4bf10190e8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">収束しているかどうかを判定する  <a href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#ac8569798206b7c6a7e9ab4bf10190e8d">[詳解]</a><br /></td></tr>
 <tr class="separator:ac8569798206b7c6a7e9ab4bf10190e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6d0768cacdcf332317b992b676ece2d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#ac6d0768cacdcf332317b992b676ece2d">GetParam</a> () const</td></tr>
-<tr class="memdesc:ac6d0768cacdcf332317b992b676ece2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータを取得する  <a href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#ac6d0768cacdcf332317b992b676ece2d">[詳解]</a><br /></td></tr>
-<tr class="separator:ac6d0768cacdcf332317b992b676ece2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97da06a47dbd4e413f419f5e974a3b80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#a97da06a47dbd4e413f419f5e974a3b80">SetPidParam</a> (const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a> &amp;param)</td></tr>
-<tr class="memdesc:a97da06a47dbd4e413f419f5e974a3b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータを設定する  <a href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#a97da06a47dbd4e413f419f5e974a3b80">[詳解]</a><br /></td></tr>
-<tr class="separator:a97da06a47dbd4e413f419f5e974a3b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6f647f1e4a8fad8a58cf80668b7b418"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller_param.html">MotorAngleVelocityControllerParam</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#ae6f647f1e4a8fad8a58cf80668b7b418">GetParam</a> () const</td></tr>
+<tr class="memdesc:ae6f647f1e4a8fad8a58cf80668b7b418"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータを取得する  <a href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#ae6f647f1e4a8fad8a58cf80668b7b418">[詳解]</a><br /></td></tr>
+<tr class="separator:ae6f647f1e4a8fad8a58cf80668b7b418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada4584031941a841f9dab3682fc70485"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#ada4584031941a841f9dab3682fc70485">SetParam</a> (const <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller_param.html">MotorAngleVelocityControllerParam</a> &amp;param)</td></tr>
+<tr class="memdesc:ada4584031941a841f9dab3682fc70485"><td class="mdescLeft">&#160;</td><td class="mdescRight">パラメータを設定する  <a href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#ada4584031941a841f9dab3682fc70485">[詳解]</a><br /></td></tr>
+<tr class="separator:ada4584031941a841f9dab3682fc70485"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><h3>template&lt;class Clock&gt;<br />
@@ -153,8 +153,8 @@ class alps::cmn::control::MotorAngleVelocityController&lt; Clock &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="a47c128a23fede436faa783b1fa3a0e39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47c128a23fede436faa783b1fa3a0e39">&#9670;&nbsp;</a></span>MotorAngleVelocityController()</h2>
+<a id="aa6beed98ef83aed8d9e7e551c1c51a10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6beed98ef83aed8d9e7e551c1c51a10">&#9670;&nbsp;</a></span>MotorAngleVelocityController()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -167,20 +167,8 @@ template&lt;class Clock &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html">alps::cmn::control::MotorAngleVelocityController</a>&lt; Clock &gt;::<a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html">MotorAngleVelocityController</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller_param.html">MotorAngleVelocityControllerParam</a> &amp;&#160;</td>
           <td class="paramname"><em>param</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange</a>&lt; float &gt;&#160;</td>
-          <td class="paramname"><em>velocity_limit</em> = <code>{}</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange</a>&lt; double &gt;&#160;</td>
-          <td class="paramname"><em>angle_limit</em> = <code>{}</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -204,14 +192,15 @@ template&lt;class Clock &gt; </div>
 <p>コンストラクタ </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">param</td><td>角度制御パラメータ </td></tr>
-    <tr><td class="paramname">velocity_limit</td><td>速度制限 [rad/s] </td></tr>
-    <tr><td class="paramname">angle_limit</td><td>角度制限 [rad] </td></tr>
-    <tr><td class="paramname">min_calc_interval</td><td>最小計算間隔 </td></tr>
+    <tr><td class="paramname">param</td><td>制御パラメータ </td></tr>
+    <tr><td class="paramname">min_calc_interval</td><td>最小計算間隔</td></tr>
   </table>
   </dd>
 </dl>
-
+<div class="image">
+<object type="image/svg+xml" data="motor_angle_velocity_controller.drawio.svg" style="pointer-events: none;"></object>
+</div>
+ 
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
@@ -416,8 +405,8 @@ false 収束していない </dd></dl>
 
 </div>
 </div>
-<a id="ac6d0768cacdcf332317b992b676ece2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6d0768cacdcf332317b992b676ece2d">&#9670;&nbsp;</a></span>GetParam()</h2>
+<a id="ae6f647f1e4a8fad8a58cf80668b7b418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f647f1e4a8fad8a58cf80668b7b418">&#9670;&nbsp;</a></span>GetParam()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -428,7 +417,7 @@ template&lt;class Clock &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a>&amp; <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html">alps::cmn::control::MotorAngleVelocityController</a>&lt; Clock &gt;::GetParam </td>
+          <td class="memname">const <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller_param.html">MotorAngleVelocityControllerParam</a>&amp; <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html">alps::cmn::control::MotorAngleVelocityController</a>&lt; Clock &gt;::GetParam </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -442,12 +431,12 @@ template&lt;class Clock &gt; </div>
 </div><div class="memdoc">
 
 <p>パラメータを取得する </p>
-<dl class="section return"><dt>戻り値</dt><dd>const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html" title="PID制御のパラメータ">PidParam</a>&amp; パラメータ </dd></dl>
+<dl class="section return"><dt>戻り値</dt><dd>const <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller_param.html" title="モーターの角度-&gt;速度制御のパラメータ">MotorAngleVelocityControllerParam</a>&amp; パラメータ </dd></dl>
 
 </div>
 </div>
-<a id="a97da06a47dbd4e413f419f5e974a3b80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97da06a47dbd4e413f419f5e974a3b80">&#9670;&nbsp;</a></span>SetPidParam()</h2>
+<a id="ada4584031941a841f9dab3682fc70485"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada4584031941a841f9dab3682fc70485">&#9670;&nbsp;</a></span>SetParam()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -458,9 +447,9 @@ template&lt;class Clock &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html">alps::cmn::control::MotorAngleVelocityController</a>&lt; Clock &gt;::SetPidParam </td>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html">alps::cmn::control::MotorAngleVelocityController</a>&lt; Clock &gt;::SetParam </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structalps_1_1cmn_1_1control_1_1_pid_param.html">PidParam</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller_param.html">MotorAngleVelocityControllerParam</a> &amp;&#160;</td>
           <td class="paramname"><em>param</em></td><td>)</td>
           <td></td>
         </tr>

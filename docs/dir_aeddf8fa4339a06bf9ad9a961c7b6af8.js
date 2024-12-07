@@ -5,5 +5,6 @@ var dir_aeddf8fa4339a06bf9ad9a961c7b6af8 =
     [ "gpio", "dir_581791ccee735a0cb31ab604a462ee79.html", "dir_581791ccee735a0cb31ab604a462ee79" ],
     [ "log", "dir_bebaca3cb71f3039b3e245f5499d3f80.html", "dir_bebaca3cb71f3039b3e245f5499d3f80" ],
     [ "sensor", "dir_634480ad381c6c0f14f222313cbd3ce3.html", "dir_634480ad381c6c0f14f222313cbd3ce3" ],
+    [ "time", "dir_80aef9975d4a22666dc0977b16b5cd06.html", "dir_80aef9975d4a22666dc0977b16b5cd06" ],
     [ "namespace.hpp", "alps__mbed__lib_2include_2alps__mbed_2namespace_8hpp.html", null ]
 ];

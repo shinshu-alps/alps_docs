@@ -19,9 +19,7 @@ var dir_b6cd085f17e89cb6278eb6f5ecd32d39 =
       [ "LowPassFilter", "classalps_1_1cmn_1_1control_1_1_low_pass_filter.html", "classalps_1_1cmn_1_1control_1_1_low_pass_filter" ]
     ] ],
     [ "motor_angle_controller.hpp", "motor__angle__controller_8hpp.html", "motor__angle__controller_8hpp" ],
-    [ "motor_angle_velocity_controller.hpp", "motor__angle__velocity__controller_8hpp.html", [
-      [ "MotorAngleVelocityController", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller" ]
-    ] ],
+    [ "motor_angle_velocity_controller.hpp", "motor__angle__velocity__controller_8hpp.html", "motor__angle__velocity__controller_8hpp" ],
     [ "motor_velocity_controller.hpp", "motor__velocity__controller_8hpp.html", "motor__velocity__controller_8hpp" ],
     [ "moving_average.hpp", "moving__average_8hpp.html", [
       [ "MovingAverage", "classalps_1_1cmn_1_1control_1_1_moving_average.html", "classalps_1_1cmn_1_1control_1_1_moving_average" ]

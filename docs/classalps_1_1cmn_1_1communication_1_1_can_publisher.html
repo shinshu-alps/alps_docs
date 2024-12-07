@@ -136,10 +136,16 @@ class alps::cmn::communication::CanPublisher&lt; T &gt;</h3>
 <p>CAN通信で型付けされたデータを送信するクラス． </p>
 <dl class="tparams"><dt>テンプレート引数</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>送信するデータの型 </td></tr>
+    <tr><td class="paramname">T</td><td>送信するデータの型</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>覚え書き</dt><dd>テンプレート引数の要件 <br  />
+<ul>
+<li>alps::cmn::type::Serializer&lt;T&gt; が実装されている <br  />
+ </li>
+</ul>
+</dd></dl>
 </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="a0844abe6bcbdcf118c62a959d322f1dd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0844abe6bcbdcf118c62a959d322f1dd">&#9670;&nbsp;</a></span>CanPublisher()</h2>
