@@ -56,16 +56,16 @@ jobs:
           git push origin main
 
       # gh-pagesブランチに切り替えてdocsディレクトリをmainからコピー
+      # コミットするものがあるときだけ: https://stackoverflow.com/questions/5139290/how-to-check-if-theres-nothing-to-be-committed-in-the-current-branch/5139346#5139346
       - name: Update gh-pages
         run: |
           git checkout gh-pages
           git checkout main docs/
 
-          if git diff --quiet; then
+          if [ -n "$(git status --porcelain)" ]; then
+            git add .
+            git commit -m "ドキュメントが自動更新されました"
+            git push origin gh-pages
+          else
             echo "nothing to commit"
-            exit 0
           fi
-
-          git add .
-          git commit -m "ドキュメントが自動更新されました"
-          git push origin gh-pages
