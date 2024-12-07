@@ -4,12 +4,8 @@ var annotated_dup =
       [ "cmn", "namespacealps_1_1cmn.html", [
         [ "actuator", "namespacealps_1_1cmn_1_1actuator.html", [
           [ "robomas_motor", "namespacealps_1_1cmn_1_1actuator_1_1robomas__motor.html", [
-            [ "detail", "namespacealps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail.html", [
-              [ "MotorBase", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail_1_1_motor_base.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail_1_1_motor_base" ]
-            ] ],
             [ "CanPort", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_can_port.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_can_port" ],
-            [ "M2006", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m2006.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m2006" ],
-            [ "M3508", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m3508.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_m3508" ]
+            [ "ParamedMotor", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_paramed_motor.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_paramed_motor" ]
           ] ],
           [ "DcMotor", "classalps_1_1cmn_1_1actuator_1_1_dc_motor.html", "classalps_1_1cmn_1_1actuator_1_1_dc_motor" ],
           [ "EscBldcMotor", "classalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor.html", "classalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor" ],
@@ -45,8 +41,10 @@ var annotated_dup =
           [ "Integrator", "classalps_1_1cmn_1_1control_1_1_integrator.html", "classalps_1_1cmn_1_1control_1_1_integrator" ],
           [ "LowPassDifferentiator", "classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html", "classalps_1_1cmn_1_1control_1_1_low_pass_differentiator" ],
           [ "LowPassFilter", "classalps_1_1cmn_1_1control_1_1_low_pass_filter.html", "classalps_1_1cmn_1_1control_1_1_low_pass_filter" ],
+          [ "MotorAngleControllerParam", "structalps_1_1cmn_1_1control_1_1_motor_angle_controller_param.html", "structalps_1_1cmn_1_1control_1_1_motor_angle_controller_param" ],
           [ "MotorAngleControllerCalcInfo", "structalps_1_1cmn_1_1control_1_1_motor_angle_controller_calc_info.html", "structalps_1_1cmn_1_1control_1_1_motor_angle_controller_calc_info" ],
           [ "MotorAngleController", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html", "classalps_1_1cmn_1_1control_1_1_motor_angle_controller" ],
+          [ "MotorAngleVelocityControllerParam", "structalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller_param.html", "structalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller_param" ],
           [ "MotorAngleVelocityController", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html", "classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller" ],
           [ "MotorVelocityControllerParam", "structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html", "structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param" ],
           [ "MotorVelocityControllerCalcInfo", "structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html", "structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info" ],
@@ -91,6 +89,7 @@ var annotated_dup =
         ] ],
         [ "time", "namespacealps_1_1cmn_1_1time.html", [
           [ "OneShotPollingTimer", "classalps_1_1cmn_1_1time_1_1_one_shot_polling_timer.html", "classalps_1_1cmn_1_1time_1_1_one_shot_polling_timer" ],
+          [ "RateFuncInvoker", "classalps_1_1cmn_1_1time_1_1_rate_func_invoker.html", "classalps_1_1cmn_1_1time_1_1_rate_func_invoker" ],
           [ "RepeatingPollingTimer", "classalps_1_1cmn_1_1time_1_1_repeating_polling_timer.html", "classalps_1_1cmn_1_1time_1_1_repeating_polling_timer" ],
           [ "TimeoutChecker", "classalps_1_1cmn_1_1time_1_1_timeout_checker.html", "classalps_1_1cmn_1_1time_1_1_timeout_checker" ]
         ] ],
@@ -149,6 +148,9 @@ var annotated_dup =
           [ "DigitalOut", "classalps_1_1mbed_1_1gpio_1_1_digital_out.html", "classalps_1_1mbed_1_1gpio_1_1_digital_out" ],
           [ "InterruptIn", "classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html", "classalps_1_1mbed_1_1gpio_1_1_interrupt_in" ],
           [ "PwmOut", "classalps_1_1mbed_1_1gpio_1_1_pwm_out.html", "classalps_1_1mbed_1_1gpio_1_1_pwm_out" ]
+        ] ],
+        [ "time", "namespacealps_1_1mbed_1_1time.html", [
+          [ "RateSleeper", "classalps_1_1mbed_1_1time_1_1_rate_sleeper.html", "classalps_1_1mbed_1_1time_1_1_rate_sleeper" ]
         ] ]
       ] ],
       [ "ros2", "namespacealps_1_1ros2.html", [
@@ -165,14 +167,9 @@ var annotated_dup =
           [ "ParamConverter< cmn::time::Seconds >", "structalps_1_1ros2_1_1type_1_1_param_converter_3_01cmn_1_1time_1_1_seconds_01_4.html", "structalps_1_1ros2_1_1type_1_1_param_converter_3_01cmn_1_1time_1_1_seconds_01_4" ],
           [ "TopicConverter< OriginalEnumType, alps_interfaces::msg::Enum, std::enable_if_t< std::is_enum_v< OriginalEnumType > > >", "structalps_1_1ros2_1_1type_1_1_topic_converter_3_01_original_enum_type_00_01alps__interfaces_1_1a86b12c586acc4f645b4f22f3aa145d3.html", "structalps_1_1ros2_1_1type_1_1_topic_converter_3_01_original_enum_type_00_01alps__interfaces_1_1a86b12c586acc4f645b4f22f3aa145d3" ],
           [ "TopicConverter< cmn::time::Seconds, alps_interfaces::msg::Seconds >", "structalps_1_1ros2_1_1type_1_1_topic_converter_3_01cmn_1_1time_1_1_seconds_00_01alps__interfaces_1_1msg_1_1_seconds_01_4.html", "structalps_1_1ros2_1_1type_1_1_topic_converter_3_01cmn_1_1time_1_1_seconds_00_01alps__interfaces_1_1msg_1_1_seconds_01_4" ],
-          [ "IsConvertibleStructTypePair< alps::cmn::control::PidParam, alps_interfaces::msg::PidParam >", "structalps_1_1ros2_1_1type_1_1_is_convertible_struct_type_pair_3_01alps_1_1cmn_1_1control_1_1_pi49a2afdf21dc3fe460d3e87ed9785ac5.html", null ],
-          [ "IsConvertibleStructTypePair< alps::cmn::control::PidCalcInfo, alps_interfaces::msg::PidCalcInfo >", "structalps_1_1ros2_1_1type_1_1_is_convertible_struct_type_pair_3_01alps_1_1cmn_1_1control_1_1_pif6c2a1d0266368d7014650e64ec44968.html", null ],
-          [ "IsConvertibleStructTypePair< alps::cmn::control::MotorVelocityControllerCalcInfo, alps_interfaces::msg::MotorVelocityControllerCalcInfo >", "structalps_1_1ros2_1_1type_1_1_is_convertible_struct_type_pair_3_01alps_1_1cmn_1_1control_1_1_mo432b1e850addee0eca3d6278415c3a1d.html", null ],
-          [ "IsConvertibleStructTypePair< alps::cmn::control::MotorAngleControllerCalcInfo, alps_interfaces::msg::MotorAngleControllerCalcInfo >", "structalps_1_1ros2_1_1type_1_1_is_convertible_struct_type_pair_3_01alps_1_1cmn_1_1control_1_1_moace7202576d2ac31369d2b068e0270ef.html", null ],
           [ "ParamConverter", "structalps_1_1ros2_1_1type_1_1_param_converter.html", "structalps_1_1ros2_1_1type_1_1_param_converter" ],
           [ "IsSingleElementStdMsgsType", "structalps_1_1ros2_1_1type_1_1_is_single_element_std_msgs_type.html", null ],
           [ "IsSingleElementStdMsgsType< RosTopicType, std::void_t< typename RosTopicType::_data_type >, std::enable_if_t< std::is_same_v< typename RosTopicType::_data_type, decltype(std::declval< RosTopicType >().data)> > >", "structalps_1_1ros2_1_1type_1_1_is_single_element_std_msgs_type_3_01_ros_topic_type_00_01std_1_1vacc211517e2782de2f7efe73018b7548.html", null ],
-          [ "IsConvertibleStructTypePair", "structalps_1_1ros2_1_1type_1_1_is_convertible_struct_type_pair.html", null ],
           [ "TopicConverter", "structalps_1_1ros2_1_1type_1_1_topic_converter.html", "structalps_1_1ros2_1_1type_1_1_topic_converter" ]
         ] ],
         [ "ui", "namespacealps_1_1ros2_1_1ui.html", [

@@ -182,12 +182,25 @@ alps::ros2::util::TypedParamClient&lt; T &gt; の継承関係図</div>
 class alps::ros2::util::TypedParamClient&lt; T &gt;</h3>
 
 <p>型付きパラメーターのクライアント </p>
-<dl class="tparams"><dt>テンプレート引数</dt><dd>
+<p>主な機能 <br  />
+</p><ul>
+<li>実行中に変更したパラメータも反映される <br  />
+</li>
+<li>構造体型等も扱える <br  />
+<ul>
+<li>ただしToTiedTuple()とGetElementNames()の実装が必要 <br  />
+</li>
+</ul>
+</li>
+<li>alps::ros2::type::ParamConverter&lt;T&gt;の特殊化を用意すればカスタム型も扱える <br  />
+ <dl class="tparams"><dt>テンプレート引数</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>パラメータとして扱う型．ParamConverterが対応している必要がある． </td></tr>
   </table>
   </dd>
 </dl>
+</li>
+</ul>
 </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="a2ed055bba9554a7b52cb2bc1f431263a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ed055bba9554a7b52cb2bc1f431263a">&#9670;&nbsp;</a></span>TypedParamClient()</h2>

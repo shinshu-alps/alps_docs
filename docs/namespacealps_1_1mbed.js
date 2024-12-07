@@ -12,5 +12,6 @@ var namespacealps_1_1mbed =
     ] ],
     [ "sensor", "namespacealps_1_1mbed_1_1sensor.html", [
       [ "IncrementalEncoder", "namespacealps_1_1mbed_1_1sensor.html#a5fa3c74231a053a27e8b66afc210dd84", null ]
-    ] ]
+    ] ],
+    [ "time", "namespacealps_1_1mbed_1_1time.html", "namespacealps_1_1mbed_1_1time" ]
 ];

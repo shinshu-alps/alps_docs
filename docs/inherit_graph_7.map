@@ -1,4 +1,5 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="5,5,288,61"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1actuator_1_1_output_change_limit_motor_decorator.html" title="モーターに対して出力変化制限をかけるデコレータ" alt="" coords="336,5,595,61"/>
+<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="5,5,240,105"/>
+<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_paramed_motor.html" title="パラメータ化されたロボマスモーターの基本クラス" alt="" coords="288,75,557,161"/>
+<area shape="rect" id="node3" href="$classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html" title=" " alt="" coords="5,129,240,229"/>
 </map>

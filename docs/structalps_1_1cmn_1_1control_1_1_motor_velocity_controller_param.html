@@ -126,7 +126,13 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1control_1_1_motor
 <tr class="memitem:aa42e1b756097893f29c2b9152bd3a594"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#aa42e1b756097893f29c2b9152bd3a594">kff_acceleration</a> = 0.0f</td></tr>
 <tr class="memdesc:aa42e1b756097893f29c2b9152bd3a594"><td class="mdescLeft">&#160;</td><td class="mdescRight">角加速度フィードフォワードゲイン  <a href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#aa42e1b756097893f29c2b9152bd3a594">[詳解]</a><br /></td></tr>
 <tr class="separator:aa42e1b756097893f29c2b9152bd3a594"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9be9a52cefe3ba1fe49506e994e7281"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">time::Seconds</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#ad9be9a52cefe3ba1fe49506e994e7281">target_acceleration_lpf_time_const</a> = std::chrono::milliseconds(50)</td></tr>
+<tr class="memitem:a7532d461441e8f81cc7597438fd1a4ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a7532d461441e8f81cc7597438fd1a4ac">drive_ratio_limit</a> = {-0.9f, 0.9f}</td></tr>
+<tr class="memdesc:a7532d461441e8f81cc7597438fd1a4ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">モーターの駆動比率の制限 (デフォルトは-0.9~0.9)  <a href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#a7532d461441e8f81cc7597438fd1a4ac">[詳解]</a><br /></td></tr>
+<tr class="separator:a7532d461441e8f81cc7597438fd1a4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9edcd113de2e72915bd80073ffc5822"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#af9edcd113de2e72915bd80073ffc5822">velocity_limit</a> = {}</td></tr>
+<tr class="memdesc:af9edcd113de2e72915bd80073ffc5822"><td class="mdescLeft">&#160;</td><td class="mdescRight">角速度の制限 [rad/s]  <a href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#af9edcd113de2e72915bd80073ffc5822">[詳解]</a><br /></td></tr>
+<tr class="separator:af9edcd113de2e72915bd80073ffc5822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9be9a52cefe3ba1fe49506e994e7281"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">time::Seconds</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#ad9be9a52cefe3ba1fe49506e994e7281">target_acceleration_lpf_time_const</a> = std::chrono::milliseconds(100)</td></tr>
 <tr class="memdesc:ad9be9a52cefe3ba1fe49506e994e7281"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標角加速度計算時のローパスフィルタの時定数  <a href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#ad9be9a52cefe3ba1fe49506e994e7281">[詳解]</a><br /></td></tr>
 <tr class="separator:ad9be9a52cefe3ba1fe49506e994e7281"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -197,6 +203,38 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1control_1_1_motor
 
 </div>
 </div>
+<a id="a7532d461441e8f81cc7597438fd1a4ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7532d461441e8f81cc7597438fd1a4ac">&#9670;&nbsp;</a></span>drive_ratio_limit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange</a>&lt;float&gt; alps::cmn::control::MotorVelocityControllerParam::drive_ratio_limit = {-0.9f, 0.9f}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>モーターの駆動比率の制限 (デフォルトは-0.9~0.9) </p>
+
+</div>
+</div>
+<a id="af9edcd113de2e72915bd80073ffc5822"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9edcd113de2e72915bd80073ffc5822">&#9670;&nbsp;</a></span>velocity_limit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange</a>&lt;float&gt; alps::cmn::control::MotorVelocityControllerParam::velocity_limit = {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>角速度の制限 [rad/s] </p>
+
+</div>
+</div>
 <a id="ad9be9a52cefe3ba1fe49506e994e7281"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9be9a52cefe3ba1fe49506e994e7281">&#9670;&nbsp;</a></span>target_acceleration_lpf_time_const</h2>
 
@@ -204,7 +242,7 @@ $(document).ready(function(){initNavTree('structalps_1_1cmn_1_1control_1_1_motor
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">time::Seconds</a> alps::cmn::control::MotorVelocityControllerParam::target_acceleration_lpf_time_const = std::chrono::milliseconds(50)</td>
+          <td class="memname"><a class="el" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">time::Seconds</a> alps::cmn::control::MotorVelocityControllerParam::target_acceleration_lpf_time_const = std::chrono::milliseconds(100)</td>
         </tr>
       </table>
 </div><div class="memdoc">

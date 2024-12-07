@@ -114,9 +114,9 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1control_1_1_motor_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a2afe109138b6bdeb2f6b013ee1475d5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a2afe109138b6bdeb2f6b013ee1475d5a">MotorVelocityController</a> (<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor</a>&lt; Motor &gt; &amp;motor, <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor</a>&lt; RotarySensor &gt; &amp;rotary_sensor, const <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html">MotorVelocityControllerParam</a> &amp;param, <a class="el" href="structalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange</a>&lt; float &gt; drive_ratio_limit={-1.0f, 1.0f}, <a class="el" href="structalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange</a>&lt; float &gt; velocity_limit={}, std::chrono::microseconds min_calc_interval=std::chrono::milliseconds(1))</td></tr>
-<tr class="memdesc:a2afe109138b6bdeb2f6b013ee1475d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a2afe109138b6bdeb2f6b013ee1475d5a">[詳解]</a><br /></td></tr>
-<tr class="separator:a2afe109138b6bdeb2f6b013ee1475d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf44db6c8136dfcc40c1a9d330dfafc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a4bf44db6c8136dfcc40c1a9d330dfafc">MotorVelocityController</a> (<a class="el" href="classalps_1_1cmn_1_1actuator_1_1_i_motor.html">actuator::IMotor</a>&lt; Motor &gt; &amp;motor, <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">sensor::IRotarySensor</a>&lt; RotarySensor &gt; &amp;rotary_sensor, const <a class="el" href="structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html">MotorVelocityControllerParam</a> &amp;param, std::chrono::microseconds min_calc_interval=std::chrono::milliseconds(1))</td></tr>
+<tr class="memdesc:a4bf44db6c8136dfcc40c1a9d330dfafc"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#a4bf44db6c8136dfcc40c1a9d330dfafc">[詳解]</a><br /></td></tr>
+<tr class="separator:a4bf44db6c8136dfcc40c1a9d330dfafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7db09ea125622565e0a1674832a4edf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ad7db09ea125622565e0a1674832a4edf">Control</a> (float ff_output=0.0f)</td></tr>
 <tr class="memdesc:ad7db09ea125622565e0a1674832a4edf"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御処理を実行する．周期的に呼び出すこと．  <a href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ad7db09ea125622565e0a1674832a4edf">[詳解]</a><br /></td></tr>
 <tr class="separator:ad7db09ea125622565e0a1674832a4edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,13 +151,16 @@ class alps::cmn::control::MotorVelocityController&lt; Clock, Motor, RotarySensor
   <table class="tparams">
     <tr><td class="paramname">Clock</td><td>利用するクロック型 ( <a href="https://cpprefjp.github.io/reference/chrono/is_clock.html">https://cpprefjp.github.io/reference/chrono/is_clock.html</a> ) </td></tr>
     <tr><td class="paramname">Motor</td><td>モーター実装クラス </td></tr>
-    <tr><td class="paramname">RotarySensor</td><td>回転センサー実装クラス </td></tr>
+    <tr><td class="paramname">RotarySensor</td><td>回転センサー実装クラス</td></tr>
   </table>
   </dd>
 </dl>
-</div><h2 class="groupheader">構築子と解体子</h2>
-<a id="a2afe109138b6bdeb2f6b013ee1475d5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2afe109138b6bdeb2f6b013ee1475d5a">&#9670;&nbsp;</a></span>MotorVelocityController()</h2>
+<div class="image">
+<object type="image/svg+xml" data="motor_velocity_controller.drawio.svg" style="pointer-events: none;"></object>
+</div>
+ </div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a4bf44db6c8136dfcc40c1a9d330dfafc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bf44db6c8136dfcc40c1a9d330dfafc">&#9670;&nbsp;</a></span>MotorVelocityController()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,18 +191,6 @@ template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange</a>&lt; float &gt;&#160;</td>
-          <td class="paramname"><em>drive_ratio_limit</em> = <code>{-1.0f,&#160;1.0f}</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1util_1_1_numeric_range.html">util::NumericRange</a>&lt; float &gt;&#160;</td>
-          <td class="paramname"><em>velocity_limit</em> = <code>{}</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">std::chrono::microseconds&#160;</td>
           <td class="paramname"><em>min_calc_interval</em> = <code>std::chrono::milliseconds(1)</code>&#160;</td>
         </tr>
@@ -222,8 +213,6 @@ template&lt;class Clock , class Motor , class RotarySensor &gt; </div>
     <tr><td class="paramname">motor</td><td>モーター </td></tr>
     <tr><td class="paramname">rotary_sensor</td><td>回転センサー </td></tr>
     <tr><td class="paramname">param</td><td>角速度制御パラメータ </td></tr>
-    <tr><td class="paramname">drive_ratio_limit</td><td>モーターの駆動比率の制限 (デフォルトは-1.0~1.0) </td></tr>
-    <tr><td class="paramname">velocity_limit</td><td>角速度の制限 [rad/s] </td></tr>
     <tr><td class="paramname">min_calc_interval</td><td>最小計算間隔 </td></tr>
   </table>
   </dd>

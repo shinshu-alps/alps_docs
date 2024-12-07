@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a4cdcc0c50178618064a6bf70a0453e69">alps::cmn::sensor::bno055::Bno055&lt; I2cIo &gt;</a>
 </li>
 <li>GetAngle()
-: <a class="el" href="classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail_1_1_motor_base.html#a6b871de0d2a0be7d71623b4058bd6b15">alps::cmn::actuator::robomas_motor::detail::MotorBase&lt; Clock &gt;</a>
+: <a class="el" href="classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_paramed_motor.html#aa8c98c933ba97906f505c510363d7af4">alps::cmn::actuator::robomas_motor::ParamedMotor&lt; Clock, max_abs_output, max_current_num, max_current_denom, gear_ratio_num, gear_ratio_denom &gt;</a>
 , <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#ad03e81cda9413ddce685ca778a8f0313">alps::cmn::sensor::IncrementalEncoder&lt; Clock, InterruptIn, DigitalIn &gt;</a>
 , <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#aa884ac8ee10264569f3ef96e86b05ae1">alps::cmn::sensor::Potentiometer&lt; Clock, AnalogIn &gt;</a>
 </li>
@@ -186,8 +186,8 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 </li>
 <li>GetParam()
 : <a class="el" href="classalps_1_1cmn_1_1communication_1_1detail_1_1_can_param_base.html#a3271770775f5458bd23d026894a17ee9">alps::cmn::communication::detail::CanParamBase&lt; T &gt;</a>
-, <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#a5a6460b9855a0dd940606770518c0837">alps::cmn::control::MotorAngleController&lt; Clock, Motor, RotarySensor &gt;</a>
-, <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#ac6d0768cacdcf332317b992b676ece2d">alps::cmn::control::MotorAngleVelocityController&lt; Clock &gt;</a>
+, <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_controller.html#a58c3d82d902fb401b1cc6772ca098d48">alps::cmn::control::MotorAngleController&lt; Clock, Motor, RotarySensor &gt;</a>
+, <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_angle_velocity_controller.html#ae6f647f1e4a8fad8a58cf80668b7b418">alps::cmn::control::MotorAngleVelocityController&lt; Clock &gt;</a>
 , <a class="el" href="classalps_1_1cmn_1_1control_1_1_motor_velocity_controller.html#ac29f0ea00d83d805b753e13ff7919451">alps::cmn::control::MotorVelocityController&lt; Clock, Motor, RotarySensor &gt;</a>
 , <a class="el" href="classalps_1_1cmn_1_1control_1_1_pid.html#a4f644037e0796d2ea39cfd4028f2aba6">alps::cmn::control::Pid&lt; Clock &gt;</a>
 , <a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#a603178fede1505264ad2b6074eb6f281">alps::ros2::util::detail::TypedParamBase&lt; T &gt;</a>
@@ -211,6 +211,12 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>GetRawData()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_s11059.html#a6a906ae81d28f83caac1b629b9b2ba9f">alps::cmn::sensor::S11059&lt; I2cIo &gt;</a>
 </li>
+<li>GetRawRealCurrent()
+: <a class="el" href="classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_paramed_motor.html#a25de018d90836da2afa1cbaef16b4828">alps::cmn::actuator::robomas_motor::ParamedMotor&lt; Clock, max_abs_output, max_current_num, max_current_denom, gear_ratio_num, gear_ratio_denom &gt;</a>
+</li>
+<li>GetRawTargetCurrent()
+: <a class="el" href="classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_paramed_motor.html#a65885179e116f14f8ffa53200880a99e">alps::cmn::actuator::robomas_motor::ParamedMotor&lt; Clock, max_abs_output, max_current_num, max_current_denom, gear_ratio_num, gear_ratio_denom &gt;</a>
+</li>
 <li>GetRawValue()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a7323f143a5ecb2095a7c18311628d491">alps::cmn::sensor::Potentiometer&lt; Clock, AnalogIn &gt;</a>
 </li>
@@ -218,7 +224,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 : <a class="el" href="classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#a96e3974db813d3b8a8125e881096acc1">alps::mbed::communication::BufferedCanIo&lt; kWriteBufSize, kReadBufSize &gt;</a>
 </li>
 <li>GetRealCurrent()
-: <a class="el" href="classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail_1_1_motor_base.html#acc5d77d4429a43b0bf5e837271a1477d">alps::cmn::actuator::robomas_motor::detail::MotorBase&lt; Clock &gt;</a>
+: <a class="el" href="classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_paramed_motor.html#aaaa7f3a81a193f3d0e63aa0e0935d837">alps::cmn::actuator::robomas_motor::ParamedMotor&lt; Clock, max_abs_output, max_current_num, max_current_denom, gear_ratio_num, gear_ratio_denom &gt;</a>
 </li>
 <li>GetRgbColor()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_tcs34725.html#a046d7b37a2291c8b8786925786783f35">alps::cmn::sensor::Tcs34725&lt; Clock, I2cIo &gt;</a>
@@ -227,7 +233,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 : <a class="el" href="classalps_1_1ros2_1_1util_1_1detail_1_1_typed_param_base.html#aa98d3fac34aea4df24cf29cf3add1f2c">alps::ros2::util::detail::TypedParamBase&lt; T &gt;</a>
 </li>
 <li>GetTargetCurrent()
-: <a class="el" href="classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail_1_1_motor_base.html#a91bb72d00a8a26449053c85ae9cc1c1f">alps::cmn::actuator::robomas_motor::detail::MotorBase&lt; Clock &gt;</a>
+: <a class="el" href="classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_paramed_motor.html#a5c55146eb0e9494718609169b7f93c2a">alps::cmn::actuator::robomas_motor::ParamedMotor&lt; Clock, max_abs_output, max_current_num, max_current_denom, gear_ratio_num, gear_ratio_denom &gt;</a>
 </li>
 <li>GetTemperature()
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a6d1919524242773b23c1596302e90503">alps::cmn::sensor::bno055::Bno055&lt; I2cIo &gt;</a>
@@ -236,7 +242,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 : <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a52e738323045354e58884726e2dbdefc">alps::cmn::sensor::Vl53l0x&lt; Clock, I2cIo &gt;</a>
 </li>
 <li>GetVelocity()
-: <a class="el" href="classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1detail_1_1_motor_base.html#a03d91e83a0f007a37216b097213d5c44">alps::cmn::actuator::robomas_motor::detail::MotorBase&lt; Clock &gt;</a>
+: <a class="el" href="classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_paramed_motor.html#acd903319a72789d4c6215e2b28a06c8a">alps::cmn::actuator::robomas_motor::ParamedMotor&lt; Clock, max_abs_output, max_current_num, max_current_denom, gear_ratio_num, gear_ratio_denom &gt;</a>
 , <a class="el" href="classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html#af13d4da3b08293bbe049b3e8d4fd7fda">alps::cmn::sensor::IncrementalEncoder&lt; Clock, InterruptIn, DigitalIn &gt;</a>
 </li>
 <li>GetWriteBufferCount()

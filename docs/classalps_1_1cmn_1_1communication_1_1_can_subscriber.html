@@ -136,10 +136,16 @@ class alps::cmn::communication::CanSubscriber&lt; T &gt;</h3>
 <p>CAN通信で型付けされたデータを受信するクラス． </p>
 <dl class="tparams"><dt>テンプレート引数</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>受信するデータの型 </td></tr>
+    <tr><td class="paramname">T</td><td>受信するデータの型</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>覚え書き</dt><dd>テンプレート引数の要件 <br  />
+<ul>
+<li>alps::cmn::type::Serializer&lt;T&gt; が実装されている <br  />
+ </li>
+</ul>
+</dd></dl>
 </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="a550cb139f2eea1fdd7bc1085bf8de0cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a550cb139f2eea1fdd7bc1085bf8de0cb">&#9670;&nbsp;</a></span>CanSubscriber()</h2>
