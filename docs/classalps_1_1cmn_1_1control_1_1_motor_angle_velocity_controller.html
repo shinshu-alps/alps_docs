@@ -148,11 +148,14 @@ class alps::cmn::control::MotorAngleVelocityController&lt; Clock &gt;</h3>
 <p>速度制限を掛けつつ角度制御を行うことが可能になる．</p>
 <dl class="tparams"><dt>テンプレート引数</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Clock</td><td>利用するクロック型 ( <a href="https://cpprefjp.github.io/reference/chrono/is_clock.html">https://cpprefjp.github.io/reference/chrono/is_clock.html</a> ) </td></tr>
+    <tr><td class="paramname">Clock</td><td>利用するクロック型 ( <a href="https://cpprefjp.github.io/reference/chrono/is_clock.html">https://cpprefjp.github.io/reference/chrono/is_clock.html</a> )</td></tr>
   </table>
   </dd>
 </dl>
-</div><h2 class="groupheader">構築子と解体子</h2>
+<div class="image">
+<object type="image/svg+xml" data="motor_angle_velocity_controller.drawio.svg" style="pointer-events: none;"></object>
+</div>
+ </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="aa6beed98ef83aed8d9e7e551c1c51a10"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa6beed98ef83aed8d9e7e551c1c51a10">&#9670;&nbsp;</a></span>MotorAngleVelocityController()</h2>
 
@@ -193,14 +196,11 @@ template&lt;class Clock &gt; </div>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">param</td><td>制御パラメータ </td></tr>
-    <tr><td class="paramname">min_calc_interval</td><td>最小計算間隔</td></tr>
+    <tr><td class="paramname">min_calc_interval</td><td>最小計算間隔 </td></tr>
   </table>
   </dd>
 </dl>
-<div class="image">
-<object type="image/svg+xml" data="motor_angle_velocity_controller.drawio.svg" style="pointer-events: none;"></object>
-</div>
- 
+
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
