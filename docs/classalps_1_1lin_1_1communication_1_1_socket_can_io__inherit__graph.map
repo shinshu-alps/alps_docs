@@ -1,4 +1,5 @@
 <map id="alps::lin::communication::SocketCanIo" name="alps::lin::communication::SocketCanIo">
-<area shape="rect" id="node1" title="SocketCANを用いてCAN通信を行うクラス．" alt="" coords="11,160,194,296"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1communication_1_1_i_can_io.html" title=" " alt="" coords="5,5,200,112"/>
+<area shape="rect" id="Node000001" title="SocketCANを用いてCAN通信を行うクラス．" alt="" coords="11,153,186,293"/>
+<area shape="rect" id="Node000002" href="$classalps_1_1cmn_1_1communication_1_1_i_can_io.html" title=" " alt="" coords="5,5,192,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,119,101,153,96,153,96,119"/>
 </map>

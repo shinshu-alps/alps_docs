@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="generator" content="Doxygen 1.9.8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Alps: alps_core/lib_internal/alps_common_lib/include/alps_cmn/control/moving_average.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -53,22 +53,28 @@
                 </tbody>
             </table>
         </div>
-        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+        <!-- end header part --><!-- 構築: Doxygen 1.9.8 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -81,7 +87,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(document).ready(function(){initNavTree('moving__average_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
@@ -95,114 +101,133 @@ $(document).ready(function(){initNavTree('moving__average_8hpp_source.html','');
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="header">
-  <div class="headertitle">
-<div class="title">moving_average.hpp</div>  </div>
+  <div class="headertitle"><div class="title">moving_average.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="moving__average_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ALPS_CMN_CONTROL_MOVING_AVERAGE_HPP</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ALPS_CMN_CONTROL_MOVING_AVERAGE_HPP</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="algorithm_8hpp.html">alps_cmn/util/algorithm.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;etl/circular_buffer.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>cmn</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>control</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t kMaxWindowSize&gt;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_moving_average.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1control_1_1_moving_average.html">MovingAverage</a></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_moving_average.html#a8cf8ff4220081896127396b67238123f">   31</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_moving_average.html#a8cf8ff4220081896127396b67238123f">MovingAverage</a>(uint8_t window_size = kMaxWindowSize) : window_size_{window_size}</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    window_size_ =</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <a class="code" href="namespacealps_1_1cmn_1_1util.html#a13928639f0ae9b5207010ae61a2c9d2a">alps::cmn::util::Clamp</a>(window_size_, <span class="keyword">static_cast&lt;</span>decltype(window_size_)<span class="keyword">&gt;</span>(1), kMaxWindowSize);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_moving_average.html#ab0a4b4f3c4f706a63020ac3716167d44">   43</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_moving_average.html#ab0a4b4f3c4f706a63020ac3716167d44">Update</a>(<span class="keywordtype">float</span> value)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// バッファ更新</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    buffer_.push(value);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// 移動平均計算</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    this-&gt;Calc();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// 結果を返す</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> now_value_;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_moving_average.html#a087e2f2d25d6e66a01b2f0c0eca980b1">   60</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_moving_average.html#a087e2f2d25d6e66a01b2f0c0eca980b1">GetNowValue</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> now_value_;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_moving_average.html#afe5377892d520ac203999f1269c76872">   70</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_moving_average.html#afe5377892d520ac203999f1269c76872">SetWindowSize</a>(uint8_t window_size)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    window_size_ =</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <a class="code" href="namespacealps_1_1cmn_1_1util.html#a13928639f0ae9b5207010ae61a2c9d2a">alps::cmn::util::Clamp</a>(window_size, <span class="keyword">static_cast&lt;</span>decltype(window_size)<span class="keyword">&gt;</span>(1), kMaxWindowSize);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    this-&gt;Calc();  <span class="comment">// 現在の値も再計算</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_moving_average.html#a20f7dadf9ca971efab80ced16cd201c5">   80</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_moving_average.html#a20f7dadf9ca971efab80ced16cd201c5">Reset</a>()</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    buffer_.clear();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    now_value_ = 0.0f;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">void</span> Calc()</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// 計算対象の範囲と個数を決定</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">auto</span> newest_iter = buffer_.rbegin();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">auto</span> oldest_iter = buffer_.rend();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    uint8_t calc_window_size = buffer_.size();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span> (buffer_.size() &gt;= window_size_) {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      oldest_iter = buffer_.rbegin() + window_size_;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      calc_window_size = window_size_;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// 移動平均計算</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">auto</span> sum = std::accumulate(newest_iter, oldest_iter, 0.0f);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    now_value_ = sum / calc_window_size;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  etl::circular_buffer&lt;float, kMaxWindowSize&gt; buffer_{};</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  uint8_t window_size_;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">float</span> now_value_{0.0f};</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;};</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}  <span class="comment">// namespace control</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}  <span class="comment">// namespace cmn</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif</span></div>
+<a href="moving__average_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ALPS_CMN_CONTROL_MOVING_AVERAGE_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ALPS_CMN_CONTROL_MOVING_AVERAGE_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="algorithm_8hpp.html">alps_cmn/util/algorithm.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;etl/circular_buffer.h&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span>cmn</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>control</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">template</span> &lt;u<span class="keywordtype">int</span>8_t kMaxWindowSize&gt;</div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_moving_average.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_moving_average.html">MovingAverage</a></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_moving_average.html#a8cf8ff4220081896127396b67238123f">   31</a></span>  <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_moving_average.html#a8cf8ff4220081896127396b67238123f">MovingAverage</a>(<a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">uint8_t</a> <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">window_size</a> = <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">kMaxWindowSize</a>) : window_size_{<a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">window_size</a>}</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    window_size_ =</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      <a class="code hl_function" href="namespacealps_1_1cmn_1_1util.html#a7056edb1e78ff96bca5fa94aa5e3d4f4">alps::cmn::util::Clamp</a>(window_size_, <span class="keyword">static_cast&lt;</span><a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">decltype</a>(window_size_)<span class="keyword">&gt;</span>(1), <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">kMaxWindowSize</a>);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  }</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_moving_average.html#ab0a4b4f3c4f706a63020ac3716167d44">   43</a></span>  <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_moving_average.html#ab0a4b4f3c4f706a63020ac3716167d44">Update</a>(<span class="keywordtype">float</span> value)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// バッファ更新</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    buffer_.push(value);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// 移動平均計算</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    this-&gt;Calc();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// 結果を返す</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">return</span> now_value_;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  }</div>
+</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_moving_average.html#a087e2f2d25d6e66a01b2f0c0eca980b1">   60</a></span>  <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_moving_average.html#a087e2f2d25d6e66a01b2f0c0eca980b1">GetNowValue</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> now_value_;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  }</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_moving_average.html#afe5377892d520ac203999f1269c76872">   70</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_moving_average.html#afe5377892d520ac203999f1269c76872">SetWindowSize</a>(<a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">uint8_t</a> <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">window_size</a>)</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    window_size_ =</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      <a class="code hl_function" href="namespacealps_1_1cmn_1_1util.html#a7056edb1e78ff96bca5fa94aa5e3d4f4">alps::cmn::util::Clamp</a>(<a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">window_size</a>, <span class="keyword">static_cast&lt;</span><a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">decltype</a>(<a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">window_size</a>)<span class="keyword">&gt;</span>(1), <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">kMaxWindowSize</a>);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    this-&gt;Calc();  <span class="comment">// 現在の値も再計算</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  }</div>
+</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_moving_average.html#a20f7dadf9ca971efab80ced16cd201c5">   80</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_moving_average.html#a20f7dadf9ca971efab80ced16cd201c5">Reset</a>()</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    buffer_.clear();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    now_value_ = 0.0f;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  }</div>
+</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keywordtype">void</span> Calc()</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="comment">// 計算対象の範囲と個数を決定</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keyword">auto</span> <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">newest_iter</a> = buffer_.rbegin();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">auto</span> <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">oldest_iter</a> = buffer_.rend();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">uint8_t</a> <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">calc_window_size</a> = buffer_.size();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">if</span> (buffer_.size() &gt;= window_size_) {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>      <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">oldest_iter</a> = buffer_.rbegin() + window_size_;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>      <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">calc_window_size</a> = window_size_;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="comment">// 移動平均計算</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keyword">auto</span> sum = std::accumulate(newest_iter, oldest_iter, 0.0f);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    now_value_ = sum / calc_window_size;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  etl::circular_buffer&lt;float, kMaxWindowSize&gt; buffer_{};</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  uint8_t window_size_;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="keywordtype">float</span> now_value_{0.0f};</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>};</div>
+</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>}  <span class="comment">// namespace control</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aalgorithm_8hpp_html"><div class="ttname"><a href="algorithm_8hpp.html">algorithm.hpp</a></div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_moving_average_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_moving_average.html">alps::cmn::control::MovingAverage</a></div><div class="ttdoc">移動平均の計算を行うクラス．</div><div class="ttdef"><b>Definition:</b> moving_average.hpp:23</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_moving_average_html_a087e2f2d25d6e66a01b2f0c0eca980b1"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_moving_average.html#a087e2f2d25d6e66a01b2f0c0eca980b1">alps::cmn::control::MovingAverage::GetNowValue</a></div><div class="ttdeci">float GetNowValue() const</div><div class="ttdoc">現在の移動平均値を取得</div><div class="ttdef"><b>Definition:</b> moving_average.hpp:60</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_moving_average_html_a20f7dadf9ca971efab80ced16cd201c5"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_moving_average.html#a20f7dadf9ca971efab80ced16cd201c5">alps::cmn::control::MovingAverage::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">移動平均のリセット</div><div class="ttdef"><b>Definition:</b> moving_average.hpp:80</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_moving_average_html_a8cf8ff4220081896127396b67238123f"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_moving_average.html#a8cf8ff4220081896127396b67238123f">alps::cmn::control::MovingAverage::MovingAverage</a></div><div class="ttdeci">MovingAverage(uint8_t window_size=kMaxWindowSize)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> moving_average.hpp:31</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_moving_average_html_ab0a4b4f3c4f706a63020ac3716167d44"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_moving_average.html#ab0a4b4f3c4f706a63020ac3716167d44">alps::cmn::control::MovingAverage::Update</a></div><div class="ttdeci">float Update(float value)</div><div class="ttdoc">移動平均の更新</div><div class="ttdef"><b>Definition:</b> moving_average.hpp:43</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_moving_average_html_afe5377892d520ac203999f1269c76872"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_moving_average.html#afe5377892d520ac203999f1269c76872">alps::cmn::control::MovingAverage::SetWindowSize</a></div><div class="ttdeci">void SetWindowSize(uint8_t window_size)</div><div class="ttdoc">移動平均のウィンドウサイズを設定．1〜kMaxWindowSizeの範囲にクランプされる．</div><div class="ttdef"><b>Definition:</b> moving_average.hpp:70</div></div>
-<div class="ttc" id="anamespacealps_1_1cmn_1_1util_html_a13928639f0ae9b5207010ae61a2c9d2a"><div class="ttname"><a href="namespacealps_1_1cmn_1_1util.html#a13928639f0ae9b5207010ae61a2c9d2a">alps::cmn::util::Clamp</a></div><div class="ttdeci">constexpr const T &amp; Clamp(const T &amp;value, const T &amp;low, const T &amp;high)</div><div class="ttdoc">入力値が最小値~最大値の外である場合範囲内に収める C++17で追加されたstd::clampのコピー実装</div><div class="ttdef"><b>Definition:</b> algorithm.hpp:21</div></div>
-<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:25</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">alps::cmn::control::ChangeRateLimiter</a></div><div class="ttdoc">時間あたりの変化量に制限をかけるクラス．</div><div class="ttdef"><b>Definition</b> change_rate_limiter.hpp:35</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_moving_average_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_moving_average.html">alps::cmn::control::MovingAverage</a></div><div class="ttdoc">移動平均の計算を行うクラス．</div><div class="ttdef"><b>Definition</b> moving_average.hpp:23</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_moving_average_html_a087e2f2d25d6e66a01b2f0c0eca980b1"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_moving_average.html#a087e2f2d25d6e66a01b2f0c0eca980b1">alps::cmn::control::MovingAverage::GetNowValue</a></div><div class="ttdeci">float GetNowValue() const</div><div class="ttdoc">現在の移動平均値を取得</div><div class="ttdef"><b>Definition</b> moving_average.hpp:60</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_moving_average_html_a20f7dadf9ca971efab80ced16cd201c5"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_moving_average.html#a20f7dadf9ca971efab80ced16cd201c5">alps::cmn::control::MovingAverage::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">移動平均のリセット</div><div class="ttdef"><b>Definition</b> moving_average.hpp:80</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_moving_average_html_a8cf8ff4220081896127396b67238123f"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_moving_average.html#a8cf8ff4220081896127396b67238123f">alps::cmn::control::MovingAverage::MovingAverage</a></div><div class="ttdeci">MovingAverage(uint8_t window_size=kMaxWindowSize)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition</b> moving_average.hpp:31</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_moving_average_html_ab0a4b4f3c4f706a63020ac3716167d44"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_moving_average.html#ab0a4b4f3c4f706a63020ac3716167d44">alps::cmn::control::MovingAverage::Update</a></div><div class="ttdeci">float Update(float value)</div><div class="ttdoc">移動平均の更新</div><div class="ttdef"><b>Definition</b> moving_average.hpp:43</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_moving_average_html_afe5377892d520ac203999f1269c76872"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_moving_average.html#afe5377892d520ac203999f1269c76872">alps::cmn::control::MovingAverage::SetWindowSize</a></div><div class="ttdeci">void SetWindowSize(uint8_t window_size)</div><div class="ttdoc">移動平均のウィンドウサイズを設定．1〜kMaxWindowSizeの範囲にクランプされる．</div><div class="ttdef"><b>Definition</b> moving_average.hpp:70</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1util_html_a7056edb1e78ff96bca5fa94aa5e3d4f4"><div class="ttname"><a href="namespacealps_1_1cmn_1_1util.html#a7056edb1e78ff96bca5fa94aa5e3d4f4">alps::cmn::util::Clamp</a></div><div class="ttdeci">constexpr const T &amp; Clamp(const T &amp;value, const T &amp;low, const T &amp;high)</div><div class="ttdoc">入力値が最小値~最大値の外である場合範囲内に収める C++17で追加されたstd::clampのコピー実装</div><div class="ttdef"><b>Definition</b> algorithm.hpp:21</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition</b> dc_motor.hpp:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_627d875eccf4a985023a7fe06842126c.html">alps_core</a></li><li class="navelem"><a class="el" href="dir_f64f47805544727f04f019e126982967.html">lib_internal</a></li><li class="navelem"><a class="el" href="dir_dbb6a150a1d2a9e3bac0bb1d4855e995.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_2b777a74a5ff5221077a83a37cc87235.html">include</a></li><li class="navelem"><a class="el" href="dir_664123f27b70b10eeac81c10039fb160.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_b6cd085f17e89cb6278eb6f5ecd32d39.html">control</a></li><li class="navelem"><a class="el" href="moving__average_8hpp.html">moving_average.hpp</a></li>
-    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

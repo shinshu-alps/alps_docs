@@ -1,5 +1,7 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/i_i2c_io.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/i_i2c_io.hpp">
-<area shape="rect" id="node1" title="I2C通信インタフェース" alt="" coords="5,5,199,76"/>
-<area shape="rect" id="node2" title=" " alt="" coords="18,124,85,151"/>
-<area shape="rect" id="node3" title=" " alt="" coords="109,124,196,151"/>
+<area shape="rect" id="Node000001" title="I2C通信インタフェース" alt="" coords="5,5,199,75"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="18,123,85,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,76,67,112,62,109,81,74"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="109,123,196,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="123,74,142,109,137,112,118,76"/>
 </map>

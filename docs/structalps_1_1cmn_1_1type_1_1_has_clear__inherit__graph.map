@@ -1,4 +1,5 @@
 <map id="alps::cmn::type::HasClear&lt; T, typename &gt;" name="alps::cmn::type::HasClear&lt; T, typename &gt;">
-<area shape="rect" id="node1" title="clearメソッドを持つかどうかを判定する型述語" alt="" coords="5,131,195,223"/>
-<area shape="rect" id="node2" title=" " alt="" coords="41,5,159,83"/>
+<area shape="rect" id="Node000001" title="clearメソッドを持つかどうかを判定する型述語" alt="" coords="5,119,187,199"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="41,5,151,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,85,99,118,93,118,93,85"/>
 </map>

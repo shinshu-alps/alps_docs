@@ -1,6 +1,10 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/gpio/i_interrupt_in.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/gpio/i_interrupt_in.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="120,5,359,61"/>
-<area shape="rect" id="node2" href="$alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="5,109,223,180"/>
-<area shape="rect" id="node4" href="$interrupt__in_8hpp.html" title="割り込み入力ピン" alt="" coords="247,117,483,173"/>
-<area shape="rect" id="node3" href="$alps__mbed__lib_2include_2alps__mbed_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="126,228,353,299"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="120,5,359,60"/>
+<area shape="rect" id="Node000002" href="$alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="5,108,223,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,71,155,110,151,106,196,67"/>
+<area shape="rect" id="Node000004" href="$interrupt__in_8hpp.html" title="割り込み入力ピン" alt="" coords="247,115,483,170"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="282,67,336,113,332,117,279,72"/>
+<area shape="rect" id="Node000003" href="$alps__mbed__lib_2include_2alps__mbed_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="126,225,353,295"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="162,185,204,223,201,227,159,188"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="328,181,278,227,274,223,324,177"/>
 </map>

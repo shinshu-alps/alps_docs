@@ -1,6 +1,9 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/s11059.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/s11059.hpp">
-<area shape="rect" id="node1" title="S11059&#45;02DTカラーセンサー用のライブラリ" alt="" coords="5,5,220,61"/>
-<area shape="rect" id="node2" href="$i__i2c__io_8hpp.html" title="I2C通信インタフェース" alt="" coords="18,109,207,151"/>
-<area shape="rect" id="node3" title=" " alt="" coords="29,199,95,225"/>
-<area shape="rect" id="node4" title=" " alt="" coords="120,199,207,225"/>
+<area shape="rect" id="Node000001" title="S11059&#45;02DTカラーセンサー用のライブラリ" alt="" coords="5,5,220,60"/>
+<area shape="rect" id="Node000002" href="$i__i2c__io_8hpp.html" title="I2C通信インタフェース" alt="" coords="18,108,207,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,60,115,94,110,94,110,60"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="29,196,95,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,150,79,186,75,183,98,147"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="120,196,207,221"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="127,147,151,183,146,186,123,150"/>
 </map>

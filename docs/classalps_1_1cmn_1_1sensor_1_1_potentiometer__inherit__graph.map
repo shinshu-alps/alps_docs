@@ -1,4 +1,5 @@
 <map id="alps::cmn::sensor::Potentiometer&lt; Clock, AnalogIn &gt;" name="alps::cmn::sensor::Potentiometer&lt; Clock, AnalogIn &gt;">
-<area shape="rect" id="node1" title="ポテンショメータのクラス．" alt="" coords="21,160,211,340"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html" title=" " alt="" coords="5,5,227,112"/>
+<area shape="rect" id="Node000001" title="ポテンショメータのクラス．" alt="" coords="21,148,203,343"/>
+<area shape="rect" id="Node000002" href="$classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html" title=" " alt="" coords="5,5,219,100"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,114,115,148,109,148,109,114"/>
 </map>

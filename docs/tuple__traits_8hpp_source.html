@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="generator" content="Doxygen 1.9.8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Alps: alps_core/lib_internal/alps_common_lib/include/alps_cmn/type/tuple_traits.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -53,22 +53,28 @@
                 </tbody>
             </table>
         </div>
-        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+        <!-- end header part --><!-- 構築: Doxygen 1.9.8 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -81,7 +87,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(document).ready(function(){initNavTree('tuple__traits_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
@@ -95,85 +101,102 @@ $(document).ready(function(){initNavTree('tuple__traits_8hpp_source.html',''); i
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="header">
-  <div class="headertitle">
-<div class="title">tuple_traits.hpp</div>  </div>
+  <div class="headertitle"><div class="title">tuple_traits.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="tuple__traits_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef ALPS_CMN_TYPE_TUPLE_LIKE_HPP</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define ALPS_CMN_TYPE_TUPLE_LIKE_HPP</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;tuple&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>cmn</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>type</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> = <span class="keywordtype">void</span>&gt;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple.html">   32</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple.html">SupportsToTiedTuple</a> : std::false_type</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple_3_01_t_00_01std_1_1void__t_3_01decltype_07_9f44abe140632721ed0d7f78ca803e5b.html">   42</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple.html">SupportsToTiedTuple</a>&lt;T, std::void_t&lt;decltype(ToTiedTuple(std::declval&lt;T &amp;&gt;()))&gt;&gt;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;: std::true_type</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple_3_01_t_00_01std_1_1void__t_3_01decltype_07_9f44abe140632721ed0d7f78ca803e5b.html#a3095e65e41e4be74ab838b8e66985efd">   46</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple_3_01_t_00_01std_1_1void__t_3_01decltype_07_9f44abe140632721ed0d7f78ca803e5b.html#a3095e65e41e4be74ab838b8e66985efd">TiedTupleType</a> = decltype(<a class="code" href="namespacealps_1_1cmn_1_1control.html#a8e55097deeef1b94909cbd36cf87257f">ToTiedTuple</a>(std::declval&lt;T &amp;&gt;()));</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> = <span class="keywordtype">void</span>&gt;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1type_1_1_supports_get_element_names.html">   56</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structalps_1_1cmn_1_1type_1_1_supports_get_element_names.html">SupportsGetElementNames</a> : std::false_type</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1type_1_1_supports_get_element_names_3_01_t_00_01std_1_1void__t_3_01decltype2f43caa8b955e7f8195f525d3aa247f1.html">   61</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structalps_1_1cmn_1_1type_1_1_supports_get_element_names.html">SupportsGetElementNames</a>&lt;T, std::void_t&lt;decltype(GetElementNames(std::declval&lt;T &amp;&gt;()))&gt;&gt;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;: std::true_type</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple.html">   72</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple.html">GetNonRefTuple</a></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  static_assert(std::is_same&lt;T, void&gt;::value &amp;&amp; <span class="keyword">false</span>, <span class="stringliteral">&quot;T is not tuple&quot;</span>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... RefTypes&gt;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple_3_01std_1_1tuple_3_01_ref_types_8_8_8_01_4_01_4.html">   78</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple.html">GetNonRefTuple</a>&lt;std::tuple&lt;RefTypes...&gt;&gt;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple_3_01std_1_1tuple_3_01_ref_types_8_8_8_01_4_01_4.html#a50240fe4a249c3318eee719558e52a49">   80</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple_3_01std_1_1tuple_3_01_ref_types_8_8_8_01_4_01_4.html#a50240fe4a249c3318eee719558e52a49">type</a> = std::tuple&lt;std::remove_reference_t&lt;RefTypes&gt;...&gt;;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}  <span class="comment">// namespace type</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}  <span class="comment">// namespace cmn</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};  <span class="comment">// namespace alps</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="anamespacealps_1_1cmn_1_1control_html_a8e55097deeef1b94909cbd36cf87257f"><div class="ttname"><a href="namespacealps_1_1cmn_1_1control.html#a8e55097deeef1b94909cbd36cf87257f">alps::cmn::control::ToTiedTuple</a></div><div class="ttdeci">auto ToTiedTuple(MotorAngleControllerParam &amp;param)</div><div class="ttdef"><b>Definition:</b> motor_angle_controller.hpp:29</div></div>
-<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:25</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1type_1_1_get_non_ref_tuple_3_01std_1_1tuple_3_01_ref_types_8_8_8_01_4_01_4_html_a50240fe4a249c3318eee719558e52a49"><div class="ttname"><a href="structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple_3_01std_1_1tuple_3_01_ref_types_8_8_8_01_4_01_4.html#a50240fe4a249c3318eee719558e52a49">alps::cmn::type::GetNonRefTuple&lt; std::tuple&lt; RefTypes... &gt; &gt;::type</a></div><div class="ttdeci">std::tuple&lt; std::remove_reference_t&lt; RefTypes &gt;... &gt; type</div><div class="ttdef"><b>Definition:</b> tuple_traits.hpp:80</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1type_1_1_get_non_ref_tuple_html"><div class="ttname"><a href="structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple.html">alps::cmn::type::GetNonRefTuple</a></div><div class="ttdoc">要素型から参照を除いたstd::tuple型を取得する</div><div class="ttdef"><b>Definition:</b> tuple_traits.hpp:73</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1type_1_1_supports_get_element_names_html"><div class="ttname"><a href="structalps_1_1cmn_1_1type_1_1_supports_get_element_names.html">alps::cmn::type::SupportsGetElementNames</a></div><div class="ttdoc">T型がGetElementNames関数をサポートしているかどうかを判定する</div><div class="ttdef"><b>Definition:</b> tuple_traits.hpp:57</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple_3_01_t_00_01std_1_1void__t_3_01decltype_07_9f44abe140632721ed0d7f78ca803e5b_html_a3095e65e41e4be74ab838b8e66985efd"><div class="ttname"><a href="structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple_3_01_t_00_01std_1_1void__t_3_01decltype_07_9f44abe140632721ed0d7f78ca803e5b.html#a3095e65e41e4be74ab838b8e66985efd">alps::cmn::type::SupportsToTiedTuple&lt; T, std::void_t&lt; decltype(ToTiedTuple(std::declval&lt; T &amp; &gt;()))&gt; &gt;::TiedTupleType</a></div><div class="ttdeci">decltype(ToTiedTuple(std::declval&lt; T &amp; &gt;())) TiedTupleType</div><div class="ttdoc">T型をstd::tupleに結びつけたときの型</div><div class="ttdef"><b>Definition:</b> tuple_traits.hpp:46</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple_html"><div class="ttname"><a href="structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple.html">alps::cmn::type::SupportsToTiedTuple</a></div><div class="ttdoc">T型がstd::tupleに変換可能かどうかを判定する</div><div class="ttdef"><b>Definition:</b> tuple_traits.hpp:33</div></div>
+<a href="tuple__traits_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_CMN_TYPE_TUPLE_LIKE_HPP</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_CMN_TYPE_TUPLE_LIKE_HPP</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;tuple&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span>cmn</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">namespace </span>type</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> = <span class="keywordtype">void</span>&gt;</div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="};">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple.html">   32</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple.html">SupportsToTiedTuple</a> : std::false_type</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="};">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple_3_01_t_00_01std_1_1void__t_3_01decltype_07_9f44abe140632721ed0d7f78ca803e5b.html">   42</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple.html">SupportsToTiedTuple</a>&lt;T, std::void_t&lt;decltype(ToTiedTuple(std::declval&lt;T &amp;&gt;()))&gt;&gt;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>: std::true_type</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple_3_01_t_00_01std_1_1void__t_3_01decltype_07_9f44abe140632721ed0d7f78ca803e5b.html#a3095e65e41e4be74ab838b8e66985efd">   46</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple_3_01_t_00_01std_1_1void__t_3_01decltype_07_9f44abe140632721ed0d7f78ca803e5b.html#a3095e65e41e4be74ab838b8e66985efd">TiedTupleType</a> = <span class="keyword">decltype</span>(ToTiedTuple(std::declval&lt;T &amp;&gt;()));</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> = <span class="keywordtype">void</span>&gt;</div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="};">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1type_1_1_supports_get_element_names.html">   56</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1type_1_1_supports_get_element_names.html">SupportsGetElementNames</a> : std::false_type</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>{</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
+</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="};">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1type_1_1_supports_get_element_names_3_01_t_00_01std_1_1void__t_3_01decltype2f43caa8b955e7f8195f525d3aa247f1.html">   61</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1type_1_1_supports_get_element_names.html">SupportsGetElementNames</a>&lt;T, std::void_t&lt;decltype(GetElementNames(std::declval&lt;T &amp;&gt;()))&gt;&gt;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>: std::true_type</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>{</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>};</div>
+</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="};">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple.html">   72</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple.html">GetNonRefTuple</a></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>{</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keyword">static_assert</span>(std::is_same&lt;T, void&gt;::value &amp;&amp; <span class="keyword">false</span>, <span class="stringliteral">&quot;T is not tuple&quot;</span>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>};</div>
+</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... RefTypes&gt;</div>
+<div class="foldopen" id="foldopen00078" data-start="{" data-end="};">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple_3_01std_1_1tuple_3_01_ref_types_8_8_8_01_4_01_4.html">   78</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple.html">GetNonRefTuple</a>&lt;std::tuple&lt;RefTypes...&gt;&gt;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>{</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple_3_01std_1_1tuple_3_01_ref_types_8_8_8_01_4_01_4.html#a50240fe4a249c3318eee719558e52a49">   80</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple_3_01std_1_1tuple_3_01_ref_types_8_8_8_01_4_01_4.html#a50240fe4a249c3318eee719558e52a49">type</a> = std::tuple&lt;std::remove_reference_t&lt;RefTypes&gt;...&gt;;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>};</div>
+</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}  <span class="comment">// namespace type</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>};  <span class="comment">// namespace alps</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition</b> dc_motor.hpp:25</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1type_1_1_get_non_ref_tuple_3_01std_1_1tuple_3_01_ref_types_8_8_8_01_4_01_4_html_a50240fe4a249c3318eee719558e52a49"><div class="ttname"><a href="structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple_3_01std_1_1tuple_3_01_ref_types_8_8_8_01_4_01_4.html#a50240fe4a249c3318eee719558e52a49">alps::cmn::type::GetNonRefTuple&lt; std::tuple&lt; RefTypes... &gt; &gt;::type</a></div><div class="ttdeci">std::tuple&lt; std::remove_reference_t&lt; RefTypes &gt;... &gt; type</div><div class="ttdef"><b>Definition</b> tuple_traits.hpp:80</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1type_1_1_get_non_ref_tuple_html"><div class="ttname"><a href="structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple.html">alps::cmn::type::GetNonRefTuple</a></div><div class="ttdoc">要素型から参照を除いたstd::tuple型を取得する</div><div class="ttdef"><b>Definition</b> tuple_traits.hpp:73</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1type_1_1_supports_get_element_names_html"><div class="ttname"><a href="structalps_1_1cmn_1_1type_1_1_supports_get_element_names.html">alps::cmn::type::SupportsGetElementNames</a></div><div class="ttdoc">T型がGetElementNames関数をサポートしているかどうかを判定する</div><div class="ttdef"><b>Definition</b> tuple_traits.hpp:57</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple_3_01_t_00_01std_1_1void__t_3_01decltype_07_9f44abe140632721ed0d7f78ca803e5b_html_a3095e65e41e4be74ab838b8e66985efd"><div class="ttname"><a href="structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple_3_01_t_00_01std_1_1void__t_3_01decltype_07_9f44abe140632721ed0d7f78ca803e5b.html#a3095e65e41e4be74ab838b8e66985efd">alps::cmn::type::SupportsToTiedTuple&lt; T, std::void_t&lt; decltype(ToTiedTuple(std::declval&lt; T &amp; &gt;()))&gt; &gt;::TiedTupleType</a></div><div class="ttdeci">decltype(ToTiedTuple(std::declval&lt; T &amp; &gt;())) TiedTupleType</div><div class="ttdoc">T型をstd::tupleに結びつけたときの型</div><div class="ttdef"><b>Definition</b> tuple_traits.hpp:46</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple_html"><div class="ttname"><a href="structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple.html">alps::cmn::type::SupportsToTiedTuple</a></div><div class="ttdoc">T型がstd::tupleに変換可能かどうかを判定する</div><div class="ttdef"><b>Definition</b> tuple_traits.hpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_627d875eccf4a985023a7fe06842126c.html">alps_core</a></li><li class="navelem"><a class="el" href="dir_f64f47805544727f04f019e126982967.html">lib_internal</a></li><li class="navelem"><a class="el" href="dir_dbb6a150a1d2a9e3bac0bb1d4855e995.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_2b777a74a5ff5221077a83a37cc87235.html">include</a></li><li class="navelem"><a class="el" href="dir_664123f27b70b10eeac81c10039fb160.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_28f821d546ace6ab9b8c5a81f47cb6c0.html">type</a></li><li class="navelem"><a class="el" href="tuple__traits_8hpp.html">tuple_traits.hpp</a></li>
-    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

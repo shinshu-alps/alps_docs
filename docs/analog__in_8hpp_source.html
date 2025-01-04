@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="generator" content="Doxygen 1.9.8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Alps: alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/gpio/analog_in.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -53,22 +53,28 @@
                 </tbody>
             </table>
         </div>
-        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+        <!-- end header part --><!-- 構築: Doxygen 1.9.8 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -81,7 +87,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(document).ready(function(){initNavTree('analog__in_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
@@ -95,59 +101,69 @@ $(document).ready(function(){initNavTree('analog__in_8hpp_source.html',''); init
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="header">
-  <div class="headertitle">
-<div class="title">analog_in.hpp</div>  </div>
+  <div class="headertitle"><div class="title">analog_in.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="analog__in_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef ALPS_MBED_GPIO_ANALOG_IN_HPP</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define ALPS_MBED_GPIO_ANALOG_IN_HPP</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__analog__in_8hpp.html">alps_cmn/gpio/i_analog_in.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;mbed.h&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>mbed</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespacealps_1_1mbed_1_1gpio.html">   22</a></span>&#160;<span class="keyword">namespace </span>gpio</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_analog_in.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1mbed_1_1gpio_1_1_analog_in.html">AnalogIn</a> : <span class="keyword">public</span> <a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html">alps::cmn::gpio::IAnalogIn</a>&lt;AnalogIn&gt;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_analog_in.html#a36e76d979240b59bb29ea20b1929a847">   33</a></span>&#160;  <a class="code" href="classalps_1_1mbed_1_1gpio_1_1_analog_in.html#a36e76d979240b59bb29ea20b1929a847">AnalogIn</a>(PinName pin);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_analog_in.html#acd19d04d834cd8b33ab4b8519f4af4b7">   41</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1mbed_1_1gpio_1_1_analog_in.html#acd19d04d834cd8b33ab4b8519f4af4b7">Read</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  ::mbed::AnalogIn mbed_analog_in_;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}  <span class="comment">// namespace gpio</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}  <span class="comment">// namespace mbed</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_analog_in_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html">alps::cmn::gpio::IAnalogIn</a></div><div class="ttdoc">アナログ入力を行うインタフェース</div><div class="ttdef"><b>Definition:</b> i_analog_in.hpp:29</div></div>
-<div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_analog_in_html"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_analog_in.html">alps::mbed::gpio::AnalogIn</a></div><div class="ttdef"><b>Definition:</b> analog_in.hpp:26</div></div>
+<a href="analog__in_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_MBED_GPIO_ANALOG_IN_HPP</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_MBED_GPIO_ANALOG_IN_HPP</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="i__analog__in_8hpp.html">alps_cmn/gpio/i_analog_in.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;mbed.h&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span>mbed</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="namespacealps_1_1mbed_1_1gpio.html">   22</a></span><span class="keyword">namespace </span>gpio</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_analog_in.html">   25</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1mbed_1_1gpio_1_1_analog_in.html">AnalogIn</a> : <span class="keyword">public</span> <a class="code hl_class" href="classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html">alps::cmn::gpio::IAnalogIn</a>&lt;AnalogIn&gt;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_analog_in.html#a36e76d979240b59bb29ea20b1929a847">   33</a></span>  <a class="code hl_function" href="classalps_1_1mbed_1_1gpio_1_1_analog_in.html#a36e76d979240b59bb29ea20b1929a847">AnalogIn</a>(PinName pin);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_analog_in.html#acd19d04d834cd8b33ab4b8519f4af4b7">   41</a></span>  <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1mbed_1_1gpio_1_1_analog_in.html#acd19d04d834cd8b33ab4b8519f4af4b7">Read</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  ::mbed::AnalogIn mbed_analog_in_;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}  <span class="comment">// namespace gpio</span></div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}  <span class="comment">// namespace mbed</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_analog_in_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html">alps::cmn::gpio::IAnalogIn</a></div><div class="ttdoc">アナログ入力を行うインタフェース</div><div class="ttdef"><b>Definition</b> i_analog_in.hpp:29</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_analog_in_html"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_analog_in.html">alps::mbed::gpio::AnalogIn</a></div><div class="ttdef"><b>Definition</b> analog_in.hpp:26</div></div>
 <div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_analog_in_html_a36e76d979240b59bb29ea20b1929a847"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_analog_in.html#a36e76d979240b59bb29ea20b1929a847">alps::mbed::gpio::AnalogIn::AnalogIn</a></div><div class="ttdeci">AnalogIn(PinName pin)</div><div class="ttdoc">コンストラクタ</div></div>
 <div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_analog_in_html_acd19d04d834cd8b33ab4b8519f4af4b7"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_analog_in.html#acd19d04d834cd8b33ab4b8519f4af4b7">alps::mbed::gpio::AnalogIn::Read</a></div><div class="ttdeci">float Read()</div><div class="ttdoc">アナログ入力を読む</div></div>
 <div class="ttc" id="ai__analog__in_8hpp_html"><div class="ttname"><a href="i__analog__in_8hpp.html">i_analog_in.hpp</a></div><div class="ttdoc">アナログ入力インタフェース</div></div>
-<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:25</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition</b> dc_motor.hpp:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_627d875eccf4a985023a7fe06842126c.html">alps_core</a></li><li class="navelem"><a class="el" href="dir_f64f47805544727f04f019e126982967.html">lib_internal</a></li><li class="navelem"><a class="el" href="dir_9873ffdc03473915e57dacf48330031a.html">alps_mbed_lib</a></li><li class="navelem"><a class="el" href="dir_004f98237f8c341a9024f226d8b822ea.html">include</a></li><li class="navelem"><a class="el" href="dir_aeddf8fa4339a06bf9ad9a961c7b6af8.html">alps_mbed</a></li><li class="navelem"><a class="el" href="dir_581791ccee735a0cb31ab604a462ee79.html">gpio</a></li><li class="navelem"><a class="el" href="analog__in_8hpp.html">analog_in.hpp</a></li>
-    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

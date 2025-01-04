@@ -1,7 +1,13 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/gpio/i_digital_in.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/gpio/i_digital_in.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="247,5,469,61"/>
-<area shape="rect" id="node2" href="$alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="5,109,223,180"/>
-<area shape="rect" id="node4" href="$digital__in_8hpp.html" title="デジタル入力ピン" alt="" coords="247,117,469,173"/>
-<area shape="rect" id="node5" href="$interrupt__in_8hpp.html" title="割り込み入力ピン" alt="" coords="493,117,729,173"/>
-<area shape="rect" id="node3" href="$alps__mbed__lib_2include_2alps__mbed_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="245,228,471,299"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="247,5,469,60"/>
+<area shape="rect" id="Node000002" href="$alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="5,108,223,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="287,68,191,110,189,105,285,63"/>
+<area shape="rect" id="Node000004" href="$digital__in_8hpp.html" title="デジタル入力ピン" alt="" coords="247,115,469,170"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="361,74,361,115,355,115,355,74"/>
+<area shape="rect" id="Node000005" href="$interrupt__in_8hpp.html" title="割り込み入力ピン" alt="" coords="493,115,729,170"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="433,63,551,113,549,118,431,68"/>
+<area shape="rect" id="Node000003" href="$alps__mbed__lib_2include_2alps__mbed_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="245,225,471,295"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="199,181,288,223,286,228,196,186"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="361,183,361,225,355,225,355,183"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="543,178,433,228,431,223,541,173"/>
 </map>

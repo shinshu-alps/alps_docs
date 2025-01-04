@@ -1,4 +1,5 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/time/rate_func_invoker.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/time/rate_func_invoker.hpp">
-<area shape="rect" id="node1" title="指定周期で関数を呼び出すクラス" alt="" coords="5,5,196,76"/>
-<area shape="rect" id="node2" title=" " alt="" coords="67,124,134,151"/>
+<area shape="rect" id="Node000001" title="指定周期で関数を呼び出すクラス" alt="" coords="5,5,196,75"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="67,123,134,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,75,103,109,98,109,98,75"/>
 </map>

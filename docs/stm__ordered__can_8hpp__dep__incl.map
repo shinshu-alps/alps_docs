@@ -1,4 +1,5 @@
 <map id="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/communication/stm_ordered_can.hpp" name="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/communication/stm_ordered_can.hpp">
-<area shape="rect" id="node1" title="STMマイコンのCAN送信順を保証するクラス" alt="" coords="5,5,208,76"/>
-<area shape="rect" id="node2" href="$buffered__can__io_8hpp.html" title="MbedのCAN通信IOクラス" alt="" coords="5,124,208,195"/>
+<area shape="rect" id="Node000001" title="STMマイコンのCAN送信順を保証するクラス" alt="" coords="5,5,208,75"/>
+<area shape="rect" id="Node000002" href="$buffered__can__io_8hpp.html" title="MbedのCAN通信IOクラス" alt="" coords="5,123,208,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,89,109,122,104,122,104,89"/>
 </map>

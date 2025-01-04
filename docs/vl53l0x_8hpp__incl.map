@@ -1,7 +1,11 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/vl53l0x.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/vl53l0x.hpp">
-<area shape="rect" id="node1" title="VL53L0X 距離センサ" alt="" coords="7,5,222,61"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,117,72,143"/>
-<area shape="rect" id="node3" href="$i__i2c__io_8hpp.html" title="I2C通信インタフェース" alt="" coords="96,109,285,151"/>
-<area shape="rect" id="node4" title=" " alt="" coords="107,199,173,225"/>
-<area shape="rect" id="node5" title=" " alt="" coords="198,199,285,225"/>
+<area shape="rect" id="Node000001" title="VL53L0X 距離センサ" alt="" coords="7,5,222,60"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,115,72,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,62,59,106,55,103,91,59"/>
+<area shape="rect" id="Node000003" href="$i__i2c__io_8hpp.html" title="I2C通信インタフェース" alt="" coords="96,108,285,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,59,169,96,165,99,134,62"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="107,196,173,221"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="181,150,157,186,153,183,176,147"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="198,196,285,221"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="205,147,229,183,224,186,201,150"/>
 </map>

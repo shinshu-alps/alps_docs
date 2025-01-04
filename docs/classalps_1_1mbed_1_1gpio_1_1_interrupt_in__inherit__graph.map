@@ -1,5 +1,7 @@
 <map id="alps::mbed::gpio::InterruptIn" name="alps::mbed::gpio::InterruptIn">
-<area shape="rect" id="node1" title="割り込み入力ピン" alt="" coords="99,145,306,267"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html" title=" " alt="" coords="5,5,195,97"/>
-<area shape="rect" id="node3" href="$classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html" title=" " alt="" coords="219,5,395,97"/>
+<area shape="rect" id="Node000001" title="割り込み入力ピン" alt="" coords="95,133,294,259"/>
+<area shape="rect" id="Node000002" href="$classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html" title=" " alt="" coords="5,5,187,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,95,156,132,151,135,127,98"/>
+<area shape="rect" id="Node000003" href="$classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html" title=" " alt="" coords="211,5,379,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="263,98,238,135,234,132,259,95"/>
 </map>

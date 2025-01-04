@@ -1,6 +1,9 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/control/moving_average.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/control/moving_average.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="103,5,294,76"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,124,72,151"/>
-<area shape="rect" id="node3" href="$algorithm_8hpp.html" title=" " alt="" coords="97,124,301,151"/>
-<area shape="rect" id="node4" title=" " alt="" coords="325,124,472,151"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="103,5,294,75"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,123,72,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,77,71,118,69,113,140,72"/>
+<area shape="rect" id="Node000003" href="$algorithm_8hpp.html" title=" " alt="" coords="97,123,301,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="201,75,201,109,196,109,196,75"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="325,123,472,148"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="272,72,363,114,360,119,270,77"/>
 </map>

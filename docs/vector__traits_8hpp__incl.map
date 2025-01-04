@@ -1,9 +1,16 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/type/vector_traits.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/type/vector_traits.hpp">
-<area shape="rect" id="node1" title="vector関係の型特性" alt="" coords="114,5,349,61"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,184,97,211"/>
-<area shape="rect" id="node3" href="$container__traits_8hpp.html" title="container関係の型特性" alt="" coords="82,109,234,136"/>
-<area shape="rect" id="node6" title=" " alt="" coords="259,109,353,136"/>
-<area shape="rect" id="node7" title=" " alt="" coords="377,109,469,136"/>
-<area shape="rect" id="node4" title=" " alt="" coords="125,184,183,211"/>
-<area shape="rect" id="node5" title=" " alt="" coords="208,184,271,211"/>
+<area shape="rect" id="Node000001" title="vector関係の型特性" alt="" coords="114,5,349,60"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,181,97,207"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,62,102,82,72,110,59,138,54,168,49,167,53,136,68,106,99,78,136,58"/>
+<area shape="rect" id="Node000003" href="$container__traits_8hpp.html" title="container関係の型特性" alt="" coords="82,108,234,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="211,62,179,99,175,96,207,58"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="259,108,353,133"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="256,58,289,96,285,99,252,62"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="377,108,469,133"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="291,58,386,100,384,105,289,63"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="142,136,82,176,79,171,139,131"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="125,181,183,207"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="160,134,158,168,153,168,155,134"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="208,181,271,207"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="173,131,218,170,214,174,169,135"/>
 </map>

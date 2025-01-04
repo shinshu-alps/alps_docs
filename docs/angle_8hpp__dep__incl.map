@@ -1,10 +1,17 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/util/angle.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/util/angle.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="457,5,648,61"/>
-<area shape="rect" id="node2" href="$robomas__motor_8hpp.html" title="ロボマスモータのライブラリ" alt="" coords="5,109,212,180"/>
-<area shape="rect" id="node3" href="$alps__common__lib_2include_2alps__cmn_2actuator_2servo__motor_8hpp.html" title=" " alt="" coords="236,109,427,180"/>
-<area shape="rect" id="node5" href="$four__wheel__omni_8hpp.html" title="4輪オムニホイールロボットの運動学モデルクラス" alt="" coords="451,109,654,180"/>
-<area shape="rect" id="node6" href="$bno055_8hpp.html" title="BNO055 9軸センサ" alt="" coords="679,117,893,173"/>
-<area shape="rect" id="node7" href="$alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="917,109,1135,180"/>
-<area shape="rect" id="node4" href="$alps__mbed__lib_2include_2alps__mbed_2actuator_2servo__motor_8hpp.html" title=" " alt="" coords="234,228,429,299"/>
-<area shape="rect" id="node8" href="$alps__mbed__lib_2include_2alps__mbed_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="913,228,1139,299"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="457,5,648,60"/>
+<area shape="rect" id="Node000002" href="$robomas__motor_8hpp.html" title="ロボマスモータのライブラリ" alt="" coords="5,108,212,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="444,59,224,111,213,113,212,108,223,105,443,54"/>
+<area shape="rect" id="Node000003" href="$alps__common__lib_2include_2alps__cmn_2actuator_2servo__motor_8hpp.html" title=" " alt="" coords="236,108,427,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="488,69,402,110,399,105,485,64"/>
+<area shape="rect" id="Node000005" href="$four__wheel__omni_8hpp.html" title="4輪オムニホイールロボットの運動学モデルクラス" alt="" coords="451,108,654,177"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="555,74,555,108,550,108,550,74"/>
+<area shape="rect" id="Node000006" href="$bno055_8hpp.html" title="BNO055 9軸センサ" alt="" coords="679,115,893,170"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="623,63,730,113,728,118,621,68"/>
+<area shape="rect" id="Node000007" href="$alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="917,108,1135,177"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="662,52,907,105,917,108,916,113,905,111,661,58"/>
+<area shape="rect" id="Node000004" href="$alps__mbed__lib_2include_2alps__mbed_2actuator_2servo__motor_8hpp.html" title=" " alt="" coords="234,225,429,295"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="334,191,334,225,329,225,329,191"/>
+<area shape="rect" id="Node000008" href="$alps__mbed__lib_2include_2alps__mbed_2sensor_2incremental__encoder_8hpp.html" title=" " alt="" coords="913,225,1139,295"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1029,191,1029,225,1023,225,1023,191"/>
 </map>

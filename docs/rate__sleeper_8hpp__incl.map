@@ -1,6 +1,9 @@
 <map id="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/time/rate_sleeper.hpp" name="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/time/rate_sleeper.hpp">
-<area shape="rect" id="node1" title="マイコンの実行周期を安定させるためのSleep関数を提供" alt="" coords="27,5,269,61"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,109,72,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="96,109,200,136"/>
-<area shape="rect" id="node4" title=" " alt="" coords="225,109,359,136"/>
+<area shape="rect" id="Node000001" title="マイコンの実行周期を安定させるためのSleep関数を提供" alt="" coords="27,5,269,60"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,108,72,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,62,66,102,63,97,113,58"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="96,108,200,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,60,151,94,145,94,145,60"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="225,108,359,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="193,58,262,99,260,103,191,62"/>
 </map>

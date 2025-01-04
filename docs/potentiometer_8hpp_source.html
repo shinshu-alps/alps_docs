@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="generator" content="Doxygen 1.9.8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Alps: alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/potentiometer.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -53,22 +53,28 @@
                 </tbody>
             </table>
         </div>
-        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+        <!-- end header part --><!-- 構築: Doxygen 1.9.8 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -81,7 +87,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(document).ready(function(){initNavTree('potentiometer_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
@@ -95,143 +101,170 @@ $(document).ready(function(){initNavTree('potentiometer_8hpp_source.html',''); i
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="header">
-  <div class="headertitle">
-<div class="title">potentiometer.hpp</div>  </div>
+  <div class="headertitle"><div class="title">potentiometer.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="potentiometer_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef ALPS_CMN_SENSOR_POTENTIOMETER_HPP_</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define ALPS_CMN_SENSOR_POTENTIOMETER_HPP_</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="low__pass__filter_8hpp.html">alps_cmn/control/low_pass_filter.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__analog__in_8hpp.html">alps_cmn/gpio/i_analog_in.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__rotary__sensor_8hpp.html">alps_cmn/sensor/i_rotary_sensor.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="duration_8hpp.html">alps_cmn/time/duration.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;tuple&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>cmn</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>sensor</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html">   35</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html">PotentiometerParam</a></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#aca615b9d7792c7d9f0de58540ef38235">   38</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#aca615b9d7792c7d9f0de58540ef38235">angle_range</a>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a90d99811692bce2c86249fa996c00d36">   40</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a90d99811692bce2c86249fa996c00d36">min_raw_val</a>{0.0};</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#ad46fa63996a57b76efa6b58bad526439">   42</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#ad46fa63996a57b76efa6b58bad526439">max_raw_val</a>{1.0};</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a4ba93241999895c311dbfe00ed691545">   44</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a4ba93241999895c311dbfe00ed691545">angle_offset</a>{0.0};</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#af9221bffc4df55484f6b5288f8437ec8">   46</a></span>&#160;  <a class="code" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">alps::cmn::time::Seconds</a> <a class="code" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#af9221bffc4df55484f6b5288f8437ec8">lpf_time_const</a>{std::chrono::milliseconds(10)};</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sensor.html#a57d7bb0160d9e47dc5fd68bfc5de61e0">   49</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacealps_1_1cmn_1_1sensor.html#a57d7bb0160d9e47dc5fd68bfc5de61e0">ToTiedTuple</a>(<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html">PotentiometerParam</a> &amp; param)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordflow">return</span> std::tie(</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    param.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#aca615b9d7792c7d9f0de58540ef38235">angle_range</a>,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    param.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a90d99811692bce2c86249fa996c00d36">min_raw_val</a>,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    param.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#ad46fa63996a57b76efa6b58bad526439">max_raw_val</a>,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    param.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a4ba93241999895c311dbfe00ed691545">angle_offset</a>,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    param.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#af9221bffc4df55484f6b5288f8437ec8">lpf_time_const</a>);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sensor.html#a40411c5918d432b2cf9e5caaa43b033a">   59</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacealps_1_1cmn_1_1sensor.html#a40411c5918d432b2cf9e5caaa43b033a">GetElementNames</a>(<span class="keyword">const</span> <a class="code" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html">PotentiometerParam</a> &amp;)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">return</span> std::array&lt;const char *, 5&gt;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="stringliteral">&quot;angle_range&quot;</span>, <span class="stringliteral">&quot;min_raw_val&quot;</span>, <span class="stringliteral">&quot;max_raw_val&quot;</span>, <span class="stringliteral">&quot;angle_offset&quot;</span>, <span class="stringliteral">&quot;lpf_time_const&quot;</span>};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Clock, <span class="keyword">class</span> AnalogIn&gt;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html">   72</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html">Potentiometer</a> : <span class="keyword">public</span> <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">IRotarySensor</a>&lt;Potentiometer&lt;Clock, AnalogIn&gt;&gt;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#adbb4665471e00665c0b2c10602bc0b22">   81</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#adbb4665471e00665c0b2c10602bc0b22">Potentiometer</a>(<a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html">gpio::IAnalogIn&lt;AnalogIn&gt;</a> &amp; analog_in, <span class="keyword">const</span> <a class="code" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html">PotentiometerParam</a> &amp; param)</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  : analog_in_{analog_in}, param_{param}, lpf_{param_.lpf_time_const}</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a2f6b87061fa35c65a21c184a77608677">   91</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a2f6b87061fa35c65a21c184a77608677">SetParam</a>(<span class="keyword">const</span> <a class="code" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html">PotentiometerParam</a> &amp; param)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    param_ = param;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    lpf_.SetTimeConstant(param_.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#af9221bffc4df55484f6b5288f8437ec8">lpf_time_const</a>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    lpf_.Reset();</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a7323f143a5ecb2095a7c18311628d491">  103</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a7323f143a5ecb2095a7c18311628d491">GetRawValue</a>()</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> analog_in_.<a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html#a6222e5301a7d23a2d1d5973959cd3480">CallRead</a>();</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a2e1259d00f1695d8256aa349cb92e7f7">  113</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a2e1259d00f1695d8256aa349cb92e7f7">GetLowPassRawValue</a>()</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">return</span> lpf_.Filter(<a class="code" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a7323f143a5ecb2095a7c18311628d491">GetRawValue</a>());</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  }</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a4d627da9773c9a18dd4498db2f08e2a7">  123</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a4d627da9773c9a18dd4498db2f08e2a7">GetNormalizedValue</a>()</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a2e1259d00f1695d8256aa349cb92e7f7">GetLowPassRawValue</a>() - param_.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a90d99811692bce2c86249fa996c00d36">min_raw_val</a>) / (param_.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#ad46fa63996a57b76efa6b58bad526439">max_raw_val</a> - param_.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a90d99811692bce2c86249fa996c00d36">min_raw_val</a>);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#aa884ac8ee10264569f3ef96e86b05ae1">  133</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#aa884ac8ee10264569f3ef96e86b05ae1">GetAngle</a>()</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">float</span> normalized_val = <a class="code" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a4d627da9773c9a18dd4498db2f08e2a7">GetNormalizedValue</a>();</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">float</span> angle = normalized_val * param_.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#aca615b9d7792c7d9f0de58540ef38235">angle_range</a>;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    angle = angle - param_.<a class="code" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a4ba93241999895c311dbfe00ed691545">angle_offset</a>;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">return</span> angle;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  }</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html">gpio::IAnalogIn&lt;AnalogIn&gt;</a> &amp; analog_in_;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <a class="code" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html">PotentiometerParam</a> param_;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html">control::LowPassFilter&lt;Clock&gt;</a> lpf_;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;};</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;}  <span class="comment">// namespace sensor</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;}  <span class="comment">// namespace cmn</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_filter_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html">alps::cmn::control::LowPassFilter</a></div><div class="ttdoc">ローパスフィルタのクラス</div><div class="ttdef"><b>Definition:</b> low_pass_filter.hpp:34</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_analog_in_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html">alps::cmn::gpio::IAnalogIn&lt; AnalogIn &gt;</a></div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_analog_in_html_a6222e5301a7d23a2d1d5973959cd3480"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html#a6222e5301a7d23a2d1d5973959cd3480">alps::cmn::gpio::IAnalogIn::CallRead</a></div><div class="ttdeci">float CallRead()</div><div class="ttdoc">インタフェースを介してアナログ入力値を読む</div><div class="ttdef"><b>Definition:</b> i_analog_in.hpp:36</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">alps::cmn::sensor::IRotarySensor</a></div><div class="ttdoc">回転センサーのインタフェース</div><div class="ttdef"><b>Definition:</b> i_rotary_sensor.hpp:18</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_potentiometer_html"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html">alps::cmn::sensor::Potentiometer</a></div><div class="ttdoc">ポテンショメータのクラス．</div><div class="ttdef"><b>Definition:</b> potentiometer.hpp:73</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_potentiometer_html_a2e1259d00f1695d8256aa349cb92e7f7"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a2e1259d00f1695d8256aa349cb92e7f7">alps::cmn::sensor::Potentiometer::GetLowPassRawValue</a></div><div class="ttdeci">float GetLowPassRawValue()</div><div class="ttdoc">ローパスフィルタを通した生値を得る．</div><div class="ttdef"><b>Definition:</b> potentiometer.hpp:113</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_potentiometer_html_a2f6b87061fa35c65a21c184a77608677"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a2f6b87061fa35c65a21c184a77608677">alps::cmn::sensor::Potentiometer::SetParam</a></div><div class="ttdeci">void SetParam(const PotentiometerParam &amp;param)</div><div class="ttdoc">パラメータを設定する</div><div class="ttdef"><b>Definition:</b> potentiometer.hpp:91</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_potentiometer_html_a4d627da9773c9a18dd4498db2f08e2a7"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a4d627da9773c9a18dd4498db2f08e2a7">alps::cmn::sensor::Potentiometer::GetNormalizedValue</a></div><div class="ttdeci">float GetNormalizedValue()</div><div class="ttdoc">ポテンショメータの正規化された値を得る．</div><div class="ttdef"><b>Definition:</b> potentiometer.hpp:123</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_potentiometer_html_a7323f143a5ecb2095a7c18311628d491"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a7323f143a5ecb2095a7c18311628d491">alps::cmn::sensor::Potentiometer::GetRawValue</a></div><div class="ttdeci">float GetRawValue()</div><div class="ttdoc">ポテンショメータの生値を得る．この関数で最小，最大値を確認すると良い．</div><div class="ttdef"><b>Definition:</b> potentiometer.hpp:103</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_potentiometer_html_aa884ac8ee10264569f3ef96e86b05ae1"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#aa884ac8ee10264569f3ef96e86b05ae1">alps::cmn::sensor::Potentiometer::GetAngle</a></div><div class="ttdeci">double GetAngle()</div><div class="ttdoc">角度を得る</div><div class="ttdef"><b>Definition:</b> potentiometer.hpp:133</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_potentiometer_html_adbb4665471e00665c0b2c10602bc0b22"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#adbb4665471e00665c0b2c10602bc0b22">alps::cmn::sensor::Potentiometer::Potentiometer</a></div><div class="ttdeci">Potentiometer(gpio::IAnalogIn&lt; AnalogIn &gt; &amp;analog_in, const PotentiometerParam &amp;param)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> potentiometer.hpp:81</div></div>
+<a href="potentiometer_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_CMN_SENSOR_POTENTIOMETER_HPP_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_CMN_SENSOR_POTENTIOMETER_HPP_</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="low__pass__filter_8hpp.html">alps_cmn/control/low_pass_filter.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="i__analog__in_8hpp.html">alps_cmn/gpio/i_analog_in.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="i__rotary__sensor_8hpp.html">alps_cmn/sensor/i_rotary_sensor.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="duration_8hpp.html">alps_cmn/time/duration.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;tuple&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">namespace </span>cmn</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">namespace </span>sensor</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html">   35</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html">PotentiometerParam</a></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#aca615b9d7792c7d9f0de58540ef38235">   38</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#aca615b9d7792c7d9f0de58540ef38235">angle_range</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a90d99811692bce2c86249fa996c00d36">   40</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a90d99811692bce2c86249fa996c00d36">min_raw_val</a>{0.0};</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#ad46fa63996a57b76efa6b58bad526439">   42</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#ad46fa63996a57b76efa6b58bad526439">max_raw_val</a>{1.0};</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a4ba93241999895c311dbfe00ed691545">   44</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a4ba93241999895c311dbfe00ed691545">angle_offset</a>{0.0};</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#af9221bffc4df55484f6b5288f8437ec8">   46</a></span>  <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">alps::cmn::time::Seconds</a> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#af9221bffc4df55484f6b5288f8437ec8">lpf_time_const</a>{std::chrono::milliseconds(10)};</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sensor.html#a57d7bb0160d9e47dc5fd68bfc5de61e0">   49</a></span><span class="keyword">auto</span> <a class="code hl_function" href="namespacealps_1_1cmn_1_1sensor.html#a57d7bb0160d9e47dc5fd68bfc5de61e0">ToTiedTuple</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html">PotentiometerParam</a> &amp; param)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordflow">return</span> std::tie(</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    param.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#aca615b9d7792c7d9f0de58540ef38235">angle_range</a>,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    param.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a90d99811692bce2c86249fa996c00d36">min_raw_val</a>,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    param.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#ad46fa63996a57b76efa6b58bad526439">max_raw_val</a>,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    param.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a4ba93241999895c311dbfe00ed691545">angle_offset</a>,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    param.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#af9221bffc4df55484f6b5288f8437ec8">lpf_time_const</a>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sensor.html#a40411c5918d432b2cf9e5caaa43b033a">   59</a></span><span class="keyword">auto</span> <a class="code hl_function" href="namespacealps_1_1cmn_1_1sensor.html#a40411c5918d432b2cf9e5caaa43b033a">GetElementNames</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html">PotentiometerParam</a> &amp;)</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>{</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordflow">return</span> std::array&lt;const char *, 5&gt;{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="stringliteral">&quot;angle_range&quot;</span>, <span class="stringliteral">&quot;min_raw_val&quot;</span>, <span class="stringliteral">&quot;max_raw_val&quot;</span>, <span class="stringliteral">&quot;angle_offset&quot;</span>, <span class="stringliteral">&quot;lpf_time_const&quot;</span>};</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Clock, <span class="keyword">class</span> AnalogIn&gt;</div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="};">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html">   72</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html">Potentiometer</a> : <span class="keyword">public</span> <a class="code hl_class" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">IRotarySensor</a>&lt;Potentiometer&lt;Clock, AnalogIn&gt;&gt;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>{</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#adbb4665471e00665c0b2c10602bc0b22">   81</a></span>  <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#adbb4665471e00665c0b2c10602bc0b22">Potentiometer</a>(<a class="code hl_class" href="classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html">gpio::IAnalogIn&lt;AnalogIn&gt;</a> &amp; analog_in, <span class="keyword">const</span> <a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html">PotentiometerParam</a> &amp; param)</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  : analog_in_{analog_in}, param_{param}, lpf_{param_.lpf_time_const}</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  }</div>
+</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a2f6b87061fa35c65a21c184a77608677">   91</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a2f6b87061fa35c65a21c184a77608677">SetParam</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html">PotentiometerParam</a> &amp; param)</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    param_ = param;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    lpf_.SetTimeConstant(param_.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#af9221bffc4df55484f6b5288f8437ec8">lpf_time_const</a>);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    lpf_.<a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#adb8e16921dd45cd3e14327a21340a5a0">Reset</a>();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  }</div>
+</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a7323f143a5ecb2095a7c18311628d491">  103</a></span>  <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a7323f143a5ecb2095a7c18311628d491">GetRawValue</a>()</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordflow">return</span> analog_in_.<a class="code hl_function" href="classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html#a6222e5301a7d23a2d1d5973959cd3480">CallRead</a>();</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  }</div>
+</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="foldopen" id="foldopen00113" data-start="{" data-end="}">
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a2e1259d00f1695d8256aa349cb92e7f7">  113</a></span>  <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a2e1259d00f1695d8256aa349cb92e7f7">GetLowPassRawValue</a>()</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordflow">return</span> lpf_.Filter(<a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a7323f143a5ecb2095a7c18311628d491">GetRawValue</a>());</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  }</div>
+</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="foldopen" id="foldopen00123" data-start="{" data-end="}">
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a4d627da9773c9a18dd4498db2f08e2a7">  123</a></span>  <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a4d627da9773c9a18dd4498db2f08e2a7">GetNormalizedValue</a>()</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  {</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keywordflow">return</span> (<a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a2e1259d00f1695d8256aa349cb92e7f7">GetLowPassRawValue</a>() - param_.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a90d99811692bce2c86249fa996c00d36">min_raw_val</a>) / (param_.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#ad46fa63996a57b76efa6b58bad526439">max_raw_val</a> - param_.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a90d99811692bce2c86249fa996c00d36">min_raw_val</a>);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  }</div>
+</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="foldopen" id="foldopen00133" data-start="{" data-end="}">
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#aa884ac8ee10264569f3ef96e86b05ae1">  133</a></span>  <span class="keywordtype">double</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#aa884ac8ee10264569f3ef96e86b05ae1">GetAngle</a>()</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  {</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordtype">float</span> normalized_val = <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a4d627da9773c9a18dd4498db2f08e2a7">GetNormalizedValue</a>();</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keywordtype">float</span> angle = normalized_val * param_.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#aca615b9d7792c7d9f0de58540ef38235">angle_range</a>;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    angle = angle - param_.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a4ba93241999895c311dbfe00ed691545">angle_offset</a>;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keywordflow">return</span> angle;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  }</div>
+</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html">gpio::IAnalogIn&lt;AnalogIn&gt;</a> &amp; analog_in_;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  <a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html">PotentiometerParam</a> param_;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">control::LowPassFilter&lt;Clock&gt;</a> lpf_;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>};</div>
+</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>}  <span class="comment">// namespace sensor</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">alps::cmn::control::ChangeRateLimiter</a></div><div class="ttdoc">時間あたりの変化量に制限をかけるクラス．</div><div class="ttdef"><b>Definition</b> change_rate_limiter.hpp:35</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html_adb8e16921dd45cd3e14327a21340a5a0"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#adb8e16921dd45cd3e14327a21340a5a0">alps::cmn::control::ChangeRateLimiter::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">初回フラグをリセットする</div><div class="ttdef"><b>Definition</b> change_rate_limiter.hpp:148</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_analog_in_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html">alps::cmn::gpio::IAnalogIn</a></div><div class="ttdoc">アナログ入力を行うインタフェース</div><div class="ttdef"><b>Definition</b> i_analog_in.hpp:29</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_analog_in_html_a6222e5301a7d23a2d1d5973959cd3480"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html#a6222e5301a7d23a2d1d5973959cd3480">alps::cmn::gpio::IAnalogIn::CallRead</a></div><div class="ttdeci">float CallRead()</div><div class="ttdoc">インタフェースを介してアナログ入力値を読む</div><div class="ttdef"><b>Definition</b> i_analog_in.hpp:36</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">alps::cmn::sensor::IRotarySensor</a></div><div class="ttdoc">回転センサーのインタフェース</div><div class="ttdef"><b>Definition</b> i_rotary_sensor.hpp:18</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_potentiometer_html"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html">alps::cmn::sensor::Potentiometer</a></div><div class="ttdoc">ポテンショメータのクラス．</div><div class="ttdef"><b>Definition</b> potentiometer.hpp:73</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_potentiometer_html_a2e1259d00f1695d8256aa349cb92e7f7"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a2e1259d00f1695d8256aa349cb92e7f7">alps::cmn::sensor::Potentiometer::GetLowPassRawValue</a></div><div class="ttdeci">float GetLowPassRawValue()</div><div class="ttdoc">ローパスフィルタを通した生値を得る．</div><div class="ttdef"><b>Definition</b> potentiometer.hpp:113</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_potentiometer_html_a2f6b87061fa35c65a21c184a77608677"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a2f6b87061fa35c65a21c184a77608677">alps::cmn::sensor::Potentiometer::SetParam</a></div><div class="ttdeci">void SetParam(const PotentiometerParam &amp;param)</div><div class="ttdoc">パラメータを設定する</div><div class="ttdef"><b>Definition</b> potentiometer.hpp:91</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_potentiometer_html_a4d627da9773c9a18dd4498db2f08e2a7"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a4d627da9773c9a18dd4498db2f08e2a7">alps::cmn::sensor::Potentiometer::GetNormalizedValue</a></div><div class="ttdeci">float GetNormalizedValue()</div><div class="ttdoc">ポテンショメータの正規化された値を得る．</div><div class="ttdef"><b>Definition</b> potentiometer.hpp:123</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_potentiometer_html_a7323f143a5ecb2095a7c18311628d491"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#a7323f143a5ecb2095a7c18311628d491">alps::cmn::sensor::Potentiometer::GetRawValue</a></div><div class="ttdeci">float GetRawValue()</div><div class="ttdoc">ポテンショメータの生値を得る．この関数で最小，最大値を確認すると良い．</div><div class="ttdef"><b>Definition</b> potentiometer.hpp:103</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_potentiometer_html_aa884ac8ee10264569f3ef96e86b05ae1"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#aa884ac8ee10264569f3ef96e86b05ae1">alps::cmn::sensor::Potentiometer::GetAngle</a></div><div class="ttdeci">double GetAngle()</div><div class="ttdoc">角度を得る</div><div class="ttdef"><b>Definition</b> potentiometer.hpp:133</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_potentiometer_html_adbb4665471e00665c0b2c10602bc0b22"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_potentiometer.html#adbb4665471e00665c0b2c10602bc0b22">alps::cmn::sensor::Potentiometer::Potentiometer</a></div><div class="ttdeci">Potentiometer(gpio::IAnalogIn&lt; AnalogIn &gt; &amp;analog_in, const PotentiometerParam &amp;param)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition</b> potentiometer.hpp:81</div></div>
 <div class="ttc" id="aduration_8hpp_html"><div class="ttname"><a href="duration_8hpp.html">duration.hpp</a></div><div class="ttdoc">時間間隔の型エイリアス</div></div>
 <div class="ttc" id="ai__analog__in_8hpp_html"><div class="ttname"><a href="i__analog__in_8hpp.html">i_analog_in.hpp</a></div><div class="ttdoc">アナログ入力インタフェース</div></div>
 <div class="ttc" id="ai__rotary__sensor_8hpp_html"><div class="ttname"><a href="i__rotary__sensor_8hpp.html">i_rotary_sensor.hpp</a></div></div>
 <div class="ttc" id="alow__pass__filter_8hpp_html"><div class="ttname"><a href="low__pass__filter_8hpp.html">low_pass_filter.hpp</a></div><div class="ttdoc">ローパスフィルタのクラス</div></div>
-<div class="ttc" id="anamespacealps_1_1cmn_1_1sensor_html_a40411c5918d432b2cf9e5caaa43b033a"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sensor.html#a40411c5918d432b2cf9e5caaa43b033a">alps::cmn::sensor::GetElementNames</a></div><div class="ttdeci">auto GetElementNames(const PotentiometerParam &amp;)</div><div class="ttdef"><b>Definition:</b> potentiometer.hpp:59</div></div>
-<div class="ttc" id="anamespacealps_1_1cmn_1_1sensor_html_a57d7bb0160d9e47dc5fd68bfc5de61e0"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sensor.html#a57d7bb0160d9e47dc5fd68bfc5de61e0">alps::cmn::sensor::ToTiedTuple</a></div><div class="ttdeci">auto ToTiedTuple(PotentiometerParam &amp;param)</div><div class="ttdef"><b>Definition:</b> potentiometer.hpp:49</div></div>
-<div class="ttc" id="anamespacealps_1_1cmn_1_1time_html_a4dc32b93ee736cf2c098e6467107ee56"><div class="ttname"><a href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">alps::cmn::time::Seconds</a></div><div class="ttdeci">std::chrono::duration&lt; float, std::ratio&lt; 1 &gt; &gt; Seconds</div><div class="ttdoc">float精度の秒</div><div class="ttdef"><b>Definition:</b> duration.hpp:25</div></div>
-<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:25</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1_potentiometer_param_html"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html">alps::cmn::sensor::PotentiometerParam</a></div><div class="ttdoc">ポテンショメータのパラメータ</div><div class="ttdef"><b>Definition:</b> potentiometer.hpp:36</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1_potentiometer_param_html_a4ba93241999895c311dbfe00ed691545"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a4ba93241999895c311dbfe00ed691545">alps::cmn::sensor::PotentiometerParam::angle_offset</a></div><div class="ttdeci">float angle_offset</div><div class="ttdoc">オフセット角度[rad]</div><div class="ttdef"><b>Definition:</b> potentiometer.hpp:44</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1_potentiometer_param_html_a90d99811692bce2c86249fa996c00d36"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a90d99811692bce2c86249fa996c00d36">alps::cmn::sensor::PotentiometerParam::min_raw_val</a></div><div class="ttdeci">float min_raw_val</div><div class="ttdoc">最小の生値</div><div class="ttdef"><b>Definition:</b> potentiometer.hpp:40</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1_potentiometer_param_html_aca615b9d7792c7d9f0de58540ef38235"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#aca615b9d7792c7d9f0de58540ef38235">alps::cmn::sensor::PotentiometerParam::angle_range</a></div><div class="ttdeci">float angle_range</div><div class="ttdoc">角度範囲[rad]</div><div class="ttdef"><b>Definition:</b> potentiometer.hpp:38</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1_potentiometer_param_html_ad46fa63996a57b76efa6b58bad526439"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#ad46fa63996a57b76efa6b58bad526439">alps::cmn::sensor::PotentiometerParam::max_raw_val</a></div><div class="ttdeci">float max_raw_val</div><div class="ttdoc">最大の生値</div><div class="ttdef"><b>Definition:</b> potentiometer.hpp:42</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1_potentiometer_param_html_af9221bffc4df55484f6b5288f8437ec8"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#af9221bffc4df55484f6b5288f8437ec8">alps::cmn::sensor::PotentiometerParam::lpf_time_const</a></div><div class="ttdeci">alps::cmn::time::Seconds lpf_time_const</div><div class="ttdoc">ローパスフィルタの時定数</div><div class="ttdef"><b>Definition:</b> potentiometer.hpp:46</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sensor_html_a40411c5918d432b2cf9e5caaa43b033a"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sensor.html#a40411c5918d432b2cf9e5caaa43b033a">alps::cmn::sensor::GetElementNames</a></div><div class="ttdeci">auto GetElementNames(const PotentiometerParam &amp;)</div><div class="ttdef"><b>Definition</b> potentiometer.hpp:59</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sensor_html_a57d7bb0160d9e47dc5fd68bfc5de61e0"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sensor.html#a57d7bb0160d9e47dc5fd68bfc5de61e0">alps::cmn::sensor::ToTiedTuple</a></div><div class="ttdeci">auto ToTiedTuple(PotentiometerParam &amp;param)</div><div class="ttdef"><b>Definition</b> potentiometer.hpp:49</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1time_html_a4dc32b93ee736cf2c098e6467107ee56"><div class="ttname"><a href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">alps::cmn::time::Seconds</a></div><div class="ttdeci">std::chrono::duration&lt; float, std::ratio&lt; 1 &gt; &gt; Seconds</div><div class="ttdoc">float精度の秒</div><div class="ttdef"><b>Definition</b> duration.hpp:25</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition</b> dc_motor.hpp:25</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1_potentiometer_param_html"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html">alps::cmn::sensor::PotentiometerParam</a></div><div class="ttdoc">ポテンショメータのパラメータ</div><div class="ttdef"><b>Definition</b> potentiometer.hpp:36</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1_potentiometer_param_html_a4ba93241999895c311dbfe00ed691545"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a4ba93241999895c311dbfe00ed691545">alps::cmn::sensor::PotentiometerParam::angle_offset</a></div><div class="ttdeci">float angle_offset</div><div class="ttdoc">オフセット角度[rad]</div><div class="ttdef"><b>Definition</b> potentiometer.hpp:44</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1_potentiometer_param_html_a90d99811692bce2c86249fa996c00d36"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#a90d99811692bce2c86249fa996c00d36">alps::cmn::sensor::PotentiometerParam::min_raw_val</a></div><div class="ttdeci">float min_raw_val</div><div class="ttdoc">最小の生値</div><div class="ttdef"><b>Definition</b> potentiometer.hpp:40</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1_potentiometer_param_html_aca615b9d7792c7d9f0de58540ef38235"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#aca615b9d7792c7d9f0de58540ef38235">alps::cmn::sensor::PotentiometerParam::angle_range</a></div><div class="ttdeci">float angle_range</div><div class="ttdoc">角度範囲[rad]</div><div class="ttdef"><b>Definition</b> potentiometer.hpp:38</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1_potentiometer_param_html_ad46fa63996a57b76efa6b58bad526439"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#ad46fa63996a57b76efa6b58bad526439">alps::cmn::sensor::PotentiometerParam::max_raw_val</a></div><div class="ttdeci">float max_raw_val</div><div class="ttdoc">最大の生値</div><div class="ttdef"><b>Definition</b> potentiometer.hpp:42</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1_potentiometer_param_html_af9221bffc4df55484f6b5288f8437ec8"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html#af9221bffc4df55484f6b5288f8437ec8">alps::cmn::sensor::PotentiometerParam::lpf_time_const</a></div><div class="ttdeci">alps::cmn::time::Seconds lpf_time_const</div><div class="ttdoc">ローパスフィルタの時定数</div><div class="ttdef"><b>Definition</b> potentiometer.hpp:46</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_627d875eccf4a985023a7fe06842126c.html">alps_core</a></li><li class="navelem"><a class="el" href="dir_f64f47805544727f04f019e126982967.html">lib_internal</a></li><li class="navelem"><a class="el" href="dir_dbb6a150a1d2a9e3bac0bb1d4855e995.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_2b777a74a5ff5221077a83a37cc87235.html">include</a></li><li class="navelem"><a class="el" href="dir_664123f27b70b10eeac81c10039fb160.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_1585cb1296de2c4dde76500afa886952.html">sensor</a></li><li class="navelem"><a class="el" href="potentiometer_8hpp.html">potentiometer.hpp</a></li>
-    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

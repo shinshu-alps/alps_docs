@@ -1,6 +1,9 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/i_uart_io.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/i_uart_io.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="233,5,427,76"/>
-<area shape="rect" id="node2" href="$uart__packet__transceiver_8hpp.html" title=" " alt="" coords="5,124,215,195"/>
-<area shape="rect" id="node3" href="$alps__linux__lib_2include_2alps__lin_2communication_2uart__io_8hpp.html" title="Ubuntuシリアル通信IOライブラリ" alt="" coords="239,124,421,195"/>
-<area shape="rect" id="node4" href="$alps__mbed__lib_2include_2alps__mbed_2communication_2uart__io_8hpp.html" title="mbedのUart通信IOライブラリ" alt="" coords="445,124,647,195"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="233,5,427,75"/>
+<area shape="rect" id="Node000002" href="$uart__packet__transceiver_8hpp.html" title=" " alt="" coords="5,123,215,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="255,83,176,125,173,120,252,79"/>
+<area shape="rect" id="Node000003" href="$alps__linux__lib_2include_2alps__lin_2communication_2uart__io_8hpp.html" title="Ubuntuシリアル通信IOライブラリ" alt="" coords="239,123,421,192"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="333,89,333,122,327,122,327,89"/>
+<area shape="rect" id="Node000004" href="$alps__mbed__lib_2include_2alps__mbed_2communication_2uart__io_8hpp.html" title="mbedのUart通信IOライブラリ" alt="" coords="445,123,647,192"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="406,79,484,120,482,125,404,83"/>
 </map>

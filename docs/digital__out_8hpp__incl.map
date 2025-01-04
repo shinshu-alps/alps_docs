@@ -1,5 +1,7 @@
 <map id="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/gpio/digital_out.hpp" name="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/gpio/digital_out.hpp">
-<area shape="rect" id="node1" title="デジタル出力ピン" alt="" coords="25,5,200,76"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,131,76,158"/>
-<area shape="rect" id="node3" href="$i__digital__out_8hpp.html" title=" " alt="" coords="100,124,272,165"/>
+<area shape="rect" id="Node000001" title="デジタル出力ピン" alt="" coords="25,5,200,75"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,130,76,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,77,59,120,55,117,86,74"/>
+<area shape="rect" id="Node000003" href="$i__digital__out_8hpp.html" title=" " alt="" coords="100,123,272,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,74,166,109,162,113,135,77"/>
 </map>

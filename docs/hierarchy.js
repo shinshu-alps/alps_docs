@@ -6,11 +6,9 @@ var hierarchy =
     [ "alps::cmn::communication::CanCallbackHandler< kMaxCallbackNum >", "classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html", null ],
     [ "alps::cmn::communication::CanCallbackHandler< 30 >", "classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html", null ],
     [ "alps::cmn::communication::CanDataFrame", "structalps_1_1cmn_1_1communication_1_1_can_data_frame.html", null ],
-    [ "alps::cmn::communication::detail::CanParamBase< T >", "classalps_1_1cmn_1_1communication_1_1detail_1_1_can_param_base.html", [
-      [ "alps::cmn::communication::CanParamClient< T >", "classalps_1_1cmn_1_1communication_1_1_can_param_client.html", null ],
-      [ "alps::cmn::communication::CanParamServer< T >", "classalps_1_1cmn_1_1communication_1_1_can_param_server.html", null ]
-    ] ],
+    [ "alps::cmn::communication::CanParamClient< T >", "classalps_1_1cmn_1_1communication_1_1_can_param_client.html", null ],
     [ "alps::cmn::communication::CanParamPort< kMaxParamNum >", "classalps_1_1cmn_1_1communication_1_1_can_param_port.html", null ],
+    [ "alps::cmn::communication::CanParamServer< T >", "classalps_1_1cmn_1_1communication_1_1_can_param_server.html", null ],
     [ "alps::cmn::actuator::robomas_motor::CanPort", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_can_port.html", null ],
     [ "alps::cmn::communication::CanPublisher< T >", "classalps_1_1cmn_1_1communication_1_1_can_publisher.html", null ],
     [ "alps::cmn::communication::CanPublisher< CanDataFrame::Id >", "classalps_1_1cmn_1_1communication_1_1_can_publisher.html", null ],
@@ -46,10 +44,10 @@ var hierarchy =
     [ "alps::cmn::gpio::IAnalogIn< AnalogIn >", "classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html", [
       [ "alps::mbed::gpio::AnalogIn", "classalps_1_1mbed_1_1gpio_1_1_analog_in.html", null ]
     ] ],
-    [ "alps::cmn::communication::ICanIo< Derived >", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", null ],
-    [ "alps::cmn::communication::ICanIo< BufferedCanIo< 50, 100 > >", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", [
+    [ "alps::cmn::communication::ICanIo< Derived >", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", [
       [ "alps::mbed::communication::BufferedCanIo< kWriteBufSize, kReadBufSize >", "classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html", null ]
     ] ],
+    [ "alps::cmn::communication::ICanIo< BufferedCanIo< 50, 100 > >", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", null ],
     [ "alps::cmn::communication::ICanIo< CanIo >", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", null ],
     [ "alps::cmn::communication::ICanIo< SocketCanIo >", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", [
       [ "alps::lin::communication::SocketCanIo", "classalps_1_1lin_1_1communication_1_1_socket_can_io.html", null ]

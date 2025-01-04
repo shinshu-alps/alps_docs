@@ -1,7 +1,11 @@
 <map id="alps_core/lib_internal/alps_ros2_lib/include/alps_ros2/log/log_writer.hpp" name="alps_core/lib_internal/alps_ros2_lib/include/alps_ros2/log/log_writer.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="109,5,317,61"/>
-<area shape="rect" id="node2" href="$logger_8hpp.html" title=" " alt="" coords="34,109,214,136"/>
-<area shape="rect" id="node5" title=" " alt="" coords="238,109,370,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,184,117,211"/>
-<area shape="rect" id="node4" title=" " alt="" coords="142,184,234,211"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="109,5,317,60"/>
+<area shape="rect" id="Node000002" href="$logger_8hpp.html" title=" " alt="" coords="34,108,214,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,62,148,100,144,96,184,58"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="238,108,370,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="243,58,284,96,280,100,239,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,181,117,207"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="116,135,83,173,79,169,112,132"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="142,181,234,207"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="137,132,171,169,167,173,133,135"/>
 </map>

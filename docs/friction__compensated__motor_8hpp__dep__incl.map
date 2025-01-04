@@ -1,4 +1,5 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/control/friction_compensated_motor.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/control/friction_compensated_motor.hpp">
-<area shape="rect" id="node1" title="モーターに対して摩擦補償を行うデコレーター" alt="" coords="17,5,207,76"/>
-<area shape="rect" id="node2" href="$motor__friction__analyzer_8hpp.html" title="モーター軸の摩擦力を計測するクラス" alt="" coords="5,124,219,195"/>
+<area shape="rect" id="Node000001" title="モーターに対して摩擦補償を行うデコレーター" alt="" coords="17,5,207,75"/>
+<area shape="rect" id="Node000002" href="$motor__friction__analyzer_8hpp.html" title="モーター軸の摩擦力を計測するクラス" alt="" coords="5,123,219,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,89,115,122,109,122,109,89"/>
 </map>

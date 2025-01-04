@@ -1,8 +1,13 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/cobs.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/cobs.hpp">
-<area shape="rect" id="node1" title="COBS変換ライブラリ" alt="" coords="123,5,317,76"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,124,75,151"/>
-<area shape="rect" id="node3" title=" " alt="" coords="99,124,165,151"/>
-<area shape="rect" id="node4" title=" " alt="" coords="189,124,251,151"/>
-<area shape="rect" id="node5" title=" " alt="" coords="275,124,341,151"/>
-<area shape="rect" id="node6" title=" " alt="" coords="365,124,512,151"/>
+<area shape="rect" id="Node000001" title="COBS変換ライブラリ" alt="" coords="123,5,317,75"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,123,75,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,77,76,118,74,114,154,72"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="99,123,165,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="190,77,154,114,150,111,186,73"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="189,123,251,148"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="223,75,223,109,217,109,217,75"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="275,123,341,148"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="254,73,290,111,286,114,250,77"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="365,123,512,148"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="300,72,400,115,398,120,298,77"/>
 </map>

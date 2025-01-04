@@ -1,4 +1,5 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="5,5,221,61"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1actuator_1_1_dc_motor.html" title="PWMピンと方向指定ピンで動かすDCモーター" alt="" coords="269,5,476,61"/>
+<area shape="rect" id="Node000000" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="5,5,221,60"/>
+<area shape="rect" id="Node000001" href="$classalps_1_1cmn_1_1actuator_1_1_dc_motor.html" title="PWMピンと方向指定ピンで動かすDCモーター" alt="" coords="269,5,476,60"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="235,30,269,30,269,35,235,35"/>
 </map>
