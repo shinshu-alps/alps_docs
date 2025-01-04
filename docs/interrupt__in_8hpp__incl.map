@@ -1,7 +1,11 @@
 <map id="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/gpio/interrupt_in.hpp" name="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/gpio/interrupt_in.hpp">
-<area shape="rect" id="node1" title="割り込み入力ピン" alt="" coords="68,5,304,61"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,117,76,143"/>
-<area shape="rect" id="node3" href="$i__digital__in_8hpp.html" title=" " alt="" coords="100,109,272,151"/>
-<area shape="rect" id="node4" href="$i__interrupt__in_8hpp.html" title=" " alt="" coords="297,109,483,151"/>
-<area shape="rect" id="node5" title=" " alt="" coords="334,199,446,225"/>
+<area shape="rect" id="Node000001" title="割り込み入力ピン" alt="" coords="68,5,304,60"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,115,76,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,62,72,110,69,106,144,58"/>
+<area shape="rect" id="Node000003" href="$i__digital__in_8hpp.html" title=" " alt="" coords="100,108,272,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,60,189,94,183,94,183,60"/>
+<area shape="rect" id="Node000004" href="$i__interrupt__in_8hpp.html" title=" " alt="" coords="297,108,483,148"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="244,58,337,100,335,105,242,62"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="334,196,446,221"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="393,148,393,182,387,182,387,148"/>
 </map>

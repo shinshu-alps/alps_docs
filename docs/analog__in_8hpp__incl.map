@@ -1,5 +1,7 @@
 <map id="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/gpio/analog_in.hpp" name="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/gpio/analog_in.hpp">
-<area shape="rect" id="node1" title="アナログ入力ピン" alt="" coords="54,5,278,61"/>
-<area shape="rect" id="node2" href="$i__analog__in_8hpp.html" title="アナログ入力インタフェース" alt="" coords="5,109,180,151"/>
-<area shape="rect" id="node3" title=" " alt="" coords="204,117,275,143"/>
+<area shape="rect" id="Node000001" title="アナログ入力ピン" alt="" coords="54,5,278,60"/>
+<area shape="rect" id="Node000002" href="$i__analog__in_8hpp.html" title="アナログ入力インタフェース" alt="" coords="5,108,180,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,62,118,99,114,96,143,59"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="204,115,275,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,59,224,103,220,106,185,62"/>
 </map>

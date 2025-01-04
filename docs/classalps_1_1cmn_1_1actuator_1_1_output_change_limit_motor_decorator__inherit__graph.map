@@ -1,4 +1,5 @@
 <map id="alps::cmn::actuator::OutputChangeLimitMotorDecorator&lt; Clock, BaseMotor &gt;" name="alps::cmn::actuator::OutputChangeLimitMotorDecorator&lt; Clock, BaseMotor &gt;">
-<area shape="rect" id="node1" title="モーターに対して出力変化制限をかけるデコレータ" alt="" coords="9,160,284,296"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="5,5,288,112"/>
+<area shape="rect" id="Node000001" title="モーターに対して出力変化制限をかけるデコレータ" alt="" coords="9,148,276,283"/>
+<area shape="rect" id="Node000002" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="5,5,280,100"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,114,145,148,140,148,140,114"/>
 </map>

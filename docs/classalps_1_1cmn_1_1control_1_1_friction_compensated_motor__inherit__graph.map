@@ -1,4 +1,5 @@
 <map id="alps::cmn::control::FrictionCompensatedMotor&lt; Clock, BaseMotor, RorarySensor &gt;" name="alps::cmn::control::FrictionCompensatedMotor&lt; Clock, BaseMotor, RorarySensor &gt;">
-<area shape="rect" id="node1" title="モーターに対して摩擦補償を行うデコレーター" alt="" coords="5,175,267,296"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="23,5,249,127"/>
+<area shape="rect" id="Node000001" title="モーターに対して摩擦補償を行うデコレーター" alt="" coords="5,163,259,277"/>
+<area shape="rect" id="Node000002" href="$classalps_1_1cmn_1_1actuator_1_1_i_motor.html" title=" " alt="" coords="23,5,241,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,129,135,163,129,163,129,129"/>
 </map>

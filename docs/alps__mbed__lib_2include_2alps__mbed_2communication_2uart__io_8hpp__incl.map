@@ -1,6 +1,9 @@
 <map id="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/communication/uart_io.hpp" name="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/communication/uart_io.hpp">
-<area shape="rect" id="node1" title="mbedのUart通信IOライブラリ" alt="" coords="76,5,279,76"/>
-<area shape="rect" id="node2" href="$i__uart__io_8hpp.html" title=" " alt="" coords="5,124,195,165"/>
-<area shape="rect" id="node4" title=" " alt="" coords="219,131,290,158"/>
-<area shape="rect" id="node3" title=" " alt="" coords="27,213,173,240"/>
+<area shape="rect" id="Node000001" title="mbedのUart通信IOライブラリ" alt="" coords="76,5,279,75"/>
+<area shape="rect" id="Node000002" href="$i__uart__io_8hpp.html" title=" " alt="" coords="5,123,195,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,77,125,113,121,110,149,74"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="219,130,290,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="206,74,239,117,235,120,201,77"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="27,211,173,236"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,163,103,197,97,197,97,163"/>
 </map>

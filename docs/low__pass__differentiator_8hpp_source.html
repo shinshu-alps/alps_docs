@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="generator" content="Doxygen 1.9.8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Alps: alps_core/lib_internal/alps_common_lib/include/alps_cmn/control/low_pass_differentiator.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -53,22 +53,28 @@
                 </tbody>
             </table>
         </div>
-        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+        <!-- end header part --><!-- 構築: Doxygen 1.9.8 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -81,7 +87,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(document).ready(function(){initNavTree('low__pass__differentiator_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
@@ -95,94 +101,115 @@ $(document).ready(function(){initNavTree('low__pass__differentiator_8hpp_source.
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="header">
-  <div class="headertitle">
-<div class="title">low_pass_differentiator.hpp</div>  </div>
+  <div class="headertitle"><div class="title">low_pass_differentiator.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="low__pass__differentiator_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ALPS_CMN_CONTROL_LOW_PASS_DIFFERENTIATOR_HPP_</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ALPS_CMN_CONTROL_LOW_PASS_DIFFERENTIATOR_HPP_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="differentiator_8hpp.html">alps_cmn/control/differentiator.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="low__pass__filter_8hpp.html">alps_cmn/control/low_pass_filter.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>cmn</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>control</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Clock&gt;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html">LowPassDifferentiator</a></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#a1d290d680a7859ad189a8e5c3ec0a3ac">   29</a></span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#a1d290d680a7859ad189a8e5c3ec0a3ac">LowPassDifferentiator</a>(</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">time::Seconds</a> low_pass_time_const,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::chrono::microseconds min_calc_interval = std::chrono::milliseconds(1))</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  : differentiator_{min_calc_interval}, low_pass_filter_{low_pass_time_const} {};</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#af2397ffc596fc29894368c0b7ec27bf5">   40</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#af2397ffc596fc29894368c0b7ec27bf5">Calculate</a>(<span class="keywordtype">double</span> input)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> low_pass_filter_.Filter(differentiator_.Calculate(input));</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#afe76439ea2aa3a7d59337c88dc8661f4">   49</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#afe76439ea2aa3a7d59337c88dc8661f4">Reset</a>()</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    differentiator_.Reset();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    low_pass_filter_.Reset();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#aa3064251324eb1f94dd8405780819fe9">   60</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#aa3064251324eb1f94dd8405780819fe9">GetLastOutput</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> low_pass_filter_.GetLastOutput();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#a8fe1ee4e0cb810e1b6d42f0d252b0a59">   70</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#a8fe1ee4e0cb810e1b6d42f0d252b0a59">GetLastRawOutput</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> differentiator_.GetLastOutput();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#ad3406b12a3cd03c031ac0a3c7d075006">   80</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#ad3406b12a3cd03c031ac0a3c7d075006">SetLpfTimeConstant</a>(<a class="code" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">time::Seconds</a> low_pass_time_const)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    low_pass_filter_.SetTimeConstant(low_pass_time_const);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_differentiator.html">Differentiator&lt;Clock&gt;</a> differentiator_;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html">LowPassFilter&lt;Clock&gt;</a> low_pass_filter_;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}  <span class="comment">// namespace control</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}  <span class="comment">// namespace cmn</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// ALPS_CMN_CONTROL_LOW_PASS_DIFFERENTIATOR_HPP_</span></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_differentiator_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_differentiator.html">alps::cmn::control::Differentiator</a></div><div class="ttdoc">微分器</div><div class="ttdef"><b>Definition:</b> differentiator.hpp:31</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_differentiator_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html">alps::cmn::control::LowPassDifferentiator</a></div><div class="ttdoc">ローパスフィルタを通す微分器. ノイズ成分をカットする.</div><div class="ttdef"><b>Definition:</b> low_pass_differentiator.hpp:21</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_differentiator_html_a1d290d680a7859ad189a8e5c3ec0a3ac"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#a1d290d680a7859ad189a8e5c3ec0a3ac">alps::cmn::control::LowPassDifferentiator::LowPassDifferentiator</a></div><div class="ttdeci">LowPassDifferentiator(time::Seconds low_pass_time_const, std::chrono::microseconds min_calc_interval=std::chrono::milliseconds(1))</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> low_pass_differentiator.hpp:29</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_differentiator_html_a8fe1ee4e0cb810e1b6d42f0d252b0a59"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#a8fe1ee4e0cb810e1b6d42f0d252b0a59">alps::cmn::control::LowPassDifferentiator::GetLastRawOutput</a></div><div class="ttdeci">float GetLastRawOutput() const</div><div class="ttdoc">前回のローパスフィルタを通す前の微分値を取得</div><div class="ttdef"><b>Definition:</b> low_pass_differentiator.hpp:70</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_differentiator_html_aa3064251324eb1f94dd8405780819fe9"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#aa3064251324eb1f94dd8405780819fe9">alps::cmn::control::LowPassDifferentiator::GetLastOutput</a></div><div class="ttdeci">float GetLastOutput() const</div><div class="ttdoc">前回の出力値を取得</div><div class="ttdef"><b>Definition:</b> low_pass_differentiator.hpp:60</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_differentiator_html_ad3406b12a3cd03c031ac0a3c7d075006"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#ad3406b12a3cd03c031ac0a3c7d075006">alps::cmn::control::LowPassDifferentiator::SetLpfTimeConstant</a></div><div class="ttdeci">void SetLpfTimeConstant(time::Seconds low_pass_time_const)</div><div class="ttdoc">ローパスフィルタの時定数を変更する</div><div class="ttdef"><b>Definition:</b> low_pass_differentiator.hpp:80</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_differentiator_html_af2397ffc596fc29894368c0b7ec27bf5"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#af2397ffc596fc29894368c0b7ec27bf5">alps::cmn::control::LowPassDifferentiator::Calculate</a></div><div class="ttdeci">float Calculate(double input)</div><div class="ttdoc">微分計算を行う</div><div class="ttdef"><b>Definition:</b> low_pass_differentiator.hpp:40</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_differentiator_html_afe76439ea2aa3a7d59337c88dc8661f4"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#afe76439ea2aa3a7d59337c88dc8661f4">alps::cmn::control::LowPassDifferentiator::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">リセット</div><div class="ttdef"><b>Definition:</b> low_pass_differentiator.hpp:49</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_filter_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_filter.html">alps::cmn::control::LowPassFilter</a></div><div class="ttdoc">ローパスフィルタのクラス</div><div class="ttdef"><b>Definition:</b> low_pass_filter.hpp:34</div></div>
+<a href="low__pass__differentiator_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ALPS_CMN_CONTROL_LOW_PASS_DIFFERENTIATOR_HPP_</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ALPS_CMN_CONTROL_LOW_PASS_DIFFERENTIATOR_HPP_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="differentiator_8hpp.html">alps_cmn/control/differentiator.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="low__pass__filter_8hpp.html">alps_cmn/control/low_pass_filter.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>cmn</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span>control</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Clock&gt;</div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html">   20</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html">LowPassDifferentiator</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#a1d290d680a7859ad189a8e5c3ec0a3ac">   29</a></span>  <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#a1d290d680a7859ad189a8e5c3ec0a3ac">LowPassDifferentiator</a>(</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">time::Seconds</a> <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">low_pass_time_const</a>,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    std::chrono::microseconds <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">min_calc_interval</a> = std::chrono::milliseconds(1))</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  : differentiator_{<a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">min_calc_interval</a>}, low_pass_filter_{<a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">low_pass_time_const</a>} {};</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#af2397ffc596fc29894368c0b7ec27bf5">   40</a></span>  <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#af2397ffc596fc29894368c0b7ec27bf5">Calculate</a>(<span class="keywordtype">double</span> <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">input</a>)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">return</span> low_pass_filter_.Filter(differentiator_.Calculate(<a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">input</a>));</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  }</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#afe76439ea2aa3a7d59337c88dc8661f4">   49</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#afe76439ea2aa3a7d59337c88dc8661f4">Reset</a>()</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    differentiator_.<a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#adb8e16921dd45cd3e14327a21340a5a0">Reset</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    low_pass_filter_.<a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#adb8e16921dd45cd3e14327a21340a5a0">Reset</a>();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  }</div>
+</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#aa3064251324eb1f94dd8405780819fe9">   60</a></span>  <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#aa3064251324eb1f94dd8405780819fe9">GetLastOutput</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> low_pass_filter_.<a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a6fddb4488af84dd04478b0842592d1c2">GetLastOutput</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  }</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#a8fe1ee4e0cb810e1b6d42f0d252b0a59">   70</a></span>  <span class="keywordtype">float</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#a8fe1ee4e0cb810e1b6d42f0d252b0a59">GetLastRawOutput</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">return</span> differentiator_.<a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a6fddb4488af84dd04478b0842592d1c2">GetLastOutput</a>();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  }</div>
+</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#ad3406b12a3cd03c031ac0a3c7d075006">   80</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#ad3406b12a3cd03c031ac0a3c7d075006">SetLpfTimeConstant</a>(<a class="code hl_typedef" href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">time::Seconds</a> <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">low_pass_time_const</a>)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    low_pass_filter_.SetTimeConstant(<a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">low_pass_time_const</a>);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  }</div>
+</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">Differentiator&lt;Clock&gt;</a> differentiator_;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">LowPassFilter&lt;Clock&gt;</a> low_pass_filter_;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>};</div>
+</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>}  <span class="comment">// namespace control</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">#endif  </span><span class="comment">// ALPS_CMN_CONTROL_LOW_PASS_DIFFERENTIATOR_HPP_</span></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html">alps::cmn::control::ChangeRateLimiter</a></div><div class="ttdoc">時間あたりの変化量に制限をかけるクラス．</div><div class="ttdef"><b>Definition</b> change_rate_limiter.hpp:35</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html_a6fddb4488af84dd04478b0842592d1c2"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#a6fddb4488af84dd04478b0842592d1c2">alps::cmn::control::ChangeRateLimiter::GetLastOutput</a></div><div class="ttdeci">float GetLastOutput() const</div><div class="ttdoc">最後に出力した値を取得する</div><div class="ttdef"><b>Definition</b> change_rate_limiter.hpp:131</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_change_rate_limiter_html_adb8e16921dd45cd3e14327a21340a5a0"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html#adb8e16921dd45cd3e14327a21340a5a0">alps::cmn::control::ChangeRateLimiter::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">初回フラグをリセットする</div><div class="ttdef"><b>Definition</b> change_rate_limiter.hpp:148</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_differentiator_html"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html">alps::cmn::control::LowPassDifferentiator</a></div><div class="ttdoc">ローパスフィルタを通す微分器. ノイズ成分をカットする.</div><div class="ttdef"><b>Definition</b> low_pass_differentiator.hpp:21</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_differentiator_html_a1d290d680a7859ad189a8e5c3ec0a3ac"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#a1d290d680a7859ad189a8e5c3ec0a3ac">alps::cmn::control::LowPassDifferentiator::LowPassDifferentiator</a></div><div class="ttdeci">LowPassDifferentiator(time::Seconds low_pass_time_const, std::chrono::microseconds min_calc_interval=std::chrono::milliseconds(1))</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition</b> low_pass_differentiator.hpp:29</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_differentiator_html_a8fe1ee4e0cb810e1b6d42f0d252b0a59"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#a8fe1ee4e0cb810e1b6d42f0d252b0a59">alps::cmn::control::LowPassDifferentiator::GetLastRawOutput</a></div><div class="ttdeci">float GetLastRawOutput() const</div><div class="ttdoc">前回のローパスフィルタを通す前の微分値を取得</div><div class="ttdef"><b>Definition</b> low_pass_differentiator.hpp:70</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_differentiator_html_aa3064251324eb1f94dd8405780819fe9"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#aa3064251324eb1f94dd8405780819fe9">alps::cmn::control::LowPassDifferentiator::GetLastOutput</a></div><div class="ttdeci">float GetLastOutput() const</div><div class="ttdoc">前回の出力値を取得</div><div class="ttdef"><b>Definition</b> low_pass_differentiator.hpp:60</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_differentiator_html_ad3406b12a3cd03c031ac0a3c7d075006"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#ad3406b12a3cd03c031ac0a3c7d075006">alps::cmn::control::LowPassDifferentiator::SetLpfTimeConstant</a></div><div class="ttdeci">void SetLpfTimeConstant(time::Seconds low_pass_time_const)</div><div class="ttdoc">ローパスフィルタの時定数を変更する</div><div class="ttdef"><b>Definition</b> low_pass_differentiator.hpp:80</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_differentiator_html_af2397ffc596fc29894368c0b7ec27bf5"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#af2397ffc596fc29894368c0b7ec27bf5">alps::cmn::control::LowPassDifferentiator::Calculate</a></div><div class="ttdeci">float Calculate(double input)</div><div class="ttdoc">微分計算を行う</div><div class="ttdef"><b>Definition</b> low_pass_differentiator.hpp:40</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1control_1_1_low_pass_differentiator_html_afe76439ea2aa3a7d59337c88dc8661f4"><div class="ttname"><a href="classalps_1_1cmn_1_1control_1_1_low_pass_differentiator.html#afe76439ea2aa3a7d59337c88dc8661f4">alps::cmn::control::LowPassDifferentiator::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">リセット</div><div class="ttdef"><b>Definition</b> low_pass_differentiator.hpp:49</div></div>
 <div class="ttc" id="adifferentiator_8hpp_html"><div class="ttname"><a href="differentiator_8hpp.html">differentiator.hpp</a></div><div class="ttdoc">微分器ライブラリ</div></div>
 <div class="ttc" id="alow__pass__filter_8hpp_html"><div class="ttname"><a href="low__pass__filter_8hpp.html">low_pass_filter.hpp</a></div><div class="ttdoc">ローパスフィルタのクラス</div></div>
-<div class="ttc" id="anamespacealps_1_1cmn_1_1time_html_a4dc32b93ee736cf2c098e6467107ee56"><div class="ttname"><a href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">alps::cmn::time::Seconds</a></div><div class="ttdeci">std::chrono::duration&lt; float, std::ratio&lt; 1 &gt; &gt; Seconds</div><div class="ttdoc">float精度の秒</div><div class="ttdef"><b>Definition:</b> duration.hpp:25</div></div>
-<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:25</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1time_html_a4dc32b93ee736cf2c098e6467107ee56"><div class="ttname"><a href="namespacealps_1_1cmn_1_1time.html#a4dc32b93ee736cf2c098e6467107ee56">alps::cmn::time::Seconds</a></div><div class="ttdeci">std::chrono::duration&lt; float, std::ratio&lt; 1 &gt; &gt; Seconds</div><div class="ttdoc">float精度の秒</div><div class="ttdef"><b>Definition</b> duration.hpp:25</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition</b> dc_motor.hpp:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_627d875eccf4a985023a7fe06842126c.html">alps_core</a></li><li class="navelem"><a class="el" href="dir_f64f47805544727f04f019e126982967.html">lib_internal</a></li><li class="navelem"><a class="el" href="dir_dbb6a150a1d2a9e3bac0bb1d4855e995.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_2b777a74a5ff5221077a83a37cc87235.html">include</a></li><li class="navelem"><a class="el" href="dir_664123f27b70b10eeac81c10039fb160.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_b6cd085f17e89cb6278eb6f5ecd32d39.html">control</a></li><li class="navelem"><a class="el" href="low__pass__differentiator_8hpp.html">low_pass_differentiator.hpp</a></li>
-    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

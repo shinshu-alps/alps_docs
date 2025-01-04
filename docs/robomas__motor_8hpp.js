@@ -1,7 +1,7 @@
 var robomas__motor_8hpp =
 [
-    [ "CanPort", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_can_port.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_can_port" ],
-    [ "ParamedMotor", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_paramed_motor.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_paramed_motor" ],
+    [ "alps::cmn::actuator::robomas_motor::CanPort", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_can_port.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_can_port" ],
+    [ "alps::cmn::actuator::robomas_motor::ParamedMotor< Clock, max_abs_output, max_current_num, max_current_denom, gear_ratio_num, gear_ratio_denom >", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_paramed_motor.html", "classalps_1_1cmn_1_1actuator_1_1robomas__motor_1_1_paramed_motor" ],
     [ "SensorCanData", "robomas__motor_8hpp.html#adf71a36d8c7f026c7f07669936152e6f", null ],
     [ "OutputCanData", "robomas__motor_8hpp.html#a945d4793c71f86892670c6e0729bd06d", null ],
     [ "M2006", "robomas__motor_8hpp.html#ac3b7be9d357bf68b5d17e2457c29d9be", null ],

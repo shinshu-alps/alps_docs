@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.9.1" />
+    <meta name="generator" content="Doxygen 1.9.8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Alps: alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/gpio/digital_out.hpp ソースファイル</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -53,22 +53,28 @@
                 </tbody>
             </table>
         </div>
-        <!-- end header part --><!-- 構築: Doxygen 1.9.1 -->
+        <!-- end header part --><!-- 構築: Doxygen 1.9.8 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','検索');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -81,7 +87,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(document).ready(function(){initNavTree('digital__out_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
@@ -95,63 +101,71 @@ $(document).ready(function(){initNavTree('digital__out_8hpp_source.html',''); in
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="header">
-  <div class="headertitle">
-<div class="title">digital_out.hpp</div>  </div>
+  <div class="headertitle"><div class="title">digital_out.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="digital__out_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef ALPS_MBED_DIGITAL_OUT_HPP</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define ALPS_MBED_DIGITAL_OUT_HPP</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;mbed.h&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="i__digital__out_8hpp.html">alps_cmn/gpio/i_digital_out.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealps.html">alps</a></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>mbed</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>gpio</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html">DigitalOut</a> : <span class="keyword">public</span> <a class="code" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html">alps::cmn::gpio::IDigitalOut</a>&lt;DigitalOut&gt;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#ab0e08bc4ca3f7d39281b32aafd1149a7">   38</a></span>&#160;  <a class="code" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#ab0e08bc4ca3f7d39281b32aafd1149a7">DigitalOut</a>(PinName pin);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#af5ac84747d9943414681fc8e88cc4331">   46</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#af5ac84747d9943414681fc8e88cc4331">Write</a>(<span class="keywordtype">bool</span> value);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#a6eb6820df1ebf83ac37d19596507a443">   48</a></span>&#160;  <a class="code" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#a6eb6820df1ebf83ac37d19596507a443">~DigitalOut</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  ::mbed::DigitalOut mbed_digital_out_;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}  <span class="comment">// namespace gpio</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}  <span class="comment">// namespace mbed</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_digital_out_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html">alps::cmn::gpio::IDigitalOut</a></div><div class="ttdoc">デジタル出力を行うインタフェース</div><div class="ttdef"><b>Definition:</b> i_digital_out.hpp:29</div></div>
-<div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_digital_out_html"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html">alps::mbed::gpio::DigitalOut</a></div><div class="ttdoc">デジタル出力ピン</div><div class="ttdef"><b>Definition:</b> digital_out.hpp:31</div></div>
+<a href="digital__out_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_MBED_DIGITAL_OUT_HPP</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_MBED_DIGITAL_OUT_HPP</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;mbed.h&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="i__digital__out_8hpp.html">alps_cmn/gpio/i_digital_out.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span>mbed</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">namespace </span>gpio</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html">   30</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html">DigitalOut</a> : <span class="keyword">public</span> <a class="code hl_class" href="classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html">alps::cmn::gpio::IDigitalOut</a>&lt;DigitalOut&gt;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#ab0e08bc4ca3f7d39281b32aafd1149a7">   38</a></span>  <a class="code hl_function" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#ab0e08bc4ca3f7d39281b32aafd1149a7">DigitalOut</a>(PinName pin);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#af5ac84747d9943414681fc8e88cc4331">   46</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#af5ac84747d9943414681fc8e88cc4331">Write</a>(<span class="keywordtype">bool</span> value);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#a6eb6820df1ebf83ac37d19596507a443">   48</a></span>  <a class="code hl_function" href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#a6eb6820df1ebf83ac37d19596507a443">~DigitalOut</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  ::mbed::DigitalOut mbed_digital_out_;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>};</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}  <span class="comment">// namespace gpio</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}  <span class="comment">// namespace mbed</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_digital_out_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html">alps::cmn::gpio::IDigitalOut</a></div><div class="ttdoc">デジタル出力を行うインタフェース</div><div class="ttdef"><b>Definition</b> i_digital_out.hpp:29</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_digital_out_html"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html">alps::mbed::gpio::DigitalOut</a></div><div class="ttdoc">デジタル出力ピン</div><div class="ttdef"><b>Definition</b> digital_out.hpp:31</div></div>
 <div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_digital_out_html_a6eb6820df1ebf83ac37d19596507a443"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#a6eb6820df1ebf83ac37d19596507a443">alps::mbed::gpio::DigitalOut::~DigitalOut</a></div><div class="ttdeci">~DigitalOut()=default</div></div>
 <div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_digital_out_html_ab0e08bc4ca3f7d39281b32aafd1149a7"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#ab0e08bc4ca3f7d39281b32aafd1149a7">alps::mbed::gpio::DigitalOut::DigitalOut</a></div><div class="ttdeci">DigitalOut(PinName pin)</div><div class="ttdoc">コンストラクタ</div></div>
 <div class="ttc" id="aclassalps_1_1mbed_1_1gpio_1_1_digital_out_html_af5ac84747d9943414681fc8e88cc4331"><div class="ttname"><a href="classalps_1_1mbed_1_1gpio_1_1_digital_out.html#af5ac84747d9943414681fc8e88cc4331">alps::mbed::gpio::DigitalOut::Write</a></div><div class="ttdeci">void Write(bool value)</div><div class="ttdoc">デジタル出力を行う</div></div>
 <div class="ttc" id="ai__digital__out_8hpp_html"><div class="ttname"><a href="i__digital__out_8hpp.html">i_digital_out.hpp</a></div></div>
-<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition:</b> dc_motor.hpp:25</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition</b> dc_motor.hpp:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_627d875eccf4a985023a7fe06842126c.html">alps_core</a></li><li class="navelem"><a class="el" href="dir_f64f47805544727f04f019e126982967.html">lib_internal</a></li><li class="navelem"><a class="el" href="dir_9873ffdc03473915e57dacf48330031a.html">alps_mbed_lib</a></li><li class="navelem"><a class="el" href="dir_004f98237f8c341a9024f226d8b822ea.html">include</a></li><li class="navelem"><a class="el" href="dir_aeddf8fa4339a06bf9ad9a961c7b6af8.html">alps_mbed</a></li><li class="navelem"><a class="el" href="dir_581791ccee735a0cb31ab604a462ee79.html">gpio</a></li><li class="navelem"><a class="el" href="digital__out_8hpp.html">digital_out.hpp</a></li>
-    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

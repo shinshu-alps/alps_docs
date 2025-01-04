@@ -1,4 +1,5 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/can_param.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/can_param.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,199,76"/>
-<area shape="rect" id="node2" href="$can__param__bridge_8hpp.html" title=" " alt="" coords="5,124,199,195"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,199,75"/>
+<area shape="rect" id="Node000002" href="$can__param__bridge_8hpp.html" title=" " alt="" coords="5,123,199,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,89,105,122,99,122,99,89"/>
 </map>

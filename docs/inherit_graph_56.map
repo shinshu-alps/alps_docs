@@ -1,5 +1,5 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html" title=" " alt="" coords="12,5,188,47"/>
-<area shape="rect" id="node2" href="$classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html" title="割り込み入力ピン" alt="" coords="243,46,449,73"/>
-<area shape="rect" id="node3" href="$classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html" title=" " alt="" coords="5,71,195,112"/>
+<area shape="rect" id="Node000000" href="$classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html" title=" " alt="" coords="5,5,181,45"/>
+<area shape="rect" id="Node000001" href="$classalps_1_1mbed_1_1gpio_1_1_digital_in.html" title="デジタル入力ピン" alt="" coords="229,13,423,38"/>
+<area shape="poly" id="edge13_Node000000_Node000001" title=" " alt="" coords="195,23,229,23,229,28,195,28"/>
 </map>

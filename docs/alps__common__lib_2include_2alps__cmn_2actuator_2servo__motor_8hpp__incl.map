@@ -1,8 +1,14 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/actuator/servo_motor.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/actuator/servo_motor.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="101,5,292,76"/>
-<area shape="rect" id="node2" title=" " alt="" coords="58,213,124,240"/>
-<area shape="rect" id="node3" title=" " alt="" coords="24,131,91,158"/>
-<area shape="rect" id="node4" href="$i__pwm__out_8hpp.html" title="PWM出力を行うインタフェース" alt="" coords="115,124,278,165"/>
-<area shape="rect" id="node5" href="$angle_8hpp.html" title=" " alt="" coords="302,131,480,158"/>
-<area shape="rect" id="node6" href="$algorithm_8hpp.html" title=" " alt="" coords="504,131,708,158"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="101,5,292,75"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="58,211,124,236"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,63,53,87,32,104,14,124,8,142,15,161,32,184,55,202,52,206,28,188,10,164,3,142,10,121,28,100,50,82,99,58"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="24,130,91,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,77,86,124,83,120,148,73"/>
+<area shape="rect" id="Node000004" href="$i__pwm__out_8hpp.html" title="PWM出力を行うインタフェース" alt="" coords="115,123,278,163"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="199,75,199,108,194,108,194,75"/>
+<area shape="rect" id="Node000005" href="$angle_8hpp.html" title=" " alt="" coords="302,130,480,155"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="263,73,358,121,355,126,260,77"/>
+<area shape="rect" id="Node000006" href="$algorithm_8hpp.html" title=" " alt="" coords="504,130,708,155"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="292,62,546,124,545,129,291,67"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="172,165,119,204,116,200,169,161"/>
 </map>

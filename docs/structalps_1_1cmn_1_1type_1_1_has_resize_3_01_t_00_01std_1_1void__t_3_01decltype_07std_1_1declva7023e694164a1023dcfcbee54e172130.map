@@ -1,4 +1,5 @@
 <map id="alps::cmn::type::HasResize&lt; T, std::void_t&lt; decltype(std::declval&lt; T &gt;().resize(std::declval&lt; size_t &gt;()))&gt; &gt;" name="alps::cmn::type::HasResize&lt; T, std::void_t&lt; decltype(std::declval&lt; T &gt;().resize(std::declval&lt; size_t &gt;()))&gt; &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="5,131,221,252"/>
-<area shape="rect" id="node2" title=" " alt="" coords="57,5,169,83"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,119,213,228"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="57,5,161,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,84,112,118,107,118,107,84"/>
 </map>

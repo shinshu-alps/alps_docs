@@ -1,5 +1,7 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/time/sleep.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/time/sleep.hpp">
-<area shape="rect" id="node1" title="スリープ関数の定義" alt="" coords="5,5,196,61"/>
-<area shape="rect" id="node2" title=" " alt="" coords="23,109,90,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="114,109,178,136"/>
+<area shape="rect" id="Node000001" title="スリープ関数の定義" alt="" coords="5,5,196,60"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="23,108,90,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,61,71,97,67,94,85,59"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="114,108,178,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="117,59,136,95,131,97,112,61"/>
 </map>

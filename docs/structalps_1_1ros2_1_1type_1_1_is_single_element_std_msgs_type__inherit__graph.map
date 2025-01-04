@@ -1,4 +1,5 @@
 <map id="alps::ros2::type::IsSingleElementStdMsgsType&lt; RosTopicType, typename, typename &gt;" name="alps::ros2::type::IsSingleElementStdMsgsType&lt; RosTopicType, typename, typename &gt;">
-<area shape="rect" id="node1" title="std_msgs::msg名前空間内のデータを1つだけ持つ型かどうかを判定する型述語 例) std_msgs::msg::Bool, std_msgs::msg::Float32MultiArray" alt="" coords="5,131,272,237"/>
-<area shape="rect" id="node2" title=" " alt="" coords="79,5,198,83"/>
+<area shape="rect" id="Node000001" title="std_msgs::msg名前空間内のデータを1つだけ持つ型かどうかを判定する型述語 例) std_msgs::msg::Bool, std_msgs::msg::Float32MultiArray" alt="" coords="5,119,264,213"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="79,5,190,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,84,137,118,132,118,132,84"/>
 </map>

@@ -1,13 +1,13 @@
 var namespacealps_1_1cmn_1_1sensor_1_1bno055 =
 [
     [ "Acceleration", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration" ],
-    [ "MagneticVector", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector" ],
     [ "AngularVelocity", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity" ],
-    [ "Euler", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler" ],
-    [ "Quaternion", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion" ],
-    [ "LinearAcceleration", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration" ],
-    [ "GravityVector", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector" ],
     [ "Bno055", "classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html", "classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055" ],
+    [ "Euler", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler" ],
+    [ "GravityVector", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector" ],
+    [ "LinearAcceleration", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration" ],
+    [ "MagneticVector", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector" ],
+    [ "Quaternion", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion" ],
     [ "Placement", "namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cd", [
       [ "kP0", "namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda0710d02a75095f7bb3cd81ba27539714", null ],
       [ "kP1", "namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda42db61944964fac3908da41807af39ba", null ],

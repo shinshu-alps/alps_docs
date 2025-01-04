@@ -1,6 +1,10 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/time/repeating_polling_timer.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/time/repeating_polling_timer.hpp">
-<area shape="rect" id="node1" title="繰り返し実行するポーリングタイマー" alt="" coords="13,5,204,76"/>
-<area shape="rect" id="node2" title=" " alt="" coords="12,213,79,240"/>
-<area shape="rect" id="node3" href="$timeout__checker_8hpp.html" title="タイムアウトを検知するクラス" alt="" coords="22,124,195,165"/>
-<area shape="rect" id="node4" title=" " alt="" coords="219,131,331,158"/>
+<area shape="rect" id="Node000001" title="繰り返し実行するポーリングタイマー" alt="" coords="13,5,204,75"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="12,211,79,236"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,77,30,98,12,124,8,143,11,162,30,198,25,201,6,164,3,142,7,122,26,95,49,73"/>
+<area shape="rect" id="Node000003" href="$timeout__checker_8hpp.html" title="タイムアウトを検知するクラス" alt="" coords="22,123,195,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="111,75,111,108,106,108,106,75"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="219,130,331,155"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="166,73,246,121,243,125,163,77"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="95,165,66,201,62,198,91,161"/>
 </map>

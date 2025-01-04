@@ -1,11 +1,23 @@
 <map id="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/actuator/servo_motor.hpp" name="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/actuator/servo_motor.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="635,5,829,76"/>
-<area shape="rect" id="node2" title=" " alt="" coords="815,221,886,247"/>
-<area shape="rect" id="node3" href="$alps__common__lib_2include_2alps__cmn_2actuator_2servo__motor_8hpp.html" title=" " alt="" coords="377,124,559,165"/>
-<area shape="rect" id="node9" href="$pwm__out_8hpp.html" title="PWM出力ピン" alt="" coords="651,124,813,165"/>
-<area shape="rect" id="node4" title=" " alt="" coords="625,303,692,329"/>
-<area shape="rect" id="node5" title=" " alt="" coords="5,221,72,247"/>
-<area shape="rect" id="node6" href="$i__pwm__out_8hpp.html" title="PWM出力を行うインタフェース" alt="" coords="577,213,740,255"/>
-<area shape="rect" id="node7" href="$angle_8hpp.html" title=" " alt="" coords="97,221,274,247"/>
-<area shape="rect" id="node8" href="$algorithm_8hpp.html" title=" " alt="" coords="298,221,502,247"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="635,5,829,75"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="815,218,886,243"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="784,73,807,95,828,121,845,164,852,204,846,205,839,165,823,124,804,99,780,77"/>
+<area shape="rect" id="Node000003" href="$alps__common__lib_2include_2alps__cmn_2actuator_2servo__motor_8hpp.html" title=" " alt="" coords="377,123,559,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="645,77,531,120,529,115,643,72"/>
+<area shape="rect" id="Node000009" href="$pwm__out_8hpp.html" title="PWM出力ピン" alt="" coords="651,123,813,163"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="735,75,735,108,729,108,729,75"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="625,299,692,324"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="485,161,520,203,567,249,627,289,624,294,564,253,516,207,480,164"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,218,72,243"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="377,157,238,178,161,194,85,213,77,216,76,211,83,208,159,189,237,173,376,152"/>
+<area shape="rect" id="Node000006" href="$i__pwm__out_8hpp.html" title="PWM出力を行うインタフェース" alt="" coords="577,211,740,251"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="511,160,606,203,603,208,509,165"/>
+<area shape="rect" id="Node000007" href="$angle_8hpp.html" title=" " alt="" coords="97,218,274,243"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="407,165,237,216,236,211,405,160"/>
+<area shape="rect" id="Node000008" href="$algorithm_8hpp.html" title=" " alt="" coords="298,218,502,243"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="455,165,420,209,416,205,451,161"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="661,251,661,285,656,285,656,251"/>
+<area shape="poly" id="edge12_Node000009_Node000002" title=" " alt="" coords="760,161,825,208,822,212,757,165"/>
+<area shape="poly" id="edge10_Node000009_Node000004" title=" " alt="" coords="745,162,760,204,761,229,754,252,733,277,706,295,703,290,729,273,750,249,756,228,755,205,740,164"/>
+<area shape="poly" id="edge11_Node000009_Node000006" title=" " alt="" coords="718,165,686,202,682,198,714,161"/>
 </map>

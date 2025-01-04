@@ -1,4 +1,5 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1communication_1_1_i_can_io.html" title=" " alt="" coords="5,5,200,47"/>
-<area shape="rect" id="node2" href="$classalps_1_1lin_1_1communication_1_1_socket_can_io.html" title="SocketCANを用いてCAN通信を行うクラス．" alt="" coords="248,5,431,47"/>
+<area shape="rect" id="Node000000" href="$classalps_1_1cmn_1_1communication_1_1_i_can_io.html" title="CAN通信IOのインターフェース" alt="" coords="5,13,200,53"/>
+<area shape="rect" id="Node000001" href="$classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html" title="MbedのCAN通信IO. 割り込みによってデータをバッファリングして扱う．" alt="" coords="248,5,481,60"/>
+<area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="214,30,248,30,248,35,214,35"/>
 </map>

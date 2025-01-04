@@ -1,4 +1,5 @@
 <map id="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/gpio/digital_out.hpp" name="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/gpio/digital_out.hpp">
-<area shape="rect" id="node1" title="デジタル出力ピン" alt="" coords="5,5,180,76"/>
-<area shape="rect" id="node2" href="$alps__mbed__lib_2include_2alps__mbed_2actuator_2dc__motor_8hpp.html" title=" " alt="" coords="5,124,180,195"/>
+<area shape="rect" id="Node000001" title="デジタル出力ピン" alt="" coords="5,5,180,75"/>
+<area shape="rect" id="Node000002" href="$alps__mbed__lib_2include_2alps__mbed_2actuator_2dc__motor_8hpp.html" title=" " alt="" coords="5,123,180,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,89,95,122,90,122,90,89"/>
 </map>

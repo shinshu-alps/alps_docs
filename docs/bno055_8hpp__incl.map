@@ -1,10 +1,18 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/bno055.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/bno055.hpp">
-<area shape="rect" id="node1" title="BNO055 9軸センサ" alt="" coords="211,5,426,61"/>
-<area shape="rect" id="node2" title=" " alt="" coords="244,199,311,225"/>
-<area shape="rect" id="node3" href="$i__i2c__io_8hpp.html" title="I2C通信インタフェース" alt="" coords="27,109,216,151"/>
-<area shape="rect" id="node6" href="$sleep_8hpp.html" title="スリープ関数の定義" alt="" coords="291,117,477,143"/>
-<area shape="rect" id="node8" href="$angle_8hpp.html" title=" " alt="" coords="501,117,678,143"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,199,72,225"/>
-<area shape="rect" id="node5" title=" " alt="" coords="97,199,183,225"/>
-<area shape="rect" id="node7" title=" " alt="" coords="352,199,416,225"/>
+<area shape="rect" id="Node000001" title="BNO055 9軸センサ" alt="" coords="211,5,426,60"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="244,196,311,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="303,61,291,84,281,109,276,147,277,182,272,182,271,146,276,107,286,82,298,59"/>
+<area shape="rect" id="Node000003" href="$i__i2c__io_8hpp.html" title="I2C通信インタフェース" alt="" coords="27,108,216,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="264,62,175,105,172,100,262,58"/>
+<area shape="rect" id="Node000006" href="$sleep_8hpp.html" title="スリープ関数の定義" alt="" coords="291,115,477,141"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="339,59,370,102,366,105,335,62"/>
+<area shape="rect" id="Node000008" href="$angle_8hpp.html" title=" " alt="" coords="501,115,678,141"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="396,58,544,108,542,113,394,63"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,196,72,221"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="103,150,63,188,59,185,99,146"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="97,196,183,221"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="128,148,137,182,131,183,123,149"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="370,143,306,190,303,186,367,139"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="352,196,416,221"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="387,141,387,182,381,182,381,141"/>
 </map>

@@ -1,5 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1communication_1_1detail_1_1_can_param_base.html" title="パラメータの基底クラス" alt="" coords="5,39,216,80"/>
-<area shape="rect" id="node2" href="$classalps_1_1cmn_1_1communication_1_1_can_param_client.html" title="CANパラメータクライアント" alt="" coords="264,5,459,47"/>
-<area shape="rect" id="node3" href="$classalps_1_1cmn_1_1communication_1_1_can_param_server.html" title="CANパラメータサーバー" alt="" coords="264,71,459,112"/>
+<area shape="rect" id="Node000000" href="$classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html" title="CAN通信で型付けされたデータの送受信を行うクラス" alt="" coords="5,5,237,60"/>
 </map>

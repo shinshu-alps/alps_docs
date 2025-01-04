@@ -1,19 +1,52 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/control/motor_angle_velocity_controller.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/control/motor_angle_velocity_controller.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="391,5,611,76"/>
-<area shape="rect" id="node2" href="$i__motor_8hpp.html" title=" " alt="" coords="249,213,400,255"/>
-<area shape="rect" id="node3" href="$motor__angle__controller_8hpp.html" title=" " alt="" coords="413,124,589,165"/>
-<area shape="rect" id="node4" href="$pid_8hpp.html" title=" " alt="" coords="424,221,609,247"/>
-<area shape="rect" id="node16" href="$i__rotary__sensor_8hpp.html" title=" " alt="" coords="736,213,921,255"/>
-<area shape="rect" id="node17" href="$motor__velocity__controller_8hpp.html" title=" " alt="" coords="613,124,791,165"/>
-<area shape="rect" id="node5" title=" " alt="" coords="517,556,583,583"/>
-<area shape="rect" id="node6" title=" " alt="" coords="555,310,617,337"/>
-<area shape="rect" id="node7" title=" " alt="" coords="403,399,462,426"/>
-<area shape="rect" id="node8" title=" " alt="" coords="487,399,541,426"/>
-<area shape="rect" id="node9" href="$integrator_8hpp.html" title="積分器ライブラリ" alt="" coords="60,310,288,337"/>
-<area shape="rect" id="node12" href="$low__pass__differentiator_8hpp.html" title=" " alt="" coords="693,303,871,344"/>
-<area shape="rect" id="node15" href="$numeric__range_8hpp.html" title="数値の範囲を扱うクラス" alt="" coords="364,303,531,344"/>
-<area shape="rect" id="node10" href="$algorithm_8hpp.html" title=" " alt="" coords="175,399,379,426"/>
-<area shape="rect" id="node11" href="$duration_8hpp.html" title="時間間隔の型エイリアス" alt="" coords="588,481,792,508"/>
-<area shape="rect" id="node13" href="$differentiator_8hpp.html" title="微分器ライブラリ" alt="" coords="565,399,815,426"/>
-<area shape="rect" id="node14" href="$low__pass__filter_8hpp.html" title="ローパスフィルタのクラス" alt="" coords="838,392,998,433"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="392,5,612,75"/>
+<area shape="rect" id="Node000002" href="$i__motor_8hpp.html" title=" " alt="" coords="250,211,401,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="449,77,420,99,393,124,365,162,343,200,338,197,360,159,389,121,416,95,446,73"/>
+<area shape="rect" id="Node000003" href="$motor__angle__controller_8hpp.html" title=" " alt="" coords="414,123,590,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="504,75,504,108,499,108,499,75"/>
+<area shape="rect" id="Node000004" href="$pid_8hpp.html" title=" " alt="" coords="425,218,610,243"/>
+<area shape="poly" id="edge32_Node000001_Node000004" title=" " alt="" coords="446,77,424,96,406,117,399,139,399,150,404,161,416,177,431,190,466,210,463,215,428,195,412,181,399,164,394,151,393,138,402,114,420,92,443,73"/>
+<area shape="rect" id="Node000016" href="$i__rotary__sensor_8hpp.html" title=" " alt="" coords="737,211,922,251"/>
+<area shape="poly" id="edge33_Node000001_Node000016" title=" " alt="" coords="612,56,727,83,775,101,806,121,819,138,826,158,833,196,828,197,821,159,814,140,802,125,772,105,725,88,611,61"/>
+<area shape="rect" id="Node000017" href="$motor__velocity__controller_8hpp.html" title=" " alt="" coords="614,123,792,163"/>
+<area shape="poly" id="edge27_Node000001_Node000017" title=" " alt="" coords="570,73,654,114,652,119,568,77"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="464,165,378,207,375,202,462,160"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="508,162,516,204,510,205,503,163"/>
+<area shape="poly" id="edge26_Node000003_Node000016" title=" " alt="" coords="574,160,745,205,744,210,573,165"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="518,548,584,573"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="456,246,413,253,329,257,220,259,166,262,117,270,77,282,50,301,26,329,12,352,9,370,17,388,38,407,74,430,195,498,253,517,337,533,504,553,503,558,336,538,252,522,193,502,71,435,35,411,12,391,3,371,7,350,22,326,46,297,75,277,116,264,166,257,220,254,329,252,412,248,455,241"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="556,306,618,331"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="529,242,571,293,567,297,525,245"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="404,394,463,419"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="442,246,393,266,372,281,355,300,350,311,349,322,360,345,380,366,404,384,400,389,376,370,355,348,344,323,344,310,350,297,368,277,390,261,440,241"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="488,394,542,419"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="557,241,598,262,617,278,632,297,639,319,632,340,601,362,551,390,548,385,598,357,627,337,634,319,627,300,613,282,595,267,554,246"/>
+<area shape="rect" id="Node000009" href="$integrator_8hpp.html" title="積分器ライブラリ" alt="" coords="61,306,289,331"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="472,246,235,305,233,300,471,241"/>
+<area shape="rect" id="Node000012" href="$low__pass__differentiator_8hpp.html" title=" " alt="" coords="694,299,872,339"/>
+<area shape="poly" id="edge15_Node000004_Node000012" title=" " alt="" coords="554,241,712,292,710,297,553,246"/>
+<area shape="rect" id="Node000015" href="$numeric__range_8hpp.html" title="数値の範囲を扱うクラス" alt="" coords="365,299,532,339"/>
+<area shape="poly" id="edge22_Node000004_Node000015" title=" " alt="" coords="510,245,474,289,470,286,506,242"/>
+<area shape="poly" id="edge10_Node000009_Node000005" title=" " alt="" coords="169,333,156,352,146,377,142,402,144,414,149,425,184,463,227,494,274,517,325,533,375,545,423,552,504,557,504,563,423,558,374,550,323,539,272,522,224,498,181,467,145,428,139,416,136,402,141,375,152,350,164,330"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="218,329,299,353,392,384,398,386,396,391,390,389,297,358,216,334"/>
+<area shape="rect" id="Node000010" href="$algorithm_8hpp.html" title=" " alt="" coords="176,394,380,419"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="191,329,255,383,251,387,187,334"/>
+<area shape="rect" id="Node000011" href="$duration_8hpp.html" title="時間間隔の型エイリアス" alt="" coords="589,475,793,500"/>
+<area shape="poly" id="edge13_Node000009_Node000011" title=" " alt="" coords="171,333,162,353,155,378,155,403,165,425,183,435,219,444,324,460,453,471,575,478,575,484,452,476,324,465,218,449,181,440,161,428,150,404,150,377,157,351,166,331"/>
+<area shape="poly" id="edge14_Node000011_Node000005" title=" " alt="" coords="670,502,587,544,585,539,667,498"/>
+<area shape="rect" id="Node000013" href="$differentiator_8hpp.html" title="微分器ライブラリ" alt="" coords="566,394,816,419"/>
+<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="764,341,715,386,712,382,761,337"/>
+<area shape="rect" id="Node000014" href="$low__pass__filter_8hpp.html" title="ローパスフィルタのクラス" alt="" coords="839,387,999,427"/>
+<area shape="poly" id="edge19_Node000012_Node000014" title=" " alt="" coords="814,336,879,377,876,382,811,341"/>
+<area shape="poly" id="edge17_Node000013_Node000005" title=" " alt="" coords="659,422,617,443,596,458,578,476,563,505,556,535,551,534,558,503,574,473,592,454,614,439,656,417"/>
+<area shape="poly" id="edge18_Node000013_Node000011" title=" " alt="" coords="694,420,694,461,688,461,688,420"/>
+<area shape="poly" id="edge20_Node000014_Node000005" title=" " alt="" coords="903,429,862,466,835,486,807,502,753,524,697,540,598,557,597,552,695,535,751,519,804,498,832,481,858,462,899,425"/>
+<area shape="poly" id="edge21_Node000014_Node000011" title=" " alt="" coords="865,429,738,473,737,468,863,424"/>
+<area shape="poly" id="edge23_Node000015_Node000007" title=" " alt="" coords="448,339,441,381,435,380,442,338"/>
+<area shape="poly" id="edge24_Node000015_Node000008" title=" " alt="" coords="465,337,499,381,495,384,461,341"/>
+<area shape="poly" id="edge25_Node000015_Node000010" title=" " alt="" coords="412,341,314,390,311,385,410,336"/>
+<area shape="poly" id="edge28_Node000017_Node000002" title=" " alt="" coords="621,165,415,212,414,207,620,160"/>
+<area shape="poly" id="edge30_Node000017_Node000004" title=" " alt="" coords="663,165,556,215,554,210,661,160"/>
+<area shape="poly" id="edge29_Node000017_Node000012" title=" " alt="" coords="706,162,712,204,727,249,754,287,750,290,722,252,707,205,701,163"/>
+<area shape="poly" id="edge31_Node000017_Node000016" title=" " alt="" coords="733,161,792,201,789,205,730,165"/>
 </map>

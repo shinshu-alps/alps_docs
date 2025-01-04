@@ -1,12 +1,21 @@
 <map id="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/communication/buffered_can_io.hpp" name="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/communication/buffered_can_io.hpp">
-<area shape="rect" id="node1" title="MbedのCAN通信IOクラス" alt="" coords="279,5,481,76"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,131,152,158"/>
-<area shape="rect" id="node3" href="$i__can__io_8hpp.html" title=" " alt="" coords="176,124,365,165"/>
-<area shape="rect" id="node7" href="$stm__ordered__can_8hpp.html" title="STMマイコンのCAN送信順を保証するクラス" alt="" coords="390,124,589,165"/>
-<area shape="rect" id="node10" title=" " alt="" coords="613,131,683,158"/>
-<area shape="rect" id="node4" href="$can__data__frame_8hpp.html" title="CANフレームを表す構造体" alt="" coords="176,213,365,255"/>
-<area shape="rect" id="node5" title=" " alt="" coords="182,303,253,329"/>
-<area shape="rect" id="node6" title=" " alt="" coords="277,303,371,329"/>
-<area shape="rect" id="node8" title=" " alt="" coords="411,221,522,247"/>
-<area shape="rect" id="node9" title=" " alt="" coords="546,221,654,247"/>
+<area shape="rect" id="Node000001" title="MbedのCAN通信IOクラス" alt="" coords="279,5,481,75"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,130,152,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="280,77,127,128,125,123,278,72"/>
+<area shape="rect" id="Node000003" href="$i__can__io_8hpp.html" title=" " alt="" coords="176,123,365,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="345,77,304,115,300,111,341,73"/>
+<area shape="rect" id="Node000007" href="$stm__ordered__can_8hpp.html" title="STMマイコンのCAN送信順を保証するクラス" alt="" coords="390,123,589,163"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="419,73,460,111,456,115,415,77"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="613,130,683,155"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="474,72,602,120,608,122,606,127,600,125,472,77"/>
+<area shape="rect" id="Node000004" href="$can__data__frame_8hpp.html" title="CANフレームを表す構造体" alt="" coords="176,211,365,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="273,163,273,197,268,197,268,163"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="182,299,253,324"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="260,252,235,288,231,285,256,249"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="277,299,371,324"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="286,249,310,285,306,288,281,252"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="411,218,522,243"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="487,164,476,205,471,204,482,162"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="546,218,654,243"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="516,161,575,207,572,211,512,165"/>
 </map>

@@ -1,3 +1,7 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1cmn_1_1gpio_1_1_i_digital_out.html" title="デジタル出力を行うインタフェース" alt="" coords="5,5,181,47"/>
+<area shape="rect" id="Node000000" href="$classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html" title=" " alt="" coords="12,5,188,45"/>
+<area shape="rect" id="Node000001" href="$classalps_1_1mbed_1_1gpio_1_1_interrupt_in.html" title="割り込み入力ピン" alt="" coords="243,45,449,70"/>
+<area shape="poly" id="edge14_Node000000_Node000001" title=" " alt="" coords="202,36,248,42,248,47,201,41"/>
+<area shape="rect" id="Node000002" href="$classalps_1_1cmn_1_1gpio_1_1_i_interrupt_in.html" title=" " alt="" coords="5,69,195,109"/>
+<area shape="poly" id="edge15_Node000002_Node000001" title=" " alt="" coords="208,73,248,67,249,73,208,78"/>
 </map>

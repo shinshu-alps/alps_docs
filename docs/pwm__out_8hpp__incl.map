@@ -1,6 +1,10 @@
 <map id="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/gpio/pwm_out.hpp" name="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/gpio/pwm_out.hpp">
-<area shape="rect" id="node1" title="PWM出力ピン" alt="" coords="5,5,227,61"/>
-<area shape="rect" id="node2" title=" " alt="" coords="23,199,89,225"/>
-<area shape="rect" id="node3" href="$i__pwm__out_8hpp.html" title="PWM出力を行うインタフェース" alt="" coords="35,109,197,151"/>
-<area shape="rect" id="node4" title=" " alt="" coords="222,117,293,143"/>
+<area shape="rect" id="Node000001" title="PWM出力ピン" alt="" coords="5,5,227,60"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="23,196,89,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,62,44,83,25,109,21,128,24,147,41,183,36,186,18,149,15,128,20,107,40,79,66,58"/>
+<area shape="rect" id="Node000003" href="$i__pwm__out_8hpp.html" title="PWM出力を行うインタフェース" alt="" coords="35,108,197,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="119,60,119,94,113,94,113,60"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="222,115,293,141"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="157,58,230,106,227,110,154,62"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="104,150,75,187,71,183,99,147"/>
 </map>

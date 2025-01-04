@@ -1,3 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classalps_1_1ros2_1_1communication_1_1_ros_to_can_topic_bridge.html" title="ROSトピックからCANバスへメッセージを転送するクラス" alt="" coords="5,5,200,61"/>
+<area shape="rect" id="Node000000" href="$structalps_1_1ros2_1_1type_1_1detail_1_1_is_standard_type.html" title="ROS2で元から用意されているパラメータ型かどうかを判定する" alt="" coords="5,5,172,45"/>
 </map>

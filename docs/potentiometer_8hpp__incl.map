@@ -1,10 +1,20 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/potentiometer.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/potentiometer.hpp">
-<area shape="rect" id="node1" title="ポテンショメータのクラス" alt="" coords="226,5,484,61"/>
-<area shape="rect" id="node2" title=" " alt="" coords="34,273,100,300"/>
-<area shape="rect" id="node3" href="$low__pass__filter_8hpp.html" title="ローパスフィルタのクラス" alt="" coords="32,109,192,151"/>
-<area shape="rect" id="node4" href="$duration_8hpp.html" title="時間間隔の型エイリアス" alt="" coords="105,199,309,225"/>
-<area shape="rect" id="node5" href="$i__analog__in_8hpp.html" title="アナログ入力インタフェース" alt="" coords="268,109,442,151"/>
-<area shape="rect" id="node6" href="$i__rotary__sensor_8hpp.html" title=" " alt="" coords="466,109,652,151"/>
-<area shape="rect" id="node7" title=" " alt="" coords="676,117,730,143"/>
-<area shape="rect" id="node8" title=" " alt="" coords="755,117,811,143"/>
+<area shape="rect" id="Node000001" title="ポテンショメータのクラス" alt="" coords="225,5,484,60"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="33,269,100,295"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="225,49,162,58,102,71,52,89,34,99,22,110,12,127,8,145,9,165,14,186,31,225,51,257,47,260,27,227,9,187,4,166,3,145,7,125,18,106,31,94,50,84,100,66,161,53,225,43"/>
+<area shape="rect" id="Node000003" href="$low__pass__filter_8hpp.html" title="ローパスフィルタのクラス" alt="" coords="32,108,192,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="287,63,174,106,173,101,285,58"/>
+<area shape="rect" id="Node000004" href="$duration_8hpp.html" title="時間間隔の型エイリアス" alt="" coords="105,196,309,221"/>
+<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="313,62,284,84,258,110,234,147,217,184,213,182,229,145,254,106,281,80,309,58"/>
+<area shape="rect" id="Node000005" href="$i__analog__in_8hpp.html" title="アナログ入力インタフェース" alt="" coords="267,108,442,148"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="357,60,357,94,352,94,352,60"/>
+<area shape="rect" id="Node000006" href="$i__rotary__sensor_8hpp.html" title=" " alt="" coords="466,108,651,148"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="413,58,506,100,504,105,411,62"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="675,115,730,141"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="485,56,574,78,665,105,669,107,667,112,663,111,573,83,483,61"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="755,115,811,141"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="485,48,611,71,743,105,749,107,747,113,742,111,610,76,484,53"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="109,149,76,257,71,255,104,148"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="136,146,183,185,180,189,133,150"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="185,224,103,265,100,261,183,219"/>
 </map>

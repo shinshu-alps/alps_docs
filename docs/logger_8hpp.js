@@ -1,6 +1,6 @@
 var logger_8hpp =
 [
-    [ "Logger", "classalps_1_1cmn_1_1log_1_1_logger.html", "classalps_1_1cmn_1_1log_1_1_logger" ],
+    [ "alps::cmn::log::Logger", "classalps_1_1cmn_1_1log_1_1_logger.html", "classalps_1_1cmn_1_1log_1_1_logger" ],
     [ "ALPS_CMN_LOG_BUFFER_SIZE", "logger_8hpp.html#aecf2374f36e81b59660c74940c3cbf71", null ],
     [ "LogLevel", "logger_8hpp.html#a21f6c434d5f34524986e7181833143b4", [
       [ "kDebug", "logger_8hpp.html#a21f6c434d5f34524986e7181833143b4abb53ce21b7c0b7c8a8f7860a41901d29", null ],

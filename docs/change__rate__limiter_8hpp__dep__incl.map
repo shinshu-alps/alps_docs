@@ -1,4 +1,5 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/control/change_rate_limiter.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/control/change_rate_limiter.hpp">
-<area shape="rect" id="node1" title="時間あたりの変化量に制限をかけるクラス" alt="" coords="37,5,228,76"/>
-<area shape="rect" id="node2" href="$output__change__limit__motor__decorator_8hpp.html" title="出力変化制限を掛けるモーターデコレータ" alt="" coords="5,124,260,195"/>
+<area shape="rect" id="Node000001" title="時間あたりの変化量に制限をかけるクラス" alt="" coords="37,5,228,75"/>
+<area shape="rect" id="Node000002" href="$output__change__limit__motor__decorator_8hpp.html" title="出力変化制限を掛けるモーターデコレータ" alt="" coords="5,123,260,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,89,135,122,130,122,130,89"/>
 </map>

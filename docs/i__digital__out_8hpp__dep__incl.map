@@ -1,6 +1,10 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/gpio/i_digital_out.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/gpio/i_digital_out.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="144,5,335,76"/>
-<area shape="rect" id="node2" href="$alps__common__lib_2include_2alps__cmn_2actuator_2dc__motor_8hpp.html" title=" " alt="" coords="5,131,244,187"/>
-<area shape="rect" id="node4" href="$digital__out_8hpp.html" title="デジタル出力ピン" alt="" coords="268,124,443,195"/>
-<area shape="rect" id="node3" href="$alps__mbed__lib_2include_2alps__mbed_2actuator_2dc__motor_8hpp.html" title=" " alt="" coords="152,243,327,313"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="144,5,335,75"/>
+<area shape="rect" id="Node000002" href="$alps__common__lib_2include_2alps__cmn_2actuator_2dc__motor_8hpp.html" title=" " alt="" coords="5,130,244,185"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,87,153,132,149,128,194,83"/>
+<area shape="rect" id="Node000004" href="$digital__out_8hpp.html" title="デジタル出力ピン" alt="" coords="268,123,443,192"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="285,83,323,121,320,124,281,86"/>
+<area shape="rect" id="Node000003" href="$alps__mbed__lib_2include_2alps__mbed_2actuator_2dc__motor_8hpp.html" title=" " alt="" coords="152,240,327,309"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="162,192,207,238,204,241,158,196"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="314,204,275,242,271,238,310,200"/>
 </map>
