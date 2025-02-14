@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['target_5facceleration_0',['target_acceleration',['../structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a97eff29d5734c18a2e62ccc95e9cde3b',1,'alps::cmn::control::MotorVelocityControllerCalcInfo']]],
-  ['target_5facceleration_5fbefore_5flpf_1',['target_acceleration_before_lpf',['../structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a6443f95f5c1669d4aa08dc0a5c456afb',1,'alps::cmn::control::MotorVelocityControllerCalcInfo']]],
-  ['target_5facceleration_5flpf_5ftime_5fconst_2',['target_acceleration_lpf_time_const',['../structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_param.html#ad9be9a52cefe3ba1fe49506e994e7281',1,'alps::cmn::control::MotorVelocityControllerParam']]],
-  ['target_5fangle_3',['target_angle',['../structalps_1_1cmn_1_1control_1_1_motor_angle_controller_calc_info.html#a793d3bbb669e08cbbb3ad020a75fc4bb',1,'alps::cmn::control::MotorAngleControllerCalcInfo']]],
-  ['target_5fvelocity_4',['target_velocity',['../structalps_1_1cmn_1_1control_1_1_motor_velocity_controller_calc_info.html#a48d4049c0b85bf5e3b4cabf5f6978264',1,'alps::cmn::control::MotorVelocityControllerCalcInfo']]]
+  ['send_5fmsg_5f_0',['send_msg_',['../structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html#aa5ebe96b584c3b6a1a87e2bd6d504203',1,'alps::cmn::communication::odrive::ODriveCanIntfWrapper']]],
+  ['serial_5fnumber_1',['Serial_Number',['../structalps_1_1cmn_1_1communication_1_1odrive_1_1_address__msg__t.html#aaff6c5e71b6564c6c56ef0e7491af831',1,'alps::cmn::communication::odrive::Address_msg_t']]],
+  ['static_5ffriction_2',['static_friction',['../structalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_1_1_friction_result.html#a8751afff1a5db072b702d7158b53ef7e',1,'alps::cmn::tool::MotorFrictionAnalyzer::FrictionResult']]],
+  ['sum_3',['sum',['../structalps_1_1cmn_1_1control_1_1_pid_calc_info.html#abd36689dc0614def4cb03724b9723459',1,'alps::cmn::control::PidCalcInfo']]]
 ];

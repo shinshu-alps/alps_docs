@@ -1,0 +1,669 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/odrive_can.h ソースファイル</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('odrive__can_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">odrive_can.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="odrive__can_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// ODrive用のcan通信のための関数</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// ODriveArduinoのODriveCAN.h</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// コピー元: https://github.com/odriverobotics/ODriveArduino/tree/master</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="odrive__enums_8h.html">odrive_enums.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="logging__macros_8hpp.html">alps_cmn/log/logging_macros.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="odrive__can__helpers_8hpp.html">odrive_can_helpers.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="odrive__can__simple__messages_8hpp.html">odrive_can_simple_messages.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>cmn</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span>communication</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html">   19</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html">odrive</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// #include &lt;Arduino.h&gt; // needed for debug printing</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// #define DEBUG</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="odrive__can_8h.html#ad5550135843ca34b930f5ceb0584adaa">   25</a></span><span class="preprocessor">#define REQUEST_PENDING 0xff</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// Canラッパー</span></div>
+<div class="foldopen" id="foldopen00029" data-start="" data-end="">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="odrive__can_8h.html#a772666188845036adebf53e75ef28875">   29</a></span><span class="preprocessor">#define CREATE_CAN_INTF_WRAPPER(TIntf)                                     \</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">  static inline ODriveCanIntf wrap_can_intf(TIntf &amp; intf)           \</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">  {                                                                        \</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">    return {                                                               \</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">      &amp;intf,                                                               \</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">      [](void * intf, uint32_t id, uint8_t length, const uint8_t * data) { \</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">        return sendMsg(*(TIntf *)intf, id, length, data);                  \</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">      },                                                                   \</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">      [](void * intf) { pumpEvents(*(TIntf *)intf); }};                    \</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">  }</span></div>
+</div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="};">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html">   39</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html">ODriveCanIntfWrapper</a></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html#a16882f652e7d4e5b18e60ae77ab7d11c">   41</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html#a16882f652e7d4e5b18e60ae77ab7d11c">sendMsg</a>(uint32_t <span class="keywordtype">id</span>, uint8_t length, <span class="keyword">const</span> uint8_t * data)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">return</span> (*<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html#aa5ebe96b584c3b6a1a87e2bd6d504203">send_msg_</a>)(<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html#aa921ad8a78d9c9068fab317e30a10071">can_intf_</a>, id, length, data);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  }</div>
+</div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html#a7c7c00cfa954c7bbe91dd46bcd0eee24">   45</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html#a7c7c00cfa954c7bbe91dd46bcd0eee24">pump_events</a>()</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    (*pump_events_)(<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html#aa921ad8a78d9c9068fab317e30a10071">can_intf_</a>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  }</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html#aa921ad8a78d9c9068fab317e30a10071">   50</a></span>  <span class="keywordtype">void</span> * <a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html#aa921ad8a78d9c9068fab317e30a10071">can_intf_</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html#aa5ebe96b584c3b6a1a87e2bd6d504203">   51</a></span>  bool (*<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html#aa5ebe96b584c3b6a1a87e2bd6d504203">send_msg_</a>)(<span class="keywordtype">void</span> * intf, uint32_t id, uint8_t length, <span class="keyword">const</span> uint8_t * data);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html#a38aa1713ceb78e61721b66b4716821fe">   52</a></span>  void (*<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html#a38aa1713ceb78e61721b66b4716821fe">pump_events_</a>)(<span class="keywordtype">void</span> * intf);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
+</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> Derived&gt;</div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="};">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf.html">   61</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf.html">ODriveCanIntf</a></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>{</div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf.html#ad1cd80f53369e18a20bc8dcd072cbb58">   63</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf.html#ad1cd80f53369e18a20bc8dcd072cbb58">sendMsg</a>(uint32_t <span class="keywordtype">id</span>, uint8_t length, <span class="keyword">const</span> uint8_t * data)</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;sendMessage(<span class="keywordtype">id</span>, length, data);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  }</div>
+</div>
+<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf.html#a8180128c6950920a3988c3620b50caeb">   67</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf.html#a8180128c6950920a3988c3620b50caeb">pump_events</a>()</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">static_cast&lt;</span>Derived *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;pumpEvents();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  }</div>
+</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>};</div>
+</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> CanIo&gt;</div>
+<div class="foldopen" id="foldopen00079" data-start="{" data-end="};">
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">   79</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">ODriveCAN</a></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>{</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ac43cab5453e957bf98e52dd86fbc14b7">   82</a></span>  <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ac43cab5453e957bf98e52dd86fbc14b7">ODriveCAN</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf.html">ODriveCanIntf&lt;CanIo&gt;</a> &amp; can_intf, uint32_t node_id)</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  : can_intf_(can_intf), node_id_(node_id) {};</div>
+</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aeec19bd123db0951cbc7fa8e97c0844e">   91</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aeec19bd123db0951cbc7fa8e97c0844e">clearErrors</a>()</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_clear___errors__msg__t.html">Clear_Errors_msg_t</a> msg;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aaef90ecf36110956300116cf4509b2df">send</a>(msg);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  }</div>
+</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#afe788884a154496b46d8213194b69e51">  103</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#afe788884a154496b46d8213194b69e51">setState</a>(<a class="code hl_enumeration" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045">ODriveAxisState</a> requested_state)</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___axis___state__msg__t.html">Set_Axis_State_msg_t</a> msg;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    msg.<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___axis___state__msg__t.html#abfbf534da0db62629c7ee9d9d004c6c0">Axis_Requested_State</a> = (uint32_t)requested_state;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aaef90ecf36110956300116cf4509b2df">send</a>(msg);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  }</div>
+</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="foldopen" id="foldopen00118" data-start="{" data-end="}">
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a09b110ce1810a216d4c27a109421f309">  118</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a09b110ce1810a216d4c27a109421f309">setControllerMode</a>(uint8_t control_mode, uint8_t input_mode)</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___controller___mode__msg__t.html">Set_Controller_Mode_msg_t</a> msg;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    msg.<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___controller___mode__msg__t.html#a3711b320697c1e21dd86754aefc286fd">Control_Mode</a> = control_mode;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    msg.<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___controller___mode__msg__t.html#a17d1d06d0e5a914e01c464683bce30f8">Input_Mode</a> = input_mode;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aaef90ecf36110956300116cf4509b2df">send</a>(msg);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  }</div>
+</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="foldopen" id="foldopen00134" data-start="{" data-end="}">
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#af5f781a5d39b856de685418584b5cf4c">  134</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#af5f781a5d39b856de685418584b5cf4c">setPosition</a>(</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordtype">float</span> position, <span class="keywordtype">float</span> velocity_feedforward = 0.0f, <span class="keywordtype">float</span> torque_feedforward = 0.0f)</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  {</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___pos__msg__t.html">Set_Input_Pos_msg_t</a> msg;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    msg.<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___pos__msg__t.html#a8ddf7e9389dace72cb0cea80570ce07f">Input_Pos</a> = position;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    msg.<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___pos__msg__t.html#a484ced518aa9894513c6f7493a3e02a6">Vel_FF</a> = velocity_feedforward;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    msg.<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___pos__msg__t.html#aec17c5e009477a7a0afc883c2e9c5149">Torque_FF</a> = torque_feedforward;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aaef90ecf36110956300116cf4509b2df">send</a>(msg);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  }</div>
+</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="foldopen" id="foldopen00152" data-start="{" data-end="}">
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a41689ad7a2c19942990b05b6232f7ab3">  152</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a41689ad7a2c19942990b05b6232f7ab3">setVelocity</a>(<span class="keywordtype">float</span> velocity, <span class="keywordtype">float</span> torque_feedforward = 0.0f)</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  {</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___vel__msg__t.html">Set_Input_Vel_msg_t</a> msg;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    msg.<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___vel__msg__t.html#a3bdf5e8085e03434803d71275fc502ef">Input_Vel</a> = velocity;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    msg.<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___vel__msg__t.html#ae1d35b9ab67690592da804b6c2e356bd">Input_Torque_FF</a> = torque_feedforward;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aaef90ecf36110956300116cf4509b2df">send</a>(msg);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  }</div>
+</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="foldopen" id="foldopen00168" data-start="{" data-end="}">
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#abcba1b20a54e6947f3610e5fd9334b29">  168</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#abcba1b20a54e6947f3610e5fd9334b29">setTorque</a>(<span class="keywordtype">float</span> torque)</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  {</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___torque__msg__t.html">Set_Input_Torque_msg_t</a> msg;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    msg.<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___torque__msg__t.html#a359ca25c443becff4d9ed304353d256b">Input_Torque</a> = torque;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aaef90ecf36110956300116cf4509b2df">send</a>(msg);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  }</div>
+</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="foldopen" id="foldopen00183" data-start="{" data-end="}">
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a1e04499765575ac185ae61c22440e97b">  183</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a1e04499765575ac185ae61c22440e97b">setLimits</a>(<span class="keywordtype">float</span> velocity_limit, <span class="keywordtype">float</span> current_soft_max)</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>  {</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___limits__msg__t.html">Set_Limits_msg_t</a> msg;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    msg.<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___limits__msg__t.html#ab9187c5b0ffdd39735fdb8ee1dcde89b">Velocity_Limit</a> = velocity_limit;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    msg.<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___limits__msg__t.html#a78c295bac9b4a979706ae28a2d7086a8">Current_Limit</a> = current_soft_max;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aaef90ecf36110956300116cf4509b2df">send</a>(msg);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  }</div>
+</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="foldopen" id="foldopen00199" data-start="{" data-end="}">
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aa88e464d5abe8851728ef8c46bc635a1">  199</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aa88e464d5abe8851728ef8c46bc635a1">setPosGain</a>(<span class="keywordtype">float</span> pos_gain)</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  {</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___pos___gain__msg__t.html">Set_Pos_Gain_msg_t</a> msg;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    msg.<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___pos___gain__msg__t.html#a8c3da5372780943f7befe83ac2fcc8c5">Pos_Gain</a> = pos_gain;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aaef90ecf36110956300116cf4509b2df">send</a>(msg);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>  }</div>
+</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
+<div class="foldopen" id="foldopen00214" data-start="{" data-end="}">
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#af7f7fb528ffdc3cc528181a80c85f0a4">  214</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#af7f7fb528ffdc3cc528181a80c85f0a4">setVelGains</a>(<span class="keywordtype">float</span> vel_gain, <span class="keywordtype">float</span> vel_integrator_gain)</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  {</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    <a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___vel___gains__msg__t.html">Set_Vel_Gains_msg_t</a> msg;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    msg.<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___vel___gains__msg__t.html#a73cc252a3ca650ff86f60d28af353d00">Vel_Gain</a> = vel_gain;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    msg.<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___vel___gains__msg__t.html#ad837adee90162b76f52372b4e9c775cd">Vel_Integrator_Gain</a> = vel_integrator_gain;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aaef90ecf36110956300116cf4509b2df">send</a>(msg);</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  }</div>
+</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
+<div class="foldopen" id="foldopen00230" data-start="{" data-end="}">
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#af24d07f9d824b44b3d54d5522f799871">  230</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#af24d07f9d824b44b3d54d5522f799871">setAbsolutePosition</a>(<span class="keywordtype">float</span> abs_pos)</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  {</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___absolute___position__msg__t.html">Set_Absolute_Position_msg_t</a> msg;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    msg.<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___absolute___position__msg__t.html#aa476ca73f34f77bc128a8a22cee01857">Position</a> = abs_pos;</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aaef90ecf36110956300116cf4509b2df">send</a>(msg);</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  }</div>
+</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="foldopen" id="foldopen00245" data-start="{" data-end="}">
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aa48ecd372774ac7ab1f4cc9a0fbcdd35">  245</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aa48ecd372774ac7ab1f4cc9a0fbcdd35">setTrapezoidalVelLimit</a>(<span class="keywordtype">float</span> vel_limit)</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  {</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___vel___limit__msg__t.html">Set_Traj_Vel_Limit_msg_t</a> msg;</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    msg.<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___vel___limit__msg__t.html#a59db6ec8b8b47c91d18fc31bf56b1b67">Traj_Vel_Limit</a> = vel_limit;</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aaef90ecf36110956300116cf4509b2df">send</a>(msg);</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>  }</div>
+</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
+<div class="foldopen" id="foldopen00260" data-start="{" data-end="}">
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a41d7cb399c2c582c4d6c29a802acc471">  260</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a41d7cb399c2c582c4d6c29a802acc471">setTrapezoidalAccelLimits</a>(<span class="keywordtype">float</span> accel_limit, <span class="keywordtype">float</span> decel_limit)</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>  {</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___accel___limits__msg__t.html">Set_Traj_Accel_Limits_msg_t</a> msg;</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    msg.<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___accel___limits__msg__t.html#a91901dab8849d6d1cc2b8272d873af75">Traj_Accel_Limit</a> = accel_limit;</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    msg.<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___accel___limits__msg__t.html#a55cb968279d325ce2d3e2ccc0607bd47">Traj_Decel_Limit</a> = decel_limit;</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aaef90ecf36110956300116cf4509b2df">send</a>(msg);</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  }</div>
+</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
+<div class="foldopen" id="foldopen00275" data-start="{" data-end="}">
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a4bae06d7f916e8c7240d4ebce01ade18">  275</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a4bae06d7f916e8c7240d4ebce01ade18">getCurrents</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___iq__msg__t.html">Get_Iq_msg_t</a> &amp; msg, uint16_t timeout_ms = 10)</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>  {</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#abbc7ab820dd8dd66e6283ca167ccd61e">request</a>(msg, timeout_ms);</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  }</div>
+</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
+<div class="foldopen" id="foldopen00285" data-start="{" data-end="}">
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a4f2a32a043c4ab95fbd38d4b9f0991e8">  285</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a4f2a32a043c4ab95fbd38d4b9f0991e8">getTemperature</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___temperature__msg__t.html">Get_Temperature_msg_t</a> &amp; msg, uint16_t timeout_ms = 10)</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  {</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#abbc7ab820dd8dd66e6283ca167ccd61e">request</a>(msg, timeout_ms);</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>  }</div>
+</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
+<div class="foldopen" id="foldopen00295" data-start="{" data-end="}">
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a28bb063cd38cd867c0e3c93a780734c5">  295</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a28bb063cd38cd867c0e3c93a780734c5">getError</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___error__msg__t.html">Get_Error_msg_t</a> &amp; msg, uint16_t timeout_ms = 10)</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  {</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#abbc7ab820dd8dd66e6283ca167ccd61e">request</a>(msg, timeout_ms);</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>  }</div>
+</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
+<div class="foldopen" id="foldopen00305" data-start="{" data-end="}">
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a0448fb2dc2cb1f366dd9d67a43a7f0f5">  305</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a0448fb2dc2cb1f366dd9d67a43a7f0f5">getVersion</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___version__msg__t.html">Get_Version_msg_t</a> &amp; msg, uint16_t timeout_ms = 10)</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  {</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#abbc7ab820dd8dd66e6283ca167ccd61e">request</a>(msg, timeout_ms);</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  }</div>
+</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
+<div class="foldopen" id="foldopen00315" data-start="{" data-end="}">
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ab55afa140b7c4df87d3a211943f572d4">  315</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ab55afa140b7c4df87d3a211943f572d4">getFeedback</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___encoder___estimates__msg__t.html">Get_Encoder_Estimates_msg_t</a> &amp; msg, uint16_t timeout_ms = 10)</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  {</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#abbc7ab820dd8dd66e6283ca167ccd61e">request</a>(msg, timeout_ms);</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  }</div>
+</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
+<div class="foldopen" id="foldopen00325" data-start="{" data-end="}">
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a2652eb46c8e53d24dec74efb53c74971">  325</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a2652eb46c8e53d24dec74efb53c74971">getBusVI</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___bus___voltage___current__msg__t.html">Get_Bus_Voltage_Current_msg_t</a> &amp; msg, uint16_t timeout_ms = 10)</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>  {</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#abbc7ab820dd8dd66e6283ca167ccd61e">request</a>(msg, timeout_ms);</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  }</div>
+</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
+<div class="foldopen" id="foldopen00335" data-start="{" data-end="}">
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a79815993aef63ae6163847a86b813775">  335</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a79815993aef63ae6163847a86b813775">getPower</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___powers__msg__t.html">Get_Powers_msg_t</a> &amp; msg, uint16_t timeout_ms = 10)</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  {</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#abbc7ab820dd8dd66e6283ca167ccd61e">request</a>(msg, timeout_ms);</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>  }</div>
+</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3da20c5b33801e2a7846ca527b2c462c6f0">  340</a></span>  <span class="keyword">enum</span> <a class="code hl_enumeration" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3d">ResetAction</a> { <a class="code hl_enumvalue" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3da6fc93a32f002981bc0ea5d489c8389aa">Reboot</a>, <a class="code hl_enumvalue" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3da8e9e88a75ce5b16056beaf8f282d1d99">SaveConfiguration</a>, <a class="code hl_enumvalue" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3da20c5b33801e2a7846ca527b2c462c6f0">EraseConfiguration</a> };</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#afe016be9e545bc23a346420bd3ea513f">  351</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#afe016be9e545bc23a346420bd3ea513f">reset</a>(<a class="code hl_enumeration" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3d">ResetAction</a> action = <a class="code hl_enumvalue" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3da6fc93a32f002981bc0ea5d489c8389aa">ResetAction::Reboot</a>);</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
+<div class="foldopen" id="foldopen00356" data-start="{" data-end="}">
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a9e95612816b8ff299b7eec3897757af4">  356</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a9e95612816b8ff299b7eec3897757af4">onFeedback</a>(</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    <span class="keywordtype">void</span> (*callback)(<a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___encoder___estimates__msg__t.html">Get_Encoder_Estimates_msg_t</a> &amp; feedback, <span class="keywordtype">void</span> * user_data),</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    <span class="keywordtype">void</span> * user_data = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>  {</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    feedback_callback_ = callback;</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    feedback_user_data_ = user_data;</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>  }</div>
+</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span> </div>
+<div class="foldopen" id="foldopen00367" data-start="{" data-end="}">
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ac99960014b714bcacba27d47b3fa5b34">  367</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ac99960014b714bcacba27d47b3fa5b34">onStatus</a>(</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>    <span class="keywordtype">void</span> (*callback)(<a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_heartbeat__msg__t.html">Heartbeat_msg_t</a> &amp; feedback, <span class="keywordtype">void</span> * user_data), <span class="keywordtype">void</span> * user_data = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>  {</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    axis_state_callback_ = callback;</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    axis_state_user_data_ = user_data;</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>  }</div>
+</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span> </div>
+<div class="foldopen" id="foldopen00377" data-start="{" data-end="}">
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a977dd9baa6a0dbc7cf7519648120d917">  377</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a977dd9baa6a0dbc7cf7519648120d917">onReceive</a>(uint32_t <span class="keywordtype">id</span>, uint8_t length, <span class="keyword">const</span> uint8_t * data)</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>  {</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span><span class="comment">// #ifdef DEBUG</span></div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span><span class="comment">//     int byte_index = length - 1;</span></div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span><span class="comment">//     printf(&quot;received:\n&quot;);</span></div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span><span class="comment">//     printf(&quot;  id: 0x&quot;);</span></div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span><span class="comment">//     printf(&quot;%x\n&quot;, id);</span></div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span><span class="comment">//     printf(&quot;  data: 0x&quot;);</span></div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span><span class="comment">//     while (byte_index &gt;= 0) printf(&quot;%x&quot;, msg.data[byte_index--]);</span></div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span><span class="comment">//     printf(&quot;\n&quot;);</span></div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span><span class="comment">// #endif  // DEBUG</span></div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    <span class="keywordflow">if</span> (node_id_ != (<span class="keywordtype">id</span> &gt;&gt; ODriveCAN::kNodeIdShift)) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    <span class="keywordflow">switch</span> (<span class="keywordtype">id</span> &amp; ODriveCAN::kCmdIdBits) {</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>      <span class="keywordflow">case</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___encoder___estimates__msg__t.html#ad342cc053a04264c0435554774a13c63">Get_Encoder_Estimates_msg_t::cmd_id</a>: {</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>        <a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___encoder___estimates__msg__t.html">Get_Encoder_Estimates_msg_t</a> estimates;</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>        estimates.<a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___encoder___estimates__msg__t.html#a3bcb555e696802f75e199ecd62299777">decode_buf</a>(data);</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>        <span class="keywordflow">if</span> (feedback_callback_) feedback_callback_(estimates, feedback_user_data_);</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>      }</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>      <span class="keywordflow">case</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_heartbeat__msg__t.html#a87026d14d876d9520014c1fc581eea11">Heartbeat_msg_t::cmd_id</a>: {</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>        <a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_heartbeat__msg__t.html">Heartbeat_msg_t</a> status;</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>        status.<a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_heartbeat__msg__t.html#afa2fe565644a9f52fc1ec932d12a7bdb">decode_buf</a>(data);</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>        <span class="keywordflow">if</span> (axis_state_callback_ != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>          axis_state_callback_(status, axis_state_user_data_);</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>          <a class="code hl_define" href="logging__macros_8hpp.html#aede9f4f4f61b7e20067f2bf0d4eafb40">ALPS_LOG_INFO</a>(<span class="stringliteral">&quot;missing callback&quot;</span>);</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>      }</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>      <span class="keywordflow">default</span>: {</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>        <span class="keywordflow">if</span> (requested_msg_id_ == <a class="code hl_define" href="odrive__can_8h.html#ad5550135843ca34b930f5ceb0584adaa">REQUEST_PENDING</a>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span><span class="comment">// #ifdef DEBUG</span></div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span><span class="comment">//         printf(&quot;waiting for: 0x&quot;);</span></div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span><span class="comment">//         printf(&quot;%x\n&quot;, requested_msg_id_);</span></div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span><span class="comment">// #endif  // DEBUG</span></div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>        <span class="keywordflow">if</span> ((<span class="keywordtype">id</span> &amp; ODriveCAN::kCmdIdBits) != requested_msg_id_) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>        memcpy(buffer_, data, length);</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>        requested_msg_id_ = <a class="code hl_define" href="odrive__can_8h.html#ad5550135843ca34b930f5ceb0584adaa">REQUEST_PENDING</a>;</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>      }</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>    }</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>  }</div>
+</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00425" data-start="{" data-end="}">
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#abbc7ab820dd8dd66e6283ca167ccd61e">  425</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#abbc7ab820dd8dd66e6283ca167ccd61e">request</a>(T &amp; msg, uint16_t timeout_ms = 10)</div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>  {</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>    requested_msg_id_ = msg.cmd_id;</div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>    can_intf_.<a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf.html#ad1cd80f53369e18a20bc8dcd072cbb58">sendMsg</a>(</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>      (node_id_ &lt;&lt; ODriveCAN::kNodeIdShift) | msg.cmd_id,</div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>      0,       <span class="comment">// no data</span></div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>      <span class="keyword">nullptr</span>  <span class="comment">// RTR=1</span></div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>    );</div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>    <span class="keywordflow">if</span> (!awaitMsg(timeout_ms)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>    msg.decode_buf(buffer_);</div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>  }</div>
+</div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span> </div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00442" data-start="{" data-end="}">
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aaef90ecf36110956300116cf4509b2df">  442</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aaef90ecf36110956300116cf4509b2df">send</a>(<span class="keyword">const</span> T &amp; msg)</div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>  {</div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>    uint8_t data[8] = {};</div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>    msg.encode_buf(data);</div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>    <span class="keywordflow">return</span> can_intf_.<a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf.html#ad1cd80f53369e18a20bc8dcd072cbb58">sendMsg</a>(</div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>      (node_id_ &lt;&lt; ODriveCAN::kNodeIdShift) | msg.cmd_id, msg.msg_length, data);</div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>  }</div>
+</div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span> </div>
+<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00463" data-start="{" data-end="}">
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ab6d8ef8bb0a7f1e5e2710359246f1dc8">  463</a></span>  T <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ab6d8ef8bb0a7f1e5e2710359246f1dc8">getEndpoint</a>(uint16_t endpoint_id, uint16_t timeout_ms = 10)</div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>  {</div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>    uint8_t data[8] = {};</div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>    data[0] = 0;  <span class="comment">// Opcode read</span></div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span> </div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>    <span class="comment">// Little-endian endpoint</span></div>
+<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>    data[1] = (uint8_t)(endpoint_id);</div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>    data[2] = (uint8_t)(endpoint_id &gt;&gt; 8);</div>
+<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span> </div>
+<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>    can_intf_.<a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf.html#ad1cd80f53369e18a20bc8dcd072cbb58">sendMsg</a>((node_id_ &lt;&lt; ODriveCAN::kNodeIdShift) | 0x004, 8, data);</div>
+<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>    <span class="keywordflow">if</span> (!awaitMsg(timeout_ms)) <span class="keywordflow">return</span> T{};</div>
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span> </div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>    T ret{};</div>
+<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>    memcpy(&amp;ret, &amp;buffer_[4], <span class="keyword">sizeof</span>(T));</div>
+<div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span>    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span>  }</div>
+</div>
+<div class="line"><a id="l00479" name="l00479"></a><span class="lineno">  479</span> </div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00491" data-start="{" data-end="}">
+<div class="line"><a id="l00491" name="l00491"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ab78249891e8b16a38a523b51dd1d6dcd">  491</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ab78249891e8b16a38a523b51dd1d6dcd">setEndpoint</a>(uint16_t endpoint_id, T value)</div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>  {</div>
+<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>    uint8_t data[8] = {};</div>
+<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>    data[0] = 1;  <span class="comment">// Opcode write</span></div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span> </div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>    <span class="comment">// Endpoint</span></div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>    data[1] = endpoint_id &amp; 0xFF;</div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>    data[2] = (endpoint_id &gt;&gt; 8) &amp; 0xFF;</div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span> </div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>    <span class="comment">// Value to write</span></div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>    memcpy(&amp;data[4], &amp;value, <span class="keyword">sizeof</span>(T));</div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span> </div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>    can_intf_.<a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf.html#ad1cd80f53369e18a20bc8dcd072cbb58">sendMsg</a>((node_id_ &lt;&lt; ODriveCAN::kNodeIdShift) | 0x004, 8, data);</div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>  }</div>
+</div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span> </div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>  <span class="keywordtype">bool</span> awaitMsg(uint16_t timeout_ms)</div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>  {</div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>    <span class="keyword">using namespace </span>std::chrono;</div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>    <span class="keyword">auto</span> start_time = steady_clock::now();</div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>    <span class="keywordflow">while</span> (requested_msg_id_ != <a class="code hl_define" href="odrive__can_8h.html#ad5550135843ca34b930f5ceb0584adaa">REQUEST_PENDING</a>) {</div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>      can_intf_.<a class="code hl_function" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf.html#a8180128c6950920a3988c3620b50caeb">pump_events</a>();  <span class="comment">// pump event loop while waiting</span></div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>      <span class="keyword">auto</span> elapsed_time = duration_cast&lt;milliseconds&gt;(steady_clock::now() - start_time);</div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>      <span class="keywordflow">if</span> (elapsed_time.count() &gt; timeout_ms) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>    }</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>  }</div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span> </div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>  ODriveCanIntf&lt;CanIo&gt; &amp;can_intf_;</div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>  uint32_t node_id_;</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span> </div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>  <span class="keyword">volatile</span> uint8_t requested_msg_id_ = <a class="code hl_define" href="odrive__can_8h.html#ad5550135843ca34b930f5ceb0584adaa">REQUEST_PENDING</a>;</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span> </div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>  uint8_t buffer_[8];</div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span> </div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>  <span class="keyword">static</span> <span class="keyword">const</span> uint8_t kNodeIdShift = 5;</div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>  <span class="keyword">static</span> <span class="keyword">const</span> uint8_t kCmdIdBits = 0x1F;</div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span> </div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>  <span class="keywordtype">void</span> * axis_state_user_data_;</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>  <span class="keywordtype">void</span> * feedback_user_data_;</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span> </div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>  void (*axis_state_callback_)(Heartbeat_msg_t &amp; feedback, <span class="keywordtype">void</span> * user_data) = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>  void (*feedback_callback_)(Get_Encoder_Estimates_msg_t &amp; feedback, <span class="keywordtype">void</span> * user_data) = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>};</div>
+</div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span> </div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>}  <span class="comment">// namespace odrive</span></div>
+</div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>}  <span class="comment">// namespace communication</span></div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>}  <span class="comment">// namespace alps</span></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a></div><div class="ttdoc">ODriveとCAN通信を行うクラス</div><div class="ttdef"><b>Definition</b> odrive_can.h:80</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_a0448fb2dc2cb1f366dd9d67a43a7f0f5"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a0448fb2dc2cb1f366dd9d67a43a7f0f5">alps::cmn::communication::odrive::ODriveCAN::getVersion</a></div><div class="ttdeci">bool getVersion(Get_Version_msg_t &amp;msg, uint16_t timeout_ms=10)</div><div class="ttdoc">Requests hardware and firmware version information</div><div class="ttdef"><b>Definition</b> odrive_can.h:305</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_a09b110ce1810a216d4c27a109421f309"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a09b110ce1810a216d4c27a109421f309">alps::cmn::communication::odrive::ODriveCAN::setControllerMode</a></div><div class="ttdeci">bool setControllerMode(uint8_t control_mode, uint8_t input_mode)</div><div class="ttdoc">Sets the control mode and input mode of the ODrive.</div><div class="ttdef"><b>Definition</b> odrive_can.h:118</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_a1e04499765575ac185ae61c22440e97b"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a1e04499765575ac185ae61c22440e97b">alps::cmn::communication::odrive::ODriveCAN::setLimits</a></div><div class="ttdeci">bool setLimits(float velocity_limit, float current_soft_max)</div><div class="ttdoc">Sets the velocity and current limits</div><div class="ttdef"><b>Definition</b> odrive_can.h:183</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_a2652eb46c8e53d24dec74efb53c74971"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a2652eb46c8e53d24dec74efb53c74971">alps::cmn::communication::odrive::ODriveCAN::getBusVI</a></div><div class="ttdeci">bool getBusVI(Get_Bus_Voltage_Current_msg_t &amp;msg, uint16_t timeout_ms=10)</div><div class="ttdoc">Requests ODrive DC bus voltage and current</div><div class="ttdef"><b>Definition</b> odrive_can.h:325</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_a28bb063cd38cd867c0e3c93a780734c5"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a28bb063cd38cd867c0e3c93a780734c5">alps::cmn::communication::odrive::ODriveCAN::getError</a></div><div class="ttdeci">bool getError(Get_Error_msg_t &amp;msg, uint16_t timeout_ms=10)</div><div class="ttdoc">Requests error information</div><div class="ttdef"><b>Definition</b> odrive_can.h:295</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_a41689ad7a2c19942990b05b6232f7ab3"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a41689ad7a2c19942990b05b6232f7ab3">alps::cmn::communication::odrive::ODriveCAN::setVelocity</a></div><div class="ttdeci">bool setVelocity(float velocity, float torque_feedforward=0.0f)</div><div class="ttdoc">Sends a velocity setpoint with optional torque feedforward.</div><div class="ttdef"><b>Definition</b> odrive_can.h:152</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_a41d7cb399c2c582c4d6c29a802acc471"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a41d7cb399c2c582c4d6c29a802acc471">alps::cmn::communication::odrive::ODriveCAN::setTrapezoidalAccelLimits</a></div><div class="ttdeci">bool setTrapezoidalAccelLimits(float accel_limit, float decel_limit)</div><div class="ttdoc">Sets the acceleration and deceleration values for subsequent trapezoidal moves</div><div class="ttdef"><b>Definition</b> odrive_can.h:260</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_a4bae06d7f916e8c7240d4ebce01ade18"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a4bae06d7f916e8c7240d4ebce01ade18">alps::cmn::communication::odrive::ODriveCAN::getCurrents</a></div><div class="ttdeci">bool getCurrents(Get_Iq_msg_t &amp;msg, uint16_t timeout_ms=10)</div><div class="ttdoc">Requests motor current. Iq_measured represents torque-generating current</div><div class="ttdef"><b>Definition</b> odrive_can.h:275</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_a4f2a32a043c4ab95fbd38d4b9f0991e8"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a4f2a32a043c4ab95fbd38d4b9f0991e8">alps::cmn::communication::odrive::ODriveCAN::getTemperature</a></div><div class="ttdeci">bool getTemperature(Get_Temperature_msg_t &amp;msg, uint16_t timeout_ms=10)</div><div class="ttdoc">Requests motor temperature</div><div class="ttdef"><b>Definition</b> odrive_can.h:285</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_a79815993aef63ae6163847a86b813775"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a79815993aef63ae6163847a86b813775">alps::cmn::communication::odrive::ODriveCAN::getPower</a></div><div class="ttdeci">bool getPower(Get_Powers_msg_t &amp;msg, uint16_t timeout_ms=10)</div><div class="ttdoc">Requests mechanical and electrical power data (used for spinout detection)</div><div class="ttdef"><b>Definition</b> odrive_can.h:335</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_a977dd9baa6a0dbc7cf7519648120d917"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a977dd9baa6a0dbc7cf7519648120d917">alps::cmn::communication::odrive::ODriveCAN::onReceive</a></div><div class="ttdeci">void onReceive(uint32_t id, uint8_t length, const uint8_t *data)</div><div class="ttdoc">Processes received CAN messages for the ODrive.</div><div class="ttdef"><b>Definition</b> odrive_can.h:377</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_a9e95612816b8ff299b7eec3897757af4"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a9e95612816b8ff299b7eec3897757af4">alps::cmn::communication::odrive::ODriveCAN::onFeedback</a></div><div class="ttdeci">void onFeedback(void(*callback)(Get_Encoder_Estimates_msg_t &amp;feedback, void *user_data), void *user_data=nullptr)</div><div class="ttdoc">Registers a callback for ODrive feedback processing.</div><div class="ttdef"><b>Definition</b> odrive_can.h:356</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_aa48ecd372774ac7ab1f4cc9a0fbcdd35"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aa48ecd372774ac7ab1f4cc9a0fbcdd35">alps::cmn::communication::odrive::ODriveCAN::setTrapezoidalVelLimit</a></div><div class="ttdeci">bool setTrapezoidalVelLimit(float vel_limit)</div><div class="ttdoc">Sets the coast velocity for subsequent trapezoidal moves</div><div class="ttdef"><b>Definition</b> odrive_can.h:245</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_aa88e464d5abe8851728ef8c46bc635a1"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aa88e464d5abe8851728ef8c46bc635a1">alps::cmn::communication::odrive::ODriveCAN::setPosGain</a></div><div class="ttdeci">bool setPosGain(float pos_gain)</div><div class="ttdoc">Sets the position gain</div><div class="ttdef"><b>Definition</b> odrive_can.h:199</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_aaef90ecf36110956300116cf4509b2df"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aaef90ecf36110956300116cf4509b2df">alps::cmn::communication::odrive::ODriveCAN::send</a></div><div class="ttdeci">bool send(const T &amp;msg)</div><div class="ttdoc">Sends a specified message over CAN.</div><div class="ttdef"><b>Definition</b> odrive_can.h:442</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_ab55afa140b7c4df87d3a211943f572d4"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ab55afa140b7c4df87d3a211943f572d4">alps::cmn::communication::odrive::ODriveCAN::getFeedback</a></div><div class="ttdeci">bool getFeedback(Get_Encoder_Estimates_msg_t &amp;msg, uint16_t timeout_ms=10)</div><div class="ttdoc">Requests encoder feedback data. May trigger onFeedback callback if it's registered</div><div class="ttdef"><b>Definition</b> odrive_can.h:315</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_ab6d8ef8bb0a7f1e5e2710359246f1dc8"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ab6d8ef8bb0a7f1e5e2710359246f1dc8">alps::cmn::communication::odrive::ODriveCAN::getEndpoint</a></div><div class="ttdeci">T getEndpoint(uint16_t endpoint_id, uint16_t timeout_ms=10)</div><div class="ttdoc">Get value at the endpoint</div><div class="ttdef"><b>Definition</b> odrive_can.h:463</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_ab78249891e8b16a38a523b51dd1d6dcd"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ab78249891e8b16a38a523b51dd1d6dcd">alps::cmn::communication::odrive::ODriveCAN::setEndpoint</a></div><div class="ttdeci">bool setEndpoint(uint16_t endpoint_id, T value)</div><div class="ttdoc">Set endpoint to value</div><div class="ttdef"><b>Definition</b> odrive_can.h:491</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_abbc7ab820dd8dd66e6283ca167ccd61e"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#abbc7ab820dd8dd66e6283ca167ccd61e">alps::cmn::communication::odrive::ODriveCAN::request</a></div><div class="ttdeci">bool request(T &amp;msg, uint16_t timeout_ms=10)</div><div class="ttdoc">Sends a request message and awaits a response.</div><div class="ttdef"><b>Definition</b> odrive_can.h:425</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_abcba1b20a54e6947f3610e5fd9334b29"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#abcba1b20a54e6947f3610e5fd9334b29">alps::cmn::communication::odrive::ODriveCAN::setTorque</a></div><div class="ttdeci">bool setTorque(float torque)</div><div class="ttdoc">Sends a torque setpoint to the ODrive.</div><div class="ttdef"><b>Definition</b> odrive_can.h:168</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_ac43cab5453e957bf98e52dd86fbc14b7"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ac43cab5453e957bf98e52dd86fbc14b7">alps::cmn::communication::odrive::ODriveCAN::ODriveCAN</a></div><div class="ttdeci">ODriveCAN(ODriveCanIntf&lt; CanIo &gt; &amp;can_intf, uint32_t node_id)</div><div class="ttdef"><b>Definition</b> odrive_can.h:82</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_ac99960014b714bcacba27d47b3fa5b34"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ac99960014b714bcacba27d47b3fa5b34">alps::cmn::communication::odrive::ODriveCAN::onStatus</a></div><div class="ttdeci">void onStatus(void(*callback)(Heartbeat_msg_t &amp;feedback, void *user_data), void *user_data=nullptr)</div><div class="ttdoc">Registers a callback for ODrive axis state feedback.</div><div class="ttdef"><b>Definition</b> odrive_can.h:367</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_ae670256d3a4c2bbce3804d4103483c3d"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3d">alps::cmn::communication::odrive::ODriveCAN::ResetAction</a></div><div class="ttdeci">ResetAction</div><div class="ttdef"><b>Definition</b> odrive_can.h:340</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_ae670256d3a4c2bbce3804d4103483c3da20c5b33801e2a7846ca527b2c462c6f0"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3da20c5b33801e2a7846ca527b2c462c6f0">alps::cmn::communication::odrive::ODriveCAN::EraseConfiguration</a></div><div class="ttdeci">@ EraseConfiguration</div><div class="ttdef"><b>Definition</b> odrive_can.h:340</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_ae670256d3a4c2bbce3804d4103483c3da6fc93a32f002981bc0ea5d489c8389aa"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3da6fc93a32f002981bc0ea5d489c8389aa">alps::cmn::communication::odrive::ODriveCAN::Reboot</a></div><div class="ttdeci">@ Reboot</div><div class="ttdef"><b>Definition</b> odrive_can.h:340</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_ae670256d3a4c2bbce3804d4103483c3da8e9e88a75ce5b16056beaf8f282d1d99"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3da8e9e88a75ce5b16056beaf8f282d1d99">alps::cmn::communication::odrive::ODriveCAN::SaveConfiguration</a></div><div class="ttdeci">@ SaveConfiguration</div><div class="ttdef"><b>Definition</b> odrive_can.h:340</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_aeec19bd123db0951cbc7fa8e97c0844e"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aeec19bd123db0951cbc7fa8e97c0844e">alps::cmn::communication::odrive::ODriveCAN::clearErrors</a></div><div class="ttdeci">bool clearErrors()</div><div class="ttdoc">Clear all errors on the ODrive.</div><div class="ttdef"><b>Definition</b> odrive_can.h:91</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_af24d07f9d824b44b3d54d5522f799871"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#af24d07f9d824b44b3d54d5522f799871">alps::cmn::communication::odrive::ODriveCAN::setAbsolutePosition</a></div><div class="ttdeci">bool setAbsolutePosition(float abs_pos)</div><div class="ttdoc">Sets the encoder's absolute position and enables absolute positioning</div><div class="ttdef"><b>Definition</b> odrive_can.h:230</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_af5f781a5d39b856de685418584b5cf4c"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#af5f781a5d39b856de685418584b5cf4c">alps::cmn::communication::odrive::ODriveCAN::setPosition</a></div><div class="ttdeci">bool setPosition(float position, float velocity_feedforward=0.0f, float torque_feedforward=0.0f)</div><div class="ttdoc">Sends a position setpoint with optional velocity and torque feedforward.</div><div class="ttdef"><b>Definition</b> odrive_can.h:134</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_af7f7fb528ffdc3cc528181a80c85f0a4"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#af7f7fb528ffdc3cc528181a80c85f0a4">alps::cmn::communication::odrive::ODriveCAN::setVelGains</a></div><div class="ttdeci">bool setVelGains(float vel_gain, float vel_integrator_gain)</div><div class="ttdoc">Sets the velocity and velocity integrator gains</div><div class="ttdef"><b>Definition</b> odrive_can.h:214</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_afe016be9e545bc23a346420bd3ea513f"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#afe016be9e545bc23a346420bd3ea513f">alps::cmn::communication::odrive::ODriveCAN::reset</a></div><div class="ttdeci">bool reset(ResetAction action=ResetAction::Reboot)</div><div class="ttdoc">Resets the ODrive with the given action</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html_afe788884a154496b46d8213194b69e51"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#afe788884a154496b46d8213194b69e51">alps::cmn::communication::odrive::ODriveCAN::setState</a></div><div class="ttdeci">bool setState(ODriveAxisState requested_state)</div><div class="ttdoc">Tells the ODrive to change its axis state.</div><div class="ttdef"><b>Definition</b> odrive_can.h:103</div></div>
+<div class="ttc" id="alogging__macros_8hpp_html"><div class="ttname"><a href="logging__macros_8hpp.html">logging_macros.hpp</a></div></div>
+<div class="ttc" id="alogging__macros_8hpp_html_aede9f4f4f61b7e20067f2bf0d4eafb40"><div class="ttname"><a href="logging__macros_8hpp.html#aede9f4f4f61b7e20067f2bf0d4eafb40">ALPS_LOG_INFO</a></div><div class="ttdeci">#define ALPS_LOG_INFO(...)</div><div class="ttdoc">インフォメーションレベルのログ出力を行う</div><div class="ttdef"><b>Definition</b> logging_macros.hpp:57</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1communication_1_1odrive_html_ace1e8c7e98c4e2c81345d128ac9c2045"><div class="ttname"><a href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045">alps::cmn::communication::odrive::ODriveAxisState</a></div><div class="ttdeci">ODriveAxisState</div><div class="ttdef"><b>Definition</b> odrive_enums.h:55</div></div>
+<div class="ttc" id="anamespacealps_1_1mbed_1_1communication_1_1odrive_html"><div class="ttname"><a href="namespacealps_1_1mbed_1_1communication_1_1odrive.html">alps::mbed::communication::odrive</a></div><div class="ttdef"><b>Definition</b> odrive_can_mbed.hpp:14</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition</b> dc_motor.hpp:25</div></div>
+<div class="ttc" id="aodrive__can_8h_html_ad5550135843ca34b930f5ceb0584adaa"><div class="ttname"><a href="odrive__can_8h.html#ad5550135843ca34b930f5ceb0584adaa">REQUEST_PENDING</a></div><div class="ttdeci">#define REQUEST_PENDING</div><div class="ttdef"><b>Definition</b> odrive_can.h:25</div></div>
+<div class="ttc" id="aodrive__can__helpers_8hpp_html"><div class="ttname"><a href="odrive__can__helpers_8hpp.html">odrive_can_helpers.hpp</a></div></div>
+<div class="ttc" id="aodrive__can__simple__messages_8hpp_html"><div class="ttname"><a href="odrive__can__simple__messages_8hpp.html">odrive_can_simple_messages.hpp</a></div></div>
+<div class="ttc" id="aodrive__enums_8h_html"><div class="ttname"><a href="odrive__enums_8h.html">odrive_enums.h</a></div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_clear___errors__msg__t_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_clear___errors__msg__t.html">alps::cmn::communication::odrive::Clear_Errors_msg_t</a></div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:460</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_get___bus___voltage___current__msg__t_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___bus___voltage___current__msg__t.html">alps::cmn::communication::odrive::Get_Bus_Voltage_Current_msg_t</a></div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:437</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_get___encoder___estimates__msg__t_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___encoder___estimates__msg__t.html">alps::cmn::communication::odrive::Get_Encoder_Estimates_msg_t</a></div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:170</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_get___encoder___estimates__msg__t_html_a3bcb555e696802f75e199ecd62299777"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___encoder___estimates__msg__t.html#a3bcb555e696802f75e199ecd62299777">alps::cmn::communication::odrive::Get_Encoder_Estimates_msg_t::decode_buf</a></div><div class="ttdeci">void decode_buf(const uint8_t *buf)</div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:179</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_get___encoder___estimates__msg__t_html_ad342cc053a04264c0435554774a13c63"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___encoder___estimates__msg__t.html#ad342cc053a04264c0435554774a13c63">alps::cmn::communication::odrive::Get_Encoder_Estimates_msg_t::cmd_id</a></div><div class="ttdeci">static const uint8_t cmd_id</div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:185</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_get___error__msg__t_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___error__msg__t.html">alps::cmn::communication::odrive::Get_Error_msg_t</a></div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:104</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_get___iq__msg__t_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___iq__msg__t.html">alps::cmn::communication::odrive::Get_Iq_msg_t</a></div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:371</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_get___powers__msg__t_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___powers__msg__t.html">alps::cmn::communication::odrive::Get_Powers_msg_t</a></div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:566</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_get___temperature__msg__t_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___temperature__msg__t.html">alps::cmn::communication::odrive::Get_Temperature_msg_t</a></div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:394</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_get___version__msg__t_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___version__msg__t.html">alps::cmn::communication::odrive::Get_Version_msg_t</a></div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:22</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_heartbeat__msg__t_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_heartbeat__msg__t.html">alps::cmn::communication::odrive::Heartbeat_msg_t</a></div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:63</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_heartbeat__msg__t_html_a87026d14d876d9520014c1fc581eea11"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_heartbeat__msg__t.html#a87026d14d876d9520014c1fc581eea11">alps::cmn::communication::odrive::Heartbeat_msg_t::cmd_id</a></div><div class="ttdeci">static const uint8_t cmd_id</div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:82</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_heartbeat__msg__t_html_afa2fe565644a9f52fc1ec932d12a7bdb"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_heartbeat__msg__t.html#afa2fe565644a9f52fc1ec932d12a7bdb">alps::cmn::communication::odrive::Heartbeat_msg_t::decode_buf</a></div><div class="ttdeci">void decode_buf(const uint8_t *buf)</div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:74</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf.html">alps::cmn::communication::odrive::ODriveCanIntf</a></div><div class="ttdoc">ODriveのCanIOのインターフェース</div><div class="ttdef"><b>Definition</b> odrive_can.h:62</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_html_a8180128c6950920a3988c3620b50caeb"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf.html#a8180128c6950920a3988c3620b50caeb">alps::cmn::communication::odrive::ODriveCanIntf::pump_events</a></div><div class="ttdeci">void pump_events()</div><div class="ttdef"><b>Definition</b> odrive_can.h:67</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_html_ad1cd80f53369e18a20bc8dcd072cbb58"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf.html#ad1cd80f53369e18a20bc8dcd072cbb58">alps::cmn::communication::odrive::ODriveCanIntf::sendMsg</a></div><div class="ttdeci">bool sendMsg(uint32_t id, uint8_t length, const uint8_t *data)</div><div class="ttdef"><b>Definition</b> odrive_can.h:63</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html">alps::cmn::communication::odrive::ODriveCanIntfWrapper</a></div><div class="ttdef"><b>Definition</b> odrive_can.h:40</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper_html_a16882f652e7d4e5b18e60ae77ab7d11c"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html#a16882f652e7d4e5b18e60ae77ab7d11c">alps::cmn::communication::odrive::ODriveCanIntfWrapper::sendMsg</a></div><div class="ttdeci">bool sendMsg(uint32_t id, uint8_t length, const uint8_t *data)</div><div class="ttdef"><b>Definition</b> odrive_can.h:41</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper_html_a38aa1713ceb78e61721b66b4716821fe"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html#a38aa1713ceb78e61721b66b4716821fe">alps::cmn::communication::odrive::ODriveCanIntfWrapper::pump_events_</a></div><div class="ttdeci">void(* pump_events_)(void *intf)</div><div class="ttdef"><b>Definition</b> odrive_can.h:52</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper_html_a7c7c00cfa954c7bbe91dd46bcd0eee24"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html#a7c7c00cfa954c7bbe91dd46bcd0eee24">alps::cmn::communication::odrive::ODriveCanIntfWrapper::pump_events</a></div><div class="ttdeci">void pump_events()</div><div class="ttdef"><b>Definition</b> odrive_can.h:45</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper_html_aa5ebe96b584c3b6a1a87e2bd6d504203"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html#aa5ebe96b584c3b6a1a87e2bd6d504203">alps::cmn::communication::odrive::ODriveCanIntfWrapper::send_msg_</a></div><div class="ttdeci">bool(* send_msg_)(void *intf, uint32_t id, uint8_t length, const uint8_t *data)</div><div class="ttdef"><b>Definition</b> odrive_can.h:51</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper_html_aa921ad8a78d9c9068fab317e30a10071"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html#aa921ad8a78d9c9068fab317e30a10071">alps::cmn::communication::odrive::ODriveCanIntfWrapper::can_intf_</a></div><div class="ttdeci">void * can_intf_</div><div class="ttdef"><b>Definition</b> odrive_can.h:50</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___absolute___position__msg__t_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___absolute___position__msg__t.html">alps::cmn::communication::odrive::Set_Absolute_Position_msg_t</a></div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:480</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___absolute___position__msg__t_html_aa476ca73f34f77bc128a8a22cee01857"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___absolute___position__msg__t.html#aa476ca73f34f77bc128a8a22cee01857">alps::cmn::communication::odrive::Set_Absolute_Position_msg_t::Position</a></div><div class="ttdeci">float Position</div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:496</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___axis___state__msg__t_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___axis___state__msg__t.html">alps::cmn::communication::odrive::Set_Axis_State_msg_t</a></div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:150</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___axis___state__msg__t_html_abfbf534da0db62629c7ee9d9d004c6c0"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___axis___state__msg__t.html#abfbf534da0db62629c7ee9d9d004c6c0">alps::cmn::communication::odrive::Set_Axis_State_msg_t::Axis_Requested_State</a></div><div class="ttdeci">uint32_t Axis_Requested_State</div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:166</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___controller___mode__msg__t_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___controller___mode__msg__t.html">alps::cmn::communication::odrive::Set_Controller_Mode_msg_t</a></div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:193</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___controller___mode__msg__t_html_a17d1d06d0e5a914e01c464683bce30f8"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___controller___mode__msg__t.html#a17d1d06d0e5a914e01c464683bce30f8">alps::cmn::communication::odrive::Set_Controller_Mode_msg_t::Input_Mode</a></div><div class="ttdeci">uint32_t Input_Mode</div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:212</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___controller___mode__msg__t_html_a3711b320697c1e21dd86754aefc286fd"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___controller___mode__msg__t.html#a3711b320697c1e21dd86754aefc286fd">alps::cmn::communication::odrive::Set_Controller_Mode_msg_t::Control_Mode</a></div><div class="ttdeci">uint32_t Control_Mode</div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:211</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___pos__msg__t_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___pos__msg__t.html">alps::cmn::communication::odrive::Set_Input_Pos_msg_t</a></div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:216</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___pos__msg__t_html_a484ced518aa9894513c6f7493a3e02a6"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___pos__msg__t.html#a484ced518aa9894513c6f7493a3e02a6">alps::cmn::communication::odrive::Set_Input_Pos_msg_t::Vel_FF</a></div><div class="ttdeci">float Vel_FF</div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:237</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___pos__msg__t_html_a8ddf7e9389dace72cb0cea80570ce07f"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___pos__msg__t.html#a8ddf7e9389dace72cb0cea80570ce07f">alps::cmn::communication::odrive::Set_Input_Pos_msg_t::Input_Pos</a></div><div class="ttdeci">float Input_Pos</div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:236</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___pos__msg__t_html_aec17c5e009477a7a0afc883c2e9c5149"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___pos__msg__t.html#aec17c5e009477a7a0afc883c2e9c5149">alps::cmn::communication::odrive::Set_Input_Pos_msg_t::Torque_FF</a></div><div class="ttdeci">float Torque_FF</div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:238</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___torque__msg__t_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___torque__msg__t.html">alps::cmn::communication::odrive::Set_Input_Torque_msg_t</a></div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:265</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___torque__msg__t_html_a359ca25c443becff4d9ed304353d256b"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___torque__msg__t.html#a359ca25c443becff4d9ed304353d256b">alps::cmn::communication::odrive::Set_Input_Torque_msg_t::Input_Torque</a></div><div class="ttdeci">float Input_Torque</div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:281</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___vel__msg__t_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___vel__msg__t.html">alps::cmn::communication::odrive::Set_Input_Vel_msg_t</a></div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:242</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___vel__msg__t_html_a3bdf5e8085e03434803d71275fc502ef"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___vel__msg__t.html#a3bdf5e8085e03434803d71275fc502ef">alps::cmn::communication::odrive::Set_Input_Vel_msg_t::Input_Vel</a></div><div class="ttdeci">float Input_Vel</div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:260</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___vel__msg__t_html_ae1d35b9ab67690592da804b6c2e356bd"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___vel__msg__t.html#ae1d35b9ab67690592da804b6c2e356bd">alps::cmn::communication::odrive::Set_Input_Vel_msg_t::Input_Torque_FF</a></div><div class="ttdeci">float Input_Torque_FF</div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:261</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___limits__msg__t_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___limits__msg__t.html">alps::cmn::communication::odrive::Set_Limits_msg_t</a></div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:285</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___limits__msg__t_html_a78c295bac9b4a979706ae28a2d7086a8"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___limits__msg__t.html#a78c295bac9b4a979706ae28a2d7086a8">alps::cmn::communication::odrive::Set_Limits_msg_t::Current_Limit</a></div><div class="ttdeci">float Current_Limit</div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:304</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___limits__msg__t_html_ab9187c5b0ffdd39735fdb8ee1dcde89b"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___limits__msg__t.html#ab9187c5b0ffdd39735fdb8ee1dcde89b">alps::cmn::communication::odrive::Set_Limits_msg_t::Velocity_Limit</a></div><div class="ttdeci">float Velocity_Limit</div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:303</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___pos___gain__msg__t_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___pos___gain__msg__t.html">alps::cmn::communication::odrive::Set_Pos_Gain_msg_t</a></div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:500</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___pos___gain__msg__t_html_a8c3da5372780943f7befe83ac2fcc8c5"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___pos___gain__msg__t.html#a8c3da5372780943f7befe83ac2fcc8c5">alps::cmn::communication::odrive::Set_Pos_Gain_msg_t::Pos_Gain</a></div><div class="ttdeci">float Pos_Gain</div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:516</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___accel___limits__msg__t_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___accel___limits__msg__t.html">alps::cmn::communication::odrive::Set_Traj_Accel_Limits_msg_t</a></div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:328</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___accel___limits__msg__t_html_a55cb968279d325ce2d3e2ccc0607bd47"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___accel___limits__msg__t.html#a55cb968279d325ce2d3e2ccc0607bd47">alps::cmn::communication::odrive::Set_Traj_Accel_Limits_msg_t::Traj_Decel_Limit</a></div><div class="ttdeci">float Traj_Decel_Limit</div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:347</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___accel___limits__msg__t_html_a91901dab8849d6d1cc2b8272d873af75"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___accel___limits__msg__t.html#a91901dab8849d6d1cc2b8272d873af75">alps::cmn::communication::odrive::Set_Traj_Accel_Limits_msg_t::Traj_Accel_Limit</a></div><div class="ttdeci">float Traj_Accel_Limit</div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:346</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___vel___limit__msg__t_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___vel___limit__msg__t.html">alps::cmn::communication::odrive::Set_Traj_Vel_Limit_msg_t</a></div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:308</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___vel___limit__msg__t_html_a59db6ec8b8b47c91d18fc31bf56b1b67"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___vel___limit__msg__t.html#a59db6ec8b8b47c91d18fc31bf56b1b67">alps::cmn::communication::odrive::Set_Traj_Vel_Limit_msg_t::Traj_Vel_Limit</a></div><div class="ttdeci">float Traj_Vel_Limit</div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:324</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___vel___gains__msg__t_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___vel___gains__msg__t.html">alps::cmn::communication::odrive::Set_Vel_Gains_msg_t</a></div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:520</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___vel___gains__msg__t_html_a73cc252a3ca650ff86f60d28af353d00"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___vel___gains__msg__t.html#a73cc252a3ca650ff86f60d28af353d00">alps::cmn::communication::odrive::Set_Vel_Gains_msg_t::Vel_Gain</a></div><div class="ttdeci">float Vel_Gain</div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:538</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_set___vel___gains__msg__t_html_ad837adee90162b76f52372b4e9c775cd"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___vel___gains__msg__t.html#ad837adee90162b76f52372b4e9c775cd">alps::cmn::communication::odrive::Set_Vel_Gains_msg_t::Vel_Integrator_Gain</a></div><div class="ttdeci">float Vel_Integrator_Gain</div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:539</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_627d875eccf4a985023a7fe06842126c.html">alps_core</a></li><li class="navelem"><a class="el" href="dir_f64f47805544727f04f019e126982967.html">lib_internal</a></li><li class="navelem"><a class="el" href="dir_dbb6a150a1d2a9e3bac0bb1d4855e995.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_2b777a74a5ff5221077a83a37cc87235.html">include</a></li><li class="navelem"><a class="el" href="dir_664123f27b70b10eeac81c10039fb160.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_5bbbaec82e60c1c95ef5795854749336.html">communication</a></li><li class="navelem"><a class="el" href="odrive__can_8h.html">odrive_can.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

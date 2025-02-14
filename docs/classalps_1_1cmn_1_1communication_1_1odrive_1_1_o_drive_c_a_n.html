@@ -1,0 +1,1372 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps::cmn::communication::odrive::ODriveCAN&lt; CanIo &gt; クラステンプレート</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">alps::cmn::communication::odrive::ODriveCAN&lt; CanIo &gt; クラステンプレート</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ODriveとCAN通信を行うクラス  
+ <a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="odrive__can_8h_source.html">odrive_can.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:ae670256d3a4c2bbce3804d4103483c3d" id="r_ae670256d3a4c2bbce3804d4103483c3d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3d">ResetAction</a> { <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3da6fc93a32f002981bc0ea5d489c8389aa">Reboot</a>
+, <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3da8e9e88a75ce5b16056beaf8f282d1d99">SaveConfiguration</a>
+, <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3da20c5b33801e2a7846ca527b2c462c6f0">EraseConfiguration</a>
+ }</td></tr>
+<tr class="separator:ae670256d3a4c2bbce3804d4103483c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ac43cab5453e957bf98e52dd86fbc14b7" id="r_ac43cab5453e957bf98e52dd86fbc14b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ac43cab5453e957bf98e52dd86fbc14b7">ODriveCAN</a> (<a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf.html">ODriveCanIntf</a>&lt; CanIo &gt; &amp;can_intf, uint32_t node_id)</td></tr>
+<tr class="separator:ac43cab5453e957bf98e52dd86fbc14b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec19bd123db0951cbc7fa8e97c0844e" id="r_aeec19bd123db0951cbc7fa8e97c0844e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aeec19bd123db0951cbc7fa8e97c0844e">clearErrors</a> ()</td></tr>
+<tr class="memdesc:aeec19bd123db0951cbc7fa8e97c0844e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all errors on the ODrive.  <br /></td></tr>
+<tr class="separator:aeec19bd123db0951cbc7fa8e97c0844e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe788884a154496b46d8213194b69e51" id="r_afe788884a154496b46d8213194b69e51"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#afe788884a154496b46d8213194b69e51">setState</a> (<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045">ODriveAxisState</a> requested_state)</td></tr>
+<tr class="memdesc:afe788884a154496b46d8213194b69e51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells the ODrive to change its axis state.  <br /></td></tr>
+<tr class="separator:afe788884a154496b46d8213194b69e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09b110ce1810a216d4c27a109421f309" id="r_a09b110ce1810a216d4c27a109421f309"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a09b110ce1810a216d4c27a109421f309">setControllerMode</a> (uint8_t control_mode, uint8_t input_mode)</td></tr>
+<tr class="memdesc:a09b110ce1810a216d4c27a109421f309"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the control mode and input mode of the ODrive.  <br /></td></tr>
+<tr class="separator:a09b110ce1810a216d4c27a109421f309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f781a5d39b856de685418584b5cf4c" id="r_af5f781a5d39b856de685418584b5cf4c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#af5f781a5d39b856de685418584b5cf4c">setPosition</a> (float position, float velocity_feedforward=0.0f, float torque_feedforward=0.0f)</td></tr>
+<tr class="memdesc:af5f781a5d39b856de685418584b5cf4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a position setpoint with optional velocity and torque feedforward.  <br /></td></tr>
+<tr class="separator:af5f781a5d39b856de685418584b5cf4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41689ad7a2c19942990b05b6232f7ab3" id="r_a41689ad7a2c19942990b05b6232f7ab3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a41689ad7a2c19942990b05b6232f7ab3">setVelocity</a> (float velocity, float torque_feedforward=0.0f)</td></tr>
+<tr class="memdesc:a41689ad7a2c19942990b05b6232f7ab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a velocity setpoint with optional torque feedforward.  <br /></td></tr>
+<tr class="separator:a41689ad7a2c19942990b05b6232f7ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcba1b20a54e6947f3610e5fd9334b29" id="r_abcba1b20a54e6947f3610e5fd9334b29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#abcba1b20a54e6947f3610e5fd9334b29">setTorque</a> (float torque)</td></tr>
+<tr class="memdesc:abcba1b20a54e6947f3610e5fd9334b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a torque setpoint to the ODrive.  <br /></td></tr>
+<tr class="separator:abcba1b20a54e6947f3610e5fd9334b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e04499765575ac185ae61c22440e97b" id="r_a1e04499765575ac185ae61c22440e97b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a1e04499765575ac185ae61c22440e97b">setLimits</a> (float velocity_limit, float current_soft_max)</td></tr>
+<tr class="memdesc:a1e04499765575ac185ae61c22440e97b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the velocity and current limits  <br /></td></tr>
+<tr class="separator:a1e04499765575ac185ae61c22440e97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa88e464d5abe8851728ef8c46bc635a1" id="r_aa88e464d5abe8851728ef8c46bc635a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aa88e464d5abe8851728ef8c46bc635a1">setPosGain</a> (float pos_gain)</td></tr>
+<tr class="memdesc:aa88e464d5abe8851728ef8c46bc635a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the position gain  <br /></td></tr>
+<tr class="separator:aa88e464d5abe8851728ef8c46bc635a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7f7fb528ffdc3cc528181a80c85f0a4" id="r_af7f7fb528ffdc3cc528181a80c85f0a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#af7f7fb528ffdc3cc528181a80c85f0a4">setVelGains</a> (float vel_gain, float vel_integrator_gain)</td></tr>
+<tr class="memdesc:af7f7fb528ffdc3cc528181a80c85f0a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the velocity and velocity integrator gains  <br /></td></tr>
+<tr class="separator:af7f7fb528ffdc3cc528181a80c85f0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af24d07f9d824b44b3d54d5522f799871" id="r_af24d07f9d824b44b3d54d5522f799871"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#af24d07f9d824b44b3d54d5522f799871">setAbsolutePosition</a> (float abs_pos)</td></tr>
+<tr class="memdesc:af24d07f9d824b44b3d54d5522f799871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the encoder's absolute position and enables absolute positioning  <br /></td></tr>
+<tr class="separator:af24d07f9d824b44b3d54d5522f799871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa48ecd372774ac7ab1f4cc9a0fbcdd35" id="r_aa48ecd372774ac7ab1f4cc9a0fbcdd35"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aa48ecd372774ac7ab1f4cc9a0fbcdd35">setTrapezoidalVelLimit</a> (float vel_limit)</td></tr>
+<tr class="memdesc:aa48ecd372774ac7ab1f4cc9a0fbcdd35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the coast velocity for subsequent trapezoidal moves  <br /></td></tr>
+<tr class="separator:aa48ecd372774ac7ab1f4cc9a0fbcdd35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41d7cb399c2c582c4d6c29a802acc471" id="r_a41d7cb399c2c582c4d6c29a802acc471"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a41d7cb399c2c582c4d6c29a802acc471">setTrapezoidalAccelLimits</a> (float accel_limit, float decel_limit)</td></tr>
+<tr class="memdesc:a41d7cb399c2c582c4d6c29a802acc471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the acceleration and deceleration values for subsequent trapezoidal moves  <br /></td></tr>
+<tr class="separator:a41d7cb399c2c582c4d6c29a802acc471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bae06d7f916e8c7240d4ebce01ade18" id="r_a4bae06d7f916e8c7240d4ebce01ade18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a4bae06d7f916e8c7240d4ebce01ade18">getCurrents</a> (<a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___iq__msg__t.html">Get_Iq_msg_t</a> &amp;msg, uint16_t timeout_ms=10)</td></tr>
+<tr class="memdesc:a4bae06d7f916e8c7240d4ebce01ade18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests motor current. Iq_measured represents torque-generating current  <br /></td></tr>
+<tr class="separator:a4bae06d7f916e8c7240d4ebce01ade18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f2a32a043c4ab95fbd38d4b9f0991e8" id="r_a4f2a32a043c4ab95fbd38d4b9f0991e8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a4f2a32a043c4ab95fbd38d4b9f0991e8">getTemperature</a> (<a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___temperature__msg__t.html">Get_Temperature_msg_t</a> &amp;msg, uint16_t timeout_ms=10)</td></tr>
+<tr class="memdesc:a4f2a32a043c4ab95fbd38d4b9f0991e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests motor temperature  <br /></td></tr>
+<tr class="separator:a4f2a32a043c4ab95fbd38d4b9f0991e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28bb063cd38cd867c0e3c93a780734c5" id="r_a28bb063cd38cd867c0e3c93a780734c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a28bb063cd38cd867c0e3c93a780734c5">getError</a> (<a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___error__msg__t.html">Get_Error_msg_t</a> &amp;msg, uint16_t timeout_ms=10)</td></tr>
+<tr class="memdesc:a28bb063cd38cd867c0e3c93a780734c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests error information  <br /></td></tr>
+<tr class="separator:a28bb063cd38cd867c0e3c93a780734c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0448fb2dc2cb1f366dd9d67a43a7f0f5" id="r_a0448fb2dc2cb1f366dd9d67a43a7f0f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a0448fb2dc2cb1f366dd9d67a43a7f0f5">getVersion</a> (<a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___version__msg__t.html">Get_Version_msg_t</a> &amp;msg, uint16_t timeout_ms=10)</td></tr>
+<tr class="memdesc:a0448fb2dc2cb1f366dd9d67a43a7f0f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests hardware and firmware version information  <br /></td></tr>
+<tr class="separator:a0448fb2dc2cb1f366dd9d67a43a7f0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab55afa140b7c4df87d3a211943f572d4" id="r_ab55afa140b7c4df87d3a211943f572d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ab55afa140b7c4df87d3a211943f572d4">getFeedback</a> (<a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___encoder___estimates__msg__t.html">Get_Encoder_Estimates_msg_t</a> &amp;msg, uint16_t timeout_ms=10)</td></tr>
+<tr class="memdesc:ab55afa140b7c4df87d3a211943f572d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests encoder feedback data. May trigger onFeedback callback if it's registered  <br /></td></tr>
+<tr class="separator:ab55afa140b7c4df87d3a211943f572d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2652eb46c8e53d24dec74efb53c74971" id="r_a2652eb46c8e53d24dec74efb53c74971"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a2652eb46c8e53d24dec74efb53c74971">getBusVI</a> (<a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___bus___voltage___current__msg__t.html">Get_Bus_Voltage_Current_msg_t</a> &amp;msg, uint16_t timeout_ms=10)</td></tr>
+<tr class="memdesc:a2652eb46c8e53d24dec74efb53c74971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests ODrive DC bus voltage and current  <br /></td></tr>
+<tr class="separator:a2652eb46c8e53d24dec74efb53c74971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79815993aef63ae6163847a86b813775" id="r_a79815993aef63ae6163847a86b813775"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a79815993aef63ae6163847a86b813775">getPower</a> (<a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___powers__msg__t.html">Get_Powers_msg_t</a> &amp;msg, uint16_t timeout_ms=10)</td></tr>
+<tr class="memdesc:a79815993aef63ae6163847a86b813775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests mechanical and electrical power data (used for spinout detection)  <br /></td></tr>
+<tr class="separator:a79815993aef63ae6163847a86b813775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe016be9e545bc23a346420bd3ea513f" id="r_afe016be9e545bc23a346420bd3ea513f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#afe016be9e545bc23a346420bd3ea513f">reset</a> (<a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3d">ResetAction</a> action=<a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3da6fc93a32f002981bc0ea5d489c8389aa">ResetAction::Reboot</a>)</td></tr>
+<tr class="memdesc:afe016be9e545bc23a346420bd3ea513f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the ODrive with the given action  <br /></td></tr>
+<tr class="separator:afe016be9e545bc23a346420bd3ea513f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e95612816b8ff299b7eec3897757af4" id="r_a9e95612816b8ff299b7eec3897757af4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a9e95612816b8ff299b7eec3897757af4">onFeedback</a> (void(*callback)(<a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___encoder___estimates__msg__t.html">Get_Encoder_Estimates_msg_t</a> &amp;feedback, void *user_data), void *user_data=nullptr)</td></tr>
+<tr class="memdesc:a9e95612816b8ff299b7eec3897757af4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a callback for ODrive feedback processing.  <br /></td></tr>
+<tr class="separator:a9e95612816b8ff299b7eec3897757af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac99960014b714bcacba27d47b3fa5b34" id="r_ac99960014b714bcacba27d47b3fa5b34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ac99960014b714bcacba27d47b3fa5b34">onStatus</a> (void(*callback)(<a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_heartbeat__msg__t.html">Heartbeat_msg_t</a> &amp;feedback, void *user_data), void *user_data=nullptr)</td></tr>
+<tr class="memdesc:ac99960014b714bcacba27d47b3fa5b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a callback for ODrive axis state feedback.  <br /></td></tr>
+<tr class="separator:ac99960014b714bcacba27d47b3fa5b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a977dd9baa6a0dbc7cf7519648120d917" id="r_a977dd9baa6a0dbc7cf7519648120d917"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a977dd9baa6a0dbc7cf7519648120d917">onReceive</a> (uint32_t id, uint8_t length, const uint8_t *data)</td></tr>
+<tr class="memdesc:a977dd9baa6a0dbc7cf7519648120d917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes received CAN messages for the ODrive.  <br /></td></tr>
+<tr class="separator:a977dd9baa6a0dbc7cf7519648120d917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc7ab820dd8dd66e6283ca167ccd61e" id="r_abbc7ab820dd8dd66e6283ca167ccd61e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:abbc7ab820dd8dd66e6283ca167ccd61e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#abbc7ab820dd8dd66e6283ca167ccd61e">request</a> (T &amp;msg, uint16_t timeout_ms=10)</td></tr>
+<tr class="memdesc:abbc7ab820dd8dd66e6283ca167ccd61e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a request message and awaits a response.  <br /></td></tr>
+<tr class="separator:abbc7ab820dd8dd66e6283ca167ccd61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef90ecf36110956300116cf4509b2df" id="r_aaef90ecf36110956300116cf4509b2df"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aaef90ecf36110956300116cf4509b2df"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aaef90ecf36110956300116cf4509b2df">send</a> (const T &amp;msg)</td></tr>
+<tr class="memdesc:aaef90ecf36110956300116cf4509b2df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a specified message over CAN.  <br /></td></tr>
+<tr class="separator:aaef90ecf36110956300116cf4509b2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6d8ef8bb0a7f1e5e2710359246f1dc8" id="r_ab6d8ef8bb0a7f1e5e2710359246f1dc8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ab6d8ef8bb0a7f1e5e2710359246f1dc8"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ab6d8ef8bb0a7f1e5e2710359246f1dc8">getEndpoint</a> (uint16_t endpoint_id, uint16_t timeout_ms=10)</td></tr>
+<tr class="memdesc:ab6d8ef8bb0a7f1e5e2710359246f1dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get value at the endpoint  <br /></td></tr>
+<tr class="separator:ab6d8ef8bb0a7f1e5e2710359246f1dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab78249891e8b16a38a523b51dd1d6dcd" id="r_ab78249891e8b16a38a523b51dd1d6dcd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ab78249891e8b16a38a523b51dd1d6dcd"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ab78249891e8b16a38a523b51dd1d6dcd">setEndpoint</a> (uint16_t endpoint_id, T value)</td></tr>
+<tr class="memdesc:ab78249891e8b16a38a523b51dd1d6dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set endpoint to value  <br /></td></tr>
+<tr class="separator:ab78249891e8b16a38a523b51dd1d6dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class CanIo&gt;<br />
+class alps::cmn::communication::odrive::ODriveCAN&lt; CanIo &gt;</div><p>ODriveとCAN通信を行うクラス </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">CanIo</td><td>CAN通信IOの実装クラス </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="ae670256d3a4c2bbce3804d4103483c3d" name="ae670256d3a4c2bbce3804d4103483c3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae670256d3a4c2bbce3804d4103483c3d">&#9670;&#160;</a></span>ResetAction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3d">alps::cmn::communication::odrive::ODriveCAN::ResetAction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="ae670256d3a4c2bbce3804d4103483c3da6fc93a32f002981bc0ea5d489c8389aa" name="ae670256d3a4c2bbce3804d4103483c3da6fc93a32f002981bc0ea5d489c8389aa"></a>Reboot&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae670256d3a4c2bbce3804d4103483c3da8e9e88a75ce5b16056beaf8f282d1d99" name="ae670256d3a4c2bbce3804d4103483c3da8e9e88a75ce5b16056beaf8f282d1d99"></a>SaveConfiguration&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae670256d3a4c2bbce3804d4103483c3da20c5b33801e2a7846ca527b2c462c6f0" name="ae670256d3a4c2bbce3804d4103483c3da20c5b33801e2a7846ca527b2c462c6f0"></a>EraseConfiguration&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="ac43cab5453e957bf98e52dd86fbc14b7" name="ac43cab5453e957bf98e52dd86fbc14b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac43cab5453e957bf98e52dd86fbc14b7">&#9670;&#160;</a></span>ODriveCAN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::ODriveCAN </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf.html">ODriveCanIntf</a>&lt; CanIo &gt; &amp;&#160;</td>
+          <td class="paramname"><em>can_intf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>node_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="aeec19bd123db0951cbc7fa8e97c0844e" name="aeec19bd123db0951cbc7fa8e97c0844e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeec19bd123db0951cbc7fa8e97c0844e">&#9670;&#160;</a></span>clearErrors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::clearErrors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clear all errors on the ODrive. </p>
+<p>This function returns immediately and does not check if the ODrive received the CAN message. </p>
+
+</div>
+</div>
+<a id="afe788884a154496b46d8213194b69e51" name="afe788884a154496b46d8213194b69e51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe788884a154496b46d8213194b69e51">&#9670;&#160;</a></span>setState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::setState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045">ODriveAxisState</a>&#160;</td>
+          <td class="paramname"><em>requested_state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tells the ODrive to change its axis state. </p>
+<p>This function returns immediately and does not check if the ODrive received the CAN message. </p>
+
+</div>
+</div>
+<a id="a09b110ce1810a216d4c27a109421f309" name="a09b110ce1810a216d4c27a109421f309"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09b110ce1810a216d4c27a109421f309">&#9670;&#160;</a></span>setControllerMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::setControllerMode </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>control_mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>input_mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the control mode and input mode of the ODrive. </p>
+<p>This function returns immediately and does not check if the ODrive received the CAN message. </p>
+
+</div>
+</div>
+<a id="af5f781a5d39b856de685418584b5cf4c" name="af5f781a5d39b856de685418584b5cf4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f781a5d39b856de685418584b5cf4c">&#9670;&#160;</a></span>setPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::setPosition </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>velocity_feedforward</em> = <code>0.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>torque_feedforward</em> = <code>0.0f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends a position setpoint with optional velocity and torque feedforward. </p>
+<p>This function returns immediately and does not check if the ODrive received the CAN message. </p>
+
+</div>
+</div>
+<a id="a41689ad7a2c19942990b05b6232f7ab3" name="a41689ad7a2c19942990b05b6232f7ab3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41689ad7a2c19942990b05b6232f7ab3">&#9670;&#160;</a></span>setVelocity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::setVelocity </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>velocity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>torque_feedforward</em> = <code>0.0f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends a velocity setpoint with optional torque feedforward. </p>
+<p>This function returns immediately and does not check if the ODrive received the CAN message. </p>
+
+</div>
+</div>
+<a id="abcba1b20a54e6947f3610e5fd9334b29" name="abcba1b20a54e6947f3610e5fd9334b29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcba1b20a54e6947f3610e5fd9334b29">&#9670;&#160;</a></span>setTorque()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::setTorque </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>torque</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends a torque setpoint to the ODrive. </p>
+<p>This function returns immediately and does not check if the ODrive received the CAN message. </p>
+
+</div>
+</div>
+<a id="a1e04499765575ac185ae61c22440e97b" name="a1e04499765575ac185ae61c22440e97b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e04499765575ac185ae61c22440e97b">&#9670;&#160;</a></span>setLimits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::setLimits </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>velocity_limit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>current_soft_max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the velocity and current limits </p>
+<p>This function returns immediately and does not check if the ODrive received the CAN message. </p>
+
+</div>
+</div>
+<a id="aa88e464d5abe8851728ef8c46bc635a1" name="aa88e464d5abe8851728ef8c46bc635a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa88e464d5abe8851728ef8c46bc635a1">&#9670;&#160;</a></span>setPosGain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::setPosGain </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>pos_gain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the position gain </p>
+<p>This function returns immediately and does not check if the ODrive received the CAN message. </p>
+
+</div>
+</div>
+<a id="af7f7fb528ffdc3cc528181a80c85f0a4" name="af7f7fb528ffdc3cc528181a80c85f0a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7f7fb528ffdc3cc528181a80c85f0a4">&#9670;&#160;</a></span>setVelGains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::setVelGains </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>vel_gain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>vel_integrator_gain</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the velocity and velocity integrator gains </p>
+<p>This function returns immediately and does not check if the ODrive received the CAN message. </p>
+
+</div>
+</div>
+<a id="af24d07f9d824b44b3d54d5522f799871" name="af24d07f9d824b44b3d54d5522f799871"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af24d07f9d824b44b3d54d5522f799871">&#9670;&#160;</a></span>setAbsolutePosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::setAbsolutePosition </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>abs_pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the encoder's absolute position and enables absolute positioning </p>
+<p>This function returns immediately and does not check if the ODrive received the CAN message. </p>
+
+</div>
+</div>
+<a id="aa48ecd372774ac7ab1f4cc9a0fbcdd35" name="aa48ecd372774ac7ab1f4cc9a0fbcdd35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa48ecd372774ac7ab1f4cc9a0fbcdd35">&#9670;&#160;</a></span>setTrapezoidalVelLimit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::setTrapezoidalVelLimit </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>vel_limit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the coast velocity for subsequent trapezoidal moves </p>
+<p>This function returns immediately and does not check if the ODrive received the CAN message. </p>
+
+</div>
+</div>
+<a id="a41d7cb399c2c582c4d6c29a802acc471" name="a41d7cb399c2c582c4d6c29a802acc471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41d7cb399c2c582c4d6c29a802acc471">&#9670;&#160;</a></span>setTrapezoidalAccelLimits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::setTrapezoidalAccelLimits </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>accel_limit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>decel_limit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the acceleration and deceleration values for subsequent trapezoidal moves </p>
+<p>This function returns immediately and does not check if the ODrive received the CAN message. </p>
+
+</div>
+</div>
+<a id="a4bae06d7f916e8c7240d4ebce01ade18" name="a4bae06d7f916e8c7240d4ebce01ade18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bae06d7f916e8c7240d4ebce01ade18">&#9670;&#160;</a></span>getCurrents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::getCurrents </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___iq__msg__t.html">Get_Iq_msg_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout_ms</em> = <code>10</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Requests motor current. Iq_measured represents torque-generating current </p>
+<p>This function will block and wait for up to timeout_ms (default 10msec) for ODrive to reply </p>
+
+</div>
+</div>
+<a id="a4f2a32a043c4ab95fbd38d4b9f0991e8" name="a4f2a32a043c4ab95fbd38d4b9f0991e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f2a32a043c4ab95fbd38d4b9f0991e8">&#9670;&#160;</a></span>getTemperature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::getTemperature </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___temperature__msg__t.html">Get_Temperature_msg_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout_ms</em> = <code>10</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Requests motor temperature </p>
+<p>This function will block and wait for up to timeout_ms (default 10msec) for ODrive to reply </p>
+
+</div>
+</div>
+<a id="a28bb063cd38cd867c0e3c93a780734c5" name="a28bb063cd38cd867c0e3c93a780734c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28bb063cd38cd867c0e3c93a780734c5">&#9670;&#160;</a></span>getError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::getError </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___error__msg__t.html">Get_Error_msg_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout_ms</em> = <code>10</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Requests error information </p>
+<p>This function will block and wait for up to timeout_ms (default 10msec) for ODrive to reply </p>
+
+</div>
+</div>
+<a id="a0448fb2dc2cb1f366dd9d67a43a7f0f5" name="a0448fb2dc2cb1f366dd9d67a43a7f0f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0448fb2dc2cb1f366dd9d67a43a7f0f5">&#9670;&#160;</a></span>getVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::getVersion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___version__msg__t.html">Get_Version_msg_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout_ms</em> = <code>10</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Requests hardware and firmware version information </p>
+<p>This function will block and wait for up to timeout_ms (default 10msec) for ODrive to reply </p>
+
+</div>
+</div>
+<a id="ab55afa140b7c4df87d3a211943f572d4" name="ab55afa140b7c4df87d3a211943f572d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab55afa140b7c4df87d3a211943f572d4">&#9670;&#160;</a></span>getFeedback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::getFeedback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___encoder___estimates__msg__t.html">Get_Encoder_Estimates_msg_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout_ms</em> = <code>10</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Requests encoder feedback data. May trigger onFeedback callback if it's registered </p>
+<p>This function will block and wait for up to timeout_ms (default 10msec) for ODrive to reply </p>
+
+</div>
+</div>
+<a id="a2652eb46c8e53d24dec74efb53c74971" name="a2652eb46c8e53d24dec74efb53c74971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2652eb46c8e53d24dec74efb53c74971">&#9670;&#160;</a></span>getBusVI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::getBusVI </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___bus___voltage___current__msg__t.html">Get_Bus_Voltage_Current_msg_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout_ms</em> = <code>10</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Requests ODrive DC bus voltage and current </p>
+<p>This function will block and wait for up to timeout_ms (default 10msec) for ODrive to reply </p>
+
+</div>
+</div>
+<a id="a79815993aef63ae6163847a86b813775" name="a79815993aef63ae6163847a86b813775"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79815993aef63ae6163847a86b813775">&#9670;&#160;</a></span>getPower()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::getPower </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___powers__msg__t.html">Get_Powers_msg_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout_ms</em> = <code>10</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Requests mechanical and electrical power data (used for spinout detection) </p>
+<p>This function will block and wait for up to timeout_ms (default 10msec) for ODrive to reply </p>
+
+</div>
+</div>
+<a id="afe016be9e545bc23a346420bd3ea513f" name="afe016be9e545bc23a346420bd3ea513f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe016be9e545bc23a346420bd3ea513f">&#9670;&#160;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::reset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3d">ResetAction</a>&#160;</td>
+          <td class="paramname"><em>action</em> = <code><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3da6fc93a32f002981bc0ea5d489c8389aa">ResetAction::Reboot</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resets the ODrive with the given action </p>
+<p>Valid actions:</p><ul>
+<li>Reboot (0)</li>
+<li>Save (1)</li>
+<li>Erase (2) </li>
+</ul>
+
+</div>
+</div>
+<a id="a9e95612816b8ff299b7eec3897757af4" name="a9e95612816b8ff299b7eec3897757af4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e95612816b8ff299b7eec3897757af4">&#9670;&#160;</a></span>onFeedback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::onFeedback </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(<a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___encoder___estimates__msg__t.html">Get_Encoder_Estimates_msg_t</a> &amp;feedback, void *user_data)&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a callback for ODrive feedback processing. </p>
+
+</div>
+</div>
+<a id="ac99960014b714bcacba27d47b3fa5b34" name="ac99960014b714bcacba27d47b3fa5b34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac99960014b714bcacba27d47b3fa5b34">&#9670;&#160;</a></span>onStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::onStatus </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(<a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_heartbeat__msg__t.html">Heartbeat_msg_t</a> &amp;feedback, void *user_data)&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a callback for ODrive axis state feedback. </p>
+
+</div>
+</div>
+<a id="a977dd9baa6a0dbc7cf7519648120d917" name="a977dd9baa6a0dbc7cf7519648120d917"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a977dd9baa6a0dbc7cf7519648120d917">&#9670;&#160;</a></span>onReceive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::onReceive </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Processes received CAN messages for the ODrive. </p>
+
+</div>
+</div>
+<a id="abbc7ab820dd8dd66e6283ca167ccd61e" name="abbc7ab820dd8dd66e6283ca167ccd61e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbc7ab820dd8dd66e6283ca167ccd61e">&#9670;&#160;</a></span>request()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::request </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout_ms</em> = <code>10</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends a request message and awaits a response. </p>
+<p>Blocks until the response is received or the timeout is reached. Returns false if the ODrive does not respond within the specified timeout. </p>
+
+</div>
+</div>
+<a id="aaef90ecf36110956300116cf4509b2df" name="aaef90ecf36110956300116cf4509b2df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaef90ecf36110956300116cf4509b2df">&#9670;&#160;</a></span>send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::send </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends a specified message over CAN. </p>
+
+</div>
+</div>
+<a id="ab6d8ef8bb0a7f1e5e2710359246f1dc8" name="ab6d8ef8bb0a7f1e5e2710359246f1dc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6d8ef8bb0a7f1e5e2710359246f1dc8">&#9670;&#160;</a></span>getEndpoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::getEndpoint </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>endpoint_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout_ms</em> = <code>10</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get value at the endpoint </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The data type expected from the endpoint </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint_id</td><td>Unique ID from flat_endpoints.json </td></tr>
+    <tr><td class="paramname">timeout_ms</td><td>Time to wait for a response from ODrive</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>T Data from the endpoint, or 0 on timeout</dd></dl>
+<p>Blocks until the response is received or the timeout is reached. </p>
+
+</div>
+</div>
+<a id="ab78249891e8b16a38a523b51dd1d6dcd" name="ab78249891e8b16a38a523b51dd1d6dcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab78249891e8b16a38a523b51dd1d6dcd">&#9670;&#160;</a></span>setEndpoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CanIo &gt; </div>
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a>&lt; CanIo &gt;::setEndpoint </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>endpoint_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set endpoint to value </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Type of the value from flat_endpoints.json </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint_id</td><td>Unique ID of endpoint from flat_endpoints.json </td></tr>
+    <tr><td class="paramname">value</td><td>value to write to the endpoint</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This function returns immediately and does not check if the ODrive received the CAN message. </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/communication/<a class="el" href="odrive__can_8h_source.html">odrive_can.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacealps.html">alps</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn.html">cmn</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn_1_1communication.html">communication</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html">odrive</a></li><li class="navelem"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">ODriveCAN</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

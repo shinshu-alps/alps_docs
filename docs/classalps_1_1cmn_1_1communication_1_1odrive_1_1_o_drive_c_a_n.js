@@ -1,0 +1,36 @@
+var classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n =
+[
+    [ "ResetAction", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3d", [
+      [ "Reboot", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3da6fc93a32f002981bc0ea5d489c8389aa", null ],
+      [ "SaveConfiguration", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3da8e9e88a75ce5b16056beaf8f282d1d99", null ],
+      [ "EraseConfiguration", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3da20c5b33801e2a7846ca527b2c462c6f0", null ]
+    ] ],
+    [ "ODriveCAN", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ac43cab5453e957bf98e52dd86fbc14b7", null ],
+    [ "clearErrors", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aeec19bd123db0951cbc7fa8e97c0844e", null ],
+    [ "setState", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#afe788884a154496b46d8213194b69e51", null ],
+    [ "setControllerMode", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a09b110ce1810a216d4c27a109421f309", null ],
+    [ "setPosition", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#af5f781a5d39b856de685418584b5cf4c", null ],
+    [ "setVelocity", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a41689ad7a2c19942990b05b6232f7ab3", null ],
+    [ "setTorque", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#abcba1b20a54e6947f3610e5fd9334b29", null ],
+    [ "setLimits", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a1e04499765575ac185ae61c22440e97b", null ],
+    [ "setPosGain", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aa88e464d5abe8851728ef8c46bc635a1", null ],
+    [ "setVelGains", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#af7f7fb528ffdc3cc528181a80c85f0a4", null ],
+    [ "setAbsolutePosition", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#af24d07f9d824b44b3d54d5522f799871", null ],
+    [ "setTrapezoidalVelLimit", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aa48ecd372774ac7ab1f4cc9a0fbcdd35", null ],
+    [ "setTrapezoidalAccelLimits", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a41d7cb399c2c582c4d6c29a802acc471", null ],
+    [ "getCurrents", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a4bae06d7f916e8c7240d4ebce01ade18", null ],
+    [ "getTemperature", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a4f2a32a043c4ab95fbd38d4b9f0991e8", null ],
+    [ "getError", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a28bb063cd38cd867c0e3c93a780734c5", null ],
+    [ "getVersion", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a0448fb2dc2cb1f366dd9d67a43a7f0f5", null ],
+    [ "getFeedback", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ab55afa140b7c4df87d3a211943f572d4", null ],
+    [ "getBusVI", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a2652eb46c8e53d24dec74efb53c74971", null ],
+    [ "getPower", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a79815993aef63ae6163847a86b813775", null ],
+    [ "reset", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#afe016be9e545bc23a346420bd3ea513f", null ],
+    [ "onFeedback", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a9e95612816b8ff299b7eec3897757af4", null ],
+    [ "onStatus", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ac99960014b714bcacba27d47b3fa5b34", null ],
+    [ "onReceive", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#a977dd9baa6a0dbc7cf7519648120d917", null ],
+    [ "request", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#abbc7ab820dd8dd66e6283ca167ccd61e", null ],
+    [ "send", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#aaef90ecf36110956300116cf4509b2df", null ],
+    [ "getEndpoint", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ab6d8ef8bb0a7f1e5e2710359246f1dc8", null ],
+    [ "setEndpoint", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ab78249891e8b16a38a523b51dd1d6dcd", null ]
+];

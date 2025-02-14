@@ -16,5 +16,6 @@ var searchData=
   ['cantorostopicbridge_13',['CanToRosTopicBridge',['../classalps_1_1ros2_1_1communication_1_1_can_to_ros_topic_bridge.html',1,'alps::ros2::communication']]],
   ['cantypeddatatransceiver_14',['CanTypedDataTransceiver',['../classalps_1_1cmn_1_1communication_1_1_can_typed_data_transceiver.html',1,'alps::cmn::communication']]],
   ['changeratelimiter_15',['ChangeRateLimiter',['../classalps_1_1cmn_1_1control_1_1_change_rate_limiter.html',1,'alps::cmn::control']]],
-  ['cobs_16',['Cobs',['../classalps_1_1cmn_1_1communication_1_1_cobs.html',1,'alps::cmn::communication']]]
+  ['clear_5ferrors_5fmsg_5ft_16',['Clear_Errors_msg_t',['../structalps_1_1cmn_1_1communication_1_1odrive_1_1_clear___errors__msg__t.html',1,'alps::cmn::communication::odrive']]],
+  ['cobs_17',['Cobs',['../classalps_1_1cmn_1_1communication_1_1_cobs.html',1,'alps::cmn::communication']]]
 ];

@@ -1,0 +1,1124 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps::cmn::communication::odrive 名前空間</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('namespacealps_1_1cmn_1_1communication_1_1odrive.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#enum-members">列挙型</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle"><div class="title">alps::cmn::communication::odrive 名前空間</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_address__msg__t.html">Address_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_clear___errors__msg__t.html">Clear_Errors_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_enter___d_f_u___mode__msg__t.html">Enter_DFU_Mode_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_estop__msg__t.html">Estop_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___bus___voltage___current__msg__t.html">Get_Bus_Voltage_Current_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___encoder___estimates__msg__t.html">Get_Encoder_Estimates_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___error__msg__t.html">Get_Error_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___iq__msg__t.html">Get_Iq_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___powers__msg__t.html">Get_Powers_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___temperature__msg__t.html">Get_Temperature_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___torques__msg__t.html">Get_Torques_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___version__msg__t.html">Get_Version_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_heartbeat__msg__t.html">Heartbeat_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">ODriveCAN</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ODriveとCAN通信を行うクラス  <a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf.html">ODriveCanIntf</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ODriveのCanIOのインターフェース  <a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html">ODriveCanIntfWrapper</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_reboot__msg__t.html">Reboot_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___absolute___position__msg__t.html">Set_Absolute_Position_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___axis___state__msg__t.html">Set_Axis_State_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___controller___mode__msg__t.html">Set_Controller_Mode_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___pos__msg__t.html">Set_Input_Pos_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___torque__msg__t.html">Set_Input_Torque_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___vel__msg__t.html">Set_Input_Vel_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___limits__msg__t.html">Set_Limits_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___pos___gain__msg__t.html">Set_Pos_Gain_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___accel___limits__msg__t.html">Set_Traj_Accel_Limits_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___inertia__msg__t.html">Set_Traj_Inertia_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___vel___limit__msg__t.html">Set_Traj_Vel_Limit_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___vel___gains__msg__t.html">Set_Vel_Gains_msg_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:aac68d8df9d0e5751f4e079c6be4369b6" id="r_aac68d8df9d0e5751f4e079c6be4369b6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aac68d8df9d0e5751f4e079c6be4369b6">ODriveGpioMode</a> { <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aac68d8df9d0e5751f4e079c6be4369b6a14adc45fa702426693f3661755dc96a7">GPIO_MODE_DIGITAL</a> = 0
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aac68d8df9d0e5751f4e079c6be4369b6ae3b5b004fcb6cf87d9d8645c44148ce6">GPIO_MODE_DIGITAL_PULL_UP</a> = 1
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aac68d8df9d0e5751f4e079c6be4369b6aaafc568cb2d8fbfdf4d57f93b40c833b">GPIO_MODE_DIGITAL_PULL_DOWN</a> = 2
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aac68d8df9d0e5751f4e079c6be4369b6a1c1b5448c94907d38eebcdae17f33632">GPIO_MODE_ANALOG_IN</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aac68d8df9d0e5751f4e079c6be4369b6aaa3f74014c9f4813ccecc2db0df25842">GPIO_MODE_UART_A</a> = 4
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aac68d8df9d0e5751f4e079c6be4369b6a6523189171bb44715ba1fff86d8a52aa">GPIO_MODE_UART_B</a> = 5
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aac68d8df9d0e5751f4e079c6be4369b6aacaacffdf65afcc8213cb45b31417f30">GPIO_MODE_UART_C</a> = 6
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aac68d8df9d0e5751f4e079c6be4369b6a3f88f9a1067f926550d0e5fe34954c75">GPIO_MODE_CAN_A</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aac68d8df9d0e5751f4e079c6be4369b6afeb4359e90b3d6cf651f915f53e9faec">GPIO_MODE_I2C_A</a> = 8
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aac68d8df9d0e5751f4e079c6be4369b6a2a7d8c46902909c45eded40889e57623">GPIO_MODE_SPI_A</a> = 9
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aac68d8df9d0e5751f4e079c6be4369b6a3521daba62dd50707d78f80c83dc21a0">GPIO_MODE_PWM</a> = 10
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aac68d8df9d0e5751f4e079c6be4369b6a06d435a013ae99a90631b551379b22fd">GPIO_MODE_ENC0</a> = 11
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aac68d8df9d0e5751f4e079c6be4369b6af64f177629091acfdfef8252e7fa0077">GPIO_MODE_ENC1</a> = 12
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aac68d8df9d0e5751f4e079c6be4369b6a0522ff6407aa812f4f08f9eeb63162bd">GPIO_MODE_ENC2</a> = 13
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aac68d8df9d0e5751f4e079c6be4369b6a4c9788afe15def760f9bb2cf0f28f8ce">GPIO_MODE_MECH_BRAKE</a> = 14
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aac68d8df9d0e5751f4e079c6be4369b6a0f4f3f3e68934cb45040122e5dc5d242">GPIO_MODE_STATUS</a> = 15
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aac68d8df9d0e5751f4e079c6be4369b6a493a34e777b172ed37607dabf35a29a5">GPIO_MODE_BRAKE_RES</a> = 16
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aac68d8df9d0e5751f4e079c6be4369b6a1f0d4f8ec30a32ac2d3069218bfedea1">GPIO_MODE_AUTO</a> = 17
+<br />
+ }</td></tr>
+<tr class="separator:aac68d8df9d0e5751f4e079c6be4369b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f5aac193965d240aabdc1df0d3e8de" id="r_ab0f5aac193965d240aabdc1df0d3e8de"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ab0f5aac193965d240aabdc1df0d3e8de">ODriveStreamProtocolType</a> { <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ab0f5aac193965d240aabdc1df0d3e8dea890703fa109c7a2e78c54a0937c9a202">STREAM_PROTOCOL_TYPE_FIBRE</a> = 0
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ab0f5aac193965d240aabdc1df0d3e8dea0779d5f0479967fdf6b7f3ff394de99c">STREAM_PROTOCOL_TYPE_ASCII</a> = 1
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ab0f5aac193965d240aabdc1df0d3e8dea4cf74b492395bb7491dbbb9a22f61e4b">STREAM_PROTOCOL_TYPE_STDOUT</a> = 2
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ab0f5aac193965d240aabdc1df0d3e8dea537baf27da3aea4d105ab32487242e80">STREAM_PROTOCOL_TYPE_ASCII_AND_STDOUT</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ab0f5aac193965d240aabdc1df0d3e8dea00bbe0c14c7b8504f7cca7a793f0975b">STREAM_PROTOCOL_TYPE_OTHER</a> = 4
+<br />
+ }</td></tr>
+<tr class="separator:ab0f5aac193965d240aabdc1df0d3e8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7891eafe699c3d2c5cbe60ab74403c5b" id="r_a7891eafe699c3d2c5cbe60ab74403c5b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a7891eafe699c3d2c5cbe60ab74403c5b">ODriveProtocol</a> { <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a7891eafe699c3d2c5cbe60ab74403c5bac3e01b06b160e5942dd7eefd24ee814f">PROTOCOL_NONE</a> = 0x00000000
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a7891eafe699c3d2c5cbe60ab74403c5ba6ef3ba90e5588441880c930116daf5b5">PROTOCOL_SIMPLE</a> = 0x00000001
+ }</td></tr>
+<tr class="separator:a7891eafe699c3d2c5cbe60ab74403c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace1e8c7e98c4e2c81345d128ac9c2045" id="r_ace1e8c7e98c4e2c81345d128ac9c2045"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045">ODriveAxisState</a> { <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045a93ec68b14b0aa6e46087d7a45ef2d9a5">AXIS_STATE_UNDEFINED</a> = 0
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045aafd81ef284b6d7c465a2ae9f58a1b635">AXIS_STATE_IDLE</a> = 1
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045a9e3b8e33951f4e30ce2a3ddaeefdd6ea">AXIS_STATE_STARTUP_SEQUENCE</a> = 2
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045a2b83076692dc3d1f57ed6afdde9f1e2e">AXIS_STATE_FULL_CALIBRATION_SEQUENCE</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045afc47304c44f507aea658ec06d1fd0280">AXIS_STATE_MOTOR_CALIBRATION</a> = 4
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045a748b0a41af55e03c6adb4fc9290d036c">AXIS_STATE_ENCODER_INDEX_SEARCH</a> = 6
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045addae05f95c62ba1a319ecd3f075dc045">AXIS_STATE_ENCODER_OFFSET_CALIBRATION</a> = 7
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045a01f8ce2a04e145767551ef4fbf49c026">AXIS_STATE_CLOSED_LOOP_CONTROL</a> = 8
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045af508126dca082a063375f2417384b244">AXIS_STATE_LOCKIN_SPIN</a> = 9
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045a865bda1cb4027d81814d1f4f707815cb">AXIS_STATE_ENCODER_DIR_FIND</a> = 10
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045a0a15e1a32799832e63b8f0e11b8391b8">AXIS_STATE_HOMING</a> = 11
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045a98dbd6bcbad0bb2df766e1d30ad7b0b4">AXIS_STATE_ENCODER_HALL_POLARITY_CALIBRATION</a> = 12
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045a18766f706fd00f76ac56afe729dd469a">AXIS_STATE_ENCODER_HALL_PHASE_CALIBRATION</a> = 13
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045a04add5610665a661cbc7437f00d4e4a7">AXIS_STATE_ANTICOGGING_CALIBRATION</a> = 14
+<br />
+ }</td></tr>
+<tr class="separator:ace1e8c7e98c4e2c81345d128ac9c2045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5894f251f902a9ff62bfe1c962f845f2" id="r_a5894f251f902a9ff62bfe1c962f845f2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a5894f251f902a9ff62bfe1c962f845f2">ODriveControlMode</a> { <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a5894f251f902a9ff62bfe1c962f845f2a9919492cdc036185f235f21033c09980">CONTROL_MODE_VOLTAGE_CONTROL</a> = 0
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a5894f251f902a9ff62bfe1c962f845f2a330b226805cf11a46f759f5fbadb7d3c">CONTROL_MODE_TORQUE_CONTROL</a> = 1
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a5894f251f902a9ff62bfe1c962f845f2a8cfb5415f0fef3f6ebd1164bcc845630">CONTROL_MODE_VELOCITY_CONTROL</a> = 2
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a5894f251f902a9ff62bfe1c962f845f2ae16bbbdbd90bb0bcb0b1bfb4414728b1">CONTROL_MODE_POSITION_CONTROL</a> = 3
+ }</td></tr>
+<tr class="separator:a5894f251f902a9ff62bfe1c962f845f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40bb5729532b77be0e316c841e1cdd2f" id="r_a40bb5729532b77be0e316c841e1cdd2f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a40bb5729532b77be0e316c841e1cdd2f">ODriveComponentStatus</a> { <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a40bb5729532b77be0e316c841e1cdd2fa840248f44c8a03771a3a8e706e2c4507">COMPONENT_STATUS_NOMINAL</a> = 0
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a40bb5729532b77be0e316c841e1cdd2fa4250f15a51c8313719d8dc4c4b6be8d5">COMPONENT_STATUS_NO_RESPONSE</a> = 1
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a40bb5729532b77be0e316c841e1cdd2faca52497aa18919ed554cf65e3c0c6b3d">COMPONENT_STATUS_INVALID_RESPONSE_LENGTH</a> = 2
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a40bb5729532b77be0e316c841e1cdd2fafde5f27a4469565fa28ed2393751bcab">COMPONENT_STATUS_PARITY_MISMATCH</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a40bb5729532b77be0e316c841e1cdd2fa712ded3d1a5d600a84236a8d355e1df1">COMPONENT_STATUS_ILLEGAL_HALL_STATE</a> = 4
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a40bb5729532b77be0e316c841e1cdd2fa4a60f5df8e6c29bddc7415724569d465">COMPONENT_STATUS_POLARITY_NOT_CALIBRATED</a> = 5
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a40bb5729532b77be0e316c841e1cdd2fad9b215097d91ac0bc969cf1abfb86e81">COMPONENT_STATUS_PHASES_NOT_CALIBRATED</a> = 6
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a40bb5729532b77be0e316c841e1cdd2fac6b02118a94194e79a66820b89788824">COMPONENT_STATUS_NUMERICAL_ERROR</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a40bb5729532b77be0e316c841e1cdd2faa8ab0092406a90b151148c58b75a7cf6">COMPONENT_STATUS_MISSING_INPUT</a> = 8
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a40bb5729532b77be0e316c841e1cdd2fab3cda749c8fb50dab5af193d0e526786">COMPONENT_STATUS_RELATIVE_MODE</a> = 9
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a40bb5729532b77be0e316c841e1cdd2fad97fa60c6da10da074787639388b46d1">COMPONENT_STATUS_UNCONFIGURED</a> = 10
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a40bb5729532b77be0e316c841e1cdd2fa77173f1dcdc3983bce35a6920615f5d0">COMPONENT_STATUS_OVERSPEED</a> = 11
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a40bb5729532b77be0e316c841e1cdd2fa4a12dea04e73309e66a19e995b046019">COMPONENT_STATUS_INDEX_NOT_FOUND</a> = 12
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a40bb5729532b77be0e316c841e1cdd2fa8b54e7b0a256d1b9095451c024429333">COMPONENT_STATUS_BAD_CONFIG</a> = 13
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a40bb5729532b77be0e316c841e1cdd2fa917acab8ec203c1e45d7f343501e0ab4">COMPONENT_STATUS_NOT_ENABLED</a> = 14
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a40bb5729532b77be0e316c841e1cdd2fa86223a798493f2503c932476ca2f87e2">COMPONENT_STATUS_SPINOUT_DETECTED</a> = 15
+<br />
+ }</td></tr>
+<tr class="separator:a40bb5729532b77be0e316c841e1cdd2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33c3f44b0148a1725b8dca9a36b3be3e" id="r_a33c3f44b0148a1725b8dca9a36b3be3e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3e">ODriveError</a> { <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea53a7af0fe0c10a3420570c12ffd12738">ODRIVE_ERROR_NONE</a> = 0x00000000
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea9ab832be9d31a8ada2b035d4579762f0">ODRIVE_ERROR_INITIALIZING</a> = 0x00000001
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3eabd07b4a385f221be3c8ae14050e1c80e">ODRIVE_ERROR_SYSTEM_LEVEL</a> = 0x00000002
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea908372398a6b4c65a4260a9c3308814a">ODRIVE_ERROR_TIMING_ERROR</a> = 0x00000004
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea86f53b24118aaef63c14e5bd23f0be97">ODRIVE_ERROR_MISSING_ESTIMATE</a> = 0x00000008
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea051b54ac927c5b6d4dde740a3a9cc6bd">ODRIVE_ERROR_BAD_CONFIG</a> = 0x00000010
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea3d987aa2acf6e69945e97ff270748bb1">ODRIVE_ERROR_DRV_FAULT</a> = 0x00000020
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea5dc4770a0442f074cd5efe40f52b290d">ODRIVE_ERROR_MISSING_INPUT</a> = 0x00000040
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3eadb7ce30fb8f1d040870cb8be80b30da0">ODRIVE_ERROR_DC_BUS_OVER_VOLTAGE</a> = 0x00000100
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea7e6c001f33de89924976d4879f9e4f74">ODRIVE_ERROR_DC_BUS_UNDER_VOLTAGE</a> = 0x00000200
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3eabfd554de73f208b0d5188c30b00590da">ODRIVE_ERROR_DC_BUS_OVER_CURRENT</a> = 0x00000400
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea33ee23e2ed92c0eb43dc4dba801751d3">ODRIVE_ERROR_DC_BUS_OVER_REGEN_CURRENT</a> = 0x00000800
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea532430d4c4b916ece3602bbdbe0e3a70">ODRIVE_ERROR_CURRENT_LIMIT_VIOLATION</a> = 0x00001000
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea5ebef635ce77799aae50878a927e3431">ODRIVE_ERROR_MOTOR_OVER_TEMP</a> = 0x00002000
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3eace5b899e88387a6f1803aff248cc37ff">ODRIVE_ERROR_INVERTER_OVER_TEMP</a> = 0x00004000
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3eafa904885481f24f7533dbe9c5d7b0354">ODRIVE_ERROR_VELOCITY_LIMIT_VIOLATION</a> = 0x00008000
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3eabfab8646fddeac522482dd081df684d8">ODRIVE_ERROR_POSITION_LIMIT_VIOLATION</a> = 0x00010000
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea72f7c9d2fff8e242cecb09e303cfa76d">ODRIVE_ERROR_WATCHDOG_TIMER_EXPIRED</a> = 0x01000000
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea643d271066bd701e0830544d74d73f6f">ODRIVE_ERROR_ESTOP_REQUESTED</a> = 0x02000000
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea7c7fb70c991abf8068597ad336a63ed2">ODRIVE_ERROR_SPINOUT_DETECTED</a> = 0x04000000
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea380997296c78b7f22a4e1ac95985d8eb">ODRIVE_ERROR_BRAKE_RESISTOR_DISARMED</a> = 0x08000000
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea9f091a0d6a078d450183507b605e89f1">ODRIVE_ERROR_THERMISTOR_DISCONNECTED</a> = 0x10000000
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea950d616fdf5ff496e04e7122cf1dba4c">ODRIVE_ERROR_CALIBRATION_ERROR</a> = 0x40000000
+<br />
+ }</td></tr>
+<tr class="separator:a33c3f44b0148a1725b8dca9a36b3be3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d1e33949424522386f7adf2074003b2" id="r_a3d1e33949424522386f7adf2074003b2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a3d1e33949424522386f7adf2074003b2">ODriveProcedureResult</a> { <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a3d1e33949424522386f7adf2074003b2adebf47365697aac1c794a3b6985283f9">PROCEDURE_RESULT_SUCCESS</a> = 0
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a3d1e33949424522386f7adf2074003b2af2d85aa776cd88fc7b6a2087e4c03f47">PROCEDURE_RESULT_BUSY</a> = 1
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a3d1e33949424522386f7adf2074003b2a1c711f81235508d7fdd83b011bbcb67a">PROCEDURE_RESULT_CANCELLED</a> = 2
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a3d1e33949424522386f7adf2074003b2a53b28d3aee342fb588834ce31e92c536">PROCEDURE_RESULT_DISARMED</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a3d1e33949424522386f7adf2074003b2a0608287f5e15f952520d0c251958e4eb">PROCEDURE_RESULT_NO_RESPONSE</a> = 4
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a3d1e33949424522386f7adf2074003b2a448570f01d11e9cc604c67d4eb68e273">PROCEDURE_RESULT_POLE_PAIR_CPR_MISMATCH</a> = 5
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a3d1e33949424522386f7adf2074003b2ad64378bcaa9170b664f24a57e0a344dd">PROCEDURE_RESULT_PHASE_RESISTANCE_OUT_OF_RANGE</a> = 6
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a3d1e33949424522386f7adf2074003b2a07663a58324a1f41a2758c1f3055760a">PROCEDURE_RESULT_PHASE_INDUCTANCE_OUT_OF_RANGE</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a3d1e33949424522386f7adf2074003b2a4de594d566b0b4354a745a2e01dc8e79">PROCEDURE_RESULT_UNBALANCED_PHASES</a> = 8
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a3d1e33949424522386f7adf2074003b2ae50a91e7bbd3f50234d81fded15e9bb3">PROCEDURE_RESULT_INVALID_MOTOR_TYPE</a> = 9
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a3d1e33949424522386f7adf2074003b2a35aa7352ff6a998aa498858a278d25aa">PROCEDURE_RESULT_ILLEGAL_HALL_STATE</a> = 10
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a3d1e33949424522386f7adf2074003b2af5416ce079e361abc52649f0f40fe294">PROCEDURE_RESULT_TIMEOUT</a> = 11
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a3d1e33949424522386f7adf2074003b2ade105a37e73212e43278cd1025537aba">PROCEDURE_RESULT_HOMING_WITHOUT_ENDSTOP</a> = 12
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a3d1e33949424522386f7adf2074003b2ae824923ee75384e23554501c0e495954">PROCEDURE_RESULT_INVALID_STATE</a> = 13
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a3d1e33949424522386f7adf2074003b2ae70d4eaafad73bfa43fb7460ad9658e2">PROCEDURE_RESULT_NOT_CALIBRATED</a> = 14
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a3d1e33949424522386f7adf2074003b2ac5650fcb959e7e8864af50ff02c2cf15">PROCEDURE_RESULT_NOT_CONVERGING</a> = 15
+<br />
+ }</td></tr>
+<tr class="separator:a3d1e33949424522386f7adf2074003b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef2d51815a38cb1a3aa55eadb18511e" id="r_aaef2d51815a38cb1a3aa55eadb18511e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aaef2d51815a38cb1a3aa55eadb18511e">ODriveEncoderId</a> { <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aaef2d51815a38cb1a3aa55eadb18511ea63b62655924693707851c7f0c63ea1bd">ENCODER_ID_NONE</a> = 0
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aaef2d51815a38cb1a3aa55eadb18511ea5c42da96bab910505b825bf865beddc4">ENCODER_ID_INC_ENCODER0</a> = 1
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aaef2d51815a38cb1a3aa55eadb18511ea7861438e7aa6f7efb4db0b6cc015d8be">ENCODER_ID_INC_ENCODER1</a> = 2
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aaef2d51815a38cb1a3aa55eadb18511eaa38e6197957043da5b9082423e1a5029">ENCODER_ID_INC_ENCODER2</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aaef2d51815a38cb1a3aa55eadb18511eae92c71042866ed900cd6dbbe81dc9961">ENCODER_ID_SENSORLESS_ESTIMATOR</a> = 4
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aaef2d51815a38cb1a3aa55eadb18511eabd57c69a48b59caba58af9a3668b8d4d">ENCODER_ID_SPI_ENCODER0</a> = 5
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aaef2d51815a38cb1a3aa55eadb18511eaf449fc741f6d0d6999fec3573afb764a">ENCODER_ID_SPI_ENCODER1</a> = 6
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aaef2d51815a38cb1a3aa55eadb18511ea8b7d9341c62084b9c2fc239b96fe52c2">ENCODER_ID_SPI_ENCODER2</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aaef2d51815a38cb1a3aa55eadb18511ea142bfa8fa58608779ff5430105aed39d">ENCODER_ID_HALL_ENCODER0</a> = 8
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aaef2d51815a38cb1a3aa55eadb18511ea9b9ce1ca277967f44ddc54f7745f8cec">ENCODER_ID_HALL_ENCODER1</a> = 9
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aaef2d51815a38cb1a3aa55eadb18511eace83d65f0fe21ef780612cc5bf76bc20">ENCODER_ID_RS485_ENCODER0</a> = 10
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aaef2d51815a38cb1a3aa55eadb18511eaf628368feaddb9d6aba11a2cef313242">ENCODER_ID_RS485_ENCODER1</a> = 11
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aaef2d51815a38cb1a3aa55eadb18511ea3fe1a428a35f5dcba79c4d6e02210445">ENCODER_ID_RS485_ENCODER2</a> = 12
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aaef2d51815a38cb1a3aa55eadb18511ea07c7ddf1fa55e3391b815be8bb2c6a61">ENCODER_ID_ONBOARD_ENCODER0</a> = 13
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aaef2d51815a38cb1a3aa55eadb18511eaaffd8bad9780d117d28209788cba9ea9">ENCODER_ID_ONBOARD_ENCODER1</a> = 14
+<br />
+ }</td></tr>
+<tr class="separator:aaef2d51815a38cb1a3aa55eadb18511e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc1164d4de3df51570ad4b3229e9ac98" id="r_afc1164d4de3df51570ad4b3229e9ac98"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#afc1164d4de3df51570ad4b3229e9ac98">ODriveSpiEncoderMode</a> { <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#afc1164d4de3df51570ad4b3229e9ac98a98ced17fa66fd969532fd611ebd17eca">SPI_ENCODER_MODE_DISABLED</a> = 0
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#afc1164d4de3df51570ad4b3229e9ac98abacbdc2d55e6d3c071bcda9b400bdb7e">SPI_ENCODER_MODE_RLS</a> = 1
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#afc1164d4de3df51570ad4b3229e9ac98ad1f4e51036f0e0f3180f2ce15be08e55">SPI_ENCODER_MODE_AMS</a> = 2
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#afc1164d4de3df51570ad4b3229e9ac98a967e6400d7e2bef1cd56f74e5f816642">SPI_ENCODER_MODE_CUI</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#afc1164d4de3df51570ad4b3229e9ac98aeb82ec2ce866031b61d4ac37acf04f87">SPI_ENCODER_MODE_AEAT</a> = 4
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#afc1164d4de3df51570ad4b3229e9ac98a522696ca1a4d131b8500be6df3a199c5">SPI_ENCODER_MODE_MA732</a> = 5
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#afc1164d4de3df51570ad4b3229e9ac98a651bed954680f3157151c72ce37572a9">SPI_ENCODER_MODE_TLE</a> = 6
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#afc1164d4de3df51570ad4b3229e9ac98a5be1212bc954aeee0b739bdcdb8b995b">SPI_ENCODER_MODE_BISSC</a> = 7
+<br />
+ }</td></tr>
+<tr class="separator:afc1164d4de3df51570ad4b3229e9ac98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fcfabe241312ccd2e8a4ed72453a41a" id="r_a1fcfabe241312ccd2e8a4ed72453a41a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a1fcfabe241312ccd2e8a4ed72453a41a">ODriveRs485EncoderMode</a> { <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a1fcfabe241312ccd2e8a4ed72453a41aaa42c8ce138a7dbe171c44701f15bc003">RS485_ENCODER_MODE_DISABLED</a> = 0
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a1fcfabe241312ccd2e8a4ed72453a41aad46383fce70ed8289cd34df8ef4ccf13">RS485_ENCODER_MODE_AMT21_POLLING</a> = 1
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a1fcfabe241312ccd2e8a4ed72453a41aa9fe8f017137be8f109576c398457b17e">RS485_ENCODER_MODE_AMT21_EVENT_DRIVEN</a> = 2
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a1fcfabe241312ccd2e8a4ed72453a41aaa8df6f1c1cd89c7ed1b3d55981912b24">RS485_ENCODER_MODE_MBS</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a1fcfabe241312ccd2e8a4ed72453a41aa9c53508b8d7af4effbc4ab2d6e2783ee">RS485_ENCODER_MODE_ODRIVE_OA1</a> = 4
+<br />
+ }</td></tr>
+<tr class="separator:a1fcfabe241312ccd2e8a4ed72453a41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4ec90f52067579375f2ccc651ecc23a" id="r_ac4ec90f52067579375f2ccc651ecc23a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ac4ec90f52067579375f2ccc651ecc23a">ODriveInputMode</a> { <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ac4ec90f52067579375f2ccc651ecc23aae18b080ad422450f4b7137166fbfe55d">INPUT_MODE_INACTIVE</a> = 0
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ac4ec90f52067579375f2ccc651ecc23aa2108c520f4b3de5c845ba5e0cbef89e6">INPUT_MODE_PASSTHROUGH</a> = 1
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ac4ec90f52067579375f2ccc651ecc23aab5354d2aa864f66bca7564f0764e231a">INPUT_MODE_VEL_RAMP</a> = 2
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ac4ec90f52067579375f2ccc651ecc23aa8cd33de7d97c988acb035eb7f4243748">INPUT_MODE_POS_FILTER</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ac4ec90f52067579375f2ccc651ecc23aae8b655f34b348163666e143a705db0b2">INPUT_MODE_MIX_CHANNELS</a> = 4
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ac4ec90f52067579375f2ccc651ecc23aa6252c2e7a041b7b25c0dceaecc6f23a1">INPUT_MODE_TRAP_TRAJ</a> = 5
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ac4ec90f52067579375f2ccc651ecc23aaa5fed6a782bb3450b3980e344ac8f26c">INPUT_MODE_TORQUE_RAMP</a> = 6
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ac4ec90f52067579375f2ccc651ecc23aaf53005b82cd5b01e12732a304eece65b">INPUT_MODE_MIRROR</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ac4ec90f52067579375f2ccc651ecc23aa2a4899c05ba05ae53993b2d97a1c4279">INPUT_MODE_TUNING</a> = 8
+<br />
+ }</td></tr>
+<tr class="separator:ac4ec90f52067579375f2ccc651ecc23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf65ff86e11cfec2ced844a672dbb95c" id="r_abf65ff86e11cfec2ced844a672dbb95c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#abf65ff86e11cfec2ced844a672dbb95c">ODriveMotorType</a> { <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#abf65ff86e11cfec2ced844a672dbb95ca5b8d432cbf8d3c6f74f083053a9fd866">MOTOR_TYPE_HIGH_CURRENT</a> = 0
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#abf65ff86e11cfec2ced844a672dbb95cae283ebb370f16ef7a87de827386aee94">MOTOR_TYPE_GIMBAL</a> = 2
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#abf65ff86e11cfec2ced844a672dbb95cae8d3c707a3016d259ec6f13312e45497">MOTOR_TYPE_ACIM</a> = 3
+ }</td></tr>
+<tr class="separator:abf65ff86e11cfec2ced844a672dbb95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4996f8cafada22f589d0bc5dda475564" id="r_a4996f8cafada22f589d0bc5dda475564"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a4996f8cafada22f589d0bc5dda475564">ODriveCanError</a> { <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a4996f8cafada22f589d0bc5dda475564a57d7804a6450ddcae3b846ff483c6e2a">CAN_ERROR_NONE</a> = 0x00000000
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a4996f8cafada22f589d0bc5dda475564a0dff7b2fbc7159c4ec8480fc304c7555">CAN_ERROR_DUPLICATE_CAN_IDS</a> = 0x00000001
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a4996f8cafada22f589d0bc5dda475564a60fb60b0dab6a240c3082f1b91cfb3c0">CAN_ERROR_BUS_OFF</a> = 0x00000002
+, <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a4996f8cafada22f589d0bc5dda475564a7edc43fba2771cd8a4cc43113a17b162">CAN_ERROR_LOW_LEVEL</a> = 0x00000004
+, <br />
+&#160;&#160;<a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a4996f8cafada22f589d0bc5dda475564a0775c9adb447e139da41cd99914978f4">CAN_ERROR_PROTOCOL_INIT</a> = 0x00000008
+<br />
+ }</td></tr>
+<tr class="separator:a4996f8cafada22f589d0bc5dda475564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a4d6d8acfa0ee0f706c00abe2d6d5eca4" id="r_a4d6d8acfa0ee0f706c00abe2d6d5eca4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a4d6d8acfa0ee0f706c00abe2d6d5eca4"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a4d6d8acfa0ee0f706c00abe2d6d5eca4">can_get_signal_raw</a> (const uint8_t *buf, const size_t startBit, const size_t length, const bool isIntel)</td></tr>
+<tr class="separator:a4d6d8acfa0ee0f706c00abe2d6d5eca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c6101bba0074349ba908be1a35e742d" id="r_a5c6101bba0074349ba908be1a35e742d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a5c6101bba0074349ba908be1a35e742d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a5c6101bba0074349ba908be1a35e742d">can_set_signal_raw</a> (uint8_t *buf, const T val, const size_t startBit, const size_t length, const bool isIntel)</td></tr>
+<tr class="separator:a5c6101bba0074349ba908be1a35e742d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2cb31d8e08744a48bbbd1fdfdf693e4" id="r_af2cb31d8e08744a48bbbd1fdfdf693e4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af2cb31d8e08744a48bbbd1fdfdf693e4"><td class="memTemplItemLeft" align="right" valign="top">float&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#af2cb31d8e08744a48bbbd1fdfdf693e4">can_get_signal_raw</a> (const uint8_t *buf, const size_t startBit, const size_t length, const bool isIntel, const float factor, const float offset)</td></tr>
+<tr class="separator:af2cb31d8e08744a48bbbd1fdfdf693e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc4aadaf408e3ea188d9f5ee9bb32938" id="r_acc4aadaf408e3ea188d9f5ee9bb32938"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:acc4aadaf408e3ea188d9f5ee9bb32938"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#acc4aadaf408e3ea188d9f5ee9bb32938">can_set_signal_raw</a> (uint8_t *buf, const float val, const size_t startBit, const size_t length, const bool isIntel, const float factor, const float offset)</td></tr>
+<tr class="separator:acc4aadaf408e3ea188d9f5ee9bb32938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14a6d155f4c3e79b802c375a968baabd" id="r_a14a6d155f4c3e79b802c375a968baabd"><td class="memTemplParams" colspan="2">template&lt;typename T , typename TMsg &gt; </td></tr>
+<tr class="memitem:a14a6d155f4c3e79b802c375a968baabd"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a14a6d155f4c3e79b802c375a968baabd">can_get_signal</a> (const TMsg &amp;msg, const size_t startBit, const size_t length, const bool isIntel)</td></tr>
+<tr class="separator:a14a6d155f4c3e79b802c375a968baabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f3381e5bdc936d0f1e0f7391552dc64" id="r_a7f3381e5bdc936d0f1e0f7391552dc64"><td class="memTemplParams" colspan="2">template&lt;typename T , typename TMsg &gt; </td></tr>
+<tr class="memitem:a7f3381e5bdc936d0f1e0f7391552dc64"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a7f3381e5bdc936d0f1e0f7391552dc64">can_set_signal</a> (TMsg &amp;msg, const T val, const size_t startBit, const size_t length, const bool isIntel)</td></tr>
+<tr class="separator:a7f3381e5bdc936d0f1e0f7391552dc64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">列挙型詳解</h2>
+<a id="aac68d8df9d0e5751f4e079c6be4369b6" name="aac68d8df9d0e5751f4e079c6be4369b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac68d8df9d0e5751f4e079c6be4369b6">&#9670;&#160;</a></span>ODriveGpioMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aac68d8df9d0e5751f4e079c6be4369b6">alps::cmn::communication::odrive::ODriveGpioMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="aac68d8df9d0e5751f4e079c6be4369b6a14adc45fa702426693f3661755dc96a7" name="aac68d8df9d0e5751f4e079c6be4369b6a14adc45fa702426693f3661755dc96a7"></a>GPIO_MODE_DIGITAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aac68d8df9d0e5751f4e079c6be4369b6ae3b5b004fcb6cf87d9d8645c44148ce6" name="aac68d8df9d0e5751f4e079c6be4369b6ae3b5b004fcb6cf87d9d8645c44148ce6"></a>GPIO_MODE_DIGITAL_PULL_UP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aac68d8df9d0e5751f4e079c6be4369b6aaafc568cb2d8fbfdf4d57f93b40c833b" name="aac68d8df9d0e5751f4e079c6be4369b6aaafc568cb2d8fbfdf4d57f93b40c833b"></a>GPIO_MODE_DIGITAL_PULL_DOWN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aac68d8df9d0e5751f4e079c6be4369b6a1c1b5448c94907d38eebcdae17f33632" name="aac68d8df9d0e5751f4e079c6be4369b6a1c1b5448c94907d38eebcdae17f33632"></a>GPIO_MODE_ANALOG_IN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aac68d8df9d0e5751f4e079c6be4369b6aaa3f74014c9f4813ccecc2db0df25842" name="aac68d8df9d0e5751f4e079c6be4369b6aaa3f74014c9f4813ccecc2db0df25842"></a>GPIO_MODE_UART_A&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aac68d8df9d0e5751f4e079c6be4369b6a6523189171bb44715ba1fff86d8a52aa" name="aac68d8df9d0e5751f4e079c6be4369b6a6523189171bb44715ba1fff86d8a52aa"></a>GPIO_MODE_UART_B&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aac68d8df9d0e5751f4e079c6be4369b6aacaacffdf65afcc8213cb45b31417f30" name="aac68d8df9d0e5751f4e079c6be4369b6aacaacffdf65afcc8213cb45b31417f30"></a>GPIO_MODE_UART_C&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aac68d8df9d0e5751f4e079c6be4369b6a3f88f9a1067f926550d0e5fe34954c75" name="aac68d8df9d0e5751f4e079c6be4369b6a3f88f9a1067f926550d0e5fe34954c75"></a>GPIO_MODE_CAN_A&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aac68d8df9d0e5751f4e079c6be4369b6afeb4359e90b3d6cf651f915f53e9faec" name="aac68d8df9d0e5751f4e079c6be4369b6afeb4359e90b3d6cf651f915f53e9faec"></a>GPIO_MODE_I2C_A&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aac68d8df9d0e5751f4e079c6be4369b6a2a7d8c46902909c45eded40889e57623" name="aac68d8df9d0e5751f4e079c6be4369b6a2a7d8c46902909c45eded40889e57623"></a>GPIO_MODE_SPI_A&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aac68d8df9d0e5751f4e079c6be4369b6a3521daba62dd50707d78f80c83dc21a0" name="aac68d8df9d0e5751f4e079c6be4369b6a3521daba62dd50707d78f80c83dc21a0"></a>GPIO_MODE_PWM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aac68d8df9d0e5751f4e079c6be4369b6a06d435a013ae99a90631b551379b22fd" name="aac68d8df9d0e5751f4e079c6be4369b6a06d435a013ae99a90631b551379b22fd"></a>GPIO_MODE_ENC0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aac68d8df9d0e5751f4e079c6be4369b6af64f177629091acfdfef8252e7fa0077" name="aac68d8df9d0e5751f4e079c6be4369b6af64f177629091acfdfef8252e7fa0077"></a>GPIO_MODE_ENC1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aac68d8df9d0e5751f4e079c6be4369b6a0522ff6407aa812f4f08f9eeb63162bd" name="aac68d8df9d0e5751f4e079c6be4369b6a0522ff6407aa812f4f08f9eeb63162bd"></a>GPIO_MODE_ENC2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aac68d8df9d0e5751f4e079c6be4369b6a4c9788afe15def760f9bb2cf0f28f8ce" name="aac68d8df9d0e5751f4e079c6be4369b6a4c9788afe15def760f9bb2cf0f28f8ce"></a>GPIO_MODE_MECH_BRAKE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aac68d8df9d0e5751f4e079c6be4369b6a0f4f3f3e68934cb45040122e5dc5d242" name="aac68d8df9d0e5751f4e079c6be4369b6a0f4f3f3e68934cb45040122e5dc5d242"></a>GPIO_MODE_STATUS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aac68d8df9d0e5751f4e079c6be4369b6a493a34e777b172ed37607dabf35a29a5" name="aac68d8df9d0e5751f4e079c6be4369b6a493a34e777b172ed37607dabf35a29a5"></a>GPIO_MODE_BRAKE_RES&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aac68d8df9d0e5751f4e079c6be4369b6a1f0d4f8ec30a32ac2d3069218bfedea1" name="aac68d8df9d0e5751f4e079c6be4369b6a1f0d4f8ec30a32ac2d3069218bfedea1"></a>GPIO_MODE_AUTO&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ab0f5aac193965d240aabdc1df0d3e8de" name="ab0f5aac193965d240aabdc1df0d3e8de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0f5aac193965d240aabdc1df0d3e8de">&#9670;&#160;</a></span>ODriveStreamProtocolType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ab0f5aac193965d240aabdc1df0d3e8de">alps::cmn::communication::odrive::ODriveStreamProtocolType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="ab0f5aac193965d240aabdc1df0d3e8dea890703fa109c7a2e78c54a0937c9a202" name="ab0f5aac193965d240aabdc1df0d3e8dea890703fa109c7a2e78c54a0937c9a202"></a>STREAM_PROTOCOL_TYPE_FIBRE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab0f5aac193965d240aabdc1df0d3e8dea0779d5f0479967fdf6b7f3ff394de99c" name="ab0f5aac193965d240aabdc1df0d3e8dea0779d5f0479967fdf6b7f3ff394de99c"></a>STREAM_PROTOCOL_TYPE_ASCII&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab0f5aac193965d240aabdc1df0d3e8dea4cf74b492395bb7491dbbb9a22f61e4b" name="ab0f5aac193965d240aabdc1df0d3e8dea4cf74b492395bb7491dbbb9a22f61e4b"></a>STREAM_PROTOCOL_TYPE_STDOUT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab0f5aac193965d240aabdc1df0d3e8dea537baf27da3aea4d105ab32487242e80" name="ab0f5aac193965d240aabdc1df0d3e8dea537baf27da3aea4d105ab32487242e80"></a>STREAM_PROTOCOL_TYPE_ASCII_AND_STDOUT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab0f5aac193965d240aabdc1df0d3e8dea00bbe0c14c7b8504f7cca7a793f0975b" name="ab0f5aac193965d240aabdc1df0d3e8dea00bbe0c14c7b8504f7cca7a793f0975b"></a>STREAM_PROTOCOL_TYPE_OTHER&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a7891eafe699c3d2c5cbe60ab74403c5b" name="a7891eafe699c3d2c5cbe60ab74403c5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7891eafe699c3d2c5cbe60ab74403c5b">&#9670;&#160;</a></span>ODriveProtocol</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a7891eafe699c3d2c5cbe60ab74403c5b">alps::cmn::communication::odrive::ODriveProtocol</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a7891eafe699c3d2c5cbe60ab74403c5bac3e01b06b160e5942dd7eefd24ee814f" name="a7891eafe699c3d2c5cbe60ab74403c5bac3e01b06b160e5942dd7eefd24ee814f"></a>PROTOCOL_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7891eafe699c3d2c5cbe60ab74403c5ba6ef3ba90e5588441880c930116daf5b5" name="a7891eafe699c3d2c5cbe60ab74403c5ba6ef3ba90e5588441880c930116daf5b5"></a>PROTOCOL_SIMPLE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ace1e8c7e98c4e2c81345d128ac9c2045" name="ace1e8c7e98c4e2c81345d128ac9c2045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace1e8c7e98c4e2c81345d128ac9c2045">&#9670;&#160;</a></span>ODriveAxisState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045">alps::cmn::communication::odrive::ODriveAxisState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="ace1e8c7e98c4e2c81345d128ac9c2045a93ec68b14b0aa6e46087d7a45ef2d9a5" name="ace1e8c7e98c4e2c81345d128ac9c2045a93ec68b14b0aa6e46087d7a45ef2d9a5"></a>AXIS_STATE_UNDEFINED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ace1e8c7e98c4e2c81345d128ac9c2045aafd81ef284b6d7c465a2ae9f58a1b635" name="ace1e8c7e98c4e2c81345d128ac9c2045aafd81ef284b6d7c465a2ae9f58a1b635"></a>AXIS_STATE_IDLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ace1e8c7e98c4e2c81345d128ac9c2045a9e3b8e33951f4e30ce2a3ddaeefdd6ea" name="ace1e8c7e98c4e2c81345d128ac9c2045a9e3b8e33951f4e30ce2a3ddaeefdd6ea"></a>AXIS_STATE_STARTUP_SEQUENCE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ace1e8c7e98c4e2c81345d128ac9c2045a2b83076692dc3d1f57ed6afdde9f1e2e" name="ace1e8c7e98c4e2c81345d128ac9c2045a2b83076692dc3d1f57ed6afdde9f1e2e"></a>AXIS_STATE_FULL_CALIBRATION_SEQUENCE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ace1e8c7e98c4e2c81345d128ac9c2045afc47304c44f507aea658ec06d1fd0280" name="ace1e8c7e98c4e2c81345d128ac9c2045afc47304c44f507aea658ec06d1fd0280"></a>AXIS_STATE_MOTOR_CALIBRATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ace1e8c7e98c4e2c81345d128ac9c2045a748b0a41af55e03c6adb4fc9290d036c" name="ace1e8c7e98c4e2c81345d128ac9c2045a748b0a41af55e03c6adb4fc9290d036c"></a>AXIS_STATE_ENCODER_INDEX_SEARCH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ace1e8c7e98c4e2c81345d128ac9c2045addae05f95c62ba1a319ecd3f075dc045" name="ace1e8c7e98c4e2c81345d128ac9c2045addae05f95c62ba1a319ecd3f075dc045"></a>AXIS_STATE_ENCODER_OFFSET_CALIBRATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ace1e8c7e98c4e2c81345d128ac9c2045a01f8ce2a04e145767551ef4fbf49c026" name="ace1e8c7e98c4e2c81345d128ac9c2045a01f8ce2a04e145767551ef4fbf49c026"></a>AXIS_STATE_CLOSED_LOOP_CONTROL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ace1e8c7e98c4e2c81345d128ac9c2045af508126dca082a063375f2417384b244" name="ace1e8c7e98c4e2c81345d128ac9c2045af508126dca082a063375f2417384b244"></a>AXIS_STATE_LOCKIN_SPIN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ace1e8c7e98c4e2c81345d128ac9c2045a865bda1cb4027d81814d1f4f707815cb" name="ace1e8c7e98c4e2c81345d128ac9c2045a865bda1cb4027d81814d1f4f707815cb"></a>AXIS_STATE_ENCODER_DIR_FIND&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ace1e8c7e98c4e2c81345d128ac9c2045a0a15e1a32799832e63b8f0e11b8391b8" name="ace1e8c7e98c4e2c81345d128ac9c2045a0a15e1a32799832e63b8f0e11b8391b8"></a>AXIS_STATE_HOMING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ace1e8c7e98c4e2c81345d128ac9c2045a98dbd6bcbad0bb2df766e1d30ad7b0b4" name="ace1e8c7e98c4e2c81345d128ac9c2045a98dbd6bcbad0bb2df766e1d30ad7b0b4"></a>AXIS_STATE_ENCODER_HALL_POLARITY_CALIBRATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ace1e8c7e98c4e2c81345d128ac9c2045a18766f706fd00f76ac56afe729dd469a" name="ace1e8c7e98c4e2c81345d128ac9c2045a18766f706fd00f76ac56afe729dd469a"></a>AXIS_STATE_ENCODER_HALL_PHASE_CALIBRATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ace1e8c7e98c4e2c81345d128ac9c2045a04add5610665a661cbc7437f00d4e4a7" name="ace1e8c7e98c4e2c81345d128ac9c2045a04add5610665a661cbc7437f00d4e4a7"></a>AXIS_STATE_ANTICOGGING_CALIBRATION&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a5894f251f902a9ff62bfe1c962f845f2" name="a5894f251f902a9ff62bfe1c962f845f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5894f251f902a9ff62bfe1c962f845f2">&#9670;&#160;</a></span>ODriveControlMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a5894f251f902a9ff62bfe1c962f845f2">alps::cmn::communication::odrive::ODriveControlMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a5894f251f902a9ff62bfe1c962f845f2a9919492cdc036185f235f21033c09980" name="a5894f251f902a9ff62bfe1c962f845f2a9919492cdc036185f235f21033c09980"></a>CONTROL_MODE_VOLTAGE_CONTROL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5894f251f902a9ff62bfe1c962f845f2a330b226805cf11a46f759f5fbadb7d3c" name="a5894f251f902a9ff62bfe1c962f845f2a330b226805cf11a46f759f5fbadb7d3c"></a>CONTROL_MODE_TORQUE_CONTROL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5894f251f902a9ff62bfe1c962f845f2a8cfb5415f0fef3f6ebd1164bcc845630" name="a5894f251f902a9ff62bfe1c962f845f2a8cfb5415f0fef3f6ebd1164bcc845630"></a>CONTROL_MODE_VELOCITY_CONTROL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5894f251f902a9ff62bfe1c962f845f2ae16bbbdbd90bb0bcb0b1bfb4414728b1" name="a5894f251f902a9ff62bfe1c962f845f2ae16bbbdbd90bb0bcb0b1bfb4414728b1"></a>CONTROL_MODE_POSITION_CONTROL&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a40bb5729532b77be0e316c841e1cdd2f" name="a40bb5729532b77be0e316c841e1cdd2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40bb5729532b77be0e316c841e1cdd2f">&#9670;&#160;</a></span>ODriveComponentStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a40bb5729532b77be0e316c841e1cdd2f">alps::cmn::communication::odrive::ODriveComponentStatus</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a40bb5729532b77be0e316c841e1cdd2fa840248f44c8a03771a3a8e706e2c4507" name="a40bb5729532b77be0e316c841e1cdd2fa840248f44c8a03771a3a8e706e2c4507"></a>COMPONENT_STATUS_NOMINAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a40bb5729532b77be0e316c841e1cdd2fa4250f15a51c8313719d8dc4c4b6be8d5" name="a40bb5729532b77be0e316c841e1cdd2fa4250f15a51c8313719d8dc4c4b6be8d5"></a>COMPONENT_STATUS_NO_RESPONSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a40bb5729532b77be0e316c841e1cdd2faca52497aa18919ed554cf65e3c0c6b3d" name="a40bb5729532b77be0e316c841e1cdd2faca52497aa18919ed554cf65e3c0c6b3d"></a>COMPONENT_STATUS_INVALID_RESPONSE_LENGTH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a40bb5729532b77be0e316c841e1cdd2fafde5f27a4469565fa28ed2393751bcab" name="a40bb5729532b77be0e316c841e1cdd2fafde5f27a4469565fa28ed2393751bcab"></a>COMPONENT_STATUS_PARITY_MISMATCH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a40bb5729532b77be0e316c841e1cdd2fa712ded3d1a5d600a84236a8d355e1df1" name="a40bb5729532b77be0e316c841e1cdd2fa712ded3d1a5d600a84236a8d355e1df1"></a>COMPONENT_STATUS_ILLEGAL_HALL_STATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a40bb5729532b77be0e316c841e1cdd2fa4a60f5df8e6c29bddc7415724569d465" name="a40bb5729532b77be0e316c841e1cdd2fa4a60f5df8e6c29bddc7415724569d465"></a>COMPONENT_STATUS_POLARITY_NOT_CALIBRATED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a40bb5729532b77be0e316c841e1cdd2fad9b215097d91ac0bc969cf1abfb86e81" name="a40bb5729532b77be0e316c841e1cdd2fad9b215097d91ac0bc969cf1abfb86e81"></a>COMPONENT_STATUS_PHASES_NOT_CALIBRATED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a40bb5729532b77be0e316c841e1cdd2fac6b02118a94194e79a66820b89788824" name="a40bb5729532b77be0e316c841e1cdd2fac6b02118a94194e79a66820b89788824"></a>COMPONENT_STATUS_NUMERICAL_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a40bb5729532b77be0e316c841e1cdd2faa8ab0092406a90b151148c58b75a7cf6" name="a40bb5729532b77be0e316c841e1cdd2faa8ab0092406a90b151148c58b75a7cf6"></a>COMPONENT_STATUS_MISSING_INPUT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a40bb5729532b77be0e316c841e1cdd2fab3cda749c8fb50dab5af193d0e526786" name="a40bb5729532b77be0e316c841e1cdd2fab3cda749c8fb50dab5af193d0e526786"></a>COMPONENT_STATUS_RELATIVE_MODE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a40bb5729532b77be0e316c841e1cdd2fad97fa60c6da10da074787639388b46d1" name="a40bb5729532b77be0e316c841e1cdd2fad97fa60c6da10da074787639388b46d1"></a>COMPONENT_STATUS_UNCONFIGURED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a40bb5729532b77be0e316c841e1cdd2fa77173f1dcdc3983bce35a6920615f5d0" name="a40bb5729532b77be0e316c841e1cdd2fa77173f1dcdc3983bce35a6920615f5d0"></a>COMPONENT_STATUS_OVERSPEED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a40bb5729532b77be0e316c841e1cdd2fa4a12dea04e73309e66a19e995b046019" name="a40bb5729532b77be0e316c841e1cdd2fa4a12dea04e73309e66a19e995b046019"></a>COMPONENT_STATUS_INDEX_NOT_FOUND&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a40bb5729532b77be0e316c841e1cdd2fa8b54e7b0a256d1b9095451c024429333" name="a40bb5729532b77be0e316c841e1cdd2fa8b54e7b0a256d1b9095451c024429333"></a>COMPONENT_STATUS_BAD_CONFIG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a40bb5729532b77be0e316c841e1cdd2fa917acab8ec203c1e45d7f343501e0ab4" name="a40bb5729532b77be0e316c841e1cdd2fa917acab8ec203c1e45d7f343501e0ab4"></a>COMPONENT_STATUS_NOT_ENABLED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a40bb5729532b77be0e316c841e1cdd2fa86223a798493f2503c932476ca2f87e2" name="a40bb5729532b77be0e316c841e1cdd2fa86223a798493f2503c932476ca2f87e2"></a>COMPONENT_STATUS_SPINOUT_DETECTED&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a33c3f44b0148a1725b8dca9a36b3be3e" name="a33c3f44b0148a1725b8dca9a36b3be3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33c3f44b0148a1725b8dca9a36b3be3e">&#9670;&#160;</a></span>ODriveError</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3e">alps::cmn::communication::odrive::ODriveError</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3ea53a7af0fe0c10a3420570c12ffd12738" name="a33c3f44b0148a1725b8dca9a36b3be3ea53a7af0fe0c10a3420570c12ffd12738"></a>ODRIVE_ERROR_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3ea9ab832be9d31a8ada2b035d4579762f0" name="a33c3f44b0148a1725b8dca9a36b3be3ea9ab832be9d31a8ada2b035d4579762f0"></a>ODRIVE_ERROR_INITIALIZING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3eabd07b4a385f221be3c8ae14050e1c80e" name="a33c3f44b0148a1725b8dca9a36b3be3eabd07b4a385f221be3c8ae14050e1c80e"></a>ODRIVE_ERROR_SYSTEM_LEVEL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3ea908372398a6b4c65a4260a9c3308814a" name="a33c3f44b0148a1725b8dca9a36b3be3ea908372398a6b4c65a4260a9c3308814a"></a>ODRIVE_ERROR_TIMING_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3ea86f53b24118aaef63c14e5bd23f0be97" name="a33c3f44b0148a1725b8dca9a36b3be3ea86f53b24118aaef63c14e5bd23f0be97"></a>ODRIVE_ERROR_MISSING_ESTIMATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3ea051b54ac927c5b6d4dde740a3a9cc6bd" name="a33c3f44b0148a1725b8dca9a36b3be3ea051b54ac927c5b6d4dde740a3a9cc6bd"></a>ODRIVE_ERROR_BAD_CONFIG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3ea3d987aa2acf6e69945e97ff270748bb1" name="a33c3f44b0148a1725b8dca9a36b3be3ea3d987aa2acf6e69945e97ff270748bb1"></a>ODRIVE_ERROR_DRV_FAULT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3ea5dc4770a0442f074cd5efe40f52b290d" name="a33c3f44b0148a1725b8dca9a36b3be3ea5dc4770a0442f074cd5efe40f52b290d"></a>ODRIVE_ERROR_MISSING_INPUT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3eadb7ce30fb8f1d040870cb8be80b30da0" name="a33c3f44b0148a1725b8dca9a36b3be3eadb7ce30fb8f1d040870cb8be80b30da0"></a>ODRIVE_ERROR_DC_BUS_OVER_VOLTAGE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3ea7e6c001f33de89924976d4879f9e4f74" name="a33c3f44b0148a1725b8dca9a36b3be3ea7e6c001f33de89924976d4879f9e4f74"></a>ODRIVE_ERROR_DC_BUS_UNDER_VOLTAGE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3eabfd554de73f208b0d5188c30b00590da" name="a33c3f44b0148a1725b8dca9a36b3be3eabfd554de73f208b0d5188c30b00590da"></a>ODRIVE_ERROR_DC_BUS_OVER_CURRENT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3ea33ee23e2ed92c0eb43dc4dba801751d3" name="a33c3f44b0148a1725b8dca9a36b3be3ea33ee23e2ed92c0eb43dc4dba801751d3"></a>ODRIVE_ERROR_DC_BUS_OVER_REGEN_CURRENT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3ea532430d4c4b916ece3602bbdbe0e3a70" name="a33c3f44b0148a1725b8dca9a36b3be3ea532430d4c4b916ece3602bbdbe0e3a70"></a>ODRIVE_ERROR_CURRENT_LIMIT_VIOLATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3ea5ebef635ce77799aae50878a927e3431" name="a33c3f44b0148a1725b8dca9a36b3be3ea5ebef635ce77799aae50878a927e3431"></a>ODRIVE_ERROR_MOTOR_OVER_TEMP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3eace5b899e88387a6f1803aff248cc37ff" name="a33c3f44b0148a1725b8dca9a36b3be3eace5b899e88387a6f1803aff248cc37ff"></a>ODRIVE_ERROR_INVERTER_OVER_TEMP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3eafa904885481f24f7533dbe9c5d7b0354" name="a33c3f44b0148a1725b8dca9a36b3be3eafa904885481f24f7533dbe9c5d7b0354"></a>ODRIVE_ERROR_VELOCITY_LIMIT_VIOLATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3eabfab8646fddeac522482dd081df684d8" name="a33c3f44b0148a1725b8dca9a36b3be3eabfab8646fddeac522482dd081df684d8"></a>ODRIVE_ERROR_POSITION_LIMIT_VIOLATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3ea72f7c9d2fff8e242cecb09e303cfa76d" name="a33c3f44b0148a1725b8dca9a36b3be3ea72f7c9d2fff8e242cecb09e303cfa76d"></a>ODRIVE_ERROR_WATCHDOG_TIMER_EXPIRED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3ea643d271066bd701e0830544d74d73f6f" name="a33c3f44b0148a1725b8dca9a36b3be3ea643d271066bd701e0830544d74d73f6f"></a>ODRIVE_ERROR_ESTOP_REQUESTED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3ea7c7fb70c991abf8068597ad336a63ed2" name="a33c3f44b0148a1725b8dca9a36b3be3ea7c7fb70c991abf8068597ad336a63ed2"></a>ODRIVE_ERROR_SPINOUT_DETECTED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3ea380997296c78b7f22a4e1ac95985d8eb" name="a33c3f44b0148a1725b8dca9a36b3be3ea380997296c78b7f22a4e1ac95985d8eb"></a>ODRIVE_ERROR_BRAKE_RESISTOR_DISARMED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3ea9f091a0d6a078d450183507b605e89f1" name="a33c3f44b0148a1725b8dca9a36b3be3ea9f091a0d6a078d450183507b605e89f1"></a>ODRIVE_ERROR_THERMISTOR_DISCONNECTED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a33c3f44b0148a1725b8dca9a36b3be3ea950d616fdf5ff496e04e7122cf1dba4c" name="a33c3f44b0148a1725b8dca9a36b3be3ea950d616fdf5ff496e04e7122cf1dba4c"></a>ODRIVE_ERROR_CALIBRATION_ERROR&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a3d1e33949424522386f7adf2074003b2" name="a3d1e33949424522386f7adf2074003b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d1e33949424522386f7adf2074003b2">&#9670;&#160;</a></span>ODriveProcedureResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a3d1e33949424522386f7adf2074003b2">alps::cmn::communication::odrive::ODriveProcedureResult</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a3d1e33949424522386f7adf2074003b2adebf47365697aac1c794a3b6985283f9" name="a3d1e33949424522386f7adf2074003b2adebf47365697aac1c794a3b6985283f9"></a>PROCEDURE_RESULT_SUCCESS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3d1e33949424522386f7adf2074003b2af2d85aa776cd88fc7b6a2087e4c03f47" name="a3d1e33949424522386f7adf2074003b2af2d85aa776cd88fc7b6a2087e4c03f47"></a>PROCEDURE_RESULT_BUSY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3d1e33949424522386f7adf2074003b2a1c711f81235508d7fdd83b011bbcb67a" name="a3d1e33949424522386f7adf2074003b2a1c711f81235508d7fdd83b011bbcb67a"></a>PROCEDURE_RESULT_CANCELLED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3d1e33949424522386f7adf2074003b2a53b28d3aee342fb588834ce31e92c536" name="a3d1e33949424522386f7adf2074003b2a53b28d3aee342fb588834ce31e92c536"></a>PROCEDURE_RESULT_DISARMED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3d1e33949424522386f7adf2074003b2a0608287f5e15f952520d0c251958e4eb" name="a3d1e33949424522386f7adf2074003b2a0608287f5e15f952520d0c251958e4eb"></a>PROCEDURE_RESULT_NO_RESPONSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3d1e33949424522386f7adf2074003b2a448570f01d11e9cc604c67d4eb68e273" name="a3d1e33949424522386f7adf2074003b2a448570f01d11e9cc604c67d4eb68e273"></a>PROCEDURE_RESULT_POLE_PAIR_CPR_MISMATCH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3d1e33949424522386f7adf2074003b2ad64378bcaa9170b664f24a57e0a344dd" name="a3d1e33949424522386f7adf2074003b2ad64378bcaa9170b664f24a57e0a344dd"></a>PROCEDURE_RESULT_PHASE_RESISTANCE_OUT_OF_RANGE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3d1e33949424522386f7adf2074003b2a07663a58324a1f41a2758c1f3055760a" name="a3d1e33949424522386f7adf2074003b2a07663a58324a1f41a2758c1f3055760a"></a>PROCEDURE_RESULT_PHASE_INDUCTANCE_OUT_OF_RANGE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3d1e33949424522386f7adf2074003b2a4de594d566b0b4354a745a2e01dc8e79" name="a3d1e33949424522386f7adf2074003b2a4de594d566b0b4354a745a2e01dc8e79"></a>PROCEDURE_RESULT_UNBALANCED_PHASES&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3d1e33949424522386f7adf2074003b2ae50a91e7bbd3f50234d81fded15e9bb3" name="a3d1e33949424522386f7adf2074003b2ae50a91e7bbd3f50234d81fded15e9bb3"></a>PROCEDURE_RESULT_INVALID_MOTOR_TYPE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3d1e33949424522386f7adf2074003b2a35aa7352ff6a998aa498858a278d25aa" name="a3d1e33949424522386f7adf2074003b2a35aa7352ff6a998aa498858a278d25aa"></a>PROCEDURE_RESULT_ILLEGAL_HALL_STATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3d1e33949424522386f7adf2074003b2af5416ce079e361abc52649f0f40fe294" name="a3d1e33949424522386f7adf2074003b2af5416ce079e361abc52649f0f40fe294"></a>PROCEDURE_RESULT_TIMEOUT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3d1e33949424522386f7adf2074003b2ade105a37e73212e43278cd1025537aba" name="a3d1e33949424522386f7adf2074003b2ade105a37e73212e43278cd1025537aba"></a>PROCEDURE_RESULT_HOMING_WITHOUT_ENDSTOP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3d1e33949424522386f7adf2074003b2ae824923ee75384e23554501c0e495954" name="a3d1e33949424522386f7adf2074003b2ae824923ee75384e23554501c0e495954"></a>PROCEDURE_RESULT_INVALID_STATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3d1e33949424522386f7adf2074003b2ae70d4eaafad73bfa43fb7460ad9658e2" name="a3d1e33949424522386f7adf2074003b2ae70d4eaafad73bfa43fb7460ad9658e2"></a>PROCEDURE_RESULT_NOT_CALIBRATED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3d1e33949424522386f7adf2074003b2ac5650fcb959e7e8864af50ff02c2cf15" name="a3d1e33949424522386f7adf2074003b2ac5650fcb959e7e8864af50ff02c2cf15"></a>PROCEDURE_RESULT_NOT_CONVERGING&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="aaef2d51815a38cb1a3aa55eadb18511e" name="aaef2d51815a38cb1a3aa55eadb18511e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaef2d51815a38cb1a3aa55eadb18511e">&#9670;&#160;</a></span>ODriveEncoderId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#aaef2d51815a38cb1a3aa55eadb18511e">alps::cmn::communication::odrive::ODriveEncoderId</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="aaef2d51815a38cb1a3aa55eadb18511ea63b62655924693707851c7f0c63ea1bd" name="aaef2d51815a38cb1a3aa55eadb18511ea63b62655924693707851c7f0c63ea1bd"></a>ENCODER_ID_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaef2d51815a38cb1a3aa55eadb18511ea5c42da96bab910505b825bf865beddc4" name="aaef2d51815a38cb1a3aa55eadb18511ea5c42da96bab910505b825bf865beddc4"></a>ENCODER_ID_INC_ENCODER0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaef2d51815a38cb1a3aa55eadb18511ea7861438e7aa6f7efb4db0b6cc015d8be" name="aaef2d51815a38cb1a3aa55eadb18511ea7861438e7aa6f7efb4db0b6cc015d8be"></a>ENCODER_ID_INC_ENCODER1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaef2d51815a38cb1a3aa55eadb18511eaa38e6197957043da5b9082423e1a5029" name="aaef2d51815a38cb1a3aa55eadb18511eaa38e6197957043da5b9082423e1a5029"></a>ENCODER_ID_INC_ENCODER2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaef2d51815a38cb1a3aa55eadb18511eae92c71042866ed900cd6dbbe81dc9961" name="aaef2d51815a38cb1a3aa55eadb18511eae92c71042866ed900cd6dbbe81dc9961"></a>ENCODER_ID_SENSORLESS_ESTIMATOR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaef2d51815a38cb1a3aa55eadb18511eabd57c69a48b59caba58af9a3668b8d4d" name="aaef2d51815a38cb1a3aa55eadb18511eabd57c69a48b59caba58af9a3668b8d4d"></a>ENCODER_ID_SPI_ENCODER0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaef2d51815a38cb1a3aa55eadb18511eaf449fc741f6d0d6999fec3573afb764a" name="aaef2d51815a38cb1a3aa55eadb18511eaf449fc741f6d0d6999fec3573afb764a"></a>ENCODER_ID_SPI_ENCODER1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaef2d51815a38cb1a3aa55eadb18511ea8b7d9341c62084b9c2fc239b96fe52c2" name="aaef2d51815a38cb1a3aa55eadb18511ea8b7d9341c62084b9c2fc239b96fe52c2"></a>ENCODER_ID_SPI_ENCODER2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaef2d51815a38cb1a3aa55eadb18511ea142bfa8fa58608779ff5430105aed39d" name="aaef2d51815a38cb1a3aa55eadb18511ea142bfa8fa58608779ff5430105aed39d"></a>ENCODER_ID_HALL_ENCODER0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaef2d51815a38cb1a3aa55eadb18511ea9b9ce1ca277967f44ddc54f7745f8cec" name="aaef2d51815a38cb1a3aa55eadb18511ea9b9ce1ca277967f44ddc54f7745f8cec"></a>ENCODER_ID_HALL_ENCODER1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaef2d51815a38cb1a3aa55eadb18511eace83d65f0fe21ef780612cc5bf76bc20" name="aaef2d51815a38cb1a3aa55eadb18511eace83d65f0fe21ef780612cc5bf76bc20"></a>ENCODER_ID_RS485_ENCODER0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaef2d51815a38cb1a3aa55eadb18511eaf628368feaddb9d6aba11a2cef313242" name="aaef2d51815a38cb1a3aa55eadb18511eaf628368feaddb9d6aba11a2cef313242"></a>ENCODER_ID_RS485_ENCODER1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaef2d51815a38cb1a3aa55eadb18511ea3fe1a428a35f5dcba79c4d6e02210445" name="aaef2d51815a38cb1a3aa55eadb18511ea3fe1a428a35f5dcba79c4d6e02210445"></a>ENCODER_ID_RS485_ENCODER2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaef2d51815a38cb1a3aa55eadb18511ea07c7ddf1fa55e3391b815be8bb2c6a61" name="aaef2d51815a38cb1a3aa55eadb18511ea07c7ddf1fa55e3391b815be8bb2c6a61"></a>ENCODER_ID_ONBOARD_ENCODER0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaef2d51815a38cb1a3aa55eadb18511eaaffd8bad9780d117d28209788cba9ea9" name="aaef2d51815a38cb1a3aa55eadb18511eaaffd8bad9780d117d28209788cba9ea9"></a>ENCODER_ID_ONBOARD_ENCODER1&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="afc1164d4de3df51570ad4b3229e9ac98" name="afc1164d4de3df51570ad4b3229e9ac98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc1164d4de3df51570ad4b3229e9ac98">&#9670;&#160;</a></span>ODriveSpiEncoderMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#afc1164d4de3df51570ad4b3229e9ac98">alps::cmn::communication::odrive::ODriveSpiEncoderMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="afc1164d4de3df51570ad4b3229e9ac98a98ced17fa66fd969532fd611ebd17eca" name="afc1164d4de3df51570ad4b3229e9ac98a98ced17fa66fd969532fd611ebd17eca"></a>SPI_ENCODER_MODE_DISABLED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afc1164d4de3df51570ad4b3229e9ac98abacbdc2d55e6d3c071bcda9b400bdb7e" name="afc1164d4de3df51570ad4b3229e9ac98abacbdc2d55e6d3c071bcda9b400bdb7e"></a>SPI_ENCODER_MODE_RLS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afc1164d4de3df51570ad4b3229e9ac98ad1f4e51036f0e0f3180f2ce15be08e55" name="afc1164d4de3df51570ad4b3229e9ac98ad1f4e51036f0e0f3180f2ce15be08e55"></a>SPI_ENCODER_MODE_AMS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afc1164d4de3df51570ad4b3229e9ac98a967e6400d7e2bef1cd56f74e5f816642" name="afc1164d4de3df51570ad4b3229e9ac98a967e6400d7e2bef1cd56f74e5f816642"></a>SPI_ENCODER_MODE_CUI&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afc1164d4de3df51570ad4b3229e9ac98aeb82ec2ce866031b61d4ac37acf04f87" name="afc1164d4de3df51570ad4b3229e9ac98aeb82ec2ce866031b61d4ac37acf04f87"></a>SPI_ENCODER_MODE_AEAT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afc1164d4de3df51570ad4b3229e9ac98a522696ca1a4d131b8500be6df3a199c5" name="afc1164d4de3df51570ad4b3229e9ac98a522696ca1a4d131b8500be6df3a199c5"></a>SPI_ENCODER_MODE_MA732&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afc1164d4de3df51570ad4b3229e9ac98a651bed954680f3157151c72ce37572a9" name="afc1164d4de3df51570ad4b3229e9ac98a651bed954680f3157151c72ce37572a9"></a>SPI_ENCODER_MODE_TLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afc1164d4de3df51570ad4b3229e9ac98a5be1212bc954aeee0b739bdcdb8b995b" name="afc1164d4de3df51570ad4b3229e9ac98a5be1212bc954aeee0b739bdcdb8b995b"></a>SPI_ENCODER_MODE_BISSC&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a1fcfabe241312ccd2e8a4ed72453a41a" name="a1fcfabe241312ccd2e8a4ed72453a41a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fcfabe241312ccd2e8a4ed72453a41a">&#9670;&#160;</a></span>ODriveRs485EncoderMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a1fcfabe241312ccd2e8a4ed72453a41a">alps::cmn::communication::odrive::ODriveRs485EncoderMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a1fcfabe241312ccd2e8a4ed72453a41aaa42c8ce138a7dbe171c44701f15bc003" name="a1fcfabe241312ccd2e8a4ed72453a41aaa42c8ce138a7dbe171c44701f15bc003"></a>RS485_ENCODER_MODE_DISABLED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1fcfabe241312ccd2e8a4ed72453a41aad46383fce70ed8289cd34df8ef4ccf13" name="a1fcfabe241312ccd2e8a4ed72453a41aad46383fce70ed8289cd34df8ef4ccf13"></a>RS485_ENCODER_MODE_AMT21_POLLING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1fcfabe241312ccd2e8a4ed72453a41aa9fe8f017137be8f109576c398457b17e" name="a1fcfabe241312ccd2e8a4ed72453a41aa9fe8f017137be8f109576c398457b17e"></a>RS485_ENCODER_MODE_AMT21_EVENT_DRIVEN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1fcfabe241312ccd2e8a4ed72453a41aaa8df6f1c1cd89c7ed1b3d55981912b24" name="a1fcfabe241312ccd2e8a4ed72453a41aaa8df6f1c1cd89c7ed1b3d55981912b24"></a>RS485_ENCODER_MODE_MBS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1fcfabe241312ccd2e8a4ed72453a41aa9c53508b8d7af4effbc4ab2d6e2783ee" name="a1fcfabe241312ccd2e8a4ed72453a41aa9c53508b8d7af4effbc4ab2d6e2783ee"></a>RS485_ENCODER_MODE_ODRIVE_OA1&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac4ec90f52067579375f2ccc651ecc23a" name="ac4ec90f52067579375f2ccc651ecc23a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4ec90f52067579375f2ccc651ecc23a">&#9670;&#160;</a></span>ODriveInputMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ac4ec90f52067579375f2ccc651ecc23a">alps::cmn::communication::odrive::ODriveInputMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="ac4ec90f52067579375f2ccc651ecc23aae18b080ad422450f4b7137166fbfe55d" name="ac4ec90f52067579375f2ccc651ecc23aae18b080ad422450f4b7137166fbfe55d"></a>INPUT_MODE_INACTIVE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac4ec90f52067579375f2ccc651ecc23aa2108c520f4b3de5c845ba5e0cbef89e6" name="ac4ec90f52067579375f2ccc651ecc23aa2108c520f4b3de5c845ba5e0cbef89e6"></a>INPUT_MODE_PASSTHROUGH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac4ec90f52067579375f2ccc651ecc23aab5354d2aa864f66bca7564f0764e231a" name="ac4ec90f52067579375f2ccc651ecc23aab5354d2aa864f66bca7564f0764e231a"></a>INPUT_MODE_VEL_RAMP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac4ec90f52067579375f2ccc651ecc23aa8cd33de7d97c988acb035eb7f4243748" name="ac4ec90f52067579375f2ccc651ecc23aa8cd33de7d97c988acb035eb7f4243748"></a>INPUT_MODE_POS_FILTER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac4ec90f52067579375f2ccc651ecc23aae8b655f34b348163666e143a705db0b2" name="ac4ec90f52067579375f2ccc651ecc23aae8b655f34b348163666e143a705db0b2"></a>INPUT_MODE_MIX_CHANNELS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac4ec90f52067579375f2ccc651ecc23aa6252c2e7a041b7b25c0dceaecc6f23a1" name="ac4ec90f52067579375f2ccc651ecc23aa6252c2e7a041b7b25c0dceaecc6f23a1"></a>INPUT_MODE_TRAP_TRAJ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac4ec90f52067579375f2ccc651ecc23aaa5fed6a782bb3450b3980e344ac8f26c" name="ac4ec90f52067579375f2ccc651ecc23aaa5fed6a782bb3450b3980e344ac8f26c"></a>INPUT_MODE_TORQUE_RAMP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac4ec90f52067579375f2ccc651ecc23aaf53005b82cd5b01e12732a304eece65b" name="ac4ec90f52067579375f2ccc651ecc23aaf53005b82cd5b01e12732a304eece65b"></a>INPUT_MODE_MIRROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac4ec90f52067579375f2ccc651ecc23aa2a4899c05ba05ae53993b2d97a1c4279" name="ac4ec90f52067579375f2ccc651ecc23aa2a4899c05ba05ae53993b2d97a1c4279"></a>INPUT_MODE_TUNING&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="abf65ff86e11cfec2ced844a672dbb95c" name="abf65ff86e11cfec2ced844a672dbb95c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf65ff86e11cfec2ced844a672dbb95c">&#9670;&#160;</a></span>ODriveMotorType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#abf65ff86e11cfec2ced844a672dbb95c">alps::cmn::communication::odrive::ODriveMotorType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="abf65ff86e11cfec2ced844a672dbb95ca5b8d432cbf8d3c6f74f083053a9fd866" name="abf65ff86e11cfec2ced844a672dbb95ca5b8d432cbf8d3c6f74f083053a9fd866"></a>MOTOR_TYPE_HIGH_CURRENT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abf65ff86e11cfec2ced844a672dbb95cae283ebb370f16ef7a87de827386aee94" name="abf65ff86e11cfec2ced844a672dbb95cae283ebb370f16ef7a87de827386aee94"></a>MOTOR_TYPE_GIMBAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abf65ff86e11cfec2ced844a672dbb95cae8d3c707a3016d259ec6f13312e45497" name="abf65ff86e11cfec2ced844a672dbb95cae8d3c707a3016d259ec6f13312e45497"></a>MOTOR_TYPE_ACIM&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a4996f8cafada22f589d0bc5dda475564" name="a4996f8cafada22f589d0bc5dda475564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4996f8cafada22f589d0bc5dda475564">&#9670;&#160;</a></span>ODriveCanError</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a4996f8cafada22f589d0bc5dda475564">alps::cmn::communication::odrive::ODriveCanError</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a4996f8cafada22f589d0bc5dda475564a57d7804a6450ddcae3b846ff483c6e2a" name="a4996f8cafada22f589d0bc5dda475564a57d7804a6450ddcae3b846ff483c6e2a"></a>CAN_ERROR_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4996f8cafada22f589d0bc5dda475564a0dff7b2fbc7159c4ec8480fc304c7555" name="a4996f8cafada22f589d0bc5dda475564a0dff7b2fbc7159c4ec8480fc304c7555"></a>CAN_ERROR_DUPLICATE_CAN_IDS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4996f8cafada22f589d0bc5dda475564a60fb60b0dab6a240c3082f1b91cfb3c0" name="a4996f8cafada22f589d0bc5dda475564a60fb60b0dab6a240c3082f1b91cfb3c0"></a>CAN_ERROR_BUS_OFF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4996f8cafada22f589d0bc5dda475564a7edc43fba2771cd8a4cc43113a17b162" name="a4996f8cafada22f589d0bc5dda475564a7edc43fba2771cd8a4cc43113a17b162"></a>CAN_ERROR_LOW_LEVEL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4996f8cafada22f589d0bc5dda475564a0775c9adb447e139da41cd99914978f4" name="a4996f8cafada22f589d0bc5dda475564a0775c9adb447e139da41cd99914978f4"></a>CAN_ERROR_PROTOCOL_INIT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a4d6d8acfa0ee0f706c00abe2d6d5eca4" name="a4d6d8acfa0ee0f706c00abe2d6d5eca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d6d8acfa0ee0f706c00abe2d6d5eca4">&#9670;&#160;</a></span>can_get_signal_raw() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T alps::cmn::communication::odrive::can_get_signal_raw </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>startBit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>isIntel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c6101bba0074349ba908be1a35e742d" name="a5c6101bba0074349ba908be1a35e742d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c6101bba0074349ba908be1a35e742d">&#9670;&#160;</a></span>can_set_signal_raw() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void alps::cmn::communication::odrive::can_set_signal_raw </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>startBit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>isIntel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2cb31d8e08744a48bbbd1fdfdf693e4" name="af2cb31d8e08744a48bbbd1fdfdf693e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2cb31d8e08744a48bbbd1fdfdf693e4">&#9670;&#160;</a></span>can_get_signal_raw() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">float alps::cmn::communication::odrive::can_get_signal_raw </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>startBit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>isIntel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>factor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc4aadaf408e3ea188d9f5ee9bb32938" name="acc4aadaf408e3ea188d9f5ee9bb32938"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc4aadaf408e3ea188d9f5ee9bb32938">&#9670;&#160;</a></span>can_set_signal_raw() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr void alps::cmn::communication::odrive::can_set_signal_raw </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>startBit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>isIntel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>factor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14a6d155f4c3e79b802c375a968baabd" name="a14a6d155f4c3e79b802c375a968baabd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14a6d155f4c3e79b802c375a968baabd">&#9670;&#160;</a></span>can_get_signal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename TMsg &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr T alps::cmn::communication::odrive::can_get_signal </td>
+          <td>(</td>
+          <td class="paramtype">const TMsg &amp;&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>startBit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>isIntel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f3381e5bdc936d0f1e0f7391552dc64" name="a7f3381e5bdc936d0f1e0f7391552dc64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f3381e5bdc936d0f1e0f7391552dc64">&#9670;&#160;</a></span>can_set_signal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename TMsg &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr void alps::cmn::communication::odrive::can_set_signal </td>
+          <td>(</td>
+          <td class="paramtype">TMsg &amp;&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>startBit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>isIntel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacealps.html">alps</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn.html">cmn</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn_1_1communication.html">communication</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html">odrive</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>
