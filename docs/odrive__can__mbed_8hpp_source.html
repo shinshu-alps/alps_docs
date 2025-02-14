@@ -1,0 +1,272 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/communication/odrive_can_mbed.hpp ソースファイル</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('odrive__can__mbed_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">odrive_can_mbed.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="odrive__can__mbed_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="odrive__can_8h.html">alps_cmn/communication/odrive_can.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;etl/vector.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;mbed.h&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>mbed</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span>communication</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html">   13</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html">odrive</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html">ODriveCanIo</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#a78b7fbefa0da87cbbbd62a4833cb9494">   18</a></span><span class="keyword">constexpr</span> uint32_t <a class="code hl_variable" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#a78b7fbefa0da87cbbbd62a4833cb9494">kMaxOdriveNodeId</a> = 63; <span class="comment">// ODriveノードIDの最大数</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#a2ec26d46320ce4401764933c88b59515">   19</a></span><span class="keyword">using </span><a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">ODriveCAN</a> = <a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN&lt;ODriveCanIo&gt;</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">extern</span> etl::vector&lt;ODriveCAN, kMaxOdriveNodeId&gt; <a class="code hl_variable" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#ae15606a39366139d2acefff25764685d">g_odrives</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// g_odriveの要素を追加する関数</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#aeb6bcd539d4e032f0c050b435641ad36">   23</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#aeb6bcd539d4e032f0c050b435641ad36">AddOdrive</a>(<a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">ODriveCAN</a> &amp;<a class="code hl_namespace" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html">odrive</a>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html">   29</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html">ODriveCanIo</a> : <span class="keyword">public</span> <a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf.html">alps::cmn::communication::odrive::ODriveCanIntf</a>&lt;ODriveCanIo&gt;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html#a4143f15c8cd9ea61bc96b184ea932343">   32</a></span>  <a class="code hl_function" href="classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html#a4143f15c8cd9ea61bc96b184ea932343">ODriveCanIo</a>(PinName rd,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>              PinName td, </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>              uint32_t kCanBaudRate, </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>              std::chrono::milliseconds write_interrupt_cycle = std::chrono::milliseconds(10))</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      : can_(rd, td, kCanBaudRate)</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    can_.attach(Callback&lt;<span class="keywordtype">void</span>()&gt;(<span class="keyword">this</span>, &amp;<a class="code hl_function" href="classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html#ace70b82af3f9bcff0b53247e37f8f65e">ODriveCanIo::pumpEvents</a>), CAN::RxIrq);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  }</div>
+</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html#a0165081189eb580ad822715c693e5abf">   41</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html#a0165081189eb580ad822715c693e5abf">onCanMessage</a>(const ::mbed::CANMessage &amp;msg)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;<a class="code hl_namespace" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html">odrive</a> : <a class="code hl_variable" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#ae15606a39366139d2acefff25764685d">g_odrives</a>)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      <a class="code hl_function" href="classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html#a116ba7b595eedfa9202326f6cf4ed4e7">onReceive</a>(msg, <a class="code hl_namespace" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html">odrive</a>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  }</div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html#afcf1eb0209555a1905d3f3aaddc921c8">   49</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html#afcf1eb0209555a1905d3f3aaddc921c8">sendMessage</a>(uint32_t <span class="keywordtype">id</span>, uint8_t length, <span class="keyword">const</span> uint8_t *data)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    ::mbed::CANMessage msg{id, data, length};</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    printf(<span class="stringliteral">&quot;sendMessage function was called\n&quot;</span>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">if</span> (!can_.write(msg))</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      printf(<span class="stringliteral">&quot;Message send failed tderror : %d\n&quot;</span>, can_.tderror());</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html#a116ba7b595eedfa9202326f6cf4ed4e7">   65</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html#a116ba7b595eedfa9202326f6cf4ed4e7">onReceive</a>(const ::mbed::CANMessage &amp;msg, <a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">ODriveCAN</a> &amp;<a class="code hl_namespace" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html">odrive</a>)</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>{</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <a class="code hl_namespace" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html">odrive</a>.onReceive(msg.id, msg.len, msg.data);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html#ace70b82af3f9bcff0b53247e37f8f65e">   70</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html#ace70b82af3f9bcff0b53247e37f8f65e">pumpEvents</a>()</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>{</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  ::mbed::CANMessage msg;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keywordflow">if</span> (can_.read(msg))</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_function" href="classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html#a0165081189eb580ad822715c693e5abf">onCanMessage</a>(msg);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
+</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  ::mbed::CAN can_;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> kWriteBufSize_ = 50;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> kReadBufSize_ = 100;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  ::mbed::CircularBuffer&lt;::mbed::CANMessage, kWriteBufSize_&gt; write_buffer_{};</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  ::mbed::Ticker ticker_;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>};</div>
+</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="};">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="structalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_user_data.html">   93</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_user_data.html">ODriveUserData</a></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>{</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="structalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_user_data.html#a59b8bacececb1fa00ee901a3db6527b1">   95</a></span>  <a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_heartbeat__msg__t.html">alps::cmn::communication::odrive::Heartbeat_msg_t</a> <a class="code hl_variable" href="structalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_user_data.html#a59b8bacececb1fa00ee901a3db6527b1">last_heartbeat</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="structalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_user_data.html#aa4e524212e8050d94e7221a3b3bbad47">   96</a></span>  <span class="keywordtype">bool</span> <a class="code hl_variable" href="structalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_user_data.html#aa4e524212e8050d94e7221a3b3bbad47">received_heartbeat</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="structalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_user_data.html#a58b966c1656459152ff857468472d83d">   97</a></span>  <a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___encoder___estimates__msg__t.html">alps::cmn::communication::odrive::Get_Encoder_Estimates_msg_t</a> <a class="code hl_variable" href="structalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_user_data.html#a58b966c1656459152ff857468472d83d">last_feedback</a>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="structalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_user_data.html#a25b08694e1c182343f4c3e0335a9a72f">   98</a></span>  <span class="keywordtype">bool</span> <a class="code hl_variable" href="structalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_user_data.html#a25b08694e1c182343f4c3e0335a9a72f">received_feedback</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>};</div>
+</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="keyword">extern</span> etl::vector&lt;ODriveUserData, kMaxOdriveNodeId&gt; <a class="code hl_variable" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#a4fc5ffcf6370a680322c3ec45870184a">g_odrv_user_datas</a>; <span class="comment">// それぞれのデバイスの受信データの配列</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">// ODrive からハートビートメッセージが到着するたびに呼び出される</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#aa789562584d929adce02e9a0f82fca11">  102</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#aa789562584d929adce02e9a0f82fca11">onHeartbeat</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_heartbeat__msg__t.html">alps::cmn::communication::odrive::Heartbeat_msg_t</a> &amp;msg, <span class="keywordtype">void</span> *user_data);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">// ODrive からフィードバックメッセージが到着するたびに呼び出される</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#a977846073dcb6ef328ba57c80533304b">  104</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#a977846073dcb6ef328ba57c80533304b">onFeedbackFunc</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___encoder___estimates__msg__t.html">alps::cmn::communication::odrive::Get_Encoder_Estimates_msg_t</a> &amp;msg, <span class="keywordtype">void</span> *user_data);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>} <span class="comment">// namespace odrive</span></div>
+</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>} <span class="comment">// namespace communication</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>} <span class="comment">// namespace mbed</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>} <span class="comment">// namespace alps</span></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n_html"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html">alps::cmn::communication::odrive::ODriveCAN</a></div><div class="ttdoc">ODriveとCAN通信を行うクラス</div><div class="ttdef"><b>Definition</b> odrive_can.h:80</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io_html"><div class="ttname"><a href="classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html">alps::mbed::communication::odrive::ODriveCanIo</a></div><div class="ttdoc">mbed環境でODriveのCAN通信IO。その他必要なmbedの機能を関数として登録する</div><div class="ttdef"><b>Definition</b> odrive_can_mbed.hpp:30</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io_html_a0165081189eb580ad822715c693e5abf"><div class="ttname"><a href="classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html#a0165081189eb580ad822715c693e5abf">alps::mbed::communication::odrive::ODriveCanIo::onCanMessage</a></div><div class="ttdeci">void onCanMessage(const ::mbed::CANMessage &amp;msg)</div><div class="ttdef"><b>Definition</b> odrive_can_mbed.hpp:41</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io_html_a116ba7b595eedfa9202326f6cf4ed4e7"><div class="ttname"><a href="classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html#a116ba7b595eedfa9202326f6cf4ed4e7">alps::mbed::communication::odrive::ODriveCanIo::onReceive</a></div><div class="ttdeci">void onReceive(const ::mbed::CANMessage &amp;msg, ODriveCAN &amp;odrive)</div><div class="ttdef"><b>Definition</b> odrive_can_mbed.hpp:65</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io_html_a4143f15c8cd9ea61bc96b184ea932343"><div class="ttname"><a href="classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html#a4143f15c8cd9ea61bc96b184ea932343">alps::mbed::communication::odrive::ODriveCanIo::ODriveCanIo</a></div><div class="ttdeci">ODriveCanIo(PinName rd, PinName td, uint32_t kCanBaudRate, std::chrono::milliseconds write_interrupt_cycle=std::chrono::milliseconds(10))</div><div class="ttdef"><b>Definition</b> odrive_can_mbed.hpp:32</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io_html_ace70b82af3f9bcff0b53247e37f8f65e"><div class="ttname"><a href="classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html#ace70b82af3f9bcff0b53247e37f8f65e">alps::mbed::communication::odrive::ODriveCanIo::pumpEvents</a></div><div class="ttdeci">void pumpEvents()</div><div class="ttdef"><b>Definition</b> odrive_can_mbed.hpp:70</div></div>
+<div class="ttc" id="aclassalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io_html_afcf1eb0209555a1905d3f3aaddc921c8"><div class="ttname"><a href="classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html#afcf1eb0209555a1905d3f3aaddc921c8">alps::mbed::communication::odrive::ODriveCanIo::sendMessage</a></div><div class="ttdeci">bool sendMessage(uint32_t id, uint8_t length, const uint8_t *data)</div><div class="ttdef"><b>Definition</b> odrive_can_mbed.hpp:49</div></div>
+<div class="ttc" id="anamespacealps_1_1mbed_1_1communication_1_1odrive_html"><div class="ttname"><a href="namespacealps_1_1mbed_1_1communication_1_1odrive.html">alps::mbed::communication::odrive</a></div><div class="ttdef"><b>Definition</b> odrive_can_mbed.hpp:14</div></div>
+<div class="ttc" id="anamespacealps_1_1mbed_1_1communication_1_1odrive_html_a4fc5ffcf6370a680322c3ec45870184a"><div class="ttname"><a href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#a4fc5ffcf6370a680322c3ec45870184a">alps::mbed::communication::odrive::g_odrv_user_datas</a></div><div class="ttdeci">etl::vector&lt; ODriveUserData, kMaxOdriveNodeId &gt; g_odrv_user_datas</div></div>
+<div class="ttc" id="anamespacealps_1_1mbed_1_1communication_1_1odrive_html_a78b7fbefa0da87cbbbd62a4833cb9494"><div class="ttname"><a href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#a78b7fbefa0da87cbbbd62a4833cb9494">alps::mbed::communication::odrive::kMaxOdriveNodeId</a></div><div class="ttdeci">constexpr uint32_t kMaxOdriveNodeId</div><div class="ttdef"><b>Definition</b> odrive_can_mbed.hpp:18</div></div>
+<div class="ttc" id="anamespacealps_1_1mbed_1_1communication_1_1odrive_html_a977846073dcb6ef328ba57c80533304b"><div class="ttname"><a href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#a977846073dcb6ef328ba57c80533304b">alps::mbed::communication::odrive::onFeedbackFunc</a></div><div class="ttdeci">void onFeedbackFunc(alps::cmn::communication::odrive::Get_Encoder_Estimates_msg_t &amp;msg, void *user_data)</div></div>
+<div class="ttc" id="anamespacealps_1_1mbed_1_1communication_1_1odrive_html_aa789562584d929adce02e9a0f82fca11"><div class="ttname"><a href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#aa789562584d929adce02e9a0f82fca11">alps::mbed::communication::odrive::onHeartbeat</a></div><div class="ttdeci">void onHeartbeat(alps::cmn::communication::odrive::Heartbeat_msg_t &amp;msg, void *user_data)</div></div>
+<div class="ttc" id="anamespacealps_1_1mbed_1_1communication_1_1odrive_html_ae15606a39366139d2acefff25764685d"><div class="ttname"><a href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#ae15606a39366139d2acefff25764685d">alps::mbed::communication::odrive::g_odrives</a></div><div class="ttdeci">etl::vector&lt; ODriveCAN, kMaxOdriveNodeId &gt; g_odrives</div></div>
+<div class="ttc" id="anamespacealps_1_1mbed_1_1communication_1_1odrive_html_aeb6bcd539d4e032f0c050b435641ad36"><div class="ttname"><a href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#aeb6bcd539d4e032f0c050b435641ad36">alps::mbed::communication::odrive::AddOdrive</a></div><div class="ttdeci">void AddOdrive(ODriveCAN &amp;odrive)</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition</b> dc_motor.hpp:25</div></div>
+<div class="ttc" id="aodrive__can_8h_html"><div class="ttname"><a href="odrive__can_8h.html">odrive_can.h</a></div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_get___encoder___estimates__msg__t_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___encoder___estimates__msg__t.html">alps::cmn::communication::odrive::Get_Encoder_Estimates_msg_t</a></div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:170</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_heartbeat__msg__t_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_heartbeat__msg__t.html">alps::cmn::communication::odrive::Heartbeat_msg_t</a></div><div class="ttdef"><b>Definition</b> odrive_can_simple_messages.hpp:63</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_html"><div class="ttname"><a href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf.html">alps::cmn::communication::odrive::ODriveCanIntf</a></div><div class="ttdoc">ODriveのCanIOのインターフェース</div><div class="ttdef"><b>Definition</b> odrive_can.h:62</div></div>
+<div class="ttc" id="astructalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_user_data_html"><div class="ttname"><a href="structalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_user_data.html">alps::mbed::communication::odrive::ODriveUserData</a></div><div class="ttdoc">ODriveデバイスのデータ</div><div class="ttdef"><b>Definition</b> odrive_can_mbed.hpp:94</div></div>
+<div class="ttc" id="astructalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_user_data_html_a25b08694e1c182343f4c3e0335a9a72f"><div class="ttname"><a href="structalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_user_data.html#a25b08694e1c182343f4c3e0335a9a72f">alps::mbed::communication::odrive::ODriveUserData::received_feedback</a></div><div class="ttdeci">bool received_feedback</div><div class="ttdef"><b>Definition</b> odrive_can_mbed.hpp:98</div></div>
+<div class="ttc" id="astructalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_user_data_html_a58b966c1656459152ff857468472d83d"><div class="ttname"><a href="structalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_user_data.html#a58b966c1656459152ff857468472d83d">alps::mbed::communication::odrive::ODriveUserData::last_feedback</a></div><div class="ttdeci">alps::cmn::communication::odrive::Get_Encoder_Estimates_msg_t last_feedback</div><div class="ttdef"><b>Definition</b> odrive_can_mbed.hpp:97</div></div>
+<div class="ttc" id="astructalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_user_data_html_a59b8bacececb1fa00ee901a3db6527b1"><div class="ttname"><a href="structalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_user_data.html#a59b8bacececb1fa00ee901a3db6527b1">alps::mbed::communication::odrive::ODriveUserData::last_heartbeat</a></div><div class="ttdeci">alps::cmn::communication::odrive::Heartbeat_msg_t last_heartbeat</div><div class="ttdef"><b>Definition</b> odrive_can_mbed.hpp:95</div></div>
+<div class="ttc" id="astructalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_user_data_html_aa4e524212e8050d94e7221a3b3bbad47"><div class="ttname"><a href="structalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_user_data.html#aa4e524212e8050d94e7221a3b3bbad47">alps::mbed::communication::odrive::ODriveUserData::received_heartbeat</a></div><div class="ttdeci">bool received_heartbeat</div><div class="ttdef"><b>Definition</b> odrive_can_mbed.hpp:96</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_627d875eccf4a985023a7fe06842126c.html">alps_core</a></li><li class="navelem"><a class="el" href="dir_f64f47805544727f04f019e126982967.html">lib_internal</a></li><li class="navelem"><a class="el" href="dir_9873ffdc03473915e57dacf48330031a.html">alps_mbed_lib</a></li><li class="navelem"><a class="el" href="dir_004f98237f8c341a9024f226d8b822ea.html">include</a></li><li class="navelem"><a class="el" href="dir_aeddf8fa4339a06bf9ad9a961c7b6af8.html">alps_mbed</a></li><li class="navelem"><a class="el" href="dir_9eaad8482ebdaa54b2bc49722f1ee47c.html">communication</a></li><li class="navelem"><a class="el" href="odrive__can__mbed_8hpp.html">odrive_can_mbed.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

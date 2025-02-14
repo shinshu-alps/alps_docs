@@ -15,6 +15,37 @@ var annotated_dup =
           [ "ServoMotorParam", "structalps_1_1cmn_1_1actuator_1_1_servo_motor_param.html", "structalps_1_1cmn_1_1actuator_1_1_servo_motor_param" ]
         ] ],
         [ "communication", "namespacealps_1_1cmn_1_1communication.html", [
+          [ "odrive", "namespacealps_1_1cmn_1_1communication_1_1odrive.html", [
+            [ "Address_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_address__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_address__msg__t" ],
+            [ "Clear_Errors_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_clear___errors__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_clear___errors__msg__t" ],
+            [ "Enter_DFU_Mode_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_enter___d_f_u___mode__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_enter___d_f_u___mode__msg__t" ],
+            [ "Estop_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_estop__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_estop__msg__t" ],
+            [ "Get_Bus_Voltage_Current_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___bus___voltage___current__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___bus___voltage___current__msg__t" ],
+            [ "Get_Encoder_Estimates_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___encoder___estimates__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___encoder___estimates__msg__t" ],
+            [ "Get_Error_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___error__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___error__msg__t" ],
+            [ "Get_Iq_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___iq__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___iq__msg__t" ],
+            [ "Get_Powers_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___powers__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___powers__msg__t" ],
+            [ "Get_Temperature_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___temperature__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___temperature__msg__t" ],
+            [ "Get_Torques_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___torques__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___torques__msg__t" ],
+            [ "Get_Version_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___version__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___version__msg__t" ],
+            [ "Heartbeat_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_heartbeat__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_heartbeat__msg__t" ],
+            [ "ODriveCAN", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html", "classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n" ],
+            [ "ODriveCanIntf", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf" ],
+            [ "ODriveCanIntfWrapper", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_can_intf_wrapper" ],
+            [ "Reboot_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_reboot__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_reboot__msg__t" ],
+            [ "Set_Absolute_Position_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___absolute___position__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___absolute___position__msg__t" ],
+            [ "Set_Axis_State_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___axis___state__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___axis___state__msg__t" ],
+            [ "Set_Controller_Mode_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___controller___mode__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___controller___mode__msg__t" ],
+            [ "Set_Input_Pos_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___pos__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___pos__msg__t" ],
+            [ "Set_Input_Torque_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___torque__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___torque__msg__t" ],
+            [ "Set_Input_Vel_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___vel__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___vel__msg__t" ],
+            [ "Set_Limits_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___limits__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___limits__msg__t" ],
+            [ "Set_Pos_Gain_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___pos___gain__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___pos___gain__msg__t" ],
+            [ "Set_Traj_Accel_Limits_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___accel___limits__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___accel___limits__msg__t" ],
+            [ "Set_Traj_Inertia_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___inertia__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___inertia__msg__t" ],
+            [ "Set_Traj_Vel_Limit_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___vel___limit__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___vel___limit__msg__t" ],
+            [ "Set_Vel_Gains_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___vel___gains__msg__t.html", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___vel___gains__msg__t" ]
+          ] ],
           [ "CanCallbackHandler", "classalps_1_1cmn_1_1communication_1_1_can_callback_handler.html", "classalps_1_1cmn_1_1communication_1_1_can_callback_handler" ],
           [ "CanDataFrame", "structalps_1_1cmn_1_1communication_1_1_can_data_frame.html", "structalps_1_1cmn_1_1communication_1_1_can_data_frame" ],
           [ "CanParamClient", "classalps_1_1cmn_1_1communication_1_1_can_param_client.html", "classalps_1_1cmn_1_1communication_1_1_can_param_client" ],
@@ -135,6 +166,10 @@ var annotated_dup =
       ] ],
       [ "mbed", "namespacealps_1_1mbed.html", [
         [ "communication", "namespacealps_1_1mbed_1_1communication.html", [
+          [ "odrive", "namespacealps_1_1mbed_1_1communication_1_1odrive.html", [
+            [ "ODriveCanIo", "classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io.html", "classalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_can_io" ],
+            [ "ODriveUserData", "structalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_user_data.html", "structalps_1_1mbed_1_1communication_1_1odrive_1_1_o_drive_user_data" ]
+          ] ],
           [ "BufferedCanIo", "classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html", "classalps_1_1mbed_1_1communication_1_1_buffered_can_io" ],
           [ "I2cIo", "classalps_1_1mbed_1_1communication_1_1_i2c_io.html", "classalps_1_1mbed_1_1communication_1_1_i2c_io" ],
           [ "UartIo", "classalps_1_1mbed_1_1communication_1_1_uart_io.html", "classalps_1_1mbed_1_1communication_1_1_uart_io" ]

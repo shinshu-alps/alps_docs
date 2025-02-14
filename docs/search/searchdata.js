@@ -5,11 +5,11 @@ var indexSectionsWithContent =
   2: "a",
   3: "abcdefijlmnoprstuv",
   4: "abcdefghijlmnoprstuvw~",
-  5: "abcdefgiklmnoprstvwxyz",
+  5: "abcdefghiklmnoprstvwxyz",
   6: "dimostu",
   7: "abilopr",
-  8: "k",
-  9: "a",
+  8: "acegikmoprs",
+  9: "acr",
   10: "概"
 };
 
