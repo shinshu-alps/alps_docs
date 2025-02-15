@@ -145,195 +145,199 @@ $(document).ready(function(){initNavTree('odrive__can__func_8hpp_source.html',''
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  }</div>
 </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="namespacealps_1_1mbed_1_1actuator.html#a659dd93d534ec692cec06f4054b66198">   27</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="namespacealps_1_1mbed_1_1actuator.html#a659dd93d534ec692cec06f4054b66198">PrintError</a>(uint32_t &amp;error)</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">switch</span> (error)</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea9ab832be9d31a8ada2b035d4579762f0">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_INITIALIZING</a>:</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      printf(<span class="stringliteral">&quot;ERROR INITIALIZING\n&quot;</span>);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3eabd07b4a385f221be3c8ae14050e1c80e">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_SYSTEM_LEVEL</a>:</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      printf(<span class="stringliteral">&quot;ERROR_SYSTEM_LEVEL\n&quot;</span>);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea908372398a6b4c65a4260a9c3308814a">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_TIMING_ERROR</a>:</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>      printf(<span class="stringliteral">&quot;ERROR_TIMING_ERROR\n&quot;</span>);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea86f53b24118aaef63c14e5bd23f0be97">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_MISSING_ESTIMATE</a>:</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      printf(<span class="stringliteral">&quot;ERROR_MISSING_ESTIMATE\n&quot;</span>);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea051b54ac927c5b6d4dde740a3a9cc6bd">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_BAD_CONFIG</a>:</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      printf(<span class="stringliteral">&quot;ERROR_BAD_CONFIG\n&quot;</span>);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea3d987aa2acf6e69945e97ff270748bb1">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_DRV_FAULT</a>:</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      printf(<span class="stringliteral">&quot;ERROR_DRV_FAULT\n&quot;</span>);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea5dc4770a0442f074cd5efe40f52b290d">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_MISSING_INPUT</a>:</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      printf(<span class="stringliteral">&quot;ERROR_MISSING_INPUT\n&quot;</span>);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3eadb7ce30fb8f1d040870cb8be80b30da0">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_DC_BUS_OVER_VOLTAGE</a>:</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      printf(<span class="stringliteral">&quot;ERROR_DC_BUS_OVER_VOLTAGE\n&quot;</span>);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea7e6c001f33de89924976d4879f9e4f74">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_DC_BUS_UNDER_VOLTAGE</a>:</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      printf(<span class="stringliteral">&quot;ERROR_DC_BUS_UNDER_VOLTAGE\n&quot;</span>);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3eabfd554de73f208b0d5188c30b00590da">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_DC_BUS_OVER_CURRENT</a>:</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      printf(<span class="stringliteral">&quot;ERROR_DC_BUS_OVER_CURRENT\n&quot;</span>);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea33ee23e2ed92c0eb43dc4dba801751d3">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_DC_BUS_OVER_REGEN_CURRENT</a>:</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      printf(<span class="stringliteral">&quot;ERROR_DC_BUS_OVER_REGEN_CURRENT\n&quot;</span>);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea532430d4c4b916ece3602bbdbe0e3a70">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_CURRENT_LIMIT_VIOLATION</a>:</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      printf(<span class="stringliteral">&quot;ERROR_CURRENT_LIMIT_VIOLATION\n&quot;</span>);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea5ebef635ce77799aae50878a927e3431">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_MOTOR_OVER_TEMP</a>:</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      printf(<span class="stringliteral">&quot;ERROR_MOTOR_OVER_TEMP\n&quot;</span>);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3eace5b899e88387a6f1803aff248cc37ff">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_INVERTER_OVER_TEMP</a>:</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      printf(<span class="stringliteral">&quot;ERROR_INVERTER_OVER_TEMP\n&quot;</span>);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3eafa904885481f24f7533dbe9c5d7b0354">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_VELOCITY_LIMIT_VIOLATION</a>:</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      printf(<span class="stringliteral">&quot;ERROR_VELOCITY_LIMIT_VIOLATION\n&quot;</span>);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3eabfab8646fddeac522482dd081df684d8">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_POSITION_LIMIT_VIOLATION</a>:</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      printf(<span class="stringliteral">&quot;ERROR_POSITION_LIMIT_VIOLATION\n&quot;</span>);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea72f7c9d2fff8e242cecb09e303cfa76d">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_WATCHDOG_TIMER_EXPIRED</a>:</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      printf(<span class="stringliteral">&quot;ERROR_WATCHDOG_TIMER_EXPIRED\n&quot;</span>);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea643d271066bd701e0830544d74d73f6f">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_ESTOP_REQUESTED</a>:</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>      printf(<span class="stringliteral">&quot;ERROR_ESTOP_REQUESTED\n&quot;</span>);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea7c7fb70c991abf8068597ad336a63ed2">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_SPINOUT_DETECTED</a>:</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      printf(<span class="stringliteral">&quot;ERROR_SPINOUT_DETECTED\n&quot;</span>);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea380997296c78b7f22a4e1ac95985d8eb">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_BRAKE_RESISTOR_DISARMED</a>:</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      printf(<span class="stringliteral">&quot;ERROR_BRAKE_RESISTOR_DISARMED\n&quot;</span>);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea9f091a0d6a078d450183507b605e89f1">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_THERMISTOR_DISCONNECTED</a>:</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      printf(<span class="stringliteral">&quot;ERROR_THERMISTOR_DISCONNECTED\n&quot;</span>);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea950d616fdf5ff496e04e7122cf1dba4c">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_CALIBRATION_ERROR</a>:</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>      printf(<span class="stringliteral">&quot;ERROR_CALIBRATION_ERROR\n&quot;</span>);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>      printf(<span class="stringliteral">&quot;No ERROR\n&quot;</span>);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  }</div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="namespacealps_1_1mbed_1_1actuator.html#a659dd93d534ec692cec06f4054b66198">   32</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="namespacealps_1_1mbed_1_1actuator.html#a659dd93d534ec692cec06f4054b66198">PrintError</a>(uint32_t &amp;error)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">switch</span> (error)</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea9ab832be9d31a8ada2b035d4579762f0">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_INITIALIZING</a>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      printf(<span class="stringliteral">&quot;ERROR INITIALIZING\n&quot;</span>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3eabd07b4a385f221be3c8ae14050e1c80e">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_SYSTEM_LEVEL</a>:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      printf(<span class="stringliteral">&quot;ERROR_SYSTEM_LEVEL\n&quot;</span>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea908372398a6b4c65a4260a9c3308814a">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_TIMING_ERROR</a>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      printf(<span class="stringliteral">&quot;ERROR_TIMING_ERROR\n&quot;</span>);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea86f53b24118aaef63c14e5bd23f0be97">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_MISSING_ESTIMATE</a>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      printf(<span class="stringliteral">&quot;ERROR_MISSING_ESTIMATE\n&quot;</span>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea051b54ac927c5b6d4dde740a3a9cc6bd">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_BAD_CONFIG</a>:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      printf(<span class="stringliteral">&quot;ERROR_BAD_CONFIG\n&quot;</span>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea3d987aa2acf6e69945e97ff270748bb1">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_DRV_FAULT</a>:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      printf(<span class="stringliteral">&quot;ERROR_DRV_FAULT\n&quot;</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea5dc4770a0442f074cd5efe40f52b290d">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_MISSING_INPUT</a>:</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      printf(<span class="stringliteral">&quot;ERROR_MISSING_INPUT\n&quot;</span>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3eadb7ce30fb8f1d040870cb8be80b30da0">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_DC_BUS_OVER_VOLTAGE</a>:</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      printf(<span class="stringliteral">&quot;ERROR_DC_BUS_OVER_VOLTAGE\n&quot;</span>);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea7e6c001f33de89924976d4879f9e4f74">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_DC_BUS_UNDER_VOLTAGE</a>:</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      printf(<span class="stringliteral">&quot;ERROR_DC_BUS_UNDER_VOLTAGE\n&quot;</span>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3eabfd554de73f208b0d5188c30b00590da">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_DC_BUS_OVER_CURRENT</a>:</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      printf(<span class="stringliteral">&quot;ERROR_DC_BUS_OVER_CURRENT\n&quot;</span>);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea33ee23e2ed92c0eb43dc4dba801751d3">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_DC_BUS_OVER_REGEN_CURRENT</a>:</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      printf(<span class="stringliteral">&quot;ERROR_DC_BUS_OVER_REGEN_CURRENT\n&quot;</span>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea532430d4c4b916ece3602bbdbe0e3a70">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_CURRENT_LIMIT_VIOLATION</a>:</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      printf(<span class="stringliteral">&quot;ERROR_CURRENT_LIMIT_VIOLATION\n&quot;</span>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea5ebef635ce77799aae50878a927e3431">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_MOTOR_OVER_TEMP</a>:</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      printf(<span class="stringliteral">&quot;ERROR_MOTOR_OVER_TEMP\n&quot;</span>);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3eace5b899e88387a6f1803aff248cc37ff">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_INVERTER_OVER_TEMP</a>:</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      printf(<span class="stringliteral">&quot;ERROR_INVERTER_OVER_TEMP\n&quot;</span>);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3eafa904885481f24f7533dbe9c5d7b0354">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_VELOCITY_LIMIT_VIOLATION</a>:</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      printf(<span class="stringliteral">&quot;ERROR_VELOCITY_LIMIT_VIOLATION\n&quot;</span>);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3eabfab8646fddeac522482dd081df684d8">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_POSITION_LIMIT_VIOLATION</a>:</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      printf(<span class="stringliteral">&quot;ERROR_POSITION_LIMIT_VIOLATION\n&quot;</span>);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea72f7c9d2fff8e242cecb09e303cfa76d">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_WATCHDOG_TIMER_EXPIRED</a>:</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>      printf(<span class="stringliteral">&quot;ERROR_WATCHDOG_TIMER_EXPIRED\n&quot;</span>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea643d271066bd701e0830544d74d73f6f">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_ESTOP_REQUESTED</a>:</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      printf(<span class="stringliteral">&quot;ERROR_ESTOP_REQUESTED\n&quot;</span>);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea7c7fb70c991abf8068597ad336a63ed2">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_SPINOUT_DETECTED</a>:</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      printf(<span class="stringliteral">&quot;ERROR_SPINOUT_DETECTED\n&quot;</span>);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea380997296c78b7f22a4e1ac95985d8eb">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_BRAKE_RESISTOR_DISARMED</a>:</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      printf(<span class="stringliteral">&quot;ERROR_BRAKE_RESISTOR_DISARMED\n&quot;</span>);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea9f091a0d6a078d450183507b605e89f1">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_THERMISTOR_DISCONNECTED</a>:</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      printf(<span class="stringliteral">&quot;ERROR_THERMISTOR_DISCONNECTED\n&quot;</span>);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea950d616fdf5ff496e04e7122cf1dba4c">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_CALIBRATION_ERROR</a>:</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      printf(<span class="stringliteral">&quot;ERROR_CALIBRATION_ERROR\n&quot;</span>);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>      printf(<span class="stringliteral">&quot;No ERROR\n&quot;</span>);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    }</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  }</div>
 </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="foldopen" id="foldopen00108" data-start="{" data-end="}">
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="namespacealps_1_1mbed_1_1actuator.html#a8e109b2ec64a85adf9858c18fc1cb8ba">  108</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="namespacealps_1_1mbed_1_1actuator.html#a8e109b2ec64a85adf9858c18fc1cb8ba">CheckConnect</a>()</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  {</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="comment">// ハートビートメッセージの受信確認</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    printf(<span class="stringliteral">&quot;checking odrive&#39;s Heartbeat\n&quot;</span>);</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    ThisThread::sleep_for(100ms);</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#ae15606a39366139d2acefff25764685d">odrive::g_odrives</a>.size(); i++)</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    {</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#a4fc5ffcf6370a680322c3ec45870184a">odrive::g_odrv_user_datas</a>[i].received_heartbeat)</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>      {</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        printf(<span class="stringliteral">&quot;I can receive Heartbeat from odrive%d\n&quot;</span>, i);</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>      }</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>      <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>      {</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        printf(<span class="stringliteral">&quot;I cannot receive Heartbeat from odrive%d\n&quot;</span>, i);</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>      }</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    }</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="comment">// 電圧と電流を取得することで接続確認(タイムアウト1秒)</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    printf(<span class="stringliteral">&quot;attempting to read bus voltage and current\n&quot;</span>);</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___bus___voltage___current__msg__t.html">alps::cmn::communication::odrive::Get_Bus_Voltage_Current_msg_t</a> vbus;</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#ae15606a39366139d2acefff25764685d">odrive::g_odrives</a>.size(); i++)</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    {</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#ae15606a39366139d2acefff25764685d">odrive::g_odrives</a>[i].getBusVI(vbus, 1000))</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>      {</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        printf(<span class="stringliteral">&quot;odrive%d DC voltage [V]: %f\n&quot;</span>, i, vbus.<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___bus___voltage___current__msg__t.html#a6ccbddd87f22038859abadfc23ba9cde">Bus_Voltage</a>);</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        printf(<span class="stringliteral">&quot;odrive%d DC current [A]: %f\n&quot;</span>, i, vbus.<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___bus___voltage___current__msg__t.html#a27f27a6d17c33bbf0e9cdceb8b0c2ec4">Bus_Current</a>);</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>      }</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>      <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="foldopen" id="foldopen00113" data-start="{" data-end="}">
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="namespacealps_1_1mbed_1_1actuator.html#a8e109b2ec64a85adf9858c18fc1cb8ba">  113</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="namespacealps_1_1mbed_1_1actuator.html#a8e109b2ec64a85adf9858c18fc1cb8ba">CheckConnect</a>()</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="comment">// ハートビートメッセージの受信確認</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    printf(<span class="stringliteral">&quot;checking odrive&#39;s Heartbeat\n&quot;</span>);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    ThisThread::sleep_for(100ms);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#ae15606a39366139d2acefff25764685d">odrive::g_odrives</a>.size(); i++)</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#a4fc5ffcf6370a680322c3ec45870184a">odrive::g_odrv_user_datas</a>[i].received_heartbeat)</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>      {</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        printf(<span class="stringliteral">&quot;I can receive Heartbeat from odrive%d\n&quot;</span>, i);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>      }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>      <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>      {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        printf(<span class="stringliteral">&quot;I cannot receive Heartbeat from odrive%d\n&quot;</span>, i);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>      }</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    }</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="comment">// 電圧と電流を取得することで接続確認(タイムアウト1秒)</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    printf(<span class="stringliteral">&quot;attempting to read bus voltage and current\n&quot;</span>);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <a class="code hl_struct" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___bus___voltage___current__msg__t.html">alps::cmn::communication::odrive::Get_Bus_Voltage_Current_msg_t</a> vbus;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#ae15606a39366139d2acefff25764685d">odrive::g_odrives</a>.size(); i++)</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    {</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#ae15606a39366139d2acefff25764685d">odrive::g_odrives</a>[i].getBusVI(vbus, 1000))</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>      {</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        printf(<span class="stringliteral">&quot;odrive%d: vbus request failed\n&quot;</span>, i);</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>      }</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    }</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        printf(<span class="stringliteral">&quot;odrive%d DC voltage [V]: %f\n&quot;</span>, i, vbus.<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___bus___voltage___current__msg__t.html#a6ccbddd87f22038859abadfc23ba9cde">Bus_Voltage</a>);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        printf(<span class="stringliteral">&quot;odrive%d DC current [A]: %f\n&quot;</span>, i, vbus.<a class="code hl_variable" href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___bus___voltage___current__msg__t.html#a27f27a6d17c33bbf0e9cdceb8b0c2ec4">Bus_Current</a>);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>      }</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>      <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>      {</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        printf(<span class="stringliteral">&quot;odrive%d: vbus request failed\n&quot;</span>, i);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>      }</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    }</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  }</div>
 </div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
-<div class="foldopen" id="foldopen00145" data-start="{" data-end="}">
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="namespacealps_1_1mbed_1_1actuator.html#aee8eafdc0148ff2c5686dd1aefcb14b6">  145</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="namespacealps_1_1mbed_1_1actuator.html#aee8eafdc0148ff2c5686dd1aefcb14b6">Calibration</a>()</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  {</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html">alps::mbed::communication::odrive</a>;</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; g_odrives.size(); i++)</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    {</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>      <a class="code hl_variable" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#ae15606a39366139d2acefff25764685d">odrive::g_odrives</a>[i].setState(<a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045a2b83076692dc3d1f57ed6afdde9f1e2e">alps::cmn::communication::odrive::ODriveAxisState::AXIS_STATE_FULL_CALIBRATION_SEQUENCE</a>);</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    }</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="foldopen" id="foldopen00150" data-start="{" data-end="}">
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="namespacealps_1_1mbed_1_1actuator.html#aee8eafdc0148ff2c5686dd1aefcb14b6">  150</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="namespacealps_1_1mbed_1_1actuator.html#aee8eafdc0148ff2c5686dd1aefcb14b6">Calibration</a>()</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  {</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html">alps::mbed::communication::odrive</a>;</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; g_odrives.size(); i++)</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    {</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>      uint32_t error = <a class="code hl_variable" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#a4fc5ffcf6370a680322c3ec45870184a">odrive::g_odrv_user_datas</a>[i].last_heartbeat.Axis_Error;</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>      uint32_t state = <a class="code hl_variable" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#a4fc5ffcf6370a680322c3ec45870184a">odrive::g_odrv_user_datas</a>[i].last_heartbeat.Axis_State;</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>      printf(<span class="stringliteral">&quot;odrive%d: axis state : %ld\n&quot;</span>, i, state);</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>      printf(<span class="stringliteral">&quot;odrive%d: error code : %ld\n&quot;</span>, i, error);</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    }</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    ThisThread::sleep_for(1s);</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    std::array&lt;bool, kMaxOdriveNodeId&gt; finish_array{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    std::array&lt;bool, kMaxOdriveNodeId&gt; error_array{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keywordflow">while</span> (<span class="keyword">true</span>)</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    {</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>      <span class="keywordtype">bool</span> all_finish = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; g_odrives.size(); i++)</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>      {</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        <span class="keywordflow">if</span> (error_array[i] == <span class="keyword">true</span>)</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        {</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>          <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        }</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        uint32_t state = <a class="code hl_variable" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#a4fc5ffcf6370a680322c3ec45870184a">odrive::g_odrv_user_datas</a>[i].last_heartbeat.Axis_State;</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        uint32_t error = <a class="code hl_variable" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#a4fc5ffcf6370a680322c3ec45870184a">odrive::g_odrv_user_datas</a>[i].last_heartbeat.Axis_Error;</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        <span class="keywordflow">if</span> (state == <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045aafd81ef284b6d7c465a2ae9f58a1b635">alps::cmn::communication::odrive::ODriveAxisState::AXIS_STATE_IDLE</a> &amp;&amp;</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            error == <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea53a7af0fe0c10a3420570c12ffd12738">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_NONE</a>)</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        {</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>          finish_array[i] = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        }</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        <span class="keywordflow">if</span> (error != <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea53a7af0fe0c10a3420570c12ffd12738">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_NONE</a>)</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        {</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>          finish_array[i] = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>          error_array[i] = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        }</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>      }</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; g_odrives.size(); i++)</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>      {</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        <span class="keywordflow">if</span> (finish_array[i] == <span class="keyword">false</span>)</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        {</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>          all_finish = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>          <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        }</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>      }</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>      <span class="keywordflow">if</span> (all_finish)</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>      {</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        <span class="keywordtype">bool</span> all_success = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; g_odrives.size(); i++)</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        {</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>          <span class="keywordflow">if</span> (error_array[i] == <span class="keyword">true</span>)</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>          {</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            all_success = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            printf(<span class="stringliteral">&quot;odrv%d error!!\n&quot;</span>, i);</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            <a class="code hl_function" href="namespacealps_1_1mbed_1_1actuator.html#a659dd93d534ec692cec06f4054b66198">PrintError</a>(<a class="code hl_variable" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#a4fc5ffcf6370a680322c3ec45870184a">odrive::g_odrv_user_datas</a>[i].last_heartbeat.Axis_Error);</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>          }</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        }</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        <span class="keywordflow">if</span> (all_success)</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        {</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>          printf(<span class="stringliteral">&quot;All calibrations were successful!!\n&quot;</span>);</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        }</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>      }</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>      ThisThread::sleep_for(100ms);</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    }</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  }</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>      g_odrives[i].clearErrors();</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    }</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    ThisThread::sleep_for(100ms);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; g_odrives.size(); i++)</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>      g_odrives[i].setState(<a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045a2b83076692dc3d1f57ed6afdde9f1e2e">alps::cmn::communication::odrive::ODriveAxisState::AXIS_STATE_FULL_CALIBRATION_SEQUENCE</a>);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    }</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; g_odrives.size(); i++)</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    {</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>      uint32_t error = g_odrv_user_datas[i].last_heartbeat.Axis_Error;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>      uint32_t state = g_odrv_user_datas[i].last_heartbeat.Axis_State;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>      printf(<span class="stringliteral">&quot;odrive%d: axis state : %ld\n&quot;</span>, i, state);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>      printf(<span class="stringliteral">&quot;odrive%d: error code : %ld\n&quot;</span>, i, error);</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    }</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    ThisThread::sleep_for(1s);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    std::array&lt;bool, kMaxOdriveNodeId&gt; finish_array{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    std::array&lt;bool, kMaxOdriveNodeId&gt; error_array{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keywordflow">while</span> (<span class="keyword">true</span>)</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    {</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>      <span class="keywordtype">bool</span> all_finish = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; g_odrives.size(); i++)</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>      {</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        <span class="keywordflow">if</span> (error_array[i] == <span class="keyword">true</span>)</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        {</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        }</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        uint32_t state = <a class="code hl_variable" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#a4fc5ffcf6370a680322c3ec45870184a">odrive::g_odrv_user_datas</a>[i].last_heartbeat.Axis_State;</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        uint32_t error = <a class="code hl_variable" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#a4fc5ffcf6370a680322c3ec45870184a">odrive::g_odrv_user_datas</a>[i].last_heartbeat.Axis_Error;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        <span class="keywordflow">if</span> (state == <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045aafd81ef284b6d7c465a2ae9f58a1b635">alps::cmn::communication::odrive::ODriveAxisState::AXIS_STATE_IDLE</a> &amp;&amp;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>            error == <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea53a7af0fe0c10a3420570c12ffd12738">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_NONE</a>)</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        {</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>          finish_array[i] = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        }</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        <span class="keywordflow">if</span> (error != <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea53a7af0fe0c10a3420570c12ffd12738">alps::cmn::communication::odrive::ODriveError::ODRIVE_ERROR_NONE</a>)</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        {</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>          finish_array[i] = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>          error_array[i] = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        }</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>      }</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; g_odrives.size(); i++)</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>      {</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        <span class="keywordflow">if</span> (finish_array[i] == <span class="keyword">false</span>)</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        {</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>          all_finish = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        }</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>      }</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>      <span class="keywordflow">if</span> (all_finish)</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>      {</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        <span class="keywordtype">bool</span> all_success = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; g_odrives.size(); i++)</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        {</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>          <span class="keywordflow">if</span> (error_array[i] == <span class="keyword">true</span>)</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>          {</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>            all_success = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            printf(<span class="stringliteral">&quot;odrv%d error!!\n&quot;</span>, i);</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>            <a class="code hl_function" href="namespacealps_1_1mbed_1_1actuator.html#a659dd93d534ec692cec06f4054b66198">PrintError</a>(<a class="code hl_variable" href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#a4fc5ffcf6370a680322c3ec45870184a">odrive::g_odrv_user_datas</a>[i].last_heartbeat.Axis_Error);</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>          }</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        }</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        <span class="keywordflow">if</span> (all_success)</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        {</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>          printf(<span class="stringliteral">&quot;All calibrations were successful!!\n&quot;</span>);</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        }</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>      }</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>      ThisThread::sleep_for(100ms);</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    }</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    ThisThread::sleep_for(100ms);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  }</div>
 </div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>} <span class="comment">// namespace alps::mbed::actuator</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>} <span class="comment">// namespace alps::mbed::actuator</span></div>
 <div class="ttc" id="anamespacealps_1_1cmn_1_1communication_1_1odrive_html_a33c3f44b0148a1725b8dca9a36b3be3ea051b54ac927c5b6d4dde740a3a9cc6bd"><div class="ttname"><a href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea051b54ac927c5b6d4dde740a3a9cc6bd">alps::cmn::communication::odrive::ODRIVE_ERROR_BAD_CONFIG</a></div><div class="ttdeci">@ ODRIVE_ERROR_BAD_CONFIG</div><div class="ttdef"><b>Definition</b> odrive_enums.h:107</div></div>
 <div class="ttc" id="anamespacealps_1_1cmn_1_1communication_1_1odrive_html_a33c3f44b0148a1725b8dca9a36b3be3ea33ee23e2ed92c0eb43dc4dba801751d3"><div class="ttname"><a href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea33ee23e2ed92c0eb43dc4dba801751d3">alps::cmn::communication::odrive::ODRIVE_ERROR_DC_BUS_OVER_REGEN_CURRENT</a></div><div class="ttdeci">@ ODRIVE_ERROR_DC_BUS_OVER_REGEN_CURRENT</div><div class="ttdef"><b>Definition</b> odrive_enums.h:113</div></div>
 <div class="ttc" id="anamespacealps_1_1cmn_1_1communication_1_1odrive_html_a33c3f44b0148a1725b8dca9a36b3be3ea380997296c78b7f22a4e1ac95985d8eb"><div class="ttname"><a href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#a33c3f44b0148a1725b8dca9a36b3be3ea380997296c78b7f22a4e1ac95985d8eb">alps::cmn::communication::odrive::ODRIVE_ERROR_BRAKE_RESISTOR_DISARMED</a></div><div class="ttdeci">@ ODRIVE_ERROR_BRAKE_RESISTOR_DISARMED</div><div class="ttdef"><b>Definition</b> odrive_enums.h:122</div></div>
@@ -360,10 +364,10 @@ $(document).ready(function(){initNavTree('odrive__can__func_8hpp_source.html',''
 <div class="ttc" id="anamespacealps_1_1cmn_1_1communication_1_1odrive_html_ace1e8c7e98c4e2c81345d128ac9c2045a2b83076692dc3d1f57ed6afdde9f1e2e"><div class="ttname"><a href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045a2b83076692dc3d1f57ed6afdde9f1e2e">alps::cmn::communication::odrive::AXIS_STATE_FULL_CALIBRATION_SEQUENCE</a></div><div class="ttdeci">@ AXIS_STATE_FULL_CALIBRATION_SEQUENCE</div><div class="ttdef"><b>Definition</b> odrive_enums.h:59</div></div>
 <div class="ttc" id="anamespacealps_1_1cmn_1_1communication_1_1odrive_html_ace1e8c7e98c4e2c81345d128ac9c2045aafd81ef284b6d7c465a2ae9f58a1b635"><div class="ttname"><a href="namespacealps_1_1cmn_1_1communication_1_1odrive.html#ace1e8c7e98c4e2c81345d128ac9c2045aafd81ef284b6d7c465a2ae9f58a1b635">alps::cmn::communication::odrive::AXIS_STATE_IDLE</a></div><div class="ttdeci">@ AXIS_STATE_IDLE</div><div class="ttdef"><b>Definition</b> odrive_enums.h:57</div></div>
 <div class="ttc" id="anamespacealps_1_1mbed_1_1actuator_html"><div class="ttname"><a href="namespacealps_1_1mbed_1_1actuator.html">alps::mbed::actuator</a></div><div class="ttdoc">アクチュエータ関係</div><div class="ttdef"><b>Definition</b> dc_motor.hpp:26</div></div>
-<div class="ttc" id="anamespacealps_1_1mbed_1_1actuator_html_a659dd93d534ec692cec06f4054b66198"><div class="ttname"><a href="namespacealps_1_1mbed_1_1actuator.html#a659dd93d534ec692cec06f4054b66198">alps::mbed::actuator::PrintError</a></div><div class="ttdeci">void PrintError(uint32_t &amp;error)</div><div class="ttdef"><b>Definition</b> odrive_can_func.hpp:27</div></div>
-<div class="ttc" id="anamespacealps_1_1mbed_1_1actuator_html_a8e109b2ec64a85adf9858c18fc1cb8ba"><div class="ttname"><a href="namespacealps_1_1mbed_1_1actuator.html#a8e109b2ec64a85adf9858c18fc1cb8ba">alps::mbed::actuator::CheckConnect</a></div><div class="ttdeci">void CheckConnect()</div><div class="ttdoc">接続確認を行う。ハートビートの受信確認と電圧電流の取得を確認\ ハートビートメッセージが受け取れなかったらODriveを再起動するべき</div><div class="ttdef"><b>Definition</b> odrive_can_func.hpp:108</div></div>
+<div class="ttc" id="anamespacealps_1_1mbed_1_1actuator_html_a659dd93d534ec692cec06f4054b66198"><div class="ttname"><a href="namespacealps_1_1mbed_1_1actuator.html#a659dd93d534ec692cec06f4054b66198">alps::mbed::actuator::PrintError</a></div><div class="ttdeci">void PrintError(uint32_t &amp;error)</div><div class="ttdoc">エラーメッセージを表示する関数</div><div class="ttdef"><b>Definition</b> odrive_can_func.hpp:32</div></div>
+<div class="ttc" id="anamespacealps_1_1mbed_1_1actuator_html_a8e109b2ec64a85adf9858c18fc1cb8ba"><div class="ttname"><a href="namespacealps_1_1mbed_1_1actuator.html#a8e109b2ec64a85adf9858c18fc1cb8ba">alps::mbed::actuator::CheckConnect</a></div><div class="ttdeci">void CheckConnect()</div><div class="ttdoc">接続確認を行う。ハートビートの受信確認と電圧電流の取得を確認\ ハートビートメッセージが受け取れなかったらODriveを再起動するべき</div><div class="ttdef"><b>Definition</b> odrive_can_func.hpp:113</div></div>
 <div class="ttc" id="anamespacealps_1_1mbed_1_1actuator_html_abf0098673b615e27e3ee3125b5865bc7"><div class="ttname"><a href="namespacealps_1_1mbed_1_1actuator.html#abf0098673b615e27e3ee3125b5865bc7">alps::mbed::actuator::ODriveCanInitial</a></div><div class="ttdeci">void ODriveCanInitial()</div><div class="ttdef"><b>Definition</b> odrive_can_func.hpp:16</div></div>
-<div class="ttc" id="anamespacealps_1_1mbed_1_1actuator_html_aee8eafdc0148ff2c5686dd1aefcb14b6"><div class="ttname"><a href="namespacealps_1_1mbed_1_1actuator.html#aee8eafdc0148ff2c5686dd1aefcb14b6">alps::mbed::actuator::Calibration</a></div><div class="ttdeci">void Calibration()</div><div class="ttdoc">接続しているODriveすべてに対してキャリブレーションを行う</div><div class="ttdef"><b>Definition</b> odrive_can_func.hpp:145</div></div>
+<div class="ttc" id="anamespacealps_1_1mbed_1_1actuator_html_aee8eafdc0148ff2c5686dd1aefcb14b6"><div class="ttname"><a href="namespacealps_1_1mbed_1_1actuator.html#aee8eafdc0148ff2c5686dd1aefcb14b6">alps::mbed::actuator::Calibration</a></div><div class="ttdeci">void Calibration()</div><div class="ttdoc">エラーをクリアしてから接続している全てのODriveに対してキャリブレーションを行う</div><div class="ttdef"><b>Definition</b> odrive_can_func.hpp:150</div></div>
 <div class="ttc" id="anamespacealps_1_1mbed_1_1communication_1_1odrive_html"><div class="ttname"><a href="namespacealps_1_1mbed_1_1communication_1_1odrive.html">alps::mbed::communication::odrive</a></div><div class="ttdef"><b>Definition</b> odrive_can_mbed.hpp:14</div></div>
 <div class="ttc" id="anamespacealps_1_1mbed_1_1communication_1_1odrive_html_a4fc5ffcf6370a680322c3ec45870184a"><div class="ttname"><a href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#a4fc5ffcf6370a680322c3ec45870184a">alps::mbed::communication::odrive::g_odrv_user_datas</a></div><div class="ttdeci">etl::vector&lt; ODriveUserData, kMaxOdriveNodeId &gt; g_odrv_user_datas</div></div>
 <div class="ttc" id="anamespacealps_1_1mbed_1_1communication_1_1odrive_html_a977846073dcb6ef328ba57c80533304b"><div class="ttname"><a href="namespacealps_1_1mbed_1_1communication_1_1odrive.html#a977846073dcb6ef328ba57c80533304b">alps::mbed::communication::odrive::onFeedbackFunc</a></div><div class="ttdeci">void onFeedbackFunc(alps::cmn::communication::odrive::Get_Encoder_Estimates_msg_t &amp;msg, void *user_data)</div></div>
