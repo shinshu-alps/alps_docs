@@ -7,7 +7,7 @@ var namespacealps_1_1mbed =
       [ "ODriveCanInitial", "namespacealps_1_1mbed_1_1actuator.html#abf0098673b615e27e3ee3125b5865bc7", null ],
       [ "PrintError", "namespacealps_1_1mbed_1_1actuator.html#a659dd93d534ec692cec06f4054b66198", null ],
       [ "CheckConnect", "namespacealps_1_1mbed_1_1actuator.html#a8e109b2ec64a85adf9858c18fc1cb8ba", null ],
-      [ "Calibration", "namespacealps_1_1mbed_1_1actuator.html#aee8eafdc0148ff2c5686dd1aefcb14b6", null ]
+      [ "Calibration", "namespacealps_1_1mbed_1_1actuator.html#a7abcc42fc76523bc97a5f1d1b2e165b2", null ]
     ] ],
     [ "communication", "namespacealps_1_1mbed_1_1communication.html", "namespacealps_1_1mbed_1_1communication" ],
     [ "gpio", "namespacealps_1_1mbed_1_1gpio.html", "namespacealps_1_1mbed_1_1gpio" ],
