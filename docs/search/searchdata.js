@@ -1,6 +1,6 @@
 var indexSectionsWithContent =
 {
-  0: "abcdefghijklmnopqrstuvwxyz~ドラ名手概自",
+  0: "abcdefghijklmnopqrstuvwxyz~ドラ名変手概自",
   1: "abcdefghijlmnopqrstuv",
   2: "a",
   3: "abcdefijlmnoprstuv",
