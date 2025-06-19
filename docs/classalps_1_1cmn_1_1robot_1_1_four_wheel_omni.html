@@ -179,8 +179,8 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1robot_1_1_four_whe
 <p>コンストラクタ </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">wheel_radius</td><td>車輪半径[mm] </td></tr>
-    <tr><td class="paramname">wheel_distance</td><td>ロボットの中心から車輪までの距離[mm] </td></tr>
+    <tr><td class="paramname">wheel_radius</td><td>車輪半径[m] </td></tr>
+    <tr><td class="paramname">wheel_distance</td><td>ロボットの中心から車輪までの距離[m] </td></tr>
   </table>
   </dd>
 </dl>
@@ -225,7 +225,7 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1robot_1_1_four_whe
 <p>逆運動学によりロボット速度からタイヤの回転速度を計算する </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">robot_velocity</td><td>ロボットの速度. [0]:x方向速度[mm/s], [1]:y方向速度[mm/s], [2]:ω方向回転速度[rad/s] </td></tr>
+    <tr><td class="paramname">robot_velocity</td><td>ロボットの速度. [0]:x方向速度[m/s], [1]:y方向速度[m/s], [2]:ω方向回転速度[rad/s] </td></tr>
     <tr><td class="paramname">psi</td><td>現在のロボットの角度姿勢[rad]．0とした場合, 第一引数はローカル座標から見た速度として計算される． </td></tr>
   </table>
   </dd>
@@ -276,7 +276,7 @@ $(document).ready(function(){initNavTree('classalps_1_1cmn_1_1robot_1_1_four_whe
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>戻り値</dt><dd>std::array&lt;float, 3&gt; ロボットの速度. [0]:x方向速度[mm/s], [1]:y方向速度[mm/s], [2]:ω方向回転速度[rad/s] </dd></dl>
+<dl class="section return"><dt>戻り値</dt><dd>std::array&lt;float, 3&gt; ロボットの速度. [0]:x方向速度[m/s], [1]:y方向速度[m/s], [2]:ω方向回転速度[rad/s] </dd></dl>
 
 </div>
 </div>

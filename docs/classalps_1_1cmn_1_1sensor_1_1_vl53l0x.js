@@ -19,6 +19,7 @@ var classalps_1_1cmn_1_1sensor_1_1_vl53l0x =
     [ "SetOperationMode", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#affbb57df7cfeb12b95d314f8be4efbc9", null ],
     [ "GetOperationMode", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a2461ebbd367492fe95447da932ba9129", null ],
     [ "ReadRangeMillimeters", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a3cfb0998c9123e31903597bc1dddb88a", null ],
+    [ "ReadRangeMeters", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a64bd6b4bccfda766b330e18d004c5cea", null ],
     [ "SetTimeout", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#ab854cb26bdc83be7dbcca18e37b74388", null ],
     [ "GetTimeout", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a52e738323045354e58884726e2dbdefc", null ],
     [ "TimeoutOccurred", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a816f9728704d7e51a4ff1d2cc1f379c9", null ],

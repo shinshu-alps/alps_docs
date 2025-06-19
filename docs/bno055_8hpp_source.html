@@ -118,489 +118,489 @@ $(document).ready(function(){initNavTree('bno055_8hpp_source.html',''); initResi
 </div><!--header-->
 <div class="contents">
 <a href="bno055_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_CMN_SENSOR_BNO055_HPP_</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_CMN_SENSOR_BNO055_HPP_</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifndef ALPS_CMN_SENSOR_BNO055_HPP_</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define ALPS_CMN_SENSOR_BNO055_HPP_</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="i__i2c__io_8hpp.html">alps_cmn/communication/i_i2c_io.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="sleep_8hpp.html">alps_cmn/time/sleep.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="angle_8hpp.html">alps_cmn/util/angle.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">namespace </span>cmn</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="i__i2c__io_8hpp.html">alps_cmn/communication/i_i2c_io.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="sleep_8hpp.html">alps_cmn/time/sleep.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="angle_8hpp.html">alps_cmn/util/angle.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span>sensor</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span>cmn</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html">   29</a></span><span class="keyword">namespace </span>bno055</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html">   33</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html">Acceleration</a></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#ab179d608de386403f9300b88eda9cc0a">   36</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#ab179d608de386403f9300b88eda9cc0a">x</a>;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#afddad30b5853171983e7d6d88dc40848">   38</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#afddad30b5853171983e7d6d88dc40848">y</a>;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#a535e10b8579a9e3fd8af78458388787b">   40</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#a535e10b8579a9e3fd8af78458388787b">z</a>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>};</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">namespace </span>sensor</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html">   31</a></span><span class="keyword">namespace </span>bno055</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html">   35</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html">Acceleration</a></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#ab179d608de386403f9300b88eda9cc0a">   38</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#ab179d608de386403f9300b88eda9cc0a">x</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#afddad30b5853171983e7d6d88dc40848">   40</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#afddad30b5853171983e7d6d88dc40848">y</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#a535e10b8579a9e3fd8af78458388787b">   42</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#a535e10b8579a9e3fd8af78458388787b">z</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>};</div>
 </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="foldopen" id="foldopen00044" data-start="{" data-end="};">
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html">   44</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html">MagneticVector</a></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>{</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#ae263e58455e7745c3ee5e0b7bca84f77">   47</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#ae263e58455e7745c3ee5e0b7bca84f77">x</a>;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#afe3ab95d0449b8fb034abcce91e8e17d">   49</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#afe3ab95d0449b8fb034abcce91e8e17d">y</a>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#aa069da81ddd4d2d0c0a53f91e3494983">   51</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#aa069da81ddd4d2d0c0a53f91e3494983">z</a>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>};</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="foldopen" id="foldopen00046" data-start="{" data-end="};">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html">   46</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html">MagneticVector</a></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#ae263e58455e7745c3ee5e0b7bca84f77">   49</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#ae263e58455e7745c3ee5e0b7bca84f77">x</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#afe3ab95d0449b8fb034abcce91e8e17d">   51</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#afe3ab95d0449b8fb034abcce91e8e17d">y</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#aa069da81ddd4d2d0c0a53f91e3494983">   53</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#aa069da81ddd4d2d0c0a53f91e3494983">z</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
 </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="foldopen" id="foldopen00055" data-start="{" data-end="};">
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html">   55</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html">AngularVelocity</a></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#a54db636b5e3e38fbba23ca82c432a5f5">   58</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#a54db636b5e3e38fbba23ca82c432a5f5">x</a>;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#a3b5c4bde7d4320497467b1118dd32193">   60</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#a3b5c4bde7d4320497467b1118dd32193">y</a>;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#ac1e59e0a916abe20197c45fb33f2ecb9">   62</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#ac1e59e0a916abe20197c45fb33f2ecb9">z</a>;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>};</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="};">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html">   57</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html">AngularVelocity</a></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#a54db636b5e3e38fbba23ca82c432a5f5">   60</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#a54db636b5e3e38fbba23ca82c432a5f5">x</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#a3b5c4bde7d4320497467b1118dd32193">   62</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#a3b5c4bde7d4320497467b1118dd32193">y</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#ac1e59e0a916abe20197c45fb33f2ecb9">   64</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#ac1e59e0a916abe20197c45fb33f2ecb9">z</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>};</div>
 </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="foldopen" id="foldopen00066" data-start="{" data-end="};">
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html">   66</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html">Euler</a></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>{</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#ae836cf8ecb13bf2a1495d67ae2f6c4b0">   69</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#ae836cf8ecb13bf2a1495d67ae2f6c4b0">yaw</a>;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#af1c2d3b03b41807e4b614bc34b772365">   71</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#af1c2d3b03b41807e4b614bc34b772365">roll</a>;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#a30e024e60e3ea71d63b30562bd2b9964">   73</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#a30e024e60e3ea71d63b30562bd2b9964">pitch</a>;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>};</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="};">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html">   68</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html">Euler</a></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>{</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#ae836cf8ecb13bf2a1495d67ae2f6c4b0">   71</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#ae836cf8ecb13bf2a1495d67ae2f6c4b0">yaw</a>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#af1c2d3b03b41807e4b614bc34b772365">   73</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#af1c2d3b03b41807e4b614bc34b772365">roll</a>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#a30e024e60e3ea71d63b30562bd2b9964">   75</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#a30e024e60e3ea71d63b30562bd2b9964">pitch</a>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>};</div>
 </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="foldopen" id="foldopen00077" data-start="{" data-end="};">
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html">   77</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html">Quaternion</a></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>{</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#a44082014ee327b6ff23e78c4b7205d3a">   80</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#a44082014ee327b6ff23e78c4b7205d3a">w</a>;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#a8e30476db28d3683f2d4110652729778">   82</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#a8e30476db28d3683f2d4110652729778">x</a>;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#ab9bec0df06dd184c80910a4557300fef">   84</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#ab9bec0df06dd184c80910a4557300fef">y</a>;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#acef3e7977e5060258df8383966addced">   86</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#acef3e7977e5060258df8383966addced">z</a>;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>};</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="foldopen" id="foldopen00079" data-start="{" data-end="};">
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html">   79</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html">Quaternion</a></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>{</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#a44082014ee327b6ff23e78c4b7205d3a">   82</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#a44082014ee327b6ff23e78c4b7205d3a">w</a>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#a8e30476db28d3683f2d4110652729778">   84</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#a8e30476db28d3683f2d4110652729778">x</a>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#ab9bec0df06dd184c80910a4557300fef">   86</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#ab9bec0df06dd184c80910a4557300fef">y</a>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#acef3e7977e5060258df8383966addced">   88</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#acef3e7977e5060258df8383966addced">z</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>};</div>
 </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="foldopen" id="foldopen00090" data-start="{" data-end="};">
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html">   90</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html">LinearAcceleration</a></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>{</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a0e5eabcc44cc4e973bdabef083a1327f">   93</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a0e5eabcc44cc4e973bdabef083a1327f">x</a>;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a509462425537f8480193383209e44b02">   95</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a509462425537f8480193383209e44b02">y</a>;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a3dcbb02dee6f0a4d7fe97846c6be10a3">   97</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a3dcbb02dee6f0a4d7fe97846c6be10a3">z</a>;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>};</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="foldopen" id="foldopen00092" data-start="{" data-end="};">
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html">   92</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html">LinearAcceleration</a></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>{</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a0e5eabcc44cc4e973bdabef083a1327f">   95</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a0e5eabcc44cc4e973bdabef083a1327f">x</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a509462425537f8480193383209e44b02">   97</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a509462425537f8480193383209e44b02">y</a>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a3dcbb02dee6f0a4d7fe97846c6be10a3">   99</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a3dcbb02dee6f0a4d7fe97846c6be10a3">z</a>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>};</div>
 </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="foldopen" id="foldopen00101" data-start="{" data-end="};">
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html">  101</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html">GravityVector</a></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>{</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#a31e35f0f392eb1ff73e8def06848e98b">  104</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#a31e35f0f392eb1ff73e8def06848e98b">x</a>;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#a9379014ec452b2426466893815dcffa5">  106</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#a9379014ec452b2426466893815dcffa5">y</a>;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#acfa97ed2e781699021e77a120c242a99">  108</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#acfa97ed2e781699021e77a120c242a99">z</a>;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>};</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="foldopen" id="foldopen00103" data-start="{" data-end="};">
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html">  103</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html">GravityVector</a></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>{</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#a31e35f0f392eb1ff73e8def06848e98b">  106</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#a31e35f0f392eb1ff73e8def06848e98b">x</a>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#a9379014ec452b2426466893815dcffa5">  108</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#a9379014ec452b2426466893815dcffa5">y</a>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#acfa97ed2e781699021e77a120c242a99">  110</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#acfa97ed2e781699021e77a120c242a99">z</a>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>};</div>
 </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="foldopen" id="foldopen00112" data-start="{" data-end="};">
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cd">  112</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cd">Placement</a> {</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda0710d02a75095f7bb3cd81ba27539714">kP0</a>,</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda42db61944964fac3908da41807af39ba">kP1</a>,</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda35d31b8f4263c3a89d63310371285eb5">kP2</a>,</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda0d769ae732813e0c2e2a289d6dffea70">kP3</a>,</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cdac83a5fadec9c3803bfdcf84998fc4999">kP4</a>,</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda6ef57404216998a2429edfc4bc94d58d">kP5</a>,</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda8bc23378a3ec2814815d05106cf0c957">kP6</a>,</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cdaa438ad77c3cceadaee8d48be3c48bfe8">kP7</a>,</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>};</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="foldopen" id="foldopen00114" data-start="{" data-end="};">
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cd">  114</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cd">Placement</a> {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda0710d02a75095f7bb3cd81ba27539714">kP0</a>,</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda42db61944964fac3908da41807af39ba">kP1</a>,</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda35d31b8f4263c3a89d63310371285eb5">kP2</a>,</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda0d769ae732813e0c2e2a289d6dffea70">kP3</a>,</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cdac83a5fadec9c3803bfdcf84998fc4999">kP4</a>,</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda6ef57404216998a2429edfc4bc94d58d">kP5</a>,</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda8bc23378a3ec2814815d05106cf0c957">kP6</a>,</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cdaa438ad77c3cceadaee8d48be3c48bfe8">kP7</a>,</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>};</div>
 </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="foldopen" id="foldopen00125" data-start="{" data-end="};">
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#aa08eccfe12b3b47c0e4832d0c743f123">  125</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#aa08eccfe12b3b47c0e4832d0c743f123">I2cAddressOption</a> : <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">communication::I2cAddress</a> {</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#aa08eccfe12b3b47c0e4832d0c743f123ae8caa1cabe861730d7a7298f4379734f">k0x29</a> = 0x29,</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#aa08eccfe12b3b47c0e4832d0c743f123a756ac368d9a365243b8aed7670e5aff6">k0x28</a> = 0x28,</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>};</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="foldopen" id="foldopen00127" data-start="{" data-end="};">
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#aa08eccfe12b3b47c0e4832d0c743f123">  127</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#aa08eccfe12b3b47c0e4832d0c743f123">I2cAddressOption</a> : <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">communication::I2cAddress</a> {</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#aa08eccfe12b3b47c0e4832d0c743f123ae8caa1cabe861730d7a7298f4379734f">k0x29</a> = 0x29,</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#aa08eccfe12b3b47c0e4832d0c743f123a756ac368d9a365243b8aed7670e5aff6">k0x28</a> = 0x28,</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>};</div>
 </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> I2cIo&gt;</div>
-<div class="foldopen" id="foldopen00140" data-start="{" data-end="};">
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html">  140</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html">Bno055</a></div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>{</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  <span class="comment">// 精度 -----------------------------------------------------------------</span></div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kAccelLsb = 0.1f;</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kMagnetLsb = 16.0f;</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kAngulerVelLsb = 900.0f;</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kEulerLsb = 900.0f;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kQuaternionLsb = 16384.0f;</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kLinearAccelLsb = 0.1f;</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kGravityLsb = 0.1f;</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kTemperatureLsb = 1.0f;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  <span class="comment">// レジスタアドレス群 -----------------------------------------------------</span></div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  <span class="keyword">using </span>RegAddress = uint8_t;</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress AccelDataXLsbAddr{0x08};</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress MagDataXLsbAddr{0x0E};</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress kGyroDataXLsbAddr{0x14};</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress EulerHLsbAddr{0x1A};</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress QuaternionDataWLsbAddr{0x20};</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress LinearAccelDataXLsbAddr{0x28};</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress kGravityDataXLsbAddr{0x2E};</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress kTempAddr{0x34};</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress kUnitSelAddr{0x3B};</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress kOprModeAddr{0x3D};</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress kPwrModeAddr{0x3E};</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress kAxisMapConfigAddr{0x41};</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress kAxisMapSignAddr{0x42};</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress kSysTriggerAddr{0x3F};</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  <span class="comment">// レジスタに書き込む値 ---------------------------------------------</span></div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  <span class="keyword">using </span>RegValue = uint8_t;</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegValue kPowerModeNormal{0x00};</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  <span class="comment">// 動作モード</span></div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  <span class="keyword">enum class</span> OperationMode : RegValue {</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    kConfig = 0x00,</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    kNDof = 0x0C,</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  };</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="keyword">public</span>:</div>
-<div class="foldopen" id="foldopen00217" data-start="{" data-end="}">
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a15282c18dc44e215ed70e0a132617719">  217</a></span>  <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a15282c18dc44e215ed70e0a132617719">Bno055</a>(</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">cmn::communication::II2cIo&lt;I2cIo&gt;</a> &amp; i2c_io,</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    <a class="code hl_enumeration" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cd">Placement</a> placement = <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda42db61944964fac3908da41807af39ba">Placement::kP1</a>,</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <a class="code hl_enumeration" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#aa08eccfe12b3b47c0e4832d0c743f123">I2cAddressOption</a> address_option = <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#aa08eccfe12b3b47c0e4832d0c743f123a756ac368d9a365243b8aed7670e5aff6">I2cAddressOption::k0x28</a>)</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  : i2c_io_{i2c_io},</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    placement_{placement},</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    i2c_address_{static_cast&lt;communication::I2cAddress&gt;(address_option)}</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  {</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <span class="comment">// 電源投入直後からは待機が必要</span></div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <span class="keyword">using namespace </span>std::chrono_literals;</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <a class="code hl_function" href="namespacealps_1_1cmn_1_1time.html#a2f667b84910e28a6a2426a8994c05f37">time::SleepFor</a>(400ms);</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <span class="comment">// 初期化設定</span></div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    Initialize();</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  }</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> I2cIo&gt;</div>
+<div class="foldopen" id="foldopen00142" data-start="{" data-end="};">
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html">  142</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html">Bno055</a></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>{</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  <span class="comment">// 精度 -----------------------------------------------------------------</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kAccelLsb = 100.0f;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kMagnetLsb = 16.0f;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kAngulerVelLsb = 900.0f;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kEulerLsb = 900.0f;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kQuaternionLsb = 16384.0f;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kLinearAccelLsb = 100.0f;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kGravityLsb = 100.0f;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> kTemperatureLsb = 1.0f;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  <span class="comment">// レジスタアドレス群 -----------------------------------------------------</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  <span class="keyword">using </span>RegAddress = uint8_t;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress AccelDataXLsbAddr{0x08};</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress MagDataXLsbAddr{0x0E};</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress kGyroDataXLsbAddr{0x14};</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress EulerHLsbAddr{0x1A};</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress QuaternionDataWLsbAddr{0x20};</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress LinearAccelDataXLsbAddr{0x28};</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress kGravityDataXLsbAddr{0x2E};</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress kTempAddr{0x34};</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress kUnitSelAddr{0x3B};</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress kOprModeAddr{0x3D};</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress kPwrModeAddr{0x3E};</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress kAxisMapConfigAddr{0x41};</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress kAxisMapSignAddr{0x42};</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegAddress kSysTriggerAddr{0x3F};</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  <span class="comment">// レジスタに書き込む値 ---------------------------------------------</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  <span class="keyword">using </span>RegValue = uint8_t;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> RegValue kPowerModeNormal{0x00};</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  <span class="comment">// 動作モード</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  <span class="keyword">enum class</span> OperationMode : RegValue {</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    kConfig = 0x00,</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    kNDof = 0x0C,</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>  };</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00219" data-start="{" data-end="}">
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a15282c18dc44e215ed70e0a132617719">  219</a></span>  <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a15282c18dc44e215ed70e0a132617719">Bno055</a>(</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">cmn::communication::II2cIo&lt;I2cIo&gt;</a> &amp; i2c_io,</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <a class="code hl_enumeration" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cd">Placement</a> placement = <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda42db61944964fac3908da41807af39ba">Placement::kP1</a>,</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    <a class="code hl_enumeration" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#aa08eccfe12b3b47c0e4832d0c743f123">I2cAddressOption</a> address_option = <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#aa08eccfe12b3b47c0e4832d0c743f123a756ac368d9a365243b8aed7670e5aff6">I2cAddressOption::k0x28</a>)</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  : i2c_io_{i2c_io},</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    placement_{placement},</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    i2c_address_{static_cast&lt;communication::I2cAddress&gt;(address_option)}</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  {</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <span class="comment">// 電源投入直後からは待機が必要</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <span class="keyword">using namespace </span>std::chrono_literals;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <a class="code hl_function" href="namespacealps_1_1cmn_1_1time.html#a2f667b84910e28a6a2426a8994c05f37">time::SleepFor</a>(400ms);</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="comment">// 初期化設定</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    Initialize();</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  }</div>
 </div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
-<div class="foldopen" id="foldopen00240" data-start="{" data-end="}">
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a4cdcc0c50178618064a6bf70a0453e69">  240</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a4cdcc0c50178618064a6bf70a0453e69">GetAcceleration</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html">Acceleration</a> &amp; output)</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  {</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    uint8_t reg_values[6];</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="keywordflow">if</span> (!ReadMultiRegister(AccelDataXLsbAddr, reg_values)) {</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;  <span class="comment">// 失敗</span></div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    }</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    int16_t raw_x = (reg_values[1] &lt;&lt; 8 | reg_values[0]);</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    int16_t raw_y = (reg_values[3] &lt;&lt; 8 | reg_values[2]);</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    int16_t raw_z = (reg_values[5] &lt;&lt; 8 | reg_values[4]);</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#ab179d608de386403f9300b88eda9cc0a">x</a> = raw_x / kAccelLsb;</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#afddad30b5853171983e7d6d88dc40848">y</a> = raw_y / kAccelLsb;</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#a535e10b8579a9e3fd8af78458388787b">z</a> = raw_z / kAccelLsb;</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;  <span class="comment">// 成功</span></div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  }</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
+<div class="foldopen" id="foldopen00242" data-start="{" data-end="}">
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a4cdcc0c50178618064a6bf70a0453e69">  242</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a4cdcc0c50178618064a6bf70a0453e69">GetAcceleration</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html">Acceleration</a> &amp; output)</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>  {</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    uint8_t reg_values[6];</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="keywordflow">if</span> (!ReadMultiRegister(AccelDataXLsbAddr, reg_values)) {</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;  <span class="comment">// 失敗</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    }</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    int16_t raw_x = (reg_values[1] &lt;&lt; 8 | reg_values[0]);</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    int16_t raw_y = (reg_values[3] &lt;&lt; 8 | reg_values[2]);</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    int16_t raw_z = (reg_values[5] &lt;&lt; 8 | reg_values[4]);</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#ab179d608de386403f9300b88eda9cc0a">x</a> = raw_x / kAccelLsb;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#afddad30b5853171983e7d6d88dc40848">y</a> = raw_y / kAccelLsb;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#a535e10b8579a9e3fd8af78458388787b">z</a> = raw_z / kAccelLsb;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;  <span class="comment">// 成功</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  }</div>
 </div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
-<div class="foldopen" id="foldopen00265" data-start="{" data-end="}">
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#afaa7b52032f49e1205c68cf0370c2f53">  265</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#afaa7b52032f49e1205c68cf0370c2f53">GetMagneticVector</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html">MagneticVector</a> &amp; output)</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  {</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    uint8_t reg_values[6];</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    <span class="keywordflow">if</span> (!ReadMultiRegister(MagDataXLsbAddr, reg_values)) {</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;  <span class="comment">// 失敗</span></div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    }</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    int16_t raw_x = (reg_values[1] &lt;&lt; 8 | reg_values[0]);</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    int16_t raw_y = (reg_values[3] &lt;&lt; 8 | reg_values[2]);</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    int16_t raw_z = (reg_values[5] &lt;&lt; 8 | reg_values[4]);</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#ae263e58455e7745c3ee5e0b7bca84f77">x</a> = raw_x / kMagnetLsb;</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#afe3ab95d0449b8fb034abcce91e8e17d">y</a> = raw_y / kMagnetLsb;</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#aa069da81ddd4d2d0c0a53f91e3494983">z</a> = raw_z / kMagnetLsb;</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;  <span class="comment">// 成功</span></div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  }</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="foldopen" id="foldopen00267" data-start="{" data-end="}">
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#afaa7b52032f49e1205c68cf0370c2f53">  267</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#afaa7b52032f49e1205c68cf0370c2f53">GetMagneticVector</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html">MagneticVector</a> &amp; output)</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  {</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    uint8_t reg_values[6];</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    <span class="keywordflow">if</span> (!ReadMultiRegister(MagDataXLsbAddr, reg_values)) {</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;  <span class="comment">// 失敗</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    }</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    int16_t raw_x = (reg_values[1] &lt;&lt; 8 | reg_values[0]);</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    int16_t raw_y = (reg_values[3] &lt;&lt; 8 | reg_values[2]);</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    int16_t raw_z = (reg_values[5] &lt;&lt; 8 | reg_values[4]);</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#ae263e58455e7745c3ee5e0b7bca84f77">x</a> = raw_x / kMagnetLsb;</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#afe3ab95d0449b8fb034abcce91e8e17d">y</a> = raw_y / kMagnetLsb;</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#aa069da81ddd4d2d0c0a53f91e3494983">z</a> = raw_z / kMagnetLsb;</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;  <span class="comment">// 成功</span></div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>  }</div>
 </div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
-<div class="foldopen" id="foldopen00290" data-start="{" data-end="}">
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a9c34e3548306e0fdf84db81b892e5a0f">  290</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a9c34e3548306e0fdf84db81b892e5a0f">GetAngularVelocity</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html">AngularVelocity</a> &amp; output)</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>  {</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    uint8_t reg_values[6];</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    <span class="keywordflow">if</span> (!ReadMultiRegister(kGyroDataXLsbAddr, reg_values)) {</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;  <span class="comment">// 失敗</span></div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    }</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    int16_t raw_x = (reg_values[1] &lt;&lt; 8 | reg_values[0]);</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    int16_t raw_y = (reg_values[3] &lt;&lt; 8 | reg_values[2]);</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    int16_t raw_z = (reg_values[5] &lt;&lt; 8 | reg_values[4]);</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#a54db636b5e3e38fbba23ca82c432a5f5">x</a> = raw_x / kAngulerVelLsb;</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#a3b5c4bde7d4320497467b1118dd32193">y</a> = raw_y / kAngulerVelLsb;</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#ac1e59e0a916abe20197c45fb33f2ecb9">z</a> = raw_z / kAngulerVelLsb;</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;  <span class="comment">// 成功</span></div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  }</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
+<div class="foldopen" id="foldopen00292" data-start="{" data-end="}">
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a9c34e3548306e0fdf84db81b892e5a0f">  292</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a9c34e3548306e0fdf84db81b892e5a0f">GetAngularVelocity</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html">AngularVelocity</a> &amp; output)</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  {</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    uint8_t reg_values[6];</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    <span class="keywordflow">if</span> (!ReadMultiRegister(kGyroDataXLsbAddr, reg_values)) {</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;  <span class="comment">// 失敗</span></div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    }</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    int16_t raw_x = (reg_values[1] &lt;&lt; 8 | reg_values[0]);</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    int16_t raw_y = (reg_values[3] &lt;&lt; 8 | reg_values[2]);</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    int16_t raw_z = (reg_values[5] &lt;&lt; 8 | reg_values[4]);</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#a54db636b5e3e38fbba23ca82c432a5f5">x</a> = raw_x / kAngulerVelLsb;</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#a3b5c4bde7d4320497467b1118dd32193">y</a> = raw_y / kAngulerVelLsb;</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#ac1e59e0a916abe20197c45fb33f2ecb9">z</a> = raw_z / kAngulerVelLsb;</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;  <span class="comment">// 成功</span></div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  }</div>
 </div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
-<div class="foldopen" id="foldopen00315" data-start="{" data-end="}">
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a5ec65d05ffa40867ce5d7fb4ac77e57b">  315</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a5ec65d05ffa40867ce5d7fb4ac77e57b">GetEulerAngle</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html">Euler</a> &amp; output)</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  {</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    uint8_t reg_values[6];</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    <span class="keywordflow">if</span> (!ReadMultiRegister(EulerHLsbAddr, reg_values)) {</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;  <span class="comment">// 失敗</span></div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    }</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    int16_t raw_yaw = (reg_values[1] &lt;&lt; 8 | reg_values[0]);</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    int16_t raw_roll = (reg_values[3] &lt;&lt; 8 | reg_values[2]);</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    int16_t raw_pitch = (reg_values[5] &lt;&lt; 8 | reg_values[4]);</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#ae836cf8ecb13bf2a1495d67ae2f6c4b0">yaw</a> = raw_yaw / kEulerLsb;</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#af1c2d3b03b41807e4b614bc34b772365">roll</a> = raw_roll / kEulerLsb;</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#a30e024e60e3ea71d63b30562bd2b9964">pitch</a> = raw_pitch / kEulerLsb;</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <span class="comment">// ヨー角を正規化</span></div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#ae836cf8ecb13bf2a1495d67ae2f6c4b0">yaw</a> = <a class="code hl_function" href="namespacealps_1_1cmn_1_1util.html#a6facc7bbdf89eb176f4ede22d70c200e">alps::cmn::util::NormalizeAngle</a>(output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#ae836cf8ecb13bf2a1495d67ae2f6c4b0">yaw</a>);</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;  <span class="comment">// 成功</span></div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>  }</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
+<div class="foldopen" id="foldopen00317" data-start="{" data-end="}">
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a5ec65d05ffa40867ce5d7fb4ac77e57b">  317</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a5ec65d05ffa40867ce5d7fb4ac77e57b">GetEulerAngle</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html">Euler</a> &amp; output)</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  {</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    uint8_t reg_values[6];</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    <span class="keywordflow">if</span> (!ReadMultiRegister(EulerHLsbAddr, reg_values)) {</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;  <span class="comment">// 失敗</span></div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    }</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span> </div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    int16_t raw_yaw = (reg_values[1] &lt;&lt; 8 | reg_values[0]);</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    int16_t raw_roll = (reg_values[3] &lt;&lt; 8 | reg_values[2]);</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    int16_t raw_pitch = (reg_values[5] &lt;&lt; 8 | reg_values[4]);</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#ae836cf8ecb13bf2a1495d67ae2f6c4b0">yaw</a> = raw_yaw / kEulerLsb;</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#af1c2d3b03b41807e4b614bc34b772365">roll</a> = raw_roll / kEulerLsb;</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#a30e024e60e3ea71d63b30562bd2b9964">pitch</a> = raw_pitch / kEulerLsb;</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <span class="comment">// ヨー角を正規化</span></div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#ae836cf8ecb13bf2a1495d67ae2f6c4b0">yaw</a> = <a class="code hl_function" href="namespacealps_1_1cmn_1_1util.html#a6facc7bbdf89eb176f4ede22d70c200e">alps::cmn::util::NormalizeAngle</a>(output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#ae836cf8ecb13bf2a1495d67ae2f6c4b0">yaw</a>);</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;  <span class="comment">// 成功</span></div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  }</div>
 </div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
-<div class="foldopen" id="foldopen00343" data-start="{" data-end="}">
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a0159547bfccec39fbe363fa1bd4ae6e0">  343</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a0159547bfccec39fbe363fa1bd4ae6e0">GetQuaternion</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html">Quaternion</a> &amp; output)</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  {</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>    uint8_t reg_values[8];</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>    <span class="keywordflow">if</span> (!ReadMultiRegister(QuaternionDataWLsbAddr, reg_values)) {</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;  <span class="comment">// 失敗</span></div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    }</div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    int16_t raw_w = (reg_values[1] &lt;&lt; 8 | reg_values[0]);</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    int16_t raw_x = (reg_values[3] &lt;&lt; 8 | reg_values[2]);</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>    int16_t raw_y = (reg_values[5] &lt;&lt; 8 | reg_values[4]);</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    int16_t raw_z = (reg_values[7] &lt;&lt; 8 | reg_values[6]);</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#a44082014ee327b6ff23e78c4b7205d3a">w</a> = raw_w / kQuaternionLsb;</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#a8e30476db28d3683f2d4110652729778">x</a> = raw_x / kQuaternionLsb;</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#ab9bec0df06dd184c80910a4557300fef">y</a> = raw_y / kQuaternionLsb;</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#acef3e7977e5060258df8383966addced">z</a> = raw_z / kQuaternionLsb;</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;  <span class="comment">// 成功</span></div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>  }</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span> </div>
+<div class="foldopen" id="foldopen00345" data-start="{" data-end="}">
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a0159547bfccec39fbe363fa1bd4ae6e0">  345</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a0159547bfccec39fbe363fa1bd4ae6e0">GetQuaternion</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html">Quaternion</a> &amp; output)</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  {</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>    uint8_t reg_values[8];</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    <span class="keywordflow">if</span> (!ReadMultiRegister(QuaternionDataWLsbAddr, reg_values)) {</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;  <span class="comment">// 失敗</span></div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    }</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>    int16_t raw_w = (reg_values[1] &lt;&lt; 8 | reg_values[0]);</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    int16_t raw_x = (reg_values[3] &lt;&lt; 8 | reg_values[2]);</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    int16_t raw_y = (reg_values[5] &lt;&lt; 8 | reg_values[4]);</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    int16_t raw_z = (reg_values[7] &lt;&lt; 8 | reg_values[6]);</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#a44082014ee327b6ff23e78c4b7205d3a">w</a> = raw_w / kQuaternionLsb;</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#a8e30476db28d3683f2d4110652729778">x</a> = raw_x / kQuaternionLsb;</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#ab9bec0df06dd184c80910a4557300fef">y</a> = raw_y / kQuaternionLsb;</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#acef3e7977e5060258df8383966addced">z</a> = raw_z / kQuaternionLsb;</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;  <span class="comment">// 成功</span></div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>  }</div>
 </div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
-<div class="foldopen" id="foldopen00370" data-start="{" data-end="}">
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#ad004e48b7e3d83479682c3f17faeca98">  370</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#ad004e48b7e3d83479682c3f17faeca98">GetLinearAcceleration</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html">LinearAcceleration</a> &amp; output)</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>  {</div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>    uint8_t reg_values[6];</div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>    <span class="keywordflow">if</span> (!ReadMultiRegister(LinearAccelDataXLsbAddr, reg_values)) {</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;  <span class="comment">// 失敗</span></div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    }</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span> </div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    int16_t raw_x = (reg_values[1] &lt;&lt; 8 | reg_values[0]);</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    int16_t raw_y = (reg_values[3] &lt;&lt; 8 | reg_values[2]);</div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    int16_t raw_z = (reg_values[5] &lt;&lt; 8 | reg_values[4]);</div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span> </div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a0e5eabcc44cc4e973bdabef083a1327f">x</a> = raw_x / kLinearAccelLsb;</div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a509462425537f8480193383209e44b02">y</a> = raw_y / kLinearAccelLsb;</div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a3dcbb02dee6f0a4d7fe97846c6be10a3">z</a> = raw_z / kLinearAccelLsb;</div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span> </div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;  <span class="comment">// 成功</span></div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>  }</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span> </div>
+<div class="foldopen" id="foldopen00372" data-start="{" data-end="}">
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#ad004e48b7e3d83479682c3f17faeca98">  372</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#ad004e48b7e3d83479682c3f17faeca98">GetLinearAcceleration</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html">LinearAcceleration</a> &amp; output)</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>  {</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>    uint8_t reg_values[6];</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    <span class="keywordflow">if</span> (!ReadMultiRegister(LinearAccelDataXLsbAddr, reg_values)) {</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;  <span class="comment">// 失敗</span></div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    }</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span> </div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    int16_t raw_x = (reg_values[1] &lt;&lt; 8 | reg_values[0]);</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>    int16_t raw_y = (reg_values[3] &lt;&lt; 8 | reg_values[2]);</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    int16_t raw_z = (reg_values[5] &lt;&lt; 8 | reg_values[4]);</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a0e5eabcc44cc4e973bdabef083a1327f">x</a> = raw_x / kLinearAccelLsb;</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a509462425537f8480193383209e44b02">y</a> = raw_y / kLinearAccelLsb;</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a3dcbb02dee6f0a4d7fe97846c6be10a3">z</a> = raw_z / kLinearAccelLsb;</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span> </div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;  <span class="comment">// 成功</span></div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>  }</div>
 </div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span> </div>
-<div class="foldopen" id="foldopen00395" data-start="{" data-end="}">
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#ac41f26014293156d61cc8612d3c1c815">  395</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#ac41f26014293156d61cc8612d3c1c815">GetGravityVector</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html">GravityVector</a> &amp; output)</div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>  {</div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    uint8_t reg_values[6];</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>    <span class="keywordflow">if</span> (!ReadMultiRegister(kGravityDataXLsbAddr, reg_values)) {</div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;  <span class="comment">// 失敗</span></div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    }</div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span> </div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>    int16_t raw_x = (reg_values[1] &lt;&lt; 8 | reg_values[0]);</div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    int16_t raw_y = (reg_values[3] &lt;&lt; 8 | reg_values[2]);</div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    int16_t raw_z = (reg_values[5] &lt;&lt; 8 | reg_values[4]);</div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span> </div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#a31e35f0f392eb1ff73e8def06848e98b">x</a> = raw_x / kGravityLsb;</div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#a9379014ec452b2426466893815dcffa5">y</a> = raw_y / kGravityLsb;</div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#acfa97ed2e781699021e77a120c242a99">z</a> = raw_z / kGravityLsb;</div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span> </div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;  <span class="comment">// 成功</span></div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>  }</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span> </div>
+<div class="foldopen" id="foldopen00397" data-start="{" data-end="}">
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#ac41f26014293156d61cc8612d3c1c815">  397</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#ac41f26014293156d61cc8612d3c1c815">GetGravityVector</a>(<a class="code hl_struct" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html">GravityVector</a> &amp; output)</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>  {</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    uint8_t reg_values[6];</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    <span class="keywordflow">if</span> (!ReadMultiRegister(kGravityDataXLsbAddr, reg_values)) {</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;  <span class="comment">// 失敗</span></div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>    }</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span> </div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    int16_t raw_x = (reg_values[1] &lt;&lt; 8 | reg_values[0]);</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>    int16_t raw_y = (reg_values[3] &lt;&lt; 8 | reg_values[2]);</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>    int16_t raw_z = (reg_values[5] &lt;&lt; 8 | reg_values[4]);</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#a31e35f0f392eb1ff73e8def06848e98b">x</a> = raw_x / kGravityLsb;</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#a9379014ec452b2426466893815dcffa5">y</a> = raw_y / kGravityLsb;</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    output.<a class="code hl_variable" href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#acfa97ed2e781699021e77a120c242a99">z</a> = raw_z / kGravityLsb;</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span> </div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;  <span class="comment">// 成功</span></div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>  }</div>
 </div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span> </div>
-<div class="foldopen" id="foldopen00420" data-start="{" data-end="}">
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a6d1919524242773b23c1596302e90503">  420</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a6d1919524242773b23c1596302e90503">GetTemperature</a>(int8_t &amp; output)</div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>  {</div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>    uint8_t reg_value;</div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>    <span class="keywordflow">if</span> (!ReadRegister(kTempAddr, reg_value)) {</div>
-<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;  <span class="comment">// 失敗</span></div>
-<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>    }</div>
-<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span> </div>
-<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>    output = (*<span class="keyword">reinterpret_cast&lt;</span>uint8_t *<span class="keyword">&gt;</span>(&amp;reg_value)) / kTemperatureLsb;</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span> </div>
+<div class="foldopen" id="foldopen00422" data-start="{" data-end="}">
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a6d1919524242773b23c1596302e90503">  422</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a6d1919524242773b23c1596302e90503">GetTemperature</a>(int8_t &amp; output)</div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>  {</div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>    uint8_t reg_value;</div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>    <span class="keywordflow">if</span> (!ReadRegister(kTempAddr, reg_value)) {</div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;  <span class="comment">// 失敗</span></div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>    }</div>
 <div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span> </div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;  <span class="comment">// 成功</span></div>
-<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>  }</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>    output = (*<span class="keyword">reinterpret_cast&lt;</span>uint8_t *<span class="keyword">&gt;</span>(&amp;reg_value)) / kTemperatureLsb;</div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span> </div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;  <span class="comment">// 成功</span></div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>  }</div>
 </div>
-<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span> </div>
-<div class="foldopen" id="foldopen00436" data-start="{" data-end="}">
-<div class="line"><a id="l00436" name="l00436"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a060960011a3053a69fd88a8e87857777">  436</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a060960011a3053a69fd88a8e87857777">Reset</a>()</div>
-<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>  {</div>
-<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>    <span class="comment">// リセット信号を送る</span></div>
-<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>    RegValue sys_trigger_value{};</div>
-<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>    ReadRegister(kSysTriggerAddr, sys_trigger_value);</div>
-<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>    sys_trigger_value |= 0x20;</div>
-<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>    WriteRegister(kSysTriggerAddr, sys_trigger_value);</div>
-<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span> </div>
-<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>    <span class="comment">// リセット完了まで待機</span></div>
-<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>    <span class="keyword">using namespace </span>std::chrono_literals;</div>
-<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>    <a class="code hl_function" href="namespacealps_1_1cmn_1_1time.html#a2f667b84910e28a6a2426a8994c05f37">time::SleepFor</a>(650ms);</div>
-<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span> </div>
-<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>    <span class="comment">// 初期化設定</span></div>
-<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>    Initialize();</div>
-<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>  }</div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span> </div>
+<div class="foldopen" id="foldopen00438" data-start="{" data-end="}">
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a060960011a3053a69fd88a8e87857777">  438</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a060960011a3053a69fd88a8e87857777">Reset</a>()</div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>  {</div>
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>    <span class="comment">// リセット信号を送る</span></div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>    RegValue sys_trigger_value{};</div>
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>    ReadRegister(kSysTriggerAddr, sys_trigger_value);</div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>    sys_trigger_value |= 0x20;</div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>    WriteRegister(kSysTriggerAddr, sys_trigger_value);</div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span> </div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>    <span class="comment">// リセット完了まで待機</span></div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>    <span class="keyword">using namespace </span>std::chrono_literals;</div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>    <a class="code hl_function" href="namespacealps_1_1cmn_1_1time.html#a2f667b84910e28a6a2426a8994c05f37">time::SleepFor</a>(650ms);</div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span> </div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>    <span class="comment">// 初期化設定</span></div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>    Initialize();</div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>  }</div>
 </div>
-<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span> </div>
-<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>  <span class="keywordtype">bool</span> WriteRegister(RegAddress reg_address, RegValue write_value)</div>
-<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>  {</div>
-<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>    uint8_t write_buf[2] = {reg_address, write_value};</div>
-<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>    <span class="keywordflow">return</span> i2c_io_.<a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">CallWrite</a>(i2c_address_, write_buf);</div>
-<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>  }</div>
-<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span> </div>
-<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>  <span class="keywordtype">bool</span> ReadRegister(RegAddress reg_address, RegValue &amp; read_value)</div>
-<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>  {</div>
-<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>    <span class="keywordflow">if</span> (</div>
-<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>      i2c_io_.<a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">CallWrite</a>(i2c_address_, {&amp;reg_address, 1}, <span class="keyword">true</span>) &amp;&amp;</div>
-<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>      i2c_io_.<a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#ac08f337e75e152c3d2a82d7ca4a52f13">CallRead</a>(i2c_address_, {&amp;read_value, 1}, <span class="keyword">false</span>)) {</div>
-<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span>    }</div>
-<div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00479" name="l00479"></a><span class="lineno">  479</span>  }</div>
-<div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span> </div>
-<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>  <span class="keywordtype">bool</span> ReadMultiRegister(RegAddress first_reg_address, etl::span&lt;uint8_t&gt; read_values)</div>
-<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>  {</div>
-<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>    <span class="keywordflow">if</span> (</div>
-<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>      i2c_io_.<a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">CallWrite</a>(i2c_address_, {&amp;first_reg_address, 1}, <span class="keyword">true</span>) &amp;&amp;</div>
-<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>      i2c_io_.<a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#ac08f337e75e152c3d2a82d7ca4a52f13">CallRead</a>(i2c_address_, read_values, <span class="keyword">false</span>)) {</div>
-<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>    }</div>
-<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>  }</div>
-<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span> </div>
-<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>  <span class="keywordtype">void</span> ChangeOperationMode(OperationMode operation_mode)</div>
-<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>  {</div>
-<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>    WriteRegister(kOprModeAddr, <span class="keyword">static_cast&lt;</span>RegValue<span class="keyword">&gt;</span>(operation_mode));</div>
-<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>    <span class="keyword">using namespace </span>std::chrono_literals;</div>
-<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span> </div>
-<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>    <span class="comment">// モード切り替え時間</span></div>
-<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>    <span class="keywordflow">if</span> (operation_mode == OperationMode::kConfig) {</div>
-<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>      <a class="code hl_function" href="namespacealps_1_1cmn_1_1time.html#a2f667b84910e28a6a2426a8994c05f37">time::SleepFor</a>(19ms);</div>
-<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>      <a class="code hl_function" href="namespacealps_1_1cmn_1_1time.html#a2f667b84910e28a6a2426a8994c05f37">time::SleepFor</a>(7ms);</div>
-<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>    }</div>
-<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>  }</div>
-<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span> </div>
-<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>  <span class="keywordtype">void</span> RemapAxis(<a class="code hl_enumeration" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cd">Placement</a> placement)</div>
-<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>  {</div>
-<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>    <span class="comment">// データシート3.4参照</span></div>
-<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>    <span class="keywordflow">switch</span> (placement) {</div>
-<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda0710d02a75095f7bb3cd81ba27539714">Placement::kP0</a>:</div>
-<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>        WriteRegister(kAxisMapConfigAddr, 0x21);</div>
-<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>        WriteRegister(kAxisMapSignAddr, 0x04);</div>
-<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda42db61944964fac3908da41807af39ba">Placement::kP1</a>:</div>
-<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>        WriteRegister(kAxisMapConfigAddr, 0x24);</div>
-<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>        WriteRegister(kAxisMapSignAddr, 0x00);</div>
-<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda35d31b8f4263c3a89d63310371285eb5">Placement::kP2</a>:</div>
-<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>        WriteRegister(kAxisMapConfigAddr, 0x24);</div>
-<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>        WriteRegister(kAxisMapSignAddr, 0x06);</div>
-<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda0d769ae732813e0c2e2a289d6dffea70">Placement::kP3</a>:</div>
-<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>        WriteRegister(kAxisMapConfigAddr, 0x21);</div>
-<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>        WriteRegister(kAxisMapSignAddr, 0x02);</div>
-<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cdac83a5fadec9c3803bfdcf84998fc4999">Placement::kP4</a>:</div>
-<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>        WriteRegister(kAxisMapConfigAddr, 0x24);</div>
-<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>        WriteRegister(kAxisMapSignAddr, 0x03);</div>
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda6ef57404216998a2429edfc4bc94d58d">Placement::kP5</a>:</div>
-<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>        WriteRegister(kAxisMapConfigAddr, 0x21);</div>
-<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>        WriteRegister(kAxisMapSignAddr, 0x01);</div>
-<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda8bc23378a3ec2814815d05106cf0c957">Placement::kP6</a>:</div>
-<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>        WriteRegister(kAxisMapConfigAddr, 0x21);</div>
-<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>        WriteRegister(kAxisMapSignAddr, 0x07);</div>
-<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cdaa438ad77c3cceadaee8d48be3c48bfe8">Placement::kP7</a>:</div>
-<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>        WriteRegister(kAxisMapConfigAddr, 0x24);</div>
-<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>        WriteRegister(kAxisMapSignAddr, 0x05);</div>
-<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>    }</div>
-<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>  }</div>
-<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span> </div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>  <span class="keywordtype">void</span> Initialize()</div>
-<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>  {</div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>    <span class="comment">// 設定モードに入る</span></div>
-<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>    ChangeOperationMode(OperationMode::kConfig);</div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span> </div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>    <span class="comment">// 電源モードはノーマル</span></div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    WriteRegister(kPwrModeAddr, kPowerModeNormal);</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span> </div>
-<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>    <span class="comment">// 軸向きの設定</span></div>
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>    RemapAxis(placement_);</div>
-<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span> </div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    <span class="comment">// 単位,フォーマットの設定 データシート3.6</span></div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>    RegValue unit_format_selection;</div>
-<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>    ReadRegister(kUnitSelAddr, unit_format_selection);</div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>    unit_format_selection &amp;= 0b11111110;  <span class="comment">// m/s^2</span></div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>    unit_format_selection |= 0b00000100;  <span class="comment">// rps</span></div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>    unit_format_selection |= 0b00001000;  <span class="comment">// rad</span></div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>    unit_format_selection &amp;= 0b11101111;  <span class="comment">// ℃</span></div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>    unit_format_selection &amp;= 0b01111111;  <span class="comment">// Windows</span></div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>    WriteRegister(kUnitSelAddr, unit_format_selection);</div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span> </div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>    <span class="comment">// 9軸フュージョンモードに入ってセンサ測定を開始する</span></div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>    ChangeOperationMode(OperationMode::kNDof);</div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>  }</div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span> </div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>  cmn::communication::II2cIo&lt;I2cIo&gt; &amp; i2c_io_;</div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>  <span class="keyword">const</span> <a class="code hl_enumeration" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cd">Placement</a> placement_;</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>  <span class="keyword">const</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">communication::I2cAddress</a> i2c_address_;</div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>};</div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span> </div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>  <span class="keywordtype">bool</span> WriteRegister(RegAddress reg_address, RegValue write_value)</div>
+<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>  {</div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>    uint8_t write_buf[2] = {reg_address, write_value};</div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>    <span class="keywordflow">return</span> i2c_io_.<a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">CallWrite</a>(i2c_address_, write_buf);</div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>  }</div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span> </div>
+<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>  <span class="keywordtype">bool</span> ReadRegister(RegAddress reg_address, RegValue &amp; read_value)</div>
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>  {</div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>    <span class="keywordflow">if</span> (</div>
+<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>      i2c_io_.<a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">CallWrite</a>(i2c_address_, {&amp;reg_address, 1}, <span class="keyword">true</span>) &amp;&amp;</div>
+<div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span>      i2c_io_.<a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#ac08f337e75e152c3d2a82d7ca4a52f13">CallRead</a>(i2c_address_, {&amp;read_value, 1}, <span class="keyword">false</span>)) {</div>
+<div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span>      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00479" name="l00479"></a><span class="lineno">  479</span>    }</div>
+<div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span>  }</div>
+<div class="line"><a id="l00482" name="l00482"></a><span class="lineno">  482</span> </div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>  <span class="keywordtype">bool</span> ReadMultiRegister(RegAddress first_reg_address, etl::span&lt;uint8_t&gt; read_values)</div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>  {</div>
+<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>    <span class="keywordflow">if</span> (</div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>      i2c_io_.<a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">CallWrite</a>(i2c_address_, {&amp;first_reg_address, 1}, <span class="keyword">true</span>) &amp;&amp;</div>
+<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>      i2c_io_.<a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#ac08f337e75e152c3d2a82d7ca4a52f13">CallRead</a>(i2c_address_, read_values, <span class="keyword">false</span>)) {</div>
+<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>    }</div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>  }</div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span> </div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>  <span class="keywordtype">void</span> ChangeOperationMode(OperationMode operation_mode)</div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>  {</div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>    WriteRegister(kOprModeAddr, <span class="keyword">static_cast&lt;</span>RegValue<span class="keyword">&gt;</span>(operation_mode));</div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>    <span class="keyword">using namespace </span>std::chrono_literals;</div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span> </div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>    <span class="comment">// モード切り替え時間</span></div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>    <span class="keywordflow">if</span> (operation_mode == OperationMode::kConfig) {</div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>      <a class="code hl_function" href="namespacealps_1_1cmn_1_1time.html#a2f667b84910e28a6a2426a8994c05f37">time::SleepFor</a>(19ms);</div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>      <a class="code hl_function" href="namespacealps_1_1cmn_1_1time.html#a2f667b84910e28a6a2426a8994c05f37">time::SleepFor</a>(7ms);</div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>    }</div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>  }</div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span> </div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>  <span class="keywordtype">void</span> RemapAxis(<a class="code hl_enumeration" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cd">Placement</a> placement)</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>  {</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>    <span class="comment">// データシート3.4参照</span></div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>    <span class="keywordflow">switch</span> (placement) {</div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda0710d02a75095f7bb3cd81ba27539714">Placement::kP0</a>:</div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>        WriteRegister(kAxisMapConfigAddr, 0x21);</div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>        WriteRegister(kAxisMapSignAddr, 0x04);</div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda42db61944964fac3908da41807af39ba">Placement::kP1</a>:</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>        WriteRegister(kAxisMapConfigAddr, 0x24);</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>        WriteRegister(kAxisMapSignAddr, 0x00);</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda35d31b8f4263c3a89d63310371285eb5">Placement::kP2</a>:</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>        WriteRegister(kAxisMapConfigAddr, 0x24);</div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>        WriteRegister(kAxisMapSignAddr, 0x06);</div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda0d769ae732813e0c2e2a289d6dffea70">Placement::kP3</a>:</div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>        WriteRegister(kAxisMapConfigAddr, 0x21);</div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>        WriteRegister(kAxisMapSignAddr, 0x02);</div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cdac83a5fadec9c3803bfdcf84998fc4999">Placement::kP4</a>:</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>        WriteRegister(kAxisMapConfigAddr, 0x24);</div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>        WriteRegister(kAxisMapSignAddr, 0x03);</div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda6ef57404216998a2429edfc4bc94d58d">Placement::kP5</a>:</div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>        WriteRegister(kAxisMapConfigAddr, 0x21);</div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>        WriteRegister(kAxisMapSignAddr, 0x01);</div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda8bc23378a3ec2814815d05106cf0c957">Placement::kP6</a>:</div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>        WriteRegister(kAxisMapConfigAddr, 0x21);</div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>        WriteRegister(kAxisMapSignAddr, 0x07);</div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cdaa438ad77c3cceadaee8d48be3c48bfe8">Placement::kP7</a>:</div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>        WriteRegister(kAxisMapConfigAddr, 0x24);</div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>        WriteRegister(kAxisMapSignAddr, 0x05);</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>    }</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>  }</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span> </div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>  <span class="keywordtype">void</span> Initialize()</div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>  {</div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>    <span class="comment">// 設定モードに入る</span></div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>    ChangeOperationMode(OperationMode::kConfig);</div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span> </div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>    <span class="comment">// 電源モードはノーマル</span></div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>    WriteRegister(kPwrModeAddr, kPowerModeNormal);</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span> </div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>    <span class="comment">// 軸向きの設定</span></div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    RemapAxis(placement_);</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span> </div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>    <span class="comment">// 単位,フォーマットの設定 データシート3.6</span></div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>    RegValue unit_format_selection;</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>    ReadRegister(kUnitSelAddr, unit_format_selection);</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>    unit_format_selection &amp;= 0b11111110;  <span class="comment">// m/s^2</span></div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>    unit_format_selection |= 0b00000100;  <span class="comment">// rps</span></div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>    unit_format_selection |= 0b00001000;  <span class="comment">// rad</span></div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>    unit_format_selection &amp;= 0b11101111;  <span class="comment">// ℃</span></div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>    unit_format_selection &amp;= 0b01111111;  <span class="comment">// Windows</span></div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>    WriteRegister(kUnitSelAddr, unit_format_selection);</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span> </div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>    <span class="comment">// 9軸フュージョンモードに入ってセンサ測定を開始する</span></div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>    ChangeOperationMode(OperationMode::kNDof);</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>  }</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span> </div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>  cmn::communication::II2cIo&lt;I2cIo&gt; &amp; i2c_io_;</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>  <span class="keyword">const</span> <a class="code hl_enumeration" href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cd">Placement</a> placement_;</div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>  <span class="keyword">const</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">communication::I2cAddress</a> i2c_address_;</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>};</div>
 </div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span> </div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>}  <span class="comment">// namespace bno055</span></div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span> </div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>}  <span class="comment">// namespace bno055</span></div>
 </div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>}  <span class="comment">// namespace sensor</span></div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>}  <span class="comment">// namespace cmn</span></div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span> </div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>}  <span class="comment">// namespace sensor</span></div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span> </div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aangle_8hpp_html"><div class="ttname"><a href="angle_8hpp.html">angle.hpp</a></div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_i2c_io_html"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">alps::cmn::communication::II2cIo</a></div><div class="ttdoc">I2C通信インタフェース</div><div class="ttdef"><b>Definition</b> i_i2c_io.hpp:36</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_i2c_io_html_ac08f337e75e152c3d2a82d7ca4a52f13"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#ac08f337e75e152c3d2a82d7ca4a52f13">alps::cmn::communication::II2cIo::CallRead</a></div><div class="ttdeci">bool CallRead(I2cAddress address, etl::span&lt; uint8_t &gt; read_buf, bool repeated=false)</div><div class="ttdoc">インタフェースを介してI2C通信でバイト列を受信する</div><div class="ttdef"><b>Definition</b> i_i2c_io.hpp:63</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_i2c_io_html_af653762153caea8bbe059f868b73e5f1"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">alps::cmn::communication::II2cIo::CallWrite</a></div><div class="ttdeci">bool CallWrite(I2cAddress address, etl::span&lt; const uint8_t &gt; write_buf, bool repeated=false)</div><div class="ttdoc">インタフェースを介してI2C通信でバイト列を送信する</div><div class="ttdef"><b>Definition</b> i_i2c_io.hpp:48</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055_html"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html">alps::cmn::sensor::bno055::Bno055</a></div><div class="ttdoc">9軸センサ(加速度，ジャイロ，地磁気) BNO055</div><div class="ttdef"><b>Definition</b> bno055.hpp:141</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055_html_a0159547bfccec39fbe363fa1bd4ae6e0"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a0159547bfccec39fbe363fa1bd4ae6e0">alps::cmn::sensor::bno055::Bno055::GetQuaternion</a></div><div class="ttdeci">bool GetQuaternion(Quaternion &amp;output)</div><div class="ttdoc">クォータニオンを取得する</div><div class="ttdef"><b>Definition</b> bno055.hpp:343</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055_html_a060960011a3053a69fd88a8e87857777"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a060960011a3053a69fd88a8e87857777">alps::cmn::sensor::bno055::Bno055::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">センサーにリセットをかける</div><div class="ttdef"><b>Definition</b> bno055.hpp:436</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055_html_a15282c18dc44e215ed70e0a132617719"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a15282c18dc44e215ed70e0a132617719">alps::cmn::sensor::bno055::Bno055::Bno055</a></div><div class="ttdeci">Bno055(cmn::communication::II2cIo&lt; I2cIo &gt; &amp;i2c_io, Placement placement=Placement::kP1, I2cAddressOption address_option=I2cAddressOption::k0x28)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition</b> bno055.hpp:217</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055_html_a4cdcc0c50178618064a6bf70a0453e69"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a4cdcc0c50178618064a6bf70a0453e69">alps::cmn::sensor::bno055::Bno055::GetAcceleration</a></div><div class="ttdeci">bool GetAcceleration(Acceleration &amp;output)</div><div class="ttdoc">加速度を取得する</div><div class="ttdef"><b>Definition</b> bno055.hpp:240</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055_html_a5ec65d05ffa40867ce5d7fb4ac77e57b"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a5ec65d05ffa40867ce5d7fb4ac77e57b">alps::cmn::sensor::bno055::Bno055::GetEulerAngle</a></div><div class="ttdeci">bool GetEulerAngle(Euler &amp;output)</div><div class="ttdoc">オイラー角を取得する</div><div class="ttdef"><b>Definition</b> bno055.hpp:315</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055_html_a6d1919524242773b23c1596302e90503"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a6d1919524242773b23c1596302e90503">alps::cmn::sensor::bno055::Bno055::GetTemperature</a></div><div class="ttdeci">bool GetTemperature(int8_t &amp;output)</div><div class="ttdoc">温度[℃]を取得する ※精度△</div><div class="ttdef"><b>Definition</b> bno055.hpp:420</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055_html_a9c34e3548306e0fdf84db81b892e5a0f"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a9c34e3548306e0fdf84db81b892e5a0f">alps::cmn::sensor::bno055::Bno055::GetAngularVelocity</a></div><div class="ttdeci">bool GetAngularVelocity(AngularVelocity &amp;output)</div><div class="ttdoc">角速度を取得する</div><div class="ttdef"><b>Definition</b> bno055.hpp:290</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055_html_ac41f26014293156d61cc8612d3c1c815"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#ac41f26014293156d61cc8612d3c1c815">alps::cmn::sensor::bno055::Bno055::GetGravityVector</a></div><div class="ttdeci">bool GetGravityVector(GravityVector &amp;output)</div><div class="ttdoc">重力加速度を取得する</div><div class="ttdef"><b>Definition</b> bno055.hpp:395</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055_html_ad004e48b7e3d83479682c3f17faeca98"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#ad004e48b7e3d83479682c3f17faeca98">alps::cmn::sensor::bno055::Bno055::GetLinearAcceleration</a></div><div class="ttdeci">bool GetLinearAcceleration(LinearAcceleration &amp;output)</div><div class="ttdoc">線形加速度を取得する</div><div class="ttdef"><b>Definition</b> bno055.hpp:370</div></div>
-<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055_html_afaa7b52032f49e1205c68cf0370c2f53"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#afaa7b52032f49e1205c68cf0370c2f53">alps::cmn::sensor::bno055::Bno055::GetMagneticVector</a></div><div class="ttdeci">bool GetMagneticVector(MagneticVector &amp;output)</div><div class="ttdoc">地磁気を取得する</div><div class="ttdef"><b>Definition</b> bno055.hpp:265</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055_html"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html">alps::cmn::sensor::bno055::Bno055</a></div><div class="ttdoc">9軸センサ(加速度，ジャイロ，地磁気) BNO055</div><div class="ttdef"><b>Definition</b> bno055.hpp:143</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055_html_a0159547bfccec39fbe363fa1bd4ae6e0"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a0159547bfccec39fbe363fa1bd4ae6e0">alps::cmn::sensor::bno055::Bno055::GetQuaternion</a></div><div class="ttdeci">bool GetQuaternion(Quaternion &amp;output)</div><div class="ttdoc">クォータニオンを取得する</div><div class="ttdef"><b>Definition</b> bno055.hpp:345</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055_html_a060960011a3053a69fd88a8e87857777"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a060960011a3053a69fd88a8e87857777">alps::cmn::sensor::bno055::Bno055::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">センサーにリセットをかける</div><div class="ttdef"><b>Definition</b> bno055.hpp:438</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055_html_a15282c18dc44e215ed70e0a132617719"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a15282c18dc44e215ed70e0a132617719">alps::cmn::sensor::bno055::Bno055::Bno055</a></div><div class="ttdeci">Bno055(cmn::communication::II2cIo&lt; I2cIo &gt; &amp;i2c_io, Placement placement=Placement::kP1, I2cAddressOption address_option=I2cAddressOption::k0x28)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition</b> bno055.hpp:219</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055_html_a4cdcc0c50178618064a6bf70a0453e69"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a4cdcc0c50178618064a6bf70a0453e69">alps::cmn::sensor::bno055::Bno055::GetAcceleration</a></div><div class="ttdeci">bool GetAcceleration(Acceleration &amp;output)</div><div class="ttdoc">加速度を取得する</div><div class="ttdef"><b>Definition</b> bno055.hpp:242</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055_html_a5ec65d05ffa40867ce5d7fb4ac77e57b"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a5ec65d05ffa40867ce5d7fb4ac77e57b">alps::cmn::sensor::bno055::Bno055::GetEulerAngle</a></div><div class="ttdeci">bool GetEulerAngle(Euler &amp;output)</div><div class="ttdoc">オイラー角を取得する</div><div class="ttdef"><b>Definition</b> bno055.hpp:317</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055_html_a6d1919524242773b23c1596302e90503"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a6d1919524242773b23c1596302e90503">alps::cmn::sensor::bno055::Bno055::GetTemperature</a></div><div class="ttdeci">bool GetTemperature(int8_t &amp;output)</div><div class="ttdoc">温度[℃]を取得する ※精度△</div><div class="ttdef"><b>Definition</b> bno055.hpp:422</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055_html_a9c34e3548306e0fdf84db81b892e5a0f"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#a9c34e3548306e0fdf84db81b892e5a0f">alps::cmn::sensor::bno055::Bno055::GetAngularVelocity</a></div><div class="ttdeci">bool GetAngularVelocity(AngularVelocity &amp;output)</div><div class="ttdoc">角速度を取得する</div><div class="ttdef"><b>Definition</b> bno055.hpp:292</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055_html_ac41f26014293156d61cc8612d3c1c815"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#ac41f26014293156d61cc8612d3c1c815">alps::cmn::sensor::bno055::Bno055::GetGravityVector</a></div><div class="ttdeci">bool GetGravityVector(GravityVector &amp;output)</div><div class="ttdoc">重力加速度を取得する</div><div class="ttdef"><b>Definition</b> bno055.hpp:397</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055_html_ad004e48b7e3d83479682c3f17faeca98"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#ad004e48b7e3d83479682c3f17faeca98">alps::cmn::sensor::bno055::Bno055::GetLinearAcceleration</a></div><div class="ttdeci">bool GetLinearAcceleration(LinearAcceleration &amp;output)</div><div class="ttdoc">線形加速度を取得する</div><div class="ttdef"><b>Definition</b> bno055.hpp:372</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055_html_afaa7b52032f49e1205c68cf0370c2f53"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1bno055_1_1_bno055.html#afaa7b52032f49e1205c68cf0370c2f53">alps::cmn::sensor::bno055::Bno055::GetMagneticVector</a></div><div class="ttdeci">bool GetMagneticVector(MagneticVector &amp;output)</div><div class="ttdoc">地磁気を取得する</div><div class="ttdef"><b>Definition</b> bno055.hpp:267</div></div>
 <div class="ttc" id="ai__i2c__io_8hpp_html"><div class="ttname"><a href="i__i2c__io_8hpp.html">i_i2c_io.hpp</a></div><div class="ttdoc">I2C通信インタフェース</div></div>
 <div class="ttc" id="anamespacealps_1_1cmn_1_1communication_html_a31fcf69557e3ea7c625eddbe09e241c3"><div class="ttname"><a href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">alps::cmn::communication::I2cAddress</a></div><div class="ttdeci">uint8_t I2cAddress</div><div class="ttdoc">7bit I2Cアドレス</div><div class="ttdef"><b>Definition</b> i_i2c_io.hpp:27</div></div>
-<div class="ttc" id="anamespacealps_1_1cmn_1_1sensor_1_1bno055_html_aa08eccfe12b3b47c0e4832d0c743f123"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#aa08eccfe12b3b47c0e4832d0c743f123">alps::cmn::sensor::bno055::I2cAddressOption</a></div><div class="ttdeci">I2cAddressOption</div><div class="ttdoc">I2Cアドレスの選択肢</div><div class="ttdef"><b>Definition</b> bno055.hpp:125</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sensor_1_1bno055_html_aa08eccfe12b3b47c0e4832d0c743f123"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#aa08eccfe12b3b47c0e4832d0c743f123">alps::cmn::sensor::bno055::I2cAddressOption</a></div><div class="ttdeci">I2cAddressOption</div><div class="ttdoc">I2Cアドレスの選択肢</div><div class="ttdef"><b>Definition</b> bno055.hpp:127</div></div>
 <div class="ttc" id="anamespacealps_1_1cmn_1_1sensor_1_1bno055_html_aa08eccfe12b3b47c0e4832d0c743f123a756ac368d9a365243b8aed7670e5aff6"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#aa08eccfe12b3b47c0e4832d0c743f123a756ac368d9a365243b8aed7670e5aff6">alps::cmn::sensor::bno055::I2cAddressOption::k0x28</a></div><div class="ttdeci">@ k0x28</div><div class="ttdoc">COM3がLOWのときのアドレス</div></div>
 <div class="ttc" id="anamespacealps_1_1cmn_1_1sensor_1_1bno055_html_aa08eccfe12b3b47c0e4832d0c743f123ae8caa1cabe861730d7a7298f4379734f"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#aa08eccfe12b3b47c0e4832d0c743f123ae8caa1cabe861730d7a7298f4379734f">alps::cmn::sensor::bno055::I2cAddressOption::k0x29</a></div><div class="ttdeci">@ k0x29</div><div class="ttdoc">COM3がHIGHのときのアドレス</div></div>
-<div class="ttc" id="anamespacealps_1_1cmn_1_1sensor_1_1bno055_html_af0ab3c49b16e4ec3cafc6b9cd11887cd"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cd">alps::cmn::sensor::bno055::Placement</a></div><div class="ttdeci">Placement</div><div class="ttdoc">BNO055の配置．データシート3.4参照</div><div class="ttdef"><b>Definition</b> bno055.hpp:112</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sensor_1_1bno055_html_af0ab3c49b16e4ec3cafc6b9cd11887cd"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cd">alps::cmn::sensor::bno055::Placement</a></div><div class="ttdeci">Placement</div><div class="ttdoc">BNO055の配置．データシート3.4参照</div><div class="ttdef"><b>Definition</b> bno055.hpp:114</div></div>
 <div class="ttc" id="anamespacealps_1_1cmn_1_1sensor_1_1bno055_html_af0ab3c49b16e4ec3cafc6b9cd11887cda0710d02a75095f7bb3cd81ba27539714"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda0710d02a75095f7bb3cd81ba27539714">alps::cmn::sensor::bno055::Placement::kP0</a></div><div class="ttdeci">@ kP0</div></div>
 <div class="ttc" id="anamespacealps_1_1cmn_1_1sensor_1_1bno055_html_af0ab3c49b16e4ec3cafc6b9cd11887cda0d769ae732813e0c2e2a289d6dffea70"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda0d769ae732813e0c2e2a289d6dffea70">alps::cmn::sensor::bno055::Placement::kP3</a></div><div class="ttdeci">@ kP3</div></div>
 <div class="ttc" id="anamespacealps_1_1cmn_1_1sensor_1_1bno055_html_af0ab3c49b16e4ec3cafc6b9cd11887cda35d31b8f4263c3a89d63310371285eb5"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sensor_1_1bno055.html#af0ab3c49b16e4ec3cafc6b9cd11887cda35d31b8f4263c3a89d63310371285eb5">alps::cmn::sensor::bno055::Placement::kP2</a></div><div class="ttdeci">@ kP2</div></div>
@@ -613,35 +613,35 @@ $(document).ready(function(){initNavTree('bno055_8hpp_source.html',''); initResi
 <div class="ttc" id="anamespacealps_1_1cmn_1_1util_html_a6facc7bbdf89eb176f4ede22d70c200e"><div class="ttname"><a href="namespacealps_1_1cmn_1_1util.html#a6facc7bbdf89eb176f4ede22d70c200e">alps::cmn::util::NormalizeAngle</a></div><div class="ttdeci">constexpr double NormalizeAngle(double angle_rad)</div><div class="ttdoc">角度をπ~-πの範囲に正規化する</div><div class="ttdef"><b>Definition</b> angle.hpp:47</div></div>
 <div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition</b> dc_motor.hpp:25</div></div>
 <div class="ttc" id="asleep_8hpp_html"><div class="ttname"><a href="sleep_8hpp.html">sleep.hpp</a></div><div class="ttdoc">スリープ関数の定義</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration_html"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html">alps::cmn::sensor::bno055::Acceleration</a></div><div class="ttdoc">加速度のセンサーデータ</div><div class="ttdef"><b>Definition</b> bno055.hpp:34</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration_html_a535e10b8579a9e3fd8af78458388787b"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#a535e10b8579a9e3fd8af78458388787b">alps::cmn::sensor::bno055::Acceleration::z</a></div><div class="ttdeci">float z</div><div class="ttdoc">z軸方向の加速度[mm/s^2]</div><div class="ttdef"><b>Definition</b> bno055.hpp:40</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration_html_ab179d608de386403f9300b88eda9cc0a"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#ab179d608de386403f9300b88eda9cc0a">alps::cmn::sensor::bno055::Acceleration::x</a></div><div class="ttdeci">float x</div><div class="ttdoc">x軸方向の加速度[mm/s^2]</div><div class="ttdef"><b>Definition</b> bno055.hpp:36</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration_html_afddad30b5853171983e7d6d88dc40848"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#afddad30b5853171983e7d6d88dc40848">alps::cmn::sensor::bno055::Acceleration::y</a></div><div class="ttdeci">float y</div><div class="ttdoc">y軸方向の加速度[mm/s^2]</div><div class="ttdef"><b>Definition</b> bno055.hpp:38</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity_html"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html">alps::cmn::sensor::bno055::AngularVelocity</a></div><div class="ttdoc">角速度のセンサーデータ</div><div class="ttdef"><b>Definition</b> bno055.hpp:56</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity_html_a3b5c4bde7d4320497467b1118dd32193"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#a3b5c4bde7d4320497467b1118dd32193">alps::cmn::sensor::bno055::AngularVelocity::y</a></div><div class="ttdeci">float y</div><div class="ttdoc">y軸方向の角速度[rad/s]</div><div class="ttdef"><b>Definition</b> bno055.hpp:60</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity_html_a54db636b5e3e38fbba23ca82c432a5f5"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#a54db636b5e3e38fbba23ca82c432a5f5">alps::cmn::sensor::bno055::AngularVelocity::x</a></div><div class="ttdeci">float x</div><div class="ttdoc">x軸方向の角速度[rad/s]</div><div class="ttdef"><b>Definition</b> bno055.hpp:58</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity_html_ac1e59e0a916abe20197c45fb33f2ecb9"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#ac1e59e0a916abe20197c45fb33f2ecb9">alps::cmn::sensor::bno055::AngularVelocity::z</a></div><div class="ttdeci">float z</div><div class="ttdoc">z軸方向の角速度[rad/s]</div><div class="ttdef"><b>Definition</b> bno055.hpp:62</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler_html"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html">alps::cmn::sensor::bno055::Euler</a></div><div class="ttdoc">オイラー角のセンサーデータ</div><div class="ttdef"><b>Definition</b> bno055.hpp:67</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler_html_a30e024e60e3ea71d63b30562bd2b9964"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#a30e024e60e3ea71d63b30562bd2b9964">alps::cmn::sensor::bno055::Euler::pitch</a></div><div class="ttdeci">float pitch</div><div class="ttdoc">ピッチ角[rad]</div><div class="ttdef"><b>Definition</b> bno055.hpp:73</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler_html_ae836cf8ecb13bf2a1495d67ae2f6c4b0"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#ae836cf8ecb13bf2a1495d67ae2f6c4b0">alps::cmn::sensor::bno055::Euler::yaw</a></div><div class="ttdeci">float yaw</div><div class="ttdoc">ヨー角[rad]</div><div class="ttdef"><b>Definition</b> bno055.hpp:69</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler_html_af1c2d3b03b41807e4b614bc34b772365"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#af1c2d3b03b41807e4b614bc34b772365">alps::cmn::sensor::bno055::Euler::roll</a></div><div class="ttdeci">float roll</div><div class="ttdoc">ロール角[rad]</div><div class="ttdef"><b>Definition</b> bno055.hpp:71</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector_html"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html">alps::cmn::sensor::bno055::GravityVector</a></div><div class="ttdoc">重力加速度のセンサーデータ</div><div class="ttdef"><b>Definition</b> bno055.hpp:102</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector_html_a31e35f0f392eb1ff73e8def06848e98b"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#a31e35f0f392eb1ff73e8def06848e98b">alps::cmn::sensor::bno055::GravityVector::x</a></div><div class="ttdeci">float x</div><div class="ttdoc">x軸方向の重力加速度[mm/s^2]</div><div class="ttdef"><b>Definition</b> bno055.hpp:104</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector_html_a9379014ec452b2426466893815dcffa5"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#a9379014ec452b2426466893815dcffa5">alps::cmn::sensor::bno055::GravityVector::y</a></div><div class="ttdeci">float y</div><div class="ttdoc">y軸方向の重力加速度[mm/s^2]</div><div class="ttdef"><b>Definition</b> bno055.hpp:106</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector_html_acfa97ed2e781699021e77a120c242a99"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#acfa97ed2e781699021e77a120c242a99">alps::cmn::sensor::bno055::GravityVector::z</a></div><div class="ttdeci">float z</div><div class="ttdoc">z軸方向の重力加速度[mm/s^2]</div><div class="ttdef"><b>Definition</b> bno055.hpp:108</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration_html"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html">alps::cmn::sensor::bno055::LinearAcceleration</a></div><div class="ttdoc">線形加速度のセンサーデータ</div><div class="ttdef"><b>Definition</b> bno055.hpp:91</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration_html_a0e5eabcc44cc4e973bdabef083a1327f"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a0e5eabcc44cc4e973bdabef083a1327f">alps::cmn::sensor::bno055::LinearAcceleration::x</a></div><div class="ttdeci">float x</div><div class="ttdoc">x軸方向の線形加速度[mm/s^2]</div><div class="ttdef"><b>Definition</b> bno055.hpp:93</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration_html_a3dcbb02dee6f0a4d7fe97846c6be10a3"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a3dcbb02dee6f0a4d7fe97846c6be10a3">alps::cmn::sensor::bno055::LinearAcceleration::z</a></div><div class="ttdeci">float z</div><div class="ttdoc">z軸方向の線形加速度[mm/s^2]</div><div class="ttdef"><b>Definition</b> bno055.hpp:97</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration_html_a509462425537f8480193383209e44b02"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a509462425537f8480193383209e44b02">alps::cmn::sensor::bno055::LinearAcceleration::y</a></div><div class="ttdeci">float y</div><div class="ttdoc">y軸方向の線形加速度[mm/s^2]</div><div class="ttdef"><b>Definition</b> bno055.hpp:95</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector_html"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html">alps::cmn::sensor::bno055::MagneticVector</a></div><div class="ttdoc">地磁気のセンサーデータ</div><div class="ttdef"><b>Definition</b> bno055.hpp:45</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector_html_aa069da81ddd4d2d0c0a53f91e3494983"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#aa069da81ddd4d2d0c0a53f91e3494983">alps::cmn::sensor::bno055::MagneticVector::z</a></div><div class="ttdeci">float z</div><div class="ttdoc">z軸方向の磁束密度[uT]</div><div class="ttdef"><b>Definition</b> bno055.hpp:51</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector_html_ae263e58455e7745c3ee5e0b7bca84f77"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#ae263e58455e7745c3ee5e0b7bca84f77">alps::cmn::sensor::bno055::MagneticVector::x</a></div><div class="ttdeci">float x</div><div class="ttdoc">x軸方向の磁束密度[uT]</div><div class="ttdef"><b>Definition</b> bno055.hpp:47</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector_html_afe3ab95d0449b8fb034abcce91e8e17d"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#afe3ab95d0449b8fb034abcce91e8e17d">alps::cmn::sensor::bno055::MagneticVector::y</a></div><div class="ttdeci">float y</div><div class="ttdoc">y軸方向の磁束密度[uT]</div><div class="ttdef"><b>Definition</b> bno055.hpp:49</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion_html"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html">alps::cmn::sensor::bno055::Quaternion</a></div><div class="ttdoc">クォータニオンのセンサーデータ</div><div class="ttdef"><b>Definition</b> bno055.hpp:78</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion_html_a44082014ee327b6ff23e78c4b7205d3a"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#a44082014ee327b6ff23e78c4b7205d3a">alps::cmn::sensor::bno055::Quaternion::w</a></div><div class="ttdeci">float w</div><div class="ttdoc">スカラー成分</div><div class="ttdef"><b>Definition</b> bno055.hpp:80</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion_html_a8e30476db28d3683f2d4110652729778"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#a8e30476db28d3683f2d4110652729778">alps::cmn::sensor::bno055::Quaternion::x</a></div><div class="ttdeci">float x</div><div class="ttdoc">x軸方向の虚数成分</div><div class="ttdef"><b>Definition</b> bno055.hpp:82</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion_html_ab9bec0df06dd184c80910a4557300fef"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#ab9bec0df06dd184c80910a4557300fef">alps::cmn::sensor::bno055::Quaternion::y</a></div><div class="ttdeci">float y</div><div class="ttdoc">y軸方向の虚数成分</div><div class="ttdef"><b>Definition</b> bno055.hpp:84</div></div>
-<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion_html_acef3e7977e5060258df8383966addced"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#acef3e7977e5060258df8383966addced">alps::cmn::sensor::bno055::Quaternion::z</a></div><div class="ttdeci">float z</div><div class="ttdoc">z軸方向の虚数成分</div><div class="ttdef"><b>Definition</b> bno055.hpp:86</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration_html"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html">alps::cmn::sensor::bno055::Acceleration</a></div><div class="ttdoc">加速度のセンサーデータ</div><div class="ttdef"><b>Definition</b> bno055.hpp:36</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration_html_a535e10b8579a9e3fd8af78458388787b"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#a535e10b8579a9e3fd8af78458388787b">alps::cmn::sensor::bno055::Acceleration::z</a></div><div class="ttdeci">float z</div><div class="ttdoc">z軸方向の加速度[m/s^2]</div><div class="ttdef"><b>Definition</b> bno055.hpp:42</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration_html_ab179d608de386403f9300b88eda9cc0a"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#ab179d608de386403f9300b88eda9cc0a">alps::cmn::sensor::bno055::Acceleration::x</a></div><div class="ttdeci">float x</div><div class="ttdoc">x軸方向の加速度[m/s^2]</div><div class="ttdef"><b>Definition</b> bno055.hpp:38</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration_html_afddad30b5853171983e7d6d88dc40848"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html#afddad30b5853171983e7d6d88dc40848">alps::cmn::sensor::bno055::Acceleration::y</a></div><div class="ttdeci">float y</div><div class="ttdoc">y軸方向の加速度[m/s^2]</div><div class="ttdef"><b>Definition</b> bno055.hpp:40</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity_html"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html">alps::cmn::sensor::bno055::AngularVelocity</a></div><div class="ttdoc">角速度のセンサーデータ</div><div class="ttdef"><b>Definition</b> bno055.hpp:58</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity_html_a3b5c4bde7d4320497467b1118dd32193"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#a3b5c4bde7d4320497467b1118dd32193">alps::cmn::sensor::bno055::AngularVelocity::y</a></div><div class="ttdeci">float y</div><div class="ttdoc">y軸方向の角速度[rad/s]</div><div class="ttdef"><b>Definition</b> bno055.hpp:62</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity_html_a54db636b5e3e38fbba23ca82c432a5f5"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#a54db636b5e3e38fbba23ca82c432a5f5">alps::cmn::sensor::bno055::AngularVelocity::x</a></div><div class="ttdeci">float x</div><div class="ttdoc">x軸方向の角速度[rad/s]</div><div class="ttdef"><b>Definition</b> bno055.hpp:60</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity_html_ac1e59e0a916abe20197c45fb33f2ecb9"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html#ac1e59e0a916abe20197c45fb33f2ecb9">alps::cmn::sensor::bno055::AngularVelocity::z</a></div><div class="ttdeci">float z</div><div class="ttdoc">z軸方向の角速度[rad/s]</div><div class="ttdef"><b>Definition</b> bno055.hpp:64</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler_html"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html">alps::cmn::sensor::bno055::Euler</a></div><div class="ttdoc">オイラー角のセンサーデータ</div><div class="ttdef"><b>Definition</b> bno055.hpp:69</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler_html_a30e024e60e3ea71d63b30562bd2b9964"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#a30e024e60e3ea71d63b30562bd2b9964">alps::cmn::sensor::bno055::Euler::pitch</a></div><div class="ttdeci">float pitch</div><div class="ttdoc">ピッチ角[rad]</div><div class="ttdef"><b>Definition</b> bno055.hpp:75</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler_html_ae836cf8ecb13bf2a1495d67ae2f6c4b0"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#ae836cf8ecb13bf2a1495d67ae2f6c4b0">alps::cmn::sensor::bno055::Euler::yaw</a></div><div class="ttdeci">float yaw</div><div class="ttdoc">ヨー角[rad]</div><div class="ttdef"><b>Definition</b> bno055.hpp:71</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler_html_af1c2d3b03b41807e4b614bc34b772365"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_euler.html#af1c2d3b03b41807e4b614bc34b772365">alps::cmn::sensor::bno055::Euler::roll</a></div><div class="ttdeci">float roll</div><div class="ttdoc">ロール角[rad]</div><div class="ttdef"><b>Definition</b> bno055.hpp:73</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector_html"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html">alps::cmn::sensor::bno055::GravityVector</a></div><div class="ttdoc">重力加速度のセンサーデータ</div><div class="ttdef"><b>Definition</b> bno055.hpp:104</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector_html_a31e35f0f392eb1ff73e8def06848e98b"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#a31e35f0f392eb1ff73e8def06848e98b">alps::cmn::sensor::bno055::GravityVector::x</a></div><div class="ttdeci">float x</div><div class="ttdoc">x軸方向の重力加速度[m/s^2]</div><div class="ttdef"><b>Definition</b> bno055.hpp:106</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector_html_a9379014ec452b2426466893815dcffa5"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#a9379014ec452b2426466893815dcffa5">alps::cmn::sensor::bno055::GravityVector::y</a></div><div class="ttdeci">float y</div><div class="ttdoc">y軸方向の重力加速度[m/s^2]</div><div class="ttdef"><b>Definition</b> bno055.hpp:108</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector_html_acfa97ed2e781699021e77a120c242a99"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_gravity_vector.html#acfa97ed2e781699021e77a120c242a99">alps::cmn::sensor::bno055::GravityVector::z</a></div><div class="ttdeci">float z</div><div class="ttdoc">z軸方向の重力加速度[m/s^2]</div><div class="ttdef"><b>Definition</b> bno055.hpp:110</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration_html"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html">alps::cmn::sensor::bno055::LinearAcceleration</a></div><div class="ttdoc">線形加速度のセンサーデータ</div><div class="ttdef"><b>Definition</b> bno055.hpp:93</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration_html_a0e5eabcc44cc4e973bdabef083a1327f"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a0e5eabcc44cc4e973bdabef083a1327f">alps::cmn::sensor::bno055::LinearAcceleration::x</a></div><div class="ttdeci">float x</div><div class="ttdoc">x軸方向の線形加速度[m/s^2]</div><div class="ttdef"><b>Definition</b> bno055.hpp:95</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration_html_a3dcbb02dee6f0a4d7fe97846c6be10a3"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a3dcbb02dee6f0a4d7fe97846c6be10a3">alps::cmn::sensor::bno055::LinearAcceleration::z</a></div><div class="ttdeci">float z</div><div class="ttdoc">z軸方向の線形加速度[m/s^2]</div><div class="ttdef"><b>Definition</b> bno055.hpp:99</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration_html_a509462425537f8480193383209e44b02"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_linear_acceleration.html#a509462425537f8480193383209e44b02">alps::cmn::sensor::bno055::LinearAcceleration::y</a></div><div class="ttdeci">float y</div><div class="ttdoc">y軸方向の線形加速度[m/s^2]</div><div class="ttdef"><b>Definition</b> bno055.hpp:97</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector_html"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html">alps::cmn::sensor::bno055::MagneticVector</a></div><div class="ttdoc">地磁気のセンサーデータ</div><div class="ttdef"><b>Definition</b> bno055.hpp:47</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector_html_aa069da81ddd4d2d0c0a53f91e3494983"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#aa069da81ddd4d2d0c0a53f91e3494983">alps::cmn::sensor::bno055::MagneticVector::z</a></div><div class="ttdeci">float z</div><div class="ttdoc">z軸方向の磁束密度[uT]</div><div class="ttdef"><b>Definition</b> bno055.hpp:53</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector_html_ae263e58455e7745c3ee5e0b7bca84f77"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#ae263e58455e7745c3ee5e0b7bca84f77">alps::cmn::sensor::bno055::MagneticVector::x</a></div><div class="ttdeci">float x</div><div class="ttdoc">x軸方向の磁束密度[uT]</div><div class="ttdef"><b>Definition</b> bno055.hpp:49</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector_html_afe3ab95d0449b8fb034abcce91e8e17d"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html#afe3ab95d0449b8fb034abcce91e8e17d">alps::cmn::sensor::bno055::MagneticVector::y</a></div><div class="ttdeci">float y</div><div class="ttdoc">y軸方向の磁束密度[uT]</div><div class="ttdef"><b>Definition</b> bno055.hpp:51</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion_html"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html">alps::cmn::sensor::bno055::Quaternion</a></div><div class="ttdoc">クォータニオンのセンサーデータ</div><div class="ttdef"><b>Definition</b> bno055.hpp:80</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion_html_a44082014ee327b6ff23e78c4b7205d3a"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#a44082014ee327b6ff23e78c4b7205d3a">alps::cmn::sensor::bno055::Quaternion::w</a></div><div class="ttdeci">float w</div><div class="ttdoc">スカラー成分</div><div class="ttdef"><b>Definition</b> bno055.hpp:82</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion_html_a8e30476db28d3683f2d4110652729778"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#a8e30476db28d3683f2d4110652729778">alps::cmn::sensor::bno055::Quaternion::x</a></div><div class="ttdeci">float x</div><div class="ttdoc">x軸方向の虚数成分</div><div class="ttdef"><b>Definition</b> bno055.hpp:84</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion_html_ab9bec0df06dd184c80910a4557300fef"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#ab9bec0df06dd184c80910a4557300fef">alps::cmn::sensor::bno055::Quaternion::y</a></div><div class="ttdeci">float y</div><div class="ttdoc">y軸方向の虚数成分</div><div class="ttdef"><b>Definition</b> bno055.hpp:86</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion_html_acef3e7977e5060258df8383966addced"><div class="ttname"><a href="structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html#acef3e7977e5060258df8383966addced">alps::cmn::sensor::bno055::Quaternion::z</a></div><div class="ttdeci">float z</div><div class="ttdoc">z軸方向の虚数成分</div><div class="ttdef"><b>Definition</b> bno055.hpp:88</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
