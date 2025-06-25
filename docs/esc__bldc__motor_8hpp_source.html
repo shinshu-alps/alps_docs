@@ -180,23 +180,24 @@ $(document).ready(function(){initNavTree('esc__bldc__motor_8hpp_source.html','')
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor.html#a385b87a7f286d94a8a9085c7e93e2c5a">   89</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor.html#a385b87a7f286d94a8a9085c7e93e2c5a">Initialize</a>()</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  {</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    init_timer_.ResetCount();</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    pwm_out_.<a class="code hl_function" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#ad3baeadd20c2548313fb9702dc3e2a89">CallSetPulseWidth</a>(min_pulse_width_);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  }</div>
 </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">gpio::IPwmOut&lt;PwmOut&gt;</a> &amp; pwm_out_;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keyword">const</span> std::chrono::microseconds min_pulse_width_;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keyword">const</span> std::chrono::microseconds max_pulse_width_;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html">alps::cmn::time::TimeoutChecker&lt;Clock&gt;</a> init_timer_;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>};</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">gpio::IPwmOut&lt;PwmOut&gt;</a> &amp; pwm_out_;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keyword">const</span> std::chrono::microseconds min_pulse_width_;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keyword">const</span> std::chrono::microseconds max_pulse_width_;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1time_1_1_timeout_checker.html">alps::cmn::time::TimeoutChecker&lt;Clock&gt;</a> init_timer_;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>};</div>
 </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}  <span class="comment">// namespace actuator</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}  <span class="comment">// namespace cmn</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}  <span class="comment">// namespace alps</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}  <span class="comment">// namespace actuator</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aalgorithm_8hpp_html"><div class="ttname"><a href="algorithm_8hpp.html">algorithm.hpp</a></div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor.html">alps::cmn::actuator::EscBldcMotor</a></div><div class="ttdoc">ESCで動かすブラシレスDCモーター</div><div class="ttdef"><b>Definition</b> esc_bldc_motor.hpp:38</div></div>
 <div class="ttc" id="aclassalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor_html_a385b87a7f286d94a8a9085c7e93e2c5a"><div class="ttname"><a href="classalps_1_1cmn_1_1actuator_1_1_esc_bldc_motor.html#a385b87a7f286d94a8a9085c7e93e2c5a">alps::cmn::actuator::EscBldcMotor::Initialize</a></div><div class="ttdeci">void Initialize()</div><div class="ttdoc">ESCの初期化処理を行う．一定時間出力ゼロのPWMを送るため，しばらくDrive()への出力値が無視される．</div><div class="ttdef"><b>Definition</b> esc_bldc_motor.hpp:89</div></div>

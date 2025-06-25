@@ -39,6 +39,7 @@ var hierarchy =
       [ "alps::cmn::type::SupportsToTiedTuple< T, typename >", "structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple.html", null ],
       [ "alps::ros2::type::IsSingleElementStdMsgsType< RosTopicType, typename, typename >", "structalps_1_1ros2_1_1type_1_1_is_single_element_std_msgs_type.html", null ]
     ] ],
+    [ "alps::cmn::display::ssd1306::FontInfo", "structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html", null ],
     [ "alps::cmn::robot::FourWheelOmni", "classalps_1_1cmn_1_1robot_1_1_four_wheel_omni.html", null ],
     [ "alps::cmn::tool::MotorFrictionAnalyzer< Clock, Motor, RorarySensor >::FrictionResult", "structalps_1_1cmn_1_1tool_1_1_motor_friction_analyzer_1_1_friction_result.html", null ],
     [ "alps::cmn::communication::odrive::Get_Bus_Voltage_Current_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___bus___voltage___current__msg__t.html", null ],
@@ -191,6 +192,7 @@ var hierarchy =
     [ "alps::cmn::communication::odrive::Set_Traj_Inertia_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___inertia__msg__t.html", null ],
     [ "alps::cmn::communication::odrive::Set_Traj_Vel_Limit_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___traj___vel___limit__msg__t.html", null ],
     [ "alps::cmn::communication::odrive::Set_Vel_Gains_msg_t", "structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___vel___gains__msg__t.html", null ],
+    [ "alps::cmn::display::ssd1306::Ssd1306< I2cIo >", "classalps_1_1cmn_1_1display_1_1ssd1306_1_1_ssd1306.html", null ],
     [ "alps::cmn::sensor::Tcs34725< Clock, I2cIo >", "classalps_1_1cmn_1_1sensor_1_1_tcs34725.html", null ],
     [ "alps::cmn::time::TimeoutChecker< Clock >", "classalps_1_1cmn_1_1time_1_1_timeout_checker.html", null ],
     [ "alps::cmn::time::TimeoutChecker< std::chrono::system_clock >", "classalps_1_1cmn_1_1time_1_1_timeout_checker.html", null ],
