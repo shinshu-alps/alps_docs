@@ -1,9 +1,17 @@
 <map id="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/time/rate_sleeper.hpp" name="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/time/rate_sleeper.hpp">
-<area shape="rect" id="Node000001" title="マイコンの実行周期を安定させるためのSleep関数を提供" alt="" coords="27,5,269,60"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,108,72,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,62,66,102,63,97,113,58"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="96,108,200,133"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,60,151,94,145,94,145,60"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="225,108,359,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="193,58,262,99,260,103,191,62"/>
+<area shape="rect" id="Node000001" title="マイコンの実行周期を安定させるためのSleep関数を提供" alt="" coords="132,5,375,60"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,115,72,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,63,78,112,76,108,192,58"/>
+<area shape="rect" id="Node000003" href="$logging__macros_8hpp.html" title=" " alt="" coords="96,108,256,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="233,62,202,99,198,96,229,59"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="280,115,384,141"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="278,59,315,103,311,106,274,62"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="409,115,543,141"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="317,58,437,108,435,113,315,63"/>
+<area shape="rect" id="Node000004" href="$logger_8hpp.html" title=" " alt="" coords="86,196,266,221"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="179,148,179,182,173,182,173,148"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="57,269,169,295"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="168,223,135,261,131,257,164,220"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="194,269,286,295"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="189,220,223,257,219,261,185,223"/>
 </map>

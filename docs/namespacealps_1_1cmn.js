@@ -3,6 +3,7 @@ var namespacealps_1_1cmn =
     [ "actuator", "namespacealps_1_1cmn_1_1actuator.html", "namespacealps_1_1cmn_1_1actuator" ],
     [ "communication", "namespacealps_1_1cmn_1_1communication.html", "namespacealps_1_1cmn_1_1communication" ],
     [ "control", "namespacealps_1_1cmn_1_1control.html", "namespacealps_1_1cmn_1_1control" ],
+    [ "display", "namespacealps_1_1cmn_1_1display.html", "namespacealps_1_1cmn_1_1display" ],
     [ "gpio", "namespacealps_1_1cmn_1_1gpio.html", "namespacealps_1_1cmn_1_1gpio" ],
     [ "log", "namespacealps_1_1cmn_1_1log.html", "namespacealps_1_1cmn_1_1log" ],
     [ "robot", "namespacealps_1_1cmn_1_1robot.html", "namespacealps_1_1cmn_1_1robot" ],

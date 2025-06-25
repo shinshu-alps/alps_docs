@@ -32,6 +32,7 @@ var menudata={children:[
 {text:"c",url:"namespacemembers_c.html#index_c"},
 {text:"d",url:"namespacemembers_d.html#index_d"},
 {text:"e",url:"namespacemembers_e.html#index_e"},
+{text:"f",url:"namespacemembers_f.html#index_f"},
 {text:"g",url:"namespacemembers_g.html#index_g"},
 {text:"i",url:"namespacemembers_i.html#index_i"},
 {text:"k",url:"namespacemembers_k.html#index_k"},
@@ -57,7 +58,10 @@ var menudata={children:[
 {text:"s",url:"namespacemembers_func.html#index_s"},
 {text:"t",url:"namespacemembers_func.html#index_t"},
 {text:"u",url:"namespacemembers_func.html#index_u"}]},
-{text:"変数",url:"namespacemembers_vars.html"},
+{text:"変数",url:"namespacemembers_vars.html",children:[
+{text:"f",url:"namespacemembers_vars.html#index_f"},
+{text:"g",url:"namespacemembers_vars.html#index_g"},
+{text:"k",url:"namespacemembers_vars.html#index_k"}]},
 {text:"型定義",url:"namespacemembers_type.html"},
 {text:"列挙型",url:"namespacemembers_enum.html"},
 {text:"列挙値",url:"namespacemembers_eval.html",children:[

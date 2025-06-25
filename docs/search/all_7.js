@@ -14,7 +14,8 @@ var searchData=
   ['hasvaluetype_11',['HasValueType',['../structalps_1_1cmn_1_1type_1_1_has_value_type.html',1,'alps::cmn::type']]],
   ['hasvaluetype_3c_20t_2c_20std_3a_3avoid_5ft_3c_20typename_20t_3a_3avalue_5ftype_20_3e_20_3e_12',['HasValueType&lt; T, std::void_t&lt; typename T::value_type &gt; &gt;',['../structalps_1_1cmn_1_1type_1_1_has_value_type_3_01_t_00_01std_1_1void__t_3_01typename_01_t_1_1value__type_01_4_01_4.html',1,'alps::cmn::type']]],
   ['heartbeat_5fmsg_5ft_13',['heartbeat_msg_t',['../structalps_1_1cmn_1_1communication_1_1odrive_1_1_heartbeat__msg__t.html',1,'alps::cmn::communication::odrive::Heartbeat_msg_t'],['../structalps_1_1cmn_1_1communication_1_1odrive_1_1_heartbeat__msg__t.html#a56ee02a27dfbc77a056b92944ceb6696',1,'alps::cmn::communication::odrive::Heartbeat_msg_t::Heartbeat_msg_t()']]],
-  ['hw_5fversion_5fmajor_14',['Hw_Version_Major',['../structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___version__msg__t.html#a9b784589e8de3deed3adfeb403f57191',1,'alps::cmn::communication::odrive::Get_Version_msg_t']]],
-  ['hw_5fversion_5fminor_15',['Hw_Version_Minor',['../structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___version__msg__t.html#aad7083f66207fc4f4dc619105485c548',1,'alps::cmn::communication::odrive::Get_Version_msg_t']]],
-  ['hw_5fversion_5fvariant_16',['Hw_Version_Variant',['../structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___version__msg__t.html#ad3da7571ebfb60892d856514fed7711e',1,'alps::cmn::communication::odrive::Get_Version_msg_t']]]
+  ['height_14',['height',['../structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html#a754d52ee63703001f4672d1ef409f98f',1,'alps::cmn::display::ssd1306::FontInfo']]],
+  ['hw_5fversion_5fmajor_15',['Hw_Version_Major',['../structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___version__msg__t.html#a9b784589e8de3deed3adfeb403f57191',1,'alps::cmn::communication::odrive::Get_Version_msg_t']]],
+  ['hw_5fversion_5fminor_16',['Hw_Version_Minor',['../structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___version__msg__t.html#aad7083f66207fc4f4dc619105485c548',1,'alps::cmn::communication::odrive::Get_Version_msg_t']]],
+  ['hw_5fversion_5fvariant_17',['Hw_Version_Variant',['../structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___version__msg__t.html#ad3da7571ebfb60892d856514fed7711e',1,'alps::cmn::communication::odrive::Get_Version_msg_t']]]
 ];

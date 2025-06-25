@@ -8,5 +8,6 @@ var searchData=
   ['bufferedcanio_5',['bufferedcanio',['../classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html',1,'alps::mbed::communication::BufferedCanIo&lt; kWriteBufSize, kReadBufSize &gt;'],['../classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html#aa2447e36bcfa631fc4b3772ad2e315ff',1,'alps::mbed::communication::BufferedCanIo::BufferedCanIo()']]],
   ['bus_5fcurrent_6',['Bus_Current',['../structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___bus___voltage___current__msg__t.html#a27f27a6d17c33bbf0e9cdceb8b0c2ec4',1,'alps::cmn::communication::odrive::Get_Bus_Voltage_Current_msg_t']]],
   ['bus_5fvoltage_7',['Bus_Voltage',['../structalps_1_1cmn_1_1communication_1_1odrive_1_1_get___bus___voltage___current__msg__t.html#a6ccbddd87f22038859abadfc23ba9cde',1,'alps::cmn::communication::odrive::Get_Bus_Voltage_Current_msg_t']]],
-  ['button_8',['Button',['../classalps_1_1ros2_1_1ui_1_1_joy.html#adda26a26634be1935b6621ed2f549c45',1,'alps::ros2::ui::Joy']]]
+  ['button_8',['Button',['../classalps_1_1ros2_1_1ui_1_1_joy.html#adda26a26634be1935b6621ed2f549c45',1,'alps::ros2::ui::Joy']]],
+  ['bytes_5fper_5fchar_9',['bytes_per_char',['../structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html#adb16d1f36c4dbb899dd10b065d097382',1,'alps::cmn::display::ssd1306::FontInfo']]]
 ];

@@ -1,7 +1,9 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/time/sleep.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/time/sleep.hpp">
-<area shape="rect" id="Node000001" title="スリープ関数の定義" alt="" coords="136,5,327,60"/>
-<area shape="rect" id="Node000002" href="$bno055_8hpp.html" title="BNO055 9軸センサ" alt="" coords="5,115,220,170"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,71,143,117,140,113,190,68"/>
-<area shape="rect" id="Node000003" href="$motor__friction__analyzer_8hpp.html" title="モーター軸の摩擦力を計測するクラス" alt="" coords="245,108,458,177"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="273,68,316,106,312,110,269,72"/>
+<area shape="rect" id="Node000001" title="スリープ関数の定義" alt="" coords="267,5,457,60"/>
+<area shape="rect" id="Node000002" href="$ssd1306_8hpp.html" title="SSD1306 OLEDディスプレイ" alt="" coords="5,115,231,170"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="291,68,179,118,176,113,289,63"/>
+<area shape="rect" id="Node000003" href="$bno055_8hpp.html" title="BNO055 9軸センサ" alt="" coords="255,115,469,170"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="365,74,365,115,359,115,359,74"/>
+<area shape="rect" id="Node000004" href="$motor__friction__analyzer_8hpp.html" title="モーター軸の摩擦力を計測するクラス" alt="" coords="494,108,707,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="434,63,527,105,525,110,432,68"/>
 </map>

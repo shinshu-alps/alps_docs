@@ -1,0 +1,174 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps_core/lib_internal/alps_common_lib/include/alps_cmn/display/font_info.hpp ソースファイル</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('font__info_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">font_info.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="font__info_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_CMN_DISPLAY_FONT_INFO_HPP_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_CMN_DISPLAY_FONT_INFO_HPP_</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span>cmn</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span>display</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1display_1_1ssd1306.html">   25</a></span><span class="keyword">namespace </span>ssd1306</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html">   29</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html">FontInfo</a></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html#a470589c8086d1ac18b2968f58dbdd6bd">   32</a></span>    <span class="keyword">const</span> uint8_t *<a class="code hl_variable" href="structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html#a470589c8086d1ac18b2968f58dbdd6bd">data</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html#a409da7887085d67ca20ee488fe66ba84">   34</a></span>    uint8_t <a class="code hl_variable" href="structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html#a409da7887085d67ca20ee488fe66ba84">first_char</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html#aa6c84fefa3a720bee1033d6deff5da06">   36</a></span>    uint8_t <a class="code hl_variable" href="structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html#aa6c84fefa3a720bee1033d6deff5da06">last_char</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html#adb16d1f36c4dbb899dd10b065d097382">   38</a></span>    uint8_t <a class="code hl_variable" href="structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html#adb16d1f36c4dbb899dd10b065d097382">bytes_per_char</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html#a2f80412220ecd3d5179102a06e8fceac">   40</a></span>    uint8_t <a class="code hl_variable" href="structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html#a2f80412220ecd3d5179102a06e8fceac">width</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html#a754d52ee63703001f4672d1ef409f98f">   42</a></span>    uint8_t <a class="code hl_variable" href="structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html#a754d52ee63703001f4672d1ef409f98f">height</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>};</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}  <span class="comment">// namespace ssd1306</span></div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}  <span class="comment">// namespace display</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition</b> dc_motor.hpp:25</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info_html"><div class="ttname"><a href="structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html">alps::cmn::display::ssd1306::FontInfo</a></div><div class="ttdoc">フォント情報を格納する構造体</div><div class="ttdef"><b>Definition</b> font_info.hpp:30</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info_html_a2f80412220ecd3d5179102a06e8fceac"><div class="ttname"><a href="structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html#a2f80412220ecd3d5179102a06e8fceac">alps::cmn::display::ssd1306::FontInfo::width</a></div><div class="ttdeci">uint8_t width</div><div class="ttdoc">フォント幅</div><div class="ttdef"><b>Definition</b> font_info.hpp:40</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info_html_a409da7887085d67ca20ee488fe66ba84"><div class="ttname"><a href="structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html#a409da7887085d67ca20ee488fe66ba84">alps::cmn::display::ssd1306::FontInfo::first_char</a></div><div class="ttdeci">uint8_t first_char</div><div class="ttdoc">最初の文字</div><div class="ttdef"><b>Definition</b> font_info.hpp:34</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info_html_a470589c8086d1ac18b2968f58dbdd6bd"><div class="ttname"><a href="structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html#a470589c8086d1ac18b2968f58dbdd6bd">alps::cmn::display::ssd1306::FontInfo::data</a></div><div class="ttdeci">const uint8_t * data</div><div class="ttdoc">フォントデータ配列へのポインタ</div><div class="ttdef"><b>Definition</b> font_info.hpp:32</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info_html_a754d52ee63703001f4672d1ef409f98f"><div class="ttname"><a href="structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html#a754d52ee63703001f4672d1ef409f98f">alps::cmn::display::ssd1306::FontInfo::height</a></div><div class="ttdeci">uint8_t height</div><div class="ttdoc">フォント高さ</div><div class="ttdef"><b>Definition</b> font_info.hpp:42</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info_html_aa6c84fefa3a720bee1033d6deff5da06"><div class="ttname"><a href="structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html#aa6c84fefa3a720bee1033d6deff5da06">alps::cmn::display::ssd1306::FontInfo::last_char</a></div><div class="ttdeci">uint8_t last_char</div><div class="ttdoc">最後の文字</div><div class="ttdef"><b>Definition</b> font_info.hpp:36</div></div>
+<div class="ttc" id="astructalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info_html_adb16d1f36c4dbb899dd10b065d097382"><div class="ttname"><a href="structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html#adb16d1f36c4dbb899dd10b065d097382">alps::cmn::display::ssd1306::FontInfo::bytes_per_char</a></div><div class="ttdeci">uint8_t bytes_per_char</div><div class="ttdoc">文字あたりのバイト数</div><div class="ttdef"><b>Definition</b> font_info.hpp:38</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_627d875eccf4a985023a7fe06842126c.html">alps_core</a></li><li class="navelem"><a class="el" href="dir_f64f47805544727f04f019e126982967.html">lib_internal</a></li><li class="navelem"><a class="el" href="dir_dbb6a150a1d2a9e3bac0bb1d4855e995.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_2b777a74a5ff5221077a83a37cc87235.html">include</a></li><li class="navelem"><a class="el" href="dir_664123f27b70b10eeac81c10039fb160.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_6e7e3cd4d824912fe9b1604270114a68.html">display</a></li><li class="navelem"><a class="el" href="font__info_8hpp.html">font_info.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

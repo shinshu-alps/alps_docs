@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="structalps_1_1cmn_1_1type_1_1_serializer_3_01time_1_1_seconds_01_4.html" target="_top" xlink:title=" ">
+<g id="a_Node000000"><a xlink:href="structalps_1_1cmn_1_1type_1_1_serializer_3_01etl_1_1optional_3_01_t_01_4_01_4.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="143,-30 0,-30 0,0 143,0 143,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::type::Serializer</text>
-<text text-anchor="middle" x="71.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; time::Seconds &gt;</text>
+<text text-anchor="middle" x="71.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; etl::optional&lt; T &gt; &gt;</text>
 </a>
 </g>
 </g>

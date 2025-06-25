@@ -1,13 +1,15 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/log/logging_macros.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/log/logging_macros.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="463,5,709,60"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="627,5,873,60"/>
 <area shape="rect" id="Node000002" href="$robomas__motor_8hpp.html" title="ロボマスモータのライブラリ" alt="" coords="5,225,212,295"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="460,66,398,86,338,110,286,138,236,168,152,227,149,223,233,164,283,133,336,106,397,81,459,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="613,47,478,69,406,87,338,110,284,136,233,167,150,227,147,223,230,162,282,131,336,106,405,82,477,64,613,42"/>
 <area shape="rect" id="Node000003" href="$can__typed__data__transceiver_8hpp.html" title="CAN通信で型付けされたデータの送受信を行うライブラリ" alt="" coords="349,108,585,177"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="548,72,506,110,503,106,545,68"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="669,67,556,110,554,105,668,62"/>
 <area shape="rect" id="Node000009" href="$odrive__can_8h.html" title=" " alt="" coords="653,108,847,177"/>
-<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="639,66,700,105,697,110,636,70"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="753,74,753,108,747,108,747,74"/>
 <area shape="rect" id="Node000012" href="$motor__friction__analyzer_8hpp.html" title="モーター軸の摩擦力を計測するクラス" alt="" coords="871,108,1085,177"/>
-<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="697,61,860,105,872,109,871,114,859,111,696,66"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="819,64,908,105,906,110,817,68"/>
+<area shape="rect" id="Node000013" href="$rate__sleeper_8hpp.html" title="マイコンの実行周期を安定させるためのSleep関数を提供" alt="" coords="1109,115,1351,170"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="887,59,1097,105,1128,113,1127,118,1096,111,886,65"/>
 <area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="350,184,213,228,211,223,349,179"/>
 <area shape="rect" id="Node000004" href="$can__param_8hpp.html" title=" " alt="" coords="236,225,429,295"/>
 <area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="420,188,374,227,371,223,416,184"/>

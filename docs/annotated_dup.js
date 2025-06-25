@@ -82,6 +82,12 @@ var annotated_dup =
           [ "PidCalcInfo", "structalps_1_1cmn_1_1control_1_1_pid_calc_info.html", "structalps_1_1cmn_1_1control_1_1_pid_calc_info" ],
           [ "PidParam", "structalps_1_1cmn_1_1control_1_1_pid_param.html", "structalps_1_1cmn_1_1control_1_1_pid_param" ]
         ] ],
+        [ "display", "namespacealps_1_1cmn_1_1display.html", [
+          [ "ssd1306", "namespacealps_1_1cmn_1_1display_1_1ssd1306.html", [
+            [ "FontInfo", "structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info.html", "structalps_1_1cmn_1_1display_1_1ssd1306_1_1_font_info" ],
+            [ "Ssd1306", "classalps_1_1cmn_1_1display_1_1ssd1306_1_1_ssd1306.html", "classalps_1_1cmn_1_1display_1_1ssd1306_1_1_ssd1306" ]
+          ] ]
+        ] ],
         [ "gpio", "namespacealps_1_1cmn_1_1gpio.html", [
           [ "IAnalogIn", "classalps_1_1cmn_1_1gpio_1_1_i_analog_in.html", "classalps_1_1cmn_1_1gpio_1_1_i_analog_in" ],
           [ "IDigitalIn", "classalps_1_1cmn_1_1gpio_1_1_i_digital_in.html", "classalps_1_1cmn_1_1gpio_1_1_i_digital_in" ],

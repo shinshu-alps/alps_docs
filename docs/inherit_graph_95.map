@@ -1,3 +1,5 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="Node000000" href="$classalps_1_1cmn_1_1robot_1_1_four_wheel_omni.html" title="4輪オムニホイールロボットの運動学モデル" alt="" coords="5,5,244,31"/>
+<area shape="rect" id="Node000000" href="$classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html" title=" " alt="" coords="5,5,193,45"/>
+<area shape="rect" id="Node000001" href="$classalps_1_1mbed_1_1gpio_1_1_pwm_out.html" title="PWM出力ピン" alt="" coords="241,13,435,38"/>
+<area shape="poly" id="edge18_Node000000_Node000001" title=" " alt="" coords="207,23,241,23,241,28,207,28"/>
 </map>
