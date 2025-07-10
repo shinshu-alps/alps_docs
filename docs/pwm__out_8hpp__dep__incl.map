@@ -1,7 +1,9 @@
 <map id="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/gpio/pwm_out.hpp" name="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/gpio/pwm_out.hpp">
-<area shape="rect" id="Node000001" title="PWM出力ピン" alt="" coords="86,5,307,60"/>
+<area shape="rect" id="Node000001" title="PWM出力ピン" alt="" coords="191,5,413,60"/>
 <area shape="rect" id="Node000002" href="$alps__mbed__lib_2include_2alps__mbed_2actuator_2dc__motor_8hpp.html" title=" " alt="" coords="5,108,180,177"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,72,127,110,123,106,160,68"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,69,159,110,157,105,237,64"/>
 <area shape="rect" id="Node000003" href="$alps__mbed__lib_2include_2alps__mbed_2actuator_2servo__motor_8hpp.html" title=" " alt="" coords="205,108,399,177"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="234,68,271,106,267,110,230,72"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="305,74,305,108,299,108,299,74"/>
+<area shape="rect" id="Node000004" href="$alps__mbed__lib_2include_2alps__mbed_2sound_2piezo__buzzer_8hpp.html" title="圧電ブザー 鳴動用ライブラリ（mbed）" alt="" coords="423,108,602,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="367,64,448,105,446,110,364,69"/>
 </map>

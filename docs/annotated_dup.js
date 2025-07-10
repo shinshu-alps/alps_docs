@@ -121,6 +121,11 @@ var annotated_dup =
           [ "Tcs34725", "classalps_1_1cmn_1_1sensor_1_1_tcs34725.html", "classalps_1_1cmn_1_1sensor_1_1_tcs34725" ],
           [ "Vl53l0x", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html", "classalps_1_1cmn_1_1sensor_1_1_vl53l0x" ]
         ] ],
+        [ "sound", "namespacealps_1_1cmn_1_1sound.html", [
+          [ "piezo_buzzer", "namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer.html", [
+            [ "PiezoBuzzer", "classalps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1_piezo_buzzer.html", "classalps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1_piezo_buzzer" ]
+          ] ]
+        ] ],
         [ "time", "namespacealps_1_1cmn_1_1time.html", [
           [ "OneShotPollingTimer", "classalps_1_1cmn_1_1time_1_1_one_shot_polling_timer.html", "classalps_1_1cmn_1_1time_1_1_one_shot_polling_timer" ],
           [ "RateFuncInvoker", "classalps_1_1cmn_1_1time_1_1_rate_func_invoker.html", "classalps_1_1cmn_1_1time_1_1_rate_func_invoker" ],

@@ -1,0 +1,5 @@
+<map id="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/communication/i2c_io.hpp" name="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/communication/i2c_io.hpp">
+<area shape="rect" id="Node000001" title="I2C通信インタフェース" alt="" coords="21,5,224,75"/>
+<area shape="rect" id="Node000002" href="$alps__mbed__lib_2include_2alps__mbed_2display_2ssd1306_8hpp.html" title="SSD1306 OLEDディスプレイ（mbed）" alt="" coords="5,123,240,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,88,125,122,120,122,120,88"/>
+</map>
