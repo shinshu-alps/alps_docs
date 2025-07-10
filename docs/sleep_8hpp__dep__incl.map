@@ -1,9 +1,15 @@
 <map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/time/sleep.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/time/sleep.hpp">
-<area shape="rect" id="Node000001" title="スリープ関数の定義" alt="" coords="267,5,457,60"/>
-<area shape="rect" id="Node000002" href="$ssd1306_8hpp.html" title="SSD1306 OLEDディスプレイ" alt="" coords="5,115,231,170"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="291,68,179,118,176,113,289,63"/>
-<area shape="rect" id="Node000003" href="$bno055_8hpp.html" title="BNO055 9軸センサ" alt="" coords="255,115,469,170"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="365,74,365,115,359,115,359,74"/>
-<area shape="rect" id="Node000004" href="$motor__friction__analyzer_8hpp.html" title="モーター軸の摩擦力を計測するクラス" alt="" coords="494,108,707,177"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="434,63,527,105,525,110,432,68"/>
+<area shape="rect" id="Node000001" title="スリープ関数の定義" alt="" coords="398,5,589,60"/>
+<area shape="rect" id="Node000002" href="$alps__common__lib_2include_2alps__cmn_2display_2ssd1306_8hpp.html" title="SSD1306 OLEDディスプレイ" alt="" coords="10,115,235,170"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="391,66,213,118,212,113,389,61"/>
+<area shape="rect" id="Node000004" href="$bno055_8hpp.html" title="BNO055 9軸センサ" alt="" coords="259,115,474,170"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="453,72,399,117,396,113,450,67"/>
+<area shape="rect" id="Node000005" href="$alps__common__lib_2include_2alps__cmn_2sound_2piezo__buzzer_8hpp.html" title="圧電ブザー 鳴動用ライブラリ" alt="" coords="498,115,745,170"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="537,67,592,113,588,117,534,72"/>
+<area shape="rect" id="Node000007" href="$motor__friction__analyzer_8hpp.html" title="モーター軸の摩擦力を計測するクラス" alt="" coords="769,108,983,177"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="600,61,758,105,770,109,769,114,757,111,599,66"/>
+<area shape="rect" id="Node000003" href="$alps__mbed__lib_2include_2alps__mbed_2display_2ssd1306_8hpp.html" title="SSD1306 OLEDディスプレイ（mbed）" alt="" coords="5,233,240,287"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,184,125,232,120,232,120,184"/>
+<area shape="rect" id="Node000006" href="$alps__mbed__lib_2include_2alps__mbed_2sound_2piezo__buzzer_8hpp.html" title="圧電ブザー 鳴動用ライブラリ（mbed）" alt="" coords="532,225,711,295"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="624,183,624,225,619,225,619,183"/>
 </map>

@@ -8,6 +8,7 @@ var namespacealps_1_1cmn =
     [ "log", "namespacealps_1_1cmn_1_1log.html", "namespacealps_1_1cmn_1_1log" ],
     [ "robot", "namespacealps_1_1cmn_1_1robot.html", "namespacealps_1_1cmn_1_1robot" ],
     [ "sensor", "namespacealps_1_1cmn_1_1sensor.html", "namespacealps_1_1cmn_1_1sensor" ],
+    [ "sound", "namespacealps_1_1cmn_1_1sound.html", "namespacealps_1_1cmn_1_1sound" ],
     [ "time", "namespacealps_1_1cmn_1_1time.html", "namespacealps_1_1cmn_1_1time" ],
     [ "tool", "namespacealps_1_1cmn_1_1tool.html", "namespacealps_1_1cmn_1_1tool" ],
     [ "type", "namespacealps_1_1cmn_1_1type.html", "namespacealps_1_1cmn_1_1type" ],

@@ -10,6 +10,7 @@ var namespacealps_1_1mbed =
       [ "Calibration", "namespacealps_1_1mbed_1_1actuator.html#a7abcc42fc76523bc97a5f1d1b2e165b2", null ]
     ] ],
     [ "communication", "namespacealps_1_1mbed_1_1communication.html", "namespacealps_1_1mbed_1_1communication" ],
+    [ "display", "namespacealps_1_1mbed_1_1display.html", "namespacealps_1_1mbed_1_1display" ],
     [ "gpio", "namespacealps_1_1mbed_1_1gpio.html", "namespacealps_1_1mbed_1_1gpio" ],
     [ "log", "namespacealps_1_1mbed_1_1log.html", [
       [ "DefaultLogWriter", "namespacealps_1_1mbed_1_1log.html#a1ebb60b33fbfcb877387ffd92c374537", null ],
@@ -18,5 +19,6 @@ var namespacealps_1_1mbed =
     [ "sensor", "namespacealps_1_1mbed_1_1sensor.html", [
       [ "IncrementalEncoder", "namespacealps_1_1mbed_1_1sensor.html#a5fa3c74231a053a27e8b66afc210dd84", null ]
     ] ],
+    [ "sound", "namespacealps_1_1mbed_1_1sound.html", "namespacealps_1_1mbed_1_1sound" ],
     [ "time", "namespacealps_1_1mbed_1_1time.html", "namespacealps_1_1mbed_1_1time" ]
 ];

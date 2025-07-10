@@ -7,7 +7,8 @@ var searchData=
   ['pid_4',['Pid',['../classalps_1_1cmn_1_1control_1_1_pid.html',1,'alps::cmn::control']]],
   ['pidcalcinfo_5',['PidCalcInfo',['../structalps_1_1cmn_1_1control_1_1_pid_calc_info.html',1,'alps::cmn::control']]],
   ['pidparam_6',['PidParam',['../structalps_1_1cmn_1_1control_1_1_pid_param.html',1,'alps::cmn::control']]],
-  ['potentiometer_7',['Potentiometer',['../classalps_1_1cmn_1_1sensor_1_1_potentiometer.html',1,'alps::cmn::sensor']]],
-  ['potentiometerparam_8',['PotentiometerParam',['../structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html',1,'alps::cmn::sensor']]],
-  ['pwmout_9',['PwmOut',['../classalps_1_1mbed_1_1gpio_1_1_pwm_out.html',1,'alps::mbed::gpio']]]
+  ['piezobuzzer_7',['PiezoBuzzer',['../classalps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1_piezo_buzzer.html',1,'alps::cmn::sound::piezo_buzzer']]],
+  ['potentiometer_8',['Potentiometer',['../classalps_1_1cmn_1_1sensor_1_1_potentiometer.html',1,'alps::cmn::sensor']]],
+  ['potentiometerparam_9',['PotentiometerParam',['../structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html',1,'alps::cmn::sensor']]],
+  ['pwmout_10',['PwmOut',['../classalps_1_1mbed_1_1gpio_1_1_pwm_out.html',1,'alps::mbed::gpio']]]
 ];

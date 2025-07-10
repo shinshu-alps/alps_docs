@@ -1,0 +1,275 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps_core/lib_internal/alps_common_lib/include/alps_cmn/sound/piezo_buzzer.hpp ソースファイル</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('alps__common__lib_2include_2alps__cmn_2sound_2piezo__buzzer_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">piezo_buzzer.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="alps__common__lib_2include_2alps__cmn_2sound_2piezo__buzzer_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef ALPS_CMN_SOUND_PIEZO_BUZZER_HPP_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define ALPS_CMN_SOUND_PIEZO_BUZZER_HPP_</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="i__pwm__out_8hpp.html">alps_cmn/gpio/i_pwm_out.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="sleep_8hpp.html">alps_cmn/time/sleep.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span>cmn</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>sound</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer.html">   28</a></span><span class="keyword">namespace </span>piezo_buzzer</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// 音階 --------------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html">   34</a></span><span class="keyword">namespace </span>note</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">   37</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> = float;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a2c839c6391e1e9ceb21a010c2c97bdbf">   39</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a2c839c6391e1e9ceb21a010c2c97bdbf">kRest</a> = 0.0f;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a1394623bbe66915c2dd4c71dc6aad2d6">   41</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a1394623bbe66915c2dd4c71dc6aad2d6">kC4</a>  = 261.63f;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#afa4bd6ad946e6c1c95d8c4a72a0ad488">   42</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#afa4bd6ad946e6c1c95d8c4a72a0ad488">kCs4</a> = 277.18f;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a05db3252e04be3e57b6139b39455f39b">   43</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a05db3252e04be3e57b6139b39455f39b">kD4</a>  = 293.67f;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#ab6eec66e298caa1c41bcbb9ed500f3bf">   44</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#ab6eec66e298caa1c41bcbb9ed500f3bf">kDs4</a> = 311.13f;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a51537ec1c5734601bcfa4f78edcbce3e">   45</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a51537ec1c5734601bcfa4f78edcbce3e">kE4</a>  = 329.63f;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a9c5039d80ff05791b5809a29e3c93a0d">   46</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a9c5039d80ff05791b5809a29e3c93a0d">kF4</a>  = 349.23f;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a293d1c7970c70a40c648dfa4983d80ff">   47</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a293d1c7970c70a40c648dfa4983d80ff">kFs4</a> = 369.99f;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#ad704906d59c9ed34805d99d3eca4ab95">   48</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#ad704906d59c9ed34805d99d3eca4ab95">kG4</a>  = 392.00f;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#aed8a328a35452fa6de74f9aef6fde88e">   49</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#aed8a328a35452fa6de74f9aef6fde88e">kGs4</a> = 415.31f;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a0cf0f973b594752cab7d7a53cdfd5b8e">   50</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a0cf0f973b594752cab7d7a53cdfd5b8e">kA4</a>  = 440.00f;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#acf4e114be319bf5d03ac0f113ba0c8ae">   51</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#acf4e114be319bf5d03ac0f113ba0c8ae">kAs4</a> = 466.16f;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a2d971a3da063733e524699df89facd30">   52</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a2d971a3da063733e524699df89facd30">kB4</a>  = 493.88f;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a9941332b78f5fc3717c55d279cead530">   54</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a9941332b78f5fc3717c55d279cead530">kC5</a>  = 523.25f;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a63905c481e9c0b8a4179bc782f0cf3ae">   55</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a63905c481e9c0b8a4179bc782f0cf3ae">kCs5</a> = 554.37f;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a5c4d4bbed78dfdc61df3ebe2c667258b">   56</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a5c4d4bbed78dfdc61df3ebe2c667258b">kD5</a>  = 587.33f;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#ada2e956528628799b6da27f801715832">   57</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#ada2e956528628799b6da27f801715832">kDs5</a> = 622.25f;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a8abdaf0b3b249561653cd859932a2c34">   58</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a8abdaf0b3b249561653cd859932a2c34">kE5</a>  = 659.25f;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#ad9db0e5e1d2907fc2ec5623d60311ec4">   59</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#ad9db0e5e1d2907fc2ec5623d60311ec4">kF5</a>  = 698.46f;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a81c30864d8aaf7f6f36d911ac83710f4">   60</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a81c30864d8aaf7f6f36d911ac83710f4">kFs5</a> = 739.99f;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a1f22750e5731bb60bfe4bcfab17c5268">   61</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a1f22750e5731bb60bfe4bcfab17c5268">kG5</a>  = 783.99f;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a4c6e40f8dd51ef3ce21abb763dd17954">   62</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a4c6e40f8dd51ef3ce21abb763dd17954">kGs5</a> = 830.61f;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#ac3a0a358ed9fee21b2ddf23ea4ad0c1f">   63</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#ac3a0a358ed9fee21b2ddf23ea4ad0c1f">kA5</a>  = 880.00f;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a16333c509adac00f1ce401f87a892e59">   64</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a16333c509adac00f1ce401f87a892e59">kAs5</a> = 932.33f;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a58b1cea500b71e38e8abe2726b4154eb">   65</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a58b1cea500b71e38e8abe2726b4154eb">kB5</a>  = 987.77f;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a356c90a10797f2f451f08745f3ac4180">   67</a></span><span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">Note</a> <a class="code hl_variable" href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a356c90a10797f2f451f08745f3ac4180">kC6</a>  = 1046.50f;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>} <span class="comment">// namespace note</span></div>
+</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> PwmOut&gt;</div>
+<div class="foldopen" id="foldopen00077" data-start="{" data-end="};">
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1_piezo_buzzer.html">   77</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1_piezo_buzzer.html">PiezoBuzzer</a></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>{</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1_piezo_buzzer.html#aacdcf79e309af0ae9154c9e0d282d86a">   85</a></span>  <a class="code hl_function" href="classalps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1_piezo_buzzer.html#aacdcf79e309af0ae9154c9e0d282d86a">PiezoBuzzer</a>(<a class="code hl_class" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">gpio::IPwmOut&lt;PwmOut&gt;</a> &amp; pwm_out) : pwm_out_{pwm_out} {}</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1_piezo_buzzer.html#a05fe5497febc33b0b139c519d325757e">   93</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1_piezo_buzzer.html#a05fe5497febc33b0b139c519d325757e">PlaySound</a>(<span class="keywordtype">float</span> freq, std::chrono::milliseconds duration)</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordflow">if</span> (freq &lt;= 0.0f)</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      <span class="comment">// PWM出力（0）</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>      pwm_out_.<a class="code hl_function" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#a126c2a4c46285eede39c37d72243194a">CallWrite</a>(0.0f);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      <a class="code hl_function" href="namespacealps_1_1cmn_1_1time.html#a2f667b84910e28a6a2426a8994c05f37">time::SleepFor</a>(duration);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="comment">// 周波数より周期を計算</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keyword">const</span> <span class="keyword">auto</span> period_us = std::chrono::microseconds(<span class="keyword">static_cast&lt;</span><span class="keywordtype">long</span> <span class="keywordtype">long</span><span class="keyword">&gt;</span>(1&#39;000&#39;000.0f / freq));</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="comment">// PWM周期を設定</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    pwm_out_.<a class="code hl_function" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#a5cacb90bcdc89bae801e318008bb49e8">CallSetPeriod</a>(period_us);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="comment">// PWM出力（Duty 50%）</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    pwm_out_.<a class="code hl_function" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#a126c2a4c46285eede39c37d72243194a">CallWrite</a>(0.5);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="comment">// 待機</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <a class="code hl_function" href="namespacealps_1_1cmn_1_1time.html#a2f667b84910e28a6a2426a8994c05f37">time::SleepFor</a>(duration);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="comment">// PWM出力（0）</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    pwm_out_.<a class="code hl_function" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#a126c2a4c46285eede39c37d72243194a">CallWrite</a>(0.0f);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  }</div>
+</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">gpio::IPwmOut&lt;PwmOut&gt;</a> &amp; pwm_out_;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>};</div>
+</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}  <span class="comment">// namespace piezo_buzzer</span></div>
+</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>}  <span class="comment">// namespace sound</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_pwm_out_html"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html">alps::cmn::gpio::IPwmOut</a></div><div class="ttdoc">PWM出力を行うインタフェース</div><div class="ttdef"><b>Definition</b> i_pwm_out.hpp:31</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_pwm_out_html_a126c2a4c46285eede39c37d72243194a"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#a126c2a4c46285eede39c37d72243194a">alps::cmn::gpio::IPwmOut::CallWrite</a></div><div class="ttdeci">void CallWrite(float value)</div><div class="ttdoc">インタフェースを介してWrite()関数を呼び出す．振る舞い: PWM出力を行う</div><div class="ttdef"><b>Definition</b> i_pwm_out.hpp:39</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1gpio_1_1_i_pwm_out_html_a5cacb90bcdc89bae801e318008bb49e8"><div class="ttname"><a href="classalps_1_1cmn_1_1gpio_1_1_i_pwm_out.html#a5cacb90bcdc89bae801e318008bb49e8">alps::cmn::gpio::IPwmOut::CallSetPeriod</a></div><div class="ttdeci">void CallSetPeriod(std::chrono::microseconds period)</div><div class="ttdoc">インタフェースを介してSetPeriod()関数を呼び出す．振る舞い: PWMの周期を設定する</div><div class="ttdef"><b>Definition</b> i_pwm_out.hpp:50</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1_piezo_buzzer_html"><div class="ttname"><a href="classalps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1_piezo_buzzer.html">alps::cmn::sound::piezo_buzzer::PiezoBuzzer</a></div><div class="ttdoc">圧電ブザー</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:78</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1_piezo_buzzer_html_a05fe5497febc33b0b139c519d325757e"><div class="ttname"><a href="classalps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1_piezo_buzzer.html#a05fe5497febc33b0b139c519d325757e">alps::cmn::sound::piezo_buzzer::PiezoBuzzer::PlaySound</a></div><div class="ttdeci">void PlaySound(float freq, std::chrono::milliseconds duration)</div><div class="ttdoc">任意の周波数で鳴動</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:93</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1_piezo_buzzer_html_aacdcf79e309af0ae9154c9e0d282d86a"><div class="ttname"><a href="classalps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1_piezo_buzzer.html#aacdcf79e309af0ae9154c9e0d282d86a">alps::cmn::sound::piezo_buzzer::PiezoBuzzer::PiezoBuzzer</a></div><div class="ttdeci">PiezoBuzzer(gpio::IPwmOut&lt; PwmOut &gt; &amp;pwm_out)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:85</div></div>
+<div class="ttc" id="ai__pwm__out_8hpp_html"><div class="ttname"><a href="i__pwm__out_8hpp.html">i_pwm_out.hpp</a></div><div class="ttdoc">PWM出力を行うインタフェース</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_a05db3252e04be3e57b6139b39455f39b"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a05db3252e04be3e57b6139b39455f39b">alps::cmn::sound::piezo_buzzer::note::kD4</a></div><div class="ttdeci">constexpr Note kD4</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:43</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_a0cf0f973b594752cab7d7a53cdfd5b8e"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a0cf0f973b594752cab7d7a53cdfd5b8e">alps::cmn::sound::piezo_buzzer::note::kA4</a></div><div class="ttdeci">constexpr Note kA4</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:50</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_a1394623bbe66915c2dd4c71dc6aad2d6"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a1394623bbe66915c2dd4c71dc6aad2d6">alps::cmn::sound::piezo_buzzer::note::kC4</a></div><div class="ttdeci">constexpr Note kC4</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:41</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_a16333c509adac00f1ce401f87a892e59"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a16333c509adac00f1ce401f87a892e59">alps::cmn::sound::piezo_buzzer::note::kAs5</a></div><div class="ttdeci">constexpr Note kAs5</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:64</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_a1f22750e5731bb60bfe4bcfab17c5268"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a1f22750e5731bb60bfe4bcfab17c5268">alps::cmn::sound::piezo_buzzer::note::kG5</a></div><div class="ttdeci">constexpr Note kG5</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:61</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_a293d1c7970c70a40c648dfa4983d80ff"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a293d1c7970c70a40c648dfa4983d80ff">alps::cmn::sound::piezo_buzzer::note::kFs4</a></div><div class="ttdeci">constexpr Note kFs4</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:47</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_a2c839c6391e1e9ceb21a010c2c97bdbf"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a2c839c6391e1e9ceb21a010c2c97bdbf">alps::cmn::sound::piezo_buzzer::note::kRest</a></div><div class="ttdeci">constexpr Note kRest</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:39</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_a2d971a3da063733e524699df89facd30"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a2d971a3da063733e524699df89facd30">alps::cmn::sound::piezo_buzzer::note::kB4</a></div><div class="ttdeci">constexpr Note kB4</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:52</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_a356c90a10797f2f451f08745f3ac4180"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a356c90a10797f2f451f08745f3ac4180">alps::cmn::sound::piezo_buzzer::note::kC6</a></div><div class="ttdeci">constexpr Note kC6</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:67</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_a4c6e40f8dd51ef3ce21abb763dd17954"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a4c6e40f8dd51ef3ce21abb763dd17954">alps::cmn::sound::piezo_buzzer::note::kGs5</a></div><div class="ttdeci">constexpr Note kGs5</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:62</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_a51537ec1c5734601bcfa4f78edcbce3e"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a51537ec1c5734601bcfa4f78edcbce3e">alps::cmn::sound::piezo_buzzer::note::kE4</a></div><div class="ttdeci">constexpr Note kE4</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:45</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_a58b1cea500b71e38e8abe2726b4154eb"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a58b1cea500b71e38e8abe2726b4154eb">alps::cmn::sound::piezo_buzzer::note::kB5</a></div><div class="ttdeci">constexpr Note kB5</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:65</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_a5c4d4bbed78dfdc61df3ebe2c667258b"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a5c4d4bbed78dfdc61df3ebe2c667258b">alps::cmn::sound::piezo_buzzer::note::kD5</a></div><div class="ttdeci">constexpr Note kD5</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:56</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_a63905c481e9c0b8a4179bc782f0cf3ae"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a63905c481e9c0b8a4179bc782f0cf3ae">alps::cmn::sound::piezo_buzzer::note::kCs5</a></div><div class="ttdeci">constexpr Note kCs5</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:55</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_a81c30864d8aaf7f6f36d911ac83710f4"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a81c30864d8aaf7f6f36d911ac83710f4">alps::cmn::sound::piezo_buzzer::note::kFs5</a></div><div class="ttdeci">constexpr Note kFs5</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:60</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_a88b611a81d61c175d8bd81e9c1f17072"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a88b611a81d61c175d8bd81e9c1f17072">alps::cmn::sound::piezo_buzzer::note::Note</a></div><div class="ttdeci">float Note</div><div class="ttdoc">音階を表す型</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:37</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_a8abdaf0b3b249561653cd859932a2c34"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a8abdaf0b3b249561653cd859932a2c34">alps::cmn::sound::piezo_buzzer::note::kE5</a></div><div class="ttdeci">constexpr Note kE5</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:58</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_a9941332b78f5fc3717c55d279cead530"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a9941332b78f5fc3717c55d279cead530">alps::cmn::sound::piezo_buzzer::note::kC5</a></div><div class="ttdeci">constexpr Note kC5</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:54</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_a9c5039d80ff05791b5809a29e3c93a0d"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#a9c5039d80ff05791b5809a29e3c93a0d">alps::cmn::sound::piezo_buzzer::note::kF4</a></div><div class="ttdeci">constexpr Note kF4</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:46</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_ab6eec66e298caa1c41bcbb9ed500f3bf"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#ab6eec66e298caa1c41bcbb9ed500f3bf">alps::cmn::sound::piezo_buzzer::note::kDs4</a></div><div class="ttdeci">constexpr Note kDs4</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:44</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_ac3a0a358ed9fee21b2ddf23ea4ad0c1f"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#ac3a0a358ed9fee21b2ddf23ea4ad0c1f">alps::cmn::sound::piezo_buzzer::note::kA5</a></div><div class="ttdeci">constexpr Note kA5</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:63</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_acf4e114be319bf5d03ac0f113ba0c8ae"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#acf4e114be319bf5d03ac0f113ba0c8ae">alps::cmn::sound::piezo_buzzer::note::kAs4</a></div><div class="ttdeci">constexpr Note kAs4</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:51</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_ad704906d59c9ed34805d99d3eca4ab95"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#ad704906d59c9ed34805d99d3eca4ab95">alps::cmn::sound::piezo_buzzer::note::kG4</a></div><div class="ttdeci">constexpr Note kG4</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:48</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_ad9db0e5e1d2907fc2ec5623d60311ec4"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#ad9db0e5e1d2907fc2ec5623d60311ec4">alps::cmn::sound::piezo_buzzer::note::kF5</a></div><div class="ttdeci">constexpr Note kF5</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:59</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_ada2e956528628799b6da27f801715832"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#ada2e956528628799b6da27f801715832">alps::cmn::sound::piezo_buzzer::note::kDs5</a></div><div class="ttdeci">constexpr Note kDs5</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:57</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_aed8a328a35452fa6de74f9aef6fde88e"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#aed8a328a35452fa6de74f9aef6fde88e">alps::cmn::sound::piezo_buzzer::note::kGs4</a></div><div class="ttdeci">constexpr Note kGs4</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:49</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note_html_afa4bd6ad946e6c1c95d8c4a72a0ad488"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1note.html#afa4bd6ad946e6c1c95d8c4a72a0ad488">alps::cmn::sound::piezo_buzzer::note::kCs4</a></div><div class="ttdeci">constexpr Note kCs4</div><div class="ttdef"><b>Definition</b> piezo_buzzer.hpp:42</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1time_html_a2f667b84910e28a6a2426a8994c05f37"><div class="ttname"><a href="namespacealps_1_1cmn_1_1time.html#a2f667b84910e28a6a2426a8994c05f37">alps::cmn::time::SleepFor</a></div><div class="ttdeci">void SleepFor(std::chrono::milliseconds duration)</div><div class="ttdoc">指定した時間スリープする(デフォルト実装）</div><div class="ttdef"><b>Definition</b> sleep.hpp:82</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition</b> dc_motor.hpp:25</div></div>
+<div class="ttc" id="asleep_8hpp_html"><div class="ttname"><a href="sleep_8hpp.html">sleep.hpp</a></div><div class="ttdoc">スリープ関数の定義</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_627d875eccf4a985023a7fe06842126c.html">alps_core</a></li><li class="navelem"><a class="el" href="dir_f64f47805544727f04f019e126982967.html">lib_internal</a></li><li class="navelem"><a class="el" href="dir_dbb6a150a1d2a9e3bac0bb1d4855e995.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_2b777a74a5ff5221077a83a37cc87235.html">include</a></li><li class="navelem"><a class="el" href="dir_664123f27b70b10eeac81c10039fb160.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_052bcdc8ffbb87675f58163c2190e1bd.html">sound</a></li><li class="navelem"><a class="el" href="alps__common__lib_2include_2alps__cmn_2sound_2piezo__buzzer_8hpp.html">piezo_buzzer.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

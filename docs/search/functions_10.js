@@ -71,6 +71,6 @@ var searchData=
   ['sleep_68',['Sleep',['../classalps_1_1mbed_1_1time_1_1_rate_sleeper.html#a922a873cede3c355cef3980c323d9509',1,'alps::mbed::time::RateSleeper']]],
   ['sleepfor_69',['SleepFor',['../namespacealps_1_1cmn_1_1time.html#a2f667b84910e28a6a2426a8994c05f37',1,'alps::cmn::time']]],
   ['socketcanio_70',['SocketCanIo',['../classalps_1_1lin_1_1communication_1_1_socket_can_io.html#a2f88e8c393d8469f64324c566dae5233',1,'alps::lin::communication::SocketCanIo']]],
-  ['ssd1306_71',['Ssd1306',['../classalps_1_1cmn_1_1display_1_1ssd1306_1_1_ssd1306.html#a9714286ae4992fde54a4279e43cd995e',1,'alps::cmn::display::ssd1306::Ssd1306']]],
+  ['ssd1306_71',['Ssd1306',['../classalps_1_1cmn_1_1display_1_1ssd1306_1_1_ssd1306.html#a48a417b49c8771c9629723dbe5783f45',1,'alps::cmn::display::ssd1306::Ssd1306']]],
   ['strictgetinputport_72',['StrictGetInputPort',['../namespacealps_1_1ros2_1_1bt.html#a84398cfc13cfc2ee646ab59b0dc897ed',1,'alps::ros2::bt']]]
 ];

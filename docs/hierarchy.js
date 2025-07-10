@@ -164,6 +164,7 @@ var hierarchy =
     [ "alps::cmn::control::Pid< Clock >", "classalps_1_1cmn_1_1control_1_1_pid.html", null ],
     [ "alps::cmn::control::PidCalcInfo", "structalps_1_1cmn_1_1control_1_1_pid_calc_info.html", null ],
     [ "alps::cmn::control::PidParam", "structalps_1_1cmn_1_1control_1_1_pid_param.html", null ],
+    [ "alps::cmn::sound::piezo_buzzer::PiezoBuzzer< PwmOut >", "classalps_1_1cmn_1_1sound_1_1piezo__buzzer_1_1_piezo_buzzer.html", null ],
     [ "alps::cmn::sensor::PotentiometerParam", "structalps_1_1cmn_1_1sensor_1_1_potentiometer_param.html", null ],
     [ "alps::cmn::sensor::bno055::Quaternion", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html", null ],
     [ "alps::cmn::time::RateFuncInvoker< Clock >", "classalps_1_1cmn_1_1time_1_1_rate_func_invoker.html", null ],
