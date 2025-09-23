@@ -1,0 +1,19 @@
+<map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/as5600.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/as5600.hpp">
+<area shape="rect" id="Node000001" title="AS5600 磁気式ロータリーエンコーダ" alt="" coords="179,5,394,60"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="379,196,445,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="290,60,296,103,304,126,315,146,340,170,369,188,366,193,337,175,311,150,299,128,291,104,284,61"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,196,72,221"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,44,144,52,109,66,77,84,50,110,41,126,36,145,37,182,31,182,31,144,36,124,46,106,74,80,107,61,142,47,178,39"/>
+<area shape="rect" id="Node000004" href="$i__i2c__io_8hpp.html" title="I2C通信インタフェース" alt="" coords="60,108,249,148"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="251,62,194,102,191,98,248,58"/>
+<area shape="rect" id="Node000006" href="$i__rotary__sensor_8hpp.html" title=" " alt="" coords="325,108,510,148"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="325,58,381,98,378,102,322,62"/>
+<area shape="rect" id="Node000007" href="$sleep_8hpp.html" title="スリープ関数の定義" alt="" coords="534,115,719,141"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="383,57,573,109,571,114,382,63"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="128,150,69,190,66,186,125,146"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="111,196,198,221"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="157,148,157,182,152,182,152,148"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="596,143,457,194,455,189,595,138"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="595,196,659,221"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="629,141,629,182,624,182,624,141"/>
+</map>

@@ -1,5 +1,6 @@
 var dir_1585cb1296de2c4dde76500afa886952 =
 [
+    [ "as5600.hpp", "as5600_8hpp.html", "as5600_8hpp" ],
     [ "bno055.hpp", "bno055_8hpp.html", "bno055_8hpp" ],
     [ "i_rotary_sensor.hpp", "i__rotary__sensor_8hpp.html", "i__rotary__sensor_8hpp" ],
     [ "incremental_encoder.hpp", "alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp.html", "alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp" ],

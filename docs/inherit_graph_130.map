@@ -1,3 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="Node000000" href="$structalps_1_1cmn_1_1type_1_1_serializer_3_01etl_1_1optional_3_01_t_01_4_01_4.html" title=" " alt="" coords="5,5,196,45"/>
+<area shape="rect" id="Node000000" href="$structalps_1_1cmn_1_1type_1_1_get_non_ref_tuple.html" title="要素型から参照を除いたstd::tuple型を取得する" alt="" coords="5,5,207,45"/>
 </map>

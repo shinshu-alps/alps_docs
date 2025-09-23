@@ -109,6 +109,9 @@ var hierarchy =
       [ "alps::mbed::gpio::PwmOut", "classalps_1_1mbed_1_1gpio_1_1_pwm_out.html", null ]
     ] ],
     [ "alps::cmn::sensor::IRotarySensor< Derived >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", null ],
+    [ "alps::cmn::sensor::IRotarySensor< As5600< I2cIo > >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", [
+      [ "alps::cmn::sensor::as5600::As5600< I2cIo >", "classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html", null ]
+    ] ],
     [ "alps::cmn::sensor::IRotarySensor< IncrementalEncoder< Clock, InterruptIn, DigitalIn > >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", [
       [ "alps::cmn::sensor::IncrementalEncoder< Clock, InterruptIn, DigitalIn >", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html", null ]
     ] ],

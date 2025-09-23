@@ -1,0 +1,306 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/as5600.hpp ソースファイル</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('as5600_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">as5600.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="as5600_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef ALPS_CMN_SENSOR_AS5600_HPP_</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define ALPS_CMN_SENSOR_AS5600_HPP_</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="i__i2c__io_8hpp.html">alps_cmn/communication/i_i2c_io.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="i__rotary__sensor_8hpp.html">alps_cmn/sensor/i_rotary_sensor.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="sleep_8hpp.html">alps_cmn/time/sleep.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacealps.html">alps</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span>cmn</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">namespace </span>sensor</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html">   26</a></span><span class="keyword">namespace </span>as5600</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a589f40f7f38b04fc520242a865284223">   30</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a589f40f7f38b04fc520242a865284223">I2cAddressOption</a> : <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">communication::I2cAddress</a> {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a589f40f7f38b04fc520242a865284223ae37f5668692682d6354af054ea8951f8">k0x36</a> = 0x36  </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>};</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a68e5128d2e0bf67a1bd7091bf4f9486a">   35</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a68e5128d2e0bf67a1bd7091bf4f9486a">Reg</a> : uint8_t {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a68e5128d2e0bf67a1bd7091bf4f9486aabec3b9b5762d3c1c846b8feab1800eca">kRAW_ANGLE</a> = 0x0C,  </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a68e5128d2e0bf67a1bd7091bf4f9486aa37ff7350544f481f748ccf28e50f5e0a">kANGLE</a> = 0x0E,      </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a68e5128d2e0bf67a1bd7091bf4f9486aa5747e01e0a21ad1be08860e5d94a4360">kZPOS</a> = 0x01,       </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a68e5128d2e0bf67a1bd7091bf4f9486aa9583b4049a7bc5bdab0df0f2778346e4">kMANG</a> = 0x05        </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>};</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> I2cIo&gt;</div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="};">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html">   47</a></span><span class="keyword">class </span><a class="code hl_class" href="classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html">As5600</a> : <span class="keyword">public</span> <a class="code hl_class" href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">IRotarySensor</a>&lt;As5600&lt;I2cIo&gt;&gt;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html#ac0bd7d6bb353fece300c5d88be734891">   53</a></span>  <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html#ac0bd7d6bb353fece300c5d88be734891">As5600</a>(</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">cmn::communication::II2cIo&lt;I2cIo&gt;</a> &amp; i2c_io,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_enumeration" href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a589f40f7f38b04fc520242a865284223">I2cAddressOption</a> address_option = <a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a589f40f7f38b04fc520242a865284223ae37f5668692682d6354af054ea8951f8">I2cAddressOption::k0x36</a>)</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  : i2c_io_{i2c_io},</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    i2c_address_{static_cast&lt;communication::I2cAddress&gt;(address_option)},</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    last_raw_{0},</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    turn_count_{0}</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">using namespace </span>std::chrono_literals;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_function" href="namespacealps_1_1cmn_1_1time.html#a2f667b84910e28a6a2426a8994c05f37">time::SleepFor</a>(5ms);  <span class="comment">// 起動安定化待ち</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="comment">// 初期値を取得して基準とする</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    Read16(<span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(<a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a68e5128d2e0bf67a1bd7091bf4f9486aabec3b9b5762d3c1c846b8feab1800eca">Reg::kRAW_ANGLE</a>), last_raw_);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    last_raw_ &amp;= 0x0FFF;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  }</div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html#a5ef5735b7cfc170d4be96f631243cbee">   73</a></span>  <span class="keywordtype">double</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html#a5ef5735b7cfc170d4be96f631243cbee">GetAngle</a>()</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    uint16_t raw{};</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">if</span> (!Read16(<span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(<a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a68e5128d2e0bf67a1bd7091bf4f9486aabec3b9b5762d3c1c846b8feab1800eca">Reg::kRAW_ANGLE</a>), raw)) {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      <span class="comment">// 読み出し失敗時は直前値を返す</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>      <span class="keywordflow">return</span> (turn_count_ * kTwoPi) + (last_raw_ * kRadPerLsb);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    raw &amp;= 0x0FFF;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">int</span> diff = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(raw) - <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(last_raw_);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">if</span> (diff &gt; 2048) {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      <span class="comment">// 巻き戻り: 逆回転に1周</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>      turn_count_ -= 1;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (diff &lt; -2048) {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>      <span class="comment">// 巻き戻り: 正回転に1周</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      turn_count_ += 1;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    last_raw_ = raw;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordflow">return</span> (turn_count_ * kTwoPi) + (raw * kRadPerLsb);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  }</div>
+</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="foldopen" id="foldopen00098" data-start="{" data-end="}">
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html#aa8891d32e2d609cc360ca102a35a4ac1">   98</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html#aa8891d32e2d609cc360ca102a35a4ac1">GetRawAngle</a>(uint16_t &amp; output)</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    uint16_t raw_val{};</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordflow">if</span> (!Read16(<span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(<a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a68e5128d2e0bf67a1bd7091bf4f9486aabec3b9b5762d3c1c846b8feab1800eca">Reg::kRAW_ANGLE</a>), raw_val)) {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    output = raw_val &amp; 0x0FFF;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  }</div>
+</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="foldopen" id="foldopen00111" data-start="{" data-end="}">
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html#a0c977b6f0544c2d174b22e9363f7227b">  111</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html#a0c977b6f0544c2d174b22e9363f7227b">SetZeroPosition</a>(uint16_t pos)</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    pos &amp;= 0x0FFF;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordflow">return</span> Write16(<span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(<a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a68e5128d2e0bf67a1bd7091bf4f9486aa5747e01e0a21ad1be08860e5d94a4360">Reg::kZPOS</a>), pos);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  }</div>
+</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="foldopen" id="foldopen00120" data-start="{" data-end="}">
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html#a0ea9562c255f830e3a0e787da76b84eb">  120</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html#a0ea9562c255f830e3a0e787da76b84eb">SetMaxAngle</a>(uint16_t angle)</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  {</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    angle &amp;= 0x0FFF;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordflow">return</span> Write16(<span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(<a class="code hl_enumvalue" href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a68e5128d2e0bf67a1bd7091bf4f9486aa9583b4049a7bc5bdab0df0f2778346e4">Reg::kMANG</a>), angle);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  }</div>
+</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> kRadPerLsb = 2.0 * 3.14159265358979 / 4096.0;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> kTwoPi = 2.0 * 3.14159265358979;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <span class="keywordtype">bool</span> Write16(uint8_t reg, uint16_t value)</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    uint8_t buf[3];</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    buf[0] = reg;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    buf[1] = (value &gt;&gt; 8) &amp; 0xFF;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    buf[2] = value &amp; 0xFF;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keywordflow">return</span> i2c_io_.<a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">CallWrite</a>(i2c_address_, buf);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>  }</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  <span class="keywordtype">bool</span> Read16(uint8_t reg, uint16_t &amp; out_value)</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  {</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    uint8_t buf[2];</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keywordflow">if</span> (</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>      i2c_io_.<a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">CallWrite</a>(i2c_address_, {&amp;reg, 1}, <span class="keyword">true</span>) &amp;&amp;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>      i2c_io_.<a class="code hl_function" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#ac08f337e75e152c3d2a82d7ca4a52f13">CallRead</a>(i2c_address_, {buf, 2}, <span class="keyword">false</span>)) {</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>      out_value = (<span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>(buf[0]) &lt;&lt; 8) | buf[1];</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    }</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  }</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  <a class="code hl_class" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">cmn::communication::II2cIo&lt;I2cIo&gt;</a> &amp; i2c_io_;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  <span class="keyword">const</span> <a class="code hl_typedef" href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">communication::I2cAddress</a> i2c_address_;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  uint16_t last_raw_;   </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  int32_t turn_count_;  </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>};</div>
+</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>}  <span class="comment">// namespace as5600</span></div>
+</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>}  <span class="comment">// namespace sensor</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>}  <span class="comment">// namespace cmn</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>}  <span class="comment">// namespace alps</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_i2c_io_html"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">alps::cmn::communication::II2cIo</a></div><div class="ttdoc">I2C通信インタフェース</div><div class="ttdef"><b>Definition</b> i_i2c_io.hpp:36</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_i2c_io_html_ac08f337e75e152c3d2a82d7ca4a52f13"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#ac08f337e75e152c3d2a82d7ca4a52f13">alps::cmn::communication::II2cIo::CallRead</a></div><div class="ttdeci">bool CallRead(I2cAddress address, etl::span&lt; uint8_t &gt; read_buf, bool repeated=false)</div><div class="ttdoc">インタフェースを介してI2C通信でバイト列を受信する</div><div class="ttdef"><b>Definition</b> i_i2c_io.hpp:63</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1communication_1_1_i_i2c_io_html_af653762153caea8bbe059f868b73e5f1"><div class="ttname"><a href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html#af653762153caea8bbe059f868b73e5f1">alps::cmn::communication::II2cIo::CallWrite</a></div><div class="ttdeci">bool CallWrite(I2cAddress address, etl::span&lt; const uint8_t &gt; write_buf, bool repeated=false)</div><div class="ttdoc">インタフェースを介してI2C通信でバイト列を送信する</div><div class="ttdef"><b>Definition</b> i_i2c_io.hpp:48</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor_html"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html">alps::cmn::sensor::IRotarySensor</a></div><div class="ttdoc">回転センサーのインタフェース</div><div class="ttdef"><b>Definition</b> i_rotary_sensor.hpp:18</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600_html"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html">alps::cmn::sensor::as5600::As5600</a></div><div class="ttdoc">AS5600ドライバ (回転センサインタフェースを実装)</div><div class="ttdef"><b>Definition</b> as5600.hpp:48</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600_html_a0c977b6f0544c2d174b22e9363f7227b"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html#a0c977b6f0544c2d174b22e9363f7227b">alps::cmn::sensor::as5600::As5600::SetZeroPosition</a></div><div class="ttdeci">bool SetZeroPosition(uint16_t pos)</div><div class="ttdoc">ゼロポジション設定</div><div class="ttdef"><b>Definition</b> as5600.hpp:111</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600_html_a0ea9562c255f830e3a0e787da76b84eb"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html#a0ea9562c255f830e3a0e787da76b84eb">alps::cmn::sensor::as5600::As5600::SetMaxAngle</a></div><div class="ttdeci">bool SetMaxAngle(uint16_t angle)</div><div class="ttdoc">最大角度設定</div><div class="ttdef"><b>Definition</b> as5600.hpp:120</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600_html_a5ef5735b7cfc170d4be96f631243cbee"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html#a5ef5735b7cfc170d4be96f631243cbee">alps::cmn::sensor::as5600::As5600::GetAngle</a></div><div class="ttdeci">double GetAngle()</div><div class="ttdoc">IRotarySensor 実装: 現在の角度を返す</div><div class="ttdef"><b>Definition</b> as5600.hpp:73</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600_html_aa8891d32e2d609cc360ca102a35a4ac1"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html#aa8891d32e2d609cc360ca102a35a4ac1">alps::cmn::sensor::as5600::As5600::GetRawAngle</a></div><div class="ttdeci">bool GetRawAngle(uint16_t &amp;output)</div><div class="ttdoc">Raw角度 (0〜4095) を取得</div><div class="ttdef"><b>Definition</b> as5600.hpp:98</div></div>
+<div class="ttc" id="aclassalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600_html_ac0bd7d6bb353fece300c5d88be734891"><div class="ttname"><a href="classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html#ac0bd7d6bb353fece300c5d88be734891">alps::cmn::sensor::as5600::As5600::As5600</a></div><div class="ttdeci">As5600(cmn::communication::II2cIo&lt; I2cIo &gt; &amp;i2c_io, I2cAddressOption address_option=I2cAddressOption::k0x36)</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition</b> as5600.hpp:53</div></div>
+<div class="ttc" id="ai__i2c__io_8hpp_html"><div class="ttname"><a href="i__i2c__io_8hpp.html">i_i2c_io.hpp</a></div><div class="ttdoc">I2C通信インタフェース</div></div>
+<div class="ttc" id="ai__rotary__sensor_8hpp_html"><div class="ttname"><a href="i__rotary__sensor_8hpp.html">i_rotary_sensor.hpp</a></div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1communication_html_a31fcf69557e3ea7c625eddbe09e241c3"><div class="ttname"><a href="namespacealps_1_1cmn_1_1communication.html#a31fcf69557e3ea7c625eddbe09e241c3">alps::cmn::communication::I2cAddress</a></div><div class="ttdeci">uint8_t I2cAddress</div><div class="ttdoc">7bit I2Cアドレス</div><div class="ttdef"><b>Definition</b> i_i2c_io.hpp:27</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sensor_1_1as5600_html_a589f40f7f38b04fc520242a865284223"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a589f40f7f38b04fc520242a865284223">alps::cmn::sensor::as5600::I2cAddressOption</a></div><div class="ttdeci">I2cAddressOption</div><div class="ttdoc">I2Cアドレス選択肢</div><div class="ttdef"><b>Definition</b> as5600.hpp:30</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sensor_1_1as5600_html_a589f40f7f38b04fc520242a865284223ae37f5668692682d6354af054ea8951f8"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a589f40f7f38b04fc520242a865284223ae37f5668692682d6354af054ea8951f8">alps::cmn::sensor::as5600::I2cAddressOption::k0x36</a></div><div class="ttdeci">@ k0x36</div><div class="ttdoc">デフォルトアドレス</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sensor_1_1as5600_html_a68e5128d2e0bf67a1bd7091bf4f9486a"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a68e5128d2e0bf67a1bd7091bf4f9486a">alps::cmn::sensor::as5600::Reg</a></div><div class="ttdeci">Reg</div><div class="ttdoc">レジスタアドレス群</div><div class="ttdef"><b>Definition</b> as5600.hpp:35</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sensor_1_1as5600_html_a68e5128d2e0bf67a1bd7091bf4f9486aa37ff7350544f481f748ccf28e50f5e0a"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a68e5128d2e0bf67a1bd7091bf4f9486aa37ff7350544f481f748ccf28e50f5e0a">alps::cmn::sensor::as5600::Reg::kANGLE</a></div><div class="ttdeci">@ kANGLE</div><div class="ttdoc">計算済み角度(高+低バイト)</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sensor_1_1as5600_html_a68e5128d2e0bf67a1bd7091bf4f9486aa5747e01e0a21ad1be08860e5d94a4360"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a68e5128d2e0bf67a1bd7091bf4f9486aa5747e01e0a21ad1be08860e5d94a4360">alps::cmn::sensor::as5600::Reg::kZPOS</a></div><div class="ttdeci">@ kZPOS</div><div class="ttdoc">ゼロポジション</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sensor_1_1as5600_html_a68e5128d2e0bf67a1bd7091bf4f9486aa9583b4049a7bc5bdab0df0f2778346e4"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a68e5128d2e0bf67a1bd7091bf4f9486aa9583b4049a7bc5bdab0df0f2778346e4">alps::cmn::sensor::as5600::Reg::kMANG</a></div><div class="ttdeci">@ kMANG</div><div class="ttdoc">最大角度</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1sensor_1_1as5600_html_a68e5128d2e0bf67a1bd7091bf4f9486aabec3b9b5762d3c1c846b8feab1800eca"><div class="ttname"><a href="namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a68e5128d2e0bf67a1bd7091bf4f9486aabec3b9b5762d3c1c846b8feab1800eca">alps::cmn::sensor::as5600::Reg::kRAW_ANGLE</a></div><div class="ttdeci">@ kRAW_ANGLE</div><div class="ttdoc">Raw角度(高+低バイト)</div></div>
+<div class="ttc" id="anamespacealps_1_1cmn_1_1time_html_a2f667b84910e28a6a2426a8994c05f37"><div class="ttname"><a href="namespacealps_1_1cmn_1_1time.html#a2f667b84910e28a6a2426a8994c05f37">alps::cmn::time::SleepFor</a></div><div class="ttdeci">void SleepFor(std::chrono::milliseconds duration)</div><div class="ttdoc">指定した時間スリープする(デフォルト実装）</div><div class="ttdef"><b>Definition</b> sleep.hpp:82</div></div>
+<div class="ttc" id="anamespacealps_html"><div class="ttname"><a href="namespacealps.html">alps</a></div><div class="ttdoc">ロボ研で開発したライブラリ</div><div class="ttdef"><b>Definition</b> dc_motor.hpp:25</div></div>
+<div class="ttc" id="asleep_8hpp_html"><div class="ttname"><a href="sleep_8hpp.html">sleep.hpp</a></div><div class="ttdoc">スリープ関数の定義</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_627d875eccf4a985023a7fe06842126c.html">alps_core</a></li><li class="navelem"><a class="el" href="dir_f64f47805544727f04f019e126982967.html">lib_internal</a></li><li class="navelem"><a class="el" href="dir_dbb6a150a1d2a9e3bac0bb1d4855e995.html">alps_common_lib</a></li><li class="navelem"><a class="el" href="dir_2b777a74a5ff5221077a83a37cc87235.html">include</a></li><li class="navelem"><a class="el" href="dir_664123f27b70b10eeac81c10039fb160.html">alps_cmn</a></li><li class="navelem"><a class="el" href="dir_1585cb1296de2c4dde76500afa886952.html">sensor</a></li><li class="navelem"><a class="el" href="as5600_8hpp.html">as5600.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

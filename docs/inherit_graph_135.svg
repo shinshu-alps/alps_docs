@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="structalps_1_1cmn_1_1util_1_1_numeric_range.html" target="_top" xlink:title="最小値と最大値による数値の範囲を表す構造体">
+<g id="a_Node000000"><a xlink:href="structalps_1_1cmn_1_1util_1_1_numeric_range.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="133,-30 0,-30 0,0 133,0 133,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::util::Numeric</text>
-<text text-anchor="middle" x="66.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Range&lt; T &gt;</text>
+<text text-anchor="middle" x="66.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Range&lt; float &gt;</text>
 </a>
 </g>
 </g>
