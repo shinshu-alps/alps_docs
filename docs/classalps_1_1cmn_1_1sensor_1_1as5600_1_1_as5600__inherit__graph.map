@@ -1,0 +1,5 @@
+<map id="alps::cmn::sensor::as5600::As5600&lt; I2cIo &gt;" name="alps::cmn::sensor::as5600::As5600&lt; I2cIo &gt;">
+<area shape="rect" id="Node000001" title="AS5600ドライバ (回転センサインタフェースを実装)" alt="" coords="5,148,184,308"/>
+<area shape="rect" id="Node000002" href="$classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html" title=" " alt="" coords="11,5,179,100"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,114,97,148,92,148,92,114"/>
+</map>

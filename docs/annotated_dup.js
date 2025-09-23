@@ -103,6 +103,9 @@ var annotated_dup =
           [ "Odometory", "classalps_1_1cmn_1_1robot_1_1_odometory.html", "classalps_1_1cmn_1_1robot_1_1_odometory" ]
         ] ],
         [ "sensor", "namespacealps_1_1cmn_1_1sensor.html", [
+          [ "as5600", "namespacealps_1_1cmn_1_1sensor_1_1as5600.html", [
+            [ "As5600", "classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html", "classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600" ]
+          ] ],
           [ "bno055", "namespacealps_1_1cmn_1_1sensor_1_1bno055.html", [
             [ "Acceleration", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_acceleration" ],
             [ "AngularVelocity", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_angular_velocity" ],

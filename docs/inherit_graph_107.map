@@ -1,3 +1,5 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="Node000000" href="$classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html" title="回転センサーのインタフェース" alt="" coords="5,5,200,45"/>
+<area shape="rect" id="Node000000" href="$classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html" title=" " alt="" coords="5,5,181,60"/>
+<area shape="rect" id="Node000001" href="$classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html" title="AS5600ドライバ (回転センサインタフェースを実装)" alt="" coords="229,13,416,53"/>
+<area shape="poly" id="edge19_Node000000_Node000001" title=" " alt="" coords="195,30,229,30,229,35,195,35"/>
 </map>
