@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___pos___gain__msg__t.html" target="_top" xlink:title=" ">
+<g id="a_Node000000"><a xlink:href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_set___input___vel__msg__t.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="161,-30 0,-30 0,0 161,0 161,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::communication</text>
-<text text-anchor="middle" x="80.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::odrive::Set_Pos_Gain_msg_t</text>
+<text text-anchor="middle" x="80.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::odrive::Set_Input_Vel_msg_t</text>
 </a>
 </g>
 </g>

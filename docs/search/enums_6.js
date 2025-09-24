@@ -1,6 +1,6 @@
 var searchData=
 [
   ['rangemode_0',['RangeMode',['../classalps_1_1cmn_1_1sensor_1_1_vl53l0x.html#a27c4145bb7ec554861b487c8c3e5a0c8',1,'alps::cmn::sensor::Vl53l0x']]],
-  ['reg_1',['Reg',['../namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a68e5128d2e0bf67a1bd7091bf4f9486a',1,'alps::cmn::sensor::as5600']]],
+  ['reg_1',['reg',['../namespacealps_1_1cmn_1_1sensor_1_1as5048a.html#a29d74ea65649155be7fcd01fff1e73f1',1,'alps::cmn::sensor::as5048a::Reg'],['../namespacealps_1_1cmn_1_1sensor_1_1as5600.html#a68e5128d2e0bf67a1bd7091bf4f9486a',1,'alps::cmn::sensor::as5600::Reg']]],
   ['resetaction_2',['ResetAction',['../classalps_1_1cmn_1_1communication_1_1odrive_1_1_o_drive_c_a_n.html#ae670256d3a4c2bbce3804d4103483c3d',1,'alps::cmn::communication::odrive::ODriveCAN']]]
 ];
