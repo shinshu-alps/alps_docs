@@ -1,3 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="Node000000" href="$structalps_1_1ros2_1_1type_1_1detail_1_1_is_standard_vector_value_type.html" title="ROS2で元から用意されているリストパラメータ型（std::vector）の要素型かどうかを判定する" alt="" coords="5,5,249,45"/>
+<area shape="rect" id="Node000000" href="$classalps_1_1ros2_1_1communication_1_1_ros_to_can_param_bridge.html" title="ROSパラメータをCANパラメータに変換して送信するクラス． &#160;&#160;ROSパラメータはクライアント，CANパラメータはサーバーとして動作する．" alt="" coords="5,5,220,45"/>
 </map>

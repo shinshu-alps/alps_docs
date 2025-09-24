@@ -1,5 +1,6 @@
 var dir_1585cb1296de2c4dde76500afa886952 =
 [
+    [ "as5048a.hpp", "as5048a_8hpp.html", "as5048a_8hpp" ],
     [ "as5600.hpp", "as5600_8hpp.html", "as5600_8hpp" ],
     [ "bno055.hpp", "bno055_8hpp.html", "bno055_8hpp" ],
     [ "i_rotary_sensor.hpp", "i__rotary__sensor_8hpp.html", "i__rotary__sensor_8hpp" ],

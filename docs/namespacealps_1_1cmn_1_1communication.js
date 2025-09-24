@@ -13,6 +13,7 @@ var namespacealps_1_1cmn_1_1communication =
     [ "Cobs", "classalps_1_1cmn_1_1communication_1_1_cobs.html", "classalps_1_1cmn_1_1communication_1_1_cobs" ],
     [ "ICanIo", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", "classalps_1_1cmn_1_1communication_1_1_i_can_io" ],
     [ "II2cIo", "classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html", "classalps_1_1cmn_1_1communication_1_1_i_i2c_io" ],
+    [ "ISpiIo", "classalps_1_1cmn_1_1communication_1_1_i_spi_io.html", "classalps_1_1cmn_1_1communication_1_1_i_spi_io" ],
     [ "IUartIo", "classalps_1_1cmn_1_1communication_1_1_i_uart_io.html", "classalps_1_1cmn_1_1communication_1_1_i_uart_io" ],
     [ "UartPacketTransceiver", "classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html", "classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver" ],
     [ "UartReceiver", "classalps_1_1cmn_1_1communication_1_1_uart_receiver.html", "classalps_1_1cmn_1_1communication_1_1_uart_receiver" ],

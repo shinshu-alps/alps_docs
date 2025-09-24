@@ -7,6 +7,7 @@ var dir_5bbbaec82e60c1c95ef5795854749336 =
     [ "cobs.hpp", "cobs_8hpp.html", "cobs_8hpp" ],
     [ "i_can_io.hpp", "i__can__io_8hpp.html", "i__can__io_8hpp" ],
     [ "i_i2c_io.hpp", "i__i2c__io_8hpp.html", "i__i2c__io_8hpp" ],
+    [ "i_spi_io.hpp", "i__spi__io_8hpp.html", "i__spi__io_8hpp" ],
     [ "i_uart_io.hpp", "i__uart__io_8hpp.html", "i__uart__io_8hpp" ],
     [ "odrive_can.h", "odrive__can_8h.html", "odrive__can_8h" ],
     [ "odrive_can_helpers.hpp", "odrive__can__helpers_8hpp.html", "odrive__can__helpers_8hpp" ],

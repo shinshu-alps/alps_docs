@@ -1,25 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,333,124,358"/>
-<area shape="rect" id="Node000001" href="$structalps_1_1cmn_1_1type_1_1_has_clear.html" title="clearメソッドを持つかどうかを判定する型述語" alt="" coords="211,5,400,45"/>
-<area shape="poly" id="edge24_Node000000_Node000001" title=" " alt="" coords="65,318,72,263,90,192,103,155,121,119,143,85,170,55,189,42,210,33,212,38,191,47,174,59,147,88,125,121,108,157,95,194,78,264,70,319"/>
-<area shape="rect" id="Node000002" href="$structalps_1_1cmn_1_1type_1_1_has_push_back.html" title="push_backメソッドを持つかどうかを判定する型述語" alt="" coords="212,69,399,109"/>
-<area shape="poly" id="edge25_Node000000_Node000002" title=" " alt="" coords="68,318,79,275,99,221,129,166,148,141,170,119,190,107,211,98,213,103,192,112,174,123,152,145,133,169,104,223,84,276,73,320"/>
-<area shape="rect" id="Node000003" href="$structalps_1_1cmn_1_1type_1_1_has_resize.html" title="resizeメソッドを持つかどうかを判定する型述語" alt="" coords="206,133,405,173"/>
-<area shape="poly" id="edge26_Node000000_Node000003" title=" " alt="" coords="73,319,88,288,109,251,136,214,170,183,205,166,207,171,174,188,140,218,113,254,93,290,78,321"/>
-<area shape="rect" id="Node000004" href="$structalps_1_1cmn_1_1type_1_1_has_size.html" title="sizeメソッドを持つかどうかを判定する型述語" alt="" coords="214,197,397,237"/>
-<area shape="poly" id="edge27_Node000000_Node000004" title=" " alt="" coords="83,320,121,282,171,247,213,230,215,235,173,252,125,286,87,324"/>
-<area shape="rect" id="Node000005" href="$structalps_1_1cmn_1_1type_1_1_has_subscript_operator.html" title="添字演算子[]を持つかどうかを判定する型述語" alt="" coords="198,261,413,301"/>
-<area shape="poly" id="edge28_Node000000_Node000005" title=" " alt="" coords="118,326,171,311,218,299,219,304,173,316,120,331"/>
-<area shape="rect" id="Node000006" href="$structalps_1_1cmn_1_1type_1_1_has_value_type.html" title="value_type型を持つかどうかを判定する型述語" alt="" coords="210,325,401,365"/>
-<area shape="poly" id="edge29_Node000000_Node000006" title=" " alt="" coords="138,343,210,343,210,348,138,348"/>
-<area shape="rect" id="Node000007" href="$structalps_1_1cmn_1_1type_1_1_is_array.html" title="Array型かどうかを判定する型述語. cスタイルの配列とvectorはArrayではないと判定する" alt="" coords="217,389,393,429"/>
-<area shape="poly" id="edge30_Node000000_Node000007" title=" " alt="" coords="120,359,173,375,219,387,218,392,171,380,118,365"/>
-<area shape="rect" id="Node000008" href="$structalps_1_1cmn_1_1type_1_1_is_vector_like.html" title="vector型のように振る舞う型かどうかを判定する型述語" alt="" coords="214,453,397,493"/>
-<area shape="poly" id="edge31_Node000000_Node000008" title=" " alt="" coords="87,367,125,404,173,439,215,455,213,460,171,444,121,408,83,370"/>
-<area shape="rect" id="Node000009" href="$structalps_1_1cmn_1_1type_1_1_supports_get_element_names.html" title="T型がGetElementNames関数をサポートしているかどうかを判定する" alt="" coords="177,517,434,557"/>
-<area shape="poly" id="edge32_Node000000_Node000009" title=" " alt="" coords="78,370,93,401,113,437,140,473,174,503,194,515,192,520,170,507,136,477,109,440,88,403,73,372"/>
-<area shape="rect" id="Node000010" href="$structalps_1_1cmn_1_1type_1_1_supports_to_tied_tuple.html" title="T型がstd::tupleに変換可能かどうかを判定する" alt="" coords="200,581,411,621"/>
-<area shape="poly" id="edge33_Node000000_Node000010" title=" " alt="" coords="73,371,84,414,104,468,133,522,152,546,174,567,201,583,198,588,170,571,148,550,129,525,99,470,79,416,68,372"/>
-<area shape="rect" id="Node000011" href="$structalps_1_1ros2_1_1type_1_1_is_single_element_std_msgs_type.html" title="std_msgs::msg名前空間内のデータを1つだけ持つ型かどうかを判定する型述語 例) std_msgs::msg::Bool, std_msgs::msg::Float32MultiArray" alt="" coords="172,646,439,701"/>
-<area shape="poly" id="edge34_Node000000_Node000011" title=" " alt="" coords="71,372,79,426,96,496,109,533,127,569,148,602,174,631,190,644,187,648,170,635,144,605,122,571,104,535,91,497,73,427,65,372"/>
+<area shape="rect" id="Node000000" href="$classalps_1_1ros2_1_1ui_1_1_joy.html" title="プレイステーションジョイコントローラーのトピックデータを扱いやすくするためのクラス" alt="" coords="5,5,139,31"/>
 </map>

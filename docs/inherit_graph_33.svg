@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="structalps_1_1cmn_1_1communication_1_1odrive_1_1_address__msg__t.html" target="_top" xlink:title=" ">
+<g id="a_Node000000"><a xlink:href="classalps_1_1cmn_1_1communication_1_1_i_uart_io.html" target="_top" xlink:title="Uart通信IOのインターフェース">
 <polygon fill="white" stroke="#666666" points="146,-30 0,-30 0,0 146,0 146,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">alps::cmn::communication</text>
-<text text-anchor="middle" x="73" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::odrive::Address_msg_t</text>
+<text text-anchor="middle" x="73" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::IUartIo&lt; Derived &gt;</text>
 </a>
 </g>
 </g>

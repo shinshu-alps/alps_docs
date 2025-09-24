@@ -1,5 +1,6 @@
 var namespacealps_1_1cmn_1_1sensor =
 [
+    [ "as5048a", "namespacealps_1_1cmn_1_1sensor_1_1as5048a.html", "namespacealps_1_1cmn_1_1sensor_1_1as5048a" ],
     [ "as5600", "namespacealps_1_1cmn_1_1sensor_1_1as5600.html", "namespacealps_1_1cmn_1_1sensor_1_1as5600" ],
     [ "bno055", "namespacealps_1_1cmn_1_1sensor_1_1bno055.html", "namespacealps_1_1cmn_1_1sensor_1_1bno055" ],
     [ "IncrementalEncoder", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder" ],

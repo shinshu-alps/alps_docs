@@ -10,8 +10,9 @@ var searchData=
   ['i_5fmotor_2ehpp_7',['i_motor.hpp',['../i__motor_8hpp.html',1,'']]],
   ['i_5fpwm_5fout_2ehpp_8',['i_pwm_out.hpp',['../i__pwm__out_8hpp.html',1,'']]],
   ['i_5frotary_5fsensor_2ehpp_9',['i_rotary_sensor.hpp',['../i__rotary__sensor_8hpp.html',1,'']]],
-  ['i_5fuart_5fio_2ehpp_10',['i_uart_io.hpp',['../i__uart__io_8hpp.html',1,'']]],
-  ['incremental_5fencoder_2ehpp_11',['incremental_encoder.hpp',['../alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp.html',1,'(大域名前空間)'],['../alps__mbed__lib_2include_2alps__mbed_2sensor_2incremental__encoder_8hpp.html',1,'(大域名前空間)']]],
-  ['integrator_2ehpp_12',['integrator.hpp',['../integrator_8hpp.html',1,'']]],
-  ['interrupt_5fin_2ehpp_13',['interrupt_in.hpp',['../interrupt__in_8hpp.html',1,'']]]
+  ['i_5fspi_5fio_2ehpp_10',['i_spi_io.hpp',['../i__spi__io_8hpp.html',1,'']]],
+  ['i_5fuart_5fio_2ehpp_11',['i_uart_io.hpp',['../i__uart__io_8hpp.html',1,'']]],
+  ['incremental_5fencoder_2ehpp_12',['incremental_encoder.hpp',['../alps__common__lib_2include_2alps__cmn_2sensor_2incremental__encoder_8hpp.html',1,'(大域名前空間)'],['../alps__mbed__lib_2include_2alps__mbed_2sensor_2incremental__encoder_8hpp.html',1,'(大域名前空間)']]],
+  ['integrator_2ehpp_13',['integrator.hpp',['../integrator_8hpp.html',1,'']]],
+  ['interrupt_5fin_2ehpp_14',['interrupt_in.hpp',['../interrupt__in_8hpp.html',1,'']]]
 ];

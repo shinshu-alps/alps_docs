@@ -57,6 +57,7 @@ var annotated_dup =
           [ "Cobs", "classalps_1_1cmn_1_1communication_1_1_cobs.html", "classalps_1_1cmn_1_1communication_1_1_cobs" ],
           [ "ICanIo", "classalps_1_1cmn_1_1communication_1_1_i_can_io.html", "classalps_1_1cmn_1_1communication_1_1_i_can_io" ],
           [ "II2cIo", "classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html", "classalps_1_1cmn_1_1communication_1_1_i_i2c_io" ],
+          [ "ISpiIo", "classalps_1_1cmn_1_1communication_1_1_i_spi_io.html", "classalps_1_1cmn_1_1communication_1_1_i_spi_io" ],
           [ "IUartIo", "classalps_1_1cmn_1_1communication_1_1_i_uart_io.html", "classalps_1_1cmn_1_1communication_1_1_i_uart_io" ],
           [ "UartPacketTransceiver", "classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver.html", "classalps_1_1cmn_1_1communication_1_1_uart_packet_transceiver" ],
           [ "UartReceiver", "classalps_1_1cmn_1_1communication_1_1_uart_receiver.html", "classalps_1_1cmn_1_1communication_1_1_uart_receiver" ],
@@ -103,6 +104,9 @@ var annotated_dup =
           [ "Odometory", "classalps_1_1cmn_1_1robot_1_1_odometory.html", "classalps_1_1cmn_1_1robot_1_1_odometory" ]
         ] ],
         [ "sensor", "namespacealps_1_1cmn_1_1sensor.html", [
+          [ "as5048a", "namespacealps_1_1cmn_1_1sensor_1_1as5048a.html", [
+            [ "as5048a", "classalps_1_1cmn_1_1sensor_1_1as5048a_1_1as5048a.html", "classalps_1_1cmn_1_1sensor_1_1as5048a_1_1as5048a" ]
+          ] ],
           [ "as5600", "namespacealps_1_1cmn_1_1sensor_1_1as5600.html", [
             [ "As5600", "classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html", "classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600" ]
           ] ],
@@ -186,6 +190,7 @@ var annotated_dup =
           ] ],
           [ "BufferedCanIo", "classalps_1_1mbed_1_1communication_1_1_buffered_can_io.html", "classalps_1_1mbed_1_1communication_1_1_buffered_can_io" ],
           [ "I2cIo", "classalps_1_1mbed_1_1communication_1_1_i2c_io.html", "classalps_1_1mbed_1_1communication_1_1_i2c_io" ],
+          [ "SpiIo", "classalps_1_1mbed_1_1communication_1_1_spi_io.html", "classalps_1_1mbed_1_1communication_1_1_spi_io" ],
           [ "UartIo", "classalps_1_1mbed_1_1communication_1_1_uart_io.html", "classalps_1_1mbed_1_1communication_1_1_uart_io" ]
         ] ],
         [ "gpio", "namespacealps_1_1mbed_1_1gpio.html", [

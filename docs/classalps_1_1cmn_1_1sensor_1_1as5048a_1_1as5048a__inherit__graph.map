@@ -1,0 +1,5 @@
+<map id="alps::cmn::sensor::as5048a::as5048a&lt; SpiIo &gt;" name="alps::cmn::sensor::as5048a::as5048a&lt; SpiIo &gt;">
+<area shape="rect" id="Node000001" title="AS5048A ドライバ (IRotarySensor インタフェース実装)" alt="" coords="5,148,200,348"/>
+<area shape="rect" id="Node000002" href="$classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html" title=" " alt="" coords="15,5,190,100"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,114,105,148,100,148,100,114"/>
+</map>

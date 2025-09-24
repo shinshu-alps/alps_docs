@@ -109,6 +109,9 @@ var hierarchy =
       [ "alps::mbed::gpio::PwmOut", "classalps_1_1mbed_1_1gpio_1_1_pwm_out.html", null ]
     ] ],
     [ "alps::cmn::sensor::IRotarySensor< Derived >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", null ],
+    [ "alps::cmn::sensor::IRotarySensor< as5048a< SpiIo > >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", [
+      [ "alps::cmn::sensor::as5048a::as5048a< SpiIo >", "classalps_1_1cmn_1_1sensor_1_1as5048a_1_1as5048a.html", null ]
+    ] ],
     [ "alps::cmn::sensor::IRotarySensor< As5600< I2cIo > >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", [
       [ "alps::cmn::sensor::as5600::As5600< I2cIo >", "classalps_1_1cmn_1_1sensor_1_1as5600_1_1_as5600.html", null ]
     ] ],
@@ -124,6 +127,10 @@ var hierarchy =
     [ "alps::cmn::sensor::IRotarySensor< RorarySensor >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", null ],
     [ "alps::cmn::sensor::IRotarySensor< RotarySensor >", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", null ],
     [ "alps::cmn::type::detail::IsBuiltinType< T >", "structalps_1_1cmn_1_1type_1_1detail_1_1_is_builtin_type.html", null ],
+    [ "alps::cmn::communication::ISpiIo< Derived >", "classalps_1_1cmn_1_1communication_1_1_i_spi_io.html", null ],
+    [ "alps::cmn::communication::ISpiIo< SpiIo >", "classalps_1_1cmn_1_1communication_1_1_i_spi_io.html", [
+      [ "alps::mbed::communication::SpiIo", "classalps_1_1mbed_1_1communication_1_1_spi_io.html", null ]
+    ] ],
     [ "alps::ros2::type::detail::IsStandardType< T >", "structalps_1_1ros2_1_1type_1_1detail_1_1_is_standard_type.html", null ],
     [ "alps::ros2::type::detail::IsStandardVectorValueType< T >", "structalps_1_1ros2_1_1type_1_1detail_1_1_is_standard_vector_value_type.html", null ],
     [ "alps::cmn::communication::IUartIo< Derived >", "classalps_1_1cmn_1_1communication_1_1_i_uart_io.html", null ],
