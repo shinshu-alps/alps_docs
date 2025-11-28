@@ -1,0 +1,1982 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.9.8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alps: alps::cmn::sensor::scd4x::Scd4x&lt; I2cIo &gt; クラステンプレート</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/svg+xml" href="logo.drawio.svg" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+    <script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+    <script type="text/javascript" src="toggle-alternative-theme.js"></script>
+    <script type="text/javascript">
+        DoxygenAwesomeFragmentCopyButton.init()
+        DoxygenAwesomeDarkModeToggle.init()
+        DoxygenAwesomeParagraphLink.init()
+        DoxygenAwesomeInteractiveToc.init()
+        DoxygenAwesomeTabs.init()
+    </script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+        <div id="titlearea">
+            <table cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr style="height: 56px;">
+                        <td id="projectalign" style="padding-left: 0.5em;">
+                            <div id="projectname">Alps
+                            </div>
+                            <div id="projectbrief">roblab shinshu library</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- end header part --><!-- 構築: Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">alps::cmn::sensor::scd4x::Scd4x&lt; I2cIo &gt; クラステンプレート</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="alps__common__lib_2include_2alps__cmn_2sensor_2scd4x_8hpp_source.html">scd4x.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:aab91aa2e9542d69106ec77572c7143f1" id="r_aab91aa2e9542d69106ec77572c7143f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#aab91aa2e9542d69106ec77572c7143f1">Scd4x</a> (<a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">cmn::communication::II2cIo</a>&lt; I2cIo &gt; &amp;i2c_io, <a class="el" href="namespacealps_1_1cmn_1_1sensor_1_1scd4x.html#aed82ea70566f14e3e8863f705db78961">I2cAddressOption</a> address_option=<a class="el" href="namespacealps_1_1cmn_1_1sensor_1_1scd4x.html#aed82ea70566f14e3e8863f705db78961aeb90f31c47243270950941aaa1de0fc8">I2cAddressOption::k0x62</a>)</td></tr>
+<tr class="memdesc:aab91aa2e9542d69106ec77572c7143f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
+<tr class="separator:aab91aa2e9542d69106ec77572c7143f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72e546534281b3f8a45298459de39aa1" id="r_a72e546534281b3f8a45298459de39aa1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#a72e546534281b3f8a45298459de39aa1">StartPeriodicMeasurement</a> ()</td></tr>
+<tr class="memdesc:a72e546534281b3f8a45298459de39aa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">周期測定を開始する  <br /></td></tr>
+<tr class="separator:a72e546534281b3f8a45298459de39aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3703d50e4a7de5419687c633c9a1eb7f" id="r_a3703d50e4a7de5419687c633c9a1eb7f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#a3703d50e4a7de5419687c633c9a1eb7f">StopPeriodicMeasurement</a> ()</td></tr>
+<tr class="memdesc:a3703d50e4a7de5419687c633c9a1eb7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">周期測定を停止する  <br /></td></tr>
+<tr class="separator:a3703d50e4a7de5419687c633c9a1eb7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5f7c4ee828d5842cae00e165b5ed701" id="r_ad5f7c4ee828d5842cae00e165b5ed701"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#ad5f7c4ee828d5842cae00e165b5ed701">ReadMeasurementRaw</a> (uint16_t &amp;co2_raw, uint16_t &amp;tmp_raw, uint16_t &amp;rh_raw)</td></tr>
+<tr class="memdesc:ad5f7c4ee828d5842cae00e165b5ed701"><td class="mdescLeft">&#160;</td><td class="mdescRight">測定値の生データを取得する  <br /></td></tr>
+<tr class="separator:ad5f7c4ee828d5842cae00e165b5ed701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6385a31ef584891dd0285e4779b40139" id="r_a6385a31ef584891dd0285e4779b40139"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#a6385a31ef584891dd0285e4779b40139">ReadMeasurement</a> (uint16_t &amp;co2, float &amp;tmp, float &amp;rh)</td></tr>
+<tr class="memdesc:a6385a31ef584891dd0285e4779b40139"><td class="mdescLeft">&#160;</td><td class="mdescRight">測定値から物理量に変換して取得する  <br /></td></tr>
+<tr class="separator:a6385a31ef584891dd0285e4779b40139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adde59b804fc806807eec2c2e0c6c71d0" id="r_adde59b804fc806807eec2c2e0c6c71d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#adde59b804fc806807eec2c2e0c6c71d0">SetTemperatureOffsetRaw</a> (uint16_t tmp_offset)</td></tr>
+<tr class="memdesc:adde59b804fc806807eec2c2e0c6c71d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">生温度オフセット設定  <br /></td></tr>
+<tr class="separator:adde59b804fc806807eec2c2e0c6c71d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f525b482c62055997e16a65302d956a" id="r_a5f525b482c62055997e16a65302d956a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#a5f525b482c62055997e16a65302d956a">SetTemperatureOffset</a> (float tmp_offset_c)</td></tr>
+<tr class="memdesc:a5f525b482c62055997e16a65302d956a"><td class="mdescLeft">&#160;</td><td class="mdescRight">温度オフセット設定  <br /></td></tr>
+<tr class="separator:a5f525b482c62055997e16a65302d956a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93cf2672396b4f4e4013a7d97c8e694a" id="r_a93cf2672396b4f4e4013a7d97c8e694a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#a93cf2672396b4f4e4013a7d97c8e694a">GetTemperatureOffsetRaw</a> (uint16_t &amp;tmp_offset)</td></tr>
+<tr class="memdesc:a93cf2672396b4f4e4013a7d97c8e694a"><td class="mdescLeft">&#160;</td><td class="mdescRight">生温度オフセット設定取得  <br /></td></tr>
+<tr class="separator:a93cf2672396b4f4e4013a7d97c8e694a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97ea915b30cdc0f39d8fb211ac32262f" id="r_a97ea915b30cdc0f39d8fb211ac32262f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#a97ea915b30cdc0f39d8fb211ac32262f">GetTemperatureOffset</a> (float &amp;tmp_offset_c)</td></tr>
+<tr class="memdesc:a97ea915b30cdc0f39d8fb211ac32262f"><td class="mdescLeft">&#160;</td><td class="mdescRight">温度オフセット設定取得  <br /></td></tr>
+<tr class="separator:a97ea915b30cdc0f39d8fb211ac32262f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab616a47ce2b328e969712a978ad78016" id="r_ab616a47ce2b328e969712a978ad78016"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#ab616a47ce2b328e969712a978ad78016">SetSensorAltitude</a> (uint16_t alt_m)</td></tr>
+<tr class="memdesc:ab616a47ce2b328e969712a978ad78016"><td class="mdescLeft">&#160;</td><td class="mdescRight">センサ高度設定  <br /></td></tr>
+<tr class="separator:ab616a47ce2b328e969712a978ad78016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1acb71274e197104889a3c89d29bcad1" id="r_a1acb71274e197104889a3c89d29bcad1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#a1acb71274e197104889a3c89d29bcad1">GetSensorAltitude</a> (uint16_t &amp;alt_m)</td></tr>
+<tr class="memdesc:a1acb71274e197104889a3c89d29bcad1"><td class="mdescLeft">&#160;</td><td class="mdescRight">センサ高度設定取得  <br /></td></tr>
+<tr class="separator:a1acb71274e197104889a3c89d29bcad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acad1c005ff50743d7fb39be33d57caf1" id="r_acad1c005ff50743d7fb39be33d57caf1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#acad1c005ff50743d7fb39be33d57caf1">SetAmbientPressureRaw</a> (uint16_t ap_hpa)</td></tr>
+<tr class="memdesc:acad1c005ff50743d7fb39be33d57caf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">生大気圧設定  <br /></td></tr>
+<tr class="separator:acad1c005ff50743d7fb39be33d57caf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5aec380d749b70a3fc10b58f6c320ef" id="r_ac5aec380d749b70a3fc10b58f6c320ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#ac5aec380d749b70a3fc10b58f6c320ef">SetAmbientPressure</a> (float ap)</td></tr>
+<tr class="memdesc:ac5aec380d749b70a3fc10b58f6c320ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">大気圧設定  <br /></td></tr>
+<tr class="separator:ac5aec380d749b70a3fc10b58f6c320ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa251f59455e042764e87c854e87dcea8" id="r_aa251f59455e042764e87c854e87dcea8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#aa251f59455e042764e87c854e87dcea8">GetAmbientPressureRaw</a> (uint16_t &amp;ap_hpa)</td></tr>
+<tr class="memdesc:aa251f59455e042764e87c854e87dcea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">生大気圧設定取得  <br /></td></tr>
+<tr class="separator:aa251f59455e042764e87c854e87dcea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e29d39d78d22446d2cf812d068f912" id="r_a61e29d39d78d22446d2cf812d068f912"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#a61e29d39d78d22446d2cf812d068f912">GetAmbientPressure</a> (uint32_t &amp;ap)</td></tr>
+<tr class="memdesc:a61e29d39d78d22446d2cf812d068f912"><td class="mdescLeft">&#160;</td><td class="mdescRight">大気圧設定取得  <br /></td></tr>
+<tr class="separator:a61e29d39d78d22446d2cf812d068f912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3a617abe1adb2cf9ada5f68a28058fe" id="r_ac3a617abe1adb2cf9ada5f68a28058fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#ac3a617abe1adb2cf9ada5f68a28058fe">GetDataReadyStatusRaw</a> (uint16_t &amp;data_ready_status)</td></tr>
+<tr class="memdesc:ac3a617abe1adb2cf9ada5f68a28058fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">データ準備完了フラグ取得  <br /></td></tr>
+<tr class="separator:ac3a617abe1adb2cf9ada5f68a28058fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0a628e3776f1e14fd7d698a8f9db27c" id="r_ae0a628e3776f1e14fd7d698a8f9db27c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#ae0a628e3776f1e14fd7d698a8f9db27c">GetDataReadyStatus</a> (bool &amp;is_ready)</td></tr>
+<tr class="memdesc:ae0a628e3776f1e14fd7d698a8f9db27c"><td class="mdescLeft">&#160;</td><td class="mdescRight">データ準備完了判定  <br /></td></tr>
+<tr class="separator:ae0a628e3776f1e14fd7d698a8f9db27c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8812ac3843d90a5992ea46f928bebe95" id="r_a8812ac3843d90a5992ea46f928bebe95"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#a8812ac3843d90a5992ea46f928bebe95">SetAutomaticSelfCalibrationEnabled</a> (bool enabled)</td></tr>
+<tr class="memdesc:a8812ac3843d90a5992ea46f928bebe95"><td class="mdescLeft">&#160;</td><td class="mdescRight">自動キャリブレーション有効/無効設定  <br /></td></tr>
+<tr class="separator:a8812ac3843d90a5992ea46f928bebe95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15af1663ea0f799e3e297e5eb6057594" id="r_a15af1663ea0f799e3e297e5eb6057594"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#a15af1663ea0f799e3e297e5eb6057594">GetAutomaticSelfCalibrationEnabled</a> (bool &amp;enabled)</td></tr>
+<tr class="memdesc:a15af1663ea0f799e3e297e5eb6057594"><td class="mdescLeft">&#160;</td><td class="mdescRight">自動キャリブレーション有効/無効設定取得  <br /></td></tr>
+<tr class="separator:a15af1663ea0f799e3e297e5eb6057594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbe747ca199fe980a1c984358302e941" id="r_abbe747ca199fe980a1c984358302e941"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#abbe747ca199fe980a1c984358302e941">SetAutomaticSelfCalibrationTarget</a> (uint16_t asc_target_ppm)</td></tr>
+<tr class="memdesc:abbe747ca199fe980a1c984358302e941"><td class="mdescLeft">&#160;</td><td class="mdescRight">自動キャリブレーションのベースラインターゲット設定  <br /></td></tr>
+<tr class="separator:abbe747ca199fe980a1c984358302e941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9d632ea641647c0320b8bcd663192a9" id="r_ac9d632ea641647c0320b8bcd663192a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#ac9d632ea641647c0320b8bcd663192a9">GetAutomaticSelfCalibrationTarget</a> (uint16_t &amp;asc_target_ppm)</td></tr>
+<tr class="memdesc:ac9d632ea641647c0320b8bcd663192a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">自動キャリブレーションのベースラインターゲット設定取得  <br /></td></tr>
+<tr class="separator:ac9d632ea641647c0320b8bcd663192a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ff3164d7124cea4ad8249f9b97ff963" id="r_a4ff3164d7124cea4ad8249f9b97ff963"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#a4ff3164d7124cea4ad8249f9b97ff963">StartLowPowerPeriodicMeasurement</a> ()</td></tr>
+<tr class="memdesc:a4ff3164d7124cea4ad8249f9b97ff963"><td class="mdescLeft">&#160;</td><td class="mdescRight">低消費電力周期計測の開始  <br /></td></tr>
+<tr class="separator:a4ff3164d7124cea4ad8249f9b97ff963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ba3a9d093e3821d98d6a838d3d49243" id="r_a8ba3a9d093e3821d98d6a838d3d49243"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#a8ba3a9d093e3821d98d6a838d3d49243">PersistSettings</a> ()</td></tr>
+<tr class="memdesc:a8ba3a9d093e3821d98d6a838d3d49243"><td class="mdescLeft">&#160;</td><td class="mdescRight">設定をEEPROMに保存  <br /></td></tr>
+<tr class="separator:a8ba3a9d093e3821d98d6a838d3d49243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b37f57ad6d43b53f208411c78adf3a6" id="r_a7b37f57ad6d43b53f208411c78adf3a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#a7b37f57ad6d43b53f208411c78adf3a6">GetSerialNumber</a> (uint64_t &amp;serial_number)</td></tr>
+<tr class="memdesc:a7b37f57ad6d43b53f208411c78adf3a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">シリアル番号取得  <br /></td></tr>
+<tr class="separator:a7b37f57ad6d43b53f208411c78adf3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0031caad151ecf97aef6b67a7a7742ed" id="r_a0031caad151ecf97aef6b67a7a7742ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#a0031caad151ecf97aef6b67a7a7742ed">PerformSelfTest</a> (uint16_t &amp;sensor_status)</td></tr>
+<tr class="memdesc:a0031caad151ecf97aef6b67a7a7742ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">セルフテスト  <br /></td></tr>
+<tr class="separator:a0031caad151ecf97aef6b67a7a7742ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0b31df702e6c6fc00589c27b12fe2a9" id="r_af0b31df702e6c6fc00589c27b12fe2a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#af0b31df702e6c6fc00589c27b12fe2a9">PerformFactoryReset</a> ()</td></tr>
+<tr class="memdesc:af0b31df702e6c6fc00589c27b12fe2a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">工場出荷状態リセット  <br /></td></tr>
+<tr class="separator:af0b31df702e6c6fc00589c27b12fe2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9e2e868ce56852972b167f99028d637" id="r_ae9e2e868ce56852972b167f99028d637"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#ae9e2e868ce56852972b167f99028d637">Reinit</a> ()</td></tr>
+<tr class="memdesc:ae9e2e868ce56852972b167f99028d637"><td class="mdescLeft">&#160;</td><td class="mdescRight">再初期化  <br /></td></tr>
+<tr class="separator:ae9e2e868ce56852972b167f99028d637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc1fdfc0b9c944ffc610ed8c39b000c0" id="r_acc1fdfc0b9c944ffc610ed8c39b000c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#acc1fdfc0b9c944ffc610ed8c39b000c0">GetSensorVariantRaw</a> (uint16_t &amp;sensor_variant_raw)</td></tr>
+<tr class="memdesc:acc1fdfc0b9c944ffc610ed8c39b000c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">生センサバリアント取得  <br /></td></tr>
+<tr class="separator:acc1fdfc0b9c944ffc610ed8c39b000c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac19a9ab22fe7abbd0adf25e54356fbea" id="r_ac19a9ab22fe7abbd0adf25e54356fbea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#ac19a9ab22fe7abbd0adf25e54356fbea">GetSensorVariant</a> (<a class="el" href="namespacealps_1_1cmn_1_1sensor_1_1scd4x.html#a358ad9bfa7f188f7ca6ac55162655d52">Scd4xSensorVariant</a> &amp;variant)</td></tr>
+<tr class="memdesc:ac19a9ab22fe7abbd0adf25e54356fbea"><td class="mdescLeft">&#160;</td><td class="mdescRight">センサバリアント取得  <br /></td></tr>
+<tr class="separator:ac19a9ab22fe7abbd0adf25e54356fbea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d8dde687b34e399246777da9b18c09" id="r_a15d8dde687b34e399246777da9b18c09"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#a15d8dde687b34e399246777da9b18c09">MeasureSingleShot</a> ()</td></tr>
+<tr class="memdesc:a15d8dde687b34e399246777da9b18c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">シングルショット計測(CO2+温度+湿度)  <br /></td></tr>
+<tr class="separator:a15d8dde687b34e399246777da9b18c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba5c05722cb334dec6f73f4caed5b3bd" id="r_aba5c05722cb334dec6f73f4caed5b3bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#aba5c05722cb334dec6f73f4caed5b3bd">MeasureSingleShotRhtOnly</a> ()</td></tr>
+<tr class="memdesc:aba5c05722cb334dec6f73f4caed5b3bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">シングルショット計測(温度+湿度)  <br /></td></tr>
+<tr class="separator:aba5c05722cb334dec6f73f4caed5b3bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7478af14059400abccfb56a9f0587706" id="r_a7478af14059400abccfb56a9f0587706"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#a7478af14059400abccfb56a9f0587706">MeasureAndReadSingleShot</a> (uint16_t &amp;co2, float &amp;tmp, float &amp;rh)</td></tr>
+<tr class="memdesc:a7478af14059400abccfb56a9f0587706"><td class="mdescLeft">&#160;</td><td class="mdescRight">シングルショット計測+データ取得  <br /></td></tr>
+<tr class="separator:a7478af14059400abccfb56a9f0587706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a587fdffdd8a97a78bd222d270c6a489f" id="r_a587fdffdd8a97a78bd222d270c6a489f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#a587fdffdd8a97a78bd222d270c6a489f">PowerDown</a> ()</td></tr>
+<tr class="memdesc:a587fdffdd8a97a78bd222d270c6a489f"><td class="mdescLeft">&#160;</td><td class="mdescRight">スリープ状態  <br /></td></tr>
+<tr class="separator:a587fdffdd8a97a78bd222d270c6a489f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c1c0ef697a4f8c77b3d4fc4987280c4" id="r_a3c1c0ef697a4f8c77b3d4fc4987280c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#a3c1c0ef697a4f8c77b3d4fc4987280c4">WakeUp</a> ()</td></tr>
+<tr class="memdesc:a3c1c0ef697a4f8c77b3d4fc4987280c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">スリープ復帰  <br /></td></tr>
+<tr class="separator:a3c1c0ef697a4f8c77b3d4fc4987280c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd6e186ff8066a215e7dd9769230b1a3" id="r_acd6e186ff8066a215e7dd9769230b1a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#acd6e186ff8066a215e7dd9769230b1a3">SetAutomaticSelfCalibrationInitialPeriod</a> (uint16_t asc_initial_period_h)</td></tr>
+<tr class="memdesc:acd6e186ff8066a215e7dd9769230b1a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">自動キャリブレーションの初期時間設定  <br /></td></tr>
+<tr class="separator:acd6e186ff8066a215e7dd9769230b1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85fb4233b24736a4d7b3f5efc872b597" id="r_a85fb4233b24736a4d7b3f5efc872b597"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#a85fb4233b24736a4d7b3f5efc872b597">GetAutomaticSelfCalibrationInitialPeriod</a> (uint16_t &amp;asc_initial_period_h)</td></tr>
+<tr class="memdesc:a85fb4233b24736a4d7b3f5efc872b597"><td class="mdescLeft">&#160;</td><td class="mdescRight">自動キャリブレーションの初期時間設定取得  <br /></td></tr>
+<tr class="separator:a85fb4233b24736a4d7b3f5efc872b597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac53660b03cd644a7101ccdef84d19ca4" id="r_ac53660b03cd644a7101ccdef84d19ca4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#ac53660b03cd644a7101ccdef84d19ca4">SetAutomaticSelfCalibrationStandardPeriod</a> (uint16_t asc_standard_period_h)</td></tr>
+<tr class="memdesc:ac53660b03cd644a7101ccdef84d19ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">自動キャリブレーション間隔設定  <br /></td></tr>
+<tr class="separator:ac53660b03cd644a7101ccdef84d19ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada452a5b8c7019b13a9bdeab8c83fcb0" id="r_ada452a5b8c7019b13a9bdeab8c83fcb0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#ada452a5b8c7019b13a9bdeab8c83fcb0">GetAutomaticSelfCalibrationStandardPeriod</a> (uint16_t &amp;asc_standard_period_h)</td></tr>
+<tr class="memdesc:ada452a5b8c7019b13a9bdeab8c83fcb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">自動キャリブレーション間隔設定取得  <br /></td></tr>
+<tr class="separator:ada452a5b8c7019b13a9bdeab8c83fcb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5fa7d949c28add70614487923d82058" id="r_ac5fa7d949c28add70614487923d82058"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#ac5fa7d949c28add70614487923d82058">PerformForcedRecalibration</a> (uint16_t target_co2_ppm, uint16_t &amp;frc_correction)</td></tr>
+<tr class="memdesc:ac5fa7d949c28add70614487923d82058"><td class="mdescLeft">&#160;</td><td class="mdescRight">強制キャリブレーション  <br /></td></tr>
+<tr class="separator:ac5fa7d949c28add70614487923d82058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:ae0a9a8a6b36d0fc0cccd88054b8d863a" id="r_ae0a9a8a6b36d0fc0cccd88054b8d863a"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#ae0a9a8a6b36d0fc0cccd88054b8d863a">SignalTemperature</a> (uint16_t raw_tmp)</td></tr>
+<tr class="memdesc:ae0a9a8a6b36d0fc0cccd88054b8d863a"><td class="mdescLeft">&#160;</td><td class="mdescRight">生温度データから温度を計算する  <br /></td></tr>
+<tr class="separator:ae0a9a8a6b36d0fc0cccd88054b8d863a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff7cfde481fdc964214bebd03e1976a" id="r_afff7cfde481fdc964214bebd03e1976a"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#afff7cfde481fdc964214bebd03e1976a">SignalRelativeHumidity</a> (uint16_t raw_rh)</td></tr>
+<tr class="memdesc:afff7cfde481fdc964214bebd03e1976a"><td class="mdescLeft">&#160;</td><td class="mdescRight">生湿度データから相対湿度を計算する  <br /></td></tr>
+<tr class="separator:afff7cfde481fdc964214bebd03e1976a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11f0525c2da2d01f08df4865b6b9fe4" id="r_aa11f0525c2da2d01f08df4865b6b9fe4"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#aa11f0525c2da2d01f08df4865b6b9fe4">SignalCo2Concentration</a> (uint16_t raw_co2)</td></tr>
+<tr class="memdesc:aa11f0525c2da2d01f08df4865b6b9fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">生CO2データからCO2濃度を計算する  <br /></td></tr>
+<tr class="separator:aa11f0525c2da2d01f08df4865b6b9fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef82aa6f20075ab8a530330ef83e89a3" id="r_aef82aa6f20075ab8a530330ef83e89a3"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#aef82aa6f20075ab8a530330ef83e89a3">SignalTemperatureOffset</a> (uint16_t raw_tmp_offset)</td></tr>
+<tr class="memdesc:aef82aa6f20075ab8a530330ef83e89a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">生温度オフセットデータから温度オフセットを計算する  <br /></td></tr>
+<tr class="separator:aef82aa6f20075ab8a530330ef83e89a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae09778d0911d5c33c069b70d411892c7" id="r_ae09778d0911d5c33c069b70d411892c7"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html#ae09778d0911d5c33c069b70d411892c7">SignalAmbientPressure</a> (uint16_t raw_ap)</td></tr>
+<tr class="memdesc:ae09778d0911d5c33c069b70d411892c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">生気圧データから気圧を計算する  <br /></td></tr>
+<tr class="separator:ae09778d0911d5c33c069b70d411892c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="aab91aa2e9542d69106ec77572c7143f1" name="aab91aa2e9542d69106ec77572c7143f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab91aa2e9542d69106ec77572c7143f1">&#9670;&#160;</a></span>Scd4x()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::Scd4x </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classalps_1_1cmn_1_1communication_1_1_i_i2c_io.html">cmn::communication::II2cIo</a>&lt; I2cIo &gt; &amp;&#160;</td>
+          <td class="paramname"><em>i2c_io</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacealps_1_1cmn_1_1sensor_1_1scd4x.html#aed82ea70566f14e3e8863f705db78961">I2cAddressOption</a>&#160;</td>
+          <td class="paramname"><em>address_option</em> = <code><a class="el" href="namespacealps_1_1cmn_1_1sensor_1_1scd4x.html#aed82ea70566f14e3e8863f705db78961aeb90f31c47243270950941aaa1de0fc8">I2cAddressOption::k0x62</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i2c_io</td><td>I2C通信インタフェース </td></tr>
+    <tr><td class="paramname">address_option</td><td>I2Cアドレスの選択 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ae0a9a8a6b36d0fc0cccd88054b8d863a" name="ae0a9a8a6b36d0fc0cccd88054b8d863a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0a9a8a6b36d0fc0cccd88054b8d863a">&#9670;&#160;</a></span>SignalTemperature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::SignalTemperature </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>raw_tmp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>生温度データから温度を計算する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">raw_tmp</td><td>生温度データ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>float 温度 [℃] </dd></dl>
+
+</div>
+</div>
+<a id="afff7cfde481fdc964214bebd03e1976a" name="afff7cfde481fdc964214bebd03e1976a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afff7cfde481fdc964214bebd03e1976a">&#9670;&#160;</a></span>SignalRelativeHumidity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::SignalRelativeHumidity </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>raw_rh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>生湿度データから相対湿度を計算する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">raw_rh</td><td>生湿度データ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>float 相対湿度 [RH] </dd></dl>
+
+</div>
+</div>
+<a id="aa11f0525c2da2d01f08df4865b6b9fe4" name="aa11f0525c2da2d01f08df4865b6b9fe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa11f0525c2da2d01f08df4865b6b9fe4">&#9670;&#160;</a></span>SignalCo2Concentration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint16_t <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::SignalCo2Concentration </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>raw_co2</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>生CO2データからCO2濃度を計算する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">raw_co2</td><td>生CO2データ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>uint16_t CO2濃度 [ppm] </dd></dl>
+
+</div>
+</div>
+<a id="aef82aa6f20075ab8a530330ef83e89a3" name="aef82aa6f20075ab8a530330ef83e89a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef82aa6f20075ab8a530330ef83e89a3">&#9670;&#160;</a></span>SignalTemperatureOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::SignalTemperatureOffset </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>raw_tmp_offset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>生温度オフセットデータから温度オフセットを計算する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">raw_tmp_offset</td><td>生温度オフセットデータ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>float 温度オフセット [℃] </dd></dl>
+
+</div>
+</div>
+<a id="ae09778d0911d5c33c069b70d411892c7" name="ae09778d0911d5c33c069b70d411892c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae09778d0911d5c33c069b70d411892c7">&#9670;&#160;</a></span>SignalAmbientPressure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::SignalAmbientPressure </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>raw_ap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>生気圧データから気圧を計算する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">raw_ap</td><td>生気圧データ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>uint32_t 気圧 [Pa] </dd></dl>
+
+</div>
+</div>
+<a id="a72e546534281b3f8a45298459de39aa1" name="a72e546534281b3f8a45298459de39aa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72e546534281b3f8a45298459de39aa1">&#9670;&#160;</a></span>StartPeriodicMeasurement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::StartPeriodicMeasurement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>周期測定を開始する </p>
+<dl class="section return"><dt>戻り値</dt><dd>true 開始成功 </dd>
+<dd>
+false 開始失敗 </dd></dl>
+
+</div>
+</div>
+<a id="a3703d50e4a7de5419687c633c9a1eb7f" name="a3703d50e4a7de5419687c633c9a1eb7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3703d50e4a7de5419687c633c9a1eb7f">&#9670;&#160;</a></span>StopPeriodicMeasurement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::StopPeriodicMeasurement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>周期測定を停止する </p>
+<dl class="section return"><dt>戻り値</dt><dd>true 停止成功 </dd>
+<dd>
+false 停止失敗 </dd></dl>
+
+</div>
+</div>
+<a id="ad5f7c4ee828d5842cae00e165b5ed701" name="ad5f7c4ee828d5842cae00e165b5ed701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5f7c4ee828d5842cae00e165b5ed701">&#9670;&#160;</a></span>ReadMeasurementRaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::ReadMeasurementRaw </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>co2_raw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>tmp_raw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>rh_raw</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>測定値の生データを取得する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">co2_raw</td><td>取得した生CO2データ </td></tr>
+    <tr><td class="paramname">tmp_raw</td><td>取得した生温度データ </td></tr>
+    <tr><td class="paramname">rh_raw</td><td>取得した生湿度データ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 取得成功 </dd>
+<dd>
+false 取得失敗 </dd></dl>
+
+</div>
+</div>
+<a id="a6385a31ef584891dd0285e4779b40139" name="a6385a31ef584891dd0285e4779b40139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6385a31ef584891dd0285e4779b40139">&#9670;&#160;</a></span>ReadMeasurement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::ReadMeasurement </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>co2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>tmp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>rh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>測定値から物理量に変換して取得する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">co2</td><td>CO2濃度 [ppm] </td></tr>
+    <tr><td class="paramname">tmp</td><td>温度 [℃] </td></tr>
+    <tr><td class="paramname">rh</td><td>相対湿度 [RH] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 取得成功 </dd>
+<dd>
+false 取得失敗 </dd></dl>
+
+</div>
+</div>
+<a id="adde59b804fc806807eec2c2e0c6c71d0" name="adde59b804fc806807eec2c2e0c6c71d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adde59b804fc806807eec2c2e0c6c71d0">&#9670;&#160;</a></span>SetTemperatureOffsetRaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::SetTemperatureOffsetRaw </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>tmp_offset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>生温度オフセット設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tmp_offset</td><td>オフセット値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 設定成功 </dd>
+<dd>
+false 設定失敗 </dd></dl>
+
+</div>
+</div>
+<a id="a5f525b482c62055997e16a65302d956a" name="a5f525b482c62055997e16a65302d956a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f525b482c62055997e16a65302d956a">&#9670;&#160;</a></span>SetTemperatureOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::SetTemperatureOffset </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>tmp_offset_c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>温度オフセット設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tmp_offset_c</td><td>オフセット値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 設定成功 </dd>
+<dd>
+false 設定失敗 </dd></dl>
+
+</div>
+</div>
+<a id="a93cf2672396b4f4e4013a7d97c8e694a" name="a93cf2672396b4f4e4013a7d97c8e694a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93cf2672396b4f4e4013a7d97c8e694a">&#9670;&#160;</a></span>GetTemperatureOffsetRaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::GetTemperatureOffsetRaw </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>tmp_offset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>生温度オフセット設定取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tmp_offset</td><td>オフセット値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 取得成功 </dd>
+<dd>
+false 取得失敗 </dd></dl>
+
+</div>
+</div>
+<a id="a97ea915b30cdc0f39d8fb211ac32262f" name="a97ea915b30cdc0f39d8fb211ac32262f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97ea915b30cdc0f39d8fb211ac32262f">&#9670;&#160;</a></span>GetTemperatureOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::GetTemperatureOffset </td>
+          <td>(</td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>tmp_offset_c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>温度オフセット設定取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tmp_offset_c</td><td>オフセット値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 取得成功 </dd>
+<dd>
+false 取得失敗 </dd></dl>
+
+</div>
+</div>
+<a id="ab616a47ce2b328e969712a978ad78016" name="ab616a47ce2b328e969712a978ad78016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab616a47ce2b328e969712a978ad78016">&#9670;&#160;</a></span>SetSensorAltitude()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::SetSensorAltitude </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>alt_m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>センサ高度設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alt_m</td><td>センサ高度 [m] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 設定成功 </dd>
+<dd>
+false 設定失敗 </dd></dl>
+
+</div>
+</div>
+<a id="a1acb71274e197104889a3c89d29bcad1" name="a1acb71274e197104889a3c89d29bcad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1acb71274e197104889a3c89d29bcad1">&#9670;&#160;</a></span>GetSensorAltitude()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::GetSensorAltitude </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>alt_m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>センサ高度設定取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alt_m</td><td>センサ高度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 取得成功 </dd>
+<dd>
+false 取得失敗 </dd></dl>
+
+</div>
+</div>
+<a id="acad1c005ff50743d7fb39be33d57caf1" name="acad1c005ff50743d7fb39be33d57caf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acad1c005ff50743d7fb39be33d57caf1">&#9670;&#160;</a></span>SetAmbientPressureRaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::SetAmbientPressureRaw </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>ap_hpa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>生大気圧設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ap_hpa</td><td>大気圧 [hPa] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 設定成功 </dd>
+<dd>
+false 設定失敗 </dd></dl>
+
+</div>
+</div>
+<a id="ac5aec380d749b70a3fc10b58f6c320ef" name="ac5aec380d749b70a3fc10b58f6c320ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5aec380d749b70a3fc10b58f6c320ef">&#9670;&#160;</a></span>SetAmbientPressure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::SetAmbientPressure </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>大気圧設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ap</td><td>大気圧 [Pa] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 設定成功 </dd>
+<dd>
+false 設定失敗 </dd></dl>
+
+</div>
+</div>
+<a id="aa251f59455e042764e87c854e87dcea8" name="aa251f59455e042764e87c854e87dcea8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa251f59455e042764e87c854e87dcea8">&#9670;&#160;</a></span>GetAmbientPressureRaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::GetAmbientPressureRaw </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>ap_hpa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>生大気圧設定取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ap_hpa</td><td>大気圧 [hPa] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 　取得成功 </dd>
+<dd>
+false 取得失敗 </dd></dl>
+
+</div>
+</div>
+<a id="a61e29d39d78d22446d2cf812d068f912" name="a61e29d39d78d22446d2cf812d068f912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61e29d39d78d22446d2cf812d068f912">&#9670;&#160;</a></span>GetAmbientPressure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::GetAmbientPressure </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>ap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>大気圧設定取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ap</td><td>大気圧 [Pa] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 取得成功 </dd>
+<dd>
+false 取得失敗 </dd></dl>
+
+</div>
+</div>
+<a id="ac3a617abe1adb2cf9ada5f68a28058fe" name="ac3a617abe1adb2cf9ada5f68a28058fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3a617abe1adb2cf9ada5f68a28058fe">&#9670;&#160;</a></span>GetDataReadyStatusRaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::GetDataReadyStatusRaw </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>data_ready_status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>データ準備完了フラグ取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data_ready_status</td><td>データ準備完了フラグ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 取得成功 </dd>
+<dd>
+false 取得失敗 </dd></dl>
+
+</div>
+</div>
+<a id="ae0a628e3776f1e14fd7d698a8f9db27c" name="ae0a628e3776f1e14fd7d698a8f9db27c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0a628e3776f1e14fd7d698a8f9db27c">&#9670;&#160;</a></span>GetDataReadyStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::GetDataReadyStatus </td>
+          <td>(</td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>is_ready</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>データ準備完了判定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is_ready</td><td>データ準備完了か </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 判定成功 </dd>
+<dd>
+false 判定失敗 </dd></dl>
+
+</div>
+</div>
+<a id="a8812ac3843d90a5992ea46f928bebe95" name="a8812ac3843d90a5992ea46f928bebe95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8812ac3843d90a5992ea46f928bebe95">&#9670;&#160;</a></span>SetAutomaticSelfCalibrationEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::SetAutomaticSelfCalibrationEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>自動キャリブレーション有効/無効設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enabled</td><td>有効か </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 設定成功 </dd>
+<dd>
+false 設定失敗 </dd></dl>
+
+</div>
+</div>
+<a id="a15af1663ea0f799e3e297e5eb6057594" name="a15af1663ea0f799e3e297e5eb6057594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15af1663ea0f799e3e297e5eb6057594">&#9670;&#160;</a></span>GetAutomaticSelfCalibrationEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::GetAutomaticSelfCalibrationEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>自動キャリブレーション有効/無効設定取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enabled</td><td>有効か </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 取得成功 </dd>
+<dd>
+false 取得失敗 </dd></dl>
+
+</div>
+</div>
+<a id="abbe747ca199fe980a1c984358302e941" name="abbe747ca199fe980a1c984358302e941"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbe747ca199fe980a1c984358302e941">&#9670;&#160;</a></span>SetAutomaticSelfCalibrationTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::SetAutomaticSelfCalibrationTarget </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>asc_target_ppm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>自動キャリブレーションのベースラインターゲット設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">asc_target_ppm</td><td>ターゲット [ppm] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 設定成功 </dd>
+<dd>
+false 設定失敗 </dd></dl>
+
+</div>
+</div>
+<a id="ac9d632ea641647c0320b8bcd663192a9" name="ac9d632ea641647c0320b8bcd663192a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9d632ea641647c0320b8bcd663192a9">&#9670;&#160;</a></span>GetAutomaticSelfCalibrationTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::GetAutomaticSelfCalibrationTarget </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>asc_target_ppm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>自動キャリブレーションのベースラインターゲット設定取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">asc_target_ppm</td><td>ターゲット [ppm] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 取得成功 </dd>
+<dd>
+false 取得失敗 </dd></dl>
+
+</div>
+</div>
+<a id="a4ff3164d7124cea4ad8249f9b97ff963" name="a4ff3164d7124cea4ad8249f9b97ff963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ff3164d7124cea4ad8249f9b97ff963">&#9670;&#160;</a></span>StartLowPowerPeriodicMeasurement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::StartLowPowerPeriodicMeasurement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>低消費電力周期計測の開始 </p>
+<dl class="section return"><dt>戻り値</dt><dd>true 開始成功 </dd>
+<dd>
+false 開始失敗 </dd></dl>
+
+</div>
+</div>
+<a id="a8ba3a9d093e3821d98d6a838d3d49243" name="a8ba3a9d093e3821d98d6a838d3d49243"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ba3a9d093e3821d98d6a838d3d49243">&#9670;&#160;</a></span>PersistSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::PersistSettings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>設定をEEPROMに保存 </p>
+<dl class="section return"><dt>戻り値</dt><dd>true 保存成功 </dd>
+<dd>
+false 保存失敗 </dd></dl>
+
+</div>
+</div>
+<a id="a7b37f57ad6d43b53f208411c78adf3a6" name="a7b37f57ad6d43b53f208411c78adf3a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b37f57ad6d43b53f208411c78adf3a6">&#9670;&#160;</a></span>GetSerialNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::GetSerialNumber </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>serial_number</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>シリアル番号取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serial_number</td><td>シリアル番号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 取得成功 </dd>
+<dd>
+false 取得失敗 </dd></dl>
+
+</div>
+</div>
+<a id="a0031caad151ecf97aef6b67a7a7742ed" name="a0031caad151ecf97aef6b67a7a7742ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0031caad151ecf97aef6b67a7a7742ed">&#9670;&#160;</a></span>PerformSelfTest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::PerformSelfTest </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>sensor_status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>セルフテスト </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor_status</td><td>センサ状態 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true テスト成功 </dd>
+<dd>
+false テスト失敗 </dd></dl>
+
+</div>
+</div>
+<a id="af0b31df702e6c6fc00589c27b12fe2a9" name="af0b31df702e6c6fc00589c27b12fe2a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0b31df702e6c6fc00589c27b12fe2a9">&#9670;&#160;</a></span>PerformFactoryReset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::PerformFactoryReset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>工場出荷状態リセット </p>
+<dl class="section return"><dt>戻り値</dt><dd>true リセット成功 </dd>
+<dd>
+false リセット失敗 </dd></dl>
+
+</div>
+</div>
+<a id="ae9e2e868ce56852972b167f99028d637" name="ae9e2e868ce56852972b167f99028d637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9e2e868ce56852972b167f99028d637">&#9670;&#160;</a></span>Reinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::Reinit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>再初期化 </p>
+<dl class="section return"><dt>戻り値</dt><dd>true 初期化成功 </dd>
+<dd>
+false 初期化失敗 </dd></dl>
+
+</div>
+</div>
+<a id="acc1fdfc0b9c944ffc610ed8c39b000c0" name="acc1fdfc0b9c944ffc610ed8c39b000c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc1fdfc0b9c944ffc610ed8c39b000c0">&#9670;&#160;</a></span>GetSensorVariantRaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::GetSensorVariantRaw </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>sensor_variant_raw</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>生センサバリアント取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sensor_variant_raw</td><td>生センサバリアント </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 取得成功 </dd>
+<dd>
+false 取得失敗 </dd></dl>
+
+</div>
+</div>
+<a id="ac19a9ab22fe7abbd0adf25e54356fbea" name="ac19a9ab22fe7abbd0adf25e54356fbea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac19a9ab22fe7abbd0adf25e54356fbea">&#9670;&#160;</a></span>GetSensorVariant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::GetSensorVariant </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacealps_1_1cmn_1_1sensor_1_1scd4x.html#a358ad9bfa7f188f7ca6ac55162655d52">Scd4xSensorVariant</a> &amp;&#160;</td>
+          <td class="paramname"><em>variant</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>センサバリアント取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">variant</td><td>センサバリアント </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 取得成功 </dd>
+<dd>
+false 取得失敗 </dd></dl>
+
+</div>
+</div>
+<a id="a15d8dde687b34e399246777da9b18c09" name="a15d8dde687b34e399246777da9b18c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d8dde687b34e399246777da9b18c09">&#9670;&#160;</a></span>MeasureSingleShot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::MeasureSingleShot </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>シングルショット計測(CO2+温度+湿度) </p>
+<dl class="section return"><dt>戻り値</dt><dd>true 計測成功 </dd>
+<dd>
+false 計測失敗 </dd></dl>
+
+</div>
+</div>
+<a id="aba5c05722cb334dec6f73f4caed5b3bd" name="aba5c05722cb334dec6f73f4caed5b3bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba5c05722cb334dec6f73f4caed5b3bd">&#9670;&#160;</a></span>MeasureSingleShotRhtOnly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::MeasureSingleShotRhtOnly </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>シングルショット計測(温度+湿度) </p>
+<dl class="section return"><dt>戻り値</dt><dd>true 計測成功 </dd>
+<dd>
+false 計測失敗 </dd></dl>
+
+</div>
+</div>
+<a id="a7478af14059400abccfb56a9f0587706" name="a7478af14059400abccfb56a9f0587706"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7478af14059400abccfb56a9f0587706">&#9670;&#160;</a></span>MeasureAndReadSingleShot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::MeasureAndReadSingleShot </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>co2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>tmp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>rh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>シングルショット計測+データ取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">co2</td><td>CO2濃度 [ppm] </td></tr>
+    <tr><td class="paramname">tmp</td><td>温度 [℃] </td></tr>
+    <tr><td class="paramname">rh</td><td>相対湿度 [RH] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 計測/取得成功 </dd>
+<dd>
+false 計測/取得失敗 </dd></dl>
+
+</div>
+</div>
+<a id="a587fdffdd8a97a78bd222d270c6a489f" name="a587fdffdd8a97a78bd222d270c6a489f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a587fdffdd8a97a78bd222d270c6a489f">&#9670;&#160;</a></span>PowerDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::PowerDown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>スリープ状態 </p>
+<dl class="section return"><dt>戻り値</dt><dd>true スリープ成功 </dd>
+<dd>
+false スリープ失敗 </dd></dl>
+
+</div>
+</div>
+<a id="a3c1c0ef697a4f8c77b3d4fc4987280c4" name="a3c1c0ef697a4f8c77b3d4fc4987280c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c1c0ef697a4f8c77b3d4fc4987280c4">&#9670;&#160;</a></span>WakeUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::WakeUp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>スリープ復帰 </p>
+<dl class="section return"><dt>戻り値</dt><dd>true スリープ復帰成功 </dd></dl>
+
+</div>
+</div>
+<a id="acd6e186ff8066a215e7dd9769230b1a3" name="acd6e186ff8066a215e7dd9769230b1a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd6e186ff8066a215e7dd9769230b1a3">&#9670;&#160;</a></span>SetAutomaticSelfCalibrationInitialPeriod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::SetAutomaticSelfCalibrationInitialPeriod </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>asc_initial_period_h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>自動キャリブレーションの初期時間設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">asc_initial_period_h</td><td>自動キャリブレーションの初期時間 [hour] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 設定成功 </dd>
+<dd>
+false 設定失敗 </dd></dl>
+
+</div>
+</div>
+<a id="a85fb4233b24736a4d7b3f5efc872b597" name="a85fb4233b24736a4d7b3f5efc872b597"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85fb4233b24736a4d7b3f5efc872b597">&#9670;&#160;</a></span>GetAutomaticSelfCalibrationInitialPeriod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::GetAutomaticSelfCalibrationInitialPeriod </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>asc_initial_period_h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>自動キャリブレーションの初期時間設定取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">asc_initial_period_h</td><td>自動キャリブレーションの初期時間 [hour] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 取得成功 </dd>
+<dd>
+false 取得失敗 </dd></dl>
+
+</div>
+</div>
+<a id="ac53660b03cd644a7101ccdef84d19ca4" name="ac53660b03cd644a7101ccdef84d19ca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac53660b03cd644a7101ccdef84d19ca4">&#9670;&#160;</a></span>SetAutomaticSelfCalibrationStandardPeriod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::SetAutomaticSelfCalibrationStandardPeriod </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>asc_standard_period_h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>自動キャリブレーション間隔設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">asc_standard_period_h</td><td>自動キャリブレーション間隔 [hour] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 設定成功 </dd>
+<dd>
+false 設定失敗 </dd></dl>
+
+</div>
+</div>
+<a id="ada452a5b8c7019b13a9bdeab8c83fcb0" name="ada452a5b8c7019b13a9bdeab8c83fcb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada452a5b8c7019b13a9bdeab8c83fcb0">&#9670;&#160;</a></span>GetAutomaticSelfCalibrationStandardPeriod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::GetAutomaticSelfCalibrationStandardPeriod </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>asc_standard_period_h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>自動キャリブレーション間隔設定取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">asc_standard_period_h</td><td>自動キャリブレーション間隔 [hour] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 取得成功 </dd>
+<dd>
+false 取得失敗 </dd></dl>
+
+</div>
+</div>
+<a id="ac5fa7d949c28add70614487923d82058" name="ac5fa7d949c28add70614487923d82058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5fa7d949c28add70614487923d82058">&#9670;&#160;</a></span>PerformForcedRecalibration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2cIo &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">alps::cmn::sensor::scd4x::Scd4x</a>&lt; I2cIo &gt;::PerformForcedRecalibration </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>target_co2_ppm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>frc_correction</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>強制キャリブレーション </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target_co2_ppm</td><td>目標CO2濃度 [ppm] </td></tr>
+    <tr><td class="paramname">frc_correction</td><td>補正生値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true キャリブレーション成功 </dd>
+<dd>
+false キャリブレーション失敗 </dd></dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/<a class="el" href="alps__common__lib_2include_2alps__cmn_2sensor_2scd4x_8hpp_source.html">scd4x.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacealps.html">alps</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn.html">cmn</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn_1_1sensor.html">sensor</a></li><li class="navelem"><a class="el" href="namespacealps_1_1cmn_1_1sensor_1_1scd4x.html">scd4x</a></li><li class="navelem"><a class="el" href="classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html">Scd4x</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

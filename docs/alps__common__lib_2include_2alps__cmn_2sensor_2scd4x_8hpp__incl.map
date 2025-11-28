@@ -1,0 +1,17 @@
+<map id="alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/scd4x.hpp" name="alps_core/lib_internal/alps_common_lib/include/alps_cmn/sensor/scd4x.hpp">
+<area shape="rect" id="Node000001" title="SCD4x CO2センサ" alt="" coords="111,5,316,60"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,196,72,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,60,74,80,45,110,37,127,33,145,35,182,30,183,28,145,32,125,40,106,71,76,109,55"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="250,196,337,221"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="230,59,254,107,286,182,281,184,250,109,225,61"/>
+<area shape="rect" id="Node000004" href="$i__i2c__io_8hpp.html" title="I2C通信インタフェース" alt="" coords="316,108,505,148"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="270,58,360,100,357,105,268,62"/>
+<area shape="rect" id="Node000006" href="$sleep_8hpp.html" title="スリープ関数の定義" alt="" coords="55,115,241,141"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="197,62,166,105,162,102,193,59"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="384,150,323,191,320,186,381,146"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="377,196,444,221"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="413,148,413,182,408,182,408,148"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="133,143,68,190,65,186,130,139"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="116,196,180,221"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="151,141,151,182,145,182,145,141"/>
+</map>

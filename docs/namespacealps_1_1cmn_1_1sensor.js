@@ -3,6 +3,7 @@ var namespacealps_1_1cmn_1_1sensor =
     [ "as5048a", "namespacealps_1_1cmn_1_1sensor_1_1as5048a.html", "namespacealps_1_1cmn_1_1sensor_1_1as5048a" ],
     [ "as5600", "namespacealps_1_1cmn_1_1sensor_1_1as5600.html", "namespacealps_1_1cmn_1_1sensor_1_1as5600" ],
     [ "bno055", "namespacealps_1_1cmn_1_1sensor_1_1bno055.html", "namespacealps_1_1cmn_1_1sensor_1_1bno055" ],
+    [ "scd4x", "namespacealps_1_1cmn_1_1sensor_1_1scd4x.html", "namespacealps_1_1cmn_1_1sensor_1_1scd4x" ],
     [ "IncrementalEncoder", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder" ],
     [ "IRotarySensor", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor" ],
     [ "Potentiometer", "classalps_1_1cmn_1_1sensor_1_1_potentiometer.html", "classalps_1_1cmn_1_1sensor_1_1_potentiometer" ],
