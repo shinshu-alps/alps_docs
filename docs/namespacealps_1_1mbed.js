@@ -16,9 +16,7 @@ var namespacealps_1_1mbed =
       [ "DefaultLogWriter", "namespacealps_1_1mbed_1_1log.html#a1ebb60b33fbfcb877387ffd92c374537", null ],
       [ "SetDefaultLogWriter", "namespacealps_1_1mbed_1_1log.html#abe6e8267aa3cea1937b1c1103e24bead", null ]
     ] ],
-    [ "sensor", "namespacealps_1_1mbed_1_1sensor.html", [
-      [ "IncrementalEncoder", "namespacealps_1_1mbed_1_1sensor.html#a5fa3c74231a053a27e8b66afc210dd84", null ]
-    ] ],
+    [ "sensor", "namespacealps_1_1mbed_1_1sensor.html", "namespacealps_1_1mbed_1_1sensor" ],
     [ "sound", "namespacealps_1_1mbed_1_1sound.html", "namespacealps_1_1mbed_1_1sound" ],
     [ "time", "namespacealps_1_1mbed_1_1time.html", "namespacealps_1_1mbed_1_1time" ]
 ];

@@ -1,0 +1,25 @@
+<map id="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/sensor/scd4x.hpp" name="alps_core/lib_internal/alps_mbed_lib/include/alps_mbed/sensor/scd4x.hpp">
+<area shape="rect" id="Node000001" title="SCD4x CO2センサ (mbed)" alt="" coords="69,5,284,60"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,203,76,229"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,62,92,83,67,110,57,129,50,150,44,190,38,189,45,149,52,127,62,106,88,79,118,58"/>
+<area shape="rect" id="Node000003" href="$alps__common__lib_2include_2alps__cmn_2sensor_2scd4x_8hpp.html" title="SCD4x CO2センサ" alt="" coords="300,115,501,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="241,58,362,108,360,113,239,63"/>
+<area shape="rect" id="Node000010" href="$i2c__io_8hpp.html" title="I2C通信インタフェース" alt="" coords="77,108,276,148"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="179,60,179,94,174,94,174,60"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="534,284,601,309"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="474,138,524,158,547,174,566,195,574,213,578,233,576,271,571,270,573,233,569,215,561,197,543,178,522,163,472,143"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="269,284,356,309"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="393,143,355,197,337,236,323,272,318,270,332,234,350,195,389,140"/>
+<area shape="rect" id="Node000006" href="$i__i2c__io_8hpp.html" title="I2C通信インタフェース" alt="" coords="101,196,290,236"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="374,143,254,193,252,188,372,138"/>
+<area shape="rect" id="Node000008" href="$sleep_8hpp.html" title="スリープ関数の定義" alt="" coords="365,203,551,229"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="411,139,445,190,440,193,406,142"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="225,234,286,274,283,279,222,238"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="162,284,229,309"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="198,236,198,270,193,270,193,236"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="476,227,541,274,538,278,473,231"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="426,284,490,309"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="461,229,461,270,455,270,455,229"/>
+<area shape="poly" id="edge13_Node000010_Node000002" title=" " alt="" coords="148,150,72,198,69,194,145,146"/>
+<area shape="poly" id="edge12_Node000010_Node000006" title=" " alt="" coords="183,148,191,182,186,183,178,149"/>
+</map>

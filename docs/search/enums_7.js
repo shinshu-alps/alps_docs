@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['type_763',['Type',['../classalps_1_1cmn_1_1actuator_1_1_robomas_motor.html#a8c505d108218fe4ea9fb646f06141af2',1,'alps::cmn::actuator::RobomasMotor']]]
+  ['scd4xcmdid_0',['Scd4xCmdId',['../namespacealps_1_1cmn_1_1sensor_1_1scd4x.html#a3fba9c358c0ac13be97c4a71b5251bd7',1,'alps::cmn::sensor::scd4x']]],
+  ['scd4xsensorvariant_1',['Scd4xSensorVariant',['../namespacealps_1_1cmn_1_1sensor_1_1scd4x.html#a358ad9bfa7f188f7ca6ac55162655d52',1,'alps::cmn::sensor::scd4x']]]
 ];

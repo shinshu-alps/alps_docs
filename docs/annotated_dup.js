@@ -120,6 +120,9 @@ var annotated_dup =
             [ "MagneticVector", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_magnetic_vector" ],
             [ "Quaternion", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion.html", "structalps_1_1cmn_1_1sensor_1_1bno055_1_1_quaternion" ]
           ] ],
+          [ "scd4x", "namespacealps_1_1cmn_1_1sensor_1_1scd4x.html", [
+            [ "Scd4x", "classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html", "classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x" ]
+          ] ],
           [ "IncrementalEncoder", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder.html", "classalps_1_1cmn_1_1sensor_1_1_incremental_encoder" ],
           [ "IRotarySensor", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor.html", "classalps_1_1cmn_1_1sensor_1_1_i_rotary_sensor" ],
           [ "Potentiometer", "classalps_1_1cmn_1_1sensor_1_1_potentiometer.html", "classalps_1_1cmn_1_1sensor_1_1_potentiometer" ],

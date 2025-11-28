@@ -186,6 +186,7 @@ var hierarchy =
     [ "alps::ros2::communication::RosToCanParamBridge< T >", "classalps_1_1ros2_1_1communication_1_1_ros_to_can_param_bridge.html", null ],
     [ "alps::ros2::communication::RosToCanTopicBridge< CanType, RosTopicType >", "classalps_1_1ros2_1_1communication_1_1_ros_to_can_topic_bridge.html", null ],
     [ "alps::cmn::sensor::S11059< I2cIo >", "classalps_1_1cmn_1_1sensor_1_1_s11059.html", null ],
+    [ "alps::cmn::sensor::scd4x::Scd4x< I2cIo >", "classalps_1_1cmn_1_1sensor_1_1scd4x_1_1_scd4x.html", null ],
     [ "alps::cmn::type::Serializer< T, typename >", "structalps_1_1cmn_1_1type_1_1_serializer.html", null ],
     [ "alps::cmn::type::Serializer< etl::optional< T > >", "structalps_1_1cmn_1_1type_1_1_serializer_3_01etl_1_1optional_3_01_t_01_4_01_4.html", null ],
     [ "alps::cmn::type::Serializer< time::Seconds >", "structalps_1_1cmn_1_1type_1_1_serializer_3_01time_1_1_seconds_01_4.html", null ],
